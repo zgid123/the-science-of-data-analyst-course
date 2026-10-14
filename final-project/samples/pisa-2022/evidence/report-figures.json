@@ -1,0 +1,30 @@
+[
+  {
+    "figure": "teacher_feedback_domains",
+    "plotted_rows": 8,
+    "sources": [
+      {
+        "file": "results/practice_estimates.csv",
+        "sha256": "223e45c628b1f78d0df3ae5fbd70793b027ec06f78fb86b665069eb5a1540076"
+      }
+    ],
+    "caption": "Australia only; mathematics/general-teacher sampling domains remain separate. Practice success is most/every lesson; need is moderate/high. Whiskers: normal 95% intervals from 80 Fay-BRR replicates (factor 0.5); denominators vary by item.",
+    "png": "figures/teacher_feedback_domains.png",
+    "svg": "figures/teacher_feedback_domains.svg",
+    "plotted_data": "figures/teacher_feedback_domains.csv"
+  },
+  {
+    "figure": "paired_feedback_gap",
+    "plotted_rows": 2,
+    "sources": [
+      {
+        "file": "results/paired_feedback.csv",
+        "sha256": "ea151b579a90a0e3a76673b5a1422909b7e70f4848ac8295fe1823cb16a49a39"
+      }
+    ],
+    "caption": "Australia common valid respondents within each teacher domain; paired differences retain covariance under 80 Fay-BRR replicates. Whiskers are normal 95% intervals, exploratory and not multiplicity-adjusted. This is practice context, not student warning validation.",
+    "png": "figures/paired_feedback_gap.png",
+    "svg": "figures/paired_feedback_gap.svg",
+    "plotted_data": "figures/paired_feedback_gap.csv"
+  }
+]

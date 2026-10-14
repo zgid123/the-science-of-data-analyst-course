@@ -1,0 +1,10 @@
+check,examined,mismatches,status,method,observed,expected
+cutoff 10: independent raw prefix/target/timing,100,0,PASS,100 seeded random held-out users; raw ZIP re-read; pandas grouping and direct answer-key comparison,,
+cutoff 10: direct AP for score,1315,0,PASS,"Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric",0.18164521375026346,0.1816452137502634
+cutoff 10: direct AP for combined,1315,0,PASS,"Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric",0.1900967210311107,0.1900967210311107
+cutoff 30: independent raw prefix/target/timing,100,0,PASS,100 seeded random held-out users; raw ZIP re-read; pandas grouping and direct answer-key comparison,,
+cutoff 30: direct AP for score,1279,0,PASS,"Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric",0.19488873078475824,0.1948887307847582
+cutoff 30: direct AP for combined,1279,0,PASS,"Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric",0.19774857518931033,0.1977485751893103
+cutoff 60: independent raw prefix/target/timing,100,0,PASS,100 seeded random held-out users; raw ZIP re-read; pandas grouping and direct answer-key comparison,,
+cutoff 60: direct AP for score,1008,0,PASS,"Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric",0.23279733810450481,0.2327973381045048
+cutoff 60: direct AP for combined,1008,0,PASS,"Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric",0.21187694614169142,0.2118769461416914

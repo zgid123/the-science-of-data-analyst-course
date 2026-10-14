@@ -1,0 +1,308 @@
+[
+  {
+    "check": "source unchanged courses.csv",
+    "observed": "cb42d60dae82db82b9def95cbf5825468be5afe0253865c4fb70fce67a91da84",
+    "expected": "cb42d60dae82db82b9def95cbf5825468be5afe0253865c4fb70fce67a91da84",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged assessments.csv",
+    "observed": "92740ea3ac54bdb9b36964b921e9be8e24729a7361b6abd311db372c7394b48a",
+    "expected": "92740ea3ac54bdb9b36964b921e9be8e24729a7361b6abd311db372c7394b48a",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged studentInfo.csv",
+    "observed": "8683c7ac492feea169044e183f244f6b70d457b623b231ef740869d2cc2c7c5e",
+    "expected": "8683c7ac492feea169044e183f244f6b70d457b623b231ef740869d2cc2c7c5e",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged studentRegistration.csv",
+    "observed": "5377a51cb77318c2d64a0d6005aec26d35f9c419877e832e4ca35ed1495ce2f2",
+    "expected": "5377a51cb77318c2d64a0d6005aec26d35f9c419877e832e4ca35ed1495ce2f2",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged studentAssessment.csv",
+    "observed": "1bdba52e0eaf2382c6980961d95549169e9ee06f25310a5f20eb7cda8e003884",
+    "expected": "1bdba52e0eaf2382c6980961d95549169e9ee06f25310a5f20eb7cda8e003884",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard title",
+    "observed": "FFF: assessment behavior, timing and educator workload",
+    "expected": "dataset-specific rendered title",
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 30, capacity 0.1",
+    "observed": "Test enrollments | 1,567 | Later adverse outcome | 35.7% | Flagged | 132 / 8.4% | Recall | 19.5%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 30, capacity 0.2",
+    "observed": "Test enrollments | 1,567 | Later adverse outcome | 35.7% | Flagged | 244 / 15.6% | Recall | 32.0%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 30, capacity 0.3",
+    "observed": "Test enrollments | 1,567 | Later adverse outcome | 35.7% | Flagged | 263 / 16.8% | Recall | 32.6%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 60, capacity 0.1",
+    "observed": "Test enrollments | 1,496 | Later adverse outcome | 32.6% | Flagged | 91 / 6.1% | Recall | 18.2%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 60, capacity 0.2",
+    "observed": "Test enrollments | 1,496 | Later adverse outcome | 32.6% | Flagged | 238 / 15.9% | Recall | 40.2%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 60, capacity 0.3",
+    "observed": "Test enrollments | 1,496 | Later adverse outcome | 32.6% | Flagged | 356 / 23.8% | Recall | 51.8%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 90, capacity 0.1",
+    "observed": "Test enrollments | 1,437 | Later adverse outcome | 29.9% | Flagged | 84 / 5.8% | Recall | 19.6%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 90, capacity 0.2",
+    "observed": "Test enrollments | 1,437 | Later adverse outcome | 29.9% | Flagged | 177 / 12.3% | Recall | 37.8%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 90, capacity 0.3",
+    "observed": "Test enrollments | 1,437 | Later adverse outcome | 29.9% | Flagged | 291 / 20.3% | Recall | 50.6%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter disability",
+    "observed": 2,
+    "expected": "at least two groups",
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter age_band",
+    "observed": 3,
+    "expected": "at least two groups",
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter final_result",
+    "observed": 4,
+    "expected": "at least two groups",
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter behavior_group",
+    "observed": 2,
+    "expected": "at least two groups",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path behavior",
+    "observed": "What early behavior differs by later outcome?\nAll due records present\n24.1%\nAt least one absent due record\n89.2%\n0.0%\n100.0%\nDue-record group\tn\tLater adverse outcome\tFinal Fail\tFuture Withdrawn\nAll due records present\t1,",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path models",
+    "observed": "Does behavior add to delayed marks?\nmodule\n0.326\nbehavior\n0.654\nscore\n0.616\ncombined\n0.725\nprevalence\n0.326\nabsent_due_rule\n0.528\n0.000\n1.000\nSignal\tn\tObserved risk\tAverage precision\tPrecision\tRecall\tAlert volume\tFalse p",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path workload",
+    "observed": "Review workload and missed risk\nPopulation\tValidation capacity\tn\tThreshold\tAlerts\tPrecision\tRecall\tFalse positives\tFalse negatives\ntest\t10.0%\t1,496\t0.959\t91\t97.8%\t18.2%\t2\t399\nvalidation\t10.0%\t428\t0.959\t43\t97.7%\t25.1%\t1\t1",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path timing",
+    "observed": "Timing, eligibility and lead time\nPresentation\tRaw n\tBaseline eligible\tWithdrawn by cutoff\tActive n\tWith due opportunities\tPrimary test n\n2013B\t1,614\t1,266\t173\t1,093\t1,093\t0\n2013J\t2,283\t1,985\t324\t1,661\t1,661\t0\n2014B\t1,50",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path sensitivity",
+    "observed": "Challenge release timing and the risk definition\nChallenge\tSignal\tn\tObserved risk\tAverage precision\tPrecision\tRecall\tAlert volume\tFalse positives\tFalse negatives\tBrier loss\nscore_delay_28\tscore\t1,496\t32.6%\t0.567\t63.5%\t33",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path audit",
+    "observed": "Who is missed?\nAudit group \ndisability\nage_band\nfinal_result\nbehavior_group\nGroup\tn\tObserved risk\tPrecision\tRecall\tAlert volume\tFalse positives\tFalse negatives\nN\t1,353\t31.2%\t81.6%\t40.0%\t15.3%\t38\t253\nY\t143\t46.2%\t87.1%\t40.",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../report.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../results/parent_overlap.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../results/independent_checks.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "reset retains rendered populated default",
+    "observed": 13,
+    "expected": "at least four evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "empty helper does not fabricate zero",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "undefined rates",
+    "status": "PASS"
+  },
+  {
+    "check": "no individual identifiers in public embedded tables",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered evidence tables",
+    "observed": 12,
+    "expected": "at least four",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

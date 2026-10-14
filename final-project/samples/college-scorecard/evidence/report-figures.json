@@ -1,0 +1,30 @@
+[
+  {
+    "figure": "completion_estimand_comparison",
+    "plotted_rows": 2,
+    "sources": [
+      {
+        "file": "results/outcome_definitions.csv",
+        "sha256": "efc932229a5ba8228dc9a63875d55dc92d2f5a0692c7612c5d18580b5b480ae0"
+      }
+    ],
+    "caption": "All valid reporting institutions in each metric family. Cohort weights are D150_4/D150_L4, not total enrollment. Different institutional and cohort estimands do not identify individual academic risk.",
+    "png": "figures/completion_estimand_comparison.png",
+    "svg": "figures/completion_estimand_comparison.svg",
+    "plotted_data": "figures/completion_estimand_comparison.csv"
+  },
+  {
+    "figure": "small_cohort_sensitivity",
+    "plotted_rows": 6,
+    "sources": [
+      {
+        "file": "results/small_cohort_sensitivity.csv",
+        "sha256": "0b6e60492b7b85f298adba26e8946440c00efdd386427c18d681c53515e40b01"
+      }
+    ],
+    "caption": "Completion-cohort minimums 1/30/100, with retained institution counts labeled. Restrictions change the population; they are sensitivity checks, not removal of proven errors. Rounded published rates make weighted totals approximate.",
+    "png": "figures/small_cohort_sensitivity.png",
+    "svg": "figures/small_cohort_sensitivity.svg",
+    "plotted_data": "figures/small_cohort_sensitivity.csv"
+  }
+]

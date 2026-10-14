@@ -1,0 +1,170 @@
+[
+  {
+    "check": "Finding-specific chart count",
+    "observed": 2,
+    "expected": "2",
+    "status": "PASS"
+  },
+  {
+    "check": "exercise_opportunity_distribution source fingerprint results/course_summary.csv",
+    "observed": "2a0dfffa31b55eebab4dc273132e7e9a0f358b0f39643a4f518a8432ffa5746f",
+    "expected": "2a0dfffa31b55eebab4dc273132e7e9a0f358b0f39643a4f518a8432ffa5746f",
+    "status": "PASS"
+  },
+  {
+    "check": "exercise_opportunity_distribution exported plotted rows",
+    "observed": 7,
+    "expected": 7,
+    "status": "PASS"
+  },
+  {
+    "check": "exercise_opportunity_distribution png",
+    "observed": 55476,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "exercise_opportunity_distribution svg",
+    "observed": 12139,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "exercise_opportunity_distribution plotted_data",
+    "observed": 98,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "manual_label_selection source fingerprint results/manual_label_sensitivity.csv",
+    "observed": "34399dc466bf71de89391b4ac80c3e59ea45c6a0167a7a954cff7383bfaba5cd",
+    "expected": "34399dc466bf71de89391b4ac80c3e59ea45c6a0167a7a954cff7383bfaba5cd",
+    "status": "PASS"
+  },
+  {
+    "check": "manual_label_selection exported plotted rows",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "manual_label_selection png",
+    "observed": 57556,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "manual_label_selection svg",
+    "observed": 6750,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "manual_label_selection plotted_data",
+    "observed": 192,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "Report charts render",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 1 caption/alt present",
+    "observed": "All 3,781 local courses, grouped by exercise-container count. Containers are groups of problems, not student submissions, obligations or deadlines. The 81+ bin includes counts up to 228.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 2 caption/alt present",
+    "observed": "Matched manually labeled courses versus the remaining local course universe; 85 unmatched manual course IDs are excluded only from field summaries. No student academic-risk inference is supported.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/exercise_opportunity_distribution.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/exercise_opportunity_distribution.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/manual_label_selection.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/manual_label_selection.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link ../../datasets/mooccubex/docs/course-en.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link ../../datasets/mooccubex/docs/user-en.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile page stays within viewport",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure preserves readable plotting width",
+    "observed": 900,
+    "expected": "at least 900 CSS pixels",
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure can scroll horizontally",
+    "observed": 542,
+    "expected": "positive offset",
+    "status": "PASS"
+  }
+]

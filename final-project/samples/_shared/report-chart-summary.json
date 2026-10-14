@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "fff",
+    "figures": 2,
+    "checks_passed": 27,
+    "visually_inspected": true
+  },
+  {
+    "dataset": "ednet",
+    "figures": 2,
+    "checks_passed": 26,
+    "visually_inspected": true
+  },
+  {
+    "dataset": "mooccubex",
+    "figures": 2,
+    "checks_passed": 28,
+    "visually_inspected": true
+  },
+  {
+    "dataset": "college-scorecard",
+    "figures": 2,
+    "checks_passed": 26,
+    "visually_inspected": true
+  },
+  {
+    "dataset": "pisa-2022",
+    "figures": 2,
+    "checks_passed": 26,
+    "visually_inspected": true
+  },
+  {
+    "dataset": "talis-2024",
+    "figures": 2,
+    "checks_passed": 26,
+    "visually_inspected": true
+  }
+]

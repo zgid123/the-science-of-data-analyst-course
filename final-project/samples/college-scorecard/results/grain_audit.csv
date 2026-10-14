@@ -1,0 +1,8 @@
+quantity,n
+institution rows,6273
+institution fields,3308
+field-of-study rows,227980
+field-of-study compound-key duplicate rows,0
+field-of-study identical selected rows,0
+field-of-study distinct nonempty UNITID,6128
+field-of-study rows without numeric UNITID,7020

@@ -1,0 +1,7 @@
+family,sector,min_completion_cohort,institutions,completion_mean,completion_weighted,cohort_students
+Four-year metric,All reported sectors,1,2263,0.521223110914715,0.6068103366815617,1857898.0
+Four-year metric,All reported sectors,30,1965,0.5293059541984733,0.6070715800338331,1854397.0
+Four-year metric,All reported sectors,100,1750,0.5390189142857142,0.6080745434311136,1842055.0
+Less-than-four-year metric,All reported sectors,1,2851,0.620596913363732,0.484424180114789,686651.0
+Less-than-four-year metric,All reported sectors,30,2171,0.5918542607093505,0.48095957622068,676201.0
+Less-than-four-year metric,All reported sectors,100,1328,0.5290335843373494,0.4653790548692768,629077.0

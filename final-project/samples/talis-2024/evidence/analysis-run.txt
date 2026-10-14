@@ -1,0 +1,8 @@
+/workspaces/tmp/the-science-of-data-analyst-course/final-project/samples/talis-2024/code/analyze.py:14: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  p=D/name;g=pd.read_csv(p,sep=';',usecols=cols);g['source']=name;frames.append(g);paths.append(p)
+atgintt4.csv teachers 55637
+btgintt4.csv teachers 194521
+ctgintt4.csv teachers 28225
+Country-level practice estimates 711
+Rows 278383 same as combined 278383
+Training/feedback common response valid total 351487

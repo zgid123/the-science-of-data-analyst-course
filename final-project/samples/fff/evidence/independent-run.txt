@@ -1,0 +1,23 @@
+[
+  {
+    "cutoff": 30,
+    "check": "independent raw opportunity and missing-fraction reconciliation",
+    "enrollments_examined": 1567,
+    "mismatches": 0,
+    "status": "PASS"
+  },
+  {
+    "cutoff": 60,
+    "check": "independent raw opportunity and missing-fraction reconciliation",
+    "enrollments_examined": 1496,
+    "mismatches": 0,
+    "status": "PASS"
+  },
+  {
+    "cutoff": 90,
+    "check": "independent raw opportunity and missing-fraction reconciliation",
+    "enrollments_examined": 1437,
+    "mismatches": 0,
+    "status": "PASS"
+  }
+]

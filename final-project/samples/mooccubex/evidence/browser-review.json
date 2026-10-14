@@ -1,0 +1,212 @@
+[
+  {
+    "check": "source unchanged course.json",
+    "observed": "ed7fba469a102a825afd5369da8b4fabc1f24fc1b9a13bdec1106bec27b052fc",
+    "expected": "ed7fba469a102a825afd5369da8b4fabc1f24fc1b9a13bdec1106bec27b052fc",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged course-field.json",
+    "observed": "3397b788c5fff587ec81e00cbe316807a4b801f128c98e39492a6a377b429368",
+    "expected": "3397b788c5fff587ec81e00cbe316807a4b801f128c98e39492a6a377b429368",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged concept-problem.txt",
+    "observed": "7f8aaeb76fd78efbcf3bc1194d484b888d3dc1602e0229601ef6007577617406",
+    "expected": "7f8aaeb76fd78efbcf3bc1194d484b888d3dc1602e0229601ef6007577617406",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged concept-course.txt",
+    "observed": "236b8bfaa00b1f8d0476c276182f7c9602004b89c95f80e3d1f1b9a4368687fd",
+    "expected": "236b8bfaa00b1f8d0476c276182f7c9602004b89c95f80e3d1f1b9a4368687fd",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged user-xiaomu.json",
+    "observed": "e3421d79b1b3ff25ab18383360136167a7d0fc196cca814c5b690ef75b794a77",
+    "expected": "e3421d79b1b3ff25ab18383360136167a7d0fc196cca814c5b690ef75b794a77",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged course-en.md",
+    "observed": "a65b67cb42d677bbb20237260fb483b0b7917176e6f12b3f4f14280e008d407f",
+    "expected": "a65b67cb42d677bbb20237260fb483b0b7917176e6f12b3f4f14280e008d407f",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged user-en.md",
+    "observed": "33f3655dbe91283d010be0fc3a0731d7aae90b063adad388797bae30c308202c",
+    "expected": "33f3655dbe91283d010be0fc3a0731d7aae90b063adad388797bae30c308202c",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard title",
+    "observed": "MOOCCubeX: what the local assessment-content snapshot can support",
+    "expected": "dataset-specific rendered title",
+    "status": "PASS"
+  },
+  {
+    "check": "field course-count filter 5",
+    "observed": 49,
+    "expected": 49,
+    "status": "PASS"
+  },
+  {
+    "check": "field course-count filter 10",
+    "observed": 25,
+    "expected": 25,
+    "status": "PASS"
+  },
+  {
+    "check": "field course-count filter 30",
+    "observed": 3,
+    "expected": 3,
+    "status": "PASS"
+  },
+  {
+    "check": "field course-count filter 50",
+    "observed": 1,
+    "expected": 1,
+    "status": "PASS"
+  },
+  {
+    "check": "resource count reconciles",
+    "observed": "Resource type\tCourses\tCourses with zero\tMean\tMedian\tQ25\tQ75\t95th percentile\tMemberships\nresources\t3,781\t0\t71.686\t59.000\t38.000\t88.000\t167.000\t271,043\nexercises\t3,781\t577\t17.806\t11.000\t5.000\t23.000\t60.000\t67,325\nvideos\t3,781\t11\t53.879\t44.000\t28.000\t66.000\t124.000\t203,718",
+    "expected": "67,325 exercise containers",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path gaps",
+    "observed": "Which links needed for early warning are actually present?\nRequired local file\tPresent\tNeeded for\nentities/user.json\tfalse\tenrollment and timing\nrelations/user-problem.json\tfalse\tstudent submission time, correctness and ",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path opportunities",
+    "observed": "How uneven is assessment content?\nResource type\tCourses\tCourses with zero\tMean\tMedian\tQ25\tQ75\t95th percentile\tMemberships\nresources\t3,781\t0\t71.686\t59.000\t38.000\t88.000\t167.000\t271,043\nexercises\t3,781\t577\t17.806\t11.000\t5.",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path linkage",
+    "observed": "Can concepts establish applicable assessment opportunities?\nLinkage quantity\tNumerator\tDenominator\tFraction\ncourses with concept-course edge\t887\t3,781\t23.5%\nconcept-course target courses present locally\t887\t887\t100.0%\npr",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path fields",
+    "observed": "Does manual labeling overstate exercise coverage?\nManual field label\n96.7%\nNo manual field label\n82.7%\n0.0%\n100.0%\nCourse group\tCourses\tMean exercise containers\tMedian exercise containers\tAt least one exercise\nManual fie",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path quality",
+    "observed": "Repeated edges are not repeated student attempts\nRelation\tRaw rows\tUnique pairs\tRepeated pairs\tDuplicate share\tDistinct left entities\tDistinct right entities\nconcept-problem\t33,180\t29,141\t4,039\t12.2%\t13,822\t19,983\nconcep",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../report.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "reset retains rendered populated default",
+    "observed": 8,
+    "expected": "at least four evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "empty helper does not fabricate zero",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "undefined rates",
+    "status": "PASS"
+  },
+  {
+    "check": "no individual identifiers in public embedded tables",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered evidence tables",
+    "observed": 10,
+    "expected": "at least four",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link ../../datasets/mooccubex/docs/course-en.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link ../../datasets/mooccubex/docs/user-en.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

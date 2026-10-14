@@ -1,0 +1,17 @@
+                    family               sector                        measure  raw_institutions  valid_institutions  coverage  unweighted_mean  median      q25     q75  weighted_mean  weighted_institutions  cohort_denominator                                               weight_meaning
+          Four-year metric All reported sectors                150% completion              6273                2263  0.360752         0.521223 0.52260 0.376350 0.66960       0.606810                   2263           1857898.0                                                       D150_4
+          Four-year metric All reported sectors            Full-time retention              6273                2058  0.328073         0.739670 0.75725 0.661725 0.84670            NaN                      0                 NaN Unavailable matching non-pooled retention cohort denominator
+          Four-year metric All reported sectors            Part-time retention              6273                1368  0.218077         0.454617 0.44440 0.250000 0.64460            NaN                      0                 NaN Unavailable matching non-pooled retention cohort denominator
+          Four-year metric All reported sectors Suppressed pooled FT retention              6273                1872  0.298422         0.741572 0.75455 0.668375 0.83235       0.817701                   1872           3215675.0                                           RET_FT_DEN4_POOLED
+Less-than-four-year metric All reported sectors                150% completion              6273                2851  0.454487         0.620597 0.64530 0.435850 0.80425       0.484424                   2851            686651.0                                                      D150_L4
+Less-than-four-year metric All reported sectors            Full-time retention              6273                2805  0.447154         0.722811 0.73120 0.618200 0.85710            NaN                      0                 NaN Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric All reported sectors            Part-time retention              6273                1574  0.250917         0.579723 0.52165 0.403800 0.78260            NaN                      0                 NaN Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric All reported sectors Suppressed pooled FT retention              6273                2538  0.404591         0.712019 0.71630 0.616525 0.83620       0.664209                   2538           1146878.0                                          RET_FT_DENL4_POOLED
+                                  quantity      n
+                          institution rows   6273
+                        institution fields   3308
+                       field-of-study rows 227980
+field-of-study compound-key duplicate rows      0
+    field-of-study identical selected rows      0
+   field-of-study distinct nonempty UNITID   6128
+field-of-study rows without numeric UNITID   7020

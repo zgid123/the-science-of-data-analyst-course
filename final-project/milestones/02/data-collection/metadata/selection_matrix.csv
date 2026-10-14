@@ -1,0 +1,11 @@
+criterion,OULAD,UCI697,UCI320,rationale
+AQ coverage,1,0,0,"OULAD hỗ trợ AQ1–AQ2, AQ3 có điều kiện; không có bằng chứng can thiệp AQ4."
+Population fit,2,1,0,OULAD khớp bối cảnh M1; S3 bậc đại học nhưng khác outcome; S4 phổ thông.
+Unit & granularity,2,1,1,OULAD có enrollment/bài/ngày; S3/S4 là hồ sơ tổng hợp.
+Outcome / target,2,1,0,OULAD có Fail/Withdrawn; target S3/S4 không tương đương học phần BBB.
+Feature timing,1,0,0,"OULAD có ngày sự kiện, thiếu ngày công bố điểm/ghi log; hai nguồn khác thiếu hạn/nộp."
+Temporal coverage,2,0,1,OULAD giữ chuỗi ngày; S4 có các kỳ điểm nhưng không tái hiện ngày 60.
+Documentation / provenance,2,2,2,Có nguồn chính thức và citation; OULAD có mô tả bảng.
+License / access,2,2,2,Ba landing page công bố CC BY 4.0; kiểm tra tại ngày truy cập.
+Quality feasibility,2,1,1,OULAD đọc được toàn bộ raw; hai nguồn khác chưa kiểm tra raw.
+Ethics / representativeness,1,1,1,Dữ liệu người học và bối cảnh nước ngoài; hạn chế khái quát hóa.

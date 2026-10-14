@@ -1,0 +1,17 @@
+{
+  "teacher_rows": 68054,
+  "school_rows": 21629,
+  "trend_rows": 1447787,
+  "teacher_types": {
+    "1.0": "Mathematics Teacher",
+    "2.0": "General Teacher",
+    "7.0": "Not Applicable",
+    "8.0": "Invalid",
+    "9.0": "No Response"
+  },
+  "teacher_replicates": 80,
+  "fay": 0.5,
+  "school_weight": "GRADE NONRESPONSE ADJUSTED SCHOOL BASE WEIGHT",
+  "source": "https://www.oecd.org/en/data/datasets/pisa-2022-database.html",
+  "variance_source": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/03/pisa-2022-technical-report_599753f0/01820d6d-en.pdf"
+}

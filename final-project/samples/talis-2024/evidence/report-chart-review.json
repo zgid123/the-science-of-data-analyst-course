@@ -1,0 +1,158 @@
+[
+  {
+    "check": "Finding-specific chart count",
+    "observed": 2,
+    "expected": "2",
+    "status": "PASS"
+  },
+  {
+    "check": "assessment_practices_and_need source fingerprint results/practice_estimates.csv",
+    "observed": "653895cfcdbc1370f7641fb6169803e498104e68b8c23bcb8f277edf93c93d5c",
+    "expected": "653895cfcdbc1370f7641fb6169803e498104e68b8c23bcb8f277edf93c93d5c",
+    "status": "PASS"
+  },
+  {
+    "check": "assessment_practices_and_need exported plotted rows",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "assessment_practices_and_need png",
+    "observed": 103083,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "assessment_practices_and_need svg",
+    "observed": 15294,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "assessment_practices_and_need plotted_data",
+    "observed": 948,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "rotated_form_coverage source fingerprint results/form_coverage.csv",
+    "observed": "ddbba84abf67b1ace438d9d2ffd454406433596234479d13c77d34c3156800eb",
+    "expected": "ddbba84abf67b1ace438d9d2ffd454406433596234479d13c77d34c3156800eb",
+    "status": "PASS"
+  },
+  {
+    "check": "rotated_form_coverage exported plotted rows",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "rotated_form_coverage png",
+    "observed": 73561,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "rotated_form_coverage svg",
+    "observed": 11003,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "rotated_form_coverage plotted_data",
+    "observed": 372,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "Report charts render",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 1 caption/alt present",
+    "observed": "Australia lower-secondary teachers; practice success is frequent/always, need is moderate/high. Whiskers: normal 95% intervals using 100 Fay-BRR replicates (factor 0.5). Item-specific denominators differ; adjudication rating 2 (fair).",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 2 caption/alt present",
+    "observed": "Fixed full local ISCED-2 extract across all systems, not Australia only. Each bar divides valid item responses by that form\u2019s respondents; zero valid responses on Form 1 indicates design/routing absence, not zero feedback.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/assessment_practices_and_need.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/assessment_practices_and_need.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/rotated_form_coverage.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/rotated_form_coverage.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile page stays within viewport",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure preserves readable plotting width",
+    "observed": 900,
+    "expected": "at least 900 CSS pixels",
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure can scroll horizontally",
+    "observed": 542,
+    "expected": "positive offset",
+    "status": "PASS"
+  }
+]

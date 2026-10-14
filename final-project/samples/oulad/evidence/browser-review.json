@@ -1,0 +1,329 @@
+[
+  {
+    "check": "raw source unchanged: courses.csv",
+    "observed": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+    "expected": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+    "status": "PASS"
+  },
+  {
+    "check": "raw source unchanged: assessments.csv",
+    "observed": "8cc738fb88ad760571d6f2a23059bfee0ffcae3bcd830514c9cbd5c6d5a046f1",
+    "expected": "8cc738fb88ad760571d6f2a23059bfee0ffcae3bcd830514c9cbd5c6d5a046f1",
+    "status": "PASS"
+  },
+  {
+    "check": "raw source unchanged: studentInfo.csv",
+    "observed": "7e6f3e474a5eee00639d2a414a6c7e928745823c2d2c2563ca1780145f99b0d6",
+    "expected": "7e6f3e474a5eee00639d2a414a6c7e928745823c2d2c2563ca1780145f99b0d6",
+    "status": "PASS"
+  },
+  {
+    "check": "raw source unchanged: studentRegistration.csv",
+    "observed": "0d32676285372aaf2e7a80304e5b274b4fba24313e2ca4c04317225e1ec90170",
+    "expected": "0d32676285372aaf2e7a80304e5b274b4fba24313e2ca4c04317225e1ec90170",
+    "status": "PASS"
+  },
+  {
+    "check": "raw source unchanged: studentAssessment.csv",
+    "observed": "fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e",
+    "expected": "fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard initial rendered model rows",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 30, capacity 0.1: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 6,102 | Later adverse outcomes | 35.1% | Flagged for review | 801 / 13.1% | Recall at this workload | 22.2%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 30 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 30, capacity 0.2: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 6,102 | Later adverse outcomes | 35.1% | Flagged for review | 1,892 / 31.0% | Recall at this workload | 39.0%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 30 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 30, capacity 0.3: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 6,102 | Later adverse outcomes | 35.1% | Flagged for review | 1,956 / 32.1% | Recall at this workload | 40.0%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 30 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 60, capacity 0.1: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 5,903 | Later adverse outcomes | 32.9% | Flagged for review | 887 / 15.0% | Recall at this workload | 26.7%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 60 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 60, capacity 0.2: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 5,903 | Later adverse outcomes | 32.9% | Flagged for review | 1,358 / 23.0% | Recall at this workload | 41.5%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 60 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 60, capacity 0.3: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 5,903 | Later adverse outcomes | 32.9% | Flagged for review | 1,791 / 30.3% | Recall at this workload | 51.5%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 60 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 90, capacity 0.1: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 5,746 | Later adverse outcomes | 31.1% | Flagged for review | 431 / 7.5% | Recall at this workload | 23.2%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 90 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 90, capacity 0.2: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 5,746 | Later adverse outcomes | 31.1% | Flagged for review | 1,290 / 22.5% | Recall at this workload | 44.9%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 90 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard day 90, capacity 0.3: n/alerts/recall match CSV",
+    "observed": "Eligible test enrollments | 5,746 | Later adverse outcomes | 31.1% | Flagged for review | 1,808 / 31.5% | Recall at this workload | 60.4%",
+    "expected": "exact formatted saved test values",
+    "status": "PASS"
+  },
+  {
+    "check": "coverage day 90 all cohorts",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter code_module",
+    "observed": 6,
+    "expected": "at least two populated groups",
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter disability",
+    "observed": 2,
+    "expected": "at least two populated groups",
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter age_band",
+    "observed": 3,
+    "expected": "at least two populated groups",
+    "status": "PASS"
+  },
+  {
+    "check": "audit filter behavior_group",
+    "observed": 2,
+    "expected": "at least two populated groups",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task behavior",
+    "observed": "Absent due records and later outcomes\nAll due records present\n25.8%\nAt least one absent due record\n85.3%\nNo assessments due\n35.4%\n0%\n100%\nDue-record group\tn\tLater risk\tFinal Fail\tF",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task incremental_value",
+    "observed": "Does behavior add to early scores?\nmodule\n0.352\nbehavior\n0.646\nscore\n0.449\ncombined\n0.586\nprevalence\n0.329\nabsent_due_rule\n0.468\n0.0\n1.0\nSignal\tTest n\tAP\tPrecision\tRecall\tAlert vol",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task transport_followup",
+    "observed": "Why more features do not always help\nCutoff day\tCombined \u2212 behavior AP\t95% interval low\t95% interval high\n30\t-0.045\t-0.059\t-0.030\n60\t-0.060\t-0.078\t-0.043\n90\t0.031\t0.016\t0.049\n\nNega",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task workload",
+    "observed": "What would educators need to review?\nPopulation\tValidation capacity\tRisk threshold\tn\tAlerts\tAlert volume\tPrecision\tRecall\tFalse positives\tFalse negatives\ntest\t10.0%\t0.856\t5,903\t887",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task lead_time",
+    "observed": "How much support time remains?\nFixed 20% reference group\tn\t25th percentile (days)\tMedian days\t75th percentile (days)\tUnder 14 days\tTiming meaning\nall_future_withdrawals\t714\t35\t72\t1",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task delay_and_target_sensitivity",
+    "observed": "Which assumptions change the result?\nExecuted challenge\tSignal\tTest n\tAP\tPrecision\tRecall\tAlert volume\nscore_delay_28\tscore\t5,903\t0.429\t49.9%\t42.5%\t28.0%\nscore_delay_28\tcombined\t5,",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader task subgroup_and_calibration",
+    "observed": "Who is missed or falsely flagged?\nAudit group \nModule\nDeclared disability\nAge band\nDue-record group\nGroup\tGroup n\tLater risk\tPrecision\tRecall\tFlagged\tFalse positives\tFalse negative",
+    "expected": "nonempty comparison and explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "full-snapshot descriptive cohort 2013B",
+    "observed": 12,
+    "expected": "observed outcome rows",
+    "status": "PASS"
+  },
+  {
+    "check": "full-snapshot descriptive cohort 2013J",
+    "observed": 24,
+    "expected": "observed outcome rows",
+    "status": "PASS"
+  },
+  {
+    "check": "full-snapshot descriptive cohort 2014B",
+    "observed": 24,
+    "expected": "observed outcome rows",
+    "status": "PASS"
+  },
+  {
+    "check": "full-snapshot descriptive cohort 2014J",
+    "observed": 28,
+    "expected": "observed outcome rows",
+    "status": "PASS"
+  },
+  {
+    "check": "explicit empty-state helper",
+    "observed": "No observations for this selection; the rate is undefined.",
+    "expected": "No observations and undefined explanation",
+    "status": "PASS"
+  },
+  {
+    "check": "reset controls",
+    "observed": "60/0.2",
+    "expected": "60/0.2",
+    "status": "PASS"
+  },
+  {
+    "check": "no embedded student identifiers",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered tables",
+    "observed": 17,
+    "expected": "at least 10 evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "report figure assets loaded",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report required findings sections",
+    "observed": [
+      "1. Missing due records are associated with later risk, including within modules",
+      "2. Earlier warnings trade evidence for support time",
+      "3. Behavior adds information beyond a delayed-score baseline",
+      "Combining scores can reduce early warning quality under cohort shift",
+      "4. Review workload, missed students and probability reliability matter",
+      "Definitions, timing and reproducible design",
+      "Quality, selection and limits",
+      "Verification and question coverage"
+    ],
+    "expected": "behavior, timing, incremental value, workload, definitions",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "browser JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

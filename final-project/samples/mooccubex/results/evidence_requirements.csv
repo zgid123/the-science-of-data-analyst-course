@@ -1,0 +1,7 @@
+required_file,present,needed_for
+entities/user.json,False,enrollment and timing
+relations/user-problem.json,False,"student submission time, correctness and score"
+relations/exercise-problem.json,False,exercise-container to problem linkage (documented JSON location)
+relations/exercise-problem.txt,False,exercise-container to problem linkage (documented TXT variant)
+entities/problem.json,False,"problem identifiers, content and scores"
+entities/reply.json,False,reply text and creation time

@@ -1,0 +1,22 @@
+goal_smart_kpi_aq_type,requirement,actual_files_variables,coverage_gap,decision
+"BG1/SG1
+KPI1/2
+AQ1
+Descriptive",Hạn/bản nộp theo ngày; population; mẫu số lượt đến hạn.,"assessments: id_assessment, code_module, code_presentation, date, assessment_type, weight.
+studentAssessment: id_student, id_assessment, date_submitted, is_banked.
+studentRegistration: khóa enrollment, date_registration, date_unregistration.",Full cho mô tả “chưa có bản nộp được ghi nhận” hồi cứu; không xác nhận nghĩa vụ/gia hạn cá nhân.,Giảng viên/cố vấn chọn bài/tuần cần kiểm tra.
+"BG1/SG1
+KPI1/2
+AQ2
+Diagnostic",Nhóm outcome; chỉ báo trước mốc và VLE.,"AQ1 + studentInfo: khóa enrollment, final_result.
+studentVle: code_module, code_presentation, id_student, id_site, date, sum_click.
+vle: id_site, code_module, code_presentation, activity_type (bổ sung).",Full cho liên hệ quan sát; không có căn cứ nhân quả hoặc xác minh động cơ cá nhân.,"Chọn căn cứ cần hỏi thêm, giữ giới hạn diễn giải."
+"BG1/SG1
+KPI1/2
+AQ3
+Predictive",Target tương lai; đầu vào có sẵn; đánh giá riêng.,"AQ1/AQ2; final_result và date_unregistration chỉ để đối chiếu/eligibility.
+score là tùy chọn, chưa chứng minh ngày công bố. Không có trường ingestion_time / grade_release_time.",Partial: cấu trúc cho hồi cứu có điều kiện; thiếu lịch ghi nhận/công bố và thiết kế đánh giá đã kiểm chứng.,Giảng viên/cố vấn chỉ duyệt khả thi; chưa dùng danh sách để liên hệ.
+"BG1/SG1
+KPI1/2
+AQ4
+Prescriptive (M1)","Action, nguồn lực, consent, ngoại lệ; kết quả sau hỗ trợ.","OULAD chỉ có đầu vào nguy cơ. Không có cột intervention, consent, owner, capacity, cost hoặc post_action_outcome.",None cho đánh giá can thiệp. Chỉ Partial ở phần yêu cầu ưu tiên từ AQ3; không có bằng chứng chọn hỗ trợ hiệu quả.,Giữ nhu cầu tương lai; mọi bước hỗ trợ cần người thật xác minh/duyệt.

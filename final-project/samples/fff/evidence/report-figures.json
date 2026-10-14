@@ -1,0 +1,34 @@
+[
+  {
+    "figure": "due_records_and_risk",
+    "plotted_rows": 2,
+    "sources": [
+      {
+        "file": "results/behavior_comparisons.csv",
+        "sha256": "c204432295258da04951ef71d3a006b5f901871eb590b77e9addba057152221a"
+      }
+    ],
+    "caption": "FFF day-60 eligible 2014J first-attempt test enrollments; rates divide later adverse outcomes by each due-record group. Individual deadline exceptions are unknown.",
+    "png": "figures/due_records_and_risk.png",
+    "svg": "figures/due_records_and_risk.svg",
+    "plotted_data": "figures/due_records_and_risk.csv"
+  },
+  {
+    "figure": "ranking_across_cutoffs",
+    "plotted_rows": 9,
+    "sources": [
+      {
+        "file": "results/model_metrics.csv",
+        "sha256": "1948aaa329d9bfbcae27528912fb688c0c4e0b99d1c629a2c9cbfe9c5d1778f3"
+      },
+      {
+        "file": "results/uncertainty.csv",
+        "sha256": "8f0690eff61d270a99d7b1fe6b2e70478c826a76df5d0e9185c35c42729ab39b"
+      }
+    ],
+    "caption": "FFF held-out 2014J first attempts; all signals use the same eligible population at each cutoff. Whiskers are 95% student-cluster bootstrap intervals (300 replicates, fixed models); population changes across cutoffs.",
+    "png": "figures/ranking_across_cutoffs.png",
+    "svg": "figures/ranking_across_cutoffs.svg",
+    "plotted_data": "figures/ranking_across_cutoffs.csv"
+  }
+]

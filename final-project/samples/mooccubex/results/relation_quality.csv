@@ -1,0 +1,6 @@
+relation,raw_rows,unique_pairs,duplicate_rows,duplicate_fraction,left_entities,right_entities,malformed_rows
+concept-problem,33180,29141,4039,0.12172995780590717,13822,19983,0
+concept-course,451078,451078,0,0.0,216096,887,0
+course-teacher,97192,46006,51186,0.526648283809367,13866,12252,0
+user-reply,331011,331011,0,0.0,50313,331011,0
+comment-reply,370493,370493,0,0.0,308213,370493,0

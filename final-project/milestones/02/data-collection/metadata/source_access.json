@@ -1,0 +1,31 @@
+[
+  {
+    "id": "oulad-uci",
+    "url": "https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset",
+    "final_url": "https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset",
+    "status": 200,
+    "bytes": 78418,
+    "access_date": "2026-10-14"
+  },
+  {
+    "id": "oulad-dictionary",
+    "url": "https://research.stem.open.ac.uk/ouanalyse/open-dataset-more/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "dropout-uci",
+    "url": "https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success",
+    "final_url": "https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success",
+    "status": 200,
+    "bytes": 592553,
+    "access_date": "2026-10-14"
+  },
+  {
+    "id": "performance-uci",
+    "url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+    "final_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+    "status": 200,
+    "bytes": 264379,
+    "access_date": "2026-10-14"
+  }
+]

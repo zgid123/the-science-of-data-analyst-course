@@ -1,0 +1,26 @@
+Read 5000 sample users; eligible snapshots 2411
+Read 10000 sample users; eligible snapshots 4868
+Read 15000 sample users; eligible snapshots 7370
+Read 20000 sample users; eligible snapshots 9866
+Read 25000 sample users; eligible snapshots 12174
+Read 30000 sample users; eligible snapshots 14660
+Read 35000 sample users; eligible snapshots 17163
+Read 40000 sample users; eligible snapshots 19520
+Read 45000 sample users; eligible snapshots 21961
+Read 50000 sample users; eligible snapshots 24591
+ cutoff               model  capacity split    n  prevalence       ap      auc    brier  threshold  alerts  alert_rate  precision   recall  tp  fp  fn   tn
+     10            behavior       0.2  test 1315    0.098859 0.113511 0.510841 0.089103   0.100344     261    0.198479   0.111111 0.223077  29 232 101  953
+     10               score       0.2  test 1315    0.098859 0.181645 0.639731 0.086419   0.121366     431    0.327757   0.143852 0.476923  62 369  68  816
+     10            combined       0.2  test 1315    0.098859 0.190097 0.642278 0.086246   0.128775     283    0.215209   0.190813 0.415385  54 229  76  956
+     10          prevalence       0.0  test 1315    0.098859 0.098859 0.500000 0.089100   1.000000       0    0.000000        NaN 0.000000   0   0 130 1185
+     10 prior_accuracy_rule       0.0  test 1315    0.098859 0.136734 0.607546 0.219772   0.500000     261    0.198479   0.195402 0.392308  51 210  79  975
+     30            behavior       0.2  test 1279    0.066458 0.102342 0.627471 0.061630   0.068052     258    0.201720   0.108527 0.329412  28 230  57  964
+     30               score       0.2  test 1279    0.066458 0.194889 0.756547 0.058058   0.088870     297    0.232213   0.164983 0.576471  49 248  36  946
+     30            combined       0.2  test 1279    0.066458 0.197749 0.764568 0.058148   0.089555     272    0.212666   0.172794 0.552941  47 225  38  969
+     30          prevalence       0.0  test 1279    0.066458 0.066458 0.500000 0.062100   1.000000       0    0.000000        NaN 0.000000   0   0  85 1194
+     30 prior_accuracy_rule       0.0  test 1279    0.066458 0.092929 0.586299 0.139953   0.500000     140    0.109461   0.164286 0.270588  23 117  62 1077
+     60            behavior       0.2  test 1008    0.054563 0.089421 0.615625 0.051233   0.068792     168    0.166667   0.095238 0.290909  16 152  39  801
+     60               score       0.2  test 1008    0.054563 0.232797 0.819918 0.046169   0.081387     222    0.220238   0.175676 0.709091  39 183  16  770
+     60            combined       0.2  test 1008    0.054563 0.211877 0.797787 0.047021   0.078619     232    0.230159   0.172414 0.727273  40 192  15  761
+     60          prevalence       0.0  test 1008    0.054563 0.054563 0.500000 0.051594   1.000000       0    0.000000        NaN 0.000000   0   0  55  953
+     60 prior_accuracy_rule       0.0  test 1008    0.054563 0.088549 0.580063 0.081349   0.500000      49    0.048611   0.224490 0.200000  11  38  44  915

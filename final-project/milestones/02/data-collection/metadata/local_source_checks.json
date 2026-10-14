@@ -1,0 +1,30 @@
+[
+  {
+    "file": "studentAssessment.csv",
+    "local_matches_packaged_raw": true
+  },
+  {
+    "file": "studentVle.csv",
+    "local_matches_packaged_raw": true
+  },
+  {
+    "file": "assessments.csv",
+    "local_matches_packaged_raw": true
+  },
+  {
+    "file": "courses.csv",
+    "local_matches_packaged_raw": true
+  },
+  {
+    "file": "studentInfo.csv",
+    "local_matches_packaged_raw": true
+  },
+  {
+    "file": "studentRegistration.csv",
+    "local_matches_packaged_raw": true
+  },
+  {
+    "file": "vle.csv",
+    "local_matches_packaged_raw": true
+  }
+]

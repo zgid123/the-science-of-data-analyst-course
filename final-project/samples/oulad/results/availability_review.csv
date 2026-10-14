@@ -1,0 +1,8 @@
+check,observed,expected,status,consequence,method
+Score release days,No score-release field in studentAssessment.csv,Observed score availability by warning cutoff,NOT VERIFIED,Score estimates conditional on +14/+28 day assumptions,Source schema/record and design review; REPORT.md timing/limits
+Submission logging availability,Event day recorded; insertion/revision timestamps absent,Submission record actually visible by warning cutoff,NOT VERIFIED,Behavior warning conditional on timely logging; +7 day challenge,Source schema/record and design review; REPORT.md timing/limits
+Historical label publication,Actual publication day absent; calendar bound assumes +60 days,Labels released before deployment,NOT VERIFIED,Temporal simulation conditional on publication assumption,Source schema/record and design review; REPORT.md timing/limits
+Failure event timing,Final Fail category without event/release day,Actual warning-to-failure interval,NOT VERIFIED,Course-end proxy only,Source schema/record and design review; REPORT.md timing/limits
+Individual assessment applicability,Schedules available; individual extensions/exemptions absent,Due denominator equals individual obligation,NOT VERIFIED,Absent due records remain proxy behavior,Source schema/record and design review; REPORT.md timing/limits
+Stakeholder capacity,No supplied workload limit,Educator-approved review capacity,NOT VERIFIED,10/20/30 percent are proposed comparisons,Source schema/record and design review; REPORT.md timing/limits
+Intervention effectiveness,No intervention implemented,Observed support effect,NOT APPLICABLE,No intervention-effect claim,Source schema/record and design review; REPORT.md timing/limits

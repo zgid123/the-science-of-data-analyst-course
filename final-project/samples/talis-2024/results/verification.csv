@@ -1,0 +1,14 @@
+check,observed,expected,status,method,consequence
+atgintt4.csv unique teacher-population keys,0,0 duplicate keys,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+atgintt4.csv extracted bytes match supplied zip member CRC,3343828969,3343828969,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+btgintt4.csv unique teacher-population keys,0,0 duplicate keys,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+btgintt4.csv extracted bytes match supplied zip member CRC,924724452,924724452,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+ctgintt4.csv unique teacher-population keys,0,0 duplicate keys,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+ctgintt4.csv extracted bytes match supplied zip member CRC,4267813999,4267813999,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+combined analytic level rows,278383,278383 sum of three extracts,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+combined export unique respondent keys,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+"combined export equals level extracts on keys, levels and selected items",0,0 mismatched respondent rows,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+primary valid survey weights,0,0 teachers,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+independent weighted proportion,0.8766582502972865,0.8766582502972867 within 1e-12,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+student future risk linkage,"Teachers/principals surveyed once, no student event/outcome linkage",Student assessment records linked to later academic outcomes,NOT VERIFIED,Actual source schema and documented coverage review,No student early-warning model or causal practice effect supported
+absence versus form-assigned missingness,Questionnaire form IDs and nonvalid codes retained; full routing not reconstructed,Complete item-specific routing metadata for each respondent,NOT VERIFIED,Actual source schema and documented coverage review,Nonresponse/by-design missingness not equated; complete-case conditional estimates

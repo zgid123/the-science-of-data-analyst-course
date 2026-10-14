@@ -1,0 +1,206 @@
+[
+  {
+    "check": "source unchanged CY08MSP_TCH_QQQ.SAV",
+    "observed": "d76cdaa0378f0aae440bb2bcbd4415149bcd19e41449ddb983c8a7ff2ba6b247",
+    "expected": "d76cdaa0378f0aae440bb2bcbd4415149bcd19e41449ddb983c8a7ff2ba6b247",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged CY08MSP_SCH_QQQ.SAV",
+    "observed": "9698b4e274c61068485199bd27a70fbbd8e22e87af8f33372d89af31ecdcd77b",
+    "expected": "9698b4e274c61068485199bd27a70fbbd8e22e87af8f33372d89af31ecdcd77b",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged escs_trend.csv",
+    "observed": "0dcdeae084d3b091beaef1d8628d567b343cdf32cf3a1c460d76c81d43d751b2",
+    "expected": "0dcdeae084d3b091beaef1d8628d567b343cdf32cf3a1c460d76c81d43d751b2",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged ReadMe.txt",
+    "observed": "2a89401c2e6334cebc65fd1952c49b111fc14022b9d0b67c1b8e694c751451e9",
+    "expected": "2a89401c2e6334cebc65fd1952c49b111fc14022b9d0b67c1b8e694c751451e9",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard title",
+    "observed": "PISA 2022: feedback and assessment records before warning analytics",
+    "expected": "dataset-specific rendered title",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain AUS/1 row count",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Teacher-reported measure\tDomain respondents\tValid positive-weight n\tWeighted share\tValid unweighted\t95% low\t95% high\nDevelop own assessment\t3,554\t3,451\t41.7%\t41.1%\t39.4%\t43.9%\nWrit",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain AUS/2 row count",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Teacher-reported measure\tDomain respondents\tValid positive-weight n\tWeighted share\tValid unweighted\t95% low\t95% high\nDevelop own assessment\t7,843\t7,570\t51.6%\t52.6%\t50.2%\t53.1%\nWrit",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain BRA/1 row count",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Teacher-reported measure\tDomain respondents\tValid positive-weight n\tWeighted share\tValid unweighted\t95% low\t95% high\nDevelop own assessment\t886\t848\t77.0%\t75.0%\t73.9%\t80.0%\nWritten ",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain BRA/2 row count",
+    "observed": 4,
+    "expected": 4,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Teacher-reported measure\tDomain respondents\tValid positive-weight n\tWeighted share\tValid unweighted\t95% low\t95% high\nDevelop own assessment\t4,760\t4,567\t77.6%\t78.1%\t75.9%\t79.2%\nWrit",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "actual absent optional teacher domain ALB",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "explicit undefined state",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path feedback",
+    "observed": "Which feedback leaves a potential assessment record?\nDevelop own assessment\n41.7%\nWritten feedback beyond marks\n32.0%\nImmediate task feedback\n84.8%\nModerate/high assessment training need\n21.1%\n0.0%\n100.0%\nTeacher-reporte",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path paired",
+    "observed": "Compare feedback on the same teachers\nCommon-respondent comparison\tCommon valid n\tDifference (proportion)\t95% low\t95% high\nImmediate minus written feedback\t3,446\t0.528\t0.508\t0.549\n\nCommon-response difference avoids attri",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path schools",
+    "observed": "Does a reported recording policy supply student histories?\nSchool-reported practice\tSample schools\tValid positive-weight n\tBase-weighted descriptive share\tUnweighted share\tUncertainty boundary\nTeacher-developed tests mon",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path needs",
+    "observed": "Assessment training needs by written-feedback practice\nWritten-feedback use\tCommon valid n\tModerate/high training need\t95% low\t95% high\nless often\t2,310\t21.0%\t19.1%\t22.9%\nmost/every lesson\t1,104\t21.3%\t18.0%\t24.6%\n\nExplor",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path coverage",
+    "observed": "Who and what years are actually observed?\nRespondent source\tTeacher type (0=school)\tRespondents\tPositive-weight n\tDistinct schools\nteacher\t1\t3,554\t3,554\t706\nteacher\t2\t7,843\t7,843\t718\nschool\t0\t743\t743\t743\nHistorical expor",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../report.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "reset retains rendered populated default",
+    "observed": 7,
+    "expected": "at least four evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "empty helper does not fabricate zero",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "undefined rates",
+    "status": "PASS"
+  },
+  {
+    "check": "no individual identifiers in public embedded tables",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered evidence tables",
+    "observed": 8,
+    "expected": "at least four",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

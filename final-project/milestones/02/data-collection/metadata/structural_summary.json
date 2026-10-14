@@ -1,0 +1,76 @@
+{
+  "checked_at_utc": "2026-10-14T05:34:20.256143+00:00",
+  "archive_sha256": "90dda45037939953f979072fa70a809ebe07e90ec783c408762af7698a3825ec",
+  "archive_bytes": 46750706,
+  "archive_crc": "PASS",
+  "scope": "BBB-2014J",
+  "scope_rows": {
+    "studentInfo": 2292,
+    "studentRegistration": 2292,
+    "studentVle": 438424,
+    "vle": 207,
+    "assessments": 6,
+    "courses": 1,
+    "studentAssessment": 7408
+  },
+  "scope_outcomes": {
+    "Distinction": 180,
+    "Fail": 391,
+    "Pass": 972,
+    "Withdrawn": 749
+  },
+  "eligible_day60": 1741,
+  "eligible_day60_outcomes": {
+    "Distinction": 180,
+    "Fail": 391,
+    "Pass": 972,
+    "Withdrawn": 198
+  },
+  "scope_assessments": [
+    {
+      "id_assessment": 15020,
+      "assessment_type": "TMA",
+      "date": 19,
+      "weight": 0.0
+    },
+    {
+      "id_assessment": 15021,
+      "assessment_type": "TMA",
+      "date": 54,
+      "weight": 10.0
+    },
+    {
+      "id_assessment": 15022,
+      "assessment_type": "TMA",
+      "date": 110,
+      "weight": 20.0
+    },
+    {
+      "id_assessment": 15023,
+      "assessment_type": "TMA",
+      "date": 152,
+      "weight": 35.0
+    },
+    {
+      "id_assessment": 15024,
+      "assessment_type": "TMA",
+      "date": 201,
+      "weight": 35.0
+    },
+    {
+      "id_assessment": 15025,
+      "assessment_type": "Exam",
+      "date": null,
+      "weight": 100.0
+    }
+  ],
+  "scope_length": 262,
+  "foreign_keys": {
+    "registration_without_studentInfo": 0,
+    "assessment_record_without_assessment": 0,
+    "vle_record_without_material": 0,
+    "vle_record_without_enrollment": 0,
+    "submission_without_enrollment": 0
+  },
+  "archive_unchanged": "PASS"
+}

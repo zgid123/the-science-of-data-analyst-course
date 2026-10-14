@@ -1,0 +1,6 @@
+check,numerator,denominator,fraction
+courses with concept-course edge,887,3781,0.23459402274530547
+concept-course target courses present locally,887,887,1.0
+problem concepts also linked to courses,6067,13822,0.4389379250470265
+distinct course exercise ids,67325,67325,1.0
+course-resource duplicate memberships,0,271043,0.0

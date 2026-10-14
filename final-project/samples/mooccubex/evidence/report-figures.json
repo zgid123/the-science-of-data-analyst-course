@@ -1,0 +1,30 @@
+[
+  {
+    "figure": "exercise_opportunity_distribution",
+    "plotted_rows": 7,
+    "sources": [
+      {
+        "file": "results/course_summary.csv",
+        "sha256": "2a0dfffa31b55eebab4dc273132e7e9a0f358b0f39643a4f518a8432ffa5746f"
+      }
+    ],
+    "caption": "All 3,781 local courses, grouped by exercise-container count. Containers are groups of problems, not student submissions, obligations or deadlines. The 81+ bin includes counts up to 228.",
+    "png": "figures/exercise_opportunity_distribution.png",
+    "svg": "figures/exercise_opportunity_distribution.svg",
+    "plotted_data": "figures/exercise_opportunity_distribution.csv"
+  },
+  {
+    "figure": "manual_label_selection",
+    "plotted_rows": 2,
+    "sources": [
+      {
+        "file": "results/manual_label_sensitivity.csv",
+        "sha256": "34399dc466bf71de89391b4ac80c3e59ea45c6a0167a7a954cff7383bfaba5cd"
+      }
+    ],
+    "caption": "Matched manually labeled courses versus the remaining local course universe; 85 unmatched manual course IDs are excluded only from field summaries. No student academic-risk inference is supported.",
+    "png": "figures/manual_label_selection.png",
+    "svg": "figures/manual_label_selection.svg",
+    "plotted_data": "figures/manual_label_selection.csv"
+  }
+]

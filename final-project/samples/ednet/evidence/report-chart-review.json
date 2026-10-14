@@ -1,0 +1,158 @@
+[
+  {
+    "check": "Finding-specific chart count",
+    "observed": 2,
+    "expected": "2",
+    "status": "PASS"
+  },
+  {
+    "check": "incremental_behavior_value source fingerprint results/uncertainty.csv",
+    "observed": "194a8db57bd004368468daec845e5bde5d870f4c1f81c5305d28b206d7805a49",
+    "expected": "194a8db57bd004368468daec845e5bde5d870f4c1f81c5305d28b206d7805a49",
+    "status": "PASS"
+  },
+  {
+    "check": "incremental_behavior_value exported plotted rows",
+    "observed": 3,
+    "expected": 3,
+    "status": "PASS"
+  },
+  {
+    "check": "incremental_behavior_value png",
+    "observed": 54686,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "incremental_behavior_value svg",
+    "observed": 9468,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "incremental_behavior_value plotted_data",
+    "observed": 288,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "next_question_lead_time source fingerprint results/lead_time.csv",
+    "observed": "3e4799b18e8853d6bb664e2933c15df7ac93c2b060534088d091e2c2a5496c8b",
+    "expected": "3e4799b18e8853d6bb664e2933c15df7ac93c2b060534088d091e2c2a5496c8b",
+    "status": "PASS"
+  },
+  {
+    "check": "next_question_lead_time exported plotted rows",
+    "observed": 3,
+    "expected": 3,
+    "status": "PASS"
+  },
+  {
+    "check": "next_question_lead_time png",
+    "observed": 57702,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "next_question_lead_time svg",
+    "observed": 10596,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "next_question_lead_time plotted_data",
+    "observed": 222,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "Report charts render",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 1 caption/alt present",
+    "observed": "EdNet held-out continuing users. Every paired 95% user-bootstrap interval includes zero (500 replicates, fixed models); the target is next-20-bundle accuracy below 40%, not course failure.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 2 caption/alt present",
+    "observed": "EdNet eligible held-out users; dots are median intervals to the first future question and whiskers are the interquartile range, not confidence intervals. Completion timing is approximated by presentation time plus recorded duration.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/incremental_behavior_value.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/incremental_behavior_value.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/next_question_lead_time.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/next_question_lead_time.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile page stays within viewport",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure preserves readable plotting width",
+    "observed": 900,
+    "expected": "at least 900 CSS pixels",
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure can scroll horizontally",
+    "observed": 542,
+    "expected": "positive offset",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,4 @@
+check,source_respondents,replicates,observed,expected,tolerance,status,method
+Reference weighted rate scalar recomputation,3451,80,0.3196345451634141,0.3196345451634145,1e-12,PASS,Independent Python scalar weighted sums for each replicate
+Reference Fay-BRR SE scalar recomputation,3451,80,0.009624063930766346,0.0096240639307664,1e-12,PASS,Independent Python scalar weighted sums for each replicate
+Nonfinite/negative supplied replicate weights,68054,80,0.0,0.0,,PASS,All replicate cells in supplied reference-level file

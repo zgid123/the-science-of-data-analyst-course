@@ -1,0 +1,3 @@
+file,bytes,sha256
+datasets/college-scorecard/Most-Recent-Cohorts-Institution.csv,100102932,89e8a35a6588dfb81a6ce78fa9df4cb99b36ef7aa4b28fb0157f9e3e1a7d81b5
+datasets/college-scorecard/Most-Recent-Cohorts-Field-of-Study.csv,153479459,3184f634cea46a94a3e8dc73f6d2147ecaea5b3b648b26adbfdfdd9133ce8d35

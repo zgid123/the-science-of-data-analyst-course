@@ -1,0 +1,498 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>pisa-2022 research report</title><style>body{background:#f5f6f8;color:#192b3b;font:16px/1.65 system-ui,sans-serif;margin:0}main{max-width:1180px;margin:auto;padding:32px}h1{font-size:34px;line-height:1.2;max-width:1000px}h2{font-size:24px;margin-top:34px}h3{font-size:19px}a{color:#126b70}section,.panel{padding:24px;background:white;border:1px solid #dbe1e7;border-radius:10px;margin:22px 0}.note{border-left:4px solid #b77632;background:#fff5e8;padding:16px}.muted{color:#52647a}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #dde2e7}th{background:#edf1f4}tr:hover{background:#f1f6f6}select,button{font:inherit;background:white;border:1px solid #a9b6c4;border-radius:5px;padding:7px}label{display:inline-block;margin:10px 20px 10px 0}nav{display:flex;flex-wrap:wrap;gap:20px}svg,img{max-width:100%;height:auto}.report-figure{overflow:auto;max-width:100%}.report-figure img{display:block;width:100%;max-width:none;min-width:900px}.figure-hint{display:none;font-size:13px;color:#52647a}.stats{display:flex;gap:24px;flex-wrap:wrap}.stat{border-top:3px solid #126b70;padding:12px;flex:1;min-width:180px}.stat strong{font-size:28px;display:block}details{margin:12px 0}@media(max-width:650px){.figure-hint{display:block}main{padding:16px}section,.panel{padding:16px}h1{font-size:27px}label{display:block}}</style><main><nav><a href="dashboard/index.html">Dashboard</a><a href="README.md">Reproduce</a></nav><h1 id="pisa-2022-assessment-practices-provide-context-but-the-local-files-cannot-validate-student-early-warnings">PISA 2022: assessment practices provide context, but the local files cannot validate student early warnings</h1>
+<p>The local snapshot has <strong>68,054 teacher respondents</strong>, <strong>21,629 school respondents</strong> and an earlier-cycle <strong>1,447,787-row ESCS trend export</strong>. It does not include student assessment submissions, deadlines, score availability or later academic outcomes linked to early behavior. Direct student warning validation is therefore unsupported. The completed contextual investigation uses verified item meanings to examine recording practices, feedback and assessment-development needs, rather than substituting a generic socioeconomic profile.</p>
+<p>In the illustrative <strong>Australia mathematics-teacher domain</strong>, weighted reported immediate feedback in most/every lesson is <strong>84.8%</strong>, versus <strong>32.0%</strong> for written feedback beyond marks. On the same <strong>3,446</strong> common valid respondents, the executed paired difference is <strong>52.8 percentage points</strong>, 95% Fay-BRR interval <strong>[50.8, 54.9]</strong>. That describes different teacher practices, not a causal effect on student risk or a verified record of timely support.</p>
+<h2 id="feedback-form-matters-for-an-assessment-warning-workflow">Feedback form matters for an assessment-warning workflow</h2>
+<div class="report-figure"><p><img alt="Australia only; mathematics/general-teacher sampling domains remain separate. Practice success is most/every lesson; need is moderate/high. Whiskers: normal 95% intervals from 80 Fay-BRR replicates (factor 0.5); denominators vary by item." src="figures/teacher_feedback_domains.png" /></p></div><p class="figure-hint">Scroll sideways to read the chart.</p>
+<p><em>Australia only; mathematics/general-teacher sampling domains remain separate. Practice success is most/every lesson; need is moderate/high. Whiskers: normal 95% intervals from 80 Fay-BRR replicates (factor 0.5); denominators vary by item. Source: <code>results/practice_estimates.csv</code>.</em></p>
+<p><a href="figures/teacher_feedback_domains.svg">SVG figure</a> · <a href="figures/teacher_feedback_domains.csv">Plotted data</a></p>
+<div class="report-figure"><p><img alt="Australia common valid respondents within each teacher domain; paired differences retain covariance under 80 Fay-BRR replicates. Whiskers are normal 95% intervals, exploratory and not multiplicity-adjusted. This is practice context, not student warning validation." src="figures/paired_feedback_gap.png" /></p></div><p class="figure-hint">Scroll sideways to read the chart.</p>
+<p><em>Australia common valid respondents within each teacher domain; paired differences retain covariance under 80 Fay-BRR replicates. Whiskers are normal 95% intervals, exploratory and not multiplicity-adjusted. This is practice context, not student warning validation. Source: <code>results/paired_feedback.csv</code>.</em></p>
+<p><a href="figures/paired_feedback_gap.svg">SVG figure</a> · <a href="figures/paired_feedback_gap.csv">Plotted data</a></p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>teacher_type</th>
+<th>meaning</th>
+<th>n</th>
+<th>valid_n</th>
+<th>weighted</th>
+<th>unweighted</th>
+<th>lo</th>
+<th>hi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>teacher</td>
+<td>1.000</td>
+<td>Develop own assessment</td>
+<td>3554</td>
+<td>3451</td>
+<td>0.417</td>
+<td>0.411</td>
+<td>0.394</td>
+<td>0.439</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>1.000</td>
+<td>Written feedback beyond marks</td>
+<td>3554</td>
+<td>3451</td>
+<td>0.320</td>
+<td>0.324</td>
+<td>0.301</td>
+<td>0.338</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>1.000</td>
+<td>Immediate task feedback</td>
+<td>3554</td>
+<td>3454</td>
+<td>0.848</td>
+<td>0.841</td>
+<td>0.833</td>
+<td>0.862</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>1.000</td>
+<td>Moderate/high assessment training need</td>
+<td>3554</td>
+<td>3437</td>
+<td>0.211</td>
+<td>0.201</td>
+<td>0.195</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>2.000</td>
+<td>Develop own assessment</td>
+<td>7843</td>
+<td>7570</td>
+<td>0.516</td>
+<td>0.526</td>
+<td>0.502</td>
+<td>0.531</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>2.000</td>
+<td>Written feedback beyond marks</td>
+<td>7843</td>
+<td>7573</td>
+<td>0.415</td>
+<td>0.424</td>
+<td>0.402</td>
+<td>0.427</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>2.000</td>
+<td>Immediate task feedback</td>
+<td>7843</td>
+<td>7582</td>
+<td>0.831</td>
+<td>0.834</td>
+<td>0.822</td>
+<td>0.840</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>2.000</td>
+<td>Moderate/high assessment training need</td>
+<td>7843</td>
+<td>7561</td>
+<td>0.239</td>
+<td>0.232</td>
+<td>0.229</td>
+<td>0.250</td>
+</tr>
+<tr>
+<td>school</td>
+<td>0.000</td>
+<td>Teacher-developed tests monthly or more</td>
+<td>743</td>
+<td>605</td>
+<td>0.555</td>
+<td>0.653</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>school</td>
+<td>0.000</td>
+<td>Systematic recording of results</td>
+<td>743</td>
+<td>610</td>
+<td>0.990</td>
+<td>0.990</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>school</td>
+<td>0.000</td>
+<td>Teacher tests guide learning</td>
+<td>743</td>
+<td>594</td>
+<td>0.985</td>
+<td>0.988</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>school</td>
+<td>0.000</td>
+<td>Teacher tests adapt instruction</td>
+<td>743</td>
+<td>593</td>
+<td>0.934</td>
+<td>0.944</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The mathematics and general-teacher populations are distinct sampling domains. The general-teacher Australian paired gap is 41.6 percentage points, also positive. Comparing on common respondents rules out different item missingness as the sole explanation for this particular within-domain gap. It does not adjust away school context, self-report bias or different lesson tasks.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>country</th>
+<th>teacher_type</th>
+<th>comparison</th>
+<th>n</th>
+<th>valid_n</th>
+<th>weighted</th>
+<th>unweighted</th>
+<th>se</th>
+<th>lo</th>
+<th>hi</th>
+<th>weight_sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUS</td>
+<td>1.000</td>
+<td>Immediate minus written feedback</td>
+<td>3554</td>
+<td>3446</td>
+<td>0.528</td>
+<td>0.517</td>
+<td>0.010</td>
+<td>0.508</td>
+<td>0.549</td>
+<td>11785.796</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>2.000</td>
+<td>Immediate minus written feedback</td>
+<td>7843</td>
+<td>7562</td>
+<td>0.416</td>
+<td>0.409</td>
+<td>0.008</td>
+<td>0.401</td>
+<td>0.431</td>
+<td>58543.994</td>
+</tr>
+</tbody>
+</table></div>
+<p>Both types of feedback can be useful, but immediate oral/task feedback may leave no submission-level historical record, while written feedback does not establish when its grade became available. These surveys cannot determine the availability times needed to prevent early-warning leakage.</p>
+<h2 id="reported-result-recording-is-not-the-actual-student-log">Reported result recording is not the actual student log</h2>
+<p>In Australia, 99.0% of valid school-base-weighted reports indicate systematic recording of test results/graduation rates, 98.5% report using teacher-developed tests to guide learning, and 93.4% adapting instruction using those tests. These school indicators show contextual infrastructure, not evidence that the local dataset supplies any student's ordered assessment history. The school and teacher estimands differ and are not joined as if they measured the same students.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>country</th>
+<th>meaning</th>
+<th>n</th>
+<th>valid_n</th>
+<th>weighted</th>
+<th>unweighted</th>
+<th>uncertainty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUS</td>
+<td>Teacher-developed tests monthly or more</td>
+<td>743</td>
+<td>605</td>
+<td>0.555</td>
+<td>0.653</td>
+<td>No school replicate weights supplied; descriptive only</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>Systematic recording of results</td>
+<td>743</td>
+<td>610</td>
+<td>0.990</td>
+<td>0.990</td>
+<td>No school replicate weights supplied; descriptive only</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>Teacher tests guide learning</td>
+<td>743</td>
+<td>594</td>
+<td>0.985</td>
+<td>0.988</td>
+<td>No school replicate weights supplied; descriptive only</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>Teacher tests adapt instruction</td>
+<td>743</td>
+<td>593</td>
+<td>0.934</td>
+<td>0.944</td>
+<td>No school replicate weights supplied; descriptive only</td>
+</tr>
+</tbody>
+</table></div>
+<p>School points use the supplied <strong>grade-nonresponse-adjusted school base weight</strong> (<code>W_SCHGRNRABWT</code>), not a final student weight or a teacher weight. No school replicate weights are supplied in this local file, so school intervals are <strong>NOT VERIFIED</strong> and are deliberately not fabricated. School estimates are weighted descriptive context, with valid-response denominators that can differ across items. Country-specific survey participation/response quality can further constrain national interpretation.</p>
+<h2 id="assessment-training-needs-remain-a-separate-context-measure">Assessment training needs remain a separate context measure</h2>
+<p>Australian weighted moderate/high assessment-practice development need is 21.1% among mathematics teachers and 23.9% among general teachers. The executed conditional follow-up compares training need by frequency of written feedback using common valid item responses; this describes an association, not whether professional learning changes student outcomes.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>country</th>
+<th>teacher_type</th>
+<th>written_feedback</th>
+<th>n</th>
+<th>valid_n</th>
+<th>weighted</th>
+<th>unweighted</th>
+<th>se</th>
+<th>lo</th>
+<th>hi</th>
+<th>weight_sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUS</td>
+<td>1.000</td>
+<td>less often</td>
+<td>3554</td>
+<td>2310</td>
+<td>0.210</td>
+<td>0.200</td>
+<td>0.010</td>
+<td>0.191</td>
+<td>0.229</td>
+<td>7950.082</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>1.000</td>
+<td>most/every lesson</td>
+<td>3554</td>
+<td>1104</td>
+<td>0.213</td>
+<td>0.203</td>
+<td>0.017</td>
+<td>0.180</td>
+<td>0.246</td>
+<td>3729.933</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>2.000</td>
+<td>less often</td>
+<td>7843</td>
+<td>4315</td>
+<td>0.236</td>
+<td>0.235</td>
+<td>0.007</td>
+<td>0.222</td>
+<td>0.250</td>
+<td>33948.677</td>
+</tr>
+<tr>
+<td>AUS</td>
+<td>2.000</td>
+<td>most/every lesson</td>
+<td>7843</td>
+<td>3167</td>
+<td>0.244</td>
+<td>0.228</td>
+<td>0.008</td>
+<td>0.228</td>
+<td>0.261</td>
+<td>23992.487</td>
+</tr>
+</tbody>
+</table></div>
+<p>The dashboard exposes every available country/domain estimate and uncertainty, with a clear empty state when optional teacher data is absent. No across-country ranking, pooled global teacher mean or causal interpretation is inferred. All country/domain contrasts are exploratory; normal 95% intervals are not adjusted for selecting among multiple comparisons and do not account for systematic self-report or nonresponse bias.</p>
+<h2 id="verified-codebooks-and-weights-prevent-invented-constructs">Verified codebooks and weights prevent invented constructs</h2>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>source</th>
+<th>field</th>
+<th>label</th>
+<th>codes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>teacher</td>
+<td>TC054Q01NA</td>
+<td>How often? I develop and administer my own assessment.</td>
+<td>{"1.0": "Never or almost never", "2.0": "Some lessons", "3.0": "Most lessons", "4.0": "Every lesson or almost every lesson", "95.0": "Valid Skip", "97.0": "Not Applicable", "98.0": "Invalid", "99.0": "No Response"}</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>TC054Q04NA</td>
+<td>How often: I provide written feedback on student work in addition to a [mark, i.e. numeric score or letter grade].</td>
+<td>{"1.0": "Never or almost never", "2.0": "Some lessons", "3.0": "Most lessons", "4.0": "Every lesson or almost every lesson", "95.0": "Valid Skip", "97.0": "Not Applicable", "98.0": "Invalid", "99.0": "No Response"}</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>TC054Q06NA</td>
+<td>How often: I observe students when working on particular tasks and provide immediate feedback.</td>
+<td>{"1.0": "Never or almost never", "2.0": "Some lessons", "3.0": "Most lessons", "4.0": "Every lesson or almost every lesson", "95.0": "Valid Skip", "97.0": "Not Applicable", "98.0": "Invalid", "99.0": "No Response"}</td>
+</tr>
+<tr>
+<td>teacher</td>
+<td>TC185Q04HA</td>
+<td>Degree you need professional development in: Student assessment practices</td>
+<td>{"1.0": "No need at present", "2.0": "Low level of need", "3.0": "Moderate level of need", "4.0": "High level of need", "95.0": "Valid Skip", "97.0": "Not Applicable", "98.0": "Invalid", "99.0": "No Response"}</td>
+</tr>
+<tr>
+<td>school</td>
+<td>SC034Q03TA</td>
+<td>How often students assessed by: Teacher-developed tests</td>
+<td>{"1.0": "Never", "2.0": "1-2 times a year", "3.0": "3-5 times a year", "4.0": "Monthly", "5.0": "More than once a month", "95.0": "Valid Skip", "97.0": "Not Applicable", "98.0": "Invalid", "99.0": "No Response"}</td>
+</tr>
+<tr>
+<td>school</td>
+<td>SC037Q06NA</td>
+<td>Exist at your school: Systematic recording of student test results and graduation rates</td>
+<td>{"1.0": "Yes, this is mandatory, e.g. based on district or ministry policies", "2.0": "Yes, based on school initiative", "3.0": "No", "95.0": "Valid Skip", "97.0": "Not Applicable", "98.0": "Invalid", "99.0": "No Response"}</td>
+</tr>
+<tr>
+<td>school</td>
+<td>SC035Q01NB</td>
+<td>How student tests are used: Teacher-developed tests: To guide students' learning</td>
+<td>{"1.0": "Yes", "2.0": "No", "5.0": "Valid Skip", "7.0": "Not Applicable", "8.0": "Invalid", "9.0": "No Response"}</td>
+</tr>
+<tr>
+<td>school</td>
+<td>SC035Q09NB</td>
+<td>How student tests are used: Teacher-developed tests: To adapt teaching to the students' needs</td>
+<td>{"1.0": "Yes", "2.0": "No", "5.0": "Valid Skip", "7.0": "Not Applicable", "8.0": "Invalid", "9.0": "No Response"}</td>
+</tr>
+</tbody>
+</table></div>
+<p>Teacher practice items use valid categories 1–4, with 3/4 meaning most/every lesson. Training need uses 3/4 for moderate/high need. School teacher-developed-test frequency uses monthly/more-than-monthly categories 4/5; result recording uses categories 1/2 versus no=3; teacher-test guidance/adaptation uses yes=1 versus no=2. Special skip/not-applicable/invalid/no-response codes are retained in <code>missing_codes.csv</code> and excluded from item denominators; they are not recoded as zero practice.</p>
+<p>Teacher points use final <code>W_FTCHWT</code>; 80 <code>W_FTCHRWT</code> replicates and Fay factor 0.5 give variance <strong>4/80 × sum((replicate − full estimate)²)</strong>. The paired feedback calculation uses difference indicators on the same respondents and replicate weights, retaining covariance. No plausible achievement values are averaged because no achievement target is present in these local questionnaires.</p>
+<h2 id="the-escs-export-is-not-2022-student-outcome-evidence">The ESCS export is not 2022 student outcome evidence</h2>
+<p>The local ReadMe and full streamed coverage check show that the ESCS trend export contains <strong>cycles 5/6/7 = 2012/2015/2018</strong>, with socioeconomic index components but no achievement outcome or survey weights. It is not a 2022 student questionnaire, and its historical school/student IDs cannot be silently joined to 2022 questionnaire IDs. This is a precise input-scope limitation, not a reason to build an unrelated socioeconomic-risk model.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>cycle</th>
+<th>year</th>
+<th>countries</th>
+<th>rows</th>
+<th>escs_valid_n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>2012</td>
+<td>58</td>
+<td>453304</td>
+<td>446717</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2015</td>
+<td>61</td>
+<td>439102</td>
+<td>424498</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2018</td>
+<td>71</td>
+<td>555381</td>
+<td>541841</td>
+</tr>
+</tbody>
+</table></div>
+<p>All 1,447,787 trend rows were streamed to validate actual cycle/country coverage. The contextual survey analysis reads all relevant school/teacher rows and selected fields, not a small arbitrary sample. Source SPSS embedded labels verify substantive field semantics and category codes. Source keys and respondent totals reconcile; an independent weighted-rate calculation matches the primary result.</p>
+<h2 id="timing-and-project-question-coverage">Timing and project question coverage</h2>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>Quantity / question</th>
+<th>Available evidence</th>
+<th>Warning boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student early behavior versus later academic risk</td>
+<td>No linked timed student assessments or later academic results</td>
+<td>Unsupported</td>
+</tr>
+<tr>
+<td>Warning cutoff and lead time</td>
+<td>Cross-sectional practice reports only</td>
+<td>No event/score-release/outcome windows</td>
+</tr>
+<tr>
+<td>Added value beyond prior marks</td>
+<td>No individual score history or future target</td>
+<td>Unsupported</td>
+</tr>
+<tr>
+<td>Misses, false flags and review volume</td>
+<td>No valid student labels</td>
+<td>Unsupported</td>
+</tr>
+<tr>
+<td>Assessment-practice infrastructure</td>
+<td>Verified school recording/test-use and teacher feedback/need items</td>
+<td>Completed context, not validated warnings</td>
+</tr>
+</tbody>
+</table></div>
+<p>The next meaningful evidence is timed student-level events, individual obligations and future academic results from a compatible authorized source. These reports can contextualize a warning implementation; they cannot validate an alert merely because a school reports maintaining records.</p>
+<h2 id="scope-verification-and-handoff">Scope, verification and handoff</h2>
+<p>Status: <strong>feasibility assessment; completed assessment-practice contextual investigation</strong>. The requested early-academic-risk objective is preserved; narrower evidence does not justify a substitute risk label or an unrelated ranking. Definitions not supplied by the user are proposed operationalizations. Stakeholder acceptance remains <strong>PENDING</strong>; no intervention exists, so intervention outcome evaluation is <strong>NOT APPLICABLE</strong>.</p>
+<p>5 numerical/data checks passed in <code>results/verification.csv</code>. Checks include the quantities actually computed, with their expected conditions and methods; they do not verify missing real-world evidence. Remaining evidence boundaries:</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>observed</th>
+<th>consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>student assessment trajectory and future outcome</td>
+<td>No linked student submission/deadline/outcome table in local snapshot</td>
+<td>Context-only; no academic-risk model</td>
+</tr>
+<tr>
+<td>school design-based uncertainty</td>
+<td>No school replicate weights in supplied school file</td>
+<td>School weighted points are descriptive; no fabricated CI</td>
+</tr>
+</tbody>
+</table></div>
+<p>Source CSVs are unchanged. <code>source_manifest.csv</code> identifies actual local inputs; preserved source metadata and exact dependency versions support reproduction. <a href="dashboard/index.html">Open the local dashboard</a>, <a href="README.md">reproduce the analysis</a>, or inspect <a href="QUALITY_REVIEW.md">the criterion and reader-task review</a>. Browser interaction, mobile rendering, local links and display reconciliation are documented in <code>evidence/browser-review.json</code>; screenshots preserve actual inspection. Those checks validate delivery, not causality, stakeholder approval or live alert effectiveness.</p>
+<p>Metadata sources accessed 13 October 2026: <a href="https://www.oecd.org/en/data/datasets/pisa-2022-database.html">OECD PISA database</a>, embedded SPSS codebooks and local ESCS ReadMe, and the <a href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/03/pisa-2022-technical-report_599753f0/01820d6d-en.pdf">official replication methodology</a>. Original local acquisition dates and per-field vintages are not invented.</p></main></html>

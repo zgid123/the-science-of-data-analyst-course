@@ -1,0 +1,164 @@
+[
+  {
+    "check": "Finding-specific chart count",
+    "observed": 2,
+    "expected": "2",
+    "status": "PASS"
+  },
+  {
+    "check": "due_records_and_risk source fingerprint results/behavior_comparisons.csv",
+    "observed": "c204432295258da04951ef71d3a006b5f901871eb590b77e9addba057152221a",
+    "expected": "c204432295258da04951ef71d3a006b5f901871eb590b77e9addba057152221a",
+    "status": "PASS"
+  },
+  {
+    "check": "due_records_and_risk exported plotted rows",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "due_records_and_risk png",
+    "observed": 62430,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "due_records_and_risk svg",
+    "observed": 6802,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "due_records_and_risk plotted_data",
+    "observed": 120,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "ranking_across_cutoffs source fingerprint results/model_metrics.csv",
+    "observed": "1948aaa329d9bfbcae27528912fb688c0c4e0b99d1c629a2c9cbfe9c5d1778f3",
+    "expected": "1948aaa329d9bfbcae27528912fb688c0c4e0b99d1c629a2c9cbfe9c5d1778f3",
+    "status": "PASS"
+  },
+  {
+    "check": "ranking_across_cutoffs source fingerprint results/uncertainty.csv",
+    "observed": "8f0690eff61d270a99d7b1fe6b2e70478c826a76df5d0e9185c35c42729ab39b",
+    "expected": "8f0690eff61d270a99d7b1fe6b2e70478c826a76df5d0e9185c35c42729ab39b",
+    "status": "PASS"
+  },
+  {
+    "check": "ranking_across_cutoffs exported plotted rows",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "ranking_across_cutoffs png",
+    "observed": 86070,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "ranking_across_cutoffs svg",
+    "observed": 18561,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "ranking_across_cutoffs plotted_data",
+    "observed": 680,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "Report charts render",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 1 caption/alt present",
+    "observed": "FFF day-60 eligible 2014J first-attempt test enrollments; rates divide later adverse outcomes by each due-record group. Individual deadline exceptions are unknown.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 2 caption/alt present",
+    "observed": "FFF held-out 2014J first attempts; all signals use the same eligible population at each cutoff. Whiskers are 95% student-cluster bootstrap intervals (300 replicates, fixed models); population changes across cutoffs.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/due_records_and_risk.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/due_records_and_risk.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/ranking_across_cutoffs.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/ranking_across_cutoffs.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile page stays within viewport",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure preserves readable plotting width",
+    "observed": 900,
+    "expected": "at least 900 CSS pixels",
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure can scroll horizontally",
+    "observed": 542,
+    "expected": "positive offset",
+    "status": "PASS"
+  }
+]

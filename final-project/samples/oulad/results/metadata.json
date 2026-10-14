@@ -1,0 +1,22 @@
+{
+  "seed": 20261013,
+  "source": "local OULAD CSV snapshot",
+  "analysis_date": "2026-10-13",
+  "modules": [
+    "AAA",
+    "BBB",
+    "DDD",
+    "EEE",
+    "FFF",
+    "GGG"
+  ],
+  "cutoffs": [
+    30,
+    60,
+    90
+  ],
+  "score_delay_days": 14,
+  "bootstrap_replicates": 300,
+  "prior_holdout_reuse": "unknown",
+  "label_publication_latest_bound": "2014-09-24"
+}

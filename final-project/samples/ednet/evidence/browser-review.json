@@ -1,0 +1,254 @@
+[
+  {
+    "check": "source unchanged questions.csv",
+    "observed": "137d2936b746c98e1586ef134bf9f9bc4b5a878c96b88e630b2241fe9f15d3cd",
+    "expected": "137d2936b746c98e1586ef134bf9f9bc4b5a878c96b88e630b2241fe9f15d3cd",
+    "status": "PASS"
+  },
+  {
+    "check": "archive complete user-frame fingerprint unchanged",
+    "observed": "ec5727ae1cb9f29540f1a5e41fa5a6a48e9dbe48eeabeb8184c1a3331475808c",
+    "expected": "ec5727ae1cb9f29540f1a5e41fa5a6a48e9dbe48eeabeb8184c1a3331475808c",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard title",
+    "observed": "EdNet: practice difficulty, added value and warning lead time",
+    "expected": "dataset-specific rendered title",
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 10, capacity 0.1",
+    "observed": "Eligible held-out users | 1,315 | Future proxy-positive | 9.9% | Flagged for review | 160 / 12.2% | Precision | 24.4%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 10, capacity 0.2",
+    "observed": "Eligible held-out users | 1,315 | Future proxy-positive | 9.9% | Flagged for review | 283 / 21.5% | Precision | 19.1%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 10, capacity 0.3",
+    "observed": "Eligible held-out users | 1,315 | Future proxy-positive | 9.9% | Flagged for review | 429 / 32.6% | Precision | 15.9%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 30, capacity 0.1",
+    "observed": "Eligible held-out users | 1,279 | Future proxy-positive | 6.6% | Flagged for review | 117 / 9.1% | Precision | 23.1%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 30, capacity 0.2",
+    "observed": "Eligible held-out users | 1,279 | Future proxy-positive | 6.6% | Flagged for review | 272 / 21.3% | Precision | 17.3%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 30, capacity 0.3",
+    "observed": "Eligible held-out users | 1,279 | Future proxy-positive | 6.6% | Flagged for review | 401 / 31.4% | Precision | 14.2%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 60, capacity 0.1",
+    "observed": "Eligible held-out users | 1,008 | Future proxy-positive | 5.5% | Flagged for review | 111 / 11.0% | Precision | 23.4%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 60, capacity 0.2",
+    "observed": "Eligible held-out users | 1,008 | Future proxy-positive | 5.5% | Flagged for review | 232 / 23.0% | Precision | 17.2%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "display n/alerts reconcile: cutoff 60, capacity 0.3",
+    "observed": "Eligible held-out users | 1,008 | Future proxy-positive | 5.5% | Flagged for review | 308 / 30.6% | Precision | 13.3%",
+    "expected": "saved combined test n and alerts",
+    "status": "PASS"
+  },
+  {
+    "check": "model rows at selected cutoff/capacity",
+    "observed": 5,
+    "expected": 5,
+    "status": "PASS"
+  },
+  {
+    "check": "reader path coverage",
+    "observed": "Who has enough future practice to be evaluated?\nPrefix bundles\tSampled users\tSufficient future window\tSample coverage\tTrain\tValidation\tHeld-out users\n10\t50,000\t8,984\t18.0%\t6,264\t1,405\t1,315\n30\t50,000\t8,769\t17.5%\t6,141\t1,",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path models",
+    "observed": "Does behavior improve on prior accuracy?\nbehavior\n0.102\nscore\n0.195\ncombined\n0.198\nprevalence\n0.066\nprior_accuracy_rule\n0.093\n0.000\n1.000\nSignal\tn\tObserved risk\tAverage precision\tPrecision\tRecall\tAlert volume\tFalse posit",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path timing",
+    "observed": "Does the warning leave time to act?\nFixed reference group\tn\tMedian to next question (hours)\tQ25 hours\tQ75 hours\tMedian to window end (days)\tUnder 1 hour\nall eligible\t1,279\t0.008\t0.003\t0.023\t0.993\t1,159\nflagged future low",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path workload",
+    "observed": "How many flags are true later difficulties?\nPopulation\tValidation capacity\tn\tThreshold\tAlerts\tPrecision\tRecall\tFalse positives\tFalse negatives\nvalidation\t10.0%\t1,349\t0.152\t135\t21.5%\t36.7%\t106\t50\ntest\t10.0%\t1,279\t0.152\t11",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path sensitivity",
+    "observed": "Challenge the target, repetition and sampling stability\nExecuted challenge\tSignal\tn\tObserved risk\tAverage precision\tPrecision\tRecall\tAlert volume\tFalse positives\tFalse negatives\tBrier loss\nfuture_accuracy_below_50\tscore\t",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path audit",
+    "observed": "Content-related errors and probability reliability\nFuture dominant part\tn\tObserved risk\tAverage precision\tPrecision\tRecall\tAlert volume\tFalse positives\tFalse negatives\tBrier loss\n1\t155\t3.9%\t0.090\t2.5%\t16.7%\t25.8%\t39\t5\t0.",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../report.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "reset retains rendered populated default",
+    "observed": 10,
+    "expected": "at least four evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "empty helper does not fabricate zero",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "undefined rates",
+    "status": "PASS"
+  },
+  {
+    "check": "no individual identifiers in public embedded tables",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered evidence tables",
+    "observed": 13,
+    "expected": "at least four",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

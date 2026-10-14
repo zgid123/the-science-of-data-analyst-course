@@ -1,0 +1,4 @@
+cutoff,check,enrollments_examined,mismatches,status
+30,independent raw opportunity and missing-fraction reconciliation,1567,0,PASS
+60,independent raw opportunity and missing-fraction reconciliation,1496,0,PASS
+90,independent raw opportunity and missing-fraction reconciliation,1437,0,PASS

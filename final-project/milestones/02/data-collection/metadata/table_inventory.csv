@@ -1,0 +1,8 @@
+file,rows,columns,key,duplicate_key_extra_rows,null_key_rows
+studentAssessment.csv,173912,5,id_assessment;id_student,0,0
+studentVle.csv,10655280,6,code_module;code_presentation;id_student;id_site;date,2195960,0
+assessments.csv,206,6,id_assessment,0,0
+courses.csv,22,3,code_module;code_presentation,0,0
+studentInfo.csv,32593,12,code_module;code_presentation;id_student,0,0
+studentRegistration.csv,32593,5,code_module;code_presentation;id_student,0,0
+vle.csv,6364,6,code_module;code_presentation;id_site,0,0

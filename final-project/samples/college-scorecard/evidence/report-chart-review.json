@@ -1,0 +1,158 @@
+[
+  {
+    "check": "Finding-specific chart count",
+    "observed": 2,
+    "expected": "2",
+    "status": "PASS"
+  },
+  {
+    "check": "completion_estimand_comparison source fingerprint results/outcome_definitions.csv",
+    "observed": "efc932229a5ba8228dc9a63875d55dc92d2f5a0692c7612c5d18580b5b480ae0",
+    "expected": "efc932229a5ba8228dc9a63875d55dc92d2f5a0692c7612c5d18580b5b480ae0",
+    "status": "PASS"
+  },
+  {
+    "check": "completion_estimand_comparison exported plotted rows",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "completion_estimand_comparison png",
+    "observed": 68793,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "completion_estimand_comparison svg",
+    "observed": 8680,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "completion_estimand_comparison plotted_data",
+    "observed": 221,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "small_cohort_sensitivity source fingerprint results/small_cohort_sensitivity.csv",
+    "observed": "0b6e60492b7b85f298adba26e8946440c00efdd386427c18d681c53515e40b01",
+    "expected": "0b6e60492b7b85f298adba26e8946440c00efdd386427c18d681c53515e40b01",
+    "status": "PASS"
+  },
+  {
+    "check": "small_cohort_sensitivity exported plotted rows",
+    "observed": 6,
+    "expected": 6,
+    "status": "PASS"
+  },
+  {
+    "check": "small_cohort_sensitivity png",
+    "observed": 90561,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "small_cohort_sensitivity svg",
+    "observed": 18133,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "small_cohort_sensitivity plotted_data",
+    "observed": 687,
+    "expected": "positive bytes",
+    "status": "PASS"
+  },
+  {
+    "check": "Report charts render",
+    "observed": 2,
+    "expected": 2,
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 1 caption/alt present",
+    "observed": "All valid reporting institutions in each metric family. Cohort weights are D150_4/D150_L4, not total enrollment. Different institutional and cohort estimands do not identify individual academic risk.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Chart 2 caption/alt present",
+    "observed": "Completion-cohort minimums 1/30/100, with retained institution counts labeled. Restrictions change the population; they are sensitivity checks, not removal of proven errors. Rounded published rates make weighted totals approximate.",
+    "expected": "population and limitation caption",
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/completion_estimand_comparison.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/completion_estimand_comparison.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/small_cohort_sensitivity.svg",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link figures/small_cohort_sensitivity.csv",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Local report link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile page stays within viewport",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure preserves readable plotting width",
+    "observed": 900,
+    "expected": "at least 900 CSS pixels",
+    "status": "PASS"
+  },
+  {
+    "check": "Mobile figure can scroll horizontally",
+    "observed": 542,
+    "expected": "positive offset",
+    "status": "PASS"
+  }
+]

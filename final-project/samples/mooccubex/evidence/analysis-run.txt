@@ -1,0 +1,17 @@
+  measure  courses  zero_n      mean  q25  median  q75   p95  max  total
+resources     3781       0 71.685533 38.0    59.0 88.0 167.0 2728 271043
+exercises     3781     577 17.806136  5.0    11.0 23.0  60.0  228  67325
+   videos     3781      11 53.879397 28.0    44.0 66.0 124.0 2700 203718
+       relation  raw_rows  unique_pairs  duplicate_rows  duplicate_fraction  left_entities  right_entities  malformed_rows
+concept-problem     33180         29141            4039            0.121730          13822           19983               0
+ concept-course    451078        451078               0            0.000000         216096             887               0
+ course-teacher     97192         46006           51186            0.526648          13866           12252               0
+     user-reply    331011        331011               0            0.000000          50313          331011               0
+  comment-reply    370493        370493               0            0.000000         308213          370493               0
+                                        check  numerator  denominator  fraction
+             courses with concept-course edge        887         3781  0.234594
+concept-course target courses present locally        887          887  1.000000
+      problem concepts also linked to courses       6067        13822  0.438938
+                 distinct course exercise ids      67325        67325  1.000000
+        course-resource duplicate memberships          0       271043  0.000000
+All full relevant tables inspected; source data preserved.

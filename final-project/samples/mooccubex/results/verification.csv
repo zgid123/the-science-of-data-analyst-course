@@ -1,0 +1,13 @@
+check,observed,expected,status,method,consequence
+unique course ids,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+course resource decomposition,0,0 course count discrepancies,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+concept-problem malformed relation rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+concept-course malformed relation rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+course-teacher malformed relation rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+user-reply malformed relation rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+comment-reply malformed relation rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+field join retains exactly one row per unique membership,793,793 memberships,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+student assessment trajectories,No local user-problem event file,Verified linked student/course/time/outcome evidence,NOT VERIFIED,Actual source schema and documented coverage review,Blocks student-level early-warning inference
+later academic adverse outcomes,No local linked outcome table,Verified linked student/course/time/outcome evidence,NOT VERIFIED,Actual source schema and documented coverage review,Blocks student-level early-warning inference
+assessment deadline obligations,Course resource chapter labels are not due dates,Verified linked student/course/time/outcome evidence,NOT VERIFIED,Actual source schema and documented coverage review,Blocks student-level early-warning inference
+exercise to problem linkage,Neither documented exercise-problem file variant is present,Verified linked student/course/time/outcome evidence,NOT VERIFIED,Actual source schema and documented coverage review,Blocks student-level early-warning inference

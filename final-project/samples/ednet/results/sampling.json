@@ -1,0 +1,11 @@
+{
+  "seed": 20261013,
+  "frame_users": 784309,
+  "sample_users": 50000,
+  "sampling_fraction": 0.06375038409606418,
+  "archive_uncompressed_bytes": 3072366053,
+  "frame_fingerprint": "ec5727ae1cb9f29540f1a5e41fa5a6a48e9dbe48eeabeb8184c1a3331475808c",
+  "archive_bytes": 1201163816,
+  "method": "uniform users without replacement from complete local zip central directory; 70/15/15 fixed held-out users; sampled halves for stability",
+  "source": "https://github.com/riiid/ednet"
+}

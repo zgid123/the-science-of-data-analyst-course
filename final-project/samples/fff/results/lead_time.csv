@@ -1,0 +1,10 @@
+cutoff,group,n,q25,median,q75,under_14,at_least_14,time_type
+30,all_future_withdrawals,268,29.75,63.5,110.5,19,249,observed withdrawal day
+30,flagged_future_withdrawals,88,21.0,38.5,92.75,10,78,observed withdrawal day
+30,flagged_final_fail,91,239.0,239.0,239.0,0,91,"course-end proxy, not failure event"
+60,all_future_withdrawals,197,26.0,57.0,99.0,26,171,observed withdrawal day
+60,flagged_future_withdrawals,76,14.0,35.0,91.0,17,59,observed withdrawal day
+60,flagged_final_fail,120,209.0,209.0,209.0,0,120,"course-end proxy, not failure event"
+90,all_future_withdrawals,138,24.0,48.5,80.75,24,114,observed withdrawal day
+90,flagged_future_withdrawals,40,23.0,61.0,73.25,5,35,observed withdrawal day
+90,flagged_final_fail,122,179.0,179.0,179.0,0,122,"course-end proxy, not failure event"

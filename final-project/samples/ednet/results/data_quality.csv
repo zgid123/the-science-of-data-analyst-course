@@ -1,0 +1,7 @@
+issue,n
+sample users,50000
+raw sampled response rows,6061678
+unmatched question rows,0
+invalid timestamp/elapsed/answer rows,0
+users excluded for any invalid/unmatched row,0
+overlapping prefix/outcome windows excluded,5008

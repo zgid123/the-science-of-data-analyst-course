@@ -1,0 +1,218 @@
+[
+  {
+    "check": "source unchanged atgintt4.csv",
+    "observed": "9e19250d1139cb4f32ba6652867f618d7180974ab102983d1775064243af5505",
+    "expected": "9e19250d1139cb4f32ba6652867f618d7180974ab102983d1775064243af5505",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged btgintt4.csv",
+    "observed": "d336d444e13c76aac794fc808c2287766c53d559d8cf4e6a4a7409361869c2f4",
+    "expected": "d336d444e13c76aac794fc808c2287766c53d559d8cf4e6a4a7409361869c2f4",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged ctgintt4.csv",
+    "observed": "adddcaf2e9efb73898baae0b2ad0ab9a3292a65e785a2d5057694c2109f11396",
+    "expected": "adddcaf2e9efb73898baae0b2ad0ab9a3292a65e785a2d5057694c2109f11396",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged ttgintt4.csv",
+    "observed": "d6cc0b101783fb5f80ee24b28c19b4bca4f7dea109b7307f2efecd10ca4e0b10",
+    "expected": "d6cc0b101783fb5f80ee24b28c19b4bca4f7dea109b7307f2efecd10ca4e0b10",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard title",
+    "observed": "TALIS 2024: assessment practices, training needs and survey design",
+    "expected": "dataset-specific rendered title",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain AUS/1 row count",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Reported measure\tAll respondents\tValid positive-weight n\tWeighted share\tValid unweighted share\t95% low\t95% high\tAdjudication code\nEnd-unit assessment\t3,003\t1,631\t83.5%\t84.2%\t80.6%\t",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain AUS/2 row count",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Reported measure\tAll respondents\tValid positive-weight n\tWeighted share\tValid unweighted share\t95% low\t95% high\tAdjudication code\nEnd-unit assessment\t3,035\t1,600\t85.3%\t85.1%\t83.3%\t",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain AUS/3 row count",
+    "observed": 0,
+    "expected": 0,
+    "status": "PASS"
+  },
+  {
+    "check": "unavailable domain explicitly undefined",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "No observations / undefined",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain BRA/1 row count",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Reported measure\tAll respondents\tValid positive-weight n\tWeighted share\tValid unweighted share\t95% low\t95% high\tAdjudication code\nEnd-unit assessment\t2,994\t1,906\t74.1%\t71.2%\t71.8%\t",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain BRA/2 row count",
+    "observed": 9,
+    "expected": 9,
+    "status": "PASS"
+  },
+  {
+    "check": "survey weighted share and valid n reconcile",
+    "observed": "Reported measure\tAll respondents\tValid positive-weight n\tWeighted share\tValid unweighted share\t95% low\t95% high\tAdjudication code\nEnd-unit assessment\t3,009\t1,947\t81.0%\t81.0%\t78.8%\t",
+    "expected": "CSV weighted proportion/valid denominator",
+    "status": "PASS"
+  },
+  {
+    "check": "survey domain BRA/3 row count",
+    "observed": 0,
+    "expected": 0,
+    "status": "PASS"
+  },
+  {
+    "check": "unavailable domain explicitly undefined",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "No observations / undefined",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path practices",
+    "observed": "Which assessment methods and feedback are reported?\nEnd-unit assessment\n85.3%\nImprovement feedback\n92.7%\nStudent self-assessment\n53.1%\nImmediate task feedback\n91.4%\nCheck material learned\n88.9%\nNeed: assessment practices",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path paired",
+    "observed": "Compare feedback methods on the same respondents\nPaired comparison\tCommon valid n\tDifference (proportion)\t95% low\t95% high\nImmediate minus improvement feedback\t1,595\t-0.012\t-0.030\t0.006\n\nPaired differences retain covaria",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path needs",
+    "observed": "Does frequent feedback remove training needs?\nTraining need\tFeedback use\tCommon valid n\tModerate/high need\t95% low\t95% high\nassessment practices\tnever/occasionally\t113\t36.3%\t28.4%\t44.2%\nassessment practices\tfrequent/alwa",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path forms",
+    "observed": "Missing by design is not absence of practice\nFeedback item\tValid n\tAll respondents\tValid unweighted share\tINVALID zero-coded share\nImprovement feedback\t1,599\t3,035\t92.9%\t48.9%\nItem (all systems, fixed level reference)\tFo",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../report.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "reset retains rendered populated default",
+    "observed": 7,
+    "expected": "at least four evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "empty helper does not fabricate zero",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "undefined rates",
+    "status": "PASS"
+  },
+  {
+    "check": "no individual identifiers in public embedded tables",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered evidence tables",
+    "observed": 8,
+    "expected": "at least four",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

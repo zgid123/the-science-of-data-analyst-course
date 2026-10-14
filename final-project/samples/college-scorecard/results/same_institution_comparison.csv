@@ -1,0 +1,9 @@
+family,sector,both_metrics_n,completion_only_n,retention_only_n,institution_spearman,median_completion,median_retention
+Four-year metric,All reported sectors,2001,262,57,0.606447608262174,0.5386,0.7593
+Four-year metric,Public,650,157,2,0.7329598372396615,0.50335,0.75615
+Four-year metric,Private nonprofit,1198,49,26,0.6129625681465066,0.5743,0.7677499999999999
+Four-year metric,Private for-profit,153,56,29,0.2574945085343796,0.4545,0.6875
+Less-than-four-year metric,All reported sectors,2730,121,75,0.5751349185636748,0.6335,0.7308
+Less-than-four-year metric,Public,1028,7,5,0.5392572132853651,0.41559999999999997,0.65655
+Less-than-four-year metric,Private nonprofit,136,10,10,0.567670744510459,0.7377,0.7683
+Less-than-four-year metric,Private for-profit,1566,104,60,0.44782571767238494,0.7143,0.8

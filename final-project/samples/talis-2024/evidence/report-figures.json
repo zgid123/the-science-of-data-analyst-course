@@ -1,0 +1,30 @@
+[
+  {
+    "figure": "assessment_practices_and_need",
+    "plotted_rows": 9,
+    "sources": [
+      {
+        "file": "results/practice_estimates.csv",
+        "sha256": "653895cfcdbc1370f7641fb6169803e498104e68b8c23bcb8f277edf93c93d5c"
+      }
+    ],
+    "caption": "Australia lower-secondary teachers; practice success is frequent/always, need is moderate/high. Whiskers: normal 95% intervals using 100 Fay-BRR replicates (factor 0.5). Item-specific denominators differ; adjudication rating 2 (fair).",
+    "png": "figures/assessment_practices_and_need.png",
+    "svg": "figures/assessment_practices_and_need.svg",
+    "plotted_data": "figures/assessment_practices_and_need.csv"
+  },
+  {
+    "figure": "rotated_form_coverage",
+    "plotted_rows": 9,
+    "sources": [
+      {
+        "file": "results/form_coverage.csv",
+        "sha256": "ddbba84abf67b1ace438d9d2ffd454406433596234479d13c77d34c3156800eb"
+      }
+    ],
+    "caption": "Fixed full local ISCED-2 extract across all systems, not Australia only. Each bar divides valid item responses by that form\u2019s respondents; zero valid responses on Form 1 indicates design/routing absence, not zero feedback.",
+    "png": "figures/rotated_form_coverage.png",
+    "svg": "figures/rotated_form_coverage.svg",
+    "plotted_data": "figures/rotated_form_coverage.csv"
+  }
+]

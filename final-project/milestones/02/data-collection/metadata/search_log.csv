@@ -1,0 +1,7 @@
+date,query,candidate_source,rationale,result
+14/10/2026,site.archive.ics.uci.edu/dataset/349 open university learning analytics dataset,"OULAD [S1–S2]
+DOI 10.24432/C5KK69","Cần lịch assessment, bản nộp và VLE có mốc ngày.","Chuyển sang đánh giá; đã có raw local, kiểm tra lại độc lập."
+14/10/2026,site.archive.ics.uci.edu/dataset/697 predict students dropout academic success,"Predict Students’ Dropout and Academic Success [S3]
+DOI 10.24432/C5MC89",Có kết quả học tập bậc đại học và yếu tố đầu vào.,Không có lịch hạn/nộp theo ngày để giữ AQ1/AQ3 tại ngày 60.
+14/10/2026,site.archive.ics.uci.edu/dataset/320 student performance,"Student Performance [S4]
+DOI 10.24432/C5TG7T",Có điểm và yếu tố học tập; đối chiếu khả năng đo hành vi.,Khác bậc học; thiếu hành vi assessment theo ngày và target Fail/Withdrawn của học phần.

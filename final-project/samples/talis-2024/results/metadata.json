@@ -1,0 +1,15 @@
+{
+  "source": "OECD TALIS 2024 local CSVs",
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "rows": 278383,
+  "combined_rows": 278383,
+  "replicates": 100,
+  "fay": 0.5,
+  "variance": "4/100 * sum((replicate estimate - full estimate)^2)",
+  "questionnaire": "https://www.oecd.org/content/dam/oecd/en/about/programmes/edu/talis/talis2024questionnaires/TALIS2024TeacherQuestionnaireISCED1-2-3.pdf",
+  "variance_source": "https://one.oecd.org/document/EDU/TALIS/GB%282025%299/en/pdf"
+}

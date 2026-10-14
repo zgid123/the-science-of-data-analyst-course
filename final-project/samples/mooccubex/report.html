@@ -1,0 +1,754 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>mooccubex research report</title><style>body{background:#f5f6f8;color:#192b3b;font:16px/1.65 system-ui,sans-serif;margin:0}main{max-width:1180px;margin:auto;padding:32px}h1{font-size:34px;line-height:1.2;max-width:1000px}h2{font-size:24px;margin-top:34px}h3{font-size:19px}a{color:#126b70}section,.panel{padding:24px;background:white;border:1px solid #dbe1e7;border-radius:10px;margin:22px 0}.note{border-left:4px solid #b77632;background:#fff5e8;padding:16px}.muted{color:#52647a}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #dde2e7}th{background:#edf1f4}tr:hover{background:#f1f6f6}select,button{font:inherit;background:white;border:1px solid #a9b6c4;border-radius:5px;padding:7px}label{display:inline-block;margin:10px 20px 10px 0}nav{display:flex;flex-wrap:wrap;gap:20px}svg,img{max-width:100%;height:auto}.report-figure{overflow:auto;max-width:100%}.report-figure img{display:block;width:100%;max-width:none;min-width:900px}.figure-hint{display:none;font-size:13px;color:#52647a}.stats{display:flex;gap:24px;flex-wrap:wrap}.stat{border-top:3px solid #126b70;padding:12px;flex:1;min-width:180px}.stat strong{font-size:28px;display:block}details{margin:12px 0}@media(max-width:650px){.figure-hint{display:block}main{padding:16px}section,.panel{padding:16px}h1{font-size:27px}label{display:block}}</style><main><nav><a href="dashboard/index.html">Dashboard</a><a href="README.md">Reproduce</a></nav><h1 id="mooccubex-assessment-content-is-visible-but-this-snapshot-cannot-support-student-early-warnings">MOOCCubeX: assessment content is visible, but this snapshot cannot support student early warnings</h1>
+<p>The actual local snapshot contains <strong>3,781 courses</strong> and <strong>67,325 exercise-container memberships</strong>, yet it lacks the documented student–problem event file, exercise–problem mapping, problem entities and linked future academic outcomes. These are concrete blockers: course content and concept edges cannot establish who submitted an assessment, when a score became available, or which student later struggled. No risk model, accuracy score, lead time or alert list is fabricated.</p>
+<p>This is a <strong>feasibility assessment with a completed assessment-content investigation</strong>, not a student-warning validation. The narrower investigation quantifies content opportunity heterogeneity, linkage coverage and source anomalies so an analyst can identify what additional extraction is actually needed. It retains the project purpose rather than replacing it with general course popularity or institutional ranking.</p>
+<h2 id="exercise-opportunities-vary-substantially-even-before-observing-students">Exercise opportunities vary substantially even before observing students</h2>
+<div class="report-figure"><p><img alt="All 3,781 local courses, grouped by exercise-container count. Containers are groups of problems, not student submissions, obligations or deadlines. The 81+ bin includes counts up to 228." src="figures/exercise_opportunity_distribution.png" /></p></div><p class="figure-hint">Scroll sideways to read the chart.</p>
+<p><em>All 3,781 local courses, grouped by exercise-container count. Containers are groups of problems, not student submissions, obligations or deadlines. The 81+ bin includes counts up to 228. Source: <code>results/course_summary.csv</code>.</em></p>
+<p><a href="figures/exercise_opportunity_distribution.svg">SVG figure</a> · <a href="figures/exercise_opportunity_distribution.csv">Plotted data</a></p>
+<p><strong>577 courses</strong> (15.3%) have no exercise container in their local resource list. The median is <strong>11 exercise containers</strong>, IQR 5–23; the mean is 17.8, and the 95th percentile is 60. Content counts are skewed, so the mean alone would misdescribe typical course assessment infrastructure. An exercise container is a group of problems, not a completed student submission and not necessarily a required assessment.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>measure</th>
+<th>courses</th>
+<th>zero_n</th>
+<th>mean</th>
+<th>q25</th>
+<th>median</th>
+<th>q75</th>
+<th>p95</th>
+<th>max</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>resources</td>
+<td>3781</td>
+<td>0</td>
+<td>71.686</td>
+<td>38.000</td>
+<td>59.000</td>
+<td>88.000</td>
+<td>167.000</td>
+<td>2728</td>
+<td>271043</td>
+</tr>
+<tr>
+<td>exercises</td>
+<td>3781</td>
+<td>577</td>
+<td>17.806</td>
+<td>5.000</td>
+<td>11.000</td>
+<td>23.000</td>
+<td>60.000</td>
+<td>228</td>
+<td>67325</td>
+</tr>
+<tr>
+<td>videos</td>
+<td>3781</td>
+<td>11</td>
+<td>53.879</td>
+<td>28.000</td>
+<td>44.000</td>
+<td>66.000</td>
+<td>124.000</td>
+<td>2700</td>
+<td>203718</td>
+</tr>
+</tbody>
+</table></div>
+<p>The 271,043 resource memberships decompose into 203,718 videos and 67,325 exercise containers, with no other prefixes or duplicate course–resource memberships. Chapters express content order, not deadlines. The code validates decomposition and uniqueness rather than converting resource position into invented warning time.</p>
+<h2 id="concept-edges-cover-only-part-of-the-course-universe">Concept edges cover only part of the course universe</h2>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>numerator</th>
+<th>denominator</th>
+<th>fraction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>courses with concept-course edge</td>
+<td>887</td>
+<td>3781</td>
+<td>0.235</td>
+</tr>
+<tr>
+<td>concept-course target courses present locally</td>
+<td>887</td>
+<td>887</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>problem concepts also linked to courses</td>
+<td>6067</td>
+<td>13822</td>
+<td>0.439</td>
+</tr>
+<tr>
+<td>distinct course exercise ids</td>
+<td>67325</td>
+<td>67325</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>course-resource duplicate memberships</td>
+<td>0</td>
+<td>271043</td>
+<td>0.000</td>
+</tr>
+</tbody>
+</table></div>
+<p>Concept-to-course edges reach <strong>887 of 3,781 courses (23.5%)</strong>. Only 43.9% of concepts attached to the observed problem IDs also appear in the concept–course relation. This is semantic overlap, not an exercise-to-problem linkage: linking a problem and course merely because they share a concept would create many-to-many fanout and unsupported assessment assignments. The missing exercise–problem mapping is necessary before constructing applicable student opportunity denominators.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>required_file</th>
+<th>present</th>
+<th>needed_for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>entities/user.json</td>
+<td>False</td>
+<td>enrollment and timing</td>
+</tr>
+<tr>
+<td>relations/user-problem.json</td>
+<td>False</td>
+<td>student submission time, correctness and score</td>
+</tr>
+<tr>
+<td>relations/exercise-problem.json</td>
+<td>False</td>
+<td>exercise-container to problem linkage (documented JSON location)</td>
+</tr>
+<tr>
+<td>relations/exercise-problem.txt</td>
+<td>False</td>
+<td>exercise-container to problem linkage (documented TXT variant)</td>
+</tr>
+<tr>
+<td>entities/problem.json</td>
+<td>False</td>
+<td>problem identifiers, content and scores</td>
+</tr>
+<tr>
+<td>entities/reply.json</td>
+<td>False</td>
+<td>reply text and creation time</td>
+</tr>
+</tbody>
+</table></div>
+<p>Both documented exercise–problem filename variants were checked and neither is present. The local user–reply and comment–reply edges lack the event text/time entities required to reconstruct assessment behavior. Help-query records provide user/type/question strings, not answer correctness or a linked academic result. Their measured coverage below cannot replace missing assessment logs.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>rows</th>
+<th>users</th>
+<th>distinct_questions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cannot_answer</td>
+<td>668</td>
+<td>419</td>
+<td>526</td>
+</tr>
+<tr>
+<td>作诗</td>
+<td>3133</td>
+<td>403</td>
+<td>69</td>
+</tr>
+<tr>
+<td>加减乘除</td>
+<td>303</td>
+<td>67</td>
+<td>67</td>
+</tr>
+<tr>
+<td>助教回答</td>
+<td>846</td>
+<td>508</td>
+<td>2</td>
+</tr>
+<tr>
+<td>来自Aminer</td>
+<td>2415</td>
+<td>1633</td>
+<td>1579</td>
+</tr>
+<tr>
+<td>来自Aminer</td>
+<td>视频答案</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>来自Faq</td>
+<td>3033</td>
+<td>1736</td>
+<td>2027</td>
+</tr>
+<tr>
+<td>来自baidu</td>
+<td>4373</td>
+<td>2262</td>
+<td>3490</td>
+</tr>
+<tr>
+<td>来自baike</td>
+<td>3831</td>
+<td>1985</td>
+<td>2641</td>
+</tr>
+<tr>
+<td>来自baike</td>
+<td>视频答案</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>来自baike</td>
+<td>讨论区</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>来自mooccube</td>
+<td>12953</td>
+<td>3272</td>
+<td>4379</td>
+</tr>
+<tr>
+<td>来自mooccube</td>
+<td>视频答案</td>
+<td>1126</td>
+<td>842</td>
+</tr>
+<tr>
+<td>来自mooccube</td>
+<td>讨论区</td>
+<td>739</td>
+<td>513</td>
+</tr>
+<tr>
+<td>来自mooccube</td>
+<td>讨论区</td>
+<td>视频答案</td>
+<td>150</td>
+</tr>
+<tr>
+<td>来自图灵机器人</td>
+<td>6426</td>
+<td>1394</td>
+<td>4696</td>
+</tr>
+<tr>
+<td>来自课程信息</td>
+<td>144</td>
+<td>118</td>
+<td>83</td>
+</tr>
+<tr>
+<td>知识图谱点击</td>
+<td>50883</td>
+<td>14205</td>
+<td>4564</td>
+</tr>
+<tr>
+<td>知识图谱点击</td>
+<td>视频答案</td>
+<td>51</td>
+<td>36</td>
+</tr>
+<tr>
+<td>知识图谱点击</td>
+<td>讨论区</td>
+<td>24</td>
+<td>17</td>
+</tr>
+<tr>
+<td>知识图谱点击</td>
+<td>讨论区</td>
+<td>视频答案</td>
+<td>13</td>
+</tr>
+<tr>
+<td>脏问题</td>
+<td>254</td>
+<td>149</td>
+<td>135</td>
+</tr>
+<tr>
+<td>问助教</td>
+<td>448</td>
+<td>275</td>
+<td>396</td>
+</tr>
+<tr>
+<td>预设问答</td>
+<td>15705</td>
+<td>5368</td>
+<td>53</td>
+</tr>
+<tr>
+<td>飘窗回答</td>
+<td>821</td>
+<td>435</td>
+<td>188</td>
+</tr>
+<tr>
+<td>飘窗回答</td>
+<td>讨论区</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="label-coverage-and-repeated-edges-can-distort-a-feasibility-conclusion">Label coverage and repeated edges can distort a feasibility conclusion</h2>
+<div class="report-figure"><p><img alt="Matched manually labeled courses versus the remaining local course universe; 85 unmatched manual course IDs are excluded only from field summaries. No student academic-risk inference is supported." src="figures/manual_label_selection.png" /></p></div><p class="figure-hint">Scroll sideways to read the chart.</p>
+<p><em>Matched manually labeled courses versus the remaining local course universe; 85 unmatched manual course IDs are excluded only from field summaries. No student academic-risk inference is supported. Source: <code>results/manual_label_sensitivity.csv</code>.</em></p>
+<p><a href="figures/manual_label_selection.svg">SVG figure</a> · <a href="figures/manual_label_selection.csv">Plotted data</a></p>
+<p>Initial field joining assumed every manually labeled course would be in the local course file. The executed check found <strong>110 unmatched field memberships on 85 courses</strong>, out of 632 manually labeled course IDs. The pipeline was corrected to retain this coverage evidence and restrict field summaries to the 547 matched courses; it does not silently drop unmatched courses or infer resources for them.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>field_memberships</th>
+<th>matched_memberships</th>
+<th>unmatched_memberships</th>
+<th>manual_courses</th>
+<th>matched_courses</th>
+<th>unmatched_courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>793</td>
+<td>683</td>
+<td>110</td>
+<td>632</td>
+<td>547</td>
+<td>85</td>
+</tr>
+</tbody>
+</table></div>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>n</th>
+<th>mean_exercises</th>
+<th>median_exercises</th>
+<th>exercise_coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manual field label</td>
+<td>547</td>
+<td>21.984</td>
+<td>13.000</td>
+<td>0.967</td>
+</tr>
+<tr>
+<td>No manual field label</td>
+<td>3234</td>
+<td>17.100</td>
+<td>10.000</td>
+<td>0.827</td>
+</tr>
+</tbody>
+</table></div>
+<p>Manually labeled matched courses have exercise coverage <strong>96.7%</strong>, versus <strong>82.7%</strong> among courses without a manual label. This executed sensitivity shows that analyzing only manually labeled courses would overstate exercise availability for the full local course universe. “No manual label” can still have field information in course entities; manual and other field sources are deliberately not treated as interchangeable. Courses can have multiple manual field memberships, so field rows are not independent courses and cannot be summed as a population.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>courses</th>
+<th>mean_exercises</th>
+<th>median_exercises</th>
+<th>zero_exercise_courses</th>
+<th>median_videos</th>
+<th>exercise_coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中国语言文学</td>
+<td>20</td>
+<td>22.300</td>
+<td>22.500</td>
+<td>1</td>
+<td>49.000</td>
+<td>0.950</td>
+</tr>
+<tr>
+<td>临床医学</td>
+<td>19</td>
+<td>19.842</td>
+<td>15.000</td>
+<td>1</td>
+<td>61.000</td>
+<td>0.947</td>
+</tr>
+<tr>
+<td>体育学</td>
+<td>15</td>
+<td>16.200</td>
+<td>11.000</td>
+<td>0</td>
+<td>31.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>化学工程与技术</td>
+<td>15</td>
+<td>22.867</td>
+<td>13.000</td>
+<td>0</td>
+<td>52.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>历史学</td>
+<td>20</td>
+<td>18.600</td>
+<td>13.000</td>
+<td>0</td>
+<td>58.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>哲学</td>
+<td>11</td>
+<td>12.000</td>
+<td>9.000</td>
+<td>0</td>
+<td>28.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>基础医学</td>
+<td>12</td>
+<td>24.500</td>
+<td>18.000</td>
+<td>0</td>
+<td>50.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>外国语言文学</td>
+<td>34</td>
+<td>34.676</td>
+<td>16.000</td>
+<td>0</td>
+<td>44.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>工商管理</td>
+<td>16</td>
+<td>10.500</td>
+<td>9.000</td>
+<td>1</td>
+<td>47.000</td>
+<td>0.938</td>
+</tr>
+<tr>
+<td>应用经济学</td>
+<td>19</td>
+<td>11.789</td>
+<td>9.000</td>
+<td>2</td>
+<td>62.000</td>
+<td>0.895</td>
+</tr>
+<tr>
+<td>建筑学</td>
+<td>10</td>
+<td>13.000</td>
+<td>8.500</td>
+<td>0</td>
+<td>49.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>心理学</td>
+<td>16</td>
+<td>11.438</td>
+<td>8.500</td>
+<td>0</td>
+<td>39.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>控制科学与工程</td>
+<td>11</td>
+<td>30.727</td>
+<td>21.000</td>
+<td>1</td>
+<td>66.000</td>
+<td>0.909</td>
+</tr>
+<tr>
+<td>政治学</td>
+<td>15</td>
+<td>15.533</td>
+<td>12.000</td>
+<td>0</td>
+<td>67.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>教育学</td>
+<td>12</td>
+<td>10.500</td>
+<td>7.500</td>
+<td>1</td>
+<td>40.000</td>
+<td>0.917</td>
+</tr>
+<tr>
+<td>数学</td>
+<td>21</td>
+<td>45.429</td>
+<td>41.000</td>
+<td>0</td>
+<td>85.000</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>机械工程</td>
+<td>10</td>
+<td>22.800</td>
+<td>14.000</td>
+<td>0</td>
+<td>87.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>物理学</td>
+<td>20</td>
+<td>29.550</td>
+<td>26.000</td>
+<td>0</td>
+<td>96.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>环境科学与工程</td>
+<td>12</td>
+<td>22.250</td>
+<td>11.000</td>
+<td>1</td>
+<td>55.000</td>
+<td>0.917</td>
+</tr>
+<tr>
+<td>生物学</td>
+<td>16</td>
+<td>22.250</td>
+<td>14.500</td>
+<td>0</td>
+<td>45.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>电子科学与技术</td>
+<td>13</td>
+<td>27.846</td>
+<td>12.000</td>
+<td>1</td>
+<td>79.000</td>
+<td>0.923</td>
+</tr>
+<tr>
+<td>社会学</td>
+<td>10</td>
+<td>23.400</td>
+<td>14.000</td>
+<td>0</td>
+<td>34.500</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>管理科学与工程</td>
+<td>20</td>
+<td>18.800</td>
+<td>12.000</td>
+<td>1</td>
+<td>42.000</td>
+<td>0.950</td>
+</tr>
+<tr>
+<td>艺术学</td>
+<td>35</td>
+<td>11.943</td>
+<td>9.000</td>
+<td>1</td>
+<td>49.000</td>
+<td>0.971</td>
+</tr>
+<tr>
+<td>计算机科学与技术</td>
+<td>63</td>
+<td>19.492</td>
+<td>13.000</td>
+<td>3</td>
+<td>59.000</td>
+<td>0.952</td>
+</tr>
+</tbody>
+</table></div>
+<p>The concept–problem relation has 4,039 repeated pairs (12.2% of raw rows); course–teacher has 51,186 repeated pairs (52.7%). Unique-pair views are appropriate for linkage coverage, with raw and unique row counts retained. These repetitions are not extra student assessment attempts. Other mappings have legitimate many-to-many structure; uniqueness of a pair does not establish one-to-one entities.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>relation</th>
+<th>raw_rows</th>
+<th>unique_pairs</th>
+<th>duplicate_rows</th>
+<th>duplicate_fraction</th>
+<th>left_entities</th>
+<th>right_entities</th>
+<th>malformed_rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>concept-problem</td>
+<td>33180</td>
+<td>29141</td>
+<td>4039</td>
+<td>0.122</td>
+<td>13822</td>
+<td>19983</td>
+<td>0</td>
+</tr>
+<tr>
+<td>concept-course</td>
+<td>451078</td>
+<td>451078</td>
+<td>0</td>
+<td>0.000</td>
+<td>216096</td>
+<td>887</td>
+<td>0</td>
+</tr>
+<tr>
+<td>course-teacher</td>
+<td>97192</td>
+<td>46006</td>
+<td>51186</td>
+<td>0.527</td>
+<td>13866</td>
+<td>12252</td>
+<td>0</td>
+</tr>
+<tr>
+<td>user-reply</td>
+<td>331011</td>
+<td>331011</td>
+<td>0</td>
+<td>0.000</td>
+<td>50313</td>
+<td>331011</td>
+<td>0</td>
+</tr>
+<tr>
+<td>comment-reply</td>
+<td>370493</td>
+<td>370493</td>
+<td>0</td>
+<td>0.000</td>
+<td>308213</td>
+<td>370493</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-would-make-early-warning-answerable">What would make early warning answerable?</h2>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>Priority question</th>
+<th>Actual support</th>
+<th>Missing evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early behavior associated with later academic risk</td>
+<td>Unsupported at student level</td>
+<td>User–problem attempts with submission times, scores and course linkage; later academic result</td>
+</tr>
+<tr>
+<td>How early, with useful support time?</td>
+<td>Content chapter order only</td>
+<td>Enrollment start, applicable deadlines, event/availability timestamps, outcome timing</td>
+</tr>
+<tr>
+<td>Added value beyond prior scores?</td>
+<td>Unsupported</td>
+<td>Correct early scores and a temporally separate later outcome</td>
+</tr>
+<tr>
+<td>Misses, false flags and review volume?</td>
+<td>Unsupported</td>
+<td>Valid labels and held-out temporal/student evaluation</td>
+</tr>
+<tr>
+<td>Assessment infrastructure feasibility</td>
+<td>Answered by full local course/resource and relation investigation</td>
+<td>Exercise–problem mapping and local problem entities still absent</td>
+</tr>
+</tbody>
+</table></div>
+<p>Raw JSONL and text relations are preserved; keys, malformed lines, decomposition and join cardinality were checked. No personal names, query text, or identifiable user records appear in the dashboard. All relevant course/resource/concept tables were read in full; no convenient small sample substitutes for the local scope. Documentation distinguishes <code>Ex_</code> exercise containers, <code>Pm_</code> problems and <code>U_</code> users; these namespaces are not interchangeable. Source scope is the local partial extraction, not an assumed full upstream release.</p>
+<p>The next useful evidence is an authorized extraction of the missing linked user/problem/outcome files and their timing metadata. More content charts cannot validate warnings. Additional datasets were not acquired in this run.</p>
+<h2 id="scope-verification-and-handoff">Scope, verification and handoff</h2>
+<p>Status: <strong>feasibility assessment; completed bounded assessment-content investigation</strong>. The requested early-academic-risk objective is preserved; narrower evidence does not justify a substitute risk label or an unrelated ranking. Definitions not supplied by the user are proposed operationalizations. Stakeholder acceptance remains <strong>PENDING</strong>; no intervention exists, so intervention outcome evaluation is <strong>NOT APPLICABLE</strong>.</p>
+<p>8 numerical/data checks passed in <code>results/verification.csv</code>. Checks include the quantities actually computed, with their expected conditions and methods; they do not verify missing real-world evidence. Remaining evidence boundaries:</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>observed</th>
+<th>consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>student assessment trajectories</td>
+<td>No local user-problem event file</td>
+<td>Blocks student-level early-warning inference</td>
+</tr>
+<tr>
+<td>later academic adverse outcomes</td>
+<td>No local linked outcome table</td>
+<td>Blocks student-level early-warning inference</td>
+</tr>
+<tr>
+<td>assessment deadline obligations</td>
+<td>Course resource chapter labels are not due dates</td>
+<td>Blocks student-level early-warning inference</td>
+</tr>
+<tr>
+<td>exercise to problem linkage</td>
+<td>Neither documented exercise-problem file variant is present</td>
+<td>Blocks student-level early-warning inference</td>
+</tr>
+</tbody>
+</table></div>
+<p>Source CSVs are unchanged. <code>source_manifest.csv</code> identifies actual local inputs; preserved source metadata and exact dependency versions support reproduction. <a href="dashboard/index.html">Open the local dashboard</a>, <a href="README.md">reproduce the analysis</a>, or inspect <a href="QUALITY_REVIEW.md">the criterion and reader-task review</a>. Browser interaction, mobile rendering, local links and display reconciliation are documented in <code>evidence/browser-review.json</code>; screenshots preserve actual inspection. Those checks validate delivery, not causality, stakeholder approval or live alert effectiveness.</p>
+<p>Metadata sources accessed 13 October 2026: <a href="../../datasets/mooccubex/docs/course-en.md">local course schema</a>, <a href="../../datasets/mooccubex/docs/user-en.md">local user schema</a>, and the <a href="https://github.com/THU-KEG/MOOCCubeX">MOOCCubeX creators’ repository</a>. Original local acquisition dates and per-field vintages are not invented.</p></main></html>

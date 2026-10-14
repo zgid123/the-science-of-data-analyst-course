@@ -1,0 +1,11 @@
+check,observed,expected,status,method,consequence
+question key duplicates,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+feature completion before future question presentation,0,0 snapshots,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+unique user-cutoff rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+one split per user across cutoffs,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+day-bundle cutoff 10: primary confusion total,1315,1315 held-out users,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+day-bundle cutoff 30: primary confusion total,1279,1279 held-out users,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+day-bundle cutoff 60: primary confusion total,1008,1008 held-out users,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+official academic adverse outcome,No course result or official TOEIC score in local files,Linked future academic result,NOT VERIFIED,Actual source schema and documented coverage review,Practice proxy only; course-risk claims unsupported
+calendar temporal transport,Published timestamps shifted; no verified shared real calendar,Training labels known before a future-cohort deployment,NOT VERIFIED,Actual source schema and documented coverage review,Within-snapshot held-out-user estimate only
+actual answer release and record availability,Question-presented timestamp and elapsed_time proxy,Actual completion/logging timestamp,NOT VERIFIED,Actual source schema and documented coverage review,Timing conditional on duration interpretation

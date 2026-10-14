@@ -1,0 +1,619 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>college-scorecard research report</title><style>body{background:#f5f6f8;color:#192b3b;font:16px/1.65 system-ui,sans-serif;margin:0}main{max-width:1180px;margin:auto;padding:32px}h1{font-size:34px;line-height:1.2;max-width:1000px}h2{font-size:24px;margin-top:34px}h3{font-size:19px}a{color:#126b70}section,.panel{padding:24px;background:white;border:1px solid #dbe1e7;border-radius:10px;margin:22px 0}.note{border-left:4px solid #b77632;background:#fff5e8;padding:16px}.muted{color:#52647a}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #dde2e7}th{background:#edf1f4}tr:hover{background:#f1f6f6}select,button{font:inherit;background:white;border:1px solid #a9b6c4;border-radius:5px;padding:7px}label{display:inline-block;margin:10px 20px 10px 0}nav{display:flex;flex-wrap:wrap;gap:20px}svg,img{max-width:100%;height:auto}.report-figure{overflow:auto;max-width:100%}.report-figure img{display:block;width:100%;max-width:none;min-width:900px}.figure-hint{display:none;font-size:13px;color:#52647a}.stats{display:flex;gap:24px;flex-wrap:wrap}.stat{border-top:3px solid #126b70;padding:12px;flex:1;min-width:180px}.stat strong{font-size:28px;display:block}details{margin:12px 0}@media(max-width:650px){.figure-hint{display:block}main{padding:16px}section,.panel{padding:16px}h1{font-size:27px}label{display:block}}</style><main><nav><a href="dashboard/index.html">Dashboard</a><a href="README.md">Reproduce</a></nav><h1 id="college-scorecard-aggregate-academic-outcomes-are-available-but-they-cannot-label-early-student-risk">College Scorecard: aggregate academic outcomes are available, but they cannot label early student risk</h1>
+<p>The local snapshot contains <strong>6,273 institutions</strong> and <strong>227,980 institution–field–credential records</strong>. It has completion and retention aggregates but no student-level assessment submissions, deadlines, availability times or later linked academic results. It cannot answer whether a student's early assessment behavior identifies future risk. No institution-ranking model or synthetic student label is substituted.</p>
+<p>The bounded investigation asks how these outcome aggregates differ in grain, cohort and denominator, and whether coverage/weighting can mislead an early-warning design. The result is a <strong>feasibility assessment with substantive outcome-definition context</strong>, not a completed individual warning study.</p>
+<h2 id="completion-and-retention-describe-different-populations">Completion and retention describe different populations</h2>
+<p>The completion fields (<code>C150_4</code>, <code>C150_L4</code>) describe completion within 150% of expected program time for full-time, first-time degree/certificate-seeking cohorts, with four-year and less-than-four-year metric families. Retention describes return after the first year, separating full-time and part-time students; the four-year retention population is bachelor's degree-seeking. The official documentation bases metric family on IPEDS institution level, <strong>not predominant award code <code>PREDDEG</code></strong>. The analysis therefore uses each reported metric in its own family rather than imposing PREDDEG as a filter.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>measure</th>
+<th>raw_institutions</th>
+<th>valid_institutions</th>
+<th>coverage</th>
+<th>unweighted_mean</th>
+<th>median</th>
+<th>weighted_mean</th>
+<th>cohort_denominator</th>
+<th>weight_meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-year metric</td>
+<td>150% completion</td>
+<td>6273</td>
+<td>2263</td>
+<td>0.361</td>
+<td>0.521</td>
+<td>0.523</td>
+<td>0.607</td>
+<td>1857898.000</td>
+<td>D150_4</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Full-time retention</td>
+<td>6273</td>
+<td>2058</td>
+<td>0.328</td>
+<td>0.740</td>
+<td>0.757</td>
+<td>—</td>
+<td>—</td>
+<td>Unavailable matching non-pooled retention cohort denominator</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Part-time retention</td>
+<td>6273</td>
+<td>1368</td>
+<td>0.218</td>
+<td>0.455</td>
+<td>0.444</td>
+<td>—</td>
+<td>—</td>
+<td>Unavailable matching non-pooled retention cohort denominator</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Suppressed pooled FT retention</td>
+<td>6273</td>
+<td>1872</td>
+<td>0.298</td>
+<td>0.742</td>
+<td>0.755</td>
+<td>0.818</td>
+<td>3215675.000</td>
+<td>RET_FT_DEN4_POOLED</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>150% completion</td>
+<td>6273</td>
+<td>2851</td>
+<td>0.454</td>
+<td>0.621</td>
+<td>0.645</td>
+<td>0.484</td>
+<td>686651.000</td>
+<td>D150_L4</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Full-time retention</td>
+<td>6273</td>
+<td>2805</td>
+<td>0.447</td>
+<td>0.723</td>
+<td>0.731</td>
+<td>—</td>
+<td>—</td>
+<td>Unavailable matching non-pooled retention cohort denominator</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Part-time retention</td>
+<td>6273</td>
+<td>1574</td>
+<td>0.251</td>
+<td>0.580</td>
+<td>0.522</td>
+<td>—</td>
+<td>—</td>
+<td>Unavailable matching non-pooled retention cohort denominator</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Suppressed pooled FT retention</td>
+<td>6273</td>
+<td>2538</td>
+<td>0.405</td>
+<td>0.712</td>
+<td>0.716</td>
+<td>0.664</td>
+<td>1146878.000</td>
+<td>RET_FT_DENL4_POOLED</td>
+</tr>
+</tbody>
+</table></div>
+<p>Coverage here is valid reporting rows divided by <strong>all 6,273 snapshot institutions</strong>, and includes institutions for which a metric family is inapplicable. It is not a nonresponse rate among eligible institutions. “NULL” and suppression tokens are retained in the missing-token audit; the same missing token cannot by itself distinguish inapplicability from unreported data.</p>
+<p>Neither 1 − retention nor 1 − completion is a defensible individual Fail/Withdrawn label. Students can transfer or finish elsewhere, take longer, or belong to a different underlying cohort. Same institution IDs do not make completion and retention longitudinal measurements of the same students. The latest-cohort file can contain different measurement periods across fields; the exact local per-field vintage is not verified and is not inferred from the filename or the current website.</p>
+<h2 id="institution-averages-and-cohort-weighted-averages-answer-different-questions">Institution averages and cohort-weighted averages answer different questions</h2>
+<div class="report-figure"><p><img alt="All valid reporting institutions in each metric family. Cohort weights are D150_4/D150_L4, not total enrollment. Different institutional and cohort estimands do not identify individual academic risk." src="figures/completion_estimand_comparison.png" /></p></div><p class="figure-hint">Scroll sideways to read the chart.</p>
+<p><em>All valid reporting institutions in each metric family. Cohort weights are D150_4/D150_L4, not total enrollment. Different institutional and cohort estimands do not identify individual academic risk. Source: <code>results/outcome_definitions.csv</code>.</em></p>
+<p><a href="figures/completion_estimand_comparison.svg">SVG figure</a> · <a href="figures/completion_estimand_comparison.csv">Plotted data</a></p>
+<div class="report-figure"><p><img alt="Completion-cohort minimums 1/30/100, with retained institution counts labeled. Restrictions change the population; they are sensitivity checks, not removal of proven errors. Rounded published rates make weighted totals approximate." src="figures/small_cohort_sensitivity.png" /></p></div><p class="figure-hint">Scroll sideways to read the chart.</p>
+<p><em>Completion-cohort minimums 1/30/100, with retained institution counts labeled. Restrictions change the population; they are sensitivity checks, not removal of proven errors. Rounded published rates make weighted totals approximate. Source: <code>results/small_cohort_sensitivity.csv</code>.</em></p>
+<p><a href="figures/small_cohort_sensitivity.svg">SVG figure</a> · <a href="figures/small_cohort_sensitivity.csv">Plotted data</a></p>
+<p>Four-year completion averages <strong>52.1% across reporting institutions</strong>, but <strong>60.7% weighted by their completion cohort sizes</strong> (<code>D150_4</code>, 1,857,898 cohort members). Less-than-four-year completion reverses that pattern: <strong>62.1% institution-average versus 48.4% cohort-weighted</strong> (<code>D150_L4</code>, 686,651 members). These are different estimands, not contradictory calculations. The reversal implies that institution size and sector composition matter; an unweighted institutional summary must not be described as an average student's risk.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>sector</th>
+<th>valid_institutions</th>
+<th>unweighted_mean</th>
+<th>weighted_mean</th>
+<th>cohort_denominator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-year metric</td>
+<td>All reported sectors</td>
+<td>2263</td>
+<td>0.521</td>
+<td>0.607</td>
+<td>1857898.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Public</td>
+<td>807</td>
+<td>0.469</td>
+<td>0.587</td>
+<td>1281866.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Private nonprofit</td>
+<td>1247</td>
+<td>0.561</td>
+<td>0.668</td>
+<td>529822.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Private for-profit</td>
+<td>209</td>
+<td>0.484</td>
+<td>0.468</td>
+<td>46210.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>All reported sectors</td>
+<td>2851</td>
+<td>0.621</td>
+<td>0.484</td>
+<td>686651.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Public</td>
+<td>1035</td>
+<td>0.475</td>
+<td>0.381</td>
+<td>444423.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Private nonprofit</td>
+<td>146</td>
+<td>0.667</td>
+<td>0.624</td>
+<td>23639.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Private for-profit</td>
+<td>1670</td>
+<td>0.707</td>
+<td>0.679</td>
+<td>218589.000</td>
+</tr>
+</tbody>
+</table></div>
+<p>The executed small-cohort follow-up removes institutions with completion cohorts below 30 and 100, without redefining raw data or claiming small institutions are erroneous. Less-than-four-year institution means fall from 62.1% to 52.9% at a 100-member minimum, while the cohort-weighted estimate is 46.5%. Thus tiny cohorts materially affect the institution estimand, and removing them changes its population. Four-year cohort-weighted completion is comparatively stable under these restrictions.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>sector</th>
+<th>min_completion_cohort</th>
+<th>institutions</th>
+<th>completion_mean</th>
+<th>completion_weighted</th>
+<th>cohort_students</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-year metric</td>
+<td>All reported sectors</td>
+<td>1</td>
+<td>2263</td>
+<td>0.521</td>
+<td>0.607</td>
+<td>1857898.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>All reported sectors</td>
+<td>30</td>
+<td>1965</td>
+<td>0.529</td>
+<td>0.607</td>
+<td>1854397.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>All reported sectors</td>
+<td>100</td>
+<td>1750</td>
+<td>0.539</td>
+<td>0.608</td>
+<td>1842055.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>All reported sectors</td>
+<td>1</td>
+<td>2851</td>
+<td>0.621</td>
+<td>0.484</td>
+<td>686651.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>All reported sectors</td>
+<td>30</td>
+<td>2171</td>
+<td>0.592</td>
+<td>0.481</td>
+<td>676201.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>All reported sectors</td>
+<td>100</td>
+<td>1328</td>
+<td>0.529</td>
+<td>0.465</td>
+<td>629077.000</td>
+</tr>
+</tbody>
+</table></div>
+<p>Weights are <strong>matching outcome cohort denominators</strong>, never <code>UGDS</code> undergraduate enrollment, which represents a different population. Weighted numerators use published rounded rates times cohort counts and are approximate; they are not reconstructed exact person counts. No artificial confidence interval is attached to this full-snapshot accounting comparison.</p>
+<h2 id="pooled-suppression-changes-what-can-be-observed">Pooled suppression changes what can be observed</h2>
+<p>Non-pooled retention lacks its matching cohort count in this selected local schema, so its average remains an institution-level mean. The suppressed pooled full-time retention fields do have supplied pooled denominators; they are analyzed as a distinct reporting measure. Four-year pooled retention is 74.2% institution-average versus 81.8% cohort-weighted; the less-than-four-year values are 71.2% versus 66.4%. These pooled cohorts are not silently equated to the non-pooled cohorts or completion cohorts.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>sector</th>
+<th>valid_institutions</th>
+<th>coverage</th>
+<th>unweighted_mean</th>
+<th>weighted_mean</th>
+<th>cohort_denominator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-year metric</td>
+<td>All reported sectors</td>
+<td>1872</td>
+<td>0.298</td>
+<td>0.742</td>
+<td>0.818</td>
+<td>3215675.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Public</td>
+<td>642</td>
+<td>0.314</td>
+<td>0.739</td>
+<td>0.822</td>
+<td>2193537.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Private nonprofit</td>
+<td>1133</td>
+<td>0.596</td>
+<td>0.751</td>
+<td>0.817</td>
+<td>989384.000</td>
+</tr>
+<tr>
+<td>Four-year metric</td>
+<td>Private for-profit</td>
+<td>97</td>
+<td>0.042</td>
+<td>0.653</td>
+<td>0.583</td>
+<td>32754.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>All reported sectors</td>
+<td>2538</td>
+<td>0.405</td>
+<td>0.712</td>
+<td>0.664</td>
+<td>1146878.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Public</td>
+<td>1000</td>
+<td>0.489</td>
+<td>0.654</td>
+<td>0.644</td>
+<td>918564.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Private nonprofit</td>
+<td>112</td>
+<td>0.059</td>
+<td>0.701</td>
+<td>0.727</td>
+<td>21168.000</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>Private for-profit</td>
+<td>1426</td>
+<td>0.613</td>
+<td>0.753</td>
+<td>0.746</td>
+<td>207146.000</td>
+</tr>
+</tbody>
+</table></div>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>token</th>
+<th>rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C150_4</td>
+<td>—</td>
+<td>4010</td>
+</tr>
+<tr>
+<td>C150_L4</td>
+<td>—</td>
+<td>3422</td>
+</tr>
+<tr>
+<td>RET_FT4</td>
+<td>—</td>
+<td>4215</td>
+</tr>
+<tr>
+<td>RET_FTL4</td>
+<td>—</td>
+<td>3468</td>
+</tr>
+<tr>
+<td>RET_FT4_POOLED_SUPP</td>
+<td>—</td>
+<td>4137</td>
+</tr>
+<tr>
+<td>RET_FT4_POOLED_SUPP</td>
+<td>PS</td>
+<td>264</td>
+</tr>
+<tr>
+<td>RET_FTL4_POOLED_SUPP</td>
+<td>—</td>
+<td>3438</td>
+</tr>
+<tr>
+<td>RET_FTL4_POOLED_SUPP</td>
+<td>PS</td>
+<td>297</td>
+</tr>
+</tbody>
+</table></div>
+<p>Official documentation explains rolling pooled retention and small-cohort suppression; the code preserves suppressed values as missing rather than zero. Because withheld outcomes are not observed, no warning accuracy or person-level alert volume can be validated from these aggregates.</p>
+<h2 id="a-common-institution-does-not-establish-common-students">A common institution does not establish common students</h2>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>sector</th>
+<th>both_metrics_n</th>
+<th>completion_only_n</th>
+<th>retention_only_n</th>
+<th>institution_spearman</th>
+<th>median_completion</th>
+<th>median_retention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-year metric</td>
+<td>All reported sectors</td>
+<td>2001</td>
+<td>262</td>
+<td>57</td>
+<td>0.606</td>
+<td>0.539</td>
+<td>0.759</td>
+</tr>
+<tr>
+<td>Less-than-four-year metric</td>
+<td>All reported sectors</td>
+<td>2730</td>
+<td>121</td>
+<td>75</td>
+<td>0.575</td>
+<td>0.633</td>
+<td>0.731</td>
+</tr>
+</tbody>
+</table></div>
+<p>These same-institution comparisons are ecological diagnostics only. Spearman correlation across institution rates does not establish whether early assessment behavior predicts a later student outcome. Differences in cohort, reporting population, transfer and program duration remain unresolved by joining <code>UNITID</code>.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>predominant_award_code</th>
+<th>institutions</th>
+<th>completion_4_n</th>
+<th>completion_l4_n</th>
+<th>retention_4_n</th>
+<th>retention_l4_n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>470</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2619</td>
+<td>152</td>
+<td>2269</td>
+<td>73</td>
+<td>2215</td>
+</tr>
+<tr>
+<td>2</td>
+<td>974</td>
+<td>314</td>
+<td>582</td>
+<td>180</td>
+<td>590</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1947</td>
+<td>1797</td>
+<td>0</td>
+<td>1805</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>263</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The field-of-study table has a separate compound grain (<code>UNITID</code>, <code>OPEID6</code>, <code>CIPCODE</code>, <code>CREDLEV</code>) with no duplicate keys in the inspected local extract. It includes 7,020 rows without a numeric UNITID and aggregates partly by institutional grouping. It is not a second independent student sample; joining its many program rows to institutions without re-aggregation would fan out institutional metrics. No such join is performed.</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>institution rows</td>
+<td>6273</td>
+</tr>
+<tr>
+<td>institution fields</td>
+<td>3308</td>
+</tr>
+<tr>
+<td>field-of-study rows</td>
+<td>227980</td>
+</tr>
+<tr>
+<td>field-of-study compound-key duplicate rows</td>
+<td>0</td>
+</tr>
+<tr>
+<td>field-of-study identical selected rows</td>
+<td>0</td>
+</tr>
+<tr>
+<td>field-of-study distinct nonempty UNITID</td>
+<td>6128</td>
+</tr>
+<tr>
+<td>field-of-study rows without numeric UNITID</td>
+<td>7020</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-is-missing-for-the-project">What is missing for the project?</h2>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>Priority question</th>
+<th>Local support</th>
+<th>Exact blocker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early assessment behavior versus future risk</td>
+<td>Unsupported</td>
+<td>Student/course identifiers, assessment events, submissions and scores absent</td>
+</tr>
+<tr>
+<td>Warning cutoffs and support lead time</td>
+<td>Unsupported</td>
+<td>Applicable deadlines, observation/availability times and linked future event times absent</td>
+</tr>
+<tr>
+<td>Added value over prior scores</td>
+<td>Unsupported</td>
+<td>No early individual score history or valid future student labels</td>
+</tr>
+<tr>
+<td>False flags, missed students and review burden</td>
+<td>Unsupported</td>
+<td>No individual labels or held-out student/time cohort</td>
+</tr>
+<tr>
+<td>Academic outcome suitability</td>
+<td>Answered contextually</td>
+<td>Aggregate reporting cohorts cannot be reinterpreted as individual Fail/Withdrawn</td>
+</tr>
+</tbody>
+</table></div>
+<p>All institution/program rows were scanned with relevant selected columns. Source preservation, institution key uniqueness, valid rate ranges, uninflated institutional denominator and an independent weighted completion recomputation were checked. No silent imputation, institution exclusion or outcome suppression reversal occurs. Sector comparisons are contextual denominator checks, not a ranking or causal judgment. The missing student/event/outcome linkage must be obtained from a separately authorized institutional source before this dataset can participate in an early-warning model.</p>
+<h2 id="scope-verification-and-handoff">Scope, verification and handoff</h2>
+<p>Status: <strong>feasibility assessment; completed aggregate academic-outcome suitability investigation</strong>. The requested early-academic-risk objective is preserved; narrower evidence does not justify a substitute risk label or an unrelated ranking. Definitions not supplied by the user are proposed operationalizations. Stakeholder acceptance remains <strong>PENDING</strong>; no intervention exists, so intervention outcome evaluation is <strong>NOT APPLICABLE</strong>.</p>
+<p>35 numerical/data checks passed in <code>results/verification.csv</code>. Checks include the quantities actually computed, with their expected conditions and methods; they do not verify missing real-world evidence. Remaining evidence boundaries:</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>observed</th>
+<th>consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>student assessment behavior linkage</td>
+<td>Aggregate UNITID/OPEID/CIP identifiers; no student assessment records</td>
+<td>Blocks direct student early-warning inference; contextual only</td>
+</tr>
+<tr>
+<td>future academic risk timing</td>
+<td>Mixed aggregate reporting cohorts and no student event/deadline times</td>
+<td>Blocks direct student early-warning inference; contextual only</td>
+</tr>
+<tr>
+<td>snapshot measurement years</td>
+<td>Most-Recent filename without verified per-field local cohort vintage</td>
+<td>Blocks direct student early-warning inference; contextual only</td>
+</tr>
+</tbody>
+</table></div>
+<p>Source CSVs are unchanged. <code>source_manifest.csv</code> identifies actual local inputs; preserved source metadata and exact dependency versions support reproduction. <a href="dashboard/index.html">Open the local dashboard</a>, <a href="README.md">reproduce the analysis</a>, or inspect <a href="QUALITY_REVIEW.md">the criterion and reader-task review</a>. Browser interaction, mobile rendering, local links and display reconciliation are documented in <code>evidence/browser-review.json</code>; screenshots preserve actual inspection. Those checks validate delivery, not causality, stakeholder approval or live alert effectiveness.</p>
+<p>Metadata sources accessed 13 October 2026: <a href="https://collegescorecard.ed.gov/files/InstitutionDataDocumentation.pdf">U.S. Department of Education institution-level methodology</a>, with field definitions/retention details verified through indexed official text when direct PDF access returned 403. Original local acquisition dates and per-field vintages are not invented.</p></main></html>

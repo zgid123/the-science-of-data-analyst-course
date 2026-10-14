@@ -1,0 +1,30 @@
+[
+  {
+    "figure": "incremental_behavior_value",
+    "plotted_rows": 3,
+    "sources": [
+      {
+        "file": "results/uncertainty.csv",
+        "sha256": "194a8db57bd004368468daec845e5bde5d870f4c1f81c5305d28b206d7805a49"
+      }
+    ],
+    "caption": "EdNet held-out continuing users. Every paired 95% user-bootstrap interval includes zero (500 replicates, fixed models); the target is next-20-bundle accuracy below 40%, not course failure.",
+    "png": "figures/incremental_behavior_value.png",
+    "svg": "figures/incremental_behavior_value.svg",
+    "plotted_data": "figures/incremental_behavior_value.csv"
+  },
+  {
+    "figure": "next_question_lead_time",
+    "plotted_rows": 3,
+    "sources": [
+      {
+        "file": "results/lead_time.csv",
+        "sha256": "3e4799b18e8853d6bb664e2933c15df7ac93c2b060534088d091e2c2a5496c8b"
+      }
+    ],
+    "caption": "EdNet eligible held-out users; dots are median intervals to the first future question and whiskers are the interquartile range, not confidence intervals. Completion timing is approximated by presentation time plus recorded duration.",
+    "png": "figures/next_question_lead_time.png",
+    "svg": "figures/next_question_lead_time.svg",
+    "plotted_data": "figures/next_question_lead_time.csv"
+  }
+]

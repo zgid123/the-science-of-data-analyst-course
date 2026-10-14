@@ -1,0 +1,8 @@
+check,observed,expected,status,method,consequence
+unique country-school questionnaire keys,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+unique teacher keys,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+trend export contains only documented earlier cycles,"[5, 6, 7]","[5,6,7]",PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+teacher respondent accounting,68054,68054 source teacher rows,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+independent teacher weighted rate,0.7517156592807365,0.7517156592807371 within 1e-12,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+student assessment trajectory and future outcome,No linked student submission/deadline/outcome table in local snapshot,Individual timed assessment records linked to later academic outcome,NOT VERIFIED,Actual source schema and documented coverage review,Context-only; no academic-risk model
+school design-based uncertainty,No school replicate weights in supplied school file,School variance replicates/design variables,NOT VERIFIED,Actual source schema and documented coverage review,School weighted points are descriptive; no fabricated CI

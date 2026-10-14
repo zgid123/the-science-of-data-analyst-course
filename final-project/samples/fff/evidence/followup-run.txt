@@ -1,0 +1,23 @@
+ cutoff      split    model module    n       ap     risk
+     30 validation behavior    All  441 0.568152 0.408163
+     30       test behavior    All 1567 0.528320 0.356733
+     30 validation    score    All  441 0.502464 0.408163
+     30       test    score    All 1567 0.402920 0.356733
+     30 validation combined    All  441 0.637498 0.408163
+     30       test combined    All 1567 0.563515 0.356733
+     60 validation behavior    All  428 0.720507 0.390187
+     60       test behavior    All 1496 0.654269 0.326203
+     60 validation    score    All  428 0.763407 0.390187
+     60       test    score    All 1496 0.615727 0.326203
+     60 validation combined    All  428 0.820580 0.390187
+     60       test combined    All 1496 0.724723 0.326203
+     90 validation behavior    All  414 0.733970 0.369565
+     90       test behavior    All 1437 0.660605 0.298539
+     90 validation    score    All  414 0.783838 0.369565
+     90       test    score    All 1437 0.698359 0.298539
+     90 validation combined    All  414 0.843694 0.369565
+     90       test combined    All 1437 0.748716 0.298539
+ cutoff                 comparison  estimate       lo       hi
+     30 combined minus behavior AP  0.035195 0.022650 0.049001
+     60 combined minus behavior AP  0.070454 0.052636 0.086216
+     90 combined minus behavior AP  0.088111 0.067102 0.110532

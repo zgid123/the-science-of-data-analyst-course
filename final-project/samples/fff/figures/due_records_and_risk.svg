@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="669.034609pt" height="278.590797pt" viewBox="0 0 669.034609 278.590797" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-13T18:05:28.011187</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 278.590797 
+L 669.034609 278.590797 
+L 669.034609 0 
+L -0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 183.771875 238.389938 
+L 646.110625 238.389938 
+L 646.110625 32.229938 
+L 183.771875 32.229938 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 183.771875 41.600847 
+L 295.358629 41.600847 
+L 295.358629 124.897816 
+L 183.771875 124.897816 
+z
+" clip-path="url(#pe49bc04295)" style="fill: #126b70"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 183.771875 145.722059 
+L 596.320298 145.722059 
+L 596.320298 229.019028 
+L 183.771875 229.019028 
+z
+" clip-path="url(#pe49bc04295)" style="fill: #bb7029"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m47ff4526b6" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m47ff4526b6" x="183.771875" y="238.389938" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="183.771875" y="253.747359" transform="rotate(-0 183.771875 253.747359)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m47ff4526b6" x="276.239625" y="238.389938" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="276.239625" y="253.747359" transform="rotate(-0 276.239625 253.747359)">20%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m47ff4526b6" x="368.707375" y="238.389938" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="368.707375" y="253.747359" transform="rotate(-0 368.707375 253.747359)">40%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m47ff4526b6" x="461.175125" y="238.389938" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="461.175125" y="253.747359" transform="rotate(-0 461.175125 253.747359)">60%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m47ff4526b6" x="553.642875" y="238.389938" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="553.642875" y="253.747359" transform="rotate(-0 553.642875 253.747359)">80%</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m47ff4526b6" x="646.110625" y="238.389938" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="646.110625" y="253.747359" transform="rotate(-0 646.110625 253.747359)">100%</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="414.94125" y="268.748219" transform="rotate(-0 414.94125 268.748219)">Later final Fail or future recorded withdrawal</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <defs>
+       <path id="m3b6d10d3fd" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3b6d10d3fd" x="183.771875" y="83.249331" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="176.771875" y="87.428472" transform="rotate(-0 176.771875 87.428472)">All due records present</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m3b6d10d3fd" x="183.771875" y="187.370544" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="176.771875" y="191.549684" transform="rotate(-0 176.771875 191.549684)">At least one absent due record</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 183.771875 238.389938 
+L 183.771875 32.229937 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 183.771875 238.389938 
+L 646.110625 238.389938 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(304.605404 79.846011)">24.1%</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(304.605404 91.847964)">n=1,301</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(605.567073 183.967223)">89.2%</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(605.567073 195.969176)">n=195</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: start" x="183.771875" y="17.229938" transform="rotate(-0 183.771875 17.229938)">Day 60: absent due records distinguish later risk</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe49bc04295">
+   <rect x="183.771875" y="32.229938" width="462.33875" height="206.16"/>
+  </clipPath>
+ </defs>
+</svg>

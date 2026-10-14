@@ -1,0 +1,39 @@
+check,observed,expected,status,method,consequence
+institution UNITID duplicate rows,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/All reported sectors/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/All reported sectors/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/All reported sectors/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/All reported sectors/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Public/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Public/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Public/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Public/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private nonprofit/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private nonprofit/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private nonprofit/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private nonprofit/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private for-profit/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private for-profit/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private for-profit/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Four-year metric/Private for-profit/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/All reported sectors/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/All reported sectors/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/All reported sectors/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/All reported sectors/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Public/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Public/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Public/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Public/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private nonprofit/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private nonprofit/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private nonprofit/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private nonprofit/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private for-profit/150% completion rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private for-profit/Full-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private for-profit/Part-time retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+Less-than-four-year metric/Private for-profit/Suppressed pooled FT retention rate range violations,0,0,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+independent weighted completion recomputation,0.6068103366815624,0.6068103366815617 within 1e-12,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+field of study is not joined into institution denominator,6273,6273 raw institutions,PASS,Executed code/analyze.py or named companion script,Numerical gate passes
+student assessment behavior linkage,Aggregate UNITID/OPEID/CIP identifiers; no student assessment records,Verified student/course events and later academic outcome,NOT VERIFIED,Actual source schema and documented coverage review,Blocks direct student early-warning inference; contextual only
+future academic risk timing,Mixed aggregate reporting cohorts and no student event/deadline times,Verified student/course events and later academic outcome,NOT VERIFIED,Actual source schema and documented coverage review,Blocks direct student early-warning inference; contextual only
+snapshot measurement years,Most-Recent filename without verified per-field local cohort vintage,Verified student/course events and later academic outcome,NOT VERIFIED,Actual source schema and documented coverage review,Blocks direct student early-warning inference; contextual only

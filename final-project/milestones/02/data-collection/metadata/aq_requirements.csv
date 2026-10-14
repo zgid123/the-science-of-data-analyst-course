@@ -1,0 +1,9 @@
+aq_type,unit,measure_target,required_variables,time_decision
+"AQ1
+Descriptive",Lượt sinh viên–bài đến hạn; tổng hợp theo bài/tuần.,Tỷ lệ chưa có bản nộp: số lượt đến hạn chưa có bản nộp quan sát được ÷ số lượt đến hạn của population.,"Mã sinh viên, học phần/đợt, bài; lịch hạn, ngày nộp, trạng thái chuyển điểm; đăng ký/rút.",Ngày 0–60; dữ liệu gốc theo ngày. Giảng viên chọn bài/tuần cần kiểm tra.
+"AQ2
+Diagnostic",Sinh viên–học phần–đợt; so nhóm kết quả.,Khác biệt/liên hệ giữa thiếu bản nộp và kết quả cuối; xem riêng Fail và Withdrawn.,"AQ1 + kết quả cuối, số cơ hội đến hạn, hoạt động VLE gắn sinh viên/ngày.",Chỉ báo 0–60; kết quả cuối để đối chiếu hồi cứu. Chọn căn cứ cần xác minh.
+"AQ3
+Predictive",Sinh viên–học phần–đợt đủ điều kiện ngày 60.,"Nguy cơ Fail/Withdrawn; đánh giá KPI1/KPI2 ở phần dữ liệu riêng, cùng số ca.","Khóa nối, thời gian đăng ký/rút, lịch bài, bản nộp trước mốc, VLE trước mốc, kết quả đối chiếu.",Chốt ngày 60; outcome sau mốc đến hết đợt. Duyệt danh sách hoặc giữ baseline.
+"AQ4
+Prescriptive (M1)",Ca xem xét / hành động hỗ trợ / lần theo dõi.,Lựa chọn ca và bước hỗ trợ khả thi; cần bằng chứng hành động và kết quả để so hiệu quả.,"Danh sách AQ3 + khẩn cấp, ngoại lệ, đồng ý, nguồn lực, action, người phụ trách, kết quả theo dõi.",Tại/sau xác minh; thời điểm action và follow-up. Giảng viên/cố vấn duyệt.

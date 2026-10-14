@@ -1,0 +1,77 @@
+[
+  {
+    "check": "cutoff 10: independent raw prefix/target/timing",
+    "examined": 100,
+    "mismatches": 0,
+    "status": "PASS",
+    "method": "100 seeded random held-out users; raw ZIP re-read; pandas grouping and direct answer-key comparison"
+  },
+  {
+    "check": "cutoff 10: direct AP for score",
+    "examined": 1315,
+    "mismatches": 0,
+    "observed": 0.18164521375026346,
+    "expected": 0.1816452137502634,
+    "status": "PASS",
+    "method": "Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric"
+  },
+  {
+    "check": "cutoff 10: direct AP for combined",
+    "examined": 1315,
+    "mismatches": 0,
+    "observed": 0.1900967210311107,
+    "expected": 0.1900967210311107,
+    "status": "PASS",
+    "method": "Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric"
+  },
+  {
+    "check": "cutoff 30: independent raw prefix/target/timing",
+    "examined": 100,
+    "mismatches": 0,
+    "status": "PASS",
+    "method": "100 seeded random held-out users; raw ZIP re-read; pandas grouping and direct answer-key comparison"
+  },
+  {
+    "check": "cutoff 30: direct AP for score",
+    "examined": 1279,
+    "mismatches": 0,
+    "observed": 0.19488873078475824,
+    "expected": 0.1948887307847582,
+    "status": "PASS",
+    "method": "Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric"
+  },
+  {
+    "check": "cutoff 30: direct AP for combined",
+    "examined": 1279,
+    "mismatches": 0,
+    "observed": 0.19774857518931033,
+    "expected": 0.1977485751893103,
+    "status": "PASS",
+    "method": "Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric"
+  },
+  {
+    "check": "cutoff 60: independent raw prefix/target/timing",
+    "examined": 100,
+    "mismatches": 0,
+    "status": "PASS",
+    "method": "100 seeded random held-out users; raw ZIP re-read; pandas grouping and direct answer-key comparison"
+  },
+  {
+    "check": "cutoff 60: direct AP for score",
+    "examined": 1008,
+    "mismatches": 0,
+    "observed": 0.23279733810450481,
+    "expected": 0.2327973381045048,
+    "status": "PASS",
+    "method": "Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric"
+  },
+  {
+    "check": "cutoff 60: direct AP for combined",
+    "examined": 1008,
+    "mismatches": 0,
+    "observed": 0.21187694614169142,
+    "expected": 0.2118769461416914,
+    "status": "PASS",
+    "method": "Sort scores, combine ties, sum precision at positive increments; independent of sklearn metric"
+  }
+]

@@ -1,0 +1,8 @@
+Teachers 68054 schools 21629 trend rows 1447787
+Country/domain estimates 464
+country  teacher_type                       comparison    n  valid_n  weighted  unweighted       se       lo       hi  weight_sum
+    ARE           1.0 Immediate minus written feedback 2107     2012  0.160884    0.159046 0.010479 0.140345 0.181424  2388.08278
+    ARE           2.0 Immediate minus written feedback 7985     7571  0.132902    0.111610 0.006172 0.120805 0.144998 12506.94031
+    AUS           1.0 Immediate minus written feedback 3554     3446  0.528232    0.517411 0.010472 0.507707 0.548756 11785.79584
+    AUS           2.0 Immediate minus written feedback 7843     7562  0.416169    0.409283 0.007819 0.400845 0.431493 58543.99362
+    BRA           1.0 Immediate minus written feedback  886      835  0.179272    0.196407 0.033983 0.112666 0.245879 46622.51490

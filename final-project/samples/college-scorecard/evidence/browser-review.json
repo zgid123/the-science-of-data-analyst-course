@@ -1,0 +1,194 @@
+[
+  {
+    "check": "source unchanged Most-Recent-Cohorts-Institution.csv",
+    "observed": "89e8a35a6588dfb81a6ce78fa9df4cb99b36ef7aa4b28fb0157f9e3e1a7d81b5",
+    "expected": "89e8a35a6588dfb81a6ce78fa9df4cb99b36ef7aa4b28fb0157f9e3e1a7d81b5",
+    "status": "PASS"
+  },
+  {
+    "check": "source unchanged Most-Recent-Cohorts-Field-of-Study.csv",
+    "observed": "3184f634cea46a94a3e8dc73f6d2147ecaea5b3b648b26adbfdfdd9133ce8d35",
+    "expected": "3184f634cea46a94a3e8dc73f6d2147ecaea5b3b648b26adbfdfdd9133ce8d35",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard title",
+    "observed": "College Scorecard: outcome definitions before student-risk labels",
+    "expected": "dataset-specific rendered title",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Four-year metric/All reported sectors",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t52.1%\t60.7%\t2,263\t1,857,898\tD150_4\nFull-time rete",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Four-year metric/Public",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t46.9%\t58.7%\t807\t1,281,866\tD150_4\nFull-time retent",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Four-year metric/Private nonprofit",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t56.1%\t66.8%\t1,247\t529,822\tD150_4\nFull-time retent",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Four-year metric/Private for-profit",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t48.4%\t46.8%\t209\t46,210\tD150_4\nFull-time retention",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Less-than-four-year metric/All reported sectors",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t62.1%\t48.4%\t2,851\t686,651\tD150_L4\nFull-time reten",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Less-than-four-year metric/Public",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t47.5%\t38.1%\t1,035\t444,423\tD150_L4\nFull-time reten",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Less-than-four-year metric/Private nonprofit",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t66.7%\t62.4%\t146\t23,639\tD150_L4\nFull-time retentio",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "completion display Less-than-four-year metric/Private for-profit",
+    "observed": "Measure\tInstitution mean\tMatching-cohort mean\tWeighted reporting n\tCohort denominator\tDenominator field / boundary\n150% completion\t70.7%\t67.9%\t1,670\t218,589\tD150_L4\nFull-time reten",
+    "expected": "saved institution/cohort weighted means",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path definitions",
+    "observed": "Which outcome and denominator are being compared?\nReporting metric family \nFour-year metric\nLess-than-four-year metric\nSector \nAll reported sectors\nPublic\nPrivate nonprofit\nPrivate for-profit\nReset\nReported measure\tAll s",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path weights",
+    "observed": "Institution average versus relevant cohort average\n150% completion / institution mean\n52.1%\n150% completion / cohort weighted\n60.7%\nSuppressed pooled FT retention / institution mean\n74.2%\nSuppressed pooled FT retention /",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path small",
+    "observed": "Do tiny completion cohorts change the interpretation?\nMinimum completion cohort\tInstitutions\tInstitution mean\tCohort weighted\tCohort members\n1\t2,263\t52.1%\t60.7%\t1,857,898\n30\t1,965\t52.9%\t60.7%\t1,854,397\n100\t1,750\t53.9%\t60",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path cohorts",
+    "observed": "Same institution does not mean the same students\nInstitutions with both\tCompletion only\tRetention only\tEcological Spearman\tMedian completion\tMedian retention\n2,001\t262\t57\t0.606\t53.9%\t75.9%\n\nThese ecological rate correlat",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path suppression",
+    "observed": "What values are missing or suppressed?\nField (all sectors, fixed reference)\tMissing token\tRows\nC150_4\tnull\t4,010\nRET_FT4\tnull\t4,215\nRET_PT4\tnull\t4,905\nRET_FT4_POOLED_SUPP\tnull\t4,137\nRET_FT4_POOLED_SUPP\tPS\t264\nPredominant",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "reader path grain",
+    "observed": "Why the program table cannot create student warning labels\nGrain/coverage quantity (fixed full snapshot)\tCount\ninstitution rows\t6,273\ninstitution fields\t3,308\nfield-of-study rows\t227,980\nfield-of-study compound-key dupli",
+    "expected": "readable question, evidence and limitation",
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../report.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard local link ../QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "reset retains rendered populated default",
+    "observed": 7,
+    "expected": "at least four evidence tables",
+    "status": "PASS"
+  },
+  {
+    "check": "empty helper does not fabricate zero",
+    "observed": "No observations for this selection. Rates are undefined.",
+    "expected": "undefined rates",
+    "status": "PASS"
+  },
+  {
+    "check": "no individual identifiers in public embedded tables",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "dashboard mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "report rendered evidence tables",
+    "observed": 10,
+    "expected": "at least four",
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link dashboard/index.html",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link README.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report local link QUALITY_REVIEW.md",
+    "observed": true,
+    "expected": true,
+    "status": "PASS"
+  },
+  {
+    "check": "report mobile page overflow",
+    "observed": false,
+    "expected": false,
+    "status": "PASS"
+  },
+  {
+    "check": "JavaScript errors",
+    "observed": [],
+    "expected": [],
+    "status": "PASS"
+  }
+]

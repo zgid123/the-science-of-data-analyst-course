@@ -1,0 +1,4 @@
+id,old,new,evidence,impact
+C01,AQ3 là dự báo tại ngày 60.,"Giữ scope; chỉ coi đánh giá hồi cứu có điều kiện, không chứng nhận live warning.",Thiếu thời gian công bố điểm/ghi log; điểm không vào phương án chính nếu chưa xác minh.,KPI1/2 giữ target; kết quả chưa đo.
+C02,"AQ4 gắn mức Prescriptive, có mô phỏng quy trình.",Giữ như future decision requirement; không dùng mô phỏng để chứng minh can thiệp.,"Không có action, nguồn lực, consent, follow-up trong raw.",Không tính hiệu quả can thiệp; không thay KPI bằng số giả.
+C03,Raw có thể dùng trực tiếp để tổng hợp VLE.,Yêu cầu kiểm tra nhóm VLE lặp ở milestone tiếp theo; chưa dedup.,2.195.960 dòng dư theo nhóm định danh trên toàn file.,AQ2/AQ3 cần quy tắc tổng hợp xác minh; không đổi population.

@@ -1,0 +1,33 @@
+family,sector,measure,raw_institutions,valid_institutions,coverage,unweighted_mean,median,q25,q75,weighted_mean,weighted_institutions,cohort_denominator,weight_meaning
+Four-year metric,All reported sectors,150% completion,6273,2263,0.3607524310537223,0.521223110914715,0.5226,0.37634999999999996,0.6696,0.6068103366815617,2263,1857898.0,D150_4
+Four-year metric,All reported sectors,Full-time retention,6273,2058,0.3280726924916308,0.7396697764820215,0.75725,0.661725,0.8467,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,All reported sectors,Part-time retention,6273,1368,0.21807747489239598,0.4546172514619883,0.4444,0.25,0.6446,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,All reported sectors,Suppressed pooled FT retention,6273,1872,0.2984218077474892,0.7415722222222222,0.75455,0.6683749999999999,0.83235,0.8177006624114688,1872,3215675.0,RET_FT_DEN4_POOLED
+Four-year metric,Public,150% completion,2047,807,0.39423546653639474,0.46937038413878557,0.4618,0.3356,0.5754,0.5866226236595713,807,1281866.0,D150_4
+Four-year metric,Public,Full-time retention,2047,652,0.31851489985344406,0.7446377300613497,0.756,0.6757,0.8243,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,Public,Part-time retention,2047,607,0.29653150952613583,0.46127907742998353,0.4561,0.3243,0.60905,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,Public,Suppressed pooled FT retention,2047,642,0.3136297020029311,0.7388602803738318,0.7483,0.67615,0.8136749999999999,0.8216745006352754,642,2193537.0,RET_FT_DEN4_POOLED
+Four-year metric,Private nonprofit,150% completion,1901,1247,0.6559705418200947,0.5610910986367281,0.5736,0.42785,0.70635,0.6677565378561101,1247,529822.0,D150_4
+Four-year metric,Private nonprofit,Full-time retention,1901,1224,0.6438716465018411,0.7508455882352942,0.7684500000000001,0.6673,0.8571,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,Private nonprofit,Part-time retention,1901,650,0.34192530247238295,0.4526443076923077,0.44115000000000004,0.11945,0.7206,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,Private nonprofit,Suppressed pooled FT retention,1901,1133,0.5960021041557075,0.7506767872903796,0.7647,0.6728,0.8449,0.8166551177298198,1133,989384.0,RET_FT_DEN4_POOLED
+Four-year metric,Private for-profit,150% completion,2325,209,0.08989247311827957,0.4835665071770335,0.5,0.3333,0.636,0.46803744644016443,209,46210.0,D150_4
+Four-year metric,Private for-profit,Full-time retention,2325,182,0.07827956989247312,0.6467120879120879,0.6667,0.5,0.856525,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,Private for-profit,Part-time retention,2325,111,0.04774193548387097,0.42974054054054056,0.4027,0.2457,0.5202,,0,,Unavailable matching non-pooled retention cohort denominator
+Four-year metric,Private for-profit,Suppressed pooled FT retention,2325,97,0.04172043010752688,0.6531762886597937,0.6642,0.55,0.7708,0.5831547749893143,97,32754.0,RET_FT_DEN4_POOLED
+Less-than-four-year metric,All reported sectors,150% completion,6273,2851,0.4544874860513311,0.620596913363732,0.6453,0.43585,0.80425,0.484424180114789,2851,686651.0,D150_L4
+Less-than-four-year metric,All reported sectors,Full-time retention,6273,2805,0.44715447154471544,0.7228114795008913,0.7312,0.6182,0.8571,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,All reported sectors,Part-time retention,6273,1574,0.25091662681332694,0.5797231893265565,0.52165,0.4038,0.7826,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,All reported sectors,Suppressed pooled FT retention,6273,2538,0.40459110473457677,0.7120192671394799,0.7162999999999999,0.616525,0.8362,0.6642086869745518,2538,1146878.0,RET_FT_DENL4_POOLED
+Less-than-four-year metric,Public,150% completion,2047,1035,0.5056179775280899,0.474976038647343,0.4161,0.3163,0.6,0.38123708516435917,1035,444423.0,D150_L4
+Less-than-four-year metric,Public,Full-time retention,2047,1033,0.5046409379579873,0.6586310745401742,0.6563,0.5823,0.7318,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,Public,Part-time retention,2047,926,0.45236932095749877,0.48736079913606906,0.4637,0.38132499999999997,0.55,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,Public,Suppressed pooled FT retention,2047,1000,0.48851978505129456,0.6543361999999999,0.65245,0.58845,0.722175,0.6443724603838165,1000,918564.0,RET_FT_DENL4_POOLED
+Less-than-four-year metric,Private nonprofit,150% completion,1901,146,0.07680168332456602,0.6673335616438356,0.75,0.454075,0.90725,0.6241305046744786,146,23639.0,D150_L4
+Less-than-four-year metric,Private nonprofit,Full-time retention,1901,146,0.07680168332456602,0.7097294520547944,0.74775,0.579025,0.9091,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,Private nonprofit,Part-time retention,1901,29,0.015255128879537085,0.4903068965517241,0.5,0.3,0.687,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,Private nonprofit,Suppressed pooled FT retention,1901,112,0.058916359810625984,0.7008642857142858,0.7528,0.56325,0.8653500000000001,0.7272742394179894,112,21168.0,RET_FT_DENL4_POOLED
+Less-than-four-year metric,Private for-profit,150% completion,2325,1670,0.7182795698924731,0.706761017964072,0.7222,0.6,0.8369249999999999,0.6791100997762926,1670,218589.0,D150_L4
+Less-than-four-year metric,Private for-profit,Full-time retention,2325,1626,0.6993548387096774,0.7647600246002461,0.8,0.6671,0.9,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,Private for-profit,Part-time retention,2325,619,0.26623655913978495,0.7220828756058157,0.7699,0.57865,1.0,,0,,Unavailable matching non-pooled retention cohort denominator
+Less-than-four-year metric,Private for-profit,Suppressed pooled FT retention,2325,1426,0.6133333333333333,0.7533463534361851,0.78485,0.6667,0.871,0.7457254530620915,1426,207146.0,RET_FT_DENL4_POOLED

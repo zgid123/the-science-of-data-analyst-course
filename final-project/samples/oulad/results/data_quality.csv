@@ -1,0 +1,9 @@
+issue,n
+withdrawal after scheduled course end (outside follow-up; excluded),1
+missing registration day,45
+registered after day zero,234
+repeat module attempt,4172
+incoherent withdrawal/outcome record,102
+banked submission rows,1909
+missing score rows,173
+undated non-exam assessments,0

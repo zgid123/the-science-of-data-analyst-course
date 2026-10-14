@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "data-analyst": {
+      "source": "zgid123/skills",
+      "sourceType": "github",
+      "skillPath": "skills/data-analyst/SKILL.md",
+      "computedHash": "b3c5322a3617d49cffc1a2b47ff5aa4a6e60078aceb4ffdfc3db1e93b759bbca"
+    }
+  }
+}

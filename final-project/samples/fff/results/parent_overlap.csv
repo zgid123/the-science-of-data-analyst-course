@@ -1,0 +1,6 @@
+table,parent_fff_rows,local_rows,equal,dtype_note,status
+courses,4,4,True,Same inferred dtypes,PASS
+assessments,52,52,True,Numerically identical; parent assessment date inferred float because other modules have undated exams,PASS
+studentInfo,7762,7762,True,Same inferred dtypes,PASS
+studentRegistration,7762,7762,True,Same inferred dtypes,PASS
+studentAssessment,54815,54815,True,Same inferred dtypes,PASS

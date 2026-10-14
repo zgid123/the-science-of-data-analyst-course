@@ -1,0 +1,86 @@
+[
+  {
+    "check": "oulad/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "oulad/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "oulad/README.md",
+    "status": "PASS"
+  },
+  {
+    "check": "fff/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "fff/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "fff/README.md",
+    "status": "PASS"
+  },
+  {
+    "check": "ednet/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "ednet/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "ednet/README.md",
+    "status": "PASS"
+  },
+  {
+    "check": "mooccubex/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "mooccubex/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "mooccubex/README.md",
+    "status": "PASS"
+  },
+  {
+    "check": "college-scorecard/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "college-scorecard/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "college-scorecard/README.md",
+    "status": "PASS"
+  },
+  {
+    "check": "pisa-2022/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "pisa-2022/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "pisa-2022/README.md",
+    "status": "PASS"
+  },
+  {
+    "check": "talis-2024/report.html",
+    "status": "PASS"
+  },
+  {
+    "check": "talis-2024/dashboard/index.html",
+    "status": "PASS"
+  },
+  {
+    "check": "talis-2024/README.md",
+    "status": "PASS"
+  }
+]
