@@ -1,0 +1,88 @@
+{
+  "skill_name": "pdf2md",
+  "evals": [
+    {
+      "id": 1,
+      "name": "vietnamese-template-tables",
+      "prompt": "convert final-project/milestones/01/milestone-1.pdf to markdown, keep it exactly as in the pdf",
+      "expected_output": "final-project/milestones/01/milestone-1.md that passes verify.py; all 19 ruled tables incl. empty fill-in rows; callout boxes as blockquotes; constant running lines kept once, page numbers dropped",
+      "files": [
+        "final-project/milestones/01/milestone-1.pdf"
+      ],
+      "assertions": [
+        "verify.py exits 0 for the pdf/md pair (text similarity 100%, tables 19/19, images 0/0, no artefacts)",
+        "The Task 1 stakeholder table has a header row (Stakeholder | Vai trò | Mục tiêu giả định ban đầu | Quyết định có thể cần hỗ trợ) followed by exactly 3 empty rows",
+        "The synthesis table has 6 columns with 'Stakeholder' and 'Goal / Need' as separate header cells",
+        "No 'Trang N' page-number line appears; 'MTH045 – The Science of Data Analytics | Milestone 1' appears exactly once, as the first line",
+        "Headings: one '#' title, numbered sections '## 1.'..'## 12.', sub-sections/tasks as '###'",
+        "'**Giải thích ngắn:**' starts its own paragraph after the decision-level bullet list (not merged into the last bullet)",
+        "A '---' horizontal rule directly follows the '#' title (the PDF draws a rule under the title)",
+        "The checklist in section 12 consists of native task items '- [ ] …' (no ☐ glyphs)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "figure-and-borderless-edge-table",
+      "prompt": "I need an md version of final-project/milestones/04/milestone-4.pdf for my notes. Same content as the PDF please, including the figure.",
+      "expected_output": "milestone-4.md + milestone-4_assets/ with the figure; the 5-column 'AQ ví dụ' table (no outer side borders) intact; tables split over pages merged",
+      "files": [
+        "final-project/milestones/04/milestone-4.pdf"
+      ],
+      "assertions": [
+        "verify.py exits 0 for the pdf/md pair",
+        "Exactly one image link, pointing to an existing file in milestone-4_assets/, placed directly before the 'Hình 1.' caption",
+        "The table whose header starts 'AQ ví dụ' has 5 columns and 4 body rows (AQ1..AQ4)",
+        "Tables continued on the next page appear once, without a repeated header row (18 tables total)",
+        "'From Modeling to Evaluation | Education Analytics Project' (constant running footer) appears exactly once, as the last line",
+        "The 8 bullets under '### 7.1.' are '- ' list items with no leading indentation (they must not render as a code block)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "check-existing-markdown",
+      "prompt": "Can you check whether final-project/milestones/02/milestone-2.md actually matches milestone-2.pdf? Fix it if anything is missing.",
+      "expected_output": "A verify.py report plus visual review; any difference fixed in the md without paraphrasing; final verify passes",
+      "files": [
+        "final-project/milestones/02/milestone-2.pdf",
+        "final-project/milestones/02/milestone-2.md"
+      ],
+      "assertions": [
+        "verify.py was run on the pair and its result reported",
+        "Table cells in the section 13 sources table keep their 'Official page' hyperlinks",
+        "Final verify.py exits 0",
+        "Report names the pages visually reviewed and lists every manual edit"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "code-tree-and-table-links",
+      "prompt": "turn final-project/milestones/03/milestone-3.pdf into markdown, I want to diff it later so it has to match the pdf exactly",
+      "expected_output": "milestone-3.md whose folder-tree code block keeps every line and its indentation, with the following heading outside the fence",
+      "files": [
+        "final-project/milestones/03/milestone-3.pdf"
+      ],
+      "assertions": [
+        "verify.py exits 0 (including code, headings, links and structure checks)",
+        "The 'project/' folder tree is a ``` fenced block of 14 non-empty lines whose indentation matches the PDF ('  README.md', '    raw/ ...')",
+        "'## 11. Task 6 – …' is a heading outside any code fence",
+        "The six bullets on page 6 starting '1)'…'6)' are written '- 1\\\\) …' so they render as bullets with the literal '1)' text"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "agent-takeover-hard-layout",
+      "prompt": "convert .agents/skills/pdf2md/evals/files/hard-layout.pdf into markdown, exactly as the pdf shows it",
+      "expected_output": "Scripts get the text right but cannot see three layout features; the agent must notice them in visual review and rebuild them from dump_page.py output (regenerate the fixture with evals/files/make_hard_layout.py)",
+      "files": [
+        "evals/files/hard-layout.pdf"
+      ],
+      "assertions": [
+        "verify.py exits 0 on the final markdown",
+        "'Method' and 'Observations' are two separate '##' headings, each followed by its own column's text",
+        "The page-2 borderless table is a Markdown table: header Location | Sessions | Median minutes, 4 body rows",
+        "The follow-up list is nested: 3 sub-items indented under their 2 parent items",
+        "The report names the takeover (which regions were rebuilt, using dump_page.py) and no wording was changed"
+      ]
+    }
+  ]
+}
