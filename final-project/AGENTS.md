@@ -4,7 +4,7 @@
 
 Use the dataset and analytical objective selected by the user. Work on one dataset at a time unless the user explicitly requests otherwise. If the dataset is not identified or its location cannot be resolved, ask before starting dependent work. Do not select other datasets or infer the task from neighboring files.
 
-For analytical work, read `.agents/skills/data-analyst/SKILL.md`. Use `prompts/generic-prompt.md` when the user invokes it. The separate repository-root `skills/data-analyst/` copy may differ; do not substitute it for this installation. Paths in this guide are relative to `final-project/`; skill references are relative to the skill directory.
+For analytical work, read `../.agents/skills/data-analyst/SKILL.md`. Use `prompts/generic-prompt.md` when the user invokes it. The skill lives with the other agent skills at the repository root (`../.agents/skills/`). Paths in this guide are relative to `final-project/`; skill references are relative to the skill directory.
 
 The current request determines the domain, questions, output format and language. Do not automatically load proposal, requirements or milestone files, or generate course submissions. Use those materials only when the user explicitly makes them relevant. Keep reusable analytical methods in the skill and dataset-specific decisions in the study.
 
@@ -15,23 +15,23 @@ Use the requested output location or default to `samples/<dataset>/`. Maintain r
 - `prompts/`: research brief and dataset acquisition instructions.
 - `datasets/`: local educational datasets and archives; see `datasets/README.md` for the documented inventory.
 - `requirements/` and `milestones/`: instructor guidance and team proposal/work; distinguish proposed assumptions from measurements and confirmed decisions.
-- `.agents/skills/data-analyst/SKILL.md`: local analytical methodology and skill instructions.
-- `.agents/skills/data-analyst/workflows/analytics-lifecycle.md`: detailed ten-stage lifecycle and verification gates.
-- `.agents/skills/data-analyst/references/`: supporting analytical techniques and safeguards.
-- `.agents/skills/data-analyst/references/investigation-and-synthesis.md`: question prioritization, follow-up, stopping and evidence-backed findings.
-- `.agents/skills/data-analyst/references/analytical-quality.md`: anchored technical, analytical and communication review.
-- `.agents/skills/data-analyst/evals/`: skill scenarios, synthetic fixtures and deterministic evaluator tests; these are not project research results.
+- `../.agents/skills/data-analyst/SKILL.md`: local analytical methodology and skill instructions.
+- `../.agents/skills/data-analyst/workflows/analytics-lifecycle.md`: detailed ten-stage lifecycle and verification gates.
+- `../.agents/skills/data-analyst/references/`: supporting analytical techniques and safeguards.
+- `../.agents/skills/data-analyst/references/investigation-and-synthesis.md`: question prioritization, follow-up, stopping and evidence-backed findings.
+- `../.agents/skills/data-analyst/references/analytical-quality.md`: anchored technical, analytical and communication review.
+- `../.agents/skills/data-analyst/evals/`: skill scenarios, synthetic fixtures and deterministic evaluator tests; these are not project research results.
 - `samples/`: seven existing study folders, shared analysis/dashboard code, dependency manifest and saved verification evidence.
 - `evaluations/`: local skill reviews and executed validation evidence.
-- `skills-lock.json`: installed skill provenance.
+- `../skills-lock.json` (repository root): installed skill provenance.
 
 Existing samples include `samples/_shared/`, dataset-specific wrappers, reports, dashboards and `samples/requirements.txt`; inspect them before choosing tools or adding a structure. Treat existing outputs as prior work to review, not accepted final-project results. Preserve them as baseline evidence when conducting comparisons; updating the skill does not retroactively validate or regenerate them. Dataset documentation can mention helper scripts that are absent; verify paths and commands before relying on them.
 
 ## Local skill workflow
 
-Read `.agents/skills/data-analyst/SKILL.md` before analytical work. For an end-to-end study, also read `.agents/skills/data-analyst/workflows/analytics-lifecycle.md`, `.agents/skills/data-analyst/references/investigation-and-synthesis.md` and `.agents/skills/data-analyst/references/analytical-quality.md`. Follow the lifecycle gates and revisit earlier stages when evidence or feedback changes the question. Scale the workflow to focused requests; documentation-only maintenance does not require dataset analysis. Preserve concise evidence of gate decisions and corrections rather than forcing ten lifecycle headings into reports. A focused calculation does not require a dashboard or extensive rubric documentation.
+Read `../.agents/skills/data-analyst/SKILL.md` before analytical work. For an end-to-end study, also read `../.agents/skills/data-analyst/workflows/analytics-lifecycle.md`, `../.agents/skills/data-analyst/references/investigation-and-synthesis.md` and `../.agents/skills/data-analyst/references/analytical-quality.md`. Follow the lifecycle gates and revisit earlier stages when evidence or feedback changes the question. Scale the workflow to focused requests; documentation-only maintenance does not require dataset analysis. Preserve concise evidence of gate decisions and corrections rather than forcing ten lifecycle headings into reports. A focused calculation does not require a dashboard or extensive rubric documentation.
 
-Load supporting references only as the task requires them, using the local `.agents/skills/data-analyst/references/` directory:
+Load supporting references only as the task requires them, using the local `../.agents/skills/data-analyst/references/` directory:
 
 | Task | Reference files |
 |---|---|
@@ -109,9 +109,9 @@ For documentation-only edits, check paths, consistency with the research brief, 
 From `final-project/`, run the bundled evaluator regression tests with:
 
 ```bash
-python3 -m unittest discover -s .agents/skills/data-analyst/evals -v
+python3 -m unittest discover -s ../.agents/skills/data-analyst/evals -v
 ```
 
-The bundled evaluation README refers to paths in the upstream source repository. Here, resolve `skills/data-analyst/` to `.agents/skills/data-analyst/`; do not assume upstream `scripts/validate_skills.py` is installed. Evaluation fixture paths in `evals.json` are relative to the skill directory.
+The bundled evaluation README refers to paths in the upstream source repository. Here, resolve `skills/data-analyst/` to `.agents/skills/data-analyst/` from the repository root (`../.agents/skills/data-analyst/` from `final-project/`); do not assume upstream `scripts/validate_skills.py` is installed. Evaluation fixture paths in `evals.json` are relative to the skill directory.
 
 Passing evaluator tests validates those checks, not model behavior or research quality. For behavioral comparisons, freeze skill/input versions, use fresh contexts with matched model/settings/tools/budgets, preserve outputs and traces separately from existing samples, and review all three rubric dimensions. Do not expose expected answers to the task runner. Keep held-out fixtures unopened during development. Record unavailable comparisons as NOT RUN and do not claim improvement without observed evidence.
