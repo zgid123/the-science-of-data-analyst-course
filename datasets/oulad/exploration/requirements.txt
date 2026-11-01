@@ -1,0 +1,3 @@
+polars>=1.30
+markdown>=3.7
+numpy>=2.0

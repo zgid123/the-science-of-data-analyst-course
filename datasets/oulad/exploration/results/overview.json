@@ -1,0 +1,157 @@
+[
+  {
+    "table": "courses",
+    "rows": 22,
+    "columns": 3,
+    "roles": {
+      "dimension": 2,
+      "metric": 1
+    },
+    "duplicate_full_rows": 0,
+    "grain": [
+      "code_module",
+      "code_presentation"
+    ],
+    "grain_duplicates": 0,
+    "presentations": 22
+  },
+  {
+    "table": "assessments",
+    "rows": 206,
+    "columns": 6,
+    "roles": {
+      "dimension": 3,
+      "identifier": 1,
+      "metric": 1,
+      "temporal": 1
+    },
+    "duplicate_full_rows": 0,
+    "grain": [
+      "id_assessment"
+    ],
+    "grain_duplicates": 0,
+    "presentations": 22,
+    "temporal_ranges": {
+      "date": [
+        12.0,
+        261.0
+      ]
+    }
+  },
+  {
+    "table": "vle",
+    "rows": 6364,
+    "columns": 6,
+    "roles": {
+      "dimension": 3,
+      "identifier": 1,
+      "temporal": 2
+    },
+    "duplicate_full_rows": 0,
+    "grain": [
+      "id_site"
+    ],
+    "grain_duplicates": 0,
+    "presentations": 22,
+    "temporal_ranges": {
+      "week_from": [
+        0.0,
+        29.0
+      ],
+      "week_to": [
+        0.0,
+        29.0
+      ]
+    }
+  },
+  {
+    "table": "studentInfo",
+    "rows": 32593,
+    "columns": 12,
+    "roles": {
+      "boolean": 1,
+      "dimension": 8,
+      "identifier": 1,
+      "metric": 2
+    },
+    "duplicate_full_rows": 0,
+    "grain": [
+      "code_module",
+      "code_presentation",
+      "id_student"
+    ],
+    "grain_duplicates": 0,
+    "presentations": 22
+  },
+  {
+    "table": "studentRegistration",
+    "rows": 32593,
+    "columns": 5,
+    "roles": {
+      "dimension": 2,
+      "identifier": 1,
+      "temporal": 2
+    },
+    "duplicate_full_rows": 0,
+    "grain": [
+      "code_module",
+      "code_presentation",
+      "id_student"
+    ],
+    "grain_duplicates": 0,
+    "presentations": 22,
+    "temporal_ranges": {
+      "date_registration": [
+        -322.0,
+        167.0
+      ],
+      "date_unregistration": [
+        -365.0,
+        444.0
+      ]
+    }
+  },
+  {
+    "table": "studentAssessment",
+    "rows": 173912,
+    "columns": 5,
+    "roles": {
+      "boolean": 1,
+      "identifier": 2,
+      "metric": 1,
+      "temporal": 1
+    },
+    "duplicate_full_rows": 0,
+    "grain": [
+      "id_assessment",
+      "id_student"
+    ],
+    "grain_duplicates": 0,
+    "temporal_ranges": {
+      "date_submitted": [
+        -11.0,
+        608.0
+      ]
+    }
+  },
+  {
+    "table": "studentVle",
+    "rows": 10655280,
+    "columns": 6,
+    "roles": {
+      "dimension": 2,
+      "identifier": 2,
+      "metric": 1,
+      "temporal": 1
+    },
+    "duplicate_full_rows": 787170,
+    "grain": null,
+    "presentations": 22,
+    "temporal_ranges": {
+      "date": [
+        -25.0,
+        269.0
+      ]
+    }
+  }
+]

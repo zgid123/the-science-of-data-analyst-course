@@ -1,0 +1,5547 @@
+{
+  "definitions": {
+    "early_window_days": [
+      0,
+      27
+    ],
+    "success": "Pass or Distinction",
+    "active_at_28": "no unregistration day, or unregistration on day 28 or later",
+    "cliffs_delta": "P(successful > unsuccessful) - P(successful < unsuccessful)",
+    "min_cell_per_module": 30
+  },
+  "univariate": {
+    "shape": {
+      "num_of_prev_attempts": {
+        "n": 32593,
+        "mean": 0.163,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 0.0,
+        "skew": 3.807,
+        "excess_kurtosis": 19.429,
+        "log1p_skew": 2.674,
+        "iqr_outliers": 4172,
+        "robust_z_gt_3_5": null
+      },
+      "studied_credits": {
+        "n": 32593,
+        "mean": 79.759,
+        "median": 60.0,
+        "q1": 60.0,
+        "q3": 120.0,
+        "skew": 1.876,
+        "excess_kurtosis": 7.737,
+        "log1p_skew": 0.159,
+        "iqr_outliers": 350,
+        "robust_z_gt_3_5": null
+      },
+      "date_registration": {
+        "n": 32548,
+        "mean": -69.411,
+        "median": -57.0,
+        "q1": -100.0,
+        "q3": -29.0,
+        "skew": -1.008,
+        "excess_kurtosis": 1.001,
+        "log1p_skew": null,
+        "iqr_outliers": 339,
+        "robust_z_gt_3_5": 245
+      },
+      "clicks_total": {
+        "n": 32593,
+        "mean": 1215.141,
+        "median": 602.0,
+        "q1": 142.0,
+        "q3": 1585.0,
+        "skew": 3.028,
+        "excess_kurtosis": 14.948,
+        "log1p_skew": -1.218,
+        "iqr_outliers": 2503,
+        "robust_z_gt_3_5": 2836
+      },
+      "active_days": {
+        "n": 32593,
+        "mean": 55.476,
+        "median": 40.0,
+        "q1": 11.0,
+        "q3": 85.0,
+        "skew": 1.175,
+        "excess_kurtosis": 0.946,
+        "log1p_skew": -0.857,
+        "iqr_outliers": 745,
+        "robust_z_gt_3_5": 405
+      },
+      "clicks_early": {
+        "n": 32593,
+        "mean": 238.745,
+        "median": 138.0,
+        "q1": 31.0,
+        "q3": 327.0,
+        "skew": 3.534,
+        "excess_kurtosis": 24.809,
+        "log1p_skew": -0.959,
+        "iqr_outliers": 1885,
+        "robust_z_gt_3_5": 1763
+      },
+      "active_days_early": {
+        "n": 32593,
+        "mean": 9.257,
+        "median": 8.0,
+        "q1": 3.0,
+        "q3": 14.0,
+        "skew": 0.604,
+        "excess_kurtosis": -0.549,
+        "log1p_skew": -0.719,
+        "iqr_outliers": 0,
+        "robust_z_gt_3_5": 0
+      },
+      "clicks_prestart": {
+        "n": 32593,
+        "mean": 65.902,
+        "median": 19.0,
+        "q1": 0.0,
+        "q3": 76.0,
+        "skew": 5.533,
+        "excess_kurtosis": 60.501,
+        "log1p_skew": -0.064,
+        "iqr_outliers": 3005,
+        "robust_z_gt_3_5": 5420
+      },
+      "n_submitted": {
+        "n": 32593,
+        "mean": 5.336,
+        "median": 5.0,
+        "q1": 1.0,
+        "q3": 9.0,
+        "skew": 0.262,
+        "excess_kurtosis": -1.287,
+        "log1p_skew": -0.536,
+        "iqr_outliers": 0,
+        "robust_z_gt_3_5": 0
+      },
+      "n_late": {
+        "n": 32593,
+        "mean": 1.513,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 2.0,
+        "skew": 1.465,
+        "excess_kurtosis": 1.242,
+        "log1p_skew": 0.744,
+        "iqr_outliers": 2440,
+        "robust_z_gt_3_5": null
+      },
+      "mean_score": {
+        "n": 25557,
+        "mean": 72.729,
+        "median": 76.0,
+        "q1": 64.6,
+        "q3": 84.56,
+        "skew": -1.265,
+        "excess_kurtosis": 2.314,
+        "log1p_skew": -5.941,
+        "iqr_outliers": 767,
+        "robust_z_gt_3_5": 432
+      },
+      "first_score": {
+        "n": 25354,
+        "mean": 72.94,
+        "median": 77.0,
+        "q1": 65.0,
+        "q3": 88.0,
+        "skew": -1.461,
+        "excess_kurtosis": 2.647,
+        "log1p_skew": -4.227,
+        "iqr_outliers": 1301,
+        "robust_z_gt_3_5": 916
+      },
+      "first_days_late": {
+        "n": 25385,
+        "mean": -1.486,
+        "median": -1.0,
+        "q1": -3.0,
+        "q3": 0.0,
+        "skew": 1.787,
+        "excess_kurtosis": 61.804,
+        "log1p_skew": null,
+        "iqr_outliers": 3734,
+        "robust_z_gt_3_5": 4136
+      },
+      "imd_ord": {
+        "n": 31482,
+        "mean": 4.212,
+        "median": 4.0,
+        "q1": 2.0,
+        "q3": 7.0,
+        "skew": 0.142,
+        "excess_kurtosis": -1.172,
+        "log1p_skew": -0.761,
+        "iqr_outliers": 0,
+        "robust_z_gt_3_5": 0
+      },
+      "age_ord": {
+        "n": 32593,
+        "mean": 0.303,
+        "median": 0.0,
+        "q1": 0.0,
+        "q3": 1.0,
+        "skew": 1.045,
+        "excess_kurtosis": -0.429,
+        "log1p_skew": 0.939,
+        "iqr_outliers": 0,
+        "robust_z_gt_3_5": null
+      },
+      "edu_ord": {
+        "n": 32593,
+        "mean": 1.739,
+        "median": 2.0,
+        "q1": 1.0,
+        "q3": 2.0,
+        "skew": 0.452,
+        "excess_kurtosis": -0.347,
+        "log1p_skew": -0.203,
+        "iqr_outliers": 313,
+        "robust_z_gt_3_5": 0
+      }
+    },
+    "clicks_total_concentration": {
+      "gini": 0.6259,
+      "top10_share": 0.4307,
+      "top1_share": 0.0849
+    },
+    "clicks_early_concentration": {
+      "gini": 0.6008,
+      "top10_share": 0.4045,
+      "top1_share": 0.0853
+    }
+  },
+  "structure": {
+    "zero_variance_columns": [],
+    "case_or_whitespace_collisions": [],
+    "vle_week_from_equals_week_to": {
+      "k": 1111,
+      "n": 1121,
+      "rate": 0.9911,
+      "lo": 0.9837,
+      "hi": 0.9951
+    },
+    "redundant_feature_pairs_abs_spearman_ge_0_9": [
+      {
+        "a": "clicks_total",
+        "b": "active_days",
+        "n": 32593,
+        "pearson": 0.837,
+        "spearman": 0.946
+      },
+      {
+        "a": "clicks_early",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.761,
+        "spearman": 0.913
+      }
+    ]
+  },
+  "correlations": {
+    "columns": [
+      "num_of_prev_attempts",
+      "studied_credits",
+      "date_registration",
+      "clicks_total",
+      "active_days",
+      "clicks_early",
+      "active_days_early",
+      "clicks_prestart",
+      "n_submitted",
+      "n_late",
+      "mean_score",
+      "first_score",
+      "first_days_late",
+      "imd_ord",
+      "age_ord",
+      "edu_ord",
+      "outcome_ord"
+    ],
+    "pairs": [
+      {
+        "a": "num_of_prev_attempts",
+        "b": "studied_credits",
+        "n": 32593,
+        "pearson": 0.182,
+        "spearman": 0.185
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "date_registration",
+        "n": 32548,
+        "pearson": -0.025,
+        "spearman": -0.034
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "clicks_total",
+        "n": 32593,
+        "pearson": -0.069,
+        "spearman": -0.1
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "active_days",
+        "n": 32593,
+        "pearson": -0.089,
+        "spearman": -0.095
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "clicks_early",
+        "n": 32593,
+        "pearson": -0.072,
+        "spearman": -0.103
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": -0.086,
+        "spearman": -0.09
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": -0.043,
+        "spearman": -0.07
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": -0.047,
+        "spearman": -0.045
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": -0.002,
+        "spearman": -0.005
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": -0.08,
+        "spearman": -0.094
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": -0.033,
+        "spearman": -0.047
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.123,
+        "spearman": -0.054
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": -0.037,
+        "spearman": -0.033
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.01,
+        "spearman": 0.009
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": -0.038,
+        "spearman": -0.037
+      },
+      {
+        "a": "num_of_prev_attempts",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": -0.087,
+        "spearman": -0.092
+      },
+      {
+        "a": "studied_credits",
+        "b": "date_registration",
+        "n": 32548,
+        "pearson": -0.091,
+        "spearman": -0.108
+      },
+      {
+        "a": "studied_credits",
+        "b": "clicks_total",
+        "n": 32593,
+        "pearson": -0.037,
+        "spearman": -0.073
+      },
+      {
+        "a": "studied_credits",
+        "b": "active_days",
+        "n": 32593,
+        "pearson": -0.056,
+        "spearman": -0.062
+      },
+      {
+        "a": "studied_credits",
+        "b": "clicks_early",
+        "n": 32593,
+        "pearson": -0.016,
+        "spearman": -0.01
+      },
+      {
+        "a": "studied_credits",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": -0.013,
+        "spearman": 0.013
+      },
+      {
+        "a": "studied_credits",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.003,
+        "spearman": 0.023
+      },
+      {
+        "a": "studied_credits",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": -0.089,
+        "spearman": -0.082
+      },
+      {
+        "a": "studied_credits",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": -0.015,
+        "spearman": -0.019
+      },
+      {
+        "a": "studied_credits",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": -0.073,
+        "spearman": -0.083
+      },
+      {
+        "a": "studied_credits",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.006,
+        "spearman": 0.028
+      },
+      {
+        "a": "studied_credits",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": 0.029,
+        "spearman": 0.049
+      },
+      {
+        "a": "studied_credits",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": -0.043,
+        "spearman": -0.039
+      },
+      {
+        "a": "studied_credits",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": -0.07,
+        "spearman": -0.086
+      },
+      {
+        "a": "studied_credits",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.007,
+        "spearman": 0.031
+      },
+      {
+        "a": "studied_credits",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": -0.176,
+        "spearman": -0.172
+      },
+      {
+        "a": "date_registration",
+        "b": "clicks_total",
+        "n": 32548,
+        "pearson": 0.009,
+        "spearman": 0.052
+      },
+      {
+        "a": "date_registration",
+        "b": "active_days",
+        "n": 32548,
+        "pearson": 0.002,
+        "spearman": 0.036
+      },
+      {
+        "a": "date_registration",
+        "b": "clicks_early",
+        "n": 32548,
+        "pearson": 0.0,
+        "spearman": 0.037
+      },
+      {
+        "a": "date_registration",
+        "b": "active_days_early",
+        "n": 32548,
+        "pearson": 0.008,
+        "spearman": 0.017
+      },
+      {
+        "a": "date_registration",
+        "b": "clicks_prestart",
+        "n": 32548,
+        "pearson": -0.036,
+        "spearman": -0.042
+      },
+      {
+        "a": "date_registration",
+        "b": "n_submitted",
+        "n": 32548,
+        "pearson": 0.087,
+        "spearman": 0.086
+      },
+      {
+        "a": "date_registration",
+        "b": "n_late",
+        "n": 32548,
+        "pearson": 0.075,
+        "spearman": 0.096
+      },
+      {
+        "a": "date_registration",
+        "b": "mean_score",
+        "n": 25554,
+        "pearson": 0.035,
+        "spearman": 0.024
+      },
+      {
+        "a": "date_registration",
+        "b": "first_score",
+        "n": 25351,
+        "pearson": 0.031,
+        "spearman": 0.012
+      },
+      {
+        "a": "date_registration",
+        "b": "first_days_late",
+        "n": 25382,
+        "pearson": 0.051,
+        "spearman": 0.079
+      },
+      {
+        "a": "date_registration",
+        "b": "imd_ord",
+        "n": 31437,
+        "pearson": 0.023,
+        "spearman": 0.028
+      },
+      {
+        "a": "date_registration",
+        "b": "age_ord",
+        "n": 32548,
+        "pearson": 0.028,
+        "spearman": 0.034
+      },
+      {
+        "a": "date_registration",
+        "b": "edu_ord",
+        "n": 32548,
+        "pearson": 0.043,
+        "spearman": 0.045
+      },
+      {
+        "a": "date_registration",
+        "b": "outcome_ord",
+        "n": 32548,
+        "pearson": 0.092,
+        "spearman": 0.084
+      },
+      {
+        "a": "clicks_total",
+        "b": "active_days",
+        "n": 32593,
+        "pearson": 0.837,
+        "spearman": 0.946
+      },
+      {
+        "a": "clicks_total",
+        "b": "clicks_early",
+        "n": 32593,
+        "pearson": 0.83,
+        "spearman": 0.866
+      },
+      {
+        "a": "clicks_total",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.687,
+        "spearman": 0.826
+      },
+      {
+        "a": "clicks_total",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.58,
+        "spearman": 0.641
+      },
+      {
+        "a": "clicks_total",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.548,
+        "spearman": 0.754
+      },
+      {
+        "a": "clicks_total",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": 0.069,
+        "spearman": 0.267
+      },
+      {
+        "a": "clicks_total",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.296,
+        "spearman": 0.357
+      },
+      {
+        "a": "clicks_total",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.238,
+        "spearman": 0.344
+      },
+      {
+        "a": "clicks_total",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.046,
+        "spearman": -0.127
+      },
+      {
+        "a": "clicks_total",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.086,
+        "spearman": 0.125
+      },
+      {
+        "a": "clicks_total",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.136,
+        "spearman": 0.114
+      },
+      {
+        "a": "clicks_total",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.09,
+        "spearman": 0.134
+      },
+      {
+        "a": "clicks_total",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.484,
+        "spearman": 0.665
+      },
+      {
+        "a": "active_days",
+        "b": "clicks_early",
+        "n": 32593,
+        "pearson": 0.69,
+        "spearman": 0.805
+      },
+      {
+        "a": "active_days",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.827,
+        "spearman": 0.856
+      },
+      {
+        "a": "active_days",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.521,
+        "spearman": 0.643
+      },
+      {
+        "a": "active_days",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.646,
+        "spearman": 0.771
+      },
+      {
+        "a": "active_days",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": 0.208,
+        "spearman": 0.318
+      },
+      {
+        "a": "active_days",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.346,
+        "spearman": 0.359
+      },
+      {
+        "a": "active_days",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.269,
+        "spearman": 0.313
+      },
+      {
+        "a": "active_days",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.061,
+        "spearman": -0.138
+      },
+      {
+        "a": "active_days",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.118,
+        "spearman": 0.131
+      },
+      {
+        "a": "active_days",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.127,
+        "spearman": 0.101
+      },
+      {
+        "a": "active_days",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.125,
+        "spearman": 0.139
+      },
+      {
+        "a": "active_days",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.63,
+        "spearman": 0.706
+      },
+      {
+        "a": "clicks_early",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.761,
+        "spearman": 0.913
+      },
+      {
+        "a": "clicks_early",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.58,
+        "spearman": 0.625
+      },
+      {
+        "a": "clicks_early",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.391,
+        "spearman": 0.542
+      },
+      {
+        "a": "clicks_early",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": 0.047,
+        "spearman": 0.211
+      },
+      {
+        "a": "clicks_early",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.22,
+        "spearman": 0.241
+      },
+      {
+        "a": "clicks_early",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.21,
+        "spearman": 0.284
+      },
+      {
+        "a": "clicks_early",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.014,
+        "spearman": -0.012
+      },
+      {
+        "a": "clicks_early",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.067,
+        "spearman": 0.1
+      },
+      {
+        "a": "clicks_early",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.125,
+        "spearman": 0.089
+      },
+      {
+        "a": "clicks_early",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.067,
+        "spearman": 0.108
+      },
+      {
+        "a": "clicks_early",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.309,
+        "spearman": 0.429
+      },
+      {
+        "a": "active_days_early",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.51,
+        "spearman": 0.661
+      },
+      {
+        "a": "active_days_early",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.505,
+        "spearman": 0.568
+      },
+      {
+        "a": "active_days_early",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": 0.168,
+        "spearman": 0.24
+      },
+      {
+        "a": "active_days_early",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.233,
+        "spearman": 0.231
+      },
+      {
+        "a": "active_days_early",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.225,
+        "spearman": 0.237
+      },
+      {
+        "a": "active_days_early",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.021,
+        "spearman": -0.072
+      },
+      {
+        "a": "active_days_early",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.087,
+        "spearman": 0.095
+      },
+      {
+        "a": "active_days_early",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.082,
+        "spearman": 0.07
+      },
+      {
+        "a": "active_days_early",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.086,
+        "spearman": 0.095
+      },
+      {
+        "a": "active_days_early",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.422,
+        "spearman": 0.451
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.23,
+        "spearman": 0.387
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": -0.018,
+        "spearman": 0.084
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.161,
+        "spearman": 0.184
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.151,
+        "spearman": 0.205
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.083,
+        "spearman": -0.147
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.05,
+        "spearman": 0.083
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.113,
+        "spearman": 0.08
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.053,
+        "spearman": 0.083
+      },
+      {
+        "a": "clicks_prestart",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.219,
+        "spearman": 0.328
+      },
+      {
+        "a": "n_submitted",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": 0.54,
+        "spearman": 0.509
+      },
+      {
+        "a": "n_submitted",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.331,
+        "spearman": 0.288
+      },
+      {
+        "a": "n_submitted",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": 0.199,
+        "spearman": 0.149
+      },
+      {
+        "a": "n_submitted",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": -0.073,
+        "spearman": -0.141
+      },
+      {
+        "a": "n_submitted",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.095,
+        "spearman": 0.1
+      },
+      {
+        "a": "n_submitted",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.047,
+        "spearman": 0.05
+      },
+      {
+        "a": "n_submitted",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.101,
+        "spearman": 0.11
+      },
+      {
+        "a": "n_submitted",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.721,
+        "spearman": 0.743
+      },
+      {
+        "a": "n_late",
+        "b": "mean_score",
+        "n": 25557,
+        "pearson": 0.038,
+        "spearman": -0.045
+      },
+      {
+        "a": "n_late",
+        "b": "first_score",
+        "n": 25354,
+        "pearson": -0.018,
+        "spearman": -0.115
+      },
+      {
+        "a": "n_late",
+        "b": "first_days_late",
+        "n": 25385,
+        "pearson": 0.246,
+        "spearman": 0.431
+      },
+      {
+        "a": "n_late",
+        "b": "imd_ord",
+        "n": 31482,
+        "pearson": 0.021,
+        "spearman": 0.023
+      },
+      {
+        "a": "n_late",
+        "b": "age_ord",
+        "n": 32593,
+        "pearson": 0.036,
+        "spearman": 0.031
+      },
+      {
+        "a": "n_late",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.071,
+        "spearman": 0.071
+      },
+      {
+        "a": "n_late",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.3,
+        "spearman": 0.288
+      },
+      {
+        "a": "mean_score",
+        "b": "first_score",
+        "n": 25094,
+        "pearson": 0.719,
+        "spearman": 0.657
+      },
+      {
+        "a": "mean_score",
+        "b": "first_days_late",
+        "n": 25105,
+        "pearson": -0.114,
+        "spearman": -0.197
+      },
+      {
+        "a": "mean_score",
+        "b": "imd_ord",
+        "n": 24568,
+        "pearson": 0.115,
+        "spearman": 0.12
+      },
+      {
+        "a": "mean_score",
+        "b": "age_ord",
+        "n": 25557,
+        "pearson": 0.071,
+        "spearman": 0.084
+      },
+      {
+        "a": "mean_score",
+        "b": "edu_ord",
+        "n": 25557,
+        "pearson": 0.12,
+        "spearman": 0.127
+      },
+      {
+        "a": "mean_score",
+        "b": "outcome_ord",
+        "n": 25557,
+        "pearson": 0.461,
+        "spearman": 0.48
+      },
+      {
+        "a": "first_score",
+        "b": "first_days_late",
+        "n": 25354,
+        "pearson": -0.054,
+        "spearman": -0.134
+      },
+      {
+        "a": "first_score",
+        "b": "imd_ord",
+        "n": 24366,
+        "pearson": 0.087,
+        "spearman": 0.097
+      },
+      {
+        "a": "first_score",
+        "b": "age_ord",
+        "n": 25354,
+        "pearson": 0.01,
+        "spearman": 0.018
+      },
+      {
+        "a": "first_score",
+        "b": "edu_ord",
+        "n": 25354,
+        "pearson": 0.099,
+        "spearman": 0.12
+      },
+      {
+        "a": "first_score",
+        "b": "outcome_ord",
+        "n": 25354,
+        "pearson": 0.28,
+        "spearman": 0.322
+      },
+      {
+        "a": "first_days_late",
+        "b": "imd_ord",
+        "n": 24397,
+        "pearson": -0.02,
+        "spearman": -0.013
+      },
+      {
+        "a": "first_days_late",
+        "b": "age_ord",
+        "n": 25385,
+        "pearson": -0.031,
+        "spearman": -0.046
+      },
+      {
+        "a": "first_days_late",
+        "b": "edu_ord",
+        "n": 25385,
+        "pearson": 0.037,
+        "spearman": 0.068
+      },
+      {
+        "a": "first_days_late",
+        "b": "outcome_ord",
+        "n": 25385,
+        "pearson": -0.115,
+        "spearman": -0.206
+      },
+      {
+        "a": "imd_ord",
+        "b": "age_ord",
+        "n": 31482,
+        "pearson": 0.07,
+        "spearman": 0.064
+      },
+      {
+        "a": "imd_ord",
+        "b": "edu_ord",
+        "n": 31482,
+        "pearson": 0.129,
+        "spearman": 0.122
+      },
+      {
+        "a": "imd_ord",
+        "b": "outcome_ord",
+        "n": 31482,
+        "pearson": 0.126,
+        "spearman": 0.127
+      },
+      {
+        "a": "age_ord",
+        "b": "edu_ord",
+        "n": 32593,
+        "pearson": 0.11,
+        "spearman": 0.08
+      },
+      {
+        "a": "age_ord",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.069,
+        "spearman": 0.067
+      },
+      {
+        "a": "edu_ord",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.143,
+        "spearman": 0.145
+      }
+    ],
+    "strong_pairs": [
+      {
+        "a": "clicks_total",
+        "b": "active_days",
+        "n": 32593,
+        "pearson": 0.837,
+        "spearman": 0.946
+      },
+      {
+        "a": "clicks_early",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.761,
+        "spearman": 0.913
+      },
+      {
+        "a": "clicks_total",
+        "b": "clicks_early",
+        "n": 32593,
+        "pearson": 0.83,
+        "spearman": 0.866
+      },
+      {
+        "a": "active_days",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.827,
+        "spearman": 0.856
+      },
+      {
+        "a": "clicks_total",
+        "b": "active_days_early",
+        "n": 32593,
+        "pearson": 0.687,
+        "spearman": 0.826
+      },
+      {
+        "a": "active_days",
+        "b": "clicks_early",
+        "n": 32593,
+        "pearson": 0.69,
+        "spearman": 0.805
+      },
+      {
+        "a": "active_days",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.646,
+        "spearman": 0.771
+      },
+      {
+        "a": "clicks_total",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.548,
+        "spearman": 0.754
+      },
+      {
+        "a": "n_submitted",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.721,
+        "spearman": 0.743
+      },
+      {
+        "a": "active_days",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.63,
+        "spearman": 0.706
+      },
+      {
+        "a": "clicks_total",
+        "b": "outcome_ord",
+        "n": 32593,
+        "pearson": 0.484,
+        "spearman": 0.665
+      },
+      {
+        "a": "active_days_early",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.51,
+        "spearman": 0.661
+      },
+      {
+        "a": "mean_score",
+        "b": "first_score",
+        "n": 25094,
+        "pearson": 0.719,
+        "spearman": 0.657
+      },
+      {
+        "a": "active_days",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.521,
+        "spearman": 0.643
+      },
+      {
+        "a": "clicks_total",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.58,
+        "spearman": 0.641
+      },
+      {
+        "a": "clicks_early",
+        "b": "clicks_prestart",
+        "n": 32593,
+        "pearson": 0.58,
+        "spearman": 0.625
+      },
+      {
+        "a": "active_days_early",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.505,
+        "spearman": 0.568
+      },
+      {
+        "a": "clicks_early",
+        "b": "n_submitted",
+        "n": 32593,
+        "pearson": 0.391,
+        "spearman": 0.542
+      },
+      {
+        "a": "n_submitted",
+        "b": "n_late",
+        "n": 32593,
+        "pearson": 0.54,
+        "spearman": 0.509
+      }
+    ]
+  },
+  "outcome_by_dimension": {
+    "code_module": {
+      "rows": [
+        {
+          "value": "AAA",
+          "n": 748,
+          "Withdrawn": 126,
+          "Fail": 91,
+          "Pass": 487,
+          "Distinction": 44,
+          "success": {
+            "k": 531,
+            "n": 748,
+            "rate": 0.7099,
+            "lo": 0.6764,
+            "hi": 0.7413
+          },
+          "withdrawn": {
+            "k": 126,
+            "n": 748,
+            "rate": 0.1684,
+            "lo": 0.1433,
+            "hi": 0.1969
+          }
+        },
+        {
+          "value": "BBB",
+          "n": 7909,
+          "Withdrawn": 2388,
+          "Fail": 1767,
+          "Pass": 3077,
+          "Distinction": 677,
+          "success": {
+            "k": 3754,
+            "n": 7909,
+            "rate": 0.4746,
+            "lo": 0.4637,
+            "hi": 0.4857
+          },
+          "withdrawn": {
+            "k": 2388,
+            "n": 7909,
+            "rate": 0.3019,
+            "lo": 0.2919,
+            "hi": 0.3121
+          }
+        },
+        {
+          "value": "CCC",
+          "n": 4434,
+          "Withdrawn": 1975,
+          "Fail": 781,
+          "Pass": 1180,
+          "Distinction": 498,
+          "success": {
+            "k": 1678,
+            "n": 4434,
+            "rate": 0.3784,
+            "lo": 0.3643,
+            "hi": 0.3928
+          },
+          "withdrawn": {
+            "k": 1975,
+            "n": 4434,
+            "rate": 0.4454,
+            "lo": 0.4308,
+            "hi": 0.4601
+          }
+        },
+        {
+          "value": "DDD",
+          "n": 6272,
+          "Withdrawn": 2250,
+          "Fail": 1412,
+          "Pass": 2227,
+          "Distinction": 383,
+          "success": {
+            "k": 2610,
+            "n": 6272,
+            "rate": 0.4161,
+            "lo": 0.404,
+            "hi": 0.4284
+          },
+          "withdrawn": {
+            "k": 2250,
+            "n": 6272,
+            "rate": 0.3587,
+            "lo": 0.347,
+            "hi": 0.3707
+          }
+        },
+        {
+          "value": "EEE",
+          "n": 2934,
+          "Withdrawn": 722,
+          "Fail": 562,
+          "Pass": 1294,
+          "Distinction": 356,
+          "success": {
+            "k": 1650,
+            "n": 2934,
+            "rate": 0.5624,
+            "lo": 0.5444,
+            "hi": 0.5802
+          },
+          "withdrawn": {
+            "k": 722,
+            "n": 2934,
+            "rate": 0.2461,
+            "lo": 0.2308,
+            "hi": 0.262
+          }
+        },
+        {
+          "value": "FFF",
+          "n": 7762,
+          "Withdrawn": 2403,
+          "Fail": 1711,
+          "Pass": 2978,
+          "Distinction": 670,
+          "success": {
+            "k": 3648,
+            "n": 7762,
+            "rate": 0.47,
+            "lo": 0.4589,
+            "hi": 0.4811
+          },
+          "withdrawn": {
+            "k": 2403,
+            "n": 7762,
+            "rate": 0.3096,
+            "lo": 0.2994,
+            "hi": 0.32
+          }
+        },
+        {
+          "value": "GGG",
+          "n": 2534,
+          "Withdrawn": 292,
+          "Fail": 728,
+          "Pass": 1118,
+          "Distinction": 396,
+          "success": {
+            "k": 1514,
+            "n": 2534,
+            "rate": 0.5975,
+            "lo": 0.5782,
+            "hi": 0.6164
+          },
+          "withdrawn": {
+            "k": 292,
+            "n": 2534,
+            "rate": 0.1152,
+            "lo": 0.1034,
+            "hi": 0.1283
+          }
+        }
+      ],
+      "cramers_v": 0.1207,
+      "cramers_v_within_module": null
+    },
+    "year": {
+      "rows": [
+        {
+          "value": "2013",
+          "n": 13529,
+          "Withdrawn": 3717,
+          "Fail": 3242,
+          "Pass": 5494,
+          "Distinction": 1076,
+          "success": {
+            "k": 6570,
+            "n": 13529,
+            "rate": 0.4856,
+            "lo": 0.4772,
+            "hi": 0.494
+          },
+          "withdrawn": {
+            "k": 3717,
+            "n": 13529,
+            "rate": 0.2747,
+            "lo": 0.2673,
+            "hi": 0.2823
+          }
+        },
+        {
+          "value": "2014",
+          "n": 19064,
+          "Withdrawn": 6439,
+          "Fail": 3810,
+          "Pass": 6867,
+          "Distinction": 1948,
+          "success": {
+            "k": 8815,
+            "n": 19064,
+            "rate": 0.4624,
+            "lo": 0.4553,
+            "hi": 0.4695
+          },
+          "withdrawn": {
+            "k": 6439,
+            "n": 19064,
+            "rate": 0.3378,
+            "lo": 0.3311,
+            "hi": 0.3445
+          }
+        }
+      ],
+      "cramers_v": 0.0864,
+      "cramers_v_within_module": {
+        "min": 0.0,
+        "median": 0.0755,
+        "max": 0.1118
+      }
+    },
+    "semester": {
+      "rows": [
+        {
+          "value": "B",
+          "n": 12488,
+          "Withdrawn": 3961,
+          "Fail": 3074,
+          "Pass": 4342,
+          "Distinction": 1111,
+          "success": {
+            "k": 5453,
+            "n": 12488,
+            "rate": 0.4367,
+            "lo": 0.428,
+            "hi": 0.4454
+          },
+          "withdrawn": {
+            "k": 3961,
+            "n": 12488,
+            "rate": 0.3172,
+            "lo": 0.3091,
+            "hi": 0.3254
+          }
+        },
+        {
+          "value": "J",
+          "n": 20105,
+          "Withdrawn": 6195,
+          "Fail": 3978,
+          "Pass": 8019,
+          "Distinction": 1913,
+          "success": {
+            "k": 9932,
+            "n": 20105,
+            "rate": 0.494,
+            "lo": 0.4871,
+            "hi": 0.5009
+          },
+          "withdrawn": {
+            "k": 6195,
+            "n": 20105,
+            "rate": 0.3081,
+            "lo": 0.3018,
+            "hi": 0.3146
+          }
+        }
+      ],
+      "cramers_v": 0.0652,
+      "cramers_v_within_module": {
+        "min": 0.0056,
+        "median": 0.0631,
+        "max": 0.0863
+      }
+    },
+    "gender": {
+      "rows": [
+        {
+          "value": "F",
+          "n": 14718,
+          "Withdrawn": 4486,
+          "Fail": 3103,
+          "Pass": 5735,
+          "Distinction": 1394,
+          "success": {
+            "k": 7129,
+            "n": 14718,
+            "rate": 0.4844,
+            "lo": 0.4763,
+            "hi": 0.4924
+          },
+          "withdrawn": {
+            "k": 4486,
+            "n": 14718,
+            "rate": 0.3048,
+            "lo": 0.2974,
+            "hi": 0.3123
+          }
+        },
+        {
+          "value": "M",
+          "n": 17875,
+          "Withdrawn": 5670,
+          "Fail": 3949,
+          "Pass": 6626,
+          "Distinction": 1630,
+          "success": {
+            "k": 8256,
+            "n": 17875,
+            "rate": 0.4619,
+            "lo": 0.4546,
+            "hi": 0.4692
+          },
+          "withdrawn": {
+            "k": 5670,
+            "n": 17875,
+            "rate": 0.3172,
+            "lo": 0.3104,
+            "hi": 0.3241
+          }
+        }
+      ],
+      "cramers_v": 0.0204,
+      "cramers_v_within_module": {
+        "min": 0.0139,
+        "median": 0.0525,
+        "max": 0.0972
+      }
+    },
+    "region": {
+      "rows": [
+        {
+          "value": "East Anglian Region",
+          "n": 3340,
+          "Withdrawn": 1006,
+          "Fail": 698,
+          "Pass": 1309,
+          "Distinction": 327,
+          "success": {
+            "k": 1636,
+            "n": 3340,
+            "rate": 0.4898,
+            "lo": 0.4729,
+            "hi": 0.5068
+          },
+          "withdrawn": {
+            "k": 1006,
+            "n": 3340,
+            "rate": 0.3012,
+            "lo": 0.2859,
+            "hi": 0.317
+          }
+        },
+        {
+          "value": "East Midlands Region",
+          "n": 2365,
+          "Withdrawn": 822,
+          "Fail": 462,
+          "Pass": 881,
+          "Distinction": 200,
+          "success": {
+            "k": 1081,
+            "n": 2365,
+            "rate": 0.4571,
+            "lo": 0.4371,
+            "hi": 0.4772
+          },
+          "withdrawn": {
+            "k": 822,
+            "n": 2365,
+            "rate": 0.3476,
+            "lo": 0.3286,
+            "hi": 0.367
+          }
+        },
+        {
+          "value": "Ireland",
+          "n": 1184,
+          "Withdrawn": 273,
+          "Fail": 261,
+          "Pass": 552,
+          "Distinction": 98,
+          "success": {
+            "k": 650,
+            "n": 1184,
+            "rate": 0.549,
+            "lo": 0.5205,
+            "hi": 0.5771
+          },
+          "withdrawn": {
+            "k": 273,
+            "n": 1184,
+            "rate": 0.2306,
+            "lo": 0.2075,
+            "hi": 0.2554
+          }
+        },
+        {
+          "value": "London Region",
+          "n": 3216,
+          "Withdrawn": 1110,
+          "Fail": 744,
+          "Pass": 1099,
+          "Distinction": 263,
+          "success": {
+            "k": 1362,
+            "n": 3216,
+            "rate": 0.4235,
+            "lo": 0.4065,
+            "hi": 0.4407
+          },
+          "withdrawn": {
+            "k": 1110,
+            "n": 3216,
+            "rate": 0.3451,
+            "lo": 0.3289,
+            "hi": 0.3618
+          }
+        },
+        {
+          "value": "North Region",
+          "n": 1823,
+          "Withdrawn": 575,
+          "Fail": 327,
+          "Pass": 691,
+          "Distinction": 230,
+          "success": {
+            "k": 921,
+            "n": 1823,
+            "rate": 0.5052,
+            "lo": 0.4823,
+            "hi": 0.5281
+          },
+          "withdrawn": {
+            "k": 575,
+            "n": 1823,
+            "rate": 0.3154,
+            "lo": 0.2945,
+            "hi": 0.3371
+          }
+        },
+        {
+          "value": "North Western Region",
+          "n": 2906,
+          "Withdrawn": 1034,
+          "Fail": 704,
+          "Pass": 955,
+          "Distinction": 213,
+          "success": {
+            "k": 1168,
+            "n": 2906,
+            "rate": 0.4019,
+            "lo": 0.3842,
+            "hi": 0.4199
+          },
+          "withdrawn": {
+            "k": 1034,
+            "n": 2906,
+            "rate": 0.3558,
+            "lo": 0.3386,
+            "hi": 0.3734
+          }
+        },
+        {
+          "value": "Scotland",
+          "n": 3446,
+          "Withdrawn": 907,
+          "Fail": 852,
+          "Pass": 1359,
+          "Distinction": 328,
+          "success": {
+            "k": 1687,
+            "n": 3446,
+            "rate": 0.4896,
+            "lo": 0.4729,
+            "hi": 0.5062
+          },
+          "withdrawn": {
+            "k": 907,
+            "n": 3446,
+            "rate": 0.2632,
+            "lo": 0.2488,
+            "hi": 0.2782
+          }
+        },
+        {
+          "value": "South East Region",
+          "n": 2111,
+          "Withdrawn": 649,
+          "Fail": 375,
+          "Pass": 843,
+          "Distinction": 244,
+          "success": {
+            "k": 1087,
+            "n": 2111,
+            "rate": 0.5149,
+            "lo": 0.4936,
+            "hi": 0.5362
+          },
+          "withdrawn": {
+            "k": 649,
+            "n": 2111,
+            "rate": 0.3074,
+            "lo": 0.2881,
+            "hi": 0.3275
+          }
+        },
+        {
+          "value": "South Region",
+          "n": 3092,
+          "Withdrawn": 928,
+          "Fail": 544,
+          "Pass": 1287,
+          "Distinction": 333,
+          "success": {
+            "k": 1620,
+            "n": 3092,
+            "rate": 0.5239,
+            "lo": 0.5063,
+            "hi": 0.5415
+          },
+          "withdrawn": {
+            "k": 928,
+            "n": 3092,
+            "rate": 0.3001,
+            "lo": 0.2842,
+            "hi": 0.3165
+          }
+        },
+        {
+          "value": "South West Region",
+          "n": 2436,
+          "Withdrawn": 758,
+          "Fail": 465,
+          "Pass": 949,
+          "Distinction": 264,
+          "success": {
+            "k": 1213,
+            "n": 2436,
+            "rate": 0.4979,
+            "lo": 0.4781,
+            "hi": 0.5178
+          },
+          "withdrawn": {
+            "k": 758,
+            "n": 2436,
+            "rate": 0.3112,
+            "lo": 0.2931,
+            "hi": 0.3298
+          }
+        },
+        {
+          "value": "Wales",
+          "n": 2086,
+          "Withdrawn": 524,
+          "Fail": 620,
+          "Pass": 765,
+          "Distinction": 177,
+          "success": {
+            "k": 942,
+            "n": 2086,
+            "rate": 0.4516,
+            "lo": 0.4303,
+            "hi": 0.473
+          },
+          "withdrawn": {
+            "k": 524,
+            "n": 2086,
+            "rate": 0.2512,
+            "lo": 0.2331,
+            "hi": 0.2703
+          }
+        },
+        {
+          "value": "West Midlands Region",
+          "n": 2582,
+          "Withdrawn": 913,
+          "Fail": 551,
+          "Pass": 936,
+          "Distinction": 182,
+          "success": {
+            "k": 1118,
+            "n": 2582,
+            "rate": 0.433,
+            "lo": 0.414,
+            "hi": 0.4522
+          },
+          "withdrawn": {
+            "k": 913,
+            "n": 2582,
+            "rate": 0.3536,
+            "lo": 0.3354,
+            "hi": 0.3722
+          }
+        },
+        {
+          "value": "Yorkshire Region",
+          "n": 2006,
+          "Withdrawn": 657,
+          "Fail": 449,
+          "Pass": 735,
+          "Distinction": 165,
+          "success": {
+            "k": 900,
+            "n": 2006,
+            "rate": 0.4487,
+            "lo": 0.427,
+            "hi": 0.4705
+          },
+          "withdrawn": {
+            "k": 657,
+            "n": 2006,
+            "rate": 0.3275,
+            "lo": 0.3073,
+            "hi": 0.3484
+          }
+        }
+      ],
+      "cramers_v": 0.0651,
+      "cramers_v_within_module": {
+        "min": 0.0506,
+        "median": 0.0701,
+        "max": 0.1146
+      }
+    },
+    "highest_education": {
+      "rows": [
+        {
+          "value": "A Level or Equivalent",
+          "n": 14045,
+          "Withdrawn": 4030,
+          "Fail": 2707,
+          "Pass": 5812,
+          "Distinction": 1496,
+          "success": {
+            "k": 7308,
+            "n": 14045,
+            "rate": 0.5203,
+            "lo": 0.5121,
+            "hi": 0.5286
+          },
+          "withdrawn": {
+            "k": 4030,
+            "n": 14045,
+            "rate": 0.2869,
+            "lo": 0.2795,
+            "hi": 0.2945
+          }
+        },
+        {
+          "value": "HE Qualification",
+          "n": 4730,
+          "Withdrawn": 1283,
+          "Fail": 790,
+          "Pass": 1960,
+          "Distinction": 697,
+          "success": {
+            "k": 2657,
+            "n": 4730,
+            "rate": 0.5617,
+            "lo": 0.5475,
+            "hi": 0.5758
+          },
+          "withdrawn": {
+            "k": 1283,
+            "n": 4730,
+            "rate": 0.2712,
+            "lo": 0.2588,
+            "hi": 0.2841
+          }
+        },
+        {
+          "value": "Lower Than A Level",
+          "n": 13158,
+          "Withdrawn": 4620,
+          "Fail": 3426,
+          "Pass": 4385,
+          "Distinction": 727,
+          "success": {
+            "k": 5112,
+            "n": 13158,
+            "rate": 0.3885,
+            "lo": 0.3802,
+            "hi": 0.3969
+          },
+          "withdrawn": {
+            "k": 4620,
+            "n": 13158,
+            "rate": 0.3511,
+            "lo": 0.343,
+            "hi": 0.3593
+          }
+        },
+        {
+          "value": "No Formal quals",
+          "n": 347,
+          "Withdrawn": 149,
+          "Fail": 95,
+          "Pass": 87,
+          "Distinction": 16,
+          "success": {
+            "k": 103,
+            "n": 347,
+            "rate": 0.2968,
+            "lo": 0.2512,
+            "hi": 0.3469
+          },
+          "withdrawn": {
+            "k": 149,
+            "n": 347,
+            "rate": 0.4294,
+            "lo": 0.3784,
+            "hi": 0.482
+          }
+        },
+        {
+          "value": "Post Graduate Qualification",
+          "n": 313,
+          "Withdrawn": 74,
+          "Fail": 34,
+          "Pass": 117,
+          "Distinction": 88,
+          "success": {
+            "k": 205,
+            "n": 313,
+            "rate": 0.655,
+            "lo": 0.6007,
+            "hi": 0.7055
+          },
+          "withdrawn": {
+            "k": 74,
+            "n": 313,
+            "rate": 0.2364,
+            "lo": 0.1927,
+            "hi": 0.2865
+          }
+        }
+      ],
+      "cramers_v": 0.1018,
+      "cramers_v_within_module": {
+        "min": 0.0,
+        "median": 0.105,
+        "max": 0.1297
+      },
+      "spearman_with_outcome_order": 0.1448
+    },
+    "imd_band": {
+      "rows": [
+        {
+          "value": "(missing)",
+          "n": 1111,
+          "Withdrawn": 236,
+          "Fail": 145,
+          "Pass": 531,
+          "Distinction": 199,
+          "success": {
+            "k": 730,
+            "n": 1111,
+            "rate": 0.6571,
+            "lo": 0.6287,
+            "hi": 0.6844
+          },
+          "withdrawn": {
+            "k": 236,
+            "n": 1111,
+            "rate": 0.2124,
+            "lo": 0.1894,
+            "hi": 0.2374
+          }
+        },
+        {
+          "value": "0-10%",
+          "n": 3311,
+          "Withdrawn": 1231,
+          "Fail": 916,
+          "Pass": 996,
+          "Distinction": 168,
+          "success": {
+            "k": 1164,
+            "n": 3311,
+            "rate": 0.3516,
+            "lo": 0.3355,
+            "hi": 0.368
+          },
+          "withdrawn": {
+            "k": 1231,
+            "n": 3311,
+            "rate": 0.3718,
+            "lo": 0.3555,
+            "hi": 0.3884
+          }
+        },
+        {
+          "value": "10-20%",
+          "n": 3516,
+          "Withdrawn": 1246,
+          "Fail": 912,
+          "Pass": 1167,
+          "Distinction": 191,
+          "success": {
+            "k": 1358,
+            "n": 3516,
+            "rate": 0.3862,
+            "lo": 0.3703,
+            "hi": 0.4024
+          },
+          "withdrawn": {
+            "k": 1246,
+            "n": 3516,
+            "rate": 0.3544,
+            "lo": 0.3387,
+            "hi": 0.3703
+          }
+        },
+        {
+          "value": "20-30%",
+          "n": 3654,
+          "Withdrawn": 1321,
+          "Fail": 844,
+          "Pass": 1226,
+          "Distinction": 263,
+          "success": {
+            "k": 1489,
+            "n": 3654,
+            "rate": 0.4075,
+            "lo": 0.3917,
+            "hi": 0.4235
+          },
+          "withdrawn": {
+            "k": 1321,
+            "n": 3654,
+            "rate": 0.3615,
+            "lo": 0.3461,
+            "hi": 0.3772
+          }
+        },
+        {
+          "value": "30-40%",
+          "n": 3539,
+          "Withdrawn": 1095,
+          "Fail": 784,
+          "Pass": 1345,
+          "Distinction": 315,
+          "success": {
+            "k": 1660,
+            "n": 3539,
+            "rate": 0.4691,
+            "lo": 0.4527,
+            "hi": 0.4855
+          },
+          "withdrawn": {
+            "k": 1095,
+            "n": 3539,
+            "rate": 0.3094,
+            "lo": 0.2944,
+            "hi": 0.3248
+          }
+        },
+        {
+          "value": "40-50%",
+          "n": 3256,
+          "Withdrawn": 1042,
+          "Fail": 697,
+          "Pass": 1224,
+          "Distinction": 293,
+          "success": {
+            "k": 1517,
+            "n": 3256,
+            "rate": 0.4659,
+            "lo": 0.4488,
+            "hi": 0.4831
+          },
+          "withdrawn": {
+            "k": 1042,
+            "n": 3256,
+            "rate": 0.32,
+            "lo": 0.3042,
+            "hi": 0.3363
+          }
+        },
+        {
+          "value": "50-60%",
+          "n": 3124,
+          "Withdrawn": 899,
+          "Fail": 701,
+          "Pass": 1227,
+          "Distinction": 297,
+          "success": {
+            "k": 1524,
+            "n": 3124,
+            "rate": 0.4878,
+            "lo": 0.4703,
+            "hi": 0.5054
+          },
+          "withdrawn": {
+            "k": 899,
+            "n": 3124,
+            "rate": 0.2878,
+            "lo": 0.2722,
+            "hi": 0.3039
+          }
+        },
+        {
+          "value": "60-70%",
+          "n": 2905,
+          "Withdrawn": 859,
+          "Fail": 538,
+          "Pass": 1209,
+          "Distinction": 299,
+          "success": {
+            "k": 1508,
+            "n": 2905,
+            "rate": 0.5191,
+            "lo": 0.5009,
+            "hi": 0.5372
+          },
+          "withdrawn": {
+            "k": 859,
+            "n": 2905,
+            "rate": 0.2957,
+            "lo": 0.2794,
+            "hi": 0.3126
+          }
+        },
+        {
+          "value": "70-80%",
+          "n": 2879,
+          "Withdrawn": 797,
+          "Fail": 599,
+          "Pass": 1170,
+          "Distinction": 313,
+          "success": {
+            "k": 1483,
+            "n": 2879,
+            "rate": 0.5151,
+            "lo": 0.4968,
+            "hi": 0.5333
+          },
+          "withdrawn": {
+            "k": 797,
+            "n": 2879,
+            "rate": 0.2768,
+            "lo": 0.2608,
+            "hi": 0.2935
+          }
+        },
+        {
+          "value": "80-90%",
+          "n": 2762,
+          "Withdrawn": 774,
+          "Fail": 495,
+          "Pass": 1165,
+          "Distinction": 328,
+          "success": {
+            "k": 1493,
+            "n": 2762,
+            "rate": 0.5406,
+            "lo": 0.5219,
+            "hi": 0.5591
+          },
+          "withdrawn": {
+            "k": 774,
+            "n": 2762,
+            "rate": 0.2802,
+            "lo": 0.2638,
+            "hi": 0.2973
+          }
+        },
+        {
+          "value": "90-100%",
+          "n": 2536,
+          "Withdrawn": 656,
+          "Fail": 421,
+          "Pass": 1101,
+          "Distinction": 358,
+          "success": {
+            "k": 1459,
+            "n": 2536,
+            "rate": 0.5753,
+            "lo": 0.556,
+            "hi": 0.5944
+          },
+          "withdrawn": {
+            "k": 656,
+            "n": 2536,
+            "rate": 0.2587,
+            "lo": 0.242,
+            "hi": 0.2761
+          }
+        }
+      ],
+      "cramers_v": 0.0823,
+      "cramers_v_within_module": {
+        "min": 0.0644,
+        "median": 0.0866,
+        "max": 0.0986
+      },
+      "spearman_with_outcome_order": 0.1271
+    },
+    "age_band": {
+      "rows": [
+        {
+          "value": "0-35",
+          "n": 22944,
+          "Withdrawn": 7381,
+          "Fail": 5231,
+          "Pass": 8469,
+          "Distinction": 1863,
+          "success": {
+            "k": 10332,
+            "n": 22944,
+            "rate": 0.4503,
+            "lo": 0.4439,
+            "hi": 0.4568
+          },
+          "withdrawn": {
+            "k": 7381,
+            "n": 22944,
+            "rate": 0.3217,
+            "lo": 0.3157,
+            "hi": 0.3278
+          }
+        },
+        {
+          "value": "35-55",
+          "n": 9433,
+          "Withdrawn": 2721,
+          "Fail": 1792,
+          "Pass": 3800,
+          "Distinction": 1120,
+          "success": {
+            "k": 4920,
+            "n": 9433,
+            "rate": 0.5216,
+            "lo": 0.5115,
+            "hi": 0.5316
+          },
+          "withdrawn": {
+            "k": 2721,
+            "n": 9433,
+            "rate": 0.2885,
+            "lo": 0.2794,
+            "hi": 0.2977
+          }
+        },
+        {
+          "value": "55<=",
+          "n": 216,
+          "Withdrawn": 54,
+          "Fail": 29,
+          "Pass": 92,
+          "Distinction": 41,
+          "success": {
+            "k": 133,
+            "n": 216,
+            "rate": 0.6157,
+            "lo": 0.5494,
+            "hi": 0.6781
+          },
+          "withdrawn": {
+            "k": 54,
+            "n": 216,
+            "rate": 0.25,
+            "lo": 0.197,
+            "hi": 0.3118
+          }
+        }
+      ],
+      "cramers_v": 0.0577,
+      "cramers_v_within_module": {
+        "min": 0.0148,
+        "median": 0.0531,
+        "max": 0.0722
+      },
+      "spearman_with_outcome_order": 0.0674
+    },
+    "disability": {
+      "rows": [
+        {
+          "value": "N",
+          "n": 29429,
+          "Withdrawn": 8911,
+          "Fail": 6340,
+          "Pass": 11377,
+          "Distinction": 2801,
+          "success": {
+            "k": 14178,
+            "n": 29429,
+            "rate": 0.4818,
+            "lo": 0.4761,
+            "hi": 0.4875
+          },
+          "withdrawn": {
+            "k": 8911,
+            "n": 29429,
+            "rate": 0.3028,
+            "lo": 0.2976,
+            "hi": 0.3081
+          }
+        },
+        {
+          "value": "Y",
+          "n": 3164,
+          "Withdrawn": 1245,
+          "Fail": 712,
+          "Pass": 984,
+          "Distinction": 223,
+          "success": {
+            "k": 1207,
+            "n": 3164,
+            "rate": 0.3815,
+            "lo": 0.3647,
+            "hi": 0.3985
+          },
+          "withdrawn": {
+            "k": 1245,
+            "n": 3164,
+            "rate": 0.3935,
+            "lo": 0.3766,
+            "hi": 0.4106
+          }
+        }
+      ],
+      "cramers_v": 0.0645,
+      "cramers_v_within_module": {
+        "min": 0.0153,
+        "median": 0.0581,
+        "max": 0.0924
+      }
+    },
+    "prev_attempts": {
+      "rows": [
+        {
+          "value": "0",
+          "n": 28421,
+          "Withdrawn": 8685,
+          "Fail": 5731,
+          "Pass": 11148,
+          "Distinction": 2857,
+          "success": {
+            "k": 14005,
+            "n": 28421,
+            "rate": 0.4928,
+            "lo": 0.487,
+            "hi": 0.4986
+          },
+          "withdrawn": {
+            "k": 8685,
+            "n": 28421,
+            "rate": 0.3056,
+            "lo": 0.3003,
+            "hi": 0.311
+          }
+        },
+        {
+          "value": "1",
+          "n": 3299,
+          "Withdrawn": 1150,
+          "Fail": 1009,
+          "Pass": 997,
+          "Distinction": 143,
+          "success": {
+            "k": 1140,
+            "n": 3299,
+            "rate": 0.3456,
+            "lo": 0.3295,
+            "hi": 0.362
+          },
+          "withdrawn": {
+            "k": 1150,
+            "n": 3299,
+            "rate": 0.3486,
+            "lo": 0.3325,
+            "hi": 0.365
+          }
+        },
+        {
+          "value": "2+",
+          "n": 873,
+          "Withdrawn": 321,
+          "Fail": 312,
+          "Pass": 216,
+          "Distinction": 24,
+          "success": {
+            "k": 240,
+            "n": 873,
+            "rate": 0.2749,
+            "lo": 0.2463,
+            "hi": 0.3055
+          },
+          "withdrawn": {
+            "k": 321,
+            "n": 873,
+            "rate": 0.3677,
+            "lo": 0.3364,
+            "hi": 0.4002
+          }
+        }
+      ],
+      "cramers_v": 0.0877,
+      "cramers_v_within_module": {
+        "min": 0.0144,
+        "median": 0.065,
+        "max": 0.1069
+      },
+      "spearman_with_outcome_order": -0.092
+    }
+  },
+  "simpson": {
+    "female_vs_male:success": {
+      "crude_gap_pp": 2.25,
+      "module_standardised_gap_pp": 1.4,
+      "modules_compared": 7,
+      "modules_opposite_sign": 2,
+      "group1_share_by_module": {
+        "AAA": 0.42,
+        "BBB": 0.884,
+        "CCC": 0.248,
+        "DDD": 0.401,
+        "EEE": 0.115,
+        "FFF": 0.182,
+        "GGG": 0.806
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": -8.18,
+          "n1": 314,
+          "n2": 434
+        },
+        {
+          "module": "BBB",
+          "gap_pp": 2.43,
+          "n1": 6991,
+          "n2": 918
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 4.51,
+          "n1": 1101,
+          "n2": 3333
+        },
+        {
+          "module": "DDD",
+          "gap_pp": -2.18,
+          "n1": 2518,
+          "n2": 3754
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 0.16,
+          "n1": 337,
+          "n2": 2597
+        },
+        {
+          "module": "FFF",
+          "gap_pp": 2.03,
+          "n1": 1414,
+          "n2": 6348
+        },
+        {
+          "module": "GGG",
+          "gap_pp": 3.88,
+          "n1": 2043,
+          "n2": 491
+        }
+      ]
+    },
+    "female_vs_male:withdrawn": {
+      "crude_gap_pp": -1.24,
+      "module_standardised_gap_pp": 2.95,
+      "modules_compared": 7,
+      "modules_opposite_sign": 6,
+      "group1_share_by_module": {
+        "AAA": 0.42,
+        "BBB": 0.884,
+        "CCC": 0.248,
+        "DDD": 0.401,
+        "EEE": 0.115,
+        "FFF": 0.182,
+        "GGG": 0.806
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": 7.74,
+          "n1": 314,
+          "n2": 434
+        },
+        {
+          "module": "BBB",
+          "gap_pp": 1.5,
+          "n1": 6991,
+          "n2": 918
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 1.4,
+          "n1": 1101,
+          "n2": 3333
+        },
+        {
+          "module": "DDD",
+          "gap_pp": 6.08,
+          "n1": 2518,
+          "n2": 3754
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 5.39,
+          "n1": 337,
+          "n2": 2597
+        },
+        {
+          "module": "FFF",
+          "gap_pp": 3.13,
+          "n1": 1414,
+          "n2": 6348
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -2.38,
+          "n1": 2043,
+          "n2": 491
+        }
+      ]
+    },
+    "disability_yes_vs_no:success": {
+      "crude_gap_pp": -10.03,
+      "module_standardised_gap_pp": -9.94,
+      "modules_compared": 7,
+      "modules_opposite_sign": 0,
+      "group1_share_by_module": {
+        "AAA": 0.056,
+        "BBB": 0.094,
+        "CCC": 0.086,
+        "DDD": 0.118,
+        "EEE": 0.057,
+        "FFF": 0.095,
+        "GGG": 0.14
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": -19.72,
+          "n1": 42,
+          "n2": 706
+        },
+        {
+          "module": "BBB",
+          "gap_pp": -9.84,
+          "n1": 742,
+          "n2": 7167
+        },
+        {
+          "module": "CCC",
+          "gap_pp": -5.41,
+          "n1": 380,
+          "n2": 4054
+        },
+        {
+          "module": "DDD",
+          "gap_pp": -11.23,
+          "n1": 741,
+          "n2": 5531
+        },
+        {
+          "module": "EEE",
+          "gap_pp": -8.51,
+          "n1": 168,
+          "n2": 2766
+        },
+        {
+          "module": "FFF",
+          "gap_pp": -12.84,
+          "n1": 735,
+          "n2": 7027
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -4.8,
+          "n1": 356,
+          "n2": 2178
+        }
+      ]
+    },
+    "disability_yes_vs_no:withdrawn": {
+      "crude_gap_pp": 9.07,
+      "module_standardised_gap_pp": 9.26,
+      "modules_compared": 7,
+      "modules_opposite_sign": 0,
+      "group1_share_by_module": {
+        "AAA": 0.056,
+        "BBB": 0.094,
+        "CCC": 0.086,
+        "DDD": 0.118,
+        "EEE": 0.057,
+        "FFF": 0.095,
+        "GGG": 0.14
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": 7.38,
+          "n1": 42,
+          "n2": 706
+        },
+        {
+          "module": "BBB",
+          "gap_pp": 6.24,
+          "n1": 742,
+          "n2": 7167
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 9.71,
+          "n1": 380,
+          "n2": 4054
+        },
+        {
+          "module": "DDD",
+          "gap_pp": 13.8,
+          "n1": 741,
+          "n2": 5531
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 2.94,
+          "n1": 168,
+          "n2": 2766
+        },
+        {
+          "module": "FFF",
+          "gap_pp": 13.14,
+          "n1": 735,
+          "n2": 7027
+        },
+        {
+          "module": "GGG",
+          "gap_pp": 2.61,
+          "n1": 356,
+          "n2": 2178
+        }
+      ]
+    },
+    "most_vs_least_deprived_imd:success": {
+      "crude_gap_pp": -18.78,
+      "module_standardised_gap_pp": -19.14,
+      "modules_compared": 7,
+      "modules_opposite_sign": 0,
+      "group1_share_by_module": {
+        "AAA": 0.105,
+        "BBB": 0.259,
+        "CCC": 0.184,
+        "DDD": 0.187,
+        "EEE": 0.178,
+        "FFF": 0.229,
+        "GGG": 0.252
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": -5.71,
+          "n1": 76,
+          "n2": 207
+        },
+        {
+          "module": "BBB",
+          "gap_pp": -22.24,
+          "n1": 2029,
+          "n2": 1038
+        },
+        {
+          "module": "CCC",
+          "gap_pp": -14.96,
+          "n1": 771,
+          "n2": 808
+        },
+        {
+          "module": "DDD",
+          "gap_pp": -19.31,
+          "n1": 1118,
+          "n2": 1102
+        },
+        {
+          "module": "EEE",
+          "gap_pp": -18.99,
+          "n1": 502,
+          "n2": 528
+        },
+        {
+          "module": "FFF",
+          "gap_pp": -20.59,
+          "n1": 1694,
+          "n2": 1260
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -15.52,
+          "n1": 637,
+          "n2": 355
+        }
+      ]
+    },
+    "most_vs_least_deprived_imd:withdrawn": {
+      "crude_gap_pp": 9.29,
+      "module_standardised_gap_pp": 10.11,
+      "modules_compared": 7,
+      "modules_opposite_sign": 2,
+      "group1_share_by_module": {
+        "AAA": 0.105,
+        "BBB": 0.259,
+        "CCC": 0.184,
+        "DDD": 0.187,
+        "EEE": 0.178,
+        "FFF": 0.229,
+        "GGG": 0.252
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": -4.15,
+          "n1": 76,
+          "n2": 207
+        },
+        {
+          "module": "BBB",
+          "gap_pp": 9.08,
+          "n1": 2029,
+          "n2": 1038
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 12.45,
+          "n1": 771,
+          "n2": 808
+        },
+        {
+          "module": "DDD",
+          "gap_pp": 13.79,
+          "n1": 1118,
+          "n2": 1102
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 14.9,
+          "n1": 502,
+          "n2": 528
+        },
+        {
+          "module": "FFF",
+          "gap_pp": 11.0,
+          "n1": 1694,
+          "n2": 1260
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -2.15,
+          "n1": 637,
+          "n2": 355
+        }
+      ]
+    },
+    "repeat_vs_first_attempt:success": {
+      "crude_gap_pp": -16.2,
+      "module_standardised_gap_pp": -14.06,
+      "modules_compared": 7,
+      "modules_opposite_sign": 0,
+      "group1_share_by_module": {
+        "AAA": 0.055,
+        "BBB": 0.154,
+        "CCC": 0.053,
+        "DDD": 0.191,
+        "EEE": 0.051,
+        "FFF": 0.16,
+        "GGG": 0.033
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": -15.76,
+          "n1": 41,
+          "n2": 707
+        },
+        {
+          "module": "BBB",
+          "gap_pp": -14.0,
+          "n1": 1221,
+          "n2": 6688
+        },
+        {
+          "module": "CCC",
+          "gap_pp": -10.75,
+          "n1": 235,
+          "n2": 4199
+        },
+        {
+          "module": "DDD",
+          "gap_pp": -17.52,
+          "n1": 1199,
+          "n2": 5073
+        },
+        {
+          "module": "EEE",
+          "gap_pp": -17.53,
+          "n1": 149,
+          "n2": 2785
+        },
+        {
+          "module": "FFF",
+          "gap_pp": -15.67,
+          "n1": 1244,
+          "n2": 6518
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -1.98,
+          "n1": 83,
+          "n2": 2451
+        }
+      ]
+    },
+    "repeat_vs_first_attempt:withdrawn": {
+      "crude_gap_pp": 4.7,
+      "module_standardised_gap_pp": 3.32,
+      "modules_compared": 7,
+      "modules_opposite_sign": 1,
+      "group1_share_by_module": {
+        "AAA": 0.055,
+        "BBB": 0.154,
+        "CCC": 0.053,
+        "DDD": 0.191,
+        "EEE": 0.051,
+        "FFF": 0.16,
+        "GGG": 0.033
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": 10.56,
+          "n1": 41,
+          "n2": 707
+        },
+        {
+          "module": "BBB",
+          "gap_pp": 2.65,
+          "n1": 1221,
+          "n2": 6688
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 4.19,
+          "n1": 235,
+          "n2": 4199
+        },
+        {
+          "module": "DDD",
+          "gap_pp": 6.48,
+          "n1": 1199,
+          "n2": 5073
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 5.19,
+          "n1": 149,
+          "n2": 2785
+        },
+        {
+          "module": "FFF",
+          "gap_pp": 2.09,
+          "n1": 1244,
+          "n2": 6518
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -4.44,
+          "n1": 83,
+          "n2": 2451
+        }
+      ]
+    },
+    "age_35plus_vs_under35:success": {
+      "crude_gap_pp": 7.34,
+      "module_standardised_gap_pp": 6.24,
+      "modules_compared": 7,
+      "modules_opposite_sign": 0,
+      "group1_share_by_module": {
+        "AAA": 0.529,
+        "BBB": 0.332,
+        "CCC": 0.293,
+        "DDD": 0.257,
+        "EEE": 0.242,
+        "FFF": 0.26,
+        "GGG": 0.39
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": 4.77,
+          "n1": 396,
+          "n2": 352
+        },
+        {
+          "module": "BBB",
+          "gap_pp": 9.55,
+          "n1": 2628,
+          "n2": 5281
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 6.12,
+          "n1": 1297,
+          "n2": 3137
+        },
+        {
+          "module": "DDD",
+          "gap_pp": 5.17,
+          "n1": 1615,
+          "n2": 4657
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 3.4,
+          "n1": 709,
+          "n2": 2225
+        },
+        {
+          "module": "FFF",
+          "gap_pp": 5.09,
+          "n1": 2017,
+          "n2": 5745
+        },
+        {
+          "module": "GGG",
+          "gap_pp": 6.02,
+          "n1": 987,
+          "n2": 1547
+        }
+      ]
+    },
+    "age_35plus_vs_under35:withdrawn": {
+      "crude_gap_pp": -3.41,
+      "module_standardised_gap_pp": -2.27,
+      "modules_compared": 7,
+      "modules_opposite_sign": 1,
+      "group1_share_by_module": {
+        "AAA": 0.529,
+        "BBB": 0.332,
+        "CCC": 0.293,
+        "DDD": 0.257,
+        "EEE": 0.242,
+        "FFF": 0.26,
+        "GGG": 0.39
+      },
+      "per_module": [
+        {
+          "module": "AAA",
+          "gap_pp": -0.92,
+          "n1": 396,
+          "n2": 352
+        },
+        {
+          "module": "BBB",
+          "gap_pp": -4.99,
+          "n1": 2628,
+          "n2": 5281
+        },
+        {
+          "module": "CCC",
+          "gap_pp": -2.91,
+          "n1": 1297,
+          "n2": 3137
+        },
+        {
+          "module": "DDD",
+          "gap_pp": -1.36,
+          "n1": 1615,
+          "n2": 4657
+        },
+        {
+          "module": "EEE",
+          "gap_pp": -2.51,
+          "n1": 709,
+          "n2": 2225
+        },
+        {
+          "module": "FFF",
+          "gap_pp": -0.77,
+          "n1": 2017,
+          "n2": 5745
+        },
+        {
+          "module": "GGG",
+          "gap_pp": 0.38,
+          "n1": 987,
+          "n2": 1547
+        }
+      ]
+    },
+    "B_vs_J_presentation:success": {
+      "crude_gap_pp": -5.73,
+      "module_standardised_gap_pp": -3.9,
+      "modules_compared": 6,
+      "modules_opposite_sign": 0,
+      "group1_share_by_module": {
+        "AAA": 0.0,
+        "BBB": 0.427,
+        "CCC": 0.437,
+        "DDD": 0.404,
+        "EEE": 0.237,
+        "FFF": 0.401,
+        "GGG": 0.329
+      },
+      "per_module": [
+        {
+          "module": "BBB",
+          "gap_pp": -3.84,
+          "n1": 3380,
+          "n2": 4529
+        },
+        {
+          "module": "CCC",
+          "gap_pp": -6.39,
+          "n1": 1936,
+          "n2": 2498
+        },
+        {
+          "module": "DDD",
+          "gap_pp": -4.26,
+          "n1": 2531,
+          "n2": 3741
+        },
+        {
+          "module": "EEE",
+          "gap_pp": -6.28,
+          "n1": 694,
+          "n2": 2240
+        },
+        {
+          "module": "FFF",
+          "gap_pp": -1.48,
+          "n1": 3114,
+          "n2": 4648
+        },
+        {
+          "module": "GGG",
+          "gap_pp": -3.52,
+          "n1": 833,
+          "n2": 1701
+        }
+      ]
+    },
+    "B_vs_J_presentation:withdrawn": {
+      "crude_gap_pp": 0.91,
+      "module_standardised_gap_pp": -0.78,
+      "modules_compared": 6,
+      "modules_opposite_sign": 2,
+      "group1_share_by_module": {
+        "AAA": 0.0,
+        "BBB": 0.427,
+        "CCC": 0.437,
+        "DDD": 0.404,
+        "EEE": 0.237,
+        "FFF": 0.401,
+        "GGG": 0.329
+      },
+      "per_module": [
+        {
+          "module": "BBB",
+          "gap_pp": -1.32,
+          "n1": 3380,
+          "n2": 4529
+        },
+        {
+          "module": "CCC",
+          "gap_pp": 3.27,
+          "n1": 1936,
+          "n2": 2498
+        },
+        {
+          "module": "DDD",
+          "gap_pp": 0.93,
+          "n1": 2531,
+          "n2": 3741
+        },
+        {
+          "module": "EEE",
+          "gap_pp": 0.42,
+          "n1": 694,
+          "n2": 2240
+        },
+        {
+          "module": "FFF",
+          "gap_pp": -4.88,
+          "n1": 3114,
+          "n2": 4648
+        },
+        {
+          "module": "GGG",
+          "gap_pp": 0.72,
+          "n1": 833,
+          "n2": 1701
+        }
+      ]
+    }
+  },
+  "early_engagement": {
+    "population": {
+      "enrolments": 32593,
+      "active_at_28": 27553,
+      "excluded_unregistered_before_28": 5040
+    },
+    "by_outcome": [
+      {
+        "final_result": "Withdrawn",
+        "n": 5124,
+        "median_clicks": 141.0,
+        "p25": 52.0,
+        "p75": 298.0,
+        "median_active_days": 8.0,
+        "zero_click_share": 0.0593
+      },
+      {
+        "final_result": "Fail",
+        "n": 7044,
+        "median_clicks": 103.0,
+        "p25": 27.0,
+        "p75": 235.0,
+        "median_active_days": 6.0,
+        "zero_click_share": 0.1012
+      },
+      {
+        "final_result": "Pass",
+        "n": 12361,
+        "median_clicks": 217.0,
+        "p25": 96.0,
+        "p75": 421.0,
+        "median_active_days": 11.0,
+        "zero_click_share": 0.0163
+      },
+      {
+        "final_result": "Distinction",
+        "n": 3024,
+        "median_clicks": 299.0,
+        "p25": 130.0,
+        "p75": 575.0,
+        "median_active_days": 14.0,
+        "zero_click_share": 0.0099
+      }
+    ],
+    "cliffs_delta_success_vs_not": {
+      "clicks_early": 0.3112,
+      "clicks_early_dedup": 0.3093,
+      "active_days_early": 0.3403,
+      "clicks_prestart": 0.2588
+    },
+    "per_module": [
+      {
+        "module": "AAA",
+        "n": 718,
+        "success_rate": 0.7396,
+        "delta_clicks": 0.2584,
+        "delta_clicks_dedup": 0.2578,
+        "delta_active_days": 0.3061
+      },
+      {
+        "module": "BBB",
+        "n": 6435,
+        "success_rate": 0.5834,
+        "delta_clicks": 0.3345,
+        "delta_clicks_dedup": 0.3322,
+        "delta_active_days": 0.3388
+      },
+      {
+        "module": "CCC",
+        "n": 3523,
+        "success_rate": 0.4763,
+        "delta_clicks": 0.38,
+        "delta_clicks_dedup": 0.3766,
+        "delta_active_days": 0.3926
+      },
+      {
+        "module": "DDD",
+        "n": 5287,
+        "success_rate": 0.4937,
+        "delta_clicks": 0.3896,
+        "delta_clicks_dedup": 0.3867,
+        "delta_active_days": 0.4144
+      },
+      {
+        "module": "EEE",
+        "n": 2553,
+        "success_rate": 0.6463,
+        "delta_clicks": 0.4756,
+        "delta_clicks_dedup": 0.4738,
+        "delta_active_days": 0.4999
+      },
+      {
+        "module": "FFF",
+        "n": 6599,
+        "success_rate": 0.5528,
+        "delta_clicks": 0.4346,
+        "delta_clicks_dedup": 0.4333,
+        "delta_active_days": 0.4417
+      },
+      {
+        "module": "GGG",
+        "n": 2438,
+        "success_rate": 0.621,
+        "delta_clicks": 0.2778,
+        "delta_clicks_dedup": 0.2795,
+        "delta_active_days": 0.2956
+      }
+    ],
+    "eta_squared_log_early_clicks_by_module": 0.2089
+  },
+  "temporal": {
+    "per_presentation": [
+      {
+        "presentation": "AAA 2013J",
+        "length": 268,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.896,
+        "acf_lag7": 0.675,
+        "acf_lag14": 0.419,
+        "assessment_window_ratio": 1.927
+      },
+      {
+        "presentation": "AAA 2014J",
+        "length": 269,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.872,
+        "acf_lag7": 0.598,
+        "acf_lag14": 0.445,
+        "assessment_window_ratio": 2.015
+      },
+      {
+        "presentation": "BBB 2013B",
+        "length": 240,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.85,
+        "acf_lag7": 0.605,
+        "acf_lag14": 0.499,
+        "assessment_window_ratio": 1.87
+      },
+      {
+        "presentation": "BBB 2013J",
+        "length": 268,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.87,
+        "acf_lag7": 0.53,
+        "acf_lag14": 0.352,
+        "assessment_window_ratio": 2.182
+      },
+      {
+        "presentation": "BBB 2014B",
+        "length": 234,
+        "zero_click_days_0_to_end": 2,
+        "zero_click_day_list": [
+          211,
+          212
+        ],
+        "acf_lag1": 0.838,
+        "acf_lag7": 0.468,
+        "acf_lag14": 0.35,
+        "assessment_window_ratio": 2.291
+      },
+      {
+        "presentation": "BBB 2014J",
+        "length": 262,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.848,
+        "acf_lag7": 0.417,
+        "acf_lag14": 0.222,
+        "assessment_window_ratio": 1.719
+      },
+      {
+        "presentation": "CCC 2014B",
+        "length": 241,
+        "zero_click_days_0_to_end": 2,
+        "zero_click_day_list": [
+          218,
+          219
+        ],
+        "acf_lag1": 0.762,
+        "acf_lag7": 0.218,
+        "acf_lag14": 0.173,
+        "assessment_window_ratio": 3.197
+      },
+      {
+        "presentation": "CCC 2014J",
+        "length": 269,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.809,
+        "acf_lag7": 0.309,
+        "acf_lag14": 0.17,
+        "assessment_window_ratio": 3.185
+      },
+      {
+        "presentation": "DDD 2013B",
+        "length": 240,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.904,
+        "acf_lag7": 0.62,
+        "acf_lag14": 0.449,
+        "assessment_window_ratio": 1.909
+      },
+      {
+        "presentation": "DDD 2013J",
+        "length": 261,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.877,
+        "acf_lag7": 0.594,
+        "acf_lag14": 0.374,
+        "assessment_window_ratio": 2.12
+      },
+      {
+        "presentation": "DDD 2014B",
+        "length": 241,
+        "zero_click_days_0_to_end": 2,
+        "zero_click_day_list": [
+          218,
+          219
+        ],
+        "acf_lag1": 0.89,
+        "acf_lag7": 0.602,
+        "acf_lag14": 0.502,
+        "assessment_window_ratio": 2.106
+      },
+      {
+        "presentation": "DDD 2014J",
+        "length": 262,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.885,
+        "acf_lag7": 0.507,
+        "acf_lag14": 0.347,
+        "assessment_window_ratio": 1.968
+      },
+      {
+        "presentation": "EEE 2013J",
+        "length": 268,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.889,
+        "acf_lag7": 0.562,
+        "acf_lag14": 0.52,
+        "assessment_window_ratio": 2.747
+      },
+      {
+        "presentation": "EEE 2014B",
+        "length": 241,
+        "zero_click_days_0_to_end": 2,
+        "zero_click_day_list": [
+          218,
+          219
+        ],
+        "acf_lag1": 0.845,
+        "acf_lag7": 0.518,
+        "acf_lag14": 0.432,
+        "assessment_window_ratio": 2.419
+      },
+      {
+        "presentation": "EEE 2014J",
+        "length": 269,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.891,
+        "acf_lag7": 0.537,
+        "acf_lag14": 0.426,
+        "assessment_window_ratio": 2.807
+      },
+      {
+        "presentation": "FFF 2013B",
+        "length": 240,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.845,
+        "acf_lag7": 0.372,
+        "acf_lag14": 0.129,
+        "assessment_window_ratio": 2.157
+      },
+      {
+        "presentation": "FFF 2013J",
+        "length": 268,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.884,
+        "acf_lag7": 0.539,
+        "acf_lag14": 0.366,
+        "assessment_window_ratio": 2.297
+      },
+      {
+        "presentation": "FFF 2014B",
+        "length": 241,
+        "zero_click_days_0_to_end": 2,
+        "zero_click_day_list": [
+          218,
+          219
+        ],
+        "acf_lag1": 0.824,
+        "acf_lag7": 0.224,
+        "acf_lag14": 0.174,
+        "assessment_window_ratio": 2.209
+      },
+      {
+        "presentation": "FFF 2014J",
+        "length": 269,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.868,
+        "acf_lag7": 0.471,
+        "acf_lag14": 0.282,
+        "assessment_window_ratio": 2.279
+      },
+      {
+        "presentation": "GGG 2013J",
+        "length": 261,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.861,
+        "acf_lag7": 0.544,
+        "acf_lag14": 0.41,
+        "assessment_window_ratio": 1.84
+      },
+      {
+        "presentation": "GGG 2014B",
+        "length": 241,
+        "zero_click_days_0_to_end": 2,
+        "zero_click_day_list": [
+          218,
+          219
+        ],
+        "acf_lag1": 0.717,
+        "acf_lag7": 0.413,
+        "acf_lag14": 0.211,
+        "assessment_window_ratio": 1.972
+      },
+      {
+        "presentation": "GGG 2014J",
+        "length": 269,
+        "zero_click_days_0_to_end": 0,
+        "zero_click_day_list": [],
+        "acf_lag1": 0.826,
+        "acf_lag7": 0.509,
+        "acf_lag14": 0.321,
+        "assessment_window_ratio": 1.829
+      }
+    ],
+    "median_acf_lag7": 0.53,
+    "median_acf_lag1": 0.868,
+    "median_assessment_window_ratio": 2.157,
+    "presentations_with_zero_click_days": 6,
+    "drift": [
+      {
+        "presentation": "AAA 2013J",
+        "module": "AAA",
+        "year": "2013",
+        "semester": "J",
+        "n": 383,
+        "success_rate": 0.7258,
+        "withdrawal_rate": 0.1567,
+        "median_clicks_early": 294.5
+      },
+      {
+        "presentation": "AAA 2014J",
+        "module": "AAA",
+        "year": "2014",
+        "semester": "J",
+        "n": 365,
+        "success_rate": 0.6932,
+        "withdrawal_rate": 0.1808,
+        "median_clicks_early": 248.0
+      },
+      {
+        "presentation": "BBB 2013B",
+        "module": "BBB",
+        "year": "2013",
+        "semester": "B",
+        "n": 1767,
+        "success_rate": 0.4544,
+        "withdrawal_rate": 0.2858,
+        "median_clicks_early": 131.0
+      },
+      {
+        "presentation": "BBB 2013J",
+        "module": "BBB",
+        "year": "2013",
+        "semester": "J",
+        "n": 2237,
+        "success_rate": 0.4792,
+        "withdrawal_rate": 0.2879,
+        "median_clicks_early": 80.0
+      },
+      {
+        "presentation": "BBB 2014B",
+        "module": "BBB",
+        "year": "2014",
+        "semester": "B",
+        "n": 1613,
+        "success_rate": 0.4507,
+        "withdrawal_rate": 0.3038,
+        "median_clicks_early": 76.0
+      },
+      {
+        "presentation": "BBB 2014J",
+        "module": "BBB",
+        "year": "2014",
+        "semester": "J",
+        "n": 2292,
+        "success_rate": 0.5026,
+        "withdrawal_rate": 0.3268,
+        "median_clicks_early": 96.0
+      },
+      {
+        "presentation": "CCC 2014B",
+        "module": "CCC",
+        "year": "2014",
+        "semester": "B",
+        "n": 1936,
+        "success_rate": 0.3425,
+        "withdrawal_rate": 0.4638,
+        "median_clicks_early": 201.0
+      },
+      {
+        "presentation": "CCC 2014J",
+        "module": "CCC",
+        "year": "2014",
+        "semester": "J",
+        "n": 2498,
+        "success_rate": 0.4063,
+        "withdrawal_rate": 0.4311,
+        "median_clicks_early": 203.0
+      },
+      {
+        "presentation": "DDD 2013B",
+        "module": "DDD",
+        "year": "2013",
+        "semester": "B",
+        "n": 1303,
+        "success_rate": 0.3914,
+        "withdrawal_rate": 0.3315,
+        "median_clicks_early": 214.0
+      },
+      {
+        "presentation": "DDD 2013J",
+        "module": "DDD",
+        "year": "2013",
+        "semester": "J",
+        "n": 1938,
+        "success_rate": 0.4278,
+        "withdrawal_rate": 0.3514,
+        "median_clicks_early": 164.5
+      },
+      {
+        "presentation": "DDD 2014B",
+        "module": "DDD",
+        "year": "2014",
+        "semester": "B",
+        "n": 1228,
+        "success_rate": 0.3901,
+        "withdrawal_rate": 0.399,
+        "median_clicks_early": 172.0
+      },
+      {
+        "presentation": "DDD 2014J",
+        "module": "DDD",
+        "year": "2014",
+        "semester": "J",
+        "n": 1803,
+        "success_rate": 0.4393,
+        "withdrawal_rate": 0.3588,
+        "median_clicks_early": 132.0
+      },
+      {
+        "presentation": "EEE 2013J",
+        "module": "EEE",
+        "year": "2013",
+        "semester": "J",
+        "n": 1052,
+        "success_rate": 0.5789,
+        "withdrawal_rate": 0.231,
+        "median_clicks_early": 301.0
+      },
+      {
+        "presentation": "EEE 2014B",
+        "module": "EEE",
+        "year": "2014",
+        "semester": "B",
+        "n": 694,
+        "success_rate": 0.5144,
+        "withdrawal_rate": 0.2493,
+        "median_clicks_early": 250.0
+      },
+      {
+        "presentation": "EEE 2014J",
+        "module": "EEE",
+        "year": "2014",
+        "semester": "J",
+        "n": 1188,
+        "success_rate": 0.5758,
+        "withdrawal_rate": 0.2576,
+        "median_clicks_early": 282.0
+      },
+      {
+        "presentation": "FFF 2013B",
+        "module": "FFF",
+        "year": "2013",
+        "semester": "B",
+        "n": 1614,
+        "success_rate": 0.4845,
+        "withdrawal_rate": 0.2546,
+        "median_clicks_early": 426.0
+      },
+      {
+        "presentation": "FFF 2013J",
+        "module": "FFF",
+        "year": "2013",
+        "semester": "J",
+        "n": 2283,
+        "success_rate": 0.4796,
+        "withdrawal_rate": 0.2957,
+        "median_clicks_early": 377.0
+      },
+      {
+        "presentation": "FFF 2014B",
+        "module": "FFF",
+        "year": "2014",
+        "semester": "B",
+        "n": 1500,
+        "success_rate": 0.436,
+        "withdrawal_rate": 0.308,
+        "median_clicks_early": 349.0
+      },
+      {
+        "presentation": "FFF 2014J",
+        "module": "FFF",
+        "year": "2014",
+        "semester": "J",
+        "n": 2365,
+        "success_rate": 0.4723,
+        "withdrawal_rate": 0.3615,
+        "median_clicks_early": 398.0
+      },
+      {
+        "presentation": "GGG 2013J",
+        "module": "GGG",
+        "year": "2013",
+        "semester": "J",
+        "n": 952,
+        "success_rate": 0.6218,
+        "withdrawal_rate": 0.0693,
+        "median_clicks_early": 26.0
+      },
+      {
+        "presentation": "GGG 2014B",
+        "module": "GGG",
+        "year": "2014",
+        "semester": "B",
+        "n": 833,
+        "success_rate": 0.5738,
+        "withdrawal_rate": 0.12,
+        "median_clicks_early": 32.0
+      },
+      {
+        "presentation": "GGG 2014J",
+        "module": "GGG",
+        "year": "2014",
+        "semester": "J",
+        "n": 749,
+        "success_rate": 0.5928,
+        "withdrawal_rate": 0.1682,
+        "median_clicks_early": 44.0
+      }
+    ],
+    "year_on_year": [
+      {
+        "module": "AAA",
+        "semester": "J",
+        "success_change_pp": -3.26,
+        "withdrawal_change_pp": 2.41
+      },
+      {
+        "module": "BBB",
+        "semester": "B",
+        "success_change_pp": -0.37,
+        "withdrawal_change_pp": 1.8
+      },
+      {
+        "module": "BBB",
+        "semester": "J",
+        "success_change_pp": 2.34,
+        "withdrawal_change_pp": 3.89
+      },
+      {
+        "module": "DDD",
+        "semester": "B",
+        "success_change_pp": -0.13,
+        "withdrawal_change_pp": 6.75
+      },
+      {
+        "module": "DDD",
+        "semester": "J",
+        "success_change_pp": 1.15,
+        "withdrawal_change_pp": 0.74
+      },
+      {
+        "module": "EEE",
+        "semester": "J",
+        "success_change_pp": -0.31,
+        "withdrawal_change_pp": 2.66
+      },
+      {
+        "module": "FFF",
+        "semester": "B",
+        "success_change_pp": -4.85,
+        "withdrawal_change_pp": 5.34
+      },
+      {
+        "module": "FFF",
+        "semester": "J",
+        "success_change_pp": -0.73,
+        "withdrawal_change_pp": 6.58
+      },
+      {
+        "module": "GGG",
+        "semester": "J",
+        "success_change_pp": -2.9,
+        "withdrawal_change_pp": 9.89
+      }
+    ]
+  },
+  "survival": {
+    "population": {
+      "from_day_0": 29403,
+      "events": 6974,
+      "unregistered_on_or_before_day_0": 3097,
+      "withdrawn_without_date_excluded": 93
+    },
+    "survival_at": {
+      "All": {
+        "0": 1.0,
+        "14": 0.9532,
+        "28": 0.9334,
+        "60": 0.8934,
+        "90": 0.8662,
+        "120": 0.8395,
+        "180": 0.7885,
+        "240": 0.763,
+        "269": 0.7627
+      },
+      "AAA": {
+        "0": 1.0,
+        "14": 0.9918,
+        "28": 0.9863,
+        "60": 0.9629,
+        "90": 0.9519,
+        "120": 0.9396,
+        "180": 0.8901,
+        "240": 0.8585,
+        "269": 0.8544
+      },
+      "BBB": {
+        "0": 1.0,
+        "14": 0.9486,
+        "28": 0.9295,
+        "60": 0.8992,
+        "90": 0.8795,
+        "120": 0.8588,
+        "180": 0.82,
+        "240": 0.7993,
+        "269": 0.7983
+      },
+      "CCC": {
+        "0": 1.0,
+        "14": 0.9335,
+        "28": 0.8935,
+        "60": 0.8144,
+        "90": 0.7745,
+        "120": 0.7325,
+        "180": 0.6624,
+        "240": 0.6294,
+        "269": 0.6294
+      },
+      "DDD": {
+        "0": 1.0,
+        "14": 0.9532,
+        "28": 0.9307,
+        "60": 0.8819,
+        "90": 0.8514,
+        "120": 0.8203,
+        "180": 0.7504,
+        "240": 0.7103,
+        "269": 0.7103
+      },
+      "EEE": {
+        "0": 1.0,
+        "14": 0.9537,
+        "28": 0.9451,
+        "60": 0.9195,
+        "90": 0.8928,
+        "120": 0.8754,
+        "180": 0.8361,
+        "240": 0.8202,
+        "269": 0.8202
+      },
+      "FFF": {
+        "0": 1.0,
+        "14": 0.9504,
+        "28": 0.9324,
+        "60": 0.8951,
+        "90": 0.8631,
+        "120": 0.8327,
+        "180": 0.7825,
+        "240": 0.7606,
+        "269": 0.7606
+      },
+      "GGG": {
+        "0": 1.0,
+        "14": 0.9931,
+        "28": 0.9882,
+        "60": 0.9744,
+        "90": 0.9626,
+        "120": 0.9497,
+        "180": 0.922,
+        "240": 0.9103,
+        "269": 0.9103
+      }
+    },
+    "weekly_curves": {
+      "All": {
+        "0": 1.0,
+        "7": 0.9892,
+        "14": 0.9532,
+        "21": 0.946,
+        "28": 0.9334,
+        "35": 0.9234,
+        "42": 0.9159,
+        "49": 0.9075,
+        "56": 0.8989,
+        "63": 0.891,
+        "70": 0.8834,
+        "77": 0.8768,
+        "84": 0.8717,
+        "91": 0.8661,
+        "98": 0.8591,
+        "105": 0.8517,
+        "112": 0.8448,
+        "119": 0.8396,
+        "126": 0.8341,
+        "133": 0.8284,
+        "140": 0.8229,
+        "147": 0.8175,
+        "154": 0.8117,
+        "161": 0.8047,
+        "168": 0.7981,
+        "175": 0.7922,
+        "182": 0.788,
+        "189": 0.7854,
+        "196": 0.7827,
+        "203": 0.7794,
+        "210": 0.7759,
+        "217": 0.7727,
+        "224": 0.7689,
+        "231": 0.7655,
+        "238": 0.7634,
+        "245": 0.7627,
+        "252": 0.7627,
+        "259": 0.7627,
+        "266": 0.7627
+      },
+      "AAA": {
+        "0": 1.0,
+        "7": 0.9986,
+        "14": 0.9918,
+        "21": 0.9904,
+        "28": 0.9863,
+        "35": 0.9808,
+        "42": 0.9766,
+        "49": 0.9766,
+        "56": 0.9712,
+        "63": 0.9615,
+        "70": 0.9588,
+        "77": 0.9533,
+        "84": 0.9519,
+        "91": 0.9519,
+        "98": 0.9492,
+        "105": 0.9464,
+        "112": 0.9423,
+        "119": 0.9396,
+        "126": 0.9382,
+        "133": 0.9299,
+        "140": 0.9258,
+        "147": 0.9217,
+        "154": 0.9203,
+        "161": 0.9162,
+        "168": 0.908,
+        "175": 0.8942,
+        "182": 0.8887,
+        "189": 0.886,
+        "196": 0.8846,
+        "203": 0.8791,
+        "210": 0.8777,
+        "217": 0.8764,
+        "224": 0.8736,
+        "231": 0.8654,
+        "238": 0.8626,
+        "245": 0.8544,
+        "252": 0.8544,
+        "259": 0.8544,
+        "266": 0.8544
+      },
+      "BBB": {
+        "0": 1.0,
+        "7": 0.9847,
+        "14": 0.9486,
+        "21": 0.9425,
+        "28": 0.9295,
+        "35": 0.9243,
+        "42": 0.9178,
+        "49": 0.9101,
+        "56": 0.9036,
+        "63": 0.8975,
+        "70": 0.893,
+        "77": 0.889,
+        "84": 0.8837,
+        "91": 0.8795,
+        "98": 0.8745,
+        "105": 0.8681,
+        "112": 0.8626,
+        "119": 0.8588,
+        "126": 0.8536,
+        "133": 0.85,
+        "140": 0.8461,
+        "147": 0.8431,
+        "154": 0.8368,
+        "161": 0.8313,
+        "168": 0.8258,
+        "175": 0.8216,
+        "182": 0.82,
+        "189": 0.8163,
+        "196": 0.814,
+        "203": 0.8108,
+        "210": 0.8072,
+        "217": 0.8047,
+        "224": 0.8022,
+        "231": 0.8009,
+        "238": 0.7995,
+        "245": 0.7983,
+        "252": 0.7983,
+        "259": 0.7983,
+        "266": 0.7983
+      },
+      "CCC": {
+        "0": 1.0,
+        "7": 0.9877,
+        "14": 0.9335,
+        "21": 0.9143,
+        "28": 0.8935,
+        "35": 0.8623,
+        "42": 0.8482,
+        "49": 0.8347,
+        "56": 0.8219,
+        "63": 0.8116,
+        "70": 0.7955,
+        "77": 0.7847,
+        "84": 0.7812,
+        "91": 0.7745,
+        "98": 0.7686,
+        "105": 0.7566,
+        "112": 0.741,
+        "119": 0.7325,
+        "126": 0.7254,
+        "133": 0.7182,
+        "140": 0.7115,
+        "147": 0.7028,
+        "154": 0.6959,
+        "161": 0.6844,
+        "168": 0.6752,
+        "175": 0.6688,
+        "182": 0.6621,
+        "189": 0.6583,
+        "196": 0.6557,
+        "203": 0.6517,
+        "210": 0.647,
+        "217": 0.6424,
+        "224": 0.6371,
+        "231": 0.6332,
+        "238": 0.6302,
+        "245": 0.6294,
+        "252": 0.6294,
+        "259": 0.6294,
+        "266": 0.6294
+      },
+      "DDD": {
+        "0": 1.0,
+        "7": 0.985,
+        "14": 0.9532,
+        "21": 0.9457,
+        "28": 0.9307,
+        "35": 0.9222,
+        "42": 0.912,
+        "49": 0.9031,
+        "56": 0.8895,
+        "63": 0.8793,
+        "70": 0.8717,
+        "77": 0.8637,
+        "84": 0.8572,
+        "91": 0.8512,
+        "98": 0.8431,
+        "105": 0.836,
+        "112": 0.8279,
+        "119": 0.821,
+        "126": 0.8121,
+        "133": 0.8074,
+        "140": 0.8015,
+        "147": 0.7937,
+        "154": 0.7846,
+        "161": 0.7748,
+        "168": 0.7637,
+        "175": 0.7563,
+        "182": 0.7497,
+        "189": 0.7469,
+        "196": 0.7427,
+        "203": 0.7388,
+        "210": 0.7328,
+        "217": 0.7259,
+        "224": 0.7199,
+        "231": 0.7131,
+        "238": 0.7103,
+        "245": 0.7103,
+        "252": 0.7103,
+        "259": 0.7103,
+        "266": 0.7103
+      },
+      "EEE": {
+        "0": 1.0,
+        "7": 0.9926,
+        "14": 0.9537,
+        "21": 0.9496,
+        "28": 0.9451,
+        "35": 0.9355,
+        "42": 0.931,
+        "49": 0.9255,
+        "56": 0.9218,
+        "63": 0.9173,
+        "70": 0.9092,
+        "77": 0.8984,
+        "84": 0.8954,
+        "91": 0.8928,
+        "98": 0.8888,
+        "105": 0.8847,
+        "112": 0.8791,
+        "119": 0.8754,
+        "126": 0.871,
+        "133": 0.865,
+        "140": 0.8613,
+        "147": 0.8565,
+        "154": 0.8517,
+        "161": 0.8472,
+        "168": 0.8432,
+        "175": 0.8376,
+        "182": 0.8357,
+        "189": 0.8346,
+        "196": 0.8324,
+        "203": 0.8309,
+        "210": 0.8291,
+        "217": 0.8283,
+        "224": 0.8254,
+        "231": 0.8228,
+        "238": 0.8202,
+        "245": 0.8202,
+        "252": 0.8202,
+        "259": 0.8202,
+        "266": 0.8202
+      },
+      "FFF": {
+        "0": 1.0,
+        "7": 0.9925,
+        "14": 0.9504,
+        "21": 0.9452,
+        "28": 0.9324,
+        "35": 0.9253,
+        "42": 0.9191,
+        "49": 0.9097,
+        "56": 0.9012,
+        "63": 0.8921,
+        "70": 0.8843,
+        "77": 0.8789,
+        "84": 0.8721,
+        "91": 0.863,
+        "98": 0.8516,
+        "105": 0.8427,
+        "112": 0.8374,
+        "119": 0.8327,
+        "126": 0.8286,
+        "133": 0.8208,
+        "140": 0.8136,
+        "147": 0.808,
+        "154": 0.8039,
+        "161": 0.7977,
+        "168": 0.793,
+        "175": 0.7867,
+        "182": 0.7821,
+        "189": 0.7801,
+        "196": 0.7775,
+        "203": 0.7738,
+        "210": 0.7717,
+        "217": 0.7694,
+        "224": 0.7663,
+        "231": 0.7635,
+        "238": 0.761,
+        "245": 0.7606,
+        "252": 0.7606,
+        "259": 0.7606,
+        "266": 0.7606
+      },
+      "GGG": {
+        "0": 1.0,
+        "7": 0.998,
+        "14": 0.9931,
+        "21": 0.9919,
+        "28": 0.9882,
+        "35": 0.985,
+        "42": 0.9838,
+        "49": 0.9793,
+        "56": 0.976,
+        "63": 0.9732,
+        "70": 0.9704,
+        "77": 0.9663,
+        "84": 0.9643,
+        "91": 0.9626,
+        "98": 0.9586,
+        "105": 0.9541,
+        "112": 0.9529,
+        "119": 0.9497,
+        "126": 0.9468,
+        "133": 0.9423,
+        "140": 0.9383,
+        "147": 0.9354,
+        "154": 0.933,
+        "161": 0.9302,
+        "168": 0.9273,
+        "175": 0.9237,
+        "182": 0.9212,
+        "189": 0.92,
+        "196": 0.9188,
+        "203": 0.918,
+        "210": 0.916,
+        "217": 0.9147,
+        "224": 0.9123,
+        "231": 0.9103,
+        "238": 0.9103,
+        "245": 0.9103,
+        "252": 0.9103,
+        "259": 0.9103,
+        "266": 0.9103
+      }
+    },
+    "withdrawal_day_quantiles": {
+      "10": 12.0,
+      "25": 26.0,
+      "50": 73.0,
+      "75": 142.0,
+      "90": 187.0
+    },
+    "withdrawals_before_first_assessment_due": {
+      "k": 1592,
+      "n": 6974,
+      "rate": 0.2283,
+      "lo": 0.2186,
+      "hi": 0.2383
+    }
+  },
+  "assessments": {
+    "score_by_module_and_type": [
+      {
+        "code_module": "AAA",
+        "assessment_type": "TMA",
+        "n": 3107,
+        "median": 71.0,
+        "p25": 62.0,
+        "p75": 78.0,
+        "below_40_share": 0.029
+      },
+      {
+        "code_module": "BBB",
+        "assessment_type": "CMA",
+        "n": 15736,
+        "median": 100.0,
+        "p25": 80.0,
+        "p75": 100.0,
+        "below_40_share": 0.0072
+      },
+      {
+        "code_module": "BBB",
+        "assessment_type": "TMA",
+        "n": 26813,
+        "median": 73.0,
+        "p25": 62.0,
+        "p75": 82.0,
+        "below_40_share": 0.0485
+      },
+      {
+        "code_module": "CCC",
+        "assessment_type": "CMA",
+        "n": 9687,
+        "median": 78.0,
+        "p25": 60.0,
+        "p75": 91.0,
+        "below_40_share": 0.0946
+      },
+      {
+        "code_module": "CCC",
+        "assessment_type": "Exam",
+        "n": 1915,
+        "median": 72.0,
+        "p25": 52.0,
+        "p75": 90.0,
+        "below_40_share": 0.1211
+      },
+      {
+        "code_module": "CCC",
+        "assessment_type": "TMA",
+        "n": 7201,
+        "median": 81.0,
+        "p25": 61.0,
+        "p75": 92.0,
+        "below_40_share": 0.0834
+      },
+      {
+        "code_module": "DDD",
+        "assessment_type": "CMA",
+        "n": 5220,
+        "median": 75.0,
+        "p25": 59.0,
+        "p75": 88.0,
+        "below_40_share": 0.0856
+      },
+      {
+        "code_module": "DDD",
+        "assessment_type": "Exam",
+        "n": 3044,
+        "median": 64.0,
+        "p25": 49.0,
+        "p75": 78.0,
+        "below_40_share": 0.1101
+      },
+      {
+        "code_module": "DDD",
+        "assessment_type": "TMA",
+        "n": 22029,
+        "median": 75.0,
+        "p25": 59.0,
+        "p75": 86.0,
+        "below_40_share": 0.0899
+      },
+      {
+        "code_module": "EEE",
+        "assessment_type": "TMA",
+        "n": 7853,
+        "median": 85.0,
+        "p25": 74.0,
+        "p75": 92.0,
+        "below_40_share": 0.0178
+      },
+      {
+        "code_module": "FFF",
+        "assessment_type": "CMA",
+        "n": 29763,
+        "median": 81.0,
+        "p25": 72.0,
+        "p75": 89.0,
+        "below_40_share": 0.003
+      },
+      {
+        "code_module": "FFF",
+        "assessment_type": "TMA",
+        "n": 24432,
+        "median": 79.0,
+        "p25": 67.0,
+        "p75": 88.0,
+        "below_40_share": 0.0402
+      },
+      {
+        "code_module": "GGG",
+        "assessment_type": "CMA",
+        "n": 9550,
+        "median": 100.0,
+        "p25": 80.0,
+        "p75": 100.0,
+        "below_40_share": 0.0156
+      },
+      {
+        "code_module": "GGG",
+        "assessment_type": "TMA",
+        "n": 5653,
+        "median": 70.0,
+        "p25": 60.0,
+        "p75": 80.0,
+        "below_40_share": 0.0264
+      }
+    ],
+    "submission_rate_by_type": [
+      {
+        "assessment_type": "CMA",
+        "assessments": 76,
+        "median_submission_rate": 0.5613,
+        "with_no_submissions": 0
+      },
+      {
+        "assessment_type": "Exam",
+        "assessments": 24,
+        "median_submission_rate": 0.0,
+        "with_no_submissions": 18
+      },
+      {
+        "assessment_type": "TMA",
+        "assessments": 106,
+        "median_submission_rate": 0.638,
+        "with_no_submissions": 0
+      }
+    ],
+    "exams_with_scores_by_module": [
+      {
+        "code_module": "AAA",
+        "exams_with_scores": 0,
+        "exams": 2
+      },
+      {
+        "code_module": "BBB",
+        "exams_with_scores": 0,
+        "exams": 4
+      },
+      {
+        "code_module": "CCC",
+        "exams_with_scores": 2,
+        "exams": 4
+      },
+      {
+        "code_module": "DDD",
+        "exams_with_scores": 4,
+        "exams": 4
+      },
+      {
+        "code_module": "EEE",
+        "exams_with_scores": 0,
+        "exams": 3
+      },
+      {
+        "code_module": "FFF",
+        "exams_with_scores": 0,
+        "exams": 4
+      },
+      {
+        "code_module": "GGG",
+        "exams_with_scores": 0,
+        "exams": 3
+      }
+    ],
+    "days_late_quantiles_among_late": {
+      "50": 3.0,
+      "75": 6.0,
+      "90": 9.0,
+      "99": 29.0
+    },
+    "first_assessment_by_outcome": [
+      {
+        "final_result": "Withdrawn",
+        "n": 10156,
+        "first_not_submitted": 0.5543,
+        "median_first_score": 70.0
+      },
+      {
+        "final_result": "Fail",
+        "n": 7052,
+        "first_not_submitted": 0.2094,
+        "median_first_score": 70.0
+      },
+      {
+        "final_result": "Pass",
+        "n": 12361,
+        "first_not_submitted": 0.0102,
+        "median_first_score": 78.0
+      },
+      {
+        "final_result": "Distinction",
+        "n": 3024,
+        "first_not_submitted": 0.0023,
+        "median_first_score": 88.0
+      }
+    ],
+    "cliffs_delta_first_score_success_vs_not": 0.3387
+  },
+  "activity_mix": {
+    "rows": [
+      {
+        "activity_type": "subpage",
+        "successful": 0.0928,
+        "unsuccessful": 0.113,
+        "diff_pp": -2.01
+      },
+      {
+        "activity_type": "quiz",
+        "successful": 0.1497,
+        "unsuccessful": 0.1665,
+        "diff_pp": -1.68
+      },
+      {
+        "activity_type": "resource",
+        "successful": 0.0291,
+        "unsuccessful": 0.0368,
+        "diff_pp": -0.76
+      },
+      {
+        "activity_type": "homepage",
+        "successful": 0.1833,
+        "unsuccessful": 0.1856,
+        "diff_pp": -0.23
+      },
+      {
+        "activity_type": "url",
+        "successful": 0.0175,
+        "unsuccessful": 0.0197,
+        "diff_pp": -0.22
+      },
+      {
+        "activity_type": "page",
+        "successful": 0.0018,
+        "unsuccessful": 0.0033,
+        "diff_pp": -0.15
+      },
+      {
+        "activity_type": "externalquiz",
+        "successful": 0.0015,
+        "unsuccessful": 0.0023,
+        "diff_pp": -0.08
+      },
+      {
+        "activity_type": "ouelluminate",
+        "successful": 0.0012,
+        "unsuccessful": 0.0017,
+        "diff_pp": -0.04
+      },
+      {
+        "activity_type": "oucollaborate",
+        "successful": 0.0028,
+        "unsuccessful": 0.003,
+        "diff_pp": -0.03
+      },
+      {
+        "activity_type": "htmlactivity",
+        "successful": 0.0004,
+        "unsuccessful": 0.0005,
+        "diff_pp": -0.01
+      },
+      {
+        "activity_type": "sharedsubpage",
+        "successful": 0.0,
+        "unsuccessful": 0.0,
+        "diff_pp": -0.0
+      },
+      {
+        "activity_type": "dataplus",
+        "successful": 0.0,
+        "unsuccessful": 0.0,
+        "diff_pp": 0.0
+      },
+      {
+        "activity_type": "glossary",
+        "successful": 0.0027,
+        "unsuccessful": 0.0027,
+        "diff_pp": 0.01
+      },
+      {
+        "activity_type": "dualpane",
+        "successful": 0.0005,
+        "unsuccessful": 0.0003,
+        "diff_pp": 0.02
+      },
+      {
+        "activity_type": "questionnaire",
+        "successful": 0.0007,
+        "unsuccessful": 0.0002,
+        "diff_pp": 0.04
+      },
+      {
+        "activity_type": "ouwiki",
+        "successful": 0.0218,
+        "unsuccessful": 0.0186,
+        "diff_pp": 0.31
+      },
+      {
+        "activity_type": "oucontent",
+        "successful": 0.2063,
+        "unsuccessful": 0.1999,
+        "diff_pp": 0.64
+      },
+      {
+        "activity_type": "forumng",
+        "successful": 0.2878,
+        "unsuccessful": 0.246,
+        "diff_pp": 4.18
+      }
+    ],
+    "clicks_per_group": {
+      "False": 2394176.0,
+      "True": 5212340.0
+    }
+  },
+  "imd_missingness": {
+    "by_region": [
+      {
+        "region": "North Region",
+        "n": 1823,
+        "missing": 731,
+        "rate": 0.401
+      },
+      {
+        "region": "Ireland",
+        "n": 1184,
+        "missing": 266,
+        "rate": 0.2247
+      },
+      {
+        "region": "South Region",
+        "n": 3092,
+        "missing": 48,
+        "rate": 0.0155
+      },
+      {
+        "region": "West Midlands Region",
+        "n": 2582,
+        "missing": 39,
+        "rate": 0.0151
+      },
+      {
+        "region": "Scotland",
+        "n": 3446,
+        "missing": 12,
+        "rate": 0.0035
+      },
+      {
+        "region": "Yorkshire Region",
+        "n": 2006,
+        "missing": 5,
+        "rate": 0.0025
+      },
+      {
+        "region": "South West Region",
+        "n": 2436,
+        "missing": 5,
+        "rate": 0.0021
+      },
+      {
+        "region": "North Western Region",
+        "n": 2906,
+        "missing": 5,
+        "rate": 0.0017
+      },
+      {
+        "region": "East Anglian Region",
+        "n": 3340,
+        "missing": 0,
+        "rate": 0.0
+      },
+      {
+        "region": "South East Region",
+        "n": 2111,
+        "missing": 0,
+        "rate": 0.0
+      },
+      {
+        "region": "Wales",
+        "n": 2086,
+        "missing": 0,
+        "rate": 0.0
+      },
+      {
+        "region": "East Midlands Region",
+        "n": 2365,
+        "missing": 0,
+        "rate": 0.0
+      },
+      {
+        "region": "London Region",
+        "n": 3216,
+        "missing": 0,
+        "rate": 0.0
+      }
+    ],
+    "cramers_v_missing_vs_region": 0.5427,
+    "cramers_v_missing_vs_outcome": 0.0772,
+    "success_missing": {
+      "k": 730,
+      "n": 1111,
+      "rate": 0.6571,
+      "lo": 0.6287,
+      "hi": 0.6844
+    },
+    "success_present": {
+      "k": 14655,
+      "n": 31482,
+      "rate": 0.4655,
+      "lo": 0.46,
+      "hi": 0.471
+    }
+  },
+  "signal_ranking": {
+    "rows": [
+      {
+        "measure": "n_submitted",
+        "n": 32593,
+        "cliffs_delta": 0.8282,
+        "median_within_module": 0.8749,
+        "measured_over": "whole presentation"
+      },
+      {
+        "measure": "active_days",
+        "n": 32593,
+        "cliffs_delta": 0.7977,
+        "median_within_module": 0.8253,
+        "measured_over": "whole presentation"
+      },
+      {
+        "measure": "clicks_total",
+        "n": 32593,
+        "cliffs_delta": 0.7504,
+        "median_within_module": 0.821,
+        "measured_over": "whole presentation"
+      },
+      {
+        "measure": "active_days_early",
+        "n": 32593,
+        "cliffs_delta": 0.4951,
+        "median_within_module": 0.5429,
+        "measured_over": "early window or first assessment"
+      },
+      {
+        "measure": "mean_score",
+        "n": 25557,
+        "cliffs_delta": 0.4935,
+        "median_within_module": 0.4968,
+        "measured_over": "whole presentation"
+      },
+      {
+        "measure": "clicks_early",
+        "n": 32593,
+        "cliffs_delta": 0.468,
+        "median_within_module": 0.5304,
+        "measured_over": "early window or first assessment"
+      },
+      {
+        "measure": "clicks_prestart",
+        "n": 32593,
+        "cliffs_delta": 0.3627,
+        "median_within_module": 0.4011,
+        "measured_over": "early window or first assessment"
+      },
+      {
+        "measure": "first_score",
+        "n": 25354,
+        "cliffs_delta": 0.3387,
+        "median_within_module": 0.322,
+        "measured_over": "early window or first assessment"
+      },
+      {
+        "measure": "n_late",
+        "n": 32593,
+        "cliffs_delta": 0.2762,
+        "median_within_module": 0.1468,
+        "measured_over": "whole presentation"
+      },
+      {
+        "measure": "first_days_late",
+        "n": 25385,
+        "cliffs_delta": -0.2352,
+        "median_within_module": -0.2189,
+        "measured_over": "early window or first assessment"
+      },
+      {
+        "measure": "edu_ord",
+        "n": 32593,
+        "cliffs_delta": 0.1575,
+        "median_within_module": 0.1789,
+        "measured_over": "before or at the start"
+      },
+      {
+        "measure": "imd_ord",
+        "n": 31482,
+        "cliffs_delta": 0.1515,
+        "median_within_module": 0.1474,
+        "measured_over": "before or at the start"
+      },
+      {
+        "measure": "studied_credits",
+        "n": 32593,
+        "cliffs_delta": -0.1429,
+        "median_within_module": -0.1224,
+        "measured_over": "before or at the start"
+      },
+      {
+        "measure": "num_of_prev_attempts",
+        "n": 32593,
+        "cliffs_delta": -0.0733,
+        "median_within_module": -0.0396,
+        "measured_over": "before or at the start"
+      },
+      {
+        "measure": "age_ord",
+        "n": 32593,
+        "cliffs_delta": 0.0621,
+        "median_within_module": 0.0559,
+        "measured_over": "before or at the start"
+      },
+      {
+        "measure": "date_registration",
+        "n": 32548,
+        "cliffs_delta": 0.057,
+        "median_within_module": 0.0409,
+        "measured_over": "before or at the start"
+      }
+    ]
+  },
+  "registration_timing": {
+    "quantiles_by_outcome": [
+      {
+        "final_result": "Withdrawn",
+        "p10": -150.0,
+        "p25": -115.0,
+        "p50": -67.0,
+        "p75": -32.0,
+        "p90": -22.0
+      },
+      {
+        "final_result": "Fail",
+        "p10": -131.0,
+        "p25": -92.0,
+        "p50": -50.0,
+        "p75": -27.0,
+        "p90": -17.0
+      },
+      {
+        "final_result": "Pass",
+        "p10": -138.0,
+        "p25": -95.0,
+        "p50": -53.0,
+        "p75": -29.0,
+        "p90": -20.0
+      },
+      {
+        "final_result": "Distinction",
+        "p10": -138.0,
+        "p25": -93.0,
+        "p50": -52.0,
+        "p75": -29.0,
+        "p90": -22.0
+      }
+    ],
+    "by_band": [
+      {
+        "band": "over 100 days early",
+        "n": 8136,
+        "success": {
+          "k": 3513,
+          "n": 8136,
+          "rate": 0.4318,
+          "lo": 0.4211,
+          "hi": 0.4426
+        },
+        "withdrawn": {
+          "k": 3162,
+          "n": 8136,
+          "rate": 0.3886,
+          "lo": 0.3781,
+          "hi": 0.3993
+        }
+      },
+      {
+        "band": "31-100 days early",
+        "n": 15390,
+        "success": {
+          "k": 7435,
+          "n": 15390,
+          "rate": 0.4831,
+          "lo": 0.4752,
+          "hi": 0.491
+        },
+        "withdrawn": {
+          "k": 4659,
+          "n": 15390,
+          "rate": 0.3027,
+          "lo": 0.2955,
+          "hi": 0.31
+        }
+      },
+      {
+        "band": "0-30 days early",
+        "n": 8788,
+        "success": {
+          "k": 4318,
+          "n": 8788,
+          "rate": 0.4914,
+          "lo": 0.4809,
+          "hi": 0.5018
+        },
+        "withdrawn": {
+          "k": 2247,
+          "n": 8788,
+          "rate": 0.2557,
+          "lo": 0.2467,
+          "hi": 0.2649
+        }
+      },
+      {
+        "band": "after day 0",
+        "n": 234,
+        "success": {
+          "k": 118,
+          "n": 234,
+          "rate": 0.5043,
+          "lo": 0.4407,
+          "hi": 0.5677
+        },
+        "withdrawn": {
+          "k": 49,
+          "n": 234,
+          "rate": 0.2094,
+          "lo": 0.1622,
+          "hi": 0.266
+        }
+      },
+      {
+        "band": "(missing)",
+        "n": 45,
+        "success": {
+          "k": 1,
+          "n": 45,
+          "rate": 0.0222,
+          "lo": 0.0039,
+          "hi": 0.1157
+        },
+        "withdrawn": {
+          "k": 39,
+          "n": 45,
+          "rate": 0.8667,
+          "lo": 0.7382,
+          "hi": 0.9374
+        }
+      }
+    ]
+  },
+  "repeat_transitions": {
+    "students_with_several_enrolments": 3538,
+    "pairs_same_presentation_period": 1081,
+    "pairs_sequential": 2727,
+    "pairs_sequential_same_module": 1201,
+    "same_module_next_attempt_count_increases": {
+      "k": 1201,
+      "n": 1201,
+      "rate": 1.0,
+      "lo": 0.9968,
+      "hi": 1.0
+    },
+    "same_module_after_withdrawn_or_fail_next_success": {
+      "k": 331,
+      "n": 1198,
+      "rate": 0.2763,
+      "lo": 0.2517,
+      "hi": 0.3023
+    },
+    "sequential_transitions": [
+      {
+        "final_result": "Withdrawn",
+        "Withdrawn": 615,
+        "Fail": 381,
+        "Pass": 283,
+        "Distinction": 43
+      },
+      {
+        "final_result": "Fail",
+        "Withdrawn": 98,
+        "Fail": 109,
+        "Pass": 43,
+        "Distinction": 2
+      },
+      {
+        "final_result": "Pass",
+        "Withdrawn": 388,
+        "Fail": 143,
+        "Pass": 322,
+        "Distinction": 47
+      },
+      {
+        "final_result": "Distinction",
+        "Withdrawn": 51,
+        "Fail": 14,
+        "Pass": 105,
+        "Distinction": 83
+      }
+    ]
+  },
+  "course_design": {
+    "sites_per_presentation": [
+      {
+        "code_module": "AAA",
+        "code_presentation": "2013J",
+        "sites": 211,
+        "never_clicked": 2,
+        "activity_types": 9
+      },
+      {
+        "code_module": "AAA",
+        "code_presentation": "2014J",
+        "sites": 202,
+        "never_clicked": 5,
+        "activity_types": 9
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2013B",
+        "sites": 315,
+        "never_clicked": 0,
+        "activity_types": 10
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2013J",
+        "sites": 321,
+        "never_clicked": 1,
+        "activity_types": 10
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2014B",
+        "sites": 311,
+        "never_clicked": 0,
+        "activity_types": 10
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2014J",
+        "sites": 207,
+        "never_clicked": 1,
+        "activity_types": 10
+      },
+      {
+        "code_module": "CCC",
+        "code_presentation": "2014B",
+        "sites": 196,
+        "never_clicked": 16,
+        "activity_types": 9
+      },
+      {
+        "code_module": "CCC",
+        "code_presentation": "2014J",
+        "sites": 223,
+        "never_clicked": 3,
+        "activity_types": 9
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2013B",
+        "sites": 428,
+        "never_clicked": 20,
+        "activity_types": 11
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2013J",
+        "sites": 462,
+        "never_clicked": 6,
+        "activity_types": 10
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2014B",
+        "sites": 453,
+        "never_clicked": 6,
+        "activity_types": 10
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2014J",
+        "sites": 365,
+        "never_clicked": 4,
+        "activity_types": 10
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2013J",
+        "sites": 112,
+        "never_clicked": 5,
+        "activity_types": 11
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2014B",
+        "sites": 109,
+        "never_clicked": 5,
+        "activity_types": 11
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2014J",
+        "sites": 115,
+        "never_clicked": 5,
+        "activity_types": 11
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2013B",
+        "sites": 508,
+        "never_clicked": 8,
+        "activity_types": 14
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2013J",
+        "sites": 529,
+        "never_clicked": 3,
+        "activity_types": 16
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2014B",
+        "sites": 478,
+        "never_clicked": 3,
+        "activity_types": 15
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2014J",
+        "sites": 452,
+        "never_clicked": 3,
+        "activity_types": 16
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2013J",
+        "sites": 137,
+        "never_clicked": 0,
+        "activity_types": 7
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2014B",
+        "sites": 124,
+        "never_clicked": 0,
+        "activity_types": 7
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2014J",
+        "sites": 106,
+        "never_clicked": 0,
+        "activity_types": 7
+      }
+    ],
+    "by_activity_type": [
+      {
+        "activity_type": "oucontent",
+        "sites": 996,
+        "never_clicked": 17,
+        "clicks": 11206803.0,
+        "never_clicked_share": 0.0171,
+        "click_share": 0.283
+      },
+      {
+        "activity_type": "forumng",
+        "sites": 194,
+        "never_clicked": 19,
+        "clicks": 7973390.0,
+        "never_clicked_share": 0.0979,
+        "click_share": 0.2013
+      },
+      {
+        "activity_type": "quiz",
+        "sites": 127,
+        "never_clicked": 0,
+        "clicks": 6981240.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.1763
+      },
+      {
+        "activity_type": "homepage",
+        "sites": 22,
+        "never_clicked": 0,
+        "clicks": 6949064.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.1755
+      },
+      {
+        "activity_type": "subpage",
+        "sites": 1055,
+        "never_clicked": 17,
+        "clicks": 3411582.0,
+        "never_clicked_share": 0.0161,
+        "click_share": 0.0861
+      },
+      {
+        "activity_type": "resource",
+        "sites": 2660,
+        "never_clicked": 26,
+        "clicks": 1110132.0,
+        "never_clicked_share": 0.0098,
+        "click_share": 0.028
+      },
+      {
+        "activity_type": "ouwiki",
+        "sites": 49,
+        "never_clicked": 0,
+        "clicks": 894512.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0226
+      },
+      {
+        "activity_type": "url",
+        "sites": 886,
+        "never_clicked": 10,
+        "clicks": 566702.0,
+        "never_clicked_share": 0.0113,
+        "click_share": 0.0143
+      },
+      {
+        "activity_type": "oucollaborate",
+        "sites": 82,
+        "never_clicked": 5,
+        "clicks": 108974.0,
+        "never_clicked_share": 0.061,
+        "click_share": 0.0028
+      },
+      {
+        "activity_type": "glossary",
+        "sites": 21,
+        "never_clicked": 0,
+        "clicks": 87962.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0022
+      },
+      {
+        "activity_type": "questionnaire",
+        "sites": 61,
+        "never_clicked": 0,
+        "clicks": 64764.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0016
+      },
+      {
+        "activity_type": "externalquiz",
+        "sites": 26,
+        "never_clicked": 0,
+        "clicks": 64292.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0016
+      },
+      {
+        "activity_type": "page",
+        "sites": 102,
+        "never_clicked": 0,
+        "clicks": 63631.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0016
+      },
+      {
+        "activity_type": "dataplus",
+        "sites": 28,
+        "never_clicked": 0,
+        "clicks": 47468.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0012
+      },
+      {
+        "activity_type": "ouelluminate",
+        "sites": 21,
+        "never_clicked": 2,
+        "clicks": 39028.0,
+        "never_clicked_share": 0.0952,
+        "click_share": 0.001
+      },
+      {
+        "activity_type": "dualpane",
+        "sites": 20,
+        "never_clicked": 0,
+        "clicks": 20716.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0005
+      },
+      {
+        "activity_type": "htmlactivity",
+        "sites": 4,
+        "never_clicked": 0,
+        "clicks": 9239.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0002
+      },
+      {
+        "activity_type": "folder",
+        "sites": 2,
+        "never_clicked": 0,
+        "clicks": 5420.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0001
+      },
+      {
+        "activity_type": "sharedsubpage",
+        "sites": 3,
+        "never_clicked": 0,
+        "clicks": 171.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0
+      },
+      {
+        "activity_type": "repeatactivity",
+        "sites": 5,
+        "never_clicked": 0,
+        "clicks": 9.0,
+        "never_clicked_share": 0.0,
+        "click_share": 0.0
+      }
+    ],
+    "sites_never_clicked": {
+      "k": 96,
+      "n": 6364,
+      "rate": 0.0151,
+      "lo": 0.0124,
+      "hi": 0.0184
+    },
+    "site_click_concentration": {
+      "gini": 0.9044,
+      "top10_share": 0.8689,
+      "top1_share": 0.3889
+    },
+    "assessment_schedule": [
+      {
+        "code_module": "AAA",
+        "code_presentation": "2013J",
+        "tma_cma": 5,
+        "first_due": 19.0,
+        "last_due": 215.0
+      },
+      {
+        "code_module": "AAA",
+        "code_presentation": "2014J",
+        "tma_cma": 5,
+        "first_due": 19.0,
+        "last_due": 215.0
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2013B",
+        "tma_cma": 11,
+        "first_due": 19.0,
+        "last_due": 187.0
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2013J",
+        "tma_cma": 11,
+        "first_due": 19.0,
+        "last_due": 208.0
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2014B",
+        "tma_cma": 11,
+        "first_due": 12.0,
+        "last_due": 194.0
+      },
+      {
+        "code_module": "BBB",
+        "code_presentation": "2014J",
+        "tma_cma": 5,
+        "first_due": 19.0,
+        "last_due": 201.0
+      },
+      {
+        "code_module": "CCC",
+        "code_presentation": "2014B",
+        "tma_cma": 8,
+        "first_due": 18.0,
+        "last_due": 207.0
+      },
+      {
+        "code_module": "CCC",
+        "code_presentation": "2014J",
+        "tma_cma": 8,
+        "first_due": 18.0,
+        "last_due": 214.0
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2013B",
+        "tma_cma": 13,
+        "first_due": 23.0,
+        "last_due": 206.0
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2013J",
+        "tma_cma": 6,
+        "first_due": 25.0,
+        "last_due": 207.0
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2014B",
+        "tma_cma": 6,
+        "first_due": 25.0,
+        "last_due": 200.0
+      },
+      {
+        "code_module": "DDD",
+        "code_presentation": "2014J",
+        "tma_cma": 6,
+        "first_due": 20.0,
+        "last_due": 195.0
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2013J",
+        "tma_cma": 4,
+        "first_due": 33.0,
+        "last_due": 159.0
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2014B",
+        "tma_cma": 4,
+        "first_due": 33.0,
+        "last_due": 152.0
+      },
+      {
+        "code_module": "EEE",
+        "code_presentation": "2014J",
+        "tma_cma": 4,
+        "first_due": 33.0,
+        "last_due": 166.0
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2013B",
+        "tma_cma": 12,
+        "first_due": 19.0,
+        "last_due": 222.0
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2013J",
+        "tma_cma": 12,
+        "first_due": 19.0,
+        "last_due": 236.0
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2014B",
+        "tma_cma": 12,
+        "first_due": 24.0,
+        "last_due": 227.0
+      },
+      {
+        "code_module": "FFF",
+        "code_presentation": "2014J",
+        "tma_cma": 12,
+        "first_due": 24.0,
+        "last_due": 241.0
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2013J",
+        "tma_cma": 9,
+        "first_due": 61.0,
+        "last_due": 229.0
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2014B",
+        "tma_cma": 9,
+        "first_due": 61.0,
+        "last_due": 222.0
+      },
+      {
+        "code_module": "GGG",
+        "code_presentation": "2014J",
+        "tma_cma": 9,
+        "first_due": 61.0,
+        "last_due": 229.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "analysis": {
+    "column_count": 12,
+    "columns": [
+      {
+        "column_id": "code_module",
+        "column_index": 0,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 7,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 7909,
+            "value_token": "value_675900e9461cf217"
+          },
+          {
+            "count": 7762,
+            "value_token": "value_60b8ec12a4cc5d22"
+          },
+          {
+            "count": 6272,
+            "value_token": "value_ac5b11c7f6519601"
+          },
+          {
+            "count": 4434,
+            "value_token": "value_59c5991f228667f9"
+          },
+          {
+            "count": 2934,
+            "value_token": "value_0d79020415f9a2e2"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 3,
+          "mean_character_count": 3.0
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "code_presentation",
+        "column_index": 1,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 4,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 11260,
+            "value_token": "value_9e36a3e8fdb17bd9"
+          },
+          {
+            "count": 8845,
+            "value_token": "value_ddd8a2108bfaf506"
+          },
+          {
+            "count": 7804,
+            "value_token": "value_bb3935c971a7beba"
+          },
+          {
+            "count": 4684,
+            "value_token": "value_6a50e5b9f708b634"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 5,
+          "mean_character_count": 5.0
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "id_student",
+        "column_index": 2,
+        "distinct_count_is_lower_bound": true,
+        "distinct_value_count_or_lower_bound": 4096,
+        "inferred_kind": "integer",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 4,
+            "value_token": "value_450f04bb00164c8c"
+          },
+          {
+            "count": 4,
+            "value_token": "value_7e816194d52b28da"
+          },
+          {
+            "count": 3,
+            "value_token": "value_15265d25060d93d6"
+          },
+          {
+            "count": 3,
+            "value_token": "value_363189eb71983ae3"
+          },
+          {
+            "count": 3,
+            "value_token": "value_570a6055126f7b4e"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_aggregates": {
+          "count": 32593,
+          "maximum": 2716795.0,
+          "mean": 706687.6691314074,
+          "median": 589977.5,
+          "minimum": 3733.0,
+          "q1": 502099.25,
+          "q3": 643282.25,
+          "quantile_sample_count": 512,
+          "quantiles_from_bounded_sample": true,
+          "sample_standard_deviation": 549167.3138552051
+        },
+        "numeric_parse_count": 32593,
+        "text_parse_count": 0
+      },
+      {
+        "column_id": "gender",
+        "column_index": 3,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 2,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 17875,
+            "value_token": "value_21b8154c80afbbb1"
+          },
+          {
+            "count": 14718,
+            "value_token": "value_ac0e4fd62ba66dbb"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 1,
+          "mean_character_count": 1.0
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "region",
+        "column_index": 4,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 13,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 3446,
+            "value_token": "value_2c6a12246a32ece6"
+          },
+          {
+            "count": 3340,
+            "value_token": "value_47449bc7228f1958"
+          },
+          {
+            "count": 3216,
+            "value_token": "value_5450d2adc066d0fd"
+          },
+          {
+            "count": 3092,
+            "value_token": "value_945aef3f8c1e24f0"
+          },
+          {
+            "count": 2906,
+            "value_token": "value_abdca28eaae2a25d"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 20,
+          "mean_character_count": 14.634706838891786
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "highest_education",
+        "column_index": 5,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 5,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 14045,
+            "value_token": "value_049298ce47962871"
+          },
+          {
+            "count": 13158,
+            "value_token": "value_9c8b78c9345bdb6c"
+          },
+          {
+            "count": 4730,
+            "value_token": "value_bcb0c3c2babb5984"
+          },
+          {
+            "count": 347,
+            "value_token": "value_cad0172c3502ff27"
+          },
+          {
+            "count": 313,
+            "value_token": "value_e62fc97f62b1a114"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 27,
+          "mean_character_count": 19.0570061056055
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "imd_band",
+        "column_index": 6,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 10,
+        "inferred_kind": "text",
+        "missing_count": 1111,
+        "missing_fraction": 0.03408707391157611,
+        "most_frequent_value_tokens": [
+          {
+            "count": 3654,
+            "value_token": "value_adf39a52fb26a7c5"
+          },
+          {
+            "count": 3539,
+            "value_token": "value_2535f64de8f6c23b"
+          },
+          {
+            "count": 3516,
+            "value_token": "value_a98a90b903191a6e"
+          },
+          {
+            "count": 3311,
+            "value_token": "value_e508684944dde12e"
+          },
+          {
+            "count": 3256,
+            "value_token": "value_c7710e58930e60ea"
+          }
+        ],
+        "non_missing_count": 31482,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 31482,
+          "maximum_character_count": 7,
+          "mean_character_count": 5.863699892001779
+        },
+        "text_parse_count": 31482
+      },
+      {
+        "column_id": "age_band",
+        "column_index": 7,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 3,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 22944,
+            "value_token": "value_4a9920b37bc96e73"
+          },
+          {
+            "count": 9433,
+            "value_token": "value_0780935d9528c581"
+          },
+          {
+            "count": 216,
+            "value_token": "value_ef57d89d458253f1"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 5,
+          "mean_character_count": 4.289417973184426
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "num_of_prev_attempts",
+        "column_index": 8,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 7,
+        "inferred_kind": "integer",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 28421,
+            "value_token": "value_db52dffbaffbaf49"
+          },
+          {
+            "count": 3299,
+            "value_token": "value_d11015b966c44696"
+          },
+          {
+            "count": 675,
+            "value_token": "value_4b2dd5566bf1eea4"
+          },
+          {
+            "count": 142,
+            "value_token": "value_a9065080f34dc675"
+          },
+          {
+            "count": 39,
+            "value_token": "value_a0e95fe33f7fbd67"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_aggregates": {
+          "count": 32593,
+          "maximum": 6.0,
+          "mean": 0.16322523241186868,
+          "median": 0.0,
+          "minimum": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "quantile_sample_count": 512,
+          "quantiles_from_bounded_sample": true,
+          "sample_standard_deviation": 0.4797584741629882
+        },
+        "numeric_parse_count": 32593,
+        "text_parse_count": 0
+      },
+      {
+        "column_id": "studied_credits",
+        "column_index": 9,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 61,
+        "inferred_kind": "integer",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 16751,
+            "value_token": "value_226f32d7ae54b611"
+          },
+          {
+            "count": 6328,
+            "value_token": "value_27ef4aeeaa0779c5"
+          },
+          {
+            "count": 3749,
+            "value_token": "value_702227e8cbccb42e"
+          },
+          {
+            "count": 3144,
+            "value_token": "value_db6521240cce8c1b"
+          },
+          {
+            "count": 830,
+            "value_token": "value_d828e2d69c710fbd"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_aggregates": {
+          "count": 32593,
+          "maximum": 655.0,
+          "mean": 79.75869051636916,
+          "median": 60.0,
+          "minimum": 30.0,
+          "q1": 60.0,
+          "q3": 120.0,
+          "quantile_sample_count": 512,
+          "quantiles_from_bounded_sample": true,
+          "sample_standard_deviation": 41.071900261233594
+        },
+        "numeric_parse_count": 32593,
+        "text_parse_count": 0
+      },
+      {
+        "column_id": "disability",
+        "column_index": 10,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 2,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 29429,
+            "value_token": "value_9af499b5c332d336"
+          },
+          {
+            "count": 3164,
+            "value_token": "value_b6d21c16cba0349d"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 1,
+          "mean_character_count": 1.0
+        },
+        "text_parse_count": 32593
+      },
+      {
+        "column_id": "final_result",
+        "column_index": 11,
+        "distinct_count_is_lower_bound": false,
+        "distinct_value_count_or_lower_bound": 4,
+        "inferred_kind": "text",
+        "missing_count": 0,
+        "missing_fraction": 0.0,
+        "most_frequent_value_tokens": [
+          {
+            "count": 12361,
+            "value_token": "value_26efd92de10051a1"
+          },
+          {
+            "count": 10156,
+            "value_token": "value_981d65c9f9652b63"
+          },
+          {
+            "count": 7052,
+            "value_token": "value_e27343391c5b8f18"
+          },
+          {
+            "count": 3024,
+            "value_token": "value_cb27d27bda261a98"
+          }
+        ],
+        "non_missing_count": 32593,
+        "numeric_parse_count": 0,
+        "text_aggregates": {
+          "count": 32593,
+          "maximum_character_count": 11,
+          "mean_character_count": 6.207467861197189
+        },
+        "text_parse_count": 32593
+      }
+    ],
+    "duplicate_row_count_in_scanned_rows": 0,
+    "duplicate_tracking_truncated": false,
+    "identifier_redaction": "sanitized opt-in",
+    "limitations": [
+      "Dtypes are inferred from scanned text and are not a data dictionary.",
+      "Quantiles use a deterministic bounded sample when numeric counts exceed the sample limit.",
+      "Duplicate counts use exact hashes only until the documented tracking cap."
+    ],
+    "missing_code_policy": {
+      "additional_token_count": 0,
+      "empty_or_whitespace_is_missing": true,
+      "tokens_are_not_emitted": true
+    },
+    "profile_type": "tabular_schema_and_aggregate_profile",
+    "raw_values_emitted": false,
+    "row_limit_reached": false,
+    "rows_scanned": 32593
+  },
+  "capability": {
+    "dependency": "Python standard library",
+    "depth": "bounded schema, aggregate profile, missingness, and sensitivity audit",
+    "format": "CSV",
+    "reference": "references/general_scientific_formats.md",
+    "suffix": ".csv",
+    "tier": "automated_core"
+  },
+  "schema_version": "1.1",
+  "security": {
+    "embedded_instructions_followed": false,
+    "file_text_is_untrusted_data": true,
+    "local_only": true,
+    "raw_values_and_full_paths_emitted": false
+  }
+}

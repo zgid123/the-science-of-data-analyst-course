@@ -1,0 +1,1242 @@
+{
+  "final_result_by_module": [
+    {
+      "code_module": "AAA",
+      "Pass": 487,
+      "Withdrawn": 126,
+      "Distinction": 44,
+      "Fail": 91
+    },
+    {
+      "code_module": "BBB",
+      "Pass": 3077,
+      "Withdrawn": 2388,
+      "Distinction": 677,
+      "Fail": 1767
+    },
+    {
+      "code_module": "CCC",
+      "Pass": 1180,
+      "Withdrawn": 1975,
+      "Distinction": 498,
+      "Fail": 781
+    },
+    {
+      "code_module": "DDD",
+      "Pass": 2227,
+      "Withdrawn": 2250,
+      "Distinction": 383,
+      "Fail": 1412
+    },
+    {
+      "code_module": "EEE",
+      "Pass": 1294,
+      "Withdrawn": 722,
+      "Distinction": 356,
+      "Fail": 562
+    },
+    {
+      "code_module": "FFF",
+      "Pass": 2978,
+      "Withdrawn": 2403,
+      "Distinction": 670,
+      "Fail": 1711
+    },
+    {
+      "code_module": "GGG",
+      "Pass": 1118,
+      "Withdrawn": 292,
+      "Distinction": 396,
+      "Fail": 728
+    }
+  ],
+  "final_result_by_presentation": [
+    {
+      "code_presentation": "2013B",
+      "Pass": 1768,
+      "Withdrawn": 1348,
+      "Fail": 1241,
+      "Distinction": 327
+    },
+    {
+      "code_presentation": "2013J",
+      "Pass": 3726,
+      "Withdrawn": 2369,
+      "Fail": 2001,
+      "Distinction": 749
+    },
+    {
+      "code_presentation": "2014B",
+      "Pass": 2574,
+      "Withdrawn": 2613,
+      "Fail": 1833,
+      "Distinction": 784
+    },
+    {
+      "code_presentation": "2014J",
+      "Pass": 4293,
+      "Withdrawn": 3826,
+      "Fail": 1977,
+      "Distinction": 1164
+    }
+  ],
+  "clicks_by_final_result": [
+    {
+      "final_result": "Withdrawn",
+      "enrolments": 10156,
+      "median_clicks": 89.0,
+      "p25": 0.0,
+      "p75": 373.0,
+      "zero_click": 2988
+    },
+    {
+      "final_result": "Fail",
+      "enrolments": 7052,
+      "median_clicks": 317.0,
+      "p25": 98.0,
+      "p75": 796.0,
+      "zero_click": 374
+    },
+    {
+      "final_result": "Pass",
+      "enrolments": 12361,
+      "median_clicks": 1343.0,
+      "p25": 683.0,
+      "p75": 2568.0,
+      "zero_click": 3
+    },
+    {
+      "final_result": "Distinction",
+      "enrolments": 3024,
+      "median_clicks": 1896.0,
+      "p25": 942.0,
+      "p75": 3763.0,
+      "zero_click": 0
+    }
+  ],
+  "enrolments_per_presentation": [
+    {
+      "code_module": "AAA",
+      "code_presentation": "2013J",
+      "len": 383
+    },
+    {
+      "code_module": "AAA",
+      "code_presentation": "2014J",
+      "len": 365
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013B",
+      "len": 1767
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013J",
+      "len": 2237
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014B",
+      "len": 1613
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014J",
+      "len": 2292
+    },
+    {
+      "code_module": "CCC",
+      "code_presentation": "2014B",
+      "len": 1936
+    },
+    {
+      "code_module": "CCC",
+      "code_presentation": "2014J",
+      "len": 2498
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2013B",
+      "len": 1303
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2013J",
+      "len": 1938
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2014B",
+      "len": 1228
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2014J",
+      "len": 1803
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2013J",
+      "len": 1052
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2014B",
+      "len": 694
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2014J",
+      "len": 1188
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2013B",
+      "len": 1614
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2013J",
+      "len": 2283
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2014B",
+      "len": 1500
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2014J",
+      "len": 2365
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2013J",
+      "len": 952
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2014B",
+      "len": 833
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2014J",
+      "len": 749
+    }
+  ],
+  "weekly_clicks_by_final_result": [
+    {
+      "final_result": "Distinction",
+      "week": -4,
+      "clicks_per_enrolment": 1.533
+    },
+    {
+      "final_result": "Distinction",
+      "week": -3,
+      "clicks_per_enrolment": 26.85
+    },
+    {
+      "final_result": "Distinction",
+      "week": -2,
+      "clicks_per_enrolment": 40.311
+    },
+    {
+      "final_result": "Distinction",
+      "week": -1,
+      "clicks_per_enrolment": 62.736
+    },
+    {
+      "final_result": "Distinction",
+      "week": 0,
+      "clicks_per_enrolment": 113.604
+    },
+    {
+      "final_result": "Distinction",
+      "week": 1,
+      "clicks_per_enrolment": 101.493
+    },
+    {
+      "final_result": "Distinction",
+      "week": 2,
+      "clicks_per_enrolment": 117.879
+    },
+    {
+      "final_result": "Distinction",
+      "week": 3,
+      "clicks_per_enrolment": 94.251
+    },
+    {
+      "final_result": "Distinction",
+      "week": 4,
+      "clicks_per_enrolment": 87.397
+    },
+    {
+      "final_result": "Distinction",
+      "week": 5,
+      "clicks_per_enrolment": 73.694
+    },
+    {
+      "final_result": "Distinction",
+      "week": 6,
+      "clicks_per_enrolment": 82.202
+    },
+    {
+      "final_result": "Distinction",
+      "week": 7,
+      "clicks_per_enrolment": 78.053
+    },
+    {
+      "final_result": "Distinction",
+      "week": 8,
+      "clicks_per_enrolment": 64.227
+    },
+    {
+      "final_result": "Distinction",
+      "week": 9,
+      "clicks_per_enrolment": 71.396
+    },
+    {
+      "final_result": "Distinction",
+      "week": 10,
+      "clicks_per_enrolment": 48.663
+    },
+    {
+      "final_result": "Distinction",
+      "week": 11,
+      "clicks_per_enrolment": 38.945
+    },
+    {
+      "final_result": "Distinction",
+      "week": 12,
+      "clicks_per_enrolment": 55.009
+    },
+    {
+      "final_result": "Distinction",
+      "week": 13,
+      "clicks_per_enrolment": 67.965
+    },
+    {
+      "final_result": "Distinction",
+      "week": 14,
+      "clicks_per_enrolment": 63.031
+    },
+    {
+      "final_result": "Distinction",
+      "week": 15,
+      "clicks_per_enrolment": 64.236
+    },
+    {
+      "final_result": "Distinction",
+      "week": 16,
+      "clicks_per_enrolment": 65.325
+    },
+    {
+      "final_result": "Distinction",
+      "week": 17,
+      "clicks_per_enrolment": 68.921
+    },
+    {
+      "final_result": "Distinction",
+      "week": 18,
+      "clicks_per_enrolment": 80.64
+    },
+    {
+      "final_result": "Distinction",
+      "week": 19,
+      "clicks_per_enrolment": 89.694
+    },
+    {
+      "final_result": "Distinction",
+      "week": 20,
+      "clicks_per_enrolment": 90.806
+    },
+    {
+      "final_result": "Distinction",
+      "week": 21,
+      "clicks_per_enrolment": 90.666
+    },
+    {
+      "final_result": "Distinction",
+      "week": 22,
+      "clicks_per_enrolment": 81.005
+    },
+    {
+      "final_result": "Distinction",
+      "week": 23,
+      "clicks_per_enrolment": 69.032
+    },
+    {
+      "final_result": "Distinction",
+      "week": 24,
+      "clicks_per_enrolment": 56.091
+    },
+    {
+      "final_result": "Distinction",
+      "week": 25,
+      "clicks_per_enrolment": 51.427
+    },
+    {
+      "final_result": "Distinction",
+      "week": 26,
+      "clicks_per_enrolment": 49.435
+    },
+    {
+      "final_result": "Distinction",
+      "week": 27,
+      "clicks_per_enrolment": 56.656
+    },
+    {
+      "final_result": "Distinction",
+      "week": 28,
+      "clicks_per_enrolment": 62.995
+    },
+    {
+      "final_result": "Distinction",
+      "week": 29,
+      "clicks_per_enrolment": 71.651
+    },
+    {
+      "final_result": "Distinction",
+      "week": 30,
+      "clicks_per_enrolment": 75.619
+    },
+    {
+      "final_result": "Distinction",
+      "week": 31,
+      "clicks_per_enrolment": 72.752
+    },
+    {
+      "final_result": "Distinction",
+      "week": 32,
+      "clicks_per_enrolment": 73.063
+    },
+    {
+      "final_result": "Distinction",
+      "week": 33,
+      "clicks_per_enrolment": 60.948
+    },
+    {
+      "final_result": "Distinction",
+      "week": 34,
+      "clicks_per_enrolment": 36.473
+    },
+    {
+      "final_result": "Distinction",
+      "week": 35,
+      "clicks_per_enrolment": 4.641
+    },
+    {
+      "final_result": "Distinction",
+      "week": 36,
+      "clicks_per_enrolment": 2.799
+    },
+    {
+      "final_result": "Distinction",
+      "week": 37,
+      "clicks_per_enrolment": 1.93
+    },
+    {
+      "final_result": "Distinction",
+      "week": 38,
+      "clicks_per_enrolment": 0.715
+    },
+    {
+      "final_result": "Fail",
+      "week": -4,
+      "clicks_per_enrolment": 0.554
+    },
+    {
+      "final_result": "Fail",
+      "week": -3,
+      "clicks_per_enrolment": 8.761
+    },
+    {
+      "final_result": "Fail",
+      "week": -2,
+      "clicks_per_enrolment": 13.225
+    },
+    {
+      "final_result": "Fail",
+      "week": -1,
+      "clicks_per_enrolment": 21.79
+    },
+    {
+      "final_result": "Fail",
+      "week": 0,
+      "clicks_per_enrolment": 44.697
+    },
+    {
+      "final_result": "Fail",
+      "week": 1,
+      "clicks_per_enrolment": 38.622
+    },
+    {
+      "final_result": "Fail",
+      "week": 2,
+      "clicks_per_enrolment": 55.73
+    },
+    {
+      "final_result": "Fail",
+      "week": 3,
+      "clicks_per_enrolment": 37.368
+    },
+    {
+      "final_result": "Fail",
+      "week": 4,
+      "clicks_per_enrolment": 32.061
+    },
+    {
+      "final_result": "Fail",
+      "week": 5,
+      "clicks_per_enrolment": 24.734
+    },
+    {
+      "final_result": "Fail",
+      "week": 6,
+      "clicks_per_enrolment": 27.669
+    },
+    {
+      "final_result": "Fail",
+      "week": 7,
+      "clicks_per_enrolment": 26.103
+    },
+    {
+      "final_result": "Fail",
+      "week": 8,
+      "clicks_per_enrolment": 16.103
+    },
+    {
+      "final_result": "Fail",
+      "week": 9,
+      "clicks_per_enrolment": 20.106
+    },
+    {
+      "final_result": "Fail",
+      "week": 10,
+      "clicks_per_enrolment": 10.7
+    },
+    {
+      "final_result": "Fail",
+      "week": 11,
+      "clicks_per_enrolment": 9.993
+    },
+    {
+      "final_result": "Fail",
+      "week": 12,
+      "clicks_per_enrolment": 14.922
+    },
+    {
+      "final_result": "Fail",
+      "week": 13,
+      "clicks_per_enrolment": 15.628
+    },
+    {
+      "final_result": "Fail",
+      "week": 14,
+      "clicks_per_enrolment": 13.019
+    },
+    {
+      "final_result": "Fail",
+      "week": 15,
+      "clicks_per_enrolment": 12.171
+    },
+    {
+      "final_result": "Fail",
+      "week": 16,
+      "clicks_per_enrolment": 12.472
+    },
+    {
+      "final_result": "Fail",
+      "week": 17,
+      "clicks_per_enrolment": 13.02
+    },
+    {
+      "final_result": "Fail",
+      "week": 18,
+      "clicks_per_enrolment": 16.151
+    },
+    {
+      "final_result": "Fail",
+      "week": 19,
+      "clicks_per_enrolment": 16.32
+    },
+    {
+      "final_result": "Fail",
+      "week": 20,
+      "clicks_per_enrolment": 15.351
+    },
+    {
+      "final_result": "Fail",
+      "week": 21,
+      "clicks_per_enrolment": 12.847
+    },
+    {
+      "final_result": "Fail",
+      "week": 22,
+      "clicks_per_enrolment": 10.886
+    },
+    {
+      "final_result": "Fail",
+      "week": 23,
+      "clicks_per_enrolment": 11.533
+    },
+    {
+      "final_result": "Fail",
+      "week": 24,
+      "clicks_per_enrolment": 8.464
+    },
+    {
+      "final_result": "Fail",
+      "week": 25,
+      "clicks_per_enrolment": 5.965
+    },
+    {
+      "final_result": "Fail",
+      "week": 26,
+      "clicks_per_enrolment": 6.097
+    },
+    {
+      "final_result": "Fail",
+      "week": 27,
+      "clicks_per_enrolment": 7.35
+    },
+    {
+      "final_result": "Fail",
+      "week": 28,
+      "clicks_per_enrolment": 8.263
+    },
+    {
+      "final_result": "Fail",
+      "week": 29,
+      "clicks_per_enrolment": 10.166
+    },
+    {
+      "final_result": "Fail",
+      "week": 30,
+      "clicks_per_enrolment": 10.837
+    },
+    {
+      "final_result": "Fail",
+      "week": 31,
+      "clicks_per_enrolment": 13.599
+    },
+    {
+      "final_result": "Fail",
+      "week": 32,
+      "clicks_per_enrolment": 10.736
+    },
+    {
+      "final_result": "Fail",
+      "week": 33,
+      "clicks_per_enrolment": 9.957
+    },
+    {
+      "final_result": "Fail",
+      "week": 34,
+      "clicks_per_enrolment": 7.075
+    },
+    {
+      "final_result": "Fail",
+      "week": 35,
+      "clicks_per_enrolment": 0.35
+    },
+    {
+      "final_result": "Fail",
+      "week": 36,
+      "clicks_per_enrolment": 0.217
+    },
+    {
+      "final_result": "Fail",
+      "week": 37,
+      "clicks_per_enrolment": 0.189
+    },
+    {
+      "final_result": "Fail",
+      "week": 38,
+      "clicks_per_enrolment": 0.052
+    },
+    {
+      "final_result": "Pass",
+      "week": -4,
+      "clicks_per_enrolment": 2.128
+    },
+    {
+      "final_result": "Pass",
+      "week": -3,
+      "clicks_per_enrolment": 16.67
+    },
+    {
+      "final_result": "Pass",
+      "week": -2,
+      "clicks_per_enrolment": 25.686
+    },
+    {
+      "final_result": "Pass",
+      "week": -1,
+      "clicks_per_enrolment": 40.867
+    },
+    {
+      "final_result": "Pass",
+      "week": 0,
+      "clicks_per_enrolment": 81.095
+    },
+    {
+      "final_result": "Pass",
+      "week": 1,
+      "clicks_per_enrolment": 73.9
+    },
+    {
+      "final_result": "Pass",
+      "week": 2,
+      "clicks_per_enrolment": 92.427
+    },
+    {
+      "final_result": "Pass",
+      "week": 3,
+      "clicks_per_enrolment": 69.736
+    },
+    {
+      "final_result": "Pass",
+      "week": 4,
+      "clicks_per_enrolment": 64.994
+    },
+    {
+      "final_result": "Pass",
+      "week": 5,
+      "clicks_per_enrolment": 54.998
+    },
+    {
+      "final_result": "Pass",
+      "week": 6,
+      "clicks_per_enrolment": 61.339
+    },
+    {
+      "final_result": "Pass",
+      "week": 7,
+      "clicks_per_enrolment": 58.316
+    },
+    {
+      "final_result": "Pass",
+      "week": 8,
+      "clicks_per_enrolment": 42.872
+    },
+    {
+      "final_result": "Pass",
+      "week": 9,
+      "clicks_per_enrolment": 48.059
+    },
+    {
+      "final_result": "Pass",
+      "week": 10,
+      "clicks_per_enrolment": 30.349
+    },
+    {
+      "final_result": "Pass",
+      "week": 11,
+      "clicks_per_enrolment": 27.988
+    },
+    {
+      "final_result": "Pass",
+      "week": 12,
+      "clicks_per_enrolment": 40.832
+    },
+    {
+      "final_result": "Pass",
+      "week": 13,
+      "clicks_per_enrolment": 49.92
+    },
+    {
+      "final_result": "Pass",
+      "week": 14,
+      "clicks_per_enrolment": 43.587
+    },
+    {
+      "final_result": "Pass",
+      "week": 15,
+      "clicks_per_enrolment": 43.256
+    },
+    {
+      "final_result": "Pass",
+      "week": 16,
+      "clicks_per_enrolment": 44.905
+    },
+    {
+      "final_result": "Pass",
+      "week": 17,
+      "clicks_per_enrolment": 48.964
+    },
+    {
+      "final_result": "Pass",
+      "week": 18,
+      "clicks_per_enrolment": 59.967
+    },
+    {
+      "final_result": "Pass",
+      "week": 19,
+      "clicks_per_enrolment": 60.105
+    },
+    {
+      "final_result": "Pass",
+      "week": 20,
+      "clicks_per_enrolment": 62.117
+    },
+    {
+      "final_result": "Pass",
+      "week": 21,
+      "clicks_per_enrolment": 58.98
+    },
+    {
+      "final_result": "Pass",
+      "week": 22,
+      "clicks_per_enrolment": 54.975
+    },
+    {
+      "final_result": "Pass",
+      "week": 23,
+      "clicks_per_enrolment": 50.626
+    },
+    {
+      "final_result": "Pass",
+      "week": 24,
+      "clicks_per_enrolment": 40.421
+    },
+    {
+      "final_result": "Pass",
+      "week": 25,
+      "clicks_per_enrolment": 34.123
+    },
+    {
+      "final_result": "Pass",
+      "week": 26,
+      "clicks_per_enrolment": 34.836
+    },
+    {
+      "final_result": "Pass",
+      "week": 27,
+      "clicks_per_enrolment": 41.271
+    },
+    {
+      "final_result": "Pass",
+      "week": 28,
+      "clicks_per_enrolment": 46.104
+    },
+    {
+      "final_result": "Pass",
+      "week": 29,
+      "clicks_per_enrolment": 52.15
+    },
+    {
+      "final_result": "Pass",
+      "week": 30,
+      "clicks_per_enrolment": 57.461
+    },
+    {
+      "final_result": "Pass",
+      "week": 31,
+      "clicks_per_enrolment": 61.281
+    },
+    {
+      "final_result": "Pass",
+      "week": 32,
+      "clicks_per_enrolment": 56.079
+    },
+    {
+      "final_result": "Pass",
+      "week": 33,
+      "clicks_per_enrolment": 52.57
+    },
+    {
+      "final_result": "Pass",
+      "week": 34,
+      "clicks_per_enrolment": 29.405
+    },
+    {
+      "final_result": "Pass",
+      "week": 35,
+      "clicks_per_enrolment": 3.046
+    },
+    {
+      "final_result": "Pass",
+      "week": 36,
+      "clicks_per_enrolment": 1.698
+    },
+    {
+      "final_result": "Pass",
+      "week": 37,
+      "clicks_per_enrolment": 1.248
+    },
+    {
+      "final_result": "Pass",
+      "week": 38,
+      "clicks_per_enrolment": 0.456
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": -4,
+      "clicks_per_enrolment": 0.832
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": -3,
+      "clicks_per_enrolment": 8.307
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": -2,
+      "clicks_per_enrolment": 11.16
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": -1,
+      "clicks_per_enrolment": 17.4
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 0,
+      "clicks_per_enrolment": 34.651
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 1,
+      "clicks_per_enrolment": 30.02
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 2,
+      "clicks_per_enrolment": 40.874
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 3,
+      "clicks_per_enrolment": 24.917
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 4,
+      "clicks_per_enrolment": 20.831
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 5,
+      "clicks_per_enrolment": 14.947
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 6,
+      "clicks_per_enrolment": 14.631
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 7,
+      "clicks_per_enrolment": 14.434
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 8,
+      "clicks_per_enrolment": 9.093
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 9,
+      "clicks_per_enrolment": 10.848
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 10,
+      "clicks_per_enrolment": 4.845
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 11,
+      "clicks_per_enrolment": 4.314
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 12,
+      "clicks_per_enrolment": 5.474
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 13,
+      "clicks_per_enrolment": 5.872
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 14,
+      "clicks_per_enrolment": 4.944
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 15,
+      "clicks_per_enrolment": 4.225
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 16,
+      "clicks_per_enrolment": 4.052
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 17,
+      "clicks_per_enrolment": 3.593
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 18,
+      "clicks_per_enrolment": 3.958
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 19,
+      "clicks_per_enrolment": 3.967
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 20,
+      "clicks_per_enrolment": 3.776
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 21,
+      "clicks_per_enrolment": 2.715
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 22,
+      "clicks_per_enrolment": 1.868
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 23,
+      "clicks_per_enrolment": 1.34
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 24,
+      "clicks_per_enrolment": 1.157
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 25,
+      "clicks_per_enrolment": 0.565
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 26,
+      "clicks_per_enrolment": 0.717
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 27,
+      "clicks_per_enrolment": 0.503
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 28,
+      "clicks_per_enrolment": 0.685
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 29,
+      "clicks_per_enrolment": 0.702
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 30,
+      "clicks_per_enrolment": 0.578
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 31,
+      "clicks_per_enrolment": 0.359
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 32,
+      "clicks_per_enrolment": 0.341
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 33,
+      "clicks_per_enrolment": 0.26
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 34,
+      "clicks_per_enrolment": 0.187
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 35,
+      "clicks_per_enrolment": 0.004
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 36,
+      "clicks_per_enrolment": 0.002
+    },
+    {
+      "final_result": "Withdrawn",
+      "week": 37,
+      "clicks_per_enrolment": 0.006
+    }
+  ],
+  "duplicate_rows_by_presentation": [
+    {
+      "code_module": "AAA",
+      "code_presentation": "2013J",
+      "rows": 180982,
+      "duplicate_rows": 7439,
+      "share": 0.0411
+    },
+    {
+      "code_module": "AAA",
+      "code_presentation": "2014J",
+      "rows": 169316,
+      "duplicate_rows": 8110,
+      "share": 0.0479
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013B",
+      "rows": 403266,
+      "duplicate_rows": 43110,
+      "share": 0.1069
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013J",
+      "rows": 452638,
+      "duplicate_rows": 47751,
+      "share": 0.10549
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014B",
+      "rows": 273236,
+      "duplicate_rows": 28149,
+      "share": 0.10302
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014J",
+      "rows": 438424,
+      "duplicate_rows": 39297,
+      "share": 0.08963
+    },
+    {
+      "code_module": "CCC",
+      "code_presentation": "2014B",
+      "rows": 496181,
+      "duplicate_rows": 46082,
+      "share": 0.09287
+    },
+    {
+      "code_module": "CCC",
+      "code_presentation": "2014J",
+      "rows": 711646,
+      "duplicate_rows": 68751,
+      "share": 0.09661
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2013B",
+      "rows": 536837,
+      "duplicate_rows": 20497,
+      "share": 0.03818
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2013J",
+      "rows": 680806,
+      "duplicate_rows": 33164,
+      "share": 0.04871
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2014B",
+      "rows": 379942,
+      "duplicate_rows": 18760,
+      "share": 0.04938
+    },
+    {
+      "code_module": "DDD",
+      "code_presentation": "2014J",
+      "rows": 568901,
+      "duplicate_rows": 38113,
+      "share": 0.06699
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2013J",
+      "rows": 356262,
+      "duplicate_rows": 17074,
+      "share": 0.04793
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2014B",
+      "rows": 202224,
+      "duplicate_rows": 9879,
+      "share": 0.04885
+    },
+    {
+      "code_module": "EEE",
+      "code_presentation": "2014J",
+      "rows": 402947,
+      "duplicate_rows": 27487,
+      "share": 0.06821
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2013B",
+      "rows": 946765,
+      "duplicate_rows": 60308,
+      "share": 0.0637
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2013J",
+      "rows": 1172101,
+      "duplicate_rows": 85888,
+      "share": 0.07328
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2014B",
+      "rows": 685274,
+      "duplicate_rows": 52402,
+      "share": 0.07647
+    },
+    {
+      "code_module": "FFF",
+      "code_presentation": "2014J",
+      "rows": 1210359,
+      "duplicate_rows": 91969,
+      "share": 0.07598
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2013J",
+      "rows": 145995,
+      "duplicate_rows": 17121,
+      "share": 0.11727
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2014B",
+      "rows": 123319,
+      "duplicate_rows": 14432,
+      "share": 0.11703
+    },
+    {
+      "code_module": "GGG",
+      "code_presentation": "2014J",
+      "rows": 117859,
+      "duplicate_rows": 11387,
+      "share": 0.09662
+    }
+  ]
+}

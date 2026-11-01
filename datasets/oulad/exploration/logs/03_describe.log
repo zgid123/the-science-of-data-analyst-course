@@ -1,0 +1,8 @@
+# 2026-11-01T15:41:12Z  $ /Users/ptkhanh/Documents/master/milestone-da/venv/bin/python /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/exploration/code/03_describe.py
+wrote results/descriptive.json; headline values:
+  early engagement Cliff's delta: {'clicks_early': 0.3112, 'clicks_early_dedup': 0.3093, 'active_days_early': 0.3403, 'clicks_prestart': 0.2588}
+  survival All: {0: 1.0, 14: 0.9532, 28: 0.9334, 60: 0.8934, 90: 0.8662, 120: 0.8395, 180: 0.7885, 240: 0.763, 269: 0.7627}
+  Cramer's V with final_result: {'code_module': 0.1207, 'year': 0.0864, 'semester': 0.0652, 'gender': 0.0204, 'region': 0.0651, 'highest_education': 0.1018, 'imd_band': 0.0823, 'age_band': 0.0577, 'disability': 0.0645, 'prev_attempts': 0.0877}
+  Simpson (crude vs standardised, pp): {'female_vs_male:success': (2.25, 1.4, 2), 'female_vs_male:withdrawn': (-1.24, 2.95, 6), 'disability_yes_vs_no:success': (-10.03, -9.94, 0), 'disability_yes_vs_no:withdrawn': (9.07, 9.26, 0), 'most_vs_least_deprived_imd:success': (-18.78, -19.14, 0), 'most_vs_least_deprived_imd:withdrawn': (9.29, 10.11, 2), 'repeat_vs_first_attempt:success': (-16.2, -14.06, 0), 'repeat_vs_first_attempt:withdrawn': (4.7, 3.32, 1), 'age_35plus_vs_under35:success': (7.34, 6.24, 0), 'age_35plus_vs_under35:withdrawn': (-3.41, -2.27, 1), 'B_vs_J_presentation:success': (-5.73, -3.9, 0), 'B_vs_J_presentation:withdrawn': (0.91, -0.78, 2)}
+  temporal: median acf lag7 0.53 assessment window ratio 2.157
+# exit 0

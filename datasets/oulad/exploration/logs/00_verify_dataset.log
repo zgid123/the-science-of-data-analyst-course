@@ -1,0 +1,8 @@
+# 2026-11-01T15:41:02Z  $ /Users/ptkhanh/Documents/master/milestone-da/venv/bin/python /Users/ptkhanh/Documents/master/milestone-da/scripts/fetch-datasets/fetch_datasets.py --verify oulad
+
+Inventory
+dataset            status     files       size  path
+oulad              PASS          60   494.7 MB  datasets/oulad (analysis focus)
+
+wrote /Users/ptkhanh/Documents/master/milestone-da/datasets/inventory.json
+# exit 0

@@ -1,0 +1,1420 @@
+[
+  {
+    "table": "courses",
+    "column": "code_module",
+    "role": "dimension",
+    "rows": 22,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.318182,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "BBB",
+        4
+      ],
+      [
+        "DDD",
+        4
+      ],
+      [
+        "FFF",
+        4
+      ],
+      [
+        "EEE",
+        3
+      ],
+      [
+        "GGG",
+        3
+      ],
+      [
+        "AAA",
+        2
+      ],
+      [
+        "CCC",
+        2
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      3
+    ]
+  },
+  {
+    "table": "courses",
+    "column": "code_presentation",
+    "role": "dimension",
+    "rows": 22,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.181818,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "2014J",
+        7
+      ],
+      [
+        "2013J",
+        6
+      ],
+      [
+        "2014B",
+        6
+      ],
+      [
+        "2013B",
+        3
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      5
+    ]
+  },
+  {
+    "table": "courses",
+    "column": "module_presentation_length",
+    "role": "metric (days)",
+    "rows": 22,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.318182,
+    "completeness": "complete",
+    "min": 234.0,
+    "max": 269.0,
+    "mean": 255.5455,
+    "std": 13.6547,
+    "p1": 234.0,
+    "p5": 240.0,
+    "p25": 241.0,
+    "p50": 262.0,
+    "p75": 268.0,
+    "p95": 269.0,
+    "p99": 269.0,
+    "zeros": 0,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 0.975
+  },
+  {
+    "table": "assessments",
+    "column": "code_module",
+    "role": "dimension",
+    "rows": 206,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.033981,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "FFF",
+        52
+      ],
+      [
+        "BBB",
+        42
+      ],
+      [
+        "DDD",
+        35
+      ],
+      [
+        "GGG",
+        30
+      ],
+      [
+        "CCC",
+        20
+      ],
+      [
+        "EEE",
+        15
+      ],
+      [
+        "AAA",
+        12
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      3
+    ]
+  },
+  {
+    "table": "assessments",
+    "column": "code_presentation",
+    "role": "dimension",
+    "rows": 206,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.019417,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "2014J",
+        57
+      ],
+      [
+        "2014B",
+        57
+      ],
+      [
+        "2013J",
+        53
+      ],
+      [
+        "2013B",
+        39
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      5
+    ]
+  },
+  {
+    "table": "assessments",
+    "column": "id_assessment",
+    "role": "identifier",
+    "rows": 206,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 206,
+    "cardinality_ratio": 1.0,
+    "completeness": "complete"
+  },
+  {
+    "table": "assessments",
+    "column": "assessment_type",
+    "role": "dimension",
+    "rows": 206,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 3,
+    "cardinality_ratio": 0.014563,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "TMA",
+        106
+      ],
+      [
+        "CMA",
+        76
+      ],
+      [
+        "Exam",
+        24
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      4
+    ]
+  },
+  {
+    "table": "assessments",
+    "column": "date",
+    "role": "temporal (day offset)",
+    "rows": 206,
+    "empty_fields": 11,
+    "question_mark": 0,
+    "missing": 11,
+    "missing_rate": 0.053398,
+    "distinct": 75,
+    "cardinality_ratio": 0.364078,
+    "completeness": "incomplete",
+    "min": 12.0,
+    "max": 261.0,
+    "mean": 145.0051,
+    "std": 76.0011,
+    "p1": 18.0,
+    "p5": 20.0,
+    "p25": 74.0,
+    "p50": 152.0,
+    "p75": 222.0,
+    "p95": 240.0,
+    "p99": 241.0,
+    "zeros": 0,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 0.954
+  },
+  {
+    "table": "assessments",
+    "column": "weight",
+    "role": "metric (%)",
+    "rows": 206,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 24,
+    "cardinality_ratio": 0.116505,
+    "completeness": "complete",
+    "min": 0.0,
+    "max": 100.0,
+    "mean": 20.8738,
+    "std": 30.3842,
+    "p1": 0.0,
+    "p5": 0.0,
+    "p25": 0.0,
+    "p50": 12.5,
+    "p75": 25.0,
+    "p95": 100.0,
+    "p99": 100.0,
+    "zeros": 56,
+    "negatives": 0,
+    "non_integer": 14,
+    "mean_to_median": 1.67
+  },
+  {
+    "table": "vle",
+    "column": "id_site",
+    "role": "identifier",
+    "rows": 6364,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 6364,
+    "cardinality_ratio": 1.0,
+    "completeness": "complete"
+  },
+  {
+    "table": "vle",
+    "column": "code_module",
+    "role": "dimension",
+    "rows": 6364,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.0011,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "FFF",
+        1967
+      ],
+      [
+        "DDD",
+        1708
+      ],
+      [
+        "BBB",
+        1154
+      ],
+      [
+        "CCC",
+        419
+      ],
+      [
+        "AAA",
+        413
+      ],
+      [
+        "GGG",
+        367
+      ],
+      [
+        "EEE",
+        336
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      3
+    ]
+  },
+  {
+    "table": "vle",
+    "column": "code_presentation",
+    "role": "dimension",
+    "rows": 6364,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.000629,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "2013J",
+        1772
+      ],
+      [
+        "2014B",
+        1671
+      ],
+      [
+        "2014J",
+        1670
+      ],
+      [
+        "2013B",
+        1251
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      5
+    ]
+  },
+  {
+    "table": "vle",
+    "column": "activity_type",
+    "role": "dimension",
+    "rows": 6364,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 20,
+    "cardinality_ratio": 0.003143,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "resource",
+        2660
+      ],
+      [
+        "subpage",
+        1055
+      ],
+      [
+        "oucontent",
+        996
+      ],
+      [
+        "url",
+        886
+      ],
+      [
+        "forumng",
+        194
+      ],
+      [
+        "quiz",
+        127
+      ],
+      [
+        "page",
+        102
+      ],
+      [
+        "oucollaborate",
+        82
+      ],
+      [
+        "questionnaire",
+        61
+      ],
+      [
+        "ouwiki",
+        49
+      ]
+    ],
+    "rare_values": [
+      [
+        "dualpane",
+        20
+      ],
+      [
+        "repeatactivity",
+        5
+      ],
+      [
+        "htmlactivity",
+        4
+      ],
+      [
+        "sharedsubpage",
+        3
+      ],
+      [
+        "folder",
+        2
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      14
+    ]
+  },
+  {
+    "table": "vle",
+    "column": "week_from",
+    "role": "temporal (week)",
+    "rows": 6364,
+    "empty_fields": 5243,
+    "question_mark": 0,
+    "missing": 5243,
+    "missing_rate": 0.823853,
+    "distinct": 31,
+    "cardinality_ratio": 0.004871,
+    "completeness": "sparse",
+    "min": 0.0,
+    "max": 29.0,
+    "mean": 15.2043,
+    "std": 8.7929,
+    "p1": 1.0,
+    "p5": 1.0,
+    "p25": 8.0,
+    "p50": 15.0,
+    "p75": 22.0,
+    "p95": 28.0,
+    "p99": 29.0,
+    "zeros": 2,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 1.014
+  },
+  {
+    "table": "vle",
+    "column": "week_to",
+    "role": "temporal (week)",
+    "rows": 6364,
+    "empty_fields": 5243,
+    "question_mark": 0,
+    "missing": 5243,
+    "missing_rate": 0.823853,
+    "distinct": 31,
+    "cardinality_ratio": 0.004871,
+    "completeness": "sparse",
+    "min": 0.0,
+    "max": 29.0,
+    "mean": 15.215,
+    "std": 8.7798,
+    "p1": 1.0,
+    "p5": 1.0,
+    "p25": 8.0,
+    "p50": 15.0,
+    "p75": 22.0,
+    "p95": 28.0,
+    "p99": 29.0,
+    "zeros": 2,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 1.014
+  },
+  {
+    "table": "studentInfo",
+    "column": "code_module",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.000215,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "BBB",
+        7909
+      ],
+      [
+        "FFF",
+        7762
+      ],
+      [
+        "DDD",
+        6272
+      ],
+      [
+        "CCC",
+        4434
+      ],
+      [
+        "EEE",
+        2934
+      ],
+      [
+        "GGG",
+        2534
+      ],
+      [
+        "AAA",
+        748
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      3
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "code_presentation",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.000123,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "2014J",
+        11260
+      ],
+      [
+        "2013J",
+        8845
+      ],
+      [
+        "2014B",
+        7804
+      ],
+      [
+        "2013B",
+        4684
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      5
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "id_student",
+    "role": "identifier",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 28785,
+    "cardinality_ratio": 0.883165,
+    "completeness": "complete"
+  },
+  {
+    "table": "studentInfo",
+    "column": "gender",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 2,
+    "cardinality_ratio": 6.1e-05,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "M",
+        17875
+      ],
+      [
+        "F",
+        14718
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      1,
+      1
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "region",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 13,
+    "cardinality_ratio": 0.000399,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "Scotland",
+        3446
+      ],
+      [
+        "East Anglian Region",
+        3340
+      ],
+      [
+        "London Region",
+        3216
+      ],
+      [
+        "South Region",
+        3092
+      ],
+      [
+        "North Western Region",
+        2906
+      ],
+      [
+        "West Midlands Region",
+        2582
+      ],
+      [
+        "South West Region",
+        2436
+      ],
+      [
+        "East Midlands Region",
+        2365
+      ],
+      [
+        "South East Region",
+        2111
+      ],
+      [
+        "Wales",
+        2086
+      ]
+    ],
+    "rare_values": [
+      [
+        "South East Region",
+        2111
+      ],
+      [
+        "Wales",
+        2086
+      ],
+      [
+        "Yorkshire Region",
+        2006
+      ],
+      [
+        "North Region",
+        1823
+      ],
+      [
+        "Ireland",
+        1184
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      20
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "highest_education",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 5,
+    "cardinality_ratio": 0.000153,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "A Level or Equivalent",
+        14045
+      ],
+      [
+        "Lower Than A Level",
+        13158
+      ],
+      [
+        "HE Qualification",
+        4730
+      ],
+      [
+        "No Formal quals",
+        347
+      ],
+      [
+        "Post Graduate Qualification",
+        313
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      15,
+      27
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "imd_band",
+    "role": "dimension (ordinal)",
+    "rows": 32593,
+    "empty_fields": 1111,
+    "question_mark": 0,
+    "missing": 1111,
+    "missing_rate": 0.034087,
+    "distinct": 11,
+    "cardinality_ratio": 0.000337,
+    "completeness": "mostly complete",
+    "top_values": [
+      [
+        "20-30%",
+        3654
+      ],
+      [
+        "30-40%",
+        3539
+      ],
+      [
+        "10-20",
+        3516
+      ],
+      [
+        "0-10%",
+        3311
+      ],
+      [
+        "40-50%",
+        3256
+      ],
+      [
+        "50-60%",
+        3124
+      ],
+      [
+        "60-70%",
+        2905
+      ],
+      [
+        "70-80%",
+        2879
+      ],
+      [
+        "80-90%",
+        2762
+      ],
+      [
+        "90-100%",
+        2536
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      7
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "age_band",
+    "role": "dimension (ordinal)",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 3,
+    "cardinality_ratio": 9.2e-05,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "0-35",
+        22944
+      ],
+      [
+        "35-55",
+        9433
+      ],
+      [
+        "55<=",
+        216
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      4,
+      5
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "num_of_prev_attempts",
+    "role": "metric (count)",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.000215,
+    "completeness": "complete",
+    "min": 0.0,
+    "max": 6.0,
+    "mean": 0.1632,
+    "std": 0.4798,
+    "p1": 0.0,
+    "p5": 0.0,
+    "p25": 0.0,
+    "p50": 0.0,
+    "p75": 0.0,
+    "p95": 1.0,
+    "p99": 2.0,
+    "zeros": 28421,
+    "negatives": 0,
+    "non_integer": 0
+  },
+  {
+    "table": "studentInfo",
+    "column": "studied_credits",
+    "role": "metric (credits)",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 61,
+    "cardinality_ratio": 0.001872,
+    "completeness": "complete",
+    "min": 30.0,
+    "max": 655.0,
+    "mean": 79.7587,
+    "std": 41.0719,
+    "p1": 30.0,
+    "p5": 30.0,
+    "p25": 60.0,
+    "p50": 60.0,
+    "p75": 120.0,
+    "p95": 150.0,
+    "p99": 240.0,
+    "zeros": 0,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 1.329
+  },
+  {
+    "table": "studentInfo",
+    "column": "disability",
+    "role": "boolean (Y/N)",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 2,
+    "cardinality_ratio": 6.1e-05,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "N",
+        29429
+      ],
+      [
+        "Y",
+        3164
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      1,
+      1
+    ]
+  },
+  {
+    "table": "studentInfo",
+    "column": "final_result",
+    "role": "dimension (outcome)",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.000123,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "Pass",
+        12361
+      ],
+      [
+        "Withdrawn",
+        10156
+      ],
+      [
+        "Fail",
+        7052
+      ],
+      [
+        "Distinction",
+        3024
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      4,
+      11
+    ]
+  },
+  {
+    "table": "studentRegistration",
+    "column": "code_module",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 0.000215,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "BBB",
+        7909
+      ],
+      [
+        "FFF",
+        7762
+      ],
+      [
+        "DDD",
+        6272
+      ],
+      [
+        "CCC",
+        4434
+      ],
+      [
+        "EEE",
+        2934
+      ],
+      [
+        "GGG",
+        2534
+      ],
+      [
+        "AAA",
+        748
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      3
+    ]
+  },
+  {
+    "table": "studentRegistration",
+    "column": "code_presentation",
+    "role": "dimension",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.000123,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "2014J",
+        11260
+      ],
+      [
+        "2013J",
+        8845
+      ],
+      [
+        "2014B",
+        7804
+      ],
+      [
+        "2013B",
+        4684
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      5
+    ]
+  },
+  {
+    "table": "studentRegistration",
+    "column": "id_student",
+    "role": "identifier",
+    "rows": 32593,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 28785,
+    "cardinality_ratio": 0.883165,
+    "completeness": "complete"
+  },
+  {
+    "table": "studentRegistration",
+    "column": "date_registration",
+    "role": "temporal (day offset)",
+    "rows": 32593,
+    "empty_fields": 45,
+    "question_mark": 0,
+    "missing": 45,
+    "missing_rate": 0.001381,
+    "distinct": 333,
+    "cardinality_ratio": 0.010217,
+    "completeness": "complete",
+    "min": -322.0,
+    "max": 167.0,
+    "mean": -69.4113,
+    "std": 49.2605,
+    "p1": -207.0,
+    "p5": -156.0,
+    "p25": -100.0,
+    "p50": -57.0,
+    "p75": -29.0,
+    "p95": -15.0,
+    "p99": -2.0,
+    "zeros": 2,
+    "negatives": 32312,
+    "non_integer": 0,
+    "mean_to_median": 1.218
+  },
+  {
+    "table": "studentRegistration",
+    "column": "date_unregistration",
+    "role": "temporal (day offset)",
+    "rows": 32593,
+    "empty_fields": 22521,
+    "question_mark": 0,
+    "missing": 22521,
+    "missing_rate": 0.690977,
+    "distinct": 417,
+    "cardinality_ratio": 0.012794,
+    "completeness": "sparse",
+    "min": -365.0,
+    "max": 444.0,
+    "mean": 49.7576,
+    "std": 82.4609,
+    "p1": -136.0,
+    "p5": -68.0,
+    "p25": -2.0,
+    "p50": 27.0,
+    "p75": 109.0,
+    "p95": 202.0,
+    "p99": 228.0,
+    "zeros": 419,
+    "negatives": 2678,
+    "non_integer": 0,
+    "mean_to_median": 1.843
+  },
+  {
+    "table": "studentAssessment",
+    "column": "id_assessment",
+    "role": "identifier",
+    "rows": 173912,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 188,
+    "cardinality_ratio": 0.001081,
+    "completeness": "complete"
+  },
+  {
+    "table": "studentAssessment",
+    "column": "id_student",
+    "role": "identifier",
+    "rows": 173912,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 23369,
+    "cardinality_ratio": 0.134373,
+    "completeness": "complete"
+  },
+  {
+    "table": "studentAssessment",
+    "column": "date_submitted",
+    "role": "temporal (day offset)",
+    "rows": 173912,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 312,
+    "cardinality_ratio": 0.001794,
+    "completeness": "complete",
+    "min": -11.0,
+    "max": 608.0,
+    "mean": 116.0329,
+    "std": 71.4841,
+    "p1": -1.0,
+    "p5": 17.0,
+    "p25": 51.0,
+    "p50": 116.0,
+    "p75": 173.0,
+    "p95": 230.0,
+    "p99": 243.0,
+    "zeros": 61,
+    "negatives": 2057,
+    "non_integer": 0,
+    "mean_to_median": 1.0
+  },
+  {
+    "table": "studentAssessment",
+    "column": "is_banked",
+    "role": "boolean (0/1)",
+    "rows": 173912,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 2,
+    "cardinality_ratio": 1.2e-05,
+    "completeness": "complete",
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.011,
+    "std": 0.1042,
+    "p1": 0.0,
+    "p5": 0.0,
+    "p25": 0.0,
+    "p50": 0.0,
+    "p75": 0.0,
+    "p95": 0.0,
+    "p99": 1.0,
+    "zeros": 172003,
+    "negatives": 0,
+    "non_integer": 0
+  },
+  {
+    "table": "studentAssessment",
+    "column": "score",
+    "role": "metric (0-100)",
+    "rows": 173912,
+    "empty_fields": 173,
+    "question_mark": 0,
+    "missing": 173,
+    "missing_rate": 0.000995,
+    "distinct": 102,
+    "cardinality_ratio": 0.000587,
+    "completeness": "complete",
+    "min": 0.0,
+    "max": 100.0,
+    "mean": 75.7996,
+    "std": 18.7981,
+    "p1": 15.0,
+    "p5": 40.0,
+    "p25": 65.0,
+    "p50": 80.0,
+    "p75": 90.0,
+    "p95": 100.0,
+    "p99": 100.0,
+    "zeros": 329,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 0.947
+  },
+  {
+    "table": "studentVle",
+    "column": "code_module",
+    "role": "dimension",
+    "rows": 10655280,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 7,
+    "cardinality_ratio": 1e-06,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "FFF",
+        4014499
+      ],
+      [
+        "DDD",
+        2166486
+      ],
+      [
+        "BBB",
+        1567564
+      ],
+      [
+        "CCC",
+        1207827
+      ],
+      [
+        "EEE",
+        961433
+      ],
+      [
+        "GGG",
+        387173
+      ],
+      [
+        "AAA",
+        350298
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      3,
+      3
+    ]
+  },
+  {
+    "table": "studentVle",
+    "column": "code_presentation",
+    "role": "dimension",
+    "rows": 10655280,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 4,
+    "cardinality_ratio": 0.0,
+    "completeness": "complete",
+    "top_values": [
+      [
+        "2014J",
+        3619452
+      ],
+      [
+        "2013J",
+        2988784
+      ],
+      [
+        "2014B",
+        2160176
+      ],
+      [
+        "2013B",
+        1886868
+      ]
+    ],
+    "whitespace_padded": 0,
+    "length_min_max": [
+      5,
+      5
+    ]
+  },
+  {
+    "table": "studentVle",
+    "column": "id_student",
+    "role": "identifier",
+    "rows": 10655280,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 26074,
+    "cardinality_ratio": 0.002447,
+    "completeness": "complete"
+  },
+  {
+    "table": "studentVle",
+    "column": "id_site",
+    "role": "identifier",
+    "rows": 10655280,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 6268,
+    "cardinality_ratio": 0.000588,
+    "completeness": "complete"
+  },
+  {
+    "table": "studentVle",
+    "column": "date",
+    "role": "temporal (day offset)",
+    "rows": 10655280,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 295,
+    "cardinality_ratio": 2.8e-05,
+    "completeness": "complete",
+    "min": -25.0,
+    "max": 269.0,
+    "mean": 95.174,
+    "std": 76.0713,
+    "p1": -17.0,
+    "p5": -4.0,
+    "p25": 25.0,
+    "p50": 86.0,
+    "p75": 156.0,
+    "p95": 226.0,
+    "p99": 240.0,
+    "zeros": 76643,
+    "negatives": 688988,
+    "non_integer": 0,
+    "mean_to_median": 1.107
+  },
+  {
+    "table": "studentVle",
+    "column": "sum_click",
+    "role": "metric (count)",
+    "rows": 10655280,
+    "empty_fields": 0,
+    "question_mark": 0,
+    "missing": 0,
+    "missing_rate": 0.0,
+    "distinct": 498,
+    "cardinality_ratio": 4.7e-05,
+    "completeness": "complete",
+    "min": 1.0,
+    "max": 6977.0,
+    "mean": 3.7169,
+    "std": 8.849,
+    "p1": 1.0,
+    "p5": 1.0,
+    "p25": 1.0,
+    "p50": 2.0,
+    "p75": 3.0,
+    "p95": 12.0,
+    "p99": 34.0,
+    "zeros": 0,
+    "negatives": 0,
+    "non_integer": 0,
+    "mean_to_median": 1.858
+  }
+]

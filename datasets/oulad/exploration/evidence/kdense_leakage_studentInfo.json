@@ -1,0 +1,622 @@
+{
+  "analysis": {
+    "audit_type": "missingness_group_and_split_leakage",
+    "automatic_imputation_or_deletion": false,
+    "leakage_audit": {
+      "entity_tokens_in_multiple_splits": 0,
+      "group_tokens_in_multiple_splits": 0,
+      "identical_row_hashes_in_multiple_splits": 0,
+      "overlapping_split_time_interval_pairs": 0,
+      "rows_with_missing_split": 0,
+      "scope_warning": "No finding is not proof of no leakage, especially for truncated scans or unprovided entity/group/time roles.",
+      "status": "not_assessed_without_split_column",
+      "tracking_truncated": false,
+      "unparseable_nonmissing_time_values": 0
+    },
+    "maximum_group_missingness_gaps": [
+      {
+        "column_id": "code_module",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "code_presentation",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "id_student",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "gender",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "region",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "highest_education",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "imd_band",
+        "maximum_group_missingness_gap": 0.0545221879150811
+      },
+      {
+        "column_id": "age_band",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "num_of_prev_attempts",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "studied_credits",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "disability",
+        "maximum_group_missingness_gap": 0.0
+      },
+      {
+        "column_id": "final_result",
+        "maximum_group_missingness_gap": 0.0
+      }
+    ],
+    "missing_code_policy": {
+      "additional_token_count": 0,
+      "empty_or_whitespace_is_missing": true,
+      "tokens_are_not_emitted": true
+    },
+    "missingness_by_group": [
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 254,
+            "missing_fraction": 0.05728461885430762
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_24a19a4d8c4108f3",
+        "row_count": 4434
+      },
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 23,
+            "missing_fraction": 0.03074866310160428
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_2ca50b9942d315f7",
+        "row_count": 748
+      },
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 117,
+            "missing_fraction": 0.03987730061349693
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_54a0f4297d35db98",
+        "row_count": 2934
+      },
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 280,
+            "missing_fraction": 0.044642857142857144
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_76b5778a8e9d8cc8",
+        "row_count": 6272
+      },
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 63,
+            "missing_fraction": 0.007965608800101151
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_abf7579d11b2c847",
+        "row_count": 7909
+      },
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 367,
+            "missing_fraction": 0.04728162844627673
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_bd7f50cf92c35056",
+        "row_count": 7762
+      },
+      {
+        "column_missingness": [
+          {
+            "column_id": "code_module",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "code_presentation",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "id_student",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "gender",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "region",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "highest_education",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "imd_band",
+            "missing_count": 7,
+            "missing_fraction": 0.0027624309392265192
+          },
+          {
+            "column_id": "age_band",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "num_of_prev_attempts",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "studied_credits",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "disability",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          },
+          {
+            "column_id": "final_result",
+            "missing_count": 0,
+            "missing_fraction": 0.0
+          }
+        ],
+        "group_token": "group_cc56b6b3103e9e2c",
+        "row_count": 2534
+      }
+    ],
+    "missingness_by_split": [],
+    "overall_missingness": [
+      {
+        "column_id": "code_module",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "code_presentation",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "id_student",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "gender",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "region",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "highest_education",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "imd_band",
+        "missing_count": 1111,
+        "missing_fraction": 0.03408707391157611
+      },
+      {
+        "column_id": "age_band",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "num_of_prev_attempts",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "studied_credits",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "disability",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      {
+        "column_id": "final_result",
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      }
+    ],
+    "raw_values_emitted": false,
+    "row_limit_reached": false,
+    "rows_scanned": 32593
+  },
+  "capability": {
+    "dependency": "Python standard library",
+    "depth": "bounded schema, aggregate profile, missingness, and sensitivity audit",
+    "format": "CSV",
+    "reference": "references/general_scientific_formats.md",
+    "suffix": ".csv",
+    "tier": "automated_core"
+  },
+  "interpretation": {
+    "domain_design_review_required": true,
+    "no_overlap_found_is_not_proof_of_independence": true,
+    "potential_overlap_is_not_proof_of_model_leakage": true
+  },
+  "schema_version": "1.1",
+  "security": {
+    "embedded_instructions_followed": false,
+    "file_text_is_untrusted_data": true,
+    "local_only": true,
+    "raw_values_paths_and_entity_ids_emitted": false
+  }
+}

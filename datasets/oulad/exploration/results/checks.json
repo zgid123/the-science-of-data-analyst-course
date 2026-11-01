@@ -1,0 +1,219 @@
+[
+  {
+    "check": "assessments presentations exist in courses",
+    "observed": 0,
+    "expected": "0 orphan presentations",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "vle presentations exist in courses",
+    "observed": 0,
+    "expected": "0 orphan presentations",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentInfo presentations exist in courses",
+    "observed": 0,
+    "expected": "0 orphan presentations",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentRegistration presentations exist in courses",
+    "observed": 0,
+    "expected": "0 orphan presentations",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentVle presentations exist in courses",
+    "observed": 0,
+    "expected": "0 orphan presentations",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentAssessment.id_assessment exists in assessments",
+    "observed": 0,
+    "expected": "0 orphan ids",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentVle.id_site exists in vle",
+    "observed": 0,
+    "expected": "0 orphan sites",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentVle site belongs to the same presentation in vle",
+    "observed": 0,
+    "expected": "0 mismatches",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentInfo and studentRegistration enrolments match 1:1",
+    "observed": [
+      0,
+      0
+    ],
+    "expected": "[0, 0]",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentVle enrolments exist in studentInfo",
+    "observed": 0,
+    "expected": "0",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentAssessment enrolments (via assessment) exist in studentInfo",
+    "observed": 0,
+    "expected": "0",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "enrolments with no VLE activity",
+    "observed": [
+      3365,
+      0.1032
+    ],
+    "expected": "informational",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "enrolments with no assessment submission",
+    "observed": [
+      6750,
+      0.2071
+    ],
+    "expected": "informational",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "Withdrawn enrolments without date_unregistration",
+    "observed": 93,
+    "expected": "0",
+    "status": "FLAG",
+    "note": "of 10,156 Withdrawn"
+  },
+  {
+    "check": "non-Withdrawn enrolments with a date_unregistration",
+    "observed": 9,
+    "expected": "0",
+    "status": "FLAG",
+    "note": "[('Fail', 9)]"
+  },
+  {
+    "check": "unregistration before registration",
+    "observed": 0,
+    "expected": "0",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "unregistered on or before day 0",
+    "observed": 3097,
+    "expected": "informational",
+    "status": "PASS",
+    "note": "withdrew before the presentation started"
+  },
+  {
+    "check": "score within 0-100",
+    "observed": 0,
+    "expected": "0",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "submissions with missing score",
+    "observed": 173,
+    "expected": "informational",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "banked assessment results (carried from earlier attempt)",
+    "observed": 1909,
+    "expected": "informational",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "submissions after the assessment's due day",
+    "observed": [
+      49318,
+      0.2883
+    ],
+    "expected": "informational",
+    "status": "PASS",
+    "note": "assessments with a due day only"
+  },
+  {
+    "check": "assessments without a due day (date missing)",
+    "observed": 11,
+    "expected": "informational",
+    "status": "PASS",
+    "note": "[('Exam', 11)]"
+  },
+  {
+    "check": "exam weight per presentation",
+    "observed": [
+      100.0,
+      200.0
+    ],
+    "expected": "100",
+    "status": "FLAG",
+    "note": ""
+  },
+  {
+    "check": "TMA+CMA weight per presentation",
+    "observed": [
+      0.0,
+      100.0
+    ],
+    "expected": "100",
+    "status": "FLAG",
+    "note": "presentations not summing to 100: [('GGG', '2013J', 0.0), ('GGG', '2014B', 0.0), ('GGG', '2014J', 0.0)]"
+  },
+  {
+    "check": "VLE activity after the presentation length",
+    "observed": 0,
+    "expected": "0",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "VLE activity before day 0 (pre-start)",
+    "observed": 688988,
+    "expected": "informational",
+    "status": "PASS",
+    "note": ""
+  },
+  {
+    "check": "studentVle rows repeating (enrolment, site, day)",
+    "observed": [
+      1614505,
+      3810465
+    ],
+    "expected": "informational",
+    "status": "PASS",
+    "note": "log has several rows per student-site-day; aggregate sum_click before use"
+  },
+  {
+    "check": "students enrolled in more than one presentation",
+    "observed": 3538,
+    "expected": "informational",
+    "status": "PASS",
+    "note": ""
+  }
+]

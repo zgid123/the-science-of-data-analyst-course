@@ -1,0 +1,73 @@
+{
+  "analysis": {
+    "audit_type": "distribution_and_outlier_sensitivity",
+    "columns": [
+      {
+        "bounded_numeric_sample_count": 4096,
+        "column_id": "score",
+        "location_and_scale": {
+          "interquartile_range": 25.0,
+          "mean": 75.755615234375,
+          "median": 80.0,
+          "median_absolute_deviation": 12.0,
+          "q1": 65.0,
+          "q3": 90.0,
+          "sample_standard_deviation": 18.82646392175701
+        },
+        "missing_count": 173,
+        "nonnumeric_count": 0,
+        "numeric_count": 173739,
+        "outlier_sensitivity": {
+          "iqr_fence_high": 127.5,
+          "iqr_fence_low": 27.5,
+          "mean_without_iqr_fence_values": 77.23555888972243,
+          "outside_iqr_fence_count_in_sample": 97,
+          "raw_minus_trimmed_mean": -1.9295586521411678,
+          "ten_percent_trimmed_mean": 77.68517388651617,
+          "ten_percent_winsorized_mean": 77.3486328125,
+          "values_were_not_deleted_or_modified": true
+        },
+        "sample_is_bounded": true,
+        "transformation_sensitivity": {
+          "candidate": "log1p",
+          "diagnostic_only": true,
+          "fit_on_training_data_only_if_later_adopted": true,
+          "log1p_skewness_moment": -5.046266445785366,
+          "raw_skewness_moment": -1.0561743966840853
+        }
+      }
+    ],
+    "columns_skipped_by_default_limit": 0,
+    "interpretation": [
+      "IQR fences are descriptive flags, not deletion rules.",
+      "Transformation comparisons are exploratory diagnostics, not automatic recommendations.",
+      "No hypothesis tests, p-values, imputations, or causal claims are produced.",
+      "If later tests are run, define the hypothesis family and multiplicity procedure first."
+    ],
+    "numeric_columns_reported": 1,
+    "raw_values_emitted": false,
+    "row_limit_reached": false,
+    "rows_scanned": 173912
+  },
+  "capability": {
+    "dependency": "Python standard library",
+    "depth": "bounded schema, aggregate profile, missingness, and sensitivity audit",
+    "format": "CSV",
+    "reference": "references/general_scientific_formats.md",
+    "suffix": ".csv",
+    "tier": "automated_core"
+  },
+  "decisions": {
+    "automatic_imputation": false,
+    "automatic_outlier_deletion": false,
+    "automatic_transformation": false,
+    "hypothesis_tests_run": 0
+  },
+  "schema_version": "1.1",
+  "security": {
+    "embedded_instructions_followed": false,
+    "file_text_is_untrusted_data": true,
+    "local_only": true,
+    "raw_values_and_paths_emitted": false
+  }
+}

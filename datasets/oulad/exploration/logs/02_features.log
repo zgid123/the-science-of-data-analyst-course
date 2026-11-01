@@ -1,0 +1,3 @@
+# 2026-11-01T15:41:10Z  $ /Users/ptkhanh/Documents/master/milestone-da/venv/bin/python /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/exploration/code/02_features.py
+enrolment features: 32,593 rows x 38 columns -> results/enrolment_features.csv
+# exit 0

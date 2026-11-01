@@ -1,0 +1,22 @@
+# 2026-11-01T15:41:35Z  $ bash /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/exploration/code/06_kdense_audits.sh
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/courses.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers
+  -> kdense_profile_courses.json rows_scanned 22 row_limit_reached False
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/assessments.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers
+  -> kdense_profile_assessments.json rows_scanned 206 row_limit_reached False
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/vle.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers
+  -> kdense_profile_vle.json rows_scanned 6364 row_limit_reached False
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentInfo.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers
+  -> kdense_profile_studentInfo.json rows_scanned 32593 row_limit_reached False
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentRegistration.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers
+  -> kdense_profile_studentRegistration.json rows_scanned 32593 row_limit_reached False
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentAssessment.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers --max-rows 1000000
+  -> kdense_profile_studentAssessment.json rows_scanned 173912 row_limit_reached False
+$ python3 tabular_profile.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentVle.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --reveal-identifiers --max-bytes 536870912 --max-rows 1000000
+  -> kdense_profile_studentVle_first1M.json rows_scanned 1000000 row_limit_reached True
+$ python3 missingness_leakage_audit.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentInfo.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --entity-column id_student --group-column code_module --reveal-identifiers
+  -> kdense_leakage_studentInfo.json rows_scanned 32593 row_limit_reached False
+$ python3 distribution_sensitivity.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentAssessment.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --column score --max-rows 1000000 --reveal-identifiers
+  -> kdense_sensitivity_score.json rows_scanned 173912 row_limit_reached False
+$ python3 distribution_sensitivity.py /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/studentVle.csv --root /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad --column sum_click --max-bytes 536870912 --max-rows 1000000 --reveal-identifiers
+  -> kdense_sensitivity_sum_click_first1M.json rows_scanned 1000000 row_limit_reached True
+# exit 0

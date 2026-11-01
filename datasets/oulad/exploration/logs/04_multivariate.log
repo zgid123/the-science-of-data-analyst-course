@@ -1,0 +1,8 @@
+# 2026-11-01T15:41:17Z  $ /Users/ptkhanh/Documents/master/milestone-da/venv/bin/python /Users/ptkhanh/Documents/master/milestone-da/datasets/oulad/exploration/code/04_multivariate.py
+wrote results/multivariate.json and results/trajectory_clusters.csv
+  strongest dimension pairs: [('code_module', 'gender', 0.5985), ('code_module', 'year', 0.3505), ('code_module', 'semester', 0.166), ('highest_education', 'age_band', 0.1384), ('region', 'highest_education', 0.1369)]
+  most_vs_least_deprived: crude -17.87 pp, engagement-standardised -15.39 pp
+  disability_yes_vs_no: crude -10.72 pp, engagement-standardised -9.46 pp
+  PCA explained variance: [0.2998, 0.1265, 0.1109, 0.099]
+  trajectories: k = 3 {2: 0.3565, 3: 0.2637, 4: 0.2113, 5: 0.2012, 6: 0.1732} sizes [13828, 10828, 7937] success [0.086, 0.6317, 0.9268]
+# exit 0

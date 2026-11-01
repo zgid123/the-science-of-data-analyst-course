@@ -1,0 +1,727 @@
+{
+  "dimension_associations": {
+    "pairs": [
+      {
+        "a": "code_module",
+        "b": "gender",
+        "cramers_v": 0.5985
+      },
+      {
+        "a": "code_module",
+        "b": "year",
+        "cramers_v": 0.3505
+      },
+      {
+        "a": "code_module",
+        "b": "semester",
+        "cramers_v": 0.166
+      },
+      {
+        "a": "highest_education",
+        "b": "age_band",
+        "cramers_v": 0.1384
+      },
+      {
+        "a": "region",
+        "b": "highest_education",
+        "cramers_v": 0.1369
+      },
+      {
+        "a": "region",
+        "b": "imd_band",
+        "cramers_v": 0.1313
+      },
+      {
+        "a": "code_module",
+        "b": "prev_attempts",
+        "cramers_v": 0.1257
+      },
+      {
+        "a": "code_module",
+        "b": "age_band",
+        "cramers_v": 0.1147
+      },
+      {
+        "a": "code_module",
+        "b": "highest_education",
+        "cramers_v": 0.1046
+      },
+      {
+        "a": "highest_education",
+        "b": "disability",
+        "cramers_v": 0.0992
+      },
+      {
+        "a": "code_module",
+        "b": "region",
+        "cramers_v": 0.083
+      },
+      {
+        "a": "highest_education",
+        "b": "imd_band",
+        "cramers_v": 0.0828
+      },
+      {
+        "a": "region",
+        "b": "disability",
+        "cramers_v": 0.0819
+      },
+      {
+        "a": "gender",
+        "b": "imd_band",
+        "cramers_v": 0.0783
+      },
+      {
+        "a": "gender",
+        "b": "highest_education",
+        "cramers_v": 0.076
+      },
+      {
+        "a": "gender",
+        "b": "region",
+        "cramers_v": 0.0748
+      },
+      {
+        "a": "code_module",
+        "b": "disability",
+        "cramers_v": 0.0691
+      },
+      {
+        "a": "imd_band",
+        "b": "disability",
+        "cramers_v": 0.0688
+      },
+      {
+        "a": "imd_band",
+        "b": "age_band",
+        "cramers_v": 0.0654
+      },
+      {
+        "a": "gender",
+        "b": "age_band",
+        "cramers_v": 0.065
+      },
+      {
+        "a": "year",
+        "b": "semester",
+        "cramers_v": 0.0638
+      },
+      {
+        "a": "semester",
+        "b": "prev_attempts",
+        "cramers_v": 0.0637
+      },
+      {
+        "a": "year",
+        "b": "gender",
+        "cramers_v": 0.0598
+      },
+      {
+        "a": "region",
+        "b": "age_band",
+        "cramers_v": 0.0576
+      },
+      {
+        "a": "disability",
+        "b": "prev_attempts",
+        "cramers_v": 0.0539
+      },
+      {
+        "a": "code_module",
+        "b": "imd_band",
+        "cramers_v": 0.0489
+      },
+      {
+        "a": "semester",
+        "b": "region",
+        "cramers_v": 0.0421
+      },
+      {
+        "a": "gender",
+        "b": "disability",
+        "cramers_v": 0.0396
+      },
+      {
+        "a": "year",
+        "b": "highest_education",
+        "cramers_v": 0.0359
+      },
+      {
+        "a": "year",
+        "b": "region",
+        "cramers_v": 0.0331
+      },
+      {
+        "a": "year",
+        "b": "prev_attempts",
+        "cramers_v": 0.0318
+      },
+      {
+        "a": "age_band",
+        "b": "disability",
+        "cramers_v": 0.0301
+      },
+      {
+        "a": "gender",
+        "b": "prev_attempts",
+        "cramers_v": 0.0265
+      },
+      {
+        "a": "imd_band",
+        "b": "prev_attempts",
+        "cramers_v": 0.0258
+      },
+      {
+        "a": "highest_education",
+        "b": "prev_attempts",
+        "cramers_v": 0.0254
+      },
+      {
+        "a": "region",
+        "b": "prev_attempts",
+        "cramers_v": 0.0231
+      },
+      {
+        "a": "semester",
+        "b": "age_band",
+        "cramers_v": 0.0198
+      },
+      {
+        "a": "semester",
+        "b": "imd_band",
+        "cramers_v": 0.0159
+      },
+      {
+        "a": "semester",
+        "b": "gender",
+        "cramers_v": 0.0139
+      },
+      {
+        "a": "semester",
+        "b": "highest_education",
+        "cramers_v": 0.0136
+      },
+      {
+        "a": "age_band",
+        "b": "prev_attempts",
+        "cramers_v": 0.0083
+      },
+      {
+        "a": "year",
+        "b": "age_band",
+        "cramers_v": 0.0036
+      },
+      {
+        "a": "year",
+        "b": "imd_band",
+        "cramers_v": 0.0
+      },
+      {
+        "a": "year",
+        "b": "disability",
+        "cramers_v": 0.0
+      },
+      {
+        "a": "semester",
+        "b": "disability",
+        "cramers_v": 0.0
+      }
+    ],
+    "pairs_v_at_least_0_1": 9
+  },
+  "stratified_gradients": {
+    "engagement_tertile_cuts": [
+      99.0,
+      287.0
+    ],
+    "most_vs_least_deprived": {
+      "crude_gap_pp_active_at_28": -17.87,
+      "within_engagement_tertile": {
+        "low": {
+          "gap_pp": -14.7,
+          "n1": 2147,
+          "n2": 1343
+        },
+        "middle": {
+          "gap_pp": -16.51,
+          "n1": 1784,
+          "n2": 1619
+        },
+        "high": {
+          "gap_pp": -14.96,
+          "n1": 1548,
+          "n2": 1658
+        }
+      },
+      "engagement_standardised_gap_pp": -15.39,
+      "within_education": {
+        "A Level or Equivalent": {
+          "gap_pp": -14.19,
+          "n1": 2752,
+          "n2": 2426
+        },
+        "HE Qualification": {
+          "gap_pp": -24.94,
+          "n1": 709,
+          "n2": 992
+        },
+        "Lower Than A Level": {
+          "gap_pp": -15.61,
+          "n1": 3222,
+          "n2": 1773
+        }
+      }
+    },
+    "disability_yes_vs_no": {
+      "crude_gap_pp_active_at_28": -10.72,
+      "within_engagement_tertile": {
+        "low": {
+          "gap_pp": -5.14,
+          "n1": 1017,
+          "n2": 8183
+        },
+        "middle": {
+          "gap_pp": -11.47,
+          "n1": 841,
+          "n2": 8353
+        },
+        "high": {
+          "gap_pp": -11.79,
+          "n1": 758,
+          "n2": 8401
+        }
+      },
+      "engagement_standardised_gap_pp": -9.46,
+      "within_education": {
+        "A Level or Equivalent": {
+          "gap_pp": -8.33,
+          "n1": 1432,
+          "n2": 12613
+        },
+        "HE Qualification": {
+          "gap_pp": -14.42,
+          "n1": 175,
+          "n2": 4555
+        },
+        "Lower Than A Level": {
+          "gap_pp": -7.96,
+          "n1": 1552,
+          "n2": 11606
+        }
+      }
+    }
+  },
+  "interactions": {
+    "code_module": [
+      {
+        "code_module": "AAA",
+        "n": 748,
+        "deprivation_gap_pp": -5.71,
+        "disability_gap_pp": -19.72,
+        "early_clicks_cliffs_delta": 0.2584
+      },
+      {
+        "code_module": "BBB",
+        "n": 7909,
+        "deprivation_gap_pp": -22.24,
+        "disability_gap_pp": -9.84,
+        "early_clicks_cliffs_delta": 0.3345
+      },
+      {
+        "code_module": "CCC",
+        "n": 4434,
+        "deprivation_gap_pp": -14.96,
+        "disability_gap_pp": -5.41,
+        "early_clicks_cliffs_delta": 0.38
+      },
+      {
+        "code_module": "DDD",
+        "n": 6272,
+        "deprivation_gap_pp": -19.31,
+        "disability_gap_pp": -11.23,
+        "early_clicks_cliffs_delta": 0.3896
+      },
+      {
+        "code_module": "EEE",
+        "n": 2934,
+        "deprivation_gap_pp": -18.99,
+        "disability_gap_pp": -8.51,
+        "early_clicks_cliffs_delta": 0.4756
+      },
+      {
+        "code_module": "FFF",
+        "n": 7762,
+        "deprivation_gap_pp": -20.59,
+        "disability_gap_pp": -12.84,
+        "early_clicks_cliffs_delta": 0.4346
+      },
+      {
+        "code_module": "GGG",
+        "n": 2534,
+        "deprivation_gap_pp": -15.52,
+        "disability_gap_pp": -4.8,
+        "early_clicks_cliffs_delta": 0.2778
+      }
+    ],
+    "year": [
+      {
+        "year": "2013",
+        "n": 13529,
+        "deprivation_gap_pp": -20.46,
+        "disability_gap_pp": -9.72,
+        "early_clicks_cliffs_delta": 0.3052
+      },
+      {
+        "year": "2014",
+        "n": 19064,
+        "deprivation_gap_pp": -17.6,
+        "disability_gap_pp": -10.25,
+        "early_clicks_cliffs_delta": 0.3162
+      }
+    ],
+    "semester": [
+      {
+        "semester": "B",
+        "n": 12488,
+        "deprivation_gap_pp": -18.22,
+        "disability_gap_pp": -8.12,
+        "early_clicks_cliffs_delta": 0.3145
+      },
+      {
+        "semester": "J",
+        "n": 20105,
+        "deprivation_gap_pp": -19.01,
+        "disability_gap_pp": -11.17,
+        "early_clicks_cliffs_delta": 0.3147
+      }
+    ]
+  },
+  "pca": {
+    "measures": [
+      "num_of_prev_attempts",
+      "studied_credits",
+      "date_registration",
+      "clicks_prestart",
+      "clicks_early",
+      "active_days_early",
+      "imd_ord",
+      "age_ord",
+      "edu_ord",
+      "first_submitted"
+    ],
+    "n": 32593,
+    "explained_variance_all": [
+      0.2998,
+      0.1265,
+      0.1109,
+      0.099,
+      0.0965,
+      0.0893,
+      0.0781,
+      0.0536,
+      0.0378,
+      0.0085
+    ],
+    "components": [
+      {
+        "component": 1,
+        "explained_variance": 0.2998,
+        "loadings": {
+          "active_days_early": 0.54,
+          "clicks_early": 0.534,
+          "clicks_prestart": 0.447,
+          "first_submitted": 0.432,
+          "edu_ord": 0.106,
+          "imd_ord": 0.1,
+          "num_of_prev_attempts": -0.081,
+          "age_ord": 0.078,
+          "date_registration": 0.036,
+          "studied_credits": -0.034
+        },
+        "cliffs_delta_success_vs_not": 0.5497
+      },
+      {
+        "component": 2,
+        "explained_variance": 0.1265,
+        "loadings": {
+          "studied_credits": 0.641,
+          "num_of_prev_attempts": 0.451,
+          "date_registration": -0.435,
+          "age_ord": -0.266,
+          "imd_ord": -0.241,
+          "edu_ord": -0.161,
+          "clicks_prestart": 0.146,
+          "active_days_early": 0.109,
+          "clicks_early": 0.072,
+          "first_submitted": -0.063
+        },
+        "cliffs_delta_success_vs_not": -0.1423
+      },
+      {
+        "component": 3,
+        "explained_variance": 0.1109,
+        "loadings": {
+          "edu_ord": 0.613,
+          "imd_ord": 0.507,
+          "age_ord": 0.394,
+          "num_of_prev_attempts": 0.326,
+          "studied_credits": 0.302,
+          "first_submitted": -0.074,
+          "active_days_early": -0.067,
+          "clicks_early": -0.057,
+          "clicks_prestart": -0.026,
+          "date_registration": 0.011
+        },
+        "cliffs_delta_success_vs_not": 0.0224
+      },
+      {
+        "component": 4,
+        "explained_variance": 0.099,
+        "loadings": {
+          "date_registration": 0.693,
+          "num_of_prev_attempts": 0.578,
+          "imd_ord": -0.301,
+          "first_submitted": 0.185,
+          "age_ord": 0.165,
+          "edu_ord": -0.161,
+          "clicks_prestart": -0.088,
+          "clicks_early": 0.018,
+          "studied_credits": 0.012,
+          "active_days_early": 0.012
+        },
+        "cliffs_delta_success_vs_not": 0.0032
+      }
+    ]
+  },
+  "trajectories": {
+    "k_selected": 3,
+    "selection": "highest silhouette (sample of 3,000, seed 0) among k = 3-6",
+    "by_k": {
+      "2": {
+        "inertia": 2415130.4,
+        "silhouette": 0.3565
+      },
+      "3": {
+        "inertia": 2078605.3,
+        "silhouette": 0.2637
+      },
+      "4": {
+        "inertia": 1925017.9,
+        "silhouette": 0.2113
+      },
+      "5": {
+        "inertia": 1837002.1,
+        "silhouette": 0.2012
+      },
+      "6": {
+        "inertia": 1776705.8,
+        "silhouette": 0.1732
+      }
+    },
+    "clusters": [
+      {
+        "cluster": 1,
+        "n": 13828,
+        "share": 0.4243,
+        "centre_weekly_clicks": [
+          3.39,
+          2.7,
+          3.48,
+          1.81,
+          1.42,
+          0.92,
+          0.84,
+          0.79,
+          0.44,
+          0.43,
+          0.22,
+          0.21,
+          0.27,
+          0.28,
+          0.21,
+          0.23,
+          0.2,
+          0.18,
+          0.17,
+          0.13,
+          0.15,
+          0.18,
+          0.15,
+          0.17,
+          0.11,
+          0.08,
+          0.1,
+          0.12,
+          0.11,
+          0.13,
+          0.11,
+          0.12,
+          0.12,
+          0.07,
+          0.06,
+          0.01,
+          0.01,
+          0.01
+        ],
+        "outcomes": {
+          "Withdrawn": 8460,
+          "Fail": 4179,
+          "Pass": 1065,
+          "Distinction": 124
+        },
+        "success": {
+          "k": 1189,
+          "n": 13828,
+          "rate": 0.086,
+          "lo": 0.0814,
+          "hi": 0.0908
+        },
+        "module_share": {
+          "AAA": 0.011,
+          "BBB": 0.295,
+          "CCC": 0.157,
+          "DDD": 0.186,
+          "EEE": 0.069,
+          "FFF": 0.192,
+          "GGG": 0.09
+        }
+      },
+      {
+        "cluster": 2,
+        "n": 10828,
+        "share": 0.3322,
+        "centre_weekly_clicks": [
+          21.6,
+          20.0,
+          29.31,
+          16.79,
+          16.75,
+          12.01,
+          13.45,
+          12.98,
+          7.72,
+          8.3,
+          3.35,
+          3.12,
+          5.69,
+          6.37,
+          5.33,
+          5.78,
+          5.38,
+          5.74,
+          6.75,
+          5.87,
+          6.0,
+          5.74,
+          4.82,
+          4.4,
+          2.72,
+          1.91,
+          2.06,
+          2.81,
+          3.17,
+          3.53,
+          3.02,
+          2.79,
+          3.26,
+          2.41,
+          1.23,
+          0.22,
+          0.17,
+          0.13
+        ],
+        "outcomes": {
+          "Withdrawn": 1613,
+          "Fail": 2375,
+          "Pass": 5805,
+          "Distinction": 1035
+        },
+        "success": {
+          "k": 6840,
+          "n": 10828,
+          "rate": 0.6317,
+          "lo": 0.6226,
+          "hi": 0.6407
+        },
+        "module_share": {
+          "AAA": 0.026,
+          "BBB": 0.255,
+          "CCC": 0.134,
+          "DDD": 0.202,
+          "EEE": 0.093,
+          "FFF": 0.186,
+          "GGG": 0.103
+        }
+      },
+      {
+        "cluster": 3,
+        "n": 7937,
+        "share": 0.2435,
+        "centre_weekly_clicks": [
+          80.48,
+          75.47,
+          95.8,
+          74.61,
+          69.56,
+          58.5,
+          66.18,
+          59.18,
+          41.02,
+          39.9,
+          22.67,
+          16.82,
+          30.6,
+          43.98,
+          40.36,
+          41.01,
+          41.55,
+          48.53,
+          60.67,
+          58.89,
+          60.3,
+          55.64,
+          46.84,
+          40.91,
+          31.65,
+          22.42,
+          21.19,
+          26.07,
+          29.59,
+          32.14,
+          34.61,
+          33.49,
+          28.42,
+          17.51,
+          5.4,
+          1.15,
+          0.84,
+          0.63
+        ],
+        "outcomes": {
+          "Withdrawn": 83,
+          "Fail": 498,
+          "Pass": 5491,
+          "Distinction": 1865
+        },
+        "success": {
+          "k": 7356,
+          "n": 7937,
+          "rate": 0.9268,
+          "lo": 0.9209,
+          "hi": 0.9323
+        },
+        "module_share": {
+          "AAA": 0.038,
+          "BBB": 0.135,
+          "CCC": 0.103,
+          "DDD": 0.192,
+          "EEE": 0.122,
+          "FFF": 0.389,
+          "GGG": 0.022
+        }
+      }
+    ],
+    "cramers_v_cluster_vs_outcome": 0.5169,
+    "note": "centre_weekly_clicks = expm1 of the mean log1p weekly clicks (a geometric-type mean, a typical enrolment of the cluster); trajectories cover the whole presentation, so clusters partly record withdrawal itself"
+  }
+}

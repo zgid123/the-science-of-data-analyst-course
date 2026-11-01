@@ -1,0 +1,24 @@
+# 2026-11-01T15:41:56Z  $ bash -c node '/private/tmp/claude-501/bundled-skills/2.1.312/1b1efdded7e262b57571245e2ef9e65f/dataviz/scripts/validate_palette.js' '#c23a3a,#ec7b70,#5598e7,#184f95' --mode light --surface '#ffffff' && node '/private/tmp/claude-501/bundled-skills/2.1.312/1b1efdded7e262b57571245e2ef9e65f/dataviz/scripts/validate_palette.js' '#2a78d6,#eb6834,#1baf7a' --mode light --surface '#ffffff'
+
+Palette (light, surface #ffffff, categorical): 4 slots
+  [PASS] Lightness band         all 4 inside L 0.43–0.77
+  [PASS] Chroma floor           all 4 >= 0.1
+  [PASS] CVD separation         worst adjacent #ec7b70↔#c23a3a ΔE 15.6 (deutan) · tritan 16.1
+  [PASS] Normal-vision floor    worst adjacent #ec7b70↔#c23a3a ΔE 16.2 (normal)
+  [WARN] Contrast vs surface    below 3:1 — relief required (visible labels or table view): [["#ec7b70",2.75],["#5598e7",2.99]]
+
+  → ALL CHECKS PASS  (CVD in the 6–8 floor band is legal ONLY with secondary encoding: direct labels, gaps, or texture)
+  scope: categorical palettes only. For a lone status/text color check text contrast with this script's apca() or contrast(); for a sequential ramp, lightness monotonicity.
+
+
+Palette (light, surface #ffffff, categorical): 3 slots
+  [PASS] Lightness band         all 3 inside L 0.43–0.77
+  [PASS] Chroma floor           all 3 >= 0.1
+  [PASS] CVD separation         worst adjacent #1baf7a↔#eb6834 ΔE 9.2 (deutan) · tritan 32.7
+  [PASS] Normal-vision floor    worst adjacent #1baf7a↔#eb6834 ΔE 27.6 (normal)
+  [WARN] Contrast vs surface    below 3:1 — relief required (visible labels or table view): [["#1baf7a",2.82]]
+
+  → ALL CHECKS PASS  (CVD in the 6–8 floor band is legal ONLY with secondary encoding: direct labels, gaps, or texture)
+  scope: categorical palettes only. For a lone status/text color check text contrast with this script's apca() or contrast(); for a sequential ramp, lightness monotonicity.
+
+# exit 0

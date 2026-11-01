@@ -1,0 +1,21 @@
+# 2026-11-01T15:42:09Z  manual visual review (no headless browser installed; macOS Quick Look renderer)
+$ perl -e 'alarm 40; exec @ARGV' qlmanage -t -s 1500 -o <scratch> <scratch>/<slice>.html
+  slices of report.html, each with the rail: page top, Section 3, Section 5.1, Section 8
+redesign (frontend-design; plan and critique in design-notes.md), three render rounds:
+  round 1 found: double numbers in the rail issue list; "Section 2" links wrapping; issue names wrapping word by
+    word; checklist ticks too faint; confidence intervals breaking at the en dash.
+  round 2: all five fixed; new regression: rail links clipped by the no-wrap rule.
+  round 3: rail exempted; all four slices clean.
+earlier rounds (same method): the 12 charts, including trajectory-cluster labels (fixed slots) and the clipped
+  "100%" / "0K" axis labels.
+link check: 55 in-page links all resolve to an id; 22 distinct file links all exist (python, report.html).
+not checked: narrow-screen layout (the renderer has a fixed width); hover and current-section marker in a live browser.
+# exit 0
+# 2026-11-01T15:50:11Z  addendum: prose width cap removed at the team's request (p, li, status, figure captions)
+$ qlmanage render of the Section 5.1 slice: paragraphs end at the same right edge as the table and Figure 7.
+$ grep -c "72ch|80ch" report.html -> 0
+# exit 0
+# 2026-11-01T15:51:44Z  addendum: title (h1) width cap 22em removed at the team's request
+$ qlmanage render of the page top: the title spans the content column to the same right edge as text and tables.
+$ grep -c "22em|72ch|80ch" report.html -> 0
+# exit 0

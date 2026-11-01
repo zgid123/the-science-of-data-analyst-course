@@ -1,6 +1,13 @@
 .DS_Store
 venv/
 .venv/
-datasets
-!datasets/README.md
 __pycache__
+*.log
+
+# Datasets: raw files stay local (large, re-fetched by scripts/fetch-datasets);
+# each dataset's exploration/ folder (code, results, logs, report) is tracked.
+datasets/*/*
+!datasets/*/exploration/
+!datasets/*/exploration/**/*.log
+datasets/inventory.json
+final-project/datasets

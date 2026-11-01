@@ -1,0 +1,44 @@
+table,column,role,rows,empty_fields,question_mark,missing,missing_rate,distinct,cardinality_ratio,completeness,whitespace_padded,min,max,mean,std,p1,p5,p25,p50,p75,p95,p99,zeros,negatives,non_integer,mean_to_median
+courses,code_module,dimension,22,0,0,0,0.0,7,0.318182,complete,0,,,,,,,,,,,,,,,
+courses,code_presentation,dimension,22,0,0,0,0.0,4,0.181818,complete,0,,,,,,,,,,,,,,,
+courses,module_presentation_length,metric (days),22,0,0,0,0.0,7,0.318182,complete,,234.0,269.0,255.5455,13.6547,234.0,240.0,241.0,262.0,268.0,269.0,269.0,0,0,0,0.975
+assessments,code_module,dimension,206,0,0,0,0.0,7,0.033981,complete,0,,,,,,,,,,,,,,,
+assessments,code_presentation,dimension,206,0,0,0,0.0,4,0.019417,complete,0,,,,,,,,,,,,,,,
+assessments,id_assessment,identifier,206,0,0,0,0.0,206,1.0,complete,,,,,,,,,,,,,,,,
+assessments,assessment_type,dimension,206,0,0,0,0.0,3,0.014563,complete,0,,,,,,,,,,,,,,,
+assessments,date,temporal (day offset),206,11,0,11,0.053398,75,0.364078,incomplete,,12.0,261.0,145.0051,76.0011,18.0,20.0,74.0,152.0,222.0,240.0,241.0,0,0,0,0.954
+assessments,weight,metric (%),206,0,0,0,0.0,24,0.116505,complete,,0.0,100.0,20.8738,30.3842,0.0,0.0,0.0,12.5,25.0,100.0,100.0,56,0,14,1.67
+vle,id_site,identifier,6364,0,0,0,0.0,6364,1.0,complete,,,,,,,,,,,,,,,,
+vle,code_module,dimension,6364,0,0,0,0.0,7,0.0011,complete,0,,,,,,,,,,,,,,,
+vle,code_presentation,dimension,6364,0,0,0,0.0,4,0.000629,complete,0,,,,,,,,,,,,,,,
+vle,activity_type,dimension,6364,0,0,0,0.0,20,0.003143,complete,0,,,,,,,,,,,,,,,
+vle,week_from,temporal (week),6364,5243,0,5243,0.823853,31,0.004871,sparse,,0.0,29.0,15.2043,8.7929,1.0,1.0,8.0,15.0,22.0,28.0,29.0,2,0,0,1.014
+vle,week_to,temporal (week),6364,5243,0,5243,0.823853,31,0.004871,sparse,,0.0,29.0,15.215,8.7798,1.0,1.0,8.0,15.0,22.0,28.0,29.0,2,0,0,1.014
+studentInfo,code_module,dimension,32593,0,0,0,0.0,7,0.000215,complete,0,,,,,,,,,,,,,,,
+studentInfo,code_presentation,dimension,32593,0,0,0,0.0,4,0.000123,complete,0,,,,,,,,,,,,,,,
+studentInfo,id_student,identifier,32593,0,0,0,0.0,28785,0.883165,complete,,,,,,,,,,,,,,,,
+studentInfo,gender,dimension,32593,0,0,0,0.0,2,0.000061,complete,0,,,,,,,,,,,,,,,
+studentInfo,region,dimension,32593,0,0,0,0.0,13,0.000399,complete,0,,,,,,,,,,,,,,,
+studentInfo,highest_education,dimension,32593,0,0,0,0.0,5,0.000153,complete,0,,,,,,,,,,,,,,,
+studentInfo,imd_band,dimension (ordinal),32593,1111,0,1111,0.034087,11,0.000337,mostly complete,0,,,,,,,,,,,,,,,
+studentInfo,age_band,dimension (ordinal),32593,0,0,0,0.0,3,0.000092,complete,0,,,,,,,,,,,,,,,
+studentInfo,num_of_prev_attempts,metric (count),32593,0,0,0,0.0,7,0.000215,complete,,0.0,6.0,0.1632,0.4798,0.0,0.0,0.0,0.0,0.0,1.0,2.0,28421,0,0,
+studentInfo,studied_credits,metric (credits),32593,0,0,0,0.0,61,0.001872,complete,,30.0,655.0,79.7587,41.0719,30.0,30.0,60.0,60.0,120.0,150.0,240.0,0,0,0,1.329
+studentInfo,disability,boolean (Y/N),32593,0,0,0,0.0,2,0.000061,complete,0,,,,,,,,,,,,,,,
+studentInfo,final_result,dimension (outcome),32593,0,0,0,0.0,4,0.000123,complete,0,,,,,,,,,,,,,,,
+studentRegistration,code_module,dimension,32593,0,0,0,0.0,7,0.000215,complete,0,,,,,,,,,,,,,,,
+studentRegistration,code_presentation,dimension,32593,0,0,0,0.0,4,0.000123,complete,0,,,,,,,,,,,,,,,
+studentRegistration,id_student,identifier,32593,0,0,0,0.0,28785,0.883165,complete,,,,,,,,,,,,,,,,
+studentRegistration,date_registration,temporal (day offset),32593,45,0,45,0.001381,333,0.010217,complete,,-322.0,167.0,-69.4113,49.2605,-207.0,-156.0,-100.0,-57.0,-29.0,-15.0,-2.0,2,32312,0,1.218
+studentRegistration,date_unregistration,temporal (day offset),32593,22521,0,22521,0.690977,417,0.012794,sparse,,-365.0,444.0,49.7576,82.4609,-136.0,-68.0,-2.0,27.0,109.0,202.0,228.0,419,2678,0,1.843
+studentAssessment,id_assessment,identifier,173912,0,0,0,0.0,188,0.001081,complete,,,,,,,,,,,,,,,,
+studentAssessment,id_student,identifier,173912,0,0,0,0.0,23369,0.134373,complete,,,,,,,,,,,,,,,,
+studentAssessment,date_submitted,temporal (day offset),173912,0,0,0,0.0,312,0.001794,complete,,-11.0,608.0,116.0329,71.4841,-1.0,17.0,51.0,116.0,173.0,230.0,243.0,61,2057,0,1.0
+studentAssessment,is_banked,boolean (0/1),173912,0,0,0,0.0,2,0.000012,complete,,0.0,1.0,0.011,0.1042,0.0,0.0,0.0,0.0,0.0,0.0,1.0,172003,0,0,
+studentAssessment,score,metric (0-100),173912,173,0,173,0.000995,102,0.000587,complete,,0.0,100.0,75.7996,18.7981,15.0,40.0,65.0,80.0,90.0,100.0,100.0,329,0,0,0.947
+studentVle,code_module,dimension,10655280,0,0,0,0.0,7,1e-6,complete,0,,,,,,,,,,,,,,,
+studentVle,code_presentation,dimension,10655280,0,0,0,0.0,4,0.0,complete,0,,,,,,,,,,,,,,,
+studentVle,id_student,identifier,10655280,0,0,0,0.0,26074,0.002447,complete,,,,,,,,,,,,,,,,
+studentVle,id_site,identifier,10655280,0,0,0,0.0,6268,0.000588,complete,,,,,,,,,,,,,,,,
+studentVle,date,temporal (day offset),10655280,0,0,0,0.0,295,0.000028,complete,,-25.0,269.0,95.174,76.0713,-17.0,-4.0,25.0,86.0,156.0,226.0,240.0,76643,688988,0,1.107
+studentVle,sum_click,metric (count),10655280,0,0,0,0.0,498,0.000047,complete,,1.0,6977.0,3.7169,8.849,1.0,1.0,1.0,2.0,3.0,12.0,34.0,0,0,0,1.858
