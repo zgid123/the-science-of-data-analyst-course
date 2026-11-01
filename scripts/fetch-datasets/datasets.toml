@@ -1,0 +1,137 @@
+# Sources for the 7 education datasets screened for the final project.
+# fetch_datasets.py reads this file; edit it (not the script) when a URL or file changes.
+#
+# Analysis focus: OULAD (focus = true). The final project's deep-dive analysis uses OULAD;
+# a run without dataset names fetches only the focus dataset(s). The other six are reference
+# datasets from the screening stage (milestone 2), fetched with --all or by name.
+#
+# Per dataset:
+#   focus      true for the dataset(s) the project analyses; fetched by default
+#   dir        folder under final-project/datasets/
+#   files      downloads: url (or gdrive_id), save_as, optional sha256/bytes pins,
+#              extract = true to unzip next to the archive (archives are kept as raw evidence),
+#              extract_to = subfolder for the extracted members (default: the dataset folder)
+#   git        repository cloned as the dataset folder before downloads
+#   derive     "fff" builds the dataset from another one (see fetch_datasets.py)
+#   expect     checks after fetching: path (glob, relative to the dataset folder), optional
+#              sha256, rows (data rows excluding the header), min_count (number of glob matches)
+
+[[dataset]]
+name = "oulad"
+title = "Open University Learning Analytics Dataset (analysis focus)"
+dir = "oulad"
+focus = true
+files = [
+  { url = "https://ndownloader.figshare.com/files/8606371", save_as = "anonymisedData.zip", extract = true, bytes = 46750706, sha256 = "90dda45037939953f979072fa70a809ebe07e90ec783c408762af7698a3825ec" },
+]
+# hashes recorded in milestones/02/data-collection/metadata/raw_manifest.csv
+expect = [
+  { path = "courses.csv", sha256 = "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75" },
+  { path = "assessments.csv", sha256 = "8cc738fb88ad760571d6f2a23059bfee0ffcae3bcd830514c9cbd5c6d5a046f1" },
+  { path = "vle.csv", sha256 = "d1b28303dea802ad87b4484e1196e878e06824850b9a4fe8aa34693439fe87e9" },
+  { path = "studentInfo.csv", sha256 = "7e6f3e474a5eee00639d2a414a6c7e928745823c2d2c2563ca1780145f99b0d6" },
+  { path = "studentRegistration.csv", sha256 = "0d32676285372aaf2e7a80304e5b274b4fba24313e2ca4c04317225e1ec90170" },
+  { path = "studentAssessment.csv", sha256 = "fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e" },
+  { path = "studentVle.csv", sha256 = "52668253d876c5becbcb72185977152700cecab2942aca807fecc3dd54b937f0" },
+]
+
+[[dataset]]
+name = "fff"
+title = "OULAD module FFF (benchmark STEM course, 4 cohorts)"
+dir = "fff"
+derive = "fff"
+expect = [
+  { path = "courses.csv", rows = 4 },
+  { path = "assessments.csv", rows = 52 },
+  { path = "vle.csv", rows = 1967 },
+  { path = "studentInfo.csv", rows = 7762 },
+  { path = "studentRegistration.csv", rows = 7762 },
+  { path = "studentAssessment.csv", rows = 54815 },
+  { path = "studentVle.csv", rows = 4014499 },
+]
+
+[[dataset]]
+name = "ednet"
+title = "EdNet (Santa AI tutoring platform): contents metadata + KT1 response logs"
+dir = "ednet"
+files = [
+  { gdrive_id = "117aYJAWG3GU48suS66NPaB82HwFj6xWS", save_as = "contents.zip", extract = true },
+  { gdrive_id = "1AmGcOs5U31wIIqvthn9ARqJMrMTFTcaw", save_as = "ednet_kt1.zip", extract = true, extract_to = "KT1" },
+]
+expect = [
+  { path = "**/questions.csv" },
+  { path = "**/lectures.csv" },
+  { path = "**/payments.csv" },
+  { path = "**/coupons.csv" },
+  { path = "KT1/**/u*.csv", min_count = 784309 },
+]
+
+[[dataset]]
+name = "mooccubex"
+title = "MOOCCubeX (Tsinghua University / XuetangX)"
+dir = "mooccubex"
+git = "https://github.com/THU-KEG/MOOCCubeX.git"
+files = [
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/entities/course.json", save_as = "data/entities/course.json" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/entities/teacher.json", save_as = "data/entities/teacher.json" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/entities/school.json", save_as = "data/entities/school.json" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/course-field.json", save_as = "data/relations/course-field.json" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/course-teacher.txt", save_as = "data/relations/course-teacher.txt" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/concept-course.txt", save_as = "data/relations/concept-course.txt" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/concept-other.txt", save_as = "data/relations/concept-other.txt" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/concept-problem.txt", save_as = "data/relations/concept-problem.txt" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/concept-comment.txt", save_as = "data/relations/concept-comment.txt" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/user-xiaomu.json", save_as = "data/relations/user-xiaomu.json" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/user-reply.txt", save_as = "data/relations/user-reply.txt" },
+  { url = "https://lfs.aminer.cn/misc/moocdata/data/mooccube2/relations/comment-reply.txt", save_as = "data/relations/comment-reply.txt" },
+]
+expect = [
+  { path = "README.md" },
+  { path = "data/entities/*.json", min_count = 3 },
+  { path = "data/relations/*", min_count = 9 },
+]
+
+[[dataset]]
+name = "college-scorecard"
+title = "College Scorecard (U.S. Department of Education), most recent cohorts"
+dir = "college-scorecard"
+files = [
+  { url = "https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_06102026.zip", save_as = "Most-Recent-Cohorts-Institution_06102026.zip", extract = true },
+  { url = "https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Field-of-Study_06102026.zip", save_as = "Most-Recent-Cohorts-Field-of-Study_06102026.zip", extract = true },
+]
+expect = [
+  { path = "**/Most-Recent-Cohorts-Institution*.csv" },
+  { path = "**/Most-Recent-Cohorts-Field-of-Study*.csv" },
+]
+
+[[dataset]]
+name = "pisa-2022"
+title = "PISA 2022 (OECD): school and teacher questionnaires, ESCS trend"
+dir = "pisa-2022"
+# webfs.oecd.org avoids the bot protection on www.oecd.org
+files = [
+  { url = "https://webfs.oecd.org/pisa2022/SCH_QQQ_SPSS.zip", save_as = "SCH_QQQ_SPSS.zip", extract = true },
+  { url = "https://webfs.oecd.org/pisa2022/TCH_QQQ_SPSS.zip", save_as = "TCH_QQQ_SPSS.zip", extract = true },
+  { url = "https://webfs.oecd.org/pisa2022/escs_trend.zip", save_as = "escs_trend.zip", extract = true },
+]
+expect = [
+  { path = "**/CY08MSP_SCH_QQQ.SAV" },
+  { path = "**/CY08MSP_TCH_QQQ.SAV" },
+  { path = "**/escs_trend.csv" },
+  { path = "**/ReadMe.txt" },
+]
+
+[[dataset]]
+name = "talis-2024"
+title = "TALIS 2024 (OECD): principal and teacher questionnaires"
+dir = "talis-2024"
+# webfs.oecd.org throttles single connections (~60 KB/s): fetch_datasets.py splits
+# large files into parallel HTTP range requests (--workers)
+files = [
+  { url = "https://webfs.oecd.org/talis/2024/core/TALIS2024_principals_NoESE_CSV.zip", save_as = "TALIS2024_principals_NoESE_CSV.zip", extract = true },
+  { url = "https://webfs.oecd.org/talis/2024/core/TALIS2024_teachers_NoESE_CSV.zip", save_as = "TALIS2024_teachers_NoESE_CSV.zip", extract = true },
+]
+expect = [
+  { path = "**/acgintt4.csv" }, { path = "**/bcgintt4.csv" }, { path = "**/ccgintt4.csv" }, { path = "**/tcgintt4.csv" },
+  { path = "**/atgintt4.csv" }, { path = "**/btgintt4.csv" }, { path = "**/ctgintt4.csv" }, { path = "**/ttgintt4.csv" },
+]

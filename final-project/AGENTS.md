@@ -2,7 +2,7 @@
 
 ## Task scope and skill selection
 
-Use the dataset and analytical objective selected by the user. Work on one dataset at a time unless the user explicitly requests otherwise. If the dataset is not identified or its location cannot be resolved, ask before starting dependent work. Do not select other datasets or infer the task from neighboring files.
+The project's analysis focus is OULAD (`../datasets/oulad/`, fetched by default with `../scripts/fetch-datasets/fetch_datasets.py`); use it whenever the user names no other dataset. The six other datasets (FFF, EdNet, MOOCCubeX, College Scorecard, PISA 2022, TALIS 2024) are reference data from the milestone 2 screening; use one when the user selects it, together with the analytical objective the user sets. Work on one dataset at a time unless the user explicitly requests otherwise. If a selected dataset's location cannot be resolved, ask before starting dependent work. Do not select other datasets or infer the task from neighboring files.
 
 For analytical work, read `../.agents/skills/data-analyst/SKILL.md`. Use `prompts/generic-prompt.md` when the user invokes it. The skill lives with the other agent skills at the repository root (`../.agents/skills/`). Paths in this guide are relative to `final-project/`; skill references are relative to the skill directory.
 
@@ -12,8 +12,8 @@ Use the requested output location or default to `samples/<dataset>/`. Maintain r
 
 ## Current structure
 
-- `prompts/`: research brief and dataset acquisition instructions.
-- `datasets/`: local educational datasets and archives; see `datasets/README.md` for the documented inventory.
+- `prompts/`: research brief (`generic-prompt.md`).
+- `datasets/`: symlink to the repository-root `../datasets/` (git-ignored), kept so earlier code and evidence paths resolve. The fetcher `../scripts/fetch-datasets/fetch_datasets.py` creates the data and `../datasets/inventory.json`, which records what is on disk and its checks.
 - `requirements/` and `milestones/`: instructor guidance and team proposal/work; distinguish proposed assumptions from measurements and confirmed decisions.
 - `../.agents/skills/data-analyst/SKILL.md`: local analytical methodology and skill instructions.
 - `../.agents/skills/data-analyst/workflows/analytics-lifecycle.md`: detailed ten-stage lifecycle and verification gates.
@@ -54,7 +54,7 @@ Use existing accessible dashboard tooling or portable HTML when none is establis
 4. Validate consequential variable meanings using records and documentation rather than column names alone.
 5. Preserve source files. Write cleaned tables and features to a separate generated directory, with lineage and documented transformations. Do not silently drop rows, impute values, or remove outliers.
 6. Profile schemas and small samples first; use selected columns, chunked reads, or query engines for large logs. For sampled analysis, record the frame, seed, selection, exclusions and limits; assess stability when material. Avoid choosing a small sample solely to finish quickly. Respect the selected dataset scope.
-7. Use `prompts/download-dataset-prompt.md` only when acquisition is needed. Check existing files before downloading, extracting, or regenerating data.
+7. Acquire datasets with `../scripts/fetch-datasets/fetch_datasets.py` (see its README): OULAD by default, reference datasets by name or `--all`. Run it with `--verify` first to see what is already on disk; the script skips finished work and resumes interrupted downloads.
 
 ## Research design and leakage prevention
 

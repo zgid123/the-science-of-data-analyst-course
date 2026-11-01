@@ -9,6 +9,10 @@ Vietnamese; English technical terms stay as written.
 - `final-project/` – team N04 project; has its own `AGENTS.md`, which takes precedence inside that folder.
   `milestones/<nn>/milestone-<n>.pdf` is the instructor brief, `milestone-<n>.md` its verified Markdown copy,
   `N04_*` the team deliverables.
+- `datasets/` – education datasets (git-ignored), fetched and verified by `scripts/fetch-datasets/`. **Analysis
+  focus: OULAD** (`datasets/oulad/`); the six other datasets are reference data from the milestone 2 screening.
+  `final-project/datasets` links here for earlier code.
+- `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`).
 - `.agents/skills/` – all agent skills: `data-analyst` (analysis for the final project), `pdf2md`, `skill-creator`,
   `slidev`. Their GitHub provenance is in `skills-lock.json`.
 
@@ -26,6 +30,7 @@ Skill scripts with a `# /// script` header declare their own dependencies: run t
 
 ```bash
 cd minitask/02/slidev && pnpm dev | pnpm build | pnpm export | pnpm ppt         # slides
+venv/bin/python scripts/fetch-datasets/fetch_datasets.py [--all | names]        # OULAD by default -> datasets/
 uv run .agents/skills/pdf2md/scripts/convert.py <file.pdf>                      # PDF -> Markdown
 uv run .agents/skills/pdf2md/scripts/verify.py <file.pdf> <file.md>             # must print RESULT: PASS
 python3 -m unittest discover -s .agents/skills/data-analyst/evals -v           # data-analyst evaluator tests

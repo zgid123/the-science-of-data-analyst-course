@@ -1,0 +1,2 @@
+# fetch_datasets.py uses only the standard library, except for EdNet (Google Drive):
+gdown>=5.2
