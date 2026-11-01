@@ -1,11 +1,113 @@
 {
   "version": 1,
   "skills": {
+    "analyze": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/analyze/SKILL.md",
+      "computedHash": "25eedc0a20bc437e8620b45df1513fd448696a400e81cacaf56acc546ed03172"
+    },
+    "build-dashboard": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/build-dashboard/SKILL.md",
+      "computedHash": "978eb2a7d02cfb91967e94f78567464a68aa222c4e95583d1c7a970d89028c00"
+    },
+    "create-viz": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/create-viz/SKILL.md",
+      "computedHash": "fba08bfbed7bad31c794169dcde5de9fbc5fdf2307ac00d81832092613a4b079"
+    },
+    "dask": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/dask/SKILL.md",
+      "computedHash": "9a613364a5dfc3a5ff34eb90f53cf62063f4e2d6f34db3dda6d0af38228063f8"
+    },
     "data-analyst": {
       "source": "zgid123/skills",
       "sourceType": "github",
       "skillPath": "skills/data-analyst/SKILL.md",
       "computedHash": "b3c5322a3617d49cffc1a2b47ff5aa4a6e60078aceb4ffdfc3db1e93b759bbca"
+    },
+    "data-context-extractor": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/data-context-extractor/SKILL.md",
+      "computedHash": "63976ecbf43333889258d3cb1395c7ba3eb5a9f27b3f28459e5c0d79a2bbfed6"
+    },
+    "data-visualization": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/data-visualization/SKILL.md",
+      "computedHash": "64055493de5ff4afed716cc871018cf6e020338b76d3e7ed5c2985707cb43cec"
+    },
+    "experimental-design": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/experimental-design/SKILL.md",
+      "computedHash": "cd1f2d677225a8e641a1e9aa40b608561877e584c8c5d916fdc83f12e5199dd0"
+    },
+    "exploratory-data-analysis": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/exploratory-data-analysis/SKILL.md",
+      "computedHash": "b6c8bd8ccfb65cb9b5d702030052efe95c7aa465192081527cb6e85567764625"
+    },
+    "explore-data": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/explore-data/SKILL.md",
+      "computedHash": "eeb0f7d4b8a834f773253a3038ca41b38b5ce2c1706dd0a4f3f7b4a38ce819e3"
+    },
+    "matplotlib": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/matplotlib/SKILL.md",
+      "computedHash": "018665720fdf586784eeaac4a733ae26c6d9b9579220d7918d6507e07c394e00"
+    },
+    "polars": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/polars/SKILL.md",
+      "computedHash": "abe3762e45eefc706b5f969ae42d1dad9245428e77e863fba5a65f2889e6e01e"
+    },
+    "pymc": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/pymc/SKILL.md",
+      "computedHash": "235d6e4d0466202544ddc5da5e2d40071e680c7302849eb1fe4e16898ffe22ad"
+    },
+    "scientific-visualization": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/scientific-visualization/SKILL.md",
+      "computedHash": "5477b78120e75a65aed0f6e15dbf71b8669cca9160c2036847fd7bb45a3344c1"
+    },
+    "scikit-learn": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/scikit-learn/SKILL.md",
+      "computedHash": "124b80e65a64ec6b763d0dcf469b8314c3f06ef3065e0b488707f8978085ef25"
+    },
+    "scikit-survival": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/scikit-survival/SKILL.md",
+      "computedHash": "7cb4cf1eaf51e07e2964988fe7b1b3e186b381cb311412f49df27e0c6165415c"
+    },
+    "seaborn": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/seaborn/SKILL.md",
+      "computedHash": "582a9db77900c0d59c96a5f0cf556c5ab44b0fa0813baa3e6c2ed747114d172c"
+    },
+    "shap": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/shap/SKILL.md",
+      "computedHash": "c09a1f05c14e1bf428ae5602b1719bd69aaad0d1b8094966fa469bc5755ca969"
     },
     "skill-creator": {
       "source": "anthropics/skills",
@@ -18,6 +120,48 @@
       "sourceType": "github",
       "skillPath": "skills/slidev/SKILL.md",
       "computedHash": "745f8fbe6bd26c17699efff608548560e6d4b5ca65dbcff70d394f9d6f6374aa"
+    },
+    "sql-queries": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/sql-queries/SKILL.md",
+      "computedHash": "d0c75aada6c7920f568cbe313a0228802d171635a5f39be328d29f49c6393097"
+    },
+    "statistical-analysis": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/statistical-analysis/SKILL.md",
+      "computedHash": "58fe533547c45096fe784f043609fe07742b5390f056ce850ab9ecb239f04c73"
+    },
+    "statistical-power": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/statistical-power/SKILL.md",
+      "computedHash": "fb1d22adbc6a1237d3c680f34f3cd377bcf1786edec830b44f249178186078d9"
+    },
+    "statsmodels": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/statsmodels/SKILL.md",
+      "computedHash": "90d8ce6e44f063f6f8ad6506b827f7ebb7a39955365603b96fbca47e1fcca5df"
+    },
+    "vaex": {
+      "source": "K-Dense-AI/scientific-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/vaex/SKILL.md",
+      "computedHash": "29f759d32217655f77a31b3e1953ad5b7339585fd3477bfadb7feca3868a3db0"
+    },
+    "validate-data": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/validate-data/SKILL.md",
+      "computedHash": "352a628a430896ad0b2cbe5f4f28409b0a9db406f947dc545d8610d5ed9ed217"
+    },
+    "write-query": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "skillPath": "data/skills/write-query/SKILL.md",
+      "computedHash": "ff1501243d9fee91a6c420de5767657de763e7ed195c99c5f129b670fe2900ab"
     }
   }
 }

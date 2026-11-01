@@ -14,8 +14,18 @@ Vietnamese; English technical terms stay as written.
   focus: OULAD** (`datasets/oulad/`); the six other datasets are reference data from the milestone 2 screening.
   `final-project/datasets` links here for earlier code.
 - `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`).
-- `.agents/skills/` – all agent skills: `data-analyst` (analysis for the final project), `pdf2md`, `skill-creator`,
-  `slidev`. Their GitHub provenance is in `skills-lock.json`.
+- `.agents/skills/` – all agent skills; GitHub provenance in `skills-lock.json` (update with `npx skills update`).
+  - Project and tooling: `data-analyst` (lifecycle and methodology for the final project), `pdf2md`, `skill-creator`, `slidev`.
+  - Data work on OULAD, by step:
+    - explore and check quality: `explore-data`, `exploratory-data-analysis` (scripted profile and leakage audit;
+      pass `--missing-token '?'` for OULAD, `--max-bytes 536870912` for files over 64 MB);
+    - wrangle: `polars` (full 10.6M-row `studentVle.csv`), `dask`, `vaex`;
+    - statistics and models: `statistical-analysis`, `statsmodels`, `scikit-learn`, `scikit-survival` (time to
+      withdrawal), `pymc`, `shap`, `statistical-power`, `experimental-design`;
+    - visualise and report: `data-visualization`, `create-viz`, `seaborn`, `matplotlib`, `scientific-visualization`,
+      `build-dashboard`, `analyze`;
+    - check before sharing: `validate-data`; SQL and data dictionaries: `sql-queries`, `write-query`,
+      `data-context-extractor`.
 
 ## Setup
 
