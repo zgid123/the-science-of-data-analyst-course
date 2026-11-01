@@ -61,6 +61,12 @@
       "skillPath": "data/skills/explore-data/SKILL.md",
       "computedHash": "eeb0f7d4b8a834f773253a3038ca41b38b5ce2c1706dd0a4f3f7b4a38ce819e3"
     },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576"
+    },
     "matplotlib": {
       "source": "K-Dense-AI/scientific-agent-skills",
       "sourceType": "github",
@@ -144,6 +150,12 @@
       "sourceType": "github",
       "skillPath": "skills/statsmodels/SKILL.md",
       "computedHash": "90d8ce6e44f063f6f8ad6506b827f7ebb7a39955365603b96fbca47e1fcca5df"
+    },
+    "theme-factory": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/theme-factory/SKILL.md",
+      "computedHash": "598ddfa9784ae2a8c55be5dbb047b98564d875dea6f4669168a87ae1ea1a4ed3"
     },
     "vaex": {
       "source": "K-Dense-AI/scientific-agent-skills",
