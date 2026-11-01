@@ -5,7 +5,8 @@
 Coursework for MTH045 – The Science of Data Analytics (education analytics). Briefs and deliverables are mostly
 Vietnamese; English technical terms stay as written.
 
-- `minitask/<nn>/` – individual tasks: brief PDF, data, analysis script/notebook, report `.docx`, Slidev deck in `slidev/`.
+- `samples/` – standalone reference samples. `slidev/` is the reference Slidev deck (theme, layouts,
+  section structure, Vue charts, speaker-note format): start new decks from its README.
 - `final-project/` – team N04 project; has its own `AGENTS.md`, which takes precedence inside that folder.
   `milestones/<nn>/milestone-<n>.pdf` is the instructor brief, `milestone-<n>.md` its verified Markdown copy,
   `N04_*` the team deliverables.
@@ -21,7 +22,7 @@ Vietnamese; English technical terms stay as written.
 ```bash
 python3 -m venv venv                                  # shared environment, git-ignored
 venv/bin/pip install -r <folder>/requirements.txt     # per-task dependencies
-cd minitask/02/slidev && pnpm install --frozen-lockfile
+cd samples/slidev && pnpm install --frozen-lockfile
 ```
 
 Skill scripts with a `# /// script` header declare their own dependencies: run them with `uv run <script>`.
@@ -29,7 +30,7 @@ Skill scripts with a `# /// script` header declare their own dependencies: run t
 ## Commands
 
 ```bash
-cd minitask/02/slidev && pnpm dev | pnpm build | pnpm export | pnpm ppt         # slides
+cd samples/slidev && pnpm dev | pnpm build | pnpm export | pnpm ppt # reference deck
 venv/bin/python scripts/fetch-datasets/fetch_datasets.py [--all | names]        # OULAD by default -> datasets/
 uv run .agents/skills/pdf2md/scripts/convert.py <file.pdf>                      # PDF -> Markdown
 uv run .agents/skills/pdf2md/scripts/verify.py <file.pdf> <file.md>             # must print RESULT: PASS

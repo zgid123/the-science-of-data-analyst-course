@@ -1,5 +1,5 @@
 ---
-title: "Mini Task 02"
+title: "UK Online Retail"
 theme: '@alphacifer/slidev-academic-theme'
 colorSchema: light
 addons:
@@ -16,13 +16,13 @@ fonts:
   serif: Roboto
   mono: Roboto Mono
 duration: 10min
-exportFilename: minitask-02
+exportFilename: slidev-sample
 ---
 
-# Mini Task 02
+# UK Online Retail
 
 <div class="text-[#0f172a] text-[30px]">
-  UK Online Retail<br />Phân tích kinh doanh và giải quyết vấn đề
+  Phân tích kinh doanh và giải quyết vấn đề
 </div>
 <Speaker
   class="left-[48px] right-auto [&_.alpha-date]:hidden text-[var(--alpha-academic-primary)]"
