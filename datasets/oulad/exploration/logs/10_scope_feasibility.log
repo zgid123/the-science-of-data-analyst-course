@@ -1,0 +1,13 @@
+# 2026-11-03T16:23:50Z  $ venv/bin/python code/10_scope_feasibility.py
+enrolments 32,593; success 47.2%; withdrawn 31.2%; registered on day 0 29,403
+withdrawn by day (day-0 cohort): day_14 4.7%, day_28 6.7%, day_60 10.7%; by the end 23.7%
+share of day-0-cohort withdrawals after: day_14 80.3%, day_28 71.9%, day_60 55.0%
+first due day: 12-61 (median 23); 16 of 22 presentations due before day 28
+day_14: cohort 350-2079 (total 28,061); non-completion 24.9%-58.3%; 15% list 53-312
+day_28: cohort 348-2019 (total 27,522); non-completion 24.7%-55.7%; 15% list 53-303
+day_60: cohort 340-1908 (total 26,353); non-completion 23.0%-52.5%; 15% list 51-287
+at_first_due: cohort 349-2059 (total 27,823); non-completion 24.9%-57.6%; 15% list 53-309
+day-28 groups: most deprived 20% 2,648, least deprived 20% 4,618, IMD missing 1,027, disability 2,608
+split (day-28 cohort / later non-completers): 2013B 3 pres. 4,122/2,029; 2013J 6 pres. 7,680/3,207; 2014B 6 pres. 6,509/3,152; 2014J 7 pres. 9,211/3,755
+written results/scope_feasibility.json
+# exit 0

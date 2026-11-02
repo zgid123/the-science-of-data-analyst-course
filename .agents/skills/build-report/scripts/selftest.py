@@ -20,6 +20,7 @@ from pathlib import Path
 
 from PIL import Image
 from docx import Document
+from docx.enum.section import WD_ORIENT
 from docx.oxml.ns import qn
 from pptx.util import Inches, Pt
 
@@ -145,6 +146,41 @@ def main():
     code, out = run(*CHECKS["docx"])
     expect("docx: clean document passes", code == 0, out.splitlines()[0][:90])
 
+    print("== Title page layouts (names side by side; one label/value table)")
+
+    def title_facts(path):
+        d = Document(str(path))
+        big = [p.text for p in d.paragraphs[:12] if any(r.font.size and r.font.size.pt == 22 for r in p.runs)]
+        t = d.tables[0]._tbl
+        cols = [int(g.get(qn("w:w"))) / 567 for g in t.iter(qn("w:gridCol"))]
+        tblw = t.tblPr.find(qn("w:tblW"))
+        gap = t.find(".//" + qn("w:tcMar"))
+        return big, cols, tblw.get(qn("w:type")) if tblw is not None else None, gap is not None
+    big, cols, wtype, _ = title_facts(DOCX)
+    expect("title page: the title in capitals after the logo takes the title size",
+           len(big) == 1 and big[0].startswith("PRESENTATION ATTACKS"), str(big)[:90])
+    expect("title page: names side by side keep two wide columns in a fixed-width table",
+           len(cols) == 2 and min(cols) >= 6 and wtype == "dxa", f"{[round(c, 1) for c in cols]} cm, tblW {wtype}")
+    page = REP / "00-0-title-page.md"
+    original = page.read_text(encoding="utf-8")
+    page.write_text("**UNIVERSITY OF SCIENCE**\n\n**FACULTY OF INFORMATION TECHNOLOGY**\n\n"
+                    "![University logo](assets/university-logo.png)\n\n**Course name**\n\n"
+                    "**A Report Title in Sentence Case**\n\n| **Group information** | **Content** |\n| :---- | :---- |\n"
+                    "| Lecturers | Dr. Nguyễn Văn A |\n|  | MSc. Trần Thị B |\n| Simulated stakeholders | Program "
+                    "Manager, Course Lecturer, Academic Advisor, Student (played by generative AI) |\n"
+                    "| Submission date | 14 November 2026 |\n\nHo Chi Minh City, 2026\n", encoding="utf-8")
+    label_docx = BASE / "out" / "Test_EN_labels.docx"
+    code, out = run("build_docx.py", "--src", REP.relative_to(ROOT), "--lang", "en", "--out",
+                    label_docx.relative_to(ROOT), "--title", "Test Report", "--short-title", "Test Report",
+                    "--author", "Test Group")
+    page.write_text(original, encoding="utf-8")
+    big, cols, wtype, gap = title_facts(label_docx)
+    expect("title page: a sentence-case title is found, not the faculty line above the logo",
+           code == 0 and big == ["A Report Title in Sentence Case"], str(big)[:90])
+    expect("title page: a label column fits its longest label, the values take the rest, with a gap after the labels",
+           len(cols) == 2 and 22 * 0.21 <= cols[0] <= 7.5 and abs(sum(cols) - 15) < 0.1 and gap,
+           f"{[round(c, 1) for c in cols]} cm, gap {gap}")
+
     print("== Vector figures ([TASK.layout] vector_figures = true)")
     figs = sorted((REP / "assets" / "figures").glob("*.png"))
     twin = figs[0].with_suffix(".svg")
@@ -188,6 +224,42 @@ def main():
                         str(compact_docx.relative_to(ROOT))], cwd=ROOT, capture_output=True, text=True,
                        env={**os.environ, "BUILD_REPORT_CONFIG": str(CONFIG)})
     expect("compact: a regular task still requires the contents", r.returncode == 1 and "table of contents" in r.stdout)
+
+    print("== Title page height")
+    from docx.shared import Pt
+    tall_docx = BASE / "out" / "Test_EN_tall_title.docx"
+    base_docx = DOCX if DOCX.exists() else compact_docx
+    tdoc = Document(str(base_docx))
+    first = next(p for p in tdoc.paragraphs if p.text.strip())
+    first.paragraph_format.space_before = Pt(800)                       # pushes the title page past one page
+    tdoc.save(str(tall_docx))
+    r = subprocess.run([PY, str(SCRIPTS / "check_docx.py"), "--task", "selftest", "--lang", "en", "--docx",
+                        str(tall_docx.relative_to(ROOT))], cwd=ROOT, capture_output=True, text=True,
+                       env={**os.environ, "BUILD_REPORT_CONFIG": str(CONFIG)})
+    expect("title page: a title page taller than its text area fails the post-check",
+           r.returncode == 1 and "title page is estimated" in r.stdout, (r.stdout + r.stderr).splitlines()[0][:90])
+
+    print("== Run-on parts ([TASK.layout] part_breaks = false)")
+    runon_docx = BASE / "out" / "Test_EN_runon.docx"
+    code, out = run("build_docx.py", "--src", REP.relative_to(ROOT), "--lang", "en", "--out",
+                    runon_docx.relative_to(ROOT), "--title", "Test Report", "--short-title", "Test Report",
+                    "--author", "Test Group", "--run-on-parts")
+    rdoc = Document(str(runon_docx))
+    instr = " ".join(t.text or "" for t in rdoc.element.body.iter(qn("w:instrText")))
+    h1 = rdoc.styles["Heading 1"].paragraph_format.page_break_before
+    refs_break = [p for p in rdoc.paragraphs if p.style.name == "Heading 1" and p.text.strip() == "References"
+                  and p._p.find(qn("w:pPr") + "/" + qn("w:pageBreakBefore")) is not None]
+    part_break = [p for p in rdoc.paragraphs if p.style.name == "Heading 1" and p.text[:1].isdigit()
+                  and p._p.find(qn("w:pPr") + "/" + qn("w:pageBreakBefore")) is not None]
+    land = sum(1 for s in rdoc.sections if s.orientation == WD_ORIENT.LANDSCAPE)
+    expect("run-on: builds with the contents and the lists kept", code == 0 and 'TOC \\o "1-3"' in instr)
+    expect("run-on: numbered parts start without a page break, the references on a new page",
+           not h1 and not part_break and len(refs_break) == 1, f"style break={h1}, refs={len(refs_break)}")
+    expect("run-on: every page stays portrait", land == 0, f"{land} landscape sections")
+    r = subprocess.run([PY, str(SCRIPTS / "check_docx.py"), "--task", "selftest", "--lang", "en", "--docx",
+                        str(runon_docx.relative_to(ROOT))], cwd=ROOT, capture_output=True, text=True,
+                       env={**os.environ, "BUILD_REPORT_CONFIG": str(CONFIG)})
+    expect("run-on: post-check passes for a regular task", r.returncode == 0, (r.stdout + r.stderr).splitlines()[0][:90])
 
     m, f = "01-01-2-evaluation-metrics.md", "01-02-3-pad-in-the-biometric-pipeline.md"
     refs = next(p.name for p in sorted(REP.glob("[0-9][0-9]-references.md")))   # the reference list, whatever its number

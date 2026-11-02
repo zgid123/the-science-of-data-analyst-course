@@ -20,6 +20,7 @@ Data understanding and descriptive analysis of all 7 OULAD tables, on the full d
 | 6 | `code/06_kdense_audits.sh` | independent profiles, leakage screen and distribution sensitivity with the `exploratory-data-analysis` skill | `evidence/*.json` (`*_first1M` = first 1,000,000 click rows) |
 | 7 | `code/07_build_report.py` | render `REPORT.md` with charts, checkboxes and appendices | `report.html` |
 | 8 | `validate_palette.js` (dataviz skill, optional) | colour-blindness and contrast check of the outcome and cluster palettes | `logs/08_palette_check.log` |
+| 10 | `code/10_scope_feasibility.py` | scope feasibility for the Milestone 1 proposal (`reports/milestone-1`): cohorts still registered at days 14, 28, 60 and at each first assessment due day, their outcomes, withdrawal still ahead, assessments due, capacity-limited list sizes and, per temporal split, the most a perfect list of each capacity can cover; fairness group sizes; descriptive only, no comparator or method evaluated | `results/scope_feasibility.json`, `logs/10_scope_feasibility.log` |
 
 Shared modules hold everything the stages reuse and no analysis of their own:
 

@@ -15,11 +15,17 @@ edit `AGENTS.md`, and re-read it after each change so the updated rules apply in
   (git-ignored) and each `<dataset>/exploration/` folder of analysis results is tracked. **Analysis
   focus: OULAD** (`datasets/oulad/`); the six other datasets are reference data from the milestone 2 screening.
   `final-project/datasets` links here for earlier code.
+- `reports/` – report tasks built with the `research-report` and `build-report` skills: each task folder holds its
+  outline (`reference.md`), plan (`EXECUTION_PLAN.md`, `plan.toml`), ledger (`PROGRESS.md`), research trail, section
+  files (`report/*.md` in English, `*.vi.md` Vietnamese twins), `logs/` and `build/`. `tasks.toml` and `Makefile` at the
+  root register the tasks. `reports/milestone-1/` is the team's fresh Milestone 1 proposal.
 - `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`).
 - `.agents/skills/` – all agent skills; GitHub provenance in `skills-lock.json` (update with `npx skills update`).
   Each skill has a relative symlink in `.claude/skills/` (`ln -s ../../.agents/skills/<name> .claude/skills/<name>`),
   so Claude Code and other agents read the same copy; `.claude/` is git-ignored, so recreate the links after a clone.
-  - Project and tooling: `data-analyst` (lifecycle and methodology for the final project), `pdf2md`, `skill-creator`, `slidev`.
+  - Project and tooling: `data-analyst` (lifecycle and methodology for the final project), `pdf2md`, `skill-creator`, `slidev`,
+    `research-report` (evidence-backed report from an outline, with plan, ledger and research trail), `build-report`
+    (checks, Vietnamese twin and Word build of a report).
   - Data work on OULAD, by step:
     - explore and check quality: `explore-data`, `exploratory-data-analysis` (scripted profile and leakage audit;
       pass absolute paths, `--max-rows 1000000` and `--max-bytes 536870912` for large files); the OULAD baseline
@@ -51,6 +57,8 @@ venv/bin/python scripts/fetch-datasets/fetch_datasets.py [--all | names]        
 uv run .agents/skills/pdf2md/scripts/convert.py <file.pdf>                      # PDF -> Markdown
 uv run .agents/skills/pdf2md/scripts/verify.py <file.pdf> <file.md>             # must print RESULT: PASS
 python3 -m unittest discover -s .agents/skills/data-analyst/evals -v           # data-analyst evaluator tests
+venv/bin/python .claude/skills/research-report/scripts/progress.py --base reports/milestone-1 next  # report task: next card
+make precheck TASK=milestone-1 | make build TASK=milestone-1 | make all TASK=milestone-1          # report checks and Word build
 ```
 
 ## Working out loud
@@ -91,6 +99,9 @@ Report Markdown files are sections of one formal report compiled to Word.
   use tables or numbered lists where they aid reading.
 - State what is, what works and what is recommended. Include every limitation, phrased as a condition or
   scope: "reliable for courses with ≥ 200 students; smaller courses need a separate check".
+- Describe the final state only. Earlier drafts, interview rounds and revisions may be reused or reworked, but the
+  report never mentions them ("earlier round", "replaced", "no longer", "revision R3", "adapted from"): readers have
+  only the final document. Process history stays in the task's ledger, plan, research trail and logs.
 - Build cumulatively: each sentence adds evidence toward the section's point, linked by additive or causal
   connectors ("in addition", "as a result", "building on this"); let facts carry the argument.
 - Every section reads on its own:

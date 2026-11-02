@@ -83,6 +83,40 @@ def instr_texts(el):
     return " ".join(i.text or "" for i in el.iter(qn("w:instrText")))
 
 
+def title_page_height(doc):
+    """Estimated height in points of everything before the first heading (the title page), with the line model of
+    estimate_pages.py: lines at their font size, spacing before and after, images at their printed height, table rows
+    at their column widths. Capitals and table cells are counted wide, so the estimate errs on the tall side."""
+    from estimate_pages import line_count
+    from docx.table import Table
+    from docx.text.paragraph import Paragraph
+    h = 0.0
+    width = doc.sections[0].page_width - doc.sections[0].left_margin - doc.sections[0].right_margin
+    width_pt = width / 12700.0
+    for el in doc.element.body:
+        if el.tag == qn("w:p"):
+            p = Paragraph(el, doc)
+            if p.style.name.startswith("Heading") or p.style.name == "Front Heading":
+                break
+            pf = p.paragraph_format
+            h += (pf.space_before.pt if pf.space_before is not None else 0)
+            h += (pf.space_after.pt if pf.space_after is not None else 0)
+            h += max((int(e.get("cy")) for e in el.iter(qn("wp:extent"))), default=0) / 12700.0
+            size = next((r.font.size.pt for r in p.runs if r.font.size), 12.0)
+            wide = 0.6 if p.text.isupper() else 0.5
+            h += line_count(p.text, size, width_pt, wide) * size * 1.3
+        elif el.tag == qn("w:tbl"):
+            grid = [int(g.get(qn("w:w"))) / 20.0 for g in el.find(qn("w:tblGrid")).findall(qn("w:gridCol"))]
+            for row in Table(el, doc).rows:
+                tallest = 0.0
+                for cell, w in zip(row.cells, grid):
+                    size = next((r.font.size.pt for cp in cell.paragraphs for r in cp.runs if r.font.size), 12.0)
+                    n = sum(line_count(cp.text, size, max(w - 12, 20), 0.5) for cp in cell.paragraphs)
+                    tallest = max(tallest, n * size * 1.3 + 4)
+                h += tallest
+    return h
+
+
 def check(doc_path, rep, task, cfg, pack, n_refs, rules=None):
     errors, warns = [], []
     doc = Document(str(doc_path))
@@ -180,7 +214,23 @@ def check(doc_path, rep, task, cfg, pack, n_refs, rules=None):
     upd = doc.settings.element.find(qn("w:updateFields"))
     if upd is None or upd.get(qn("w:val")) not in ("true", "1"):
         errors.append("settings: updateFields is not set, so Word will not fill in the contents on opening")
+    else:
+        # Schema order (CT_Settings): Word tolerates a misplaced element, Google Docs, Pages and LibreOffice do not
+        names = [c.tag.split("}")[1] for c in doc.settings.element if isinstance(c.tag, str)]
+        early = {"zoom", "embedSystemFonts", "proofState", "stylePaneFormatFilter", "doNotTrackMoves",
+                 "defaultTabStop", "characterSpacingControl", "savePreviewPicture"}
+        if any(n in early for n in names[names.index("updateFields") + 1:]):
+            errors.append("settings: updateFields is out of schema order, so strict readers (Google Docs, Pages, "
+                          "LibreOffice) reject the file")
+    if any(m.get(qn("w:gutter")) is None for m in doc.element.body.iter(qn("w:pgMar"))):
+        errors.append("a section's page margins lack the required w:gutter attribute, so strict readers reject the file")
     sections = doc.sections
+    s0 = sections[0]
+    text_h = (s0.page_height - s0.top_margin - s0.bottom_margin) / 12700.0
+    title_h = title_page_height(doc)
+    if title_h > text_h:
+        errors.append(f"the title page is estimated at {title_h:.0f} pt, more than its {text_h:.0f} pt text area, so "
+                      "it runs onto a second page: shorten the title or the names table, or reduce the fixed spacing")
     if sections[0].header.paragraphs and "".join(p.text for p in sections[0].header.paragraphs).strip():
         errors.append("the title page has a running header")
     numfmts = [(s._sectPr.find(qn("w:pgNumType"))) for s in sections]

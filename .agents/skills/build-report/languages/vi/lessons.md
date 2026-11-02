@@ -33,3 +33,20 @@ Decisions where the reviewer's habit and the house rules differed (2026-10-11): 
 | S3. Every slide reads on its own, in both languages (solo deck, 2026-10-28) | slide 4 showed "pool", "oracle" and "self-consistency" whose meaning lived only in the note → each defined on the slide, the chart's measure and one square's meaning stated | slides.md 2 "Every slide reads on its own"; slide-only reading pass (slides.md 1, step 3); deck-review pass 4; guide 3.2 |
 
 In S2 the English used three words for one component ("selection agent", "selector", "judge"), which an English reader takes as one thing; the Vietnamese turned them into unrelated terms, and the domain glossary itself had mapped "judge" and "selector" to different terms.
+
+## 3. A translated proposal the user could not read (milestone-1, 2026-11-04)
+
+The user, a native reader, found the Vietnamese proposal very hard to understand although every check passed. A reader
+test (an agent reading only the twins, `templates/prompts/report-reader-test.md`) flagged 82 of about 140 main-text
+passages: 49 understood only after rereading, 33 sounding translated. Sentence length was mostly within the guide
+(median 35 syllables); the causes were terms built to mirror English, a different denominator in each sentence, several
+conditions in one sentence, and delta translation, which kept the stiff wording of earlier rounds.
+
+| Lesson | Before → after | Rule lives in |
+| :---- | :---- | :---- |
+| T1. The everyday word of the field, not a mirror of the English | **lượt đăng ký học phần về sau không đạt hoặc rút học phần** → **sinh viên về sau không hoàn thành học phần**; **khả năng xem xét** → **năng lực xử lý của cán bộ**; **đợt học** → **lớp học phần**; **mốc xem xét** → **ngày lập danh sách** | guide 4, rule 8; topic glossary Replaces |
+| T2. Say which group a share is out of | tại ngày 28, 71,9% số lượt rút học phần **vẫn chưa diễn ra** → **trong số sinh viên còn theo học vào ngày 0 và về sau rút học phần**, 71,9% rút **sau ngày 28** | guide 2.3; review 3 |
+| T3. Name the scenario and what "at most" means | các danh sách theo kịch bản khả năng xem xét gồm 1.384 tên, nên … chỉ đạt độ bao phủ tối đa 36,9% → kịch bản chính giả định cán bộ xem xét kỹ được 15% số sinh viên …; các danh sách gồm 1.384 tên, ít hơn nhiều so với 3.755 sinh viên về sau không hoàn thành, nên ngay cả một danh sách hoàn hảo **cũng chỉ phát hiện được tối đa 36,9%** | guide 2.4; review 3 |
+| T4. One condition per sentence in a goal or a question | the SMART Goal box as one sentence with six conditions → a framing sentence, then "Điều kiện thứ nhất / thứ hai / thứ ba" | guide 2.1 |
+| T5. Rewrite, not patch, after a readability complaint | stale twins updated only where the English changed → every sentence rewritten from the English, then reviewed, a whole-report read and a second reader test | reference 4.2 step 1 and 4.3 stage 5; `report-translate.md` |
+| T6. Test the replacement term too | **lớp học phần** for the course → **học phần**; **năng lực xử lý của cán bộ** → **số sinh viên cán bộ liên hệ được mỗi tuần** (short form "khả năng liên hệ của cán bộ"); **ngày lập danh sách** → **đợt lập danh sách** (milestone-1, 2026-11-05: the native reader found the T1 replacements still unnatural) | guide 4, rule 8; topic glossary course-completion-early-contact |

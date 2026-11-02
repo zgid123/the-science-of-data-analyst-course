@@ -1,0 +1,1944 @@
+{
+  "definitions": "(dates are day offsets from the presentation start; aligned with stage 03's survival population):\n- registered at day d: date_registration <= d (missing: counted as registered from the start) and\n  date_unregistration missing or > d, so an enrolment that leaves on day d is not available on day d;\n- non-completion after d: final_result Fail or Withdrawn among those registered at day d;\n- day-0 cohort: date_unregistration missing or > 0, without the Withdrawn enrolments that have no unregistration day\n  (timing unknown), as in stage 03; withdrawn by day d: Withdrawn with date_unregistration <= d, so the shares equal\n  stage 03's Kaplan-Meier values (no censoring happens before the presentation ends);\n- first assessment due day: earliest due day of a TMA or CMA in the presentation (exams excluded).",
+  "capacity_scenarios": [
+    0.1,
+    0.15,
+    0.2
+  ],
+  "overall": {
+    "enrolments": 32593,
+    "outcomes": {
+      "Withdrawn": {
+        "n": 10156,
+        "share": 0.3116
+      },
+      "Fail": {
+        "n": 7052,
+        "share": 0.2164
+      },
+      "Pass": {
+        "n": 12361,
+        "share": 0.3793
+      },
+      "Distinction": {
+        "n": 3024,
+        "share": 0.0928
+      }
+    },
+    "success": {
+      "n": 15385,
+      "share": 0.472
+    },
+    "registered_day0": 29403,
+    "left_on_or_before_day0": 3097,
+    "withdrawn_from_day0_cohort": {
+      "n": 6974,
+      "share": 0.2372
+    },
+    "withdrawn_by_day": {
+      "day_14": {
+        "n": 1377,
+        "share": 0.0468
+      },
+      "day_28": {
+        "n": 1958,
+        "share": 0.0666
+      },
+      "day_60": {
+        "n": 3135,
+        "share": 0.1066
+      }
+    },
+    "share_of_day0_withdrawals_after_day": {
+      "day_14": 0.8026,
+      "day_28": 0.7192,
+      "day_60": 0.5505
+    },
+    "anomalies": {
+      "withdrawn_without_unregistration_day": 93,
+      "not_withdrawn_with_unregistration_day": 9,
+      "registration_day_missing": 45
+    }
+  },
+  "summary": {
+    "presentations": 22,
+    "first_due_day": {
+      "min": 12,
+      "max": 61,
+      "median": 23,
+      "presentations_due_before_day_28": 16
+    },
+    "day_14": {
+      "cohort_min": 350,
+      "cohort_max": 2079,
+      "cohort_total": 28061,
+      "success_rate_pooled": 0.5474,
+      "non_completion_rate_pooled": 0.4526,
+      "non_completion_rate_min": 0.2486,
+      "non_completion_rate_max": 0.5833,
+      "list_15pct_min": 53,
+      "list_15pct_max": 312
+    },
+    "day_28": {
+      "cohort_min": 348,
+      "cohort_max": 2019,
+      "cohort_total": 27522,
+      "success_rate_pooled": 0.5588,
+      "non_completion_rate_pooled": 0.4412,
+      "non_completion_rate_min": 0.2466,
+      "non_completion_rate_max": 0.5574,
+      "list_15pct_min": 53,
+      "list_15pct_max": 303
+    },
+    "day_60": {
+      "cohort_min": 340,
+      "cohort_max": 1908,
+      "cohort_total": 26353,
+      "success_rate_pooled": 0.5837,
+      "non_completion_rate_pooled": 0.4163,
+      "non_completion_rate_min": 0.2299,
+      "non_completion_rate_max": 0.5251,
+      "list_15pct_min": 51,
+      "list_15pct_max": 287
+    },
+    "at_first_due": {
+      "cohort_min": 349,
+      "cohort_max": 2059,
+      "cohort_total": 27823,
+      "success_rate_pooled": 0.5526,
+      "non_completion_rate_pooled": 0.4474,
+      "non_completion_rate_min": 0.2486,
+      "non_completion_rate_max": 0.5761,
+      "list_15pct_min": 53,
+      "list_15pct_max": 309
+    }
+  },
+  "groups_day28": {
+    "registered_day28": 27522,
+    "imd_band": {
+      "0-10%": 2648,
+      "10-20%": 0,
+      "20-30%": 2979,
+      "30-40%": 2997,
+      "40-50%": 2714,
+      "50-60%": 2689,
+      "60-70%": 2511,
+      "70-80%": 2516,
+      "80-90%": 2378,
+      "90-100%": 2240
+    },
+    "imd_missing": 1027,
+    "imd_most_deprived_20pct": 2648,
+    "imd_least_deprived_20pct": 4618,
+    "disability_yes": 2608,
+    "disability_no": 24914
+  },
+  "split_day28": {
+    "2013B": {
+      "presentations": 3,
+      "registered_day28": 4122,
+      "non_completion": 2029,
+      "list_10%": 413,
+      "coverage_ceiling_10%": 0.2035,
+      "list_15%": 620,
+      "coverage_ceiling_15%": 0.3056,
+      "list_20%": 825,
+      "coverage_ceiling_20%": 0.4066
+    },
+    "2013J": {
+      "presentations": 6,
+      "registered_day28": 7680,
+      "non_completion": 3207,
+      "list_10%": 771,
+      "coverage_ceiling_10%": 0.2404,
+      "list_15%": 1156,
+      "coverage_ceiling_15%": 0.3605,
+      "list_20%": 1538,
+      "coverage_ceiling_20%": 0.4796
+    },
+    "2014B": {
+      "presentations": 6,
+      "registered_day28": 6509,
+      "non_completion": 3152,
+      "list_10%": 653,
+      "coverage_ceiling_10%": 0.2072,
+      "list_15%": 979,
+      "coverage_ceiling_15%": 0.3106,
+      "list_20%": 1304,
+      "coverage_ceiling_20%": 0.4137
+    },
+    "2014J": {
+      "presentations": 7,
+      "registered_day28": 9211,
+      "non_completion": 3755,
+      "list_10%": 923,
+      "coverage_ceiling_10%": 0.2458,
+      "list_15%": 1384,
+      "coverage_ceiling_15%": 0.3686,
+      "list_20%": 1845,
+      "coverage_ceiling_20%": 0.4913
+    }
+  },
+  "per_presentation": [
+    {
+      "presentation": "AAA-2013J",
+      "code_module": "AAA",
+      "code_presentation": "2013J",
+      "enrolments": 383,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 370,
+        "Withdrawn": 49,
+        "Fail": 43,
+        "Pass": 258,
+        "Distinction": 20,
+        "non_completion": 92,
+        "non_completion_rate": 0.2486,
+        "success_rate": 0.7514,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9973,
+        "list_size": {
+          "10%": 37,
+          "15%": 56,
+          "20%": 74
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 369,
+        "Withdrawn": 47,
+        "Fail": 44,
+        "Pass": 258,
+        "Distinction": 20,
+        "non_completion": 91,
+        "non_completion_rate": 0.2466,
+        "success_rate": 0.7534,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 1.0,
+        "list_size": {
+          "10%": 37,
+          "15%": 56,
+          "20%": 74
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 361,
+        "Withdrawn": 38,
+        "Fail": 45,
+        "Pass": 258,
+        "Distinction": 20,
+        "non_completion": 83,
+        "non_completion_rate": 0.2299,
+        "success_rate": 0.7701,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 1.0,
+        "list_size": {
+          "10%": 37,
+          "15%": 55,
+          "20%": 73
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 370,
+        "Withdrawn": 49,
+        "Fail": 43,
+        "Pass": 258,
+        "Distinction": 20,
+        "non_completion": 92,
+        "non_completion_rate": 0.2486,
+        "success_rate": 0.7514,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 1.0,
+        "list_size": {
+          "10%": 37,
+          "15%": 56,
+          "20%": 74
+        }
+      }
+    },
+    {
+      "presentation": "AAA-2014J",
+      "code_module": "AAA",
+      "code_presentation": "2014J",
+      "enrolments": 365,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 350,
+        "Withdrawn": 51,
+        "Fail": 46,
+        "Pass": 229,
+        "Distinction": 24,
+        "non_completion": 97,
+        "non_completion_rate": 0.2771,
+        "success_rate": 0.7229,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9914,
+        "list_size": {
+          "10%": 35,
+          "15%": 53,
+          "20%": 70
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 348,
+        "Withdrawn": 49,
+        "Fail": 46,
+        "Pass": 229,
+        "Distinction": 24,
+        "non_completion": 95,
+        "non_completion_rate": 0.273,
+        "success_rate": 0.727,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 1.0,
+        "list_size": {
+          "10%": 35,
+          "15%": 53,
+          "20%": 70
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 340,
+        "Withdrawn": 41,
+        "Fail": 46,
+        "Pass": 229,
+        "Distinction": 24,
+        "non_completion": 87,
+        "non_completion_rate": 0.2559,
+        "success_rate": 0.7441,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 1.0,
+        "list_size": {
+          "10%": 34,
+          "15%": 51,
+          "20%": 68
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 349,
+        "Withdrawn": 50,
+        "Fail": 46,
+        "Pass": 229,
+        "Distinction": 24,
+        "non_completion": 96,
+        "non_completion_rate": 0.2751,
+        "success_rate": 0.7249,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9971,
+        "list_size": {
+          "10%": 35,
+          "15%": 53,
+          "20%": 70
+        }
+      }
+    },
+    {
+      "presentation": "BBB-2013B",
+      "code_module": "BBB",
+      "code_presentation": "2013B",
+      "enrolments": 1767,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1606,
+        "Withdrawn": 346,
+        "Fail": 458,
+        "Pass": 647,
+        "Distinction": 155,
+        "non_completion": 804,
+        "non_completion_rate": 0.5006,
+        "success_rate": 0.4994,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.8836,
+        "list_size": {
+          "10%": 161,
+          "15%": 241,
+          "20%": 322
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1529,
+        "Withdrawn": 268,
+        "Fail": 459,
+        "Pass": 647,
+        "Distinction": 155,
+        "non_completion": 727,
+        "non_completion_rate": 0.4755,
+        "success_rate": 0.5245,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9444,
+        "list_size": {
+          "10%": 153,
+          "15%": 230,
+          "20%": 306
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1453,
+        "Withdrawn": 192,
+        "Fail": 459,
+        "Pass": 647,
+        "Distinction": 155,
+        "non_completion": 651,
+        "non_completion_rate": 0.448,
+        "success_rate": 0.552,
+        "assessments_due_before": 3,
+        "share_with_any_click_before": 0.9628,
+        "list_size": {
+          "10%": 146,
+          "15%": 218,
+          "20%": 291
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 1597,
+        "Withdrawn": 336,
+        "Fail": 459,
+        "Pass": 647,
+        "Distinction": 155,
+        "non_completion": 795,
+        "non_completion_rate": 0.4978,
+        "success_rate": 0.5022,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9098,
+        "list_size": {
+          "10%": 160,
+          "15%": 240,
+          "20%": 320
+        }
+      }
+    },
+    {
+      "presentation": "BBB-2013J",
+      "code_module": "BBB",
+      "code_presentation": "2013J",
+      "enrolments": 2237,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1851,
+        "Withdrawn": 262,
+        "Fail": 519,
+        "Pass": 895,
+        "Distinction": 175,
+        "non_completion": 781,
+        "non_completion_rate": 0.4219,
+        "success_rate": 0.5781,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.8887,
+        "list_size": {
+          "10%": 186,
+          "15%": 278,
+          "20%": 371
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1834,
+        "Withdrawn": 244,
+        "Fail": 519,
+        "Pass": 896,
+        "Distinction": 175,
+        "non_completion": 763,
+        "non_completion_rate": 0.416,
+        "success_rate": 0.584,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9351,
+        "list_size": {
+          "10%": 184,
+          "15%": 276,
+          "20%": 367
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1782,
+        "Withdrawn": 191,
+        "Fail": 519,
+        "Pass": 896,
+        "Distinction": 176,
+        "non_completion": 710,
+        "non_completion_rate": 0.3984,
+        "success_rate": 0.6016,
+        "assessments_due_before": 3,
+        "share_with_any_click_before": 0.9596,
+        "list_size": {
+          "10%": 179,
+          "15%": 268,
+          "20%": 357
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 1838,
+        "Withdrawn": 249,
+        "Fail": 519,
+        "Pass": 895,
+        "Distinction": 175,
+        "non_completion": 768,
+        "non_completion_rate": 0.4178,
+        "success_rate": 0.5822,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9189,
+        "list_size": {
+          "10%": 184,
+          "15%": 276,
+          "20%": 368
+        }
+      }
+    },
+    {
+      "presentation": "BBB-2014B",
+      "code_module": "BBB",
+      "code_presentation": "2014B",
+      "enrolments": 1613,
+      "first_due_day": 12,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1289,
+        "Withdrawn": 170,
+        "Fail": 394,
+        "Pass": 560,
+        "Distinction": 165,
+        "non_completion": 564,
+        "non_completion_rate": 0.4375,
+        "success_rate": 0.5625,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9209,
+        "list_size": {
+          "10%": 129,
+          "15%": 194,
+          "20%": 258
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1280,
+        "Withdrawn": 159,
+        "Fail": 394,
+        "Pass": 561,
+        "Distinction": 166,
+        "non_completion": 553,
+        "non_completion_rate": 0.432,
+        "success_rate": 0.568,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9484,
+        "list_size": {
+          "10%": 128,
+          "15%": 192,
+          "20%": 256
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1247,
+        "Withdrawn": 125,
+        "Fail": 395,
+        "Pass": 561,
+        "Distinction": 166,
+        "non_completion": 520,
+        "non_completion_rate": 0.417,
+        "success_rate": 0.583,
+        "assessments_due_before": 3,
+        "share_with_any_click_before": 0.9679,
+        "list_size": {
+          "10%": 125,
+          "15%": 188,
+          "20%": 250
+        }
+      },
+      "at_first_due": {
+        "day": 12,
+        "n": 1292,
+        "Withdrawn": 174,
+        "Fail": 393,
+        "Pass": 560,
+        "Distinction": 165,
+        "non_completion": 567,
+        "non_completion_rate": 0.4389,
+        "success_rate": 0.5611,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9087,
+        "list_size": {
+          "10%": 130,
+          "15%": 194,
+          "20%": 259
+        }
+      }
+    },
+    {
+      "presentation": "BBB-2014J",
+      "code_module": "BBB",
+      "code_presentation": "2014J",
+      "enrolments": 2292,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1791,
+        "Withdrawn": 262,
+        "Fail": 386,
+        "Pass": 963,
+        "Distinction": 180,
+        "non_completion": 648,
+        "non_completion_rate": 0.3618,
+        "success_rate": 0.6382,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9302,
+        "list_size": {
+          "10%": 180,
+          "15%": 269,
+          "20%": 359
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1786,
+        "Withdrawn": 244,
+        "Fail": 391,
+        "Pass": 971,
+        "Distinction": 180,
+        "non_completion": 635,
+        "non_completion_rate": 0.3555,
+        "success_rate": 0.6445,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.972,
+        "list_size": {
+          "10%": 179,
+          "15%": 268,
+          "20%": 358
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1741,
+        "Withdrawn": 198,
+        "Fail": 391,
+        "Pass": 972,
+        "Distinction": 180,
+        "non_completion": 589,
+        "non_completion_rate": 0.3383,
+        "success_rate": 0.6617,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9787,
+        "list_size": {
+          "10%": 175,
+          "15%": 262,
+          "20%": 349
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 1803,
+        "Withdrawn": 261,
+        "Fail": 391,
+        "Pass": 971,
+        "Distinction": 180,
+        "non_completion": 652,
+        "non_completion_rate": 0.3616,
+        "success_rate": 0.6384,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9573,
+        "list_size": {
+          "10%": 181,
+          "15%": 271,
+          "20%": 361
+        }
+      }
+    },
+    {
+      "presentation": "CCC-2014B",
+      "code_module": "CCC",
+      "code_presentation": "2014B",
+      "enrolments": 1936,
+      "first_due_day": 18,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1591,
+        "Withdrawn": 553,
+        "Fail": 375,
+        "Pass": 471,
+        "Distinction": 192,
+        "non_completion": 928,
+        "non_completion_rate": 0.5833,
+        "success_rate": 0.4167,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9566,
+        "list_size": {
+          "10%": 160,
+          "15%": 239,
+          "20%": 319
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1498,
+        "Withdrawn": 460,
+        "Fail": 375,
+        "Pass": 471,
+        "Distinction": 192,
+        "non_completion": 835,
+        "non_completion_rate": 0.5574,
+        "success_rate": 0.4426,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9753,
+        "list_size": {
+          "10%": 150,
+          "15%": 225,
+          "20%": 300
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1351,
+        "Withdrawn": 313,
+        "Fail": 375,
+        "Pass": 471,
+        "Distinction": 192,
+        "non_completion": 688,
+        "non_completion_rate": 0.5093,
+        "success_rate": 0.4907,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9793,
+        "list_size": {
+          "10%": 136,
+          "15%": 203,
+          "20%": 271
+        }
+      },
+      "at_first_due": {
+        "day": 18,
+        "n": 1564,
+        "Withdrawn": 526,
+        "Fail": 375,
+        "Pass": 471,
+        "Distinction": 192,
+        "non_completion": 901,
+        "non_completion_rate": 0.5761,
+        "success_rate": 0.4239,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9661,
+        "list_size": {
+          "10%": 157,
+          "15%": 235,
+          "20%": 313
+        }
+      }
+    },
+    {
+      "presentation": "CCC-2014J",
+      "code_module": "CCC",
+      "code_presentation": "2014J",
+      "enrolments": 2498,
+      "first_due_day": 18,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 2079,
+        "Withdrawn": 660,
+        "Fail": 406,
+        "Pass": 707,
+        "Distinction": 306,
+        "non_completion": 1066,
+        "non_completion_rate": 0.5127,
+        "success_rate": 0.4873,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9615,
+        "list_size": {
+          "10%": 208,
+          "15%": 312,
+          "20%": 416
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 2019,
+        "Withdrawn": 598,
+        "Fail": 406,
+        "Pass": 709,
+        "Distinction": 306,
+        "non_completion": 1004,
+        "non_completion_rate": 0.4973,
+        "success_rate": 0.5027,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9846,
+        "list_size": {
+          "10%": 202,
+          "15%": 303,
+          "20%": 404
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1859,
+        "Withdrawn": 438,
+        "Fail": 406,
+        "Pass": 709,
+        "Distinction": 306,
+        "non_completion": 844,
+        "non_completion_rate": 0.454,
+        "success_rate": 0.546,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9903,
+        "list_size": {
+          "10%": 186,
+          "15%": 279,
+          "20%": 372
+        }
+      },
+      "at_first_due": {
+        "day": 18,
+        "n": 2059,
+        "Withdrawn": 640,
+        "Fail": 406,
+        "Pass": 707,
+        "Distinction": 306,
+        "non_completion": 1046,
+        "non_completion_rate": 0.508,
+        "success_rate": 0.492,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9762,
+        "list_size": {
+          "10%": 206,
+          "15%": 309,
+          "20%": 412
+        }
+      }
+    },
+    {
+      "presentation": "DDD-2013B",
+      "code_module": "DDD",
+      "code_presentation": "2013B",
+      "enrolments": 1303,
+      "first_due_day": 23,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1197,
+        "Withdrawn": 328,
+        "Fail": 360,
+        "Pass": 455,
+        "Distinction": 54,
+        "non_completion": 688,
+        "non_completion_rate": 0.5748,
+        "success_rate": 0.4252,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9499,
+        "list_size": {
+          "10%": 120,
+          "15%": 180,
+          "20%": 240
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1143,
+        "Withdrawn": 274,
+        "Fail": 360,
+        "Pass": 455,
+        "Distinction": 54,
+        "non_completion": 634,
+        "non_completion_rate": 0.5547,
+        "success_rate": 0.4453,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9764,
+        "list_size": {
+          "10%": 115,
+          "15%": 172,
+          "20%": 229
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1074,
+        "Withdrawn": 204,
+        "Fail": 360,
+        "Pass": 456,
+        "Distinction": 54,
+        "non_completion": 564,
+        "non_completion_rate": 0.5251,
+        "success_rate": 0.4749,
+        "assessments_due_before": 4,
+        "share_with_any_click_before": 0.9823,
+        "list_size": {
+          "10%": 108,
+          "15%": 162,
+          "20%": 215
+        }
+      },
+      "at_first_due": {
+        "day": 23,
+        "n": 1187,
+        "Withdrawn": 318,
+        "Fail": 360,
+        "Pass": 455,
+        "Distinction": 54,
+        "non_completion": 678,
+        "non_completion_rate": 0.5712,
+        "success_rate": 0.4288,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9655,
+        "list_size": {
+          "10%": 119,
+          "15%": 179,
+          "20%": 238
+        }
+      }
+    },
+    {
+      "presentation": "DDD-2013J",
+      "code_module": "DDD",
+      "code_presentation": "2013J",
+      "enrolments": 1938,
+      "first_due_day": 25,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1675,
+        "Withdrawn": 424,
+        "Fail": 425,
+        "Pass": 728,
+        "Distinction": 98,
+        "non_completion": 849,
+        "non_completion_rate": 0.5069,
+        "success_rate": 0.4931,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9731,
+        "list_size": {
+          "10%": 168,
+          "15%": 252,
+          "20%": 335
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1644,
+        "Withdrawn": 391,
+        "Fail": 425,
+        "Pass": 730,
+        "Distinction": 98,
+        "non_completion": 816,
+        "non_completion_rate": 0.4964,
+        "success_rate": 0.5036,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.986,
+        "list_size": {
+          "10%": 165,
+          "15%": 247,
+          "20%": 329
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1560,
+        "Withdrawn": 307,
+        "Fail": 425,
+        "Pass": 730,
+        "Distinction": 98,
+        "non_completion": 732,
+        "non_completion_rate": 0.4692,
+        "success_rate": 0.5308,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9897,
+        "list_size": {
+          "10%": 156,
+          "15%": 234,
+          "20%": 312
+        }
+      },
+      "at_first_due": {
+        "day": 25,
+        "n": 1650,
+        "Withdrawn": 397,
+        "Fail": 425,
+        "Pass": 730,
+        "Distinction": 98,
+        "non_completion": 822,
+        "non_completion_rate": 0.4982,
+        "success_rate": 0.5018,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9836,
+        "list_size": {
+          "10%": 165,
+          "15%": 248,
+          "20%": 330
+        }
+      }
+    },
+    {
+      "presentation": "DDD-2014B",
+      "code_module": "DDD",
+      "code_presentation": "2014B",
+      "enrolments": 1228,
+      "first_due_day": 25,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1050,
+        "Withdrawn": 314,
+        "Fail": 258,
+        "Pass": 359,
+        "Distinction": 119,
+        "non_completion": 572,
+        "non_completion_rate": 0.5448,
+        "success_rate": 0.4552,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9667,
+        "list_size": {
+          "10%": 105,
+          "15%": 158,
+          "20%": 210
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1029,
+        "Withdrawn": 292,
+        "Fail": 259,
+        "Pass": 359,
+        "Distinction": 119,
+        "non_completion": 551,
+        "non_completion_rate": 0.5355,
+        "success_rate": 0.4645,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9815,
+        "list_size": {
+          "10%": 103,
+          "15%": 155,
+          "20%": 206
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 963,
+        "Withdrawn": 226,
+        "Fail": 259,
+        "Pass": 359,
+        "Distinction": 119,
+        "non_completion": 485,
+        "non_completion_rate": 0.5036,
+        "success_rate": 0.4964,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9886,
+        "list_size": {
+          "10%": 97,
+          "15%": 145,
+          "20%": 193
+        }
+      },
+      "at_first_due": {
+        "day": 25,
+        "n": 1034,
+        "Withdrawn": 297,
+        "Fail": 259,
+        "Pass": 359,
+        "Distinction": 119,
+        "non_completion": 556,
+        "non_completion_rate": 0.5377,
+        "success_rate": 0.4623,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9816,
+        "list_size": {
+          "10%": 104,
+          "15%": 156,
+          "20%": 207
+        }
+      }
+    },
+    {
+      "presentation": "DDD-2014J",
+      "code_module": "DDD",
+      "code_presentation": "2014J",
+      "enrolments": 1803,
+      "first_due_day": 20,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1479,
+        "Withdrawn": 323,
+        "Fail": 364,
+        "Pass": 680,
+        "Distinction": 112,
+        "non_completion": 687,
+        "non_completion_rate": 0.4645,
+        "success_rate": 0.5355,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9703,
+        "list_size": {
+          "10%": 148,
+          "15%": 222,
+          "20%": 296
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1463,
+        "Withdrawn": 307,
+        "Fail": 364,
+        "Pass": 680,
+        "Distinction": 112,
+        "non_completion": 671,
+        "non_completion_rate": 0.4586,
+        "success_rate": 0.5414,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9843,
+        "list_size": {
+          "10%": 147,
+          "15%": 220,
+          "20%": 293
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1407,
+        "Withdrawn": 251,
+        "Fail": 364,
+        "Pass": 680,
+        "Distinction": 112,
+        "non_completion": 615,
+        "non_completion_rate": 0.4371,
+        "success_rate": 0.5629,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9879,
+        "list_size": {
+          "10%": 141,
+          "15%": 212,
+          "20%": 282
+        }
+      },
+      "at_first_due": {
+        "day": 20,
+        "n": 1470,
+        "Withdrawn": 314,
+        "Fail": 364,
+        "Pass": 680,
+        "Distinction": 112,
+        "non_completion": 678,
+        "non_completion_rate": 0.4612,
+        "success_rate": 0.5388,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9816,
+        "list_size": {
+          "10%": 147,
+          "15%": 221,
+          "20%": 294
+        }
+      }
+    },
+    {
+      "presentation": "EEE-2013J",
+      "code_module": "EEE",
+      "code_presentation": "2013J",
+      "enrolments": 1052,
+      "first_due_day": 33,
+      "first_assessment_before_day_28": false,
+      "day_14": {
+        "day": 14,
+        "n": 933,
+        "Withdrawn": 125,
+        "Fail": 200,
+        "Pass": 481,
+        "Distinction": 127,
+        "non_completion": 325,
+        "non_completion_rate": 0.3483,
+        "success_rate": 0.6517,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9486,
+        "list_size": {
+          "10%": 94,
+          "15%": 140,
+          "20%": 187
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 927,
+        "Withdrawn": 118,
+        "Fail": 200,
+        "Pass": 482,
+        "Distinction": 127,
+        "non_completion": 318,
+        "non_completion_rate": 0.343,
+        "success_rate": 0.657,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9666,
+        "list_size": {
+          "10%": 93,
+          "15%": 140,
+          "20%": 186
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 903,
+        "Withdrawn": 94,
+        "Fail": 200,
+        "Pass": 482,
+        "Distinction": 127,
+        "non_completion": 294,
+        "non_completion_rate": 0.3256,
+        "success_rate": 0.6744,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9801,
+        "list_size": {
+          "10%": 91,
+          "15%": 136,
+          "20%": 181
+        }
+      },
+      "at_first_due": {
+        "day": 33,
+        "n": 921,
+        "Withdrawn": 112,
+        "Fail": 200,
+        "Pass": 482,
+        "Distinction": 127,
+        "non_completion": 312,
+        "non_completion_rate": 0.3388,
+        "success_rate": 0.6612,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9718,
+        "list_size": {
+          "10%": 93,
+          "15%": 139,
+          "20%": 185
+        }
+      }
+    },
+    {
+      "presentation": "EEE-2014B",
+      "code_module": "EEE",
+      "code_presentation": "2014B",
+      "enrolments": 694,
+      "first_due_day": 33,
+      "first_assessment_before_day_28": false,
+      "day_14": {
+        "day": 14,
+        "n": 613,
+        "Withdrawn": 92,
+        "Fail": 164,
+        "Pass": 285,
+        "Distinction": 72,
+        "non_completion": 256,
+        "non_completion_rate": 0.4176,
+        "success_rate": 0.5824,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9478,
+        "list_size": {
+          "10%": 62,
+          "15%": 92,
+          "20%": 123
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 605,
+        "Withdrawn": 84,
+        "Fail": 164,
+        "Pass": 285,
+        "Distinction": 72,
+        "non_completion": 248,
+        "non_completion_rate": 0.4099,
+        "success_rate": 0.5901,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9686,
+        "list_size": {
+          "10%": 61,
+          "15%": 91,
+          "20%": 121
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 585,
+        "Withdrawn": 64,
+        "Fail": 164,
+        "Pass": 285,
+        "Distinction": 72,
+        "non_completion": 228,
+        "non_completion_rate": 0.3897,
+        "success_rate": 0.6103,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9795,
+        "list_size": {
+          "10%": 59,
+          "15%": 88,
+          "20%": 117
+        }
+      },
+      "at_first_due": {
+        "day": 33,
+        "n": 602,
+        "Withdrawn": 81,
+        "Fail": 164,
+        "Pass": 285,
+        "Distinction": 72,
+        "non_completion": 245,
+        "non_completion_rate": 0.407,
+        "success_rate": 0.593,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9751,
+        "list_size": {
+          "10%": 61,
+          "15%": 91,
+          "20%": 121
+        }
+      }
+    },
+    {
+      "presentation": "EEE-2014J",
+      "code_module": "EEE",
+      "code_presentation": "2014J",
+      "enrolments": 1188,
+      "first_due_day": 33,
+      "first_assessment_before_day_28": false,
+      "day_14": {
+        "day": 14,
+        "n": 1027,
+        "Withdrawn": 147,
+        "Fail": 196,
+        "Pass": 527,
+        "Distinction": 157,
+        "non_completion": 343,
+        "non_completion_rate": 0.334,
+        "success_rate": 0.666,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9562,
+        "list_size": {
+          "10%": 103,
+          "15%": 155,
+          "20%": 206
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1020,
+        "Withdrawn": 139,
+        "Fail": 197,
+        "Pass": 527,
+        "Distinction": 157,
+        "non_completion": 336,
+        "non_completion_rate": 0.3294,
+        "success_rate": 0.6706,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9755,
+        "list_size": {
+          "10%": 102,
+          "15%": 153,
+          "20%": 204
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 995,
+        "Withdrawn": 114,
+        "Fail": 197,
+        "Pass": 527,
+        "Distinction": 157,
+        "non_completion": 311,
+        "non_completion_rate": 0.3126,
+        "success_rate": 0.6874,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9819,
+        "list_size": {
+          "10%": 100,
+          "15%": 150,
+          "20%": 199
+        }
+      },
+      "at_first_due": {
+        "day": 33,
+        "n": 1014,
+        "Withdrawn": 133,
+        "Fail": 197,
+        "Pass": 527,
+        "Distinction": 157,
+        "non_completion": 330,
+        "non_completion_rate": 0.3254,
+        "success_rate": 0.6746,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9783,
+        "list_size": {
+          "10%": 102,
+          "15%": 153,
+          "20%": 203
+        }
+      }
+    },
+    {
+      "presentation": "FFF-2013B",
+      "code_module": "FFF",
+      "code_presentation": "2013B",
+      "enrolments": 1614,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1520,
+        "Withdrawn": 318,
+        "Fail": 421,
+        "Pass": 663,
+        "Distinction": 118,
+        "non_completion": 739,
+        "non_completion_rate": 0.4862,
+        "success_rate": 0.5138,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9572,
+        "list_size": {
+          "10%": 152,
+          "15%": 228,
+          "20%": 304
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1450,
+        "Withdrawn": 247,
+        "Fail": 421,
+        "Pass": 664,
+        "Distinction": 118,
+        "non_completion": 668,
+        "non_completion_rate": 0.4607,
+        "success_rate": 0.5393,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9834,
+        "list_size": {
+          "10%": 145,
+          "15%": 218,
+          "20%": 290
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1393,
+        "Withdrawn": 190,
+        "Fail": 421,
+        "Pass": 664,
+        "Distinction": 118,
+        "non_completion": 611,
+        "non_completion_rate": 0.4386,
+        "success_rate": 0.5614,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9921,
+        "list_size": {
+          "10%": 140,
+          "15%": 209,
+          "20%": 279
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 1513,
+        "Withdrawn": 310,
+        "Fail": 421,
+        "Pass": 664,
+        "Distinction": 118,
+        "non_completion": 731,
+        "non_completion_rate": 0.4831,
+        "success_rate": 0.5169,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9696,
+        "list_size": {
+          "10%": 152,
+          "15%": 227,
+          "20%": 303
+        }
+      }
+    },
+    {
+      "presentation": "FFF-2013J",
+      "code_module": "FFF",
+      "code_presentation": "2013J",
+      "enrolments": 2283,
+      "first_due_day": 19,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1998,
+        "Withdrawn": 393,
+        "Fail": 510,
+        "Pass": 908,
+        "Distinction": 187,
+        "non_completion": 903,
+        "non_completion_rate": 0.452,
+        "success_rate": 0.548,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9775,
+        "list_size": {
+          "10%": 200,
+          "15%": 300,
+          "20%": 400
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1982,
+        "Withdrawn": 377,
+        "Fail": 510,
+        "Pass": 908,
+        "Distinction": 187,
+        "non_completion": 887,
+        "non_completion_rate": 0.4475,
+        "success_rate": 0.5525,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9889,
+        "list_size": {
+          "10%": 199,
+          "15%": 298,
+          "20%": 397
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1908,
+        "Withdrawn": 303,
+        "Fail": 510,
+        "Pass": 908,
+        "Distinction": 187,
+        "non_completion": 813,
+        "non_completion_rate": 0.4261,
+        "success_rate": 0.5739,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9937,
+        "list_size": {
+          "10%": 191,
+          "15%": 287,
+          "20%": 382
+        }
+      },
+      "at_first_due": {
+        "day": 19,
+        "n": 1993,
+        "Withdrawn": 388,
+        "Fail": 510,
+        "Pass": 908,
+        "Distinction": 187,
+        "non_completion": 898,
+        "non_completion_rate": 0.4506,
+        "success_rate": 0.5494,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9824,
+        "list_size": {
+          "10%": 200,
+          "15%": 299,
+          "20%": 399
+        }
+      }
+    },
+    {
+      "presentation": "FFF-2014B",
+      "code_module": "FFF",
+      "code_presentation": "2014B",
+      "enrolments": 1500,
+      "first_due_day": 24,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1309,
+        "Withdrawn": 273,
+        "Fail": 383,
+        "Pass": 546,
+        "Distinction": 107,
+        "non_completion": 656,
+        "non_completion_rate": 0.5011,
+        "success_rate": 0.4989,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9626,
+        "list_size": {
+          "10%": 131,
+          "15%": 197,
+          "20%": 262
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1301,
+        "Withdrawn": 264,
+        "Fail": 383,
+        "Pass": 547,
+        "Distinction": 107,
+        "non_completion": 647,
+        "non_completion_rate": 0.4973,
+        "success_rate": 0.5027,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.9808,
+        "list_size": {
+          "10%": 131,
+          "15%": 196,
+          "20%": 261
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1249,
+        "Withdrawn": 211,
+        "Fail": 384,
+        "Pass": 547,
+        "Distinction": 107,
+        "non_completion": 595,
+        "non_completion_rate": 0.4764,
+        "success_rate": 0.5236,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.988,
+        "list_size": {
+          "10%": 125,
+          "15%": 188,
+          "20%": 250
+        }
+      },
+      "at_first_due": {
+        "day": 24,
+        "n": 1302,
+        "Withdrawn": 265,
+        "Fail": 383,
+        "Pass": 547,
+        "Distinction": 107,
+        "non_completion": 648,
+        "non_completion_rate": 0.4977,
+        "success_rate": 0.5023,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9785,
+        "list_size": {
+          "10%": 131,
+          "15%": 196,
+          "20%": 261
+        }
+      }
+    },
+    {
+      "presentation": "FFF-2014J",
+      "code_module": "FFF",
+      "code_presentation": "2014J",
+      "enrolments": 2365,
+      "first_due_day": 24,
+      "first_assessment_before_day_28": true,
+      "day_14": {
+        "day": 14,
+        "n": 1886,
+        "Withdrawn": 377,
+        "Fail": 392,
+        "Pass": 859,
+        "Distinction": 258,
+        "non_completion": 769,
+        "non_completion_rate": 0.4077,
+        "success_rate": 0.5923,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.974,
+        "list_size": {
+          "10%": 189,
+          "15%": 283,
+          "20%": 378
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 1858,
+        "Withdrawn": 349,
+        "Fail": 392,
+        "Pass": 859,
+        "Distinction": 258,
+        "non_completion": 741,
+        "non_completion_rate": 0.3988,
+        "success_rate": 0.6012,
+        "assessments_due_before": 1,
+        "share_with_any_click_before": 0.986,
+        "list_size": {
+          "10%": 186,
+          "15%": 279,
+          "20%": 372
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 1779,
+        "Withdrawn": 270,
+        "Fail": 392,
+        "Pass": 859,
+        "Distinction": 258,
+        "non_completion": 662,
+        "non_completion_rate": 0.3721,
+        "success_rate": 0.6279,
+        "assessments_due_before": 2,
+        "share_with_any_click_before": 0.9904,
+        "list_size": {
+          "10%": 178,
+          "15%": 267,
+          "20%": 356
+        }
+      },
+      "at_first_due": {
+        "day": 24,
+        "n": 1863,
+        "Withdrawn": 354,
+        "Fail": 392,
+        "Pass": 859,
+        "Distinction": 258,
+        "non_completion": 746,
+        "non_completion_rate": 0.4004,
+        "success_rate": 0.5996,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.985,
+        "list_size": {
+          "10%": 187,
+          "15%": 280,
+          "20%": 373
+        }
+      }
+    },
+    {
+      "presentation": "GGG-2013J",
+      "code_module": "GGG",
+      "code_presentation": "2013J",
+      "enrolments": 952,
+      "first_due_day": 61,
+      "first_assessment_before_day_28": false,
+      "day_14": {
+        "day": 14,
+        "n": 926,
+        "Withdrawn": 40,
+        "Fail": 294,
+        "Pass": 451,
+        "Distinction": 141,
+        "non_completion": 334,
+        "non_completion_rate": 0.3607,
+        "success_rate": 0.6393,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.8143,
+        "list_size": {
+          "10%": 93,
+          "15%": 139,
+          "20%": 186
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 924,
+        "Withdrawn": 38,
+        "Fail": 294,
+        "Pass": 451,
+        "Distinction": 141,
+        "non_completion": 332,
+        "non_completion_rate": 0.3593,
+        "success_rate": 0.6407,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.8734,
+        "list_size": {
+          "10%": 93,
+          "15%": 139,
+          "20%": 185
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 919,
+        "Withdrawn": 33,
+        "Fail": 294,
+        "Pass": 451,
+        "Distinction": 141,
+        "non_completion": 327,
+        "non_completion_rate": 0.3558,
+        "success_rate": 0.6442,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9325,
+        "list_size": {
+          "10%": 92,
+          "15%": 138,
+          "20%": 184
+        }
+      },
+      "at_first_due": {
+        "day": 61,
+        "n": 919,
+        "Withdrawn": 33,
+        "Fail": 294,
+        "Pass": 451,
+        "Distinction": 141,
+        "non_completion": 327,
+        "non_completion_rate": 0.3558,
+        "success_rate": 0.6442,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9358,
+        "list_size": {
+          "10%": 92,
+          "15%": 138,
+          "20%": 184
+        }
+      }
+    },
+    {
+      "presentation": "GGG-2014B",
+      "code_module": "GGG",
+      "code_presentation": "2014B",
+      "enrolments": 833,
+      "first_due_day": 61,
+      "first_assessment_before_day_28": false,
+      "day_14": {
+        "day": 14,
+        "n": 802,
+        "Withdrawn": 69,
+        "Fail": 255,
+        "Pass": 350,
+        "Distinction": 128,
+        "non_completion": 324,
+        "non_completion_rate": 0.404,
+        "success_rate": 0.596,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.8554,
+        "list_size": {
+          "10%": 81,
+          "15%": 121,
+          "20%": 161
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 796,
+        "Withdrawn": 63,
+        "Fail": 255,
+        "Pass": 350,
+        "Distinction": 128,
+        "non_completion": 318,
+        "non_completion_rate": 0.3995,
+        "success_rate": 0.6005,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9045,
+        "list_size": {
+          "10%": 80,
+          "15%": 120,
+          "20%": 160
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 789,
+        "Withdrawn": 56,
+        "Fail": 255,
+        "Pass": 350,
+        "Distinction": 128,
+        "non_completion": 311,
+        "non_completion_rate": 0.3942,
+        "success_rate": 0.6058,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9468,
+        "list_size": {
+          "10%": 79,
+          "15%": 119,
+          "20%": 158
+        }
+      },
+      "at_first_due": {
+        "day": 61,
+        "n": 789,
+        "Withdrawn": 56,
+        "Fail": 255,
+        "Pass": 350,
+        "Distinction": 128,
+        "non_completion": 311,
+        "non_completion_rate": 0.3942,
+        "success_rate": 0.6058,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9468,
+        "list_size": {
+          "10%": 79,
+          "15%": 119,
+          "20%": 158
+        }
+      }
+    },
+    {
+      "presentation": "GGG-2014J",
+      "code_module": "GGG",
+      "code_presentation": "2014J",
+      "enrolments": 749,
+      "first_due_day": 61,
+      "first_assessment_before_day_28": false,
+      "day_14": {
+        "day": 14,
+        "n": 719,
+        "Withdrawn": 97,
+        "Fail": 178,
+        "Pass": 317,
+        "Distinction": 127,
+        "non_completion": 275,
+        "non_completion_rate": 0.3825,
+        "success_rate": 0.6175,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.8401,
+        "list_size": {
+          "10%": 72,
+          "15%": 108,
+          "20%": 144
+        }
+      },
+      "day_28": {
+        "day": 28,
+        "n": 717,
+        "Withdrawn": 94,
+        "Fail": 179,
+        "Pass": 317,
+        "Distinction": 127,
+        "non_completion": 273,
+        "non_completion_rate": 0.3808,
+        "success_rate": 0.6192,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.894,
+        "list_size": {
+          "10%": 72,
+          "15%": 108,
+          "20%": 144
+        }
+      },
+      "day_60": {
+        "day": 60,
+        "n": 695,
+        "Withdrawn": 72,
+        "Fail": 179,
+        "Pass": 317,
+        "Distinction": 127,
+        "non_completion": 251,
+        "non_completion_rate": 0.3612,
+        "success_rate": 0.6388,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9424,
+        "list_size": {
+          "10%": 70,
+          "15%": 105,
+          "20%": 139
+        }
+      },
+      "at_first_due": {
+        "day": 61,
+        "n": 694,
+        "Withdrawn": 71,
+        "Fail": 179,
+        "Pass": 317,
+        "Distinction": 127,
+        "non_completion": 250,
+        "non_completion_rate": 0.3602,
+        "success_rate": 0.6398,
+        "assessments_due_before": 0,
+        "share_with_any_click_before": 0.9438,
+        "list_size": {
+          "10%": 70,
+          "15%": 105,
+          "20%": 139
+        }
+      }
+    }
+  ]
+}

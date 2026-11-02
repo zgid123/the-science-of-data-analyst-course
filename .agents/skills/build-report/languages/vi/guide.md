@@ -151,6 +151,8 @@ The glossaries (`glossaries/`, explained in its README) give each recurring Engl
 6. Proper names, product and method names (FSFM, iBeta, OpenAlex), codes and identifiers stay as written; glossaries cover terms, not names.
 7. A concept that Vietnamese law regulates takes the wording of the Vietnamese legal text, read in its Vietnamese original rather than in an English translation: for card payments, Circular 18/2024/TT-NHNN says "tổ chức thanh toán thẻ", "đơn vị chấp nhận thẻ", "tra soát", and these forms go into the domain glossary with the article they come from in Usage. A reader who knows the regulation then recognises its terms.
 
+8. A term is right only if a Vietnamese colleague would say it. A noun phrase built to mirror the English ("lượt đăng ký học phần về sau không đạt hoặc rút học phần", "khả năng xem xét", "đợt học", "mốc xem xét") makes every sentence slow even when each word is correct; take the everyday word of the field ("sinh viên về sau không hoàn thành học phần", "số sinh viên cán bộ liên hệ được mỗi tuần", "học phần", "đợt lập danh sách") and keep the technical unit only where the text defines or counts it. When unsure, test the term in a sentence a lecturer would say aloud: a native reader heard "lớp học phần" as a class section rather than the course, and "năng lực xử lý" as machine capacity (lessons T6).
+
 The checks report every variant listed in a Replaces column, in the sources, the Word document and slides, so a fixed term stays fixed across files and reports.
 
 ## 5. Orthography and typography

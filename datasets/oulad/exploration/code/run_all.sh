@@ -23,6 +23,7 @@ step 04_multivariate   "$PY" "$C/04_multivariate.py"
 step 05_crosscheck     "$PY" "$C/05_crosscheck.py"
 step 06_kdense_audits  bash "$C/06_kdense_audits.sh"
 step 07_build_report   "$PY" "$C/07_build_report.py"
+step 10_scope_feasibility "$PY" "$C/10_scope_feasibility.py"   # Milestone 1 proposal scope (reports/milestone-1)
 if [[ -n "${DATAVIZ_VALIDATOR:-}" ]]; then
   # outcome palette (Withdrawn, Fail, Pass, Distinction) and trajectory-cluster palette, on the page surface #ffffff
   step 08_palette_check bash -c "node '$DATAVIZ_VALIDATOR' '#c23a3a,#ec7b70,#5598e7,#184f95' --mode light --surface '#ffffff' && node '$DATAVIZ_VALIDATOR' '#2a78d6,#eb6834,#1baf7a' --mode light --surface '#ffffff'"

@@ -3,7 +3,7 @@
 Usage (normally called by report.py with the task's settings from tasks.toml):
     python .claude/skills/build-report/scripts/build_docx.py --src taskN/report --lang en \
         --out build/taskN/Report_EN.docx --title "..." --short-title "..." --author "..." [--subject "..."] [--portrait]
-        [--compact]
+        [--compact] [--run-on-parts]
 
 --portrait keeps every page in portrait: wide tables take the portrait text width in a smaller font and wide
 figures scale to it, so the document has only the title, front-matter and body sections. Use it for copies that
@@ -14,6 +14,11 @@ observed to stop the document from saving (tasks.toml: google_docs = true builds
 pages follow one another without page breaks, there is no contents page and no list of figures or tables, and the
 page after the title page is numbered 1 in arabic numerals. Every page stays portrait, as with --portrait, so no page
 breaks surround rotated tables or figures. The title page, captions, tables and headers stay as usual.
+
+--run-on-parts (tasks.toml: [taskN.layout] part_breaks = false) keeps the full front matter, contents, lists and
+roman numbering, but lets the numbered parts follow one another with heading space instead of a page break, for a
+report whose main text has a page budget (for example 6–10 pages). The unnumbered level-1 headings of the body, such as
+the references and the appendices, still start a new page. Every page stays portrait, as with --compact.
 
 Pipeline:
     1. Create a styled reference.docx (fonts, spacing, captions, tables, A4 page setup, document language).
@@ -74,6 +79,7 @@ SHORT_CELL = 24                # a column whose body cells are all this short ke
 FIT_SLACK = 0.15               # a table that fits takes its natural width plus up to 15% of air, centred
 LANDSCAPE_PAGES = True         # False (--portrait): wide content stays on portrait pages, no orientation changes
 COMPACT = False                # True (--compact): no page breaks before parts, no contents or lists, arabic from page 1
+RUN_ON = False                 # True (--run-on-parts): front matter kept, numbered parts without page breaks
 
 def labels_for(code: str, src: Path, meta: dict) -> dict:
     """Interface texts of the language pack plus the document metadata (title, short title, author, subject)."""
@@ -298,7 +304,8 @@ def build_reference(path: Path, pandoc: str, lang: str, layout: dict | None = No
         set_spacing(st[name], before=0, after=6, line=line, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     set_spacing(st["Compact"], before=0, after=3, line=line, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
-    heads = {"Heading 1": (16, 18 if COMPACT else 0, 12, not COMPACT), "Heading 2": (14, 18, 6, False),
+    run_on = COMPACT or RUN_ON
+    heads = {"Heading 1": (16, 18 if run_on else 0, 12, not run_on), "Heading 2": (14, 18, 6, False),
              "Heading 3": (12.5, 14, 4, False), "Heading 4": (12, 10, 4, False)}
     for name, (size, before, after, brk) in heads.items():
         set_style_font(st[name], size=size, bold=True, italic=False, color=NAVY)
@@ -365,7 +372,12 @@ def format_title_page(doc, body, first_h1):
     texts = {id(p): text_of(p) for p in paras}
     tbl = next((e for e in els if e.tag == qn("w:tbl")), None)
     before_tbl = [p for p in paras if tbl is None or els.index(p) < els.index(tbl)]
-    title_p = next((p for p in reversed(before_tbl) if texts[id(p)].isupper()), None)
+    # The title lies between the logo and the names: the last line in capitals there, else the last line there,
+    # so a title in sentence case is found too and the institution lines above the logo are never taken for it
+    logo = next((i for i, p in enumerate(before_tbl) if has_drawing(p)), None)
+    lines = [p for p in before_tbl[logo + 1:] if texts[id(p)].strip()] if logo is not None else []
+    title_p = (next((p for p in reversed(lines) if texts[id(p)].isupper()), None) or (lines[-1] if lines else None)
+               or next((p for p in reversed(before_tbl) if texts[id(p)].isupper()), None))
     for el in els:
         if el.tag == qn("w:p"):
             p = Paragraph(el, doc)
@@ -379,20 +391,21 @@ def format_title_page(doc, body, first_h1):
             if has_drawing(el):
                 for sh in p._p.iter(qn("wp:extent")):
                     ratio = int(sh.get("cy")) / int(sh.get("cx"))
-                    sh.set("cx", str(int(Inches(1.6))))
-                    sh.set("cy", str(int(Inches(1.6) * ratio)))
+                    sh.set("cx", str(int(Inches(1.4))))
+                    sh.set("cy", str(int(Inches(1.4) * ratio)))
                 for ext in p._p.iter(qn("a:ext")):
                     ratio = int(ext.get("cy")) / int(ext.get("cx"))
-                    ext.set("cx", str(int(Inches(1.6))))
-                    ext.set("cy", str(int(Inches(1.6) * ratio)))
-                pf.space_before, pf.space_after = Pt(24), Pt(24)
+                    ext.set("cx", str(int(Inches(1.4))))
+                    ext.set("cy", str(int(Inches(1.4) * ratio)))
+                pf.space_before, pf.space_after = Pt(12), Pt(12)
             for r in p.runs:
                 r.font.size = Pt(13)
                 r.font.color.rgb = NAVY
             if el is title_p:
-                # fixed spacing is a fallback for viewers that ignore vertical justification (about 7 cm in total,
-                # well within one page); Word's justified section spreads the remaining space evenly
-                pf.space_before, pf.space_after = Pt(48), Pt(48)
+                # fixed spacing is a fallback for viewers that ignore vertical justification; it stays small so a
+                # four-line title and a long names table still fit one page (check_docx.py estimates the height),
+                # and Word's justified section spreads the remaining space evenly
+                pf.space_before, pf.space_after = Pt(24), Pt(24)
                 for r in p.runs:
                     r.font.size = Pt(22)
                     r.font.bold = True
@@ -403,9 +416,28 @@ def format_title_page(doc, body, first_h1):
             for side in ("top", "left", "bottom", "right", "insideH", "insideV"):
                 borders.append(el_(side, val="nil"))
             put(el.find(qn("w:tblPr")), borders)
+            # Columns sized to their longest text at 12 pt (about 0.21 cm a character, plus 1 cm for padding and a
+            # visible gap) within 15 cm: if all fit, the spare width is shared equally; otherwise every column but
+            # the last keeps its one-line width (at most 7.5 cm), so labels such as "Simulated stakeholders" stay on
+            # one line, and the last column takes the rest. The table width is set to the same 15 cm in twips:
+            # pandoc's 100 % width makes viewers such as Google Docs rescale the columns
+            natural = [Cm(0.21) * max((len(c.text) for c in col.cells), default=1) + Cm(1.0) for col in t.columns]
+            natural = [max(Cm(2.5), int(w)) for w in natural]
+            if sum(natural) <= Cm(15):
+                widths = [w + (Cm(15) - sum(natural)) // len(natural) for w in natural]
+            else:
+                widths = [min(Cm(7.5), w) for w in natural[:-1]]
+                widths.append(Cm(15) - sum(widths))
+            for gc, w in zip(el.iter(qn("w:gridCol")), widths):
+                gc.set(qn("w:w"), str(w // 635))           # EMU → twips
+            put(el.find(qn("w:tblPr")), el_("tblW", w=str(sum(widths) // 635), type="dxa"))
             for row in t.rows:
-                for cell in row.cells:
-                    cell.width = Cm(7.5)
+                for i, (cell, w) in enumerate(zip(row.cells, widths)):
+                    cell.width = w
+                    if i < len(widths) - 1:                # a gap after a label even where a viewer fits columns to text
+                        mar = el_("tcMar")
+                        mar.append(el_("right", w="227", type="dxa"))
+                        put(cell._tc.get_or_add_tcPr(), mar)
                     for cp in cell.paragraphs:
                         cp.style = doc.styles["Table Text"]
                         for r in cp.runs:
@@ -423,7 +455,7 @@ def format_title_page(doc, body, first_h1):
                 head.append(r)
             extra.getparent().remove(extra)
     real = [e for e in els if e.tag in (qn("w:p"), qn("w:tbl")) and e.getparent() is not None]
-    Paragraph(real[-1], doc).paragraph_format.space_before = Pt(48)   # place and date, below the names
+    Paragraph(real[-1], doc).paragraph_format.space_before = Pt(24)   # place and date, below the names
     return real[-1]
 
 
@@ -785,14 +817,33 @@ def setup_headers_and_numbering(doc, labels, fm_end):
                 r.font.size = Pt(10)
 
 
+def break_unnumbered_parts(body, first_h1):
+    """In a run-on build the numbered parts flow on; the unnumbered level-1 headings after them (references,
+    appendices) start a new page through their own paragraph properties."""
+    seen = False
+    for el in body:
+        seen = seen or el is first_h1
+        if seen and el.tag == qn("w:p") and style_of(el) == "Heading1" and not re.match(r"\d", text_of(el).strip()):
+            put(el.get_or_add_pPr(), el_("pageBreakBefore"))
+
+
 def finalize_settings(doc, labels):
     settings = doc.settings.element
     for old in settings.findall(qn("w:updateFields")):
         settings.remove(old)
     upd = el_("updateFields", val="true")
-    # updateFields belongs right after the zoom/view block; placing it first among optional settings is accepted
-    zoom = settings.find(qn("w:zoom"))
-    (zoom.addnext(upd) if zoom is not None else settings.insert(0, upd))
+    # Schema position (CT_Settings): updateFields precedes these elements and follows every other one. Word accepts
+    # it out of order, but Google Docs, Pages and LibreOffice reject or repair the file.
+    later = {"hdrShapeDefaults", "footnotePr", "endnotePr", "compat", "docVars", "rsids", "mathPr", "attachedSchema",
+             "themeFontLang", "clrSchemeMapping", "doNotIncludeSubdocsInStats", "doNotAutoCompressPictures",
+             "forceUpgrade", "captions", "readModeInkLockDown", "smartTagType", "schemaLibrary", "shapeDefaults",
+             "doNotEmbedSmartTags", "decimalSymbol", "listSeparator"}
+    nxt = next((c for c in settings if isinstance(c.tag, str) and local(c) in later), None)
+    (nxt.addprevious(upd) if nxt is not None else settings.append(upd))
+    # w:gutter is a required attribute of w:pgMar (CT_PageMar); strict readers refuse a section without it
+    for mar in doc.element.body.iter(qn("w:pgMar")):
+        if mar.get(qn("w:gutter")) is None:
+            mar.set(qn("w:gutter"), "0")
     cp = doc.core_properties
     cp.title, cp.author, cp.language = labels["title"], labels["author"], labels["lang"]
     cp.subject = labels.get("subject") or ""
@@ -847,7 +898,9 @@ def build(lang: str, pandoc: str, src: Path, out: Path, meta: dict):
     raw = cache / f"pandoc-{lang}.docx"
     files = [p.name for p in labels["files"]()]
     # report_format.lua enforces the house style in the output: "—" → "–", ordered lists numbered (1), (2) …
-    subprocess.run([pandoc, *files, "--from", "markdown", "--to", "docx", "--reference-doc", str(ref),
+    # markdown-auto_identifiers: no bookmark per heading; nothing links to them, and viewers such as Google Docs show
+    # each one as a flag icon beside the heading (Word's TOC field makes its own _Toc bookmarks when updated)
+    subprocess.run([pandoc, *files, "--from", "markdown-auto_identifiers", "--to", "docx", "--reference-doc", str(ref),
                     "--lua-filter", str(HERE / "report_format.lua"), "--metadata", f"figure_lang={meta.get('figure_lang', lang)}",
                     "--resource-path", ".", "-o", str(raw)], cwd=src, check=True)
 
@@ -869,6 +922,8 @@ def build(lang: str, pandoc: str, src: Path, out: Path, meta: dict):
     apply_landscape(groups, base_sect)
     fm_end = insert_front_matter(doc, title_end, body_start, base_sect, labels)
     setup_headers_and_numbering(doc, labels, fm_end)
+    if RUN_ON:
+        break_unnumbered_parts(body, first_h1)
     finalize_settings(doc, labels)
     n_svg = attach_svg(doc, src) if meta.get("vector") else 0
 
@@ -901,10 +956,14 @@ def main():
                     help="figures with an SVG twin go in as SVG with their PNG as fallback (sharp at any zoom)")
     ap.add_argument("--compact", action="store_true",
                     help="short document: no page breaks before parts, no contents or lists, arabic numbering from 1")
+    ap.add_argument("--run-on-parts", action="store_true",
+                    help="front matter kept; numbered parts follow one another without page breaks, all pages portrait")
     args = ap.parse_args()
-    global LANDSCAPE_PAGES, COMPACT
+    global LANDSCAPE_PAGES, COMPACT, RUN_ON
     COMPACT = args.compact
-    LANDSCAPE_PAGES = not (args.portrait or args.compact)   # a short document stays portrait: no breaks around rotated pages
+    RUN_ON = args.run_on_parts and not args.compact
+    # a short document stays portrait: no breaks around rotated pages
+    LANDSCAPE_PAGES = not (args.portrait or args.compact or RUN_ON)
     meta = dict(title=args.title, short_title=args.short_title, author=args.author, subject=args.subject,
                 vector=args.vector and not args.portrait,
                 figure_lang=args.figure_lang or args.lang,

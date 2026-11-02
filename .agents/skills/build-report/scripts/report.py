@@ -155,6 +155,8 @@ def build(name, task, langs, figures=True):
         layout = task.get("layout", {})
         if layout.get("compact"):                           # a short document: no part page breaks, no contents
             args.append("--compact")
+        elif layout.get("part_breaks") is False:            # contents kept; parts run on, all pages portrait
+            args.append("--run-on-parts")
         for key in ("body_size", "line_spacing"):           # the task's page budget overrides the language pack
             if key in layout:
                 args += [f"--{key.replace('_', '-')}", str(layout[key])]
