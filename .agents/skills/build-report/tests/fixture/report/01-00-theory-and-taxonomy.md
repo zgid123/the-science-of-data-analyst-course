@@ -1,0 +1,5 @@
+# 1. Theory, Taxonomy and Generic PAD System Architecture
+
+This part establishes the concepts of presentation attack detection (PAD) on which the rest of the report builds. Section 1.1 defines presentation attacks, the instruments used in them, the error rates that measure their detection and the effort ratings that qualify those rates, and it separates presentation attacks from digital injection attacks. Section 1.2 classifies PAD systems by the source of their evidence and the role of the user, and it places PAD and injection attack detection within the pipeline of a biometric system, as Figure 1.1 shows. Section 1.3 then classifies the detection techniques themselves by the cue they exploit, identifies cross-database generalisation as the problem they share, and joins both classifications in Table 1.11 and Figure 1.2.
+
+Together, these sections provide the vocabulary for Part 2, which traces how the techniques evolved, for Part 3, which follows the same concepts into standards, certification and law, and for Part 4, which examines a recent method designed for generalisation.

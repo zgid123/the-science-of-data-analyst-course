@@ -1,0 +1,12 @@
+# Python packages of the build-report skill (Python 3.11 or later). Install into the project's venv:
+#   python3 -m venv venv && venv/bin/pip install -r .claude/skills/build-report/requirements.txt
+# pypandoc_binary bundles the pandoc program, so no separate pandoc install is needed.
+# Versions are the ones the self-test passes with; newer minor versions are expected to work.
+python-docx>=1.2,<2
+python-pptx>=1.0.2,<2
+pypandoc_binary>=1.17,<2
+pillow>=12,<13
+lxml>=6,<7
+matplotlib>=3.11,<4
+numpy>=2,<3
+pypdf>=6,<7                # used by the research-report skill (fetch.py: PDF to text)

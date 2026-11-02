@@ -1,0 +1,7 @@
+## 1.2. System-Level Taxonomy of PAD
+
+With the vocabulary of Section 1.1 in place, PAD systems can be classified by how they collect evidence and how they involve the user. The reference survey for this classification is "Presentation Attack Detection Methods for Face Recognition Systems: A Comprehensive Survey" by Raghavendra Ramachandra and Christoph Busch of the Norwegian University of Science and Technology [24]. It was published in ACM Computing Surveys, volume 50, issue 1, pages 1–37, on 20 March 2017 [24]. As of 2 October 2026, it has 365 citations in Semantic Scholar, 18 of them rated influential, and 267 in Crossref [24], which makes it a standard starting point for face PAD.
+
+The same research group classifies PAD techniques broadly into two categories, hardware-based and software-based approaches [25]. This first axis describes where the evidence comes from: from dedicated sensors, or from algorithms applied to what a standard camera already captures. A second axis describes the role of the user. Passive methods inspect the captured image without any user action [10], whereas challenge-response methods ask the user to complete a task or expose the user to a stimulus and record the response [26].
+
+Together, the two axes describe a PAD system before any algorithm is chosen. Section 1.2.1 compares hardware-based and software-based PAD, Section 1.2.2 compares passive and active PAD, and Section 1.2.3 places PAD, and the detection of injection attacks, within the processing pipeline of a biometric system.

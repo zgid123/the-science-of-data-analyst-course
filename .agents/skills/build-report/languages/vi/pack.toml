@@ -1,0 +1,147 @@
+# Vietnamese language pack: a target language, translated from English into native academic Vietnamese.
+# guide.md says how to write it; glossaries/ holds the terms in layers (common for every report, domains and
+# topics chosen per task in tasks.toml [taskN.vi] glossaries); templates/ holds Vietnamese-only pages.
+
+code = "vi"
+name = "Tiếng Việt"
+name_en = "Vietnamese"                     # the language named in English (agent prompts)
+locale = "vi-VN"
+suffix = ".vi.md"
+
+contents = "Mục lục"
+lof = "Danh mục hình"
+lot = "Danh mục bảng"
+hint = "Mục lục do Word tạo tự động. Nếu đang trống, hãy nhấp chuột phải vào đây và chọn Update Field."
+
+figure = ["Hình"]
+table = ["Bảng"]
+section = ["Mục"]
+part = ["Phần"]
+appendix = ["Phụ lục"]
+connectors = [", ", " và ", " đến ", " tới ", " hoặc ", "–"]
+references = ["Tài liệu tham khảo", "Danh mục tài liệu tham khảo"]
+abbreviation_header = ["Từ viết tắt"]
+
+[translation]
+source = "en"                              # every .vi.md file is the twin of an English file
+guide = "guide.md"                         # read in full before translating
+review = "review.md"                       # the native reviewer's protocol and checklist (after translation)
+lessons = "lessons.md"                     # what human reviewers changed, with examples; source of guide 2.7 and review 3.5
+glossaries = "glossaries"                  # layered: common/ (always), domains/ and topics/ (per task)
+terms_page = "00-2-*"                      # terms page: each cell opens with the English term, "Acquirer – Tổ chức thanh toán thẻ"
+extra_files = ["00-0a-*", "00-0b-*"]       # Vietnamese-only pages (from templates/): kept out of sync and parity
+extras = "templates"
+
+# Conventions checked in every Vietnamese text (sources, Word document, slides) by lang_rules.py
+[conventions]
+decimal = "comma"                          # 0,75 and 4,81%; a dot only groups thousands (10.000)
+reference_words = ["Mục", "Hình", "Bảng", "Phụ lục", "Phần", "Điều", "Khoản", "Cấp", "Level", "Bước"]
+version_words = ["phiên bản", "version"]   # "phiên bản 4.1" keeps its dot
+check_untranslated = true                  # lines dense with English function words outside quotations
+source_references = "warn"                 # English "Figure 2.1" in Vietnamese text (error in slides)
+
+[conventions.glossary]                     # language-wide variants (regex = form); term variants live in the
+                                           # glossaries' Replaces column (glossaries/README.md)
+
+[[conventions.warn]]                       # style warnings: modern tone placement on the main vowel
+pattern = '\w*(?<![qQ])(oà|oá|oả|oã|oạ|oè|oé|oẻ|oẽ|oẹ|uỳ|uý|uỷ|uỹ|uỵ)\b'
+message = "old-style tone placement (write hóa, khóa, thủy, lũy)"
+
+[[conventions.warn]]                       # grammar (guide section 2.4): one plural marker per noun phrase
+pattern = '\b(các những|những các)\b'
+message = "two plural markers; keep 'các' or 'những' (guide section 2.4)"
+
+[[conventions.warn]]                       # grammar: a chain of three 'của'
+pattern = '\bcủa\b[^.;:!?\n]{1,30}\bcủa\b[^.;:!?\n]{1,30}\bcủa\b'
+message = "chain of three 'của'; use a compound noun or a clause (guide section 2.4)"
+
+[[conventions.warn]]                       # grammar: nominaliser 'việc' twice in one clause
+pattern = '\bviệc\b[^.;:!?\n]{1,40}\bviệc\b'
+message = "'việc' twice in one clause; let a verb carry the action (guide section 2.4)"
+
+[[conventions.warn]]                       # grammar: nominaliser 'sự' twice in one clause (lexical nouns excluded)
+pattern = '\bsự\b(?! (?:cố|kiện|sống|thật|vật|việc|nghiệp|tích))[^.;:!?\n]{1,30}\bsự\b(?! (?:cố|kiện|sống|thật|vật|việc|nghiệp|tích))'
+message = "'sự' twice in one clause; let a verb carry the action (guide section 2.4)"
+
+[[conventions.warn]]                       # grammar: three stacked passives
+pattern = '\bđược\b[^.;:!?\n]{1,30}\bđược\b[^.;:!?\n]{1,30}\bđược\b'
+message = "three 'được' in one sentence; turn one into an active clause with a named actor (guide section 2.4)"
+
+[[conventions.warn]]                       # collocations: calques of English verb phrases
+pattern = '\b(đóng một vai trò|thực hiện việc)\b'
+message = "calque; write 'đóng vai trò' or the verb itself (guide section 2.4)"
+
+[[conventions.warn]]                       # register: spoken sentence openers in report prose
+pattern = '(?:^|(?<!(?-i:[\s.\-][A-Z]))[.!?]\s+)(?-i:Và|Nhưng|Mà|Còn) '   # not after an initial ("Liu S.-Q. và")
+message = "spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4)"
+
+[[conventions.warn]]                       # sentence length: past about 70 syllables a Vietnamese sentence loses its reader
+pattern = '^(?!\s*[|!#]).*?(?:[^.!?;\n]|\.(?=\d)|TS\.|ThS\.|\.\.\.){380,}'   # ";" ends a list item ("Mục 1.1 …; Mục 1.2 …")
+message = "very long sentence (over about 70 syllables); split it at its main connective (guide section 2.4)"
+
+[[conventions.warn]]                       # human review (lessons.md L6): no comma before "và"/"hoặc" (50 → 2 in the reviewed text)
+pattern = ', ?(?:và|hoặc)\s'               # one space at most: blanked code names leave ",   và" 
+message = "comma before 'và'/'hoặc'; Vietnamese joins with the conjunction alone (guide sections 2.7 and 5)"
+
+[[conventions.warn]]                       # human review (L1): possessive pronouns stand in for a noun
+pattern = '\bcủa (?:nó|chúng|mình|họ)\b'
+message = "possessive pronoun; repeat the noun ('chỉ số này', 'nhóm tác giả này') (guide section 2.7)"
+
+[[conventions.warn]]                       # human review (L1): "một" before an ordinal
+pattern = '\b[Mm]ột (?:\w+ ){1,2}thứ (?:hai|ba|tư|năm)\b'
+message = "'một' before an ordinal; write 'Nhóm thứ ba' (guide section 2.7)"
+
+[[conventions.warn]]                       # human review (L5): pointers go in parentheses
+pattern = '\bnhư (?:Hình|Bảng) [\d.]+ (?:thể hiện|cho thấy)'
+message = "pointer as a clause; write '(Hình 1.1)' after the statement (guide section 2.7)"
+
+[[conventions.warn]]                       # human review (L5): affiliations go in parentheses
+pattern = '\bthuộc (?:Đại học|Viện|Trường|Trung tâm|Phòng thí nghiệm)\b'
+message = "affiliation as a clause; write the institution in parentheses (guide section 2.7)"
+
+[[conventions.warn]]                       # human review (L7): written connective
+pattern = ',\s+song\s'
+message = "', song' reads archaic; write 'nhưng' (guide section 2.7)"
+
+[[conventions.warn]]                       # human review (L3): "trở thành một" calques "becomes a"
+pattern = '\btrở thành một\b'
+message = "'trở thành một'; say what it is ('là tín hiệu …') (guide section 2.7)"
+
+[[conventions.warn]]                       # human review (L9): two-digit day and month in full dates
+pattern = '\b(?:\d/\d{1,2}|\d{2}/\d)/\d{4}\b'
+message = "date with a one-digit day or month; write 02/10/2026, 10/01/2023 (guide section 7)"
+
+[[conventions.warn]]                       # a label or caption that starts with the copula: give it its noun first
+pattern = '^\s*là\s'
+message = "line starts with 'là'; start with the noun it describes (guide section 2.1)"
+
+[[conventions.warn]]                       # English loanwords that the glossary translates (lessons.md, decisions)
+pattern = '(?<![-\w])(?-i:datasets?|laptops?|test)(?![-\w)])'
+message = "English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation)"
+
+[[conventions.warn]]                       # voice (guide section 3.2): a bare "nhóm" as speaker or owner leaves open
+pattern = '(?:\b(?:[Tt]heo|của|do|mà)\s+nhóm|(?:^|[.;:!?]\s+|\)\s+)[Nn]hóm|\b[Nn]hóm\s+(?:sẽ|xin|đã|đang|bắt đầu|mở đầu|cho rằng|đề xuất|nhận thấy|rút ra|tính|dựng|đánh giá|không thể))\b(?!\s+(?:tác giả|chúng em|chúng tôi|nghiên cứu|thực hiện|\d))'
+message = "bare 'nhóm' as speaker: write 'nhóm chúng em' (the presenters) or 'nhóm tác giả' (the authors) (guide section 3.2)"
+only = "slides"                            # in a report "nhóm" also names categories and the writers themselves
+
+# Reader-focused style, checked in every Vietnamese section by check_style.py (quotations, code and references exempt)
+[style]
+meta_phrases = ["báo cáo này sẽ", "chúng tôi sẽ", "trong nhiệm vụ này", "người đọc báo cáo", "dàn ý", "theo hướng dẫn viết",
+                "lần chạy dự kiến", "kết quả đang chờ"]
+
+[style.conclusion]
+headings = ["Kết luận"]
+phrases = ["báo cáo này", "của báo cáo", "các phần của báo cáo", "mỗi phần", "bốn phần", "ba phần", "phần này tổng hợp"]
+subject = '(?:^|[.;:!?]\s+)(?:Phần|Mục) \d'
+
+# Word layout for this language. Vietnamese university reports often use Times New Roman 13 pt with 1.3–1.5
+# line spacing; the reports of this project use the shared 12 pt layout until the user chooses otherwise.
+[docx]
+# body_size = 13
+# line_spacing = 1.4
+
+# Slide decks: who speaks in the presenter notes (guide section 3.2). slidekit.py prompt puts the matching line into
+# the translator's and the reviewer's prompt.
+[slides]
+voice_group = 'It is a group deck: the Vietnamese notes speak as "nhóm chúng em" (then "chúng em") and address "thầy cô và các bạn"; the authors of the reviewed work are "nhóm tác giả", the work itself "bài báo".'
+voice_solo = 'It is a solo deck: the Vietnamese notes speak as "em" and address "thầy cô và các bạn"; the authors of the reviewed work are "nhóm tác giả", the work itself "bài báo".'

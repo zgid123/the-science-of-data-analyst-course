@@ -1,0 +1,17 @@
+### 2.3.2. Digital Injection and Deepfake Attacks
+
+While detectors learned to generalise across datasets, attackers increasingly avoided the sensor altogether. ENISA's 2022 analysis of remote identity proofing reported that "video injection is the most promising attack method, according to market players", and explained that it "is not a presentation attack instrument, as the video will be injected and not physically presented to the camera" [67]. Injection software lets attackers "avoid the related security checks" of the capture device [67]. ENISA listed the tooling, from software that injects video into a camera feed to virtual camera and deepfake creation software, and recommended proofing in a dedicated application that verifies "that the device is physical hardware, not an emulator, and that the camera is indeed capturing the video feed in real time" [67]. An identity verification vendor describes an emulator as "a software tool used to mimic a user's device, such as a mobile phone" [69]. Section 1.1.4 defined the attack class; these sources describe how it reaches a system.
+
+Evidence of growth comes from three kinds of source, and Table 2.9 keeps them apart. The government source is qualitative, the analyst and vendor sources are quantitative, and all three point in the same direction.
+
+**Table 2.9. Evidence on the growth of injection and deepfake attacks**
+
+| Source | Type | Date | Statement |
+| :---- | :---- | :---- | :---- |
+| ENISA [67] | Government agency | January 2022 | Attacks with masks and video injection have been increasing; real-time deepfake puppets are feasible |
+| Gartner [68] | Industry analyst | 1 February 2024 | Injection attacks increased 200% in 2023; by 2026, 30% of enterprises will not consider face verification reliable in isolation |
+| iProov [69] | Vendor telemetry | 7 February 2024 | From the first to the second half of 2023: face-swap attacks +704%, emulator use +353%, injection attacks on mobile web +255% |
+
+The same sources explain why PAD alone no longer suffices. Gartner notes that "Current standards and testing processes to define and assess PAD mechanisms do not cover digital injection attacks using the AI-generated deepfakes that can be created today," and that prevention "will require a combination of PAD, injection attack detection (IAD) and image inspection" [68]. Standardisation answered within two years: CEN/TS 18099 on biometric data injection attack detection was published on 2 December 2024 [22], and the international standard ISO/IEC 25456 is in development on its basis [21], as Section 1.1.4 describes.
+
+Research responded by joining the two defences. Yu et al. treat face anti-spoofing and face forgery detection as joint protections of face biometrics. They note that earlier work used a "separated feature representation" for each task, and they establish "the first joint face spoofing and forgery detection benchmark", finding that both tasks "can be obviously improved via joint training" [70]. Fang et al. observe at the 2024 International Joint Conference on Artificial Intelligence that face recognition systems "can suffer from physical (i.e., print photo) and digital (i.e., DeepFake) attacks" while "previous related work rarely considers both situations at the same time", and they propose a unified detector with a joint dataset [71]. Part 4 examines a foundation model built for exactly this unified setting.

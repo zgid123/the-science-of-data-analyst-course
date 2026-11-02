@@ -1,0 +1,109 @@
+{
+ "assets/figures/task2-1-1-pad-pipeline.png": {
+  "size": [
+   3960,
+   1500
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/figures/task2-1-2-pad-taxonomy.png": {
+  "size": [
+   3960,
+   1425
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/figures/task2-2-1-evolution-timeline.png": {
+  "size": [
+   3960,
+   1590
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/figures/task2-3-1-policy-timeline.png": {
+  "size": [
+   3960,
+   1785
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/figures/task2-4-1-fsfm-at-a-glance.png": {
+  "size": [
+   3960,
+   1560
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/figures/task2-4-2-masking-strategies.png": {
+  "size": [
+   3960,
+   1800
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/figures/task2-4-3-paper-reconstructions.png": {
+  "size": [
+   1203,
+   986
+  ],
+  "dpi": [
+   120,
+   120
+  ],
+  "mode": "RGB"
+ },
+ "assets/figures/task2-4-4-paper-heat-maps.png": {
+  "size": [
+   1979,
+   853
+  ],
+  "dpi": [
+   120,
+   120
+  ],
+  "mode": "RGB"
+ },
+ "assets/figures/task2-4-5-evaluation-protocols.png": {
+  "size": [
+   3960,
+   1680
+  ],
+  "dpi": [
+   300,
+   300
+  ],
+  "mode": "RGBA"
+ },
+ "assets/university-logo.png": {
+  "size": [
+   800,
+   800
+  ],
+  "dpi": null,
+  "mode": "RGB"
+ }
+}

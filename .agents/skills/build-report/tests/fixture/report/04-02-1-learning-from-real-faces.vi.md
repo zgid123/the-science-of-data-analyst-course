@@ -1,0 +1,7 @@
+### 4.2.1. Chỉ học từ khuôn mặt thật
+
+Trong giai đoạn tiền huấn luyện, FSFM không hề nhìn thấy một tấn công nào. Mô hình học từ VGGFace2, một bộ sưu tập công khai gồm khoảng 3,3 triệu ảnh khuôn mặt thật, được phát hiện khuôn mặt, cắt và đưa về kích thước 224 x 224 điểm ảnh trước khi sử dụng [102]. Không ảnh nào mang nhãn, nên không ai phải chú thích khuôn mặt nào là thật, bị làm giả hay bị giả mạo [102].
+
+Cách huấn luyện này được gọi là học tự giám sát (self-supervised learning): chính dữ liệu tạo ra bài tập cho mô hình. Che một phần khuôn mặt rồi yêu cầu mạng hoàn thiện phần còn thiếu là một bài tập như vậy, tương tự cách một người đã nhìn hàng nghìn khuôn mặt có thể đoán được phần nằm sau bàn tay đang che miệng. Một mạng giải tốt bài tập này buộc phải học được làn da, đôi mắt và khuôn miệng thật trông ra sao và khớp với nhau thế nào, và đó chính là hiểu biết mà một bộ phát hiện cần để nhận ra điều bất thường [102].
+
+Lượng dữ liệu khuôn mặt thật có vai trò quan trọng. Khi nhóm tác giả tiền huấn luyện trên những bộ sưu tập khuôn mặt thật lớn hơn, các bộ phát hiện DfD thu được trở nên chính xác hơn trên dữ liệu chưa từng gặp [102]. Tiền huấn luyện cũng là phần tốn kém nhất: mô hình mặc định được huấn luyện 400 lượt qua toàn bộ dữ liệu trên 4 card đồ họa cao cấp NVIDIA RTX A6000 [102]. Tuy vậy, khi đã hoàn tất, cùng một bộ mã hóa tiền huấn luyện phục vụ mọi nhiệm vụ, nên chi phí này chỉ phải trả một lần.

@@ -1,0 +1,18 @@
+## 3.4. National Mandate: Biometric Authentication in Vietnamese Banking
+
+Standards, laboratory letters and government benchmarks describe how PAD should be tested; a national regulation can require that it be used. Vietnam provides a clear case. The State Bank of Vietnam (SBV) issued Decision 2345/QĐ-NHNN on safety and security solutions in online and bank card payments on 18 December 2023, signed by Deputy Governor Phạm Tiến Dũng [92], and the decision took effect on 1 July 2024 [92].
+
+The decision ties biometric authentication to the size and context of a transfer. For an individual's transfer to another account holder, to another bank or to an e-wallet, a one-time password (OTP) or an equivalent method suffices only while the transfer is at most 10 million Vietnamese dong (VND) [92]. The running total of such non-biometric transfers must also stay at most VND 20 million [92]. A transfer over VND 10 million, or one that would take the running total over VND 20 million, requires biometric authentication, and the counter resets at the start of each day and after every biometric check [92]. The bank must also authenticate the customer biometrically before the first Mobile Banking transaction and before a transaction on a device other than the one last used [92]. SBV officials explained that transfers above VND 10 million make up about 11% of transaction volume and that fewer than 1% of people transfer more than VND 20 million a day, while payments to clearly defined merchants such as bills, taxes and fees fall outside the rule [93]. Table 3.5 summarises the triggers.
+
+**Table 3.5. Biometric authentication triggers in Decision 2345/QĐ-NHNN (individual customers)**
+
+| Situation | Requirement |
+| :---- | :---- |
+| Single transfer of at most VND 10 million, non-biometric running total of at most VND 20 million | OTP or equivalent method [92] |
+| Single transfer over VND 10 million | Biometric authentication [92] |
+| Transfer that takes the non-biometric running total over VND 20 million | Biometric authentication; counter resets after the check [92] |
+| First Mobile Banking transaction; transaction on a new device | Biometric authentication [92] |
+
+The reference for matching is a state identity document. Biometric authentication must match "khớp đúng với dữ liệu sinh trắc học được lưu trong chip của thẻ căn cước công dân (CCCD) của khách hàng do cơ quan Công an cấp", that is, the biometric data stored in the chip of the customer's police-issued citizen identity card, or go through the customer's electronic identification account, or match a bank database already checked against these sources [92]. Banks must also verify that the card itself was issued by the police [92]. In practice the transaction check combines an OTP with the live face of the person transacting, matched against the data in the identity card chip [94]. This live capture is exactly the presentation that the PAD gate of Section 1.2.3 must protect.
+
+The decision defines when biometrics are required and leaves the detection method unspecified. It describes biometric characteristics only as hard to forge, listing face, finger or palm vein, fingerprint, iris and voice, and it names the FIDO Alliance standard as a separate authentication method [92]; it names no liveness method and no PAD standard [92]. Decision 2345 ceased to apply on 1 January 2025, according to the status note of the legal database [92], and Circular 50/2024/TT-NHNN, effective the same day, carried its thresholds and device rule forward [95]. Section 3.4.1 follows that circular and its companions, in which PAD becomes an explicit legal requirement.

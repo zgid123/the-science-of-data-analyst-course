@@ -1,0 +1,21 @@
+### 3.4.1. Circulars on Accounts, Cards and Online Banking Security
+
+Two companion circulars of 28 June 2024 extended biometric matching from transfers to the accounts and cards themselves. Circular 17/2024/TT-NHNN on payment accounts took effect on 1 July 2024, with its account-opening provisions applying from 1 October 2024 [96]. To open a payment account electronically, the bank must collect the holder's biometric information and match it against the data in the encrypted chip of a citizen identity card verified as police-issued, or through the person's electronic identification account [96]. For holders of older cards without a chip, the national population database can serve as the reference [96]. Its Article 17(5)(c) sets the enforcement rule: "Chỉ được thực hiện rút tiền, giao dịch thanh toán bằng phương tiện điện tử trên tài khoản thanh toán khi đã hoàn thành việc đối chiếu khớp đúng giấy tờ tùy thân và thông tin sinh trắc học của chủ tài khoản", that is, withdrawals and electronic payment transactions may be carried out only once the holder's identity document and biometric information have been matched [96]. The rule applies to individuals' accounts from 1 January 2025 and to organisations' accounts from 1 July 2025 [96].
+
+Circular 18/2024/TT-NHNN on bank cards, signed on the same day [97], applies the same logic: cards issued electronically require biometric matching from 1 October 2024 [97], and from 1 January 2025 a card may be used for electronic transactions only after matching [97]. Both circulars require measures against impersonation and falsified identity verification but leave the choice of technology to each institution, without naming a PAD method [96], [97].
+
+PAD entered the law with Circular 50/2024/TT-NHNN on the safety and security of online banking services, issued on 31 October 2024 and effective on 1 January 2025 [95]. For face matching, it requires an FRR below 5% at a FAR below 0.01% under the FIDO Biometrics Requirements, measured on at least 10,000 samples [95]. It further requires the capability to detect "tấn công giả mạo thông tin sinh trắc học của vật thể sống (Presentation Attack Detection - PAD)" based on international standards such as NIST Special Publication 800-63B, ISO 30107 or the FIDO Biometrics Requirements, in order to prevent customer fraud "qua hình ảnh, video, mặt nạ 3D", that is, through photos, videos and 3D masks [95]. The PAD solution must be certified by a biometric laboratory recognised by the FIDO Alliance, a clause that applies from 1 July 2026 [95].
+
+Circular 77/2025/TT-NHNN of 31 December 2025, effective on 1 March 2026, amends Circular 50 [98]. It opens a second certification route: the PAD solution may instead be certified by an accredited certification body, "đáp ứng tiêu chuẩn ISO 30107 cấp độ 2 (Level 2) hoặc tương đương", that is, meeting ISO 30107 Level 2 or equivalent, where the certification body must be licensed by an accreditation body in the multilateral arrangement of the International Accreditation Forum [98]. Table 3.6 shows how the legal chain reached this point.
+
+**Table 3.6. Vietnamese legal instruments on biometric authentication in banking**
+
+| Instrument | Issued | Effective | Role |
+| :---- | :---- | :---- | :---- |
+| Decision 2345/QĐ-NHNN | 18 December 2023 | 1 July 2024; ceased to apply 1 January 2025 | Biometric triggers for transfers and new devices; no PAD standard [92] |
+| Circular 17/2024/TT-NHNN | 28 June 2024 | 1 July 2024; account opening 1 October 2024 | Biometric matching for payment accounts; restriction from 1 January 2025 [96] |
+| Circular 18/2024/TT-NHNN | 28 June 2024 | 1 July 2024 | Biometric matching for bank cards [97] |
+| Circular 50/2024/TT-NHNN | 31 October 2024 | 1 January 2025 | Triggers carried forward; face accuracy limits; PAD required; FIDO-laboratory certification from 1 July 2026 [95] |
+| Circular 77/2025/TT-NHNN | 31 December 2025 | 1 March 2026 | Adds certification at ISO 30107 Level 2 or equivalent [98] |
+
+The chain therefore moved within two years from a biometric check without a named standard to a PAD requirement certified by a FIDO-recognised laboratory or at ISO 30107 Level 2 or equivalent, the kind of third-party testing that Section 3.2 describes.

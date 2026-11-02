@@ -1,0 +1,71 @@
+# Report tasks of this project, read by the build-report skill (.claude/skills/build-report/scripts/report.py).
+# Every path is relative to this file's folder, the project root. Full reference: the skill's reference.md, section 2.
+#
+# Start a project or add a task with:  python .claude/skills/build-report/scripts/report.py init TASK --title "…"
+# It copies this file (with TASK for taskN), the Makefile and a starter report that passes every check.
+# Each field below is marked REQUIRED or optional; optional fields are shown commented out with their default.
+
+[project]
+tests = []                               # optional: further test scripts, run by `report.py test` after the self-test,
+                                         # e.g. [".claude/skills/research-report/scripts/selftest.py"]
+
+# ---------------------------------------------------------------------------------------------------- taskN
+[taskN]
+name = "Report Title"                    # REQUIRED: readable name, shown by `report.py list`
+report = "taskN/report"                  # REQUIRED: folder of the section files NN-SS-slug.md (and their .vi.md twins)
+build = "build/taskN"                    # REQUIRED: output folder of the Word documents (and a slide deck)
+author = "Group N"                       # REQUIRED: default author for every language (running header, core property)
+# google_docs = true                     # optional: also build an all-portrait <out>_GoogleDocs.docx for Google Docs
+# people = ["Full Name"]                 # optional: names that must be spelled exactly (lecturers, supervisors,
+                                         #   authors), without titles; check_names.py reads the report, hooks.extras
+# people_files = ["slides_taskN_vi.py"]  #   and these further files, and reports every near-miss as an error
+
+[taskN.en]                               # REQUIRED: one table per language the task builds; "en" is the source
+out = "Report_EN.docx"                   # REQUIRED: file name inside `build`
+title = "Report Title"                   # REQUIRED: document title (core property)
+short_title = "Report Title"             # REQUIRED: running header text; keep it to one line
+subject = "Course or field"              # optional: core property (default: empty)
+# author = "Group N"                     # optional: overrides [taskN] author for this language
+# figure_lang = "en"                     # optional: use figures <name>.<code>.png; default: the build language
+
+# [taskN.vi]                             # optional: a target language; enable once the .vi.md twins exist
+# out = "BaoCao_VI.docx"                 #   (`report.py translate taskN` lists what is still to translate)
+# title = "Tiêu đề báo cáo"
+# short_title = "Tiêu đề báo cáo"
+# subject = "Tên môn học"
+# author = "Nhóm N"
+# glossaries = ["domain-name", "topic-name"]   # domain and topic glossaries of the pack (languages/vi/glossaries/
+                                               #   domains/, topics/); the common layer is always included
+# figure_lang = "en"                     # "en" keeps the original figures when no Vietnamese figures are drawn
+
+# [taskN.layout]                         # optional: page layout
+# compact = true                         # a short document (a proposal): no page breaks before parts, no contents
+                                         #   or lists of figures and tables, front pages flow into the body
+# body_size = 11                         # body font size in pt (default: the pack's [docx] value)
+# line_spacing = 1.15                    # line spacing of running text (default: the pack's [docx] value)
+# vector_figures = true                  # figures also as SVG (PNG kept as fallback): sharp at any zoom, text
+                                         #   selectable, editable in Word 365 via Convert to Shape (figures.md 6)
+
+# [taskN.figures]                        # optional: figures drawn as code
+# package = "figures.taskN"              # module with FIGURES = {output name: builder} in figures/taskN/__init__.py;
+                                         #   rendered to <report>/assets/figures/ before the documents
+
+# [taskN.hooks]                          # optional: project scripts around the build ({report}, {task} filled in)
+# extras = ["build_slides_taskN.py"]     # run after the documents, e.g. a slide deck (slides.md)
+# checks = { trail = ".claude/skills/research-report/scripts/check_trail.py --base taskN --all" }   # extra prechecks
+# extra_checks = { slides_vi = ".claude/skills/build-report/scripts/check_slides.py build/taskN/Slides_VI.pptx --lang vi --task taskN" }   # extra postchecks
+
+[taskN.citations]                        # optional: citation rules
+order = "first-citation"                 # "first-citation" ([1] is cited first, then [2] …) or "any" (default)
+unused = "error"                         # "error" (default) or "warn" for listed but uncited references
+# draft_ids = 'S\d{3}'                   # draft source IDs such as [S101], all finalized to [n] before delivery
+
+# [taskN.abbreviations]                  # optional: abbreviation check
+# names = ["ProductName"]                # method, dataset and product names that are not abbreviations
+# [taskN.abbreviations.aliases.en]       # full forms for grouped rows such as "Q1, Q2, Q3"
+# Q1 = ["Question 1"]
+# [taskN.abbreviations.titles]           # official titles that contain a full form by name
+# vi = ["Luật Giao dịch điện tử"]
+
+# [taskN.structure]                      # optional: structure check
+# ignore_refs = ["Part 10"]              # cross-references that name another document

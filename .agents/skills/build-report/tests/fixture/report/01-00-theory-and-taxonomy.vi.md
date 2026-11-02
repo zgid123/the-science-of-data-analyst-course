@@ -1,0 +1,5 @@
+# 1. Lý thuyết, phân loại và kiến trúc tổng quát của hệ thống PAD
+
+Phần này xác lập các khái niệm về phát hiện tấn công trình diện (PAD) làm nền tảng cho toàn bộ báo cáo. Mục 1.1 định nghĩa tấn công trình diện, các công cụ được dùng trong đó, các tỷ lệ lỗi đo lường khả năng phát hiện và các mức đánh giá công sức đi kèm những tỷ lệ này, đồng thời phân biệt tấn công trình diện với tấn công chèn dữ liệu số. Mục 1.2 phân loại hệ thống PAD theo nguồn bằng chứng và vai trò của người dùng, đồng thời xác định vị trí của PAD và của việc phát hiện tấn công chèn dữ liệu trong chuỗi xử lý của một hệ thống sinh trắc học, như Hình 1.1 thể hiện. Tiếp theo, Mục 1.3 phân loại chính các kỹ thuật phát hiện theo tín hiệu mà chúng khai thác, chỉ ra khả năng tổng quát hóa chéo cơ sở dữ liệu là vấn đề chung của chúng, và kết hợp cả hai cách phân loại trong Bảng 1.11 và Hình 1.2.
+
+Kết hợp lại, các mục này cung cấp hệ thuật ngữ cho Phần 2, nơi trình bày quá trình phát triển của các kỹ thuật, cho Phần 3, nơi theo dõi cùng các khái niệm đó trong tiêu chuẩn, chứng nhận và pháp luật, và cho Phần 4, nơi phân tích một phương pháp gần đây được thiết kế hướng tới khả năng tổng quát hóa.

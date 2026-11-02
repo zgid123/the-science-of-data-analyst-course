@@ -1,0 +1,18 @@
+### 3.1.2. Related Standards and Certification Schemes
+
+Around ISO/IEC 30107 a family of standards and schemes has grown, each adding what the series leaves out. Security evaluation is the first addition: PAD evaluation within the Common Criteria is the subject of ISO/IEC 19989-3, a standard of SC 27 published in 2020, as Section 1.1.3 describes [72], [17]. Injection attacks are the second: CEN/TS 18099, published on 2 December 2024, covers biometric data injection attack detection and leaves presentation attack testing to ISO/IEC 30107 [22], [23]. Its international successor, ISO/IEC 25456, started as a new project in early 2025 in a joint group of SC 27 and SC 37, with CEN/TS 18099 as its starter document, according to a trade report [76], and it remained in development as of July 2026 [21].
+
+The FIDO Alliance turned the series into an industry certification. Its first Biometric Component certifications, reported by SC 37 in March 2019, used ISO/IEC 19795-1, ISO/IEC 30107-1 and ISO/IEC 30107-3, with testing by an accredited third-party laboratory [77]. On 29 May 2024 the Alliance launched its Face Verification Certification, the first globally available programme to certify remote biometric identity verification [78]. The programme runs at least 10,000 tests across skin tone, age and gender, uses IAPAR to measure resistance to spoof and deepfake attacks and FRR and FAR to measure usability and security, and had two accredited laboratories at launch [78]. The current FIDO Biometrics Requirements, version 4.1 of 6 January 2025, cite the 2023 editions of Parts 1 and 3 and the 2024 edition of Part 4 as normative references [79], and they set the thresholds shown in Table 3.2 [79]. Injection and replay attacks fall outside these thresholds: "The vendor SHALL document the security projections implemented around the TOE to protect from injection and replay attacks" [79].
+
+National schemes follow the same model. Germany's Federal Office for Information Security published version 2.0 of its Technical Guideline TR-03166 in 2026, setting certification requirements for biometric authentication that cover resistance to presentation attacks for finger and face [80]. It declares its PAD terms and metrics in agreement with ISO/IEC 30107-3 [80], and it maps its biometric assurance levels to attack potential and to the levels of assurance of the European eIDAS framework, from Enhanced-Basic attack potential at level 2 to Moderate at level 3 [80].
+
+**Table 3.2. Certification and testing schemes built on ISO/IEC 30107-3**
+
+| Scheme | Owner | Since | PAD requirement |
+| :---- | :---- | :---- | :---- |
+| Biometric Component Certification | FIDO Alliance | 2019 [77] | IAPAR ≤ 15% for BioLevel 1, ≤ 7% for BioLevel 2 [79] |
+| Face Verification Certification | FIDO Alliance | 29 May 2024 [78] | IAPAR ≤ 7% per PAI species and < 4% overall, over six Level A and eight Level B species [79] |
+| TR-03166 | German Federal Office for Information Security | Version 2.0, 2026 [80] | Resistance to presentation attacks per assurance level, with ISO/IEC 30107-3 metrics [80] |
+| ISO 30107-3 confirmation letters | iBeta Quality Assurance | – | Test levels of Table 1.3 [20] |
+
+Part 3 thus became the common reference for both commercial and government testing. NIST's PAD benchmark plan of September 2022 takes its definition of a presentation attack from ISO/IEC 30107-1 and computes APCER and BPCER per attack species following ISO/IEC 30107-3 [9], and iBeta names its service an "ISO 30107-3 Presentation Attack Detection Test Methodology" [20]. Sections 3.2 and 3.3 examine these two testers in turn.

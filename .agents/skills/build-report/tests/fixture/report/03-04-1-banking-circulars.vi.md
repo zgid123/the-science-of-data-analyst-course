@@ -1,0 +1,21 @@
+### 3.4.1. Các thông tư về tài khoản, thẻ và an toàn ngân hàng trực tuyến
+
+Hai thông tư cùng ban hành ngày 28/6/2024 đã mở rộng việc đối chiếu sinh trắc học từ giao dịch chuyển tiền sang chính tài khoản và thẻ. Thông tư 17/2024/TT-NHNN về tài khoản thanh toán có hiệu lực từ ngày 1/7/2024, trong đó các quy định về mở tài khoản áp dụng từ ngày 1/10/2024 [96]. Để mở tài khoản thanh toán bằng phương thức điện tử, ngân hàng phải thu thập thông tin sinh trắc học của chủ tài khoản và đối chiếu với dữ liệu trong chip mã hóa của thẻ căn cước công dân đã được xác thực do cơ quan Công an cấp, hoặc thông qua tài khoản định danh điện tử của người đó [96]. Với người dùng thẻ cũ không gắn chip, Cơ sở dữ liệu quốc gia về dân cư có thể được dùng làm nguồn đối chiếu [96]. Điểm c khoản 5 Điều 17 của thông tư đặt ra quy tắc thực thi: "Chỉ được thực hiện rút tiền, giao dịch thanh toán bằng phương tiện điện tử trên tài khoản thanh toán khi đã hoàn thành việc đối chiếu khớp đúng giấy tờ tùy thân và thông tin sinh trắc học của chủ tài khoản" [96]. Quy tắc này áp dụng cho tài khoản của cá nhân từ ngày 1/1/2025 và cho tài khoản của tổ chức từ ngày 1/7/2025 [96].
+
+Thông tư 18/2024/TT-NHNN về hoạt động thẻ ngân hàng, được ký cùng ngày [97], áp dụng cùng nguyên tắc: thẻ phát hành bằng phương thức điện tử phải đối chiếu sinh trắc học từ ngày 1/10/2024 [97], và từ ngày 1/1/2025 thẻ chỉ được dùng cho giao dịch điện tử sau khi đã đối chiếu [97]. Cả hai thông tư đều yêu cầu biện pháp chống mạo danh và làm giả việc xác minh danh tính, nhưng để mỗi tổ chức tự chọn công nghệ và không nêu tên một phương pháp PAD cụ thể nào [96], [97].
+
+PAD chính thức trở thành yêu cầu pháp lý với Thông tư 50/2024/TT-NHNN về an toàn, bảo mật cho việc cung cấp dịch vụ trực tuyến trong ngành ngân hàng, ban hành ngày 31/10/2024 và có hiệu lực từ ngày 1/1/2025 [95]. Đối với đối chiếu khuôn mặt, thông tư yêu cầu FRR dưới 5% tại FAR dưới 0,01% theo FIDO Biometrics Requirements, đo trên ít nhất 10.000 mẫu [95]. Thông tư còn yêu cầu khả năng phát hiện "tấn công giả mạo thông tin sinh trắc học của vật thể sống (Presentation Attack Detection - PAD)" dựa trên các tiêu chuẩn quốc tế như NIST Special Publication 800-63B, ISO 30107 hoặc FIDO Biometrics Requirements, nhằm phòng, chống gian lận, giả mạo khách hàng "qua hình ảnh, video, mặt nạ 3D" [95]. Giải pháp PAD phải được chứng nhận bởi một phòng thí nghiệm sinh trắc học được Liên minh FIDO công nhận, quy định áp dụng từ ngày 1/7/2026 [95].
+
+Thông tư 77/2025/TT-NHNN ngày 31/12/2025, có hiệu lực từ ngày 1/3/2026, sửa đổi Thông tư 50 [98]. Thông tư này mở thêm một con đường chứng nhận thứ hai: giải pháp PAD có thể được chứng nhận bởi một tổ chức chứng nhận được công nhận, "đáp ứng tiêu chuẩn ISO 30107 cấp độ 2 (Level 2) hoặc tương đương", trong đó tổ chức chứng nhận phải được cấp phép bởi một cơ quan công nhận tham gia thỏa thuận công nhận lẫn nhau đa phương của Diễn đàn Công nhận Quốc tế [98]. Bảng 3.6 cho thấy chuỗi văn bản pháp lý đã đi đến điểm này như thế nào.
+
+**Bảng 3.6. Các văn bản pháp lý của Việt Nam về xác thực sinh trắc học trong ngân hàng**
+
+| Văn bản | Ngày ban hành | Hiệu lực | Vai trò |
+| :---- | :---- | :---- | :---- |
+| Quyết định 2345/QĐ-NHNN | 18/12/2023 | 1/7/2024; hết áp dụng từ 1/1/2025 | Ngưỡng bắt buộc sinh trắc học cho giao dịch chuyển tiền và thiết bị mới; không nêu tiêu chuẩn PAD [92] |
+| Thông tư 17/2024/TT-NHNN | 28/6/2024 | 1/7/2024; mở tài khoản từ 1/10/2024 | Đối chiếu sinh trắc học cho tài khoản thanh toán; hạn chế giao dịch từ 1/1/2025 [96] |
+| Thông tư 18/2024/TT-NHNN | 28/6/2024 | 1/7/2024 | Đối chiếu sinh trắc học cho thẻ ngân hàng [97] |
+| Thông tư 50/2024/TT-NHNN | 31/10/2024 | 1/1/2025 | Kế thừa các ngưỡng; giới hạn độ chính xác đối chiếu khuôn mặt; bắt buộc PAD; chứng nhận bởi phòng thí nghiệm FIDO từ 1/7/2026 [95] |
+| Thông tư 77/2025/TT-NHNN | 31/12/2025 | 1/3/2026 | Bổ sung chứng nhận đạt ISO 30107 cấp độ 2 hoặc tương đương [98] |
+
+Như vậy, chỉ trong hai năm, chuỗi văn bản đã đi từ một bước kiểm tra sinh trắc học không nêu tiêu chuẩn cụ thể đến yêu cầu PAD được chứng nhận bởi phòng thí nghiệm được FIDO công nhận hoặc đạt ISO 30107 cấp độ 2 hoặc tương đương, đúng loại kiểm thử độc lập mà Mục 3.2 mô tả.
