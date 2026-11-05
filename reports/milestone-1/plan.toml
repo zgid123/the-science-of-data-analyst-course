@@ -1,0 +1,306 @@
+# Machine-readable half of EXECUTION_PLAN.md: edit both together, then run scaffold.py build.
+
+[plan]
+task = "reports/milestone-1"
+title = "Improving Course Completion in Online and Blended Courses: Requirement Analysis and Analytics Project Proposal"
+outline = "reports/milestone-1/reference.md"
+created = "2026-11-05"
+
+[checks]
+words = "150-700"                 # per section file (intro files: no minimum; appendices may run longer)
+# default list without "lecture" and "slide": the Course Lecturer is a stakeholder of this proposal
+meta_phrases = ["this doc", "this report will", "requester", "we will", "in this task", "source notes", "reference.md",
+                "the outline", "as instructed", "writing rule", "the reader will", "planned run", "pending result",
+                "will be benchmarked", "this section", "this part"]
+
+[references]
+heading = "# References"
+
+[[files]]
+name = "00-0-title-page.md"
+heading = ""
+
+[[files]]
+name = "00-1-abbreviations.md"
+heading = "# List of Abbreviations"
+
+[[files]]
+name = "00-2-glossary.md"
+heading = "# List of Terms"
+
+[[files]]
+name = "01-00-project-context.md"
+heading = "# 1. Project Context and Problem Statement"
+outline_section = "1"
+
+[[files]]
+name = "01-01-situation-background.md"
+heading = "## 1.1. Situation and Background"
+outline_section = "1"
+
+[[files]]
+name = "01-02-problem-statement-scope.md"
+heading = "## 1.2. Problem Statement, Scope and the Need for Analytics"
+outline_section = "1"
+
+[[files]]
+name = "02-00-stakeholder-analysis.md"
+heading = "# 2. Stakeholder Analysis and Requirement Findings"
+outline_section = "2"
+
+[[files]]
+name = "02-01-stakeholder-map.md"
+heading = "## 2.1. Stakeholder Map"
+outline_section = "2"
+
+[[files]]
+name = "02-02-interview-approach.md"
+heading = "## 2.2. Interview Approach"
+outline_section = "2"
+
+[[files]]
+name = "02-03-requirement-synthesis.md"
+heading = "## 2.3. Synthesised Themes and Priorities"
+outline_section = "2"
+
+[[files]]
+name = "02-04-conflicts-validation.md"
+heading = "## 2.4. Conflicts, Constraints and Validation"
+outline_section = "2"
+
+[[files]]
+name = "03-00-goals-kpis.md"
+heading = "# 3. Business Goal, SMART Goal and KPIs"
+outline_section = "3"
+
+[[files]]
+name = "03-01-business-goal.md"
+heading = "## 3.1. Business Goal"
+outline_section = "3"
+
+[[files]]
+name = "03-02-smart-goal.md"
+heading = "## 3.2. SMART Goal"
+outline_section = "3"
+
+[[files]]
+name = "03-03-kpis.md"
+heading = "## 3.3. Key Performance Indicators"
+outline_section = "3"
+
+[[files]]
+name = "04-00-question-ladder.md"
+heading = "# 4. Analytical Question Ladder"
+outline_section = "4"
+
+[[files]]
+name = "04-01-four-level-questions.md"
+heading = "## 4.1. Questions at Four Levels"
+outline_section = "4"
+
+[[files]]
+name = "04-02-quality-check-refinement.md"
+heading = "## 4.2. Quality Check and Refinement"
+outline_section = "4"
+
+[[files]]
+name = "05-00-analytic-approach.md"
+heading = "# 5. Proposed Analytic Approach"
+outline_section = "5"
+
+[[files]]
+name = "06-00-data-feasibility.md"
+heading = "# 6. Preliminary Data Requirements and Feasibility"
+outline_section = "6"
+
+[[files]]
+name = "06-01-data-requirements.md"
+heading = "## 6.1. Data Requirements per Question"
+outline_section = "6"
+
+[[files]]
+name = "06-02-feasibility-privacy.md"
+heading = "## 6.2. Feasibility, Quality Risks and Privacy"
+outline_section = "6"
+
+[[files]]
+name = "07-00-decision-value.md"
+heading = "# 7. Decision Supported and Expected Value"
+outline_section = "7"
+
+[[files]]
+name = "08-00-genai-reflection.md"
+heading = "# 8. Generative AI Usage and Team Reflection"
+outline_section = "8"
+
+[[files]]
+name = "09-00-traceability-matrix.md"
+heading = "# 9. Traceability Matrix"
+outline_section = "9"
+
+[[files]]
+name = "10-references.md"
+heading = "# References"
+
+[[files]]
+name = "11-00-appendices.md"
+heading = "# Appendices"
+
+[[files]]
+name = "11-01-interview-questions.md"
+heading = "## Appendix I – Interview Questions"
+
+[[files]]
+name = "11-02-interview-excerpts.md"
+heading = "## Appendix II – Interview Excerpts"
+
+[[files]]
+name = "11-03-validation-round.md"
+heading = "## Appendix III – Validation Round"
+
+[[files]]
+name = "11-04-ai-critique-review.md"
+heading = "## Appendix IV – AI Critique, Team Decisions and Reviewer Prompt"
+
+[[tasks]]
+id = "T01"
+kind = "S"
+title = "Scaffold workspace and register the task"
+
+[[tasks]]
+id = "T02"
+kind = "HC"
+title = "Scope inputs (title page, personas, language) – decided in conversation"
+
+[[tasks]]
+id = "T03"
+kind = "R"
+title = "Seeds: brief and reusable sources carried over from the archived trail"
+
+[[tasks]]
+id = "T04"
+kind = "R"
+title = "Part 1 research: real-world course non-completion and mid-semester disengagement (S100-S199)"
+
+[[tasks]]
+id = "T05"
+kind = "R"
+title = "Persona research A: students and lecturers, real experiences (S200-S249)"
+
+[[tasks]]
+id = "T06"
+kind = "R"
+title = "Persona research B: advisors, support staff, program managers, LMS and data staff (S250-S299)"
+
+[[tasks]]
+id = "T07"
+kind = "S"
+title = "Persona cards grounded in T05-T06"
+
+[[tasks]]
+id = "T08"
+kind = "S"
+title = "Stakeholder map hypotheses and team interview question lists"
+
+[[tasks]]
+id = "T09"
+kind = "S"
+title = "Simulated interviews, one isolated conversation per persona, with follow-ups"
+
+[[tasks]]
+id = "T10"
+kind = "S"
+title = "Requirement synthesis: organize, themes, prioritize, refine"
+
+[[tasks]]
+id = "T11"
+kind = "S"
+title = "Validation round with every persona"
+
+[[tasks]]
+id = "T12"
+kind = "W"
+title = "Write Part 1"
+
+[[tasks]]
+id = "T13"
+kind = "W"
+title = "Write Part 2"
+
+[[tasks]]
+id = "T14"
+kind = "W"
+title = "Write Parts 3-4"
+
+[[tasks]]
+id = "T15"
+kind = "W"
+title = "Write Parts 5-7"
+
+[[tasks]]
+id = "T16"
+kind = "S"
+title = "AI reviewer pass on Parts 1-7 and team decisions"
+
+[[tasks]]
+id = "T17"
+kind = "W"
+title = "Write Part 8, Part 9 and the appendices"
+
+[[tasks]]
+id = "T18"
+kind = "S"
+title = "Front matter"
+
+[[tasks]]
+id = "T19"
+kind = "S"
+title = "References"
+
+[[tasks]]
+id = "T20"
+kind = "S"
+title = "Full gates"
+
+[[tasks]]
+id = "T21"
+kind = "S"
+title = "Fact spot-check"
+
+[[tasks]]
+id = "T22"
+kind = "S"
+title = "Style read-through"
+
+[[tasks]]
+id = "T23"
+kind = "S"
+title = "Build and post-check the English Word document"
+
+[[tasks]]
+id = "T24"
+kind = "HC"
+title = "English review"
+
+[[tasks]]
+id = "T25"
+kind = "S"
+title = "Vietnamese twin: terms, front matter, translators, native review, consistency, reader test"
+
+[[tasks]]
+id = "T26"
+kind = "S"
+title = "Build and post-check every language"
+
+[[tasks]]
+id = "T27"
+kind = "HC"
+title = "Final review"
+
+[[seeds]]
+id = "S001"
+slug = "mth045-science-data-analytics-2026"
+source = "MTH045 – The Science of Data Analytics. (2026). Milestone P1: Requirement analysis & analytics project proposal [Course brief]"
+url = "final-project/milestones/01/milestone-1.md"
+item = "1"
+type = "primary"

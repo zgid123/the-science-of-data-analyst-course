@@ -1,0 +1,1998 @@
+A  FRAMEWORK  FOR  MANAGEMENT  INFORMATION  SYSTEMS* 
+
+by 
+
+G.  Anthony  Gorry  and  Michael  S.  S.  Morton 
+
+510-71 
+February  1971 
+
+
+MASSACHUSETTS 
+INSTITUTE  OF  TECHNOLOGY 
+
+50  MEMORIAL  DRIVE 
+ABRIDGE,  MASSACHUSETTS   02 
+
+
+WiAIi  12  1971 
+
+DiWEY  LIBRARY 
+
+
+A  FRAMEWORK  FOR  MANAGEMENT  INFORMATION  SYSTEMS^ 
+
+by 
+
+G.  Anthony  Gorry  and  Michael  S.  S.  Morton 
+
+510-71 
+February  1971 
+
+
+*A  revision  of  "Management  Decision  Systems:  A  Framework 
+for  Management  Information  Systems"  Sloan  School  Working 
+Paper  458-70. 
+
+
+no.  SI  6-' 
+
+
+RECEIVED 
+
+APR    6    1971 
+
+M.  I.  T.  LlBRAKiES 
+
+
+Introduction 
+
+The  years  between  1955  and  1970  have  witnessed  an  increasingly 
+rapid  and  broad  incursion  of  computers  into  industrial  organizations. 
+During  this  time,  computer-related  activities  collectively  termed 
+"management  information  systems"  have  also  grown  markedly.  But 
+despite  the  growth  in  these  two  areas,  very  few  of  the  resulting 
+systems  have  had  significant  impact  on  management.  Generally  these 
+systems  have  done  little  to  effect  the  way  in  which  management  makes 
+decisions.  We  contend  that  a  major  reason  for  this  failure  to  improve 
+the  decision-making  ability  of  management  is  a  lack  of 
+an  appropriate  framework  within  which  to  view  the  range  of  potential 
+systems  applications. 
+
+In  many  groups  doing  MIS  work,  this  lack  of  perspective  prevents 
+the  full  appreciation  of  the  variety  of  organizational  uses  for  com-    I 
+puters.  Without  a  framework  to  guide  management  and  systems  planners, 
+the  tendency  is  to  serve  the  strongest  manager  or  the  greatest  crisis. 
+As  a  result,  systems  activities  too  often  may  move  from  crisis  to 
+crisis  following  no  clear  path,  receiving  only  ex  £OSt  facto  justifica- 
+tion. This  tendency  inflicts  an  unnecessary  expense  on  the  organization. 
+Not  only  are  costly  computer  resources  wasted,  but  even  more  costly 
+human  resources  are  mismanaged.  The  cost  of  systems  and  programming 
+personnel  is  generally  twice  that  of  the  hardware  involved  in  a 
+typical  project,  and  the  ratio  is  growing  larger  as  the  cost  of  hard- 
+ware drops  and  salaries  rise.  Competent  people  are  expensive.  More 
+importantly,  they  exist  only  in  limited  numbers.  This  limitation 
+
+
+actively  constrains  the  amount  of  systems  development  work  that  can 
+be  undertaken  in  a  given  organization,  and  so  good  resource  allocation 
+is  critical. 
+
+The  need  to  reassess  the  framework  within  which  we  view  the 
+allocation  of  resources  to  systems  activities  is  underscored  by 
+developments  in  two  distinct  areas  within  the  last  five  years  that 
+offer  us  the  potential  to  develop  altogether  new  ways  of  supporting 
+decision  processes.  First  there  has  been  considerable  technological 
+progress.  The  evolution  of  remote  access  to  computers  with  short 
+turnaround  time  and   flexible  user  interfaces  has  been  rapid. 
+Users  can  be  linked  to  computer  resources  through  low  cost  typewriter 
+and  graphical  display  devices.  These  developments  offer  new  possi- 
+bilities for  management  information  and  decision  systems.  The  second 
+development  in  the  past  few  years  has  been  a  conceptual  one.  There 
+is  emerging  an  understanding  of  the  potential  role  information  systems 
+within  organizations.  We  are  adding  to  our  knowledge  of  how  human 
+beings  solve  problems  and  of  how  to  build  models  that  capture  aspects 
+of  the  human  decision-making  processes. 
+
+The  progress  in  these  areas  has  been  dramatic.  Entirely  new 
+kinds  of  planning  and  control  systems  can  now  be  built  --  ones  that 
+dynamically  involve  the  manager's  judgment  and  support  him  with 
+analysis,  models,  and  flexible  access  to  relevant  information.  But 
+to  fully  realize  this  potential,  there  must  be  an  appropriate  frame- 
+work within  which  to  view  management  decision  making  and  the  required 
+systems  support.  The  purpose  of  this  paper  is  to  present  such  a 
+
+
+framework  --  one  which  we  believe  helps  us  to  understand  the  evolution 
+of  MIS  activities  within  organizations  and  to  recognize  some  of  the 
+potential  problems  and  benefits  resulting  from  our  new  understanding 
+and  our  new  technology.  Thus  this  framework  is  designed  to  be  useful 
+in  planning  for  information  systems  activities  within  an  organization 
+and  for  distinguishing  between  the  different  kinds  of  model  building, 
+people,  models,  computer  systems  and  so  forth  that  are  used  for  sup- 
+porting decisions  in  the  various  categories.  It  is,  by  definition, 
+a  static  picture,  a  snapshot,  and  is  not  designed  to  say  anything 
+about  how  information  systems  are  built  in  each  of  the  areas.  For 
+this  purpose  we  would  need  a  process  model  of  information  system 
+implementation. 
+
+Our  plan  for  the  remainder  of  this  paper  is  as  follows.  In  the 
+next  section  we  want  to  consider  some  of  the  general  advantages  of 
+developing  a  framework  for  information  systems  work.  Then  we  want  to 
+propose  a  specific  framework  which  we  have  found  to  be  useful  in  the 
+analysis  of  MIS  activities.  We  believe  that  this  framework  offers  us 
+a  new  way  to  characterize  the  progress  that  has  been  made  to  date, 
+and  it  offers  us  insight  into  the  problems  that  have  been  encountered. 
+In  the  third  section  of  the  paper  we  want  to  use  this  framework  to 
+help  us  analyze  the  types  of  resources  that  are  required  in  the  dif- 
+ferent decision  areas  and  the  ways  in  which  those  resources  should  be 
+used.  Our  feeling  is  that  there  exists  a  tremendous  potential  to  use 
+new  ideas  and  new  technology  to  augment  the  decision-making  ability 
+of  management,  but  unless  the  issues  that  we  raise  are  met  squarely. 
+
+
+U  is  yery   unlikely  that  this  potential  will  be  realized. 
+
+Framework  Development 
+
+In  this  section  we  want  to  propose  a  framework  for  viewing  mana- 
+gerial activities  within  organizations,  but  before  doing  that,  we  want 
+to  try  to  indicate  some  of  the  values  which  one  can  expect  from  the 
+development  of  a  framework  in  general.  Basically,  the  framework  of 
+the  type  we  are  interested  in  is  a  structuring  of  ideas.  The  potential 
+value  of  the  framework  arises  from  the  organization  it  imposes  upon 
+our  ideas  in  a  given  area. 
+
+The  framework  we  will  develop  here  is  one  for  managerial  activities, 
+not  for  information  systems.  It  is  a  way  of  looking  at  decisions  made 
+in  an  organization.  Information  systems  should  exist  only  to  support 
+decisions,  and  hence  we  are  looking  for  a  characterization  of  managerial 
+activity  in  these  terms.  For  reasons  which  we  will  make  clear  in  the 
+remainder  of  this  paper,  we  believe  that  an  understanding  of  managerial 
+activity  is  a  prerequisite  for  effective  systems  design  and  implemen- 
+tation. Most  MIS  groups  are  deeply  involved  in  system  development  and 
+implementation  without  a  prior  analysis  of  the  variety  of  managerial 
+activities.  This  has  prevented  them  from  developing  a  sufficiently 
+broad  definition  of  their  purpose  and  has  resulted  in  a  generally 
+inefficient  allocation  of  resources. 
+
+In  attempting  to  understand  the  evolution  and  problems  of 
+management  information  systems,  we  have  found  the  work  of  two  authors 
+
+
+particularly  useful.  The  first  is  Robert  Anthony,  who,  in  his  book 
+Planning  and  Control  Systems:  A  Framework  for  Analysis  ,  addresses 
+the  problem  of  developing  a  classification  scheme  that  will  allow 
+management  some  perspective  when  dealing  with  planning  and  control 
+systems.  He  develops  a  taxonomy  for  managerial  activity  consisting 
+of  three  categories  and  argues  that  these  categories  represent 
+activities  sufficiently  different  in  kind  to  require  the  development 
+of  different  systems. 
+
+The  first  of  Anthony's  categories  of  managerial  activity  is 
+strategic  planning:  "Strategic  planning  is  the  process  of  deciding 
+on  objectives  of  the  organization,  on  changes  in  these  objectives, 
+on  the  resources  used  to  attain  these  objectives,  and  on  the  policies 
+
+that  are  to  govern  the  acquisition,  use  and  disposition  of  these 
+
+2 
+resources."  Certain  things  can  be  said  about  strategic  planning 
+
+generally.  First,  it  focuses  on  the  choice  of  objectives  for  the 
+organization  and  on  the  activities  and  means  required  to  achieve  these 
+objectives.  As  a  result,  a  major  problem  in  this  area  1s  the  devel- 
+opment of  predictions  about  the  future  of  the  organization  and  its 
+environment.  Second,  the  strategic  planning  process  typically  involves 
+a  fairly  small  number  of  high  level  people  who  operate  in  a  nonrepeti- 
+tive  and  often  very  creative  way.  The  complexity  of  the  problems  that 
+arise  and  the  nonroutine  manner  in  which  they  are  dealt  with  makes  it 
+quite  difficult  to  appraise  the  quality  of  this  planning  process. 
+
+
+Robert  Anthony,  Planning  and  Control  Systems:  A  Framework  for 
+Analysis,  Graduate  School  of  Business  Administration,  Harvard  University 
+Boston,  1965. 
+
+^Op.  cit,  p.  25. 
+
+
+The  second  category  defined  by  Anthony  is  that  of  management 
+control :  "Management  control  is  the  process  by  which  managers 
+assure  that  resources  are  being  used  effectively  and  efficiently  in 
+the  accomplishment  of  the  organization's  objectives."  He  stresses 
+three  key  aspects  of  this  area.  First,  the  activity  involves  inter- 
+personal interaction.  Second,  it  takes  place  within  the  context  of 
+the  policies  and  objectives  developed  in  the  strategic  planning  process. 
+Third,  the  paramount  goal  of  management  control  is  the  assurance  of 
+effective  and  efficient  performance. 
+
+Anthony's  third  category  is  operational  control,  by  which  he 
+
+means  "the  process  of  assuring  specific  tasks  are  carried  out  effec- 
+
+2 
+tively  and  efficiently."  The  basic  distinction  between  management 
+
+control  and  operational  control  is  that  between  the  activity  properly 
+
+referred  to  as  management  and  activities  that  relate  the  the  performance 
+
+of  specified  tasks.  Specifically  we  can  say  that  operational  control 
+
+is  concerned  with  tasks  (such  as  manufacturing  a  specific  part)  whereas 
+
+management  control  is  most  often  concerned  with  people.  Also,  there 
+
+is  much  less  judgment  to  be  exercised  in  the  operational  control  area 
+
+because  the  tasks,  goals  and  resources  have  been  carefully  delineated 
+
+through  the  management  control  activity. 
+
+We  recognize,  as  does  Anthony,  that  the  boundaries  between  these 
+three  categories  are  often  not  clear.  In  spite  of  the  limitations  and 
+uncertainties  of  these  categories,  however,  we  have  found  them  quite 
+useful  in  the  analysis  of  information  system  activities.  For  example. 
+
+
+^Qp.  cit.,  p.  27. 
+^Op.  cit.,  p.  69. 
+
+
+if  we  consider  the  information  requirements  of  these  three  activities, 
+we  can  see  that  they  are  yery   different  from  one  another.  Further, 
+this  difference  is  not  simply  a  matter  of  aggregation,  but  one  of  funda- 
+mental character  of  the  information  needed  by  managers  in  these  areas. 
+
+Strategic  planning  is  concerned  with  setting  broad  policies  and 
+goals  for  the  organization.  As  a  result,  the  relationship  of  the 
+organization  to  its  environment  is  a  central  matter  of  concern.  Also, 
+the  nature  of  the  activity  is  such  that  predictions  about  the  future 
+are  particularly  important.  In  general,  then,  we  can  say  that  the 
+information  needed  by  strategic  planners  has  certain  properties. 
+First,  it  is  generally  aggregate  information.  Also,  a  large  portion  of 
+the  relevant  information  is  obtained  from  sources  external  to  the 
+organization  itself.  Both  the  scope  of  the  information  and  the  variety 
+of  the  types  of  information  are  quite  large.  At  the  same  time,  the 
+requirements  for  accuracy  of  the  information  are  not  particularly  strin- 
+gent. Finally,  the  nonroutine  nature  of  the  strategic  planning  process 
+means  that  the  demands  for  this  information  occur  infrequently. 
+
+The  information  needs  for  the  operational  control  area,  however, 
+stand  in  sharp  contrast  to  those  of  strategic  planning.  This  contrast 
+is  a  direct  reflection  of  the  basic  differences  between  these  two 
+activities.  The  task  orientation  of  operational  control  requires  infor- 
+mation of  a  well-defined  and  narrow  scope.  This  information  is  quite 
+detailed  and  arises  largely  from  internal  sources  within  the  organization, 
+Very  frequent  use  is  made  of  this  information,  and  it  is  important  that 
+
+
+the  information  be  accurate. 
+
+In  general  along  each  of  these  dimensions,  the  information 
+requirements  for  management  control  fall  between  the  extremes  for 
+operational  control  and  strategic  planning.  In  addition  it  is  impor- 
+tant to  recognize  that  an  important  part  of  the  information  which  is 
+relevant  to  management  control  is  obtained  through  the  process  of 
+interpersonal  interaction. 
+
+In  Figure  1  we  have  summarized  these  general  observations  about 
+the  categories  of  management  activity.  This  summary  is  subject  to  the 
+same  limitations  and  uncertainties  which  are  exhibited  by  the  concepts 
+of  management  control,  strategic  planning  and  operational  control. 
+Nonetheless,  it  does  underscore  our  contention  that  because  the  activi- 
+ties themselves  are  different,  the  information  requirements  to  support 
+these  activities  are  also  different. 
+
+This  summary  of  information  needs  suggests  the  reason  why  many 
+organizations  have  found  it  increasingly  difficult  to  realize  some  of 
+their  long  range  plans  for  information  systems.  Many  of  these  plans 
+are  based  on  the  "total  systems  approach."  Some  of  the  proponents 
+of  this  approach  advocate  (1)  that  systems  throughout  the  organization 
+be  tightly  linked,  with  the  output  of  one  becoming  the  direct  input  of 
+another,  and  (2)  that  the  whole  structure  be  built  on  the  detailed 
+data  used  for  controlling  operations.  In  doing  so,  they  are  suggesting 
+an  approach  to  systems  design  that  is  at  best  uneconomic  and  at  worst 
+is  based  on  a  potentially  fatal  misconception. 
+
+
+Ol 
+
+
+o; 
+
+^■* 
+
+■o 
+
+«8 
+
+•r™ 
+
+C 
+
+s 
+
+W 
+
+(U 
+
+>> 
+
+4J 
+
+$- 
+
+X 
+
+OJ 
+
+x> 
+
+I. 
+
+r"* 
+
+<u 
+
+o 
+
+5 
+
+(U 
+
+o 
+
+t  t  t  1  -? 
+
+
+t    t 
+
+
+>» 
+
+C 
+
+»- 
+
+o 
+
+o 
+
+(_> 
+
+o> 
+
+0> 
+
+♦J 
+
+«J 
+
+c 
+
+OJ 
+
+c 
+
+en 
+
+o 
+
+fC 
+
+••- 
+
+c 
+
+M 
+
+«0 
+
+s 
+
+TJ 
+
+« 
+
+o 
+
+LU 
+
+u 
+
+0£ 
+
+•T" 
+
+=> 
+
+4^ 
+
+CJ 
+
+V) 
+
+•-^ 
+
+*r~* 
+
+u. 
+
+1. 
+
+0) 
+
+o 
+
+♦J 
+
+
+t 
+
+
+o 
+
+«*- 
+
+•o 
+
+>. 
+
+0) 
+
+OJ 
+
+*J 
+
+•a 
+
+r— 
+
+«3 
+
+"cj 
+
+■r* 
+
+1- 
+
+en 
+
+r-~ 
+
+lO 
+
+Oj 
+
+W 
+
+p.-B 
+
+•»-> 
+
+Ol 
+
+fa 
+
+<u 
+
+a; 
+
+o^ 
+
+_j 
+
+3 
+
+Q 
+
+i/t   0) 
+
+
+cn+J 
+
+
+e 
+
+
+0) 
+
+o  c 
+
+
+O    O 
+O  *-> 
+
+
+o 
+u  c 
+
+c  •— • 
+Ol 
+
+CP  O 
+
+
+o 
+
+
+10. 
+
+
+The  first  major  problem  with  this  view  is  that  it  does  not 
+recognize  the  ongoing  nature  of  systems  development  in  the  operational 
+control  area.  There  is  little  reason  to  believe  that  this  systems 
+work  in  any  major  organization  will  be  complete  within  the  forseeable 
+future.  To  say  that  management  information  systems  activity  must  wait 
+"until  we  get  our  operational  control  systems  in  hand"  is  to  say  that 
+efforts  to  assist  management  with  systems  support  will  be  deferred 
+indefinitely. 
+
+The  second  and  perhaps  most  serious  problem  with  this  total 
+systems  view  is  that  it  fails  to  properly  represent  the  information 
+needs  of  the  management  control  and  strategic  planning  activities. 
+Neither  of  these  areas  necessarily  needs  information  that  is  a  mere 
+aggregation  of  data  from  the  operational  control  data  base.  In  many 
+cases  if  such  a  link  is  needed,  it  is  more  cost  effective  to  use 
+sampling  from  this  data  base  and  other  statistical  techniques  to  develop 
+the  required  information.  Seldom  if  ever  does  it  make  sense  to 
+directly  couple  managers  in  the  management  control  and  strategic  planning 
+areas  to  the  masses  of  detailed  data  required  for  operational  control. 
+Not  only  is  this  direct  coupling  unnecessary,  but  it  is  often  an  expensive 
+and  difficult  technical  problem. 
+
+For  these  reasons  it  is  easy  to  understand  why  so  many  companies 
+have  had  the  following  experience.  Original  plans  for  operational 
+control  systems  were  met  with  more  or  less  difficulty,  but  as  time 
+passed  it  became  increasingly  apparent  that  the  planned  systems  for 
+
+
+n 
+
+
+higher  management  were  not  being  developed  on  schedule  (1f  at  all). 
+To  make  matters  worse,  the  systems  which  were  developed  for  senior 
+management  had  relatively  little  impact  on  the  way  in  which  these 
+managers  made  decisions.  This  last  problem  is  a  direct  result  of 
+the  failure  to  understand  the  basic  information  needs  of  different 
+activities. 
+
+We  have  tried  to  show  in  the  above  discussion  how  Anthony's 
+classification  of  managerial  activities  is  a  useful  consideration  for 
+people  working  in  information  systems  design  and  implementation.  His 
+ideas  are  an  important  component  of  the  framework  which  we  will  present. 
+When  we  have  that  framework  in  hand,  we  will  then  return  to  consider  in 
+more  detail  some  of  the  implications  of  these  ideas.  At  the  moment, 
+however,  we  would  like  to  introduce  a  second  way  of  looking  at  manage- 
+ment activities  into  our  discussion.  Anthony's  classification  of 
+managerial  activity,  from  the  viewpoint  of  planning  and  control,  can 
+be  complemented  by  Herbert  Simon's  general  discussion  of  human  problem 
+solving. 
+
+Simon's  work  is  concerned  with  the  manner  in  which  human  beings 
+solve  problems  irrespective  of  their  position  within  an  organization. 
+His  distinction  between  "programmed"  and  "nonprogrammed"  decisions 
+is  a  useful  one  for  us.  He  regards  them  as  being  at  the  opposite  ends 
+of  a  continuum,  and  he  is  careful  to  assert  that  they  are  not  sharply 
+defined  categories.  Simon  describes  these  two  types  of  decisions  as 
+follows: 
+
+
+^H.  A.  Simon,  The  New  Science  of  Management  Decision,  Harper  and 
+Rowe,  1960,  p.  6. 
+
+
+12, 
+
+
+1.  Decisions  are  programmed  to  the  extent  that  they  are 
+repetitive  and  routine,  to  the  extent  that  a  definite 
+procedure  has  been  worked  out  for  handling  them  so 
+that  they  don't  have  to  be  treated  de  novo  each  time 
+they  occur. 
+
+2.  Decisions  are  nonprogrammed  to  the  extent  that  they 
+are  novel,  unstructured  and  consequential.  There  is 
+
+no  cut-and-dried  method  of  handling  the  problem  because 
+it  hasn't  arisen  before,  because  its  precise  nature 
+and  structure  are  elusive  or  complex,  or  because  it 
+is  so  important  that  it  deserves  a  custom-tailored 
+treatment.  By  nonprogrammed  I  mean  a  response  where 
+the  system  has  no  specific  procedure  to  deal  with 
+situations  like  the  one  at  hand  but  must  fall  back  on 
+whatever  general  capacity  it  has  for  intelligent, 
+adaptive,  problem-oriented  action. 
+
+We  will  use  the  terms  "structured"  and  "unstructured"  for  programned 
+
+and  nonprogrammed  because  they  imply  less  dependence  on  the  computer 
+
+and  more  dependence  on  the  basic  character  of  the  problem-solving 
+
+activity  in  question. 
+
+Distinguishing  between  these  two  types  of  problems  is  important 
+because  we  approach  solving  the  two  types  differently.  Different 
+procedures,  different  kinds  of  computation,  and  different  types  of 
+information  may  be  required  depending  on  the  extent  to  which  the 
+problem  in  question  is  unstructured.  The  basis  for  these  differences 
+lies  in  the  fact  that  the  human  decision  maker  must  provide  judgment 
+and  evaluation  as  well  as  insights  into  problem  definition  in  the 
+unstructured  case.  Such  a  situation  differs  fundamentally  from  that 
+associated  with  problem  solving  for  very   structured  problems.  Here 
+much  if  not  all  of  the  decision-making  process  can  be  automated. 
+Later  in  this  paper  we  will  argue  that  systems  built  to  support 
+structured  decision  making  will  be  significantly  different  from  those 
+
+
+13, 
+
+
+designed  to  support  managers  in  dealing  with  unstructured  problems. 
+Further,  we  will  try  to  show  that  this  difference  can  be  traced  to 
+the  different  character  of  the  models  which  are  relevant  to  each  of 
+these  types  of  problems  and  the  way  in  which  these  models  are  developed, 
+
+This  focus  on  decisions  requires  an  understanding  of  the  human 
+decision-making  process.  Research  on  the  oroblem  of  human  problem 
+solving  supports  Simon's  claim  that  all  problem  solving  can  be  broken 
+down  into  three  categories: 
+
+1.  The  first  phase  of  the  decision-making  process, 
+searching  the  environment  for  conditions  calling 
+for  a  decision,  I  shall  call  intelligence  activity 
+(borrowing  the  military  meaning  of  intelligence). 
+The  second  phase  —  inventing,  develooinq,  and 
+analyzing  possible  courses  of  action  —  I  shall 
+call  design  activity.  The  third  phase  —  selecting 
+course  of  action  from  those  available  —  I  shall 
+call  choice  activity. 
+
+2.  Generally  speaking,  intelligence  activity  precedes 
+design,  and  design  activity  precedes  choice.  The 
+cycle  of  phases  is,  however,  far  more  complex  than 
+the  sequence  suggests.  Each  phase  in  making  a 
+particular  decision  is  itself  a  complex  decision- 
+making process.  The  design  phase,  for  example, 
+may  call  for  new  intelligence  activities;  problems 
+
+at  any  given  level  generate  subproblems  that  in  turn  have 
+their  own  intelligence,  design  and  choice  phases, 
+and  so  on.  There  are  wheels  within  wheels.  Never- 
+theless, the  three  large  phases  are  often  clearly 
+discernible  as  the  organizational  decision  process 
+unfolds.  They  are  closely  related  to  the  stages 
+in  problem  solving  first  described  by  John  Dewey: 
+What  is  the  problem?  What  are  the  alternatives? 
+Which  alternative  is  best?2 
+
+In  this,  Simon  clearly  makes  the  point  that  this  problem-solving 
+process  is  a  highly  iterative  hierarchical  process.  For  example,  the 
+
+
+Simon,  op.  cit.,  p.  4. 
+^John  Dewey,  How  We  Think,  Chapter  8,  D.  C.  Heath  &  Company, 
+
+
+Jew  York,  1910, 
+
+
+14. 
+
+
+intelligence  phase  could  be  thought  of  as  a  subproblem  which  in  order 
+to  "find"  a  problem  requires  the  user  to  go  through  the  intelligence, 
+design  and  choice  phases  at  another  level  from  that  of  the  initial 
+problem  statement.  This  interactive,  hierarchical  character  is  hard 
+to  represent  on  paper,  but  it  should  be  kept  clearly  in  mind  during 
+the  following  discussion. 
+
+A  fully  structured  problem  is  one  in  which  all  three  phases, 
+intelligence,  design  and  choice,  are  structured.  That  is,  we  can 
+specify  algorithms,  or  decision  rules,  that  will  allow  us  to  find 
+the  problem,  design  solutions,  and  select  the  best  solution.  An 
+example  here  might  be  the  inventory  control  problem  in  a  simple 
+case  --one  where  demand  was  known  with  a  ligh  degree  of  accuracy  and 
+replenishment  times  were  ^ery   predictable  with  all  costs  known 
+reasonably  accurately.  In  such  a  case,  we  can  set  up  criteria  to  tell 
+us  when  there  is  a  problem  (the  re-order  point  is  broken).  Given  this 
+condition,  the  solution  generation  process  uses  a  known  model  (the 
+re-order  quantity  formula)  and  the  latest  numbers  and  generates  an 
+answer  which  in  this  case  is  chosen  automatically. 
+
+Similarly,  in  a  semi-structured  area  we  can  find  problems  where 
+the  search  for  a  problem  is  difficult,  although  the  design  and  the 
+choice  of  a  solution  is  relatively  easy.  In  such  a  case  we  might 
+want  to  design  a  flexible  man-machine  interaction  in  the  search 
+activity  and  leave  the  design  and  choice  to  the  computer.  When  all 
+phases  are  unstructured,  we  can  only  provide  access  to  data  and 
+
+
+15, 
+
+
+useful  ways  of  displaying  it. 
+
+In  the  ideas  of  Simon  and  Anthony,  then,  we  have  two  different 
+ways  of  looking  at  managerial  activity  within  organizations.  Anthony's 
+categorization  is  really  based  on  the  purpose  of  the  management 
+activity,  whereas  Simon's  classification  is  based  on  the  way  in  which 
+the  manager  deals  with  the  problems  which  confront  him.  The  combin- 
+ation of  these  two  different  views  provides  what  we  feel  is  a  useful 
+framework  within  which  to  view  the  purposes  and  problems  of  information 
+systems  activity.  This  combination  is  given  in  Figure  2  where  we  have 
+further  separated  the  class  of  decision  we  are  calling  semi -structured. 
+These  decisions  are  those  with  one  or  two  of  the  intelligence,  design 
+and  choice  phases  unstructured.  It  is  this  semi -structured  area  where 
+the  interactive  terminal  systems  have  their  greatest  potential.  We 
+have  listed  some  examples  in  each  of  the  cells  but  it  should  be 
+stressed  once  again  that  these  are  not  well-defined  precise  categories 
+but  rather  general  boundaries.  Decisions  that  fall  above  the  dividing 
+line  are  largely  structured  and  information  systems  that  support  these 
+we  have  termed  structured  decision  systems  (SDS).  Decisions  below  the 
+line  are  largely  unstructured  and  we  have  chosen  to  term  information 
+systems  that  support  these  Management  Decision  Systems  (MDS).  The  SDS 
+area  encompasses  almost  all  of  what  JTas_  been  called  Management  Information 
+Systems  (MIS)  in  the  literature  --  an  area  that  has  had  almost  nothing 
+to  do  with  real  managers  or  information  but  has  been  largely  routine 
+data  processing.  We  exclude  from  consideration  here  all  of  the  information 
+
+
+16, 
+
+
+/ 
+
+Vw 
+
+X 
+
+>1 
+
+S- 
+
+0 
+0 
+
+01 
+
+c 
+0 
+
+•4-J 
+
+to 
+
+c_> 
+
+•1 — 
+
+Ll_ 
+
+c 
+
+.-c  O 
+
+s: 
+
+:3 
+
+c 
+
+CD  2: 
+
+■0 
+
+cr 
+
+re 
+
+UJ  1— 1 
+
++-> 
+
+C 
+
+0 
+
+1^ 
+
+1—  2: 
+
+0) 
+
+(O 
+
+ct 
+
+Q. 
+
+cc  s: 
+
+ai 
+
+c 
+
+Qi  cC 
+
+r— 
+
+<D 
+
+0 
+
+■0 
+
+4-> 
+
+f-  —I 
+
+U_ 
+
+t/i 
+
+•r— 
+
+C 
+
+0 
+
+OO  Q. 
+
+s_ 
+
+O) 
+
+c 
+
+1— 
+
+:3 
+0 
+
+O) 
+
+n3 
+
+3 
+
+<_> 
+0 
+
+m 
+
+to 
+
+s- 
+a> 
+en 
+
+s_ 
+
+O) 
+
+3 
+
+0 
+
+i- 
+
+2 
+
+1 
+
+trt 
+
+E 
+-S- 
+Ol 
+
++-> 
+
+0 
+
+-i- 
+
+1 
+
+^ 
+
+2: 
+
+c 
+0 
+
+(— 
+
+1 
+
+-M 
+
+J= 
+
+CO 
+
+0 
+
++J 
+
+^^ 
+
+I/) 
+
+1/1 
+
+•t~  +-> 
+
+•^• 
+
+0 
+
+UJ  _l 
+
+V) 
+
+0 
+
+CO    OJ 
+
+■l-> 
+
+3 
+
+s:o 
+
+CJ 
+
+1 
+
+>,  D-. 
+
+re 
+
+■0 
+
+LU  Qi 
+
+to 
+
+1 
+
+r—  -0 
+
+s_ 
+
+0 
+
+0  h- 
+
+>iT3 
+
+re  3 
+
+re 
+
+s. 
+
+<  2: 
+
+OJ 
+
+D. 
+
+C  CQ 
+
+Q. 
+
+CI. 
+
+z:  0 
+
+(13 
+
+S- 
+
+C 
+
+■=t 
+
+OJ 
+
+D> 
+
+cC  t_) 
+
+C 
+
+cu 
+
+•r— 
+
+i- 
+
+-0  c 
+
+s: 
+
+=a: 
+
+lO 
+
+0    (O 
+
+Q. 
+
+re  £= 
+
+■(-> 
+
+■r- 
+
+(O 
+
+c  s- 
+
+4-> 
+
+c 
+
+a> 
+
+O) 
+
+0 
+
+ro    d) 
+
+O) 
+
+CO  re 
+
+CT> 
+
+C 
+
+dJ 
+
+•r-    > 
+
+cn 
+
+OJ  r- 
+
+T3 
+
+LU 
+
+S- 
+
+i-  0 
+
+-0 
+
+I—  Q. 
+
+3 
+
+0 
+
+<a 
+
+3 
+
+re 
+
+
+
+—  ■ 
+
+— 
+
+CQ 
+
+
+
+u. 
+
+-J- 
+
+> 
+c 
+
+I- 
+
+CQ 
+
+00 
+
+<u 
+
+-1— 
+
+_i 
+
+^^ 
+
+^— 
+
+<c 
+
+JD 
+
+^— 
+
+3 
+
+to 
+
+s:  _i 
+
+fO 
+
+0 
+
+■a 
+
+E 
+
+0  0 
+
+> 
+
+S- 
+
+(U 
+
+4-> 
+
+QJ 
+
+1—1  a: 
+
+•^- 
+
++-> 
+
+^ 
+
+C 
+
++-> 
+
+1—  1— 
+
+O) 
+
+c 
+
+0 
+
+OJ 
+
+CO 
+
+■=£  Z 
+
+0 
+
+0 
+
+oo 
+
+E 
+
+>» 
+
+q:  0 
+
+0) 
+
+>, 
+
+c_) 
+
+O) 
+
+CO 
+
+UJ   (_> 
+
+d: 
+
+$- 
+
+c 
+
+CO 
+
+0. 
+
++J 
+
+>^ 
+
+0 
+
+re 
+
+1— 
+
+0 
+
+CO 
+
+C 
+
+s- 
+
+•  r— 
+
+c 
+
+u-> 
+
+•1-3 
+
+UJ 
+
+0 
+
+4-> 
+
+re 
+
+0 
+
+c 
+
+4-> 
+
+<-) 
+
+s: 
+
+C_) 
+
+13 
+
+S- 
+
+c 
+
+3 
+
+0 
+
+OJ 
+
+OJ 
+
+T3 
+
+-C 
+
+h- 
+
+U 
+
+■o 
+
+> 
+
+0 
+
+CO 
+
+q; 
+
+\ 
+
+0 
+
+S- 
+
+c 
+
+S- 
+
+re 
+
+UJ 
+
+/ 
+
+s 
+
+0 
+
+D- 
+
+0 
+
+Q. 
+
+> 
+
+
+17. 
+
+
+handling  activities  in  an  organization.  A  large  percentage  of  computer 
+time  in  many  organizations  is  spent  on  pure  information  handling  with 
+no  decisions,  however  structured,  involved.  The  payroll  application, 
+simple  status  report  processing,  etc  are  examples. 
+
+Some  illustruations  of  our  framework  categories  may  make  their 
+meaning  clearer: 
+
+Structured  Operational  Control 
+
+Decisions  on  Order  Entry.  The  decisions  involved  when  a 
+customer's  order  is  received.  Which  discounts  to  apply, 
+what  price  is  applicable,  which  warehouse  to  fill  the  order 
+from,  the  means  by  which  it  should  be  shipped  and  so  forth. 
+Each  of  these  decisions  is  governed  by  well-defined  rules 
+and  is  an  integral  part  of  the  ongoing  operations. 
+
+Decisions  on  Inventory  Control.  A  further  example  occurs 
+on  the  inventory  reordering  decisions  for  the  high  volume  parts 
+a  company  stocks.  When,  and  how  much,  to  order  are  well 
+understood  structured  decisions. 
+
+Unstructured  Operational  Control 
+
+PERT/COST  Analysis.  The  use  of  a  PERT/COST  system  in  an 
+ongoing  project  control  situation  involves  judgmental  inputs 
+from  the  decision  maker.  Which  tasks  have  become  the  most 
+important  problems,  what  might  possible  solutions  be,  what 
+will  the  impact  of  any  given  solution  be,  which  solution  is 
+the  best?  Many  of  these  questions  are  unstructured  and  such 
+a  control  system  is  part  of  an  ongoing  operational  decision. 
+
+
+Job-Shop  Scheduling.  Decisions  as  to  which  jobs  to  schedule  on 
+which  particular  machines  for  what  time  period  is  an  operational 
+control  decision  for  which  there  exists  no  good  automatic  decision 
+process.  Good  models  do  not  exist  for  its  solution;  judgment 
+plays  an  important  part. 
+
+Structured  Management  Control 
+Budget  Analysis.  The  variance  analysis  of  "engineered"  costs 
+is  a  management  control  activity  that  is  largely  structured. 
+The  cause  and  effect  relationships  are  directly  determinable 
+from  the  data. 
+
+Forecasting  Short  Term.  Production  and  sales  decisions  based 
+on  short  term  forecasts  are  well  understood  decisions.  The 
+forecasts  themselves  can  be  done  tolerably  well  and  their 
+relationship  to  sales  or  production  decisions  is  almost  auto- 
+matic. 
+
+Unstructured  Management  Control 
+Budget  Preparation.  The  setting  of  budget  levels  and  the 
+variables  to  be  included  are  both  decisions  which  often  require 
+significant  managerial  inputs.  How  much  to  expand  or  increase 
+any  given  line  item,  new  expenses  to  be  considered  and  so  forth. 
+
+Sales  and  Production  Planning,  Decisions  for  the  future  for 
+sales  or  production  levels  and  the  co-ordination  between  them 
+
+
+19. 
+
+
+are  all  unstructured  areas  where  decisions  on  a  three  to  twenty- 
+four  month  horizon  are  often  critical. 
+
+Structured  Strategic  Planning 
+Tanker  Fleet  Mix.  Decisions  on  the  strategy  to  employ  with 
+regard  to  the  composition  of  the  distribution  system  for  an 
+oil  company  are  determined  in  large  measure  by  economics.  Large 
+
+vs.  small  tankers  vs.  pipelines,  etc.  are  all  trade-offs  which 
+are  heavily  influenced  by  the  economics  of  the  system  involved. 
+Simulation  models  are  likely  to  yield  a  solution  which  will 
+determine  the  final  answer. 
+
+Factory  Location.  Factory  or  warehouse  location  decisions,  in 
+fact  the  structure  of  the  distribution  system,  are  a  further  class 
+that  are  likely  to  be  determined  by  models.  These  decisions  can 
+often  be  largely  structured. 
+
+Unstructured  Strategic  Planning 
+Merger  &  Acquisitions.  Decisions  on  expansions  and  purchases  of 
+other  corporations.  The  timing  and  price  of  an  acquisition. 
+Capital  placements  and  other  fund-raising  activities.  These 
+and  a  host  of  similar  problems  of  growth  are  unstructured. 
+
+New  Product  Planning.  New  product  decisions,  their  pricing, 
+manufacturing  methods,  staffing  and  timing  decisions  are  all 
+unstructured  to  some  significant  extent. 
+
+
+20, 
+
+
+Each  of  these  examples  is  meant  to  be  illustrative  only.  At  any 
+organizational  level  the  important  decisions  can  be  classified  into  these 
+six  cells.  The  boundaries  are  admittedly  fuzzy  but  at  least  for  the 
+majority  of  decisions  in  each  class  there  are  quite  different  impli- 
+cations involved  for  each  of  the  six  cells.  We  explore  these  in  the 
+material  that  follows. 
+
+Implications  of  the  Framework 
+
+Planning 
+
+An  immediate  observation  can  be  made  in  looking  at  this  framework. 
+Almost  all  the  so-called  MIS  activity  has  been  directed  at  decisions 
+in  the  "structured"  half  of  the  matrix  and  within  this  in  the  "operational 
+control"  cell. 
+
+As  is  obvious  from  this  rough  categorization,  most  of  the  inter- 
+esting areas  that  really  concern  managers,  areas  where  decisions  have 
+a  significant  effect  on  a  company,  are  in  the  lower  half  of  the  diagram. 
+That  is,  managers  of  stature  deal  with  unstructured  decisions,  if  not 
+most  of  their  working  time  certainly  for  most  of  their  significant 
+decisions. 
+
+This  implies  of  course  that  computers  and  related  systems  which 
+which  have  so  far  been  largely  applied  to  the  structured  area  have  not 
+yet  had  any  real  impact  on  management  decision  making  -  and  that  the 
+areas  of  high  potential  do  not  lie  in  bigger  and  better  systems  of  the 
+kind  most  companies  now  have.  Most  of  the  opportunities  for  improving 
+
+
+21 
+
+
+the  "effectiveness"  as  opposed  to  the  "efficiency"  of  an  operation 
+lie  below  the  line  separating  structured  from  unstructured. 
+
+Therefore  in  planning  the  allocation  of  resources  to  the  information 
+systems  area,  an  organization  should  assess  its  activities  in  each  of 
+these  six  areas.  To  have  all  the  effort  in  only  one  of  the  cells 
+suggests  at  the  ^^ery   least  a  severe  imbalance  and  that  some  consideration 
+be  given  to  applications  in  the  other  areas. 
+
+A  second  point  to  be  noted  on  the  planning  question  is  the 
+evolutionary  nature  of  the  line  separating  structured  from  unstructured 
+decisions.  This  line  is  moving  down  over  time.  As  we  improve  our 
+understanding  of  a  particular  decision  we  can  move  it  above  the  line 
+and  allow  the  system  to  take  care  of  it,  freeing  the  manager  for  other 
+tasks  more  suited  to  his  skills.  For  example  in  previous  years  the 
+inventory  reordering  decisions  in  most  organizations  were  made  by  a 
+well-paid  member  of  middle  management.  It  was  a  decision  that  involved 
+a  high  degree  of  skill  and  its  quality  could  make  a  big  difference  to 
+the  profits  of  the  organization.  Today  that  same  decision  has  moved 
+from  the  unstructured  operational  control  area  to  the  structured.  We 
+have  a  set  of  decision  rules  (the  EOQ  formula)  which  on  average  do  a 
+better  job  for  the  standard  items  than  most  human  decision  makers. 
+This  movement  of  the  line  does  not  imply  any  replacement  of  managers 
+since  we  are  dealing  with  an  infinite  set  of  problems.  For  every  one 
+we  solve  there  are  ten  to  turn  our  attention  to. 
+
+It  is  worth  noting  that  the  approach  taken  in  building  systems  in 
+
+
+22. 
+
+
+the  unstructured  area  hastens  this  movement  of  the  Hne  since  U 
+focuses  our  analytical  attention  on  decisions  and  decision  rules. 
+This  would  lead  us  to  expect  a  continuing  flow  of  decisions  across 
+the  line,  or  at  least  into  the  "grey"  semi -structured  decision  area 
+where  either  the  intelligence,  design  or  choice  phases  are  unstruc- 
+tured. In  other  words  through  the  development  of  a  model  of  a  given 
+problem  solving  process,  we  can  establish  the  character  of  each  of  the 
+three  phases.  To  the  extent  that  any  of  these  phases  can  be  structured, 
+we  can  design  direct  systems  support.  For  those  aspects  of  the  process 
+that  are  unstructured  (given  our  current  understanding  of  the  situation), 
+we  would  call  on  the  manager  to  provide  the  necessary  analysis.  Thus 
+a  problem  might  be  broken  down  into  a  set  of  related  subproblems,  some 
+of  which  are  "solved"  automatically  by  the  system  and  the  remainder 
+are  dealt  with  by  the  user  alone  or  with  varying  degrees  of  computational 
+and  display  support.  Regardless  o^   the  resulting  division  of  labor, 
+however,  it  is  essential  that  a  model  of  the  decision  process  be  con- 
+structed prior  to  the  system  design.  It  is  only  in  this  way  that  a 
+good  perspective  on  the  potential  application  of  systems  support  can 
+be  ascertained. 
+
+Structured/Unstructured 
+
+There  is  a  series  of  implications  that  flow  from  the  distinction 
+that  has  been  drawn  between  structured  and  unstructured  decisions. 
+
+A  major  focus  of  information  systems  ought  to  be  on  the  important 
+decisions  of  the  organization,  many  of  which,  as  we  argued  above,  are 
+
+
+23. 
+
+
+unstructured.  The  realization  of  this  focus  should  be  the  development 
+of  a  model  of  the  decision  process  that  is  involved.  This  model 
+development  is  fundamental,  because  it  is  a  prerequisite  for  the 
+analysis  of  the  value  of  information,  and  it  is  the  key  to  the  under- 
+standing of  the  portions  of  the  decision  process  that  can  be  supported 
+or  automated.  Both  the  successes  and  failures  of  the  use  of  computers 
+in  organizations  to  date  can  be  understood  largely  in  terms  of  the 
+difficulty  of  this  model  development. 
+
+Our  discussion  of  SDS  work  showed  that  the  vast  majority  of  the 
+effort  (and  success)  has  been  in  the  area  of  structured  operational 
+control.  The  fact  that  this  area  is  structured  implies  that  there 
+exist  definite,  routine  procedures  for  dealing  with  problems.  Secondly, 
+in  the  operational  control  area,  there  is  relatively  little  ambiguity 
+as  to  the  goals  sought.  For  example,  the  typical  inventory  control 
+problem  can  be  precisely  stated,  and  it  is  clear  what  the  criterion  is 
+by  which  solutions  are  to  be  judged.  Hence  we  have  a  well  understood 
+optimization  problem.  This  type  of  problem  lends  itself  to  the 
+development  of  formal,  "scientific"  models,  those  typical  of  operations 
+research. 
+
+Another  important  characteristic  of  problems  of  this  type  is  that 
+they  are  to  a  large  extent  "organization-independent."  By  this  we 
+mean  that  the  essential  aspects  of  the  problem  tend  to  be  the  same  in 
+many  organizations,  although  details  may  differ.  The  generality  of  the 
+
+
+24. 
+
+
+has  two  important  effects.  First  it  encourages  widespread  interest  and 
+effort  in  the  development  of  solutions  to  the  problem.  Second,  it  makes 
+the  adaption  of  general  models  to  the  situation  in  a  particular  organiza- 
+tional setting  relatively  easy. 
+
+The  situation  with  regard  to  areas  of  management  decision  making 
+below  the  line  is  quite  different.  To  the  extent  to  which  a  given  prob- 
+lem is  semi-structured  or  unstructured,  there  is  an  absence  of  a  routine 
+procedure  for  dealing  with  it.  Also  there  is  a  tendency  for  there  to  be 
+some  ambiguity  in  the  problem  definition.  This  is  because  of  a  lack  of 
+formalization  of  any  or  all  of  the  intelligence,  design,  or  choice 
+phases  of  the  decision  making  process.  Confusion  may  exist  as  to  the 
+appropriate  criterion  for  evaluating  solutions,  or  as  to  the  means 
+for  generating  trial  solutions  to  the  problem.  In  many  cases,  this 
+uncertainty  contributes  to  the  perception  of  problems  of  this  type  as 
+being  unique  to  a  given  organization. 
+
+In  general,  then,  we  can  say  that  the  information  systems  problem 
+in  the  structured  operational  control  area  is  basically  that  of  imple- 
+menting a  given  general  model  in  a  certain  organizational  context.  On 
+the  other  hand,  work  in  the  unstructured  areas  is  much  more  involved  with 
+model  development  and  formalization.  Furthermore,  the  source  of  the 
+models  in  the  former  case  is  apt  to  be  the  operations  research  or 
+management  science  literature.  In  the  latter  case,  however,  the 
+relevant  models  are  most  often  the  as  yet  unverbalized  models  used  by 
+
+
+25. 
+
+
+the  managers  of  the  organization.  This  suggests  that  the  procedure  for 
+tie  development  of  systems,  the  types  of  systems,  and  the  skills  of  the 
+analysts  involved  may  be  quite  different  in  the  two  areas. 
+
+First  consider  the  people  involved  in  the  systems  development  work. 
+The  evolution  of  information  systems  activities  in  most  organizations 
+has  led  to  the  accumulation  of  a  variety  of  technical  skills.  In  many 
+cases,  the  collective  knowledge  of  computers  and  telecommunications  is 
+impressive.  In  many  of  these  same  organizations,  however,  the  impact 
+of  computers  on  the  way  in  which  top  managers  make  decisions  has  been 
+minimal.  The  reason  for  this  is  that  the  support  of  these  decision 
+makers  is  not  principally  a  technical  problem.  If  it  were,  it  would 
+have  been  solved.  Certainly  there  are  technical  problems  associated 
+with  work  in  these  problem  areas,  but  the  technology  and  the  techno- 
+logical skills  in  most  large  organizations  are  more  than  sufficient. 
+This  missing  ingredient,  apart  from  the  basic  awareness  of  the  problem, 
+is  the  skill  to  elicit  from  management  their  view  of  their  organization 
+and  its  environment  and  to  formalize  models  of  this  view. 
+
+Unfortunately,  success  in  operational  control  applications  is  no 
+guarantee  of  success  in  the  unstructured  problem  areas.  We  have  dis- 
+cussed the  fundamental  differences  in  the  two  types  of  problems  in 
+order  to  underscore  this  point.  In  many  cases,  the  view  taken  by 
+systems  people  experienced  in  the  operational  control  areas  is  at  best 
+inappropriate  for  MDS  work. 
+
+Consider  an  extremely  elementary  view  of  a  decision  process.  The 
+
+
+26, 
+
+
+picture  1s  of  a  'black  box'  with  information  as  inputs  and  decisions  as 
+outputs.  The  aim  of  a  systems  designer  should  be  to  improve  the  quality 
+of  the  decisions  which  are  produced  by  the  process.  Basically  this  can 
+be  done  in  two  ways.  Either  the  quality  of  the  information  inputs  can 
+be  improved  (assuming  that  the  actual  decision  process  remains  unchanged), 
+or  the  decision  process  can  be  altered  (given  the  same  information  inputs) 
+Of  course,  there  is  always  the  possibility  of  changing  both  aspects  at 
+the  same  time. 
+
+Because  of  the  existence  of  a  variety  of  optimization  models  for 
+operational  control  problems,  there  is  a  tendency  for  less  emphasis  to 
+be  placed  on  the  decision  process  in  this  area.  In  many  cases,  systems 
+designers  know  how  to  make  optimal  decisions  (e.g.,  inventory  control) 
+or  at  least  very   good  decisions  (e.g.,  production  scheduling).  The 
+emphasis  in  this  area  is  on  the  improvement  of  the  information  inputs 
+to  the  decision  model.  Hence  the  importance  of  real  time  systems  and 
+telecommunications  and  the  like  is  great. 
+
+Although  this  emphasis  on  the  quality  of  information  inputs  is 
+appropriate  for  structured  operational  control  problems,  it  can  retard 
+progress  in  developing  support  for  unstructured  problem  solving.  The 
+difficulty  with  this  view  1s  that  it  tends  to  attribute  low  quality  in 
+management  decision  making  to  low  quality  information  Inputs.  Hence, 
+systems  are  designed  to  supply  more  current,  more  accurate,  or  more 
+detailed  information.  In  the  extreme,  managers  are  inundated  with  such 
+information. 
+
+
+27. 
+
+While  improving  the  quality  of  information  available  to  managers 
+may  improve  the  quality  of  thei ^  decisions,  we  do  not  believe  that  major 
+advances  will  be  realized  in  this  way.   This  is  because  we  believe  that 
+most  managers  do  not  have  great  informational  needs,  but  rather  they 
+have  need  for  new  methods  to  understand  and  process  the  information  already 
+available  to  them.  Generally  speaking,  the  models  that  they  employ  in 
+dealing  with  this  information  are  very  primitive,  and  as  a  result,  the 
+range  of  responses  that  they  can  generate  is  very  limited.  For  example, 
+
+many  managers  employ  simple  historical  models  in  their  attempts  to 
+
+2 
+anticipate  the  future.   Further,  these  models  are  static  in  nature, 
+
+although  the  processes  they  purport  to  represent  are  highly  dynamic. 
+
+In  such  a  situation,  there  is  much  more  to  be  gained  by  improving  the 
+
+information  processing  ability  of  managers  in  order  that  they  may 
+
+effectively  deal  with  the  information  that  they  already  have,  than  in 
+
+adding  to  the  reams  of  data  confronting  them,  or  in  improving  the 
+
+3 
+qual ity  of  that  data. 
+
+If  this  view  is  correct,  it  sugaests  that  the  MDS  area  is  important 
+and  that  systems  to  support  decisions  may  best  be  built  by  people  other 
+than  those  currently  involved  in  the  operational  control  systems  area. 
+The  requisite  skills  are  those  of  model  building  based  on  close  inter- 
+actions with  management;  structuring  and  formalizing  the  procedures 
+employed  by  managers;  and  segregating  those  aspects  of  the  decision 
+process  that  can  be  automated.  In  addition,  systems  in  this  area  must 
+
+
+R.  Ackoff,  "Management  Misinformation  Systems",  Mgt.  Sci.,  vol.  14, 
+
+
+no.  4,  Dec.  1967,  pp.  B147-156 
+
+2 
+W.  F.  Pounds,  The  Proce 
+
+Review,  vol.  11,  no.  1  (1969),  ip.   1-20 
+
+^G.  A.  Gorry, 
+Review,  (in  press). 
+
+
+W.  F.  Pounds,  "The  Process  of  Problem  Finding",  Industrial  Management 
+■^G.  A.  Gorry,  "The  Development  of  Managerial  Models",  Sloan  Management 
+
+
+28. 
+
+
+be  able  to  assist  the  evolution  of  the  manager's  ability  to  deal  with 
+the  problems  confronting  him  through  increasing  his  understanding  of 
+the  environment.  Hence,  one  important  role  of  an  MDS  is  educative. 
+Even  in  areas  in  which  we  cannot  structure  the  decision  process,  we  can 
+provide  models  of  the  environment  from  which  the  manager  can  develop 
+insights  into  the  relationship  of  his  decisions  to  the  goals  he  wishes 
+to  achieve. 
+
+In  discussing  models  and  their  importance  to  systems  in  the  MDS 
+area,  we  should  place  special  emphasis  on  the  role  which  the  manager 
+assumes  in  the  process  of  model  building.  To  a  large  extent,  he  is  the 
+source  upon  which  the  analyst  draws.  That  is,  although  a  repertoire  of 
+"operations  research"  models  may  be  \/ery   valuable  for  the  analyst,  his 
+task  is  not  to  simply  impose  such  a  model  on  the  situation.  These 
+models  may  be  the  building  blocks.  The  analyst  and  the  manager  in 
+concert  develop  the  final  structure.  This  implies  that  the  analyst  must 
+possess  a  certain  empathy  for  the  manager  and  vice  versa.  Whether  the 
+current  systems  designers  in  a  given  organization  possess  this  quality 
+is  a  question  worthy  of  consideration  by  management. 
+
+Notice  that  this  approach  in  no  way  precludes  normative  statements 
+about  decision  procedures.  The  emphasis  on  the  development  of  descriptive 
+models  of  managerial  problem  solving  is  only  to  ensure  that  the  existing 
+situation  is  well  understood  by  both  the  analyst  and  the  manager.  Once 
+this  understanding  has  been  attained,  various  approaches  to  improving 
+the  process  can  be  explored.  In  fact,  one  of  the  chief  benefits  of  the 
+
+
+29. 
+
+
+development  of  descriptive  models  of  this  type  is  that  it  exposes 
+management  decision  procedures  so  that  they  may  be  analyzed.  Hope- 
+fully, this  analysis  will  lead  to  improvements  in  these  processes. 
+
+Decision  Categories 
+
+The  distinctions  we  have  borrowed  from  Anthony  have  a  set  of 
+Implications  distinct  from  those  discussed  in  connection  with  the 
+structured  and  unstructured  areas.  The  first  of  these  has  to  do  with 
+the  systems  design  differences  that  follow  from  supporting  decisions  in 
+the  three  areas.  In  particular  the  "total  systems"  concept  and  the 
+popular  "integrated  data-base"  notions  can  be  seen  to  be  badly  mis- 
+leading if  taken  to  their  often  advocated  extremes.  These  points  are 
+most  easily  made  in  relation  to  the  information  requirements.  As  was 
+seen  earlier,  the  characteristics  of  the  information  differ  sharply 
+among  the  three  areas.  There  are  few  occasions  in  which  it  makes  sense 
+to  directly  connect  systems  across  these  boundaries.  Aggregating  the 
+detailed  accounting  records  to  provide  a  base  for  a  five-year  sales 
+forecast  is  an  expensive  and  unnecessary  process.  This  is  a  poor 
+example  perhaps  but  nevertheless  we  can  often  sample,  estimate,  or 
+otherwise  obtain  data  for  use  in  strategic  planning  without  resorting 
+to  the  operational  control  data-base.  This  does  not  imply  we  should 
+never  use  such  a  data-base,  but  merely  that  it  is  unlikely  to  be  the 
+best  way  of  obtaining  the  information. 
+
+Similarly  there  are  issues  in  the  collection  and  maintenance  of 
+data.  Techniques  appropriate  for  operational  control  data  such  as  on- 
+
+
+30. 
+
+
+line  data  collection  terminals  are  rarely  justified  for  strategic 
+planning  systems.  Similarly,  elaborate  environmental  sampling  methods 
+may  be  critical  for  the  success  of  a  system  to  support  strategic 
+decisions  and  unimportant  for  an  operational  control  decision.  In 
+looking  at  each  of  the  information  characteristics  in  Figure  1  it  is 
+apparent  that  quite  different  data-bases  and  computer  systems  will  be 
+required  to  support  decisions  in  these  three  areas.  Hence  different 
+personnel  skills,  computer  resources  and  software  support  will  be 
+needed. 
+
+The  systems  distinctions  made  above  are  true  for  both  structured 
+and  unstructured  decisions  in  each  of  the  three  areas. 
+
+A  second  distinction  is  the  organizational  structure  and  the 
+managerial  and  analyst  skills  that  will  be  involved  across  these  three 
+areas.  The  managerial  talents  available,  the  numbers  and  training  of  the 
+managers  involved  differ  sharply  between  these  categories.  Strategic 
+decisions  involve  senior  managers,  and  corporate  staff  in  an  informal, 
+highly  iterative  process  with  only  a  few  people  involved.  The  decision 
+process,  the  implementation  process,  and  the  level  of  analytical  sophis- 
+tication of  the  managers  (as  opposed  to  the  staff)  all  differ  quite 
+markedly  from  their  counterparts  in  operational  control.  The  decision 
+makers  in  operational  control  have  a  more  constrained  problem.  They 
+have  often  had  several  years  in  which  to  define  the  general  nature  of 
+the  problem  and  possible  solutions.  In  addition,  to  the  extent  these 
+managers  have  a  technical  background,  they  are  more  likely  to  be  familiar 
+
+
+31 
+
+
+with  the  analysis  involved  in  looking  both  at  structured  and  unstructured 
+problems.  In  any  event,  in  the  operational  control  area  the  training, 
+styles  numbers  and  frequency  of  the  decision  all  tend  to  produce  design 
+and  implementation  problems  of  a  different  variety.  The  managers 
+involved  are  from  the  decision  area  in  question,  be  it  strategic  plan- 
+ning, management  control  or  operational  control.  As  a  result  their 
+training,  background  and  daily  pattern  of  activity  are  different.  This 
+means  that  the  types  of  models  to  be  used,  the  method  of  elucidation  of 
+these  from  managers  where  appropriate  and  the  skills  of  the  analysts  will 
+all  differ  across  these  three  areas. 
+
+As  the  types  of  skills  possessed  by  the  managers  differ  so  will  the 
+kinds  of  systems  analysts  that  can  operate  effectively.  We  have  already 
+distinguished  between  analysts  who  can  handle  the  structured  versus 
+unstructured  model  building.  There  is  a  similar  distinction  to  be  made 
+between  the  kind  of  person  who  can  work  well  with  a  small  group  of 
+senior  managers  (on  both  a  structured  or  unstructured  problem)  and  the 
+person  who  is  able  to  communicate  with,  for  example,  the  various 
+production  personnel  on  an  unstructured  job-shop  scheduling  problem. 
+
+In  addition  the  managerial  and  analyst  issues  raised  above  there  is 
+the  further  difference  in  the  way  the  information  systems  group  is 
+organized.  A  group  dealing  only  with  operational  control  problems 
+would  be  structured  differently  and  perhaps  report  to  a  different 
+organizational  position  than  would  a  group  that  dealt  with  all  three 
+areas.  It  is  not  our  purpose  here  to  go  into  detail  on  the  organiza- 
+
+
+32. 
+
+
+tional  issues  but  from  the  material  above  suggests  that  on  strategic 
+problems  a  task  force  reporting  to  the  user  and  virtually  Independent 
+of  the  computer  group  may  make  sense.  In  management  control  a  single 
+user  although  still  dominant  in  his  application,  has  problems  of 
+interfacing  with  other  users.  An  organizational  design  that  encourages 
+cross  functional  (marketing,  production,  distribution,  etc.)  cooperation 
+is  probably  desirable.  In  operational  control  the  organizational  design 
+should  include  the  user  as  a  major  influence  but  he  will  have  to  be 
+balanced  with  operational  systems  experts  and  the  whole  group  can 
+quite  possibly  stay  within  functional  boundaries.  These  examples  are 
+merely  illustrative  of  the  kind  of  organizational  differences  that  are 
+involved.  Each  company  must  examine  its  current  status  and  needs  and 
+make  structural  changes  in  light  of  these  —  hov/ever  the  different 
+decision  areas  do  require  different  treatment. 
+
+The  third  distinction  is  between  the  types  of  models  involved. 
+Again  looking  at  Figure  1  and  the  information  differences  it  is  clear 
+that  the  models  required  to  process  this  will  be  different.  Tech- 
+niques such  as  technological  forecasting,  and     "    "'     ■'■ 
+other  models  to  deal  with  the  future  are  much  more  prevalent  in 
+strategic  planning  than  they  are  in  operational  control.  Another 
+example  of  model  differences  occurs  due  to  the  frequency  of  decisions 
+in  each  area  and  their  relative  magnitude.  A  strategic  decision  to 
+change  the  whole  distribution  system  occurs  rarely.  It  is  significant 
+in  cost,  perhaps  hundreds  of  millions  of  dollars  and  it  therefore  can 
+
+
+33, 
+
+
+support  a  complex  model,  but  the  model  need  not  be  efficient  in  any 
+sense,  whereas  an  operational  control  decision  may  be  made  frequently, 
+perhaps  daily.  The  impact  of  each  decision  is  small  but  cumulatively 
+by  the  end  of  the  year  large  sums  of  money  are  involved.  Models  for 
+the  decision  may  have  to  be  efficient  in  running  time,  have  ready 
+access  to  current  data  and  so  forth. 
+
+Sunmary 
+
+The  information  systems  field  absorbs  a  significant  percentage  of 
+the  resources  of  many  organizations.  Despite  these  expenditures  there 
+is  very  little  perspective  on  the  field  and  the  issues  within  it.  As  a 
+result  there  has  been  a  tendency  to  make  incremental  improvements  to 
+existing  systems. 
+
+The  framework  we  suggest  for  looking  at  decisions  within  an  organ- 
+ization provides  one  perspective  on  the  information  systems  issues.  From 
+this  perspective  it  becomes  clear  that  our  planning  for  information 
+systems  has  resulted  in  a  heavy  concentration  in  the  operational  control 
+area.  In  addition  there  are  a  series  of  implications  for  the  organization 
+that  flow  from  the  distinction  between  the  decision  areas.  Model 
+structure  and  the  implementation  process  differ  sharply  between  the 
+structured  and  unstructured  areas.  Systems  personnel,  organizational 
+structure  and  computer  systems  configurations  all  differ  along  the 
+Strategic  Planning  to  Operational  Control  axis. 
+
+We  are  arguing,  above  all,  that  each  organization  should  share  some 
+coninon  framework  among  its  members  if  it  is  to  make  effective  use  of  in- 
+formation systems.  We  suggest  this  framework  is  an  appropriate  place 
+to  start. 
+
+
+P4 
+
+
+Dafe  Uue 
+
+
+OEC  3  0  yg 
+
+.■..^-    .1 
+
+FEB  1  7  76 
+
+MAR  1 2  '73 
+
+■^■^^t^?*^ 
+
+JAN  24-82 
+
+i-^X  f'    "■ 
+
+APR??  'TT 
+
+MAY  Zi'Tn 
+
+T 
+
+SEP  2  4  7? 
+
+awri**^ 
+
+0V  ?9  1991 
+
+f2  8  78 
+
+
+FEB 
+
+
+6  7? 
+
+
+NOV  30  '■3 
+
+4'ao 
+
+
+JA» 
+
+
+M^lj?-"    'P" 
+
+
+Lib-26-67 
+
+
+50\ 
+
+
+3    TDflD    D03    675    D33 
+
+
+-1^ 
+
+
+sn-70 
+
+
+3    TOfiO    DQ3    &7^    i^M    ^'^^-^ 
+
+MIT  aeftARIES 
+
+3    TDflD    DD3    fi7S    D7M 
+
+
+HD28 
+
+
+3   TDflD    DD3    fi75    DOT 
+
+
+3    TOAD    D03    374    Tflt, 
+
+
+fO?--7/ 
+
+
+^Oi-7/ 
+
+
+3    TOfiD   0D3   675   Dbb 
+
+
+^ 
+
+
+01-1 
+
+
+3    TDflD    D03    674    176 
+
+
+iini  li  mill  III  nil  II  nil  till  iiiiii  III  III  mill  III  II      >  O*?  -V/ 
+3    T06D    D03    674    TbD 
+
+
+bO^-?/ 
+
+
+3    1060    DQ3    TDS    TTb 
+
+
+^iV-ll 
+
+
+3    TOflD    QD3    a?s    017 
+
+
