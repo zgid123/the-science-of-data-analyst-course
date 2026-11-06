@@ -1,31 +1,38 @@
 # 8. Sử dụng AI tạo sinh và phản tư của nhóm
 
-Nhóm dùng AI tạo sinh trong ba vai trò mà đề bài cho phép: bên liên quan mô phỏng, người phản biện (sparring partner)
-và người đánh giá (reviewer). Ngoài ra, AI còn làm trợ lý tìm tài liệu. Nhóm không dùng AI làm nguồn thông tin về
-trường hay về sinh viên của trường [1]. Bảng 8.1 trình bày từng cách sử dụng và biện pháp kiểm soát đi kèm.
+Nhóm dùng AI tạo sinh trong ba vai trò mà đề bài cho phép là bên liên quan mô phỏng, người phản biện (sparring partner) và người đánh giá (reviewer),
+cùng vai trò thứ tư là trợ lý tìm tài liệu. Nhóm không bao giờ dùng AI làm nguồn thông tin về trường hay về sinh viên của
+trường [1]. Bảng 8.1 trình bày những việc AI đã làm trong từng vai trò và biện pháp kiểm soát kết quả của AI.
 
 **Bảng 8.1. Các vai trò của AI tạo sinh và biện pháp kiểm soát**
 
 | Vai trò | Cách nhóm sử dụng AI | Biện pháp kiểm soát |
 | :---- | :---- | :---- |
-| Bên liên quan mô phỏng | Năm persona (vai bên liên quan do AI đóng), mỗi persona trong một cuộc hội thoại riêng, trả lời các câu hỏi soạn sẵn do AI đóng vai người phỏng vấn đặt ra (Mục 2.2) | Mỗi đặc điểm của persona đều dẫn nguồn từ tư liệu đã công bố; thành viên nhóm gắn nhãn và kiểm tra từng phát biểu |
-| Người phản biện | Các persona chất vấn cách hiểu của nhóm, ví dụ nghi ngờ mục tiêu tăng 5 điểm phần trăm trong một học kỳ (VPM5) | Nhóm ghi lại quyết định cho từng ý kiến chất vấn (Bảng 2.4) |
-| Người đánh giá | Một AI đóng vai người đánh giá, làm việc trong cuộc hội thoại riêng, đã rà soát Mục 1–7 theo prompt ở Phụ lục IV | Mỗi nhận xét của người đánh giá đều có quyết định và lý do (Bảng A.13) |
-| Trợ lý tìm tài liệu | Các công cụ AI tự động tìm và tóm tắt các nguồn đã công bố | Mỗi thông tin đều gắn với một nguồn đã lưu và một đoạn trích nguyên văn |
+| Bên liên quan mô phỏng | Năm persona (vai bên liên quan do AI đóng), mỗi persona trong một cuộc hội thoại riêng, trả lời các câu hỏi soạn sẵn; một AI đóng vai người phỏng vấn thay mặt nhóm đặt từng câu hỏi một (Mục 2.2) | Mỗi đặc điểm của persona đều dẫn nguồn từ tư liệu đã công bố; các phát biểu chính được gán nhãn ý kiến, giả định hoặc thông tin trong kịch bản; thành viên nhóm đối chiếu từng trích dẫn với bản ghi hội thoại |
+| Người phản biện | Trong vòng xác nhận, các persona chất vấn cách hiểu của nhóm, ví dụ Trưởng chương trình đào tạo nghi ngờ việc tăng 5 điểm phần trăm trong một học kỳ (VPM5) | Mỗi ý kiến chất vấn đều có quyết định được ghi lại, kể cả ba đề xuất không được áp dụng (Mục 2.4) |
+| Người đánh giá | Một AI đóng vai người đánh giá, làm việc trong cuộc hội thoại riêng, đọc đề bài và Mục 1–7 theo prompt ở Phụ lục IV và đưa ra mười hai nhận xét | Mỗi nhận xét đều có quyết định và lý do (Phụ lục IV) |
+| Trợ lý tìm tài liệu | Các tác tử AI tìm và tóm tắt các nguồn đã công bố về tình trạng không hoàn thành học phần, cảnh báo sớm, tư vấn học tập và bảo vệ dữ liệu | Mỗi thông tin trong báo cáo đều gắn với một nguồn đã lưu và một đoạn trích nguyên văn; không bản tóm tắt nào của AI được trích dẫn làm nguồn |
 
-Người đánh giá đưa ra mười hai nhận xét. Nhóm chấp nhận chín nhận xét, chấp nhận một phần đối với hai nhận xét và bác
-bỏ một nhận xét. Thứ nhất, nhóm sửa thời điểm chốt dữ liệu của AQ3, vì thời điểm ghi trong AQ3 mâu thuẫn với bảng rủi ro dữ liệu (Bảng 6.2).
-Lỗi này quan trọng, do thời điểm chốt dữ liệu quyết định những thông tin nào đã có vào lúc dự đoán. Thứ hai, người
-đánh giá thấy SMART Goal chưa nói rõ tính trên những sinh viên nào và gộp số liệu giữa các học phần ra sao. Nhóm đã
-định nghĩa rõ hai điểm này, vì nếu mức mục tiêu phụ thuộc vào việc tính những học phần nào thì có thể đạt mục tiêu chỉ
-bằng cách đổi học phần (R4). Thứ ba, người đánh giá đặt câu hỏi về yêu cầu phát hiện sớm trong Business Goal, nhưng
-nhóm giữ yêu cầu này vì hai lý do. Chính đề bài đã nêu yêu cầu phát hiện sớm trong ví dụ về mục tiêu phù hợp; bên cạnh
-đó, các bên liên quan cũng muốn sinh viên được phát hiện sớm (PM1, AD1).
+**Những gì nhóm chấp nhận và bác bỏ.** Trong mười hai nhận xét của người đánh giá, nhóm chấp nhận chín, chấp nhận một phần hai
+và bác bỏ một. Ba quyết định sau cho thấy cách nhóm lập luận. Thứ nhất, nhóm chấp nhận nhận xét rằng thời điểm chốt dữ liệu của AQ3
+mâu thuẫn với độ trễ dữ liệu một tuần ở Mục 6.2, vì thời điểm chốt dữ liệu quyết định những thông tin nào đã có vào thời điểm dự báo; các
+thời điểm chốt dữ liệu là cuối tuần 2 và cuối tuần 4, cho các danh sách gửi vào tuần 3 và tuần 5 (R1). Thứ hai, nhóm chấp nhận nhận xét
+rằng SMART Goal chưa nói rõ tổng thể và cách gộp số liệu, vì một mức mục tiêu phụ thuộc vào những học phần được tính
+có thể đạt được chỉ bằng cách đổi các học phần đó. Do vậy, các học phần thí điểm được cố định từ trước và so sánh với
+các học phần tương tự (R4). Thứ ba, nhóm bác bỏ nhận xét rằng Business Goal không nên nhắc đến phát hiện sớm,
+vì chính ví dụ về mục tiêu phù hợp trong đề bài đã nêu điều này và các bên liên quan cũng yêu cầu thời điểm đó (R11; PM1,
+AD1). Phụ lục IV trình bày đủ mười hai nhận xét, quyết định của nhóm và prompt dành cho người đánh giá.
 
-Một số điểm vẫn cần bằng chứng thực tế. Mức cơ sở, số sinh viên mà cán bộ hỗ trợ sinh viên và giảng viên kiêm cố vấn
-học tập liên hệ được mỗi tuần, độ trễ dữ liệu và các giới hạn của AQ4 hiện là giả định hoặc ước tính của các bên liên
-quan. Ở Milestone 2, dữ liệu thực của trường phải thay thế các con số này. Các nghiên cứu ở nơi khác [7], [8] cho thấy
-sinh viên giảm dần mức tham gia học tập từ sớm, nhưng dữ liệu của trường chưa kiểm chứng điều này. Bên cạnh đó, có ý
-kiến cho rằng sinh viên chấp nhận việc trường liên hệ dựa trên hoạt động học tập. Ý kiến này hiện chỉ dựa trên một sinh
-viên mô phỏng và các nghiên cứu ở nước ngoài [12], nên cần được sinh viên thật ở Việt Nam xác nhận. Do các persona nói dựa trên tư
-liệu đã công bố, các buổi phỏng vấn chỉ cho thấy những nhu cầu hợp lý, chưa phải nhu cầu đã được kiểm chứng.
+**Những điểm còn cần bằng chứng thực tế.** Một số điểm dựa trên giả định hoặc quan điểm mô phỏng; dữ liệu thực phải thay thế
+các điểm này. Tỷ lệ hoàn thành ở mức cơ sở, số sinh viên cán bộ liên hệ được mỗi tuần, độ trễ dữ liệu một tuần cùng các giới hạn về độ chính xác của danh sách và công bằng
+của AQ4 hiện là giả định hoặc ước tính của các bên liên quan; ở Milestone 2, hồ sơ của nhà trường phải thay thế các con số này.
+Các nghiên cứu ở nơi khác [7], [8] cho thấy sinh viên giảm tham gia học tập từ sớm, nhưng dữ liệu của trường chưa kiểm chứng điều này;
+AQ1 sẽ đo hiện tượng đó. Bên cạnh đó, mức độ sinh viên chấp nhận được liên hệ dựa trên hoạt động học tập hiện chỉ có căn cứ từ một sinh viên mô phỏng
+và các nghiên cứu ở nước ngoài [12], nên cần được sinh viên thật ở Việt Nam xác nhận trước đợt thí điểm.
+
+**Phản tư của nhóm.** Nhờ dùng AI ở cả hai phía của cuộc phỏng vấn, nhóm nghe được năm góc nhìn với bộ câu hỏi
+nhất quán. Ngoài ra, các persona nêu ra những điểm nhóm chưa dự tính, như sổ theo dõi liên hệ hoặc rủi ro đợt lập danh sách
+rơi vào tuần thi. Chính phương pháp này cũng tạo ra giới hạn chính. Do các persona nói dựa trên tư liệu đã công bố, các buổi phỏng vấn
+chỉ cho thấy những nhu cầu hợp lý chứ chưa phải nhu cầu đã được kiểm chứng; các con số của bên liên quan là ước tính có căn cứ chứ
+chưa phải số đo. Vì vậy, nhóm coi mỗi yêu cầu trong đề xuất này là một giả thuyết về trường đại học thực, cần được kiểm tra bằng dữ liệu
+của trường ở các Milestone tiếp theo.

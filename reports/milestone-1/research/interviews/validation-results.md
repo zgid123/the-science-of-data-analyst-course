@@ -25,11 +25,13 @@ verbatim (`code/check_quotes.py`).
 | VAD3 | AD | missing | "a student drifting in several courses at once is a different case from one course" | Multi-course disengagement is a priority signal in AQ4 |
 | VAD4 | AD | 5 | "The students who answer us may have finished anyway, so I'd be careful claiming the five points as our doing." | KPIs report progress, not effect; effect needs a comparison design |
 | VAD5 | AD | question | "My office should take the harder cases: students missing across several courses, repeat warnings, and anyone whose advisor couldn't reach them after two tries." | Routing rule for AQ4 action alternatives |
+| VAD6 | AD | question | "the lecturer-advisors should take students from their own classes, because students answer people they know, but only a handful each, three to five a week" | Weekly capacity of each lecturer-advisor: three to five contacts (advisor's estimate) |
+| VAD7 | AD | question | "Three of us can manage maybe thirty to forty a week between us, at a guess." | Weekly capacity of the support office: about 30–40 contacts (advisor's estimate) |
 | VST1 | ST | 1 | "I kept logging in and clicking through, so on the system I probably looked fine for a while" | Activity counts can hide disengagement; reasons combine assessment facts with staff knowledge |
 | VST2 | ST | 4 | "please add that my family or employer never get told" | Privacy rule added |
 | VST3 | ST | missing | "I should be able to reply simply, or say \"I'm fine, thanks\", and not get chased every week" | One contact per review point; a reply closes the case |
 | VST4 | ST | question | "yes, I'd accept it if I'm told at the start and it's really for support" | Notice at course start confirmed |
-| VST5 | ST | missing | "some classmates would rather get a general email" | A general notice of support options goes to every student at course start; personal contact stays the default (Table 2.4) |
+| VST5 | ST | missing | "some classmates would rather get a general email" | A general notice of support options goes to every student at course start; personal contact stays the default (Section 2.4) |
 | VDO1 | DO | 2 | "Missed quizzes and assignments are a better early sign than clicks, and the LMS does record them." | Missed and late assessed tasks are the main signs (Sections 4.1 and 6.2) |
 | VDO2 | DO | 4 | "legal has to approve linking LMS data to status records first" | Governance gate before Milestone 2 data use at the university |
 | VDO3 | DO | missing | "With exports done by hand, a week-5 list could already be a week old." | Data cut-off one week before each review point |

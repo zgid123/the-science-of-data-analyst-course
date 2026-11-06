@@ -2,7 +2,7 @@
 
 | # | Critique (short) | Decision | Change made |
 | :---- | :---- | :---- | :---- |
-| R1 | AQ3 data cut-off contradicts Table 6.2 | Accepted | Cut-offs end of week 2 and week 4; lists delivered in weeks 3 and 5 (Sections 4.1, 4.2, 6.1 and 6.2) |
+| R1 | AQ3 data cut-off contradicts the one-week data delay (Section 6.2) | Accepted | Cut-offs end of week 2 and week 4; lists delivered in weeks 3 and 5 (Sections 4.1, 4.2, 6.1 and 6.2) |
 | R2 | Secondary KPI 1 uses an end-of-semester denominator that falls when contact works; week 6 matches no review point | Accepted | Replaced by the early-sign contact rate (Section 3.3) |
 | R3 | D3 has no analytic path; no traceability matrix | Partly accepted | D3 rests on AQ1 and the KPIs repeated for pilot and comparison courses; causal effect left to the Milestone 4 evaluation plan (Sections 5 and 7). The matrix is Section 9, which the reviewer did not receive |
 | R4 | SMART population and aggregation unclear | Accepted | Pilot courses fixed before the pilot, pooled rate, comparison courses (Section 3.2) |

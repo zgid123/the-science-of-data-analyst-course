@@ -6,7 +6,7 @@ An isolated AI reviewer read the brief and Sections 1–7 with the prompt below 
 
 | No. | AI critique | Team decision | Reason or change |
 | :---- | :---- | :---- | :---- |
-| R1 | AQ3 data cut-off contradicts Table 6.2 | Accepted | Cut-offs end of week 2 and week 4; lists delivered in weeks 3 and 5 (Sections 4.1, 4.2, 6.1 and 6.2) |
+| R1 | AQ3 data cut-off contradicts the one-week data delay (Section 6.2) | Accepted | Cut-offs end of week 2 and week 4; lists delivered in weeks 3 and 5 (Sections 4.1, 4.2, 6.1 and 6.2) |
 | R2 | Secondary KPI 1 uses an end-of-semester denominator that falls when contact works; week 6 matches no review point | Accepted | Replaced by the early-sign contact rate (Section 3.3) |
 | R3 | D3 has no analytic path; no traceability matrix | Partly accepted | D3 rests on AQ1 and the KPIs repeated for pilot and comparison courses; causal effect left to the Milestone 4 evaluation plan (Sections 5 and 7). The matrix is Section 9, which the reviewer did not receive |
 | R4 | SMART population and aggregation unclear | Accepted | Pilot courses fixed before the pilot, pooled rate, comparison courses (Section 3.2) |
@@ -19,12 +19,12 @@ An isolated AI reviewer read the brief and Sections 1–7 with the prompt below 
 | R11 | Business Goal contains the means | Not accepted | The brief's own "better" example is "Nhận diện sớm sinh viên có nguy cơ không hoàn thành để hỗ trợ kịp thời" (identify early the students at risk of not completing, to support them in time); the goal leads with the outcome and names the timing that stakeholders asked for (PM1, AD1) |
 | R12 | Persona caseload (300) and scenario capacity (4,000 for 3) unexplained | Accepted | Section 2.2 states that published figures shape the persona and the persona's own estimates drive capacity |
 
-The reviewer prompt, used word for word:
+The reviewer prompt, with documents named by their place in this report:
 
 ```text
 You are a reviewer of a student team's analytics project proposal for the course MTH045 – The Science of Data
-Analytics. Read the instructor brief (final-project/milestones/01/milestone-1.md) and the proposal sections
-reports/milestone-1/report/01-*.md to 07-*.md (English). Do not read any other file.
+Analytics. Read the instructor brief and Sections 1–7 of the proposal (English). Do not read any other
+document.
 
 Review the proposal as the brief's reviewer would. Check in particular:
 1. SMART: is the SMART Goal specific, measurable, achievable, relevant and time-bound; are baselines and targets

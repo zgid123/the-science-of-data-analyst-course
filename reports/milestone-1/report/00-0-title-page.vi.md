@@ -18,7 +18,7 @@
 | Thành viên | 25C12002 – Lê Ngọc Trúc Huỳnh |
 |  | 25C12003 – Phan Trần Khanh |
 |  | 25C12031 – Dương Tấn Huỳnh Phong |
-| Chủ đề dự án | Tỷ lệ hoàn thành học phần và tình trạng bỏ học: tỷ lệ hoàn thành học phần thấp, sinh viên ngừng tham gia học tập giữa học kỳ |
+| Chủ đề dự án | Nâng cao tỷ lệ hoàn thành học phần nhờ phát hiện sớm sinh viên ngừng tham gia học tập |
 | Bên liên quan mô phỏng | Trưởng chương trình đào tạo, Giảng viên phụ trách học phần, Cố vấn học tập, Sinh viên, Cán bộ phụ trách công nghệ học tập và dữ liệu (do AI đóng vai) |
 | Ngày nộp | 14/11/2026 |
 

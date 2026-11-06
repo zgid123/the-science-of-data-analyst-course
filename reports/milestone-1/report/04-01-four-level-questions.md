@@ -1,8 +1,7 @@
 ## 4.1. Questions at Four Levels
 
-The brief requires at least one question at each of four levels [1]. The four questions form one path: describe when
-and where students fail to complete, find the early signs associated with it, test whether those signs identify
-students in time, and decide whom to contact within staff capacity.
+The four questions form one path from understanding the situation to supporting action, in which each question hands
+its result to the next. Appendix VIII shows how each question meets the requirements the brief sets for its level.
 
 **AQ1 – Descriptive.** In the program's online and blended courses over the four semesters of 2024–2025 and
 2025–2026, what share of students enrolled after the add-drop period passed, failed or withdrew, by course, delivery
@@ -17,17 +16,25 @@ study?
 
 **AQ3 – Predictive.** For each student enrolled in a pilot course, how well can failing or withdrawing by the end of
 the semester be estimated from the data recorded by the end of week 2 and by the end of week 4, compared with a simple
-rule such as "two or more assessed tasks missed"? Accuracy is measured on a list as long as staff can follow up each week,
-as recall (the share of later non-completers who appear on the list) and precision (the share of listed students who
-later fail or withdraw), and is compared between first-year and later-year students and across courses.
+rule such as "two or more assessed tasks missed"? Accuracy is measured on a list as long as staff can follow up each
+week, as recall and precision, and is compared between first-year and later-year students and across courses.
 
 **AQ4 – Prescriptive.** At each review point (weeks 3 and 5), which students should be listed, in what order, and with
-which contact (a message from the lecturer or lecturer-advisor, a call from the support office, or a referral to
-the student affairs office for financial or personal support), so that the list reaches as many as possible of the students most likely not to complete? The list
-must fit weekly capacity (three to five contacts per lecturer-advisor, about 30–40 for the support office), reach a
-precision of at least 50%, and keep first-year recall within ten points of later-year recall; the last two limits are
-assumptions.
+which contact (a message from the lecturer or lecturer-advisor, a call from the support office, or a referral to the
+student affairs office, which handles financial and personal matters, separate from the support office), so that the list reaches as many as possible of the
+students most likely not to complete? The list must fit weekly capacity (three to five contacts per lecturer-advisor,
+about 30–40 for the support office), reach a precision of at least 50%, and keep first-year recall within ten points
+of later-year recall.
 
-Each level prepares the next without proving a cause. AQ1 also gives the program manager the requested view of
-courses and groups (VPM3), and AQ4 adds the capacity and fairness limits from the interviews (AD3, VAD5, PM10). The
-data audit of Milestone 2 may show that only part of this path can be answered.
+**How the questions connect.** AQ1 shows which courses and groups lose most students and in which weeks
+non-completers begin to fall behind, which tells AQ2 where to look. AQ2 compares the signs named in its wording, each
+taken from the interviews, and asks which differ most rather than which cause non-completion, because records of what
+students did cannot show why they did it. AQ3 tests whether those signs identify students in time. Its unit is one
+student's enrolment in one course, because a student may struggle in one course and not in another, and it may use
+only data up to the data cut-offs at the end of weeks 2 and 4. Recall is the share of students who later fail or
+withdraw who appear on the list, and precision is the share of listed students who later fail or withdraw; an estimate
+that does no better than counting missed tasks adds complexity without value. AQ4 turns the AQ3 ordering into a list
+for each review point. Its precision limit keeps staff from spending most of their time on students who are fine
+(CL8), and its fairness limit keeps the list from missing first-year students (VPM4); both limits are assumptions, to
+be reviewed once the data audit of Milestone 2 shows what is achievable. Each level prepares the next without proving
+a cause, and the audit may show that only part of this path can be answered with the university's data.

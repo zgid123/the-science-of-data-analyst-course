@@ -1,26 +1,32 @@
 ## 2.3. Synthesised Themes and Priorities
 
-Table 2.2 organises the interview answers by stakeholder; the codes (PM1, CL5 …) point to the excerpts in Appendix
-II.
+The brief asks the team not to turn the AI's answers directly into a Business Goal, but to synthesise them in five
+steps: organise, identify themes, prioritise, refine and validate [1]. The team first organised each stakeholder's
+answers under the brief's five headings: goal or need, challenge, decision needed, success indicator, and risk or
+constraint (Appendix VI, Table A.14). Reading across the stakeholders then gave six recurring themes. Table 2.2 states
+each theme, what the stakeholders said about it, who raised it and the priority the team gave it.
 
-**Table 2.2. Stakeholder input organised by the brief's synthesis headings**
+**Table 2.2. Themes across the stakeholders and their priority**
 
-| Stakeholder | Goal / need | Challenge | Decision needed | Success indicator | Risk / constraint |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| PM | Know within the semester where students are lost (PM1, PM2) | Only end-of-semester figures; no new resources (PM5, PM8) | Where to place advisors' time (PM6) | A pattern confirmed over semesters (PM7) | Labels; results without reasons (PM9, PM10) |
-| CL | Students finish, having done the work (CL2) | Silence seen in week 5–6; messages unanswered (CL4, CL5) | Whom to message before deadlines (CL6) | All work submitted (CL2) | False alarms; judging lecturers (CL8, CL9) |
-| AD | Reach students before the warning list (AD1) | Three officers, about 4,000 students (AD2, AD3) | Whom to contact first (AD4, AD7) | Contacted students finish (AD6) | Long lists; surveillance (AD9, AD10) |
-| ST | The course fits around life (ST1) | Too embarrassed to ask; nobody noticed (ST2, ST4) | Whether to accept help | A practical option offered early (ST5) | Labels, records (ST8, ST9) |
-| DO | Link existing data; agree meanings (DO1, DO2) | Manual matching; one-week delay (DO3, DO4) | Purpose and access rules (DO7) | Data checkable by hand (DO6) | Consent; data not ready for automation (DO8, DO9) |
+| Theme | What the stakeholders said | Raised by | Priority |
+| :---- | :---- | :---- | :---- |
+| T1. Late detection | Non-completion becomes visible to the program only after the semester, to the support office only on the warning list, and to the lecturer only around week 5 or 6 (PM1, PM5, AD1, CL5, ST4, DO5) | All five | Core |
+| T2. Early start of disengagement | Students begin to drift in the first weeks, and the first sign is usually a missed quiz or assignment (PM3, CL1, CL2, ST3, ST10) | Program manager, lecturer, student | Core |
+| T3. Small, fixed capacity | Staff can follow up only a few dozen students a week, so they need a short list with a reason for each name (PM8, CL10, CL11, AD3, AD4, AD10) | Program manager, lecturer, support officer | Core |
+| T4. Who contacts, and how | Contact helps when it comes from someone the student knows and offers something practical; generic emails are ignored (AD5, AD8, ST5, ST6, ST9) | Support officer, student | Supporting: defines the actions of AQ4 |
+| T5. Trust in the data | Records must be linked, student status must be correct, meanings must be agreed, and the purpose must be lawful (DO1–DO9, PM9, CL3) | Data officer, program manager, lecturer | Constraint: data rules (Section 6) |
+| T6. Use for support only | Results must never label students, affect grades or records, or evaluate lecturers (PM10, CL9, ST8, AD9, DO10) | All five | Constraint: use rules (Sections 6 and 7) |
 
-Six themes recur: (1) late detection, as every stakeholder notices students late or after the semester (PM1, CL5,
-AD1, ST4); (2) disengagement that starts in the first weeks and shows in missed quizzes and assignments (CL1, ST10); (3) small, fixed capacity, about 30–40 contacts a week for the support office and three to five for each
-lecturer-advisor, a lecturer who also acts as academic advisor (cố vấn học tập) for one or two classes, so staff need a
-short list with a reason for each name (AD3, AD4, CL11); (4) contact that helps when it comes from someone the student
-knows and offers something practical (AD5, ST5); (5) trust in the data, meaning linked records, correct status and a
-lawful purpose (DO1, DO3, DO7); and (6) use for support only (PM10, CL9, ST8).
+The priorities follow the brief's three criteria: the link to the organisation's goal, the effect on decisions and
+feasibility [1]. Themes T1–T3 form the core of the project: completion is the outcome the program reports, the early
+signs set when staff can still act, and capacity sets how long a list of students can be. Theme T4 supplies the
+actions among which staff choose, and themes T5 and T6 limit how the project may work rather than what it measures. Appendix VI (Table A.15) scores each theme against the three criteria.
 
-Ranked by link to the organisational goal, effect on decisions and feasibility, themes 1–3 form the core: completion
-is the outcome the program reports, early signs set when staff can act, and capacity sets the length of a list. Theme
-4 defines the actions, and themes 5 and 6 become the constraints of Sections 6 and 7. The refined problem statement
-is the one in Section 1.2.
+Theme T3 rests on two capacity figures that recur in the rest of the proposal, both of them the support officer's
+own estimates. The three officers of the support office can follow up about 30–40 students a week between them (AD3,
+VAD7). Each lecturer-advisor can contact three to five students a week from their own classes (VAD6). The lecturer's
+own account fits the second figure: the lecturer can give one to one and a half hours a week to this work and would act
+on a list of five names with a reason for each (CL10, CL11).
+
+Refining the core themes gave the problem statement of Section 1.2 and removed the requests that lie outside the
+project, which Section 1.2 lists with their reasons.

@@ -23,7 +23,7 @@ After the synthesis, each stakeholder was shown the summary below in the same co
 >    the share of students who later fail or withdraw who were contacted by week 6, and the share of listed students
 >    contacted within a week of being listed.
 
-Table A.12 gives the key statements of the validation round, quoted word for word, with their effect on the proposal; Table 2.4 in Section 2.4 summarises the result.
+Table A.12 gives the key statements of the validation round, quoted word for word, with their effect on the proposal; Section 2.4 summarises the result, and Table A.17 in Appendix VI gives it in full.
 
 **Table A.12. Validation statements and their effect on the proposal**
 
@@ -47,11 +47,13 @@ Table A.12 gives the key statements of the validation round, quoted word for wor
 | VAD3 | "a student drifting in several courses at once is a different case from one course" | Multi-course disengagement is a priority signal in AQ4 |
 | VAD4 | "The students who answer us may have finished anyway, so I'd be careful claiming the five points as our doing." | KPIs report progress, not effect; effect needs a comparison design |
 | VAD5 | "My office should take the harder cases: students missing across several courses, repeat warnings, and anyone whose advisor couldn't reach them after two tries." | Routing rule for AQ4 action alternatives |
+| VAD6 | "the lecturer-advisors should take students from their own classes, because students answer people they know, but only a handful each, three to five a week" | Weekly capacity of each lecturer-advisor: three to five contacts (advisor's estimate) |
+| VAD7 | "Three of us can manage maybe thirty to forty a week between us, at a guess." | Weekly capacity of the support office: about 30–40 contacts (advisor's estimate) |
 | VST1 | "I kept logging in and clicking through, so on the system I probably looked fine for a while" | Activity counts can hide disengagement; reasons combine assessment facts with staff knowledge |
 | VST2 | "please add that my family or employer never get told" | Privacy rule added |
 | VST3 | "I should be able to reply simply, or say 'I'm fine, thanks', and not get chased every week" | One contact per review point; a reply closes the case |
 | VST4 | "yes, I'd accept it if I'm told at the start and it's really for support" | Notice at course start confirmed |
-| VST5 | "some classmates would rather get a general email" | A general notice of support options goes to every student at course start; personal contact stays the default (Table 2.4) |
+| VST5 | "some classmates would rather get a general email" | A general notice of support options goes to every student at course start; personal contact stays the default (Section 2.4) |
 | VDO1 | "Missed quizzes and assignments are a better early sign than clicks, and the LMS does record them." | Missed and late assessed tasks are the main signs (Sections 4.1 and 6.2) |
 | VDO2 | "legal has to approve linking LMS data to status records first" | Governance gate before Milestone 2 data use at the university |
 | VDO3 | "With exports done by hand, a week-5 list could already be a week old." | Data cut-off one week before each review point |

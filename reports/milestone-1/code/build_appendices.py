@@ -86,7 +86,7 @@ def validation(n):
          "missing. The program manager's answer led to a revised SMART Goal, which was presented again and confirmed.\n",
          quoted + "\n",
          f"Table A.{n} gives the key statements of the validation round, quoted word for word, with their effect on the "
-         "proposal; Table 2.4 in Section 2.4 summarises the result.\n",
+         "proposal; Section 2.4 summarises the result, and Table A.17 in Appendix VI gives it in full.\n",
          f"**Table A.{n}. Validation statements and their effect on the proposal**\n",
          "| Code | Excerpt | Effect on the proposal |\n| :---- | :---- | :---- |"]
     for r in rows(IV / "validation-results.md", r"\| V[A-Z]{2}\d+ \|"):
@@ -97,6 +97,11 @@ def validation(n):
 
 def review(n):
     prompt = (ROOT / "research" / "review" / "reviewer-prompt.md").read_text().split("---\n")[1].strip()
+    # the submitted report is read without the repository: file paths in the prompt become the documents' names
+    prompt = prompt.replace("the instructor brief (final-project/milestones/01/milestone-1.md) and the proposal sections\n"
+                            "reports/milestone-1/report/01-*.md to 07-*.md (English). Do not read any other file.",
+                            "the instructor brief and Sections 1–7 of the proposal (English). Do not read any other\n"
+                            "document.")
     quoted = "```text\n" + prompt + "\n```"
     t = ["## Appendix IV – AI Critique, Team Decisions and Reviewer Prompt\n",
          f"An isolated AI reviewer read the brief and Sections 1–7 with the prompt below and returned twelve critiques. "
@@ -106,7 +111,7 @@ def review(n):
          "| No. | AI critique | Team decision | Reason or change |\n| :---- | :---- | :---- | :---- |"]
     for r in rows(ROOT / "research" / "review" / "decisions.md", r"\| R\d+ \|"):
         t.append(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} |")
-    t += ["", "The reviewer prompt, used word for word:\n", quoted]
+    t += ["", "The reviewer prompt, with documents named by their place in this report:\n", quoted]
     (OUT / "11-04-ai-critique-review.md").write_text("\n".join(t) + "\n")
     return n + 1
 

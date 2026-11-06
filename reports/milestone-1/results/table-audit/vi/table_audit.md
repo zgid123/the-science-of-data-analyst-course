@@ -1,0 +1,38 @@
+# Table audit: N04_Milestone1_VI.docx
+
+| # | Caption | Page | Pt | Cols × rows | Height (lines) | Tallest row | Rows ≥ 8 lines | Lowest column fill |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| 1 | Bảng 2.1. Các bên liên quan, mục tiêu giả định ban đầu và qu | portrait | 9.5 | 4 × 5 | 20 | 4 | 0 | 1.00 |
+| 2 | Bảng 2.2. Các chủ đề chung giữa các bên liên quan và mức ưu  | portrait | 9.5 | 4 × 6 | 28 | 7 | 0 | 1.00 |
+| 3 | Bảng 4.1. Kiểm tra AQ1 đến AQ4 theo năm tiêu chí | portrait | 8.5 | 5 × 6 | 33 | 8 | 1 | 1.00 |
+| 4 | Bảng 4.2. Các ví dụ Before → After | portrait | 8.5 | 4 × 2 | 13 | 6 | 0 | 0.52 |
+| 5 | Bảng 5.1. Loại phân tích, nhóm kỹ thuật dự kiến và kết quả đ | portrait | 9.5 | 5 × 4 | 24 | 6 | 0 | 0.83 |
+| 6 | Bảng 6.1. Yêu cầu dữ liệu sơ bộ | portrait | 8.5 | 6 × 4 | 31 | 10 | 1 | 0.90 |
+| 7 | Bảng 7.1. Các quyết định được hỗ trợ và cách phân loại | portrait | 8.5 | 6 × 3 | 23 | 7 | 0 | 1.00 |
+| 8 | Bảng 8.1. Các vai trò của AI tạo sinh và biện pháp kiểm soát | portrait | 8.5 | 3 × 4 | 17 | 6 | 0 | 0.90 |
+| 9 | Bảng 9.1. Truy vết từ Business Goal đến quyết định được hỗ t | portrait | 8.5 | 7 × 4 | 37 | 12 | 2 | 1.00 |
+| 10 | Bảng A.1. Câu hỏi phỏng vấn Trưởng chương trình đào tạo | portrait | 9.5 | 3 × 8 | 21 | 4 | 0 | 0.77 |
+| 11 | Bảng A.2. Câu hỏi phỏng vấn Giảng viên phụ trách học phần | portrait | 9.5 | 3 × 8 | 17 | 2 | 0 | 0.73 |
+| 12 | Bảng A.3. Câu hỏi phỏng vấn Cố vấn học tập / Cán bộ hỗ trợ s | portrait | 9.5 | 3 × 8 | 17 | 2 | 0 | 0.72 |
+| 13 | Bảng A.4. Câu hỏi phỏng vấn Sinh viên | portrait | 9.5 | 3 × 7 | 14 | 2 | 0 | 0.70 |
+| 14 | Bảng A.5. Câu hỏi phỏng vấn Cán bộ phụ trách công nghệ học t | portrait | 9.5 | 3 × 7 | 16 | 3 | 0 | 0.76 |
+| 15 | Bảng A.6. Các bản nháp mang tính dẫn dắt và câu hỏi cuối cùn | portrait | 8.5 | 3 × 2 | 8 | 4 | 0 | 1.00 |
+| 16 | Bảng A.7. Phát biểu chính của Trưởng chương trình đào tạo | portrait | 9.5 | 5 × 10 | 35 | 4 | 0 | 0.88 |
+| 17 | Bảng A.8. Phát biểu chính của Giảng viên phụ trách học phần | portrait | 9.5 | 5 × 11 | 29 | 4 | 0 | 0.85 |
+| 18 | Bảng A.9. Phát biểu chính của Cố vấn học tập / Cán bộ hỗ trợ | portrait | 9.5 | 5 × 10 | 39 | 7 | 0 | 0.88 |
+| 19 | Bảng A.10. Phát biểu chính của Sinh viên | portrait | 9.5 | 5 × 10 | 23 | 3 | 0 | 0.89 |
+| 20 | Bảng A.11. Phát biểu chính của Cán bộ phụ trách công nghệ họ | portrait | 9.5 | 5 × 10 | 31 | 4 | 0 | 0.86 |
+| 21 | Bảng A.12. Các phát biểu ở vòng xác nhận và tác động lên đề  | portrait | 9.5 | 3 × 30 | 78 | 4 | 0 | 0.93 |
+| 22 | Bảng A.13. Nhận xét của AI, quyết định và lý do của nhóm | portrait | 9.5 | 4 × 12 | 66 | 9 | 2 | 0.77 |
+| 23 | Bảng A.14. Ý kiến của các bên liên quan, sắp xếp theo các đề | portrait | 8.5 | 6 × 5 | 42 | 10 | 3 | 1.00 |
+| 24 | Bảng A.15. Thứ tự ưu tiên của các chủ đề theo ba tiêu chí củ | portrait | 9.5 | 5 × 6 | 21 | 4 | 0 | 1.00 |
+| 25 | Bảng A.16. Xung đột giữa các bên liên quan và cách nhóm giải | portrait | 8.5 | 4 × 4 | 25 | 7 | 0 | 1.00 |
+| 26 | Bảng A.17. Kết quả xác nhận theo bốn đề mục của đề bài | portrait | 8.5 | 2 × 4 | 21 | 7 | 0 | 1.00 |
+| 27 | Bảng A.18. Đối chiếu SMART Goal với năm tiêu chí | portrait | 8.5 | 2 × 5 | 19 | 6 | 0 | 1.00 |
+| 28 | Bảng A.19. KPI chính và các KPI phụ: chỉ số đo gì, đọc khi n | portrait | 9.5 | 4 × 3 | 9 | 3 | 0 | 1.00 |
+| 29 | Bảng A.20. Rủi ro về chất lượng dữ liệu và tính khả thi | portrait | 8.5 | 3 × 5 | 15 | 4 | 0 | 1.00 |
+
+## Words wider than their column (Word breaks them mid-word)
+
+| # | Table | Word wider than its column | Word pt | Column pt |
+| :-- | :-- | :-- | :-- | :-- |

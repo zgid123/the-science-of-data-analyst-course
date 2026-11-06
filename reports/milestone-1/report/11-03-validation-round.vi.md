@@ -24,7 +24,7 @@ Sau bước tổng hợp, nhóm quay lại từng bên liên quan trong chính c
 >    kèm: trong số sinh viên về sau trượt hoặc rút học phần, tỷ lệ đã được liên hệ chậm nhất vào tuần 6; và trong số sinh
 >    viên có tên trong danh sách, tỷ lệ được liên hệ trong vòng một tuần kể từ khi có tên.
 
-Bảng A.12 trích nguyên văn những phát biểu chính của vòng xác nhận và ghi tác động của từng phát biểu lên đề xuất. Bảng 2.4 ở Mục 2.4 tóm tắt kết quả của vòng này.
+Bảng A.12 trích nguyên văn những phát biểu chính của vòng xác nhận và ghi tác động của từng phát biểu lên đề xuất. Mục 2.4 tóm tắt kết quả của vòng này, còn Bảng A.17 ở Phụ lục VI trình bày đầy đủ kết quả đó.
 
 **Bảng A.12. Các phát biểu ở vòng xác nhận và tác động lên đề xuất**
 
@@ -48,11 +48,13 @@ Bảng A.12 trích nguyên văn những phát biểu chính của vòng xác nh�
 | VAD3 | "một sinh viên sa sút ở nhiều học phần cùng lúc là trường hợp khác với sinh viên chỉ sa sút ở một học phần" | Giảm tham gia ở nhiều học phần là dấu hiệu ưu tiên trong AQ4 |
 | VAD4 | "Những sinh viên trả lời chúng tôi có thể đằng nào cũng hoàn thành, nên tôi sẽ thận trọng khi nhận năm điểm đó là công của chúng tôi." | KPI báo cáo tiến độ, không phải hiệu quả; muốn đo hiệu quả cần một thiết kế có nhóm so sánh |
 | VAD5 | "Phòng tôi nên nhận những trường hợp khó hơn: sinh viên vắng mặt ở nhiều học phần, bị cảnh báo nhiều lần và bất kỳ em nào mà cố vấn học tập đã liên hệ hai lần không được." | Quy tắc phân luồng liên hệ cho các phương án hành động của AQ4 |
+| VAD6 | "các giảng viên kiêm cố vấn học tập nên nhận sinh viên trong chính lớp mình phụ trách, vì sinh viên trả lời người mà các em quen, nhưng mỗi người chỉ vài em, ba đến năm em mỗi tuần" | Số sinh viên mỗi giảng viên kiêm cố vấn học tập liên hệ được mỗi tuần: ba đến năm em (ước tính của cán bộ hỗ trợ sinh viên) |
+| VAD7 | "Ba người chúng tôi cộng lại có lẽ xử lý được khoảng ba mươi đến bốn mươi em mỗi tuần, đó là tôi đoán vậy." | Số sinh viên phòng hỗ trợ sinh viên liên hệ được mỗi tuần: khoảng 30–40 em (ước tính của cán bộ hỗ trợ sinh viên) |
 | VST1 | "Em vẫn đăng nhập và bấm qua các trang, nên trên hệ thống có lẽ em trông vẫn ổn một thời gian" | Số lượt hoạt động có thể che giấu tình trạng giảm tham gia; lý do trong danh sách kết hợp dữ liệu về bài được chấm điểm với những gì giảng viên và cố vấn học tập biết về sinh viên |
 | VST2 | "xin thêm vào là gia đình hay nơi làm việc của em không bao giờ được thông báo" | Bổ sung một quy tắc về quyền riêng tư |
 | VST3 | "Em phải có thể trả lời đơn giản, hoặc nói 'em ổn, cảm ơn thầy cô', và không bị nhắc mỗi tuần" | Mỗi đợt lập danh sách chỉ liên hệ một lần; khi sinh viên đã trả lời, trường hợp đó được đóng lại |
 | VST4 | "vâng, em chấp nhận nếu em được thông báo từ đầu và việc này thật sự là để hỗ trợ" | Thông báo cho sinh viên khi bắt đầu học phần được xác nhận |
-| VST5 | "một số bạn cùng lớp thích nhận một email chung hơn" | Mọi sinh viên nhận một thông báo chung về các hình thức hỗ trợ khi bắt đầu học phần; liên hệ cá nhân vẫn là cách làm mặc định (Bảng 2.4) |
+| VST5 | "một số bạn cùng lớp thích nhận một email chung hơn" | Mọi sinh viên nhận một thông báo chung về các hình thức hỗ trợ khi bắt đầu học phần; liên hệ cá nhân vẫn là cách làm mặc định (Mục 2.4) |
 | VDO1 | "Bài kiểm tra ngắn và bài tập bị bỏ lỡ là dấu hiệu sớm tốt hơn lượt nhấp chuột, và LMS có ghi lại những dữ liệu đó." | Bài được chấm điểm bị bỏ lỡ hoặc nộp trễ là các dấu hiệu chính (Mục 4.1 và 6.2) |
 | VDO2 | "bộ phận pháp chế phải phê duyệt việc liên kết dữ liệu LMS với dữ liệu tình trạng học tập trước đã" | Phê duyệt về quản trị dữ liệu là điều kiện trước khi dùng dữ liệu của trường ở Milestone 2 |
 | VDO3 | "Nếu xuất dữ liệu thủ công thì danh sách tuần 5 có thể đã cũ một tuần." | Thời điểm chốt dữ liệu là một tuần trước mỗi đợt lập danh sách |

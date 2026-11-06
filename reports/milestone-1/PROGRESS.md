@@ -33,10 +33,14 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
 | T25 | Vietnamese twin: terms, front matter, translators, native review, consistency, reader test | done (2026-11-05) | report/*.vi.md (31), glossaries/topics/course-completion-early-contact.md, research/vi-review/* | 4 translators + 4 reviewers (different agents), consistency pass, reader test 73 flags (2/47/24) -> rewrite + review -> retest 53 flags (0/31/22) -> targeted rewrite of 13; parity 31/31 clean | guide rule 8 and lessons T6 updated (lớp học phần, năng lực xử lý replaced). Remaining retest findings beyond the 13 not re-tested. |
 | T26 | Build and post-check every language | done (2026-11-05) | build/N04_Milestone1_EN.docx, _VI.docx, _GoogleDocs copies | logs/T26_make_all.log: make all 17/17 + tests 2/2; validate.py on 4 docx | Main text estimate EN ~11.0, VI see log. |
 | T27 | Final review | todo |  |  |  |
+| T34 | Tables, lists and closing every reader flag after the user's review | done (2026-11-07) | build/N04_Milestone1_EN.docx, N04_Milestone1_VI.docx; research/vi-review/rewrite2-flags.md, reader-test3.md, rewrite3-flags.md, reread-fixes.md | 53 retest flags closed (30 fixed, 6 rejected, 17 already resolved); reader test 89 (3/54/32): 67 fixed, 14 in the English, 8 rejected; 67 fixes re-read: 64 pass, 3 rewritten; logs/fix_tables_lists.log, logs/vi_rewrite_build.log | 14 English problems and the term questions in rewrite3-flags.md await the user. English not changed. |
+
+| T35 | Full rewrite, then move to appendix (user, 2026-11-07) | done (2026-11-07) | report/01-00..09-00 rewritten; new Appendices V–IX (11-05..11-09); research/revision/{condensed-2026-11-07,full-draft,appendix-decisions.md}; code/estimate_parts.py --blocks; code/build_appendices.py (VAD6, VAD7, path-free prompt) | logs/R1..R8: full draft 20.4 pages → 15.6 pages main content; precheck EN 7/7; check_quotes 51/51; reader test 21 items, 18 fixed | Agreed target 12–13 pages not reached: remaining blocks are brief-required; see research/revision/appendix-decisions.md. VI: 4 translators, parity 36/36; logs/R9_make_all.log 13/13 + tests 2/2; main content EN 15.6, VI 17.7 pages; table audit 0 overflow (logs/R10_*). Awaiting user review. |
 
 ## Decisions
 
-- (none yet)
+- (user, 2026-11-07) Reports are hard to understand because they were condensed. Write the complete report first, then reach the length by moving blocks to appendices with a reasoned decision per block; redo milestone by milestone.
+- (user, 2026-11-07, AskUserQuestion) Milestone 1 target: about 12–13 pages of main content; remove repetition; keep every brief-required element readable in the main text.
 
 ## Blocked
 

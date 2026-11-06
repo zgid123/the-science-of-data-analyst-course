@@ -6,7 +6,7 @@ Một AI đóng vai người đánh giá (reviewer) làm việc trong một cu�
 
 | STT | Nhận xét của AI | Quyết định của nhóm | Lý do hoặc nội dung sửa |
 | :---- | :---- | :---- | :---- |
-| R1 | Thời điểm chốt dữ liệu của AQ3 mâu thuẫn với Bảng 6.2 | Chấp nhận | Thời điểm chốt dữ liệu là hết tuần 2 và hết tuần 4; danh sách được gửi vào tuần 3 và tuần 5 (Mục 4.1, 4.2, 6.1 và 6.2) |
+| R1 | Thời điểm chốt dữ liệu của AQ3 mâu thuẫn với độ trễ dữ liệu một tuần (Mục 6.2) | Chấp nhận | Thời điểm chốt dữ liệu là hết tuần 2 và hết tuần 4; danh sách được gửi vào tuần 3 và tuần 5 (Mục 4.1, 4.2, 6.1 và 6.2) |
 | R2 | KPI phụ thứ nhất dùng mẫu số tính vào cuối học kỳ, nên mẫu số này giảm khi hoạt động liên hệ có hiệu quả; mốc tuần 6 không trùng với đợt lập danh sách nào | Chấp nhận | Thay bằng tỷ lệ liên hệ sinh viên có dấu hiệu sớm (Mục 3.3) |
 | R3 | D3 không có hướng phân tích tương ứng; báo cáo thiếu ma trận truy vết | Chấp nhận một phần | D3 dựa trên AQ1 và các KPI, được tính lặp lại cho học phần thí điểm và học phần đối chứng. Tác động nhân quả thuộc kế hoạch đánh giá ở Milestone 4 (Mục 5 và 7). Ma trận truy vết nằm ở Mục 9, phần không được gửi cho người đánh giá |
 | R4 | Tổng thể và cách gộp số liệu trong SMART Goal chưa rõ | Chấp nhận | Học phần thí điểm được chọn cố định trước đợt thí điểm; tỷ lệ được gộp chung cho các học phần này; có học phần đối chứng (Mục 3.2) |
@@ -19,12 +19,12 @@ Một AI đóng vai người đánh giá (reviewer) làm việc trong một cu�
 | R11 | Business Goal chứa luôn cả phương tiện thực hiện | Không chấp nhận | Chính ví dụ "tốt hơn" trong đề bài là "Nhận diện sớm sinh viên có nguy cơ không hoàn thành để hỗ trợ kịp thời". Business Goal của nhóm mở đầu bằng kết quả cần đạt và nêu thời điểm mà các bên liên quan yêu cầu (PM1, AD1) |
 | R12 | Báo cáo chưa giải thích hai con số khác nhau: theo persona (vai bên liên quan do AI đóng), mỗi cán bộ phụ trách 300 sinh viên; theo kịch bản, 3 cán bộ phụ trách 4.000 sinh viên | Chấp nhận | Mục 2.2 nêu rõ: các số liệu đã công bố dùng để xây dựng persona, còn ước lượng của chính persona quyết định số sinh viên cán bộ liên hệ được mỗi tuần |
 
-Nguyên văn prompt giao cho người đánh giá, giữ bằng tiếng Anh đúng như khi nhóm sử dụng:
+Prompt giao cho người đánh giá, giữ bằng tiếng Anh; mỗi tài liệu được gọi theo vị trí trong báo cáo này:
 
 ```text
 You are a reviewer of a student team's analytics project proposal for the course MTH045 – The Science of Data
-Analytics. Read the instructor brief (final-project/milestones/01/milestone-1.md) and the proposal sections
-reports/milestone-1/report/01-*.md to 07-*.md (English). Do not read any other file.
+Analytics. Read the instructor brief and Sections 1–7 of the proposal (English). Do not read any other
+document.
 
 Review the proposal as the brief's reviewer would. Check in particular:
 1. SMART: is the SMART Goal specific, measurable, achievable, relevant and time-bound; are baselines and targets

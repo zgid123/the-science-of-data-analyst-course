@@ -7,8 +7,12 @@ of a full-layout build starts on a new page, so a part also occupies the rest of
 column rounds every part up to a whole page for that case; with part_breaks = false the content total applies.
 Landscape pages are not modelled.
 
+With --blocks, the main content is split finer, by heading (levels 1–3), and each table is listed on its own line
+under its caption, so that the cost of each block can be weighed when deciding what moves to an appendix.
+
 Usage (from the repository root):
     venv/bin/python reports/milestone-1/code/estimate_parts.py reports/milestone-1/build/N04_Milestone1_EN.docx
+    venv/bin/python reports/milestone-1/code/estimate_parts.py reports/milestone-1/build/N04_Milestone1_EN.docx --blocks
 """
 
 import math
@@ -24,7 +28,7 @@ from docx.text.paragraph import Paragraph  # noqa: E402
 from estimate_pages import TEXT_H_PT, TEXT_W_PT, font_size, line_count  # noqa: E402
 
 
-def parts(path: str, char_width: float = 0.45) -> list[tuple[str, float]]:
+def parts(path: str, char_width: float = 0.45, blocks: bool = False) -> list[tuple[str, float]]:
     doc = Document(path)
     body_size = font_size(next((p for p in doc.paragraphs if p.style.name == "Body Text"), doc.paragraphs[0]), 12)
     spacing = doc.styles["Body Text"].paragraph_format.line_spacing or 1.3
@@ -33,7 +37,14 @@ def parts(path: str, char_width: float = 0.45) -> list[tuple[str, float]]:
         if el.tag == qn("w:p"):
             p = Paragraph(el, doc)
             style = p.style.name
-            if style.startswith("Heading 1") or style == "Front Heading":
+            split = style.startswith("Heading 1") or style == "Front Heading"
+            if blocks and style[:9] in ("Heading 2", "Heading 3"):
+                split = True
+            if blocks and p.text.strip().startswith(("Table ", "Bảng ")) and name is not None:
+                out.append((name, h / TEXT_H_PT))
+                name, h = "  [table] " + p.text.strip()[:37], 0.0
+                continue
+            if split:
                 if name is not None:
                     out.append((name, h / TEXT_H_PT))
                 name, h = p.text.strip()[:45], 0.0
@@ -58,11 +69,23 @@ def parts(path: str, char_width: float = 0.45) -> list[tuple[str, float]]:
                     tallest = max(tallest, n * size * 1.05 * 1.15 + 4)
                 h += tallest
             h += 12
+            if blocks:
+                out.append((name, h / TEXT_H_PT))
+                name, h = name.replace("  [table] ", "  (text after) "), 0.0
     out.append((name, h / TEXT_H_PT))
     return out
 
 
 def main() -> int:
+    if "--blocks" in sys.argv:
+        rows = parts(sys.argv[1], blocks=True)
+        start = next(i for i, (n, _) in enumerate(rows) if n[:2].rstrip(".").isdigit())
+        end = next(i for i, (n, _) in enumerate(rows) if n.startswith(("References", "Tài liệu")))
+        for n, p in rows[start:end]:
+            if p >= 0.01:
+                print(f"{n:50} {p:5.2f}")
+        print(f"main content: {sum(p for _, p in rows[start:end]):.1f} pages")
+        return 0
     rows = parts(sys.argv[1])
     main_parts = [(n, p) for n, p in rows if n[:2].rstrip(".").isdigit()]
     print(f"{'part':47} {'pages':>6} {'pages used':>10}")
