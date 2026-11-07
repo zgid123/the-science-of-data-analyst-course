@@ -1,0 +1,25 @@
+# Dataset Search Log (brief section 7.1)
+
+One row per query or candidate examined on 2026-11-06 (task T06), including rejected hits. Keywords come from the data
+requirements (student completion, dropout, withdrawal, LMS/VLE interaction, assessment submission, clickstream, higher
+education, learning analytics, MOOC dropout). The raw search calls are rows 1–10 marked T06 in `../search-log.md`;
+facts and gate notes per candidate are in `candidates.md`.
+
+| Date | Query / source | Candidate dataset | URL/DOI | Reason considered | Result |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| 2026-11-06 | Brief section 13; web search "Open University Learning Analytics Dataset OU Analyse official dataset page" | OULAD (provider page) | https://research.stem.open.ac.uk/ouanalyse/dataset/ (S300) | Higher education, course-level outcome with withdrawal, dated assessments and daily VLE clicks | Kept: candidate A; documentation meets G2a, G2b and G4; G1, G3 and G5 to be checked in the files |
+| 2026-11-06 | Seeds S002, S003 (data descriptor and UCI record) | OULAD (documentation) | doi:10.1038/sdata.2017.171 (S002); doi:10.24432/C5KK69 (S003) | Data dictionary, license, anonymisation of candidate A | Kept: documentation of candidate A |
+| 2026-11-06 | Same search | OULAD copies on PMC, CORE, author page; old address analyse.kmi.open.ac.uk | PMC5704676; core.ac.uk/download/153444254.pdf | Copies of the descriptor or superseded address | Rejected: duplicates of S002 / redirected address |
+| 2026-11-06 | Brief section 13; web search "UCI … Predict Students' Dropout and Academic Success dataset 697" | UCI 697 Predict Students' Dropout and Academic Success | doi:10.24432/C5MC89 (S301) | Higher education dropout, CC BY 4.0 | Kept: candidate B; fails G1, G2a, G2b (degree-level label, semester aggregates) |
+| 2026-11-06 | Title search "Predicting Student Dropout and Academic Success" | UCI 697 data descriptor | doi:10.3390/data7110146 (S302) | Period, target definition, anonymisation of candidate B | Kept: documentation of candidate B |
+| 2026-11-06 | Same find | Zenodo, Mendeley Data (2026) and Kaggle (2026) copies of UCI 697 | doi:10.5281/zenodo.5777339; doi:10.17632/k7hrxk9xjg; doi:10.34740/kaggle/dsv/15256262 | Other copies of candidate B | Rejected: Zenodo is the authors' copy of the same data (UCI record used); Mendeley and Kaggle re-uploads have unclear provenance |
+| 2026-11-06 | Brief section 13 | UCI 320 Student Performance | doi:10.24432/C5TG7T (S303) | Suggested source; grades and student attributes | Kept: candidate C; fails G1, G2a, G2b, G3 (secondary school, grades only) |
+| 2026-11-06 | Brief section 13 | UCI 856 Higher Education Students Performance Evaluation | doi:10.24432/C51G82 (S304) | Suggested source; higher education performance | Kept: candidate D; fails G1, G2a, G2b, G3 (145-student survey, 2019) |
+| 2026-11-06 | Web search "KDD Cup 2015 XuetangX MOOC dropout prediction dataset official download license" | XuetangX dropout data and KDD Cup 2015 data (MOOCData, Tsinghua) | http://moocdata.cn/data/user-activity (S305) | MOOC dropout with timestamped activity | Kept: candidate E; G2b met; fails G1, G2a, G4 (no license stated) |
+| 2026-11-06 | Same search | KDD Cup 2015 copies on Zenodo, a data-mining blog and Azure ML (per R-bloggers) | zenodo.org/record/5914059; data-mining.philippe-fournier-viger.com | Third-party copies of the KDD Cup 2015 data | Rejected: re-uploads without provenance; official KDD Cup page reported offline |
+| 2026-11-06 | Title search "Understanding Dropouts in MOOCs" | XuetangX source paper | doi:10.1609/aaai.v33i01.3301517 (S306) | Provenance of candidate E | Kept: documentation of candidate E (abstract only; full text behind captcha) |
+| 2026-11-06 | Web search "HarvardX-MITx Person-Course Academic Year 2013 De-Identified dataset Harvard Dataverse" | HarvardX Person-Course AY2013 | doi:10.7910/DVN/26147 (S307) | MOOC completion (certification) with de-identified person-course records | Kept: candidate F; fails G1, G2a, G2b, G3 and G4 (no named license) |
+| 2026-11-06 | Same search | Release news, blogs, de-identification scripts, ICAR metadata mirror | openlearning.mit.edu; github.com/harvard/de_id; krishi.icar.gov.in | Secondary descriptions of candidate F | Rejected: secondary or not the data |
+| 2026-11-06 | Web search "xAPI-Edu-Data students academic performance dataset Amrieh Hamtini Aljarah original source" | xAPI-Edu-Data (University of Jordan group page) | https://research.ju.edu.jo/research/groups/EVO-ML/Pages/Resources.aspx (S308) | LMS-based student performance data | Blocked: connection refused; replaced by S309 |
+| 2026-11-06 | Replacement for S308 | xAPI-Edu-Data, Kaggle listing by co-author I. Aljarah | https://www.kaggle.com/datasets/aljarah/xAPI-Edu-Data (S309) | Found via Kaggle; traced to the authors' own listing | Kept: candidate G; fails G1, G2a, G2b, G3; G4 unclear |
+| 2026-11-06 | Same search | MaRDI portal, ISC index, derivative papers | portal.mardi4nfdi.de/wiki/Item:Q6036517 | Secondary metadata about candidate G | Rejected: secondary |

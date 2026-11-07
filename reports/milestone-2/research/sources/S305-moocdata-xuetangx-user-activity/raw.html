@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="/static/css/share.css" rel="stylesheet"/>
+    <link href="/static/css/download_page.css" rel="stylesheet"/>
+    <title>MoocData</title>
+</head>
+<body>
+    <div id="container">
+        <nav id="page-header" class="navbar navbar-expand-lg navbar-light justify-content-between"
+     style="background-color: #FFFFFF; max-width: 980px;">
+    <a href="/">
+        <img src="/static/picture/moocdata.png">
+    </a>
+    <div id="collapse navbar-collapse" style="float: right;">
+        <ul class="nav navbar-nav justify-content-end">
+            <li class="nav-item dropdown" id="data-href">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                   id="data-dropdown" aria-haspopup="true" aria-expanded="false" href="/data">
+                    <b>data</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="data-dropdown">
+                    <a class="dropdown-item" href="/data/MOOCCube">MOOCCube</a>
+                    <a class="dropdown-item" href="/data/xiaomu-question">Xiaomu Questioning</a>
+                    <a class="dropdown-item" href="/data/concept-extraction">Course Concept Extraction</a>
+                    <a class="dropdown-item" href="/data/prerequisite-relation">Course Prerequisite Relation</a>
+                    <a class="dropdown-item" href="/data/user-activity">User Activity</a>
+                    <a class="dropdown-item" href="/data/course-recommendation">Course Recommendation</a>
+                </div>
+            </li>
+            <li class="nav-item" id="publication-href">
+                <a class="nav-link" href="/publications">
+                    <b>Publications</b>
+                </a>
+            </li>
+            <li class="nav-item dropdown" id="challenge-href">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                   id="challenge-dropdown" aria-haspopup="true" aria-expanded="false" href="/challenges">
+                    <b>Challenges</b>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="challenge-dropdown">
+                    <a class="dropdown-item" href="/challenges/kdd-cup-2015">KDD Cup 2015</a>
+                    <a class="dropdown-item" href="/challenges/mooccube-2020">MOOCCube 2020</a>
+                </div>
+            </li>
+            <li class="nav-item" id="about-href">
+                <a class="nav-link" href="/about">
+                    <b>About</b>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <script type="text/javascript">
+            $("li#data-href").addClass("active");
+        </script>
+        <hr />
+        <div id="content">
+            <div id='xiaomu-question'>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Keywords</th>
+                        <th scope="col">Download link</th>
+                        <th scope="col">Reference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="#User Activity">tracking log (201508-201608)</a></td>
+                    <td>1048 MB</td>
+                    <td>Activity Log</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/20150801-20160801-activity.tar.gz">data</a></td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/publications/AAAI19-Feng-dropout-moocs.pdf" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">Tracking Log (201608-201708)</a></td>
+                    <td>583 MB</td>
+                    <td>Activity Log</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/20160801-20170801-activity.tar.gz">data</a></td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/publications/AAAI19-Feng-dropout-moocs.pdf" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">Dropout Prediction Dataset</a></td>
+                    <td>299 MB</td>
+                    <td>Dropout Prediction Dataset</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/prediction_data.tar.gz">data</a></td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/publications/AAAI19-Feng-dropout-moocs.pdf" target="_blank">AAAI'19</a></td>
+                </tr>
+                 <tr>
+                    <td><a href="#User Activity">User Profile</a></td>
+                    <td>112 MB</td>
+                    <td>User Profile</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/user_info.csv">data</a></td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/publications/AAAI19-Feng-dropout-moocs.pdf" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">Course Information</a></td>
+                    <td>527 KB</td>
+                    <td>Course Information</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/course_info.csv">data</a></td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/publications/AAAI19-Feng-dropout-moocs.pdf" target="_blank">AAAI'19</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#User Activity">KDDCUP Data</a></td>
+                    <td>158 MB</td>
+                    <td>KDDCUP Data</td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/data/kddcup15.zip">data</a></td>
+                    <td><a href="http://lfs.aminer.cn/misc/moocdata/publications/AAAI19-Feng-dropout-moocs.pdf" target="_blank">AAAI'19</a></td>
+                </tr>
+               </tbody>
+            </table>
+            <div id="detail_infomation">
+                <hr />
+                <div class="dataset">
+                    <a name="User Activity" class="tin">
+                        <h4>User Activity</h4>
+                    </a>
+                    <p>
+                        These files are the datasets used in the paper "Understanding Dropouts in MOOCs" in AAAI 2019. 
+                        <br />
+                        Tracking log files (201508-201608, 201608-201708) include all users' learning activities in XuetangX platform from 201508 to 201708. These logs are the supporting data of the analyses in the paper.
+                        <br />
+                        Dropout prediction dataset includes the training set and test set used in the paper for the dropout prediction task. 
+                        <br />
+                        User profile is the information of XuetangX users, including gender, birth year and education level.
+                        <br />
+                        Course information includes course start date, course end date, course category and course type. 
+                    </p>
+                    <p>
+                        <strong>Tracking log:</strong>
+                        <br />
+                        <p>Each json file includes user tracking log in a specific period. For example, 20150801-20151101-raw_user_activity.json is the tracking log from 20150801 to 20151101. </p>
+
+                        <p>The format of these json files is as follow:</p>
+                        <p>Each json file includes user tracking log in a specific period. For example, 20150801-20151101-raw_user_activity.json is the tracking log from 20150801 to 20151101. The format of these json files is as follow:</p>
+                        <p>[</p>
+                        <p>&nbsp; &nbsp; [course_id,</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; {user_id:</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { session_id:</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [activity_event_1, time_1],</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [activity_event_2, time_2],</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ... ],</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ... },</p>
+                        <p>&nbsp; &nbsp; &nbsp; &nbsp; ...}</p>
+                        <p>&nbsp; &nbsp; ],</p>
+                        <p>...]</p>
+
+                        <strong>Dropout Prediction Dataset:</strong>
+                        <br />
+                        <p>train_log.csv, test_log.csv:</p>
+                        <p>1st column: enroll_id, the id of (user, course) pair.</p>
+                        <p>2nd column: username, the id of user.</p>
+                        <p>3rd column: course_id, the id of course.</p>
+                        <p>4th column: session_id, the id of session.</p>
+                        <p>5th column: action, the type of user activity.</p>
+                        <p>6th column: object, the corresonding object of the action.</p>
+                        <p>7th column: time, the occurence time of the action.</p>
+                        <p>train_truth.csv, test_truth.csv:</p>
+                        <p>1st column: enroll_id, the id of (user, course) pair</p>
+                        <p>2nd column: truth, the label of user's dropout (1: dropout, 0: non-dropout).</p>
+                         
+                        <strong>User Profile:</strong>
+                        </br>
+                        <p>1st column: user_id, the id of user.</p>
+                        <p>2nd column: gender, the gender of user.</p>
+                        <p>3st column: education, user's education level.</p>
+                        <p>4th column: birth, user's birth year.</p>
+                        
+                        <strong>Course Information:</strong>
+                        </br>
+                        <p>1st column: id, the id (number) of course, which is used in dropout prediction dataset.</p>
+                        <p>2nd column: course_id, the id (string) of course, which is used in tracking log.</p>
+                        <p>3st column: start, course start time.</p>
+                        <p>4th column: end, course end time.</p>
+                        <p>5th column: course_type, course mode (0: instructor-paced course, 1: self-paced course).</p>
+                        <p>6th column: category, the category of course.</p>
+
+                        <strong>KDDCUP Data:</strong>
+                        </br>
+                        The full dataset of KDDCUP 15, details can be found in <a href="https://biendata.com/competition/kddcup2015/data/">KDDCUP 2015</a>.
+
+                    <a name="Reference" class="tin">
+                        <h4>Reference</h4>
+                    </a>
+                    <p>
+                        @inproceedings{feng2019dropout,
+                        <br />
+                        &ensp;&ensp;&ensp;&ensp;title={Understanding Dropouts in MOOCs},
+                        <br />
+                        &ensp;&ensp;&ensp;&ensp;author={Wenzheng Feng and Jie Tang and Tracy Xiao Liu and Shuhuai Zhang and Jian Guan},
+                        <br />
+                        &ensp;&ensp;&ensp;&ensp;booktitle={Proceedings of the 33rd AAAI Conference on Artificial Intelligence},
+                        <br />
+                        &ensp;&ensp;&ensp;&ensp;year={2019}
+                        <br />
+                        }
+                    </p>
+                    </div>
+            </div>
+</div>
+ 
+
+        </div>
+        <hr class="hr" />
+<div id="copyright">
+    <p>
+        &copy; 2020 Tsinghua University <a href="http://www.beian.miit.gov.cn">京ICP备19000880号-1</a>
+    </p>
+</div>
+
+    </div>
+</body>
+</html>

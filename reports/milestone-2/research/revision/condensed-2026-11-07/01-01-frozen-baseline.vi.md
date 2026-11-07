@@ -1,0 +1,15 @@
+## 1.1. Phiên bản cơ sở đã chốt
+
+Trước khi xem xét bất kỳ bộ dữ liệu nào, nhóm phân tích dữ liệu chốt đề xuất của Milestone 1. Nhóm sao chép nguyên văn mục tiêu, chỉ số, câu hỏi, nhu cầu dữ liệu và các quyết định, đồng thời ghi lại mã kiểm tra (checksum) của các tệp nguồn, nhờ đó có thể phát hiện mọi thay đổi về sau (Phụ lục V). Đề bài yêu cầu bước này vì các câu hỏi, chứ không phải dữ liệu, quyết định những gì cần thu thập [1].
+
+Business Goal (mục tiêu của tổ chức) là nâng tỷ lệ hoàn thành các học phần trực tuyến và học phần kết hợp (blended, vừa học trực tuyến vừa học trên lớp) của một chương trình đào tạo đại học, bằng cách nhận ra sớm những sinh viên giảm tham gia học tập để kịp hỗ trợ ngay trong học kỳ. SMART Goal (mục tiêu cụ thể, đo lường được, khả thi, phù hợp và có thời hạn) xác định cách đo mục tiêu này: đến cuối năm học 2027–2028, tỷ lệ hoàn thành học phần ở các học phần thí điểm tăng từ mức cơ sở 70% lên mức mục tiêu 75%. Tỷ lệ này tính trên sinh viên còn theo học sau thời gian điều chỉnh đăng ký học phần. Cả hai mức trên đều là giả định của kịch bản. Sinh viên tạm ngừng học có phép hoặc chuyển chương trình đào tạo không được tính; Thông tư 83/2026 cũng không tính hai nhóm này khi thống kê sinh viên thôi học. Dự án theo dõi ba chỉ số đo lường hiệu quả (KPI). KPI chính là tỷ lệ hoàn thành học phần. KPI phụ 1 là tỷ lệ liên hệ sinh viên có dấu hiệu sớm của việc giảm tham gia học tập: trong số sinh viên có dấu hiệu này tính đến hết tuần 4, bao nhiêu phần trăm được liên hệ trước khi hết tuần 5. KPI phụ 2 là tỷ lệ liên hệ kịp thời: trong số sinh viên có tên trong danh sách liên hệ, bao nhiêu phần trăm được liên hệ trong vòng bảy ngày kể từ khi có danh sách.
+Bảng 1.1 liệt kê bốn câu hỏi phân tích (AQ), kèm loại phân tích và quyết định (D1–D3) mà mỗi câu hỏi hỗ trợ.
+
+**Bảng 1.1. Các câu hỏi AQ1–AQ4 đã chốt, kèm loại phân tích và quyết định**
+
+| AQ | Loại phân tích | Tóm tắt câu hỏi | Quyết định được hỗ trợ |
+| :---- | :---- | :---- | :---- |
+| AQ1 | Mô tả | Tỷ lệ sinh viên đạt, trượt hoặc rút học phần, chia theo học phần, hình thức học và năm theo học, trong bốn học kỳ; tuần sinh viên lần đầu bỏ lỡ bài được chấm điểm | D2: chương trình đào tạo phân bổ thời gian của cố vấn học tập vào đâu; D3: có mở rộng sau đợt thí điểm hay không |
+| AQ2 | Chẩn đoán | Những dấu hiệu nào trong tuần 1–4 có mối liên hệ với việc sinh viên về sau không hoàn thành học phần: bỏ lỡ hoặc nộp trễ bài, hoạt động trên nền tảng học tập, bỏ lỡ bài ở nhiều học phần, chuyên cần | D2; lý do cụ thể ghi cạnh tên sinh viên trong danh sách liên hệ (D1) |
+| AQ3 | Dự báo | Với dữ liệu ghi nhận đến hết tuần 2 và hết tuần 4, việc dự báo sinh viên không hoàn thành học phần đạt chất lượng đến đâu, so với quy tắc đơn giản dựa trên các bài được chấm điểm mà sinh viên bỏ lỡ | D1: ai có tên trong danh sách liên hệ tuần 3 và tuần 5 |
+| AQ4 | Chỉ định | Đưa sinh viên nào vào danh sách, theo thứ tự nào và liên hệ theo cách nào, khi số sinh viên cán bộ liên hệ được mỗi tuần có hạn và phải bảo đảm công bằng giữa các nhóm sinh viên | D1: liên hệ ai, ai liên hệ và hỗ trợ gì |

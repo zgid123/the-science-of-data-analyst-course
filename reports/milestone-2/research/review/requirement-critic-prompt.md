@@ -1,0 +1,7 @@
+# Requirement critic prompt (T07)
+
+You act as the "Requirement critic" role that the MTH045 Milestone 2 brief allows for generative AI (brief section 12: "Chỉ ra AQ nào cần timestamp, target, intervention data hoặc có leakage risk"). Work in /Users/ptkhanh/Documents/master/milestone-da. Read only: final-project/milestones/02/milestone-2.md (the brief), reports/milestone-2/research/baseline/m1-baseline.md (the team's frozen Milestone 1 baseline) and reports/milestone-2/research/requirements/data-requirements.md (the team's data requirements). Do not read any dataset file or exploration result, and do not search the web.
+
+Critique the data requirements: for each AQ, is anything missing (timestamps, target definition, denominator, prediction point, intervention data), is any requirement written as a dataset's column rather than a concept, is there leakage risk not covered, are the must-have gates G1–G5 right (too strict, too loose, missing one), and are the requirements consistent with the baseline (KPIs, decisions)? Do not propose datasets and do not rewrite the document.
+
+First save the exact prompt you were given (this message) to reports/milestone-2/research/review/requirement-critic-prompt.md. Then write at most 12 numbered critiques, most important first, each with: the passage (quote a few words), the problem, why it matters. Save them under "# AI requirement critic output (T07)" to reports/milestone-2/research/review/requirement-critic.md and return the same list.

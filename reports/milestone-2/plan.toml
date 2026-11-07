@@ -1,0 +1,276 @@
+# Machine-readable half of EXECUTION_PLAN.md: edit both together, then run scaffold.py build.
+
+[plan]
+task = "reports/milestone-2"
+title = "From Requirements to Collection: Data Requirements, Open Dataset Selection and Reproducible Collection"
+outline = "reports/milestone-2/reference.md"
+created = "2026-11-06"
+
+[checks]
+words = "150-700"
+meta_phrases = ["this doc", "this report will", "requester", "we will", "in this task", "source notes", "reference.md", "the outline", "as instructed", "writing rule", "the reader will", "planned run", "pending result", "will be benchmarked", "this section", "this part"]
+
+[references]
+heading = "# References"
+
+[[files]]
+name = "00-0-title-page.md"
+heading = ""
+
+[[files]]
+name = "00-1-abbreviations.md"
+heading = "# List of Abbreviations"
+
+[[files]]
+name = "00-2-glossary.md"
+heading = "# List of Terms"
+
+[[files]]
+name = "01-00-baseline-scope.md"
+heading = "# 1. Milestone 1 Baseline and Scope"
+outline_section = "1"
+
+[[files]]
+name = "01-01-frozen-baseline.md"
+heading = "## 1.1. Frozen Baseline"
+outline_section = "1"
+
+[[files]]
+name = "01-02-scope-change-log.md"
+heading = "## 1.2. Scope of Milestone 2 and Change Log Summary"
+outline_section = "1"
+
+[[files]]
+name = "02-00-data-requirements.md"
+heading = "# 2. Data Requirement Specification"
+outline_section = "2"
+
+[[files]]
+name = "02-01-aq-data-matrix.md"
+heading = "## 2.1. AQ–Data Requirement Matrix"
+outline_section = "2"
+
+[[files]]
+name = "02-02-requirements-by-level.md"
+heading = "## 2.2. Requirements by Analytics Level"
+outline_section = "2"
+
+[[files]]
+name = "02-03-prediction-point-leakage.md"
+heading = "## 2.3. Prediction Point and Leakage Risk"
+outline_section = "2"
+
+[[files]]
+name = "03-00-search-strategy.md"
+heading = "# 3. Open Dataset Search Strategy"
+outline_section = "3"
+
+[[files]]
+name = "04-00-evaluation-selection.md"
+heading = "# 4. Dataset Evaluation and Selection"
+outline_section = "4"
+
+[[files]]
+name = "04-01-criteria-gates.md"
+heading = "## 4.1. Criteria and Must-Have Gates"
+outline_section = "4"
+
+[[files]]
+name = "04-02-selection-matrix.md"
+heading = "## 4.2. Selection Matrix and Rationale"
+outline_section = "4"
+
+[[files]]
+name = "05-00-acquisition-provenance.md"
+heading = "# 5. Data Acquisition and Provenance"
+outline_section = "5"
+
+[[files]]
+name = "06-00-structural-verification.md"
+heading = "# 6. Initial Structural Verification"
+outline_section = "6"
+
+[[files]]
+name = "07-00-coverage-gaps.md"
+heading = "# 7. Requirement Coverage and Data Gaps"
+outline_section = "7"
+
+[[files]]
+name = "07-01-traceability.md"
+heading = "## 7.1. Updated Traceability Matrix"
+outline_section = "7"
+
+[[files]]
+name = "07-02-gaps-revisions.md"
+heading = "## 7.2. Data Gaps and Controlled Revisions"
+outline_section = "7"
+
+[[files]]
+name = "08-00-risks-ethics.md"
+heading = "# 8. Risks, Ethics and Limitations"
+outline_section = "8"
+
+[[files]]
+name = "09-00-genai-reflection.md"
+heading = "# 9. Generative AI Usage and Reflection"
+outline_section = "9"
+
+[[files]]
+name = "10-references.md"
+heading = "# References"
+
+[[files]]
+name = "11-00-appendices.md"
+heading = "# Appendices"
+
+[[files]]
+name = "11-01-search-log.md"
+heading = "## Appendix I – Dataset Search Log"
+
+[[files]]
+name = "11-02-scoring-details.md"
+heading = "## Appendix II – Candidate Scoring Details"
+
+[[files]]
+name = "11-03-acquisition-package.md"
+heading = "## Appendix III – Acquisition Plan and Data Collection Package"
+
+[[files]]
+name = "11-04-structure-details.md"
+heading = "## Appendix IV – Structural Verification Details"
+
+[[files]]
+name = "11-05-change-log.md"
+heading = "## Appendix V – Controlled Change Log and Full Traceability"
+
+[[files]]
+name = "11-06-ai-evidence.md"
+heading = "## Appendix VI – Generative AI Usage Evidence"
+
+[[tasks]]
+id = "T01"
+kind = "S"
+title = "Scaffold workspace and register the task"
+
+[[tasks]]
+id = "T02"
+kind = "HC"
+title = "Scope inputs – decided in conversation"
+
+[[tasks]]
+id = "T03"
+kind = "R"
+title = "Seeds: brief, OULAD sources, Milestone 1 baseline"
+
+[[tasks]]
+id = "T04"
+kind = "S"
+title = "Freeze the Milestone 1 baseline (step 1)"
+
+[[tasks]]
+id = "T05"
+kind = "S"
+title = "Data Requirement Specification, levels, leakage table (Tasks 1-2)"
+
+[[tasks]]
+id = "T06"
+kind = "R"
+title = "Dataset search: at least 3 candidates, official pages, licenses (Task 3; S300-S399)"
+
+[[tasks]]
+id = "T07"
+kind = "S"
+title = "AI requirement critic on the data requirements"
+
+[[tasks]]
+id = "T08"
+kind = "S"
+title = "Scoring and selection matrix (Task 4)"
+
+[[tasks]]
+id = "T09"
+kind = "S"
+title = "AI selection reviewer on the matrix"
+
+[[tasks]]
+id = "T10"
+kind = "S"
+title = "Acquisition plan and Data Collection Package (Task 5)"
+
+[[tasks]]
+id = "T11"
+kind = "S"
+title = "Initial structural verification script and results (Task 6)"
+
+[[tasks]]
+id = "T12"
+kind = "S"
+title = "Coverage, traceability, gaps and Change Log (Task 7)"
+
+[[tasks]]
+id = "T13"
+kind = "W"
+title = "Write Parts 1-2"
+
+[[tasks]]
+id = "T14"
+kind = "W"
+title = "Write Parts 3-6"
+
+[[tasks]]
+id = "T15"
+kind = "W"
+title = "Write Parts 7-9 and appendices"
+
+[[tasks]]
+id = "T16"
+kind = "S"
+title = "Front matter"
+
+[[tasks]]
+id = "T17"
+kind = "S"
+title = "References"
+
+[[tasks]]
+id = "T18"
+kind = "S"
+title = "Full gates"
+
+[[tasks]]
+id = "T19"
+kind = "S"
+title = "Fact spot-check"
+
+[[tasks]]
+id = "T20"
+kind = "S"
+title = "Style read-through"
+
+[[tasks]]
+id = "T21"
+kind = "S"
+title = "Build and post-check the English Word document"
+
+[[tasks]]
+id = "T22"
+kind = "S"
+title = "Vietnamese twin: terms, front matter, translators, review, consistency, reader test"
+
+[[tasks]]
+id = "T23"
+kind = "S"
+title = "Build and post-check every language"
+
+[[tasks]]
+id = "T24"
+kind = "HC"
+title = "Final review"
+
+[[seeds]]
+id = "S001"
+slug = "mth045-milestone2-brief-2026"
+source = "MTH045 – The Science of Data Analytics. (2026). Milestone P2: From requirements to collection [Course brief]"
+url = "final-project/milestones/02/milestone-2.md"
+item = "1"
+type = "primary"

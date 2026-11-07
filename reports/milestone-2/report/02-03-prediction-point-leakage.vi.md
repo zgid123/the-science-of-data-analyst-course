@@ -1,0 +1,13 @@
+## 2.3. Thời điểm dự báo và rủi ro rò rỉ thông tin
+
+**Thời điểm dự báo.** Một câu hỏi dự báo phải nêu rõ thời điểm dự báo (lúc đưa ra dự báo) và chỉ được dùng thông tin đã biết trước thời điểm đó [1]. Phiên bản cơ sở giả định dữ liệu đến tay cán bộ chậm khoảng một tuần. Do đó, thời điểm chốt dữ liệu là hết tuần 2 và hết tuần 4, còn cán bộ nhận danh sách vào tuần 3 và tuần 5. Rò rỉ thông tin là việc dùng thông tin chưa biết tại thời điểm dự báo; lỗi này khiến một phương pháp trông chính xác hơn trên dữ liệu quá khứ so với khi áp dụng thực tế. Với mỗi danh sách, Bảng 2.3 nêu biến cần dự đoán, các đặc trưng được phép dùng và những trường sẽ làm rò rỉ thông tin phát sinh sau thời điểm chốt dữ liệu.
+
+**Bảng 2.3. Thời điểm dự báo, đặc trưng được phép dùng và rủi ro rò rỉ thông tin**
+
+| AQ dự báo | Thời điểm dự báo | Biến cần dự đoán | Đặc trưng được phép dùng (có trước thời điểm dự báo) | Trường dữ liệu chưa có / rủi ro rò rỉ thông tin |
+| :---- | :---- | :---- | :---- | :---- |
+| AQ3, danh sách tuần 3 | Hết tuần 2 | Trượt hoặc rút học phần tính đến cuối học kỳ | Hoạt động đến hết tuần 2; bài nộp và tình trạng nộp đúng hạn của các bài đến hạn tính đến hết tuần 2; ngày bắt đầu đăng ký; đặc điểm cá nhân ghi nhận khi đăng ký | Kết quả cuối cùng; ngày rút học phần nằm sau thời điểm chốt dữ liệu; điểm và bài nộp của các bài về sau; hoạt động về sau; kết quả thi |
+| AQ3, danh sách tuần 5 | Hết tuần 4 | Như trên | Như trên, đến hết tuần 4 | Như trên, sau tuần 4; hoạt động ghi nhận sau khi chính sinh viên đó đã rút học phần |
+| Cả hai danh sách | – | – | Giá trị trung bình theo học phần, phép chuẩn hóa thang đo và phép mã hóa chỉ được ước lượng trên các học kỳ huấn luyện, từ dữ liệu tính đến hết thời điểm chốt dữ liệu; điểm đã công bố tính đến hết thời điểm chốt dữ liệu; khối lượng học tập và đặc điểm cá nhân ghi nhận khi đăng ký | Giá trị trung bình hoặc phép chuẩn hóa thang đo có tính cả sinh viên của học kỳ kiểm tra hoặc dữ liệu của những ngày sau thời điểm chốt dữ liệu; điểm công bố sau thời điểm chốt dữ liệu; khối lượng học tập ghi nhận vào cuối học kỳ; đặc điểm cá nhân được cập nhật về sau |
+
+**Hai quy tắc bổ sung.** Hai quy tắc sau bảo đảm việc sinh viên đã rời học phần không bị tính như một dấu hiệu báo trước chính việc rời đi đó. Trong AQ1 và AQ2, một bài chỉ được tính là bỏ lỡ nếu đến hạn trước ngày sinh viên rút học phần; nếu không, mọi sinh viên rút sớm sẽ có vẻ đã bỏ lỡ tất cả các bài về sau. Trong AQ3, sinh viên đã rời học phần tính đến thời điểm chốt dữ liệu không được tính vào số sinh viên mà danh sách phát hiện được, vì cán bộ không còn liên hệ được với các sinh viên này.

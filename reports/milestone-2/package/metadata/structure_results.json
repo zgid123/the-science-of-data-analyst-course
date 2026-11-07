@@ -1,0 +1,407 @@
+{
+ "generated": "2026-11-05T18:33:01Z",
+ "tables": {
+  "courses": {
+   "rows": 22,
+   "columns": 3,
+   "headers": [
+    "code_module",
+    "code_presentation",
+    "module_presentation_length"
+   ],
+   "key": [
+    "code_module",
+    "code_presentation"
+   ],
+   "duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "missing": {},
+   "types": {
+    "code_module": "text",
+    "code_presentation": "text",
+    "module_presentation_length": "integer"
+   },
+   "columns_not_documented": [
+    "module_presentation_length"
+   ],
+   "documented_not_in_file": [
+    "length"
+   ],
+   "time_ranges": {
+    "module_presentation_length": [
+     234,
+     269
+    ]
+   }
+  },
+  "assessments": {
+   "rows": 206,
+   "columns": 6,
+   "headers": [
+    "code_module",
+    "code_presentation",
+    "id_assessment",
+    "assessment_type",
+    "date",
+    "weight"
+   ],
+   "key": [
+    "id_assessment"
+   ],
+   "duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "missing": {
+    "date": 11
+   },
+   "types": {
+    "code_module": "text",
+    "code_presentation": "text",
+    "id_assessment": "integer",
+    "assessment_type": "text",
+    "date": "integer",
+    "weight": "decimal"
+   },
+   "columns_not_documented": [],
+   "documented_not_in_file": [],
+   "time_ranges": {
+    "date": [
+     12,
+     261
+    ]
+   }
+  },
+  "vle": {
+   "rows": 6364,
+   "columns": 6,
+   "headers": [
+    "id_site",
+    "code_module",
+    "code_presentation",
+    "activity_type",
+    "week_from",
+    "week_to"
+   ],
+   "key": [
+    "id_site"
+   ],
+   "duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "missing": {
+    "week_from": 5243,
+    "week_to": 5243
+   },
+   "types": {
+    "id_site": "integer",
+    "code_module": "text",
+    "code_presentation": "text",
+    "activity_type": "text",
+    "week_from": "integer",
+    "week_to": "integer"
+   },
+   "columns_not_documented": [],
+   "documented_not_in_file": [],
+   "time_ranges": {
+    "week_from": [
+     0,
+     29
+    ],
+    "week_to": [
+     0,
+     29
+    ]
+   }
+  },
+  "studentInfo": {
+   "rows": 32593,
+   "columns": 12,
+   "headers": [
+    "code_module",
+    "code_presentation",
+    "id_student",
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "num_of_prev_attempts",
+    "studied_credits",
+    "disability",
+    "final_result"
+   ],
+   "key": [
+    "code_module",
+    "code_presentation",
+    "id_student"
+   ],
+   "duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "missing": {
+    "imd_band": 1111
+   },
+   "types": {
+    "code_module": "text",
+    "code_presentation": "text",
+    "id_student": "integer",
+    "gender": "text",
+    "region": "text",
+    "highest_education": "text",
+    "imd_band": "text",
+    "age_band": "text",
+    "num_of_prev_attempts": "integer",
+    "studied_credits": "integer",
+    "disability": "text",
+    "final_result": "text"
+   },
+   "columns_not_documented": [],
+   "documented_not_in_file": [],
+   "time_ranges": {}
+  },
+  "studentRegistration": {
+   "rows": 32593,
+   "columns": 5,
+   "headers": [
+    "code_module",
+    "code_presentation",
+    "id_student",
+    "date_registration",
+    "date_unregistration"
+   ],
+   "key": [
+    "code_module",
+    "code_presentation",
+    "id_student"
+   ],
+   "duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "missing": {
+    "date_registration": 45,
+    "date_unregistration": 22521
+   },
+   "types": {
+    "code_module": "text",
+    "code_presentation": "text",
+    "id_student": "integer",
+    "date_registration": "integer",
+    "date_unregistration": "integer"
+   },
+   "columns_not_documented": [],
+   "documented_not_in_file": [],
+   "time_ranges": {
+    "date_registration": [
+     -322,
+     167
+    ],
+    "date_unregistration": [
+     -365,
+     444
+    ]
+   }
+  },
+  "studentAssessment": {
+   "rows": 173912,
+   "columns": 5,
+   "headers": [
+    "id_assessment",
+    "id_student",
+    "date_submitted",
+    "is_banked",
+    "score"
+   ],
+   "key": [
+    "id_assessment",
+    "id_student"
+   ],
+   "duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "missing": {
+    "score": 173
+   },
+   "types": {
+    "id_assessment": "integer",
+    "id_student": "integer",
+    "date_submitted": "integer",
+    "is_banked": "integer",
+    "score": "integer"
+   },
+   "columns_not_documented": [],
+   "documented_not_in_file": [],
+   "time_ranges": {
+    "date_submitted": [
+     -11,
+     608
+    ]
+   }
+  },
+  "studentVle": {
+   "rows": 10655280,
+   "columns": 6,
+   "headers": [
+    "code_module",
+    "code_presentation",
+    "id_student",
+    "id_site",
+    "date",
+    "sum_click"
+   ],
+   "key": null,
+   "duplicate_keys": null,
+   "exact_duplicate_rows": 787170,
+   "missing": {},
+   "types": {
+    "code_module": "text",
+    "code_presentation": "text",
+    "id_student": "integer",
+    "id_site": "integer",
+    "date": "integer",
+    "sum_click": "integer"
+   },
+   "columns_not_documented": [],
+   "documented_not_in_file": [],
+   "time_ranges": {
+    "date": [
+     -25,
+     269
+    ]
+   }
+  }
+ },
+ "checks": {
+  "final_result_values": {
+   "Pass": 12361,
+   "Withdrawn": 10156,
+   "Fail": 7052,
+   "Distinction": 3024
+  },
+  "withdrawn_with_date": 10063,
+  "withdrawn_without_date": 93,
+  "date_but_not_withdrawn": 9,
+  "studentInfo_registration_match": true,
+  "runs_per_module": {
+   "AAA-J": [
+    "2013J",
+    "2014J"
+   ],
+   "BBB-B": [
+    "2013B",
+    "2014B"
+   ],
+   "BBB-J": [
+    "2013J",
+    "2014J"
+   ],
+   "CCC-B": [
+    "2014B"
+   ],
+   "CCC-J": [
+    "2014J"
+   ],
+   "DDD-B": [
+    "2013B",
+    "2014B"
+   ],
+   "DDD-J": [
+    "2013J",
+    "2014J"
+   ],
+   "EEE-B": [
+    "2014B"
+   ],
+   "EEE-J": [
+    "2013J",
+    "2014J"
+   ],
+   "FFF-B": [
+    "2013B",
+    "2014B"
+   ],
+   "FFF-J": [
+    "2013J",
+    "2014J"
+   ],
+   "GGG-B": [
+    "2014B"
+   ],
+   "GGG-J": [
+    "2013J",
+    "2014J"
+   ]
+  },
+  "runs_per_module_all": {
+   "AAA": [
+    "2013J",
+    "2014J"
+   ],
+   "BBB": [
+    "2013B",
+    "2013J",
+    "2014B",
+    "2014J"
+   ],
+   "CCC": [
+    "2014B",
+    "2014J"
+   ],
+   "DDD": [
+    "2013B",
+    "2013J",
+    "2014B",
+    "2014J"
+   ],
+   "EEE": [
+    "2013J",
+    "2014B",
+    "2014J"
+   ],
+   "FFF": [
+    "2013B",
+    "2013J",
+    "2014B",
+    "2014J"
+   ],
+   "GGG": [
+    "2013J",
+    "2014B",
+    "2014J"
+   ]
+  },
+  "students_total": 28785,
+  "students_in_more_than_one_run": 3538,
+  "same_module_repeats": 1309,
+  "repeats_with_higher_attempt_counter": 1309,
+  "first_task_due_day": {
+   "AAA-2013J": 19,
+   "AAA-2014J": 19,
+   "BBB-2013B": 19,
+   "BBB-2013J": 19,
+   "BBB-2014B": 12,
+   "BBB-2014J": 19,
+   "CCC-2014B": 18,
+   "CCC-2014J": 18,
+   "DDD-2013B": 23,
+   "DDD-2013J": 25,
+   "DDD-2014B": 25,
+   "DDD-2014J": 20,
+   "EEE-2013J": 33,
+   "EEE-2014B": 33,
+   "EEE-2014J": 33,
+   "FFF-2013B": 19,
+   "FFF-2013J": 19,
+   "FFF-2014B": 24,
+   "FFF-2014J": 24,
+   "GGG-2013J": 61,
+   "GGG-2014B": 61,
+   "GGG-2014J": 61
+  },
+  "runs_with_task_due_by_day_13": 1,
+  "runs_with_task_due_by_day_27": 16,
+  "exams_without_cutoff_day": 11,
+  "unregistered_on_or_before_day_0": 3097,
+  "registered_after_day_14": 58,
+  "registration_day_missing": 45,
+  "still_registered_at_day_14": 28119,
+  "assessment_rows_without_parent": 0,
+  "submissions_without_enrolment": 0,
+  "click_rows_without_enrolment": 0,
+  "click_rows_without_site": 0
+ }
+}
