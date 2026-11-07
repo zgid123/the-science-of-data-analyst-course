@@ -42,6 +42,7 @@ subject = "Course or field"              # optional: core property (default: emp
 # compact = true                         # a short document (a proposal): no page breaks before parts, no contents
                                          #   or lists of figures and tables, front pages flow into the body
 # part_breaks = false                     # contents and lists kept, but the numbered parts run on without page
+# landscape_appendices = true             # with part_breaks = false: wide tables in the appendices may still rotate
                                          #   breaks (references, appendices on a new page); all pages portrait
 # body_size = 11                         # body font size in pt (default: the pack's [docx] value)
 # line_spacing = 1.15                    # line spacing of running text (default: the pack's [docx] value)

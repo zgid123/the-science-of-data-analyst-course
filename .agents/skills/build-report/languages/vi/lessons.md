@@ -50,3 +50,14 @@ conditions in one sentence, and delta translation, which kept the stiff wording 
 | T4. One condition per sentence in a goal or a question | the SMART Goal box as one sentence with six conditions → a framing sentence, then "Điều kiện thứ nhất / thứ hai / thứ ba" | guide 2.1 |
 | T5. Rewrite, not patch, after a readability complaint | stale twins updated only where the English changed → every sentence rewritten from the English, then reviewed, a whole-report read and a second reader test | reference 4.2 step 1 and 4.3 stage 5; `report-translate.md` |
 | T6. Test the replacement term too | **lớp học phần** for the course → **học phần**; **năng lực xử lý của cán bộ** → **số sinh viên cán bộ liên hệ được mỗi tuần** (short form "khả năng liên hệ của cán bộ"); **ngày lập danh sách** → **đợt lập danh sách** (milestone-1, 2026-11-05: the native reader found the T1 replacements still unnatural) | guide 4, rule 8; topic glossary course-completion-early-contact |
+
+## 4. A finished translation still clunky (milestone-2, 2026-11-07)
+
+The user, a native reader, found the Vietnamese clunky although all six stages had run and every check passed. Two causes
+were measured. The last reader test ended with flags still open (milestone-2: 47 flagged, 19 fixed; milestone-1: 53
+flagged, 13 fixed), and the glossary itself required phrases the reader had flagged, so translators had to use them.
+
+| Lesson | Before → after | Rule lives in |
+| :---- | :---- | :---- |
+| T7. A reader test closes only when every flag is resolved | "ten hardest fixed, the rest not re-tested" recorded as done → each flag fixed or rejected with a reason, and the fixes tested again | reference 4.3 stage 5; `report-reader-test.md` |
+| T8. A flagged term is a glossary question, and the native user decides it | **lượt mở module**, **lượt tổ chức** → **kỳ mở module**; **bài được chấm điểm** kept by the user's decision | reference 4.3 stages 1 and 5; topic glossary |

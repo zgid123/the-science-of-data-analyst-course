@@ -30,13 +30,16 @@ import zipfile
 
 from docx import Document
 from docx.oxml.ns import qn
+from docx.table import Table
 from lxml import etree
 
 from common import ROOT, language_packs, load_config, load_report, resolve, source_language, tasks, shown
 import glossary
 from lang_rules import Rules
+from table_layout import LONG_WORD_PT, count_lines, text_pt, unbroken, word_widths
 
 EMU_PER_TWIP = 635
+MAX_CELL_LINES = 20            # a table cell taller than this means its column is squeezed
 TOLERANCE = 1.01
 LEFTOVERS = ["**", "![", "](", "{width", "$$", "[^", "| :--", "|---", "```", "<!--"]
 PLACEHOLDER = re.compile(r"\[(?!\d)[^\]\[]{2,40}\]|\bTODO\b|\bTBD\b|\bXXX\b|\?\?\?")
@@ -88,7 +91,6 @@ def title_page_height(doc):
     estimate_pages.py: lines at their font size, spacing before and after, images at their printed height, table rows
     at their column widths. Capitals and table cells are counted wide, so the estimate errs on the tall side."""
     from estimate_pages import line_count
-    from docx.table import Table
     from docx.text.paragraph import Paragraph
     h = 0.0
     width = doc.sections[0].page_width - doc.sections[0].left_margin - doc.sections[0].right_margin
@@ -115,6 +117,24 @@ def title_page_height(doc):
                     tallest = max(tallest, n * size * 1.3 + 4)
                 h += tallest
     return h
+
+
+def table_fit(t):
+    """Findings for a table whose columns do not suit their text: a word broken across lines, or a squeezed cell."""
+    grid = [int(g.get(qn("w:w"))) / 20.0 for g in t._tbl.find(qn("w:tblGrid")).findall(qn("w:gridCol"))]
+    label, found = t.rows[0].cells[0].text[:30], []
+    for i, row in enumerate(t.rows):
+        for j, (cell, w) in enumerate(zip(row.cells, grid)):
+            inner, size = w - 8.0, next((r.font.size.pt for p in cell.paragraphs for r in p.runs if r.font.size), 9.5)
+            mono = frozenset(x for p in cell.paragraphs for r in p.runs
+                             if r.style is not None and r.style.name == "Verbatim Char" for x in r.text.split())
+            for word in (part for w in cell.text.split() for part in unbroken(w)):
+                if inner < text_pt(word, size, i == 0, any(word in m for m in mono)) <= LONG_WORD_PT:
+                    found.append(f"table '{label}': column {j + 1} ({w:.0f} pt) breaks the word '{word}'")
+            n = count_lines(word_widths(cell.text, size, i == 0, mono), inner, size)
+            if n > MAX_CELL_LINES:
+                found.append(f"table '{label}': row {i + 1}, column {j + 1} ({w:.0f} pt) wraps to {n} lines")
+    return found
 
 
 def check(doc_path, rep, task, cfg, pack, n_refs, rules=None):
@@ -203,14 +223,23 @@ def check(doc_path, rep, task, cfg, pack, n_refs, rules=None):
                 title_table = i == 0
                 if not title_table and (first_row is None or first_row.find(qn("w:trPr") + "/" + qn("w:tblHeader")) is None):
                     errors.append(f"table '{text_of(t)[:40]}' has no repeating header row")
+                if not title_table:
+                    errors.extend(table_fit(Table(t, doc)))
 
     # ---- front matter, fields and numbering
     instrs = instr_texts(body)
     compact = task.get("layout", {}).get("compact", False)    # a short document without contents, lists or roman pages
-    for need, what in () if compact else (('TOC \\o "1-3"', "table of contents"), ('TOC \\h \\z \\c "Figure"', "list of figures"),
-                       ('TOC \\h \\z \\c "Table"', "list of tables")):
+    captions = {name: sum(1 for p in body.iter(qn("w:p")) if style_of(p) == style)
+                for name, style in (("Figure", "ImageCaption"), ("Table", "TableCaption"))}
+    for need, what in () if compact else (('TOC \\o "1-3"', "table of contents"),):
         if need not in instrs:
             errors.append(f"{what} field ({need}) is missing")
+    for name, count in captions.items():
+        need, what = f'TOC \\h \\z \\c "{name}"', f"list of {name.lower()}s"
+        if not compact and count and need not in instrs:
+            errors.append(f"{what} field ({need}) is missing")
+        if not count and need in instrs:
+            errors.append(f"{what} is in the document but the report has no {name.lower()} captions: an empty page")
     upd = doc.settings.element.find(qn("w:updateFields"))
     if upd is None or upd.get(qn("w:val")) not in ("true", "1"):
         errors.append("settings: updateFields is not set, so Word will not fill in the contents on opening")

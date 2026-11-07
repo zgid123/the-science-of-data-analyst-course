@@ -157,6 +157,8 @@ def build(name, task, langs, figures=True):
             args.append("--compact")
         elif layout.get("part_breaks") is False:            # contents kept; parts run on, all pages portrait
             args.append("--run-on-parts")
+            if layout.get("landscape_appendices"):          # appendices sit outside the page budget and start a new page
+                args.append("--landscape-appendices")
         for key in ("body_size", "line_spacing"):           # the task's page budget overrides the language pack
             if key in layout:
                 args += [f"--{key.replace('_', '-')}", str(layout[key])]

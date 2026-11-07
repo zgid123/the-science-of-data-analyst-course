@@ -239,6 +239,23 @@ def main():
     expect("title page: a title page taller than its text area fails the post-check",
            r.returncode == 1 and "title page is estimated" in r.stdout, (r.stdout + r.stderr).splitlines()[0][:90])
 
+    print("== Lists of figures and tables, table fit")
+    from docx.oxml.ns import qn as _qn
+    def post_check(path):
+        return subprocess.run([PY, str(SCRIPTS / "check_docx.py"), "--task", "selftest", "--lang", "en", "--docx",
+                               str(path.relative_to(ROOT))], cwd=ROOT, capture_output=True, text=True,
+                              env={**os.environ, "BUILD_REPORT_CONFIG": str(CONFIG)})
+    bad_docx = BASE / "out" / "Test_EN_faults.docx"
+    fdoc = Document(str(base_docx))
+    for cap in [p for p in fdoc.paragraphs if p.style.style_id == "ImageCaption"]:
+        cap.style = fdoc.styles["Normal"]
+    grid = next(t for t in fdoc.tables[1:] if len(t.columns) > 1)._tbl.find(_qn("w:tblGrid"))     # after the title page
+    grid.findall(_qn("w:gridCol"))[0].set(_qn("w:w"), "200")     # a 10 pt column
+    fdoc.save(str(bad_docx))
+    r = post_check(bad_docx)
+    expect("lists: a list of figures with no figure captions fails the post-check", r.returncode == 1 and "an empty page" in r.stdout, r.stdout[:120])
+    expect("tables: a column too narrow for its words fails the post-check", "breaks the word" in r.stdout, r.stdout[:120])
+
     print("== Run-on parts ([TASK.layout] part_breaks = false)")
     runon_docx = BASE / "out" / "Test_EN_runon.docx"
     code, out = run("build_docx.py", "--src", REP.relative_to(ROOT), "--lang", "en", "--out",
@@ -433,10 +450,31 @@ def main():
               ["MADDG [53]", "CVPR 2019", "17.69", "24.50", "22.19", "27.98", "23.09 (computed)"],
               ["SSDG-R [74], [51]", "CVPR 2020", "7.38", "10.44", "11.71", "15.61", "11.28"]]
     class _T:                                                     # the cell texts are all is_landscape_table reads
-        def __init__(self, rows): self.rows = [type("R", (), {"cells": [type("C", (), {"text": c}) for c in r]}) for r in rows]
+        def __init__(self, rows): self.rows = [type("R", (), {"cells": [type("C", (), {"text": c, "paragraphs": []}) for c in r]}) for r in rows]
     w = column_widths(scores, TEXT_W_PORTRAIT, 9.5)
     expect("tables: seven short columns stay on a portrait page with readable number columns",
            not is_landscape_table(_T(scores)) and min(w[2:6]) > 0.1 * TEXT_W_PORTRAIT and max(w) < 0.25 * TEXT_W_PORTRAIT)
+
+    url = "https://research.example.edu/groups/data-mining/resources/open-datasets/index.aspx"
+    prose = "A long reason that needs a real column to stay readable, with several clauses in it."
+    log = [["Date", "Source", "URL", "Reason", "Result"]] + [["2026-11-06", "Search engine", url, prose, prose]] * 6
+    w = column_widths(log, TEXT_W_PORTRAIT, 8.5)
+    expect("tables: a long URL wraps in its cell and leaves the width to the text columns",
+           w[3] > 0.2 * TEXT_W_PORTRAIT and w[4] > 0.2 * TEXT_W_PORTRAIT and w[2] < 0.4 * TEXT_W_PORTRAIT, str(w))
+    from table_layout import text_pt
+    caps = [["ID", "A long heading for the text column"], *[["AQ1", "word " * 60]] * 3]
+    expect("tables: a column of capitals fits its printed width, wider than an average character",
+           column_widths(caps, TEXT_W_PORTRAIT, 9.5)[0] / 12700 - 8 > text_pt("AQ1", 9.5))
+
+    from table_layout import ZWSP, soft_break
+    links = ["https://research.example.ac.uk/groups/data-mining/resources/open-datasets/index.aspx",
+             "doi:10.34740/kaggle/dsv/15256262/and/some/more/path/to/make/it/long/enough/for/the/check",
+             "core.ac.uk/download/1534442540000000000000000000000000000000000000000000.pdf",
+             "data-mining.a-very-long-example-domain-name-for-the-check-of-bare-domains.com"]
+    expect("tables: a URL or a DOI keeps no hidden characters, so a copied link works",
+           not any(ZWSP in soft_break(u, 8.5) for u in links))
+    expect("tables: a long identifier still gets break points",
+           ZWSP in soft_break("studentRegistration_table.date_registration_of_the_student_record_field", 8.5))
 
     # apply_fixes.py: FIND/REPLACE blocks apply exactly once or not at all
     target = REP / "01-01-2-evaluation-metrics.vi.md"

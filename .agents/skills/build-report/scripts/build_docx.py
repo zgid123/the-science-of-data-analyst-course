@@ -18,7 +18,8 @@ breaks surround rotated tables or figures. The title page, captions, tables and 
 --run-on-parts (tasks.toml: [taskN.layout] part_breaks = false) keeps the full front matter, contents, lists and
 roman numbering, but lets the numbered parts follow one another with heading space instead of a page break, for a
 report whose main text has a page budget (for example 6–10 pages). The unnumbered level-1 headings of the body, such as
-the references and the appendices, still start a new page. Every page stays portrait, as with --compact.
+the references and the appendices, still start a new page. Every page stays portrait, as with --compact, unless
+--landscape-appendices (tasks.toml: landscape_appendices = true) also rotates wide tables in the appendices.
 
 Pipeline:
     1. Create a styled reference.docx (fonts, spacing, captions, tables, A4 page setup, document language).
@@ -55,6 +56,7 @@ from docx.table import Table
 from docx.text.paragraph import Paragraph
 
 from common import ROOT, language_packs, section_files, shown
+from table_layout import LONG_WORD_PT, count_lines, soft_break, text_pt, word_widths
 
 HERE = Path(__file__).resolve().parent
 CACHE = ROOT / "build" / ".cache"
@@ -79,6 +81,8 @@ SHORT_CELL = 24                # a column whose body cells are all this short ke
 FIT_SLACK = 0.15               # a table that fits takes its natural width plus up to 15% of air, centred
 LANDSCAPE_PAGES = True         # False (--portrait): wide content stays on portrait pages, no orientation changes
 COMPACT = False                # True (--compact): no page breaks before parts, no contents or lists, arabic from page 1
+APPENDIX_LANDSCAPE = False     # True (--landscape-appendices): a run-on build still rotates wide tables in the appendices
+APPENDIX_TABLES = []           # the tables after the numbered parts, filled in by find_appendix_tables
 RUN_ON = False                 # True (--run-on-parts): front matter kept, numbered parts without page breaks
 
 def labels_for(code: str, src: Path, meta: dict) -> dict:
@@ -538,8 +542,9 @@ def insert_front_matter(doc, anchor, body_start, base_sect, labels):
         anchor.addnext(el)
     # \c collects paragraphs holding a SEQ field of that name; unlike \t "Style,level" it does not depend on
     # the locale's list separator (";" on Vietnamese-region systems) or on style names
-    tail = (front_block(doc, labels["lof"], 'TOC \\h \\z \\c "Figure"', figs, labels["hint"])
-            + front_block(doc, labels["lot"], 'TOC \\h \\z \\c "Table"', tabs, labels["hint"]))
+    # a list exists only when the report has captions to list
+    tail = (front_block(doc, labels["lof"], 'TOC \\h \\z \\c "Figure"', figs, labels["hint"]) if figs else [])
+    tail += front_block(doc, labels["lot"], 'TOC \\h \\z \\c "Table"', tabs, labels["hint"]) if tabs else []
     fm_end = make_sect_pr(base_sect)
     tail.append(section_break_paragraph(fm_end))                       # ends the front-matter section
     target = body_start
@@ -554,15 +559,67 @@ def cell_texts(t):
     return [[c.text for c in row.cells] for row in t.rows]
 
 
+NUMBER = re.compile(r"[−+-]?(\d{1,3}([,.\u202f ]\d{3})+|\d+)([.,]\d+)?\s?%?")
+BLANK_CELL = {"", "–", "—", "-", "n/a"}
+
+
+def numeric_columns(rows):
+    """Columns whose body cells are all numbers (counts, decimals, percentages; a dash for a blank): right-aligned."""
+    body = rows[1:]
+    return {j for j in range(len(rows[0]))
+            if body and any(r[j].strip() not in BLANK_CELL for r in body)
+            and all(r[j].strip() in BLANK_CELL or NUMBER.fullmatch(r[j].strip()) for r in body)}
+
+
+def add_soft_breaks(t, size):
+    """Give each over-long identifier in a table cell break points after its dots, underscores and slashes."""
+    for i, row in enumerate(t.rows):
+        for cell in row.cells:
+            for p in cell.paragraphs:
+                for r in p.runs:
+                    mono = r.style is not None and r.style.name == "Verbatim Char"
+                    new = re.sub(r"\S+", lambda m: soft_break(m.group(0), size, i == 0, mono), r.text)
+                    if new != r.text:
+                        r.text = new
+
+
+def mono_words(t):
+    """The words a table prints in the monospaced font (inline code), which run wider than body text."""
+    return frozenset(w for row in t.rows for c in row.cells for p in c.paragraphs for r in p.runs
+                     if r.style is not None and r.style.name == "Verbatim Char" for w in r.text.split())
+
+
 def is_landscape_table(t):
     """Tables whose readable minimum does not fit a portrait page, and text-heavy tables, get a landscape page."""
     rows = cell_texts(t)
     body_cells = [c for r in rows[1:] for c in r]
     mean = sum(len(c) for c in body_cells) / max(1, len(body_cells))
-    return mean >= LANDSCAPE_TABLE_CHARS or sum(column_limits(rows, 8.5)[0]) > TEXT_W_PORTRAIT
+    return mean >= LANDSCAPE_TABLE_CHARS or sum(column_limits(rows, 8.5, mono_words(t))[0]) > TEXT_W_PORTRAIT
 
 
-def column_limits(rows, font_pt):
+def find_appendix_tables(body, first_h1):
+    """The tables after the first unnumbered level-1 heading that follows the numbered parts."""
+    seen = after = False
+    for el in body:
+        seen = seen or el is first_h1
+        if seen and el.tag == qn("w:p") and style_of(el) == "Heading1" and not re.match(r"\d", text_of(el).strip()):
+            after = True
+        if after and el.tag == qn("w:tbl"):
+            APPENDIX_TABLES.append(el)
+
+
+def may_rotate(el):
+    return LANDSCAPE_PAGES or (APPENDIX_LANDSCAPE and el in APPENDIX_TABLES)
+
+
+def longest_word(rows, j, font_pt, mono=frozenset()):
+    """Width in EMU of the widest word of a column; a URL or a hash wraps anyway, so it asks for half LONG_WORD_PT."""
+    head = max(word_widths(rows[0][j], font_pt, True), key=sum, default=[])
+    body = [w for r in rows[1:] for para in word_widths(r[j], font_pt, False, mono) for w in para]
+    return Pt(max((w if w <= LONG_WORD_PT else LONG_WORD_PT / 2 for w in head + body), default=1.0))
+
+
+def column_limits(rows, font_pt, mono=frozenset()):
     """(minimum, natural) width in EMU of every column.
 
     Minimum: the longest word fits on one line, the header wraps to at most about three lines, and a short
@@ -570,52 +627,85 @@ def column_limits(rows, font_pt):
     a long label column fits within about three lines (capped at 4 cm). Natural: every cell on one line, with
     the header on up to two lines.
     """
-    char = Cm(font_pt * 0.5 / 72 * 2.54)            # average character width (about half an em)
     pad = Cm(0.35)                                  # cell margins
     mins, nats = [], []
     for j in range(len(rows[0])):
         head, body = rows[0][j], [r[j] for r in rows[1:]] or [""]
-        word = max((len(w) for c in [head] + body for w in c.split()), default=1) * 1.1
-        longest = max(len(c) for c in body)
-        short = longest if longest <= SHORT_CELL else 0
-        label = min(longest / 3, Cm(4.0) / char)
-        m = max(word, len(head) / 3, short, label) * char + pad
+        head_w = Pt(text_pt(head, font_pt, True))
+        longest = Pt(max(text_pt(line, font_pt, False, line in mono) for c in body for line in c.split("\n")))
+        short = longest if max(len(c) for c in body) <= SHORT_CELL else 0
+        m = max(longest_word(rows, j, font_pt, mono), head_w / 3, short, min(longest / 3, Cm(4.0))) + pad
         mins.append(m)
-        nats.append(max(m, (max(longest, len(head) / 2)) * char + pad))
+        nats.append(max(m, max(longest, head_w / 2) + pad))
     return mins, nats
 
 
-def column_widths(rows, total, font_pt):
+def balance_columns(rows, mins, total, font_pt, mono):
+    """Share the room above the minimums so the table is as short as it can be, and its text wraps least.
+
+    A table's height is the sum of its rows, and each row is as tall as its tallest cell, so width belongs where
+    it removes lines from the cells that set a row's height. Starting from a share by the text each column holds,
+    the search moves width between two columns for as long as that lowers the height.
+    """
+    pad = Cm(0.35)
+    cols = range(len(rows[0]))
+    paras = [[word_widths(c, font_pt, i == 0, mono) for c in r] for i, r in enumerate(rows)]
+    memo = {}
+
+    def lines(j, w):
+        key = (j, int(w) // 1000)
+        if key not in memo:
+            memo[key] = [count_lines(r[j], (w - pad) / 12700, font_pt) for r in paras]
+        return memo[key]
+
+    def cost(ws):
+        by_col = [lines(j, ws[j]) for j in cols]
+        return (sum(max(row) for row in zip(*by_col)), sum(map(sum, by_col)))
+
+    need = [sum(len(r[j]) for r in rows) + 1 for j in cols]
+    room = max(0, total - sum(mins))
+    widths = [m + room * n / sum(need) for m, n in zip(mins, need)]
+    best = cost(widths)
+    steps = [Cm(s) for s in (3.0, 1.5, 0.8, 0.4, 0.2)]
+    while True:
+        moves = []
+        for a in cols:
+            for b in cols:
+                for step in steps if a != b and widths[a] > mins[a] else ():
+                    take = min(step, widths[a] - mins[a])
+                    trial = list(widths)
+                    trial[a] -= take
+                    trial[b] += take
+                    moves.append((cost(trial), a, b, take))
+        top = min(moves, default=None, key=lambda m: m[0])
+        if top is None or top[0] >= best:
+            return [int(w) for w in widths]
+        best, a, b, take = top
+        widths[a] -= take
+        widths[b] += take
+
+
+def column_widths(rows, total, font_pt, mono=frozenset()):
     """Column widths in EMU, sized to the content.
 
     A table whose natural width fits takes that width (plus up to FIT_SLACK of air) and is centred, so short
-    columns stay narrow. A wider table gives every column its minimum and the remaining width to the columns
-    whose text still wraps, in proportion to how much text they hold; when even the minimums do not fit, the
-    soft part of each minimum shrinks first, down to the longest word, and a table denser still narrows every
-    column alike.
+    columns stay narrow. A wider table gives every column its minimum and shares the rest to keep the table
+    short (balance_columns); when even the minimums do not fit, the soft part of each minimum shrinks first,
+    down to the longest word, and a table denser still narrows every column alike.
     """
-    char = Cm(font_pt * 0.5 / 72 * 2.54)
     pad = Cm(0.35)
-    mins, nats = column_limits(rows, font_pt)
+    mins, nats = column_limits(rows, font_pt, mono)
     if sum(nats) <= total:
         scale = min(1 + FIT_SLACK, total / sum(nats))
         return [int(n * scale) for n in nats]
-    word = [max((len(w) for c in [r[j] for r in rows] for w in c.split()), default=1) * 1.1 * char + pad
-            for j in range(len(rows[0]))]
+    word = [longest_word(rows, j, font_pt, mono) + pad for j in range(len(rows[0]))]
     if sum(mins) > total:
         soft = sum(m - w for m, w in zip(mins, word))
         over = sum(mins) - total
         mins = [m - (m - w) * min(1.0, over / soft) if soft else m for m, w in zip(mins, word)]
     if sum(mins) > total:                           # dense tables: every column narrows alike, words may break
         mins = [m * total / sum(mins) for m in mins]
-    room = max(0, total - sum(mins))
-    need = []
-    for j, m in enumerate(mins):
-        body = [r[j] for r in rows[1:]] or [""]
-        need.append(max(0.0, sum(len(c) for c in body) / len(body) * char - (m - pad)))
-    if sum(need) == 0:
-        need = [n - m for n, m in zip(nats, mins)] if sum(nats) > sum(mins) else [1.0] * len(mins)
-    return [int(m + room * n / sum(need)) for m, n in zip(mins, need)]
+    return balance_columns(rows, mins, total, font_pt, mono)
 
 
 def style_tables(doc, body, title_tables):
@@ -624,7 +714,7 @@ def style_tables(doc, body, title_tables):
             continue
         t = Table(el, doc)
         wide = is_landscape_table(t)
-        landscape = wide and LANDSCAPE_PAGES
+        landscape = wide and may_rotate(el)
         total = TEXT_W_LANDSCAPE if landscape else TEXT_W_PORTRAIT
         t.alignment = WD_TABLE_ALIGNMENT.CENTER
         tblpr = el.find(qn("w:tblPr"))
@@ -635,7 +725,8 @@ def style_tables(doc, body, title_tables):
                                 ("right", 4, "B7C0CC"), ("insideH", 4, "B7C0CC"), ("insideV", 4, "B7C0CC")):
             borders.append(el_(side, val="single", sz=sz, color=color))
         size = 9 if landscape else (8.5 if wide else 9.5)
-        widths = column_widths(cell_texts(t), total, size)
+        add_soft_breaks(t, size)
+        widths = column_widths(cell_texts(t), total, size, mono_words(t))
         put(tblpr, el_("tblW", w=int(sum(widths) / 635), type="dxa"))
         put(tblpr, borders)
         put(tblpr, el_("tblLayout", type="fixed"))
@@ -645,6 +736,7 @@ def style_tables(doc, body, title_tables):
         put(tblpr, mar)
 
         rows = t.rows
+        numeric = numeric_columns(cell_texts(t))
         grid = el.find(qn("w:tblGrid"))
         if grid is not None:
             for gc, wdt in zip(grid.findall(qn("w:gridCol")), widths):
@@ -666,8 +758,11 @@ def style_tables(doc, body, title_tables):
                     shade(tcpr, "F5F7FA")
                 for cp in cell.paragraphs:
                     cp.style = doc.styles["Table Header" if i == 0 else "Table Text"]
-                    # headers centred, body left-aligned, overriding column alignment from the markdown
-                    cp.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER if i == 0 else WD_ALIGN_PARAGRAPH.LEFT
+                    # headers centred, body left-aligned (numeric columns right-aligned so magnitudes line up),
+                    # overriding column alignment from the markdown
+                    cp.paragraph_format.alignment = (WD_ALIGN_PARAGRAPH.CENTER if i == 0 else
+                                                     WD_ALIGN_PARAGRAPH.RIGHT if j in numeric else
+                                                     WD_ALIGN_PARAGRAPH.LEFT)
                     for r in cp.runs:
                         r.font.size = Pt(size)
 
@@ -750,7 +845,7 @@ def landscape_groups(doc, body, labels, start_after):
                 groups.append((intro if intro is not None else el, end))
             else:
                 size_image(el, TEXT_W_PORTRAIT, Cm(19))
-        elif LANDSCAPE_PAGES and el.tag == qn("w:tbl") and is_landscape_table(Table(el, doc)):
+        elif el.tag == qn("w:tbl") and may_rotate(el) and is_landscape_table(Table(el, doc)):
             prev = el.getprevious()
             start = prev if prev is not None and style_of(prev) == "TableCaption" else el
             groups.append((start, el))
@@ -916,6 +1011,7 @@ def build(lang: str, pandoc: str, src: Path, out: Path, meta: dict):
                     and list(body).index(el) < list(body).index(first_h1)]
     title_end = format_title_page(doc, body, first_h1)
     body_start = convert_front_headings(doc, body)
+    find_appendix_tables(body, first_h1)
     style_tables(doc, body, title_tables)
     counts = mark_captions(doc, body, labels)
     groups = landscape_groups(doc, body, labels, start_after=title_end)
@@ -956,14 +1052,17 @@ def main():
                     help="figures with an SVG twin go in as SVG with their PNG as fallback (sharp at any zoom)")
     ap.add_argument("--compact", action="store_true",
                     help="short document: no page breaks before parts, no contents or lists, arabic numbering from 1")
+    ap.add_argument("--landscape-appendices", action="store_true",
+                    help="in a run-on build, rotate wide tables in the appendices, which start on their own page anyway")
     ap.add_argument("--run-on-parts", action="store_true",
                     help="front matter kept; numbered parts follow one another without page breaks, all pages portrait")
     args = ap.parse_args()
-    global LANDSCAPE_PAGES, COMPACT, RUN_ON
+    global LANDSCAPE_PAGES, APPENDIX_LANDSCAPE, COMPACT, RUN_ON
     COMPACT = args.compact
     RUN_ON = args.run_on_parts and not args.compact
     # a short document stays portrait: no breaks around rotated pages
     LANDSCAPE_PAGES = not (args.portrait or args.compact or RUN_ON)
+    APPENDIX_LANDSCAPE = args.landscape_appendices and RUN_ON and not args.portrait
     meta = dict(title=args.title, short_title=args.short_title, author=args.author, subject=args.subject,
                 vector=args.vector and not args.portrait,
                 figure_lang=args.figure_lang or args.lang,
