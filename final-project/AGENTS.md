@@ -14,7 +14,7 @@ Use the requested output location or default to `samples/<dataset>/`. Maintain r
 
 - `prompts/`: research brief (`generic-prompt.md`).
 - `datasets/`: symlink to the repository-root `../datasets/` (git-ignored), kept so earlier code and evidence paths resolve. The fetcher `../scripts/fetch-datasets/fetch_datasets.py` creates the data and `../datasets/inventory.json`, which records what is on disk and its checks.
-- `requirements/` and `milestones/`: instructor guidance and team proposal/work; distinguish proposed assumptions from measurements and confirmed decisions.
+- `requirements/` and `milestones/`: instructor guidance and team proposal/work; distinguish proposed assumptions from measurements and confirmed decisions. The milestone briefs themselves are in the repository-root `../milestones/<nn>/`.
 - `../.agents/skills/data-analyst/SKILL.md`: local analytical methodology and skill instructions.
 - `../.agents/skills/data-analyst/workflows/analytics-lifecycle.md`: detailed ten-stage lifecycle and verification gates.
 - `../.agents/skills/data-analyst/references/`: supporting analytical techniques and safeguards.

@@ -5,7 +5,7 @@ then move what is worth moving to the appendices to follow the page suggestion, 
 build-report skills; the Vietnamese version through the complete build-report flow. Standing rule (2026-11-08): only
 content the brief does not require, or content stated twice, may move; size alone is never the reason.
 
-Page target: the brief (final-project/milestones/04/milestone-4.md) gives no page count. The user's decision of T02
+Page target: the brief (milestones/04/milestone-4.md) gives no page count. The user's decision of T02
 (2026-11-06, PROGRESS.md) set the main text at 10–12 pages, appendices excluded; that is the working target.
 User decision (AskUserQuestion, 2026-11-08, after the table moves at 20.0 / 27.0 pages): "Move the 2 figures too
 (Recommended)"; no further moves of explanation.

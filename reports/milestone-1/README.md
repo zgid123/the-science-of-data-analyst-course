@@ -1,7 +1,7 @@
 # Milestone 1 proposal (team N04)
 
 Requirement analysis and analytics project proposal for MTH045 on low course completion and mid-semester
-disengagement in online and blended courses, following `final-project/milestones/01/milestone-1.md`.
+disengagement in online and blended courses, following `milestones/01/milestone-1.md`.
 
 - `reference.md`, `EXECUTION_PLAN.md`, `plan.toml`, `PROGRESS.md`: outline, plan and ledger (research-report skill).
 - `research/`: sources and claims (`sources.md`, `part*-claims.md`, `sources/Sxxx-*`), interview records

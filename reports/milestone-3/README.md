@@ -2,7 +2,7 @@
 
 From understanding to preparation: data understanding, data quality assessment, AQ–data fit, the preparation plan,
 a reproducible preparation pipeline, prepared-data validation and model readiness for OULAD, following
-`final-project/milestones/03/milestone-3.md`. Baseline: the Milestone 1 proposal as revised by the Milestone 2 Change
+`milestones/03/milestone-3.md`. Baseline: the Milestone 1 proposal as revised by the Milestone 2 Change
 Log (`reports/milestone-2/`); raw data: the Milestone 2 Data Collection Package.
 
 - `reference.md`, `EXECUTION_PLAN.md`, `plan.toml`, `PROGRESS.md`: outline, plan and ledger (research-report skill).

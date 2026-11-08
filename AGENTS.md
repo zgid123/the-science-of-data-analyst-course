@@ -8,9 +8,11 @@ edit `AGENTS.md`, and re-read it after each change so the updated rules apply in
 
 - `samples/` – standalone reference samples. `slidev/` is the reference Slidev deck (theme, layouts,
   section structure, Vue charts, speaker-note format): start new decks from its README.
+- `milestones/` – the instructor briefs, one folder per milestone: `<nn>/milestone-<n>.pdf` as received and
+  `milestone-<n>.md` its Markdown copy from `pdf2md`, with images in `milestone-<n>_assets/`; `README.md` gives each
+  copy's verification result.
 - `final-project/` – team N04 project; has its own `AGENTS.md`, which takes precedence inside that folder.
-  `milestones/<nn>/milestone-<n>.pdf` is the instructor brief, `milestone-<n>.md` its verified Markdown copy,
-  `N04_*` the team deliverables.
+  `milestones/<nn>/` there holds the team's earlier deliverables (`N04_*`, the Milestone 2 data collection).
 - `datasets/` – education datasets, fetched and verified by `scripts/fetch-datasets/`; raw files stay local
   (git-ignored) and each `<dataset>/exploration/` folder of analysis results is tracked. **Analysis
   focus: OULAD** (`datasets/oulad/`); the six other datasets are reference data from the milestone 2 screening.

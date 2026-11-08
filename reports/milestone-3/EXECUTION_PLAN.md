@@ -1,7 +1,7 @@
 # Execution Plan: From Understanding to Preparation: Data Understanding, Quality Assessment and Reproducible Data Preparation
 
 Plan date: 2026-11-06. Input outline: [reference.md](reference.md), derived from the instructor brief
-`final-project/milestones/03/milestone-3.md`. Outputs: the Milestone 3 report (fine-grained sections in `report/`,
+`milestones/03/milestone-3.md`. Outputs: the Milestone 3 report (fine-grained sections in `report/`,
 compiled to Word in English and Vietnamese by the build-report skill) and the Prepared Data Package (`package/`).
 The machine-readable half of this plan is `plan.toml` (file map, task list, seeds); keep both in step.
 

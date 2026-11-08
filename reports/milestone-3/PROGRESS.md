@@ -46,7 +46,7 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
 
 ## Decisions (T02, 2026-11-06)
 
-- Follow `final-project/milestones/03/milestone-3.md` strictly: steps 1–8 (section 5), Tasks 1–8, deliverables A–F
+- Follow `milestones/03/milestone-3.md` strictly: steps 1–8 (section 5), Tasks 1–8, deliverables A–F
   (section 16) and the report structure of section 16.1; the checklist of section 17 is checked at T23.
 - Baseline: Milestone 1 proposal as revised by the Milestone 2 Change Log C01–C08; raw data: the Milestone 2
   Data Collection Package (OULAD, figshare v1, SHA-256 pinned).

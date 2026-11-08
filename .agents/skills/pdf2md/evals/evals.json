@@ -4,10 +4,10 @@
     {
       "id": 1,
       "name": "vietnamese-template-tables",
-      "prompt": "convert final-project/milestones/01/milestone-1.pdf to markdown, keep it exactly as in the pdf",
-      "expected_output": "final-project/milestones/01/milestone-1.md that passes verify.py; all 19 ruled tables incl. empty fill-in rows; callout boxes as blockquotes; constant running lines kept once, page numbers dropped",
+      "prompt": "convert milestones/01/milestone-1.pdf to markdown, keep it exactly as in the pdf",
+      "expected_output": "milestones/01/milestone-1.md that passes verify.py; all 19 ruled tables incl. empty fill-in rows; callout boxes as blockquotes; constant running lines kept once, page numbers dropped",
       "files": [
-        "final-project/milestones/01/milestone-1.pdf"
+        "milestones/01/milestone-1.pdf"
       ],
       "assertions": [
         "verify.py exits 0 for the pdf/md pair (text similarity 100%, tables 19/19, images 0/0, no artefacts)",
@@ -23,10 +23,10 @@
     {
       "id": 2,
       "name": "figure-and-borderless-edge-table",
-      "prompt": "I need an md version of final-project/milestones/04/milestone-4.pdf for my notes. Same content as the PDF please, including the figure.",
+      "prompt": "I need an md version of milestones/04/milestone-4.pdf for my notes. Same content as the PDF please, including the figure.",
       "expected_output": "milestone-4.md + milestone-4_assets/ with the figure; the 5-column 'AQ ví dụ' table (no outer side borders) intact; tables split over pages merged",
       "files": [
-        "final-project/milestones/04/milestone-4.pdf"
+        "milestones/04/milestone-4.pdf"
       ],
       "assertions": [
         "verify.py exits 0 for the pdf/md pair",
@@ -40,11 +40,11 @@
     {
       "id": 3,
       "name": "check-existing-markdown",
-      "prompt": "Can you check whether final-project/milestones/02/milestone-2.md actually matches milestone-2.pdf? Fix it if anything is missing.",
+      "prompt": "Can you check whether milestones/02/milestone-2.md actually matches milestone-2.pdf? Fix it if anything is missing.",
       "expected_output": "A verify.py report plus visual review; any difference fixed in the md without paraphrasing; final verify passes",
       "files": [
-        "final-project/milestones/02/milestone-2.pdf",
-        "final-project/milestones/02/milestone-2.md"
+        "milestones/02/milestone-2.pdf",
+        "milestones/02/milestone-2.md"
       ],
       "assertions": [
         "verify.py was run on the pair and its result reported",
@@ -56,10 +56,10 @@
     {
       "id": 4,
       "name": "code-tree-and-table-links",
-      "prompt": "turn final-project/milestones/03/milestone-3.pdf into markdown, I want to diff it later so it has to match the pdf exactly",
+      "prompt": "turn milestones/03/milestone-3.pdf into markdown, I want to diff it later so it has to match the pdf exactly",
       "expected_output": "milestone-3.md whose folder-tree code block keeps every line and its indentation, with the following heading outside the fence",
       "files": [
-        "final-project/milestones/03/milestone-3.pdf"
+        "milestones/03/milestone-3.pdf"
       ],
       "assertions": [
         "verify.py exits 0 (including code, headings, links and structure checks)",

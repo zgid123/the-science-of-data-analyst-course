@@ -1,7 +1,7 @@
 # Execution Plan: From Modeling to Evaluation: Modeling Strategy, Method Selection and Evaluation Design
 
 Plan date: 2026-11-06. Input outline: [reference.md](reference.md), derived from the instructor brief
-`final-project/milestones/04/milestone-4.md`. Output: the Milestone 4 Modeling & Evaluation Proposal (Level 1), as
+`milestones/04/milestone-4.md`. Output: the Milestone 4 Modeling & Evaluation Proposal (Level 1), as
 fine-grained sections in `report/` compiled to Word in English and Vietnamese by the build-report skill. No model is
 fitted at this milestone. The machine-readable half of this plan is `plan.toml`; keep both in step.
 

@@ -1,0 +1,138 @@
+## 2026-11-08T15:52:09Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/01/milestone-1.pdf milestones/01/milestone-1.md
+milestone-1.pdf -> milestone-1.md  (10 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 16392 chars)
+[PASS] tables: pdf 19 / md 19 (header, shape and every cell)
+[PASS] code blocks: 0 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 0 (pages []) / md 0
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 – The Science of Data Analytics | Milestone 1', 'Requirement Analysis & Analytics Project Proposal', 'Trang 1']
+  constant running lines kept once: ['MTH045 – The Science of Data Analytics | Milestone 1', 'Requirement Analysis & Analytics Project Proposal']
+RESULT: PASS
+exit 0
+
+## 2026-11-08T15:52:24Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/02/milestone-2.pdf milestones/02/milestone-2.md
+milestone-2.pdf -> milestone-2.md  (11 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 18522 chars)
+[PASS] tables: pdf 21 / md 21 (header, shape and every cell)
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 1 (pages [2]) / md 1
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 – The Science of Data Analytics | Milestone 2', 'From Requirements to Collection | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 – The Science of Data Analytics | Milestone 2', 'From Requirements to Collection | Education Analytics Project']
+RESULT: PASS
+exit 0
+
+## 2026-11-08T15:52:42Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/03/milestone-3.pdf milestones/03/milestone-3.md
+milestone-3.pdf -> milestone-3.md  (13 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 21940 chars)
+[PASS] tables: pdf 24 / md 24 (header, shape and every cell)
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 1 (pages [2]) / md 1
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 – The Science of Data Analytics | Milestone 3', 'From Understanding to Preparation | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 – The Science of Data Analytics | Milestone 3', 'From Understanding to Preparation | Education Analytics Project']
+RESULT: PASS
+exit 0
+
+## 2026-11-08T15:53:04Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/04/milestone-4.pdf milestones/04/milestone-4.md
+milestone-4.pdf -> milestone-4.md  (9 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 17917 chars)
+[PASS] tables: pdf 18 / md 18 (header, shape and every cell)
+[PASS] code blocks: 0 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 1 (pages [2]) / md 1
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 - The Science of Data Analytics | Milestone 4', 'From Modeling to Evaluation | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 - The Science of Data Analytics | Milestone 4', 'From Modeling to Evaluation | Education Analytics Project']
+RESULT: PASS
+exit 0
+
+## 2026-11-08T15:53:26Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/05/milestone-5.pdf milestones/05/milestone-5.md
+milestone-5.pdf -> milestone-5.md  (9 pages)
+[FAIL] text: similarity 99.8800%, missing 17 chars, extra 0 chars, reordered hunks 0 (of 14149 chars)
+    p4 missing '□'  …Prescriptive □ Answered □ Partial ⟦□⟧ Deferred □ Dropped AQ2 Descriptive / …
+    p4 missing '□'  …Prescriptive □ Answered □ Partial ⟦□⟧ Deferred □ Dropped AQ3 Descriptive / …
+    p4 missing '□'  …Prescriptive □ Answered □ Partial ⟦□⟧ Deferred □ Dropped AQ4 Descriptive / …
+    p4 missing '□'  …Prescriptive □ Answered □ Partial ⟦□⟧ Deferred □ Dropped AQ5 Descriptive / …
+    p4 missing '□'  …Prescriptive □ Answered □ Partial ⟦□⟧ Deferred □ Dropped Yêu cầu: số dòng bằn…
+    p5 missing '□'  …Ảnh hưởng tới phương pháp AQ1 □ Keep ⟦□⟧ Modify □ Defer □ Drop AQ2 □ Keep □…
+    p5 missing '□'  … tới phương pháp AQ1 □ Keep □ Modify ⟦□⟧ Defer □ Drop AQ2 □ Keep □ Modify □…
+    p5 missing '□'  …ơng pháp AQ1 □ Keep □ Modify □ Defer ⟦□⟧ Drop AQ2 □ Keep □ Modify □ Defer □…
+    p5 missing '□'  …□ Modify □ Defer □ Drop AQ2 □ Keep ⟦□⟧ Modify □ Defer □ Drop AQ3 □ Keep □…
+    p5 missing '□'  …□ Defer □ Drop AQ2 □ Keep □ Modify ⟦□⟧ Defer □ Drop AQ3 □ Keep □ Modify □…
+    p5 missing '□'  …□ Drop AQ2 □ Keep □ Modify □ Defer ⟦□⟧ Drop AQ3 □ Keep □ Modify □ Defer □…
+    p5 missing '□'  …□ Modify □ Defer □ Drop AQ3 □ Keep ⟦□⟧ Modify □ Defer □ Drop AQ4 □ Keep □…
+    p5 missing '□'  …□ Defer □ Drop AQ3 □ Keep □ Modify ⟦□⟧ Defer □ Drop AQ4 □ Keep □ Modify □…
+    p5 missing '□'  …□ Drop AQ3 □ Keep □ Modify □ Defer ⟦□⟧ Drop AQ4 □ Keep □ Modify □ Defer □…
+    p5 missing '□'  …□ Modify □ Defer □ Drop AQ4 □ Keep ⟦□⟧ Modify □ Defer □ Drop 4. Hướng dẫn vi…
+    p5 missing '□'  …□ Defer □ Drop AQ4 □ Keep □ Modify ⟦□⟧ Defer □ Drop 4. Hướng dẫn viết Final …
+    p5 missing '□'  …□ Drop AQ4 □ Keep □ Modify □ Defer ⟦□⟧ Drop 4. Hướng dẫn viết Final Report: …
+[FAIL] tables: pdf 13 / md 13 (header, shape and every cell)
+    table #5 p[4]: cell r2c11: pdf '□ Answered □ Partial □ Deferred □ Droppe' vs md '□ Answered □ Partial<br>□ Deferred □ Dro'
+    table #5 p[4]: cell r3c11: pdf '□ Answered □ Partial □ Deferred □ Droppe' vs md '□ Answered □ Partial<br>□ Deferred □ Dro'
+    table #5 p[4]: cell r4c11: pdf '□ Answered □ Partial □ Deferred □ Droppe' vs md '□ Answered □ Partial<br>□ Deferred □ Dro'
+    table #5 p[4]: cell r5c11: pdf '□ Answered □ Partial □ Deferred □ Droppe' vs md '□ Answered □ Partial<br>□ Deferred □ Dro'
+    table #5 p[4]: cell r6c11: pdf '□ Answered □ Partial □ Deferred □ Droppe' vs md '□ Answered □ Partial<br>□ Deferred □ Dro'
+    table #6 p[5]: cell r2c5: pdf '□ Keep □ Modify □ Defer □ Drop' vs md '□ Keep<br>□ Modify<br>□ Defer<br>□ Drop'
+    table #6 p[5]: cell r3c5: pdf '□ Keep □ Modify □ Defer □ Drop' vs md '□ Keep<br>□ Modify<br>□ Defer<br>□ Drop'
+    table #6 p[5]: cell r4c5: pdf '□ Keep □ Modify □ Defer □ Drop' vs md '□ Keep<br>□ Modify<br>□ Defer<br>□ Drop'
+    table #6 p[5]: cell r5c5: pdf '□ Keep □ Modify □ Defer □ Drop' vs md '□ Keep<br>□ Modify<br>□ Defer<br>□ Drop'
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 0 (pages []) / md 0
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 - The Science of Data Analytics | Milestone 5', 'Final Integration & Project Report | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 - The Science of Data Analytics | Milestone 5', 'Final Integration & Project Report | Education Analytics Project']
+RESULT: FAIL
+exit 1
+
+## 2026-11-08T15:54:00Z probe: the M5 copy with only '<br>□' written as ' □' (the 10 table cells on pages 4-5), to show the 17 'missing □' are the verifier reading a □ after <br> as a list bullet
+$ sed 's/<br>□/ □/g' milestones/05/milestone-5.md > $SCRATCH/probe.md && uv run .claude/skills/pdf2md/scripts/verify.py milestones/05/milestone-5.pdf $SCRATCH/probe.md
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 14149 chars)
+[PASS] tables: pdf 13 / md 13 (header, shape and every cell)
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 0 (pages []) / md 0
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+RESULT: PASS
+exit 0
+
+## visual review of milestone-5, all 9 pages rendered with render_pages.py and read beside the Markdown:
+p1: centred subtitle split at its wrap ('…CUỐI' / 'KỲ') joined into one line; decorative rule of ━ characters kept as converted (text, monospace)
+p2, p3, p6, p7, p8, p9: match; p7 'Quy tắc diễn giải' box kept as the full-width last row of its ruled table
+p4: italic caption split at its wrap ('AQ_ _Revision Log.') joined into one span; Final Status cells hold two lines (PDF breaks after 'Partial' although 'Partial □' fits), kept as <br>
+p5: Action cells print one option per line, kept as <br>
+p8-9: checklist lines start with □ (U+25A1), which the skill reads as a bullet glyph; kept as '- item' (M1-M4 use ☐ U+2610 and became '- [ ]')

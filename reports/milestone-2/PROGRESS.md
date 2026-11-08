@@ -44,7 +44,7 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
 
 ## Decisions (T02, 2026-11-06)
 
-- Follow `final-project/milestones/02/milestone-2.md` strictly, task by task; report structure from its section 15.1.
+- Follow `milestones/02/milestone-2.md` strictly, task by task; report structure from its section 15.1.
 - Baseline: the Milestone 1 proposal in `reports/milestone-1/report/` (English source). The team's earlier
   `milestones/02/N04_Milestone2.*` documents are outdated and not used.
 - Datasets: the search covers at least three candidates fairly; the repository's `datasets/` screening folders give

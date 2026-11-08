@@ -1,7 +1,7 @@
 # Milestone 3 revision: full draft, then move to appendix (2026-11-08)
 
 User instruction (2026-11-08): continue the process on Milestone 3: write the comprehensive report first, then reduce
-the main text by moving non-critical information to appendices, following `final-project/milestones/03/milestone-3.md`.
+the main text by moving non-critical information to appendices, following `milestones/03/milestone-3.md`.
 User reminder (same day): run the complete build-report flow for the Vietnamese document.
 User decision (AskUserQuestion, 2026-11-08, after move 2 at 23.6 pages): "Move explanations (Recommended)": keep every
 brief template table in the main text; move the long per-aspect evidence and per-question reasoning to the appendices,

@@ -1,7 +1,7 @@
 # Milestone 2 report (team N04)
 
 From requirements to collection: data requirements, open dataset search and selection, reproducible collection of
-OULAD and structural verification, following `final-project/milestones/02/milestone-2.md`. Baseline: the Milestone 1
+OULAD and structural verification, following `milestones/02/milestone-2.md`. Baseline: the Milestone 1
 proposal in `reports/milestone-1/report/`.
 
 - `reference.md`, `EXECUTION_PLAN.md`, `plan.toml`, `PROGRESS.md`: outline, plan and ledger (research-report skill).
