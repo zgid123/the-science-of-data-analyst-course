@@ -239,6 +239,34 @@ def main():
     expect("title page: a title page taller than its text area fails the post-check",
            r.returncode == 1 and "title page is estimated" in r.stdout, (r.stdout + r.stderr).splitlines()[0][:90])
 
+    print("== Pessimistic page layout (paginate.py)")
+    sys.path.insert(0, str(SCRIPTS))
+    import estimate_pages
+    import paginate
+    parts_p, pages_p = paginate.paginate(str(base_docx), paginate.PESSIMISTIC)
+    parts_o, pages_o = paginate.paginate(str(base_docx), paginate.OPTIMISTIC)
+    flow = estimate_pages.estimate(str(base_docx))
+    expect("paginate: the pessimistic layout is never shorter than the optimistic layout or the continuous flow",
+           parts_p[-1][2] >= parts_o[-1][2] and parts_p[-1][2] >= flow["body"] + flow["references"],
+           f"pessimistic {parts_p[-1][2]:.2f}, optimistic {parts_o[-1][2]:.2f}, flow {flow['body'] + flow['references']:.2f}")
+    brk_docx = BASE / "out" / "Test_EN_page_break.docx"
+    small = Document()
+    for _ in range(6):
+        small.add_paragraph("A short paragraph of body text that fills part of one page. " * 3)
+    small.save(str(brk_docx))
+    _, pages_one = paginate.paginate(str(brk_docx), paginate.PESSIMISTIC)
+    small.paragraphs[3].paragraph_format.page_break_before = True       # one forced break mid-page
+    small.save(str(brk_docx))
+    _, pages_two = paginate.paginate(str(brk_docx), paginate.PESSIMISTIC)
+    expect("paginate: a forced page break on a one-page document adds exactly one page",
+           pages_one == 1 and pages_two == 2, f"{pages_one} page(s) before, {pages_two} after the break")
+
+    r = subprocess.run([PY, str(SCRIPTS / "page_budget.py"), str(base_docx), "--budget", "10"], cwd=ROOT,
+                       capture_output=True, text=True)
+    expect("page_budget: reports optimistic and pessimistic main content, the budget and the last-page fill",
+           r.returncode == 0 and "pessimistic" in r.stdout and "budget 10 pages" in r.stdout
+           and "last main-text page" in r.stdout, (r.stdout + r.stderr).strip().splitlines()[-1][:90])
+
     print("== Lists of figures and tables, table fit")
     from docx.oxml.ns import qn as _qn
     def post_check(path):

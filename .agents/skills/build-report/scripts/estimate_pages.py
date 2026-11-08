@@ -7,7 +7,8 @@ paragraph is broken into lines at its font size (an average character width of -
 with its line spacing and paragraph spacing; every table row takes the height of its tallest cell at the column
 widths stored in the table grid; every image takes its printed height. Heights are summed per part (title page,
 body up to the reference list, references) and divided by the portrait text height. Page breaks, keep-with-next and
-landscape pages are not modelled, so treat the result as a guide within about half a page per part.
+landscape pages are not modelled, so treat the result as a guide within about half a page per part, and as the
+lower bound: paginate.py lays the same document out page by page with pessimistic measures, the figure to plan with.
 """
 
 import argparse
