@@ -304,3 +304,9 @@ source = "MTH045 – The Science of Data Analytics. (2026). Milestone P1: Requir
 url = "final-project/milestones/01/milestone-1.md"
 item = "1"
 type = "primary"
+
+# Task notes in research/ beside the core trail, reviews/, revisions/ and baseline/ (layout.py check)
+[layout]
+notes = [
+  { path = "interviews/", purpose = "Stakeholder interviews (Tasks 1–3): scenario, persona cards and notes, question lists, transcripts, key statements, requirement synthesis, validation round; read by code/build_appendices.py and code/check_quotes.py" },
+]

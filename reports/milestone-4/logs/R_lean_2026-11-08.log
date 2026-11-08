@@ -1,0 +1,10 @@
+## 2026-11-08T15:25:32Z untrack Python caches in final-project/samples (ignored by .gitignore: __pycache__)
+$ git rm -r --cached -q <29 files>
+      29
+exit 0
+still tracked: 0
+still on disk: 29
+
+## 2026-11-08T15:25:32Z delete stray root .vi-sync.json (untracked, content: {}); real status files: reports/milestone-{1..4}/report/.vi-sync.json
+$ rm .vi-sync.json
+exit 0

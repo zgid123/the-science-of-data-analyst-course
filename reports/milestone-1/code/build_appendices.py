@@ -96,7 +96,7 @@ def validation(n):
 
 
 def review(n):
-    prompt = (ROOT / "research" / "review" / "reviewer-prompt.md").read_text().split("---\n")[1].strip()
+    prompt = (ROOT / "research" / "reviews" / "01-ai-reviewer-prompt.md").read_text().split("---\n")[1].strip()
     # the submitted report is read without the repository: file paths in the prompt become the documents' names
     prompt = prompt.replace("the instructor brief (final-project/milestones/01/milestone-1.md) and the proposal sections\n"
                             "reports/milestone-1/report/01-*.md to 07-*.md (English). Do not read any other file.",
@@ -109,7 +109,7 @@ def review(n):
          "discusses three of them.\n",
          f"**Table A.{n}. AI critique, team decision and reason**\n",
          "| No. | AI critique | Team decision | Reason or change |\n| :---- | :---- | :---- | :---- |"]
-    for r in rows(ROOT / "research" / "review" / "decisions.md", r"\| R\d+ \|"):
+    for r in rows(ROOT / "research" / "reviews" / "01-ai-reviewer-decisions.md", r"\| R\d+ \|"):
         t.append(f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} |")
     t += ["", "The reviewer prompt, with documents named by their place in this report:\n", quoted]
     (OUT / "11-04-ai-critique-review.md").write_text("\n".join(t) + "\n")

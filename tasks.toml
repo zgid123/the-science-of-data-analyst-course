@@ -1,0 +1,181 @@
+# Report tasks of this project, read by the build-report skill (.claude/skills/build-report/scripts/report.py).
+# Every path is relative to this file"s folder, the project root. Field reference: the skill"s templates/tasks.toml.
+
+[project]
+tests = [".claude/skills/research-report/scripts/selftest.py"]
+
+# ---------------------------------------------------------------------------------------------------- milestone-1
+[milestone-1]
+name = "Milestone 1 proposal: course completion in online and blended courses (team N04)"
+report = "reports/milestone-1/report"
+build = "reports/milestone-1/build"
+author = "Group 4 (N04)"
+voice = "group"                          # the team writes in the first person (build-report check_style.py)
+people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+
+[milestone-1.en]
+out = "N04_Milestone1_EN.docx"
+title = "Improving Course Completion in Online and Blended Courses: Requirement Analysis and Analytics Project Proposal"
+short_title = "N04 – Milestone 1"
+subject = "MTH045 – The Science of Data Analytics"
+
+[milestone-1.vi]
+out = "N04_Milestone1_VI.docx"
+title = "Nâng cao tỷ lệ hoàn thành học phần trực tuyến và kết hợp: Phân tích yêu cầu và đề xuất dự án phân tích dữ liệu"
+short_title = "N04 – Milestone 1"
+subject = "MTH045 – Khoa học phân tích dữ liệu"
+author = "Nhóm 4 (N04)"
+glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+
+[milestone-1.layout]
+part_breaks = false                      # main text with a page budget (brief: 6–10 pages): parts run on
+line_spacing = 1.15
+body_size = 11.5
+
+[milestone-1.hooks]
+checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.py --base reports/milestone-1 --all", research_layout = ".agents/skills/research-report/scripts/layout.py check --base reports/milestone-1" }
+
+[milestone-1.abbreviations]
+names = ["AD-Q1", "AD-Q2", "AD-Q3", "AD-Q4", "AD-Q5", "AD-Q6", "AD-Q7", "AD-Q8", "AD1", "AD10", "AD2", "AD3", "AD4", "AD5", "AD6", "AD7", "AD8", "AD9", "CL-Q1", "CL-Q2", "CL-Q3", "CL-Q4", "CL-Q5", "CL-Q6", "CL-Q7", "CL-Q8", "CL1", "CL10", "CL11", "CL2", "CL3", "CL4", "CL5", "CL6", "CL7", "CL8", "CL9", "DO-Q1", "DO-Q2", "DO-Q3", "DO-Q4", "DO-Q5", "DO-Q6", "DO-Q7", "DO1", "DO10", "DO2", "DO3", "DO4", "DO5", "DO6", "DO7", "DO8", "DO9", "PM-Q1", "PM-Q2", "PM-Q3", "PM-Q4", "PM-Q5", "PM-Q6", "PM-Q7", "PM-Q8", "PM1", "PM10", "PM2", "PM3", "PM4", "PM5", "PM6", "PM7", "PM8", "PM9", "ST-Q1", "ST-Q2", "ST-Q3", "ST-Q4", "ST-Q5", "ST-Q6", "ST-Q7", "ST1", "ST10", "ST2", "ST3", "ST4", "ST5", "ST6", "ST7", "ST8", "ST9", "VAD1", "VAD2", "VAD3", "VAD4", "VAD5", "VAD6", "VAD7", "VCL1", "VCL2", "VCL3", "VCL4", "VDO1", "VDO2", "VDO3", "VDO4", "VDO5", "VPM1", "VPM2", "VPM3", "VPM4", "VPM5", "VPM6", "VPM7", "VPM8", "VPM9", "VST1", "VST2", "VST3", "VST4", "II", "III", "IV", "MTH045", "QH15", "TT-BGDĐT"]
+
+[milestone-1.citations]
+order = "first-citation"
+draft_ids = 'S\d{3}'
+
+# ---------------------------------------------------------------------------------------------------- milestone-2
+
+# ---------------------------------------------------------------------------------------------------- milestone-2
+[milestone-2]
+name = "Milestone 2 report: from requirements to collection (team N04)"
+report = "reports/milestone-2/report"
+build = "reports/milestone-2/build"
+author = "Group 4 (N04)"
+voice = "group"                          # the team writes in the first person (build-report check_style.py)
+people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+
+[milestone-2.en]
+out = "N04_Milestone2_EN.docx"
+title = "From Requirements to Collection: Data Requirements, Open Dataset Selection and Reproducible Collection"
+short_title = "N04 – Milestone 2"
+subject = "MTH045 – The Science of Data Analytics"
+
+[milestone-2.vi]
+out = "N04_Milestone2_VI.docx"
+title = "Từ yêu cầu đến thu thập dữ liệu: Yêu cầu dữ liệu, lựa chọn bộ dữ liệu mở và thu thập có thể tái lập"
+short_title = "N04 – Milestone 2"
+subject = "MTH045 – Khoa học phân tích dữ liệu"
+author = "Nhóm 4 (N04)"
+glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+
+[milestone-2.layout]
+part_breaks = false
+landscape_appendices = true
+line_spacing = 1.15
+body_size = 11.5
+
+[milestone-2.hooks]
+checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.py --base reports/milestone-2 --all", research_layout = ".agents/skills/research-report/scripts/layout.py check --base reports/milestone-2" }
+
+[milestone-2.abbreviations]
+names = ["AQ1", "AQ2", "AQ3", "AQ4", "KPIs", "AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "CRLF", "LF", "MATCH", "II", "III", "IV", "V", "VI", "KDD", "CC", "BY", "XuetangX", "HarvardX", "MTH045", "HTTP", "D1", "D2", "D3", "C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "R1", "MITx", "OU", "ID", "IMD", "TMA", "CMA", "EDA", "VLE", "LMS", "API", "GDPR", "DPO", "PDF", "KMI", "AAAI", "B", "J", "AQs", "C5KK69", "MOOCData", "Person-Course", "AY2013"]
+
+[milestone-2.abbreviations.titles]
+en = ["Open University Learning Analytics Dataset (official title)"]
+vi = ["Open University Learning Analytics Dataset (tên chính thức)"]
+
+[milestone-2.citations]
+order = "first-citation"
+draft_ids = 'S\d{3}'
+
+# ---------------------------------------------------------------------------------------------------- milestone-3
+[milestone-3]
+name = "Milestone 3 report: from understanding to preparation (team N04)"
+report = "reports/milestone-3/report"
+build = "reports/milestone-3/build"
+author = "Group 4 (N04)"
+voice = "group"                          # the team writes in the first person (build-report check_style.py)
+people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+
+[milestone-3.en]
+out = "N04_Milestone3_EN.docx"
+title = "From Understanding to Preparation: Data Understanding, Quality Assessment and Reproducible Data Preparation"
+short_title = "N04 – Milestone 3"
+subject = "MTH045 – The Science of Data Analytics"
+
+[milestone-3.vi]
+out = "N04_Milestone3_VI.docx"
+title = "Từ hiểu dữ liệu đến chuẩn bị dữ liệu: Hiểu dữ liệu, đánh giá chất lượng và chuẩn bị dữ liệu có thể tái lập"
+short_title = "N04 – Milestone 3"
+subject = "MTH045 – Khoa học phân tích dữ liệu"
+author = "Nhóm 4 (N04)"
+glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+
+[milestone-3.layout]
+part_breaks = false
+landscape_appendices = true
+line_spacing = 1.15
+body_size = 11.5
+
+[milestone-3.figures]
+package = "figures.milestone_3"
+
+
+[milestone-3.hooks]
+checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.py --base reports/milestone-3 --all", research_layout = ".agents/skills/research-report/scripts/layout.py check --base reports/milestone-3" }
+
+[milestone-3.abbreviations]
+names = ["AQ1", "AQ2", "AQ3", "AQ4", "AQs", "KPIs", "CMAs", "IDs", "ID", "PASS", "FAIL", "GREEN", "YELLOW", "RED", "AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "CCC-B", "CCC-J", "EEE-B", "GGG-B", "BBB-B", "DDD-B", "FFF-B", "AAA-J", "BBB-J", "DDD-J", "EEE-J", "FFF-J", "GGG-J", "II", "III", "IV", "V", "VI", "MTH045", "QH15", "CC", "BY", "D1", "D2", "D3", "OULAD-N04-prepared-1", "DQ01", "DQ02", "DQ03", "DQ04", "DQ05", "DQ06", "DQ07", "DQ08", "DQ09", "DQ10", "DQ11", "DQ12", "DQ13", "DQ14", "DQ15", "DQ16", "DQ17", "DQ18", "DQ19", "C01", "C02", "C03", "C04", "C05", "C06", "C07", "C08", "C09", "C10", "C11", "C12", "C13", "V01", "V02", "V03", "V04", "V05", "V06", "V07", "V08", "V09", "V10", "V11", "V12", "V13", "V14", "V15", "V01a", "V01b", "V01c", "V01d", "V04a", "V04b", "V04c", "V11-d13", "V11-d27", "V13-d13", "V13-d27"]
+
+[milestone-3.abbreviations.titles]
+en = ["UK Open University, distance learning", "early warning on the Open University Learning Analytics Dataset, OULAD", "tied to an analytical question"]
+vi = ["early warning on the Open University Learning Analytics Dataset, OULAD", "tied to an analytical question"]
+
+[milestone-3.citations]
+order = "first-citation"
+draft_ids = 'S\d{3}'
+
+# ---------------------------------------------------------------------------------------------------- milestone-4
+[milestone-4]
+name = "Milestone 4 report: from modeling to evaluation (team N04)"
+report = "reports/milestone-4/report"
+build = "reports/milestone-4/build"
+author = "Group 4 (N04)"
+voice = "group"                          # the team writes in the first person (build-report check_style.py)
+people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+
+[milestone-4.en]
+out = "N04_Milestone4_EN.docx"
+title = "From Modeling to Evaluation: Modeling Strategy, Method Selection and Evaluation Design"
+short_title = "N04 – Milestone 4"
+subject = "MTH045 – The Science of Data Analytics"
+
+[milestone-4.vi]
+out = "N04_Milestone4_VI.docx"
+title = "Từ mô hình hóa đến đánh giá: Chiến lược mô hình hóa, lựa chọn phương pháp và thiết kế đánh giá"
+short_title = "N04 – Milestone 4"
+subject = "MTH045 – Khoa học phân tích dữ liệu"
+author = "Nhóm 4 (N04)"
+glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+
+[milestone-4.layout]
+part_breaks = false
+landscape_appendices = true
+line_spacing = 1.15
+body_size = 11.5
+
+[milestone-4.figures]
+package = "figures.milestone_4"
+
+[milestone-4.hooks]
+checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.py --base reports/milestone-4 --all", research_layout = ".agents/skills/research-report/scripts/layout.py check --base reports/milestone-4" }
+
+[milestone-4.abbreviations]
+names = ["AQ1", "AQ2", "AQ3", "AQ4", "AQs", "KPIs", "IDs", "ID", "II", "III", "IV", "V", "VI", "VII", "VIII", "MTH045", "D1", "D2", "D3", "OULAD-N04-prepared-1", "C01", "C08", "C09", "C10", "C11", "C12", "C13", "CCC-B", "CCC-J", "EEE-B", "GGG-B", "AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "DQ01", "DQ19", "QH15", "C14", "S1", "S2", "S3", "F1", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "R14", "R15", "R16", "Tutor-Marked"]
+
+[milestone-4.abbreviations.titles]
+en = ["Law on Artificial Intelligence"]
+vi = ["Luật Trí tuệ nhân tạo", "hệ thống trí tuệ nhân tạo có rủi ro cao"]
+
+[milestone-4.citations]
+order = "first-citation"
+draft_ids = 'S\d{3}'

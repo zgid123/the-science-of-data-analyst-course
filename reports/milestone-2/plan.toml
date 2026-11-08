@@ -274,3 +274,13 @@ source = "MTH045 – The Science of Data Analytics. (2026). Milestone P2: From r
 url = "final-project/milestones/02/milestone-2.md"
 item = "1"
 type = "primary"
+
+# Task notes in research/ beside the core trail, reviews/, revisions/ and baseline/ (layout.py check)
+[layout]
+notes = [
+  { path = "requirements/", purpose = "Data Requirement Specification (T05, Tasks 1–2)" },
+  { path = "search/", purpose = "Candidate datasets and the brief's dataset search log (T06, Task 3)" },
+  { path = "selection/", purpose = "Dataset scoring and selection (T08–T09, Task 4)" },
+  { path = "coverage/", purpose = "Requirement coverage, traceability and Change Log (T12, Task 7)" },
+  { path = "appendix/", purpose = "Text blocks moved from the main text to the appendices; read by code/build_appendices.py" },
+]

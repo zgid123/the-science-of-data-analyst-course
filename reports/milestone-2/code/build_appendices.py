@@ -4,7 +4,7 @@ their sources.
 Usage: venv/bin/python reports/milestone-2/code/build_appendices.py
 Reads research/search/search-log-brief.md, research/selection/selection.md, package/metadata/{source.md,
 raw_manifest.csv,structure_results.json}, logs/T10_mirrors.log, research/coverage/coverage.md,
-research/baseline/m1-baseline.md and research/review/*; writes report/11-01 … 11-06.
+research/baseline/m1-baseline.md and research/reviews/NN-ai-*; writes report/11-01 … 11-06.
 """
 import csv
 import json
@@ -59,7 +59,7 @@ def scoring():
          "Table A.2 gives each candidate's score on the brief's ten criteria (0 = not met or not stated, 1 = partly met "
          "or uncertain, 2 = well met) with the fact behind it, and the must-have gates it fails. Every fact comes from "
          "the candidate's official page or descriptor.\n",
-         "The ten criteria " + (R / "appendix-text" / "criteria.md").read_text().strip()[len("Every candidate was scored on the ten criteria of the brief [1]. They "):].replace("\n", " ") + "\n",
+         "The ten criteria " + (R / "appendix" / "criteria.md").read_text().strip()[len("Every candidate was scored on the ten criteria of the brief [1]. They "):].replace("\n", " ") + "\n",
          "**Table A.2. Scores on the ten criteria and failed gates**\n"] + rows
     (OUT / "11-02-scoring-details.md").write_text("\n".join(t) + "\n")
 
@@ -82,7 +82,7 @@ def acquisition():
         "| File | Bytes | SHA-256 | MD5 | Data rows | Check |", "| :---- | :---- | :---- | :---- | :---- | :---- |"]
     for r in man[1:]:
         t.append(f"| {r[0]} | {int(r[1]):,} | {r[2]} | {r[3]} | {r[4] and format(int(r[4]), ',')} | {r[5]} |")
-    t += ["", (R / "appendix-text" / "copies.md").read_text().strip().replace("\n", " ") + "\n",
+    t += ["", (R / "appendix" / "copies.md").read_text().strip().replace("\n", " ") + "\n",
           "Table A.5 compares the UCI copy of OULAD with the collected figshare files, table by table.\n",
           "**Table A.5. Comparison of the UCI copy with the collected files**\n"] + mirror
     (OUT / "11-03-acquisition-package.md").write_text("\n".join(t) + "\n")
@@ -139,30 +139,30 @@ def change_log():
 
 def ai_evidence():
     def prompt(path):
-        s = (R / "review" / path).read_text()
+        s = (R / "reviews" / path).read_text()
         s = re.sub(r"^#.*\n+", "", s).strip()
         return "```text\n" + s + "\n```"
 
     def decisions(path):
-        rows = table_after((R / "review" / path).read_text(), "| # |")
+        rows = table_after((R / "reviews" / path).read_text(), "| # |")
         return [re.sub(r" \(Sections? [^)]*\)|research/requirements/data-requirements\.md", "", r) for r in rows]
 
     t = ["## Appendix VI – Generative AI Usage Evidence\n",
          "An AI agent searched for candidate datasets for the team with the prompt below; every query it ran is in "
          "Appendix I, and every fact it recorded was checked by team members against the saved official page.\n",
-         "Prompt of the search strategist and metadata interpreter:\n", prompt("search-strategist-prompt.md"), "",
+         "Prompt of the search strategist and metadata interpreter:\n", prompt("01-ai-search-strategist-prompt.md"), "",
          "Two isolated AI agents critiqued the work at fixed points: a requirement critic before any dataset was scored, "
          "and a selection reviewer after the scoring. Each received only the brief and the team's files named in its "
          "prompt. Their prompts are reproduced in English as used; Tables A.11 and A.12 give each critique in short form "
          "with the team's decision and the change made.\n",
-         "Prompt of the requirement critic:\n", prompt("requirement-critic-prompt.md"), "",
+         "Prompt of the requirement critic:\n", prompt("02-ai-requirement-critic-prompt.md"), "",
          "Table A.11 lists the requirement critic's twelve critiques with the team's decisions.\n",
          "**Table A.11. Requirement critic: AI critique, team decision and change**\n"] + \
-        decisions("requirement-critic-decisions.md") + [
-        "", "Prompt of the selection reviewer:\n", prompt("selection-reviewer-prompt.md"), "",
+        decisions("02-ai-requirement-critic-decisions.md") + [
+        "", "Prompt of the selection reviewer:\n", prompt("03-ai-selection-reviewer-prompt.md"), "",
         "Table A.12 lists the selection reviewer's ten critiques with the team's decisions.\n",
         "**Table A.12. Selection reviewer: AI critique, team decision and change**\n"] + \
-        decisions("selection-reviewer-decisions.md")
+        decisions("03-ai-selection-reviewer-decisions.md")
     # Appendix VI was edited by hand so that its prompts name documents by their place in the report (the submitted
     # report is read without the repository); it is written only when absent. Delete it to regenerate from the trail.
     if not (OUT / "11-06-ai-evidence.md").exists():

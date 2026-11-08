@@ -1,0 +1,15 @@
+## 2026-11-08T15:05:04Z $ venv/bin/python .agents/skills/research-report/scripts/layout.py move --base reports/milestone-2 --map reports/milestone-2/research/revisions/layout-moves.csv --commit 255c158 --apply
+plan: 32 files to move, 2 saved copies to retire (76 files, kept in git at 255c158)
+verify: 32 of 32 moved files identical after the move
+  references: PROGRESS.md: 1
+  references: research/reviews/02-ai-requirement-critic-prompt.md: 1
+  references: research/reviews/03-ai-selection-reviewer-prompt.md: 1
+  references: research/revisions/01-appendix-decisions.md: 2
+references rewritten: 5
+exit 0
+
+## 2026-11-08T15:06:05Z restored record files (AI prompts and outputs, scripts that ran) to their original wording from 255c158; rewrite now skips records
+## 2026-11-08T15:06:05Z $ venv/bin/python .agents/skills/research-report/scripts/layout.py move --base reports/milestone-2 --map reports/milestone-2/research/revisions/layout-moves.csv --refs-only
+  references: research/revisions/01-appendix-decisions.md: 1
+references rewritten: 1
+exit 0

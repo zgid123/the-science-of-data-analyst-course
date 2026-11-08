@@ -310,3 +310,10 @@ source = "Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learnin
 url = "https://doi.org/10.1038/sdata.2017.171"
 item = "2"
 type = "primary"
+
+# Task notes in research/ beside the core trail, reviews/, revisions/ and baseline/ (layout.py check)
+[layout]
+notes = [
+  { path = "design/", purpose = "Design decisions (T09) and their evidence" },
+  { path = "ai-decision-log.md", purpose = "AI Decision Log (T10, T11)" },
+]

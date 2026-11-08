@@ -19,6 +19,9 @@ edit `AGENTS.md`, and re-read it after each change so the updated rules apply in
   outline (`reference.md`), plan (`EXECUTION_PLAN.md`, `plan.toml`), ledger (`PROGRESS.md`), research trail, section
   files (`report/*.md` in English, `*.vi.md` Vietnamese twins), `logs/` and `build/`. `tasks.toml` and `Makefile` at the
   root register the tasks. `reports/milestone-1/` is the team's fresh Milestone 1 proposal.
+  Working files beside the trail keep one layout (research-report `reference.md` section 2.1): review rounds as
+  `research/reviews/NN-<kind>…` from `layout.py new-review`, revision records and `snapshots.md` (saved states as git
+  commits) in `research/revisions/`, task notes declared in `plan.toml` `[layout]`; `layout.py check` runs in `make precheck`.
 - `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`).
 - `.agents/skills/` – all agent skills; GitHub provenance in `skills-lock.json` (update with `npx skills update`).
   Each skill has a relative symlink in `.claude/skills/` (`ln -s ../../.agents/skills/<name> .claude/skills/<name>`),
@@ -58,6 +61,7 @@ uv run .agents/skills/pdf2md/scripts/convert.py <file.pdf>                      
 uv run .agents/skills/pdf2md/scripts/verify.py <file.pdf> <file.md>             # must print RESULT: PASS
 python3 -m unittest discover -s .agents/skills/data-analyst/evals -v           # data-analyst evaluator tests
 venv/bin/python .claude/skills/research-report/scripts/progress.py --base reports/milestone-1 next  # report task: next card
+venv/bin/python .claude/skills/research-report/scripts/layout.py new-review --base reports/milestone-4 --kind vi-native-review --scope g1  # next review file
 make precheck TASK=milestone-1 | make build TASK=milestone-1 | make all TASK=milestone-1          # report checks and Word build
 make pages TASK=milestone-1 BUDGET=10                                       # page budget: optimistic and pessimistic layout per part
 ```

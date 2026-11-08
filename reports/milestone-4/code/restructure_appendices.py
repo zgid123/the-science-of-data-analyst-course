@@ -1,7 +1,7 @@
 """Move the supporting tables of the Milestone 4 full draft back to the appendices and renumber everything.
 
 After the full draft brought every appendix table into the main text, the moves decided against the brief (research/
-revision/appendix-decisions.md) take the supporting tables out again. This script, run once on the English sources:
+revisions/01-appendix-decisions.md) take the supporting tables out again. This script, run once on the English sources:
 1. removes the moved tables (caption and rows) from the main-text files;
 2. rebuilds the appendix files: the template tables now in the main text (Modeling Briefs, Evaluation Design Cards,
    AI Decision Log) leave the appendices, and the remaining appendices and tables are renumbered I–VII and A.1–A.13;

@@ -1,0 +1,19 @@
+## 2026-11-08T15:05:15Z $ venv/bin/python .agents/skills/research-report/scripts/layout.py move --base reports/milestone-4 --map reports/milestone-4/research/revisions/layout-moves.csv --commit 255c158 --apply
+plan: 102 files to move, 2 saved copies to retire (122 files, kept in git at 255c158)
+verify: 102 of 102 moved files identical after the move
+  references: EXECUTION_PLAN.md: 1
+  references: PROGRESS.md: 1
+  references: research/ai-decision-log.md: 2
+  references: research/reviews/01-ai-model-selection-critic-prompt.md: 1
+  references: research/reviews/02-ai-evaluation-reviewer-prompt.md: 1
+  references: research/reviews/13-vi-fidelity-scripts/fix.py: 1
+  references: research/revisions/01-appendix-decisions.md: 9
+  references: research/revisions/03-english-additions-scripts/apply.py: 2
+  references: research/revisions/03-english-additions-scripts/fix_twin.py: 1
+references rewritten: 19
+exit 0
+
+## 2026-11-08T15:06:05Z restored record files (AI prompts and outputs, scripts that ran) to their original wording from 255c158; rewrite now skips records
+## 2026-11-08T15:06:05Z $ venv/bin/python .agents/skills/research-report/scripts/layout.py move --base reports/milestone-4 --map reports/milestone-4/research/revisions/layout-moves.csv --refs-only
+references rewritten: 0
+exit 0

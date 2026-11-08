@@ -367,3 +367,14 @@ source = "Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learnin
 url = "https://doi.org/10.1038/sdata.2017.171"
 item = "2"
 type = "primary"
+
+# Task notes in research/ beside the core trail, reviews/, revisions/ and baseline/ (layout.py check)
+[layout]
+notes = [
+  { path = "fit/", purpose = "AQ–Data Fit Decision Log (Task 3)" },
+  { path = "preparation/", purpose = "Preparation plan (Task 4)" },
+  { path = "readiness/", purpose = "Analytics and model readiness (Task 7)" },
+  { path = "appendix/", purpose = "Tables and blocks moved from the main text to Appendices I–VI; read by code/build_appendices.py" },
+  { path = "brief-checklist.md", purpose = "Brief section 17 checklist before submission (T23)" },
+  { path = "ai-decision-log.md", purpose = "AI Decision Log (deliverable F)" },
+]

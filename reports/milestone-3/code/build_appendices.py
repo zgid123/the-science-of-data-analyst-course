@@ -4,7 +4,7 @@ identical to the file it comes from.
 Usage: venv/bin/python reports/milestone-3/code/build_appendices.py
 Reads package/data/metadata/{quality_issue_log.md, profile.json, profile_crosscheck.csv, transformation_log.md,
 version_manifest.json, lineage.md, traceability.md, change_log.md, ai_decision_log.md, validation_summary.json},
-research/review/*-decisions.md and *-prompt.md; writes report/12-00 … 12-06.
+research/reviews/NN-ai-*-decisions.md and -prompt.md; writes report/12-00 … 12-06.
 """
 import csv
 import json
@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 META = ROOT / "package" / "data" / "metadata"
-REV = ROOT / "research" / "review"
+REV = ROOT / "research" / "reviews"
 EXTRA = ROOT / "research" / "appendix"     # tables moved from the main text
 OUT = ROOT / "report"
 
@@ -267,8 +267,8 @@ def main():
         + rename_cols(table_after((META / "change_log.md").read_text()), {"Milestone": "M"}) + "\n")
 
     # V. AI decision log and prompts
-    crit = map_cells(table_after((REV / "preparation-critic-decisions.md").read_text()), short_keys)
-    aud = drop_cols(table_after((REV / "leakage-auditor-decisions.md").read_text()), {"Decision"})
+    crit = map_cells(table_after((REV / "01-ai-preparation-critic-decisions.md").read_text()), short_keys)
+    aud = drop_cols(table_after((REV / "02-ai-leakage-auditor-decisions.md").read_text()), {"Decision"})
     (OUT / "12-05-ai-decision-log.md").write_text(
         "## Appendix V – AI Decision Log and Prompts\n\n"
         "Table A.15 is the AI Decision Log of deliverable F, one row per significant AI suggestion with the team's "
@@ -276,11 +276,11 @@ def main():
         + cite(map_cells(table_after((META / "ai_decision_log.md").read_text()), short_keys)) +
         "\n\nThe preparation critic received the following instruction and read only the issue log, the matrix, "
         "the specifications, the fit log and the profile. In both instructions, files are named by their place in "
-        "the Prepared Data Package.\n\n" + quote_block(REV / "preparation-critic-prompt.md") +
+        "the Prepared Data Package.\n\n" + quote_block(REV / "01-ai-preparation-critic-prompt.md") +
         "\n\nTable A.16 records the decision on each of its 12 critiques.\n\n"
         "**Table A.16. Decisions on the preparation critic's critiques**\n\n" + crit +
         "\n\nThe leakage auditor received the following instruction and could query the prepared and raw files "
-        "without changing them.\n\n" + quote_block(REV / "leakage-auditor-prompt.md") +
+        "without changing them.\n\n" + quote_block(REV / "02-ai-leakage-auditor-prompt.md") +
         "\n\nTable A.17 records the evidence and the effect of each of its 8 findings, all of which were accepted.\n\n"
         "**Table A.17. Decisions on the leakage auditor's findings**\n\n" + aud + "\n")
 

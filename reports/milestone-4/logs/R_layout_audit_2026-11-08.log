@@ -1,0 +1,33 @@
+# 2026-11-08T15:09:44Z audit of 2364 files hashed before the layout change (manifest kept in session scratch)
+unchanged in place: 1736
+moved, bytes identical: 172
+retired saved copies, identical in git 255c158: 431
+edited on purpose (paths, index, plan): 25
+missing or mismatched: 0
+
+edited files (diff vs their pre-move content is path text only):
+  reports/milestone-1/EXECUTION_PLAN.md
+  reports/milestone-1/PROGRESS.md
+  reports/milestone-1/code/build_appendices.py
+  reports/milestone-1/plan.toml
+  reports/milestone-1/research/README.md
+  reports/milestone-1/research/revisions/01-appendix-decisions.md  (was reports/milestone-1/research/revision/appendix-decisions.md)
+  reports/milestone-2/PROGRESS.md
+  reports/milestone-2/code/build_appendices.py
+  reports/milestone-2/plan.toml
+  reports/milestone-2/research/README.md
+  reports/milestone-2/research/revisions/01-appendix-decisions.md  (was reports/milestone-2/research/revision/appendix-decisions.md)
+  reports/milestone-3/EXECUTION_PLAN.md
+  reports/milestone-3/PROGRESS.md
+  reports/milestone-3/code/build_appendices.py
+  reports/milestone-3/plan.toml
+  reports/milestone-3/research/README.md
+  reports/milestone-3/research/preparation/README.md
+  reports/milestone-3/research/revisions/01-appendix-decisions.md  (was reports/milestone-3/research/revision/appendix-decisions.md)
+  reports/milestone-4/EXECUTION_PLAN.md
+  reports/milestone-4/PROGRESS.md
+  reports/milestone-4/code/restructure_appendices.py
+  reports/milestone-4/plan.toml
+  reports/milestone-4/research/README.md
+  reports/milestone-4/research/ai-decision-log.md  (was reports/milestone-4/research/review/ai-decision-log.md)
+  reports/milestone-4/research/revisions/01-appendix-decisions.md  (was reports/milestone-4/research/revision/appendix-decisions.md)

@@ -1,0 +1,14 @@
+## 2026-11-08T15:05:08Z $ venv/bin/python .agents/skills/research-report/scripts/layout.py move --base reports/milestone-3 --map reports/milestone-3/research/revisions/layout-moves.csv --commit 255c158 --apply
+plan: 23 files to move, 3 saved copies to retire (149 files, kept in git at 255c158)
+verify: 23 of 23 moved files identical after the move
+  references: EXECUTION_PLAN.md: 1
+  references: PROGRESS.md: 3
+  references: research/preparation/README.md: 1
+  references: research/reviews/02-ai-leakage-auditor-output.md: 1
+references rewritten: 6
+exit 0
+
+## 2026-11-08T15:06:05Z restored record files (AI prompts and outputs, scripts that ran) to their original wording from 255c158; rewrite now skips records
+## 2026-11-08T15:06:05Z $ venv/bin/python .agents/skills/research-report/scripts/layout.py move --base reports/milestone-3 --map reports/milestone-3/research/revisions/layout-moves.csv --refs-only
+references rewritten: 0
+exit 0

@@ -1,3 +1,0 @@
-# 6. Quy trình chuẩn bị dữ liệu
-
-Quy trình chuẩn bị dữ liệu (pipeline) chuyển các tệp gốc thành các bảng dữ liệu đã chuẩn bị chỉ bằng script, nhờ đó bất kỳ ai cũng có thể chạy lại và thu được cùng một dữ liệu, đúng như đề bài yêu cầu [1]. Quy trình này được tổ chức theo ba cấp. Ở cấp nhỏ nhất, mười bước chuẩn bị dữ liệu của đề bài là mười hàm trong một script. Script đó là một trong tám giai đoạn chạy bằng script của quy trình. Ở cấp lớn nhất, tám giai đoạn này hợp thành năm pha, đi từ tệp gốc đến gói dữ liệu đã qua kiểm tra (Phụ lục II, Hình A.3). Cấu trúc của Mục 6 như sau: Mục 6.1 đối chiếu mười bước với mã nguồn; Mục 6.2 trình bày phép tích hợp bảng và cách xây dựng đặc trưng; Mục 6.3 xác định cách chia dữ liệu và các biện pháp kiểm soát rò rỉ thông tin.

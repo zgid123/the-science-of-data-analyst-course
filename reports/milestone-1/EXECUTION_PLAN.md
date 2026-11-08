@@ -182,7 +182,7 @@ The three research tasks run as one wave: disjoint ID blocks (S100–S199, S200�
 | T13 | 02-* | Task 1 table, interview approach, Task 4 synthesis table, themes and priorities, conflicts, validation table |
 | T14 | 03-*, 04-* | Business Goal with origin and decision; SMART table with assumed baseline; KPI table; AQ ladder; five-criteria table; Before → After |
 | T15 | 05-00, 06-*, 07-00 | Task 8 table; Task 9 table; feasibility, quality risks, privacy; decision levels and expected value |
-| T16 | research/review/ | Reviewer prompt run by an isolated subagent on Parts 1–7; each critique → team decision → reason; fixes applied |
+| T16 | research/reviews/01-ai-reviewer-* | Reviewer prompt run by an isolated subagent on Parts 1–7; each critique → team decision → reason; fixes applied |
 | T17 | 08-00, 09-00, 11-* | AI usage and reflection; traceability matrix; appendices of brief section 9 |
 
 ### 7.N Stage F: Finishing

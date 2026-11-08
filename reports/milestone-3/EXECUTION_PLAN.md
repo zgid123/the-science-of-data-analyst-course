@@ -17,7 +17,7 @@ mapped to its place in this task:
 | C. Preparation Pipeline | Scripts that rerun from raw data, no unrecorded manual step | `package/src/` (+ executed notebooks in `package/notebooks/`) |
 | D. Prepared Data Package | `data/processed` + dictionary + lineage + version/provenance + validation summary | `package/data/processed/`, `package/data/metadata/` |
 | E. Controlled Change Log | Every AQ/scope/claim change caused by data understanding or gaps | Appendix IV (Table A.8, C01–C08 carried, C09… new) and `package/data/metadata/change_log.md` |
-| F. AI Decision Log | Prompt/suggestion, team decision, evidence, accepted/rejected | Appendix V and `research/review/` |
+| F. AI Decision Log | Prompt/suggestion, team decision, evidence, accepted/rejected | Appendix V and `research/reviews/` |
 
 Outline sections map one to one to report parts (brief section 16.1):
 
@@ -203,7 +203,7 @@ timestamp rule, AQ), `split-spec.md` (time split, entity rule, fitted transforms
 
 **T11: AI preparation critic.** Isolated agent reads the DQ log, matrix and specifications only; returns numbered
 critiques. Main agent decides each (accept / reject / partly) with evidence, updates the files.
-- [ ] Prompt, critiques and decisions saved in `research/review/`; each decision cites evidence.
+- [ ] Prompt, critiques and decisions saved in `research/reviews/`; each decision cites evidence.
 
 **T12: Tasks 5–6 pipeline.** `package/src/prepare_data.py` with the ten brief steps as functions, transformation
 log, row-count checks at each join, writes `interim/` and `processed/`; `fit_transforms.py` fits imputation and
@@ -222,7 +222,7 @@ sample; returns findings. Main agent decides and fixes; rerun T12–T13 if code 
 - [ ] Findings and decisions saved; validation reruns clean after fixes.
 
 **T15: Task 7 and deliverables B, E, F.** `research/readiness/readiness.md` (views per level, Model Readiness
-Matrix), `package/data/metadata/traceability.md`, `change_log.md`, `research/review/ai-decision-log.md`.
+Matrix), `package/data/metadata/traceability.md`, `change_log.md`, `research/ai-decision-log.md`.
 - [ ] Every AQ has a view, target/measure, features, split rule, readiness; traceability uses real prepared columns.
 
 **T16: Notebooks.** `package/notebooks/02_data_understanding.ipynb`, `03_data_preparation.ipynb`, built by
