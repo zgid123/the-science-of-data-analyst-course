@@ -22,7 +22,7 @@ assumptions. So are the capacity figures
 that the personas gave, such as three officers for about 4,000 students (AD2, AD3): they are the persona's own
 estimates, not published figures.
 
-**Step 2: open questions, written before the interviews.** The team wrote seven or eight open questions for each
+**Step 2: open questions, written before the interviews.** We wrote seven or eight open questions for each
 stakeholder. Every list covers the five information groups of the brief: business goals (what the stakeholder wants
 to improve), success vision (how improvement would be recognised), challenges (what makes the problem hard), decision
 making (what the stakeholder would decide with better information) and risk anticipation (what would stop the
@@ -41,11 +41,11 @@ question in full, the interviewer asked a follow-up on the point that answer ope
 two follow-ups, for example the question to the program manager about which staff should act first (PM4) and the
 question to the support officer about how many students the office could follow up each week (AD3).
 
-**Step 4: labelled key statements.** After each interview, the team drew out its key statements, 51 in all across the
+**Step 4: labelled key statements.** After each interview, we drew out its key statements, 51 in all across the
 five interviews, and labelled each one in the three categories of the brief [1]. An opinion is the stakeholder's own
 view or preference. An assumption is a figure or fact that the stakeholder gives as an estimate or impression, such as
 the size of the support office. Scenario information is a fact given in the brief's scenario, such as the data that
-the university holds. Team members checked every quoted statement against its transcript. Appendix II quotes the
+the university holds. We checked every quoted statement against its transcript. Appendix II quotes the
 statements with their labels.
 
 ### 2. Stakeholder Input Organised by Heading
@@ -95,10 +95,10 @@ yet clean enough for automation (DO9).
 
 ### 5. Conflicts between Stakeholders
 
-Table A.16 sets out the three conflicts and the data constraint of Section 2.4, the statements on each side and the resolution the team
+Table A.16 sets out the three conflicts and the data constraint of Section 2.4, the statements on each side and the resolution we
 adopted.
 
-**Table A.16. Conflicts between stakeholders and the team's resolution**
+**Table A.16. Conflicts between stakeholders and our resolution**
 
 | Conflict | One side | Other side | Resolution |
 | :---- | :---- | :---- | :---- |
@@ -118,4 +118,4 @@ Table A.17 gives the full results of the validation round of Section 2.4 under t
 | Points the stakeholders confirmed | A short list in order of urgency, with a factual reason for each name (all five stakeholders); contact by someone who knows the student, in supportive words that never say "at risk"; use for support only, with a person taking the final decision; missed quizzes and assignments as a better early sign than LMS activity (VDO1); the revised SMART Goal (VPM7) |
 | Points the stakeholders asked to adjust | Detection is late and patchy rather than absent, because lecturers do sometimes alert the support office (VCL1, VAD1); two review points, in week 3 and week 5, kept away from registration and examination weeks (VCL2, VAD2); completion means passing the course, not merely staying enrolled (VPM6); the target is assessed over the 2027–2028 academic year rather than one semester, against a baseline recounted under Circular 83/2026 (VPM5, VPM8); consent for each purpose, and legal approval before any linking of records (VDO2); the student's family and employer are never told (VST2) |
 | Points the stakeholders added | A program-level view of the courses and groups that lose students (VPM3); first-year students as a group of their own (VPM4); a shared record of each contact (VCL4); students who drift in several courses at once as a separate, more urgent case (VAD3); a simple "I'm fine, thanks" reply that closes the contact (VST3); a small pilot with comparison courses, so that a good result cannot come from choosing easy courses (VDO4, VPM9) |
-| Points the team did not adopt, with the reason | The advisor's suggestion to drop the completion target (VAD4); the lecturer's definition of completion as having done all the work (CL2); a general email instead of personal contact (VST5). Section 2.4 gives the reason for each |
+| Points we did not adopt, with the reason | The advisor's suggestion to drop the completion target (VAD4); the lecturer's definition of completion as having done all the work (CL2); a general email instead of personal contact (VST5). Section 2.4 gives the reason for each |

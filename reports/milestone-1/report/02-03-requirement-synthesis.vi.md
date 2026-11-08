@@ -1,6 +1,6 @@
 ## 2.3. Tổng hợp chủ đề và thứ tự ưu tiên
 
-Đề bài yêu cầu nhóm không chuyển thẳng câu trả lời của AI thành Business Goal mà tổng hợp chúng qua năm bước: sắp xếp, nhận diện chủ đề, xếp thứ tự ưu tiên, làm rõ và xác nhận [1]. Trước hết, nhóm phân tích dữ liệu sắp xếp câu trả lời của từng bên liên quan theo năm đề mục của đề bài: mục tiêu hoặc nhu cầu, khó khăn, quyết định cần đưa ra, dấu hiệu thành công và rủi ro hoặc ràng buộc (Phụ lục VI, Bảng A.14). Đọc đối chiếu giữa các bên liên quan, nhóm nhận ra sáu chủ đề lặp lại. Bảng 2.2 nêu từng chủ đề, ý kiến của các bên liên quan về chủ đề đó, bên nêu ra và mức ưu tiên mà nhóm đặt cho chủ đề.
+Đề bài yêu cầu nhóm chúng em không chuyển thẳng câu trả lời của AI thành Business Goal mà tổng hợp chúng qua năm bước: sắp xếp, nhận diện chủ đề, xếp thứ tự ưu tiên, làm rõ và xác nhận [1]. Trước hết, chúng em sắp xếp câu trả lời của từng bên liên quan theo năm đề mục của đề bài: mục tiêu hoặc nhu cầu, khó khăn, quyết định cần đưa ra, dấu hiệu thành công và rủi ro hoặc ràng buộc (Phụ lục VI, Bảng A.14). Đọc đối chiếu giữa các bên liên quan, chúng em nhận ra sáu chủ đề lặp lại. Bảng 2.2 nêu từng chủ đề, ý kiến của các bên liên quan về chủ đề đó, bên nêu ra và mức ưu tiên mà chúng em đặt cho chủ đề.
 
 **Bảng 2.2. Các chủ đề chung giữa các bên liên quan và mức ưu tiên**
 
@@ -17,4 +17,4 @@ Mức ưu tiên dựa trên ba tiêu chí của đề bài: mức độ gắn v�
 
 Chủ đề T3 dựa trên hai con số về số sinh viên cán bộ liên hệ được; cả hai con số đều do cán bộ hỗ trợ sinh viên tự ước tính; hai con số này còn được dùng lại trong các phần sau của đề xuất. Ba cán bộ của phòng hỗ trợ sinh viên cùng nhau liên hệ được khoảng 30–40 sinh viên mỗi tuần (AD3, VAD7). Bên cạnh đó, mỗi giảng viên kiêm cố vấn học tập liên hệ được ba đến năm sinh viên mỗi tuần trong các lớp mình phụ trách (VAD6). Lời kể của giảng viên cũng khớp với con số thứ hai: giảng viên dành được một đến một tiếng rưỡi mỗi tuần cho công việc này và sẽ hành động theo một danh sách năm tên, mỗi tên kèm một lý do (CL10, CL11).
 
-Sau khi làm rõ các chủ đề cốt lõi, nhóm phân tích dữ liệu có được phát biểu vấn đề ở Mục 1.2, đồng thời loại bỏ các yêu cầu nằm ngoài phạm vi dự án; Mục 1.2 liệt kê các yêu cầu này cùng lý do.
+Sau khi làm rõ các chủ đề cốt lõi, chúng em có được phát biểu vấn đề ở Mục 1.2, đồng thời loại bỏ các yêu cầu nằm ngoài phạm vi dự án; Mục 1.2 liệt kê các yêu cầu này cùng lý do.

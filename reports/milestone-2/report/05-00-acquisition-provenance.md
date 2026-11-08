@@ -4,7 +4,7 @@
 anyone [1]. The selected dataset was therefore collected by a script that downloads the published files, checks them
 and stores them unchanged, and that records everything needed to obtain them again. Two kinds of evidence make the copy
 checkable. A checksum is a short fingerprint computed from a file's exact bytes; if a single byte changes, the
-checksum changes. The team recorded two of them for every file: SHA-256 (Secure Hash Algorithm, 256-bit), the
+checksum changes. We recorded two of them for every file: SHA-256 (Secure Hash Algorithm, 256-bit), the
 standard used for verification, and MD5 (Message Digest 5), the checksum that the provider itself publishes. The files
 are stored as comma-separated values (CSV), plain-text tables that any tool can read. Table 5.1 is the brief's
 acquisition plan for OULAD.
@@ -26,10 +26,10 @@ acquisition plan for OULAD.
 
 **Which copy, and why.** OULAD is published in three places: the provider's own server, whose link was broken
 when the data were collected [2]; a figshare deposit with a DOI and a version number, which the data descriptor cites
-[3]; and the UCI repository [12]. The team collected and cites the figshare deposit, and a row-by-row comparison found
+[3]; and the UCI repository [12]. We collected and cite the figshare deposit, and a row-by-row comparison found
 the UCI copy identical apart from how missing values are written (Appendix III).
 
-**Reproducible in two commands.** Anyone with the Data Collection Package can re-create the team's copy with two
+**Reproducible in two commands.** Anyone with the Data Collection Package can re-create our copy with two
 commands. The first, `src/collect.py`, downloads the archive, checks its size and checksum and extracts the seven
 tables. The second, `src/verify_structure.py`, runs the structural checks of Section 6. The package also holds the
 manifest of checksums, the data dictionary copied from the descriptor, the source and license sheet, the citation and

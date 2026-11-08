@@ -8,9 +8,9 @@ describes the area where the student lives rather than the student [5]. Scotland
 own indices, which are not directly comparable with the English one [6], so a band does not mean the same thing in
 every nation of the UK.
 
-**Sensitive attributes.** The brief asks the team to identify attributes such as gender, age, disability,
+**Sensitive attributes.** The brief asks us to identify attributes such as gender, age, disability,
 socioeconomic status and location, which describe protected or vulnerable groups [1]. OULAD holds six of them:
-gender, age band, declared disability, deprivation band, region and highest education. The team sets 20 students as
+gender, age band, declared disability, deprivation band, region and highest education. We set 20 students as
 the lower limit for reporting a group rate run by run, and smaller groups are audited across runs; Appendix I (Table
 A.3) gives each attribute with its codes, its smallest group and its groups below 20.
 

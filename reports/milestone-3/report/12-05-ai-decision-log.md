@@ -1,6 +1,6 @@
 ## Appendix V – AI Decision Log and Prompts
 
-Table A.15 is the AI Decision Log of deliverable F, one row per significant AI suggestion with the team's decision and the evidence used to verify it.
+Table A.15 is the AI Decision Log of deliverable F, one row per significant AI suggestion with our decision and the evidence used to verify it.
 
 **Table A.15. AI Decision Log**
 

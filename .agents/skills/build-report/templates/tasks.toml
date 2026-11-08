@@ -15,6 +15,9 @@ name = "Report Title"                    # REQUIRED: readable name, shown by `re
 report = "taskN/report"                  # REQUIRED: folder of the section files NN-SS-slug.md (and their .vi.md twins)
 build = "build/taskN"                    # REQUIRED: output folder of the Word documents (and a slide deck)
 author = "Group N"                       # REQUIRED: default author for every language (running header, core property)
+# voice = "group"                        # optional: who writes the report, "group" (we / nhóm chúng em) or "solo" (I / em);
+                                         #   check_style.py then flags third-person self-reference ("the team",
+                                         #   "nhóm tác giả" without a citation), and translators get the pack's voice line
 # google_docs = true                     # optional: also build an all-portrait <out>_GoogleDocs.docx for Google Docs
 # people = ["Full Name"]                 # optional: names that must be spelled exactly (lecturers, supervisors,
                                          #   authors), without titles; check_names.py reads the report, hooks.extras

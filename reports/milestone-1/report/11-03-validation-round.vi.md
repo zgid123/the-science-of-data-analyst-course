@@ -1,10 +1,10 @@
 ## Phụ lục III – Vòng xác nhận
 
-Sau bước tổng hợp, nhóm quay lại từng bên liên quan trong chính cuộc hội thoại phỏng vấn trước đó. Mỗi bên liên quan được xem bản tóm tắt dưới đây, kèm một câu hỏi riêng cho vai trò đó, rồi được đề nghị cho biết điều gì đúng, điều gì cần sửa và điều gì còn thiếu. Dựa trên câu trả lời của Trưởng chương trình đào tạo, nhóm điều chỉnh SMART Goal. Nhóm trình bày lại bản SMART Goal điều chỉnh và Trưởng chương trình đào tạo xác nhận bản này.
+Sau bước tổng hợp, nhóm chúng em quay lại từng bên liên quan trong chính cuộc hội thoại phỏng vấn trước đó. Mỗi bên liên quan được xem bản tóm tắt dưới đây, kèm một câu hỏi riêng cho vai trò đó, rồi được đề nghị cho biết điều gì đúng, điều gì cần sửa và điều gì còn thiếu. Dựa trên câu trả lời của Trưởng chương trình đào tạo, chúng em điều chỉnh SMART Goal. Chúng em trình bày lại bản SMART Goal điều chỉnh và Trưởng chương trình đào tạo xác nhận bản này.
 
-> Cảm ơn anh/chị đã tham gia phỏng vấn. Nhóm đã trao đổi với năm người: Trưởng chương trình đào tạo, một giảng viên
-> phụ trách học phần, phòng hỗ trợ sinh viên, một sinh viên và bộ phận dữ liệu. Dưới đây là cách nhóm hiểu những gì
-> đã nghe. Xin anh/chị cho biết (1) điều gì nhóm hiểu đúng, (2) điều gì cần sửa và (3) điều gì còn thiếu.
+> Cảm ơn anh/chị đã tham gia phỏng vấn. Nhóm chúng em đã trao đổi với năm người: Trưởng chương trình đào tạo, một giảng viên
+> phụ trách học phần, phòng hỗ trợ sinh viên, một sinh viên và bộ phận dữ liệu. Dưới đây là cách chúng em hiểu những gì
+> đã nghe. Xin anh/chị cho biết (1) điều gì chúng em hiểu đúng, (2) điều gì cần sửa và (3) điều gì còn thiếu.
 >
 > 1. Vấn đề chính: sinh viên giảm tham gia học tập ở các học phần trực tuyến và học phần kết hợp chỉ được nhận ra sau
 >    khi học kỳ kết thúc. Tình trạng này thường bắt đầu trong bốn, năm tuần đầu và biểu hiện đầu tiên là các bài kiểm
@@ -18,7 +18,7 @@ Sau bước tổng hợp, nhóm quay lại từng bên liên quan trong chính c
 > 4. Trước khi áp dụng, trường phải thống nhất mục đích sử dụng và ai được xem thông tin gì. Trường cũng phải thông báo
 >    cho sinh viên ngay từ đầu học phần, giữ dữ liệu tình trạng học tập chính xác và để con người đưa ra quyết định cuối
 >    cùng. Kết quả chỉ dùng để hỗ trợ: không bao giờ dùng cho điểm số, hồ sơ hoặc đánh giá giảng viên.
-> 5. Mục tiêu nhóm đề xuất: nâng tỷ lệ hoàn thành học phần trong các học phần trực tuyến và học phần kết hợp của chương
+> 5. Mục tiêu chúng em đề xuất: nâng tỷ lệ hoàn thành học phần trong các học phần trực tuyến và học phần kết hợp của chương
 >    trình đào tạo bằng cách nhận ra đủ sớm những sinh viên giảm tham gia học tập để hỗ trợ ngay trong học kỳ. Chỉ số
 >    chính là tỷ lệ hoàn thành học phần (giả định mức cơ sở 70%, mức mục tiêu 75% vào cuối học kỳ tới). Hai chỉ số phụ đi
 >    kèm: trong số sinh viên về sau trượt hoặc rút học phần, tỷ lệ đã được liên hệ chậm nhất vào tuần 6; và trong số sinh

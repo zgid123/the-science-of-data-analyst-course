@@ -7,7 +7,7 @@ Section 6, and gives the full definitions of the three decision classifications 
 
 The descriptive and diagnostic questions use the simplest families that answer them. AQ1 needs counts and rates broken
 down by course, mode and year of study, and a comparison of timing between two groups. AQ2 compares the later
-non-completion rate of students with and without each sign. Explanatory regression lets the team see whether a sign
+non-completion rate of students with and without each sign. Explanatory regression lets us see whether a sign
 still differs once other signs are taken into account, for example whether missed tasks matter beyond low LMS
 activity. AQ2 reports differences, not causes, because the records are observational: they show what students did,
 not why they did it, and the brief warns against causal language without a causal design [1].

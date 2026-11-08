@@ -9,4 +9,4 @@ quyết định mà từng AQ hỗ trợ; với mỗi AQ, ma trận ghi các bư
 Theo chuỗi truy vết đó, KPI chính và AQ1 dựa trên bảng lượt đăng ký học và bảng bài được chấm điểm, phục vụ D2 và D3.
 AQ2 dựa trên các dấu hiệu tại ngày 27, phục vụ D2 và cung cấp lý do đi kèm từng tên trong danh sách D1. AQ3 dựa trên cả
 hai bảng đặc trưng và cách chia dữ liệu theo thời gian, phục vụ D1. AQ4 dựa trên bảng capacity_by_run, cho biết độ dài
-danh sách trong từng kịch bản năng lực liên hệ mỗi tuần, cùng các cột dùng để kiểm tra công bằng; AQ4 cũng phục vụ D1. Riêng lựa chọn cách liên hệ và tỷ lệ liên hệ kịp thời của KPI phụ 2, nhóm tác giả để lại cho đợt thí điểm chứ không lấp bằng các giả định.
+danh sách trong từng kịch bản năng lực liên hệ mỗi tuần, cùng các cột dùng để kiểm tra công bằng; AQ4 cũng phục vụ D1. Riêng lựa chọn cách liên hệ và tỷ lệ liên hệ kịp thời của KPI phụ 2, nhóm chúng em để lại cho đợt thí điểm chứ không lấp bằng các giả định.

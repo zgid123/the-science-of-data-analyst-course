@@ -8,9 +8,9 @@ project's setting, and which claims they cannot support.
 given as days relative to the start of each run, and the data meet k-anonymity with k = 5 [3], meaning that every
 combination of the identifying attributes is shared by at least five students. The data still hold sensitive
 attributes, among them the deprivation band of the student's home area, a ranking of local areas by the United
-Kingdom's Index of Multiple Deprivation, and declared disability [3]. The project uses these attributes only to check
-that associations and list accuracy hold across groups, never as reasons to list a student, and it makes no attempt
-to re-identify anyone. The data stay on the team's machines under their CC BY 4.0 license [2], with the descriptor
+Kingdom's Index of Multiple Deprivation, and declared disability [3]. We use these attributes only to check
+that associations and list accuracy hold across groups, never as reasons to list a student, and we make no attempt
+to re-identify anyone. The data stay on our machines under their CC BY 4.0 license [2], with the descriptor
 cited, and no record is entered into public AI tools.
 
 **Representativeness.** Representativeness is the largest limit. The data come from UK distance learners in

@@ -2,7 +2,7 @@
 
 **The matrix.** Table 4.1 applies the brief's selection matrix to the seven candidates, with scores from 0 to 2. The
 brief's matrix has six criterion columns; two of them each pair two criteria (target and timing; documentation and
-license), and the team added one column that pairs the remaining two (unit and granularity; temporal coverage), so the
+license), and we added one column that pairs the remaining two (unit and granularity; temporal coverage), so the
 table shows all ten scores and their total out of 20. The last column gives the decision and, for each rejected
 candidate, the gates it fails.
 

@@ -1,8 +1,8 @@
 ## 1.1. Frozen Baseline
 
-**Why the baseline is frozen.** The brief requires the team to start this milestone from its proposal, not from a
+**Why the baseline is frozen.** The brief requires us to start this milestone from our proposal, not from a
 dataset: the questions decide what data are needed, and the data may not quietly change the questions [1]. Before any
-dataset was examined, the team therefore froze the Milestone 1 baseline. Its goal, measures, questions, data needs and
+dataset was examined, we therefore froze the Milestone 1 baseline. Its goal, measures, questions, data needs and
 decisions were copied word for word into a baseline record, and a checksum (a fingerprint of a file's exact content)
 was recorded for every source file, so that any later difference between the proposal and this report is visible and
 must be explained (Appendix V). Every change that the data made necessary is recorded in a Controlled Change Log, the

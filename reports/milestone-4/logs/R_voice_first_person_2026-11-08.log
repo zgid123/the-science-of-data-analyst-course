@@ -1,0 +1,108 @@
+# R_voice_first_person — switch the report's self-reference to first person (EN 'we/our', VI 'nhóm chúng em/chúng em')
+UTC: 2026-11-08T10:10:24Z
+
+## 1. Scan before
+$ venv/bin/python reports/milestone-4/code/voice_scan.py 4   -> M4 EN: 10 hits, M4 VI: 43 hits (exit 0)
+
+## 2. Edits (exact-substring replacements, each asserted to occur once; scratch script apply_voice.py)
+English (9 changes in 4 files):
+EN	01-00-baseline-dataset.md:5	'the questions the team committed to [1]' -> 'the questions we committed to [1]'
+EN	02-03-codes-sensitive.md:11	'The brief asks the team to identify' -> 'The brief asks us to identify'
+EN	02-03-codes-sensitive.md:13	'The team sets 20 students' -> 'We set 20 students'
+EN	03-00-profiling-quality.md:8	"the team's exploration of" -> 'our exploration of'
+EN	07-00-prepared-validation.md:3	'The brief asks the team to show' -> 'The brief asks us to show'
+EN	07-03-residual-risks.md:14	'that the team requires before' -> 'that we require before'
+EN	10-00-genai-reflection.md:7	'and team members\nverified' -> 'and members of our team\nverified'
+EN	10-00-genai-reflection.md:11	"the suggestion, the team's decision," -> 'the suggestion, our decision,'
+EN	10-00-genai-reflection.md:25	'of which the team accepted 9' -> 'of which we accepted 9'
+EN	10-00-genai-reflection.md:33	'because of a rule the team keeps.' -> 'because of a rule we keep.'
+EN	10-00-genai-reflection.md:34	'The team reports their number,' -> 'We report their number,'
+EN	12-05-ai-decision-log.md:3	"with the team's decision and" -> 'with our decision and'
+12 31
+
+Vietnamese (35 changes in 17 files):
+VI	01-00-baseline-dataset.vi.md:3	'các câu hỏi nhóm đã cam kết' -> 'các câu hỏi nhóm chúng em đã cam kết'
+VI	02-03-codes-sensitive.vi.md:5	'Đề bài yêu cầu nhóm tác giả xác định' -> 'Đề bài yêu cầu nhóm chúng em xác định'
+VI	02-03-codes-sensitive.vi.md:5	'Nhóm tác giả đặt 20' -> 'Chúng em đặt 20'
+VI	03-00-profiling-quality.vi.md:3	'nhóm tác giả đếm lại' -> 'nhóm chúng em đếm lại'
+VI	03-00-profiling-quality.vi.md:3	'khám phá bộ dữ liệu của nhóm tác giả' -> 'khám phá bộ dữ liệu của chúng em'
+VI	03-02-missingness-validity.vi.md:3	'nhóm tác giả không kiểm tra' -> 'nhóm chúng em không kiểm tra'
+VI	03-02-missingness-validity.vi.md:5	'Nhóm tác giả không sửa' -> 'Chúng em không sửa'
+VI	04-02-gap-decisions.vi.md:16	'nhóm tác giả tự tạo' -> 'nhóm chúng em tự tạo'
+VI	05-00-preparation-plan.vi.md:3	'nhóm tác giả đã gán' -> 'nhóm chúng em đã gán'
+VI	06-03-split-leakage.vi.md:18	'nhóm tác giả thay đổi giá trị' -> 'nhóm chúng em thay đổi giá trị'
+VI	06-03-split-leakage.vi.md:18	'Thứ ba, nhóm tác giả không xem' -> 'Thứ ba, chúng em không xem'
+VI	07-00-prepared-validation.vi.md:3	'Đề bài yêu cầu nhóm tác giả chứng minh' -> 'Đề bài yêu cầu nhóm chúng em chứng minh'
+VI	07-03-residual-risks.vi.md:7	'mà nhóm tác giả yêu cầu' -> 'mà nhóm chúng em yêu cầu'
+VI	08-00-readiness.vi.md:12	'nhóm tác giả để lại' -> 'nhóm chúng em để lại'
+VI	09-00-ethics-limitations.vi.md:16	'Nhóm tác giả thiết kế' -> 'Nhóm chúng em thiết kế'
+VI	09-00-ethics-limitations.vi.md:17	'nhóm tác giả xác định được' -> 'chúng em xác định được'
+VI	09-00-ethics-limitations.vi.md:23	'nhóm tác giả không liên kết' -> 'chúng em không liên kết'
+VI	10-00-genai-reflection.vi.md:7	'thành viên\nnhóm kiểm chứng' -> 'thành viên\nnhóm chúng em kiểm chứng'
+VI	10-00-genai-reflection.vi.md:13	'quyết định của nhóm,\n' -> 'quyết định của chúng em,\n'
+VI	10-00-genai-reflection.vi.md:28	'nhóm tác giả chấp nhận 9' -> 'chúng em chấp nhận 9'
+VI	10-00-genai-reflection.vi.md:35	'vì nhóm tác giả luôn giữ' -> 'vì chúng em luôn giữ'
+VI	10-00-genai-reflection.vi.md:36	'Nhóm tác giả báo cáo số lượng' -> 'Chúng em báo cáo số lượng'
+VI	12-02-pipeline-package.vi.md:131	'nhóm tác giả ước lượng lại' -> 'nhóm chúng em ước lượng lại'
+VI	12-03-dictionary-lineage.vi.md:111	'lựa chọn của nhóm tác giả' -> 'lựa chọn của nhóm chúng em'
+VI	12-04-traceability-change-log.vi.md:86	'nhóm tác giả cũng không có kế hoạch' -> 'nhóm chúng em cũng không có kế hoạch'
+VI	12-05-ai-decision-log.vi.md:3	'kèm quyết định của nhóm và' -> 'kèm quyết định của nhóm chúng em và'
+VI	12-05-ai-decision-log.vi.md:73	'nhóm tác giả chấp nhận cả 8' -> 'chúng em chấp nhận cả 8'
+VI	12-05-ai-decision-log.vi.md:90	'cũng được nhóm tác giả chấp nhận' -> 'cũng được chúng em chấp nhận'
+VI	12-05-ai-decision-log.vi.md:90	'nên nhóm tác giả không áp dụng' -> 'nên chúng em không áp dụng'
+VI	12-05-ai-decision-log.vi.md:93	'trước khi nhóm tác giả chấp nhận' -> 'trước khi chúng em chấp nhận'
+VI	12-05-ai-decision-log.vi.md:103	'trước khi nhóm tác giả quyết định' -> 'trước khi chúng em quyết định'
+04-04-error-fairness.vi.md:9: 'theo báo cáo của nhóm tác giả nghiên cứu đó' -> 'theo báo cáo của các tác giả nghiên cứu đó' (cited authors kept as cited authors; reworded only because check_parity's glossary lint flags every 'nhóm tác giả' as an error)
+
+## 3. Parity (venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-4/report --lang vi reports/milestone-4/report/FILE.md)
+parity 01-00-context-continuity.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 01-01-goal-decisions-aqs.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 01-02-prepared-data-entry-gate.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 02-02-technical-tasks.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 03-01-criteria-matrix.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 03-02-descriptive-diagnostic.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 03-03-predictive.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 04-00-evaluation-design.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 04-01-evaluation-cards.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 04-02-validation-strategy.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 04-03-metrics-success.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 04-04-error-fairness.md exit=1 :: Checked 1 pairs (vi): 1 errors, 0 warnings
+parity 05-00-risk-ethics.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 06-00-genai-usage.md exit=0 :: Checked 1 pairs (vi): 0 errors, 2 warnings
+parity 10-00-appendices.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 10-03-validation-protocol.md exit=0 :: Checked 1 pairs (vi): 0 errors, 0 warnings
+parity 10-06-ai-critiques.md exit=0 :: Checked 1 pairs (vi): 0 errors, 23 warnings
+  04-04 error was: line 9 glossary 'nhóm tác giả' (cited-authors phrase) -> fixed as above; rerun: 0 errors, 0 warnings (exit 0)
+  06-00 2 warnings: 'possessive pronoun ... của chúng' false positive matching 'của chúng em' (the glossary's prescribed form); left as is
+  10-06 23 warnings: pre-existing, from the English-language quoted reviewer prompts
+
+## 4. Mark twins current
+$ venv/bin/python .claude/skills/build-report/scripts/translation_status.py --report reports/milestone-4/report --lang vi --mark <17 EN files>  -> recorded 17 file(s) in .vi-sync.json (exit 0)
+
+## 5. Precheck
+$ venv/bin/python .claude/skills/build-report/scripts/report.py precheck milestone-4  (exit 0)
+PASS  milestone-4 format             Checked 68 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 structure          EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings; VI: 34 files, 33 headings, 2 figures, 29 tables:   (0 s)
+PASS  milestone-4 style              EN: 30 body files: 0 errors, 0 warnings; VI: 30 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations; VI: 17 abbreviations, 0 violations  (0 s)
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings; VI: 53 references, 53 cited, order first-citati  (0 s)
+PASS  milestone-4 names              Checked 68 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 translation vi     34 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-4 parity vi          Checked 34 pairs (vi): 0 errors, 26 warnings  (1 s)
+9/9 steps passed
+
+## 6. Scan after
+$ venv/bin/python reports/milestone-4/code/voice_scan.py 4   -> M4 EN: 12 hits, M4 VI: 44 hits (first-person hits now counted; exit 0)
+Remaining hits that are not first person, all KEEP:
+  10-06-ai-critiques.md:49 'do not choose the model for the team' — verbatim prompt given to the AI reviewer (blockquote); same text in 10-06-ai-critiques.vi.md:46
+  10-06-ai-critiques.md:53 'assumptions the team has not checked' — verbatim prompt (blockquote); same in 10-06-ai-critiques.vi.md:50
+  03-03-predictive.vi.md:7 'Nhóm thứ nhất/hai/ba/tư' (x4) — groups of predictors, not the team
+  04-03-metrics-success.vi.md:20 'Nhóm thỏa cả hai điều kiện' — a student group in the fairness check
+  10-04-fairness-spec.vi.md:21 'Nhóm có dưới 400 lượt đăng ký' — a student group
+  04-04-error-fairness.vi.md:9 'các tác giả nghiên cứu đó' — authors of cited work [38] (EN 'author-reported')
+  10-01-candidate-comparison.vi.md:39 'chính các tác giả' — authors of cited review [18]
+  10-03-validation-protocol.vi.md:46 'các tác giả này' — authors of cited sample-size method [14]
+Not flagged by the scan, KEEP:
+  01-00-context-continuity.md:7 'a team that completes Level 1' and 01-02-prepared-data-entry-gate.md:13 'The brief admits a team' — brief's generic team
+  06-00-genai-usage.md:16 table header 'Team decision' / VI 'Quyết định của nhóm' — column name of the brief's AI Decision Log (table structure kept)

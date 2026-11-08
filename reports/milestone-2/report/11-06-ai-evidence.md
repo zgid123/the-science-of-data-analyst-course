@@ -1,6 +1,6 @@
 ## Appendix VI – Generative AI Usage Evidence
 
-An AI agent searched for candidate datasets for the team with the prompt below, in which documents are named by the report section that holds them and the agent's file-handling steps are left out; every query it ran is in Appendix I, and every fact it recorded was checked by team members against the saved official page.
+An AI agent searched for candidate datasets for us with the prompt below, in which documents are named by the report section that holds them and the agent's file-handling steps are left out; every query it ran is in Appendix I, and every fact it recorded was checked by us against the saved official page.
 
 Prompt of the search strategist and metadata interpreter:
 
@@ -19,7 +19,7 @@ Return at most 6 lines: candidates documented, sources fetched/partial/blocked, 
 Follow-up message sent during the task: the must-have gates were revised (G1 also requires a dated withdrawal; G2 split into G2a dated assessed tasks and G2b dated activity; G3 at least three course runs ordered in time with a later run for testing; G5 adds a persistent pseudonymous identifier); write the gate notes against the revised gates and note early tasks and enrolment dates per candidate.
 ```
 
-Two isolated AI agents critiqued the work at fixed points: a requirement critic before any dataset was scored, and a selection reviewer after the scoring. Each received only the brief and the team's documents named in its prompt. Their prompts are given in English, with documents named by the report section that holds them; Tables A.11 and A.12 give each critique in short form with the team's decision and the change made.
+Two isolated AI agents critiqued the work at fixed points: a requirement critic before any dataset was scored, and a selection reviewer after the scoring. Each received only the brief and our documents named in its prompt. Their prompts are given in English, with documents named by the report section that holds them; Tables A.11 and A.12 give each critique in short form with our decision and the change made.
 
 Prompt of the requirement critic:
 
@@ -31,9 +31,9 @@ Critique the data requirements: for each AQ, is anything missing (timestamps, ta
 Write at most 12 numbered critiques, most important first, each with: the passage (quote a few words), the problem, why it matters.
 ```
 
-Table A.11 lists the requirement critic's twelve critiques with the team's decisions.
+Table A.11 lists the requirement critic's twelve critiques with our decisions.
 
-**Table A.11. Requirement critic: AI critique, team decision and change**
+**Table A.11. Requirement critic: AI critique, our decision and change**
 
 | # | Critique (short) | Decision | Change |
 | :---- | :---- | :---- | :---- |
@@ -60,9 +60,9 @@ Challenge the selection: scores not backed by a recorded fact, criteria applied 
 Write at most 10 numbered critiques, most important first, each with the passage, the problem and why it matters.
 ```
 
-Table A.12 lists the selection reviewer's ten critiques with the team's decisions.
+Table A.12 lists the selection reviewer's ten critiques with our decisions.
 
-**Table A.12. Selection reviewer: AI critique, team decision and change**
+**Table A.12. Selection reviewer: AI critique, our decision and change**
 
 | # | Critique (short) | Decision | Change |
 | :---- | :---- | :---- | :---- |

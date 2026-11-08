@@ -1,10 +1,10 @@
 ## 2.3. Synthesised Themes and Priorities
 
-The brief asks the team not to turn the AI's answers directly into a Business Goal, but to synthesise them in five
-steps: organise, identify themes, prioritise, refine and validate [1]. The team first organised each stakeholder's
+The brief asks us not to turn the AI's answers directly into a Business Goal, but to synthesise them in five
+steps: organise, identify themes, prioritise, refine and validate [1]. We first organised each stakeholder's
 answers under the brief's five headings: goal or need, challenge, decision needed, success indicator, and risk or
 constraint (Appendix VI, Table A.14). Reading across the stakeholders then gave six recurring themes. Table 2.2 states
-each theme, what the stakeholders said about it, who raised it and the priority the team gave it.
+each theme, what the stakeholders said about it, who raised it and the priority we gave it.
 
 **Table 2.2. Themes across the stakeholders and their priority**
 

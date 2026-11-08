@@ -15,7 +15,7 @@
 
 **Biến tùy chọn.** Một số biến giúp trả lời các câu hỏi đầy đủ hơn nhưng không quyết định một bộ dữ liệu có dùng được hay không: hình thức học; năm theo học; chuyên cần; tình trạng học tập phân biệt tạm ngừng học và chuyển chương trình đào tạo với thôi học; phân công sinh viên cho giảng viên kiêm cố vấn học tập. Bộ dữ liệu thiếu các biến này vẫn trả lời được phần cốt lõi của từng câu hỏi; khi đó, những phần câu hỏi cần đến các biến này chỉ đạt mức đáp ứng Một phần (Mục 7) thay vì khiến bộ dữ liệu bị loại.
 
-**Điều kiện bắt buộc.** Từ các biến bắt buộc, nhóm phân tích dữ liệu rút ra sáu điều kiện bắt buộc mà mọi bộ dữ liệu ứng viên phải đáp ứng dù đạt điểm bao nhiêu. Các điều kiện mang mã từ G1 đến G5, riêng G2 gồm hai phần:
+**Điều kiện bắt buộc.** Từ các biến bắt buộc, nhóm chúng em rút ra sáu điều kiện bắt buộc mà mọi bộ dữ liệu ứng viên phải đáp ứng dù đạt điểm bao nhiêu. Các điều kiện mang mã từ G1 đến G5, riêng G2 gồm hai phần:
 
 (1) G1 Kết quả: mỗi lượt đăng ký học phần có kết quả cuối cùng phân biệt đạt, trượt và rút học phần, kèm ngày của mỗi lần rút, vì KPI chính và biến cần dự đoán của AQ3 phụ thuộc vào kết quả này.
 (2) G2a Bài được chấm điểm có ngày: có ngày đến hạn và ngày nộp bài, tính từ ngày bắt đầu học phần, vì bài bị bỏ lỡ và bài nộp trễ là các dấu hiệu sớm chính của AQ2 và là cơ sở của KPI phụ 1.

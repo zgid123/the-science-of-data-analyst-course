@@ -1,6 +1,6 @@
 ## Appendix III – Acquisition Plan and Data Collection Package
 
-The Data Collection Package re-creates the team's copy of OULAD exactly. Its layout is shown below; the raw files are produced by the collection script and are not edited.
+The Data Collection Package re-creates our copy of OULAD exactly. Its layout is shown below; the raw files are produced by the collection script and are not edited.
 
 ```text
 package/
@@ -44,7 +44,7 @@ Table A.4 lists the size, checksums and data rows of every collected file; each 
 | studentAssessment.csv | 5,690,310 | fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e | 9ceb38acaeb26fbc15c98b563290c1db | 173,912 | MATCH |
 | studentVle.csv | 453,836,331 | 52668253d876c5becbcb72185977152700cecab2942aca807fecc3dd54b937f0 | b8aae6f4ffd1523319aeb56d66b17f72 | 10,655,280 | MATCH |
 
-OULAD is published in three places, so the team had to decide which copy to collect and cite. The provider page links an archive on the Open University's own server [2] and asks users to check it against an MD5 checksum [2]; that link returned an HTTP 404 error, meaning that the file was not found, when the data were collected. The data descriptor, the peer-reviewed article that documents the dataset, cites a deposit on figshare [3], which carries a DOI and a version number; this is the copy the team collected. The UCI repository holds a third copy under its own DOI [12]. To make sure the copies agree, the team compared the UCI copy with the collected files. All seven tables hold the same rows. The only difference is that UCI writes a missing value as "?" where figshare leaves the cell empty, in five tables (Table A.5). The analysis therefore reads empty cells as missing values and cites the figshare deposit and the descriptor.
+OULAD is published in three places, so we had to decide which copy to collect and cite. The provider page links an archive on the Open University's own server [2] and asks users to check it against an MD5 checksum [2]; that link returned an HTTP 404 error, meaning that the file was not found, when the data were collected. The data descriptor, the peer-reviewed article that documents the dataset, cites a deposit on figshare [3], which carries a DOI and a version number; this is the copy we collected. The UCI repository holds a third copy under its own DOI [12]. To make sure the copies agree, we compared the UCI copy with the collected files. All seven tables hold the same rows. The only difference is that UCI writes a missing value as "?" where figshare leaves the cell empty, in five tables (Table A.5). The analysis therefore reads empty cells as missing values and cites the figshare deposit and the descriptor.
 
 Table A.5 compares the UCI copy of OULAD with the collected figshare files, table by table.
 

@@ -1,0 +1,218 @@
+# R_voice_first_person – Milestone 1 report switched to first person (we / nhóm chúng em, chúng em)
+UTC: 2026-11-08T10:12:30Z
+Scope: reports/milestone-1/report/*.md and *.vi.md only. Voice only; numbers, citations, cross-references, headings, table structure unchanged.
+Rule sources: .claude/skills/build-report/languages/vi/guide.md (Register); glossary row 'we / the team' in .claude/skills/build-report/languages/vi/glossaries/topics/course-completion-report-conventions.md
+
+## 1. Scan before edit
+$ venv/bin/python reports/milestone-4/code/voice_scan.py 1   -> exit 0; M1 EN: 65 hits, M1 VI: 26 hits
+Additional manual scan: grep of every 'nhóm' in *.vi.md (bare 'nhóm'/'nhóm phân tích dữ liệu' mid-sentence self-references the scan does not catch).
+
+## 2. Edits (exact-string replacements, each asserted unique before applying)
+EN changes: 38; VI changes: 61 (60 scripted + 1 in 11-08). Files touched: 25 + 11-08-question-specification.vi.md = 26.
+Format: file:line<TAB>before -> after
+00-2-glossary.md:21	"with the team's understanding" -> 'with our understanding'
+02-01-stakeholder-map.md:6	'The team added two more' -> 'We added two more'
+02-01-stakeholder-map.md:8	'the brief asks the team to\nconsider' -> 'the brief asks us to\nconsider'
+02-01-stakeholder-map.md:13	'the goal the team assumed' -> 'the goal we assumed'
+02-02-interview-approach.md:7	"asked the team's questions and follow-ups. Team members verified every transcript." -> 'asked our questions and follow-ups. We verified every transcript.'
+02-02-interview-approach.md:12	'The team wrote seven or eight' -> 'We wrote seven or eight'
+02-02-interview-approach.md:13	'The team then drew 51' -> 'We then drew 51'
+02-03-requirement-synthesis.md:3	'The brief asks the team not to' -> 'The brief asks us not to'
+02-03-requirement-synthesis.md:4	'The team first organised' -> 'We first organised'
+02-03-requirement-synthesis.md:7	'the priority the team gave it' -> 'the priority we gave it'
+02-04-conflicts-validation.md:8	'The team resolved them' -> 'We resolved them'
+02-04-conflicts-validation.md:16	"summary of the\nteam's understanding and the draft goal, and asked what the team had right, what it should correct" -> 'summary of\nour understanding and the draft goal, and asked what we had right, what we should correct'
+02-04-conflicts-validation.md:27	'The team did not adopt three' -> 'We did not adopt three'
+02-04-conflicts-validation.md:29	'The team keeps the target, because the brief asks for an organisational outcome as the goal, and reports any rise' -> 'We keep the target, because the brief asks for an organisational outcome as the goal, and report any rise'
+02-04-conflicts-validation.md:31	'The team keeps passing, the outcome the program reports, and describes' -> 'We keep passing, the outcome the program reports, and describe'
+02-04-conflicts-validation.md:33	'The team keeps personal contact' -> 'We keep personal contact'
+02-04-conflicts-validation.md:34	'(AD8), and adds a general notice' -> '(AD8), and add a general notice'
+04-02-quality-check-refinement.md:9	"with the team's decision on each" -> 'with our decision on each'
+08-00-genai-reflection.md:11	'an AI interviewer acting for the team (Section 2.2)' -> 'an AI interviewer acting for us (Section 2.2)'
+08-00-genai-reflection.md:11	'and team members checked each quote' -> 'and we checked each quote'
+08-00-genai-reflection.md:12	"challenged the team's understanding" -> 'challenged our understanding'
+08-00-genai-reflection.md:16	'**What the team accepted and rejected.**' -> '**What we accepted and rejected.**'
+08-00-genai-reflection.md:16	'the team accepted nine' -> 'we accepted nine'
+08-00-genai-reflection.md:17	'The team accepted the critique that the data' -> 'We accepted the critique that the data'
+08-00-genai-reflection.md:19	'(R1). The team accepted the critique' -> '(R1). We accepted the critique'
+08-00-genai-reflection.md:22	'The team rejected the critique' -> 'We rejected the critique'
+08-00-genai-reflection.md:24	"the team's decisions and the reviewer's prompt" -> "our decisions and the reviewer's prompt"
+08-00-genai-reflection.md:34	'points the team had not planned for' -> 'points we had not planned for'
+08-00-genai-reflection.md:37	'The team therefore treats every' -> 'We therefore treat every'
+11-00-appendices.md:5	"with the team's decisions and the reviewer prompt" -> 'with our decisions and the reviewer prompt'
+11-04-ai-critique-review.md:3	"in short form, the team's decision and" -> 'in short form, our decision and'
+11-06-synthesis-detail.md:25	'The team wrote seven or eight' -> 'We wrote seven or eight'
+11-06-synthesis-detail.md:44	'the team drew out its key statements' -> 'we drew out its key statements'
+11-06-synthesis-detail.md:48	'Team members checked every quoted statement' -> 'We checked every quoted statement'
+11-06-synthesis-detail.md:98	'the resolution the team\nadopted.' -> 'the resolution we\nadopted.'
+11-06-synthesis-detail.md:101	"Conflicts between stakeholders and the team's resolution**" -> 'Conflicts between stakeholders and our resolution**'
+11-06-synthesis-detail.md:121	'| Points the team did not adopt, with the reason |' -> '| Points we did not adopt, with the reason |'
+11-09-approach-data-decision-detail.md:10	'lets the team see' -> 'lets us see'
+00-2-glossary.vi.md:21	'cách hiểu của nhóm và' -> 'cách hiểu của nhóm chúng em và'
+02-01-stakeholder-map.vi.md:3	'Nhóm phân tích dữ liệu bổ sung thêm' -> 'Nhóm chúng em bổ sung thêm'
+02-01-stakeholder-map.vi.md:3	'đề bài yêu cầu nhóm xem xét' -> 'đề bài yêu cầu chúng em xem xét'
+02-01-stakeholder-map.vi.md:5	'mục tiêu mà nhóm giả định' -> 'mục tiêu mà chúng em giả định'
+02-02-interview-approach.vi.md:3	'đặt các câu hỏi của nhóm và' -> 'đặt các câu hỏi của nhóm chúng em và'
+02-02-interview-approach.vi.md:3	'Các thành viên nhóm đã kiểm tra' -> 'Chúng em đã kiểm tra'
+02-02-interview-approach.vi.md:5	'Nhóm soạn bảy hoặc tám' -> 'Chúng em soạn bảy hoặc tám'
+02-02-interview-approach.vi.md:5	'Sau đó, nhóm rút ra 51' -> 'Sau đó, chúng em rút ra 51'
+02-03-requirement-synthesis.vi.md:3	'Đề bài yêu cầu nhóm không chuyển' -> 'Đề bài yêu cầu nhóm chúng em không chuyển'
+02-03-requirement-synthesis.vi.md:3	'Trước hết, nhóm phân tích dữ liệu sắp xếp' -> 'Trước hết, chúng em sắp xếp'
+02-03-requirement-synthesis.vi.md:3	'nhóm nhận ra sáu chủ đề' -> 'chúng em nhận ra sáu chủ đề'
+02-03-requirement-synthesis.vi.md:3	'mức ưu tiên mà nhóm đặt' -> 'mức ưu tiên mà chúng em đặt'
+02-03-requirement-synthesis.vi.md:20	'nhóm phân tích dữ liệu có được phát biểu' -> 'chúng em có được phát biểu'
+02-04-conflicts-validation.vi.md:3	'Nhóm phân tích dữ liệu giải quyết' -> 'Nhóm chúng em giải quyết'
+02-04-conflicts-validation.vi.md:5	'cách hiểu của nhóm và bản dự thảo' -> 'cách hiểu của chúng em và bản dự thảo'
+02-04-conflicts-validation.vi.md:5	'điểm nào nhóm đã hiểu đúng' -> 'điểm nào chúng em đã hiểu đúng'
+02-04-conflicts-validation.vi.md:7	'Nhóm phân tích dữ liệu không áp dụng' -> 'Chúng em không áp dụng'
+02-04-conflicts-validation.vi.md:7	'Nhóm vẫn giữ mức mục tiêu' -> 'Chúng em vẫn giữ mức mục tiêu'
+02-04-conflicts-validation.vi.md:7	'nhóm báo cáo mức tăng' -> 'chúng em báo cáo mức tăng'
+02-04-conflicts-validation.vi.md:7	'Nhóm vẫn định nghĩa' -> 'Chúng em vẫn định nghĩa'
+02-04-conflicts-validation.vi.md:7	'Nhóm vẫn lấy liên hệ' -> 'Chúng em vẫn lấy liên hệ'
+02-04-conflicts-validation.vi.md:7	'nhóm bổ sung một thông báo' -> 'chúng em bổ sung một thông báo'
+03-02-smart-goal.vi.md:14	'nhóm phân tích dữ liệu cần một thiết kế' -> 'nhóm chúng em cần một thiết kế'
+04-02-quality-check-refinement.vi.md:3	'quyết định của nhóm phân tích dữ liệu đối với' -> 'quyết định của nhóm chúng em đối với'
+08-00-genai-reflection.vi.md:3	'Nhóm dùng AI tạo sinh' -> 'Nhóm chúng em dùng AI tạo sinh'
+08-00-genai-reflection.vi.md:4	'Nhóm không bao giờ dùng AI' -> 'Chúng em không bao giờ dùng AI'
+08-00-genai-reflection.vi.md:9	'| Cách nhóm sử dụng AI |' -> '| Cách chúng em sử dụng AI |'
+08-00-genai-reflection.vi.md:11	'thay mặt nhóm đặt từng câu hỏi' -> 'thay mặt chúng em đặt từng câu hỏi'
+08-00-genai-reflection.vi.md:11	'thành viên nhóm đối chiếu từng trích dẫn' -> 'chúng em đối chiếu từng trích dẫn'
+08-00-genai-reflection.vi.md:12	'chất vấn cách hiểu của nhóm,' -> 'chất vấn cách hiểu của chúng em,'
+08-00-genai-reflection.vi.md:16	'**Những gì nhóm chấp nhận và bác bỏ.**' -> '**Những gì chúng em chấp nhận và bác bỏ.**'
+08-00-genai-reflection.vi.md:16	'người đánh giá, nhóm chấp nhận chín' -> 'người đánh giá, chúng em chấp nhận chín'
+08-00-genai-reflection.vi.md:17	'cách nhóm lập luận. Thứ nhất, nhóm chấp nhận' -> 'cách chúng em lập luận. Thứ nhất, chúng em chấp nhận'
+08-00-genai-reflection.vi.md:19	'Thứ hai, nhóm chấp nhận' -> 'Thứ hai, chúng em chấp nhận'
+08-00-genai-reflection.vi.md:22	'Thứ ba, nhóm bác bỏ' -> 'Thứ ba, chúng em bác bỏ'
+08-00-genai-reflection.vi.md:24	'quyết định của nhóm và prompt' -> 'quyết định của chúng em và prompt'
+08-00-genai-reflection.vi.md:33	'cuộc phỏng vấn, nhóm nghe được' -> 'cuộc phỏng vấn, chúng em nghe được'
+08-00-genai-reflection.vi.md:34	'những điểm nhóm chưa dự tính' -> 'những điểm chúng em chưa dự tính'
+08-00-genai-reflection.vi.md:37	'Vì vậy, nhóm coi' -> 'Vì vậy, chúng em coi'
+11-00-appendices.vi.md:3	'cách nhóm dùng AI tạo sinh' -> 'cách nhóm chúng em dùng AI tạo sinh'
+11-00-appendices.vi.md:5	'quyết định của nhóm đối với từng nhận xét' -> 'quyết định của chúng em đối với từng nhận xét'
+11-01-interview-questions.vi.md:3	'Nhóm soạn các câu hỏi' -> 'Nhóm chúng em soạn các câu hỏi'
+11-03-validation-round.vi.md:3	'Sau bước tổng hợp, nhóm quay lại' -> 'Sau bước tổng hợp, nhóm chúng em quay lại'
+11-03-validation-round.vi.md:3	'nhóm điều chỉnh SMART Goal. Nhóm trình bày lại' -> 'chúng em điều chỉnh SMART Goal. Chúng em trình bày lại'
+11-03-validation-round.vi.md:5	'Nhóm đã trao đổi với năm người' -> 'Nhóm chúng em đã trao đổi với năm người'
+11-03-validation-round.vi.md:6	'Dưới đây là cách nhóm hiểu' -> 'Dưới đây là cách chúng em hiểu'
+11-03-validation-round.vi.md:7	'điều gì nhóm hiểu đúng' -> 'điều gì chúng em hiểu đúng'
+11-03-validation-round.vi.md:21	'Mục tiêu nhóm đề xuất' -> 'Mục tiêu chúng em đề xuất'
+11-04-ai-critique-review.vi.md:3	'tóm tắt từng nhận xét, quyết định của nhóm và lý do' -> 'tóm tắt từng nhận xét, quyết định của nhóm chúng em và lý do'
+11-04-ai-critique-review.vi.md:19	'Business Goal của nhóm mở đầu' -> 'Business Goal của chúng em mở đầu'
+11-06-synthesis-detail.vi.md:11	'Nhóm viết bảy hoặc tám' -> 'Nhóm chúng em viết bảy hoặc tám'
+11-06-synthesis-detail.vi.md:15	'Sau mỗi cuộc phỏng vấn, nhóm rút ra' -> 'Sau mỗi cuộc phỏng vấn, chúng em rút ra'
+11-06-synthesis-detail.vi.md:15	'Các thành viên nhóm đối chiếu từng phát biểu' -> 'Chúng em đối chiếu từng phát biểu'
+11-06-synthesis-detail.vi.md:48	'ở Mục 1.2, nhóm cũng loại ra' -> 'ở Mục 1.2, chúng em cũng loại ra'
+11-06-synthesis-detail.vi.md:52	'cách giải quyết mà nhóm áp dụng' -> 'cách giải quyết mà chúng em áp dụng'
+11-06-synthesis-detail.vi.md:54	'Xung đột giữa các bên liên quan và cách nhóm giải quyết**' -> 'Xung đột giữa các bên liên quan và cách chúng em giải quyết**'
+11-06-synthesis-detail.vi.md:74	'| Những điểm nhóm không áp dụng, kèm lý do |' -> '| Những điểm chúng em không áp dụng, kèm lý do |'
+11-09-approach-data-decision-detail.vi.md:7	'giúp nhóm phân tích dữ liệu xem' -> 'giúp nhóm chúng em xem'
+11-09-approach-data-decision-detail.vi.md:9	'nhóm phân tích dữ liệu có thể dùng các phương pháp học' -> 'chúng em có thể dùng các phương pháp học'
+11-08-question-specification.vi.md:19	'là giả định; nhóm sẽ xem lại' -> 'là giả định; nhóm chúng em sẽ xem lại'
+
+Follow-up (parity check flagged 'của chúng em' as the possessive pronoun 'của chúng' – a regex false positive): five VI phrases changed from 'của chúng em' to 'của nhóm chúng em', which the glossary also allows:
+  02-04-conflicts-validation.vi.md:5   cách hiểu của chúng em -> cách hiểu của nhóm chúng em
+  08-00-genai-reflection.vi.md:12      cách hiểu của chúng em -> cách hiểu của nhóm chúng em
+  08-00-genai-reflection.vi.md:24      quyết định của chúng em -> quyết định của nhóm chúng em
+  11-00-appendices.vi.md:5             quyết định của chúng em -> quyết định của nhóm chúng em
+  11-04-ai-critique-review.vi.md:19    Business Goal của chúng em -> Business Goal của nhóm chúng em
+
+## 3. Parity (one call per touched file)
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/00-2-glossary.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/02-01-stakeholder-map.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/02-02-interview-approach.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/02-03-requirement-synthesis.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/02-04-conflicts-validation.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/03-02-smart-goal.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/04-02-quality-check-refinement.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/08-00-genai-reflection.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-00-appendices.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-01-interview-questions.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-03-validation-round.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-04-ai-critique-review.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-06-synthesis-detail.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-08-question-specification.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi reports/milestone-1/report/11-09-approach-data-decision-detail.md
+
+Checked 1 pairs (vi): 0 errors, 0 warnings
+exit=0
+
+## 4. Mark twins current
+$ venv/bin/python .claude/skills/build-report/scripts/translation_status.py --report reports/milestone-1/report --lang vi --mark <15 EN paths: 00-2-glossary 02-01 02-02 02-03 02-04 03-02 04-02 08-00 11-00 11-01 11-03 11-04 11-06 11-08 11-09>
+recorded 15 file(s) in reports/milestone-1/report/.vi-sync.json
+exit=0
+
+## 5. Precheck
+$ venv/bin/python .claude/skills/build-report/scripts/report.py precheck milestone-1
+PASS  milestone-1 format             Checked 72 files in reports/milestone-1/report: 0 errors, 2 warnings  (0 s)
+PASS  milestone-1 structure          EN: 36 files, 48 headings, 0 figures, 29 tables: 0 errors, 0 warnings; VI: 36 files, 48 headings, 0 figures, 29 tables:   (0 s)
+PASS  milestone-1 style              EN: 32 body files: 0 errors, 0 warnings; VI: 32 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 abbreviations      EN: 5 abbreviations, 0 violations; VI: 5 abbreviations, 0 violations  (0 s)
+PASS  milestone-1 citations          EN: 25 references, 25 cited, order first-citation: 0 errors, 0 warnings; VI: 25 references, 25 cited, order first-citati  (0 s)
+PASS  milestone-1 names              Checked 72 files for 5 names: 0 errors  (0 s)
+PASS  milestone-1 research_trail     Checked 69 sources, 182 claims: 0 errors, 13 warnings  (0 s)
+PASS  milestone-1 translation vi     36 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-1 parity vi          Checked 36 pairs (vi): 0 errors, 0 warnings  (1 s)
+
+9/9 steps passed
+
+exit=0
+Note: the 2 format warnings are in 03-01-business-goal.md:3-4 (odd '**'), a file not touched here.
+
+## 6. Scan after edit
+$ venv/bin/python reports/milestone-4/code/voice_scan.py 1   -> exit 0; M1 EN: 69 hits, M1 VI: 72 hits (now counts the new first-person forms)
+All remaining hits are first person (we/our/us, nhóm chúng em/chúng em) or the KEEP cases below.
+
+## 7. KEEP (unchanged, with reason)
+- 11-02-interview-excerpts.md / .vi.md:9,24,41,42,43,46,49,78,79 – verbatim persona quotes ("we find out too late", "chúng tôi ..."): stakeholder speech.
+- 11-03-validation-round.md / .vi.md:32-33,40,48-49,51-52 – persona replies in the validation table ("we have measured", "chúng tôi"): stakeholder speech.
+- 11-03-validation-round.md:5-7,20-21 – our own quoted summary to stakeholders already in "we"; VI twin changed to "nhóm chúng em/chúng em" to match.
+- 04-02-quality-check-refinement.md:29 – "Can we predict which students will drop out?": the draft question in stakeholder wording.
+- 10-references.md:23 ("Are we failing our students?") and :41 (hapgood.us URL) – titles/URLs of cited works.
+- 11-04-ai-critique-review.md:25 – "a student team's analytics project proposal": text of the reviewer prompt, quoted as sent.
+- 11-06-synthesis-detail.md:38 / .vi.md:13 – "for the team" / "thay cho nhóm": paraphrase of the brief's role prompt (generic team).
+- 02-02-interview-approach.md:7 / .vi.md:3 – "Data Analytics Team" / "nhóm phân tích dữ liệu": scenario role name the AI interviewer acted for; kept, only "the team's questions" became first person.
+- 05-00-analytic-approach.md:14 – "Data Analytics Team" in the user column: scenario role.
+- Headings and table labels: 08-00 "# 8. Generative AI Usage and Team Reflection" / "phản tư của nhóm", bold lead "**Team reflection.**" / "**Phản tư của nhóm.**" (brief's section label); 11-04 heading "AI Critique, Team Decisions and Reviewer Prompt", caption "Table A.13. AI critique, team decision and reason", column "Team decision" and VI counterparts "quyết định của nhóm" – headings, captions and column labels kept per scope.
+- VI uses of "nhóm" meaning a group (nhóm sinh viên, nhóm thông tin, nhóm kỹ thuật, phân nhóm, nhóm so sánh, nhóm cán bộ, nhóm người liên quan): not self-references.

@@ -1,0 +1,90 @@
+# R_voice_first_person — Milestone 3 report switched to first person (we / nhóm chúng em, chúng em)
+UTC: 2026-11-08T10:10:29Z
+Rules: build-report vi guide 'Register'; glossary row 'we / the team' (course-completion-report-conventions.md).
+
+## 1. Scan before edit
+$ venv/bin/python reports/milestone-4/code/voice_scan.py 3   -> exit 0; EN 11 hits, VI 31 hits
+
+## 2. Edits (exact-string replacements, each asserted to match once; file:line, before -> after)
+EN	01-00-baseline-dataset.md:5	'the questions the team committed to [1]' -> 'the questions we committed to [1]'
+EN	02-03-codes-sensitive.md:11	'The brief asks the team to identify' -> 'The brief asks us to identify'
+EN	02-03-codes-sensitive.md:13	'The team sets 20 students' -> 'We set 20 students'
+EN	03-00-profiling-quality.md:8	"the team's exploration of" -> 'our exploration of'
+EN	07-00-prepared-validation.md:3	'The brief asks the team to show' -> 'The brief asks us to show'
+EN	07-03-residual-risks.md:14	'that the team requires before' -> 'that we require before'
+EN	10-00-genai-reflection.md:7	'and team members\nverified' -> 'and members of our team\nverified'
+EN	10-00-genai-reflection.md:11	"the suggestion, the team's decision," -> 'the suggestion, our decision,'
+EN	10-00-genai-reflection.md:25	'of which the team accepted 9' -> 'of which we accepted 9'
+EN	10-00-genai-reflection.md:33	'because of a rule the team keeps.' -> 'because of a rule we keep.'
+EN	10-00-genai-reflection.md:34	'The team reports their number,' -> 'We report their number,'
+EN	12-05-ai-decision-log.md:3	"with the team's decision and" -> 'with our decision and'
+VI	01-00-baseline-dataset.vi.md:3	'các câu hỏi nhóm đã cam kết' -> 'các câu hỏi nhóm chúng em đã cam kết'
+VI	02-03-codes-sensitive.vi.md:5	'Đề bài yêu cầu nhóm tác giả xác định' -> 'Đề bài yêu cầu nhóm chúng em xác định'
+VI	02-03-codes-sensitive.vi.md:5	'Nhóm tác giả đặt 20' -> 'Chúng em đặt 20'
+VI	03-00-profiling-quality.vi.md:3	'nhóm tác giả đếm lại' -> 'nhóm chúng em đếm lại'
+VI	03-00-profiling-quality.vi.md:3	'khám phá bộ dữ liệu của nhóm tác giả' -> 'khám phá bộ dữ liệu của chúng em'
+VI	03-02-missingness-validity.vi.md:3	'nhóm tác giả không kiểm tra' -> 'nhóm chúng em không kiểm tra'
+VI	03-02-missingness-validity.vi.md:5	'Nhóm tác giả không sửa' -> 'Chúng em không sửa'
+VI	04-02-gap-decisions.vi.md:16	'nhóm tác giả tự tạo' -> 'nhóm chúng em tự tạo'
+VI	05-00-preparation-plan.vi.md:3	'nhóm tác giả đã gán' -> 'nhóm chúng em đã gán'
+VI	06-03-split-leakage.vi.md:18	'nhóm tác giả thay đổi giá trị' -> 'nhóm chúng em thay đổi giá trị'
+VI	06-03-split-leakage.vi.md:18	'Thứ ba, nhóm tác giả không xem' -> 'Thứ ba, chúng em không xem'
+VI	07-00-prepared-validation.vi.md:3	'Đề bài yêu cầu nhóm tác giả chứng minh' -> 'Đề bài yêu cầu nhóm chúng em chứng minh'
+VI	07-03-residual-risks.vi.md:7	'mà nhóm tác giả yêu cầu' -> 'mà nhóm chúng em yêu cầu'
+VI	08-00-readiness.vi.md:12	'nhóm tác giả để lại' -> 'nhóm chúng em để lại'
+VI	09-00-ethics-limitations.vi.md:16	'Nhóm tác giả thiết kế' -> 'Nhóm chúng em thiết kế'
+VI	09-00-ethics-limitations.vi.md:17	'nhóm tác giả xác định được' -> 'chúng em xác định được'
+VI	09-00-ethics-limitations.vi.md:23	'nhóm tác giả không liên kết' -> 'chúng em không liên kết'
+VI	10-00-genai-reflection.vi.md:7	'thành viên\nnhóm kiểm chứng' -> 'thành viên\nnhóm chúng em kiểm chứng'
+VI	10-00-genai-reflection.vi.md:13	'quyết định của nhóm,\n' -> 'quyết định của chúng em,\n'
+VI	10-00-genai-reflection.vi.md:28	'nhóm tác giả chấp nhận 9' -> 'chúng em chấp nhận 9'
+VI	10-00-genai-reflection.vi.md:35	'vì nhóm tác giả luôn giữ' -> 'vì chúng em luôn giữ'
+VI	10-00-genai-reflection.vi.md:36	'Nhóm tác giả báo cáo số lượng' -> 'Chúng em báo cáo số lượng'
+VI	12-02-pipeline-package.vi.md:131	'nhóm tác giả ước lượng lại' -> 'nhóm chúng em ước lượng lại'
+VI	12-03-dictionary-lineage.vi.md:111	'lựa chọn của nhóm tác giả' -> 'lựa chọn của nhóm chúng em'
+VI	12-04-traceability-change-log.vi.md:86	'nhóm tác giả cũng không có kế hoạch' -> 'nhóm chúng em cũng không có kế hoạch'
+VI	12-05-ai-decision-log.vi.md:3	'kèm quyết định của nhóm và' -> 'kèm quyết định của nhóm chúng em và'
+VI	12-05-ai-decision-log.vi.md:73	'nhóm tác giả chấp nhận cả 8' -> 'chúng em chấp nhận cả 8'
+VI	12-05-ai-decision-log.vi.md:90	'cũng được nhóm tác giả chấp nhận' -> 'cũng được chúng em chấp nhận'
+VI	12-05-ai-decision-log.vi.md:90	'nên nhóm tác giả không áp dụng' -> 'nên chúng em không áp dụng'
+VI	12-05-ai-decision-log.vi.md:93	'trước khi nhóm tác giả chấp nhận' -> 'trước khi chúng em chấp nhận'
+VI	12-05-ai-decision-log.vi.md:103	'trước khi nhóm tác giả quyết định' -> 'trước khi chúng em quyết định'
+Totals: EN 12 changes in 7 files; VI 31 changes in 16 files.
+
+## 3. Parity per changed pair
+$ venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-3/report --lang vi reports/milestone-3/report/FILE.md  (for each of 16 files)
+01-00-baseline-dataset	Checked 1 pairs (vi): 0 errors, 0 warnings
+02-03-codes-sensitive	Checked 1 pairs (vi): 0 errors, 0 warnings
+03-00-profiling-quality	Checked 1 pairs (vi): 0 errors, 1 warnings
+03-02-missingness-validity	Checked 1 pairs (vi): 0 errors, 0 warnings
+04-02-gap-decisions	Checked 1 pairs (vi): 0 errors, 0 warnings
+05-00-preparation-plan	Checked 1 pairs (vi): 0 errors, 0 warnings
+06-03-split-leakage	Checked 1 pairs (vi): 0 errors, 0 warnings
+07-00-prepared-validation	Checked 1 pairs (vi): 0 errors, 0 warnings
+07-03-residual-risks	Checked 1 pairs (vi): 0 errors, 0 warnings
+08-00-readiness	Checked 1 pairs (vi): 0 errors, 0 warnings
+09-00-ethics-limitations	Checked 1 pairs (vi): 0 errors, 0 warnings
+10-00-genai-reflection	Checked 1 pairs (vi): 0 errors, 1 warnings
+12-02-pipeline-package	Checked 1 pairs (vi): 0 errors, 0 warnings
+12-03-dictionary-lineage	Checked 1 pairs (vi): 0 errors, 0 warnings
+12-04-traceability-change-log	Checked 1 pairs (vi): 0 errors, 0 warnings
+12-05-ai-decision-log	Checked 1 pairs (vi): 0 errors, 14 warnings
+Note: the 'possessive pronoun ... của chúng' warning in 03-00 and 10-00 is a false positive on 'của chúng em' (first person, not 'their'); 12-05 warnings concern the English prompt quotations, not this edit.
+
+## 4. Mark twins current
+$ venv/bin/python .claude/skills/build-report/scripts/translation_status.py --report reports/milestone-3/report --lang vi --mark <16 EN paths>  -> exit 0, recorded 16 file(s) in .vi-sync.json
+
+## 5. Precheck
+$ venv/bin/python .claude/skills/build-report/scripts/report.py precheck milestone-3  -> exit 0, 9/9 steps passed (format, structure, style, abbreviations, citations, names, research_trail, translation vi, parity vi: 0 errors, 16 warnings)
+
+## 6. Scan after edit
+$ venv/bin/python reports/milestone-4/code/voice_scan.py 3   -> exit 0; EN 12 hits, VI 33 hits; all EN hits and all VI hits except the KEEP list below are the new first-person forms
+
+## KEEP (unchanged, with reason)
+- 02-01-population-unit-keys.vi.md:3 'các tác giả của bộ dữ liệu' — authors of the OULAD dataset (cited work).
+- 03-03-distributions-outcome.vi.md:5 'Nhóm tính KPI' — the KPI population (a group of enrolments), not the team.
+- 12-01-profiling-details.vi.md:146 'Nhóm tính KPI' — same, KPI population.
+- 09-00-ethics-limitations.vi.md:17 'Nhóm có mức khó khăn "Missing"' — the IMD 'Missing' student group.
+- 01-02-dataset-entry-gate.md:3,18 / .vi.md:7 'a team' / 'nhóm không nên…' — the brief's generic team, in the brief's words.
+- 10-00-genai-reflection.md:16 and 12-05 table header 'Team decision' / 'Quyết định của nhóm' — column label prescribed by the brief's AI Decision Log template.
+- 10-00-genai-reflection.vi.md:1 heading 'Sử dụng AI tạo sinh và phản tư của nhóm' — heading kept per task rule (left for human decision).

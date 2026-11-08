@@ -83,4 +83,4 @@ thí điểm, vì OULAD không ghi nhận lượt liên hệ nào (C08).
 
 Đề bài cho phép dùng dữ liệu giả lập ở năm mức với các điều kiện khác nhau: dữ liệu kiểm thử nhỏ cho mã (mức A) và mô phỏng để minh họa phương pháp (mức B) được phép; tăng cường dữ liệu huấn luyện (mức C) cần giảng viên phê duyệt; dữ liệu giả lập dùng để lấp một khái niệm, nhãn hoặc can thiệp không được thu thập (mức D) hoặc đi vào bằng chứng mô tả hoặc chẩn đoán (mức E) đều không được phép [1]. Dự án chỉ dùng mức A: một vài lượt đăng ký học kiểm thử tự tạo, được gắn nhãn giả
 lập trong thư mục `tests/` của Gói dữ liệu đã chuẩn bị, dùng để kiểm tra rằng mỗi công thức tính đặc trưng cho đúng giá
-trị kỳ vọng. Các bản ghi này không bao giờ đi vào bảng dữ liệu đã chuẩn bị, số liệu thống kê hoặc phát hiện nào; nhóm tác giả cũng không có kế hoạch tăng cường dữ liệu.
+trị kỳ vọng. Các bản ghi này không bao giờ đi vào bảng dữ liệu đã chuẩn bị, số liệu thống kê hoặc phát hiện nào; nhóm chúng em cũng không có kế hoạch tăng cường dữ liệu.

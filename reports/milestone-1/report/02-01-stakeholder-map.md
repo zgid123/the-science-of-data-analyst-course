@@ -3,14 +3,14 @@
 The brief requires at least three stakeholders: the Academic Program Manager, the Course Lecturer, and the Academic
 Advisor or Student Support Officer [1]. In this proposal the third role is an officer of the student support office,
 the faculty office that advises and supports students (the support officer and the support office below). The
-academic advisors of student classes (cố vấn học tập) are lecturers, called lecturer-advisors below. The team added two more
+academic advisors of student classes (cố vấn học tập) are lecturers, called lecturer-advisors below. We added two more
 stakeholders, because the proposal would be incomplete without their views. The Student is the person on whom every
-decision of the project acts, and the source of the privacy and trust concerns that the brief asks the team to
+decision of the project acts, and the source of the privacy and trust concerns that the brief asks us to
 consider. The Learning Technology and Data Officer runs the LMS and the extracts of academic records; this officer's
 office (the data office below) decides whether the data needs of Section 6 can be met at all, so the feasibility of
 the proposal rests on its view.
 
-Table 2.1 lists each stakeholder's role in the problem, the goal the team assumed for that stakeholder before any
+Table 2.1 lists each stakeholder's role in the problem, the goal we assumed for that stakeholder before any
 interview, and the decision that analytics might support. These goals and decisions were hypotheses, written down
 so that the interviews could test them.
 

@@ -47,6 +47,8 @@ name = "Readable name"
 report = "taskN/report"                  # section folder
 build = "build/taskN"                    # output folder
 author = "Group 4"                       # default author for every language
+voice = "group"                          # optional: the writers speak in the first person ("group": we / nhóm chúng em;
+                                         #   "solo": I / em); check_style.py flags "the team", "nhóm tác giả" for self
 google_docs = true                       # optional: also build an all-portrait <out>_GoogleDocs.docx
 people = ["Phạm Thị Bạch Huệ"]           # optional: names that must appear exactly (lecturers, authors), without titles;
 people_files = ["slides_taskN_vi.py"]    #   check_names.py also reads the report, hooks.extras and these files

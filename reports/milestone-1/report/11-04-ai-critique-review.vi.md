@@ -1,6 +1,6 @@
 ## Phụ lục IV – Nhận xét của AI, quyết định của nhóm và prompt cho người đánh giá
 
-Một AI đóng vai người đánh giá (reviewer) làm việc trong một cuộc hội thoại riêng. AI này đọc đề bài và Mục 1–7 theo prompt ở cuối phụ lục, rồi đưa ra mười hai nhận xét. Bảng A.13 tóm tắt từng nhận xét, quyết định của nhóm và lý do hoặc nội dung đã sửa. Mục 8 phân tích kỹ ba nhận xét trong số đó.
+Một AI đóng vai người đánh giá (reviewer) làm việc trong một cuộc hội thoại riêng. AI này đọc đề bài và Mục 1–7 theo prompt ở cuối phụ lục, rồi đưa ra mười hai nhận xét. Bảng A.13 tóm tắt từng nhận xét, quyết định của nhóm chúng em và lý do hoặc nội dung đã sửa. Mục 8 phân tích kỹ ba nhận xét trong số đó.
 
 **Bảng A.13. Nhận xét của AI, quyết định và lý do của nhóm**
 
@@ -16,7 +16,7 @@ Một AI đóng vai người đánh giá (reviewer) làm việc trong một cu�
 | R8 | Quy tắc đếm của KPI chính chưa rõ | Chấp nhận | Rút học phần và trượt học phần đều tính là không hoàn thành; sinh viên tạm ngừng học có phép hoặc chuyển sang chương trình đào tạo khác được loại khỏi mẫu số (Mục 3.3) |
 | R9 | AQ1 gộp hai câu hỏi và chỉ xét một phía; giai đoạn phân tích chưa rõ | Chấp nhận một phần | Thời điểm giảm tham gia được so sánh cho cả hai nhóm; giai đoạn phân tích là năm học 2024–2025 và 2025–2026. AQ1 vẫn giữ là một câu hỏi, vì thời điểm và kết quả cùng mô tả những sinh viên đó trong cùng học phần |
 | R10 | Cụm "khác biệt nhiều nhất" trong AQ2 chưa được định nghĩa; học phần trực tuyến không có dữ liệu điểm danh | Chấp nhận | Khác biệt được đo bằng chênh lệch về tỷ lệ sinh viên về sau không hoàn thành học phần; dữ liệu điểm danh chỉ dùng cho học phần kết hợp; xét tuần 1–4 (Mục 4.1 và 6.1) |
-| R11 | Business Goal chứa luôn cả phương tiện thực hiện | Không chấp nhận | Chính ví dụ "tốt hơn" trong đề bài là "Nhận diện sớm sinh viên có nguy cơ không hoàn thành để hỗ trợ kịp thời". Business Goal của nhóm mở đầu bằng kết quả cần đạt và nêu thời điểm mà các bên liên quan yêu cầu (PM1, AD1) |
+| R11 | Business Goal chứa luôn cả phương tiện thực hiện | Không chấp nhận | Chính ví dụ "tốt hơn" trong đề bài là "Nhận diện sớm sinh viên có nguy cơ không hoàn thành để hỗ trợ kịp thời". Business Goal của nhóm chúng em mở đầu bằng kết quả cần đạt và nêu thời điểm mà các bên liên quan yêu cầu (PM1, AD1) |
 | R12 | Báo cáo chưa giải thích hai con số khác nhau: theo persona (vai bên liên quan do AI đóng), mỗi cán bộ phụ trách 300 sinh viên; theo kịch bản, 3 cán bộ phụ trách 4.000 sinh viên | Chấp nhận | Mục 2.2 nêu rõ: các số liệu đã công bố dùng để xây dựng persona, còn ước lượng của chính persona quyết định số sinh viên cán bộ liên hệ được mỗi tuần |
 
 Prompt giao cho người đánh giá, giữ bằng tiếng Anh; mỗi tài liệu được gọi theo vị trí trong báo cáo này:

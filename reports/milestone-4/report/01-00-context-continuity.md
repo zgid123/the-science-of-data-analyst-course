@@ -9,6 +9,6 @@ prototype can show that a choice is feasible but cannot make up for a weak strat
 
 This report covers Level 1 in full. Part 7 specifies how the optional prototype will run, as a protocol, and no model
 performance is stated anywhere in the report, because no model has been trained: every number in it is a count from
-the prepared data or a value the team fixed in advance with its reason. Section 1.1 restates the goal, the decisions
+the prepared data or a value we fixed in advance with its reason. Section 1.1 restates the goal, the decisions
 and the questions as they stand after Milestone 3, and Section 1.2 the prepared data and the entry gate that admits
 them to modeling.

@@ -1,0 +1,148 @@
+# R_voice_first_person — Milestone 2 report switched to first person
+UTC: 2026-11-08T10:12:15Z
+Scope: reports/milestone-2/report/*.md and *.vi.md only. Voice only; numbers, citations, cross-references, tables, headings unchanged.
+Rule source: .claude/skills/build-report/languages/vi/glossaries/topics/course-completion-report-conventions.md row 'we / the team' (nhóm chúng em at first mention per section file, then chúng em).
+
+## Commands and outcomes
+1. venv/bin/python reports/milestone-4/code/voice_scan.py 2  -> before: EN 33 hits, VI 25 hits (scan regex misses mid-sentence lowercase 'nhóm'; a full grep of 'nhóm' in *.vi.md was read as well)
+2. replacements applied by a counted-replacement script (each old string asserted to occur the expected number of times) -> 112 replacements (EN 33, VI 79)
+3. check_parity.py --report reports/milestone-2/report --lang vi <FILE.md> per changed file -> 0 errors except 3 files: glossary error 'nhóm tác giả' -> 'nhóm chúng em / chúng em' at 03-00:21, 04-02:23, 06-00:25 (cited authors; the glossary row lists 'nhóm tác giả' as a variant to replace)
+4. reworded those three cited-author phrases to 'các tác giả' (same meaning, already used in 11-01) -> parity 0 errors on all 18 pairs; 14 warnings: 11 are the possessive-pronoun rule matching 'của chúng' inside 'của chúng em' (false positive of pack.toml pattern \bcủa (?:nó|chúng|mình|họ)\b), 3 are pre-existing loanword warnings ('dataset' in 11-01:9, 11-01:23, 11-03:22)
+5. translation_status.py --report reports/milestone-2/report --lang vi --mark <18 files> -> recorded 18 file(s) in reports/milestone-2/report/.vi-sync.json, exit 0
+6. venv/bin/python .claude/skills/build-report/scripts/report.py precheck milestone-2 -> 9/9 steps passed (format, structure, style, abbreviations, citations, names, research_trail, translation vi, parity vi 0 errors 14 warnings), exit 0
+7. voice_scan.py 2 re-run -> EN 40 hits, VI 71 hits; all are first-person forms (we/our/us, chúng em) or KEEP cases below
+Not run (by instruction): make all / build / test.
+
+## Changes: English (33)
+- 01-01-frozen-baseline.md:3: 'The brief requires the team to start this milestone from its proposal' -> 'The brief requires us to start this milestone from our proposal'
+- 01-01-frozen-baseline.md:5: 'dataset was examined, the team therefore froze' -> 'dataset was examined, we therefore froze'
+- 01-02-scope-change-log.md:4: 'the open dataset that the team collects actually provides them' -> 'the open dataset that we collect actually provides them'
+- 01-02-scope-change-log.md:15: 'The team recorded eight controlled revisions,' -> 'We recorded eight controlled revisions,'
+- 02-01-aq-data-matrix.md:31: 'the team derived six must-have gates' -> 'we derived six must-have gates'
+- 03-00-search-strategy.md:3: 'already known\nto the team, so' -> 'already known\nto us, so'
+- 03-00-search-strategy.md:10: '**Where the team searched.**' -> '**Where we searched.**'
+- 03-00-search-strategy.md:15: 'First, the team read' -> 'First, we read'
+- 04-02-selection-matrix.md:5: 'and the team added one column' -> 'and we added one column'
+- 05-00-acquisition-provenance.md:7: 'The team recorded two of them' -> 'We recorded two of them'
+- 05-00-acquisition-provenance.md:29: 'The team collected and cites the figshare deposit' -> 'We collected and cite the figshare deposit'
+- 05-00-acquisition-provenance.md:32: "re-create the team's copy" -> 're-create our copy'
+- 07-02-gaps-revisions.md:6: 'The team applied these rules' -> 'We applied these rules'
+- 08-00-risks-ethics.md:11: 'The project uses these attributes only to check\nthat associations and list accuracy hold across groups, never as reasons to list a student, and it makes no attempt' -> 'We use these attributes only to check\nthat associations and list accuracy hold across groups, never as reasons to list a student, and we make no attempt'
+- 08-00-risks-ethics.md:13: "on the team's machines" -> 'on our machines'
+- 09-00-genai-reflection.md:6: "the team's decisions." -> 'our decisions.'
+- 09-00-genai-reflection.md:12: 'An AI agent working for the team' -> 'An AI agent working for us'
+- 09-00-genai-reflection.md:12: 'checked by team members against that page' -> 'checked by us against that page'
+- 09-00-genai-reflection.md:17: 'in ways the team could check' -> 'in ways we could check'
+- 09-00-genai-reflection.md:31: 'that the team had not seen' -> 'that we had not seen'
+- 09-00-genai-reflection.md:34: 'evidence the team can stand behind' -> 'evidence we can stand behind'
+- 11-03-acquisition-package.md:3: "re-creates the team's copy" -> 're-creates our copy'
+- 11-03-acquisition-package.md:47: 'so the team had to decide' -> 'so we had to decide'
+- 11-03-acquisition-package.md:47: 'this is the copy the team collected' -> 'this is the copy we collected'
+- 11-03-acquisition-package.md:47: 'the team compared the UCI copy' -> 'we compared the UCI copy'
+- 11-06-ai-evidence.md:3: 'for the team with the prompt' -> 'for us with the prompt'
+- 11-06-ai-evidence.md:3: 'checked by team members against the saved' -> 'checked by us against the saved'
+- 11-06-ai-evidence.md:22: "the brief and the team's documents named in its prompt" -> 'the brief and our documents named in its prompt'
+- 11-06-ai-evidence.md:22: "with the team's decision and the change made" -> 'with our decision and the change made'
+- 11-06-ai-evidence.md:34: "critiques with the team's decisions." -> 'critiques with our decisions.'
+- 11-06-ai-evidence.md:63: "critiques with the team's decisions." -> 'critiques with our decisions.'
+- 11-06-ai-evidence.md:36: 'AI critique, team decision and change**' -> 'AI critique, our decision and change**'
+- 11-06-ai-evidence.md:65: 'AI critique, team decision and change**' -> 'AI critique, our decision and change**'
+
+## Changes: Vietnamese (82)
+- 01-01-frozen-baseline.vi.md:3: 'Đề bài yêu cầu nhóm bắt đầu' -> 'Đề bài yêu cầu nhóm chúng em bắt đầu'
+- 01-01-frozen-baseline.vi.md:3: 'nhóm phân tích dữ liệu đã chốt' -> 'chúng em đã chốt'
+- 01-01-frozen-baseline.vi.md:3: 'Đồng thời, nhóm ghi lại' -> 'Đồng thời, chúng em ghi lại'
+- 01-02-scope-change-log.vi.md:3: 'bộ dữ liệu mở mà nhóm thu thập' -> 'bộ dữ liệu mở mà nhóm chúng em thu thập'
+- 01-02-scope-change-log.vi.md:5: 'Nhóm đã ghi lại tám' -> 'Chúng em đã ghi lại tám'
+- 02-01-aq-data-matrix.vi.md:18: 'nhóm phân tích dữ liệu rút ra' -> 'nhóm chúng em rút ra'
+- 03-00-search-strategy.vi.md:3: 'Nhóm phân tích dữ liệu bắt đầu tìm kiếm' -> 'Nhóm chúng em bắt đầu tìm kiếm'
+- 03-00-search-strategy.vi.md:3: 'những bộ dữ liệu nhóm đã biết' -> 'những bộ dữ liệu chúng em đã biết'
+- 03-00-search-strategy.vi.md:7: 'nhóm áp dụng ba quy tắc' -> 'chúng em áp dụng ba quy tắc'
+- 03-00-search-strategy.vi.md:7: 'Thứ nhất, nhóm đọc' -> 'Thứ nhất, chúng em đọc'
+- 03-00-search-strategy.vi.md:9: 'mà nhóm đã có' -> 'mà chúng em đã có'
+- 03-00-search-strategy.vi.md:9: 'nhóm còn lại bảy' -> 'chúng em còn lại bảy'
+- 04-00-evaluation-selection.vi.md:3: 'Nhóm phân tích dữ liệu đánh giá' -> 'Nhóm chúng em đánh giá'
+- 04-01-criteria-gates.vi.md:3: 'Nhóm chấm điểm mỗi bộ' -> 'Nhóm chúng em chấm điểm mỗi bộ'
+- 04-01-criteria-gates.vi.md:7: 'nhóm ghi các thông tin này' -> 'chúng em ghi các thông tin này'
+- 04-02-selection-matrix.vi.md:3: '), nhóm thêm một cột' -> '), nhóm chúng em thêm một cột'
+- 04-02-selection-matrix.vi.md:17: 'Nhóm chọn OULAD vì' -> 'Chúng em chọn OULAD vì'
+- 04-02-selection-matrix.vi.md:25: 'Nhóm không chọn bộ dữ liệu bổ sung' -> 'Chúng em không chọn bộ dữ liệu bổ sung'
+- 05-00-acquisition-provenance.vi.md:3: 'Vì vậy, nhóm thu thập' -> 'Vì vậy, nhóm chúng em thu thập'
+- 05-00-acquisition-provenance.vi.md:3: 'Nhóm ghi hai mã kiểm tra' -> 'Chúng em ghi hai mã kiểm tra'
+- 05-00-acquisition-provenance.vi.md:20: 'Nhóm thu thập và trích dẫn' -> 'Chúng em thu thập và trích dẫn'
+- 05-00-acquisition-provenance.vi.md:20: 'nhóm thấy bản của UCI' -> 'chúng em thấy bản của UCI'
+- 05-00-acquisition-provenance.vi.md:22: 'bản sao của nhóm bằng hai lệnh' -> 'bản sao của chúng em bằng hai lệnh'
+- 05-00-acquisition-provenance.vi.md:22: 'nhóm không làm sạch' -> 'chúng em không làm sạch'
+- 06-00-structural-verification.vi.md:3: 'Sau khi thu thập các tệp, nhóm kiểm tra' -> 'Sau khi thu thập các tệp, nhóm chúng em kiểm tra'
+- 06-00-structural-verification.vi.md:3: 'nhóm chưa làm sạch' -> 'chúng em chưa làm sạch'
+- 07-01-traceability.vi.md:11: 'nên nhóm bỏ các phép so sánh' -> 'nên nhóm chúng em bỏ các phép so sánh'
+- 07-02-gaps-revisions.vi.md:3: 'nhóm thu hẹp câu hỏi' -> 'nhóm chúng em thu hẹp câu hỏi'
+- 07-02-gaps-revisions.vi.md:3: 'Nhóm áp dụng các quy tắc' -> 'Chúng em áp dụng các quy tắc'
+- 07-02-gaps-revisions.vi.md:7: 'nhóm chỉ dùng thông tin sinh viên' -> 'chúng em chỉ dùng thông tin sinh viên'
+- 07-02-gaps-revisions.vi.md:11: 'nhóm sẽ không dùng OULAD' -> 'chúng em sẽ không dùng OULAD'
+- 08-00-risks-ethics.vi.md:3: 'cách nhóm bảo vệ dữ liệu' -> 'cách nhóm chúng em bảo vệ dữ liệu'
+- 08-00-risks-ethics.vi.md:5: 'Nhóm chỉ dùng các thuộc tính' -> 'Chúng em chỉ dùng các thuộc tính'
+- 08-00-risks-ethics.vi.md:5: 'Nhóm cũng không tìm cách' -> 'Chúng em cũng không tìm cách'
+- 08-00-risks-ethics.vi.md:5: 'trên máy của nhóm' -> 'trên máy của chúng em'
+- 08-00-risks-ethics.vi.md:7: 'đề xuất của nhóm hướng đến' -> 'đề xuất của chúng em hướng đến'
+- 08-00-risks-ethics.vi.md:9: 'Nhóm cũng không thể biết' -> 'Chúng em cũng không thể biết'
+- 08-00-risks-ethics.vi.md:11: 'Nhóm sẽ xử lý công khai' -> 'Chúng em sẽ xử lý công khai'
+- 09-00-genai-reflection.vi.md:3: 'hỗ trợ nhóm phân tích dữ liệu ở các vai trò' -> 'hỗ trợ nhóm chúng em ở các vai trò'
+- 09-00-genai-reflection.vi.md:3: 'Nhóm không chấp nhận thông tin' -> 'Chúng em không chấp nhận thông tin'
+- 09-00-genai-reflection.vi.md:3: 'quyết định của nhóm.' -> 'quyết định của chúng em.'
+- 09-00-genai-reflection.vi.md:9: 'làm việc cho nhóm dùng prompt' -> 'làm việc cho chúng em dùng prompt'
+- 09-00-genai-reflection.vi.md:9: 'thành viên nhóm đối chiếu' -> 'chúng em đối chiếu'
+- 09-00-genai-reflection.vi.md:10: '| Nhóm chỉ giữ thông tin' -> '| Chúng em chỉ giữ thông tin'
+- 09-00-genai-reflection.vi.md:11: 'trước khi nhóm chấm điểm bất kỳ' -> 'trước khi chúng em chấm điểm bất kỳ'
+- 09-00-genai-reflection.vi.md:12: 'sau khi nhóm chấm điểm |' -> 'sau khi chúng em chấm điểm |'
+- 09-00-genai-reflection.vi.md:14: 'mà nhóm kiểm tra lại được' -> 'mà chúng em kiểm tra lại được'
+- 09-00-genai-reflection.vi.md:14: 'Do đó, nhóm đã điều chỉnh' -> 'Do đó, chúng em đã điều chỉnh'
+- 09-00-genai-reflection.vi.md:14: 'nhưng nhóm chỉ chấp nhận' -> 'nhưng chúng em chỉ chấp nhận'
+- 09-00-genai-reflection.vi.md:14: 'thì nhóm chỉ còn' -> 'thì chúng em chỉ còn'
+- 09-00-genai-reflection.vi.md:14: 'Nhóm đã hạ điểm' -> 'Chúng em đã hạ điểm'
+- 09-00-genai-reflection.vi.md:16: 'Nhóm không dùng AI' -> 'Chúng em không dùng AI'
+- 09-00-genai-reflection.vi.md:18: 'giúp nhóm tìm kiếm' -> 'giúp chúng em tìm kiếm'
+- 09-00-genai-reflection.vi.md:18: 'mà nhóm chưa thấy' -> 'mà chúng em chưa thấy'
+- 09-00-genai-reflection.vi.md:18: 'Nhóm yêu cầu mỗi điểm số' -> 'Chúng em yêu cầu mỗi điểm số'
+- 09-00-genai-reflection.vi.md:18: 'mà nhóm có thể chịu trách nhiệm' -> 'mà chúng em có thể chịu trách nhiệm'
+- 11-01-search-log.vi.md:3: 'mà nhóm phân tích dữ liệu đã xem xét' -> 'mà nhóm chúng em đã xem xét'
+- 11-01-search-log.vi.md:14: '(nhóm dùng trang UCI)' -> '(chúng em dùng trang UCI)'
+- 11-02-scoring-details.vi.md:5: 'xét nhóm có được phép sử dụng' -> 'xét nhóm chúng em có được phép sử dụng'
+- 11-02-scoring-details.vi.md:5: 'xét nhóm có xử lý được' -> 'xét chúng em có xử lý được'
+- 11-03-acquisition-package.vi.md:3: 'mà nhóm phân tích dữ liệu đã thu thập' -> 'mà nhóm chúng em đã thu thập'
+- 11-03-acquisition-package.vi.md:47: 'nên nhóm phải quyết định' -> 'nên chúng em phải quyết định'
+- 11-03-acquisition-package.vi.md:47: 'đây là bản nhóm đã thu thập' -> 'đây là bản chúng em đã thu thập'
+- 11-03-acquisition-package.vi.md:47: 'nhóm đã so sánh bản trên UCI' -> 'chúng em đã so sánh bản trên UCI'
+- 11-03-acquisition-package.vi.md:47: 'khi phân tích, nhóm đọc ô trống' -> 'khi phân tích, chúng em đọc ô trống'
+- 11-05-change-log.vi.md:3: 'Nhóm phân tích dữ liệu chốt' -> 'Nhóm chúng em chốt'
+- 11-05-change-log.vi.md:24: '| Nhóm không tìm thấy' -> '| Chúng em không tìm thấy'
+- 11-06-ai-evidence.vi.md:3: 'cho nhóm phân tích dữ liệu theo prompt' -> 'cho nhóm chúng em theo prompt'
+- 11-06-ai-evidence.vi.md:3: 'Các thành viên nhóm đã đối chiếu' -> 'Chúng em đã đối chiếu'
+- 11-06-ai-evidence.vi.md:22: 'công việc của nhóm tại hai' -> 'công việc của chúng em tại hai'
+- 11-06-ai-evidence.vi.md:22: 'trước khi nhóm chấm điểm bộ' -> 'trước khi chúng em chấm điểm bộ'
+- 11-06-ai-evidence.vi.md:22: 'sau khi nhóm chấm điểm xong' -> 'sau khi chúng em chấm điểm xong'
+- 11-06-ai-evidence.vi.md:22: 'các tài liệu của nhóm có tên' -> 'các tài liệu của chúng em có tên'
+- 11-06-ai-evidence.vi.md:22: 'quyết định của nhóm và nội dung thay đổi' -> 'quyết định của chúng em và nội dung thay đổi'
+- 11-06-ai-evidence.vi.md:36: 'quyết định của nhóm và nội dung thay đổi' -> 'quyết định của chúng em và nội dung thay đổi'
+- 11-06-ai-evidence.vi.md:65: 'quyết định của nhóm và nội dung thay đổi' -> 'quyết định của chúng em và nội dung thay đổi'
+- 11-06-ai-evidence.vi.md:34: 'quyết định của nhóm đối với từng nhận xét' -> 'quyết định của chúng em đối với từng nhận xét'
+- 11-06-ai-evidence.vi.md:63: 'quyết định của nhóm đối với từng nhận xét' -> 'quyết định của chúng em đối với từng nhận xét'
+- 11-06-ai-evidence.vi.md:43: 'Nhóm nêu ngay trong yêu cầu' -> 'Chúng em nêu ngay trong yêu cầu'
+- 03-00-search-strategy.vi.md:21: 'trang Kaggle của nhóm tác giả [11]' -> 'trang Kaggle của các tác giả [11]'
+- 04-02-selection-matrix.vi.md:23: 'nhóm tác giả của OULAD' -> 'các tác giả của OULAD'
+- 06-00-structural-verification.vi.md:25: 'khuyến nghị của nhóm tác giả,' -> 'khuyến nghị của các tác giả,'
+
+## KEEP hits
+- 11-06-ai-evidence.md:11, :27 (x2), :56, :58 — "the team's ..." / "the team treats" inside the verbatim AI prompts (```text blocks); prompts are records of what was sent, kept word for word. The VI twin keeps the same prompts in English.
+- 11-01-search-log.vi.md:14, :22, :23 — 'các tác giả' = authors of the cited datasets (EN: authors' copy / authors' Kaggle listing).
+- 03-00-search-strategy.vi.md:21, 04-02-selection-matrix.vi.md:23, 06-00-structural-verification.vi.md:25 — authors of cited work, now 'các tác giả' (see step 4).
+- 00-0-title-page.vi.md:13, :17 — 'Thông tin nhóm', 'Tên nhóm | Nhóm 4 (N04)': team name on the title page.
+- Other lowercase 'nhóm' (02-01:3,12; 02-02:9,10,16; 03-00:5 'các nhóm nghiên cứu'; 07-01:11,13; 08-00:5; 11-01:22 'nhóm nghiên cứu'; 11-05:27; 11-06:49; 01-01:5) — student groups, comparison groups or research groups, not the report's team.
+- 'the brief' sentences ('as the brief asks', 'The brief allows') — the brief's own wording, unchanged.
+
+## Left for a human decision
+- Glossary row 'we / the team' lists 'nhóm tác giả' in its Replaces column, so the checker errors on every legitimate cited-authors use; three such phrases were reworded to 'các tác giả'. Consider removing 'nhóm tác giả' from Replaces or exempting it.
+- pack.toml possessive rule '\bcủa (?:nó|chúng|mình|họ)\b' fires on 'của chúng em' (11 warnings); a negative lookahead '(?! em)' after 'chúng' would remove the false positive.
+- 08-00-risks-ethics.md:11-12 'The project uses ... and it makes no attempt' was not a scan hit; switched to 'We use ... we make no attempt' to match the VI 'Chúng em chỉ dùng'.
+- 11-02-scoring-details.vi.md:5 — criteria definitions 'xét nhóm chúng em có được phép sử dụng / xét chúng em có xử lý được' (EN impersonal 'whether it may be used / can be handled'); could instead be phrased impersonally.
+- Table captions A.11/A.12 'team decision' -> 'our decision' (EN) and 'quyết định của chúng em' (VI).

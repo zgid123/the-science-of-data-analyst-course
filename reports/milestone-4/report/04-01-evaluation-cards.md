@@ -42,7 +42,7 @@ association.
 | Baseline | Unadjusted rate difference per sign, shown beside the adjusted estimate |
 | Error analysis | Binned residuals by run and activity level; correlation among the click-based signs; sensitivity to de-duplicated clicks, to the rule variant that also counts late CMAs, to the 138 flagged enrolments and to dropping runs with no task due |
 | Fairness / subgroup check | Associations by gender, disability and deprivation band, described, not adjusted away |
-| Success criterion | A sign is a consistent association when its adjusted risk difference is at least 5 percentage points with an interval excluding 0, the smallest gap the team treats as worth a tutor's attention, which equals the SMART Goal's target gain, and has the same direction in at least two-thirds of the modules where it is defined; otherwise weak or inconsistent. No association is stated as a cause [1] |
+| Success criterion | A sign is a consistent association when its adjusted risk difference is at least 5 percentage points with an interval excluding 0, the smallest gap we treat as worth a tutor's attention, which equals the SMART Goal's target gain, and has the same direction in at least two-thirds of the modules where it is defined; otherwise weak or inconsistent. No association is stated as a cause [1] |
 
 **AQ3.** Table 4.3 gives the card of the predictive question, the one with a single success gate.
 

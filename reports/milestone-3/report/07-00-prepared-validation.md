@@ -1,6 +1,6 @@
 # 7. Prepared Data Validation
 
-The brief asks the team to show that the prepared data serve the analysis better while staying correct and
+The brief asks us to show that the prepared data serve the analysis better while staying correct and
 traceable: row, entity and outcome counts compared before and after preparation, missingness, keys, joins, ranges and
 time order checked again, derived features checked against their formulas and by hand, no leakage against the
 prediction point, an updated data dictionary and a recorded version [1]. The validation script,

@@ -1,7 +1,7 @@
 ## 1.2. Scope of Milestone 2 and Change Log Summary
 
 **What this milestone does.** Building on the frozen baseline, this milestone answers the two questions that the brief
-sets: which data the four questions need, and whether the open dataset that the team collects actually provides them
+sets: which data the four questions need, and whether the open dataset that we collect actually provides them
 [1]. Its work follows the brief's steps. Section 2 turns each question into a data requirement. Section 3 describes
 the search for candidate open datasets, and Section 4 scores the candidates and selects one. Section 5 records how the
 selected dataset was collected so that anyone can collect it again, and Section 6 checks that the collected files can
@@ -12,7 +12,7 @@ later milestones, as the brief requires [1].
 
 **What the data changed.** The selected dataset, the Open University Learning Analytics Dataset (OULAD), describes
 distance-learning modules of a university in the United Kingdom (UK), not the courses of a Vietnamese program, so the
-questions cannot be answered on it exactly as the proposal framed them. The team recorded eight controlled revisions,
+questions cannot be answered on it exactly as the proposal framed them. We recorded eight controlled revisions,
 C01 to C08, each with the old and the new content, the data evidence behind it and its effect on the questions, KPIs
 and decisions. Four of them matter most. OULAD stands in for the university's courses in the analysis, while the
 university's own records remain the target for the pilot (C01). A semester becomes a module run, one offering of a

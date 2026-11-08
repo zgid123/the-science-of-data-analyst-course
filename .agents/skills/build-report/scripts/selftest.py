@@ -347,6 +347,30 @@ def main():
     md_fault("style", "US spelling (warning)", m, lambda t: t + "\nThe methods generalize poorly.\n", "US spelling", want="warn")
     md_fault("style", "quoted source keeps its spelling", m, lambda t: t + '\nThe authors wrote "methods that generalize poorly across datasets".\n', "US spelling", want="none")
 
+    print("\n== Voice faults (task voice = \"group\")")
+    cfg_text = CONFIG.read_text(encoding="utf-8")
+    CONFIG.write_text(cfg_text.replace('author = "Test Group"\n', 'author = "Test Group"\nvoice = "group"\n', 1), encoding="utf-8")
+    vi = m.replace(".md", ".vi.md")
+    saved = BASELINE.pop("style", None)                    # the reference exit code under this task voice
+    try:
+        md_fault("style", "English self-reference in the third person", m,
+                 lambda t: t + "\nThe team fixed the threshold before testing.\n", "voice 'The team'")
+        md_fault("style", "Vietnamese self-reference as 'nhóm tác giả'", vi,
+                 lambda t: t + "\nNhóm tác giả cố định ngưỡng trước khi kiểm thử.\n", "voice 'Nhóm tác giả'")
+        md_fault("style", "'nhóm tác giả' beside a citation names cited authors", vi,
+                 lambda t: t + "\nNhóm tác giả cố định ngưỡng trước khi kiểm thử [12].\n", "trước khi kiểm thử [12]", want="none")
+        md_fault("style", "first person passes", m, lambda t: t + "\nWe fixed the threshold before testing.\n",
+                 "We fixed the threshold", want="none")
+        md_fault("style", "a quoted prompt keeps its wording", m,
+                 lambda t: t + "\n> Do not choose the model for the team.\n", "for the team", want="none")
+    finally:
+        CONFIG.write_text(cfg_text, encoding="utf-8")
+        BASELINE.pop("style", None)
+        if saved is not None:
+            BASELINE["style"] = saved
+    md_fault("style", "no task voice: third person is not checked", m,
+             lambda t: t + "\nThe team fixed the threshold before testing.\n", "voice 'The team'", want="none")
+
     print("\n== Abbreviation faults")
     md_fault("abbreviations", "full form repeated", m, lambda t: t + "\nThe presentation attack detection field grows.\n", "REPEAT  PAD")
     md_fault("abbreviations", "official title holding a full form is not a repeat", m,

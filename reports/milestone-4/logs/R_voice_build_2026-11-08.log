@@ -1,0 +1,22 @@
+# 2026-11-08T10:24:29Z make all TASK=milestone-4 (first-person voice, task voice = group)
+PASS  milestone-4 format             Checked 68 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 structure          EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings; VI: 34 files, 33 headings, 2 figures, 29 tables:   (0 s)
+PASS  milestone-4 style              EN: 30 body files: 0 errors, 0 warnings; VI: 30 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations; VI: 17 abbreviations, 0 violations  (0 s)
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings; VI: 53 references, 53 cited, order first-citati  (0 s)
+PASS  milestone-4 names              Checked 68 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 translation vi     34 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-4 parity vi          Checked 34 pairs (vi): 0 errors, 24 warnings  (1 s)
+PASS  milestone-4 figures            milestone-4: 2 figures → reports/milestone-4/report/assets/figures, 0 layout findings  (1 s)
+PASS  milestone-4 build en           [en] 34 sections → reports/milestone-4/build/N04_Milestone4_EN.docx  (15 Word sections, 6 landscape, 3 images, 2 figure   (5 s)
+PASS  milestone-4 build vi           [vi] 34 sections → reports/milestone-4/build/N04_Milestone4_VI.docx  (21 Word sections, 9 landscape, 3 images, 2 figure   (7 s)
+PASS  milestone-4 docx en            EN reports/milestone-4/build/N04_Milestone4_EN.docx: 22 numbered headings, 2 figures, 29 tables, 3 images, 15 Word secti  (1 s)
+PASS  milestone-4 docx vi            VI reports/milestone-4/build/N04_Milestone4_VI.docx: 22 numbered headings, 2 figures, 29 tables, 3 images, 21 Word secti  (3 s)
+
+14/14 steps passed
+PASS  test build-report skill        162/162 checks passed  (81 s)
+PASS  test research-report skill     55/55 checks passed  (2 s)
+
+2/2 steps passed
+exit: 0

@@ -1,6 +1,6 @@
 ## Appendix IV – AI Critique, Team Decisions and Reviewer Prompt
 
-An isolated AI reviewer read the brief and Sections 1–7 with the prompt below and returned twelve critiques. Table A.13 gives each critique in short form, the team's decision and the reason or change; Section 8 discusses three of them.
+An isolated AI reviewer read the brief and Sections 1–7 with the prompt below and returned twelve critiques. Table A.13 gives each critique in short form, our decision and the reason or change; Section 8 discusses three of them.
 
 **Table A.13. AI critique, team decision and reason**
 

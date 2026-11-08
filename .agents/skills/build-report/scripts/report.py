@@ -124,6 +124,9 @@ def translate(name, task, packs, langs, add_extra=None):
         if (pack["_dir"] / tr.get("lessons", "lessons.md")).exists():
             print(f"      lessons   {shown((pack['_dir'] / tr.get('lessons', 'lessons.md')))} "
                   f"(what human reviewers changed; read before translating)")
+        voice_line = pack.get("style", {}).get("voice", {}).get(task.get("voice", ""), "")
+        if voice_line:
+            print(f"      voice     {voice_line} (task voice = {task['voice']}; put this line into every translator's and reviewer's prompt)")
         names = glossary.names_of(task, code)
         print(f"      glossary  common/* + {', '.join(names) or '(no domain or topic selected)'} "
               f"(see: glossary.py --lang {code} --task {name} show)")

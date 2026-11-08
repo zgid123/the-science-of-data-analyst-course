@@ -9,6 +9,9 @@ ERROR  in a part whose H1 contains a [style.conclusion] heading word: narration 
        "each part"), because a conclusion states what is now known about the subject.
 WARN   in the same part: a sentence whose subject is a part or section ("Part 1 fixed…"); cross-reference pointers such
        as "(Section 3.5.8)" or "the analysis in Part 3" stay fine.
+ERROR  voice: when the task sets `voice` ("group" or "solo") in tasks.toml, the writers name themselves in the first
+       person, so a pack [style.voice] `self` pattern ("the team", "nhóm tác giả") in a sentence without a `cited`
+       marker (a [n] citation, "et al", "cộng sự") is reported with the pack's voice line.
 Body sections only; headings, quotations ("…" of 8+ characters), code, math, front matter and the reference list
 are exempt, so quoted sources keep their own wording. Exit code 1 when any ERROR is found.
 """
@@ -44,6 +47,10 @@ def main():
                        and any(w.lower() in h.text.lower() for w in concl.get("headings", []))}
         concl_meta = [re.compile(rf"(?<!\w){re.escape(p)}(?!\w)", re.I) for p in concl.get("phrases", [])]
         concl_subject = re.compile(concl["subject"]) if concl.get("subject") else None
+        voice = style.get("voice", {})
+        voice_line = voice.get(task.get("voice", ""), "")
+        self_refs = [re.compile(x) for x in voice.get("self", [])] if voice_line else []
+        cited = re.compile(voice["cited"]) if self_refs and voice.get("cited") else None
         for p in rep.body_files():
             in_conclusion = p.name[:2] in concl_parts
             for n, line, code_line in text_lines(p.read_text(encoding="utf-8")):
@@ -53,6 +60,15 @@ def main():
                 for pat in meta:
                     for m in pat.finditer(text):
                         errors.append(f"{p.name}:{n}: meta commentary '{m.group(0)}': …{text[max(0, m.start() - 50):m.end() + 40].strip()}…")
+                units = [] if not self_refs or line.lstrip().startswith(">") else (   # a blockquote quotes its source
+                    [text] if text.lstrip().startswith("|") else re.split(r"(?<=[.!?;])\s+", text))  # a table row is one item
+                for sentence in units:
+                    if cited and cited.search(sentence):
+                        continue
+                    for pat in self_refs:
+                        for m in pat.finditer(sentence):
+                            errors.append(f"{p.name}:{n}: voice '{m.group(0)}' names the writers in the third person: "
+                                          f"{voice_line} …{sentence[max(0, m.start() - 40):m.end() + 40].strip()}…")
                 for pat, message in warn:
                     for m in pat.finditer(text):
                         warns.append(f"{p.name}:{n}: {message}: '{m.group(0)}'")

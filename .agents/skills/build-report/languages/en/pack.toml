@@ -34,6 +34,14 @@ meta_phrases = ["this report will", "the reader", "we will", "in this task", "as
 pattern = '\b(?!(?:size|sizes|sized|resize|resized|resizing|seize|seized|prize|prizes|capsize)\b)[a-z]+iz(?:e|es|ed|ing|ation|ations)\b'
 message = "US spelling; en-GB writes -ise / -isation"
 
+# Who speaks in a report (task setting `voice` in tasks.toml). check_style.py flags each `self` pattern in a sentence
+# that has no `cited` marker, so the writers name themselves in the first person and cited authors stay third person.
+[style.voice]
+group = '''The report is the team's own work: the team writes as "we", "our" and "us"; "the authors" names the authors of a cited work.'''
+solo = '''The report is the writer's own work: the writer writes as "I", "my" and "me"; "the authors" names the authors of a cited work.'''
+self = ['''\b[Tt]he team(?:'s)?(?!\w)''', '\b[Tt]he (?:authors|writers) of this (?:report|proposal|document)\b']
+cited = '\[\d|\bet al\b|\b(?:paper|article|study)\b|https?://|\bdoi:'
+
 # A conclusion states what is now known about the subject; it does not narrate the report (check_style.py)
 [style.conclusion]
 headings = ["Conclusion"]                  # a part whose H1 contains one of these words

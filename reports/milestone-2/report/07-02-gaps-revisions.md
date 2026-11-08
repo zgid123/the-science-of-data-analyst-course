@@ -3,7 +3,7 @@
 **The rules applied.** No question is fully covered, but each keeps its core, so the brief's gap rules lead to
 narrowing rather than dropping a question [1]. Partial coverage allows a question to be kept or narrowed with its
 limits stated, and a prescriptive question without evidence of actions stays a future decision requirement with a
-lower claim [1]. The team applied these rules to each question as follows.
+lower claim [1]. We applied these rules to each question as follows.
 
 **AQ1 and AQ2.** Both keep their outcome, module, module-run and timing parts, and lose the comparisons and the
 attendance sign that OULAD does not hold (Table 7.1; C04, C05).

@@ -11,7 +11,7 @@ The de-duplicated twins of the click features bound their effect: they would rem
 on record dates from 2025 [3]. The early-sign rule therefore uses TMA lateness, and a variant that adds CMA lateness
 is kept for comparison; with CMA lateness, the rule would flag 41.2% of enrolments at day 27 instead of 28.8%. CMA
 marks known by the cut-off exist for only 1.4% of training rows at day 13 and 5.2% at day 27, below the 10% coverage
-that the team requires before the CMA score enters the predictor set of Milestone 4, so the score is prepared but not
+that we require before the CMA score enters the predictor set of Milestone 4, so the score is prepared but not
 used.
 
 (3) **Uncertain records.** 93 Withdrawn enrolments have no withdrawal day, and 1,962 test enrolments belong to students

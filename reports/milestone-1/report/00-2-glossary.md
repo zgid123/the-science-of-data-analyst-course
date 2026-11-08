@@ -18,4 +18,4 @@
 | Recall | The share of students who later fail or withdraw who appear on a list (Section 4.1) |
 | Review point | A moment in the semester when a contact list reaches staff: week 3 and week 5 (Section 2.4) |
 | Support office | The student support office, which advises and supports students across the faculty (Section 2.1) |
-| Validation round | The return to each stakeholder with the team's understanding, to confirm, correct and add (Section 2.4) |
+| Validation round | The return to each stakeholder with our understanding, to confirm, correct and add (Section 2.4) |

@@ -28,7 +28,7 @@ mode, year of study, attendance, a status that separates leave and transfer from
 students to lecturer-advisors. A dataset without them can still answer the core of each question; the clauses that
 rely on them are then covered only in part (Partial coverage, Section 7), rather than the dataset being rejected.
 
-**Must-have gates.** From the required variables, the team derived six must-have gates, conditions that any candidate
+**Must-have gates.** From the required variables, we derived six must-have gates, conditions that any candidate
 dataset must meet whatever its score, numbered G1 to G5 with G2 in two parts:
 
 (1) G1 Outcome: a final result for each enrolment that separates pass, fail and withdrawal, with the date of each withdrawal, because the primary KPI and AQ3's target depend on it.

@@ -18,4 +18,4 @@
 | Recall – Tỷ lệ phát hiện | Trong số sinh viên về sau trượt hoặc rút học phần, tỷ lệ sinh viên có tên trong một danh sách (Mục 4.1) |
 | Review point – Đợt lập danh sách | Thời điểm trong học kỳ khi danh sách liên hệ đến tay cán bộ: tuần 3 và tuần 5 (Mục 2.4) |
 | Support office – Phòng hỗ trợ sinh viên | Đơn vị tư vấn và hỗ trợ sinh viên trên phạm vi toàn khoa (Mục 2.1) |
-| Validation round – Vòng xác nhận | Lần quay lại với từng bên liên quan để trình bày cách hiểu của nhóm và đề nghị bên đó xác nhận, sửa và bổ sung (Mục 2.4) |
+| Validation round – Vòng xác nhận | Lần quay lại với từng bên liên quan để trình bày cách hiểu của nhóm chúng em và đề nghị bên đó xác nhận, sửa và bổ sung (Mục 2.4) |

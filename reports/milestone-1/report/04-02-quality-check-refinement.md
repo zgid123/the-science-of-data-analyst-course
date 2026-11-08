@@ -6,7 +6,7 @@ it names its metric or target and the groups it compares; scoped when it fixes i
 data-oriented when it names the data it needs; and answerable when those data can settle it. Table 4.1 records, for
 each question, how it meets each criterion in its final form, and its last row records what changed during
 refinement. The refinements came from the validation round (codes beginning with V) and from an AI reviewer's
-critiques, R1 to R12, which Appendix IV lists with the team's decision on each.
+critiques, R1 to R12, which Appendix IV lists with our decision on each.
 
 **Table 4.1. Five-criteria check of AQ1 to AQ4**
 

@@ -1,18 +1,18 @@
 # 3. Open Dataset Search Strategy
 
 **Where the search started.** The search started from the requirements of Section 2, not from datasets already known
-to the team, so that the questions decided what was looked for [1]. Its keywords came from the requirement matrix:
+to us, so that the questions decided what was looked for [1]. Its keywords came from the requirement matrix:
 student completion, dropout and withdrawal; interaction with a learning management system or
 virtual learning environment (VLE), the online platform on which students open materials and submit work; assessment submission;
 clickstream, the record of each click a student makes on such a platform; higher education; learning analytics; and
 massive open online course (MOOC) dropout.
 
-**Where the team searched.** The search covered the sources the brief suggests [1]; the
+**Where we searched.** The search covered the sources the brief suggests [1]; the
 University of California, Irvine (UCI) Machine Learning Repository; data repositories that assign a digital object identifier (DOI), a permanent
 reference to a dataset, such as figshare, Harvard Dataverse and Zenodo; the pages of the research groups that publish
 datasets; and general web search.
 
-**Three rules for every hit.** Three rules applied to every dataset found, as the brief asks [1]. First, the team read
+**Three rules for every hit.** Three rules applied to every dataset found, as the brief asks [1]. First, we read
 the documentation and the license before judging the data. Second, a dataset found on Kaggle, a blog or another
 copy was traced back to the provider that published it. Third, re-uploads without a known origin were rejected.
 

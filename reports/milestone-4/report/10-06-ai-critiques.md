@@ -1,7 +1,7 @@
 ## Appendix VI – Decisions on the AI Critiques and Prompts
 
-The AI Decision Log of Section 6 (Table 6.1) records the significant AI contributions; this appendix gives the
-team's decision on each critique of the two reviewers. Table A.10 covers the 12 critiques of the model-selection critic
+The AI Decision Log of Section 6 (Table 6.1) records the significant AI contributions; this appendix gives
+our decision on each critique of the two reviewers. Table A.10 covers the 12 critiques of the model-selection critic
 and Table A.11 the 12 critiques of the evaluation reviewer, each with the evidence used to check it and its effect on
 the proposal.
 
@@ -41,7 +41,7 @@ Table A.11 records the decision on each of the evaluation reviewer's 12 critique
 | 11 | Error-analysis gaps | Accepted | Reachable non-completers, active students, list stability, history slices, CCC |
 | 12 | Missing risks and mismatched controls | Accepted | Sixteen risks in Table A.9; controls of misreading coefficients as causes (R9), claiming that contact works (R10) and automation bias (R13) matched to their risks |
 
-Each reviewer was a separate generative AI session that could read only the brief and the appendices named in its prompt, and team members checked every critique against the design facts before deciding. The prompts are given in English in abridged form, with documents named by their place in this report. The model-selection critic received this instruction:
+Each reviewer was a separate generative AI session that could read only the brief and the appendices named in its prompt, and we checked every critique against the design facts before deciding. The prompts are given in English in abridged form, with documents named by their place in this report. The model-selection critic received this instruction:
 
 > You act as the "Model selection" reviewer role that the MTH045 Milestone 4 brief allows for generative AI (brief
 > section 11). Read only the brief, the AQ Modeling Briefs (Section 2.1), the candidate comparison (Appendix I) and the

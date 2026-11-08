@@ -1,6 +1,6 @@
 ## Phụ lục I – Nhật ký tìm kiếm bộ dữ liệu
 
-Bảng A.1 ghi lại mọi truy vấn và mọi kết quả mà nhóm phân tích dữ liệu đã xem xét, kể cả các kết quả bị loại, theo mẫu ở mục 7.1 của đề bài. Từ khóa tìm kiếm được lấy từ các yêu cầu dữ liệu ở Mục 2.
+Bảng A.1 ghi lại mọi truy vấn và mọi kết quả mà nhóm chúng em đã xem xét, kể cả các kết quả bị loại, theo mẫu ở mục 7.1 của đề bài. Từ khóa tìm kiếm được lấy từ các yêu cầu dữ liệu ở Mục 2.
 
 **Bảng A.1. Nhật ký tìm kiếm bộ dữ liệu**
 
@@ -11,7 +11,7 @@ Bảng A.1 ghi lại mọi truy vấn và mọi kết quả mà nhóm phân tíc
 | 2026-11-06 | Cùng lần tìm kiếm | Các bản sao của OULAD trên PMC, CORE và trang của tác giả; địa chỉ cũ analyse.kmi.open.ac.uk | PMC5704676; core.ac.uk/download/153444254.pdf | Bản sao của bài mô tả dữ liệu hoặc địa chỉ không còn dùng | Bị loại: trùng với bài mô tả dữ liệu / địa chỉ đã được chuyển hướng |
 | 2026-11-06 | Đề bài, mục 13; tìm trên web "UCI … Predict Students' Dropout and Academic Success dataset 697" | UCI 697 Predict Students' Dropout and Academic Success | doi:10.24432/C5MC89 | Thôi học ở bậc đại học; giấy phép CC BY 4.0 | Giữ lại: ứng viên B; không đạt G1, G2a, G2b (nhãn ở cấp chương trình đào tạo, số liệu gộp theo học kỳ) |
 | 2026-11-06 | Tìm theo tên bài báo "Predicting Student Dropout and Academic Success" | Bài mô tả dữ liệu của UCI 697 | doi:10.3390/data7110146 | Khoảng thời gian của dữ liệu, định nghĩa biến cần dự đoán và cách ẩn danh của ứng viên B | Giữ lại: tài liệu của ứng viên B |
-| 2026-11-06 | Cùng kết quả tìm kiếm | Các bản sao của UCI 697 trên Zenodo, Mendeley Data (2026) và Kaggle (2026) | doi:10.5281/zenodo.5777339; doi:10.17632/k7hrxk9xjg; doi:10.34740/kaggle/dsv/15256262 | Các bản sao khác của ứng viên B | Bị loại: bản trên Zenodo do chính các tác giả đăng và có cùng dữ liệu (nhóm dùng trang UCI); các bản đăng lại trên Mendeley và Kaggle không rõ nguồn gốc dữ liệu |
+| 2026-11-06 | Cùng kết quả tìm kiếm | Các bản sao của UCI 697 trên Zenodo, Mendeley Data (2026) và Kaggle (2026) | doi:10.5281/zenodo.5777339; doi:10.17632/k7hrxk9xjg; doi:10.34740/kaggle/dsv/15256262 | Các bản sao khác của ứng viên B | Bị loại: bản trên Zenodo do chính các tác giả đăng và có cùng dữ liệu (chúng em dùng trang UCI); các bản đăng lại trên Mendeley và Kaggle không rõ nguồn gốc dữ liệu |
 | 2026-11-06 | Đề bài, mục 13 | UCI 320 Student Performance | doi:10.24432/C5TG7T | Nguồn đề bài gợi ý; có điểm số và đặc điểm cá nhân của học sinh | Giữ lại: ứng viên C; không đạt G1, G2a, G2b, G3 (bậc trung học, chỉ có điểm số) |
 | 2026-11-06 | Đề bài, mục 13 | UCI 856 Higher Education Students Performance Evaluation | doi:10.24432/C51G82 | Nguồn đề bài gợi ý; kết quả học tập ở bậc đại học | Giữ lại: ứng viên D; không đạt G1, G2a, G2b, G3 (khảo sát 145 sinh viên, năm 2019) |
 | 2026-11-06 | Tìm trên web "KDD Cup 2015 XuetangX MOOC dropout prediction dataset official download license" | Dữ liệu bỏ học MOOC của XuetangX và dữ liệu KDD Cup 2015 (MOOCData, Đại học Thanh Hoa) | http://moocdata.cn/data/user-activity | Bỏ học trong MOOC, có hoạt động kèm dấu thời gian | Giữ lại: ứng viên E; đạt G2b; không đạt G1, G2a, G4 (không nêu giấy phép) |
