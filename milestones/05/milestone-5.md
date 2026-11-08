@@ -203,20 +203,20 @@ Generative AI được phép sử dụng như một writing/review partner, như
 
 ## 9. Checklist trước khi nộp
 
-- Final Report sử dụng Final AQ, không dùng phiên bản đã bị sửa/drop mà không giải thích.
-- Mỗi Final AQ có thể truy vết đến Business/SMART Goal và decision cần hỗ trợ.
-- Mỗi AQ có dữ liệu/biến thực tế tương ứng hoặc được đánh dấu gap/partial/deferred.
-- Dataset source, version, provenance và license đã được ghi rõ.
-- Data preparation có rationale, version và kiểm soát leakage phù hợp.
-- M4 Level 1 được hoàn thành cho từng AQ có thể phân tích: task, baseline, candidate methods, rationale, evaluation.
-- Nếu không chạy thử nghiệm, report không chứa metric/kết quả giả định như kết quả thật.
-- Nếu có chạy thử nghiệm, kết quả có validation, baseline và khả năng tái lập.
-- Descriptive/Diagnostic/Predictive/Prescriptive được diễn giải đúng mức bằng chứng.
-- Limitations, deferred questions và future data needs được trình bày rõ.
-- Traceability Matrix hoàn chỉnh và nhất quán với các section.
-- Generative AI usage được khai báo; không có fabricated citation/data/result.
-- Tất cả bảng, hình, dataset và nguồn tham khảo có tên/citation phù hợp.
-- Abstract và Conclusion phản ánh đúng mức project thực sự đạt được.
+- [ ] Final Report sử dụng Final AQ, không dùng phiên bản đã bị sửa/drop mà không giải thích.
+- [ ] Mỗi Final AQ có thể truy vết đến Business/SMART Goal và decision cần hỗ trợ.
+- [ ] Mỗi AQ có dữ liệu/biến thực tế tương ứng hoặc được đánh dấu gap/partial/deferred.
+- [ ] Dataset source, version, provenance và license đã được ghi rõ.
+- [ ] Data preparation có rationale, version và kiểm soát leakage phù hợp.
+- [ ] M4 Level 1 được hoàn thành cho từng AQ có thể phân tích: task, baseline, candidate methods, rationale, evaluation.
+- [ ] Nếu không chạy thử nghiệm, report không chứa metric/kết quả giả định như kết quả thật.
+- [ ] Nếu có chạy thử nghiệm, kết quả có validation, baseline và khả năng tái lập.
+- [ ] Descriptive/Diagnostic/Predictive/Prescriptive được diễn giải đúng mức bằng chứng.
+- [ ] Limitations, deferred questions và future data needs được trình bày rõ.
+- [ ] Traceability Matrix hoàn chỉnh và nhất quán với các section.
+- [ ] Generative AI usage được khai báo; không có fabricated citation/data/result.
+- [ ] Tất cả bảng, hình, dataset và nguồn tham khảo có tên/citation phù hợp.
+- [ ] Abstract và Conclusion phản ánh đúng mức project thực sự đạt được.
 
 > **Điều kiện hoàn thành Milestone 5**
 >

@@ -10,15 +10,11 @@ a page-by-page visual review. The team's own deliverables are in `final-project/
 | 2 | `02/milestone-2.pdf` | `02/milestone-2.md`, `02/milestone-2_assets/` | PASS |
 | 3 | `03/milestone-3.pdf` | `03/milestone-3.md`, `03/milestone-3_assets/` | PASS |
 | 4 | `04/milestone-4.pdf` | `04/milestone-4.md`, `04/milestone-4_assets/` | PASS |
-| 5 | `05/milestone-5.pdf` | `05/milestone-5.md` | FAIL on one verifier exception only (below); all 9 pages reviewed |
+| 5 | `05/milestone-5.pdf` | `05/milestone-5.md` | PASS; all 9 pages reviewed |
 
-**Milestone 5 exception.** `text` and `tables` report 17 missing `□` in the checkbox cells of the Traceability
-Matrix (page 4, Final Status) and the AQ Revision Log (page 5, Action). The Markdown holds every `□`: the cells print
-their options on separate lines, written as `<br>`, and the verifier reads a `□` that starts a line as a list bullet
-and drops it. The same copy with those `<br>` written as spaces passes all eleven checks (probe in the log).
-
-**Milestone 5 conventions.** The checklist of section 9 starts each line with `□` (U+25A1), which `pdf2md` treats as
-a bullet, so it reads `- item`; the briefs of Milestones 1–4 use `☐` (U+2610) and read `- [ ] item`.
+**Checkboxes.** Milestone 5 marks its checklist and table options with `□` (U+25A1), Milestones 1–4 with `☐`
+(U+2610). In every copy a checklist line is a native Markdown task item (`- [ ] …`); a box inside a table cell stays
+as the PDF's own glyph, because Markdown has no task items in table cells.
 
 Re-check a copy:
 

@@ -465,6 +465,7 @@ class DocLayout:
     hyphen_breaks: list[tuple[str, str]]  # ("event", "level") for "event-" + newline + "level"
     code: dict[int, list["CodeBlock"]] = field(default_factory=dict)
     para_starts: set[str] = field(default_factory=set)  # squeezed openings of PDF paragraphs
+    checkbox_starts: dict[str, str] = field(default_factory=dict)  # squeezed text after a line-start checkbox -> "[ ]"/"[x]"
     running_kept: tuple[list[str], list[str]] = ([], [])  # constant header / footer lines, kept once
     rules: dict[int, list[pymupdf.Rect]] = field(default_factory=dict)  # horizontal rules -> "---"
 
@@ -505,6 +506,7 @@ def analyse(doc: pymupdf.Document) -> DocLayout:
     lay = DocLayout(running, grids, continues, repeated, space_wraps, hyphen_breaks(doc, running, space_wraps))
     lay.code = {pno: code_blocks(page, running.get(pno, []) + [g.bbox for g in grids[pno]]) for pno, page in enumerate(doc)}
     lay.para_starts = paragraph_starts(doc, lay)
+    lay.checkbox_starts = checkbox_starts(doc, lay)
     lay.running_kept = constant_running_lines(doc, running)
     lay.rules = {pno: horizontal_rules(page, running.get(pno, []), grids[pno]) for pno, page in enumerate(doc)}
     return lay
@@ -641,6 +643,33 @@ def paragraph_starts(doc: pymupdf.Document, lay: "DocLayout") -> set[str]:
                         keys.add(k)
                 after_glyph = False
                 prev = (x0, y0)
+    return keys
+
+
+# Empty and checked box glyphs. □ ▢ (U+25A1/2, "white square") serve as empty checkboxes in many Word templates;
+# pymupdf4llm reads the whole U+25A0-25FF block as bullets, so their lines are found here and marked by the converter.
+CHECKBOX_EMPTY = "☐□▢"
+CHECKBOX_DONE = "☑"  # ☒ is mapped to ☑ by norm_text
+
+
+def checkbox_starts(doc: pymupdf.Document, lay: "DocLayout") -> dict[str, str]:
+    """Squeezed text of every line outside tables, code and running lines that starts with a checkbox glyph.
+
+    The glyph may stand alone on its line with the text on the next one. Values are the task-list marks.
+    """
+    keys: dict[str, str] = {}
+    for pno, page in enumerate(doc):
+        skip = lay.running.get(pno, []) + [g.bbox for g in lay.grids.get(pno, [])] + [c.rect for c in lay.code.get(pno, [])]
+        for b in page.get_text("dict")["blocks"]:
+            lines = [ln for ln in b.get("lines", []) if not in_any(pymupdf.Rect(ln["bbox"]), skip)]
+            texts = [norm_text("".join(s["text"] for s in ln["spans"])).strip() for ln in lines]
+            for i, text in enumerate(texts):
+                if not text or text[0] not in CHECKBOX_EMPTY + CHECKBOX_DONE:
+                    continue
+                rest = text[1:].strip() or (texts[i + 1] if i + 1 < len(texts) else "")
+                k = squeeze(rest)[:KEY_LEN]
+                if k:
+                    keys[k] = "[ ]" if text[0] in CHECKBOX_EMPTY else "[x]"
     return keys
 
 

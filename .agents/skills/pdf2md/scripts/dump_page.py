@@ -134,6 +134,7 @@ def _paragraphs(lines, space_wraps):
     y = lines[0]["bbox"][1]
     out = []
     for i, md in enumerate(L.region_paragraphs(lines, space_wraps)):
+        md = re.sub(r"^\s*[□▢]\s+", "- [ ] ", md)  # white-square checkbox, not a bullet
         if L.LEADING_BULLET_RE.match(md):
             body = L.LEADING_BULLET_RE.sub("", md, count=1)
             body = re.sub(r"^(\d{1,9})([.)])(?=\s)", r"\1\\\2", body)  # "1)" stays literal text

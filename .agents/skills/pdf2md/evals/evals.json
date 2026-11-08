@@ -83,6 +83,21 @@
         "The follow-up list is nested: 3 sub-items indented under their 2 parent items",
         "The report names the takeover (which regions were rebuilt, using dump_page.py) and no wording was changed"
       ]
+    },
+    {
+      "id": 6,
+      "name": "white-square-checklist",
+      "prompt": "convert milestones/05/milestone-5.pdf to markdown as-is; the checklist must be a real Markdown checklist",
+      "expected_output": "milestone-5.md whose section 9 checklist ('□' U+25A1 at the start of each line, which pymupdf4llm reads as a bullet) is a list of native task items, while the '□' options inside table cells stay literal",
+      "files": [
+        "milestones/05/milestone-5.pdf"
+      ],
+      "assertions": [
+        "verify.py exits 0 (text, tables, rendered and structure included)",
+        "'## 9. Checklist trước khi nộp' is followed by 14 lines starting '- [ ] ', the first '- [ ] Final Report sử dụng Final AQ'",
+        "Table cells keep the literal glyph: the Traceability Matrix Final Status cell reads '□ Answered □ Partial<br>□ Deferred □ Dropped' and the AQ Revision Log Action cell '□ Keep<br>□ Modify<br>□ Defer<br>□ Drop'",
+        "No line outside a table starts with '□', '▢' or '☐'"
+      ]
     }
   ]
 }

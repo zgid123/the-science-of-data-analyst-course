@@ -57,14 +57,21 @@ LEADING_BULLET = L.LEADING_BULLET_RE
 # ---------------------------------------------------------------- PDF side
 
 
+BOX_EQUIV = str.maketrans({"□": "☐", "▢": "☐"})  # empty checkbox glyphs compare as one; "- [ ]" reads as ☐
+
+
+def vnorm(s: str) -> str:
+    return L.norm_text(s).translate(BOX_EQUIV)
+
+
 def line_text(ln: dict) -> str:
-    return L.norm_text("".join(s["text"] for s in ln["spans"]))
+    return vnorm("".join(s["text"] for s in ln["spans"]))
 
 
 def cell_words(page: pymupdf.Page, rect: pymupdf.Rect) -> str:
     """Raw PDF words whose centre lies in the cell, in reading order."""
     words = [w for w in page.get_text("words", sort=True) if L.in_any(pymupdf.Rect(w[:4]), [rect])]
-    return L.norm_text(" ".join(w[4] for w in words))
+    return vnorm(" ".join(w[4] for w in words))
 
 
 def pdf_stream(doc: pymupdf.Document, layout: L.DocLayout) -> list[tuple[int, str]]:
@@ -107,7 +114,7 @@ def pdf_stream(doc: pymupdf.Document, layout: L.DocLayout) -> list[tuple[int, st
 
 
 def md_plain(md: str) -> str:
-    md = L.norm_text(md)
+    md = vnorm(md)
     md = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", md)  # images
     md = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", md)  # links -> text
     md = re.sub(r"<!--.*?-->", "", md, flags=re.S)
@@ -329,7 +336,7 @@ def structure_check(md: str) -> list[str]:
             in_list = True
         elif line.strip() and not line.startswith(" "):
             in_list = False
-        if re.match(r"^\s*([-*+]\s+)?[☐☑☒]\s", line):
+        if re.match(r"^\s*([-*+]\s+)?[☐☑☒□▢]\s", line):
             problems.append(f"line {n}: checkbox glyph instead of a Markdown task item (- [ ] / - [x]): {line.strip()[:50]!r}")
         prev_blank = not line.strip()
     if in_fence:
@@ -411,7 +418,7 @@ def rendered(md: str) -> dict:
                 elif ch.type in ("softbreak", "hardbreak"):
                     text.append("\n")
             text.append("\n")
-    plain = re.sub(r"(?m)^\[ \] ", "☐ ", "".join(text))
+    plain = re.sub(r"(?m)^\[ \] ", "☐ ", "".join(text).translate(BOX_EQUIV))
     plain = re.sub(r"(?m)^\[[xX]\] ", "☑ ", plain)
     return {"text": plain, "bold": "".join(bold), "italic": "".join(ital), "rules": rules}
 

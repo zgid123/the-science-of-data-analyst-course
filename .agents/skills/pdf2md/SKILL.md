@@ -142,7 +142,7 @@ These are deliberate; mention them when the user might expect otherwise.
 - **Tables split across a page break become one table**; the repeated header row is dropped. **Empty rows are kept** — fill-in templates are content.
 - **Single-cell bordered boxes become blockquotes** (`> **Title**` / `>` / `> body`).
 - **Monospace blocks become ``` fences** with indentation rebuilt from the page.
-- **Lists are tight and flat** (`- item`); checkbox lines (☐ / ☑ ☒) become native Markdown task items `- [ ] item` / `- [x] item` (the verifier maps them back to the glyph for the text check and fails on leftover glyph lists).
+- **Lists are tight and flat** (`- item`); checkbox lines (☐ □ ▢ / ☑ ☒) become native Markdown task items `- [ ] item` / `- [x] item` (the verifier maps them back to the glyph for the text check and fails on leftover glyph lists). The white squares □ ▢ count as empty checkboxes only at the start of a line, where pymupdf4llm reads them as bullets; inside a table cell they stay literal, and the verifier compares □ ▢ ☐ as one glyph.
 - **Soft line wraps are joined** using the PDF's own paragraph starts; words broken mid-line in narrow cells are rejoined; real compound hyphens (`event-level`) are kept.
 - **Horizontal rules** (free-standing lines at least half the page wide, not table borders or underlines) become `---`, placed after the text line above them.
 - **Literal markers are escaped**: text that starts with something Markdown would parse as syntax (`1)`, `2.`, `-`, `#`, `>` at the start of a list item) is written as `1\)` etc., so it renders exactly as printed.

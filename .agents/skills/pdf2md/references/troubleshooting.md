@@ -79,7 +79,7 @@ Footnote markers may come out as plain digits glued to words (`word1`). Use
 kept as `[text](url)`; underline used only to style a link is dropped.
 
 ## Forms and checkboxes
-Checkbox glyphs at the start of a line become Markdown task items (`- [ ]`, `- [x]`); a ✓ inside running text stays as text. Fillable form fields' *values*
+Checkbox glyphs at the start of a line become Markdown task items (`- [ ]`, `- [x]`), including the white squares □ ▢ that many Word templates use as empty boxes (pymupdf4llm reads them as bullets; `pdf_layout.checkbox_starts` finds those lines in the PDF). A ✓ inside running text, and a box inside a table cell, stay as text. Fillable form fields' *values*
 are not page text; if the user needs them, read them with PyMuPDF
 `page.widgets()` and add them explicitly, telling the user they came from form
 fields.

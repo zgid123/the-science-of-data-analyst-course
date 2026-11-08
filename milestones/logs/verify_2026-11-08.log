@@ -136,3 +136,90 @@ p2, p3, p6, p7, p8, p9: match; p7 'Quy tắc diễn giải' box kept as the full
 p4: italic caption split at its wrap ('AQ_ _Revision Log.') joined into one span; Final Status cells hold two lines (PDF breaks after 'Partial' although 'Partial □' fits), kept as <br>
 p5: Action cells print one option per line, kept as <br>
 p8-9: checklist lines start with □ (U+25A1), which the skill reads as a bullet glyph; kept as '- item' (M1-M4 use ☐ U+2610 and became '- [ ]')
+
+## 2026-11-08T16:06:57Z pdf2md patched: □ ▢ at a line start are empty checkboxes (converter marks them '- [ ]'; verifier compares □ ▢ ☐ as one glyph). milestone-5.md reconverted; the two review fixes (p1 subtitle, p4 caption) reapplied; only the 14 checklist lines differ from the previous copy
+## 2026-11-08T16:06:57Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/01/milestone-1.pdf milestones/01/milestone-1.md
+milestone-1.pdf -> milestone-1.md  (10 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 16392 chars)
+[PASS] tables: pdf 19 / md 19 (header, shape and every cell)
+[PASS] code blocks: 0 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 0 (pages []) / md 0
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 – The Science of Data Analytics | Milestone 1', 'Requirement Analysis & Analytics Project Proposal', 'Trang 1']
+  constant running lines kept once: ['MTH045 – The Science of Data Analytics | Milestone 1', 'Requirement Analysis & Analytics Project Proposal']
+RESULT: PASS
+exit 0
+## 2026-11-08T16:07:13Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/02/milestone-2.pdf milestones/02/milestone-2.md
+milestone-2.pdf -> milestone-2.md  (11 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 18522 chars)
+[PASS] tables: pdf 21 / md 21 (header, shape and every cell)
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 1 (pages [2]) / md 1
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 – The Science of Data Analytics | Milestone 2', 'From Requirements to Collection | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 – The Science of Data Analytics | Milestone 2', 'From Requirements to Collection | Education Analytics Project']
+RESULT: PASS
+exit 0
+## 2026-11-08T16:07:31Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/03/milestone-3.pdf milestones/03/milestone-3.md
+milestone-3.pdf -> milestone-3.md  (13 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 21940 chars)
+[PASS] tables: pdf 24 / md 24 (header, shape and every cell)
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 1 (pages [2]) / md 1
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 – The Science of Data Analytics | Milestone 3', 'From Understanding to Preparation | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 – The Science of Data Analytics | Milestone 3', 'From Understanding to Preparation | Education Analytics Project']
+RESULT: PASS
+exit 0
+## 2026-11-08T16:07:53Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/04/milestone-4.pdf milestones/04/milestone-4.md
+milestone-4.pdf -> milestone-4.md  (9 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 17917 chars)
+[PASS] tables: pdf 18 / md 18 (header, shape and every cell)
+[PASS] code blocks: 0 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 1 (pages [2]) / md 1
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 - The Science of Data Analytics | Milestone 4', 'From Modeling to Evaluation | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 - The Science of Data Analytics | Milestone 4', 'From Modeling to Evaluation | Education Analytics Project']
+RESULT: PASS
+exit 0
+## 2026-11-08T16:08:15Z $ uv run .claude/skills/pdf2md/scripts/verify.py milestones/05/milestone-5.pdf milestones/05/milestone-5.md
+milestone-5.pdf -> milestone-5.md  (9 pages)
+[PASS] text: similarity 100.0000%, missing 0 chars, extra 0 chars, reordered hunks 0 (of 14163 chars)
+[PASS] tables: pdf 13 / md 13 (header, shape and every cell)
+[PASS] code blocks: 1 in pdf
+[PASS] headings
+[PASS] links
+[PASS] images: pdf 0 (pages []) / md 0
+[PASS] structure
+[PASS] rendered
+[PASS] formatting
+[PASS] rules
+[PASS] artefacts: none
+  removed running lines (examples): ['MTH045 - The Science of Data Analytics | Milestone 5', 'Final Integration & Project Report | Education Analytics Project', 'Trang 1']
+  constant running lines kept once: ['MTH045 - The Science of Data Analytics | Milestone 5', 'Final Integration & Project Report | Education Analytics Project']
+RESULT: PASS
+exit 0

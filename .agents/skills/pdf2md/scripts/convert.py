@@ -227,8 +227,8 @@ def fix_link_labels(md: str, links: list[tuple[pymupdf.Rect, str, str]]) -> str:
 # ------------------------------------------------------------ normalisation
 
 LIST_RE = re.compile(r"^(\s*)([-*+]|\d{1,3}[.)])\s+(.*)$")
-CHECKBOX_RE = re.compile(r"^\s*(?:[-*+]\s+)?([☐☑☒])\s*")
-CHECKBOX_MD = {"☐": "[ ]", "☑": "[x]", "☒": "[x]"}  # GitHub task-list items
+CHECKBOX_RE = re.compile(r"^\s*(?:[-*+]\s+)?([☐☑☒□▢])\s*")
+CHECKBOX_MD = {"☐": "[ ]", "□": "[ ]", "▢": "[ ]", "☑": "[x]", "☒": "[x]"}  # GitHub task-list items
 STRUCT_RE = re.compile(r"^\s*(#{1,6} |>|\||!\[|```)")
 SPLIT_HEADING_END = ("→", "-", "–", "—", ",", ":", "&", "/", "và", "and", "of", "the")
 
@@ -337,6 +337,22 @@ def normalise(md: str, starts: set[str]) -> str:
     return md.strip() + "\n"
 
 
+def mark_checkboxes(md: str, keys: dict[str, str]) -> str:
+    """Turn a list item into a task item when its PDF line started with a checkbox glyph that pymupdf4llm read as a
+    bullet (□ ▢); fenced code is never touched."""
+    out, in_fence = [], False
+    for line in md.split("\n"):
+        if line.lstrip().startswith("```"):
+            in_fence = not in_fence
+        m = None if in_fence else re.match(r"^(\s*)[-*+]\s+(?!\[[ xX]\]\s)(.+)$", line)
+        if m and keys:
+            mark = keys.get(L.squeeze(m.group(2))[:L.KEY_LEN])
+            if mark:
+                line = f"{m.group(1)}- {mark} {m.group(2)}"
+        out.append(line)
+    return "\n".join(out)
+
+
 def tidy_lists(lines: list[str]) -> list[str]:
     """Consistent list markup: no stray indentation, tight items."""
     out: list[str] = []
@@ -412,6 +428,7 @@ def convert(pdf: Path, out: Path, assets: Path) -> dict:
     md = restore_hyphens(md, layout.hyphen_breaks)
     md = fix_link_labels(md, [lk for page in doc for lk in L.page_links(page)])
     md = normalise(md, layout.para_starts)
+    md = mark_checkboxes(md, layout.checkbox_starts)
     md = re.sub(r"\n{3,}", "\n\n", insert_rules(md, rule_anchors(doc, layout)))
     heads, foots = layout.running_kept
     if heads:
