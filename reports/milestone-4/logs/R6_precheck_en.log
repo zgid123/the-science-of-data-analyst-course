@@ -1,0 +1,105 @@
+PASS  milestone-4 format             Checked 68 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+FAIL  milestone-4 structure          EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings; VI: 34 files, 33 headings, 2 figures, 28 tables:   (0 s)
+        ERROR 10-05-risk-register.vi.md:1: appendix heading 'Phụ lục VI – Danh mục rủi ro' should be Phụ lục V
+        ERROR 10-06-ai-critiques.vi.md:1: appendix heading 'Phụ lục VII – Nhật ký quyết định về AI v' should be Phụ lục VI
+        ERROR 10-07-traceability-full.vi.md:1: appendix heading 'Phụ lục VIII – Truy vết đầy đủ và nhật k' should be Phụ lục VII
+        ERROR 10-01-candidate-comparison.vi.md:7: Bảng A.5 breaks the sequence (expected A.1)
+        ERROR 10-01-candidate-comparison.vi.md:22: Bảng A.6 breaks the sequence (expected A.2)
+        ERROR 10-01-candidate-comparison.vi.md:40: Bảng A.7 breaks the sequence (expected A.3)
+        ERROR 10-02-metric-definitions.vi.md:5: Bảng A.8 breaks the sequence (expected A.4)
+        ERROR 10-02-metric-definitions.vi.md:17: Bảng A.9 breaks the sequence (expected A.5)
+        ERROR 10-02-metric-definitions.vi.md:29: Bảng A.10 breaks the sequence (expected A.6)
+        ERROR 10-02-metric-definitions.vi.md:41: Bảng A.11 breaks the sequence (expected A.7)
+        ERROR 10-02-metric-definitions.vi.md:56: Bảng A.12 breaks the sequence (expected A.8)
+        ERROR 10-03-validation-protocol.vi.md:5: Bảng A.13 breaks the sequence (expected A.9)
+        ERROR 10-03-validation-protocol.vi.md:24: Bảng A.14 breaks the sequence (expected A.10)
+        ERROR 10-04-fairness-spec.vi.md:5: Bảng A.15 breaks the sequence (expected A.11)
+        ERROR 10-04-fairness-spec.vi.md:17: Bảng A.16 breaks the sequence (expected A.12)
+        ERROR 10-05-risk-register.vi.md:8: Bảng A.17 breaks the sequence (expected A.13)
+        ERROR 10-06-ai-critiques.vi.md:5: Bảng A.18 breaks the sequence (expected A.14)
+        ERROR 10-06-ai-critiques.vi.md:17: Bảng A.19 breaks the sequence (expected A.15)
+        ERROR 10-06-ai-critiques.vi.md:36: Bảng A.20 breaks the sequence (expected A.16)
+        ERROR 10-07-traceability-full.vi.md:5: Bảng A.21 breaks the sequence (expected A.17)
+        ERROR 10-07-traceability-full.vi.md:17: Bảng A.22 breaks the sequence (expected A.18)
+        ERROR 02-01-modeling-briefs.vi.md:3: 'Bảng A.1' refers to nothing in the report
+        ERROR 02-01-modeling-briefs.vi.md:3: 'Bảng A.4' refers to nothing in the report
+        ERROR 02-01-modeling-briefs.vi.md:3: 'Phụ lục I' refers to nothing in the report
+        ERROR 03-03-predictive.vi.md:5: 'Phụ lục I' refers to nothing in the report
+        ERROR 04-02-validation-strategy.vi.md:7: 'Bảng A.3' refers to nothing in the report
+        ERROR 04-02-validation-strategy.vi.md:7: 'Phụ lục I' refers to nothing in the report
+        ERROR 10-00-appendices.vi.md:3: 'Phụ lục I' refers to nothing in the report
+        ERROR 10-06-ai-critiques.vi.md:9: 'Phụ lục I' refers to nothing in the report
+        ERROR 10-06-ai-critiques.vi.md:12: 'Phụ lục I' refers to nothing in the report
+PASS  milestone-4 style              EN: 30 body files: 0 errors, 0 warnings; VI: 30 body files: 0 errors, 0 warnings  (0 s)
+FAIL  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations; VI: 17 abbreviations, 1 violations  (0 s)
+      ===== EN: 17 abbreviations, 0 violations
+      ===== VI: 17 abbreviations, 1 violations
+        DEFINE  CMA: first use at 10-02-metric-definitions.vi.md:25 has no full form beside it: …t nhấp đã loại dòng trùng, dùng biến thể quy tắc có tính cả CMA nộp trễ, loại 138 lượt đăng ký học bị đánh dấu và bỏ các…
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings; VI: 53 references, 53 cited, order first-citati  (0 s)
+PASS  milestone-4 names              Checked 68 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+FAIL  milestone-4 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      stale    02-00-aq-task-mapping.md  ->  02-00-aq-task-mapping.vi.md
+      stale    02-01-modeling-briefs.md  ->  02-01-modeling-briefs.vi.md
+      stale    02-02-technical-tasks.md  ->  02-02-technical-tasks.vi.md
+      stale    03-00-candidate-approaches.md  ->  03-00-candidate-approaches.vi.md
+      stale    03-01-criteria-matrix.md  ->  03-01-criteria-matrix.vi.md
+      stale    03-02-descriptive-diagnostic.md  ->  03-02-descriptive-diagnostic.vi.md
+      stale    03-03-predictive.md  ->  03-03-predictive.vi.md
+      stale    03-04-ranking-capacity.md  ->  03-04-ranking-capacity.vi.md
+      stale    04-00-evaluation-design.md  ->  04-00-evaluation-design.vi.md
+      stale    04-01-evaluation-cards.md  ->  04-01-evaluation-cards.vi.md
+      stale    04-02-validation-strategy.md  ->  04-02-validation-strategy.vi.md
+      stale    04-03-metrics-success.md  ->  04-03-metrics-success.vi.md
+      stale    04-04-error-fairness.md  ->  04-04-error-fairness.vi.md
+      stale    05-00-risk-ethics.md  ->  05-00-risk-ethics.vi.md
+      stale    05-01-leakage-interpretability.md  ->  05-01-leakage-interpretability.vi.md
+      stale    05-02-causal-fairness-use.md  ->  05-02-causal-fairness-use.vi.md
+      stale    06-00-genai-usage.md  ->  06-00-genai-usage.vi.md
+      stale    07-00-prototype-protocol.md  ->  07-00-prototype-protocol.vi.md
+      stale    08-00-traceability.md  ->  08-00-traceability.vi.md
+      stale    09-references.md  ->  09-references.vi.md
+      stale    10-00-appendices.md  ->  10-00-appendices.vi.md
+      stale    10-01-candidate-comparison.md  ->  10-01-candidate-comparison.vi.md
+      stale    10-02-metric-definitions.md  ->  10-02-metric-definitions.vi.md
+      stale    10-03-validation-protocol.md  ->  10-03-validation-protocol.vi.md
+      stale    10-04-fairness-spec.md  ->  10-04-fairness-spec.vi.md
+      stale    10-05-risk-register.md  ->  10-05-risk-register.vi.md
+      stale    10-06-ai-critiques.md  ->  10-06-ai-critiques.vi.md
+      stale    10-07-traceability-full.md  ->  10-07-traceability-full.vi.md
+      34 sections, 33 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md, .agents/skills/build-report/languages/vi/glossaries/topics/oulad-data-preparation.md, .agents/skills/build-report/languages/vi/glossaries/topics/early-warning-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-report-conventions.md
+FAIL  milestone-4 parity vi          Checked 34 pairs (vi): 33 errors, 45 warnings  (1 s)
+      ERROR 10-05-risk-register.md: citation sequence differs: source has 17, target has 17; missing ['26', '33', '39', '41', '47', '52']; extra ['28', '31', '38', '40', '43', '48']
+      ERROR 10-06-ai-critiques.md: heading number differs: source='VI' target='VII'
+      ERROR 10-06-ai-critiques.md: table shapes (rows, columns) differ: source=[(14, 4), (14, 4)] target=[(7, 5), (14, 4), (14, 4)]
+      ERROR 10-06-ai-critiques.md: citation sequence differs: source has 0, target has 1; extra ['1']
+      WARN  10-06-ai-critiques.vi.md: line 55: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+      WARN  10-06-ai-critiques.vi.md: line 56: source-language reference 'Appendix I' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 56: source-language reference 'Appendix II' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 56: looks untranslated: '> section 11). Read only the brief, the AQ Modeling Briefs (Appendix I'
+      WARN  10-06-ai-critiques.vi.md: line 57: source-language reference 'Appendix IV' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 57: looks untranslated: '> sample sizes and counts from the prepared data (Appendix IV). Do not'
+      WARN  10-06-ai-critiques.vi.md: line 58: looks untranslated: '> not invent benchmark results, metric thresholds or performance numbe'
+      WARN  10-06-ai-critiques.vi.md: line 60: looks untranslated: '> and the chosen method; (2) whether each modeling AQ has a sensible b'
+      WARN  10-06-ai-critiques.vi.md: line 61: looks untranslated: '> straw-man baseline; (3) whether the rationale is tied to the data fa'
+      WARN  10-06-ai-critiques.vi.md: line 65: looks untranslated: '> important first, each with the passage, the problem, why it matters '
+      WARN  10-06-ai-critiques.vi.md: line 69: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+      WARN  10-06-ai-critiques.vi.md: line 70: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 70: looks untranslated: '> section 11). Read only the brief, the Evaluation Design Cards and me'
+      WARN  10-06-ai-critiques.vi.md: line 71: source-language reference 'Appendix IV' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 71: source-language reference 'Appendix V' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 71: source-language reference 'Appendix VI' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  10-06-ai-critiques.vi.md: line 71: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  10-06-ai-critiques.vi.md: line 71: looks untranslated: '> and test protocol (Appendix IV), the error and fairness analysis (Ap'
+      WARN  10-06-ai-critiques.vi.md: line 74: looks untranslated: '> decision it serves and whether any metric is misleading for this bas'
+      WARN  10-06-ai-critiques.vi.md: line 76: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  10-06-ai-critiques.vi.md: line 77: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  10-06-ai-critiques.vi.md: line 77: looks untranslated: '> uncertainty estimation with 9 training and 13 test runs; (5) calibra'
+      WARN  10-06-ai-critiques.vi.md: line 80: looks untranslated: '> critiques, most important first, each with the passage, the problem,'
+      ERROR 10-07-traceability-full.md: heading number differs: source='VII' target='VIII'
+      ERROR 10-07-traceability-full.md: citation sequence differs: source has 1, target has 1; missing ['40']; extra ['39']
+      Checked 34 pairs (vi): 33 errors, 45 warnings
+
+5/9 steps passed; failed: milestone-4 structure, milestone-4 abbreviations, milestone-4 translation vi, milestone-4 parity vi
+make: *** [precheck] Error 1

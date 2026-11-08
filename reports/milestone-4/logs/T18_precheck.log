@@ -1,0 +1,75 @@
+2026-11-06T16:41:19Z
+$ make precheck TASK=milestone-4
+PASS  milestone-4 format             Checked 35 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 structure          EN: 35 files, 34 headings, 2 figures, 32 tables: 0 errors, 4 warnings  (0 s)
+PASS  milestone-4 style              EN: 31 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations  (0 s)
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 names              Checked 35 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+FAIL  milestone-4 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      missing  02-01-modeling-briefs.md  ->  02-01-modeling-briefs.vi.md
+      missing  02-02-technical-tasks.md  ->  02-02-technical-tasks.vi.md
+      missing  03-00-candidate-approaches.md  ->  03-00-candidate-approaches.vi.md
+      missing  03-01-criteria-matrix.md  ->  03-01-criteria-matrix.vi.md
+      missing  03-02-descriptive-diagnostic.md  ->  03-02-descriptive-diagnostic.vi.md
+      missing  03-03-predictive.md  ->  03-03-predictive.vi.md
+      missing  03-04-ranking-capacity.md  ->  03-04-ranking-capacity.vi.md
+      missing  04-00-evaluation-design.md  ->  04-00-evaluation-design.vi.md
+      missing  04-01-evaluation-cards.md  ->  04-01-evaluation-cards.vi.md
+      missing  04-02-validation-strategy.md  ->  04-02-validation-strategy.vi.md
+      missing  04-03-metrics-success.md  ->  04-03-metrics-success.vi.md
+      missing  04-04-error-fairness.md  ->  04-04-error-fairness.vi.md
+      missing  05-00-risk-ethics.md  ->  05-00-risk-ethics.vi.md
+      missing  05-01-leakage-interpretability.md  ->  05-01-leakage-interpretability.vi.md
+      missing  05-02-causal-fairness-use.md  ->  05-02-causal-fairness-use.vi.md
+      missing  06-00-genai-usage.md  ->  06-00-genai-usage.vi.md
+      missing  07-00-prototype-protocol.md  ->  07-00-prototype-protocol.vi.md
+      missing  08-00-traceability.md  ->  08-00-traceability.vi.md
+      missing  09-references.md  ->  09-references.vi.md
+      missing  10-00-appendices.md  ->  10-00-appendices.vi.md
+      missing  10-01-briefs-full.md  ->  10-01-briefs-full.vi.md
+      missing  10-02-candidate-comparison.md  ->  10-02-candidate-comparison.vi.md
+      missing  10-03-evaluation-cards-full.md  ->  10-03-evaluation-cards-full.vi.md
+      missing  10-04-validation-protocol.md  ->  10-04-validation-protocol.vi.md
+      missing  10-05-fairness-spec.md  ->  10-05-fairness-spec.vi.md
+      missing  10-06-risk-register.md  ->  10-06-risk-register.vi.md
+      missing  10-07-ai-decision-log.md  ->  10-07-ai-decision-log.vi.md
+      missing  10-08-traceability-full.md  ->  10-08-traceability-full.vi.md
+      35 sections, 35 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md
+FAIL  milestone-4 parity vi          Checked 35 pairs (vi): 35 errors, 0 warnings  (0 s)
+      ERROR 02-00-aq-task-mapping.md: missing translation 02-00-aq-task-mapping.vi.md
+      ERROR 02-01-modeling-briefs.md: missing translation 02-01-modeling-briefs.vi.md
+      ERROR 02-02-technical-tasks.md: missing translation 02-02-technical-tasks.vi.md
+      ERROR 03-00-candidate-approaches.md: missing translation 03-00-candidate-approaches.vi.md
+      ERROR 03-01-criteria-matrix.md: missing translation 03-01-criteria-matrix.vi.md
+      ERROR 03-02-descriptive-diagnostic.md: missing translation 03-02-descriptive-diagnostic.vi.md
+      ERROR 03-03-predictive.md: missing translation 03-03-predictive.vi.md
+      ERROR 03-04-ranking-capacity.md: missing translation 03-04-ranking-capacity.vi.md
+      ERROR 04-00-evaluation-design.md: missing translation 04-00-evaluation-design.vi.md
+      ERROR 04-01-evaluation-cards.md: missing translation 04-01-evaluation-cards.vi.md
+      ERROR 04-02-validation-strategy.md: missing translation 04-02-validation-strategy.vi.md
+      ERROR 04-03-metrics-success.md: missing translation 04-03-metrics-success.vi.md
+      ERROR 04-04-error-fairness.md: missing translation 04-04-error-fairness.vi.md
+      ERROR 05-00-risk-ethics.md: missing translation 05-00-risk-ethics.vi.md
+      ERROR 05-01-leakage-interpretability.md: missing translation 05-01-leakage-interpretability.vi.md
+      ERROR 05-02-causal-fairness-use.md: missing translation 05-02-causal-fairness-use.vi.md
+      ERROR 06-00-genai-usage.md: missing translation 06-00-genai-usage.vi.md
+      ERROR 07-00-prototype-protocol.md: missing translation 07-00-prototype-protocol.vi.md
+      ERROR 08-00-traceability.md: missing translation 08-00-traceability.vi.md
+      ERROR 09-references.md: missing translation 09-references.vi.md
+      ERROR 10-00-appendices.md: missing translation 10-00-appendices.vi.md
+      ERROR 10-01-briefs-full.md: missing translation 10-01-briefs-full.vi.md
+      ERROR 10-02-candidate-comparison.md: missing translation 10-02-candidate-comparison.vi.md
+      ERROR 10-03-evaluation-cards-full.md: missing translation 10-03-evaluation-cards-full.vi.md
+      ERROR 10-04-validation-protocol.md: missing translation 10-04-validation-protocol.vi.md
+      ERROR 10-05-fairness-spec.md: missing translation 10-05-fairness-spec.vi.md
+      ERROR 10-06-risk-register.md: missing translation 10-06-risk-register.vi.md
+      ERROR 10-07-ai-decision-log.md: missing translation 10-07-ai-decision-log.vi.md
+      ERROR 10-08-traceability-full.md: missing translation 10-08-traceability-full.vi.md
+      Checked 35 pairs (vi): 35 errors, 0 warnings
+
+7/9 steps passed; failed: milestone-4 translation vi, milestone-4 parity vi
+make: *** [precheck] Error 1
+exit 2

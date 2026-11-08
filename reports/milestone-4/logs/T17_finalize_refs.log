@@ -1,0 +1,5 @@
+2026-11-06T16:40:36Z
+$ venv/bin/python .claude/skills/research-report/scripts/finalize_refs.py --base reports/milestone-4
+53 cited sources numbered by first citation
+converted 31 body files; wrote 09-references.md and the reference map; backup in build/.cache/milestone-4_draft_backup
+exit 0

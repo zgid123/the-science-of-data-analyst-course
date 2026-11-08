@@ -1,0 +1,14 @@
+## 2.1. Các AQ Modeling Brief
+
+Mỗi AQ Modeling Brief (bản mô tả yêu cầu mô hình hóa của từng AQ) ghi lại, trước khi nêu tên bất kỳ thuật toán nào, loại phân tích, quyết định, đơn vị phân tích, biến mục tiêu, thông tin được phép dùng làm đầu vào, đầu ra mong đợi và ràng buộc chính của một câu hỏi [1]. Bản mô tả cần nêu rõ đầu ra, vì một kết quả nhị phân có thể được báo cáo dưới dạng lớp, xác suất hoặc thứ hạng; mỗi dạng cần một thước đo chất lượng riêng [3]. Bảng 2.1 tóm tắt bốn bản mô tả; bản đầy đủ nằm ở Phụ lục I (Bảng A.1–A.4), còn loại phân tích và quyết định của từng câu hỏi giữ như ở Bảng 1.1.
+
+**Bảng 2.1. Các AQ Modeling Brief (tóm tắt)**
+
+| AQ | Đơn vị phân tích | Biến kết quả hoặc biến mục tiêu | Thông tin đầu vào và khoảng thời gian | Đầu ra mong đợi | Ràng buộc chính |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| AQ1 | Lượt đăng ký học còn hiệu lực vào ngày 14, sau thời gian điều chỉnh đăng ký học phần (tổng thể dùng để tính KPI); bài được chấm điểm | Không có (các thước đo mô tả) | Kết quả, module, kỳ mở, tháng bắt đầu, năm; ngày đến hạn và ngày nộp | Các tỷ lệ kèm khoảng tin cậy 95%; tuần lần đầu bỏ lỡ một bài | Mẫu số đúng; lịch bài được chấm điểm riêng của từng kỳ mở |
+| AQ2 | Lượt đăng ký học còn hiệu lực vào ngày 27 | non_completion là biến kết quả của mô hình đo mối liên hệ | Dấu hiệu tính đến hết ngày 27; kỳ mở, số lần học trước, số tín chỉ | Chênh lệch nguy cơ trong từng kỳ mở, kèm tỉ số odds (odds ratio) | Chỉ đo mối liên hệ; kết quả năm 2014 được giữ kín cho lần kiểm thử cuối |
+| AQ3 | Lượt đăng ký học còn hiệu lực tại thời điểm chốt dữ liệu | non_completion vào cuối kỳ mở | 19 biến dự báo chính ghi nhận tính đến hết ngày 13 hoặc ngày 27; phương án thay thế là bộ biến mở rộng (thêm 10 biến dự báo) cùng số lượt nhấp theo từng tuần | Điểm rủi ro cho từng lượt đăng ký học | Rò rỉ thông tin; khả năng áp dụng cho kỳ mở sau; hiệu chuẩn; khả năng diễn giải |
+| AQ4 | Lượt đăng ký học, xét trong kỳ mở module tương ứng | Đánh giá theo biến mục tiêu của AQ3; chưa có dữ liệu về kết quả liên hệ | Điểm rủi ro của AQ3; độ dài danh sách theo mức 3 hoặc 5 sinh viên được liên hệ trên mỗi 20 sinh viên | Danh sách xếp hạng cho từng kỳ mở, kèm lý do | Hạn mức liên hệ (số sinh viên giảng viên hướng dẫn liên hệ được: 3 hoặc 5 trên mỗi nhóm khoảng 20) là cố định; sinh viên có nguy cơ cao chưa chắc là người được lợi nhiều nhất khi được liên hệ; giảng viên hướng dẫn là người quyết định |
+
+AQ3 và AQ4 dùng chung một biến mục tiêu và một tổng thể, nên AQ4 dùng lại điểm rủi ro của AQ3; trong khi đó, AQ1 và AQ2 mô tả các kỳ mở đã kết thúc nên không cần dự báo. Hằng tuần, hệ thống cảnh báo sớm của chính OU cũng gửi cho giảng viên hướng dẫn một danh sách sinh viên có nguy cơ. Tuy nhiên, hệ thống này dự báo sinh viên có nộp bài tiếp theo hay không chứ không dự báo sinh viên có hoàn thành module hay không [4].

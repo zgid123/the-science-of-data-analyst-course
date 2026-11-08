@@ -1,0 +1,11 @@
+FILE = "04-04-error-fairness.vi.md"
+PAIRS = [
+("""các tiêu chí công bằng không thể cùng được thỏa: điểm rủi ro có giá trị dự báo dương ngang nhau giữa các nhóm thì không thể đồng thời có tỷ lệ lỗi ngang nhau [36], còn hiệu chuẩn trong từng nhóm và tỷ lệ lỗi cân bằng giữa các nhóm mâu thuẫn với nhau, trừ các trường hợp suy biến [37].""",
+ """các tiêu chí công bằng không thể cùng được thỏa. Cụ thể, nếu điểm rủi ro có giá trị dự báo dương ngang nhau giữa các nhóm thì điểm đó không thể đồng thời có tỷ lệ lỗi ngang nhau [36]. Tương tự, hiệu chuẩn trong từng nhóm và tỷ lệ lỗi cân bằng giữa các nhóm mâu thuẫn với nhau, trừ các trường hợp suy biến [37]."""),
+("""Với khoảng 100 sinh viên không hoàn thành trong một nhóm, sai số chuẩn của tỷ lệ phát hiện quanh 0,5 là khoảng 5 điểm phần trăm, trong khi số sinh viên còn lại lớn hơn nhiều lần, nên chênh lệch 10 điểm trong quy tắc FR1 tương đương khoảng hai lần sai số chuẩn của tỷ lệ phát hiện ở nhóm đó, nguồn bất định chính của chênh lệch.""",
+ """Với khoảng 100 sinh viên không hoàn thành trong một nhóm và tỷ lệ phát hiện ở mức khoảng 0,5, sai số chuẩn của tỷ lệ phát hiện của nhóm là khoảng 5 điểm phần trăm. Số sinh viên còn lại lớn hơn nhóm nhiều lần, nên sai số chuẩn này là nguồn bất định chính của chênh lệch. Do đó, chênh lệch 10 điểm trong quy tắc FR1 tương đương khoảng hai lần sai số chuẩn của tỷ lệ phát hiện ở nhóm."""),
+("""**Các phép kiểm tra.** Quy tắc FR1 (Bảng 4.5) đánh dấu một nhóm để xem xét lại chứ không loại mô hình, vì khi có nhóm bị đánh dấu, con người cần đánh giá nguyên nhân của chênh lệch.""",
+ """**Các phép kiểm tra.** Quy tắc FR1 (Bảng 4.5) nêu tên một nhóm để xem xét lại chứ không loại mô hình, vì khi một nhóm được nêu tên, con người cần đánh giá nguyên nhân của chênh lệch."""),
+("""đồng thời có thiên lệch thất thường đối với sinh viên tự khai có khuyết tật (theo báo cáo của nhóm tác giả nghiên cứu đó) [38]; vì vậy, các nhóm nhỏ được gộp qua các kỳ mở và báo cáo kèm khoảng tin cậy.""",
+ """đồng thời thiên lệch đối với sinh viên tự khai có khuyết tật biến động thất thường (theo báo cáo của nhóm tác giả nghiên cứu đó) [38]. Vì kết quả ở các nhóm ít sinh viên có thể dao động thất thường như vậy, báo cáo này gộp các nhóm nhỏ qua các kỳ mở và báo cáo kèm khoảng tin cậy."""),
+]

@@ -1,0 +1,212 @@
+## 2026-11-08T03:57:14Z step 0: apply English additions
+$ venv/bin/python reports/milestone-4/research/revision/english-additions-2026-11-08/apply.py
+row    1  00-2-glossary.md  applied
+row    2  00-2-glossary.md  applied
+row    3  00-2-glossary.md  applied
+row    4  01-01-goal-decisions-aqs.md  applied
+row    5  01-01-goal-decisions-aqs.md  applied
+row    6  01-02-prepared-data-entry-gate.md  applied
+row    7  01-02-prepared-data-entry-gate.md  applied
+row    8  02-02-technical-tasks.md  applied
+row    9  03-01-criteria-matrix.md  applied
+row   10  03-01-criteria-matrix.md  applied
+row   11  03-01-criteria-matrix.md  applied
+row   12  03-02-descriptive-diagnostic.md  applied
+row   13  03-03-predictive.md  applied
+row   14  03-03-predictive.md  applied
+row   15  04-01-evaluation-cards.md  applied
+row   16  04-01-evaluation-cards.md  applied
+row   17  04-02-validation-strategy.md  applied
+row   18  04-02-validation-strategy.md  applied
+row   19  04-02-validation-strategy.md  applied
+row   20  04-03-metrics-success.md  applied
+row   21  04-04-error-fairness.md  applied
+row   22  04-04-error-fairness.md  applied
+row   23  04-04-error-fairness.md  applied
+row   24  05-00-risk-ethics.md  applied
+row   25  05-01-leakage-interpretability.md  applied
+row   26  05-01-leakage-interpretability.md  applied
+row   27  05-02-causal-fairness-use.md  applied
+row   28  05-02-causal-fairness-use.md  applied
+row   29  06-00-genai-usage.md  applied
+row   30  10-01-candidate-comparison.md  applied
+row   31  10-01-candidate-comparison.md  applied
+row   32  10-01-candidate-comparison.md  applied
+row   33  10-01-candidate-comparison.md  applied
+row   34  10-01-candidate-comparison.md  applied
+row   35  10-03-validation-protocol.md  applied
+row   36  10-03-validation-protocol.md  applied
+row   37  10-03-validation-protocol.md  applied
+row   38  10-04-fairness-spec.md  applied
+row   39  10-05-risk-register.md  applied
+row   40  10-06-ai-critiques.md  applied
+row   41  10-06-ai-critiques.md  applied
+row   42  10-06-ai-critiques.md  applied
+row   43  10-07-traceability-full.md  applied
+row   44  10-07-traceability-full.md  applied
+row   45  10-07-traceability-full.md  applied
+row 4-vi  01-01-goal-decisions-aqs.vi.md  applied
+46 edits in 22 files written
+exit 0
+
+## 2026-11-08T03:57:19Z check 1: precheck
+$ make precheck TASK=milestone-4
+PASS  milestone-4 format             Checked 68 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 structure          EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings; VI: 34 files, 33 headings, 2 figures, 29 tables:   (0 s)
+PASS  milestone-4 style              EN: 30 body files: 0 errors, 0 warnings; VI: 30 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations; VI: 17 abbreviations, 0 violations  (0 s)
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings; VI: 53 references, 53 cited, order first-citati  (0 s)
+PASS  milestone-4 names              Checked 68 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+FAIL  milestone-4 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      stale    00-2-glossary.md  ->  00-2-glossary.vi.md
+      stale    01-01-goal-decisions-aqs.md  ->  01-01-goal-decisions-aqs.vi.md
+      stale    01-02-prepared-data-entry-gate.md  ->  01-02-prepared-data-entry-gate.vi.md
+      stale    02-02-technical-tasks.md  ->  02-02-technical-tasks.vi.md
+      stale    03-01-criteria-matrix.md  ->  03-01-criteria-matrix.vi.md
+      stale    03-02-descriptive-diagnostic.md  ->  03-02-descriptive-diagnostic.vi.md
+      stale    03-03-predictive.md  ->  03-03-predictive.vi.md
+      stale    04-01-evaluation-cards.md  ->  04-01-evaluation-cards.vi.md
+      stale    04-02-validation-strategy.md  ->  04-02-validation-strategy.vi.md
+      stale    04-03-metrics-success.md  ->  04-03-metrics-success.vi.md
+      stale    04-04-error-fairness.md  ->  04-04-error-fairness.vi.md
+      stale    05-00-risk-ethics.md  ->  05-00-risk-ethics.vi.md
+      stale    05-01-leakage-interpretability.md  ->  05-01-leakage-interpretability.vi.md
+      stale    05-02-causal-fairness-use.md  ->  05-02-causal-fairness-use.vi.md
+      stale    06-00-genai-usage.md  ->  06-00-genai-usage.vi.md
+      stale    10-01-candidate-comparison.md  ->  10-01-candidate-comparison.vi.md
+      stale    10-03-validation-protocol.md  ->  10-03-validation-protocol.vi.md
+      stale    10-04-fairness-spec.md  ->  10-04-fairness-spec.vi.md
+      stale    10-05-risk-register.md  ->  10-05-risk-register.vi.md
+      stale    10-06-ai-critiques.md  ->  10-06-ai-critiques.vi.md
+      stale    10-07-traceability-full.md  ->  10-07-traceability-full.vi.md
+      34 sections, 21 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md, .agents/skills/build-report/languages/vi/glossaries/topics/oulad-data-preparation.md, .agents/skills/build-report/languages/vi/glossaries/topics/early-warning-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-report-conventions.md
+PASS  milestone-4 parity vi          Checked 34 pairs (vi): 0 errors, 25 warnings  (1 s)
+
+8/9 steps passed; failed: milestone-4 translation vi
+make: *** [precheck] Error 1
+exit 2
+
+## 2026-11-08T03:57:36Z fix: 01-01 twin comma
+$ venv/bin/python reports/milestone-4/research/revision/english-additions-2026-11-08/fix_twin.py
+01-01-goal-decisions-aqs.vi.md: delivery-mode clause set in parentheses
+exit 0
+
+## 2026-11-08T03:57:36Z fix: 01-01 twin comma
+$ venv/bin/python .agents/skills/build-report/scripts/check_parity.py --report reports/milestone-4/report --lang vi
+WARN  00-2-glossary.vi.md: line 37: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 43: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+WARN  10-06-ai-critiques.vi.md: line 44: source-language reference 'Section 2.1' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 44: source-language reference 'Appendix I' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 44: looks untranslated: '> section 11). Read only the brief, the AQ Modeling Briefs (Section 2.'
+WARN  10-06-ai-critiques.vi.md: line 45: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 45: looks untranslated: '> sample sizes and counts from the prepared data (Appendix III). Do no'
+WARN  10-06-ai-critiques.vi.md: line 46: looks untranslated: '> not invent benchmark results, metric thresholds or performance numbe'
+WARN  10-06-ai-critiques.vi.md: line 48: looks untranslated: '> and the chosen method; (2) whether each modeling AQ has a sensible b'
+WARN  10-06-ai-critiques.vi.md: line 49: looks untranslated: '> straw-man baseline; (3) whether the rationale is tied to the data fa'
+WARN  10-06-ai-critiques.vi.md: line 53: looks untranslated: '> important first, each with the passage, the problem, why it matters '
+WARN  10-06-ai-critiques.vi.md: line 57: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+WARN  10-06-ai-critiques.vi.md: line 58: source-language reference 'Appendix II' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 58: looks untranslated: '> section 11). Read only the brief, the Evaluation Design Cards and me'
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix IV' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix V' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 59: looks untranslated: '> and test protocol (Appendix III), the error and fairness analysis (A'
+WARN  10-06-ai-critiques.vi.md: line 62: looks untranslated: '> decision it serves and whether any metric is misleading for this bas'
+WARN  10-06-ai-critiques.vi.md: line 64: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 65: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 65: looks untranslated: '> uncertainty estimation with 9 training and 13 test runs; (5) calibra'
+WARN  10-06-ai-critiques.vi.md: line 68: looks untranslated: '> critiques, most important first, each with the passage, the problem,'
+
+Checked 34 pairs (vi): 0 errors, 24 warnings
+exit 0
+
+## 2026-11-08T03:57:57Z check 2/1: venv/bin/python .agents/skills/build-report/scripts/translation_status.py --report reports
+$ venv/bin/python .agents/skills/build-report/scripts/translation_status.py --report reports/milestone-4/report --lang vi --mark reports/milestone-4/report/00-2-glossary.md reports/milestone-4/report/01-01-goal-decisions-aqs.md reports/milestone-4/report/01-02-prepared-data-entry-gate.md reports/milestone-4/report/02-02-technical-tasks.md reports/milestone-4/report/03-01-criteria-matrix.md reports/milestone-4/report/03-02-descriptive-diagnostic.md reports/milestone-4/report/03-03-predictive.md reports/milestone-4/report/04-01-evaluation-cards.md reports/milestone-4/report/04-02-validation-strategy.md reports/milestone-4/report/04-03-metrics-success.md reports/milestone-4/report/04-04-error-fairness.md reports/milestone-4/report/05-00-risk-ethics.md reports/milestone-4/report/05-01-leakage-interpretability.md reports/milestone-4/report/05-02-causal-fairness-use.md reports/milestone-4/report/06-00-genai-usage.md reports/milestone-4/report/10-01-candidate-comparison.md reports/milestone-4/report/10-03-validation-protocol.md reports/milestone-4/report/10-04-fairness-spec.md reports/milestone-4/report/10-05-risk-register.md reports/milestone-4/report/10-06-ai-critiques.md reports/milestone-4/report/10-07-traceability-full.md
+recorded 21 file(s) in reports/milestone-4/report/.vi-sync.json
+exit 0
+
+## 2026-11-08T03:57:57Z check 2/1: venv/bin/python .agents/skills/build-report/scripts/translation_status.py --report reports
+$ venv/bin/python .agents/skills/build-report/scripts/translation_status.py --report reports/milestone-4/report --lang vi
+
+34 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files
+exit 0
+
+## 2026-11-08T03:57:58Z check 2/1: make precheck TASK=milestone-4
+$ make precheck TASK=milestone-4
+PASS  milestone-4 format             Checked 68 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 structure          EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings; VI: 34 files, 33 headings, 2 figures, 29 tables:   (0 s)
+PASS  milestone-4 style              EN: 30 body files: 0 errors, 0 warnings; VI: 30 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations; VI: 17 abbreviations, 0 violations  (0 s)
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings; VI: 53 references, 53 cited, order first-citati  (0 s)
+PASS  milestone-4 names              Checked 68 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 translation vi     34 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-4 parity vi          Checked 34 pairs (vi): 0 errors, 24 warnings  (1 s)
+
+9/9 steps passed
+exit 0
+
+## 2026-11-08T03:58:10Z check 3: make build TASK=milestone-4 L=en
+$ make build TASK=milestone-4 L=en
+PASS  milestone-4 figures            milestone-4: 2 figures → reports/milestone-4/report/assets/figures, 0 layout findings  (1 s)
+PASS  milestone-4 build en           [en] 34 sections → reports/milestone-4/build/N04_Milestone4_EN.docx  (15 Word sections, 6 landscape, 3 images, 2 figure   (5 s)
+
+2/2 steps passed
+exit 0
+
+## 2026-11-08T03:58:17Z check 3: make build TASK=milestone-4 L=vi
+$ make build TASK=milestone-4 L=vi
+PASS  milestone-4 figures            milestone-4: 2 figures → reports/milestone-4/report/assets/figures, 0 layout findings  (1 s)
+PASS  milestone-4 build vi           [vi] 34 sections → reports/milestone-4/build/N04_Milestone4_VI.docx  (21 Word sections, 9 landscape, 3 images, 2 figure   (6 s)
+
+2/2 steps passed
+exit 0
+
+## 2026-11-08T03:58:24Z check 3: make pages TASK=milestone-4 BUDGET=12
+$ make pages TASK=milestone-4 BUDGET=12
+===== milestone-4: N04_Milestone4_EN.docx
+part                                          optimistic laid out   flow   gap tables
+Contents                                             0.9     1.00
+List of Abbreviations                                0.8     1.00
+List of Terms                                        1.3     2.00
+List of Figures                                      0.1     1.00
+List of Tables                                       0.9     1.00
+1. Project Context and Continuity                    2.6     3.69   3.43  0.26   0.86
+2. AQ-to-Technical-Task Mapping                      2.9     3.89   3.72  0.17   1.79
+3. Candidate Modeling Approaches                     3.8     5.19   4.94  0.25   0.60
+4. Evaluation Design                                 6.4     8.47   8.12  0.35   2.35
+5. Risk, Ethics and Limitations                      2.2     2.97   2.85  0.11   0.51
+6. Generative AI Usage                               1.4     2.17   1.99  0.18   1.17
+7. Prototype Protocol                                0.7     0.88   0.83  0.04   0.36
+8. Updated Traceability Matrix                       0.9     1.74   1.25  0.49   0.56
+References                                           4.3     6.00
+Appendices                                          11.1    23.28
+main content                                        21.0    29.00  27.15  1.85   8.21
+main content: optimistic 21.0 pages, pessimistic 29.0 pages (plan with this); text 18.9, tables 8.2, layout gaps 1.9
+last main-text page 74% full: a cut saves a page only if it removes more than 0.74 of a page
+budget 12 pages: +17.0 pages (pessimistic), +9.0 (optimistic)
+===== milestone-4: N04_Milestone4_VI.docx
+part                                          optimistic laid out   flow   gap tables
+Mục lục                                              0.9     1.00
+Danh mục từ viết tắt                                 0.9     2.00
+Danh mục thuật ngữ                                   1.4     2.00
+Danh mục hình                                        0.1     1.00
+Danh mục bảng                                        0.9     1.00
+1. Bối cảnh và tính liên tục của dự án               3.4     4.57   4.36  0.21   1.26
+2. Ánh xạ từ AQ sang bài toán kỹ thuật               3.2     4.16   4.02  0.14   1.81
+3. Các phương pháp mô hình hóa ứng viên              5.1     6.69   6.48  0.21   0.98
+4. Thiết kế đánh giá                                 8.0    10.25  10.00  0.25   2.75
+5. Rủi ro, đạo đức và hạn chế                        3.0     3.83   3.78  0.05   0.74
+6. Sử dụng AI tạo sinh                               1.9     2.89   2.73  0.17   1.71
+7. Giao thức chạy nguyên mẫu                         0.8     1.02   0.97  0.05   0.46
+8. Ma trận truy vết đã cập nhật                      1.1     2.58   1.55  1.03   0.77
+Tài liệu tham khảo                                   4.3     6.00
+Phụ lục                                             12.8    34.30
+main content                                        26.5    36.00  33.90  2.10  10.48
+main content: optimistic 26.5 pages, pessimistic 36.0 pages (plan with this); text 23.4, tables 10.5, layout gaps 2.1
+last main-text page 9% full: a cut saves a page only if it removes more than 0.09 of a page
+budget 12 pages: +24.0 pages (pessimistic), +14.5 (optimistic)
+exit 0

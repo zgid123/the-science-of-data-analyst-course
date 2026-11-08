@@ -1,0 +1,43 @@
+# 2026-11-08T03:22:25Z after rewrite agent + term alignment
+$ translation_status --mark 04-01 05-02 08-00
+recorded 3 file(s) in reports/milestone-4/report/.vi-sync.json
+exit 0
+$ glossary lint
+Checked 30 glossary files, 1862 terms: 0 errors
+exit 0
+$ check_parity milestone-1
+
+Checked 36 pairs (vi): 0 errors, 0 warnings
+exit 0
+$ check_parity milestone-2
+
+Checked 29 pairs (vi): 0 errors, 3 warnings
+exit 0
+$ check_parity milestone-3
+
+Checked 41 pairs (vi): 0 errors, 14 warnings
+exit 0
+$ check_parity milestone-4
+
+Checked 34 pairs (vi): 0 errors, 24 warnings
+exit 0
+$ make precheck TASK=milestone-3
+PASS  milestone-3 format             Checked 82 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 31 tables: 0 errors, 0 warnings; VI: 41 files, 40 headings, 4 figures, 31 tables:   (0 s)
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings; VI: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 15 abbreviations, 0 violations; VI: 15 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings; VI: 17 references, 17 cited, order first-citati  (0 s)
+PASS  milestone-3 names              Checked 82 files for 5 names: 0 errors  (1 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+PASS  milestone-3 translation vi     41 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-3 parity vi          Checked 41 pairs (vi): 0 errors, 14 warnings  (1 s)
+$ make precheck TASK=milestone-4
+PASS  milestone-4 format             Checked 68 files in reports/milestone-4/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 structure          EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings; VI: 34 files, 33 headings, 2 figures, 29 tables:   (0 s)
+PASS  milestone-4 style              EN: 30 body files: 0 errors, 0 warnings; VI: 30 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 abbreviations      EN: 17 abbreviations, 0 violations; VI: 17 abbreviations, 0 violations  (0 s)
+PASS  milestone-4 citations          EN: 53 references, 53 cited, order first-citation: 0 errors, 0 warnings; VI: 53 references, 53 cited, order first-citati  (0 s)
+PASS  milestone-4 names              Checked 68 files for 5 names: 0 errors  (0 s)
+PASS  milestone-4 research_trail     Checked 68 sources, 179 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-4 translation vi     34 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-4 parity vi          Checked 34 pairs (vi): 0 errors, 24 warnings  (1 s)

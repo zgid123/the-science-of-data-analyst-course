@@ -1,0 +1,7 @@
+# 2026-11-08T02:29:51Z venv/bin/python reports/milestone-4/code/threshold_reasons.py
+base rate day 27 (training): 0.444; intercept -0.2 -> 0.395, +0.2 -> 0.494
+standard error of a recall near 0.5 on 100 non-completers: 0.050
+expected non-completers among 400 enrolments at 28%: 112
+P(at least 7 of 9 folds | no difference) = 0.090
+P(at least 9 of 13 runs | no difference) = 0.133
+exit 0

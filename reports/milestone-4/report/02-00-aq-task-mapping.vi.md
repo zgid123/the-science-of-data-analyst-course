@@ -1,0 +1,3 @@
+# 2. Ánh xạ từ AQ sang bài toán kỹ thuật
+
+Khi điều kiện đầu vào đã đạt (Mục 1.2), mỗi câu hỏi trước hết được mô tả bằng những gì câu hỏi đó cần, rồi mới được chuyển thành một bài toán kỹ thuật. Trình tự này quan trọng: đề bài yêu cầu lập Modeling Brief (bản mô tả yêu cầu mô hình hóa của từng AQ) trước khi nêu tên bất kỳ thuật toán nào, để phương pháp xuất phát từ câu hỏi, từ đầu ra mà quyết định cần và từ dữ liệu, chứ không xuất phát từ thói quen hoặc gợi ý của trí tuệ nhân tạo (AI) [1]. Mục 2.1 trình bày bốn AQ Modeling Brief, mỗi bản cho một câu hỏi; Mục 2.2 trình bày bài toán kỹ thuật mà mỗi bản mô tả dẫn tới.

@@ -1,0 +1,312 @@
+# Machine-readable half of EXECUTION_PLAN.md: edit both together, then run scaffold.py build.
+
+[plan]
+task = "reports/milestone-4"
+title = "From Modeling to Evaluation: Modeling Strategy, Method Selection and Evaluation Design"
+outline = "reports/milestone-4/reference.md"
+created = "2026-11-06"
+
+[checks]
+words = "150-700"
+meta_phrases = ["this doc", "this report will", "requester", "we will", "in this task", "source notes", "reference.md", "the outline", "as instructed", "writing rule", "the reader will", "planned run", "pending result", "will be benchmarked", "this section", "this part"]
+
+[references]
+heading = "# References"
+
+[[files]]
+name = "00-0-title-page.md"
+heading = ""
+
+[[files]]
+name = "00-1-abbreviations.md"
+heading = "# List of Abbreviations"
+
+[[files]]
+name = "00-2-glossary.md"
+heading = "# List of Terms"
+
+[[files]]
+name = "01-00-context-continuity.md"
+heading = "# 1. Project Context and Continuity"
+outline_section = "1"
+
+[[files]]
+name = "01-01-goal-decisions-aqs.md"
+heading = "## 1.1. Goal, Decisions and Analytical Questions"
+outline_section = "1"
+
+[[files]]
+name = "01-02-prepared-data-entry-gate.md"
+heading = "## 1.2. Prepared Data and Entry Gate"
+outline_section = "1"
+
+[[files]]
+name = "02-00-aq-task-mapping.md"
+heading = "# 2. AQ-to-Technical-Task Mapping"
+outline_section = "2"
+
+[[files]]
+name = "02-01-modeling-briefs.md"
+heading = "## 2.1. AQ Modeling Briefs"
+outline_section = "2"
+
+[[files]]
+name = "02-02-technical-tasks.md"
+heading = "## 2.2. Technical Task Definitions"
+outline_section = "2"
+
+[[files]]
+name = "03-00-candidate-approaches.md"
+heading = "# 3. Candidate Modeling Approaches"
+outline_section = "3"
+
+[[files]]
+name = "03-01-criteria-matrix.md"
+heading = "## 3.1. Selection Criteria and Candidate Solution Matrix"
+outline_section = "3"
+
+[[files]]
+name = "03-02-descriptive-diagnostic.md"
+heading = "## 3.2. Descriptive and Diagnostic Questions"
+outline_section = "3"
+
+[[files]]
+name = "03-03-predictive.md"
+heading = "## 3.3. Predictive Question"
+outline_section = "3"
+
+[[files]]
+name = "03-04-ranking-capacity.md"
+heading = "## 3.4. Ranking under Capacity"
+outline_section = "3"
+
+[[files]]
+name = "04-00-evaluation-design.md"
+heading = "# 4. Evaluation Design"
+outline_section = "4"
+
+[[files]]
+name = "04-01-evaluation-cards.md"
+heading = "## 4.1. Evaluation Design Cards"
+outline_section = "4"
+
+[[files]]
+name = "04-02-validation-strategy.md"
+heading = "## 4.2. Validation Strategy"
+outline_section = "4"
+
+[[files]]
+name = "04-03-metrics-success.md"
+heading = "## 4.3. Metrics and Success Criteria"
+outline_section = "4"
+
+[[files]]
+name = "04-04-error-fairness.md"
+heading = "## 4.4. Error, Subgroup and Fairness Analysis"
+outline_section = "4"
+
+[[files]]
+name = "05-00-risk-ethics.md"
+heading = "# 5. Risk, Ethics and Limitations"
+outline_section = "5"
+
+[[files]]
+name = "05-01-leakage-interpretability.md"
+heading = "## 5.1. Leakage, Overfitting and Interpretability"
+outline_section = "5"
+
+[[files]]
+name = "05-02-causal-fairness-use.md"
+heading = "## 5.2. Causal Limits, Fairness and High-Stakes Use"
+outline_section = "5"
+
+[[files]]
+name = "06-00-genai-usage.md"
+heading = "# 6. Generative AI Usage"
+outline_section = "6"
+
+[[files]]
+name = "07-00-prototype-protocol.md"
+heading = "# 7. Prototype Protocol"
+outline_section = "7"
+
+[[files]]
+name = "08-00-traceability.md"
+heading = "# 8. Updated Traceability Matrix"
+outline_section = "8"
+
+[[files]]
+name = "09-references.md"
+heading = "# References"
+
+[[files]]
+name = "10-00-appendices.md"
+heading = "# Appendices"
+
+[[files]]
+name = "10-01-briefs-full.md"
+heading = "## Appendix I – AQ Modeling Briefs"
+
+[[files]]
+name = "10-02-candidate-comparison.md"
+heading = "## Appendix II – Candidate Comparison by Criterion"
+
+[[files]]
+name = "10-03-evaluation-cards-full.md"
+heading = "## Appendix III – Evaluation Design Cards and Metric Definitions"
+
+[[files]]
+name = "10-04-validation-protocol.md"
+heading = "## Appendix IV – Validation and Test Protocol"
+
+[[files]]
+name = "10-05-fairness-spec.md"
+heading = "## Appendix V – Error and Fairness Analysis Specification"
+
+[[files]]
+name = "10-06-risk-register.md"
+heading = "## Appendix VI – Risk Register"
+
+[[files]]
+name = "10-07-ai-decision-log.md"
+heading = "## Appendix VII – AI Decision Log and Prompts"
+
+[[files]]
+name = "10-08-traceability-full.md"
+heading = "## Appendix VIII – Full Traceability"
+
+[[tasks]]
+id = "T01"
+kind = "S"
+title = "Scaffold workspace and register the task"
+
+[[tasks]]
+id = "T02"
+kind = "HC"
+title = "Scope inputs – decided in conversation"
+
+[[tasks]]
+id = "T03"
+kind = "R"
+title = "Seeds: Milestone 4 brief and OULAD data descriptor"
+
+[[tasks]]
+id = "T04"
+kind = "S"
+title = "Entry gate: freeze the Milestone 3 baseline (AQs, readiness, C01–C13, prepared version)"
+
+[[tasks]]
+id = "T05"
+kind = "R"
+title = "Research A: modeling strategy and method selection (Parts 2-3; S200-S399)"
+
+[[tasks]]
+id = "T06"
+kind = "R"
+title = "Research B: evaluation design – validation, metrics, calibration, comparison (Part 4; S400-S499)"
+
+[[tasks]]
+id = "T07"
+kind = "R"
+title = "Research C: risk, causal limits, fairness, high-stakes use and regulation (Part 5; S500-S599)"
+
+[[tasks]]
+id = "T08"
+kind = "S"
+title = "Design facts from the prepared views: sizes, balance, groups, list sizes (code/design_facts.py)"
+
+[[tasks]]
+id = "T09"
+kind = "S"
+title = "Design documents: briefs, candidate matrix, evaluation cards, protocols, risk register, traceability"
+
+[[tasks]]
+id = "T10"
+kind = "S"
+title = "AI model-selection critic: isolated critique, team decisions"
+
+[[tasks]]
+id = "T11"
+kind = "S"
+title = "AI evaluation reviewer: isolated critique, team decisions, AI Decision Log"
+
+[[tasks]]
+id = "T12"
+kind = "F"
+title = "Figures 2.1 (AQ to task to decision) and 4.1 (validation timeline)"
+
+[[tasks]]
+id = "T13"
+kind = "W"
+title = "Write Parts 1-2"
+
+[[tasks]]
+id = "T14"
+kind = "W"
+title = "Write Parts 3-4"
+
+[[tasks]]
+id = "T15"
+kind = "W"
+title = "Write Parts 5-8 and Appendices I-VIII"
+
+[[tasks]]
+id = "T16"
+kind = "S"
+title = "Front matter: title page, abbreviations, glossary"
+
+[[tasks]]
+id = "T17"
+kind = "S"
+title = "References: finalize_refs"
+
+[[tasks]]
+id = "T18"
+kind = "S"
+title = "Full gates: check_trail --all, make precheck"
+
+[[tasks]]
+id = "T19"
+kind = "S"
+title = "Fact spot-check"
+
+[[tasks]]
+id = "T20"
+kind = "S"
+title = "Style read-through"
+
+[[tasks]]
+id = "T21"
+kind = "S"
+title = "Build English and measure main-text pages"
+
+[[tasks]]
+id = "T22"
+kind = "S"
+title = "Vietnamese twin (build-report flow)"
+
+[[tasks]]
+id = "T23"
+kind = "S"
+title = "Build every language and post-check"
+
+[[tasks]]
+id = "T24"
+kind = "HC"
+title = "Final review with the user"
+
+[[seeds]]
+id = "S001"
+slug = "mth045-milestone4-brief-2026"
+source = "MTH045 – The Science of Data Analytics. (2026). Milestone P4: From modeling to evaluation [Course brief]"
+url = "final-project/milestones/04/milestone-4.md"
+item = "1"
+type = "primary"
+
+[[seeds]]
+id = "S002"
+slug = "kuzilek-2017-oulad-paper"
+source = "Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learning Analytics dataset. Scientific Data, 4, 170171"
+url = "https://doi.org/10.1038/sdata.2017.171"
+item = "2"
+type = "primary"

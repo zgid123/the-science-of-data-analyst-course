@@ -1,0 +1,20 @@
+FILE = "04-02-validation-strategy.vi.md"
+PAIRS = [
+("""**Kiểm tra trên các kỳ mở mô hình chưa thấy.**""", """**Kiểm tra trên các kỳ mở mà mô hình chưa thấy.**"""),
+("""Sinh viên nào cũng có mặt trong kỳ mở được tách ra để đánh giá thì bị loại khỏi dữ liệu huấn luyện của fold đó, vì fold kiểm định chỉ được chứa các nhóm không có trong dữ liệu huấn luyện [29].""",
+ """Nếu một sinh viên có mặt cả trong kỳ mở được tách ra để đánh giá, sinh viên đó bị loại khỏi dữ liệu huấn luyện của fold đó, vì fold kiểm định chỉ được chứa các nhóm không có trong dữ liệu huấn luyện [29]."""),
+("""Lý do thứ nhất là điểm kiểm định chéo sau khi tinh chỉnh lạc quan hơn đáng kể so với thực tế [30]. Lý do thứ hai là khi tiêu chí dùng để chọn mô hình bị quá khớp, sai lệch sinh ra có thể lớn ngang với chênh lệch giữa các thuật toán [31].""",
+ """Lập luận thứ nhất là điểm kiểm định chéo sau khi tinh chỉnh lạc quan hơn đáng kể so với thực tế [30]. Lập luận thứ hai là chính tiêu chí dùng để chọn mô hình cũng có thể bị quá khớp, tức khớp cả nhiễu của dữ liệu dùng để chọn; khi đó, sai lệch sinh ra có thể lớn ngang với chênh lệch giữa các thuật toán [31]."""),
+("""đồng thời mọi lần truy cập dữ liệu kiểm thử đều được ghi lại [26]. Sau đó, nhóm tác giả ước lượng lại mô hình đã chọn trên toàn bộ các kỳ mở năm 2013 và chấm điểm đúng một lần trên 13 kỳ mở năm 2014.""",
+ """đồng thời mọi lần truy cập dữ liệu của tập kiểm thử đều được ghi lại [26]. Sau đó, nhóm tác giả ước lượng lại mô hình đã chọn trên toàn bộ các kỳ mở năm 2013 và dùng mô hình này tính điểm rủi ro đúng một lần cho 13 kỳ mở năm 2014."""),
+("""nên hệ số của mỗi module được mã hóa thành độ lệch so với module trung bình; một module không có trong dữ liệu huấn luyện nhận mức của module trung bình.""",
+ """nên hệ số của mỗi module được mã hóa thành độ lệch so với module trung bình (deviation coding). Nhờ cách mã hóa này, một module không có trong dữ liệu huấn luyện nhận mức của module trung bình."""),
+("""mô hình của phương án này cũng chấm điểm các kỳ mở B năm 2014.""", """mô hình của phương án này cũng tính điểm rủi ro cho các kỳ mở B năm 2014."""),
+("""nội dung thực hiện và lý do; các đoạn trên""", """nội dung thực hiện và lập luận; các đoạn trên"""),
+("""**Độ bất định.** Độ bất định của điều kiện đạt được ước lượng bằng bootstrap hai tầng ghép cặp.""",
+ """**Độ bất định.** Điều kiện đạt S1 xét chênh lệch giữa mô hình và quy tắc; độ bất định của chênh lệch này được ước lượng bằng bootstrap hai tầng."""),
+("""Kiểm định này xét xem các chênh lệch có lợi cho mô hình ở mức như quan sát được sẽ xuất hiện thường xuyên đến đâu nếu dấu của chênh lệch ở từng kỳ mở chỉ là ngẫu nhiên.""",
+ """Kiểm định này giả sử dấu của chênh lệch ở từng kỳ mở chỉ là ngẫu nhiên. Với giả sử đó, kiểm định tính xem các chênh lệch có lợi cho mô hình ở mức bằng hoặc hơn mức quan sát được sẽ xuất hiện thường xuyên đến đâu."""),
+("""Tiêu chí thứ hai là mức lạc quan của R² Nagelkerke giữa dữ liệu phát triển và dữ liệu mới không quá 0,05; R² Nagelkerke đo mức biến thiên của biến kết quả mà mô hình giải thích được.""",
+ """Tiêu chí thứ hai là mức lạc quan của R² Nagelkerke không quá 0,05. Mức lạc quan là phần R² trên dữ liệu phát triển cao hơn R² trên dữ liệu mới, còn R² Nagelkerke đo mức biến thiên của biến kết quả mà mô hình giải thích được."""),
+]

@@ -1,0 +1,9 @@
+FILE = "03-04-ranking-capacity.vi.md"
+PAIRS = [
+("""Cả hai ngưỡng chia đều lấy từ hạn mức liên hệ, không lấy từ dữ liệu kiểm thử. Xét theo các tiêu chí còn lại, danh sách k sinh viên đầu không cần ước lượng thêm tham số nào, nên có tính bền vững và khả năng tái lập ngang với điểm rủi ro của AQ3; giả định chưa được kiểm chứng của danh sách là thứ tự nguy cơ trùng với thứ tự mức cần hỗ trợ; tính công bằng của danh sách được kiểm tra theo từng nhóm với cùng hạn mức liên hệ (Mục 4.4).""",
+ """Cả hai ngưỡng chia đều lấy từ hạn mức liên hệ, không lấy từ dữ liệu của tập kiểm thử. Các tiêu chí còn lại của Mục 3.1 được xét như sau. Danh sách k sinh viên đầu không cần ước lượng thêm tham số nào, nên có tính bền vững và khả năng tái lập ngang với điểm rủi ro của AQ3. Danh sách dựa trên một giả định chưa được kiểm chứng: sinh viên có nguy cơ cao hơn cũng là sinh viên cần hỗ trợ hơn, tức thứ tự theo nguy cơ trùng với thứ tự theo mức cần hỗ trợ. Ngoài ra, tính công bằng của danh sách được kiểm tra theo từng nhóm với cùng hạn mức liên hệ (Mục 4.4)."""),
+("""Lý do thứ nhất là muốn ước lượng tác động của một can thiệp khác nhau ra sao giữa các cá nhân thì cần dữ liệu về can thiệp được phân bổ ngẫu nhiên hoặc không bị yếu tố gây nhiễu chi phối [9]. Lý do thứ hai là trong các thực nghiệm""",
+ """Lập luận thứ nhất là để ước lượng mức tác động của một can thiệp thay đổi thế nào giữa các cá nhân, cần dữ liệu về can thiệp được phân bổ ngẫu nhiên, hoặc dữ liệu mà yếu tố gây nhiễu không làm sai lệch ước lượng [9]. Lập luận thứ hai là trong các thực nghiệm"""),
+("""Do đó, giả định rằng thứ tự nguy cơ trùng với thứ tự mức cần hỗ trợ vẫn chưa""", """Do đó, giả định rằng thứ tự theo nguy cơ trùng với thứ tự theo mức cần hỗ trợ vẫn chưa"""),
+("""đối chiếu các phương pháp cơ sở và phương pháp ứng viên cho AQ4 với tám tiêu chí, theo từng ô của bảng.""", """đối chiếu chi tiết các phương pháp cơ sở và phương pháp ứng viên cho AQ4 với tám tiêu chí."""),
+]

@@ -1,0 +1,21 @@
+# 2026-11-08T02:23:35Z renumber_refs.py --lang en --write (citation order after the full-draft restructure)
+53 entries, 53 cited, 28 renumbered, 0 dropped
+  [32] → [25]  first cited 04-01-evaluation-cards.md:51
+  [30] → [26]  first cited 04-01-evaluation-cards.md:52
+  [25] → [27]  first cited 04-02-validation-strategy.md:5
+  [26] → [28]  first cited 04-02-validation-strategy.md:14
+  [27] → [29]  first cited 04-02-validation-strategy.md:15
+  [28] → [30]  first cited 04-02-validation-strategy.md:17
+  [29] → [31]  first cited 04-02-validation-strategy.md:18
+  [33] → [32]  first cited 04-02-validation-strategy.md:43
+  [31] → [33]  first cited 04-03-metrics-success.md:17
+  [36] → [35]  first cited 04-04-error-fairness.md:8
+  [35] → [36]  first cited 04-04-error-fairness.md:11
+  [53] → [37]  first cited 04-04-error-fairness.md:12
+  [37] → [38]  first cited 04-04-error-fairness.md:27
+  [38] → [39]  first cited 05-00-risk-ethics.md:6
+  [39] → [40]  first cited 05-01-leakage-interpretability.md:7
+  … 13 more
+map → reports/milestone-4/research/revision/renumber-2026-11-08.md
+written: 34 files checked, reference list 09-references.md rewritten
+exit 0

@@ -1,0 +1,107 @@
+# 2026-11-08T02:56:15Z vi consistency pass
+$ check_parity.py --report reports/milestone-4/report --lang vi  (before)
+WARN  00-2-glossary.vi.md: line 37: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 43: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+WARN  10-06-ai-critiques.vi.md: line 44: source-language reference 'Section 2.1' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 44: source-language reference 'Appendix I' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 44: looks untranslated: '> section 11). Read only the brief, the AQ Modeling Briefs (Section 2.'
+WARN  10-06-ai-critiques.vi.md: line 45: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 45: looks untranslated: '> sample sizes and counts from the prepared data (Appendix III). Do no'
+WARN  10-06-ai-critiques.vi.md: line 46: looks untranslated: '> not invent benchmark results, metric thresholds or performance numbe'
+WARN  10-06-ai-critiques.vi.md: line 48: looks untranslated: '> and the chosen method; (2) whether each modeling AQ has a sensible b'
+WARN  10-06-ai-critiques.vi.md: line 49: looks untranslated: '> straw-man baseline; (3) whether the rationale is tied to the data fa'
+WARN  10-06-ai-critiques.vi.md: line 53: looks untranslated: '> important first, each with the passage, the problem, why it matters '
+WARN  10-06-ai-critiques.vi.md: line 57: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+WARN  10-06-ai-critiques.vi.md: line 58: source-language reference 'Appendix II' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 58: looks untranslated: '> section 11). Read only the brief, the Evaluation Design Cards and me'
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix IV' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix V' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 59: looks untranslated: '> and test protocol (Appendix III), the error and fairness analysis (A'
+WARN  10-06-ai-critiques.vi.md: line 62: looks untranslated: '> decision it serves and whether any metric is misleading for this bas'
+WARN  10-06-ai-critiques.vi.md: line 64: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 65: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 65: looks untranslated: '> uncertainty estimation with 9 training and 13 test runs; (5) calibra'
+WARN  10-06-ai-critiques.vi.md: line 68: looks untranslated: '> critiques, most important first, each with the passage, the problem,'
+
+Checked 34 pairs (vi): 0 errors, 24 warnings
+$ check_abbreviations.py --report reports/milestone-4/report --lang vi  (before)
+===== VI: 17 abbreviations, 2 violations
+  DEFINE  ROC: first use at 04-00-evaluation-design.vi.md:3 has no full form beside it: …g phân biệt trên đường cong đặc trưng hoạt động của bộ thu (ROC), bằng diện tích dưới đường cong ROC (ROC-AUC) và diện t…
+  REPEAT  UK: full form 'Vương quốc Anh' again at 10-05-risk-register.vi.md:15: …Các kỳ mở năm 2014 khác năm 2013; đào tạo từ xa ở Vương quốc Anh (UK) khác chương trình đào tạo ở Việt N…
+$ glossary.py --lang vi --task milestone-4 coverage (before)
+WARN  term drift: 'programme / major' occurs 4× in the English, its form 'ngành' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (domains/higher-education.md)
+WARN  term drift: 'Before / After (Change Log columns)' occurs 78× in the English, its form 'Nội dung cũ / Nội dung mới' 2× in the translation (3%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'enrolment / admission' occurs 79× in the English, its form 'lượt đăng ký học phần / tuyển sinh' 3× in the translation (4%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'tutor (teaching assistant)' occurs 43× in the English, its form 'trợ giảng' 2× in the translation (5%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'primary / extended predictors' occurs 64× in the English, its form 'đặc trưng chính / đặc trưng mở rộng' 3× in the translation (5%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'non-completion / students who do not complete' occurs 25× in the English, its form 'không hoàn thành học phần / sinh viên không hoàn thành học phần' 2× in the translation (8%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'capacity (Milestone 2 wording)' occurs 60× in the English, its form 'số sinh viên cán bộ liên hệ được mỗi tuần' 5× in the translation (8%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'capacity (weekly follow-up capacity of staff)' occurs 60× in the English, its form 'số sinh viên cán bộ liên hệ được mỗi tuần' 5× in the translation (8%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'measure (a quantity derived from a field)' occurs 16× in the English, its form 'đại lượng đo' 2× in the translation (12%); the concept likely travels under other names – align them with the glossary (topics/oulad-data-preparation.md)
+WARN  term drift: 'flag (on a student, noun)' occurs 14× in the English, its form 'nhãn bị đánh dấu' 2× in the translation (14%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'reviewer (AI role) / sparring partner' occurs 14× in the English, its form 'người đánh giá (reviewer) / người phản biện (sparring partner)' 2× in the translation (14%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'baseline / target (of a KPI)' occurs 74× in the English, its form 'mức cơ sở / mức mục tiêu' 15× in the translation (20%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'primary / extended predictors (Milestone 4)' occurs 64× in the English, its form 'biến dự báo chính / bộ biến dự báo mở rộng' 13× in the translation (20%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'retention (students staying)' occurs 4× in the English, its form 'tỷ lệ sinh viên tiếp tục theo học' 1× in the translation (25%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'predictor (in running text)' occurs 33× in the English, its form 'đặc trưng' 9× in the translation (27%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'development runs / test runs' occurs 14× in the English, its form 'các kỳ mở phát triển / các kỳ mở của tập kiểm thử' 4× in the translation (29%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'Validation (traceability column)' occurs 40× in the English, its form 'Cách đánh giá' 16× in the translation (40%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'deprivation band (IMD band)' occurs 12× in the English, its form 'mức khó khăn kinh tế – xã hội của khu vực cư trú' 5× in the translation (42%); the concept likely travels under other names – align them with the glossary (topics/oulad-data-preparation.md)
+Checked 383 task terms: 18 drifting
+$ glossary.py coverage (after)
+WARN  term drift: 'programme / major' occurs 4× in the English, its form 'ngành' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (domains/higher-education.md)
+WARN  term drift: 'flag (on a student, noun)' occurs 14× in the English, its form 'nhãn bị đánh dấu' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'Before / After (Change Log columns)' occurs 78× in the English, its form 'Nội dung cũ / Nội dung mới' 2× in the translation (3%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'primary / extended predictors' occurs 64× in the English, its form 'đặc trưng chính / đặc trưng mở rộng' 2× in the translation (3%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'enrolment / admission' occurs 79× in the English, its form 'lượt đăng ký học phần / tuyển sinh' 3× in the translation (4%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'tutor (teaching assistant)' occurs 43× in the English, its form 'trợ giảng' 2× in the translation (5%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'capacity (Milestone 2 wording)' occurs 60× in the English, its form 'số sinh viên cán bộ liên hệ được mỗi tuần' 4× in the translation (7%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'capacity (weekly follow-up capacity of staff)' occurs 60× in the English, its form 'số sinh viên cán bộ liên hệ được mỗi tuần' 4× in the translation (7%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'non-completion / students who do not complete' occurs 25× in the English, its form 'không hoàn thành học phần / sinh viên không hoàn thành học phần' 2× in the translation (8%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'baseline / target (of a KPI)' occurs 74× in the English, its form 'mức cơ sở / mức mục tiêu' 9× in the translation (12%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'measure (a quantity derived from a field)' occurs 16× in the English, its form 'đại lượng đo' 2× in the translation (12%); the concept likely travels under other names – align them with the glossary (topics/oulad-data-preparation.md)
+WARN  term drift: 'proxy (measure)' occurs 7× in the English, its form 'chỉ số đại diện' 1× in the translation (14%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'reviewer (AI role) / sparring partner' occurs 14× in the English, its form 'người đánh giá (reviewer) / người phản biện (sparring partner)' 2× in the translation (14%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'predictor (in running text)' occurs 33× in the English, its form 'đặc trưng' 8× in the translation (24%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'retention (students staying)' occurs 4× in the English, its form 'tỷ lệ sinh viên tiếp tục theo học' 1× in the translation (25%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'paired run (Milestone 3 running text)' occurs 3× in the English, its form 'kỳ mở có kỳ tương ứng năm 2013' 1× in the translation (33%); the concept likely travels under other names – align them with the glossary (topics/oulad-data-preparation.md)
+WARN  term drift: 'development runs / test runs' occurs 14× in the English, its form 'các kỳ mở phát triển / các kỳ mở của tập kiểm thử' 5× in the translation (36%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'Validation (traceability column)' occurs 40× in the English, its form 'Cách đánh giá' 16× in the translation (40%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'primary / extended predictors (Milestone 4)' occurs 64× in the English, its form 'biến dự báo chính / bộ biến dự báo mở rộng' 26× in the translation (41%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'deprivation band (IMD band)' occurs 12× in the English, its form 'mức khó khăn kinh tế – xã hội của khu vực cư trú' 5× in the translation (42%); the concept likely travels under other names – align them with the glossary (topics/oulad-data-preparation.md)
+Checked 383 task terms: 20 drifting
+$ check_structure.py --report reports/milestone-4/report
+===== EN: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings
+===== VI: 34 files, 33 headings, 2 figures, 29 tables: 0 errors, 0 warnings
+$ check_parity.py --report reports/milestone-4/report --lang vi  (final)
+WARN  00-2-glossary.vi.md: line 37: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 43: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+WARN  10-06-ai-critiques.vi.md: line 44: source-language reference 'Section 2.1' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 44: source-language reference 'Appendix I' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 44: looks untranslated: '> section 11). Read only the brief, the AQ Modeling Briefs (Section 2.'
+WARN  10-06-ai-critiques.vi.md: line 45: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 45: looks untranslated: '> sample sizes and counts from the prepared data (Appendix III). Do no'
+WARN  10-06-ai-critiques.vi.md: line 46: looks untranslated: '> not invent benchmark results, metric thresholds or performance numbe'
+WARN  10-06-ai-critiques.vi.md: line 48: looks untranslated: '> and the chosen method; (2) whether each modeling AQ has a sensible b'
+WARN  10-06-ai-critiques.vi.md: line 49: looks untranslated: '> straw-man baseline; (3) whether the rationale is tied to the data fa'
+WARN  10-06-ai-critiques.vi.md: line 53: looks untranslated: '> important first, each with the passage, the problem, why it matters '
+WARN  10-06-ai-critiques.vi.md: line 57: looks untranslated: '> You act as the   reviewer role that the MTH045 Milestone 4 brief all'
+WARN  10-06-ai-critiques.vi.md: line 58: source-language reference 'Appendix II' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 58: looks untranslated: '> section 11). Read only the brief, the Evaluation Design Cards and me'
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix III' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix IV' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: source-language reference 'Appendix V' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  10-06-ai-critiques.vi.md: line 59: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 59: looks untranslated: '> and test protocol (Appendix III), the error and fairness analysis (A'
+WARN  10-06-ai-critiques.vi.md: line 62: looks untranslated: '> decision it serves and whether any metric is misleading for this bas'
+WARN  10-06-ai-critiques.vi.md: line 64: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 65: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  10-06-ai-critiques.vi.md: line 65: looks untranslated: '> uncertainty estimation with 9 training and 13 test runs; (5) calibra'
+WARN  10-06-ai-critiques.vi.md: line 68: looks untranslated: '> critiques, most important first, each with the passage, the problem,'
+
+Checked 34 pairs (vi): 0 errors, 24 warnings
+exit 0
+===== VI: 17 abbreviations, 0 violations
+exit 0

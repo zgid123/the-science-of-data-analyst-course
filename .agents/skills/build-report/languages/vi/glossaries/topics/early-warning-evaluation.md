@@ -28,6 +28,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | leave-one-run-out (folds) | loại trừ từng kỳ mở (leave-one-run-out) |  |  |
 | scaling / encoding (fitted) | phép chuẩn hóa thang đo / phép mã hóa (được ước lượng) | | |
 | single test (on the 2014 runs) | kiểm tra một lần duy nhất | "tính điểm rủi ro cho các kỳ mở năm 2014 đúng một lần"; "chấm điểm" stays for graded assessments only |  |
+| standardise (with the training mean and standard deviation) | chuẩn hóa (theo trung bình và độ lệch chuẩn của tập huấn luyện) | the transform step; "phép chuẩn hóa thang đo" names the fitted transform as a whole |  |
 | target leakage / train–test contamination / student leakage / temporal leakage / augmentation leakage | rò rỉ biến mục tiêu / lẫn dữ liệu giữa tập huấn luyện và tập kiểm thử / rò rỉ theo sinh viên / rò rỉ theo thời gian / rò rỉ do tăng cường dữ liệu | the brief's five leakage risks |  |
 | test set (the 2014 runs) | tập kiểm thử (các kỳ mở năm 2014) | Milestone 3 reader test: never a bare "kiểm thử"; "kiểm thử đơn vị" for unit tests; "bản ghi giả lập" for synthetic test records | |
 | time split | chia dữ liệu theo thời gian | training 2013 runs, test 2014 runs |  |
@@ -42,6 +43,8 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | events per parameter | số sự kiện trên mỗi tham số | "sự kiện" = sinh viên không hoàn thành |  |
 | fixed effects (of module run) | hiệu ứng cố định | first use: "hiệu ứng cố định (fixed effects) theo kỳ mở" |  |
 | labels-available variant | phương án huấn luyện chỉ trên các kỳ mở tháng 2 năm 2013 | scores the 2014 February runs; first use adds why: "vì kết quả các kỳ mở tháng 10 năm 2013 chưa có khi đó" | phương án chỉ dùng kết quả đã biết |
+| log-odds | log-odds | keep English, as in the calibration terms; "log-odds của biến cố không hoàn thành", not "của khả năng", since odds are not a probability |  |
+| penalty (of a penalised model) | hiệu chỉnh phạt | "hiệu chỉnh phạt co mọi hệ số"; matches "hồi quy logistic có hiệu chỉnh phạt" |  |
 | primary approach | phương pháp chính | first use: "phương pháp chính (primary approach)" |  |
 
 ## Evaluation measures and statistical tests

@@ -1,0 +1,21 @@
+2026-11-06T17:33:32Z
+$ venv/bin/python reports/milestone-4/code/measure_pages.py reports/milestone-4/build/N04_Milestone4_EN.docx reports/milestone-4/build/N04_Milestone4_VI.docx
+N04_Milestone4_EN.docx: front matter 4.5 | main content (Parts 1–end) 12.4 | references and appendices 17.9 pages (estimate)
+    1.66  1. Project Context and Continuity
+    1.67  2. AQ-to-Technical-Task Mapping
+    2.48  3. Candidate Modeling Approaches
+    3.21  4. Evaluation Design
+    1.71  5. Risk, Ethics and Limitations
+    0.59  6. Generative AI Usage
+    0.53  7. Prototype Protocol
+    0.55  8. Updated Traceability Matrix
+N04_Milestone4_VI.docx: front matter 4.7 | main content (Parts 1–end) 16.5 | references and appendices 20.3 pages (estimate)
+    2.08  1. Bối cảnh và tính liên tục của dự án
+    2.03  2. Ánh xạ từ AQ sang bài toán kỹ thuật
+    3.43  3. Các phương pháp mô hình hóa ứng viên
+    4.37  4. Thiết kế đánh giá
+    2.34  5. Rủi ro, đạo đức và hạn chế
+    0.78  6. Sử dụng AI tạo sinh
+    0.70  7. Giao thức chạy nguyên mẫu
+    0.75  8. Ma trận truy vết đã cập nhật
+exit 0

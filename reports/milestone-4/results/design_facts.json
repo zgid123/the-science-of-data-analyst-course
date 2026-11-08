@@ -1,0 +1,647 @@
+{
+ "source": "Milestone 3 prepared views, OULAD-N04-prepared-1.0",
+ "run_length_days": {
+  "2013B": [
+   240,
+   240,
+   240
+  ],
+  "2013J": [
+   261,
+   261,
+   268,
+   268,
+   268,
+   268
+  ],
+  "2014B": [
+   234,
+   241,
+   241,
+   241,
+   241,
+   241
+  ],
+  "2014J": [
+   262,
+   262,
+   269,
+   269,
+   269,
+   269,
+   269
+  ]
+ },
+ "cutoffs": {
+  "d13": {
+   "day": 13,
+   "train_rows": 12080,
+   "train_events": 5519,
+   "train_nonevents": 6561,
+   "train_prevalence": 0.4569,
+   "test_rows": 15989,
+   "test_rows_paired": 10902,
+   "test_rows_unpaired": 5087,
+   "test_rows_student_in_training": 1637,
+   "test_rows_withdrawal_day_unknown": 89,
+   "train_runs": 9,
+   "test_runs": 13,
+   "test_runs_paired": 9,
+   "params_primary": 23,
+   "params_full": 35,
+   "epp_primary": 240.0,
+   "epp_full": 157.7,
+   "riley_primary": {
+    "p": 23,
+    "prevalence": 0.4569,
+    "max_r2_cs": 0.7481,
+    "anticipated_r2_cs": 0.1122,
+    "n_shrinkage": 1728,
+    "n_optimism": 568,
+    "n_intercept": 382,
+    "n_required": 1728,
+    "events_required": 790,
+    "epp_required": 34.3
+   },
+   "riley_full": {
+    "p": 35,
+    "prevalence": 0.4569,
+    "max_r2_cs": 0.7481,
+    "anticipated_r2_cs": 0.1122,
+    "n_shrinkage": 2629,
+    "n_optimism": 864,
+    "n_intercept": 382,
+    "n_required": 2629,
+    "events_required": 1202,
+    "epp_required": 34.3
+   },
+   "train_base_rate_min": 0.2486,
+   "train_base_rate_max": 0.5748,
+   "train_run_rows_min": 370,
+   "train_run_rows_max": 1998,
+   "train_run_events_min": 92,
+   "max_recall_3_min": 0.2616,
+   "max_recall_3_max": 0.6196,
+   "max_recall_5_min": 0.436,
+   "max_recall_5_max": 1.0,
+   "train_attainable_tp_k3": 1821,
+   "train_attainable_tp_k5": 3032,
+   "train_students_in_several_runs": 129,
+   "train_rows_of_those_students": 258,
+   "test_list3_total": 2418,
+   "test_list5_total": 4030,
+   "test_run_rows_min": 350,
+   "test_run_rows_max": 2079,
+   "groups": {
+    "disability=Y": {
+     "train_rows": 1157,
+     "train_events": 636,
+     "test_rows": 1520,
+     "test_rows_min_per_run": 18
+    },
+    "imd_band=Missing": {
+     "train_rows": 420,
+     "train_events": 121,
+     "test_rows": 617,
+     "test_rows_min_per_run": 1
+    },
+    "imd_band=0-10%": {
+     "train_rows": 1196,
+     "train_events": 732,
+     "test_rows": 1512,
+     "test_rows_min_per_run": 17
+    },
+    "age_band=55<=": {
+     "train_rows": 76,
+     "train_events": 19,
+     "test_rows": 122,
+     "test_rows_min_per_run": 1
+    },
+    "gender=F": {
+     "train_rows": 5828,
+     "train_events": 2622,
+     "test_rows": 6748,
+     "test_rows_min_per_run": 68
+    },
+    "gender=M": {
+     "train_rows": 6252,
+     "train_events": 2897,
+     "test_rows": 9241,
+     "test_rows_min_per_run": 140
+    }
+   },
+   "train_runs_detail": [
+    {
+     "code_module": "AAA",
+     "code_presentation": "2013J",
+     "n": 370,
+     "events": 92,
+     "base_rate": 0.2486,
+     "list_tutor_3": 57,
+     "list_tutor_5": 95,
+     "max_recall_3": 0.6196,
+     "max_recall_5": 1.0
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2013B",
+     "n": 1607,
+     "events": 805,
+     "base_rate": 0.5009,
+     "list_tutor_3": 243,
+     "list_tutor_5": 405,
+     "max_recall_3": 0.3019,
+     "max_recall_5": 0.5031
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2013J",
+     "n": 1852,
+     "events": 782,
+     "base_rate": 0.4222,
+     "list_tutor_3": 279,
+     "list_tutor_5": 465,
+     "max_recall_3": 0.3568,
+     "max_recall_5": 0.5946
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2013B",
+     "n": 1197,
+     "events": 688,
+     "base_rate": 0.5748,
+     "list_tutor_3": 180,
+     "list_tutor_5": 300,
+     "max_recall_3": 0.2616,
+     "max_recall_5": 0.436
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2013J",
+     "n": 1675,
+     "events": 849,
+     "base_rate": 0.5069,
+     "list_tutor_3": 252,
+     "list_tutor_5": 420,
+     "max_recall_3": 0.2968,
+     "max_recall_5": 0.4947
+    },
+    {
+     "code_module": "EEE",
+     "code_presentation": "2013J",
+     "n": 934,
+     "events": 326,
+     "base_rate": 0.349,
+     "list_tutor_3": 141,
+     "list_tutor_5": 235,
+     "max_recall_3": 0.4325,
+     "max_recall_5": 0.7209
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2013B",
+     "n": 1520,
+     "events": 739,
+     "base_rate": 0.4862,
+     "list_tutor_3": 228,
+     "list_tutor_5": 380,
+     "max_recall_3": 0.3085,
+     "max_recall_5": 0.5142
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2013J",
+     "n": 1998,
+     "events": 903,
+     "base_rate": 0.452,
+     "list_tutor_3": 300,
+     "list_tutor_5": 500,
+     "max_recall_3": 0.3322,
+     "max_recall_5": 0.5537
+    },
+    {
+     "code_module": "GGG",
+     "code_presentation": "2013J",
+     "n": 927,
+     "events": 335,
+     "base_rate": 0.3614,
+     "list_tutor_3": 141,
+     "list_tutor_5": 235,
+     "max_recall_3": 0.4209,
+     "max_recall_5": 0.7015
+    }
+   ],
+   "test_runs_detail": [
+    {
+     "code_module": "AAA",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 350,
+     "list_tutor_3": 54,
+     "list_tutor_5": 90
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2014B",
+     "paired_run": true,
+     "n": 1288,
+     "list_tutor_3": 195,
+     "list_tutor_5": 325
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1791,
+     "list_tutor_3": 270,
+     "list_tutor_5": 450
+    },
+    {
+     "code_module": "CCC",
+     "code_presentation": "2014B",
+     "paired_run": false,
+     "n": 1592,
+     "list_tutor_3": 240,
+     "list_tutor_5": 400
+    },
+    {
+     "code_module": "CCC",
+     "code_presentation": "2014J",
+     "paired_run": false,
+     "n": 2079,
+     "list_tutor_3": 312,
+     "list_tutor_5": 520
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2014B",
+     "paired_run": true,
+     "n": 1050,
+     "list_tutor_3": 159,
+     "list_tutor_5": 265
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1481,
+     "list_tutor_3": 225,
+     "list_tutor_5": 375
+    },
+    {
+     "code_module": "EEE",
+     "code_presentation": "2014B",
+     "paired_run": false,
+     "n": 614,
+     "list_tutor_3": 93,
+     "list_tutor_5": 155
+    },
+    {
+     "code_module": "EEE",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1027,
+     "list_tutor_3": 156,
+     "list_tutor_5": 260
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2014B",
+     "paired_run": true,
+     "n": 1310,
+     "list_tutor_3": 198,
+     "list_tutor_5": 330
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1886,
+     "list_tutor_3": 285,
+     "list_tutor_5": 475
+    },
+    {
+     "code_module": "GGG",
+     "code_presentation": "2014B",
+     "paired_run": false,
+     "n": 802,
+     "list_tutor_3": 123,
+     "list_tutor_5": 205
+    },
+    {
+     "code_module": "GGG",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 719,
+     "list_tutor_3": 108,
+     "list_tutor_5": 180
+    }
+   ]
+  },
+  "d27": {
+   "day": 27,
+   "train_rows": 11811,
+   "train_events": 5245,
+   "train_nonevents": 6566,
+   "train_prevalence": 0.4441,
+   "test_rows": 15724,
+   "test_rows_paired": 10801,
+   "test_rows_unpaired": 4923,
+   "test_rows_student_in_training": 1586,
+   "test_rows_withdrawal_day_unknown": 90,
+   "train_runs": 9,
+   "test_runs": 13,
+   "test_runs_paired": 9,
+   "params_primary": 23,
+   "params_full": 37,
+   "epp_primary": 228.0,
+   "epp_full": 141.8,
+   "riley_primary": {
+    "p": 23,
+    "prevalence": 0.4441,
+    "max_r2_cs": 0.7468,
+    "anticipated_r2_cs": 0.112,
+    "n_shrinkage": 1731,
+    "n_optimism": 569,
+    "n_intercept": 380,
+    "n_required": 1731,
+    "events_required": 769,
+    "epp_required": 33.4
+   },
+   "riley_full": {
+    "p": 37,
+    "prevalence": 0.4441,
+    "max_r2_cs": 0.7468,
+    "anticipated_r2_cs": 0.112,
+    "n_shrinkage": 2784,
+    "n_optimism": 915,
+    "n_intercept": 380,
+    "n_required": 2784,
+    "events_required": 1237,
+    "epp_required": 33.4
+   },
+   "train_base_rate_min": 0.2466,
+   "train_base_rate_max": 0.5547,
+   "train_run_rows_min": 369,
+   "train_run_rows_max": 1983,
+   "train_run_events_min": 91,
+   "max_recall_3_min": 0.2744,
+   "max_recall_3_max": 0.6264,
+   "max_recall_5_min": 0.4574,
+   "max_recall_5_max": 1.0,
+   "train_attainable_tp_k3": 1788,
+   "train_attainable_tp_k5": 2976,
+   "train_students_in_several_runs": 121,
+   "train_rows_of_those_students": 242,
+   "test_list3_total": 2373,
+   "test_list5_total": 3955,
+   "test_run_rows_min": 348,
+   "test_run_rows_max": 2021,
+   "groups": {
+    "disability=Y": {
+     "train_rows": 1123,
+     "train_events": 602,
+     "test_rows": 1488,
+     "test_rows_min_per_run": 18
+    },
+    "imd_band=Missing": {
+     "train_rows": 418,
+     "train_events": 118,
+     "test_rows": 610,
+     "test_rows_min_per_run": 1
+    },
+    "imd_band=0-10%": {
+     "train_rows": 1163,
+     "train_events": 699,
+     "test_rows": 1486,
+     "test_rows_min_per_run": 17
+    },
+    "age_band=55<=": {
+     "train_rows": 75,
+     "train_events": 18,
+     "test_rows": 118,
+     "test_rows_min_per_run": 1
+    },
+    "gender=F": {
+     "train_rows": 5697,
+     "train_events": 2488,
+     "test_rows": 6666,
+     "test_rows_min_per_run": 66
+    },
+    "gender=M": {
+     "train_rows": 6114,
+     "train_events": 2757,
+     "test_rows": 9058,
+     "test_rows_min_per_run": 139
+    }
+   },
+   "train_runs_detail": [
+    {
+     "code_module": "AAA",
+     "code_presentation": "2013J",
+     "n": 369,
+     "events": 91,
+     "base_rate": 0.2466,
+     "list_tutor_3": 57,
+     "list_tutor_5": 95,
+     "max_recall_3": 0.6264,
+     "max_recall_5": 1.0
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2013B",
+     "n": 1530,
+     "events": 728,
+     "base_rate": 0.4758,
+     "list_tutor_3": 231,
+     "list_tutor_5": 385,
+     "max_recall_3": 0.3173,
+     "max_recall_5": 0.5288
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2013J",
+     "n": 1834,
+     "events": 763,
+     "base_rate": 0.416,
+     "list_tutor_3": 276,
+     "list_tutor_5": 460,
+     "max_recall_3": 0.3617,
+     "max_recall_5": 0.6029
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2013B",
+     "n": 1143,
+     "events": 634,
+     "base_rate": 0.5547,
+     "list_tutor_3": 174,
+     "list_tutor_5": 290,
+     "max_recall_3": 0.2744,
+     "max_recall_5": 0.4574
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2013J",
+     "n": 1647,
+     "events": 819,
+     "base_rate": 0.4973,
+     "list_tutor_3": 249,
+     "list_tutor_5": 415,
+     "max_recall_3": 0.304,
+     "max_recall_5": 0.5067
+    },
+    {
+     "code_module": "EEE",
+     "code_presentation": "2013J",
+     "n": 927,
+     "events": 318,
+     "base_rate": 0.343,
+     "list_tutor_3": 141,
+     "list_tutor_5": 235,
+     "max_recall_3": 0.4434,
+     "max_recall_5": 0.739
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2013B",
+     "n": 1454,
+     "events": 672,
+     "base_rate": 0.4622,
+     "list_tutor_3": 219,
+     "list_tutor_5": 365,
+     "max_recall_3": 0.3259,
+     "max_recall_5": 0.5432
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2013J",
+     "n": 1983,
+     "events": 888,
+     "base_rate": 0.4478,
+     "list_tutor_3": 300,
+     "list_tutor_5": 500,
+     "max_recall_3": 0.3378,
+     "max_recall_5": 0.5631
+    },
+    {
+     "code_module": "GGG",
+     "code_presentation": "2013J",
+     "n": 924,
+     "events": 332,
+     "base_rate": 0.3593,
+     "list_tutor_3": 141,
+     "list_tutor_5": 235,
+     "max_recall_3": 0.4247,
+     "max_recall_5": 0.7078
+    }
+   ],
+   "test_runs_detail": [
+    {
+     "code_module": "AAA",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 348,
+     "list_tutor_3": 54,
+     "list_tutor_5": 90
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2014B",
+     "paired_run": true,
+     "n": 1280,
+     "list_tutor_3": 192,
+     "list_tutor_5": 320
+    },
+    {
+     "code_module": "BBB",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1786,
+     "list_tutor_3": 270,
+     "list_tutor_5": 450
+    },
+    {
+     "code_module": "CCC",
+     "code_presentation": "2014B",
+     "paired_run": false,
+     "n": 1500,
+     "list_tutor_3": 225,
+     "list_tutor_5": 375
+    },
+    {
+     "code_module": "CCC",
+     "code_presentation": "2014J",
+     "paired_run": false,
+     "n": 2021,
+     "list_tutor_3": 306,
+     "list_tutor_5": 510
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2014B",
+     "paired_run": true,
+     "n": 1029,
+     "list_tutor_3": 156,
+     "list_tutor_5": 260
+    },
+    {
+     "code_module": "DDD",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1463,
+     "list_tutor_3": 222,
+     "list_tutor_5": 370
+    },
+    {
+     "code_module": "EEE",
+     "code_presentation": "2014B",
+     "paired_run": false,
+     "n": 605,
+     "list_tutor_3": 93,
+     "list_tutor_5": 155
+    },
+    {
+     "code_module": "EEE",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1020,
+     "list_tutor_3": 153,
+     "list_tutor_5": 255
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2014B",
+     "paired_run": true,
+     "n": 1299,
+     "list_tutor_3": 195,
+     "list_tutor_5": 325
+    },
+    {
+     "code_module": "FFF",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 1859,
+     "list_tutor_3": 279,
+     "list_tutor_5": 465
+    },
+    {
+     "code_module": "GGG",
+     "code_presentation": "2014B",
+     "paired_run": false,
+     "n": 797,
+     "list_tutor_3": 120,
+     "list_tutor_5": 200
+    },
+    {
+     "code_module": "GGG",
+     "code_presentation": "2014J",
+     "paired_run": true,
+     "n": 717,
+     "list_tutor_3": 108,
+     "list_tutor_5": 180
+    }
+   ]
+  }
+ }
+}

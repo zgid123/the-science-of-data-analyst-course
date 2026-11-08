@@ -1,0 +1,5 @@
+FILE = "04-00-evaluation-design.vi.md"
+PAIRS = [
+("""Chuẩn này đánh giá mô hình theo ba khía cạnh, mỗi chỉ số đều kèm lý do lựa chọn [21]. Khía cạnh thứ nhất là khả năng phân biệt: mô hình tách những sinh viên sẽ không hoàn thành khỏi những sinh viên sẽ hoàn thành tốt đến mức nào; báo cáo này đo khả năng phân biệt trên đường cong đặc trưng hoạt động của bộ thu (ROC), bằng diện tích dưới đường cong ROC (ROC-AUC) và diện tích dưới đường cong độ chính xác–tỷ lệ phát hiện (PR-AUC).""",
+ """Chuẩn này chia việc đánh giá thành ba khía cạnh, và mỗi chỉ số đo phải được nêu kèm lập luận cho lựa chọn [21]. Khía cạnh thứ nhất là khả năng phân biệt: mô hình tách những sinh viên sẽ không hoàn thành khỏi những sinh viên sẽ hoàn thành tốt đến mức nào. Báo cáo này đo khả năng phân biệt bằng hai chỉ số. Chỉ số thứ nhất được tính trên đường cong đặc trưng hoạt động của bộ thu (ROC), là diện tích dưới đường cong ROC (ROC-AUC). Chỉ số thứ hai được tính trên đường cong độ chính xác–tỷ lệ phát hiện, là diện tích dưới đường cong độ chính xác–tỷ lệ phát hiện (PR-AUC)."""),
+]

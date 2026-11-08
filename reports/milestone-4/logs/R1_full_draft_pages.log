@@ -1,0 +1,21 @@
+# 2026-11-08T02:19:45Z full draft
+part                                          optimistic laid out   flow   gap tables
+Contents                                             1.0     1.00
+List of Abbreviations                                0.8     1.00
+List of Terms                                        0.9     2.00
+List of Figures                                      0.1     1.00
+List of Tables                                       1.5     2.00
+1. Project Context and Continuity                    2.5     3.31   3.19  0.12   0.83
+2. AQ-to-Technical-Task Mapping                      3.3     4.69   4.11  0.58   1.74
+3. Candidate Modeling Approaches                     5.0     7.49   6.83  0.66   3.12
+4. Evaluation Design                                 8.6    11.66  11.07  0.60   5.60
+5. Risk, Ethics and Limitations                      3.0     4.22   4.02  0.20   1.82
+6. Generative AI Usage                               2.5     4.03   3.54  0.50   2.68
+7. Prototype Protocol                                0.7     0.89   0.83  0.05   0.36
+8. Updated Traceability Matrix                       1.4     2.70   2.12  0.58   1.48
+References                                           4.3     6.00
+Appendices                                          13.6    29.28
+main content                                        26.9    39.00  35.71  3.29  17.63
+main content: optimistic 26.9 pages, pessimistic 39.0 pages (plan with this); text 18.1, tables 17.6, layout gaps 3.3
+last main-text page 54% full: a cut saves a page only if it removes more than 0.54 of a page
+budget 12 pages: +27.0 pages (pessimistic), +14.9 (optimistic)

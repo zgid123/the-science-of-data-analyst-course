@@ -1,0 +1,822 @@
+[
+[
+"01-00-context-continuity",
+[
+3
+],
+"phương pháp chính kèm lý do",
+"phương pháp chính (primary approach) kèm lý do"
+],
+[
+"03-00-candidate-approaches",
+[
+3
+],
+"một phương pháp cơ sở (baseline) hợp lý",
+"một phương pháp cơ sở hợp lý"
+],
+[
+"03-00-candidate-approaches",
+[
+3
+],
+"trước khi chọn phương pháp chính (primary approach);",
+"trước khi chọn phương pháp chính;"
+],
+[
+"03-00-candidate-approaches",
+[
+3
+],
+"bài toán xếp hạng theo hạn mức liên hệ (số sinh viên giảng viên hướng dẫn liên hệ được: 3 hoặc 5 trên mỗi nhóm khoảng 20).",
+"bài toán xếp hạng theo hạn mức liên hệ."
+],
+[
+"02-01-modeling-briefs",
+[
+56
+],
+"tỷ lệ phát hiện (recall)",
+"tỷ lệ phát hiện"
+],
+[
+"03-01-criteria-matrix",
+[
+15
+],
+"mô hình logistic chỉ dùng đặc điểm cá nhân; danh sách ngẫu nhiên | Hồi quy logistic có hiệu chỉnh phạt | Cây tăng cường độ dốc (mô hình sống sót thời gian rời rạc làm phần mở rộng)",
+"mô hình logistic chỉ dùng đặc điểm cá nhân (background-only model); danh sách ngẫu nhiên | Hồi quy logistic có hiệu chỉnh phạt (penalised logistic regression) | Cây tăng cường độ dốc (gradient-boosted trees), với mô hình sống sót thời gian rời rạc làm phần mở rộng"
+],
+[
+"03-01-criteria-matrix",
+[
+16
+],
+"nên không xếp hạng theo lợi ích can thiệp |",
+"nên không xếp hạng theo lợi ích can thiệp (uplift) |"
+],
+[
+"03-02-descriptive-diagnostic",
+[
+7
+],
+"Mô hình này có hiệu ứng cố định (fixed effects) cho từng",
+"Mô hình này có hiệu ứng cố định cho từng"
+],
+[
+"03-02-descriptive-diagnostic",
+[
+9
+],
+"kèm tỉ số odds (odds ratio).",
+"kèm tỉ số odds."
+],
+[
+"03-03-predictive",
+[
+7
+],
+"Bộ biến mở rộng bổ sung 10 biến dự báo (",
+"Bộ biến dự báo mở rộng bổ sung 10 biến ("
+],
+[
+"03-03-predictive",
+[
+9
+],
+"Cây tăng cường độ dốc (gradient-boosted trees), tức tổ hợp",
+"Cây tăng cường độ dốc, tức tổ hợp"
+],
+[
+"03-03-predictive",
+[
+9
+],
+"nguy cơ rút khỏi module theo từng tuần bằng cùng phần mềm",
+"nguy cơ rút khỏi module theo từng tuần (hazard) bằng cùng phần mềm"
+],
+[
+"04-01-evaluation-cards",
+[
+3
+],
+"Evaluation Design Card (thẻ thiết kế đánh giá) gồm bảy",
+"Evaluation Design Card gồm bảy"
+],
+[
+"04-01-evaluation-cards",
+[
+3
+],
+"phương pháp cơ sở (baseline), phân tích lỗi",
+"phương pháp cơ sở, phân tích lỗi"
+],
+[
+"04-01-evaluation-cards",
+[
+3
+],
+"tỷ lệ phát hiện (recall) quan trọng",
+"tỷ lệ phát hiện quan trọng"
+],
+[
+"04-01-evaluation-cards",
+[
+5
+],
+"mức vượt tỷ lệ nền (lift). Ba chỉ số",
+"mức vượt tỷ lệ nền. Ba chỉ số"
+],
+[
+"04-01-evaluation-cards",
+[
+27
+],
+"tỉ số odds (odds ratio) được báo cáo",
+"tỉ số odds được báo cáo"
+],
+[
+"04-02-validation-strategy",
+[
+8
+],
+"hai mô hình đối sánh (challenger): mô hình dùng cây tăng cường độ dốc (gradient-boosted trees) và",
+"hai mô hình đối sánh: mô hình dùng cây tăng cường độ dốc và"
+],
+[
+"04-02-validation-strategy",
+[
+6
+],
+"một fold (phần chia trong kiểm định chéo) riêng",
+"một fold riêng"
+],
+[
+"04-02-validation-strategy",
+[
+16
+],
+"kiểm định hoán vị đổi dấu (sign-flip test) trên 13",
+"kiểm định hoán vị đổi dấu trên 13"
+],
+[
+"04-02-validation-strategy",
+[
+10
+],
+"cho 9 kỳ mở có kỳ tương ứng năm 2013 (cùng module và cùng tháng bắt đầu) và cho 4 kỳ mở không có kỳ tương ứng.",
+"cho 9 kỳ mở có cặp, tức là có kỳ tương ứng năm 2013 (cùng module và cùng tháng bắt đầu), và cho 4 kỳ mở không có cặp."
+],
+[
+"04-03-metrics-success",
+[
+3
+],
+"tỷ lệ phát hiện (recall), độ chính xác của danh sách (precision) và mức vượt tỷ lệ nền (lift) chỉ là",
+"tỷ lệ phát hiện, độ chính xác của danh sách và mức vượt tỷ lệ nền chỉ là"
+],
+[
+"04-03-metrics-success",
+[
+3
+],
+"tỷ lệ phát hiện chuẩn hóa (normalised recall) của danh sách",
+"tỷ lệ phát hiện chuẩn hóa của danh sách"
+],
+[
+"04-03-metrics-success",
+[
+7
+],
+"hiệu chuẩn tổng thể (calibration-in-the-large): hệ số",
+"hiệu chuẩn tổng thể: hệ số"
+],
+[
+"04-03-metrics-success",
+[
+7
+],
+"độ dốc hiệu chuẩn (calibration slope), có",
+"độ dốc hiệu chuẩn, có"
+],
+[
+"04-03-metrics-success",
+[
+9
+],
+"Lợi ích ròng (net benefit) so sánh",
+"Lợi ích ròng so sánh"
+],
+[
+"04-03-metrics-success",
+[
+17
+],
+"bootstrap hai tầng ghép cặp (lấy mẫu lại kỳ mở, rồi lượt đăng ký học trong từng kỳ mở), nằm trên 0; kiểm định hoán vị đổi dấu (sign-flip test) một phía",
+"bootstrap hai tầng ghép cặp, nằm trên 0; kiểm định hoán vị đổi dấu một phía"
+],
+[
+"04-04-error-fairness",
+[
+3
+],
+"nhận ra các thuộc tính đó: vì mức hoạt động",
+"nhận ra các thuộc tính đó: mức hoạt động"
+],
+[
+"05-00-risk-ethics",
+[
+11
+],
+"bên trong từng fold (phần chia trong kiểm định chéo);",
+"bên trong từng fold;"
+],
+[
+"05-00-risk-ethics",
+[
+14
+],
+"lợi ích can thiệp (uplift) sau",
+"lợi ích can thiệp sau"
+],
+[
+"05-00-risk-ethics",
+[
+15
+],
+"| Tỷ lệ phát hiện (recall) thấp hơn",
+"| Tỷ lệ phát hiện thấp hơn"
+],
+[
+"05-00-risk-ethics",
+[
+15
+],
+"giữa các nhóm (separation) là tiêu chí chính",
+"giữa các nhóm là tiêu chí chính"
+],
+[
+"05-01-leakage-interpretability",
+[
+3
+],
+"đặc trưng thực chất là biến đại diện",
+"biến dự báo thực chất là biến đại diện"
+],
+[
+"05-01-leakage-interpretability",
+[
+3
+],
+"bên trong từng fold (phần chia trong kiểm định chéo).",
+"bên trong từng fold."
+],
+[
+"05-02-causal-fairness-use",
+[
+5
+],
+"giữa các nhóm (separation) được dùng",
+"giữa các nhóm được dùng"
+],
+[
+"06-00-genai-usage",
+[
+3
+],
+"các AQ Modeling Brief (bản mô tả yêu cầu mô hình hóa của từng AQ)",
+"các AQ Modeling Brief"
+],
+[
+"06-00-genai-usage",
+[
+3
+],
+"các Evaluation Design Card (thẻ thiết kế đánh giá),",
+"các Evaluation Design Card,"
+],
+[
+"06-00-genai-usage",
+[
+12
+],
+"fold (phần chia trong kiểm định chéo) theo nhóm",
+"fold theo nhóm"
+],
+[
+"06-00-genai-usage",
+[
+13
+],
+"lợi ích can thiệp (uplift) đều",
+"lợi ích can thiệp đều"
+],
+[
+"06-00-genai-usage",
+[
+13
+],
+"dự báo tự tác động (performative prediction) |",
+"dự báo tự tác động |"
+],
+[
+"06-00-genai-usage",
+[
+14
+],
+"mô hình đối sánh (challenger),",
+"mô hình đối sánh,"
+],
+[
+"06-00-genai-usage",
+[
+15
+],
+"S2 (độ chính xác của danh sách theo hạn mức liên hệ)",
+"S2 (độ chính xác của danh sách dài k)"
+],
+[
+"07-00-prototype-protocol",
+[
+3
+],
+"Nguyên mẫu (prototype) không bắt buộc",
+"Nguyên mẫu không bắt buộc"
+],
+[
+"07-00-prototype-protocol",
+[
+12
+],
+"| 2. Cài đặt phương pháp cơ sở (baseline) |",
+"| 2. Cài đặt phương pháp cơ sở |"
+],
+[
+"07-00-prototype-protocol",
+[
+12
+],
+"mô hình chỉ dùng đặc điểm cá nhân (background-only model) và",
+"mô hình chỉ dùng đặc điểm cá nhân và"
+],
+[
+"07-00-prototype-protocol",
+[
+13
+],
+"Hồi quy logistic có hiệu chỉnh phạt (penalised logistic regression) làm phương pháp chính (primary approach) và cây tăng cường độ dốc (gradient-boosted trees) làm mô hình đối sánh (challenger),",
+"Hồi quy logistic có hiệu chỉnh phạt làm phương pháp chính và cây tăng cường độ dốc làm mô hình đối sánh,"
+],
+[
+"07-00-prototype-protocol",
+[
+15
+],
+"các thẻ thiết kế đánh giá (Bảng 4.1–4.4)",
+"các Evaluation Design Card (Bảng 4.1–4.4)"
+],
+[
+"07-00-prototype-protocol",
+[
+18
+],
+"các fold (phần chia trong kiểm định chéo) và",
+"các fold và"
+],
+[
+"08-00-traceability",
+[
+3
+],
+"Business Goal (mục tiêu của tổ chức) đến",
+"Business Goal đến"
+],
+[
+"08-00-traceability",
+[
+11
+],
+"hoặc bộ biến mở rộng vượt trội",
+"hoặc bộ biến dự báo mở rộng vượt trội"
+],
+[
+"08-00-traceability",
+[
+11
+],
+"theo hạn mức liên hệ (số sinh viên giảng viên hướng dẫn liên hệ được: 3 hoặc 5 trên mỗi nhóm khoảng 20) |",
+"theo hạn mức liên hệ |"
+],
+[
+"08-00-traceability",
+[
+11
+],
+"| Loại trừ từng kỳ mở (leave-one-run-out) trên",
+"| Loại trừ từng kỳ mở trên"
+],
+[
+"08-00-traceability",
+[
+16
+],
+"nhật ký thay đổi có kiểm soát (Controlled Change Log):",
+"nhật ký thay đổi có kiểm soát:"
+],
+[
+"10-01-candidate-comparison",
+[
+7
+],
+"phương pháp cơ sở (baseline);",
+"phương pháp cơ sở;"
+],
+[
+"10-01-candidate-comparison",
+[
+13
+],
+"hiệu ứng cố định (fixed effects) theo kỳ mở",
+"hiệu ứng cố định theo kỳ mở"
+],
+[
+"10-01-candidate-comparison",
+[
+18
+],
+"tỉ số odds (odds ratio) |",
+"tỉ số odds |"
+],
+[
+"10-01-candidate-comparison",
+[
+20
+],
+"dùng sai số chuẩn bền vững (robust standard errors);",
+"dùng sai số chuẩn vững;"
+],
+[
+"10-01-candidate-comparison",
+[
+28
+],
+"chỉ dùng đặc điểm cá nhân (background-only model) |",
+"chỉ dùng đặc điểm cá nhân |"
+],
+[
+"10-01-candidate-comparison",
+[
+28
+],
+"có hiệu chỉnh phạt (penalised logistic regression) (phương pháp chính)",
+"có hiệu chỉnh phạt (phương pháp chính)"
+],
+[
+"10-01-candidate-comparison",
+[
+28
+],
+"cây tăng cường độ dốc (gradient-boosted trees) |",
+"cây tăng cường độ dốc |"
+],
+[
+"10-01-candidate-comparison",
+[
+30
+],
+"theo từng tuần (hazard) [8]",
+"theo từng tuần [8]"
+],
+[
+"10-01-candidate-comparison",
+[
+33
+],
+"Giải thích hậu nghiệm (post-hoc), có thể",
+"Giải thích hậu nghiệm, có thể"
+],
+[
+"10-01-candidate-comparison",
+[
+35
+],
+"các fold (phần chia trong kiểm định chéo) chia theo nhóm",
+"các fold chia theo nhóm"
+],
+[
+"10-01-candidate-comparison",
+[
+36
+],
+"kiểm tra biến thay thế (proxy) |",
+"kiểm tra biến thay thế |"
+],
+[
+"10-01-candidate-comparison",
+[
+40
+],
+"mô hình đối sánh (challenger), vì",
+"mô hình đối sánh, vì"
+],
+[
+"10-01-candidate-comparison",
+[
+46
+],
+"lợi ích can thiệp (uplift) |",
+"lợi ích can thiệp |"
+],
+[
+"10-01-candidate-comparison",
+[
+48
+],
+"k xác định từ hạn mức liên hệ (số sinh viên giảng viên hướng dẫn liên hệ được: 3 hoặc 5 trên mỗi nhóm khoảng 20) |",
+"k xác định từ hạn mức liên hệ |"
+],
+[
+"10-02-metric-definitions",
+[
+3
+],
+"Các Evaluation Design Card (thẻ thiết kế đánh giá) ở",
+"Các Evaluation Design Card ở"
+],
+[
+"10-02-metric-definitions",
+[
+13
+],
+"| Độ chính xác của danh sách (precision at capacity) |",
+"| Độ chính xác của danh sách dài k |"
+],
+[
+"10-02-metric-definitions",
+[
+14
+],
+"| Mức vượt tỷ lệ nền (lift) |",
+"| Mức vượt tỷ lệ nền |"
+],
+[
+"10-02-metric-definitions",
+[
+17
+],
+"| Hiệu chuẩn tổng thể (calibration-in-the-large) |",
+"| Hiệu chuẩn tổng thể |"
+],
+[
+"10-03-validation-protocol",
+[
+7
+],
+"phương pháp cơ sở (baseline). Lần chốt",
+"phương pháp cơ sở. Lần chốt"
+],
+[
+"10-03-validation-protocol",
+[
+14
+],
+"Loại trừ từng kỳ mở (leave-one-run-out): mỗi kỳ mở làm fold (phần chia trong kiểm định chéo) kiểm định",
+"Loại trừ từng kỳ mở: mỗi kỳ mở làm fold kiểm định"
+],
+[
+"10-03-validation-protocol",
+[
+13
+],
+"phạm vi dữ liệu, nhóm biến dự báo, quy tắc",
+"phạm vi dữ liệu, các bộ biến dự báo, quy tắc"
+],
+[
+"10-03-validation-protocol",
+[
+16
+],
+"mỗi phương pháp chạy với nhóm biến dự báo chính và với nhóm mở rộng",
+"mỗi phương pháp chạy với bộ biến dự báo chính và với bộ biến dự báo mở rộng"
+],
+[
+"10-03-validation-protocol",
+[
+16
+],
+"(cũng như nhóm biến mở rộng chỉ thay thế nhóm chính)",
+"(cũng như bộ biến dự báo mở rộng chỉ thay thế bộ biến dự báo chính)"
+],
+[
+"10-03-validation-protocol",
+[
+22
+],
+"một fold hoặc một kỳ mở kiểm thử có thể",
+"một fold hoặc một kỳ mở của tập kiểm thử có thể"
+],
+[
+"10-03-validation-protocol",
+[
+24
+],
+"Do chỉ có 13 kỳ mở kiểm thử,",
+"Do chỉ có 13 kỳ mở của tập kiểm thử,"
+],
+[
+"10-03-validation-protocol",
+[
+24
+],
+"kiểm định hoán vị đổi dấu (sign-flip test) một phía",
+"kiểm định hoán vị đổi dấu một phía"
+],
+[
+"10-03-validation-protocol",
+[
+36
+],
+"| Số tham số, nhóm biến chính (19 biến dự báo, các số hạng",
+"| Số tham số, bộ biến dự báo chính (19 biến, các số hạng"
+],
+[
+"10-03-validation-protocol",
+[
+37
+],
+"| Số tham số, nhóm biến chính và nhóm mở rộng kèm lượt nhấp theo tuần",
+"| Số tham số, bộ biến dự báo chính và bộ biến dự báo mở rộng kèm lượt nhấp theo tuần"
+],
+[
+"10-03-validation-protocol",
+[
+38,
+39
+],
+"nhóm biến chính / có nhóm mở rộng và lượt nhấp theo tuần",
+"bộ biến dự báo chính / thêm bộ biến dự báo mở rộng và lượt nhấp theo tuần"
+],
+[
+"10-03-validation-protocol",
+[
+40,
+41,
+42,
+43
+],
+"Lượt đăng ký học kiểm thử",
+"Lượt đăng ký học trong tập kiểm thử"
+],
+[
+"10-03-validation-protocol",
+[
+19
+],
+"lượt đăng ký học kiểm thử",
+"lượt đăng ký học trong tập kiểm thử"
+],
+[
+"10-03-validation-protocol",
+[
+44
+],
+"| Quy mô kỳ mở kiểm thử,",
+"| Quy mô kỳ mở của tập kiểm thử,"
+],
+[
+"10-03-validation-protocol",
+[
+46
+],
+"hệ số co (shrinkage) kỳ vọng ít nhất 0,9; độ lạc quan của R² Nagelkerke không quá 0,05; nguy cơ tổng thể được",
+"mức co hệ số kỳ vọng ít nhất 0,9; mức lạc quan của R² Nagelkerke không quá 0,05; nguy cơ chung được"
+],
+[
+"10-03-validation-protocol",
+[
+46
+],
+"mức cần thiết cho nhóm biến chính",
+"mức cần thiết cho bộ biến dự báo chính"
+],
+[
+"10-04-fairness-spec",
+[
+3
+],
+"trong các kỳ mở kiểm thử; cách làm này gọi là phân tích theo từng nhóm con (slicing analysis) [34]",
+"trong các kỳ mở của tập kiểm thử; cách làm này gọi là phân tích theo từng nhóm con [34]"
+],
+[
+"10-04-fairness-spec",
+[
+3
+],
+"trước khi mở bất kỳ kết quả kiểm thử nào.",
+"trước khi mở bất kỳ kết quả nào của tập kiểm thử."
+],
+[
+"10-04-fairness-spec",
+[
+7
+],
+"| Lượt đăng ký học kiểm thử | Kỳ mở kiểm thử nhỏ nhất |",
+"| Lượt đăng ký học trong tập kiểm thử | Kỳ mở nhỏ nhất của tập kiểm thử |"
+],
+[
+"10-04-fairness-spec",
+[
+15
+],
+"giữa các nhóm (separation), đo bằng",
+"giữa các nhóm, đo bằng"
+],
+[
+"10-04-fairness-spec",
+[
+21
+],
+"| Kiểm định khẳng định về công bằng (separation) |",
+"| Kiểm định khẳng định về công bằng (ngang bằng tỷ lệ phát hiện) |"
+],
+[
+"10-04-fairness-spec",
+[
+21
+],
+"lượt đăng ký học kiểm thử",
+"lượt đăng ký học trong tập kiểm thử"
+],
+[
+"10-04-fairness-spec",
+[
+26
+],
+"| Kiểm tra biến thay thế (proxy) |",
+"| Kiểm tra biến thay thế |"
+],
+[
+"10-05-risk-register",
+[
+17
+],
+"| 13 kỳ mở kiểm thử có quy mô",
+"| 13 kỳ mở của tập kiểm thử có quy mô"
+],
+[
+"10-05-risk-register",
+[
+23
+],
+"Kiểm tra biến thay thế (proxy) theo nhóm",
+"Kiểm tra biến thay thế theo nhóm"
+],
+[
+"10-06-ai-critiques",
+[
+3
+],
+"Nhật ký quyết định về AI (AI Decision Log) ở Phần 6",
+"Nhật ký quyết định về AI ở Phần 6"
+],
+[
+"10-06-ai-critiques",
+[
+15
+],
+"kiểm duyệt không mang thông tin (non-informative censoring) được nêu",
+"kiểm duyệt không mang thông tin được nêu"
+],
+[
+"10-06-ai-critiques",
+[
+18
+],
+"kiểm tra biến thay thế (proxy); nêu rõ tiêu chí chính là ngang bằng tỷ lệ phát hiện (separation) |",
+"kiểm tra biến thay thế; nêu rõ tiêu chí chính là tiêu chí ngang bằng tỷ lệ phát hiện |"
+],
+[
+"10-07-traceability-full",
+[
+3
+],
+"Business Goal (mục tiêu của tổ chức) và KPI",
+"Business Goal và KPI"
+],
+[
+"10-07-traceability-full",
+[
+3
+],
+"phương pháp cơ sở (baseline), phương pháp chính",
+"phương pháp cơ sở, phương pháp chính"
+],
+[
+"00-2-glossary",
+[
+39
+],
+"tổng hợp, phân tích mối liên hệ, phân loại hoặc xếp hạng",
+"tổng hợp, đo mối liên hệ, phân loại hoặc xếp hạng"
+]
+]

@@ -1,0 +1,75 @@
+1. Project Context and Continuity                   0.45
+1.1. Goal, Decisions and Analytical Questions       0.98
+  [table] Table 1.1. AQs entering Milestone 4       0.57
+  (text after) Table 1.1. AQs entering Milestone 4  0.20
+1.2. Prepared Data and Entry Gate                   0.54
+  [table] Table 1.2. Entry gate                     0.41
+  (text after) Table 1.2. Entry gate                0.16
+2. AQ-to-Technical-Task Mapping                     0.25
+2.1. AQ Modeling Briefs                             0.44
+  [table] Table 2.1. Modeling Brief of AQ1          0.48
+  (text after) Table 2.1. Modeling Brief of AQ1     0.07
+  [table] Table 2.2. Modeling Brief of AQ2          0.54
+  (text after) Table 2.2. Modeling Brief of AQ2     0.05
+  [table] Table 2.3. Modeling Brief of AQ3          0.50
+  (text after) Table 2.3. Modeling Brief of AQ3     0.05
+  [table] Table 2.4. Modeling Brief of AQ4          0.48
+  (text after) Table 2.4. Modeling Brief of AQ4     0.18
+2.2. Technical Task Definitions                     1.64
+3. Candidate Modeling Approaches                    0.29
+3.1. Selection Criteria and Candidate Solutio       0.71
+  [table] Table 3.1. Candidate Solution Matrix      0.48
+3.2. Descriptive and Diagnostic Questions           0.97
+  [table] Table 3.2. AQ2 candidates against the     1.04
+3.3. Predictive Question                            1.10
+  [table] Table 3.3. AQ3 candidates against the     1.37
+  (text after) Table 3.3. AQ3 candidates against the  0.04
+3.4. Ranking under Capacity                         0.61
+  [table] Table 3.4. AQ4 candidates against the     0.88
+4. Evaluation Design                                0.51
+4.1. Evaluation Design Cards                        0.42
+  [table] Table 4.1. Evaluation Design Card of      0.41
+  (text after) Table 4.1. Evaluation Design Card of   0.17
+  [table] Table 4.2. Evaluation Design Card of      0.49
+  (text after) Table 4.2. Evaluation Design Card of   0.05
+  [table] Table 4.3. Evaluation Design Card of      0.65
+  (text after) Table 4.3. Evaluation Design Card of   0.05
+  [table] Table 4.4. Evaluation Design Card of      0.44
+  (text after) Table 4.4. Evaluation Design Card of   0.32
+  [table] Table 4.5. Metric definitions             0.70
+4.2. Validation Strategy                            1.35
+  [table] Table 4.6. Validation and test protoc     0.95
+  (text after) Table 4.6. Validation and test protoc  0.34
+  [table] Table 4.7. Sample sizes for developme     0.52
+  (text after) Table 4.7. Sample sizes for developme  0.14
+4.3. Metrics and Success Criteria                   1.00
+  [table] Table 4.8. Success criteria fixed bef     0.53
+  (text after) Table 4.8. Success criteria fixed bef  0.26
+4.4. Error, Subgroup and Fairness Analysis          0.68
+  [table] Table 4.9. Audit groups at day 27         0.46
+  (text after) Table 4.9. Audit groups at day 27    0.32
+  [table] Table 4.10. Fairness and error checks     0.91
+5. Risk, Ethics and Limitations                     0.34
+  [table] Table 5.1. Risk and Ethics Notes          0.62
+  (text after) Table 5.1. Risk and Ethics Notes     0.09
+  [table] Table 5.2. Risk register                  1.46
+  (text after) Table 5.2. Risk register             0.05
+5.1. Leakage, Overfitting and Interpretabilit       0.83
+5.2. Causal Limits, Fairness and High-Stakes        0.83
+6. Generative AI Usage                              0.62
+  [table] Table 6.1. AI Decision Log                1.33
+  (text after) Table 6.1. AI Decision Log           0.07
+  [table] Table 6.2. Decisions on the model-sel     0.88
+  [table] Table 6.3. Decisions on the evaluatio     0.86
+  (text after) Table 6.3. Decisions on the evaluatio  0.26
+7. Prototype Protocol                               0.30
+  [table] Table 7.1. Prototype protocol             0.46
+  (text after) Table 7.1. Prototype protocol        0.14
+8. Updated Traceability Matrix                      0.21
+  [table] Table 8.1. Updated Traceability Matri     0.50
+  (text after) Table 8.1. Updated Traceability Matri  0.20
+  [table] Table 8.2. Full traceability from goa     1.03
+  (text after) Table 8.2. Full traceability from goa  0.05
+  [table] Table 8.3. Controlled Change Log entr     0.19
+  (text after) Table 8.3. Controlled Change Log entr  0.53
+main content: 39.0 pages (pessimistic layout; --optimistic for the continuous flow)

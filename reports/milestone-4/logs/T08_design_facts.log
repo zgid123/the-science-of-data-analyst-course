@@ -1,0 +1,5 @@
+2026-11-06T16:34:11Z
+$ venv/bin/python reports/milestone-4/code/design_facts.py
+d13: train 12080 rows, 5519 events (0.4569); test 15989 rows (13 runs, 9 paired); params primary 23 (EPP 240.0), full 35 (EPP 157.7); Riley n primary 1728, full 2629; base rate 0.2486-0.5748; max recall@3 0.2616-0.6196, @5 0.436-1.0
+d27: train 11811 rows, 5245 events (0.4441); test 15724 rows (13 runs, 9 paired); params primary 23 (EPP 228.0), full 37 (EPP 141.8); Riley n primary 1731, full 2784; base rate 0.2466-0.5547; max recall@3 0.2744-0.6264, @5 0.4574-1.0
+exit 0

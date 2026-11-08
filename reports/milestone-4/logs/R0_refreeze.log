@@ -1,0 +1,8 @@
+# 2026-11-08T02:14:36Z venv/bin/python reports/milestone-4/code/freeze_baseline.py (Milestone 3 rewritten 2026-11-08)
+PASS  Approved Analytical Questions
+PASS  Prepared dataset
+PASS  Leakage controls
+PASS  Known limitations
+PASS  Traceability
+wrote reports/milestone-4/research/baseline/m4-baseline.md
+exit 0
