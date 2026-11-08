@@ -74,6 +74,7 @@ taskN/
     ├── partN-claims.md     | Claim ID | Claim | Exact value or quote anchor | Source ID | Primary or secondary | Report file(s) |
     ├── partN-synthesis.md  ## <file>: Claims, Outline, Conflicts with the outline, Gaps
     ├── spot-check.md, style-review.md
+    ├── baseline/, reviews/, revisions/, declared task notes   (section 2.1)
     ├── templates/          crawl.md, comprehension.md
     └── sources/Sxxx-slug/  crawl.md (header + text), raw.* (original), attempts.md (fetch log), comprehension.md
 ```
@@ -87,6 +88,30 @@ taskN/
 | reference map | After finishing: `| n | Source ID |` rows, each pointing to a usable source |
 
 Verbatim matching collapses whitespace and straightens typographic quotes; `\|` inside a cell is a literal pipe.
+
+### 2.1. Working files beside the trail
+
+Every other file a task produces in `research/` has one place and one name pattern, so anyone can follow the work in
+the order it was done. `layout.py check` enforces it (wired into `make precheck` by `scaffold.py register`), and
+`layout.py index --write` keeps the file list in `research/README.md` current.
+
+| Kind | Place and name | Created by |
+| :---- | :---- | :---- |
+| Frozen inputs from earlier milestones | `baseline/mN-baseline*.md` | the task's `code/freeze_baseline.py` |
+| Task notes (requirements, fit log, design decisions, interviews …) | any path declared in `plan.toml` `[layout] notes = [{ path, purpose }]` | the task, once declared |
+| AI critic round of the brief | `reviews/NN-ai-<role>-prompt.md`, `-output.md`, `-decisions.md` | `layout.py new-review --kind ai-<role>-prompt` |
+| Translation review round | `reviews/NN-<lang>-<step>[-<scope>].md`, step in native-review, consistency, reader-test, rewrite, fidelity, reread | `layout.py new-review --kind vi-native-review --scope g1` (`--same` for the parallel groups of one round) |
+| Deck review round | `reviews/NN-slides-review[-<scope>].md`, `NN-slides-rewrite…` | `layout.py new-review --kind slides-review` |
+| A round's scripts, edit files and logs | `reviews/NN-<name>-scripts/` | the round |
+| Revision record (moves to appendix, renumbering …) | `revisions/NN-<label>.md`, `revisions/NN-<label>-scripts/` | the task |
+| Saved state of the report | a row in `revisions/snapshots.md`: commit, path, file count, what it is | commit first, then the row; never a copied folder |
+| Layout moves | `revisions/layout-moves.csv` (old,new) | `layout.py move` |
+
+`NN` numbers the rounds in the order they ran; the groups of one round share it. A review round's prompt, output and
+scripts are records: they keep their wording when files move, and `layout-moves.csv` maps each old path to its new
+one. `layout.py move --map CSV [--apply]` moves tracked files with `git mv`, compares every file's sha256 before and
+after, retires a saved copy only when each of its files is identical in the given commit, and rewrites paths in the
+ledgers, plans, notes and code.
 
 **Works a source cites.** A survey or review often reports other works as "Liu et al. [93]". Its Key facts name each such work by first author with initials, year and venue, and give the work's own source ID when `sources.md` holds it: `- Liu Y., Jourabloo & Liu X. (CVPR 2018; S206) fuse estimated depth and rPPG – "…"`. The citation marker in the source and its reference-list entry give these details; a work that the register holds is then read in its own `crawl.md` for the facts the report states about it, so the primary source carries them.
 

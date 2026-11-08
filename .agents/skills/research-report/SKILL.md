@@ -13,7 +13,7 @@ Read [reference.md](reference.md) before planning: it fixes the task protocol (s
 
 ## Working principles
 
-1. **Speak loudly on disk.** Every search, fetch and interpretation is written to `taskN/research/` the moment it happens; the report is written only from those files.
+1. **Speak loudly on disk.** Every search, fetch and interpretation is written to `taskN/research/` the moment it happens; the report is written only from those files. Working files beside the trail follow the layout of reference.md section 2.1: reviews in numbered rounds (`layout.py new-review`), revisions with saved states as commits in `revisions/snapshots.md`, task notes declared in `plan.toml`; `layout.py check` fails on anything else.
 2. **Verified tasks, run one at a time unless independent.** Independent tasks may run as concurrent waves (reference.md section 1.4). LOAD → DO → WRITE → VERIFY → DECIDE → CLOSE → FREE. A failed checklist item stops the work and goes to the user (continue / redo / skip / stop); fixes happen before verification, so every retry is a visible decision.
 3. **Pick up only what is needed.** Each task loads the ledger and the files its card names (the outline slice via `outline.py --section`, the synthesis entry, the comprehension files). Research runs in one foreground subagent per task, so its context is discarded. The handoff note is the only memory between tasks.
 4. **Ask the user** at planning, at the scope checkpoint, on every conflict between a source and the outline, on any failed check, at the end of each part and at the final review. Record each answer under `Decisions` in the ledger.

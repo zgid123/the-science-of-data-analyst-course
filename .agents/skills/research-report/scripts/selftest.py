@@ -305,6 +305,56 @@ def main():
            f"url: {rel}/pdp.go" in head2 and "file://" not in head2 and f"{rel}/pdp.go" in row2 and "file://" not in row2,
            head2.strip()[:120])
 
+    print("\n== H. Working-file layout (layout.py)")
+    b = make("layout")
+    (b / "plan.toml").write_text('[layout]\nnotes = [ { path = "fit/", purpose = "AQ-Data Fit log" } ]\n')
+    (b / "research/fit").mkdir()
+    (b / "research/fit/aq-data-fit.md").write_text("# Fit\n")
+    (b / "research/README.md").write_text("# Research Trail\n")
+    code, out = run("layout.py", "new-review", "--base", b, "--kind", "vi-native-review", "--scope", "g1")
+    code2, out2 = run("layout.py", "new-review", "--base", b, "--kind", "vi-native-review", "--scope", "g2", "--same")
+    code3, out3 = run("layout.py", "new-review", "--base", b, "--kind", "vi-consistency")
+    expect("new-review: g1 and g2 share round 01, the next round is 02",
+           out.strip().endswith("reviews/01-vi-native-review-g1.md") and out2.strip().endswith("01-vi-native-review-g2.md")
+           and out3.strip().endswith("reviews/02-vi-consistency.md"), (out + out2 + out3).replace("\n", " ")[:120])
+    gate("new-review: a kind outside the vocabulary is refused",
+         run("layout.py", "new-review", "--base", b, "--kind", "review2"), True, "kind must be")
+    run("layout.py", "index", "--base", b, "--write")
+    gate("layout: declared notes, reviews and a current index pass", run("layout.py", "check", "--base", b), False)
+    (b / "research/reviews/03-vi-rewrite.md").write_text("# Rewrite\n")
+    gate("layout: a new file without a fresh index fails", run("layout.py", "check", "--base", b), True, "out of date")
+    run("layout.py", "index", "--base", b, "--write")
+    (b / "research/vi-review").mkdir()
+    (b / "research/vi-review/review2-A.md").write_text("# x\n")
+    gate("layout: an undeclared folder fails", run("layout.py", "check", "--base", b), True, "research/vi-review")
+    shutil.rmtree(b / "research/vi-review")
+    (b / "research/reviews/review2-A.md").write_text("# x\n")
+    gate("layout: a free-form review name fails", run("layout.py", "check", "--base", b), True, "review2-A.md")
+    (b / "research/reviews/review2-A.md").unlink()
+    shutil.rmtree(b / "research/fit")
+    gate("layout: a declared note that is missing fails", run("layout.py", "check", "--base", b), True, "missing")
+    (b / "research/fit").mkdir()
+    (b / "research/fit/aq-data-fit.md").write_text("# Fit\n")
+    # move: files and a folder move with identical bytes; ledgers follow, records (review rounds) keep their wording
+    (b / "research/old-review").mkdir()
+    (b / "research/old-review/prompt.md").write_text("Write to research/old-review/out.md.\n")
+    (b / "research/old-review/out.md").write_text("# Out\n")
+    (b / "research/draft-copy").mkdir()
+    (b / "research/draft-copy/01.md").write_text("# Draft\n")
+    (b / "PROGRESS.md").write_text("| T1 | research/old-review/out.md. |\n")
+    m = b / "moves.csv"
+    m.write_text("old,new\nold-review/prompt.md,reviews/04-ai-critic-prompt.md\nold-review/out.md,reviews/04-ai-critic-output.md\n"
+                 "draft-copy,snapshot\n")
+    gate("move: a saved copy that is not identical in the commit is refused", run("layout.py", "move", "--base", b,
+         "--map", m, "--apply"), True, "not identical")
+    m.write_text("old,new\nold-review/prompt.md,reviews/04-ai-critic-prompt.md\nold-review/out.md,reviews/04-ai-critic-output.md\n")
+    code, out = run("layout.py", "move", "--base", b, "--map", m, "--apply")
+    expect("move: bytes verified, ledger path rewritten, record prompt kept",
+           code == 0 and "2 of 2 moved files identical" in out
+           and "research/reviews/04-ai-critic-output.md." in (b / "PROGRESS.md").read_text()
+           and "research/old-review/out.md" in (b / "research/reviews/04-ai-critic-prompt.md").read_text()
+           and not (b / "research/old-review").exists(), out.strip().splitlines()[-1][:90])
+
     if online:
         print("\n== F. Live fetch ladder (--online)")
         code, out = run("fetch.py", "probe", "arXiv:2406.03684")

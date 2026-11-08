@@ -209,7 +209,7 @@ short_title = {toml_str(title[:60])}
 subject = "Research report"
 
 [{name}.hooks]
-checks = {{ research_trail = "{(SKILL / 'scripts' / 'check_trail.py').relative_to(ROOT).as_posix()} --base {base.relative_to(ROOT).as_posix()} --all" }}
+checks = {{ research_trail = "{(SKILL / 'scripts' / 'check_trail.py').relative_to(ROOT).as_posix()} --base {base.relative_to(ROOT).as_posix()} --all", research_layout = "{(SKILL / 'scripts' / 'layout.py').relative_to(ROOT).as_posix()} check --base {base.relative_to(ROOT).as_posix()}" }}
 
 [{name}.citations]
 order = "first-citation"

@@ -1,0 +1,87 @@
+## 2026-11-08T15:08:14Z $ venv/bin/python .agents/skills/research-report/scripts/selftest.py
+== A. Trail gate (check_trail.py)
+PASS  good fixture: --task  (exit 0)
+PASS  good fixture: --all  (exit 0)
+PASS  good fixture: --part 1  (exit 0)
+PASS  missing crawl.md  (ERROR S101: crawl.md missing)
+PASS  missing comprehension.md  (ERROR S101: comprehension.md missing)
+PASS  empty comprehension heading  (ERROR S101: comprehension.md heading 'Reliability' missing or empty)
+PASS  claim anchor not verbatim  (ERROR C1-001: anchor not found verbatim in S101/crawl.md: "the aim of disturbing with the )
+PASS  comprehension quote not verbatim  (ERROR S101: comprehension quote not found in crawl.md: "presentation to the biometric data)
+PASS  orphan claim  (ERROR S199: not in sources.md)
+PASS  claim on a blocked source  (ERROR C1-001: source S101 has status 'blocked', cannot support a claim)
+PASS  task without search-log row  (ERROR search-log.md: no row for T05)
+PASS  crawl/register status mismatch (warning)  (WARN  S101: crawl.md status 'partial' but register status 'fetched')
+PASS  escaped pipe in an anchor matches  (exit 0)
+
+== B. Draft gate (check_drafts.py)
+PASS  good draft  (exit 0)
+PASS  unknown [Sxxx]  (ERROR 01-01-1-x.md:3: [S150] not in sources.md)
+PASS  numeric citation in a draft  (ERROR 01-01-1-x.md:3: numeric citation [3] in a draft (use [Sxxx]))
+PASS  meta commentary  (ERROR 01-01-1-x.md:5: meta commentary 'we will': …in this task we will explain the outline)
+PASS  word count outside range (warning)  (WARN  01-01-1-x.md: 29 words (expected 200-700))
+PASS  one 'Surname et al.' over two years (warning)  (WARN  01-01-1-x.md: 'Liu et al.' names works of 2016, 2018; when they come from different )
+PASS  authors with initials are told apart
+PASS  priority claim stated as the report's own (warning)  (WARN  01-01-1-x.md:5: priority claim 'the first fully automated approach' as the report's )
+PASS  attributed priority claim and an ordinal 'first' pass quietly
+PASS  citing the authors' own material, fetched with fetch.py local (warning)  (WARN  01-01-1-x.md:3: [S101] is the authors' own material (fetch.py local): keep it in the)
+
+== C. Finishing (finalize_refs.py, spot_check.py)
+PASS  finalize: [S101] → [1], reference list and map written  (converted 1 body files; wrote 05-references.md and the reference map; backup in build/.cac)
+PASS  trail --all after finalize (reference map)  (exit 0)
+PASS  spot-check traces [1] → S101 → C1-001 (found)
+PASS  finalize refuses a source without APA entry
+
+== D. Fetch conversion and readability (offline)
+PASS  html: title, citation meta, heading kept; script and nav dropped
+PASS  readable prose → readable
+PASS  blocking page → blocked
+PASS  symbol soup → unreadable
+PASS  short text → partial
+PASS  lost ligatures → partial
+PASS  pdf-stdlib extracts a Flate text stream
+PASS  crossref JSON → bibliographic record
+PASS  ladder: arXiv ID → html, pdf, abs
+PASS  ladder: URL → itself, then Wayback snapshot
+
+== E. Scaffold and ledger
+PASS  init: parts from the outline, scope and references skipped, seed from arXiv
+PASS  outline: a reference table gives one seed per row, with its URL
+PASS  build + check: 0 errors  (Checked 9 planned files, 17 tasks, 1 seeds: 0 errors)
+PASS  check: missing planned file  (ERROR missing report file 01-01-0-definitions.md)
+PASS  ledger: set T01 done, next is T02 with its card
+
+== F. Trail bookkeeping (trail.py) and the research prompt
+PASS  log-search: next row number and today's date
+PASS  register: new row with 8 columns and escaped pipe
+PASS  register: update one field of an existing row
+PASS  apa: APA 7 journal entry from the metadata  (Doe, J., & Roe, R. (2024). A Survey of Liveness. *ACM Computing Surveys*, *57*(1), 1–32. h)
+PASS  claim: next ID C1-002, anchor verified
+PASS  claim: refused when the anchor is not in crawl.md
+PASS  comprehension: skeleton with six headings and the crawl title
+PASS  prompt: research task gets its outline lines, ID block and files  ( '13,16p' build/.cac)
+
+== G. Local repository sources (fetch.py local)
+PASS  local: committed text copied verbatim, not the working tree
+PASS  local: a missing path gives status partial and exit 3
+PASS  local: register row follows the crawl status
+PASS  local: a code fragment serves as a verified claim anchor  (part1-claims.md: C1-003 ← S901)
+PASS  local: without --url-prefix the URL is a project-relative path, not file:///…  (id: S902
+url: build/.cache/research_selftest/bookkeeping/repo/pdp.go
+requested: pdp.go
+fetched: 2026-11-08T22:08+07:00
+t)
+
+== G. Working-file layout (layout.py)
+PASS  new-review: g1 and g2 share round 01, the next round is 02  (build/.cache/research_selftest/layout/research/reviews/01-vi-native-review-g1.md build/.cache/research_selftest/layout/r)
+PASS  new-review: a kind outside the vocabulary is refused  (ERROR 03-review2.md: kind must be ai-<role>-prompt|output|decisions, <lang>-<native-review)
+PASS  layout: declared notes, reviews and a current index pass  (exit 0)
+PASS  layout: a new file without a fresh index fails  (ERROR research/README.md: the file index is out of date; run `layout.py index --write`)
+PASS  layout: an undeclared folder fails  (ERROR research/vi-review: not part of the layout; move it to reviews/ or revisions/, or de)
+PASS  layout: a free-form review name fails  (ERROR research/reviews/review2-A.md: name outside the layout (see layout.py --help); creat)
+PASS  layout: a declared note that is missing fails  (ERROR note declared in plan.toml [layout] is missing: research/fit)
+PASS  move: a saved copy that is not identical in the commit is refused  (ERROR snapshot file not identical in HEAD: build/.cache/research_selftest/layout/research/)
+PASS  move: bytes verified, ledger path rewritten, record prompt kept  (references rewritten: 1)
+
+64/64 checks passed
+exit 0

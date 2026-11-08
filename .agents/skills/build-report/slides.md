@@ -156,7 +156,7 @@ list). Placeholders and prefixes keep their spacing (`"{n} steps"`, `"Presenter:
 with different room gets one Vietnamese value; when it overflows somewhere, change the layout in the deck script
 and keep the meaning. A separate reviewer, other than the translator, runs the three passes of `review.md` on the plain-text
 deck, may rewrite freely within the fixed room, rebuilds, runs `check_slides.py --lang vi` to 0 warnings and appends
-its log (Location | Original | Revised | Reason) to the task's slide review log. Both prompts come from
+its log (Location | Original | Revised | Reason) to the round's file `research/reviews/NN-slides-review.md` (`layout.py new-review --kind slides-review`). Both prompts come from
 `slidekit.py prompt`, which also puts the pack's line on who speaks into them (`[slides] voice_group`,
 `voice_solo` in `pack.toml`).
 

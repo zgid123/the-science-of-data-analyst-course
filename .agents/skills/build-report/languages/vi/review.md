@@ -88,7 +88,7 @@ Each item names what a natural, complete Vietnamese text does. A sentence that d
 
 ## 5. Review log
 
-Each reviewer appends to the task's review log (for example `taskN/research/vi-review.md`, one section per reviewer when several work in parallel):
+Each reviewer writes its log to the round's file in `taskN/research/reviews/`, created with research-report's `layout.py new-review --kind vi-native-review --scope g1` (`--same` for the parallel groups of one round, so they share its number):
 
 | # | File | Line | Checklist item | Before | After |
 | :---- | :---- | :---- | :---- | :---- | :---- |
