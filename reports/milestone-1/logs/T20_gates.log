@@ -1,0 +1,15 @@
+# T20 full gates (EN)
+2026-11-05T15:10:25Z
+$ check_trail.py --base reports/milestone-1 --all
+Checked 69 sources, 182 claims: 0 errors, 13 warnings
+$ make precheck TASK=milestone-1
+PASS  milestone-1 format             Checked 31 files in reports/milestone-1/report: 0 errors, 2 warnings  (0 s)
+PASS  milestone-1 structure          EN: 31 files, 30 headings, 0 figures, 27 tables: 0 errors, 6 warnings  (0 s)
+PASS  milestone-1 style              EN: 27 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 abbreviations      EN: 5 abbreviations, 0 violations  (0 s)
+PASS  milestone-1 citations          EN: 25 references, 25 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 names              Checked 31 files for 5 names: 0 errors  (0 s)
+PASS  milestone-1 research_trail     Checked 69 sources, 182 claims: 0 errors, 13 warnings  (0 s)
+FAIL  milestone-1 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+FAIL  milestone-1 parity vi          Checked 31 pairs (vi): 31 errors, 0 warnings  (0 s)
+7/9 steps passed; failed: milestone-1 translation vi, milestone-1 parity vi

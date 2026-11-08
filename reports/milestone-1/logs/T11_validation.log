@@ -1,0 +1,10 @@
+# T11 – validation round
+2026-11-05T15:00:57Z
+research/interviews/validation/advisor.md answers=1
+research/interviews/validation/data-officer.md answers=1
+research/interviews/validation/lecturer.md answers=1
+research/interviews/validation/program-manager.md answers=2
+research/interviews/validation/student.md answers=1
+$ venv/bin/python reports/milestone-1/code/check_quotes.py key-statements.md validation-results.md
+checked 78 quotes: 0 missing
+exit 0

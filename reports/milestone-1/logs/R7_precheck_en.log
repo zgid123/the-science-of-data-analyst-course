@@ -1,0 +1,11 @@
+# 2026-11-07T02:03:40Z report.py precheck milestone-1 --lang en (after fixes)
+PASS  milestone-1 format             Checked 67 files in reports/milestone-1/report: 0 errors, 2 warnings  (0 s)
+PASS  milestone-1 structure          EN: 36 files, 48 headings, 0 figures, 29 tables: 0 errors, 0 warnings; VI: 31 files, 30 headings, 0 figures, 27 tables:   (0 s)
+PASS  milestone-1 style              EN: 32 body files: 0 errors, 0 warnings; VI: 27 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 abbreviations      EN: 5 abbreviations, 0 violations; VI: 5 abbreviations, 0 violations  (0 s)
+PASS  milestone-1 citations          EN: 25 references, 25 cited, order first-citation: 0 errors, 0 warnings; VI: 25 references, 25 cited, order first-citati  (0 s)
+PASS  milestone-1 names              Checked 67 files for 5 names: 0 errors  (0 s)
+PASS  milestone-1 research_trail     Checked 69 sources, 182 claims: 0 errors, 13 warnings  (0 s)
+
+7/7 steps passed
+exit 0

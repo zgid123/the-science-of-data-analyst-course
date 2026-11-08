@@ -1,0 +1,39 @@
+1. Milestone 1 Baseline and Scope                   0.16
+1.1. Frozen Baseline                                1.08
+  [table] Table 1.1. The frozen questions AQ1–A     0.50
+  (text after) Table 1.1. The frozen questions AQ1–A  0.14
+1.2. Scope of Milestone 2 and Change Log Summ       0.92
+2. Data Requirement Specification                   0.21
+2.1. AQ–Data Requirement Matrix                     0.46
+  [table] Table 2.1. AQ–Data Requirement Matrix     1.17
+  (text after) Table 2.1. AQ–Data Requirement Matrix  0.67
+2.2. Requirements by Analytics Level                0.15
+  [table] Table 2.2. Data requirements by analy     0.37
+  (text after) Table 2.2. Data requirements by analy  0.39
+2.3. Prediction Point and Leakage Risk              0.28
+  [table] Table 2.3. Prediction points, allowed     0.52
+  (text after) Table 2.3. Prediction points, allowed  0.14
+3. Open Dataset Search Strategy                     0.86
+  [table] Table 3.1. Candidate open datasets        0.72
+  (text after) Table 3.1. Candidate open datasets   0.14
+4. Dataset Evaluation and Selection                 0.19
+4.1. Criteria and Must-Have Gates                   0.74
+4.2. Selection Matrix and Rationale                 0.26
+  [table] Table 4.1. Dataset Selection Matrix       0.77
+  (text after) Table 4.1. Dataset Selection Matrix  1.02
+5. Data Acquisition and Provenance                  0.34
+  [table] Table 5.1. Data acquisition plan for      0.53
+  (text after) Table 5.1. Data acquisition plan for   0.39
+6. Initial Structural Verification                  0.64
+  [table] Table 6.1. Structure of the collected     0.74
+  (text after) Table 6.1. Structure of the collected  1.10
+7. Requirement Coverage and Data Gaps               0.16
+7.1. Updated Traceability Matrix                    0.31
+  [table] Table 7.1. Updated traceability from      1.24
+  (text after) Table 7.1. Updated traceability from   0.27
+7.2. Data Gaps and Controlled Revisions             0.96
+8. Risks, Ethics and Limitations                    0.99
+9. Generative AI Usage and Reflection               0.21
+  [table] Table 9.1. Roles of generative AI and     0.43
+  (text after) Table 9.1. Roles of generative AI and  0.85
+main content: 21.0 pages (pessimistic; --optimistic for the continuous-flow estimate)

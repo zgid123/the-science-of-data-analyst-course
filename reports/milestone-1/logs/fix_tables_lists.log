@@ -1,0 +1,18 @@
+2026-11-06T17:33:36Z
+$ report.py all milestone-1
+PASS  milestone-1 format             Checked 62 files in reports/milestone-1/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 structure          EN: 31 files, 30 headings, 0 figures, 27 tables: 0 errors, 0 warnings; VI: 31 files, 30 headings, 0 figures, 27 tables:   (0 s)
+PASS  milestone-1 style              EN: 27 body files: 0 errors, 0 warnings; VI: 27 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 abbreviations      EN: 5 abbreviations, 0 violations; VI: 5 abbreviations, 0 violations  (0 s)
+PASS  milestone-1 citations          EN: 25 references, 25 cited, order first-citation: 0 errors, 0 warnings; VI: 25 references, 25 cited, order first-citati  (0 s)
+PASS  milestone-1 names              Checked 62 files for 5 names: 0 errors  (0 s)
+PASS  milestone-1 research_trail     Checked 69 sources, 182 claims: 0 errors, 13 warnings  (0 s)
+PASS  milestone-1 translation vi     31 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-1 parity vi          Checked 31 pairs (vi): 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 build en           [en] 31 sections → reports/milestone-1/build/N04_Milestone1_EN.docx  (3 Word sections, 0 landscape, 1 images, 0 figure a  (4 s)
+PASS  milestone-1 build vi           [vi] 31 sections → reports/milestone-1/build/N04_Milestone1_VI.docx  (3 Word sections, 0 landscape, 1 images, 0 figure a  (4 s)
+PASS  milestone-1 docx en            EN reports/milestone-1/build/N04_Milestone1_EN.docx: 22 numbered headings, 0 figures, 27 tables, 1 images, 3 Word sectio  (1 s)
+PASS  milestone-1 docx vi            VI reports/milestone-1/build/N04_Milestone1_VI.docx: 22 numbered headings, 0 figures, 27 tables, 1 images, 3 Word sectio  (2 s)
+
+13/13 steps passed
+exit=0

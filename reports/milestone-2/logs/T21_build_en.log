@@ -1,0 +1,11 @@
+2026-11-05T18:49:06Z
+PASS  milestone-2 format             Checked 29 files in reports/milestone-2/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 structure          EN: 29 files, 28 headings, 0 figures, 22 tables: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 style              EN: 25 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 abbreviations      EN: 12 abbreviations, 0 violations  (0 s)
+PASS  milestone-2 citations          EN: 12 references, 12 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 names              Checked 29 files for 5 names: 0 errors  (0 s)
+PASS  milestone-2 research_trail     Checked 13 sources, 95 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 build en           [en] 29 sections → reports/milestone-2/build/N04_Milestone2_EN.docx  (3 Word sections, 0 landscape, 1 images, 0 figure a  (1 s)
+PASS  milestone-2 docx en            EN reports/milestone-2/build/N04_Milestone2_EN.docx: 18 numbered headings, 0 figures, 22 tables, 1 images, 3 Word sectio  (0 s)
+main content (Parts 1–9): 11.0 pages when the parts run on ([layout] part_breaks = false); about 15 pages if each part started on a new page

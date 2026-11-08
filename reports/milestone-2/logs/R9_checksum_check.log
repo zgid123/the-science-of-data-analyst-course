@@ -1,0 +1,17 @@
+# 2026-11-07T17:48:44Z check: Table A.8 checksums (EN and VI) vs shasum of reports/milestone-1/report files
+PASS 11-05 03-01-business-goal.md
+PASS 11-05 03-02-smart-goal.md
+PASS 11-05 03-03-kpis.md
+PASS 11-05 04-01-four-level-questions.md
+PASS 11-05 05-00-analytic-approach.md
+PASS 11-05 06-01-data-requirements.md
+PASS 11-05 07-00-decision-value.md
+PASS 11-05 09-00-traceability-matrix.md
+PASS 11-05.vi 03-01-business-goal.md
+PASS 11-05.vi 03-02-smart-goal.md
+PASS 11-05.vi 03-03-kpis.md
+PASS 11-05.vi 04-01-four-level-questions.md
+PASS 11-05.vi 05-00-analytic-approach.md
+PASS 11-05.vi 06-01-data-requirements.md
+PASS 11-05.vi 07-00-decision-value.md
+PASS 11-05.vi 09-00-traceability-matrix.md

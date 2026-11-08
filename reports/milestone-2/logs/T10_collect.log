@@ -1,0 +1,18 @@
+$ venv/bin/python reports/milestone-2/package/src/collect.py --compare-mirror
+curl: (56) The requested URL returned error: 404
+2026-11-05T18:24:19Z  source: figshare deposit DOI 10.6084/m9.figshare.5081998.v1, file 8606371 (https://ndownloader.figshare.com/files/8606371)
+2026-11-05T18:24:19Z  archive already in data/raw with the pinned SHA-256
+2026-11-05T18:24:19Z  archive anonymisedData.zip: 46750706 bytes, SHA-256 90dda45037939953f979072fa70a809ebe07e90ec783c408762af7698a3825ec -> MATCH
+2026-11-05T18:24:19Z  archive members: assessments.csv, courses.csv, studentAssessment.csv, studentInfo.csv, studentRegistration.csv, studentVle.csv, vle.csv
+2026-11-05T18:24:19Z  courses.csv: 526 bytes, 22 data rows, SHA-256 MATCH
+2026-11-05T18:24:19Z  assessments.csv: 8200 bytes, 206 data rows, SHA-256 MATCH
+2026-11-05T18:24:19Z  vle.csv: 260126 bytes, 6364 data rows, SHA-256 MATCH
+2026-11-05T18:24:19Z  studentInfo.csv: 3461652 bytes, 32593 data rows, SHA-256 MATCH
+2026-11-05T18:24:19Z  studentRegistration.csv: 1109984 bytes, 32593 data rows, SHA-256 MATCH
+2026-11-05T18:24:19Z  studentAssessment.csv: 5690310 bytes, 173912 data rows, SHA-256 MATCH
+2026-11-05T18:24:21Z  studentVle.csv: 453836331 bytes, 10655280 data rows, SHA-256 MATCH
+2026-11-05T18:24:21Z  downloading provider-page mirror http://schools.stem.open.ac.uk/cdn/files/anonymisedData.zip
+2026-11-05T18:24:22Z  urllib failed (SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')); retrying with curl
+2026-11-05T18:24:25Z  mirror download failed: CalledProcessError(56, ['curl', '-fsSL', '--retry', '3', '-o', '/Users/ptkhanh/Documents/master/milestone-da/reports/milestone-2/package/data/mirror_anonymisedData.zip', 'http://schools.stem.open.ac.uk/cdn/files/anonymisedData.zip'])
+2026-11-05T18:24:25Z  done: 1 archive + 7 tables, 7 matching their pinned SHA-256
+exit 0

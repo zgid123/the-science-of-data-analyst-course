@@ -1,0 +1,217 @@
+== Clean copy
+PASS  format: clean sources pass  (Checked 118 files in build/.cache/buildtest/report: 0 errors, 2 warnings)
+PASS  structure: clean sources pass  (  WARN  02-01-3-era-1-datasets-and-limits.vi.md:17: Bảng 2.4 is never referred to in the t)
+PASS  style: clean sources pass  (===== VI: 55 body files: 0 errors, 0 warnings)
+PASS  abbreviations: clean sources pass  (===== VI: 51 abbreviations, 0 violations)
+PASS  citations: clean sources pass  (===== VI: 111 references, 111 cited, order first-citation: 0 errors, 0 warnings)
+PASS  build: clean sources build  (  title_p = (next((p for p in reversed(lines) if texts[id(p)].isupper()), None) or (lines[)
+PASS  docx: clean document passes  (===== EN build/.cache/buildtest/out/Test_EN.docx: 55 numbered headings, 9 figures, 32 tabl)
+== Title page layouts (names side by side; one label/value table)
+PASS  title page: the title in capitals after the logo takes the title size  (['PRESENTATION ATTACKS AND LIVENESS DETECTION: THEORY, EVOLUTION, STANDARDS AND A FACE SEC)
+PASS  title page: names side by side keep two wide columns in a fixed-width table  ([7.2, 7.8] cm, tblW dxa)
+PASS  title page: a sentence-case title is found, not the faculty line above the logo  (['A Report Title in Sentence Case'])
+PASS  title page: a label column fits its longest label, the values take the rest, with a gap after the labels  ([5.6, 9.4] cm, gap True)
+== Vector figures ([TASK.layout] vector_figures = true)
+PASS  vector: a figure with an SVG twin goes in as SVG, its PNG kept as fallback  (1 svg parts, 1 refs)
+== Compact layout ([TASK.layout] compact = true)
+PASS  compact: builds  (  title_p = (next((p for p in reversed(lines) if texts[id(p)].isupper()), None) or (lines[)
+PASS  compact: no contents or list fields
+PASS  layout: --body-size reaches the body style  (11.0 pt)
+PASS  compact: parts start without a page break  (page_break_before=False)
+PASS  compact: the page after the title page is 1 (arabic)
+PASS  compact: post-check passes for a compact task  (===== EN build/.cache/buildtest/out/Test_EN_compact.docx: 55 numbered headings, 9 figures,)
+PASS  compact: a regular task still requires the contents
+== Title page height
+PASS  title page: a title page taller than its text area fails the post-check  (===== EN build/.cache/buildtest/out/Test_EN_tall_title.docx: 55 numbered headings, 9 figur)
+== Pessimistic page layout (paginate.py)
+PASS  paginate: the pessimistic layout is never shorter than the optimistic layout or the continuous flow  (pessimistic 105.24, optimistic 87.57, flow 69.26)
+PASS  paginate: a forced page break on a one-page document adds exactly one page  (1 page(s) before, 2 after the break)
+PASS  page_budget: reports optimistic and pessimistic main content, the budget and the last-page fill  (budget 10 pages: +72.0 pages (pessimistic), +43.2 (optimistic))
+== Lists of figures and tables, table fit
+PASS  lists: a list of figures with no figure captions fails the post-check  (===== EN build/.cache/buildtest/out/Test_EN_faults.docx: 55 numbered headings, 0 figures, 32 tables, 10 images, 21 Word )
+PASS  tables: a column too narrow for its words fails the post-check  (===== EN build/.cache/buildtest/out/Test_EN_faults.docx: 55 numbered headings, 0 figures, 32 tables, 10 images, 21 Word )
+== Run-on parts ([TASK.layout] part_breaks = false)
+PASS  run-on: builds with the contents and the lists kept
+PASS  run-on: numbered parts start without a page break, the references on a new page  (style break=False, refs=1)
+PASS  run-on: every page stays portrait  (0 landscape sections)
+PASS  run-on: post-check passes for a regular task  (===== EN build/.cache/buildtest/out/Test_EN_runon.docx: 55 numbered headings, 9 figures, 3)
+
+== Format faults
+PASS  format: em dash  (em dash)
+PASS  format: list numbered 1.  (numbered list item)
+PASS  format: bulleted list (warning)  (bulleted list item)
+PASS  format: display formula wider than the page (warning)  (display formula about)
+PASS  format: heading glued to paragraph  (heading without a blank line)
+PASS  format: list glued to paragraph  (list starts without a blank line)
+PASS  format: table glued to caption  (table without a blank line)
+PASS  format: table row with extra cell  (cells, header has)
+PASS  format: table without separator  (separator row)
+PASS  format: image glued to text  (image not alone)
+PASS  format: unclosed code fence  (unclosed code fence)
+
+== Structure faults
+PASS  structure: heading number skipped  (breaks the sequence)
+PASS  structure: caption number skipped  (Table 1.7 breaks the sequence)
+PASS  structure: caption in wrong part  (is not in Part)
+PASS  structure: caption without table  (not directly followed by a table)
+PASS  structure: cross-reference to nothing  ('Section 9.9' refers to nothing)
+PASS  structure: missing image file  (does not exist)
+PASS  structure: undefined footnote  (has no definition)
+PASS  structure: table never referred to (warning)  (Table 1.2 is never referred to)
+
+== Style faults
+PASS  style: meta commentary about the report  (meta commentary 'This report will')
+PASS  style: pending benchmark result  (meta commentary 'planned run')
+PASS  style: US spelling (warning)  (US spelling)
+PASS  style: quoted source keeps its spelling  ('US spelling' not reported)
+
+== Abbreviation faults
+PASS  abbreviations: full form repeated  (REPEAT  PAD)
+PASS  abbreviations: official title holding a full form is not a repeat  ('REPEAT  PAD' not reported)
+PASS  abbreviations: first use without definition  (DEFINE  PAD)
+
+== Citation faults
+PASS  citations: citation without entry  ([999] has no entry)
+PASS  citations: first citation out of order  (is cited before)
+PASS  citations: entry never cited  ([112] is never cited)
+PASS  citations: entry listed twice  (listed more than once)
+PASS  citations: draft source ID left  (draft citation [S101, S102])
+
+== Word document faults
+PASS  docx: table caption missing  (captions: Word has)
+PASS  docx: markdown leftover  (markdown leftover '**')
+PASS  docx: image wider than the page  (text area)
+PASS  docx: contents field missing  (table of contents field)
+PASS  docx: table without repeating header  (no repeating header row)
+PASS  docx: wrong title metadata  (core property title)
+PASS  docx: em dash  (em dash in)
+PASS  docx: citation beyond the list  (beyond the)
+PASS  docx: heading text changed  (text differs)
+PASS  docx: placeholder (warning)  (placeholder to fill)
+
+== Translation: quick check, sync and gating
+PASS  all twins present and recorded in sync  (59 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files)
+PASS  a newer file date alone keeps the twin in sync (content hash)
+PASS  changed source text marks the twin stale
+PASS  translate lists the missing twin with the guide and glossary
+PASS  build holds back a language with untranslated files
+PASS  a Vietnamese-only page is neither an orphan nor a parity error
+PASS  --mark keeps a file open while its parity check fails
+PASS  --add-extra copies a Vietnamese-only page template
+PASS  split_export: every section of an export finds its report file  (59 files → build/.cache/buildtest/split (59 matched, 0 new, 0 missing); 0 images saved; index: build/.cache/buildtest/split/_split-report.md
+)
+PASS  split_export: headings and citations come back in source form
+PASS  --candidates lists abbreviation-like tokens missing from the table
+PASS  split_export: restores fences, list numbers and formulas (04-02-3)
+PASS  split_export: restores fences, list numbers and formulas (04-04-l)
+PASS  split_export: drops a caption repeated in italics and restores the figure width
+PASS  tables: a short table takes its natural width, not the page width
+PASS  tables: seven short columns stay on a portrait page with readable number columns
+PASS  tables: a long URL wraps in its cell and leaves the width to the text columns  ([647081, 757626, 1478913, 1438189, 1438189])
+PASS  tables: a column of capitals fits its printed width, wider than an average character
+PASS  tables: a URL or a DOI keeps no hidden characters, so a copied link works
+PASS  tables: a long identifier still gets break points
+PASS  apply_fixes: a matching block applies, a missing FIND fails the run
+PASS  citations: a new source cited early breaks first-citation order
+PASS  renumber_refs: renumbers by first citation and the order check passes  (===== VI: 111 references, 111 cited, order first-citation: 0 errors, 0 warnings)
+
+== Translation: parity and Vietnamese conventions
+PASS  parity: dropped citation  (citation sequence differs)
+PASS  parity: reordered citations  (citation sequence differs)
+PASS  parity: altered formula  (math differs)
+PASS  parity: dropped list item  (list item count differ)
+PASS  parity: list written '1.'  (ordered list written '1.')
+PASS  parity: dropped table row  (table shapes)
+PASS  parity: changed heading number  (heading number differs)
+PASS  parity: em dash  (em dash)
+PASS  parity: decimal point in prose  (decimal point '0.85')
+PASS  parity: decimal point in a table  (decimal point '74.19')
+PASS  parity: glossary variant  (glossary 'tấn công thuyết trình')
+PASS  parity: common-layer variant (glossary Replaces)  (glossary 'điểm yếu')
+PASS  glossary lint: every layer consistent  (Checked 30 glossary files, 1862 terms: 0 errors)
+PASS  glossary lint: a variant that is a preferred form elsewhere
+PASS  glossary lint: a file above the row budget gets a split suggestion
+PASS  glossary sizes: lists rows and sections per file
+PASS  glossary split: one file per section, tasks.toml lists both, merged glossary unchanged  (wrote topics/zz-selftest-big.md
+wrote topics/zz-selftest-big-beta.md
+every task's merged glossary is unchanged; tasks.toml lists the new files after the old one
+)
+PASS  glossary snapshot: unchanged after the split  (compared 1 tasks: 0 differences
+)
+PASS  glossary snapshot: a changed row is reported  ( 3", "", []]
+DIFF  selftest: added or changed ["beta term 3", "thuật ngữ khác", "", []]
+compared 1 tasks: 2 differences
+)
+PASS  glossary split: a file without sections is left as it is
+PASS  parity: old tone placement (warning)  (old-style tone placement)
+PASS  parity: two plural markers (warning)  (two plural markers)
+PASS  parity: calque 'đóng một vai trò' (warning)  (calque)
+PASS  parity: spoken sentence opener (warning)  (spoken sentence opener)
+PASS  parity: three stacked passives (warning)  (three 'được')
+PASS  parity: comma before 'và' (warning, human review)  (comma before 'và')
+PASS  parity: possessive pronoun (warning, human review)  (possessive pronoun)
+PASS  parity: English loanword (warning, human review)  (English loanword)
+PASS  parity: one-digit date (warning, human review)  (one-digit day or month)
+PASS  parity: terms page row opening with the Vietnamese name (warning, human review)
+PASS  parity: terms page row 'English term – Vietnamese name' passes
+PASS  parity: label starting with 'là' (warning)  (line starts with 'là')
+PASS  slides: '·'-joined fragments (warning)
+PASS  slides: a word wider than its box is reported (warning)
+PASS  slides: a slide-number field is read at its own size  (Checked 1 slides: 0 errors, 0 warnings; spoken time ≈ 0 min 00 s)
+PASS  parity: kept English quotation is not flagged  ('looks untranslated' not reported)
+PASS  parity: untranslated sentence outside quotes (warning)  (looks untranslated)
+PASS  parity: version, standard and section numbers keep their dots  ('decimal point' not reported)
+PASS  parity: model names, product versions, DOIs and arXiv IDs keep their dots  ('decimal point' not reported)
+PASS  slidekit: a deck builds in English and Vietnamese with no missing strings
+PASS  slidekit: Vietnamese text, footer and slide-number field are in place
+PASS  slidekit: the built Vietnamese deck passes check_slides  (
+Checked 1 slides: 0 errors, 0 warnings; spoken time ≈ 0 min 30 s
+)
+PASS  slidekit text: slides and notes as plain text
+PASS  slidekit text --slides-only: the slide text without the notes (the slide-only reading pass)
+PASS  slidekit strings: lists exactly the English string without a Vietnamese form  ([
+ "Agent"
+]
+)
+PASS  slidekit: content that does not fit at the fixed type scale is reported
+PASS  slidekit sync: a changed English string is paired with the key it replaces  (trings, 11 keys; 1 missing, 1 unused, 1 renamed English strings
+  RENAME  'The loop runs one step at a time'
+      →   'The loop runs one small step at a time'
+)
+PASS  slidekit sync --write: the key is renamed and its value kept  ([]
+)
+PASS  slidekit diff: equal decks pass, different decks fail
+PASS  slidekit prompt: translator prompt filled with the voice, the strings file and the pack's language  (.cache/buildtest/kitdeck/kit_deck_vi.py and scratch files. Report the check summary line, terms you were unsure about, and every compromise that space forced.
+
+)
+PASS  example deck: builds on the current kit and passes check_slides with 0 warnings  (
+Checked 10 slides: 0 errors, 0 warnings; spoken time ≈ 5 min 40 s
+)
+PASS  visual kit: the gallery draws every chart, diagram and icon with 0 layout findings  (34 visuals and 46 icons → /Users/ptkhanh/Documents/master/milestone-da/build/.cache/buildtest/gallery: 0 layout findings
+)
+PASS  visual kit: diagrams drawn natively pass check_slides, and their grouped text is visible to the checks  (
+Checked 15 slides: 0 errors, 0 warnings; spoken time ≈ 0 min 00 s
+)
+PASS  palette: every series and state colour reaches 3:1 on white; white text is chosen on a series fill
+PASS  charts: numbers follow the language (0,75 / 1.250 / 4,81% in Vietnamese)  (('0,75', '1.250', '4,81%'))
+PASS  figqa: overlapping, crossed, small and cut-off labels are each reported  ({'overlap': True, 'crossed': True, 'small': True, 'cut off': True})
+PASS  init: tasks.toml, Makefile and starter report; a second init keeps them; the task passes every step  (tions → build/demo/Report_EN.docx  (5 Word sections, 1 landscape, 1 images, 1 figure and 1 table captions list  (1 s)
+PASS  demo docx en                   EN build/demo/Report_EN.docx: 4 numbered headings, 1 figures, 1 tables, 1 images, 5 Word sections: 0 errors, 0 warnings  (0 s)
+
+7/7 steps passed
+)
+PASS  slides: a bare 'nhóm' as speaker warns once; 'nhóm chúng em' and 'nhóm tác giả' pass  (m chúng em' (the presenters) or 'nhóm tác giả' (the authors) (guide section 3.2): 'Theo nhóm'
+
+Checked 1 slides: 0 errors, 1 warnings; spoken time ≈ 0 min 00 s
+)
+PASS  parity: a bare 'nhóm' in a report is left to the writers (slides-only warning)  ('bare 'nhóm'' not reported)
+PASS  names: the exact name passes, a near-miss ('Bích' for 'Bạch') is an error  (t/names/00-0-title-page.vi.md:3: 'Phạm Thị Bích Huệ' looks like 'Phạm Thị Bạch Huệ' (0.94); copy the name from tasks.toml
+Checked 1 files for 1 names: 1 errors
+)
+PASS  glossary coverage: a concept under another name drifts, the glossary's one term passes
+PASS  glossary coverage: runs over a report and reports its count  (vels under other names – align them with the glossary (domains/digital-banking-vn.md)
+Checked 57 task terms: 3 drifting
+)
+PASS  pack [docx] layout: 13 pt body, 1.4 line spacing
+
+156/156 checks passed

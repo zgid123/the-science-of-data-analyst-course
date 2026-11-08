@@ -59,6 +59,7 @@ uv run .agents/skills/pdf2md/scripts/verify.py <file.pdf> <file.md>             
 python3 -m unittest discover -s .agents/skills/data-analyst/evals -v           # data-analyst evaluator tests
 venv/bin/python .claude/skills/research-report/scripts/progress.py --base reports/milestone-1 next  # report task: next card
 make precheck TASK=milestone-1 | make build TASK=milestone-1 | make all TASK=milestone-1          # report checks and Word build
+make pages TASK=milestone-1 BUDGET=10                                       # page budget: optimistic and pessimistic layout per part
 ```
 
 ## Working out loud
@@ -71,10 +72,35 @@ Write down every step, so that anyone can retrace the work from the files alone,
 - Keep intermediate results next to the final ones: script output in `results/`, independent audits in
   `evidence/`, and each run's console output in `logs/<step>.log` with its UTC timestamp, command and exit status.
 - Record checks the same way as results: validations, renders and tests go into `logs/` with their command and outcome.
-- Trace every number in a report to a file in `results/`, `evidence/` or `logs/`, and name that file next to the number.
-- Give each analysis report a methods checklist: `- [x]` for each method applied, with its output file, and
+- Trace every number to a file in `results/`, `evidence/` or `logs/`. In working documents (analysis notes, exploration
+  reports, ledgers) name that file next to the number; for a submitted deliverable keep the trace in the task's ledger
+  and research trail, and let the deliverable name only what is submitted (see "Submitted deliverables read on their own").
+- Give each working analysis report a methods checklist: `- [x]` for each method applied, with its output file, and
   `- [ ]` for each method still to run.
 - In conversation, state each command, its result and what it means as you go, then summarise the final state.
+
+## Keep, commit, submit
+
+Working out loud keeps every step on disk; three tiers then decide where each file goes, so the repository stays lean
+and the submission stays self-contained. `.gitignore` carries the first decision: whatever it matches stays local.
+
+| Tier | What belongs | Where it lives |
+| :---- | :---- | :---- |
+| Keep on disk | Everything the work produces: raw data, downloads, intermediate tables, scratch output, every log | The task folder, or the session scratchpad for throwaway trials |
+| Commit | The text record that lets anyone retrace and rebuild the work: code and runners, `results/` and `evidence/`, `logs/`, research notes (`crawl.md`, comprehension notes, claims, register), ledgers, plans, report sections, built deliverables | Git |
+| Submit | The deliverables the instructor reads: the built Word reports, slide decks and data packages | The submission, built from committed files |
+
+- Commit a file when it records a decision, a result or a check, or when it is needed to rebuild a result; small text
+  files (scripts, Markdown, CSV results, logs) are the default commit.
+- Keep a file local when a committed script or a pinned download re-creates it: raw datasets, package `raw/`,
+  `interim/` and `processed/` data, source downloads (`research/sources/*/raw.*`, whose readable `crawl.md` is
+  committed), page renders of built documents (`results/table-audit/`, whose measurements are in `logs/`), caches
+  and environments. Add its pattern to `.gitignore` with a one-line comment naming the command that
+  re-creates it.
+- When a new kind of file appears, place it in a tier before the next commit: a `.gitignore` rule for local files, or
+  a commit for the record. `git status` then lists only work still to be placed.
+- Submit only what the instructor needs (see "Submitted deliverables read on their own"); the committed record
+  behind it stays in the repository for the team.
 
 ## Testing and verification
 
@@ -112,13 +138,31 @@ Report Markdown files are sections of one formal report compiled to Word.
   - Define a concept where it is first needed, before anything that relies on it.
   - Introduce each table or figure in the sentence before it and state what it shows.
 
+### Submitted deliverables read on their own
+
+The instructor reads only what is submitted: the Word reports, their slide decks and the data packages. Every
+deliverable is complete with those files alone.
+
+- Refer only to material that travels with the submission: sections, tables, figures and appendices of the same report;
+  files inside a submitted package, named by their path within that package; earlier milestone reports by milestone
+  and section; and published works in the reference list.
+- Keep repository material in the repository: task folders, `logs/`, `research/`, `code/`, skill scripts, source and
+  claim IDs (S201, C5-012), machine paths and `venv` stay in the ledger and trail, where they support the team's
+  traceability.
+- State evidence in words inside the deliverable: "computed from the 2013 training runs (Appendix III)", with the
+  number and its population in the sentence.
+- Make each data package run from a clean copy outside the repository: its own requirements, its inputs inside the
+  package or fetched from a pinned public download.
+- Before each build, scan the report sections and the built documents for repository paths and internal IDs, and
+  test each package from a clean copy.
+
 ## Source material
 
 - Keep instructor briefs, raw datasets and submitted deliverables in their original state; write derived files
   alongside them under new names.
 - Write Vietnamese content in Vietnamese; translate when the user asks for it.
-- Commit code and documents; keep datasets, `venv/` and secrets local (they are git-ignored). Change
-  `skills-lock.json` together with installing or updating a skill from GitHub, and add its `.claude/skills/` link.
+- Commit by the tiers of "Keep, commit, submit"; secrets always stay local. Change `skills-lock.json` together with
+  installing or updating a skill from GitHub, and add its `.claude/skills/` link.
 
 ## Commits
 

@@ -1,0 +1,9 @@
+# T08 – question lists and stakeholder map
+2026-11-05T13:55:10Z
+$ count questions (^| XX-Q) and distinct groups per list
+research/interviews/questions/program-manager.md questions=8 groups=5
+research/interviews/questions/lecturer.md questions=8 groups=5
+research/interviews/questions/advisor.md questions=8 groups=5
+research/interviews/questions/student.md questions=7 groups=5
+research/interviews/questions/data-officer.md questions=7 groups=5
+exit 0

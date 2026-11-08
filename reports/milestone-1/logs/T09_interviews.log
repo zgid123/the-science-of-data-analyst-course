@@ -1,0 +1,11 @@
+# T09 – interview checks
+2026-11-05T14:58:11Z
+$ count interviewer turns and answers per transcript
+research/interviews/transcripts/advisor.md questions=8 followups=1 answers=8
+research/interviews/transcripts/data-officer.md questions=8 followups=2 answers=8
+research/interviews/transcripts/lecturer.md questions=7 followups=1 answers=7
+research/interviews/transcripts/program-manager.md questions=8 followups=2 answers=8
+research/interviews/transcripts/student.md questions=8 followups=2 answers=8
+$ venv/bin/python reports/milestone-1/code/check_quotes.py
+checked 51 quotes: 0 missing
+exit 0

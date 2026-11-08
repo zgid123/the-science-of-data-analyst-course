@@ -1,0 +1,14 @@
+# 2026-11-07T02:32:20Z precheck EN + build EN after reader fixes
+PASS  milestone-2 format             Checked 58 files in reports/milestone-2/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 structure          EN: 29 files, 28 headings, 0 figures, 22 tables: 0 errors, 0 warnings; VI: 29 files, 28 headings, 0 figures, 22 tables:   (0 s)
+PASS  milestone-2 style              EN: 25 body files: 0 errors, 0 warnings; VI: 25 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 abbreviations      EN: 13 abbreviations, 0 violations; VI: 12 abbreviations, 0 violations  (0 s)
+PASS  milestone-2 citations          EN: 12 references, 12 cited, order first-citation: 0 errors, 0 warnings; VI: 12 references, 12 cited, order first-citati  (0 s)
+PASS  milestone-2 names              Checked 58 files for 5 names: 0 errors  (0 s)
+PASS  milestone-2 research_trail     Checked 13 sources, 95 claims: 0 errors, 0 warnings  (0 s)
+
+7/7 steps passed
+PASS  milestone-2 build en           [en] 29 sections → reports/milestone-2/build/N04_Milestone2_EN.docx  (13 Word sections, 5 landscape, 1 images, 0 figure   (5 s)
+
+1/1 steps passed
+exit 0

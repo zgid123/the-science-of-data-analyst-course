@@ -1,0 +1,7 @@
+2026-11-05T15:22:59Z
+$ glossary.py --lang vi lint
+Checked 25 glossary files, 1517 terms: 0 errors
+2026-11-05T15:43:54Z
+reader test 1: 73 flagged (1:2, 2:47, 3:24); log research/vi-review/reader-test.md
+$ glossary lint
+Checked 25 glossary files, 1559 terms: 1 errors

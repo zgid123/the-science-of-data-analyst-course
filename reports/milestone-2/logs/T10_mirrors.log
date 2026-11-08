@@ -1,0 +1,17 @@
+2026-11-05T18:31:07Z
+$ venv/bin/python reports/milestone-2/code/compare_mirrors.py <scratch>/uci.zip  (downloaded from https://archive.ics.uci.edu/static/public/349/open+university+learning+analytics+dataset.zip on 2026-11-05)
+UCI archive: 46748244 bytes, SHA-256 f2ed1902616c1fe8d2824d872c0b7d2d72be435bf0124d077044fe4be2c6d3e4
+| Table | Figshare bytes | UCI bytes | Same SHA-256 | Line endings (figshare / UCI) | Rows (figshare / UCI) | Same parsed rows |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| assessments.csv | 8200 | 8211 | False | CRLF / CRLF | 206 / 206 | only missing values written '?' in UCI, empty in figshare (11 rows) |
+| courses.csv | 526 | 526 | True | CRLF / CRLF | 22 / 22 | True |
+| studentAssessment.csv | 5690310 | 5690483 | False | CRLF / CRLF | 173912 / 173912 | only missing values written '?' in UCI, empty in figshare (173 rows) |
+| studentInfo.csv | 3461652 | 3462763 | False | CRLF / CRLF | 32593 / 32593 | only missing values written '?' in UCI, empty in figshare (1111 rows) |
+| studentRegistration.csv | 1109984 | 1132550 | False | CRLF / CRLF | 32593 / 32593 | only missing values written '?' in UCI, empty in figshare (22560 rows) |
+| studentVle.csv | 453836331 | 453836331 | True | CRLF / CRLF | 10655280 / 10655280 | True |
+| vle.csv | 260126 | 270612 | False | CRLF / CRLF | 6364 / 6364 | only missing values written '?' in UCI, empty in figshare (5243 rows) |
+UCI-only members: OULAD.names
+exit 0
+
+$ curl -sSI http://schools.stem.open.ac.uk/cdn/files/anonymisedData.zip  (link on the OU Analyse page)
+HTTP/1.1 404 Not Found

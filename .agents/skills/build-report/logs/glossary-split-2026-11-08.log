@@ -1,0 +1,87 @@
+# 2026-11-08T03:19:42Z glossary balancing (rerun; the first attempt passed each command as one word)
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi sizes
+file                                                     rows sections
+domains/card-payments-vn.md                               186       10  above budget
+topics/pos-payment-pipeline.md                            149        6  near budget
+common/research-and-evaluation.md                         138        2  near budget
+topics/early-warning-evaluation.md                        122        8  near budget
+common/ai-and-ml.md                                       108        2
+topics/learning-analytics-early-support.md                106        2
+topics/oulad-data-preparation.md                          106        8
+common/report-writing.md                                   96        2
+common/software-and-systems.md                             96        2
+domains/data-cleaning.md                                   96        5
+topics/course-completion-early-contact.md                  95        8
+domains/text-to-sql.md                                     68        4
+common/data-and-databases.md                               61        2
+domains/medical-image-uq.md                                51        3
+domains/usage-control.md                                   45        4
+topics/autodcworkflow.md                                   44        5
+common/security-and-privacy.md                             41        2
+topics/ucon-app.md                                         39        4
+domains/biometrics-and-pad.md                              37        0
+topics/course-completion-report-conventions.md             36        3
+common/standards-and-regulation.md                         31        0
+domains/higher-education.md                                28        1
+topics/conformal-operator-ensembles.md                     25        2
+domains/digital-banking-vn.md                              20        0
+topics/chase-sql.md                                        16        2
+domains/diffusion-language-models.md                        9        1
+topics/llada.md                                             7        3
+topics/university-bi-chatbot.md                             6        0
+budget: 150 rows per file
+exit 0
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi snapshot save /Users/ptkhanh/Documents/master/milestone-da/.agents/skills/build-report/logs/glossary-before-split.json
+saved /Users/ptkhanh/Documents/master/milestone-da/.agents/skills/build-report/logs/glossary-before-split.json: milestone-1 954 rows, milestone-2 954 rows, milestone-3 954 rows, milestone-4 954 rows
+exit 0
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi split domains/card-payments-vn.md
+wrote domains/card-payments-vn.md
+wrote domains/card-payments-vn-terminal-card-and-card-security.md
+wrote domains/card-payments-vn-terms-settled-during-the-first-translati.md
+every task's merged glossary is unchanged; tasks.toml lists the new files after the old one
+exit 0
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi snapshot compare /Users/ptkhanh/Documents/master/milestone-da/.agents/skills/build-report/logs/glossary-before-split.json
+compared 4 tasks: 0 differences
+exit 0
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi lint
+Checked 30 glossary files, 1862 terms: 0 errors
+exit 0
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi sizes
+file                                                     rows sections
+topics/pos-payment-pipeline.md                            149        6  near budget
+common/research-and-evaluation.md                         138        2  near budget
+topics/early-warning-evaluation.md                        122        8  near budget
+common/ai-and-ml.md                                       108        2
+topics/learning-analytics-early-support.md                106        2
+topics/oulad-data-preparation.md                          106        8
+common/report-writing.md                                   96        2
+common/software-and-systems.md                             96        2
+domains/data-cleaning.md                                   96        5
+topics/course-completion-early-contact.md                  95        8
+domains/card-payments-vn-terminal-card-and-card-security.md    74        4
+domains/text-to-sql.md                                     68        4
+common/data-and-databases.md                               61        2
+domains/card-payments-vn.md                                60        4
+domains/card-payments-vn-terms-settled-during-the-first-translati.md    52        2
+domains/medical-image-uq.md                                51        3
+domains/usage-control.md                                   45        4
+topics/autodcworkflow.md                                   44        5
+common/security-and-privacy.md                             41        2
+topics/ucon-app.md                                         39        4
+domains/biometrics-and-pad.md                              37        0
+topics/course-completion-report-conventions.md             36        3
+common/standards-and-regulation.md                         31        0
+domains/higher-education.md                                28        1
+topics/conformal-operator-ensembles.md                     25        2
+domains/digital-banking-vn.md                              20        0
+topics/chase-sql.md                                        16        2
+domains/diffusion-language-models.md                        9        1
+topics/llada.md                                             7        3
+topics/university-bi-chatbot.md                             6        0
+budget: 150 rows per file
+exit 0
+# 2026-11-08T03:19:54Z renamed domains/card-payments-vn-terms-settled-during-the-first-translati.md -> card-payments-vn-settled-terms.md (no task loads card-payments-vn in this repo)
+Checked 30 glossary files, 1862 terms: 0 errors
+exit 0
+compared 4 tasks: 0 differences
+exit 0

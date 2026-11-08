@@ -1,0 +1,5 @@
+# 2026-11-07T01:37:28Z make build TASK=milestone-1 L=en (full draft)
+PASS  milestone-1 build en           [en] 31 sections → reports/milestone-1/build/N04_Milestone1_EN.docx  (3 Word sections, 0 landscape, 1 images, 0 figure a  (6 s)
+
+1/1 steps passed
+exit 0

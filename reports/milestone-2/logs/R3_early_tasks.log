@@ -1,0 +1,5 @@
+# 2026-11-07T02:30:12Z venv/bin/python reports/milestone-2/code/count_early_tasks.py
+runs with >=1 / >=2 non-exam tasks due by day 13: 1 / 0 of 22
+runs with >=1 / >=2 non-exam tasks due by day 27: 16 / 1 of 22
+enrolments 32593: unregistered on or before day 0 3097; unregistered on days 1-14 1377; still registered on day 14 (no unregistration day, or one after day 14) 28119
+exit 0

@@ -1,0 +1,17 @@
+2026-11-05T15:21:17Z
+$ make precheck TASK=milestone-1 (EN steps)
+PASS  milestone-1 format             Checked 31 files in reports/milestone-1/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 structure          EN: 31 files, 30 headings, 0 figures, 27 tables: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 style              EN: 27 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 abbreviations      EN: 5 abbreviations, 0 violations  (0 s)
+PASS  milestone-1 citations          EN: 25 references, 25 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-1 names              Checked 31 files for 5 names: 0 errors  (0 s)
+PASS  milestone-1 research_trail     Checked 69 sources, 182 claims: 0 errors, 13 warnings  (0 s)
+$ make build TASK=milestone-1 L=en
+PASS  milestone-1 build en           [en] 31 sections → reports/milestone-1/build/N04_Milestone1_EN.docx  (3 Word sections, 0 landscape, 1 images, 0 figure a  (2 s)
+PASS  milestone-1 build en (Google Docs) [en] 31 sections → reports/milestone-1/build/N04_Milestone1_EN_GoogleDocs.docx  (3 Word sections, 0 landscape, 1 images,  (1 s)
+$ make postcheck TASK=milestone-1 L=en
+PASS  milestone-1 docx en            EN reports/milestone-1/build/N04_Milestone1_EN.docx: 22 numbered headings, 0 figures, 27 tables, 1 images, 3 Word sectio  (0 s)
+PASS  milestone-1 docx en (Google Docs) EN reports/milestone-1/build/N04_Milestone1_EN_GoogleDocs.docx: 22 numbered headings, 0 figures, 27 tables, 1 images, 3   (0 s)
+$ estimate_parts.py N04_Milestone1_EN.docx
+main content (Parts 1–9): 11.0 pages when the parts run on ([layout] part_breaks = false); about 15 pages if each part started on a new page

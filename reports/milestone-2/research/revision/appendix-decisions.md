@@ -62,3 +62,18 @@ cannot be applied as defined on OULAD; C06 and Section 7.2 now state the one-tas
 row on the Milestone 1 version (all milestones are submitted on the same day).
 
 Main content after fixes: EN 15.1 pages, VI 16.5 pages (logs/R5_pages.log).
+
+## Review of Section 1.2 against the brief (2026-11-08)
+
+User request: check whether Section 1.2 (Scope of Milestone 2 and Change Log Summary, 0.92 pages in the pessimistic
+layout) is worth moving, judged against the brief's report structure (section 15.1) and the text as written.
+
+| Part of 1.2 | Brief requirement | Elsewhere in the main text | Verdict |
+| :---- | :---- | :---- | :---- |
+| What this milestone does (the two questions, the steps, what is left to later milestones) | Section 15.1 row 1 "Milestone 1 Baseline & Scope"; section 2 "Đầu ra cốt lõi"; the "Không được làm ở Milestone 2" box | Nowhere | Required: stays |
+| What the data changed (C01–C08, the four that matter most) | Rubric row 1 "Liên kết Milestone 1 và tính nhất quán của scope / Change Log"; section 3.1; deliverable D | C04–C08 in Section 7.2; C01, C02, C03 only here | Required: stays |
+| Closing paragraph (no revision alters goals or decisions) | Rubric row 1 | Repeated in Section 7.2 "What does not change" | Repeated, 3 lines |
+
+Page effect (logs/R21_page_budget.log): the last main-text page is 73% full in English and 20% full in Vietnamese, so
+removing the 3 repeated lines (about 0.05 page) saves no page in either language. Decision: no change to Section 1.2;
+no translation work follows.

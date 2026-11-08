@@ -1,0 +1,143 @@
+2026-11-05T18:32:59Z
+$ venv/bin/python reports/milestone-2/package/src/verify_structure.py
+{"courses": [22, 3, 0, 0], "assessments": [206, 6, 0, 0], "vle": [6364, 6, 0, 0], "studentInfo": [32593, 12, 0, 0], "studentRegistration": [32593, 5, 0, 0], "studentAssessment": [173912, 5, 0, 0], "studentVle": [10655280, 6, null, 787170]}
+{
+ "final_result_values": {
+  "Pass": 12361,
+  "Withdrawn": 10156,
+  "Fail": 7052,
+  "Distinction": 3024
+ },
+ "withdrawn_with_date": 10063,
+ "withdrawn_without_date": 93,
+ "date_but_not_withdrawn": 9,
+ "studentInfo_registration_match": true,
+ "runs_per_module": {
+  "AAA-J": [
+   "2013J",
+   "2014J"
+  ],
+  "BBB-B": [
+   "2013B",
+   "2014B"
+  ],
+  "BBB-J": [
+   "2013J",
+   "2014J"
+  ],
+  "CCC-B": [
+   "2014B"
+  ],
+  "CCC-J": [
+   "2014J"
+  ],
+  "DDD-B": [
+   "2013B",
+   "2014B"
+  ],
+  "DDD-J": [
+   "2013J",
+   "2014J"
+  ],
+  "EEE-B": [
+   "2014B"
+  ],
+  "EEE-J": [
+   "2013J",
+   "2014J"
+  ],
+  "FFF-B": [
+   "2013B",
+   "2014B"
+  ],
+  "FFF-J": [
+   "2013J",
+   "2014J"
+  ],
+  "GGG-B": [
+   "2014B"
+  ],
+  "GGG-J": [
+   "2013J",
+   "2014J"
+  ]
+ },
+ "runs_per_module_all": {
+  "AAA": [
+   "2013J",
+   "2014J"
+  ],
+  "BBB": [
+   "2013B",
+   "2013J",
+   "2014B",
+   "2014J"
+  ],
+  "CCC": [
+   "2014B",
+   "2014J"
+  ],
+  "DDD": [
+   "2013B",
+   "2013J",
+   "2014B",
+   "2014J"
+  ],
+  "EEE": [
+   "2013J",
+   "2014B",
+   "2014J"
+  ],
+  "FFF": [
+   "2013B",
+   "2013J",
+   "2014B",
+   "2014J"
+  ],
+  "GGG": [
+   "2013J",
+   "2014B",
+   "2014J"
+  ]
+ },
+ "students_total": 28785,
+ "students_in_more_than_one_run": 3538,
+ "same_module_repeats": 1309,
+ "repeats_with_higher_attempt_counter": 1309,
+ "first_task_due_day": {
+  "AAA-2013J": 19,
+  "AAA-2014J": 19,
+  "BBB-2013B": 19,
+  "BBB-2013J": 19,
+  "BBB-2014B": 12,
+  "BBB-2014J": 19,
+  "CCC-2014B": 18,
+  "CCC-2014J": 18,
+  "DDD-2013B": 23,
+  "DDD-2013J": 25,
+  "DDD-2014B": 25,
+  "DDD-2014J": 20,
+  "EEE-2013J": 33,
+  "EEE-2014B": 33,
+  "EEE-2014J": 33,
+  "FFF-2013B": 19,
+  "FFF-2013J": 19,
+  "FFF-2014B": 24,
+  "FFF-2014J": 24,
+  "GGG-2013J": 61,
+  "GGG-2014B": 61,
+  "GGG-2014J": 61
+ },
+ "runs_with_task_due_by_day_13": 1,
+ "runs_with_task_due_by_day_27": 16,
+ "exams_without_cutoff_day": 11,
+ "unregistered_on_or_before_day_0": 3097,
+ "registered_after_day_14": 58,
+ "registration_day_missing": 45,
+ "still_registered_at_day_14": 28119,
+ "assessment_rows_without_parent": 0,
+ "submissions_without_enrolment": 0,
+ "click_rows_without_enrolment": 0,
+ "click_rows_without_site": 0
+}
+exit 0

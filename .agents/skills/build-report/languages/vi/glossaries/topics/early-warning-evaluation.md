@@ -102,7 +102,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | Low / Medium (residual risk) | Thấp / Trung bình |  |  |
 | not cleared (fairness check, small group) | chưa được xác nhận đạt | "không đủ dữ liệu, chưa được xác nhận đạt" |  |
 | post-hoc explanation | giải thích hậu nghiệm | first use: "giải thích hậu nghiệm (post-hoc)" |  |
-| proxy (for an excluded attribute) | biến thay thế | "hoạt động có thể là biến thay thế cho tình trạng khuyết tật"; differs from "chỉ số đại diện" (a KPI proxy) |  |
+| proxy (for an excluded attribute) | biến đại diện | "hoạt động có thể là biến đại diện cho tình trạng khuyết tật"; differs from "chỉ số đại diện" (a KPI proxy) |  |
 | proxy variable / proxy | biến đại diện | first use "biến đại diện (proxy)"; for the KPI itself use "chỉ số đại diện" | biến thay thế |
 | residual risk | rủi ro còn lại |  |  |
 | risk register | danh mục rủi ro |  | sổ đăng ký rủi ro |
@@ -138,7 +138,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | F1 score | điểm F1 | | |
 | Nagelkerke R² | R² Nagelkerke | "mức biến thiên của biến kết quả mà mô hình giải thích được" at first use | |
 | top-k list | danh sách k sinh viên đầu | k set by capacity | |
-| proxy check | kiểm tra biến thay thế | which predictors carry group information; the proxy itself is "biến thay thế" | |
+| proxy check | kiểm tra biến đại diện | which predictors carry group information; the proxy itself is "biến đại diện" | |
 | paired two-level bootstrap | bootstrap hai tầng | one name for the method; state the pairing in words: "mô hình và quy tắc được so trên cùng một mẫu lấy lại" | bootstrap hai tầng ghép cặp |
 | Supplement / Extension / Rejected (candidate labels) | Bổ trợ / Mở rộng / Bị loại | column labels of the candidate comparison | |
 | error slices | phân tích lỗi theo từng nhóm con | | |
