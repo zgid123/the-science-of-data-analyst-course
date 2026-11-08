@@ -90,7 +90,7 @@ The data vocabulary of team N04's course-completion project: the search for and 
 | English | Vietnamese | Usage | Replaces |
 | --- | --- | --- | --- |
 | data profiling (of a dataset) | khảo sát dữ liệu (profiling) | not "lập hồ sơ", which is for profiling students |  |
-| de-duplicated twin (Milestone 3 running text) | phiên bản đã bỏ dòng trùng | Milestone 3 reader test; "bản đối chiếu đã loại trùng" stays in tables and in Milestone 4 | |
+| de-duplicated twin (Milestone 3 running text) | phiên bản đã bỏ dòng trùng | Milestone 3 reader test; "bản đối chiếu đã loại trùng" stays in tables; later milestones describe the de-duplicated clicks in words | |
 | exact duplicate row; de-duplicated twin | dòng trùng lặp hoàn toàn; bản đối chiếu đã loại trùng | the twin is a second version of a click feature counting each duplicated row once |  |
 | heavy users (of the platform) | sinh viên dùng nền tảng rất nhiều | | |
 | inconsistency (a counted finding) | loại không nhất quán | "sáu loại không nhất quán"; avoid "điểm không nhất quán", which clashes with "điểm" (score) | điểm không nhất quán |

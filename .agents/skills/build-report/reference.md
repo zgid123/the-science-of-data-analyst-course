@@ -110,7 +110,7 @@ Each language is a folder `languages/<code>/`. English is the source language; e
 | `review.md` | Target languages: the native reviewer's protocol and checklist, used after translation (section 4.4) |
 | `lessons.md` | Target languages: what human reviewers changed in earlier translations, with before/after examples and the rule each produced (section 4.7) |
 | `guide.md` | How to write natively for this language's readers: voice, natural forms for English sentence patterns, slides and presenter notes, orthography, structure, numbers and dates, quotations, references, language-only pages, the self-review before marking a file translated (target languages) |
-| `glossaries/` | Fixed terms in three layers: `common/` (every report), `domains/` and `topics/` (selected per task with `[taskN.<code>] glossaries = [...]`); rows `English \| Vietnamese \| Usage \| Replaces`; `glossary.py` shows, looks up and lints them (`glossaries/README.md`) |
+| `glossaries/` | Fixed terms in three layers: `common/` (every report), `domains/` and `topics/` (selected per task with `[taskN.<code>] glossaries = [...]`); rows `English \| Vietnamese \| Usage \| Replaces`; files of at most 150 rows under `##` concept sections; `glossary.py` shows, looks up, lints, sizes, splits and snapshots them (`glossaries/README.md`) |
 | `templates/` | Pages only this language's reports carry (for Vietnamese: `00-0a-loi-cam-on.vi.md`, `00-0b-loi-cam-doan.vi.md`) |
 
 | `pack.toml` key | Purpose | English | Vietnamese |
@@ -151,7 +151,7 @@ Every target language, every deliverable (report, deck, answers to questions) an
 3. Keep the structure one-to-one: headings with the same numbers, tables with the same rows and columns, lists with the same items, figures with the same paths (caption translated), footnote labels, code, formulas, and `[n]` citations in the same order.
 4. Front matter: the abbreviation list and the terms page keep one row per source row in the same order, in the pack's forms (Vietnamese: guide section 6, "English term – Vietnamese name" on the terms page, which `check_parity.py` checks through `terms_page`); the reference list translates only its heading and introduction.
 5. Run `check_parity.py --report DIR --lang CODE FILE` until it reports 0 errors, review its warnings, then `translation_status.py … --mark FILE` (which records the file once its parity check passes).
-6. Add any new recurring term to the right glossary layer (common, domain or topic; glossaries README), then run `glossary.py --lang CODE lint`.
+6. Add any new recurring term to the right glossary layer (common, domain or topic; glossaries README), then run `glossary.py --lang CODE lint`. Each file stays a focused read of at most 150 rows under `##` concept sections: when lint reports a file above that budget, move its general rows to common or the domain, then `glossary.py split` it by section, which updates `tasks.toml` and confirms that every task's merged glossary is unchanged (glossaries README, "Keeping each file a focused read").
 
 ### 4.3. Translating a whole report
 

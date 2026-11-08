@@ -80,6 +80,11 @@ def run(script, *args):
     return r.returncode, r.stdout + r.stderr
 
 
+def _rows(path):
+    import glossary
+    return glossary.rows_of(path)
+
+
 def expect(label, ok, detail=""):
     results.append(ok)
     print(f"{'PASS' if ok else 'FAIL'}  {label}" + (f"  ({detail})" if detail else ""))
@@ -553,6 +558,40 @@ def main():
     code, out = run("glossary.py", "--lang", "vi", "lint")
     bad.unlink()
     expect("glossary lint: a variant that is a preferred form elsewhere", code == 1 and "is a preferred form" in out)
+    big = gdir / "zz-selftest-big.md"                       # size budget: an overgrown file is split by its sections
+    rows = lambda tag, n: "".join(f"| {tag} term {i} | thuật ngữ {tag} {i} | | |\n" for i in range(n))
+    head = "| English | Vietnamese | Usage | Replaces |\n| --- | --- | --- | --- |\n"
+    big.write_text("# Big\n\nTerms of the self-test.\n\n## Alpha\n\n" + head + rows("alpha", 90)
+                   + "\n## Beta\n\n" + head + rows("beta", 90), encoding="utf-8")
+    cfg_text = CONFIG.read_text(encoding="utf-8")
+    CONFIG.write_text(cfg_text.replace('glossaries = ["biometrics-and-pad", "digital-banking-vn"]',
+                                       'glossaries = ["biometrics-and-pad", "digital-banking-vn", "zz-selftest-big"]'),
+                      encoding="utf-8")
+    snap = BASE / "glossary-snapshot.json"
+    try:
+        code, out = run("glossary.py", "--lang", "vi", "lint")
+        expect("glossary lint: a file above the row budget gets a split suggestion",
+               code == 0 and "WARN  topics/zz-selftest-big.md holds 180 rows" in out and "split topics/zz-selftest-big.md" in out)
+        code, out = run("glossary.py", "--lang", "vi", "sizes")
+        expect("glossary sizes: lists rows and sections per file", "topics/zz-selftest-big.md" in out and "above budget" in out)
+        run("glossary.py", "--lang", "vi", "snapshot", "save", str(snap))
+        code, out = run("glossary.py", "--lang", "vi", "split", "topics/zz-selftest-big.md")
+        part = gdir / "zz-selftest-big-beta.md"
+        expect("glossary split: one file per section, tasks.toml lists both, merged glossary unchanged",
+               code == 0 and part.exists() and len(_rows(big)) == 90 and len(_rows(part)) == 90
+               and '"zz-selftest-big", "zz-selftest-big-beta"' in CONFIG.read_text(encoding="utf-8"), out[-200:])
+        code, out = run("glossary.py", "--lang", "vi", "snapshot", "compare", str(snap))
+        expect("glossary snapshot: unchanged after the split", code == 0 and "0 differences" in out, out[-120:])
+        part.write_text(part.read_text(encoding="utf-8").replace("thuật ngữ beta 3 |", "thuật ngữ khác |"), encoding="utf-8")
+        code, out = run("glossary.py", "--lang", "vi", "snapshot", "compare", str(snap))
+        expect("glossary snapshot: a changed row is reported", code == 1 and "thuật ngữ khác" in out, out[-120:])
+        big.write_text("# One\n\n" + head + rows("solo", 3), encoding="utf-8")
+        code, out = run("glossary.py", "--lang", "vi", "split", "topics/zz-selftest-big.md")
+        expect("glossary split: a file without sections is left as it is", code != 0 and "group its rows under sections" in out)
+    finally:
+        for f in gdir.glob("zz-selftest-big*.md"):
+            f.unlink()
+        CONFIG.write_text(cfg_text, encoding="utf-8")
     md_fault("parity", "old tone placement (warning)", circ, lambda t: t + "\nQuá trình chuẩn hoá dữ liệu.\n", "old-style tone placement", want="warn")
     md_fault("parity", "two plural markers (warning)", circ, lambda t: t + "\nCác những tổ chức tín dụng tham gia.\n", "two plural markers", want="warn")
     md_fault("parity", "calque 'đóng một vai trò' (warning)", circ, lambda t: t + "\nNgân hàng đóng một vai trò quan trọng.\n", "calque", want="warn")

@@ -5,6 +5,9 @@ Usage:
     glossary.py --lang vi [--task TASK | --names a,b] lookup "term"   rows whose English or Vietnamese contains the term
     glossary.py --lang vi lint                                         check every glossary file of the pack
     glossary.py --lang vi --task TASK coverage --report DIR | --deck MODULE.py   term drift across a deliverable
+    glossary.py --lang vi sizes                                        rows and sections of every glossary file
+    glossary.py --lang vi split LAYER/FILE.md [--each]                 balanced files by ## section, tasks.toml updated
+    glossary.py --lang vi snapshot save|compare FILE.json              the merged glossary of every task, kept equal
 
 Layers (languages/<code>/glossaries/): every file in common/ applies to every report; a task adds the domain and topic
 files it names in tasks.toml ([taskN.<code>] glossaries = ["domain-name", "topic-name"]), looked up in domains/ and
@@ -13,6 +16,14 @@ common), which lets a field fix its own sense of a general word. Rows are table 
 Replaces |; Replaces lists variants (comma-separated) that the language checks report as errors with the preferred
 form. lint reports: malformed rows, an English term repeated within one file or translated differently in two common
 files, a variant claimed by two different preferred forms, and a variant that is itself a preferred form elsewhere.
+
+Every file stays small enough for an agent to read in one pass: lint reports a file above ROW_BUDGET rows. split
+turns such a file into focused files: consecutive ## sections grouped into the fewest files of about equal size, each
+at most SPLIT_FILL of the budget (--each: one file per section); the first file keeps the name, each further one is
+LAYER/<file>-<its first section>.md, all with the file's opening paragraph; it adds the new names after the old one in every tasks.toml glossaries list that names it,
+and confirms with a snapshot that every task's merged glossary is unchanged; on any difference it restores the
+files and stops. snapshot save/compare records and compares those merged glossaries around any manual
+reorganisation (moving rows between files or to common/).
 
 coverage measures term drift over a whole deliverable: for each domain and topic term (the task's own concepts), it
 counts the English term in the source (a report's English files, or the keys of a deck's VI module) and the
@@ -32,6 +43,8 @@ from pathlib import Path
 from common import ROOT, language_packs, load_config, tasks, shown
 
 LAYERS = ("common", "domains", "topics")
+ROW_BUDGET = 150                                     # rows an agent reads comfortably in one pass of a file
+SPLIT_FILL = 0.6                                     # a split leaves each file at about 60% of the budget, room to grow
 
 
 def folder(pack: dict) -> Path:
@@ -166,10 +179,130 @@ def lint(pack: dict) -> list[str]:
     return errors
 
 
+def sizes(pack: dict) -> list[tuple[str, int, int]]:
+    """(layer/file, rows, ## sections) of every glossary file, largest first."""
+    root = folder(pack)
+    out = []
+    for layer in LAYERS:
+        for p in sorted((root / layer).glob("*.md")):
+            text = p.read_text(encoding="utf-8")
+            out.append((f"{layer}/{p.name}", len(rows_of(p)), len(re.findall(r"(?m)^## ", text))))
+    return sorted(out, key=lambda x: -x[1])
+
+
+def over_budget(pack: dict) -> list[str]:
+    return [f"{name} holds {n} rows, above the budget of {ROW_BUDGET}: "
+            + (f"group its {k} sections into balanced files with `glossary.py --lang {pack['code']} split {name}`" if k >= 2 else
+               "group its rows under ## sections by concept, then split it with `glossary.py split`")
+            for name, n, k in sizes(pack) if n > ROW_BUDGET]
+
+
+def snapshot(pack: dict) -> dict:
+    """Merged rows (English, Vietnamese, usage, replaces) of every task that uses this pack, by task."""
+    out = {}
+    for name, task in tasks(load_config()).items():
+        if pack["code"] not in task:
+            continue
+        try:
+            rows = load(pack, names_of(task, pack["code"]))
+        except SystemExit:
+            continue
+        out[name] = sorted([r["en"].lower(), r["vi"], r["usage"], sorted(r["replaces"])] for r in rows)
+    return out
+
+
+def snapshot_diff(before: dict, after: dict) -> list[str]:
+    import json
+    diff = []
+    for t in sorted(set(before) | set(after)):
+        a = {json.dumps(r, ensure_ascii=False) for r in before.get(t, [])}
+        b = {json.dumps(r, ensure_ascii=False) for r in after.get(t, [])}
+        diff += [f"{t}: removed or changed {r}" for r in sorted(a - b)]
+        diff += [f"{t}: added or changed {r}" for r in sorted(b - a)]
+    return diff
+
+
+def slug(text: str) -> str:
+    words, out = re.sub(r"[^a-z0-9]+", " ", text.lower()).split(), ""
+    for w in words:                                   # whole words up to 40 characters
+        if len(out) + len(w) + 1 > 40:
+            break
+        out = f"{out}-{w}" if out else w
+    return out or "section"
+
+
+def group_sections(sections: list[str], each: bool = False) -> list[list[str]]:
+    """Consecutive ## sections in the fewest files of about equal size, each at most SPLIT_FILL of the budget."""
+    if each:
+        return [[sec] for sec in sections]
+    sizes_ = [len(re.findall(r"(?m)^\|", sec)) for sec in sections]   # table lines; headers count alike everywhere
+    total = sum(sizes_)
+    n = min(len(sections), max(2, -(-total // int(SPLIT_FILL * ROW_BUDGET))))
+    groups, cum, k = [[]], 0, 1
+    for sec, size in zip(sections, sizes_):
+        if groups[-1] and k < n and cum + size / 2 > k * total / n:  # cut at the boundary nearest the next share
+            groups.append([])
+            k += 1
+        groups[-1].append(sec)
+        cum += size
+    return groups
+
+
+def split(pack: dict, rel: str, each: bool = False) -> list[str]:
+    """Split LAYER/FILE.md by its ## sections into balanced files; keep every task's merged glossary unchanged."""
+    root = folder(pack)
+    path = root / rel
+    layer, stem = path.parent.name, path.stem
+    text = path.read_text(encoding="utf-8")
+    parts = re.split(r"(?m)^(?=## )", text)
+    head, sections = parts[0], [x for x in parts[1:] if x.strip()]
+    if len(sections) < 2:
+        raise SystemExit(f"{rel} has {len(sections)} ## section(s); group its rows under sections first")
+    title = (re.search(r"(?m)^# (.*)$", head) or [None, stem])[1]
+    intro = re.sub(r"(?m)^# .*\n", "", head).strip()
+    before = snapshot(pack)
+    config_path = __import__("common").CONFIG
+    config_text = config_path.read_text(encoding="utf-8")
+    groups = group_sections(sections, each)
+    written = {}
+    for i, group in enumerate(groups):
+        headings = [re.match(r"## (.*)", sec)[1].strip() for sec in group]
+        name = stem if i == 0 else f"{stem}-{slug(headings[0])}"
+        body = (f"# {title}: {'; '.join(headings)}\n\n" + (intro + "\n\n" if intro else "")
+                + "\n\n".join(sec.strip() for sec in group) + "\n")
+        written[name] = body
+    new_names = [n for n in written if n != stem]
+    clash = [n for n in new_names if (root / layer / f"{n}.md").exists()]
+    if clash:
+        raise SystemExit(f"files already exist: {', '.join(clash)}")
+    for name, body in written.items():
+        (root / layer / f"{name}.md").write_text(body, encoding="utf-8")
+    if layer != "common":                             # common files load for every task; others are named per task
+        quoted = f'"{stem}"'
+        lines = []
+        for line in config_text.split("\n"):
+            if re.match(r"\s*glossar(y|ies)\s*=", line) and quoted in line:
+                listed = ", ".join(f'"{n}"' for n in [stem] + new_names)
+                line = (line.replace(quoted, listed, 1) if "[" in line else
+                        re.sub(r"glossar(y|ies)\s*=\s*" + re.escape(quoted), f"glossaries = [{listed}]", line))
+            lines.append(line)
+        config_path.write_text("\n".join(lines), encoding="utf-8")
+    diff = snapshot_diff(before, snapshot(pack))
+    if diff:                                          # restore everything and stop
+        path.write_text(text, encoding="utf-8")
+        for n in new_names:
+            (root / layer / f"{n}.md").unlink(missing_ok=True)
+        config_path.write_text(config_text, encoding="utf-8")
+        raise SystemExit("split changed a merged glossary, restored:\n" + "\n".join(diff[:20]))
+    return [f"{layer}/{n}.md" for n in written]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["show", "lookup", "lint", "coverage"])
-    ap.add_argument("term", nargs="?")
+    ap.add_argument("command", choices=["show", "lookup", "lint", "coverage", "sizes", "split", "snapshot"])
+    ap.add_argument("term", nargs="?", help="lookup: the term; split: LAYER/FILE.md; snapshot: save or compare")
+    ap.add_argument("file", nargs="?", help="snapshot: the JSON file")
+    ap.add_argument("--each", action="store_true", help="split: one file per ## section instead of balanced groups")
     ap.add_argument("--lang", required=True)
     ap.add_argument("--task")
     ap.add_argument("--names", help="comma-separated domain/topic glossary names")
@@ -184,8 +317,38 @@ def main():
         files = [p for layer in LAYERS for p in (folder(pack) / layer).glob("*.md")]
         for e in errors:
             print("ERROR " + e)
+        for w in over_budget(pack):
+            print("WARN  " + w)
         print(f"Checked {len(files)} glossary files, {sum(len(rows_of(p)) for p in files)} terms: {len(errors)} errors")
         return 1 if errors else 0
+    if args.command == "sizes":
+        print(f"{'file':55} {'rows':>5} {'sections':>8}")
+        for name, n, k in sizes(pack):
+            mark = "  above budget" if n > ROW_BUDGET else ("  near budget" if n > 0.8 * ROW_BUDGET else "")
+            print(f"{name:55} {n:5} {k:8}{mark}")
+        print(f"budget: {ROW_BUDGET} rows per file")
+        return 0
+    if args.command == "split":
+        if not args.term:
+            raise SystemExit("split needs LAYER/FILE.md")
+        for f in split(pack, args.term, args.each):
+            print(f"wrote {f}")
+        print("every task's merged glossary is unchanged; tasks.toml lists the new files after the old one")
+        return 0
+    if args.command == "snapshot":
+        import json
+        if args.term not in ("save", "compare") or not args.file:
+            raise SystemExit("snapshot save|compare FILE.json")
+        now = snapshot(pack)
+        if args.term == "save":
+            Path(args.file).write_text(json.dumps(now, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"saved {args.file}: " + ", ".join(f"{t} {len(r)} rows" for t, r in now.items()))
+            return 0
+        diff = snapshot_diff(json.loads(Path(args.file).read_text(encoding="utf-8")), now)
+        for d in diff:
+            print("DIFF  " + d)
+        print(f"compared {len(now)} tasks: {len(diff)} differences")
+        return 1 if diff else 0
     task = tasks(load_config()).get(args.task) if args.task else None
     names = args.names.split(",") if args.names else names_of(task, args.lang)
     rows = load(pack, names)

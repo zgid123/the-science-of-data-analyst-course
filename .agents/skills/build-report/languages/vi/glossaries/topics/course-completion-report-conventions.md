@@ -49,3 +49,6 @@ Wording that team N04's MTH045 reports share across milestones: the course brief
 | PASS / FAIL (result of a check) | PASS / FAIL | keep the English status words; in prose "phép kiểm tra báo lỗi"; avoid "không đạt", which reads as a student's Fail | |
 | stays a requirement (nothing changes status) | vẫn là yêu cầu | avoid: "trở thành yêu cầu", "chuyển thành yêu cầu" | |
 | the team (authors of the report) | nhóm tác giả | a bare "nhóm" where the brief's generic "a team" is meant | |
+| Before / After (Change Log columns) | Nội dung cũ / Nội dung mới | Change Log tables of Milestones 2–4; Milestone 1's "Before → After" examples keep the English | |
+| Reflection (section lead-in) | Bài học rút ra | | |
+| analytics level | loại phân tích | Descriptive / Diagnostic / Predictive / Prescriptive | |

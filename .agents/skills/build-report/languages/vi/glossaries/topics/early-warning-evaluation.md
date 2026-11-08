@@ -27,7 +27,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | leakage | rò rỉ thông tin | | |
 | leave-one-run-out (folds) | loại trừ từng kỳ mở (leave-one-run-out) |  |  |
 | scaling / encoding (fitted) | phép chuẩn hóa thang đo / phép mã hóa (được ước lượng) | | |
-| single test (on the 2014 runs) | kiểm tra một lần duy nhất | "chấm điểm các kỳ mở năm 2014 đúng một lần" |  |
+| single test (on the 2014 runs) | kiểm tra một lần duy nhất | "tính điểm rủi ro cho các kỳ mở năm 2014 đúng một lần"; "chấm điểm" stays for graded assessments only |  |
 | target leakage / train–test contamination / student leakage / temporal leakage / augmentation leakage | rò rỉ biến mục tiêu / lẫn dữ liệu giữa tập huấn luyện và tập kiểm thử / rò rỉ theo sinh viên / rò rỉ theo thời gian / rò rỉ do tăng cường dữ liệu | the brief's five leakage risks |  |
 | test set (the 2014 runs) | tập kiểm thử (các kỳ mở năm 2014) | Milestone 3 reader test: never a bare "kiểm thử"; "kiểm thử đơn vị" for unit tests; "bản ghi giả lập" for synthetic test records | |
 | time split | chia dữ liệu theo thời gian | training 2013 runs, test 2014 runs |  |
@@ -70,9 +70,9 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | capacity (Milestone 2 wording) | số sinh viên cán bộ liên hệ được mỗi tuần | one term with the capacity row above; phrase the sentence around who can contact how many students | |
 | capacity scenarios (list sizes under assumed capacity) | kịch bản năng lực liên hệ | first use: "kịch bản năng lực liên hệ mỗi tuần"; then the short form | |
 | capacity (weekly follow-up capacity of staff) | số sinh viên cán bộ liên hệ được mỗi tuần | phrase the sentence around who can contact how many students; avoid an abstract noun; avoid: "năng lực xử lý", "khả năng liên hệ của cán bộ" | |
-| contact deferred (AQ4) | phần liên hệ được hoãn | "AQ4: chỉ xếp hạng, phần liên hệ được hoãn" |  |
+| choice of contact deferred (AQ4) / contact deferred | việc chọn hình thức liên hệ được hoãn | "AQ4: chỉ xếp hạng; việc chọn hình thức liên hệ được hoãn đến thử nghiệm thí điểm" | phần liên hệ được hoãn |
 | flag (a student) | đánh dấu |  |  |
-| flag (on a student, noun) | nhãn bị đánh dấu | "cờ" only for data-quality flag columns |  |
+| flag (on a student, noun) | dấu cảnh báo | prefer the verb ("sinh viên bị đánh dấu"); "cờ" only for data-quality flag columns | nhãn bị đánh dấu |
 | list stability | độ ổn định của danh sách | whether a student near rank k stays on the list under resampling |  |
 | normalised recall | tỷ lệ phát hiện chuẩn hóa | first use: "tỷ lệ phát hiện chuẩn hóa (normalised recall)"; recall divided by attainable recall |  |
 | operating point | thiết lập chính | "thiết lập chính: ngày 27, 5 trên 20" | điểm vận hành |
@@ -103,7 +103,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | not cleared (fairness check, small group) | chưa được xác nhận đạt | "không đủ dữ liệu, chưa được xác nhận đạt" |  |
 | post-hoc explanation | giải thích hậu nghiệm | first use: "giải thích hậu nghiệm (post-hoc)" |  |
 | proxy (for an excluded attribute) | biến thay thế | "hoạt động có thể là biến thay thế cho tình trạng khuyết tật"; differs from "chỉ số đại diện" (a KPI proxy) |  |
-| proxy variable | biến đại diện | for the KPI itself use "chỉ số đại diện" |  |
+| proxy variable / proxy | biến đại diện | first use "biến đại diện (proxy)"; for the KPI itself use "chỉ số đại diện" | biến thay thế |
 | residual risk | rủi ro còn lại |  |  |
 | risk register | danh mục rủi ro |  | sổ đăng ký rủi ro |
 | selection rate (onto the list) | tỷ lệ được chọn vào danh sách |  |  |
@@ -134,3 +134,32 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | gate (success criterion S1) | điều kiện đạt | "điều kiện đạt duy nhất S1" |  |
 | prototype (Level 2) | nguyên mẫu | first use: "nguyên mẫu (prototype)"; "giao thức chạy nguyên mẫu" for the protocol |  |
 | success criterion | tiêu chí thành công |  |  |
+| confusion matrix | ma trận nhầm lẫn | | |
+| F1 score | điểm F1 | | |
+| Nagelkerke R² | R² Nagelkerke | "mức biến thiên của biến kết quả mà mô hình giải thích được" at first use | |
+| top-k list | danh sách k sinh viên đầu | k set by capacity | |
+| proxy check | kiểm tra biến thay thế | which predictors carry group information; the proxy itself is "biến thay thế" | |
+| paired two-level bootstrap | bootstrap hai tầng | one name for the method; state the pairing in words: "mô hình và quy tắc được so trên cùng một mẫu lấy lại" | bootstrap hai tầng ghép cặp |
+| Supplement / Extension / Rejected (candidate labels) | Bổ trợ / Mở rộng / Bị loại | column labels of the candidate comparison | |
+| error slices | phân tích lỗi theo từng nhóm con | | |
+| development runs / test runs | các kỳ mở phát triển / các kỳ mở của tập kiểm thử | never a bare "kiểm thử" | |
+| partial effects / mutually adjusted estimates | hiệu ứng riêng phần / ước lượng đã hiệu chỉnh lẫn nhau | | |
+| robust standard errors / clustered standard errors | sai số chuẩn vững / sai số chuẩn theo cụm | | sai số chuẩn bền vững |
+| risk ratio | tỉ số nguy cơ | matches "tỉ số odds" | |
+| first missed task | bài bị bỏ lỡ đầu tiên | | |
+| second denominator | mẫu số thứ hai | 32,593 enrolments instead of the 28,061 of the KPI population | |
+| feature window | khoảng thời gian lấy dữ liệu cho biến dự báo | | |
+| expected shrinkage (Riley criterion) | mức co hệ số kỳ vọng | the measure; "phép co hệ số" names the method | |
+| optimism (in R²) | mức lạc quan | | |
+| threshold-free gap | chênh lệch không phụ thuộc ngưỡng | | |
+| population (of an evaluation, Milestone 4) | phạm vi dữ liệu | avoids "tổng thể" as a countable noun | |
+| dropout prediction | dự báo sinh viên bỏ dở việc học | "thôi học" stays for programme withdrawal | |
+| module terms / interaction terms | số hạng module / số hạng tương tác | one word, "số hạng", for every model term | |
+| selection bias (in model choice) | thiên lệch do lựa chọn mô hình | | |
+| Validation (traceability column) | Cách đánh giá | "kiểm định" stays for the validation set and statistical tests | |
+| primary / extended predictors (Milestone 4) | biến dự báo chính / bộ biến dự báo mở rộng | Milestone 4 keeps "biến dự báo" | |
+| binned residuals | phần dư trung bình theo khoảng giá trị dự báo | | |
+| baseline (method) | phương pháp cơ sở (baseline) | a simple method a candidate must beat; distinct from the KPI baseline "mức cơ sở" | |
+| precision at capacity (Milestone 4) | độ chính xác của danh sách dài k | beside "tỷ lệ phát hiện trong giới hạn danh sách" | |
+| rationale (for a choice) | lập luận | "lý do" stays for the reasons shown to tutors with each student | |
+| score (a model scores a run or the test set, verb) | tính điểm rủi ro | "chấm điểm" reads as grading; it stays for marking assignments | |

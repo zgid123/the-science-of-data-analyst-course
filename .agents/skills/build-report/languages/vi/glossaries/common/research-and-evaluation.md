@@ -151,3 +151,4 @@ Research process, publications, experiments and metrics, as used across computer
 | skewness | độ lệch phân phối (skewness) | a bare "độ lệch" reads as deviation | |
 | statistical power | lực kiểm định |  |  |
 | upper interquartile fence | ngưỡng trên theo khoảng tứ phân vị |  |  |
+| deterministic | tất định | "xác định" is ambiguous | |
