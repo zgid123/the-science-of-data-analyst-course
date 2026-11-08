@@ -1,0 +1,3 @@
+# 6. Quy trình chuẩn bị dữ liệu
+
+Quy trình chuẩn bị dữ liệu (pipeline) chuyển các tệp gốc thành các bảng dữ liệu đã chuẩn bị chỉ bằng script, không có bước thủ công nào, nhờ đó bất kỳ ai cũng có thể chạy lại và thu được cùng một dữ liệu, đúng như đề bài yêu cầu [1]. Pipeline thực hiện các quyết định của Bảng 5.1 qua mười bước mà đề bài khuyến nghị, từ nạp các tệp gốc đến lưu dữ liệu đã chuẩn bị cùng tài liệu mô tả [1]. Cấu trúc của Mục 6 như sau: Mục 6.1 đối chiếu các bước với mã nguồn và mô tả gói dữ liệu; Mục 6.2 trình bày cách tích hợp các bảng và xây dựng đặc trưng; Mục 6.3 xác định cách chia các kỳ mở thành tập huấn luyện và tập kiểm thử (các kỳ mở năm 2014) cùng các biện pháp kiểm soát rò rỉ thông tin.

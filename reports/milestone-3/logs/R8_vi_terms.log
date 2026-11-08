@@ -1,0 +1,18 @@
+# 2026-11-07T23:26:01Z glossary.py --lang vi lint (6 terms added for Milestone 3 full draft)
+Checked 25 glossary files, 1780 terms: 0 errors
+exit 0
+# 2026-11-07T23:32:17Z removed duplicate 'grain' entry; lint 0 errors
+# 2026-11-07T23:38:50Z 6 terms added from translator group D; lint 0 errors
+# 2026-11-07T23:39:19Z 6 terms added from translator group B; lint 0 errors
+# 2026-11-07T23:40:21Z 7 terms added from translator group A; lint 0 errors
+# 2026-11-07T23:41:28Z AI role names and weekly capacity form added (translator group C); lint 0 errors
+# 2026-11-07T23:45:24Z 4 terms from reviewer group D; lint 0 errors
+# 2026-11-07T23:45:54Z 3 terms from reviewer group A; lint 0 errors
+# 2026-11-07T23:46:42Z 4 terms from reviewer group B; lint 0 errors
+# 2026-11-07T23:50:52Z 4 terms from reviewer group C (predictor = đặc trưng); lint 0 errors
+# 2026-11-07T23:58:55Z rows 'due by' and 'registered at day d' settled after the consistency pass; lint 0 errors
+# 2026-11-07T23:59:15Z predictor and 'fires' rows: Replaces dropped (shared topic glossary; Milestone 4 uses 'biến dự báo'); M3 parity 0 errors, M4 back to its earlier state
+# 2026-11-07T23:59:37Z study-load row scoped to OULAD credits; parity M1–M4: 0 errors
+# 2026-11-08T00:06:04Z reader-test terms settled (test senses, PASS/FAIL, KPI population, lift first use, claim level, capacity short form, 5 module)
+# 2026-11-08T00:22:12Z rewrite-stage local forms recorded as Milestone 3 usage (no Replaces except Dataset Understanding Map)
+# 2026-11-08T00:28:15Z second reader test: lift gloss as ratio, recorded absence back to terms-page form, capacity gloss once per document

@@ -1,0 +1,17 @@
+2026-11-06T02:16:01Z
+$ report.py all milestone-3 --lang en; measure_pages.py
+PASS  milestone-3 format             Checked 41 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 28 tables: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 14 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 names              Checked 41 files for 5 names: 0 errors  (0 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+PASS  milestone-3 figures            milestone-3: 4 figures → reports/milestone-3/report/assets/figures, 0 layout findings  (2 s)
+PASS  milestone-3 build en           [en] 41 sections → reports/milestone-3/build/N04_Milestone3_EN.docx  (3 Word sections, 0 landscape, 5 images, 4 figure a  (2 s)
+PASS  milestone-3 docx en            EN reports/milestone-3/build/N04_Milestone3_EN.docx: 30 numbered headings, 4 figures, 28 tables, 5 images, 3 Word sectio  (0 s)
+10/10 steps passed
+N04_Milestone3_EN.docx: front matter 4.2 | main content (Parts 1–end) 12.5 | references and appendices 23.0 pages (estimate)
+
+Paragraphs: 2393
+All validations PASSED!

@@ -1,0 +1,11 @@
+2026-11-06T15:24:01Z
+$ /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-3/package/../../../venv/bin/python link_raw.py
+MATCH courses.csv 526 bytes
+MATCH assessments.csv 8200 bytes
+MATCH vle.csv 260126 bytes
+MATCH studentInfo.csv 3461652 bytes
+MATCH studentRegistration.csv 1109984 bytes
+MATCH studentAssessment.csv 5690310 bytes
+MATCH studentVle.csv 453836331 bytes
+7 of 7 raw tables match the pinned SHA-256 -> data/metadata/raw_check.csv
+exit 0

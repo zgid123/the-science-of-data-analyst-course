@@ -1,0 +1,11 @@
+2026-11-06T01:50:08Z
+$ bash reports/milestone-3/package/src/run_all.sh
+ok  00_link_raw
+ok  01_understand
+ok  02_profile
+ok  03_tests
+ok  04_prepare
+ok  05_fit_transforms
+ok  06_validate
+ok  07_notebooks
+exit 0

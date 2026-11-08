@@ -1,0 +1,9 @@
+2026-11-06T01:44:01Z
+$ manual check of features_d27 row BBB 2013B 466973 from raw CSV (awk)
+-- non-exam tasks of BBB 2013B due by day 27:
+"BBB","2013B","14984","TMA","19","5"
+-- the student's submissions for those tasks:
+"14984","466973","24","0","75"
+-- clicks days 0..27 (sum), days <0 (sum), distinct active days 0..27:
+clicks_0c=168 clicks_pre=5 active_days_0c=10
+exit 0

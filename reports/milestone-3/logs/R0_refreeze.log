@@ -1,0 +1,8 @@
+# 2026-11-07T17:58:22Z venv/bin/python reports/milestone-3/code/freeze_baseline.py (Milestones 1 and 2 rewritten 2026-11-07)
+wrote reports/milestone-3/research/baseline/m3-baseline.md
+Milestone 1 files: 8 re-checked, 8 unchanged
+Milestone 2 files hashed: 11; brief inputs present: 6 of 6
+exit 0
+# 2026-11-07T17:58:22Z venv/bin/python reports/milestone-3/code/build_appendices.py
+wrote 12-00-appendices.md, 12-00-appendices.vi.md, 12-01-profiling-details.md, 12-01-profiling-details.vi.md, 12-02-pipeline-package.md, 12-02-pipeline-package.vi.md, 12-03-dictionary-lineage.md, 12-03-dictionary-lineage.vi.md, 12-04-traceability-change-log.md, 12-04-traceability-change-log.vi.md, 12-05-ai-decision-log.md, 12-05-ai-decision-log.vi.md, 12-06-validation-ledger.md, 12-06-validation-ledger.vi.md
+exit 0

@@ -1,0 +1,24 @@
+2026-11-06T01:40:27Z
+$ bash reports/milestone-3/code/check_rerun.sh
+ok  00_link_raw
+ok  01_understand
+ok  02_profile
+ok  03_tests
+ok  04_prepare
+ok  05_fit_transforms
+ok  00_link_raw
+ok  01_understand
+ok  02_profile
+ok  03_tests
+ok  04_prepare
+ok  05_fit_transforms
+f67d7916dd95c2ab2321140b277a554145163b59e8d99f68b13d2d6c415cb498  assessment_due.parquet
+38f6868c2b74fcc7998c4c589b5d1a9420b6c11fd1bf2964e7abd86311f99e08  capacity_by_run.parquet
+1d1e397ac67ce774fec8be5d23bbf988ab70eb11f1bda5efc3d2f05510900a78  enrolment.parquet
+17d8cc87d7bf4a0718810a6eb5b4734309b4d6830f0f58443b69c82d3ce460db  features_d13.parquet
+dfa54f772e0866e08264bedd26ef2b75677484a9cf6cd038a3a0a183d525cf59  features_d27.parquet
+26347335a6ee61d8019b2f4f852cd607460873da99ebc08040175a255f1630b0  model_ready_d13.parquet
+9855cce218ad17a8e5255e38e416a3843166d340ec293a18acaf1c2ee88add29  model_ready_d27.parquet
+7526872e26e95da74441de8a5b5e72e86c485bb0d09b5866af90d0ceda11e079  student_week.parquet
+RERUN IDENTICAL:        8 files
+exit 0

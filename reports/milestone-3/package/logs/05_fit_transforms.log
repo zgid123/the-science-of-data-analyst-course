@@ -1,0 +1,7 @@
+2026-11-06T15:24:14Z
+$ /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-3/package/../../../venv/bin/python fit_transforms.py
+d13: 28,069 rows, 39 model columns; parameters fitted on 12,080 training rows; V12 self-check identical parameters after altering 15,989 test rows: PASS
+   training means of standardised columns within 1e-9 of 0: True; test rows of an unseen module (code_module levels ['AAA', 'BBB', 'DDD', 'EEE', 'FFF', 'GGG'])
+d27: 27,535 rows, 41 model columns; parameters fitted on 11,811 training rows; V12 self-check identical parameters after altering 15,724 test rows: PASS
+   training means of standardised columns within 1e-9 of 0: True; test rows of an unseen module (code_module levels ['AAA', 'BBB', 'DDD', 'EEE', 'FFF', 'GGG'])
+exit 0

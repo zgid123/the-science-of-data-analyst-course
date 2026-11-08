@@ -1,0 +1,15 @@
+# 2026-11-07T18:04:02Z venv/bin/python reports/milestone-3/code/count_submission_types.py
+shape: (5, 3)
+┌─────────────────┬───────────┬───────┐
+│ assessment_type ┆ is_banked ┆ len   │
+│ ---             ┆ ---       ┆ ---   │
+│ str             ┆ i64       ┆ u32   │
+╞═════════════════╪═══════════╪═══════╡
+│ CMA             ┆ 0         ┆ 69956 │
+│ CMA             ┆ 1         ┆ 571   │
+│ Exam            ┆ 0         ┆ 4959  │
+│ TMA             ┆ 0         ┆ 97088 │
+│ TMA             ┆ 1         ┆ 1338  │
+└─────────────────┴───────────┴───────┘
+all submissions 173,912; TMA and CMA (banked included) 168,953; exam 4,959
+exit 0

@@ -1,0 +1,9 @@
+# 2026-11-08T00:59:39Z glossary_snapshot.py save (before reorganisation)
+saved reports/milestone-3/logs/R14_glossary_before.json: milestone-1 922 rows, milestone-2 922 rows, milestone-3 922 rows, milestone-4 922 rows
+exit 0
+# self-compare
+milestone-1: 922 rows before, 922 after, 0 differences
+milestone-2: 922 rows before, 922 after, 0 differences
+milestone-3: 922 rows before, 922 after, 0 differences
+milestone-4: 922 rows before, 922 after, 0 differences
+exit 0

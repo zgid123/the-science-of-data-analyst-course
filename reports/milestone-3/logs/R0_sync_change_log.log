@@ -1,0 +1,14 @@
+# 2026-11-07T17:58:15Z venv/bin/python reports/milestone-3/code/sync_change_log.py (Milestone 2 rewritten 2026-11-07)
+C02: differs from Milestone 2
+  old: Course and semester; weeks 1–5 of a 15-week semester
+  new: Course and semester; weeks 1–5 of a semester (length not fixed in Milestone 1)
+  old: Module run (`code_presentation`), about nine months; days counted from day 0 of the run; week n = days 7(n−1) to 7n−1
+  new: Module run (`code_presentation`), eight to nine months; days counted from day 0 of the run; week n = days 7(n−1) to 7n−1
+C06: differs from Milestone 2
+  old: Secondary KPI 1 (early-sign rule) applies at the week-4 cut-off in 16 of 22 runs
+  new: Secondary KPI 1: two tasks fall due by day 27 in only 1 of 22 runs, so on OULAD its sign part counts one missed or late task in the 16 runs with a task due by day 27; the two-task rule stays for the university
+C01–C08: 8 rows compared, 2 differ
+wrote reports/milestone-3/package/data/metadata/change_log.md
+exit 0
+C01–C08: 8 rows compared, 0 differ
+exit 0 (check after sync)

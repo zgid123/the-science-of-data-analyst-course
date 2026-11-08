@@ -1,0 +1,72 @@
+PASS  milestone-3 format             Checked 82 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 31 tables: 0 errors, 0 warnings; VI: 41 files, 40 headings, 4 figures, 28 tables:   (0 s)
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings; VI: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 14 abbreviations, 0 violations; VI: 14 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings; VI: 17 references, 17 cited, order first-citati  (0 s)
+PASS  milestone-3 names              Checked 82 files for 5 names: 0 errors  (0 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+FAIL  milestone-3 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      stale    03-01-shape-keys-joins.md  ->  03-01-shape-keys-joins.vi.md
+      stale    03-02-missingness-validity.md  ->  03-02-missingness-validity.vi.md
+      stale    03-03-distributions-outcome.md  ->  03-03-distributions-outcome.vi.md
+      stale    03-04-temporal-representativeness.md  ->  03-04-temporal-representativeness.vi.md
+      stale    03-05-quality-issue-log.md  ->  03-05-quality-issue-log.vi.md
+      stale    04-00-aq-data-fit.md  ->  04-00-aq-data-fit.vi.md
+      stale    04-01-fit-ratings.md  ->  04-01-fit-ratings.vi.md
+      stale    04-02-gap-decisions.md  ->  04-02-gap-decisions.vi.md
+      stale    05-00-preparation-plan.md  ->  05-00-preparation-plan.vi.md
+      stale    06-00-preparation-pipeline.md  ->  06-00-preparation-pipeline.vi.md
+      stale    06-01-pipeline-steps.md  ->  06-01-pipeline-steps.vi.md
+      stale    06-02-integration-features.md  ->  06-02-integration-features.vi.md
+      stale    06-03-split-leakage.md  ->  06-03-split-leakage.vi.md
+      stale    07-00-prepared-validation.md  ->  07-00-prepared-validation.vi.md
+      stale    07-01-before-after.md  ->  07-01-before-after.vi.md
+      stale    07-02-lineage-dictionary.md  ->  07-02-lineage-dictionary.vi.md
+      stale    07-03-residual-risks.md  ->  07-03-residual-risks.vi.md
+      stale    08-00-readiness.md  ->  08-00-readiness.vi.md
+      stale    08-01-views-by-level.md  ->  08-01-views-by-level.vi.md
+      stale    08-02-readiness-matrix.md  ->  08-02-readiness-matrix.vi.md
+      stale    09-00-ethics-limitations.md  ->  09-00-ethics-limitations.vi.md
+      stale    10-00-genai-reflection.md  ->  10-00-genai-reflection.vi.md
+      stale    12-01-profiling-details.md  ->  12-01-profiling-details.vi.md
+      stale    12-02-pipeline-package.md  ->  12-02-pipeline-package.vi.md
+      stale    12-03-dictionary-lineage.md  ->  12-03-dictionary-lineage.vi.md
+      stale    12-04-traceability-change-log.md  ->  12-04-traceability-change-log.vi.md
+      stale    12-05-ai-decision-log.md  ->  12-05-ai-decision-log.vi.md
+      stale    12-06-validation-ledger.md  ->  12-06-validation-ledger.vi.md
+      41 sections, 38 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md
+FAIL  milestone-3 parity vi          Checked 41 pairs (vi): 38 errors, 29 warnings  (1 s)
+      ERROR 07-03-residual-risks.md: list item count differ: source=5 target=0
+      ERROR 07-03-residual-risks.md: citation sequence differs: source has 2, target has 1; missing ['9']
+      ERROR 08-00-readiness.md: citation sequence differs: source has 2, target has 1; same set, different order
+      ERROR 08-01-views-by-level.md: citation sequence differs: source has 2, target has 1; same set, different order
+      ERROR 08-02-readiness-matrix.md: citation sequence differs: source has 2, target has 1; same set, different order
+      ERROR 10-00-genai-reflection.md: table shapes (rows, columns) differ: source=[(8, 5)] target=[]
+      ERROR 10-00-genai-reflection.md: citation sequence differs: source has 4, target has 3; same set, different order
+      ERROR 12-01-profiling-details.md: list item count differ: source=6 target=0
+      ERROR 12-01-profiling-details.md: citation sequence differs: source has 18, target has 0; missing ['1', '2', '3', '4', '6', '7', '8']
+      ERROR 12-02-pipeline-package.md: citation sequence differs: source has 4, target has 0; missing ['1', '11', '13']
+      ERROR 12-03-dictionary-lineage.md: citation sequence differs: source has 1, target has 0; missing ['9']
+      ERROR 12-04-traceability-change-log.md: citation sequence differs: source has 1, target has 0; missing ['1']
+      ERROR 12-05-ai-decision-log.md: table shapes (rows, columns) differ: source=[(15, 7), (14, 5), (10, 4), (9, 3)] target=[(15, 7), (14, 5), (10, 4)]
+      WARN  12-05-ai-decision-log.vi.md: line 23: possessive pronoun; repeat the noun ('chỉ số này', 'nhóm tác giả này') (guide section 2.7): 'của chúng'
+      WARN  12-05-ai-decision-log.vi.md: line 25: looks untranslated: '> You are a critical reviewer of a data preparation plan for an educat'
+      WARN  12-05-ai-decision-log.vi.md: line 29: source-language reference 'Section 4' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  12-05-ai-decision-log.vi.md: line 31: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 31: looks untranslated: '> choices; (2) any feature that could leak information from after its '
+      WARN  12-05-ai-decision-log.vi.md: line 32: looks untranslated: '> and the handling of students seen in both years; (4) the population '
+      WARN  12-05-ai-decision-log.vi.md: line 34: looks untranslated: '> computable from the real fields at the cut-off. Do not invent facts '
+      WARN  12-05-ai-decision-log.vi.md: line 36: looks untranslated: '> each with: the issue, why it matters (which AQ), a concrete recommen'
+      WARN  12-05-ai-decision-log.vi.md: line 59: looks untranslated: '> You are an independent auditor of data leakage in a preparation pipe'
+      WARN  12-05-ai-decision-log.vi.md: line 60: looks untranslated: '> non-completion on OULAD (prediction points: end of day 13 and end of'
+      WARN  12-05-ai-decision-log.vi.md: line 61: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 67: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 67: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 68: looks untranslated: '>  .py; (5) identifiers or columns that could act as a proxy for the t'
+      WARN  12-05-ai-decision-log.vi.md: line 70: looks untranslated: '> or the query and its result, the risk, and a fix, with severity (hig'
+      ERROR 12-06-validation-ledger.md: table shapes (rows, columns) differ: source=[(24, 5), (8, 2)] target=[(24, 5)]
+      Checked 41 pairs (vi): 38 errors, 29 warnings
+
+7/9 steps passed; failed: milestone-3 translation vi, milestone-3 parity vi
+make: *** [precheck] Error 1

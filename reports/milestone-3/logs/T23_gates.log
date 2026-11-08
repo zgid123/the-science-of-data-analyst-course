@@ -1,0 +1,9 @@
+Checked 24 sources, 105 claims: 0 errors, 1 warnings
+PASS  milestone-3 format             Checked 41 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 30 tables: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 14 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 names              Checked 41 files for 5 names: 0 errors  (0 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+7/7 steps passed

@@ -1,0 +1,22 @@
+PASS  milestone-3 format             Checked 82 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+FAIL  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 31 tables: 0 errors, 0 warnings; VI: 41 files, 40 headings, 4 figures, 31 tables:   (0 s)
+      ===== EN: 41 files, 40 headings, 4 figures, 31 tables: 0 errors, 0 warnings
+      ===== VI: 41 files, 40 headings, 4 figures, 31 tables: 1 errors, 0 warnings
+        ERROR 12-05-ai-decision-log.vi.md:21: 'Mục 8.3' refers to nothing in the report
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings; VI: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 15 abbreviations, 0 violations; VI: 15 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings; VI: 17 references, 17 cited, order first-citati  (0 s)
+PASS  milestone-3 names              Checked 82 files for 5 names: 0 errors  (0 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+FAIL  milestone-3 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      stale    04-01-fit-ratings.md  ->  04-01-fit-ratings.vi.md
+      stale    05-00-preparation-plan.md  ->  05-00-preparation-plan.vi.md
+      stale    06-03-split-leakage.md  ->  06-03-split-leakage.vi.md
+      stale    07-01-before-after.md  ->  07-01-before-after.vi.md
+      stale    10-00-genai-reflection.md  ->  10-00-genai-reflection.vi.md
+      41 sections, 5 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md
+PASS  milestone-3 parity vi          Checked 41 pairs (vi): 0 errors, 14 warnings  (1 s)
+
+7/9 steps passed; failed: milestone-3 structure, milestone-3 translation vi
+make: *** [precheck] Error 1

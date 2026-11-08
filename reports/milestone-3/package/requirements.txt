@@ -1,0 +1,6 @@
+# Milestone 3 Prepared Data Package (install into the shared ./venv)
+polars>=2.1
+matplotlib>=3.9      # report figures (figures/milestone_3, build-report kit)
+nbformat>=5.10       # notebooks 02 and 03 (src/build_notebooks.py)
+nbclient>=0.10
+ipykernel>=6.29

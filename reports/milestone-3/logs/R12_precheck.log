@@ -1,0 +1,40 @@
+PASS  milestone-3 format             Checked 82 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 31 tables: 0 errors, 0 warnings; VI: 41 files, 40 headings, 4 figures, 31 tables:   (0 s)
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings; VI: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 15 abbreviations, 0 violations; VI: 15 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings; VI: 17 references, 17 cited, order first-citati  (0 s)
+PASS  milestone-3 names              Checked 82 files for 5 names: 0 errors  (0 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+FAIL  milestone-3 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      stale    00-2-glossary.md  ->  00-2-glossary.vi.md
+      stale    01-02-dataset-entry-gate.md  ->  01-02-dataset-entry-gate.vi.md
+      stale    02-03-codes-sensitive.md  ->  02-03-codes-sensitive.vi.md
+      stale    03-01-shape-keys-joins.md  ->  03-01-shape-keys-joins.vi.md
+      stale    04-01-fit-ratings.md  ->  04-01-fit-ratings.vi.md
+      stale    05-00-preparation-plan.md  ->  05-00-preparation-plan.vi.md
+      stale    06-03-split-leakage.md  ->  06-03-split-leakage.vi.md
+      stale    07-03-residual-risks.md  ->  07-03-residual-risks.vi.md
+      stale    09-00-ethics-limitations.md  ->  09-00-ethics-limitations.vi.md
+      41 sections, 9 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md
+FAIL  milestone-3 parity vi          Checked 41 pairs (vi): 2 errors, 14 warnings  (1 s)
+      ERROR 04-02-gap-decisions.md: line 3: glossary 'vắng bản ghi có ý nghĩa' -> 'không có bản ghi (tính là 0)'
+      ERROR 04-02-gap-decisions.md: line 5: glossary 'vắng bản ghi có ý nghĩa' -> 'không có bản ghi (tính là 0)'
+      WARN  12-05-ai-decision-log.vi.md: line 25: looks untranslated: '> You are a critical reviewer of a data preparation plan for an educat'
+      WARN  12-05-ai-decision-log.vi.md: line 29: source-language reference 'Section 4' (use Hình/Bảng/Mục/Phụ lục/Phần)
+      WARN  12-05-ai-decision-log.vi.md: line 31: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 31: looks untranslated: '> choices; (2) any feature that could leak information from after its '
+      WARN  12-05-ai-decision-log.vi.md: line 32: looks untranslated: '> and the handling of students seen in both years; (4) the population '
+      WARN  12-05-ai-decision-log.vi.md: line 34: looks untranslated: '> computable from the real fields at the cut-off. Do not invent facts '
+      WARN  12-05-ai-decision-log.vi.md: line 36: looks untranslated: '> each with: the issue, why it matters (which AQ), a concrete recommen'
+      WARN  12-05-ai-decision-log.vi.md: line 59: looks untranslated: '> You are an independent auditor of data leakage in a preparation pipe'
+      WARN  12-05-ai-decision-log.vi.md: line 60: looks untranslated: '> non-completion on OULAD (prediction points: end of day 13 and end of'
+      WARN  12-05-ai-decision-log.vi.md: line 61: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 67: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 67: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+      WARN  12-05-ai-decision-log.vi.md: line 68: looks untranslated: '>  .py; (5) identifiers or columns that could act as a proxy for the t'
+      WARN  12-05-ai-decision-log.vi.md: line 70: looks untranslated: '> or the query and its result, the risk, and a fix, with severity (hig'
+      Checked 41 pairs (vi): 2 errors, 14 warnings
+
+7/9 steps passed; failed: milestone-3 translation vi, milestone-3 parity vi
+make: *** [precheck] Error 1

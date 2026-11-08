@@ -1,0 +1,87 @@
+2026-11-06T02:00:32Z
+$ bash -c cd reports/milestone-3/package/src && ../../../../venv/bin/python 02_profile.py
+shape match documentation: {'courses': True, 'assessments': True, 'vle': True, 'studentInfo': True, 'studentRegistration': True, 'studentAssessment': True, 'studentVle': True}
+studentVle grain: {'student_site_day_groups': 8459320, 'groups_with_several_rows': 1614505, 'rows_in_such_groups': 3810465, 'groups_with_several_rows_and_different_clicks': 1179074, 'max_rows_in_one_group': 10}
+--- duplicates
+  exact_duplicate_rows: {'courses': 0, 'assessments': 0, 'vle': 0, 'studentInfo': 0, 'studentRegistration': 0, 'studentAssessment': 0, 'studentVle': 787170}
+  studentVle_extra_rows: 787170
+  studentVle_extra_row_share: 0.0739
+  studentVle_duplicated_groups: 642613
+  studentVle_single_click_group_share: 0.6982
+  studentVle_extra_share_by_run_range: [0.0382, 0.1173]
+  studentVle_extra_share_by_year: [('2013', 0.0682), ('2014', 0.0787)]
+  clicks_raw: 39605099
+  clicks_exact_duplicates_collapsed: 38343063
+  clicks_share_removed_by_collapsing: 0.0319
+  key_duplicates: {'courses': 0, 'assessments': 0, 'vle': 0, 'studentInfo': 0, 'studentRegistration': 0, 'studentAssessment': 0}
+  studentVle_site_in_other_run: 0
+  chance_test_two_row_groups: {'groups': 1311841, 'observed_equal_share': 0.3149, 'expected_by_site': 0.2399, 'expected_by_activity_type': 0.2173, 'observed_by_activity_type_top6': [('forumng', 0.328, 895551), ('oucontent', 0.3219, 279561), ('quiz', 0.1151, 71751), ('ouwiki', 0.0769, 21555), ('questionnaire', 0.06, 14694), ('ouc
+--- validity
+  score_out_of_range: 0
+  submissions_before_registration: 0
+  submissions_after_run_end: 85
+  submissions_after_run_end_by_type: [('CMA', 70), ('Exam', 12), ('TMA', 3)]
+  submissions_late: 49318
+  submissions_with_due_day: 169138
+  late_share: 0.2916
+  late_by_type: [('CMA', 32991, 69956), ('Exam', 7, 2094), ('TMA', 16320, 97088)]
+  lateness_days_of_late: {'p50': 3.0, 'p90': 9.0, 'p99': 29.0}
+  banked_rows: 1909
+  banked_day_values: [-1]
+  click_rows_after_unregistration: 29440
+  clicks_after_unregistration: 98745
+  enrolments_with_clicks_after_unregistration: 1279
+  max_days_clicking_after_unregistration: 423
+  submissions_after_unregistration: 588
+  submissions_after_unregistration_incl_banked: 601
+  enrolments_with_submissions_after_unregistration: 411
+  registration_after_day14: 58
+  registration_after_day14_by_outcome: [('Distinction', 2), ('Fail', 17), ('Pass', 22), ('Withdrawn', 17)]
+  unregistration_after_run_end: 1
+  withdrawn_without_day: 93
+  withdrawn_without_day_by_presentation: [('2013B', 1), ('2013J', 2), ('2014B', 3), ('2014J', 87)]
+  fail_with_unregistration_day: 9
+  imd_label_without_percent: ['10-20']
+  coursework_weight_total_by_run_values: [0.0, 100.0]
+  exam_weight_total_by_run_values: [100.0, 200.0]
+--- outcome
+  overall: [('Pass', 12361), ('Withdrawn', 10156), ('Fail', 7052), ('Distinction', 3024)]
+  kpi_population_day14: 28061
+  kpi_population_day14_milestone2_rule: 28119
+  kpi_non_completion_rate: 0.4526
+  kpi_completion_rate: 0.5474
+  population_at_cutoff: {'d13': {'enrolments': 28069, 'non_completion': 12708, 'rate': 0.4527, 'withdrawn': 5682, 'fail': 7026}, 'd27': {'enrolments': 27535, 'non_completion': 12156, 'rate': 0.4415, 'withdrawn': 5119, 'fail': 7037}}
+  kpi_non_completion_by_run_range: [0.2486, 0.5833]
+  kpi_non_completion_by_year: [('2013', 0.4567, 12076), ('2014', 0.4495, 15985)]
+  smallest_minority_class_in_a_run: 92
+--- temporal
+  years: ['2013', '2014']
+  days_without_any_click_within_run: [['BBB', '2014B', [211, 212]], ['CCC', '2014B', [218, 219]], ['DDD', '2014B', [218, 219]], ['EEE', '2014B', [218, 219]], ['FFF', '2014B', [218, 219]], ['GGG', '2014B', [218, 219]]]
+  tasks_due_by_cutoff: {'d13': {'runs_with_task_due': 1, 'runs_with_two_or_more_due': 0, 'tasks_due_per_run_values': [(0, 21), (1, 1)]}, 'd27': {'runs_with_task_due': 16, 'runs_with_two_or_more_due': 1, 'tasks_due_per_run_values': [(0, 6), (1, 15), (2, 1)]}}
+  first_non_exam_due_day_range: [12, 61]
+  module_start_month_pairs_with_both_years: 9
+  module_start_month_with_one_year_only: [('CCC', 'B'), ('CCC', 'J'), ('EEE', 'B'), ('GGG', 'B')]
+  weeks_with_activity_range: [-4, 38]
+  concurrent_enrolments_day14: {'enrolments': 1382, 'share': 0.0492, 'by_presentation': [('2013B', 4), ('2013J', 8), ('2014B', 642), ('2014J', 728)]}
+--- joins
+  studentAssessment→assessments rows: [173912, 173912]
+  …→studentInfo rows: [173912, 173912]
+  studentVle→vle rows: [10655280, 10655280]
+  enrolment⋈aggregated clicks (inner) rows: [32593, 29228]
+  enrolments lost by an inner join with activity: 3365
+  naive submissions×click-rows join rows (many-to-many): 89347197
+  rule: aggregate studentVle and studentAssessment to the enrolment (or enrolment-week) grain before joining them; use left joins from the enrolment table so enrolments without activity are kept
+--- missing (selected)
+  imd_band_by_region_top3: [('North Region', 731, 1823, 0.401), ('Ireland', 266, 1184, 0.2247), ('South Region', 48, 3092, 0.0155)]
+  imd_band_success_missing_vs_present: [(False, 0.4655, 31482), (True, 0.6571, 1111)]
+  date_registration_missing_by_outcome: [('Fail', 5), ('Pass', 1), ('Withdrawn', 39)]
+  score_missing_by_type: [('TMA', 173)]
+  exams_with_any_score: 6
+  exams_with_scores_by_module: [('CCC', 2), ('DDD', 4)]
+  enrolments_without_activity_by_outcome: [('Fail', 374), ('Pass', 3), ('Withdrawn', 2988)]
+  enrolments_without_activity_unregistered_by_day0: 2390
+  enrolments_without_both_by_outcome: [('Fail', 346), ('Pass', 1), ('Withdrawn', 2968)]
+--- distribution: {"sum_click_per_row": {"p1": 1.0, "p25": 1.0, "p50": 2.0, "p75": 3.0, "p95": 12.0, "p99": 34.0, "max": 6977, "skew": 122.92}, "clicks_per_enrolment": {"p1": 0.0, "p25": 142.0, "p50": 602.0, "p75": 1585.0, "p95": 4568.0, "p99": 7784.0, "max": 24139, "zero": 3365, "skew": 3.03, "gini": 0.626, "iqr_fence_upper": 3749.5, "beyond_iqr_fence": 2503}, "score": {"p1": 15.0, "p25": 65.0, "p50": 80.0, "p75": 90.0, "p95": 100.0, "p99": 100.0, "mean": 75.8, "zeros": 329, "below_iqr_fence": 3813, "below_40": 7578}, "score_multiple_of_10_share_by_type": [["CMA", 0.4582], ["Exam", 0.1545], ["TMA", 0.1735]], "studied_credits": {"p1": 30.0, "p25": 60.0, "p50": 60.0, "p75": 120.0, "p95": 150.0, "p99": 240.0, "max": 655, "above_p99": 116}, "date_registration": {"p1": -207.0, "p25": -100.0, "p50": -57.0, "p75": -29.0, "p95": -15.0, "p99": -2.0}, "num_of_prev_attempts_zero_share": 0.872, "rare_categories": {"age_band": [["55<=", 216], ["35-55", 9433]], "highest_education": [["Post Graduate Qualification", 313], ["No Formal quals", 347]], "region": [["Ireland", 1184], ["North Region", 1823]], "disability": [["Y", 3164], ["N", 29429]]}}
+--- representativeness: {"age_band": [["0-35", 22944, 0.704], ["35-55", 9433, 0.289], ["55<=", 216, 0.007]], "highest_education": [["A Level or Equivalent", 14045, 0.431], ["Lower Than A Level", 13158, 0.404], ["HE Qualification", 4730, 0.145], ["No Formal quals", 347, 0.011], ["Post Graduate Qualification", 313, 0.01]], "gender": [["M", 17875, 0.548], ["F", 14718, 0.452]], "disability": [["N", 29429, 0.903], ["Y", 3164, 0.097]], "studied_credits_60_or_less_share": 0.6311, "female_share_by_module": [["AAA", 0.42], ["BBB", 0.884], ["CCC", 0.248], ["DDD", 0.401], ["EEE", 0.115], ["FFF", 0.182], ["GGG", 0.806]], "kpi_completion_by_module": [["AAA", 0.738], ["BBB", 0.572], ["CCC", 0.457], ["DDD", 0.482], ["EEE", 0.641], ["FFF", 0.543], ["GGG", 0.619]], "regions": 13}
+--- cross-check with exploration: 13 of 13 equal
+exit 0

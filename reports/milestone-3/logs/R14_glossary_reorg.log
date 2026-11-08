@@ -1,0 +1,96 @@
+# 2026-11-08T01:04:06Z R14 glossary reorganisation: split topics/course-completion-early-contact.md, move general rows to common/
+# Baseline (before, run on the unchanged files, identical to the scratchpad backup): check_parity milestone-1..4
+milestone-1: Checked 36 pairs (vi): 0 errors, 0 warnings (exit 0)
+milestone-2: Checked 29 pairs (vi): 0 errors, 3 warnings (exit 0)
+milestone-3: Checked 41 pairs (vi): 0 errors, 14 warnings (exit 0)
+milestone-4: Checked 35 pairs (vi): 0 errors, 23 warnings (exit 0)
+glossary.py --lang vi lint (before): Checked 25 glossary files, 1829 terms: 0 errors (exit 0)
+Other tasks with a [*.vi] section in tasks.toml: none besides milestone-1..4
+
+# Reorganisation (reports/milestone-3/code/glossary_reorg/reorg.py, row placement in assign.txt)
+$ venv/bin/python reports/milestone-3/code/glossary_reorg/reorg.py /private/tmp/claude-501/-Users-ptkhanh-Documents-master-milestone-da/05a0cc9e-fe77-4f62-aada-6bec7b2bb695/scratchpad/glossaries-before-reorg /private/tmp/claude-501/-Users-ptkhanh-Documents-master-milestone-da/05a0cc9e-fe77-4f62-aada-6bec7b2bb695/scratchpad/glossary-reorg/rerun
+topics/course-completion-early-contact.md: 95 rows; Courses, completion and withdrawal (11); The university: programs, systems, records and rules (16); Stakeholders, staff and offices (17); Early signs, contact and follow-up (15); Goals, KPIs and analytical questions (17); Decisions and levels of analytics (6); Stakeholder interviews and their synthesis (10); Law, privacy and how students perceive monitoring (3)
+topics/oulad-data-preparation.md: 106 rows; Datasets, search and selection (14); Data requirements, collection and provenance (13); OULAD modules, runs and enrolments (11); OULAD fields: background, assessments and activity (17); Table structure and keys (3); Data quality (15); Preparation, measures and features (21); Preparation deliverables and ratings (12)
+topics/early-warning-evaluation.md: 93 rows; Prediction set-up (9); Splits, folds and leakage (12); Models and approaches (6); Evaluation measures and statistical tests (12); Contact lists, flags and capacity (18); Fairness, risk and governance (21); Causal questions and the limits of observational data (9); Modelling deliverables and success criteria (6)
+topics/course-completion-report-conventions.md: 33 rows; Course brief labels and deliverable names (11); AI roles in the team's workflow (14); Fixed wording in the running text (8)
+common/research-and-evaluation.md + 26 rows under '## Statistics and predictive-model evaluation': binned residuals; Brier score; calibration slope; calibration-in-the-large; censored (observation); decile; discrete-time survival model; external validation; Holm adjustment; logarithm (of counts); mixed-effects logistic regression; mixed-effects model; nested cross-validation / nested tuning; net benefit; odds ratio; outlier; population (statistical); positive predictive value; risk difference; sensitivity check; shrinkage (of coefficients); sign-flip (permutation) test; skewed (distribution); skewness; statistical power; upper interquartile fence
+common/data-and-databases.md + 8 rows under '## Tables, keys and data preparation': data dictionary; granularity; imputation / impute; inner join; join (of tables); left join; many to one / one to one (table relationship); parent table; primary key / foreign key
+common/ai-and-ml.md + 5 rows under '## Predictive models and tuning': gradient-boosted trees; (hyperparameter) tuning; model card / datasheet (for datasets); penalised logistic regression; shallow (decision) tree
+common/software-and-systems.md + 1 rows under '## File systems': hard link (file system)
+common/security-and-privacy.md + 1 rows under '## Data anonymisation': k-anonymity
+exit 0
+
+# rerun output above went to a scratch copy; it is byte-identical to the repo files:
+identical common/ai-and-ml.md
+identical common/data-and-databases.md
+identical common/research-and-evaluation.md
+identical common/security-and-privacy.md
+identical common/software-and-systems.md
+identical topics/course-completion-early-contact.md
+identical topics/course-completion-report-conventions.md
+identical topics/early-warning-evaluation.md
+identical topics/oulad-data-preparation.md
+
+# tasks.toml: milestone-1..4 [*.vi] glossaries
+$ diff /private/tmp/claude-501/-Users-ptkhanh-Documents-master-milestone-da/05a0cc9e-fe77-4f62-aada-6bec7b2bb695/scratchpad/tasks-before-reorg.toml tasks.toml
+27c27
+< glossaries = ["higher-education", "course-completion-early-contact"]
+---
+> glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+66c66
+< glossaries = ["higher-education", "course-completion-early-contact"]
+---
+> glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+108c108
+< glossaries = ["higher-education", "course-completion-early-contact"]
+---
+> glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+154c154
+< glossaries = ["higher-education", "course-completion-early-contact"]
+---
+> glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+exit 1
+
+# every glossary row line kept verbatim (multiset of row lines across all glossary files)
+row lines before 1837 after 1837 only before 0 only after 0
+exit 0
+
+# Invariants (after)
+$ venv/bin/python reports/milestone-3/code/glossary_snapshot.py compare reports/milestone-3/logs/R14_glossary_before.json
+milestone-1: 922 rows before, 922 after, 0 differences
+milestone-2: 922 rows before, 922 after, 0 differences
+milestone-3: 922 rows before, 922 after, 0 differences
+milestone-4: 922 rows before, 922 after, 0 differences
+exit 0
+
+$ venv/bin/python .agents/skills/build-report/scripts/glossary.py --lang vi lint
+Checked 28 glossary files, 1829 terms: 0 errors
+exit 0
+
+$ venv/bin/python .agents/skills/build-report/scripts/check_parity.py --report reports/milestone-1/report --lang vi
+Checked 36 pairs (vi): 0 errors, 0 warnings
+exit 0; full output identical to the baseline run: yes
+
+$ venv/bin/python .agents/skills/build-report/scripts/check_parity.py --report reports/milestone-2/report --lang vi
+Checked 29 pairs (vi): 0 errors, 3 warnings
+exit 0; full output identical to the baseline run: yes
+
+$ venv/bin/python .agents/skills/build-report/scripts/check_parity.py --report reports/milestone-3/report --lang vi
+Checked 41 pairs (vi): 0 errors, 14 warnings
+exit 0; full output identical to the baseline run: yes
+
+$ venv/bin/python .agents/skills/build-report/scripts/check_parity.py --report reports/milestone-4/report --lang vi
+Checked 35 pairs (vi): 0 errors, 23 warnings
+exit 0; full output identical to the baseline run: yes
+
+# Notes
+# - "exit 1" after the tasks.toml diff is diff's status for "files differ": the four changed lines are the intended edit.
+# - Duplicate merge: no row was merged. Every English key in the old topic file was already unique (lint 0 errors), and
+#   the near-duplicates (e.g. "data audit" / "data audit (Milestone 2)", "grain" / "grain (Milestone 3 running text)",
+#   the five "capacity" rows) are separate keys in the merged glossary, so removing any would change the snapshot.
+#   They now sit next to each other within their sections. No topic row duplicated a common or higher-education row
+#   exactly; the three shared keys (enrolment / admission, university leadership, cohort) override higher-education
+#   with different values and stay in course-completion-early-contact.
+# - Rows moved to common/ have keys that no common or higher-education file defines; common rows judged to define the
+#   same concept differently (hash, checksum, provenance, synthetic data vs "synthetic users", accuracy) kept their
+#   topic rows.

@@ -1,0 +1,799 @@
+{
+  "generated": "2026-11-06T15:24:01Z",
+  "tables": {
+    "courses": {
+      "rows": 22,
+      "columns": 3,
+      "unit": "module run (module × presentation)",
+      "primary_key": "code_module, code_presentation",
+      "key_unique": true,
+      "foreign_keys": "–",
+      "main_variables": "module_presentation_length",
+      "time_fields": "module_presentation_length (days)",
+      "role_in_aq": "Run length; run end for exam due days (AQ1–AQ3)"
+    },
+    "assessments": {
+      "rows": 206,
+      "columns": 6,
+      "unit": "assessment of a module run",
+      "primary_key": "id_assessment",
+      "key_unique": true,
+      "foreign_keys": "code_module, code_presentation → courses",
+      "main_variables": "assessment_type, weight",
+      "time_fields": "date (due day)",
+      "role_in_aq": "Due days of tasks: missed and late tasks (AQ1, AQ2), task-based features and baseline rule (AQ3)"
+    },
+    "vle": {
+      "rows": 6364,
+      "columns": 6,
+      "unit": "learning-platform resource (site) of a module run",
+      "primary_key": "id_site",
+      "key_unique": true,
+      "foreign_keys": "code_module, code_presentation → courses",
+      "main_variables": "activity_type",
+      "time_fields": "week_from, week_to (planned weeks)",
+      "role_in_aq": "Resource type of clicks (AQ2 activity mix); planned weeks rarely filled"
+    },
+    "studentInfo": {
+      "rows": 32593,
+      "columns": 12,
+      "unit": "enrolment (student × module run)",
+      "primary_key": "code_module, code_presentation, id_student",
+      "key_unique": true,
+      "foreign_keys": "code_module, code_presentation → courses",
+      "main_variables": "final_result, gender, region, highest_education, imd_band, age_band, num_of_prev_attempts, studied_credits, disability",
+      "time_fields": "– (final_result observed at run end)",
+      "role_in_aq": "Outcome and target (AQ1–AQ3); background and audit attributes (AQ2, AQ3, AQ4 fairness)"
+    },
+    "studentRegistration": {
+      "rows": 32593,
+      "columns": 5,
+      "unit": "enrolment (student × module run)",
+      "primary_key": "code_module, code_presentation, id_student",
+      "key_unique": true,
+      "foreign_keys": "code_module, code_presentation, id_student → studentInfo (1–1)",
+      "main_variables": "date_registration, date_unregistration",
+      "time_fields": "date_registration, date_unregistration (days)",
+      "role_in_aq": "KPI denominator (registered on day 14), withdrawal day, population at each cut-off"
+    },
+    "studentAssessment": {
+      "rows": 173912,
+      "columns": 5,
+      "unit": "submission (student × assessment)",
+      "primary_key": "id_assessment, id_student",
+      "key_unique": true,
+      "foreign_keys": "id_assessment → assessments; id_student (+ run of the assessment) → studentInfo",
+      "main_variables": "score, is_banked",
+      "time_fields": "date_submitted (day)",
+      "role_in_aq": "Submission and lateness (AQ1, AQ2, AQ3)"
+    },
+    "studentVle": {
+      "rows": 10655280,
+      "columns": 6,
+      "unit": "logged interaction record (student × resource × day; several rows per day possible)",
+      "primary_key": "none documented",
+      "key_unique": null,
+      "foreign_keys": "id_site → vle; code_module, code_presentation, id_student → studentInfo",
+      "main_variables": "sum_click",
+      "time_fields": "date (day of interaction)",
+      "role_in_aq": "Platform activity by day and week (AQ2, AQ3)"
+    }
+  },
+  "relationships": {
+    "courses→assessments": {
+      "orphan_rows": 0,
+      "parents_without_children": 0,
+      "children_per_parent_min": 5,
+      "children_per_parent_max": 14
+    },
+    "courses→vle": {
+      "orphan_rows": 0,
+      "parents_without_children": 0,
+      "children_per_parent_min": 106,
+      "children_per_parent_max": 529
+    },
+    "courses→studentInfo": {
+      "orphan_rows": 0,
+      "parents_without_children": 0,
+      "children_per_parent_min": 365,
+      "children_per_parent_max": 2498
+    },
+    "studentInfo↔studentRegistration": {
+      "info_without_registration": 0,
+      "registration_without_info": 0
+    },
+    "assessments→studentAssessment": {
+      "orphan_rows": 0,
+      "parents_without_children": 18,
+      "children_per_parent_min": 278,
+      "children_per_parent_max": 1917
+    },
+    "studentInfo→studentAssessment (enrolment)": {
+      "orphan_rows": 0,
+      "enrolments_with_submissions": 25843
+    },
+    "vle→studentVle": {
+      "orphan_sites": 0,
+      "sites_never_used": 96
+    },
+    "studentInfo→studentVle (enrolment)": {
+      "orphan_enrolments": 0,
+      "enrolments_with_activity": 29228,
+      "enrolments_without_activity": 3365
+    }
+  },
+  "population": {
+    "modules": [
+      "AAA",
+      "BBB",
+      "CCC",
+      "DDD",
+      "EEE",
+      "FFF",
+      "GGG"
+    ],
+    "runs": 22,
+    "runs_by_year": [
+      [
+        "2013",
+        9
+      ],
+      [
+        "2014",
+        13
+      ]
+    ],
+    "runs_by_start_month": [
+      [
+        "B",
+        9
+      ],
+      [
+        "J",
+        13
+      ]
+    ],
+    "runs_per_module": [
+      [
+        "AAA",
+        2
+      ],
+      [
+        "BBB",
+        4
+      ],
+      [
+        "CCC",
+        2
+      ],
+      [
+        "DDD",
+        4
+      ],
+      [
+        "EEE",
+        3
+      ],
+      [
+        "FFF",
+        4
+      ],
+      [
+        "GGG",
+        3
+      ]
+    ],
+    "run_length_days": [
+      234,
+      269
+    ],
+    "enrolments": 32593,
+    "students": 28785,
+    "students_with_several_enrolments": 3538,
+    "enrolments_per_run": [
+      365,
+      2498
+    ]
+  },
+  "outcome": {
+    "values": [
+      [
+        "Pass",
+        12361
+      ],
+      [
+        "Withdrawn",
+        10156
+      ],
+      [
+        "Fail",
+        7052
+      ],
+      [
+        "Distinction",
+        3024
+      ]
+    ],
+    "withdrawn_without_unregistration_day": 93,
+    "not_withdrawn_with_unregistration_day": [
+      [
+        "Fail",
+        9
+      ]
+    ],
+    "unregistration_on_or_before_day0": 3097,
+    "unregistration_after_run_end": 1,
+    "unregistration_before_registration": 0
+  },
+  "time": {
+    "day_zero": "start of the module run; all day fields are offsets from it (negative = before the start)",
+    "registration_day_range": [
+      -322,
+      167
+    ],
+    "registration_after_day14": 58,
+    "registration_missing": 45,
+    "assessment_due_range": [
+      12,
+      261
+    ],
+    "assessments_without_due_day": [
+      [
+        "Exam",
+        11
+      ]
+    ],
+    "due_after_run_end": 0,
+    "submission_day_range": [
+      -11,
+      608
+    ],
+    "banked_submissions": 1909,
+    "banked_submission_day_range": [
+      -1,
+      -1
+    ],
+    "banked_submitted_after_due": 0,
+    "interaction_day_range": [
+      -25,
+      269
+    ],
+    "interaction_rows_before_day0": 688988,
+    "interaction_rows_after_run_end": 0,
+    "vle_sites_with_planned_week": 1121,
+    "vle_planned_week_max": 29
+  },
+  "measurement": {
+    "sum_click_per_row": {
+      "min": 1.0,
+      "median": 2.0,
+      "max": 6977.0,
+      "total": 39605099.0
+    },
+    "score_range": [
+      0.0,
+      100.0
+    ],
+    "score_non_integer": 0,
+    "score_missing": 173,
+    "weights_by_type": [
+      [
+        "CMA",
+        [
+          0.0,
+          5.0,
+          25.0
+        ]
+      ],
+      [
+        "Exam",
+        [
+          100.0,
+          200.0
+        ]
+      ],
+      [
+        "TMA",
+        [
+          0.0,
+          75.0,
+          95.0,
+          100.0
+        ]
+      ]
+    ],
+    "runs_with_zero_coursework_total": [
+      [
+        "GGG",
+        "2013J"
+      ],
+      [
+        "GGG",
+        "2014B"
+      ],
+      [
+        "GGG",
+        "2014J"
+      ]
+    ],
+    "run_types_with_zero_weight": [
+      [
+        "FFF",
+        "2013B",
+        "CMA"
+      ],
+      [
+        "FFF",
+        "2013J",
+        "CMA"
+      ],
+      [
+        "FFF",
+        "2014B",
+        "CMA"
+      ],
+      [
+        "FFF",
+        "2014J",
+        "CMA"
+      ],
+      [
+        "GGG",
+        "2013J",
+        "CMA"
+      ],
+      [
+        "GGG",
+        "2013J",
+        "TMA"
+      ],
+      [
+        "GGG",
+        "2014B",
+        "CMA"
+      ],
+      [
+        "GGG",
+        "2014B",
+        "TMA"
+      ],
+      [
+        "GGG",
+        "2014J",
+        "TMA"
+      ],
+      [
+        "GGG",
+        "2014J",
+        "CMA"
+      ]
+    ],
+    "runs_with_two_exams": [
+      [
+        "CCC",
+        "2014B"
+      ],
+      [
+        "CCC",
+        "2014J"
+      ]
+    ],
+    "assessments_by_type": [
+      [
+        "CMA",
+        76
+      ],
+      [
+        "Exam",
+        24
+      ],
+      [
+        "TMA",
+        106
+      ]
+    ],
+    "studied_credits_range": [
+      30,
+      655
+    ],
+    "studied_credits_top": [
+      [
+        60,
+        16751
+      ],
+      [
+        120,
+        6328
+      ],
+      [
+        30,
+        3749
+      ],
+      [
+        90,
+        3144
+      ],
+      [
+        180,
+        830
+      ]
+    ],
+    "num_of_prev_attempts_range": [
+      0,
+      6
+    ]
+  },
+  "codes": {
+    "gender": [
+      [
+        "M",
+        17875
+      ],
+      [
+        "F",
+        14718
+      ]
+    ],
+    "region": [
+      [
+        "Scotland",
+        3446
+      ],
+      [
+        "East Anglian Region",
+        3340
+      ],
+      [
+        "London Region",
+        3216
+      ],
+      [
+        "South Region",
+        3092
+      ],
+      [
+        "North Western Region",
+        2906
+      ],
+      [
+        "West Midlands Region",
+        2582
+      ],
+      [
+        "South West Region",
+        2436
+      ],
+      [
+        "East Midlands Region",
+        2365
+      ],
+      [
+        "South East Region",
+        2111
+      ],
+      [
+        "Wales",
+        2086
+      ],
+      [
+        "Yorkshire Region",
+        2006
+      ],
+      [
+        "North Region",
+        1823
+      ],
+      [
+        "Ireland",
+        1184
+      ]
+    ],
+    "highest_education": [
+      [
+        "A Level or Equivalent",
+        14045
+      ],
+      [
+        "Lower Than A Level",
+        13158
+      ],
+      [
+        "HE Qualification",
+        4730
+      ],
+      [
+        "No Formal quals",
+        347
+      ],
+      [
+        "Post Graduate Qualification",
+        313
+      ]
+    ],
+    "imd_band": [
+      [
+        "20-30%",
+        3654
+      ],
+      [
+        "30-40%",
+        3539
+      ],
+      [
+        "10-20",
+        3516
+      ],
+      [
+        "0-10%",
+        3311
+      ],
+      [
+        "40-50%",
+        3256
+      ],
+      [
+        "50-60%",
+        3124
+      ],
+      [
+        "60-70%",
+        2905
+      ],
+      [
+        "70-80%",
+        2879
+      ],
+      [
+        "80-90%",
+        2762
+      ],
+      [
+        "90-100%",
+        2536
+      ],
+      [
+        "",
+        1111
+      ]
+    ],
+    "age_band": [
+      [
+        "0-35",
+        22944
+      ],
+      [
+        "35-55",
+        9433
+      ],
+      [
+        "55<=",
+        216
+      ]
+    ],
+    "disability": [
+      [
+        "N",
+        29429
+      ],
+      [
+        "Y",
+        3164
+      ]
+    ],
+    "final_result": [
+      [
+        "Pass",
+        12361
+      ],
+      [
+        "Withdrawn",
+        10156
+      ],
+      [
+        "Fail",
+        7052
+      ],
+      [
+        "Distinction",
+        3024
+      ]
+    ],
+    "code_presentation": [
+      [
+        "2013B",
+        3
+      ],
+      [
+        "2013J",
+        6
+      ],
+      [
+        "2014B",
+        6
+      ],
+      [
+        "2014J",
+        7
+      ]
+    ],
+    "assessment_type": [
+      [
+        "CMA",
+        76
+      ],
+      [
+        "Exam",
+        24
+      ],
+      [
+        "TMA",
+        106
+      ]
+    ],
+    "activity_type": [
+      [
+        "resource",
+        2660
+      ],
+      [
+        "subpage",
+        1055
+      ],
+      [
+        "oucontent",
+        996
+      ],
+      [
+        "url",
+        886
+      ],
+      [
+        "forumng",
+        194
+      ],
+      [
+        "quiz",
+        127
+      ],
+      [
+        "page",
+        102
+      ],
+      [
+        "oucollaborate",
+        82
+      ],
+      [
+        "questionnaire",
+        61
+      ],
+      [
+        "ouwiki",
+        49
+      ],
+      [
+        "dataplus",
+        28
+      ],
+      [
+        "externalquiz",
+        26
+      ],
+      [
+        "homepage",
+        22
+      ],
+      [
+        "glossary",
+        21
+      ],
+      [
+        "ouelluminate",
+        21
+      ],
+      [
+        "dualpane",
+        20
+      ],
+      [
+        "repeatactivity",
+        5
+      ],
+      [
+        "htmlactivity",
+        4
+      ],
+      [
+        "sharedsubpage",
+        3
+      ],
+      [
+        "folder",
+        2
+      ]
+    ],
+    "labels_outside_expected_order": {
+      "imd_band": [
+        "",
+        "10-20"
+      ],
+      "age_band": [],
+      "highest_education": [],
+      "final_result": []
+    }
+  },
+  "sensitive": {
+    "gender": {
+      "groups": 2,
+      "smallest_group": [
+        "F",
+        14718
+      ],
+      "largest_group": [
+        "M",
+        17875
+      ],
+      "run_groups_below_20": 0
+    },
+    "age_band": {
+      "groups": 3,
+      "smallest_group": [
+        "55<=",
+        216
+      ],
+      "largest_group": [
+        "0-35",
+        22944
+      ],
+      "run_groups_below_20": 18
+    },
+    "disability": {
+      "groups": 2,
+      "smallest_group": [
+        "Y",
+        3164
+      ],
+      "largest_group": [
+        "N",
+        29429
+      ],
+      "run_groups_below_20": 1
+    },
+    "imd_band": {
+      "groups": 11,
+      "smallest_group": [
+        null,
+        1111
+      ],
+      "largest_group": [
+        "20-30%",
+        3654
+      ],
+      "run_groups_below_20": 11
+    },
+    "region": {
+      "groups": 13,
+      "smallest_group": [
+        "Ireland",
+        1184
+      ],
+      "largest_group": [
+        "Scotland",
+        3446
+      ],
+      "run_groups_below_20": 11
+    },
+    "highest_education": {
+      "groups": 5,
+      "smallest_group": [
+        "Post Graduate Qualification",
+        313
+      ],
+      "largest_group": [
+        "A Level or Equivalent",
+        14045
+      ],
+      "run_groups_below_20": 29
+    }
+  }
+}

@@ -1,0 +1,70 @@
+1. Project Baseline and Dataset                     0.37
+1.1. Baseline and Current Analytical Question       0.99
+  [table] Table 1.1. AQ1–AQ4 as they stand          0.30
+  (text after) Table 1.1. AQ1–AQ4 as they stand     0.09
+1.2. Dataset, Version and Entry Gate                0.15
+  [table] Table 1.2. Inputs from Milestone 2 an     0.29
+  (text after) Table 1.2. Inputs from Milestone 2 an  0.37
+2. Data Understanding                               0.39
+2.1. Population, Unit of Analysis and Keys          0.50
+  [table] Table 2.1. Dataset Understanding Map      0.40
+  (text after) Table 2.1. Dataset Understanding Map  0.11
+2.2. Outcome, Time and Measurement Semantics        0.36
+  [table] Table 2.2. Meaning and timing of the      0.44
+  (text after) Table 2.2. Meaning and timing of the   0.24
+2.3. Categorical Codes and Sensitive Attribut       0.38
+  [table] Table 2.3. Sensitive attributes           0.18
+  (text after) Table 2.3. Sensitive attributes      0.09
+3. Data Profiling and Quality                       0.35
+3.1. Shape, Keys, Duplicates and Joins              0.76
+3.2. Missingness and Validity                       0.76
+3.3. Distributions, Outliers and Outcome Bala       1.02
+3.4. Temporal Coverage and Representativeness       0.71
+3.5. Data Quality Issue Log                         0.21
+  [table] Table 3.1. Data Quality Issue Log         1.28
+  (text after) Table 3.1. Data Quality Issue Log    0.15
+4. AQ–Data Fit and Data Gap Decisions               0.46
+4.1. AQ–Data Fit Ratings                            0.15
+  [table] Table 4.1. AQ–Data Fit Decision Log       0.31
+  (text after) Table 4.1. AQ–Data Fit Decision Log  1.01
+4.2. Data Gap Decisions and Synthetic Data          0.23
+  [table] Table 4.2. Missing values, recorded a     0.34
+  (text after) Table 4.2. Missing values, recorded a  0.33
+5. Data Preparation Plan                            0.21
+  [table] Table 5.1. Preparation Decision Matri     1.06
+  (text after) Table 5.1. Preparation Decision Matri  0.18
+6. Data Preparation Pipeline                        0.21
+6.1. Pipeline Steps and Package Structure           0.13
+  [table] Table 6.1. Pipeline steps, code and r     0.41
+  (text after) Table 6.1. Pipeline steps, code and r  0.46
+6.2. Integration and Feature Construction           0.41
+  [table] Table 6.2. Main derived variables         0.53
+  (text after) Table 6.2. Main derived variables    0.43
+6.3. Split Strategy and Leakage Control             0.17
+  [table] Table 6.3. Leakage risks and controls     0.37
+  (text after) Table 6.3. Leakage risks and controls  0.53
+7. Prepared Data Validation                         0.25
+7.1. Before-and-After Checks                        0.13
+  [table] Table 7.1. Before-and-after checks        0.61
+  (text after) Table 7.1. Before-and-after checks   0.23
+7.2. Lineage, Dictionary and Version                0.28
+  [table] Table 7.2. Data lineage of the main p     0.72
+  (text after) Table 7.2. Data lineage of the main p  0.13
+7.3. Residual Risks                                 0.65
+8. Analytics and Model Readiness                    0.17
+8.1. Prepared Views by Analytics Level              0.23
+  [table] Table 8.1. Prepared views by analytic     0.31
+  (text after) Table 8.1. Prepared views by analytic  0.18
+8.2. Model Readiness Matrix                         0.05
+  [table] Table 8.2. Model Readiness Matrix         0.37
+  (text after) Table 8.2. Model Readiness Matrix    0.32
+  [table] Table 8.3. Entry conditions for Miles     0.24
+  (text after) Table 8.3. Entry conditions for Miles  0.05
+8.3. Updated Traceability                           0.21
+  [table] Table 8.4. Updated traceability           0.58
+  (text after) Table 8.4. Updated traceability      0.11
+9. Ethics, Bias and Limitations                     0.88
+10. Generative AI Usage and Reflection              0.23
+  [table] Table 10.1. AI roles and verification     0.38
+  (text after) Table 10.1. AI roles and verification  0.50
+main content: 26.6 pages

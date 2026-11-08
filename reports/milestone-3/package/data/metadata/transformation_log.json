@@ -1,0 +1,443 @@
+{
+  "generated": "2026-11-06T15:24:14Z",
+  "steps": [
+    {
+      "step": "1 load",
+      "what": "courses.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 22,
+      "note": ""
+    },
+    {
+      "step": "1 load",
+      "what": "assessments.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 206,
+      "note": ""
+    },
+    {
+      "step": "1 load",
+      "what": "vle.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 6364,
+      "note": ""
+    },
+    {
+      "step": "1 load",
+      "what": "studentInfo.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 32593,
+      "note": ""
+    },
+    {
+      "step": "1 load",
+      "what": "studentRegistration.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 32593,
+      "note": ""
+    },
+    {
+      "step": "1 load",
+      "what": "studentAssessment.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 173912,
+      "note": ""
+    },
+    {
+      "step": "1 load",
+      "what": "studentVle.csv (SHA-256 pinned, columns as documented)",
+      "rows_in": null,
+      "rows_out": 10655280,
+      "note": ""
+    },
+    {
+      "step": "2 population",
+      "what": "studentInfo + studentRegistration",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "2 population",
+      "what": "+ courses (run length)",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "2 population",
+      "what": "flag enrolled_d13",
+      "rows_in": 32593,
+      "rows_out": 28069,
+      "note": "enrolled at the day (C09)"
+    },
+    {
+      "step": "2 population",
+      "what": "flag enrolled_d14",
+      "rows_in": 32593,
+      "rows_out": 28061,
+      "note": "enrolled at the day (C09)"
+    },
+    {
+      "step": "2 population",
+      "what": "flag enrolled_d27",
+      "rows_in": 32593,
+      "rows_out": 27535,
+      "note": "enrolled at the day (C09)"
+    },
+    {
+      "step": "3 standardise",
+      "what": "imd_band label '10-20' -> '10-20%'",
+      "rows_in": 3516,
+      "rows_out": 0,
+      "note": ""
+    },
+    {
+      "step": "3 standardise",
+      "what": "year, start_month, completed, non_completion, split derived",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": ""
+    },
+    {
+      "step": "3 standardise",
+      "what": "tasks = TMA and CMA (exams excluded, DQ08)",
+      "rows_in": 206,
+      "rows_out": 182,
+      "note": ""
+    },
+    {
+      "step": "4 keys",
+      "what": "studentVle rows -> enrolment x day (records, clicks, clicks_dedup)",
+      "rows_in": 10655280,
+      "rows_out": 1808119,
+      "note": "clicks 39,605,099, de-duplicated 38,343,063"
+    },
+    {
+      "step": "4 keys",
+      "what": "studentVle rows -> distinct enrolment x site x day",
+      "rows_in": 10655280,
+      "rows_out": 8459320,
+      "note": ""
+    },
+    {
+      "step": "5 missing",
+      "what": "imd_band missing -> category 'Missing' (no imputation)",
+      "rows_in": 1111,
+      "rows_out": 1111,
+      "note": ""
+    },
+    {
+      "step": "5 missing",
+      "what": "flag registration_missing",
+      "rows_in": 32593,
+      "rows_out": 45,
+      "note": ""
+    },
+    {
+      "step": "5 missing",
+      "what": "flag withdrawal_day_missing",
+      "rows_in": 32593,
+      "rows_out": 93,
+      "note": ""
+    },
+    {
+      "step": "5 missing",
+      "what": "flag unregistered_not_withdrawn",
+      "rows_in": 32593,
+      "rows_out": 9,
+      "note": ""
+    },
+    {
+      "step": "5 missing",
+      "what": "flag unregistered_after_run_end",
+      "rows_in": 32593,
+      "rows_out": 1,
+      "note": ""
+    },
+    {
+      "step": "6 truncate",
+      "what": "enrolment x day click records up to the unregistration day",
+      "rows_in": 1808119,
+      "rows_out": 1802593,
+      "note": "clicks removed 98,745"
+    },
+    {
+      "step": "6 truncate",
+      "what": "enrolment x site x day records up to the unregistration day",
+      "rows_in": 8459320,
+      "rows_out": 8435429,
+      "note": ""
+    },
+    {
+      "step": "7 integrate",
+      "what": "enrolment x task grid (TMA, CMA of the run)",
+      "rows_in": 32593,
+      "rows_out": 286898,
+      "note": ""
+    },
+    {
+      "step": "7 integrate",
+      "what": "+ submission (if any)",
+      "rows_in": 286898,
+      "rows_out": 286898,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "7 integrate",
+      "what": "TMA/CMA submissions placed in the grid",
+      "rows_in": 168953,
+      "rows_out": 168953,
+      "note": ""
+    },
+    {
+      "step": "9 views",
+      "what": "+ banked results",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ concurrent runs",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ student seen in training runs",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ paired run flag",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ first missed task week",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ tasks while enrolled",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ whole-run activity (truncated at withdrawal)",
+      "rows_in": 32593,
+      "rows_out": 32593,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "student_week grid + weekly clicks",
+      "rows_in": 1052344,
+      "rows_out": 1052344,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ weekly distinct resources",
+      "rows_in": 1052344,
+      "rows_out": 1052344,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "+ logging-gap flag (DQ15)",
+      "rows_in": 1052344,
+      "rows_out": 1052344,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "9 views",
+      "what": "student_week rows (weeks -3..run end, cut at withdrawal)",
+      "rows_in": null,
+      "rows_out": 1052344,
+      "note": "clicks before week -3 not in this view: 0"
+    },
+    {
+      "step": "8 features d13",
+      "what": "+ activity up to the cut-off",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d13",
+      "what": "+ distinct resources",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d13",
+      "what": "+ tasks due by the cut-off",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d13",
+      "what": "+ CMA marks known by the cut-off",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d13",
+      "what": "+ tasks submitted before their due day (due after the cut-off)",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d13",
+      "what": "+ run median of clicks up to the cut-off (same run, no outcome)",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d13",
+      "what": "features built; max event day <= cut-off",
+      "rows_in": 28069,
+      "rows_out": 28069,
+      "note": "early_sign_rule 5,673"
+    },
+    {
+      "step": "8 features d27",
+      "what": "+ activity up to the cut-off",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d27",
+      "what": "+ distinct resources",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d27",
+      "what": "+ tasks due by the cut-off",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d27",
+      "what": "+ CMA marks known by the cut-off",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d27",
+      "what": "+ tasks submitted before their due day (due after the cut-off)",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d27",
+      "what": "+ run median of clicks up to the cut-off (same run, no outcome)",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "left join, rows kept"
+    },
+    {
+      "step": "8 features d27",
+      "what": "features built; max event day <= cut-off",
+      "rows_in": 27535,
+      "rows_out": 27535,
+      "note": "early_sign_rule 7,933"
+    },
+    {
+      "step": "10 persist",
+      "what": "processed/enrolment.parquet",
+      "rows_in": null,
+      "rows_out": 32593,
+      "note": "39 columns"
+    },
+    {
+      "step": "10 persist",
+      "what": "processed/assessment_due.parquet",
+      "rows_in": null,
+      "rows_out": 286898,
+      "note": "14 columns"
+    },
+    {
+      "step": "10 persist",
+      "what": "processed/student_week.parquet",
+      "rows_in": null,
+      "rows_out": 1052344,
+      "note": "10 columns"
+    },
+    {
+      "step": "10 persist",
+      "what": "processed/features_d13.parquet",
+      "rows_in": null,
+      "rows_out": 28069,
+      "note": "50 columns"
+    },
+    {
+      "step": "10 persist",
+      "what": "processed/features_d27.parquet",
+      "rows_in": null,
+      "rows_out": 27535,
+      "note": "52 columns"
+    },
+    {
+      "step": "10 persist",
+      "what": "processed/capacity_by_run.parquet",
+      "rows_in": null,
+      "rows_out": 44,
+      "note": "9 columns"
+    }
+  ],
+  "outputs": {
+    "enrolment": {
+      "rows": 32593,
+      "columns": 39,
+      "sha256": "1d1e397ac67ce774fec8be5d23bbf988ab70eb11f1bda5efc3d2f05510900a78"
+    },
+    "assessment_due": {
+      "rows": 286898,
+      "columns": 14,
+      "sha256": "f67d7916dd95c2ab2321140b277a554145163b59e8d99f68b13d2d6c415cb498"
+    },
+    "student_week": {
+      "rows": 1052344,
+      "columns": 10,
+      "sha256": "7526872e26e95da74441de8a5b5e72e86c485bb0d09b5866af90d0ceda11e079"
+    },
+    "features_d13": {
+      "rows": 28069,
+      "columns": 50,
+      "sha256": "c58a44150e8c367cd702303998bb028aed3c9b763e89e5b171d229b075b32bd6"
+    },
+    "features_d27": {
+      "rows": 27535,
+      "columns": 52,
+      "sha256": "4bf8a482b9ec7fa42c28ee96579c738faea8219124b74110ae53f54efcff6347"
+    },
+    "capacity_by_run": {
+      "rows": 44,
+      "columns": 9,
+      "sha256": "38f6868c2b74fcc7998c4c589b5d1a9420b6c11fd1bf2964e7abd86311f99e08"
+    }
+  }
+}

@@ -1,0 +1,369 @@
+# Machine-readable half of EXECUTION_PLAN.md: edit both together, then run scaffold.py build.
+
+[plan]
+task = "reports/milestone-3"
+title = "From Understanding to Preparation: Data Understanding, Quality Assessment and Reproducible Data Preparation"
+outline = "reports/milestone-3/reference.md"
+created = "2026-11-06"
+
+[checks]
+words = "150-700"
+meta_phrases = ["this doc", "this report will", "requester", "we will", "in this task", "source notes", "reference.md", "the outline", "as instructed", "writing rule", "the reader will", "planned run", "pending result", "will be benchmarked", "this section", "this part"]
+
+[references]
+heading = "# References"
+
+[[files]]
+name = "00-0-title-page.md"
+heading = ""
+
+[[files]]
+name = "00-1-abbreviations.md"
+heading = "# List of Abbreviations"
+
+[[files]]
+name = "00-2-glossary.md"
+heading = "# List of Terms"
+
+[[files]]
+name = "01-00-baseline-dataset.md"
+heading = "# 1. Project Baseline and Dataset"
+outline_section = "1"
+
+[[files]]
+name = "01-01-baseline-aqs.md"
+heading = "## 1.1. Baseline and Current Analytical Questions"
+outline_section = "1"
+
+[[files]]
+name = "01-02-dataset-entry-gate.md"
+heading = "## 1.2. Dataset, Version and Entry Gate"
+outline_section = "1"
+
+[[files]]
+name = "02-00-data-understanding.md"
+heading = "# 2. Data Understanding"
+outline_section = "2"
+
+[[files]]
+name = "02-01-population-unit-keys.md"
+heading = "## 2.1. Population, Unit of Analysis and Keys"
+outline_section = "2"
+
+[[files]]
+name = "02-02-outcome-time-measures.md"
+heading = "## 2.2. Outcome, Time and Measurement Semantics"
+outline_section = "2"
+
+[[files]]
+name = "02-03-codes-sensitive.md"
+heading = "## 2.3. Categorical Codes and Sensitive Attributes"
+outline_section = "2"
+
+[[files]]
+name = "03-00-profiling-quality.md"
+heading = "# 3. Data Profiling and Quality"
+outline_section = "3"
+
+[[files]]
+name = "03-01-shape-keys-joins.md"
+heading = "## 3.1. Shape, Keys, Duplicates and Joins"
+outline_section = "3"
+
+[[files]]
+name = "03-02-missingness-validity.md"
+heading = "## 3.2. Missingness and Validity"
+outline_section = "3"
+
+[[files]]
+name = "03-03-distributions-outcome.md"
+heading = "## 3.3. Distributions, Outliers and Outcome Balance"
+outline_section = "3"
+
+[[files]]
+name = "03-04-temporal-representativeness.md"
+heading = "## 3.4. Temporal Coverage and Representativeness"
+outline_section = "3"
+
+[[files]]
+name = "03-05-quality-issue-log.md"
+heading = "## 3.5. Data Quality Issue Log"
+outline_section = "3"
+
+[[files]]
+name = "04-00-aq-data-fit.md"
+heading = "# 4. AQ–Data Fit and Data Gap Decisions"
+outline_section = "4"
+
+[[files]]
+name = "04-01-fit-ratings.md"
+heading = "## 4.1. AQ–Data Fit Ratings"
+outline_section = "4"
+
+[[files]]
+name = "04-02-gap-decisions.md"
+heading = "## 4.2. Data Gap Decisions and Synthetic Data"
+outline_section = "4"
+
+[[files]]
+name = "05-00-preparation-plan.md"
+heading = "# 5. Data Preparation Plan"
+outline_section = "5"
+
+[[files]]
+name = "06-00-preparation-pipeline.md"
+heading = "# 6. Data Preparation Pipeline"
+outline_section = "6"
+
+[[files]]
+name = "06-01-pipeline-steps.md"
+heading = "## 6.1. Pipeline Steps and Package Structure"
+outline_section = "6"
+
+[[files]]
+name = "06-02-integration-features.md"
+heading = "## 6.2. Integration and Feature Construction"
+outline_section = "6"
+
+[[files]]
+name = "06-03-split-leakage.md"
+heading = "## 6.3. Split Strategy and Leakage Control"
+outline_section = "6"
+
+[[files]]
+name = "07-00-prepared-validation.md"
+heading = "# 7. Prepared Data Validation"
+outline_section = "7"
+
+[[files]]
+name = "07-01-before-after.md"
+heading = "## 7.1. Before-and-After Checks"
+outline_section = "7"
+
+[[files]]
+name = "07-02-lineage-dictionary.md"
+heading = "## 7.2. Lineage, Dictionary and Version"
+outline_section = "7"
+
+[[files]]
+name = "07-03-residual-risks.md"
+heading = "## 7.3. Residual Risks"
+outline_section = "7"
+
+[[files]]
+name = "08-00-readiness.md"
+heading = "# 8. Analytics and Model Readiness"
+outline_section = "8"
+
+[[files]]
+name = "08-01-views-by-level.md"
+heading = "## 8.1. Prepared Views by Analytics Level"
+outline_section = "8"
+
+[[files]]
+name = "08-02-readiness-matrix.md"
+heading = "## 8.2. Model Readiness Matrix"
+outline_section = "8"
+
+[[files]]
+name = "09-00-ethics-limitations.md"
+heading = "# 9. Ethics, Bias and Limitations"
+outline_section = "9"
+
+[[files]]
+name = "10-00-genai-reflection.md"
+heading = "# 10. Generative AI Usage and Reflection"
+outline_section = "10"
+
+[[files]]
+name = "11-references.md"
+heading = "# References"
+
+[[files]]
+name = "12-00-appendices.md"
+heading = "# Appendices"
+
+[[files]]
+name = "12-01-profiling-details.md"
+heading = "## Appendix I – Data Understanding, Profiling and Quality Details"
+
+[[files]]
+name = "12-02-pipeline-package.md"
+heading = "## Appendix II – Preparation Pipeline and Prepared Data Package"
+
+[[files]]
+name = "12-03-dictionary-lineage.md"
+heading = "## Appendix III – Prepared Data Dictionary and Lineage"
+
+[[files]]
+name = "12-04-traceability-change-log.md"
+heading = "## Appendix IV – Updated Traceability and Controlled Change Log"
+
+[[files]]
+name = "12-05-ai-decision-log.md"
+heading = "## Appendix V – AI Decision Log and Prompts"
+
+[[files]]
+name = "12-06-validation-ledger.md"
+heading = "## Appendix VI – Validation Ledger"
+
+[[tasks]]
+id = "T01"
+kind = "S"
+title = "Scaffold workspace and register the task"
+
+[[tasks]]
+id = "T02"
+kind = "HC"
+title = "Scope inputs – decided in conversation"
+
+[[tasks]]
+id = "T03"
+kind = "R"
+title = "Seeds: Milestone 3 brief and OULAD data descriptor"
+
+[[tasks]]
+id = "T04"
+kind = "S"
+title = "Entry gate: freeze the M1+M2 baseline, verify the raw package (brief sections 3, 5 step 1)"
+
+[[tasks]]
+id = "T05"
+kind = "R"
+title = "Research A: OULAD semantics – assessment types, codes, IMD, presentations (Parts 2-3; S200-S299)"
+
+[[tasks]]
+id = "T06"
+kind = "R"
+title = "Research B: early-warning practice, split and leakage, fairness and data protection (Parts 6, 9; S600-S699, S900-S999)"
+
+[[tasks]]
+id = "T07"
+kind = "S"
+title = "Task 1: understanding script and Dataset Understanding Map"
+
+[[tasks]]
+id = "T08"
+kind = "S"
+title = "Task 2: profiling and quality script, Data Quality Issue Log"
+
+[[tasks]]
+id = "T09"
+kind = "S"
+title = "Task 3: AQ-Data fit ratings, gap decisions, Change Log entries"
+
+[[tasks]]
+id = "T10"
+kind = "S"
+title = "Task 4: Preparation Decision Matrix, feature and split specification"
+
+[[tasks]]
+id = "T11"
+kind = "S"
+title = "AI preparation critic on the issue log, matrix and specification"
+
+[[tasks]]
+id = "T12"
+kind = "S"
+title = "Tasks 5-6: preparation pipeline implemented and run (raw to processed)"
+
+[[tasks]]
+id = "T13"
+kind = "S"
+title = "Task 8: validation script, data dictionary, lineage, version manifest"
+
+[[tasks]]
+id = "T14"
+kind = "S"
+title = "AI leakage auditor on the pipeline code and prepared views"
+
+[[tasks]]
+id = "T15"
+kind = "S"
+title = "Task 7 and deliverables B, E, F: readiness matrix, traceability, change log, AI decision log"
+
+[[tasks]]
+id = "T16"
+kind = "S"
+title = "Notebooks 02_data_understanding and 03_data_preparation, executed"
+
+[[tasks]]
+id = "T17"
+kind = "F"
+title = "Figures 2.1, 3.1, 3.2, 6.1"
+
+[[tasks]]
+id = "T18"
+kind = "W"
+title = "Write Parts 1-3"
+
+[[tasks]]
+id = "T19"
+kind = "W"
+title = "Write Parts 4-6"
+
+[[tasks]]
+id = "T20"
+kind = "W"
+title = "Write Parts 7-10 and appendices"
+
+[[tasks]]
+id = "T21"
+kind = "S"
+title = "Front matter"
+
+[[tasks]]
+id = "T22"
+kind = "S"
+title = "References"
+
+[[tasks]]
+id = "T23"
+kind = "S"
+title = "Full gates"
+
+[[tasks]]
+id = "T24"
+kind = "S"
+title = "Fact spot-check"
+
+[[tasks]]
+id = "T25"
+kind = "S"
+title = "Style read-through"
+
+[[tasks]]
+id = "T26"
+kind = "S"
+title = "Build and post-check the English Word document"
+
+[[tasks]]
+id = "T27"
+kind = "S"
+title = "Vietnamese twin: terms, front matter, translators, review, consistency, reader test"
+
+[[tasks]]
+id = "T28"
+kind = "S"
+title = "Build and post-check every language"
+
+[[tasks]]
+id = "T29"
+kind = "HC"
+title = "Final review"
+
+[[seeds]]
+id = "S001"
+slug = "mth045-milestone3-brief-2026"
+source = "MTH045 – The Science of Data Analytics. (2026). Milestone P3: From understanding to preparation [Course brief]"
+url = "final-project/milestones/03/milestone-3.md"
+item = "1"
+type = "primary"
+
+[[seeds]]
+id = "S002"
+slug = "kuzilek-2017-oulad-paper"
+source = "Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learning Analytics dataset. Scientific Data, 4, 170171"
+url = "https://doi.org/10.1038/sdata.2017.171"
+item = "2"
+type = "primary"

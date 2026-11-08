@@ -1,0 +1,63 @@
+{
+  "prepared_dataset_version": "OULAD-N04-prepared-1.0",
+  "created": "2026-11-06T15:24:17Z",
+  "raw_input": {
+    "assessments.csv": "8cc738fb88ad760571d6f2a23059bfee0ffcae3bcd830514c9cbd5c6d5a046f1",
+    "courses.csv": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+    "studentAssessment.csv": "fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e",
+    "studentInfo.csv": "7e6f3e474a5eee00639d2a414a6c7e928745823c2d2c2563ca1780145f99b0d6",
+    "studentRegistration.csv": "0d32676285372aaf2e7a80304e5b274b4fba24313e2ca4c04317225e1ec90170",
+    "studentVle.csv": "52668253d876c5becbcb72185977152700cecab2942aca807fecc3dd54b937f0",
+    "vle.csv": "d1b28303dea802ad87b4484e1196e878e06824850b9a4fe8aa34693439fe87e9"
+  },
+  "raw_source": "OULAD, figshare DOI 10.6084/m9.figshare.5081998.v1 (Milestone 2 package, SHA-256 pinned)",
+  "code": {
+    "01_understand.py": "2cab4e60c74ef67124dfac4520631d49dafbfbc1579675a95193cf521cb1bcff",
+    "02_profile.py": "754600bced6306212b22308ba78a104fe99523a43713aefce24ac0e0e48d4a87",
+    "build_notebooks.py": "bec46a98aa65919781552c949cba41da41077e9aa89385ccd93d3151541328a7",
+    "common.py": "e7db87de4e3faaefb35dd4c0951fcc4e9e9cee897053f0d6f6b1ba6f8c5108af",
+    "dictionary.py": "39cc3345a6d9b7876ea7ab741337f7ce11bd247542ba8540d2d8a6ad79fe9b68",
+    "fit_transforms.py": "60d3ba2aa27e61e7fd733de09d6d1f478c06041dfd0b793672f4e7843644fdf9",
+    "link_raw.py": "56898bc7e8afaf35068f583cad42e84bfb7fd959887a1aa22283c835fa5bfa24",
+    "prepare_data.py": "61cba9249112695afadc8751dfc3a505efb5d6ca486b0fa0d0c70399569b3bc1",
+    "validate_prepared.py": "d7bb8ea556e30eeb6c8d1a322e076545defac119329ed971380409fd340c18a7"
+  },
+  "git_commit": "41299c12ce9c81775d52e0837e5115710553ba84",
+  "package_has_uncommitted_changes": true,
+  "python": "3.12.7",
+  "polars": "2.1.0",
+  "outputs": {
+    "assessment_due.parquet": {
+      "sha256": "f67d7916dd95c2ab2321140b277a554145163b59e8d99f68b13d2d6c415cb498",
+      "rows": 286898
+    },
+    "capacity_by_run.parquet": {
+      "sha256": "38f6868c2b74fcc7998c4c589b5d1a9420b6c11fd1bf2964e7abd86311f99e08",
+      "rows": 44
+    },
+    "enrolment.parquet": {
+      "sha256": "1d1e397ac67ce774fec8be5d23bbf988ab70eb11f1bda5efc3d2f05510900a78",
+      "rows": 32593
+    },
+    "features_d13.parquet": {
+      "sha256": "c58a44150e8c367cd702303998bb028aed3c9b763e89e5b171d229b075b32bd6",
+      "rows": 28069
+    },
+    "features_d27.parquet": {
+      "sha256": "4bf8a482b9ec7fa42c28ee96579c738faea8219124b74110ae53f54efcff6347",
+      "rows": 27535
+    },
+    "model_ready_d13.parquet": {
+      "sha256": "773d1e2fa077356483cd281a93f6efcb88fd8156b1c7d0874afdb0c0d22cb72f",
+      "rows": 28069
+    },
+    "model_ready_d27.parquet": {
+      "sha256": "3560a51594d4ad97102089a790d6aa74cd29fced6b5dc21b9222c3b53bc23c6b",
+      "rows": 27535
+    },
+    "student_week.parquet": {
+      "sha256": "7526872e26e95da74441de8a5b5e72e86c485bb0d09b5866af90d0ceda11e079",
+      "rows": 1052344
+    }
+  }
+}

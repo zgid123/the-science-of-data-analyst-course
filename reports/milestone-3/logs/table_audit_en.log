@@ -1,0 +1,34 @@
+2026-11-06T18:45:08Z
+$ venv/bin/python reports/milestone-3/code/table_audit.py reports/milestone-3/build/N04_Milestone3_EN.docx reports/milestone-3/results/table-audit/en
+words wider than their column: 0
+| # | Caption | Page | Pt | Cols × rows | Height (lines) | Tallest row | Rows ≥ 8 lines | Lowest column fill |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| 1 | Table 1.1. AQ1–AQ4 as they stand | portrait | 9.5 | 4 × 4 | 11 | 3 | 0 | 0.79 |
+| 2 | Table 2.1. Dataset Understanding Map | portrait | 8.5 | 7 × 7 | 18 | 4 | 0 | 0.97 |
+| 3 | Table 3.1. Data Quality Issue Log | portrait | 9.5 | 5 × 11 | 19 | 2 | 0 | 0.79 |
+| 4 | Table 4.1. AQ–Data Fit Decision Log | portrait | 9.5 | 6 × 4 | 10 | 3 | 0 | 0.81 |
+| 5 | Table 4.2. Missing values, recorded absences and missing var | portrait | 9.5 | 3 × 4 | 8 | 2 | 0 | 0.71 |
+| 6 | Table 5.1. Preparation Decision Matrix | portrait | 9.5 | 5 × 12 | 26 | 3 | 0 | 0.75 |
+| 7 | Table 6.1. Main derived variables | portrait | 9.5 | 4 × 6 | 13 | 3 | 0 | 1.00 |
+| 8 | Table 6.2. Leakage risks and controls | portrait | 9.5 | 4 × 5 | 11 | 3 | 0 | 0.88 |
+| 9 | Table 7.1. Before-and-after checks | portrait | 9.5 | 4 × 7 | 13 | 3 | 0 | 0.61 |
+| 10 | Table 8.1. Model Readiness Matrix | portrait | 9.5 | 7 × 4 | 13 | 3 | 0 | 0.68 |
+| 11 | Table A.1. Inputs from Milestone 2 and their status | portrait | 9.5 | 3 × 6 | 14 | 3 | 0 | 0.94 |
+| 12 | Table A.2. Meaning and timing of the key fields | portrait | 9.5 | 4 × 8 | 19 | 4 | 0 | 0.93 |
+| 13 | Table A.3. Sensitive attributes | portrait | 9.5 | 5 × 6 | 8 | 1 | 0 | 0.19 |
+| 14 | Table A.4. Data Quality Issue Log with evidence | landscape | 9.0 | 6 × 19 | 82 | 8 | 1 | 0.86 |
+| 15 | Table A.5. Cross-check with an independent recount | portrait | 9.5 | 4 × 13 | 15 | 1 | 0 | 0.44 |
+| 16 | Table A.6. Equal counts in two-row groups by activity type | portrait | 9.5 | 3 × 6 | 8 | 1 | 0 | 0.44 |
+| 17 | Table A.7. Pipeline steps, code and results | portrait | 9.5 | 3 × 10 | 19 | 2 | 0 | 1.00 |
+| 18 | Table A.8. Stages of run_all.sh | portrait | 9.5 | 3 × 8 | 9 | 1 | 0 | 0.37 |
+| 19 | Table A.9. Transformation log | portrait | 9.5 | 5 × 58 | 74 | 2 | 0 | 0.88 |
+| 20 | Table A.10. Prepared files | portrait | 9.5 | 3 × 8 | 9 | 1 | 0 | 0.81 |
+| 21 | Table A.11. Prepared views by analytics level | portrait | 9.5 | 6 × 4 | 17 | 4 | 0 | 0.96 |
+| 22 | Table A.12. Data lineage | landscape | 9.0 | 5 × 88 | 107 | 3 | 0 | 0.97 |
+| 23 | Table A.13. Updated traceability | landscape | 9.0 | 7 × 4 | 25 | 7 | 0 | 0.82 |
+| 24 | Table A.14. Controlled Change Log | landscape | 9.0 | 6 × 13 | 45 | 5 | 0 | 0.41 |
+| 25 | Table A.15. AI Decision Log | landscape | 9.0 | 7 × 13 | 39 | 5 | 0 | 0.86 |
+| 26 | Table A.16. Decisions on the preparation critic’s critiques | landscape | 9.0 | 5 × 12 | 42 | 5 | 0 | 0.76 |
+| 27 | Table A.17. Decisions on the leakage auditor’s findings | portrait | 9.5 | 4 × 8 | 29 | 4 | 0 | 0.84 |
+| 28 | Table A.18. Validation ledger | portrait | 9.5 | 5 × 22 | 60 | 5 | 0 | 0.79 |
+exit 0

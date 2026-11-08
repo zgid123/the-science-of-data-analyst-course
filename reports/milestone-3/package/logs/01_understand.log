@@ -1,0 +1,18 @@
+2026-11-06T15:24:01Z
+$ /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-3/package/../../../venv/bin/python 01_understand.py
+tables: 7; keys unique: 6 of 6 keyed tables
+population: 22 runs, 7 modules, 32,593 enrolments, 28,785 students (3,538 with several enrolments)
+  courses→assessments: {'orphan_rows': 0, 'parents_without_children': 0, 'children_per_parent_min': 5, 'children_per_parent_max': 14}
+  courses→vle: {'orphan_rows': 0, 'parents_without_children': 0, 'children_per_parent_min': 106, 'children_per_parent_max': 529}
+  courses→studentInfo: {'orphan_rows': 0, 'parents_without_children': 0, 'children_per_parent_min': 365, 'children_per_parent_max': 2498}
+  studentInfo↔studentRegistration: {'info_without_registration': 0, 'registration_without_info': 0}
+  assessments→studentAssessment: {'orphan_rows': 0, 'parents_without_children': 18, 'children_per_parent_min': 278, 'children_per_parent_max': 1917}
+  studentInfo→studentAssessment (enrolment): {'orphan_rows': 0, 'enrolments_with_submissions': 25843}
+  vle→studentVle: {'orphan_sites': 0, 'sites_never_used': 96}
+  studentInfo→studentVle (enrolment): {'orphan_enrolments': 0, 'enrolments_with_activity': 29228, 'enrolments_without_activity': 3365}
+outcome {'values': [('Pass', 12361), ('Withdrawn', 10156), ('Fail', 7052), ('Distinction', 3024)], 'withdrawn_without_unregistration_day': 93, 'not_withdrawn_with_unregistration_day': [('Fail', 9)], 'unregistration_on_or_before_day0': 3097, 'unregistration_after_run_end': 1, 'unregistration_before_registration': 0}
+time {'day_zero': 'start of the module run; all day fields are offsets from it (negative = before the start)', 'registration_day_range': [-322, 167], 'registration_after_day14': 58, 'registration_missing': 45, 'assessment_due_range': [12, 261], 'assessments_without_due_day': [('Exam', 11)], 'due_after_run_end': 0, 'submission_day_range': [-11, 608], 'banked_submissions': 1909, 'banked_submission_day_range': [-1, -1], 'banked_submitted_after_due': 0, 'interaction_day_range': [-25, 269], 'interaction_rows_before_day0': 688988, 'interaction_rows_after_run_end': 0, 'vle_sites_with_planned_week': 1121, 'vle_planned_week_max': 29}
+measurement {'sum_click_per_row': {'min': 1.0, 'median': 2.0, 'max': 6977.0, 'total': 39605099.0}, 'score_range': [0.0, 100.0], 'score_non_integer': 0, 'score_missing': 173, 'weights_by_type': [('CMA', [0.0, 5.0, 25.0]), ('Exam', [100.0, 200.0]), ('TMA', [0.0, 75.0, 95.0, 100.0])], 'runs_with_zero_coursework_total': [('GGG', '2013J'), ('GGG', '2014B'), ('GGG', '2014J')], 'runs_with_two_exams': [('CCC', '2014B'), ('CCC', '2014J')], 'assessments_by_type': [('CMA', 76), ('Exam', 24), ('TMA', 106)], 'studied_credits_range': [30, 655], 'studied_credits_top': [(60, 16751), (120, 6328), (30, 3749), (90, 3144), (180, 830)], 'num_of_prev_attempts_range': [0, 6]}
+labels outside expected order: {'imd_band': ['', '10-20'], 'age_band': [], 'highest_education': [], 'final_result': []}
+sensitive: {'gender': (2, ('F', 14718), 0), 'age_band': (3, ('55<=', 216), 18), 'disability': (2, ('Y', 3164), 1), 'imd_band': (11, (None, 1111), 11), 'region': (13, ('Ireland', 1184), 11), 'highest_education': (5, ('Post Graduate Qualification', 313), 29)}
+exit 0

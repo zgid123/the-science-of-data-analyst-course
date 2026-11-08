@@ -1,0 +1,5 @@
+# 2026-11-07T18:05:06Z venv/bin/python reports/milestone-3/code/count_zero_click_change.py
+no raw click row: 3,365
+all raw clicks after the unregistration day: 189
+zero clicks in the prepared enrolment view: 3,554 (= 3,365 + 189)
+exit 0

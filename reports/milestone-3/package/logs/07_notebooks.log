@@ -1,0 +1,7 @@
+2026-11-06T15:24:17Z
+$ /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-3/package/../../../venv/bin/python build_notebooks.py
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+02_data_understanding.ipynb: 14 code cells executed, 0 errors
+03_data_preparation.ipynb: 12 code cells executed, 0 errors
+exit 0
