@@ -1,0 +1,74 @@
+=== 2026-11-08T16:37:31Z ===
+$ venv/bin/python reports/milestone-5/code/aq_analysis.py
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to reports/milestone-5/results
+exit status: 0
+
+SHA-256 of results after this run (determinism: compare with the previous run):
+f71f1d4fba0d9d2edf2836f58dfd02488f6ae57c7611adbb4402f3f081cb7a75  aq1_denominator_shift.csv
+825eeade748a76f0adc055ed96fe54b77afde6c34801ff86a35eb576533ec3d4  aq1_first_missed_week_cumulative.csv
+5eb59a636448ea08e169914aea9258efd14e9d0663bfb77c3d096b0369c3b406  aq1_first_missed_week_summary.csv
+59f71ccb9438b233da5b8836ebb68b18b465f3504bdcf48fc361c1cbc2ecafef  aq1_rates.csv
+70f96ffc59fd98be44236acac908fe3fa25acbdf476fc5b7d88164f72c0d5f85  aq1_runs_task_due.csv
+cadee5578eecaf32aa58d5bf107817ea418cb37ec0ccea08fdf7359c0050bb5a  aq1_subgroup_rates.csv
+fa4e44ba8cc4104e7c9b548be7e973319f5c2252700fb9c30a4823750c6c465a  aq1_validation_two_paths.csv
+b5a5bb539a569ebca62e928f4f657a5ae878b6301f002b3b3df09bffc36d7f8e  aq1_year_comparison.csv
+471cbb03bb506fe8e07fed26b1756dea67b70c7c6d3417994b9557e97f19f50f  aq1_year_difference.csv
+85b483b3e64eda6f478f2ee2ebb7d10170d6081af2f1e6d7226a8f6aa4a77e29  aq2_associations.csv
+d3696102be476e4b36778d017b125cfa91c443974424208ec37011e2a28652d5  aq2_binned_residuals.csv
+7b36833cf0925870da1e77258a4628d04edf7524138dcb4383d352b40eb802fe  aq2_model_coefficients.csv
+3dcd0aee15f3d11a55d5071511efdb4dc5b999c19951e076fcb41e99e643d27a  aq2_module_effects.csv
+a0faf5b591f5a877b430a1cdfb55c201a673f49ef52fc19d7c65f3feecc14ba1  aq2_sensitivity.csv
+522f1191d0b4ce62fed780f3be0ab76e8d31613e7b8372f9c2678d2ae4d51996  aq2_sign_correlation.csv
+2da55e5150442aeb01a9635dcb1bd5130d82c963e9e6fdaa0fc18d70a5506ea4  aq2_sign_rates_by_run.csv
+30c852b2b33d39e4b191f0cb3716d6481c7b8561f4f277441bbe1162a46ae868  aq2_subgroups.csv
+cffe9f22c31fd4bdb58720cba2915243f361045ec4a151da29aee1ddb7e614d9  aq_results.json
+0bd9d8be02bf931360ee51be8f8d5e4e42cc4b3bd62c1404711ee7398d394e14  aq_summary.md
+
+=== 2026-11-08T16:37:34Z ===
+$ venv/bin/python reports/milestone-5/code/aq_analysis.py
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to reports/milestone-5/results
+exit status: 0
+
+SHA-256 of results after this run (determinism: compare with the previous run):
+f71f1d4fba0d9d2edf2836f58dfd02488f6ae57c7611adbb4402f3f081cb7a75  aq1_denominator_shift.csv
+825eeade748a76f0adc055ed96fe54b77afde6c34801ff86a35eb576533ec3d4  aq1_first_missed_week_cumulative.csv
+5eb59a636448ea08e169914aea9258efd14e9d0663bfb77c3d096b0369c3b406  aq1_first_missed_week_summary.csv
+59f71ccb9438b233da5b8836ebb68b18b465f3504bdcf48fc361c1cbc2ecafef  aq1_rates.csv
+70f96ffc59fd98be44236acac908fe3fa25acbdf476fc5b7d88164f72c0d5f85  aq1_runs_task_due.csv
+cadee5578eecaf32aa58d5bf107817ea418cb37ec0ccea08fdf7359c0050bb5a  aq1_subgroup_rates.csv
+fa4e44ba8cc4104e7c9b548be7e973319f5c2252700fb9c30a4823750c6c465a  aq1_validation_two_paths.csv
+b5a5bb539a569ebca62e928f4f657a5ae878b6301f002b3b3df09bffc36d7f8e  aq1_year_comparison.csv
+471cbb03bb506fe8e07fed26b1756dea67b70c7c6d3417994b9557e97f19f50f  aq1_year_difference.csv
+85b483b3e64eda6f478f2ee2ebb7d10170d6081af2f1e6d7226a8f6aa4a77e29  aq2_associations.csv
+d3696102be476e4b36778d017b125cfa91c443974424208ec37011e2a28652d5  aq2_binned_residuals.csv
+7b36833cf0925870da1e77258a4628d04edf7524138dcb4383d352b40eb802fe  aq2_model_coefficients.csv
+3dcd0aee15f3d11a55d5071511efdb4dc5b999c19951e076fcb41e99e643d27a  aq2_module_effects.csv
+a0faf5b591f5a877b430a1cdfb55c201a673f49ef52fc19d7c65f3feecc14ba1  aq2_sensitivity.csv
+522f1191d0b4ce62fed780f3be0ab76e8d31613e7b8372f9c2678d2ae4d51996  aq2_sign_correlation.csv
+2da55e5150442aeb01a9635dcb1bd5130d82c963e9e6fdaa0fc18d70a5506ea4  aq2_sign_rates_by_run.csv
+30c852b2b33d39e4b191f0cb3716d6481c7b8561f4f277441bbe1162a46ae868  aq2_subgroups.csv
+cffe9f22c31fd4bdb58720cba2915243f361045ec4a151da29aee1ddb7e614d9  aq_results.json
+0bd9d8be02bf931360ee51be8f8d5e4e42cc4b3bd62c1404711ee7398d394e14  aq_summary.md
+

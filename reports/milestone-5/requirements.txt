@@ -1,0 +1,8 @@
+# T08 AQ1/AQ2 analysis (code/aq_analysis.py, code/aq_checks.py); versions as installed in the shared ./venv
+numpy==2.5.4
+polars==2.1.0
+statsmodels==0.15.0
+# statsmodels dependencies, pinned to the versions used
+scipy==1.18.1
+pandas==3.1.1
+patsy==1.0.3

@@ -1,0 +1,8 @@
+## 2026-11-08T16:38:34Z $ venv/bin/python reports/milestone-5/code/verify_T08.py
+PASS  all: recomputed (13529, 6959), T08 (13529, 6959)
+PASS  d14: recomputed (12076, 5515), T08 (12076, 5515)
+PASS  d27: recomputed (11811, 5245), T08 (11811, 5245)
+PASS  task_due_pop: recomputed 9960, T08 9960
+PASS  rd_missed: recomputed 50.3, T08 50.3
+PASS  rd_inactive: recomputed 25.3, T08 25.3
+exit 0

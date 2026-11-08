@@ -179,3 +179,42 @@ vi = ["Luật Trí tuệ nhân tạo", "hệ thống trí tuệ nhân tạo có 
 [milestone-4.citations]
 order = "first-citation"
 draft_ids = 'S\d{3}'
+
+# ---------------------------------------------------------------------------------------------------- milestone-5
+[milestone-5]
+name = "Milestone 5 report: final integration and project report (team N04)"
+report = "reports/milestone-5/report"
+build = "reports/milestone-5/build"
+author = "Group 4 (N04)"
+voice = "group"                          # the team writes in the first person (build-report check_style.py)
+people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+
+[milestone-5.en]
+out = "N04_Milestone5_EN.docx"
+title = "Final Project Report: Early Identification of Disengaging Students in Online Courses"
+short_title = "N04 – Milestone 5"
+subject = "MTH045 – The Science of Data Analytics"
+
+[milestone-5.vi]
+out = "N04_Milestone5_VI.docx"
+title = "Báo cáo đồ án cuối kỳ: Nhận diện sớm sinh viên giảm tham gia trong các khóa học trực tuyến"
+short_title = "N04 – Milestone 5"
+subject = "MTH045 – Khoa học phân tích dữ liệu"
+author = "Nhóm 4 (N04)"
+glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+
+[milestone-5.layout]
+part_breaks = false
+landscape_appendices = true
+line_spacing = 1.15
+body_size = 11.5
+
+[milestone-5.figures]
+package = "figures.milestone_5"
+
+[milestone-5.hooks]
+checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.py --base reports/milestone-5 --all", research_layout = ".agents/skills/research-report/scripts/layout.py check --base reports/milestone-5" }
+
+[milestone-5.citations]
+order = "first-citation"
+draft_ids = 'S\d{3}'

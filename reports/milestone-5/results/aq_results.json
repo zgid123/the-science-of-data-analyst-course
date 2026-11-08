@@ -1,0 +1,545 @@
+{
+ "scope": "9 module runs of 2013; no 2014 row of any prepared view read (filter pushed to the reader and asserted); 2014 rates only as published by Milestone 3",
+ "aq1": {
+  "day14_registered": {
+   "n": 12076,
+   "non_completers": 5515,
+   "non_completion": [
+    0.4567,
+    0.4478,
+    0.4656
+   ],
+   "completion": [
+    0.5433,
+    0.5344,
+    0.5522
+   ],
+   "module_low": {
+    "level": "module",
+    "group": "AAA",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 92,
+    "n": 370,
+    "rate": 0.2486,
+    "ci_low": 0.2073,
+    "ci_high": 0.2951
+   },
+   "module_high": {
+    "level": "module",
+    "group": "DDD",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 1537,
+    "n": 2872,
+    "rate": 0.5352,
+    "ci_low": 0.5169,
+    "ci_high": 0.5533
+   },
+   "run_low": {
+    "level": "run",
+    "group": "AAA 2013J",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 92,
+    "n": 370,
+    "rate": 0.2486,
+    "ci_low": 0.2073,
+    "ci_high": 0.2951
+   },
+   "run_high": {
+    "level": "run",
+    "group": "DDD 2013B",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 688,
+    "n": 1197,
+    "rate": 0.5748,
+    "ci_low": 0.5466,
+    "ci_high": 0.6025
+   },
+   "shares": {
+    "Pass": [
+     0.4543,
+     0.4454,
+     0.4632
+    ],
+    "Distinction": [
+     0.089,
+     0.0841,
+     0.0942
+    ],
+    "Fail": [
+     0.2675,
+     0.2597,
+     0.2754
+    ],
+    "Withdrawn": [
+     0.1892,
+     0.1823,
+     0.1963
+    ]
+   }
+  },
+  "all_enrolments": {
+   "n": 13529,
+   "non_completers": 6959,
+   "non_completion": [
+    0.5144,
+    0.506,
+    0.5228
+   ],
+   "completion": [
+    0.4856,
+    0.4772,
+    0.494
+   ],
+   "module_low": {
+    "level": "module",
+    "group": "AAA",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 105,
+    "n": 383,
+    "rate": 0.2742,
+    "ci_low": 0.2319,
+    "ci_high": 0.3209
+   },
+   "module_high": {
+    "level": "module",
+    "group": "DDD",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 1902,
+    "n": 3241,
+    "rate": 0.5869,
+    "ci_low": 0.5698,
+    "ci_high": 0.6037
+   },
+   "run_low": {
+    "level": "run",
+    "group": "AAA 2013J",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 105,
+    "n": 383,
+    "rate": 0.2742,
+    "ci_low": 0.2319,
+    "ci_high": 0.3209
+   },
+   "run_high": {
+    "level": "run",
+    "group": "DDD 2013B",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 793,
+    "n": 1303,
+    "rate": 0.6086,
+    "ci_low": 0.5818,
+    "ci_high": 0.6347
+   },
+   "shares": {
+    "Pass": [
+     0.4061,
+     0.3978,
+     0.4144
+    ],
+    "Distinction": [
+     0.0795,
+     0.0751,
+     0.0842
+    ],
+    "Fail": [
+     0.2396,
+     0.2325,
+     0.2469
+    ],
+    "Withdrawn": [
+     0.2747,
+     0.2673,
+     0.2823
+    ]
+   }
+  },
+  "day14_registered_excl_flagged": {
+   "n": 12068,
+   "non_completers": 5507,
+   "non_completion": [
+    0.4563,
+    0.4475,
+    0.4652
+   ],
+   "completion": [
+    0.5437,
+    0.5348,
+    0.5525
+   ],
+   "module_low": {
+    "level": "module",
+    "group": "AAA",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 92,
+    "n": 370,
+    "rate": 0.2486,
+    "ci_low": 0.2073,
+    "ci_high": 0.2951
+   },
+   "module_high": {
+    "level": "module",
+    "group": "DDD",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 1534,
+    "n": 2869,
+    "rate": 0.5347,
+    "ci_low": 0.5164,
+    "ci_high": 0.5529
+   },
+   "run_low": {
+    "level": "run",
+    "group": "AAA 2013J",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 92,
+    "n": 370,
+    "rate": 0.2486,
+    "ci_low": 0.2073,
+    "ci_high": 0.2951
+   },
+   "run_high": {
+    "level": "run",
+    "group": "DDD 2013B",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 685,
+    "n": 1194,
+    "rate": 0.5737,
+    "ci_low": 0.5455,
+    "ci_high": 0.6015
+   },
+   "shares": {
+    "Pass": [
+     0.4546,
+     0.4457,
+     0.4635
+    ],
+    "Distinction": [
+     0.0891,
+     0.0841,
+     0.0943
+    ],
+    "Fail": [
+     0.2673,
+     0.2595,
+     0.2753
+    ],
+    "Withdrawn": [
+     0.189,
+     0.1821,
+     0.1961
+    ]
+   }
+  },
+  "year_difference": {
+   "level": "year",
+   "unit": "all runs",
+   "measure": "non_completion",
+   "rate_2013": 0.5144,
+   "n_2013": 13529,
+   "rate_2014_published": 0.5376,
+   "n_2014": 19064,
+   "diff_pp_2014_minus_2013": 2.32,
+   "ci_low_pp": 1.22,
+   "ci_high_pp": 3.42
+  },
+  "runs_outside_interval_between_denominators": [
+   "BBB 2013B",
+   "BBB 2013J",
+   "DDD 2013B",
+   "DDD 2013J",
+   "EEE 2013J",
+   "FFF 2013B",
+   "FFF 2013J"
+  ],
+  "first_missed_week": [
+   {
+    "denominator": "day14_registered",
+    "group": "all",
+    "n": 12076,
+    "with_missed_task": 5746,
+    "share_any": 0.4758,
+    "ci_low_any": 0.4669,
+    "ci_high_any": 0.4847,
+    "share_by_week4": 0.0919,
+    "ci_low_week4": 0.0869,
+    "ci_high_week4": 0.0972,
+    "week_q1": 7.0,
+    "week_median": 14.0,
+    "week_q3": 24.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Pass",
+    "n": 5486,
+    "with_missed_task": 1328,
+    "share_any": 0.2421,
+    "ci_low_any": 0.2309,
+    "ci_high_any": 0.2536,
+    "share_by_week4": 0.0053,
+    "ci_low_week4": 0.0037,
+    "ci_high_week4": 0.0076,
+    "week_q1": 18.0,
+    "week_median": 24.0,
+    "week_q3": 30.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Distinction",
+    "n": 1075,
+    "with_missed_task": 111,
+    "share_any": 0.1033,
+    "ci_low_any": 0.0865,
+    "ci_high_any": 0.1229,
+    "share_by_week4": 0.0009,
+    "ci_low_week4": 0.0002,
+    "ci_high_week4": 0.0053,
+    "week_q1": 23.0,
+    "week_median": 30.0,
+    "week_q3": 33.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Fail",
+    "n": 3230,
+    "with_missed_task": 2733,
+    "share_any": 0.8461,
+    "ci_low_any": 0.8333,
+    "ci_high_any": 0.8582,
+    "share_by_week4": 0.1641,
+    "ci_low_week4": 0.1517,
+    "ci_high_week4": 0.1773,
+    "week_q1": 7.0,
+    "week_median": 13.0,
+    "week_q3": 19.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Withdrawn",
+    "n": 2285,
+    "with_missed_task": 1574,
+    "share_any": 0.6888,
+    "ci_low_any": 0.6696,
+    "ci_high_any": 0.7075,
+    "share_by_week4": 0.2407,
+    "ci_low_week4": 0.2236,
+    "ci_high_week4": 0.2587,
+    "week_q1": 4.0,
+    "week_median": 8.0,
+    "week_q3": 14.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Completed",
+    "n": 6561,
+    "with_missed_task": 1439,
+    "share_any": 0.2193,
+    "ci_low_any": 0.2095,
+    "ci_high_any": 0.2295,
+    "share_by_week4": 0.0046,
+    "ci_low_week4": 0.0032,
+    "ci_high_week4": 0.0065,
+    "week_q1": 18.0,
+    "week_median": 24.0,
+    "week_q3": 30.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Not completed",
+    "n": 5515,
+    "with_missed_task": 4307,
+    "share_any": 0.781,
+    "ci_low_any": 0.7699,
+    "ci_high_any": 0.7917,
+    "share_by_week4": 0.1958,
+    "ci_low_week4": 0.1856,
+    "ci_high_week4": 0.2065,
+    "week_q1": 4.0,
+    "week_median": 9.0,
+    "week_q3": 18.0
+   }
+  ],
+  "runs_no_task_due_by_d27": [
+   "EEE 2013J",
+   "GGG 2013J"
+  ],
+  "validation": {
+   "cells": 72,
+   "all_agree": true,
+   "first_missed_week_agree": "13529/13529"
+  }
+ },
+ "aq2": {
+  "population": {
+   "n": 11811,
+   "non_completers": 5245,
+   "non_completion": 0.4441,
+   "n_task_runs": 9960,
+   "task_runs": [
+    "AAA 2013J",
+    "BBB 2013B",
+    "BBB 2013J",
+    "DDD 2013B",
+    "DDD 2013J",
+    "FFF 2013B",
+    "FFF 2013J"
+   ],
+   "runs": [
+    "AAA 2013J",
+    "BBB 2013B",
+    "BBB 2013J",
+    "DDD 2013B",
+    "DDD 2013J",
+    "EEE 2013J",
+    "FFF 2013B",
+    "FFF 2013J",
+    "GGG 2013J"
+   ]
+  },
+  "model": {
+   "n_params": 37,
+   "converged": true,
+   "covariance": "HC1 robust, no clustering",
+   "pseudo_r2": 0.1452
+  },
+  "associations": [
+   {
+    "sign": "missed_task",
+    "n": 9960,
+    "n_with": 1285,
+    "rate_with": 0.8996,
+    "rate_without": 0.3964,
+    "rd_unadj_pp": 50.32,
+    "rd_unadj_ci_low": 48.27,
+    "rd_unadj_ci_high": 52.16,
+    "rd_adj_single_pp": 49.48,
+    "rd_adj_mutual_pp": 40.83,
+    "rd_adj_mutual_ci_low": 37.73,
+    "rd_adj_mutual_ci_high": 43.93,
+    "or_adj_mutual": 8.121,
+    "or_adj_mutual_ci_low": 6.061,
+    "or_adj_mutual_ci_high": 10.881,
+    "modules_defined": 4,
+    "modules_same_direction": 4,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "late_tma",
+    "n": 9960,
+    "n_with": 577,
+    "rate_with": 0.636,
+    "rate_without": 0.4506,
+    "rd_unadj_pp": 18.54,
+    "rd_unadj_ci_low": 14.42,
+    "rd_unadj_ci_high": 22.5,
+    "rd_adj_single_pp": 19.17,
+    "rd_adj_mutual_pp": 20.2,
+    "rd_adj_mutual_ci_low": 15.87,
+    "rd_adj_mutual_ci_high": 24.52,
+    "or_adj_mutual": 2.697,
+    "or_adj_mutual_ci_low": 2.104,
+    "or_adj_mutual_ci_high": 3.456,
+    "modules_defined": 4,
+    "modules_same_direction": 4,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "inactive_last7",
+    "n": 11811,
+    "n_with": 2444,
+    "rate_with": 0.6444,
+    "rate_without": 0.3918,
+    "rd_unadj_pp": 25.26,
+    "rd_unadj_ci_low": 23.1,
+    "rd_unadj_ci_high": 27.38,
+    "rd_adj_single_pp": 33.28,
+    "rd_adj_mutual_pp": 14.46,
+    "rd_adj_mutual_ci_low": 11.3,
+    "rd_adj_mutual_ci_high": 17.62,
+    "or_adj_mutual": 1.96,
+    "or_adj_mutual_ci_low": 1.642,
+    "or_adj_mutual_ci_high": 2.339,
+    "modules_defined": 6,
+    "modules_same_direction": 6,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "low_relative_activity",
+    "n": 11811,
+    "n_with": 5889,
+    "rate_with": 0.5809,
+    "rate_without": 0.308,
+    "rd_unadj_pp": 27.29,
+    "rd_unadj_ci_low": 25.56,
+    "rd_unadj_ci_high": 29.0,
+    "rd_adj_single_pp": 26.21,
+    "rd_adj_mutual_pp": 13.36,
+    "rd_adj_mutual_ci_low": 11.48,
+    "rd_adj_mutual_ci_high": 15.23,
+    "or_adj_mutual": 1.852,
+    "or_adj_mutual_ci_low": 1.628,
+    "or_adj_mutual_ci_high": 2.108,
+    "modules_defined": 6,
+    "modules_same_direction": 6,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "no_pre_start_activity",
+    "n": 11811,
+    "n_with": 2297,
+    "rate_with": 0.6152,
+    "rate_without": 0.4028,
+    "rd_unadj_pp": 21.24,
+    "rd_unadj_ci_low": 19.0,
+    "rd_unadj_ci_high": 23.44,
+    "rd_adj_single_pp": 25.43,
+    "rd_adj_mutual_pp": 10.56,
+    "rd_adj_mutual_ci_low": 7.84,
+    "rd_adj_mutual_ci_high": 13.29,
+    "or_adj_mutual": 1.686,
+    "or_adj_mutual_ci_low": 1.395,
+    "or_adj_mutual_ci_high": 2.038,
+    "modules_defined": 6,
+    "modules_same_direction": 6,
+    "verdict": "consistent association"
+   }
+  ],
+  "binned_residual_bins_outside_2se": [
+   {
+    "binned_by": "activity_level",
+    "bin": "1 no clicks days 0-27",
+    "residual_pp": 5.63
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "2 below half the run median",
+    "residual_pp": 2.56
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "3 half to the run median",
+    "residual_pp": -3.68
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "4 median to twice the median",
+    "residual_pp": 1.91
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "5 twice the run median or more",
+    "residual_pp": -2.65
+   }
+  ]
+ }
+}

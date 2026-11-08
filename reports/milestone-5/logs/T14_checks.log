@@ -1,0 +1,48 @@
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 1
+Checked 3 files (draft mode): 0 errors, 18 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 2
+Checked 2 files (draft mode): 0 errors, 16 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 3
+Checked 3 files (draft mode): 0 errors, 20 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 4
+Checked 2 files (draft mode): 0 errors, 17 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 5
+Checked 2 files (draft mode): 0 errors, 15 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 6
+Checked 3 files (draft mode): 0 errors, 24 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 7
+Checked 3 files (draft mode): 0 errors, 24 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 8
+Checked 2 files (draft mode): 0 errors, 18 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 9
+Checked 3 files (draft mode): 0 errors, 20 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 10
+Checked 1 files (draft mode): 0 errors, 7 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 11
+Checked 6 files (draft mode): 0 errors, 60 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 12
+Checked 2 files (draft mode): 0 errors, 8 warnings
+exit 0
+## 2026-11-08T17:24:36Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 13
+Checked 1 files (draft mode): 0 errors, 4 warnings
+exit 0
+## 2026-11-08T17:24:37Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 14
+Checked 1 files (draft mode): 0 errors, 5 warnings
+exit 0
+## 2026-11-08T17:24:37Z $ ./venv/bin/python .agents/skills/build-report/scripts/check_style.py --report reports/milestone-5/report
+===== EN: 35 body files: 0 errors, 0 warnings
+exit 0
+## 2026-11-08T17:24:37Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_trail.py --base reports/milestone-5 --all
+Checked 35 sources, 376 claims: 0 errors, 4 warnings
+exit 0

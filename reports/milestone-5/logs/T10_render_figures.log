@@ -1,0 +1,47 @@
+=== 2026-11-08T16:41:43Z run 1
+$ venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+(eval):4: no such file or directory: venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+exit status: 127
+
+=== 2026-11-08T16:41:50Z run 2
+$ venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+rendered fig-1-1-project-chain
+rendered fig-11-1-aq1-rates
+WARN  figure /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/report/assets/figures/fig-11-2-aq2-associations.vi.png: cut off: 'Điều chỉnh đồng thời, khoảng tin cậy 95%' runs past the edge of the figure
+rendered fig-11-2-aq2-associations
+milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 1 layout findings
+exit status: 0
+
+=== 2026-11-08T16:42:16Z run 3
+$ venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+rendered fig-1-1-project-chain
+rendered fig-11-1-aq1-rates
+WARN  figure /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/report/assets/figures/fig-11-2-aq2-associations.vi.png: cut off: 'Chấm: ước lượng; đoạn: khoảng tin cậy…' runs past the edge of the figure
+rendered fig-11-2-aq2-associations
+milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 1 layout findings
+exit status: 0
+
+=== 2026-11-08T16:42:25Z run 4
+$ venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+rendered fig-1-1-project-chain
+rendered fig-11-1-aq1-rates
+rendered fig-11-2-aq2-associations
+milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings
+exit status: 0
+
+=== 2026-11-08T16:42:49Z run 5
+$ venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+rendered fig-1-1-project-chain
+rendered fig-11-1-aq1-rates
+rendered fig-11-2-aq2-associations
+milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings
+exit status: 0
+
+=== 2026-11-08T16:43:00Z run 6
+$ venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
+rendered fig-1-1-project-chain
+rendered fig-11-1-aq1-rates
+rendered fig-11-2-aq2-associations
+milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings
+exit status: 0
+

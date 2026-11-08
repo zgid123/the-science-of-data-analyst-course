@@ -1,0 +1,10 @@
+code_module,code_presentation,enrolled_d27,max_tasks_due_by_d27,first_task_due_day,n_day14,with_missed_task,earliest_first_missed_week,median_first_missed_week,missed_by_week4,no_task_due_by_d27
+AAA,2013J,369,1,19,370,67,3,17.0,13,false
+BBB,2013B,1530,1,19,1606,1001,3,13.0,246,false
+BBB,2013J,1834,1,19,1851,994,3,14.0,154,false
+DDD,2013B,1143,2,23,1197,754,4,12.0,244,false
+DDD,2013J,1647,1,25,1675,753,4,13.0,163,false
+EEE,2013J,927,0,33,933,281,5,10.0,0,true
+FFF,2013B,1454,1,19,1520,632,3,13.0,154,false
+FFF,2013J,1983,1,19,1998,790,3,14.0,136,false
+GGG,2013J,924,0,61,926,474,9,25.0,0,true

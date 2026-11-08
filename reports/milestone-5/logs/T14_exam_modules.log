@@ -1,0 +1,4 @@
+## 2026-11-08T17:25:10Z $ venv/bin/python reports/milestone-5/code/check_exam_modules.py
+modules defining an exam: ['AAA', 'BBB', 'CCC', 'DDD', 'EEE', 'FFF', 'GGG']
+modules with exam results recorded: ['CCC', 'DDD']
+exit 0

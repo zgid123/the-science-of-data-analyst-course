@@ -1,0 +1,356 @@
+# Machine-readable half of EXECUTION_PLAN.md: edit both together, then run scaffold.py build.
+
+[plan]
+task = "reports/milestone-5"
+title = "Final Integration and Project Report: Early Identification of Disengaging Students in Online Courses"
+outline = "reports/milestone-5/reference.md"
+created = "2026-11-08"
+
+[checks]
+words = "150-700"                 # per section file (intro files: no minimum)
+meta_phrases = ["this doc", "this report will", "requester", "we will", "in this task", "source notes", "reference.md", "the outline", "as instructed", "writing rule", "the reader will", "planned run", "pending result", "will be benchmarked", "this section", "this part"]
+
+[references]
+heading = "# References"
+
+[[files]]
+name = "00-0-title-page.md"
+heading = ""
+
+[[files]]
+name = "00-1-abstract.md"
+heading = "# Abstract"
+
+[[files]]
+name = "00-2-abbreviations.md"
+heading = "# List of Abbreviations"
+
+[[files]]
+name = "00-3-glossary.md"
+heading = "# List of Terms"
+
+[[files]]
+name = "01-00-introduction-context.md"
+heading = "# 1. Introduction and Educational Context"
+outline_section = "1"
+
+[[files]]
+name = "01-01-motivation-stakeholders.md"
+heading = "## 1.1. Motivation and Stakeholders"
+outline_section = "1"
+
+[[files]]
+name = "01-02-scope-objective.md"
+heading = "## 1.2. Scope and Project Objective"
+outline_section = "1"
+
+[[files]]
+name = "02-00-business-understanding.md"
+heading = "# 2. Business Understanding and Success Criteria"
+outline_section = "2"
+
+[[files]]
+name = "02-01-kpis-decisions.md"
+heading = "## 2.1. Key Performance Indicators and Decisions"
+outline_section = "2"
+
+[[files]]
+name = "03-00-analytical-questions.md"
+heading = "# 3. Analytical Questions and Analytics Levels"
+outline_section = "3"
+
+[[files]]
+name = "03-01-aq-quality-check.md"
+heading = "## 3.1. Quality Check of the Final Questions"
+outline_section = "3"
+
+[[files]]
+name = "03-02-aq-revision-log.md"
+heading = "## 3.2. AQ Revision Log"
+outline_section = "3"
+
+[[files]]
+name = "04-00-data-requirements.md"
+heading = "# 4. Data Requirements and Dataset Selection"
+outline_section = "4"
+
+[[files]]
+name = "04-01-dataset-selection.md"
+heading = "## 4.1. Dataset Selection, Provenance and Licence"
+outline_section = "4"
+
+[[files]]
+name = "05-00-dataset-description.md"
+heading = "# 5. Dataset Description and Requirement–Data Fit"
+outline_section = "5"
+
+[[files]]
+name = "05-01-requirement-data-fit.md"
+heading = "## 5.1. Requirement–Data Fit and Question Status"
+outline_section = "5"
+
+[[files]]
+name = "06-00-data-understanding.md"
+heading = "# 6. Data Understanding and Data Quality"
+outline_section = "6"
+
+[[files]]
+name = "06-01-quality-findings.md"
+heading = "## 6.1. Quality Findings"
+outline_section = "6"
+
+[[files]]
+name = "06-02-representativeness-sensitive.md"
+heading = "## 6.2. Temporal Coverage, Representativeness and Sensitive Fields"
+outline_section = "6"
+
+[[files]]
+name = "07-00-preparation-pipeline.md"
+heading = "# 7. Data Preparation and Analytic-ready Data"
+outline_section = "7"
+
+[[files]]
+name = "07-01-features-leakage.md"
+heading = "## 7.1. Derived Variables, Encoding and Leakage Control"
+outline_section = "7"
+
+[[files]]
+name = "07-02-prepared-dataset.md"
+heading = "## 7.2. Final Prepared Dataset and Reproducibility"
+outline_section = "7"
+
+[[files]]
+name = "08-00-modeling-strategy.md"
+heading = "# 8. Modeling and Analysis Strategy"
+outline_section = "8"
+
+[[files]]
+name = "08-01-candidate-methods.md"
+heading = "## 8.1. Baselines, Candidate Methods and Primary Proposal"
+outline_section = "8"
+
+[[files]]
+name = "09-00-evaluation-design.md"
+heading = "# 9. Evaluation Design"
+outline_section = "9"
+
+[[files]]
+name = "09-01-validation-success.md"
+heading = "## 9.1. Validation, Metrics and Success Criteria"
+outline_section = "9"
+
+[[files]]
+name = "09-02-fairness-interpretability.md"
+heading = "## 9.2. Leakage, Fairness and Interpretability Checks"
+outline_section = "9"
+
+[[files]]
+name = "10-00-experimental-status.md"
+heading = "# 10. Experimental Implementation and Results"
+outline_section = "10"
+
+[[files]]
+name = "11-00-findings-overview.md"
+heading = "# 11. Findings, Discussion and Decision Support"
+outline_section = "11"
+
+[[files]]
+name = "11-01-traceability-matrix.md"
+heading = "## 11.1. Final Project Traceability Matrix"
+outline_section = "11"
+
+[[files]]
+name = "11-02-aq1-findings.md"
+heading = "## 11.2. AQ1: Completion and Timing of Non-completion"
+outline_section = "11"
+
+[[files]]
+name = "11-03-aq2-findings.md"
+heading = "## 11.3. AQ2: Early Signs Associated with Non-completion"
+outline_section = "11"
+
+[[files]]
+name = "11-04-aq3-aq4-expected.md"
+heading = "## 11.4. AQ3 and AQ4: Expected Outputs"
+outline_section = "11"
+
+[[files]]
+name = "11-05-decision-support.md"
+heading = "## 11.5. Answers by Question and Decision Support"
+outline_section = "11"
+
+[[files]]
+name = "12-00-limitations.md"
+heading = "# 12. Limitations and Future Work"
+outline_section = "12"
+
+[[files]]
+name = "12-01-future-work.md"
+heading = "## 12.1. Future Work and Data Needed"
+outline_section = "12"
+
+[[files]]
+name = "13-00-genai-reflection.md"
+heading = "# 13. Generative AI Use and Reflection"
+outline_section = "13"
+
+[[files]]
+name = "14-00-conclusion.md"
+heading = "# 14. Conclusion"
+outline_section = "14"
+
+[[files]]
+name = "15-references.md"
+heading = "# References"
+
+[[files]]
+name = "16-00-appendices.md"
+heading = "# Appendices"
+
+[[tasks]]
+id = "T01"
+kind = "S"
+title = "Scaffold workspace and register the task"
+
+[[tasks]]
+id = "T02"
+kind = "HC"
+title = "Scope decisions (AskUserQuestion 2026-11-08)"
+
+[[tasks]]
+id = "T03"
+kind = "R"
+title = "Seeds: Milestone 5 brief (local) and OULAD descriptor"
+
+[[tasks]]
+id = "T04"
+kind = "S"
+title = "Entry baseline: freeze the final state of Milestones 1–4 (goal, KPIs, AQs, Change Log, dataset version, M4 choices)"
+
+[[tasks]]
+id = "T05"
+kind = "R"
+title = "Offline research A: Milestones 1–2 evidence for Parts 1–5 (local sources)"
+
+[[tasks]]
+id = "T06"
+kind = "R"
+title = "Offline research B: Milestones 3–4 evidence for Parts 5–10 and 12–13 (local sources)"
+
+[[tasks]]
+id = "T07"
+kind = "R"
+title = "Online research: integration, reporting, reproducibility and interpretation sources (reuse M1–M4 crawls first)"
+
+[[tasks]]
+id = "T08"
+kind = "S"
+title = "AQ1 and AQ2 analysis on the 2013 training runs (code/aq_analysis.py, results/, logs/), following the Milestone 4 plan"
+
+[[tasks]]
+id = "T09"
+kind = "S"
+title = "Design documents: Traceability Matrix, AQ Revision Log, AQ answers table, AI Decision Log M1–M5"
+
+[[tasks]]
+id = "T10"
+kind = "S"
+title = "Figures: project logic chain, AQ1 rates, AQ2 associations"
+
+[[tasks]]
+id = "T11"
+kind = "W"
+title = "Write full draft Parts 1–5"
+
+[[tasks]]
+id = "T12"
+kind = "W"
+title = "Write full draft Parts 6–10"
+
+[[tasks]]
+id = "T13"
+kind = "W"
+title = "Write full draft Parts 11–14"
+
+[[tasks]]
+id = "T14"
+kind = "S"
+title = "AI reviewers: consistency check and challenge of the reasoning on the full draft; decisions logged"
+
+[[tasks]]
+id = "T15"
+kind = "S"
+title = "Measure the full draft and move detail to appendices against the brief's structure"
+
+[[tasks]]
+id = "T16"
+kind = "W"
+title = "Front matter: title page, abstract, abbreviations, glossary"
+
+[[tasks]]
+id = "T17"
+kind = "S"
+title = "References: finalize_refs"
+
+[[tasks]]
+id = "T18"
+kind = "S"
+title = "Full gates: check_trail --all, make precheck"
+
+[[tasks]]
+id = "T19"
+kind = "S"
+title = "Fact spot-check"
+
+[[tasks]]
+id = "T20"
+kind = "S"
+title = "Style read-through"
+
+[[tasks]]
+id = "T21"
+kind = "S"
+title = "Final Project Package: README, provenance, access instructions, data dictionary, traceability, AI log, analysis code; clean-copy test"
+
+[[tasks]]
+id = "T22"
+kind = "S"
+title = "Build English and measure main-text pages"
+
+[[tasks]]
+id = "T23"
+kind = "S"
+title = "Vietnamese twin (build-report flow)"
+
+[[tasks]]
+id = "T24"
+kind = "S"
+title = "Build every language and post-check"
+
+[[tasks]]
+id = "T25"
+kind = "HC"
+title = "Final review with the user"
+
+[[seeds]]
+id = "S001"
+slug = "mth045-milestone5-brief-2026"
+source = "MTH045 – The Science of Data Analytics. (2026). Milestone P5: Final integration & project report [Course brief]."
+url = "milestones/05/milestone-5.md"
+item = "1"
+type = "primary"
+
+[[seeds]]
+id = "S002"
+slug = "kuzilek-2017-oulad-paper"
+source = "Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learning Analytics dataset. Scientific Data, 4, 170171"
+url = "https://doi.org/10.1038/sdata.2017.171"
+item = "2"
+type = "primary"
+
+# Task notes in research/ beside the core trail, reviews/, revisions/ and baseline/ (layout.py check)
+[layout]
+notes = [
+  { path = "design/", purpose = "Integration documents: Traceability Matrix, AQ Revision Log, AQ answers table, AI Decision Log M1–M5" },
+  { path = "ai-decision-log.md", purpose = "AI Decision Log of Milestone 5" },
+]

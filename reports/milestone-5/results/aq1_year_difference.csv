@@ -1,0 +1,10 @@
+level,unit,measure,rate_2013,n_2013,rate_2014_published,n_2014,diff_pp_2014_minus_2013,ci_low_pp,ci_high_pp
+year,all runs,non_completion,0.5144,13529,0.5376,19064,2.32,1.22,3.42
+module_year,AAA,non_completion,0.2742,383,0.3068,365,3.27,-3.23,9.75
+module_year,BBB,non_completion,0.5317,4004,0.5188,3905,-1.29,-3.49,0.91
+module_year,DDD,non_completion,0.5869,3241,0.5807,3031,-0.62,-3.06,1.82
+module_year,EEE,non_completion,0.4211,1052,0.4469,1882,2.58,-1.17,6.29
+module_year,FFF,non_completion,0.5183,3897,0.5418,3865,2.34,0.12,4.56
+module_year,GGG,non_completion,0.3782,952,0.4172,1582,3.9,-0.04,7.8
+start_month_year,B,non_completion,0.5527,4684,0.5697,7804,1.7,-0.1,3.5
+start_month_year,J,non_completion,0.4941,8845,0.5154,11260,2.13,0.74,3.52

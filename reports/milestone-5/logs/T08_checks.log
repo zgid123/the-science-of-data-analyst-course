@@ -1,0 +1,206 @@
+=== 2026-11-08T16:37:33Z ===
+$ venv/bin/python reports/milestone-5/code/aq_checks.py
+PASS  M3 fig_outcome_by_run AAA 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (258, 20, 45, 60), observed (258, 20, 45, 60)
+PASS  M3 fig_outcome_by_run BBB 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (648, 155, 459, 505), observed (648, 155, 459, 505)
+PASS  M3 fig_outcome_by_run BBB 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (896, 176, 521, 644), observed (896, 176, 521, 644)
+PASS  M3 fig_outcome_by_run DDD 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (456, 54, 361, 432), observed (456, 54, 361, 432)
+PASS  M3 fig_outcome_by_run DDD 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (731, 98, 428, 681), observed (731, 98, 428, 681)
+PASS  M3 fig_outcome_by_run EEE 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (482, 127, 200, 243), observed (482, 127, 200, 243)
+PASS  M3 fig_outcome_by_run FFF 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (664, 118, 421, 411), observed (664, 118, 421, 411)
+PASS  M3 fig_outcome_by_run FFF 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (908, 187, 513, 675), observed (908, 187, 513, 675)
+PASS  M3 fig_outcome_by_run GGG 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (451, 141, 294, 66), observed (451, 141, 294, 66)
+PASS  2013 enrolments, all runs (sum of M3 published 2013 counts)                                                           expected 13529, observed 13529
+PASS  2013 non-completers, all enrolments (M3 published Fail + Withdrawn)                                                   expected 6959, observed 6959
+PASS  AQ1 all-enrolment population in aq_results.json                                                                       expected 13529, observed 13529
+PASS  AQ1 day-14 population in aq_results.json                                                                              expected 12076, observed 12076
+PASS  day 13 run size AAA 2013J (rule_rates.csv, capacity_by_run)                                                           expected (370, 370), observed (370, 370)
+PASS  day 13 rule shares AAA 2013J (rule, missed, TMA late, inactive)                                                       expected (0.0838, 0.0, 0.0, 0.0838), observed (0.0838, 0.0, 0.0, 0.0838)
+PASS  day 13 run size BBB 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1607, 1607), observed (1607, 1607)
+PASS  day 13 rule shares BBB 2013B (rule, missed, TMA late, inactive)                                                       expected (0.262, 0.0, 0.0, 0.262), observed (0.262, 0.0, 0.0, 0.262)
+PASS  day 13 run size BBB 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1852, 1852), observed (1852, 1852)
+PASS  day 13 rule shares BBB 2013J (rule, missed, TMA late, inactive)                                                       expected (0.3013, 0.0, 0.0, 0.3013), observed (0.3013, 0.0, 0.0, 0.3013)
+PASS  day 13 run size DDD 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1197, 1197), observed (1197, 1197)
+PASS  day 13 rule shares DDD 2013B (rule, missed, TMA late, inactive)                                                       expected (0.1813, 0.0, 0.0, 0.1813), observed (0.1813, 0.0, 0.0, 0.1813)
+PASS  day 13 run size DDD 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1675, 1675), observed (1675, 1675)
+PASS  day 13 rule shares DDD 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1534, 0.0, 0.0, 0.1534), observed (0.1534, 0.0, 0.0, 0.1534)
+PASS  day 13 run size EEE 2013J (rule_rates.csv, capacity_by_run)                                                           expected (934, 934), observed (934, 934)
+PASS  day 13 rule shares EEE 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1617, 0.0, 0.0, 0.1617), observed (0.1617, 0.0, 0.0, 0.1617)
+PASS  day 13 run size FFF 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1520, 1520), observed (1520, 1520)
+PASS  day 13 rule shares FFF 2013B (rule, missed, TMA late, inactive)                                                       expected (0.1342, 0.0, 0.0, 0.1342), observed (0.1342, 0.0, 0.0, 0.1342)
+PASS  day 13 run size FFF 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1998, 1998), observed (1998, 1998)
+PASS  day 13 rule shares FFF 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1156, 0.0, 0.0, 0.1156), observed (0.1156, 0.0, 0.0, 0.1156)
+PASS  day 13 run size GGG 2013J (rule_rates.csv, capacity_by_run)                                                           expected (927, 927), observed (927, 927)
+PASS  day 13 rule shares GGG 2013J (rule, missed, TMA late, inactive)                                                       expected (0.4401, 0.0, 0.0, 0.4401), observed (0.4401, 0.0, 0.0, 0.4401)
+PASS  day 13 2013 run sizes against enrolment.enrolled_d13                                                                  expected 12080, observed 12080
+PASS  day 27 run size AAA 2013J (rule_rates.csv, capacity_by_run)                                                           expected (369, 369), observed (369, 369)
+PASS  day 27 rule shares AAA 2013J (rule, missed, TMA late, inactive)                                                       expected (0.3496, 0.0623, 0.1409, 0.1762), observed (0.3496, 0.0623, 0.1409, 0.1762)
+PASS  day 27 run size BBB 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1530, 1530), observed (1530, 1530)
+PASS  day 27 rule shares BBB 2013B (rule, missed, TMA late, inactive)                                                       expected (0.3575, 0.1497, 0.0863, 0.251), observed (0.3575, 0.1497, 0.0863, 0.251)
+PASS  day 27 run size BBB 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1834, 1834), observed (1834, 1834)
+PASS  day 27 rule shares BBB 2013J (rule, missed, TMA late, inactive)                                                       expected (0.3855, 0.1047, 0.0665, 0.3184), observed (0.3855, 0.1047, 0.0665, 0.3184)
+PASS  day 27 run size DDD 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1143, 1143), observed (1143, 1143)
+PASS  day 27 rule shares DDD 2013B (rule, missed, TMA late, inactive)                                                       expected (0.2441, 0.2196, 0.0201, 0.0761), observed (0.2441, 0.2196, 0.0201, 0.0761)
+PASS  day 27 run size DDD 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1647, 1647), observed (1647, 1647)
+PASS  day 27 rule shares DDD 2013J (rule, missed, TMA late, inactive)                                                       expected (0.2204, 0.1712, 0.0237, 0.0978), observed (0.2204, 0.1712, 0.0237, 0.0978)
+PASS  day 27 run size EEE 2013J (rule_rates.csv, capacity_by_run)                                                           expected (927, 927), observed (927, 927)
+PASS  day 27 rule shares EEE 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1845, 0.0, 0.0, 0.1845), observed (0.1845, 0.0, 0.0, 0.1845)
+PASS  day 27 run size FFF 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1454, 1454), observed (1454, 1454)
+PASS  day 27 rule shares FFF 2013B (rule, missed, TMA late, inactive)                                                       expected (0.2215, 0.0922, 0.066, 0.1204), observed (0.2215, 0.0922, 0.066, 0.1204)
+PASS  day 27 run size FFF 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1983, 1983), observed (1983, 1983)
+PASS  day 27 rule shares FFF 2013J (rule, missed, TMA late, inactive)                                                       expected (0.2456, 0.0877, 0.057, 0.1568), observed (0.2456, 0.0877, 0.057, 0.1568)
+PASS  day 27 run size GGG 2013J (rule_rates.csv, capacity_by_run)                                                           expected (924, 924), observed (924, 924)
+PASS  day 27 rule shares GGG 2013J (rule, missed, TMA late, inactive)                                                       expected (0.5476, 0.0, 0.0, 0.5476), observed (0.5476, 0.0, 0.0, 0.5476)
+PASS  day 27 2013 run sizes against enrolment.enrolled_d27                                                                  expected 11811, observed 11811
+PASS  M4 Table A.6: training enrolments day 13                                                                              expected 12080, observed 12080
+PASS  M4 Table A.6: training non-completers day 13                                                                          expected 5519, observed 5519
+PASS  M4 Table A.6: training non-completion day 13 (45.7%)                                                                  expected 45.7, observed 45.7
+PASS  M4 Table A.6: training enrolments day 27                                                                              expected 11811, observed 11811
+PASS  M4 Table A.6: training non-completers day 27                                                                          expected 5245, observed 5245
+PASS  M4 Table A.6 and Section 4.3: training non-completion day 27 (44.4%)                                                  expected 44.4, observed 44.4
+PASS  AQ2 population in aq_results.json (11,811 / 5,245)                                                                    expected (11811, 5245), observed (11811, 5245)
+PASS  M4 Section 3.2 / Table A.6: smallest training run day 13 (enrolments, non-completers)                                 expected (370, 92), observed (370, 92)  [run AAA 2013J]
+PASS  M4 Table A.6: most non-completers a 5-per-20 list can hold, day 13                                                    expected 3032, observed 3032
+PASS  M4 Section 3.2 / Table A.6: smallest training run day 27 (enrolments, non-completers)                                 expected (369, 91), observed (369, 91)  [run AAA 2013J]
+PASS  M4 Table A.6: most non-completers a 5-per-20 list can hold, day 27                                                    expected 2976, observed 2976
+PASS  M4 Section 4.3 (C13): a 5-per-20 list at day 27 holds 46% to 100% of a run's non-completers                           expected (46, 100), observed (46, 100)
+PASS  M4 Section 3.2: '44-46% of students do not complete' (training runs, day 27 and day 13)                               expected True, observed True  [44.4% at day 27, 45.7% at day 13]
+PASS  M4 Table A.7: female                                                                                                  expected (5697, 2488), observed (5697, 2488)
+PASS  M4 Table A.7: male                                                                                                    expected (6114, 2757), observed (6114, 2757)
+PASS  M4 Table A.7: declared disability                                                                                     expected (1123, 602), observed (1123, 602)
+PASS  M4 Table A.7: deprivation band 0-10%                                                                                  expected (1163, 699), observed (1163, 699)
+PASS  M4 Table A.7: deprivation band missing                                                                                expected (418, 118), observed (418, 118)
+PASS  M4 Table A.7: age 55 or over                                                                                          expected (75, 18), observed (75, 18)
+INFO  AQ1 day-14 non-completion against the M4 day-13 figure                                                                day 14: 5515/12076 = 45.67%; day 13 (Table A.6): 5,519/12,080 = 45.69%. Both round to 45.7%; the populations differ by a net 4 enrolments and 4 non-completers because 'enrolled at day d' changes between day 13 and day 14 (late registrations, unregistrations on day 14).
+INFO  Flagged enrolments (M3: 138 over 22 runs = 93 without a withdrawal day + 45 without a registration day)               2013 share: 21 (3 without a withdrawal day, 18 without a registration day); 8 of them in the day-14 population, 8 at day 27. Consistent with M3 DQ04 (87 of the 93 in October 2014 runs). The remaining 117 lie in 2014 runs and are not read.
+INFO  Not checkable on 2013 alone (needs 2014 rows)                                                                         32,593 enrolments and 28,061 in the day-14 population over 22 runs (AQ1 card), 54.7% completion in the day-14 population over 22 runs (M3 validation), 28.8% rule rate over 27,535 enrolments at day 27 (M4 Section 4.1). Partial check: 2013 holds 13,529 enrolments (12,076 at day 14); the published 2014 outcome counts add 19,064 enrolments, total 32,593 (next check).
+PASS  M3 fig_outcome_by_run total over 22 runs equals the AQ1 card's 32,593                                                 expected 32593, observed 32593
+PASS  Wilson interval 5515/12076 against statsmodels                                                                        expected (0.4478218728, 0.4655875868), observed (0.4478218728, 0.4655875868)
+PASS  Wilson interval 92/370 against statsmodels                                                                            expected (0.2073407744, 0.295122113), observed (0.2073407744, 0.295122113)
+PASS  Wilson interval 19/76 against statsmodels                                                                             expected (0.1662892741, 0.3577675184), observed (0.1662892741, 0.3577675184)
+PASS  Newcombe interval 1156/1285 - 3489/8675 against statsmodels                                                           expected (np.float64(0.47696298), np.float64(0.51581528)), observed (0.47696298, 0.51581528)
+PASS  Newcombe interval 367/577 - 4229/9383 against statsmodels                                                             expected (np.float64(0.14405103), np.float64(0.22487571)), observed (0.14405103, 0.22487571)
+PASS  Average risk difference of inactive_last7 (model without sign x module terms) against statsmodels get_margeff         expected (0.11494338, 0.013466), observed (0.11494338, 0.013466)
+PASS  Average risk difference of low_relative_activity (model without sign x module terms) against statsmodels get_margeff  expected (0.13435615, 0.00956), observed (0.13435615, 0.00956)
+PASS  Average risk difference of no_pre_start_activity (model without sign x module terms) against statsmodels get_margeff  expected (0.09592268, 0.012343), observed (0.09592268, 0.012343)
+PASS  no 2014 run in aq1_denominator_shift.csv                                                                              expected False, observed False
+PASS  no 2014 run in aq1_first_missed_week_cumulative.csv                                                                   expected False, observed False
+PASS  no 2014 run in aq1_first_missed_week_summary.csv                                                                      expected False, observed False
+PASS  no 2014 run in aq1_rates.csv                                                                                          expected False, observed False
+PASS  no 2014 run in aq1_runs_task_due.csv                                                                                  expected False, observed False
+PASS  no 2014 run in aq1_subgroup_rates.csv                                                                                 expected False, observed False
+PASS  no 2014 run in aq1_validation_two_paths.csv                                                                           expected False, observed False
+PASS  no 2014 run in aq2_associations.csv                                                                                   expected False, observed False
+PASS  no 2014 run in aq2_binned_residuals.csv                                                                               expected False, observed False
+PASS  no 2014 run in aq2_model_coefficients.csv                                                                             expected False, observed False
+PASS  no 2014 run in aq2_module_effects.csv                                                                                 expected False, observed False
+PASS  no 2014 run in aq2_sensitivity.csv                                                                                    expected False, observed False
+PASS  no 2014 run in aq2_sign_correlation.csv                                                                               expected False, observed False
+PASS  no 2014 run in aq2_sign_rates_by_run.csv                                                                              expected False, observed False
+PASS  no 2014 run in aq2_subgroups.csv                                                                                      expected False, observed False
+PASS  2014 rows of aq1_year_comparison.csv all labelled as published in Milestone 3                                         expected True, observed True
+SUMMARY: 95 PASS, 0 FAIL, 3 INFO
+exit status: 0
+
+=== 2026-11-08T16:37:36Z ===
+$ venv/bin/python reports/milestone-5/code/aq_checks.py
+PASS  M3 fig_outcome_by_run AAA 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (258, 20, 45, 60), observed (258, 20, 45, 60)
+PASS  M3 fig_outcome_by_run BBB 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (648, 155, 459, 505), observed (648, 155, 459, 505)
+PASS  M3 fig_outcome_by_run BBB 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (896, 176, 521, 644), observed (896, 176, 521, 644)
+PASS  M3 fig_outcome_by_run DDD 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (456, 54, 361, 432), observed (456, 54, 361, 432)
+PASS  M3 fig_outcome_by_run DDD 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (731, 98, 428, 681), observed (731, 98, 428, 681)
+PASS  M3 fig_outcome_by_run EEE 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (482, 127, 200, 243), observed (482, 127, 200, 243)
+PASS  M3 fig_outcome_by_run FFF 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (664, 118, 421, 411), observed (664, 118, 421, 411)
+PASS  M3 fig_outcome_by_run FFF 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (908, 187, 513, 675), observed (908, 187, 513, 675)
+PASS  M3 fig_outcome_by_run GGG 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (451, 141, 294, 66), observed (451, 141, 294, 66)
+PASS  2013 enrolments, all runs (sum of M3 published 2013 counts)                                                           expected 13529, observed 13529
+PASS  2013 non-completers, all enrolments (M3 published Fail + Withdrawn)                                                   expected 6959, observed 6959
+PASS  AQ1 all-enrolment population in aq_results.json                                                                       expected 13529, observed 13529
+PASS  AQ1 day-14 population in aq_results.json                                                                              expected 12076, observed 12076
+PASS  day 13 run size AAA 2013J (rule_rates.csv, capacity_by_run)                                                           expected (370, 370), observed (370, 370)
+PASS  day 13 rule shares AAA 2013J (rule, missed, TMA late, inactive)                                                       expected (0.0838, 0.0, 0.0, 0.0838), observed (0.0838, 0.0, 0.0, 0.0838)
+PASS  day 13 run size BBB 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1607, 1607), observed (1607, 1607)
+PASS  day 13 rule shares BBB 2013B (rule, missed, TMA late, inactive)                                                       expected (0.262, 0.0, 0.0, 0.262), observed (0.262, 0.0, 0.0, 0.262)
+PASS  day 13 run size BBB 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1852, 1852), observed (1852, 1852)
+PASS  day 13 rule shares BBB 2013J (rule, missed, TMA late, inactive)                                                       expected (0.3013, 0.0, 0.0, 0.3013), observed (0.3013, 0.0, 0.0, 0.3013)
+PASS  day 13 run size DDD 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1197, 1197), observed (1197, 1197)
+PASS  day 13 rule shares DDD 2013B (rule, missed, TMA late, inactive)                                                       expected (0.1813, 0.0, 0.0, 0.1813), observed (0.1813, 0.0, 0.0, 0.1813)
+PASS  day 13 run size DDD 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1675, 1675), observed (1675, 1675)
+PASS  day 13 rule shares DDD 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1534, 0.0, 0.0, 0.1534), observed (0.1534, 0.0, 0.0, 0.1534)
+PASS  day 13 run size EEE 2013J (rule_rates.csv, capacity_by_run)                                                           expected (934, 934), observed (934, 934)
+PASS  day 13 rule shares EEE 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1617, 0.0, 0.0, 0.1617), observed (0.1617, 0.0, 0.0, 0.1617)
+PASS  day 13 run size FFF 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1520, 1520), observed (1520, 1520)
+PASS  day 13 rule shares FFF 2013B (rule, missed, TMA late, inactive)                                                       expected (0.1342, 0.0, 0.0, 0.1342), observed (0.1342, 0.0, 0.0, 0.1342)
+PASS  day 13 run size FFF 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1998, 1998), observed (1998, 1998)
+PASS  day 13 rule shares FFF 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1156, 0.0, 0.0, 0.1156), observed (0.1156, 0.0, 0.0, 0.1156)
+PASS  day 13 run size GGG 2013J (rule_rates.csv, capacity_by_run)                                                           expected (927, 927), observed (927, 927)
+PASS  day 13 rule shares GGG 2013J (rule, missed, TMA late, inactive)                                                       expected (0.4401, 0.0, 0.0, 0.4401), observed (0.4401, 0.0, 0.0, 0.4401)
+PASS  day 13 2013 run sizes against enrolment.enrolled_d13                                                                  expected 12080, observed 12080
+PASS  day 27 run size AAA 2013J (rule_rates.csv, capacity_by_run)                                                           expected (369, 369), observed (369, 369)
+PASS  day 27 rule shares AAA 2013J (rule, missed, TMA late, inactive)                                                       expected (0.3496, 0.0623, 0.1409, 0.1762), observed (0.3496, 0.0623, 0.1409, 0.1762)
+PASS  day 27 run size BBB 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1530, 1530), observed (1530, 1530)
+PASS  day 27 rule shares BBB 2013B (rule, missed, TMA late, inactive)                                                       expected (0.3575, 0.1497, 0.0863, 0.251), observed (0.3575, 0.1497, 0.0863, 0.251)
+PASS  day 27 run size BBB 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1834, 1834), observed (1834, 1834)
+PASS  day 27 rule shares BBB 2013J (rule, missed, TMA late, inactive)                                                       expected (0.3855, 0.1047, 0.0665, 0.3184), observed (0.3855, 0.1047, 0.0665, 0.3184)
+PASS  day 27 run size DDD 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1143, 1143), observed (1143, 1143)
+PASS  day 27 rule shares DDD 2013B (rule, missed, TMA late, inactive)                                                       expected (0.2441, 0.2196, 0.0201, 0.0761), observed (0.2441, 0.2196, 0.0201, 0.0761)
+PASS  day 27 run size DDD 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1647, 1647), observed (1647, 1647)
+PASS  day 27 rule shares DDD 2013J (rule, missed, TMA late, inactive)                                                       expected (0.2204, 0.1712, 0.0237, 0.0978), observed (0.2204, 0.1712, 0.0237, 0.0978)
+PASS  day 27 run size EEE 2013J (rule_rates.csv, capacity_by_run)                                                           expected (927, 927), observed (927, 927)
+PASS  day 27 rule shares EEE 2013J (rule, missed, TMA late, inactive)                                                       expected (0.1845, 0.0, 0.0, 0.1845), observed (0.1845, 0.0, 0.0, 0.1845)
+PASS  day 27 run size FFF 2013B (rule_rates.csv, capacity_by_run)                                                           expected (1454, 1454), observed (1454, 1454)
+PASS  day 27 rule shares FFF 2013B (rule, missed, TMA late, inactive)                                                       expected (0.2215, 0.0922, 0.066, 0.1204), observed (0.2215, 0.0922, 0.066, 0.1204)
+PASS  day 27 run size FFF 2013J (rule_rates.csv, capacity_by_run)                                                           expected (1983, 1983), observed (1983, 1983)
+PASS  day 27 rule shares FFF 2013J (rule, missed, TMA late, inactive)                                                       expected (0.2456, 0.0877, 0.057, 0.1568), observed (0.2456, 0.0877, 0.057, 0.1568)
+PASS  day 27 run size GGG 2013J (rule_rates.csv, capacity_by_run)                                                           expected (924, 924), observed (924, 924)
+PASS  day 27 rule shares GGG 2013J (rule, missed, TMA late, inactive)                                                       expected (0.5476, 0.0, 0.0, 0.5476), observed (0.5476, 0.0, 0.0, 0.5476)
+PASS  day 27 2013 run sizes against enrolment.enrolled_d27                                                                  expected 11811, observed 11811
+PASS  M4 Table A.6: training enrolments day 13                                                                              expected 12080, observed 12080
+PASS  M4 Table A.6: training non-completers day 13                                                                          expected 5519, observed 5519
+PASS  M4 Table A.6: training non-completion day 13 (45.7%)                                                                  expected 45.7, observed 45.7
+PASS  M4 Table A.6: training enrolments day 27                                                                              expected 11811, observed 11811
+PASS  M4 Table A.6: training non-completers day 27                                                                          expected 5245, observed 5245
+PASS  M4 Table A.6 and Section 4.3: training non-completion day 27 (44.4%)                                                  expected 44.4, observed 44.4
+PASS  AQ2 population in aq_results.json (11,811 / 5,245)                                                                    expected (11811, 5245), observed (11811, 5245)
+PASS  M4 Section 3.2 / Table A.6: smallest training run day 13 (enrolments, non-completers)                                 expected (370, 92), observed (370, 92)  [run AAA 2013J]
+PASS  M4 Table A.6: most non-completers a 5-per-20 list can hold, day 13                                                    expected 3032, observed 3032
+PASS  M4 Section 3.2 / Table A.6: smallest training run day 27 (enrolments, non-completers)                                 expected (369, 91), observed (369, 91)  [run AAA 2013J]
+PASS  M4 Table A.6: most non-completers a 5-per-20 list can hold, day 27                                                    expected 2976, observed 2976
+PASS  M4 Section 4.3 (C13): a 5-per-20 list at day 27 holds 46% to 100% of a run's non-completers                           expected (46, 100), observed (46, 100)
+PASS  M4 Section 3.2: '44-46% of students do not complete' (training runs, day 27 and day 13)                               expected True, observed True  [44.4% at day 27, 45.7% at day 13]
+PASS  M4 Table A.7: female                                                                                                  expected (5697, 2488), observed (5697, 2488)
+PASS  M4 Table A.7: male                                                                                                    expected (6114, 2757), observed (6114, 2757)
+PASS  M4 Table A.7: declared disability                                                                                     expected (1123, 602), observed (1123, 602)
+PASS  M4 Table A.7: deprivation band 0-10%                                                                                  expected (1163, 699), observed (1163, 699)
+PASS  M4 Table A.7: deprivation band missing                                                                                expected (418, 118), observed (418, 118)
+PASS  M4 Table A.7: age 55 or over                                                                                          expected (75, 18), observed (75, 18)
+INFO  AQ1 day-14 non-completion against the M4 day-13 figure                                                                day 14: 5515/12076 = 45.67%; day 13 (Table A.6): 5,519/12,080 = 45.69%. Both round to 45.7%; the populations differ by a net 4 enrolments and 4 non-completers because 'enrolled at day d' changes between day 13 and day 14 (late registrations, unregistrations on day 14).
+INFO  Flagged enrolments (M3: 138 over 22 runs = 93 without a withdrawal day + 45 without a registration day)               2013 share: 21 (3 without a withdrawal day, 18 without a registration day); 8 of them in the day-14 population, 8 at day 27. Consistent with M3 DQ04 (87 of the 93 in October 2014 runs). The remaining 117 lie in 2014 runs and are not read.
+INFO  Not checkable on 2013 alone (needs 2014 rows)                                                                         32,593 enrolments and 28,061 in the day-14 population over 22 runs (AQ1 card), 54.7% completion in the day-14 population over 22 runs (M3 validation), 28.8% rule rate over 27,535 enrolments at day 27 (M4 Section 4.1). Partial check: 2013 holds 13,529 enrolments (12,076 at day 14); the published 2014 outcome counts add 19,064 enrolments, total 32,593 (next check).
+PASS  M3 fig_outcome_by_run total over 22 runs equals the AQ1 card's 32,593                                                 expected 32593, observed 32593
+PASS  Wilson interval 5515/12076 against statsmodels                                                                        expected (0.4478218728, 0.4655875868), observed (0.4478218728, 0.4655875868)
+PASS  Wilson interval 92/370 against statsmodels                                                                            expected (0.2073407744, 0.295122113), observed (0.2073407744, 0.295122113)
+PASS  Wilson interval 19/76 against statsmodels                                                                             expected (0.1662892741, 0.3577675184), observed (0.1662892741, 0.3577675184)
+PASS  Newcombe interval 1156/1285 - 3489/8675 against statsmodels                                                           expected (np.float64(0.47696298), np.float64(0.51581528)), observed (0.47696298, 0.51581528)
+PASS  Newcombe interval 367/577 - 4229/9383 against statsmodels                                                             expected (np.float64(0.14405103), np.float64(0.22487571)), observed (0.14405103, 0.22487571)
+PASS  Average risk difference of inactive_last7 (model without sign x module terms) against statsmodels get_margeff         expected (0.11494338, 0.013466), observed (0.11494338, 0.013466)
+PASS  Average risk difference of low_relative_activity (model without sign x module terms) against statsmodels get_margeff  expected (0.13435615, 0.00956), observed (0.13435615, 0.00956)
+PASS  Average risk difference of no_pre_start_activity (model without sign x module terms) against statsmodels get_margeff  expected (0.09592268, 0.012343), observed (0.09592268, 0.012343)
+PASS  no 2014 run in aq1_denominator_shift.csv                                                                              expected False, observed False
+PASS  no 2014 run in aq1_first_missed_week_cumulative.csv                                                                   expected False, observed False
+PASS  no 2014 run in aq1_first_missed_week_summary.csv                                                                      expected False, observed False
+PASS  no 2014 run in aq1_rates.csv                                                                                          expected False, observed False
+PASS  no 2014 run in aq1_runs_task_due.csv                                                                                  expected False, observed False
+PASS  no 2014 run in aq1_subgroup_rates.csv                                                                                 expected False, observed False
+PASS  no 2014 run in aq1_validation_two_paths.csv                                                                           expected False, observed False
+PASS  no 2014 run in aq2_associations.csv                                                                                   expected False, observed False
+PASS  no 2014 run in aq2_binned_residuals.csv                                                                               expected False, observed False
+PASS  no 2014 run in aq2_model_coefficients.csv                                                                             expected False, observed False
+PASS  no 2014 run in aq2_module_effects.csv                                                                                 expected False, observed False
+PASS  no 2014 run in aq2_sensitivity.csv                                                                                    expected False, observed False
+PASS  no 2014 run in aq2_sign_correlation.csv                                                                               expected False, observed False
+PASS  no 2014 run in aq2_sign_rates_by_run.csv                                                                              expected False, observed False
+PASS  no 2014 run in aq2_subgroups.csv                                                                                      expected False, observed False
+PASS  2014 rows of aq1_year_comparison.csv all labelled as published in Milestone 3                                         expected True, observed True
+SUMMARY: 95 PASS, 0 FAIL, 3 INFO
+exit status: 0
+
