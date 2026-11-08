@@ -120,3 +120,34 @@ Research process, publications, experiments and metrics, as used across computer
 | controls (added to the experiments) | biện pháp đối chứng | A baseline or test added so a comparison isolates one factor | yếu tố đối chứng |
 | synthetic users | người dùng tổng hợp | | |
 | likelihood × impact / likelihood and impact | khả năng xảy ra × mức độ tác động / khả năng xảy ra và mức độ tác động | Risk assessment | |
+
+## Statistics and predictive-model evaluation
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| binned residuals | phần dư theo nhóm |  |  |
+| Brier score | điểm Brier |  |  |
+| calibration slope | độ dốc hiệu chuẩn | first use: "độ dốc hiệu chuẩn (calibration slope)" |  |
+| calibration-in-the-large | hiệu chuẩn tổng thể | first use: "hiệu chuẩn tổng thể (calibration-in-the-large)" |  |
+| censored (observation) | bị kiểm duyệt | first use: "bị kiểm duyệt (censored)" |  |
+| decile | nhóm thập phân vị (decile) |  |  |
+| discrete-time survival model | mô hình sống sót thời gian rời rạc |  |  |
+| external validation | kiểm định ngoài | first use: "kiểm định ngoài (external validation)" |  |
+| Holm adjustment | hiệu chỉnh Holm | correction for several comparisons |  |
+| logarithm (of counts) | logarit | "logarit của số lượt nhấp" | |
+| mixed-effects logistic regression | hồi quy logistic hiệu ứng hỗn hợp |  |  |
+| mixed-effects model | mô hình hiệu ứng hỗn hợp |  |  |
+| nested cross-validation / nested tuning | kiểm định chéo lồng nhau / tinh chỉnh lồng nhau |  |  |
+| net benefit | lợi ích ròng | first use: "lợi ích ròng (net benefit)" |  |
+| odds ratio | tỉ số odds | first use: "tỉ số odds (odds ratio)" |  |
+| outlier | giá trị ngoại lai |  |  |
+| population (statistical) | tổng thể | | |
+| positive predictive value | giá trị dự báo dương |  |  |
+| risk difference | chênh lệch nguy cơ | in percentage points: "chênh lệch nguy cơ 5 điểm phần trăm" |  |
+| sensitivity check | kiểm tra độ nhạy |  |  |
+| shrinkage (of coefficients) | phép co hệ số | first use: "phép co hệ số (shrinkage)" |  |
+| sign-flip (permutation) test | kiểm định đổi dấu | first use: "kiểm định hoán vị đổi dấu (sign-flip test)" |  |
+| skewed (distribution) | lệch (phân phối lệch) | "phân phối lệch mạnh" | |
+| skewness | độ lệch phân phối (skewness) | a bare "độ lệch" reads as deviation | |
+| statistical power | lực kiểm định |  |  |
+| upper interquartile fence | ngưỡng trên theo khoảng tứ phân vị |  |  |

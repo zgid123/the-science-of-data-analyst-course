@@ -49,3 +49,9 @@ Threats, attacks, identity and access, and privacy, as used across computer secu
 | secret (deployment) / signing key | khóa bí mật / khóa ký | | |
 | critical / high / medium / low (severity) | nghiêm trọng / cao / trung bình / thấp | Capitalised in table cells | |
 | defence in depth | phòng thủ nhiều lớp | | |
+
+## Data anonymisation
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| k-anonymity | chuẩn k-ẩn danh (k-anonymity) | | |

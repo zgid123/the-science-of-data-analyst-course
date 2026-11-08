@@ -62,3 +62,16 @@ Data engineering, storage, data quality and data governance. Loaded for every re
 | predicate | vị từ | | |
 | advisory lock / connection pool | khóa tư vấn (advisory lock) / nhóm kết nối | | |
 | conjunction / disjunction | phép hội / phép tuyển | | |
+
+## Tables, keys and data preparation
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| data dictionary | từ điển dữ liệu |  |  |
+| granularity | độ chi tiết | | |
+| imputation / impute | điền giá trị thiếu | avoid: "quy nạp", "nội suy" (interpolation is a different method) | quy nạp giá trị |
+| inner join | nối trong (inner join) |  |  |
+| join (of tables); left join | phép nối bảng; nối trái (left join) |  |  |
+| many to one / one to one (table relationship) | nhiều – một / một – một | | |
+| parent table | bảng cha | a table that keys refer to; "bảng gốc" stays for a raw source table | |
+| primary key / foreign key | khóa chính / khóa ngoại |  |  |

@@ -104,3 +104,9 @@ Architecture, interfaces, operations and reliability of software systems. Loaded
 | handler / content handler | bộ xử lý (handler) / bộ xử lý nội dung | First use with English | |
 | event spine | trục sự kiện | First use "trục sự kiện (event spine)" | xương sống sự kiện, cột sống sự kiện |
 | design principle | nguyên tắc thiết kế | | |
+
+## File systems
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| hard link (file system) | liên kết cứng (hard link) | | |

@@ -112,3 +112,13 @@ Models, learning, retrieval-augmented generation and agents. Loaded for every re
 | multi-agent debate | tranh luận đa tác tử | | |
 | generator / critic agent | tác tử sinh / tác tử phản biện | | |
 | human-in-the-loop | có con người tham gia (human-in-the-loop) | First use with English | |
+
+## Predictive models and tuning
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| gradient-boosted trees | cây tăng cường độ dốc | first use: "cây tăng cường độ dốc (gradient-boosted trees)" |  |
+| (hyperparameter) tuning | tinh chỉnh siêu tham số | "tinh chỉnh" alone means fine-tuning |  |
+| model card / datasheet (for datasets) | thẻ mô hình / bảng mô tả dữ liệu | first use: "thẻ mô hình (model card)", "bảng mô tả dữ liệu (datasheet)" |  |
+| penalised logistic regression | hồi quy logistic có hiệu chỉnh phạt | first use: "hồi quy logistic có hiệu chỉnh phạt (penalised logistic regression)" |  |
+| shallow (decision) tree | cây quyết định nông |  |  |

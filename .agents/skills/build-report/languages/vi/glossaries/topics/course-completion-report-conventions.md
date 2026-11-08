@@ -1,0 +1,51 @@
+# Topic glossary: report conventions of the course-completion project
+
+Wording that team N04's MTH045 reports share across milestones: the course brief's own labels and deliverable names (kept in English where the brief writes them in English), the AI roles in the team's workflow, and fixed phrases of the running text. Concepts of the analysis itself are in course-completion-early-contact, oulad-data-preparation and early-warning-evaluation.
+
+## Course brief labels and deliverable names
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| AI Decision Log | Nhật ký quyết định về AI (AI Decision Log) | the brief's deliverable F |  |
+| Before → After | Before → After | the brief's label |  |
+| brief (course brief) | đề bài | | |
+| Change Log entry Cn | thay đổi Cn trong Nhật ký thay đổi | "thay đổi C14 trong Nhật ký thay đổi (Phụ lục VIII)" |  |
+| Controlled Change Log / controlled revision | nhật ký thay đổi có kiểm soát / điều chỉnh có kiểm soát | | |
+| entry gate (of a milestone) | điều kiện đầu vào |  |  |
+| frozen baseline | phiên bản cơ sở đã chốt | the Milestone 1 baseline copied and checksummed | |
+| Level 1 / Level 2 (brief) | Level 1 / Level 2 | brief's own terms, keep English |  |
+| level of claim (brief: "mức claim") | mức độ khẳng định | avoid "mức kết luận" | mức kết luận |
+| Risk and Ethics Notes (brief) | Risk & Ethics Notes | brief's own term; first use "Risk & Ethics Notes (ghi chú về rủi ro và đạo đức)" |  |
+| traceability matrix | ma trận truy vết |  |  |
+
+## AI roles in the team's workflow
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| AI interviewer | AI đóng vai người phỏng vấn | | AI phỏng vấn |
+| code assistant / preparation critic / documentation assistant / synthetic-data assistant (AI roles) | Trợ lý viết mã / AI phản biện quy trình chuẩn bị / Trợ lý viết tài liệu / Trợ lý tạo dữ liệu giả lập | | |
+| data dictionary interpreter (AI role) | AI diễn giải từ điển dữ liệu | the brief's role name in brackets at first use | |
+| EDA and quality checklist partner (AI role) | AI hỗ trợ phân tích khám phá dữ liệu (EDA) và lập danh mục kiểm tra chất lượng | short form in tables: "AI hỗ trợ EDA và danh mục kiểm tra chất lượng" | |
+| evaluation reviewer (AI role) | AI rà soát thiết kế đánh giá |  |  |
+| feature engineering ideator (AI role) | AI gợi ý xây dựng đặc trưng | | |
+| leakage auditor (AI role) | AI kiểm tra rò rỉ thông tin | | |
+| literature assistant (AI role) | trợ lý tìm tài liệu | first use: "trợ lý tìm tài liệu (literature assistant)" |  |
+| metadata interpreter (AI role) | AI diễn giải metadata | | |
+| model-selection critic (AI role) | AI phản biện lựa chọn mô hình |  |  |
+| requirement critic / selection reviewer / search strategist | AI phản biện yêu cầu / AI phản biện lựa chọn / AI hỗ trợ tìm kiếm | | |
+| research assistant (AI role) | trợ lý tìm tài liệu | | |
+| reviewer (AI role) / sparring partner | người đánh giá (reviewer) / người phản biện (sparring partner) | two different roles, two different words | |
+| role prompt | prompt giao vai | | |
+
+## Fixed wording in the running text
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| clause of a question | phần câu hỏi | | |
+| England (vs United Kingdom) | xứ Anh (England) | "Vương quốc Anh (UK)" for the whole country |  |
+| fact (from documentation) | thông tin làm căn cứ | avoid "dữ kiện" | |
+| five modules (count) | 5 module | write the numeral, so "năm module" is not read as "module of a year" | |
+| "… in full" (appendix block heading) | Chi tiết về … | avoid the calque "…, trình bày đầy đủ" | |
+| PASS / FAIL (result of a check) | PASS / FAIL | keep the English status words; in prose "phép kiểm tra báo lỗi"; avoid "không đạt", which reads as a student's Fail | |
+| stays a requirement (nothing changes status) | vẫn là yêu cầu | avoid: "trở thành yêu cầu", "chuyển thành yêu cầu" | |
+| the team (authors of the report) | nhóm tác giả | a bare "nhóm" where the brief's generic "a team" is meant | |
