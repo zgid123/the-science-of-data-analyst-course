@@ -18,6 +18,30 @@ Wording that team N04's MTH045 reports share across milestones: the course brief
 | Risk and Ethics Notes (brief) | Risk & Ethics Notes | brief's own term; first use "Risk & Ethics Notes (ghi chú về rủi ro và đạo đức)" |  |
 | traceability matrix | ma trận truy vết |  |  |
 
+## Final integration and the final report
+
+| English | Vietnamese | Usage | Replaces |
+| --- | --- | --- | --- |
+| Final Project Report | báo cáo đồ án cuối kỳ | the brief's report name; title "Báo cáo đồ án cuối kỳ: …"; first use in the text may add "(Final Project Report)" |  |
+| Final Project Traceability Matrix | ma trận truy vết của đồ án (Final Project Traceability Matrix) | the brief's mandatory table; after first use "ma trận truy vết", as in the row "traceability matrix" |  |
+| AQ Revision Log | Nhật ký điều chỉnh AQ (AQ Revision Log) | the brief's table tracing each change of AQ1–AQ4 from the proposal to the final report; English in brackets at first use |  |
+| final AQ / final (analytical) question | AQ cuối cùng / câu hỏi phân tích cuối cùng | "bốn câu hỏi cuối cùng AQ1–AQ4" |  |
+| final integration (of Milestones 1–4) | bước tích hợp cuối cùng | the brief: "tích hợp có chọn lọc kết quả của Milestone 1–4"; "tích hợp bảng" stays for table joins |  |
+| final status / status (of a final question) | trạng thái cuối cùng / trạng thái | column header "Trạng thái" |  |
+| Answered / Partial / Deferred / Dropped (final status) | Đã trả lời / Trả lời một phần / Hoãn / Loại bỏ | the brief's labels; first use in a file adds the English: "Trả lời một phần (Partial)"; table cells in Vietnamese |  |
+| Keep / Modify / Defer / Drop (revision action); Modify + Defer | Giữ nguyên / Điều chỉnh / Hoãn / Loại bỏ; Điều chỉnh + Hoãn | the same words as the final status where the concept is the same; first use adds the English |  |
+| main finding / expected output | phát hiện chính / kết quả dự kiến | column "Phát hiện chính hoặc kết quả dự kiến"; an expected output of a question not yet run is never written as a result |  |
+| confidence (of a final answer): High / Moderate / Not applicable | độ tin cậy: Cao / Trung bình / Không áp dụng | column "Độ tin cậy / hạn chế"; "mức tin cậy" stays for the 95% of an interval |  |
+| implication for decision / decision support | ý nghĩa đối với quyết định / hỗ trợ ra quyết định | column header "Ý nghĩa đối với quyết định" |  |
+| decision option | phương án quyết định | first use: "phương án quyết định (decision option), tức là khuyến nghị cần kiểm chứng qua thí điểm"; never presented as a proven remedy |  |
+| no evidence found / no data to test / test not yet run (untested by design) | không tìm thấy bằng chứng / không có dữ liệu để kiểm tra / chưa chạy kiểm tra | three kinds of limit kept apart: a comparison was made and showed no clear difference; OULAD holds no such data; the data exist but the test waits |  |
+| limitation log | danh mục hạn chế | the brief's "limitation log / unresolved gaps"; one row per limit with its kind and handling |  |
+| GAP / N.A. (traceability cells) | GAP / N.A. | the brief's labels, keep English; explained once: "GAP (mắt xích chưa có bằng chứng), N.A. (không áp dụng)" |  |
+| Final Project Package | Gói nộp cuối kỳ (Final Project Package) | the brief's section title; after first use "gói nộp cuối kỳ" |  |
+| Level 2 specified, not run | Level 2 đã đặc tả, chưa chạy | "Level 1 đã hoàn thành; Level 2 đã đặc tả, chưa chạy" |  |
+| recount (of the baseline) | tính lại | "mức cơ sở được tính lại theo Thông tư 83/2026" |  |
+| re-check (on the university's records) | kiểm chứng lại | "mọi kết quả phải được kiểm chứng lại trên dữ liệu của trường" |  |
+
 ## AI roles in the team's workflow
 
 | English | Vietnamese | Usage | Replaces |

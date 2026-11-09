@@ -28,7 +28,7 @@ guide = "guide.md"                         # read in full before translating
 review = "review.md"                       # the native reviewer's protocol and checklist (after translation)
 lessons = "lessons.md"                     # what human reviewers changed, with examples; source of guide 2.7 and review 3.5
 glossaries = "glossaries"                  # layered: common/ (always), domains/ and topics/ (per task)
-terms_page = "00-2-*"                      # terms page: each cell opens with the English term, "Acquirer – Tổ chức thanh toán thẻ"
+terms_page = "00-?-glossary*"             # terms page: each cell opens with the English term, "Acquirer – Tổ chức thanh toán thẻ"
 extra_files = ["00-0a-*", "00-0b-*"]       # Vietnamese-only pages (from templates/): kept out of sync and parity
 extras = "templates"
 

@@ -9,8 +9,8 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | feature (predictor) | đặc trưng | | |
 | prediction point | thời điểm dự báo | equals the data cut-off in this report | |
 | prediction target / unit / horizon | biến cần dự đoán / đơn vị phân tích / khoảng thời gian dự đoán | | |
-| predictor (in running text) | đặc trưng | follows the row "feature (predictor)"; Milestone 3 uses "đặc trưng" throughout; Milestone 4 keeps its own "biến dự báo" | |
-| primary / extended predictors | đặc trưng chính / đặc trưng mở rộng | the 20 default columns and the 10 comparison columns of the feature views | |
+| predictor (in running text) | biến dự báo (bộ biến dự báo chính / mở rộng) | a model input chosen for a question, as in Milestone 4 and 5; "feature" (a derived column of the prepared views) stays "đặc trưng" | |
+| primary / extended predictors (Milestone 3 feature views) | đặc trưng chính / đặc trưng mở rộng | the 20 default columns and the 10 comparison columns of the feature views, as Milestone 3 names them | |
 | risk score | điểm rủi ro | never a bare "điểm", which reads as a grade | |
 | smaller class (of the target) | lớp nhãn ít mẫu hơn | avoid "lớp nhỏ hơn", which reads as a classroom |  |
 | smaller class (outcome balance) | lớp thiểu số | | |
@@ -44,7 +44,8 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | fixed effects (of module run) | hiệu ứng cố định | first use: "hiệu ứng cố định (fixed effects) theo kỳ mở" |  |
 | labels-available variant | phương án huấn luyện chỉ trên các kỳ mở tháng 2 năm 2013 | scores the 2014 February runs; first use adds why: "vì kết quả các kỳ mở tháng 10 năm 2013 chưa có khi đó" | phương án chỉ dùng kết quả đã biết |
 | log-odds | log-odds | keep English, as in the calibration terms; "log-odds của biến cố không hoàn thành", not "của khả năng", since odds are not a probability |  |
-| penalty (of a penalised model) | hiệu chỉnh phạt | "hiệu chỉnh phạt co mọi hệ số"; matches "hồi quy logistic có hiệu chỉnh phạt" |  |
+| penalty (of a penalised model) | điều chuẩn | "điều chuẩn co mọi hệ số"; matches "hồi quy logistic có điều chuẩn (penalised)"; "hiệu chỉnh" stays for "adjusted" (Milestone 5 reader test); Milestones 1–4 wrote "hiệu chỉnh phạt" |  |
+| penalised logistic regression | hồi quy logistic có điều chuẩn (penalised) | Milestone 5 form; overrides the common row "hồi quy logistic có hiệu chỉnh phạt"; first use in a file with "(penalised)", then "hồi quy logistic có điều chuẩn" |  |
 | primary approach | phương pháp chính | first use: "phương pháp chính (primary approach)" |  |
 
 ## Evaluation measures and statistical tests
@@ -55,7 +56,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | base rate | tỷ lệ nền | share of non-completers among enrolled students |  |
 | discrimination (of a model) | khả năng phân biệt | ability to rank non-completers above completers |  |
 | false alarm | cảnh báo nhầm | | |
-| gain over the base rate (lift) | mức vượt tỷ lệ nền (lift) |  |  |
+| gain over the base rate (lift) | mức vượt tỷ lệ nền (lift) | Milestone 4 form; Milestone 5 uses the row "lift" with its first-use definition (reader test: "mức vượt tỷ lệ nền" read as invented) |  |
 | hierarchical (two-level) bootstrap | bootstrap phân tầng | "bootstrap hai tầng" for the project's run-then-enrolment scheme |  |
 | lift (Milestone 3 first use) | lift | first use, once in the document: "lift, tức tỷ số giữa độ chính xác của danh sách và tỷ lệ nền (lift bằng 1 nghĩa là không hơn một danh sách ngẫu nhiên)"; second reader test: "số lần … vượt" read as a count; "mức vượt tỷ lệ nền (lift)" stays the row of Milestone 4 | |
 | precision (of a list) | độ chính xác của danh sách | first use: "độ chính xác của danh sách (precision)" |  |
@@ -63,6 +64,17 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | two-level bootstrap (runs, then enrolments) | bootstrap hai tầng | first use: "bootstrap hai tầng (lấy mẫu lại kỳ mở, rồi lượt đăng ký học trong từng kỳ mở)" |  |
 | usefulness for decisions | giá trị hỗ trợ ra quyết định |  |  |
 | wins, ties and losses (per run) | số kỳ mở thắng, hòa và thua |  |  |
+| adjusted / unadjusted risk difference | chênh lệch nguy cơ đã hiệu chỉnh / chưa hiệu chỉnh | in percentage points, within module run: "chênh lệch nguy cơ đã hiệu chỉnh 40,8 điểm phần trăm" |  |
+| percentage point | điểm phần trăm | "10 điểm phần trăm"; never a bare "điểm" for a rate gap in running text |  |
+| effect size | độ lớn hiệu ứng | "mỗi phát hiện là một độ lớn hiệu ứng kèm khoảng tin cậy 95% và phạm vi dữ liệu" |  |
+| Wilson interval / Newcombe (hybrid score) interval | khoảng tin cậy Wilson / khoảng tin cậy Newcombe | "tỷ lệ kèm khoảng tin cậy Wilson 95%"; the year difference takes the Newcombe interval |  |
+| one-sided interval | khoảng tin cậy một phía | "khoảng tin cậy một phía đã hiệu chỉnh Holm" |  |
+| pooled (over runs) | gộp | "tỷ lệ gộp của 9 kỳ mở năm 2013", "tỷ lệ phát hiện chuẩn hóa gộp qua các kỳ mở" |  |
+| within module run (comparison) | trong cùng kỳ mở module | "so sánh trong cùng kỳ mở module"; short form "trong từng kỳ mở" |  |
+| sensitivity run | phép kiểm tra độ nhạy | one repeat of an estimate under a changed choice: "sáu phép kiểm tra độ nhạy"; matches the common row "sensitivity check" |  |
+| continuous activity adjustment | hiệu chỉnh thêm theo số lượt nhấp dạng liên tục | the added sensitivity run of AQ2 |  |
+| error analysis | phân tích lỗi | | |
+| replication (of AQ1 and AQ2 on the 2014 runs) | phân tích lặp lại | "phân tích lặp lại trên 13 kỳ mở năm 2014 sau lần kiểm tra AQ3" |  |
 
 ## Contact lists, flags and capacity
 
@@ -112,6 +124,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | selection rate (onto the list) | tỷ lệ được chọn vào danh sách |  |  |
 | separation (fairness criterion) | tiêu chí ngang bằng tỷ lệ phát hiện | first use: "tiêu chí ngang bằng tỷ lệ phát hiện giữa các nhóm (separation)" |  |
 | slicing analysis | phân tích theo từng nhóm con | first use: "phân tích theo từng nhóm con (slicing analysis)" |  |
+| risk classification (of an AI system before use) | phân loại mức độ rủi ro | the step that Luật Trí tuệ nhân tạo requires before an AI system is used: "danh sách cần được phân loại mức độ rủi ro trước" |  |
 
 ## Causal questions and the limits of observational data
 
@@ -126,6 +139,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | time zero (trial) | thời điểm gốc | first use: "thời điểm gốc (time zero)" |  |
 | unadjusted rate difference | chênh lệch tỷ lệ chưa hiệu chỉnh |  |  |
 | uplift (benefit) ranking | xếp hạng theo lợi ích can thiệp | first use: "xếp hạng theo lợi ích can thiệp (uplift)" |  |
+| randomised pilot / randomised experiment | thí điểm có phân nhóm ngẫu nhiên / thử nghiệm ngẫu nhiên có đối chứng | the pilot assigns flagged students at random to contact or no contact |  |
 
 ## Modelling deliverables and success criteria
 
@@ -137,6 +151,8 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | gate (success criterion S1) | điều kiện đạt | "điều kiện đạt duy nhất S1" |  |
 | prototype (Level 2) | nguyên mẫu | first use: "nguyên mẫu (prototype)"; "giao thức chạy nguyên mẫu" for the protocol |  |
 | success criterion | tiêu chí thành công |  |  |
+| frozen protocol | giao thức đánh giá đã chốt | the AQ3 and AQ4 evaluation choices fixed before the single 2014 test; "chạy trọn vẹn giao thức đánh giá đã chốt một lần" |  |
+| fairness rule FR1 | quy tắc công bằng FR1 | "quy tắc FR1" after first use |  |
 | confusion matrix | ma trận nhầm lẫn | | |
 | F1 score | điểm F1 | | |
 | Nagelkerke R² | R² Nagelkerke | "mức biến thiên của biến kết quả mà mô hình giải thích được" at first use | |
@@ -160,7 +176,15 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | module terms / interaction terms | số hạng module / số hạng tương tác | one word, "số hạng", for every model term | |
 | selection bias (in model choice) | thiên lệch do lựa chọn mô hình | | |
 | Validation (traceability column) | Cách đánh giá | "kiểm định" stays for the validation set and statistical tests | |
-| primary / extended predictors (Milestone 4) | biến dự báo chính / bộ biến dự báo mở rộng | Milestone 4 keeps "biến dự báo" | |
+| primary / extended predictors (Milestones 4–5) | bộ biến dự báo chính / bộ biến dự báo mở rộng | model inputs chosen for AQ3 and AQ4 | |
+| several-modules sign | dấu hiệu học đồng thời nhiều module | tasks missed in more than one module at once (C12) | dấu hiệu học nhiều module |
+| imputation / imputed | điền giá trị ước tính / được điền giá trị ước tính | missing values filled by the training median | |
+| activity gradient | xu hướng biến thiên theo mức hoạt động | how non-completion changes with the amount of activity (AQ2 residual check) | |
+| sign effect (AQ2 estimate) | mức liên hệ của dấu hiệu | an association, never written as "ảnh hưởng" | ảnh hưởng của dấu hiệu |
+| development fold | fold phát triển | | |
+| unpaired run | kỳ mở không có kỳ tương ứng năm 2013 | opposite of "paired run" | kỳ mở không có cặp |
+| confirmatory group (fairness audit) | nhóm thuộc diện kiểm định khẳng định | | |
+| population (of an analysis) | phạm vi dữ liệu | "nhóm tính KPI" only for the KPI population | |
 | binned residuals | phần dư trung bình theo khoảng giá trị dự báo | | |
 | baseline (method) | phương pháp cơ sở (baseline) | a simple method a candidate must beat; distinct from the KPI baseline "mức cơ sở" | |
 | precision at capacity (Milestone 4) | độ chính xác của danh sách dài k | beside "tỷ lệ phát hiện trong giới hạn danh sách" | |

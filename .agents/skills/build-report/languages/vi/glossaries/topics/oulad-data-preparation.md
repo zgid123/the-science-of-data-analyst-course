@@ -49,7 +49,7 @@ The data vocabulary of team N04's course-completion project: the search for and 
 | enrolment (OULAD unit: one student in one module run) | lượt đăng ký học | the unit of analysis of the prepared views; "lượt đăng ký học phần" stays for the university course |  |
 | module (OULAD) / module run (presentation) / start month | module / kỳ mở module / tháng bắt đầu | OULAD units; "học phần" stays for the university's courses only | đợt mở học phần |
 | paired run (Milestone 3 running text) | kỳ mở có kỳ tương ứng năm 2013 | the terms page keeps "kỳ mở có cặp" as the entry name | |
-| registered at day d (still enrolled at the cut-off) | còn hiệu lực tại ngày d | with "lượt đăng ký học" as subject: "lượt đăng ký học còn hiệu lực tại thời điểm chốt dữ liệu"; with a student as subject or for the defined condition: "đang đăng ký học vào ngày d"; avoids "lượt đăng ký học còn đăng ký" |  |
+| registered at day d (still enrolled at the cut-off) | còn đăng ký học (chưa rút) tại ngày d | Milestone 5 form, first use in each section; with "lượt đăng ký học" as subject: "lượt đăng ký học chưa rút tại ngày d" (or "tại thời điểm chốt dữ liệu"); "ngày d" counts from the start of the module run; Milestones 3–4 wrote "còn hiệu lực tại ngày d", which the Milestone 5 reader test read as legal register |  |
 | registration (sign-up) window | thời hạn đăng ký | "thời hạn đăng ký (hai tuần sau ngày bắt đầu kỳ mở)" at first use | |
 | tutor (OU, marks TMAs and supports a tutor group) | giảng viên hướng dẫn | OULAD sense; "tutor group" → "nhóm hướng dẫn"; keep "trợ giảng" for a university teaching assistant |  |
 | unregistration (day) | (ngày) hủy đăng ký | | |
@@ -139,7 +139,7 @@ The data vocabulary of team N04's course-completion project: the search for and 
 | Data Quality Issue Log | Nhật ký vấn đề chất lượng dữ liệu (Data Quality Issue Log) | the brief's Task 2 table; issues DQ01–DQ19 |  |
 | Dataset Understanding Map | bảng mô tả cấu trúc bộ dữ liệu (Dataset Understanding Map) | the brief's Task 1 table; English name in brackets at first use (Milestone 3 reader test) | Bản đồ hiểu bộ dữ liệu |
 | feature specification / split and leakage specification | bản đặc tả đặc trưng / bản đặc tả cách chia dữ liệu và kiểm soát rò rỉ thông tin | | |
-| fit rating (GREEN, YELLOW, RED) | mức hỗ trợ (GREEN, YELLOW, RED) | the brief's own column name "Mức hỗ trợ" for the rating; the concept itself stays "mức phù hợp giữa AQ và dữ liệu"; GREEN, YELLOW, RED stay in English | |
+| fit rating (GREEN, YELLOW, RED) | mức phù hợp của dữ liệu (GREEN, YELLOW, RED) | Milestone 5 form (reader test: "mức hỗ trợ" read as student support; Milestones 3–4 kept the brief's column name "Mức hỗ trợ"); the concept stays "mức phù hợp giữa AQ và dữ liệu"; GREEN, YELLOW, RED stay in English as in Milestone 3, explained once: "GREEN (dữ liệu hỗ trợ đầy đủ), YELLOW (hỗ trợ một phần), RED (không hỗ trợ)" | |
 | Model Readiness Matrix | Ma trận mức sẵn sàng cho mô hình (Model Readiness Matrix) | the brief's Task 7 table; "Ready" → "Sẵn sàng", "Revise" → "Cần điều chỉnh" |  |
 | Preparation Decision Matrix | Ma trận quyết định chuẩn bị dữ liệu (Preparation Decision Matrix) | the brief's Task 4 table |  |
 | Prepared Data Package | Gói dữ liệu đã chuẩn bị (Prepared Data Package) | the brief's deliverable D; after first use "gói dữ liệu đã chuẩn bị" |  |
