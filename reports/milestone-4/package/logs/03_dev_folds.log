@@ -1,0 +1,39 @@
+# step: 03_dev_folds
+# utc_start: 2026-11-09T17:43:00Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/03_dev_folds.py --jobs -1
+
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  48 tasks      | elapsed:   34.9s
+[Parallel(n_jobs=-1)]: Done  64 out of  72 | elapsed:  1.1min remaining:    8.6s
+[Parallel(n_jobs=-1)]: Done  72 out of  72 | elapsed:  1.3min finished
+B1 day 13 k=3/20: pooled normalised recall 0.4561
+B1 day 13 k=5/20: pooled normalised recall 0.4568
+B1 day 27 k=3/20: pooled normalised recall 0.4443
+B1 day 27 k=5/20: pooled normalised recall 0.4448
+B2 day 13 k=3/20: pooled normalised recall 0.7359
+B2 day 13 k=5/20: pooled normalised recall 0.6801
+B2 day 27 k=3/20: pooled normalised recall 0.7936
+B2 day 27 k=5/20: pooled normalised recall 0.7275
+B3 day 13 k=3/20: pooled normalised recall 0.6200
+B3 day 13 k=5/20: pooled normalised recall 0.5821
+B3 day 27 k=3/20: pooled normalised recall 0.6057
+B3 day 27 k=5/20: pooled normalised recall 0.5709
+M1 day 13 k=3/20: pooled normalised recall 0.7765
+M1 day 13 k=5/20: pooled normalised recall 0.7147
+M1 day 27 k=3/20: pooled normalised recall 0.8249
+M1 day 27 k=5/20: pooled normalised recall 0.7527
+M2 day 13 k=3/20: pooled normalised recall 0.7721
+M2 day 13 k=5/20: pooled normalised recall 0.7226
+M2 day 27 k=3/20: pooled normalised recall 0.8249
+M2 day 27 k=5/20: pooled normalised recall 0.7470
+M3 day 13 k=3/20: pooled normalised recall 0.7716
+M3 day 13 k=5/20: pooled normalised recall 0.7160
+M3 day 27 k=3/20: pooled normalised recall 0.8238
+M3 day 27 k=5/20: pooled normalised recall 0.7500
+M4 day 13 k=3/20: pooled normalised recall 0.7633
+M4 day 13 k=5/20: pooled normalised recall 0.7230
+M4 day 27 k=3/20: pooled normalised recall 0.8238
+M4 day 27 k=5/20: pooled normalised recall 0.7490
+
+# utc_end: 2026-11-09T17:44:18Z
+# exit_status: 0

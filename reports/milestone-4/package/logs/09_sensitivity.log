@@ -1,0 +1,17 @@
+# step: 09_sensitivity
+# utc_start: 2026-11-09T17:59:02Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/09_sensitivity.py
+
+                          variant  cutoff  k  pooled_nr_model  pooled_nr_rule  difference  boot_ci_low  boot_ci_high  signflip_p  wins  ties  losses  mean_per_run_difference                              verdict  n_runs  n_enrolments                                                                                        note
+                      paired runs      27  5         0.708287        0.682873    0.025414     0.010114      0.041432    0.001953     9     0       0                 0.026425     would meet S1 (sensitivity only)       9         10801                                                                                            
+                    unpaired runs      27  5         0.764516        0.751613    0.012903    -0.010172      0.035299    0.125000     3     0       1                 0.011270 would not meet S1 (sensitivity only)       4          4923                                                                                            
+                  module CCC only      27  5         0.800000        0.783051    0.016949    -0.005650      0.041817    0.250000     2     0       0                 0.018588 would not meet S1 (sensitivity only)       2          3521                                                                                            
+               without module CCC      27  5         0.704560        0.681759    0.022801     0.008420      0.037680    0.000977    10     0       1                 0.022339     would meet S1 (sensitivity only)      11         12203                                                                                            
+    without students seen in 2013      27  5         0.703787        0.681066    0.022721     0.008131      0.035438    0.000977    12     0       1                 0.022685     would meet S1 (sensitivity only)      13         14138                                                 lists re-formed on the remaining enrolments
+  without Withdrawn lacking a day      27  5         0.718830        0.696438    0.022392     0.009743      0.035650    0.000244    12     0       1                 0.022275     would meet S1 (sensitivity only)      13         15634                                                 lists re-formed on the remaining enrolments
+labels-available (2013B -> 2014B)      27  5         0.779205        0.762080    0.017125    -0.005449      0.033800    0.031250     5     0       1                 0.017665 would not meet S1 (sensitivity only)       6          6510 M1 spec fitted on BBB_2013B, DDD_2013B, FFF_2013B with {'C': 0.1}; scored on the 2014B runs
+                           day 13      13  5         0.687841        0.666501    0.021340     0.000000      0.034765    0.019531     9     1       3                 0.018530 would not meet S1 (sensitivity only)      13         15989                                                                                            
+                     k = 3 per 20      27  3         0.807417        0.779604    0.027813     0.008333      0.051595    0.015381    10     0       3                 0.028820     would meet S1 (sensitivity only)      13         15724                                                                                            
+
+# utc_end: 2026-11-09T17:59:33Z
+# exit_status: 0

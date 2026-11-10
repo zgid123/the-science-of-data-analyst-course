@@ -1,0 +1,9 @@
+# step: 05_freeze
+# utc_start: 2026-11-09T17:44:20Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/05_freeze.py
+
+day 13: M1 params {'C': 0.1}, 12080 rows, sha256 5eeb1b3234bee08c6173eb55499c846235092c1cc25e44dac8a2f1b2a82c0fd1
+day 27: M1 params {'C': 0.001}, 11811 rows, sha256 49f462fbeb6d1631ecf233cc46a370da0947365f4be48a18c125aa10a86b9a96
+
+# utc_end: 2026-11-09T17:44:26Z
+# exit_status: 0

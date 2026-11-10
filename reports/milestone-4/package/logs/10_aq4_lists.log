@@ -1,0 +1,13 @@
+# step: 10_aq4_lists
+# utc_start: 2026-11-09T17:59:33Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/10_aq4_lists.py
+
+            test_run  cutoff  k  n_enrolments  n_noncompleters  list_length  noncompleters_on_list   recall  precision precision_ge_50     lift  normalised_recall  max_attainable  overlap_with_rule_list  listed_fail  listed_withdrawn
+all 13 runs (pooled)      13  3         15989             7189         2418                   1797 0.249965   0.743176             yes 1.652892           0.743176            2418                0.687758         1049               748
+all 13 runs (pooled)      13  5         15989             7189         4030                   2772 0.385589   0.687841             yes 1.529822           0.687841            4030                0.731762         1570              1202
+all 13 runs (pooled)      27  3         15724             6911         2373                   1916 0.277239   0.807417             yes 1.837045           0.807417            2373                0.793089         1119               797
+all 13 runs (pooled)      27  5         15724             6911         3955                   2871 0.415425   0.725917             yes 1.651615           0.725917            3955                0.800506         1652              1219
+runs with precision < 50% at day 27, k = 5: ['AAA_2014J']
+
+# utc_end: 2026-11-09T17:59:35Z
+# exit_status: 0

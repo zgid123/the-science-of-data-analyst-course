@@ -1,0 +1,25 @@
+# step: 02_baselines
+# utc_start: 2026-11-09T17:42:52Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/02_baselines.py --jobs -1
+
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 12 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   3 out of  18 | elapsed:    3.1s remaining:   15.3s
+[Parallel(n_jobs=-1)]: Done   7 out of  18 | elapsed:    3.1s remaining:    4.9s
+[Parallel(n_jobs=-1)]: Done  11 out of  18 | elapsed:    3.2s remaining:    2.0s
+[Parallel(n_jobs=-1)]: Done  15 out of  18 | elapsed:    4.3s remaining:    0.9s
+[Parallel(n_jobs=-1)]: Done  18 out of  18 | elapsed:    4.4s finished
+B1 day 13 k=3/20: pooled normalised recall 0.4561
+B1 day 13 k=5/20: pooled normalised recall 0.4568
+B1 day 27 k=3/20: pooled normalised recall 0.4443
+B1 day 27 k=5/20: pooled normalised recall 0.4448
+B2 day 13 k=3/20: pooled normalised recall 0.7359
+B2 day 13 k=5/20: pooled normalised recall 0.6801
+B2 day 27 k=3/20: pooled normalised recall 0.7936
+B2 day 27 k=5/20: pooled normalised recall 0.7275
+B3 day 13 k=3/20: pooled normalised recall 0.6200
+B3 day 13 k=5/20: pooled normalised recall 0.5821
+B3 day 27 k=3/20: pooled normalised recall 0.6057
+B3 day 27 k=5/20: pooled normalised recall 0.5709
+
+# utc_end: 2026-11-09T17:43:00Z
+# exit_status: 0

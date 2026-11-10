@@ -1,0 +1,37 @@
+# step: tests
+# utc_start: 2026-11-09T17:58:43Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python -m unittest discover -s tests -v
+
+test_guard_rejects_2014_rows (test_phase1.Test2013Guard.test_guard_rejects_2014_rows) ... ok
+test_loader_filters_2014_while_scanning (test_phase1.Test2013Guard.test_loader_filters_2014_while_scanning) ... ok
+test_altered_validation_rows_leave_fold_parameters_unchanged (test_phase1.TestFoldLocalPreprocessing.test_altered_validation_rows_leave_fold_parameters_unchanged) ... ok
+test_deviation_coding_unseen_level_is_zeros (test_phase1.TestFoldLocalPreprocessing.test_deviation_coding_unseen_level_is_zeros) ... ok
+test_median_and_indicator_from_training_only (test_phase1.TestFoldLocalPreprocessing.test_median_and_indicator_from_training_only) ... ok
+test_overlapping_students_removed_from_training (test_phase1.TestFoldLocalPreprocessing.test_overlapping_students_removed_from_training) ... ok
+test_primary_parameter_count (test_phase1.TestFoldLocalPreprocessing.test_primary_parameter_count) ... ok
+test_tree_unseen_module_handled (test_phase1.TestFoldLocalPreprocessing.test_tree_unseen_module_handled) ... ok
+test_list_length_matches_capacity_formula (test_phase1.TestMetrics.test_list_length_matches_capacity_formula) ... ok
+test_model_ties_by_ascending_id (test_phase1.TestMetrics.test_model_ties_by_ascending_id) ... ok
+test_normalised_recall_and_attainable_max (test_phase1.TestMetrics.test_normalised_recall_and_attainable_max) ... ok
+test_pooled_normalised_recall (test_phase1.TestMetrics.test_pooled_normalised_recall) ... ok
+test_rule_ranking_signs_then_lower_activity_then_id (test_phase1.TestMetrics.test_rule_ranking_signs_then_lower_activity_then_id) ... ok
+test_bootstrap_seeded_and_paired (test_phase2.TestBootstrapAndS1.test_bootstrap_seeded_and_paired) ... ok
+test_identical_rankers_give_zero_interval (test_phase2.TestBootstrapAndS1.test_identical_rankers_give_zero_interval) ... ok
+test_perfect_ranker_beats_noise (test_phase2.TestBootstrapAndS1.test_perfect_ranker_beats_noise) ... ok
+test_run_counts_hand_computed (test_phase2.TestBootstrapAndS1.test_run_counts_hand_computed) ... ok
+test_holm_levels (test_phase2.TestFairnessStats.test_holm_levels) ... ok
+test_recall_gap_hand_computed (test_phase2.TestFairnessStats.test_recall_gap_hand_computed) ... ok
+test_all_positive_gives_smallest_p (test_phase2.TestSignFlip.test_all_positive_gives_smallest_p) ... ok
+test_all_zero_gives_p_one (test_phase2.TestSignFlip.test_all_zero_gives_p_one) ... ok
+test_hand_computed (test_phase2.TestSignFlip.test_hand_computed) ... ok
+test_2014_rows_refused_before_access (test_phase2.TestTestAccessGuards.test_2014_rows_refused_before_access) ... ok
+test_first_access_allowed_and_reproduce_needs_access (test_phase2.TestTestAccessGuards.test_first_access_allowed_and_reproduce_needs_access) ... ok
+test_second_access_refused (test_phase2.TestTestAccessGuards.test_second_access_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.125s
+
+OK
+
+# utc_end: 2026-11-09T17:58:45Z
+# exit_status: 0

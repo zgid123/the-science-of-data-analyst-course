@@ -1,0 +1,36 @@
+sign,module,n_2013,n_2014,verdict_2013,verdict_2014,modules_same_direction_2014,replication
+missed_task,all,9960,12585,consistent association,consistent association,5/5,"same direction, interval excludes 0"
+missed_task,AAA,369,348,,,,"same direction, interval excludes 0"
+missed_task,BBB,3364,3066,,,,"same direction, interval excludes 0"
+missed_task,CCC,,3521,,,,2014 only (no 2013 estimate)
+missed_task,DDD,2790,2492,,,,"same direction, interval excludes 0"
+missed_task,FFF,3437,3158,,,,"same direction, interval excludes 0"
+late_tma,all,9960,12585,consistent association,consistent association,3/4,"same direction, interval excludes 0"
+late_tma,AAA,369,348,,,,not replicated
+late_tma,BBB,3364,3066,,,,"same direction, interval excludes 0"
+late_tma,DDD,2790,2492,,,,"same direction, interval excludes 0"
+late_tma,FFF,3437,3158,,,,"same direction, interval excludes 0"
+inactive_last7,all,11811,15724,consistent association,consistent association,7/7,"same direction, interval excludes 0"
+inactive_last7,AAA,369,348,,,,not replicated
+inactive_last7,BBB,3364,3066,,,,"same direction, interval excludes 0"
+inactive_last7,CCC,,3521,,,,2014 only (no 2013 estimate)
+inactive_last7,DDD,2790,2492,,,,"same direction, interval excludes 0"
+inactive_last7,EEE,927,1625,,,,"same direction, interval excludes 0"
+inactive_last7,FFF,3437,3158,,,,"same direction, interval excludes 0"
+inactive_last7,GGG,924,1514,,,,"same direction, interval excludes 0"
+low_relative_activity,all,11811,15724,consistent association,consistent association,7/7,"same direction, interval excludes 0"
+low_relative_activity,AAA,369,348,,,,not replicated
+low_relative_activity,BBB,3364,3066,,,,"same direction, interval excludes 0"
+low_relative_activity,CCC,,3521,,,,2014 only (no 2013 estimate)
+low_relative_activity,DDD,2790,2492,,,,"same direction, interval excludes 0"
+low_relative_activity,EEE,927,1625,,,,"same direction, interval excludes 0"
+low_relative_activity,FFF,3437,3158,,,,"same direction, interval excludes 0"
+low_relative_activity,GGG,924,1514,,,,"same direction, interval excludes 0"
+no_pre_start_activity,all,11811,15724,consistent association,consistent association,7/7,"same direction, interval excludes 0"
+no_pre_start_activity,AAA,369,348,,,,not replicated
+no_pre_start_activity,BBB,3364,3066,,,,not replicated
+no_pre_start_activity,CCC,,3521,,,,2014 only (no 2013 estimate)
+no_pre_start_activity,DDD,2790,2492,,,,not replicated
+no_pre_start_activity,EEE,927,1625,,,,"same direction, interval excludes 0"
+no_pre_start_activity,FFF,3437,3158,,,,"same direction, interval excludes 0"
+no_pre_start_activity,GGG,924,1514,,,,"same direction, interval excludes 0"

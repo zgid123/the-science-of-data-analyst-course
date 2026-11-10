@@ -1,0 +1,8 @@
+config,pooled_normalised_recall_d27_k5,gain_vs_M1,folds_with_gain,chosen,reason
+B1,0.444825,-0.307863,0,no,"baseline, not eligible for the choice; gain -0.3079, gain in 0 of 9 folds;"
+B2,0.727487,-0.025202,2,no,"baseline, not eligible for the choice; gain -0.0252, gain in 2 of 9 folds;"
+B3,0.571573,-0.181116,0,no,"baseline, not eligible for the choice; gain -0.1811, gain in 0 of 9 folds;"
+M1,0.752688,0.000000,,yes,primary model; kept because no challenger met the margin
+M2,0.746976,-0.005712,2,no,margin not met (gain -0.0057 < 0.03; gain in 2 of 9 folds < 7)
+M3,0.750000,-0.002688,4,no,margin not met (gain -0.0027 < 0.03; gain in 4 of 9 folds < 7)
+M4,0.748992,-0.003696,2,no,margin not met (gain -0.0037 < 0.03; gain in 2 of 9 folds < 7)

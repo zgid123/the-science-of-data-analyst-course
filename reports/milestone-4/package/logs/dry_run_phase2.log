@@ -1,0 +1,75 @@
+# utc_start: 2026-11-09T17:53:35Z
+# command: venv/bin/python tests/dry_run_phase2.py
+== 06_test.py: exit 0
+frozen models/frozen_M1_d13.joblib sha256 5eeb1b3234bee08c6173eb55499c846235092c1cc25e44dac8a2f1b2a82c0fd1 OK
+frozen models/frozen_M1_d27.joblib sha256 49f462fbeb6d1631ecf233cc46a370da0947365f4be48a18c125aa10a86b9a96 OK
+B3 day 13: {'C': 0.0001} sha256 a871b9295b4c6a7e414458318cd803b4dab7e520b04efdd8316d265dedcdf8b6
+B3 day 27: {'C': 0.0001} sha256 2268df1b239ef2439d0e6a5227d3649d93cf2a274e6929a3712651bbbb5afe31
+test access recorded at 2026-11-09T17:53:38Z
+day 13: 12080 test enrolments in 9 runs of 2014
+day 27: 11811 test enrolments in 9 runs of 2014
+wrote /private/var/folders/p3/v3gn_5z914n95jkpj1bg6b4m0000gn/T/tmpet1fg0uc/reports/milestone-4/package/results/test_runs.csv
+
+== 07_gates.py: exit 0
+.csv
+    M1      13  3   0.779791   0.456871                  1.000000 0.652588            0.712182  results/net_benefit.csv
+    M1      13  5   0.716310   0.456871                  0.999012 0.652588            0.712182  results/net_benefit.csv
+    B1      27  3   0.441051   0.444078                  1.000000      NaN            0.498690                      NaN
+    B1      27  5   0.442057   0.444078                  0.998658      NaN            0.498690                      NaN
+    B2      27  3   0.793624   0.444078                  1.000000 0.662597            0.709644  results/net_benefit.csv
+    B2      27  5   0.726510   0.444078                  0.998658 0.662597            0.709644  results/net_benefit.csv
+    B3      27  3   0.602908   0.444078                  1.000000 0.524538            0.609594  results/net_benefit.csv
+    B3      27  5   0.573826   0.444078                  0.998658 0.524538            0.609594  results/net_benefit.csv
+    M1      27  3   0.831655   0.444078                  1.000000 0.689626            0.737946  results/net_benefit.csv
+    M1      27  5   0.753356   0.444078                  0.998658 0.689626            0.737946  results/net_benefit.csv
+config  cutoff          citl    slope           s3_verdict
+    M1      13  6.900253e-09 1.004149     descriptive: met
+    B3      13 -2.330298e-09 3.838774 descriptive: not met
+    M1      27  1.758088e-08 1.331309          S3: not met
+    B3      27  9.457404e-11 3.979535 descriptive: not met
+
+== 08_fairness.py: exit 0
+7583           NaN                    descriptive
+deprivation band: missing      27  3  418              118      0.245763       0.284377   -0.038614           NaN                    descriptive
+     age band: 55 or over      27  3   75               18      0.222222       0.283719   -0.061497           NaN                    descriptive
+           gender: female      27  3 5697             2488      0.270498       0.295248   -0.024750           NaN                    descriptive
+             gender: male      27  3 6114             2757      0.295248       0.270498    0.024750           NaN                    descriptive
+     disability: declared      27  5 1123              602      0.463455       0.423433    0.040022      0.111515                             no
+  deprivation band: 0-10%      27  5 1163              699      0.482117       0.419710    0.062408      0.100011                             no
+deprivation band: missing      27  5  418              118      0.338983       0.430076   -0.091093      0.019968                             no
+     age band: 55 or over      27  5   75               18      0.222222       0.428735   -0.206513           NaN insufficient data, not cleared
+           gender: female      27  5 5697             2488      0.408762       0.445412   -0.036650           NaN                    descriptive
+             gender: male      27  5 6114             2757      0.445412       0.408762    0.036650           NaN                    descriptive
+
+== 09_sensitivity.py: exit 0
+766   8.0   0.0     1.0                 0.029286     would meet S1 (sensitivity only)       9         11811                                                 lists re-formed on the remaining enrolments
+  without Withdrawn lacking a day      27  5         0.754032        0.726815    0.027218     0.010707      0.043652    0.009766   8.0   0.0     1.0                 0.029758     would meet S1 (sensitivity only)       9         11808                                                 lists re-formed on the remaining enrolments
+labels-available (2013B -> 2014B)      27  5         0.821154        0.796154    0.025000     0.000000      0.053834    0.250000   2.0   0.0     1.0                 0.023034 would not meet S1 (sensitivity only)       3          4127 M1 spec fitted on BBB_2013B, DDD_2013B, FFF_2013B with {'C': 0.1}; scored on the 2014B runs
+                           day 13      13  5         0.717018        0.680079    0.036939     0.019447      0.053744    0.003906   8.0   0.0     1.0                 0.032203     would meet S1 (sensitivity only)       9         12080                                                                                            
+                     k = 3 per 20      27  3         0.831655        0.793624    0.038031     0.016364      0.055225    0.001953   9.0   0.0     0.0                 0.037110     would meet S1 (sensitivity only)       9         11811                                                                                            
+
+== 10_aq4_lists.py: exit 0
+            test_run  cutoff  k  n_enrolments  n_noncompleters  list_length  noncompleters_on_list   recall  precision precision_ge_50     lift  normalised_recall  max_attainable  overlap_with_rule_list  listed_fail  listed_withdrawn
+all 13 runs (pooled)      13  3         12080             5519         1821                   1420 0.257293   0.779791             yes 1.706809           0.779791            1821                0.721032          842               578
+all 13 runs (pooled)      13  5         12080             5519         3035                   2174 0.393912   0.716310             yes 1.567860           0.717018            3032                0.758484         1289               885
+all 13 runs (pooled)      27  3         11811             5245         1788                   1487 0.283508   0.831655             yes 1.872771           0.831655            1788                0.800336          938               549
+all 13 runs (pooled)      27  5         11811             5245         2980                   2245 0.428027   0.753356             yes 1.696451           0.754368            2976                0.830201         1400               845
+runs with precision < 50% at day 27, k = 5: ['AAA_2013J']
+
+== 11_aq2_replication.py: exit 0
+e_start_activity    all          10.56  [7.84, 13.29]          10.56  [7.84, 13.29]   11811   11811 consistent association consistent association                         6/6 same direction, interval excludes 0
+no_pre_start_activity    AAA           9.43  [-8.6, 27.47]           9.43  [-8.6, 27.47]     369     369                    NaN                    NaN                         NaN                      not replicated
+no_pre_start_activity    BBB           7.63  [3.92, 11.33]           7.63  [3.92, 11.33]    3364    3364                    NaN                    NaN                         NaN same direction, interval excludes 0
+no_pre_start_activity    DDD          12.93  [6.53, 19.32]          12.93  [6.53, 19.32]    2790    2790                    NaN                    NaN                         NaN same direction, interval excludes 0
+no_pre_start_activity    EEE          17.63   [9.7, 25.56]          17.63   [9.7, 25.56]     927     927                    NaN                    NaN                         NaN same direction, interval excludes 0
+no_pre_start_activity    FFF          11.23  [5.24, 17.22]          11.23  [5.24, 17.22]    3437    3437                    NaN                    NaN                         NaN same direction, interval excludes 0
+no_pre_start_activity    GGG           5.00 [-1.62, 11.63]           5.00 [-1.62, 11.63]     924     924                    NaN                    NaN                         NaN                      not replicated
+
+== 12_report.py: exit 0
+wrote report/prototype_report.md and report/prototype_report.html
+
+== guard: second run of 06 without --reproduce
+exit 1: REFUSED: the 2014 test was already accessed at 2026-11-09T17:53:38Z; use --reproduce to recompute
+DRY RUN OK
+# utc_end: 2026-11-09T17:54:21Z
+# exit_status: 0

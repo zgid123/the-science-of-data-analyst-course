@@ -1,0 +1,46 @@
+# step: 01_load_check
+# utc_start: 2026-11-09T17:42:51Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/01_load_check.py
+
+hash OK  data/processed/assessment_due.parquet f67d7916dd95c2ab2321140b277a554145163b59e8d99f68b13d2d6c415cb498
+hash OK  data/processed/capacity_by_run.parquet 38f6868c2b74fcc7998c4c589b5d1a9420b6c11fd1bf2964e7abd86311f99e08
+hash OK  data/processed/enrolment.parquet 1d1e397ac67ce774fec8be5d23bbf988ab70eb11f1bda5efc3d2f05510900a78
+hash OK  data/processed/features_d13.parquet c58a44150e8c367cd702303998bb028aed3c9b763e89e5b171d229b075b32bd6
+hash OK  data/processed/features_d27.parquet 4bf8a482b9ec7fa42c28ee96579c738faea8219124b74110ae53f54efcff6347
+hash OK  data/processed/model_ready_d13.parquet 773d1e2fa077356483cd281a93f6efcb88fd8156b1c7d0874afdb0c0d22cb72f
+hash OK  data/processed/model_ready_d27.parquet 3560a51594d4ad97102089a790d6aa74cd29fced6b5dc21b9222c3b53bc23c6b
+hash OK  data/processed/student_week.parquet 7526872e26e95da74441de8a5b5e72e86c485bb0d09b5866af90d0ceda11e079
+recorded data/metadata/version_manifest.json 3a2be1989591cf5ab45fd80d4fccda7f06f9b6fc0767a31e8df408df239f7ce0
+recorded data/metadata/predictor_sets.json 0ad6ee292b134a7faa2bbc21ea4383352f42963b6e36765fad9f7cc89f7c1df3
+recorded data/metadata/data_dictionary.md 2743cdaebe23fe94d836041bf8efdffa93988738e3e2e5f278d7b38d25b1f688
+day 13: 12080 rows of 2013, 9 runs, years [np.int64(2013)]
+day 27: 11811 rows of 2013, 9 runs, years [np.int64(2013)]
+        n_enrolments  n_noncompleters  max_attainable_k5
+cutoff                                                  
+13             12080             5519               3032
+27             11811             5245               2976
+ cutoff validation_run  n_valid  n_train  removed_rows  removed_students  training_runs
+     13      AAA_2013J      370    11710             0                 0              8
+     13      BBB_2013B     1607    10438            35                35              8
+     13      BBB_2013J     1852    10197            31                31              8
+     13      DDD_2013B     1197    10824            59                59              8
+     13      DDD_2013J     1675    10349            56                56              8
+     13      EEE_2013J      934    11141             5                 5              8
+     13      FFF_2013B     1520    10527            33                33              8
+     13      FFF_2013J     1998    10044            38                38              8
+     13      GGG_2013J      927    11152             1                 1              8
+     27      AAA_2013J      369    11442             0                 0              8
+     27      BBB_2013B     1530    10248            33                33              8
+     27      BBB_2013J     1834     9948            29                29              8
+     27      DDD_2013B     1143    10613            55                55              8
+     27      DDD_2013J     1647    10111            53                53              8
+     27      EEE_2013J      927    10879             5                 5              8
+     27      FFF_2013B     1454    10326            31                31              8
+     27      FFF_2013J     1983     9793            35                35              8
+     27      GGG_2013J      924    10886             1                 1              8
+day 13: overlap removal over all folds: 258 rows, 129 distinct students in two or more 2013 runs
+day 27: overlap removal over all folds: 242 rows, 121 distinct students in two or more 2013 runs
+removed rows per fold: min 0 max 59 | removed students: min 0 max 59
+
+# utc_end: 2026-11-09T17:42:52Z
+# exit_status: 0

@@ -1,0 +1,30 @@
+# step: 07_gates
+# utc_start: 2026-11-09T17:58:48Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/07_gates.py
+
+{'pooled_nr_model': np.float64(0.7259165613147914), 'pooled_nr_rule': np.float64(0.7044247787610619), 'difference': np.float64(0.02149178255372952), 'boot_ci_low': 0.009258669497523, 'boot_ci_high': 0.03373939043651804, 'signflip_p': 0.000244140625, 'wins': 12, 'ties': 0, 'losses': 1, 'mean_per_run_difference': 0.021761566756622195, 'verdict': 'S1 met'}
+config  cutoff  k  precision  base_rate  max_attainable_precision   pr_auc  roc_auc_within_run net_benefit_by_threshold
+    B1      13  3   0.450864   0.449622                       1.0      NaN            0.500650                      NaN
+    B1      13  5   0.450486   0.449622                       1.0      NaN            0.500650                      NaN
+    B2      13  3   0.705128   0.449622                       1.0 0.605529            0.678784  results/net_benefit.csv
+    B2      13  5   0.666501   0.449622                       1.0 0.605529            0.678784  results/net_benefit.csv
+    B3      13  3   0.608354   0.449622                       1.0 0.530270            0.605207  results/net_benefit.csv
+    B3      13  5   0.581141   0.449622                       1.0 0.530270            0.605207  results/net_benefit.csv
+    M1      13  3   0.743176   0.449622                       1.0 0.637589            0.700209  results/net_benefit.csv
+    M1      13  5   0.687841   0.449622                       1.0 0.637589            0.700209  results/net_benefit.csv
+    B1      27  3   0.439764   0.439519                       1.0      NaN            0.499717                      NaN
+    B1      27  5   0.439798   0.439519                       1.0      NaN            0.499717                      NaN
+    B2      27  3   0.779604   0.439519                       1.0 0.660295            0.710536  results/net_benefit.csv
+    B2      27  5   0.704425   0.439519                       1.0 0.660295            0.710536  results/net_benefit.csv
+    B3      27  3   0.599241   0.439519                       1.0 0.521815            0.605193  results/net_benefit.csv
+    B3      27  5   0.572187   0.439519                       1.0 0.521815            0.605193  results/net_benefit.csv
+    M1      27  3   0.807417   0.439519                       1.0 0.686128            0.731678  results/net_benefit.csv
+    M1      27  5   0.725917   0.439519                       1.0 0.686128            0.731678  results/net_benefit.csv
+config  cutoff      citl    slope           s3_verdict
+    M1      13  0.071001 0.881808     descriptive: met
+    B3      13 -0.005679 3.092609 descriptive: not met
+    M1      27  0.057997 1.310605          S3: not met
+    B3      27  0.003011 3.286486 descriptive: not met
+
+# utc_end: 2026-11-09T17:58:54Z
+# exit_status: 0

@@ -1,0 +1,13 @@
+# step: 06_test_reproduce
+# utc_start: 2026-11-09T17:58:45Z
+# command: /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-4/package/../../../venv/bin/python src/06_test.py --reproduce
+
+frozen models/frozen_M1_d13.joblib sha256 5eeb1b3234bee08c6173eb55499c846235092c1cc25e44dac8a2f1b2a82c0fd1 OK
+frozen models/frozen_M1_d27.joblib sha256 49f462fbeb6d1631ecf233cc46a370da0947365f4be48a18c125aa10a86b9a96 OK
+reproduce mode: access recorded at 2026-11-09T17:55:05Z; no refit, no tuning
+day 13: 15989 test enrolments in 13 runs of 2014
+day 27: 15724 test enrolments in 13 runs of 2014
+reproduce: test_runs.csv byte-identical
+
+# utc_end: 2026-11-09T17:58:48Z
+# exit_status: 0

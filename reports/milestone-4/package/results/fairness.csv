@@ -1,0 +1,25 @@
+group,cutoff,k,n,n_noncompleters,recall_group,recall_others,difference,holm_ci_high,flagged
+disability: declared,13,3,1520,835,0.276647,0.246459,0.030188,,descriptive
+deprivation band: 0-10%,13,3,1512,814,0.261671,0.248471,0.013200,,descriptive
+deprivation band: missing,13,3,617,189,0.185185,0.251714,-0.066529,,descriptive
+age band: 55 or over,13,3,122,46,0.086957,0.251015,-0.164058,,descriptive
+gender: female,13,3,6748,2843,0.238832,0.257248,-0.018416,,descriptive
+gender: male,13,3,9241,4346,0.257248,0.238832,0.018416,,descriptive
+disability: declared,13,5,1520,835,0.422754,0.380705,0.042049,,descriptive
+deprivation band: 0-10%,13,5,1512,814,0.409091,0.382588,0.026503,,descriptive
+deprivation band: missing,13,5,617,189,0.296296,0.388000,-0.091704,,descriptive
+age band: 55 or over,13,5,122,46,0.173913,0.386952,-0.213039,,descriptive
+gender: female,13,5,6748,2843,0.355610,0.405200,-0.049590,,descriptive
+gender: male,13,5,9241,4346,0.405200,0.355610,0.049590,,descriptive
+disability: declared,27,3,1488,803,0.301370,0.274067,0.027303,,descriptive
+deprivation band: 0-10%,27,3,1486,787,0.303685,0.273841,0.029844,,descriptive
+deprivation band: missing,27,3,610,181,0.209945,0.279049,-0.069104,,descriptive
+age band: 55 or over,27,3,118,42,0.190476,0.277770,-0.087293,,descriptive
+gender: female,27,3,6666,2750,0.260364,0.288392,-0.028029,,descriptive
+gender: male,27,3,9058,4161,0.288392,0.260364,0.028029,,descriptive
+disability: declared,27,5,1488,803,0.463263,0.409136,0.054127,0.094573,no
+deprivation band: 0-10%,27,5,1486,787,0.430750,0.413455,0.017294,0.067954,no
+deprivation band: missing,27,5,610,181,0.337017,0.417533,-0.080517,0.026745,no
+age band: 55 or over,27,5,118,42,0.214286,0.416655,-0.202369,,"insufficient data, not cleared"
+gender: female,27,5,6666,2750,0.388000,0.433550,-0.045550,,descriptive
+gender: male,27,5,9058,4161,0.433550,0.388000,0.045550,,descriptive

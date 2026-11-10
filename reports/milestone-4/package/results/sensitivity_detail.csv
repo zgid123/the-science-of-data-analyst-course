@@ -1,0 +1,10 @@
+variant,cutoff,k,n_runs,n_enrolments,note
+paired runs,27,5,9,10801,
+unpaired runs,27,5,4,4923,
+module CCC only,27,5,2,3521,
+without module CCC,27,5,11,12203,
+without students seen in 2013,27,5,13,14138,lists re-formed on the remaining enrolments
+without Withdrawn lacking a day,27,5,13,15634,lists re-formed on the remaining enrolments
+labels-available (2013B -> 2014B),27,5,6,6510,"M1 spec fitted on BBB_2013B, DDD_2013B, FFF_2013B with {'C': 0.1}; scored on the 2014B runs"
+day 13,13,5,13,15989,
+k = 3 per 20,27,3,13,15724,
