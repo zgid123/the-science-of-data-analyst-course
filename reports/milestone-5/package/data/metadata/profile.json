@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T15:06:55Z",
+  "generated": "2026-11-10T17:57:32Z",
   "shape": {
     "courses": {
       "rows": 22,
@@ -120,11 +120,11 @@
       ]
     ],
     "imd_band_by_region_zero": [
-      "South East Region",
-      "East Midlands Region",
-      "East Anglian Region",
+      "London Region",
       "Wales",
-      "London Region"
+      "East Anglian Region",
+      "South East Region",
+      "East Midlands Region"
     ],
     "imd_band_rate_by_run_range": [
       0.0013,

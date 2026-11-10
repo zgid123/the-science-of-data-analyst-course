@@ -1,4 +1,4 @@
-2026-11-09T15:07:12Z
+2026-11-10T17:57:55Z
 $ python src/analysis/aq_checks.py   (Python 3.12.7)
 PASS  M3 fig_outcome_by_run AAA 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (258, 20, 45, 60), observed (258, 20, 45, 60)
 PASS  M3 fig_outcome_by_run BBB 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (648, 155, 459, 505), observed (648, 155, 459, 505)
@@ -89,7 +89,6 @@ PASS  no 2014 run in aq1_rates.csv                                              
 PASS  no 2014 run in aq1_runs_task_due.csv                                                                                  expected False, observed False
 PASS  no 2014 run in aq1_subgroup_rates.csv                                                                                 expected False, observed False
 PASS  no 2014 run in aq1_validation_two_paths.csv                                                                           expected False, observed False
-PASS  no 2014 run in aq1_year_shared_modules.csv                                                                            expected False, observed False
 PASS  no 2014 run in aq2_associations.csv                                                                                   expected False, observed False
 PASS  no 2014 run in aq2_binned_residuals.csv                                                                               expected False, observed False
 PASS  no 2014 run in aq2_model_coefficients.csv                                                                             expected False, observed False
@@ -99,6 +98,6 @@ PASS  no 2014 run in aq2_sensitivity_continuous.csv                             
 PASS  no 2014 run in aq2_sign_correlation.csv                                                                               expected False, observed False
 PASS  no 2014 run in aq2_sign_rates_by_run.csv                                                                              expected False, observed False
 PASS  no 2014 run in aq2_subgroups.csv                                                                                      expected False, observed False
-PASS  2014 rows of aq1_year_comparison.csv all labelled as published in Milestone 3                                         expected True, observed True
-SUMMARY: 97 PASS, 0 FAIL, 3 INFO
+PASS  2014 rows of aq1_year_comparison_published.csv all labelled as published in Milestone 3                               expected True, observed True
+SUMMARY: 96 PASS, 0 FAIL, 3 INFO
 exit 0

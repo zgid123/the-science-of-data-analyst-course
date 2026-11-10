@@ -40,6 +40,8 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | --- | --- | --- | --- |
 | background-only model | mô hình chỉ dùng đặc điểm cá nhân | first use: "mô hình chỉ dùng đặc điểm cá nhân (background-only model)": module, tháng bắt đầu, số lần học trước, tín chỉ, trình độ, thời điểm đăng ký; không dùng hoạt động học tập |  |
 | challenger (model) | mô hình đối sánh | first use: "mô hình đối sánh (challenger)"; the candidate that must beat the primary approach by a fixed margin |  |
+| candidate configuration (AQ3) | cấu hình ứng viên | the fixed configurations B1–B3 and M1–M4 compared in development; "phương pháp ứng viên" stays for the candidate methods of Section 8.1 | mô hình ứng viên (for the AQ3 configurations) |
+| selection rule (AQ3 model choice) | quy tắc chọn cấu hình | the rule that picks one configuration from the development folds | |
 | events per parameter | số sự kiện trên mỗi tham số | "sự kiện" = sinh viên không hoàn thành |  |
 | fixed effects (of module run) | hiệu ứng cố định | first use: "hiệu ứng cố định (fixed effects) theo kỳ mở" |  |
 | labels-available variant | phương án huấn luyện chỉ trên các kỳ mở tháng 2 năm 2013 | scores the 2014 February runs; first use adds why: "vì kết quả các kỳ mở tháng 10 năm 2013 chưa có khi đó" | phương án chỉ dùng kết quả đã biết |
@@ -166,6 +168,7 @@ The modelling vocabulary of team N04's course-completion project: the prediction
 | robust standard errors / clustered standard errors | sai số chuẩn vững / sai số chuẩn theo cụm | | sai số chuẩn bền vững |
 | risk ratio | tỉ số nguy cơ | matches "tỉ số odds" | |
 | first missed task | bài bị bỏ lỡ đầu tiên | | |
+| first missed week | tuần đầu tiên sinh viên bỏ lỡ bài | table header: "Tuần đầu tiên bỏ lỡ bài" | |
 | second denominator | mẫu số thứ hai | 32,593 enrolments instead of the 28,061 of the KPI population | |
 | feature window | khoảng thời gian lấy dữ liệu cho biến dự báo | | |
 | expected shrinkage (Riley criterion) | mức co hệ số kỳ vọng | the measure; "phép co hệ số" names the method | |

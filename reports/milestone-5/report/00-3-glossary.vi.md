@@ -15,7 +15,7 @@ nghĩa hoặc cần đến thuật ngữ lần đầu.
 | Controlled Change Log – Nhật ký thay đổi có kiểm soát | Bản ghi đánh số C01–C17 về mọi thay đổi đối với câu hỏi, dữ liệu và phương pháp, mỗi thay đổi kèm lý do và tác động (Mục 3.2) |
 | Data cut-off – Thời điểm chốt dữ liệu | Ngày cuối cùng mà một danh sách hoặc một đặc trưng được phép dùng dữ liệu: ngày 13 với danh sách tuần 3 và ngày 27 với danh sách tuần 5 (Mục 3) |
 | Decision option – Phương án quyết định | Khuyến nghị thuộc loại phân tích chỉ định, rút ra từ dữ liệu quan sát và được đưa ra như một giả thuyết để kiểm chứng trong đợt thí điểm, không phải biện pháp đã được chứng minh (Mục 11.5) |
-| Development runs – Các kỳ mở phát triển | 9 kỳ mở module năm 2013, dùng để trả lời AQ1, AQ2 và phát triển mô hình cho AQ3 (Mục 6) |
+| Development runs – Các kỳ mở phát triển | 9 kỳ mở module năm 2013, dùng để phát triển mô hình cho AQ3 và ước lượng AQ2 lần đầu (Mục 6) |
 | Early-sign rule – Quy tắc dấu hiệu sớm | Tính đến hết thời điểm chốt dữ liệu, sinh viên có một TMA hoặc CMA đến hạn mà chưa nộp, có một TMA nộp trễ hoặc không có hoạt động nào trên nền tảng học tập trong bảy ngày trước đó; đây là quy tắc duy nhất của dự án, dùng cả trên OULAD lẫn trong đợt thí điểm (Mục 2.1) |
 | Enrolment – Lượt đăng ký học | Một sinh viên trong một kỳ mở module; là đơn vị phân tích của mọi câu hỏi (Mục 3) |
 | Fit rating – Mức phù hợp của dữ liệu | Đánh giá mức dữ liệu đáp ứng một câu hỏi: GREEN khi dữ liệu hỗ trợ đầy đủ, YELLOW khi dữ liệu chỉ hỗ trợ một phần nên câu hỏi phải thu hẹp, RED khi dữ liệu không hỗ trợ vì thiếu một khái niệm, biến hoặc biện pháp can thiệp then chốt (Mục 5.1) |
@@ -39,6 +39,6 @@ nghĩa hoặc cần đến thuật ngữ lần đầu.
 | Sensitivity run – Phép kiểm tra độ nhạy | Một lần ước lượng lại với một lựa chọn được thay đổi, để kiểm tra kết luận có còn đứng vững hay không (Mục 11.3) |
 | Sign-flip permutation test – Kiểm định hoán vị đổi dấu | Kiểm định trả lời câu hỏi: nếu dấu của chênh lệch ở mỗi kỳ mở được đổi một cách ngẫu nhiên, thì tập chênh lệch thu được có lợi cho mô hình ít nhất bằng tập quan sát được với tần suất bao nhiêu (Mục 9, Phụ lục IX) |
 | Status – Trạng thái | Tình trạng của một câu hỏi cuối cùng: Đã trả lời (Answered), Trả lời một phần (Partial), Hoãn (Deferred) hoặc Loại bỏ (Dropped) (Mục 3) |
-| Test runs – Các kỳ mở của tập kiểm thử | 13 kỳ mở module năm 2014, có kết quả được giữ kín cho đến lần kiểm tra duy nhất của AQ3 (Mục 6) |
+| Test runs – Các kỳ mở của tập kiểm thử | 13 kỳ mở module năm 2014, dành cho lần kiểm tra duy nhất của mô hình AQ3; thiết kế của mô hình này không dựa vào kết quả học tập nào của năm 2014 (Mục 6) |
 | Traceability Matrix – Ma trận truy vết | Ma trận truy vết của đồ án (Final Project Traceability Matrix), theo dõi mỗi câu hỏi cuối cùng trên một hàng, từ mục tiêu và KPI qua dữ liệu, chuẩn bị dữ liệu, phương pháp và đánh giá đến quyết định, ghi GAP hoặc N.A. khi một mắt xích chưa có bằng chứng (Mục 11.1) |
 | Wilson interval – Khoảng tin cậy Wilson | Khoảng tin cậy điểm số (score interval) 95% của một tỷ lệ, dùng cho các tỷ lệ của AQ1 (Mục 8.1) |

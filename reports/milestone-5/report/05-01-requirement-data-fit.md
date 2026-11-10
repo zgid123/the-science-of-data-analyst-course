@@ -11,7 +11,7 @@ delivery mode or attendance, and the contact parts of the secondary KPIs; no que
 
 | AQ | Fit | Missing or weak in OULAD | Handling | Action | Status |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| AQ1 | YELLOW | Year of study, delivery mode; exam results in 2 of 7 modules | TMA and CMA only; day-14 rule; 2013 (C15) | Modify + Defer | Partial |
-| AQ2 | YELLOW | Attendance; several-modules sign in 2013 | Signs up to day 27; 2014 after AQ3 (C14) | Modify + Defer | Partial |
+| AQ1 | YELLOW | Year of study, delivery mode; exam results in 2 of 7 modules | TMA and CMA only; day-14 rule; both years (C15) | Modify | Answered |
+| AQ2 | YELLOW | Attendance; several-modules sign in 2013 | Signs up to day 27; several-modules sign on 2014 only (C12, C15) | Modify | Answered |
 | AQ3 | YELLOW | A task-only rule fires in 1 of 22 runs at day 13 | Rule with inactivity (C10); test on 2014 | Modify | Deferred |
 | AQ4 | RED | Contacts, capacity, outcomes after contact | Ranking part only (C11); contact to the pilot | Modify + Defer | Deferred |

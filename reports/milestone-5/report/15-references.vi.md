@@ -34,26 +34,26 @@ Danh mục tài liệu tham khảo được trình bày theo chuẩn APA (Americ
 
 [16] Slade, S., & Prinsloo, P. (2013). Learning analytics: Ethical issues and dilemmas. *American Behavioral Scientist*, *57*(10), 1510–1529. https://doi.org/10.1177/0002764213479366
 
-[17] Quốc hội. (2025). *Luật Trí tuệ nhân tạo, Luật số 134/2025/QH15* [Law on Artificial Intelligence, No. 134/2025/QH15]. https://static3.luatvietnam.vn/uploaded/others/2025/12/25/luat-134-2025-qh15_2512152052.docx
+[17] Miao, F., & Holmes, W. (2023). *Guidance for generative AI in education and research*. UNESCO. https://doi.org/10.54675/EWZM9535
 
-[18] Bộ Tư pháp. (2026, July 2). *Ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao* [Issuing the list of high-risk AI systems; Decision 33/2026/QĐ-TTg]. https://moj.gov.vn/portal/tin-tuc/chi-tiet/ban-hanh-danh-muc-he-thong-tri-tue-nhan-tao-co-rui-ro-cao-ti1fq907ea.html
+[18] Yên Chi. (2021, April 8). Sinh viên được học trực tuyến 30% tổng khối lượng chương trình đào tạo [Students may study online for 30% of the programme]. *Luật sư Việt Nam*. https://lsvn.vn/sinh-vien-duoc-hoc-truc-tuyen-30-tong-khoi-luong-chuong-trinh-dao-tao1617849652-a102715.html
 
-[19] Herodotou, C., Rienties, B., Hlosta, M., Boroowa, A., Mangafa, C., & Zdrahal, Z. (2020). The scalable implementation of predictive learning analytics at a distance learning university: Insights from a longitudinal case study. *The Internet and Higher Education*, *45*, Article 100725. https://doi.org/10.1016/j.iheduc.2020.100725
+[19] Rahmani, A. M., Groot, W., & Rahmani, H. (2024). Dropout in online higher education: A systematic literature review. *International Journal of Educational Technology in Higher Education*, *21*, Article 19. https://doi.org/10.1186/s41239-024-00450-9
 
-[20] Miao, F., & Holmes, W. (2023). *Guidance for generative AI in education and research*. UNESCO. https://doi.org/10.54675/EWZM9535
+[20] Muljana, P. S., & Luo, T. (2019). Factors contributing to student retention in online learning and recommended strategies for improvement: A systematic literature review. *Journal of Information Technology Education: Research*, *18*, 19–57. https://doi.org/10.28945/4182
 
-[21] Yên Chi. (2021, April 8). Sinh viên được học trực tuyến 30% tổng khối lượng chương trình đào tạo [Students may study online for 30% of the programme]. *Luật sư Việt Nam*. https://lsvn.vn/sinh-vien-duoc-hoc-truc-tuyen-30-tong-khoi-luong-chuong-trinh-dao-tao1617849652-a102715.html
+[21] Lê, T. M. L., Trần, T. A. T., & Trần, A. T. (2024). Tổng quan thực trạng và các yếu tố ảnh hưởng đến bỏ học ở sinh viên đại học [A review of the situation of and factors influencing university student dropout]. *Tạp chí Phát triển Khoa học và Công nghệ – Khoa học Xã hội và Nhân văn*, *8*(3), 2683–2706. https://doi.org/10.32508/stdjssh.v8i3.1033
 
-[22] Rahmani, A. M., Groot, W., & Rahmani, H. (2024). Dropout in online higher education: A systematic literature review. *International Journal of Educational Technology in Higher Education*, *21*, Article 19. https://doi.org/10.1186/s41239-024-00450-9
+[22] Jordan, K. (2015). Massive open online course completion rates revisited: Assessment, length and attrition. *International Review of Research in Open and Distributed Learning*, *16*(3), 341–358. https://doi.org/10.19173/irrodl.v16i3.2112
 
-[23] Muljana, P. S., & Luo, T. (2019). Factors contributing to student retention in online learning and recommended strategies for improvement: A systematic literature review. *Journal of Information Technology Education: Research*, *18*, 19–57. https://doi.org/10.28945/4182
+[23] Howard, E., Meehan, M., & Parnell, A. (2018). Contrasting prediction methods for early warning systems at undergraduate level. *The Internet and Higher Education*, *37*, 66–75. https://doi.org/10.1016/j.iheduc.2018.02.001
 
-[24] Lê, T. M. L., Trần, T. A. T., & Trần, A. T. (2024). Tổng quan thực trạng và các yếu tố ảnh hưởng đến bỏ học ở sinh viên đại học [A review of the situation of and factors influencing university student dropout]. *Tạp chí Phát triển Khoa học và Công nghệ – Khoa học Xã hội và Nhân văn*, *8*(3), 2683–2706. https://doi.org/10.32508/stdjssh.v8i3.1033
+[24] Herodotou, C., Rienties, B., Hlosta, M., Boroowa, A., Mangafa, C., & Zdrahal, Z. (2020). The scalable implementation of predictive learning analytics at a distance learning university: Insights from a longitudinal case study. *The Internet and Higher Education*, *45*, Article 100725. https://doi.org/10.1016/j.iheduc.2020.100725
 
-[25] Jordan, K. (2015). Massive open online course completion rates revisited: Assessment, length and attrition. *International Review of Research in Open and Distributed Learning*, *16*(3), 341–358. https://doi.org/10.19173/irrodl.v16i3.2112
+[25] Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data*, *3*, 160018. https://doi.org/10.1038/sdata.2016.18
 
-[26] Howard, E., Meehan, M., & Parnell, A. (2018). Contrasting prediction methods for early warning systems at undergraduate level. *The Internet and Higher Education*, *37*, 66–75. https://doi.org/10.1016/j.iheduc.2018.02.001
+[26] Quốc hội. (2025). *Luật Trí tuệ nhân tạo, Luật số 134/2025/QH15* [Law on Artificial Intelligence, No. 134/2025/QH15]. https://static3.luatvietnam.vn/uploaded/others/2025/12/25/luat-134-2025-qh15_2512152052.docx
 
-[27] Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., ... Mons, B. (2016). The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data*, *3*, 160018. https://doi.org/10.1038/sdata.2016.18
+[27] Bộ Tư pháp. (2026, July 2). *Ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao* [Issuing the list of high-risk AI systems; Decision 33/2026/QĐ-TTg]. https://moj.gov.vn/portal/tin-tuc/chi-tiet/ban-hanh-danh-muc-he-thong-tri-tue-nhan-tao-co-rui-ro-cao-ti1fq907ea.html
 
 [28] Schröer, C., Kruse, F., & Gómez, J. M. (2021). A systematic literature review on applying CRISP-DM process model. *Procedia Computer Science*, *181*, 526–534. https://doi.org/10.1016/j.procs.2021.01.199

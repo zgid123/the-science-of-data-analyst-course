@@ -1,4 +1,4 @@
-2026-11-09T15:07:08Z
+2026-11-10T17:57:51Z
 $ python src/checks/check_rebuild.py prepared   (Python 3.12.7)
 MATCH       prepared view   assessment_due.parquet  rows 286898 (published 286898)
 MATCH       prepared view   capacity_by_run.parquet  rows 44 (published 44)

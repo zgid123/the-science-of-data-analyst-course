@@ -1,0 +1,579 @@
+{
+ "scope": "all 22 runs; no row outside these runs read (filter pushed to the reader and asserted)",
+ "aq1": {
+  "day14_registered": {
+   "n": 28061,
+   "non_completers": 12700,
+   "non_completion": [
+    0.4526,
+    0.4468,
+    0.4584
+   ],
+   "completion": [
+    0.5474,
+    0.5416,
+    0.5532
+   ],
+   "module_low": {
+    "level": "module",
+    "group": "AAA",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 189,
+    "n": 720,
+    "rate": 0.2625,
+    "ci_low": 0.2317,
+    "ci_high": 0.2958
+   },
+   "module_high": {
+    "level": "module",
+    "group": "CCC",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 1994,
+    "n": 3670,
+    "rate": 0.5433,
+    "ci_low": 0.5272,
+    "ci_high": 0.5594
+   },
+   "run_low": {
+    "level": "run",
+    "group": "AAA 2013J",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 92,
+    "n": 370,
+    "rate": 0.2486,
+    "ci_low": 0.2073,
+    "ci_high": 0.2951
+   },
+   "run_high": {
+    "level": "run",
+    "group": "CCC 2014B",
+    "denominator": "day14_registered",
+    "measure": "non_completion",
+    "events": 928,
+    "n": 1591,
+    "rate": 0.5833,
+    "ci_low": 0.5589,
+    "ci_high": 0.6073
+   },
+   "shares": {
+    "Pass": [
+     0.4397,
+     0.4339,
+     0.4455
+    ],
+    "Distinction": [
+     0.1077,
+     0.1041,
+     0.1114
+    ],
+    "Fail": [
+     0.2504,
+     0.2454,
+     0.2555
+    ],
+    "Withdrawn": [
+     0.2022,
+     0.1975,
+     0.2069
+    ]
+   }
+  },
+  "all_enrolments": {
+   "n": 32593,
+   "non_completers": 17208,
+   "non_completion": [
+    0.528,
+    0.5225,
+    0.5334
+   ],
+   "completion": [
+    0.472,
+    0.4666,
+    0.4775
+   ],
+   "module_low": {
+    "level": "module",
+    "group": "AAA",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 217,
+    "n": 748,
+    "rate": 0.2901,
+    "ci_low": 0.2587,
+    "ci_high": 0.3236
+   },
+   "module_high": {
+    "level": "module",
+    "group": "CCC",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 2756,
+    "n": 4434,
+    "rate": 0.6216,
+    "ci_low": 0.6072,
+    "ci_high": 0.6357
+   },
+   "run_low": {
+    "level": "run",
+    "group": "AAA 2013J",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 105,
+    "n": 383,
+    "rate": 0.2742,
+    "ci_low": 0.2319,
+    "ci_high": 0.3209
+   },
+   "run_high": {
+    "level": "run",
+    "group": "CCC 2014B",
+    "denominator": "all_enrolments",
+    "measure": "non_completion",
+    "events": 1273,
+    "n": 1936,
+    "rate": 0.6575,
+    "ci_low": 0.6361,
+    "ci_high": 0.6783
+   },
+   "shares": {
+    "Pass": [
+     0.3793,
+     0.374,
+     0.3845
+    ],
+    "Distinction": [
+     0.0928,
+     0.0897,
+     0.096
+    ],
+    "Fail": [
+     0.2164,
+     0.2119,
+     0.2209
+    ],
+    "Withdrawn": [
+     0.3116,
+     0.3066,
+     0.3167
+    ]
+   }
+  },
+  "day14_registered_excl_flagged": {
+   "n": 27962,
+   "non_completers": 12602,
+   "non_completion": [
+    0.4507,
+    0.4449,
+    0.4565
+   ],
+   "completion": [
+    0.5493,
+    0.5435,
+    0.5551
+   ],
+   "module_low": {
+    "level": "module",
+    "group": "AAA",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 189,
+    "n": 720,
+    "rate": 0.2625,
+    "ci_low": 0.2317,
+    "ci_high": 0.2958
+   },
+   "module_high": {
+    "level": "module",
+    "group": "CCC",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 1966,
+    "n": 3641,
+    "rate": 0.54,
+    "ci_low": 0.5237,
+    "ci_high": 0.5561
+   },
+   "run_low": {
+    "level": "run",
+    "group": "AAA 2013J",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 92,
+    "n": 370,
+    "rate": 0.2486,
+    "ci_low": 0.2073,
+    "ci_high": 0.2951
+   },
+   "run_high": {
+    "level": "run",
+    "group": "CCC 2014B",
+    "denominator": "day14_registered_excl_flagged",
+    "measure": "non_completion",
+    "events": 928,
+    "n": 1591,
+    "rate": 0.5833,
+    "ci_low": 0.5589,
+    "ci_high": 0.6073
+   },
+   "shares": {
+    "Pass": [
+     0.4412,
+     0.4354,
+     0.4471
+    ],
+    "Distinction": [
+     0.1081,
+     0.1045,
+     0.1118
+    ],
+    "Fail": [
+     0.2511,
+     0.2461,
+     0.2562
+    ],
+    "Withdrawn": [
+     0.1996,
+     0.1949,
+     0.2043
+    ]
+   }
+  },
+  "runs_outside_interval_between_denominators": [
+   "BBB 2013B",
+   "BBB 2013J",
+   "BBB 2014B",
+   "BBB 2014J",
+   "CCC 2014B",
+   "CCC 2014J",
+   "DDD 2013B",
+   "DDD 2013J",
+   "DDD 2014B",
+   "DDD 2014J",
+   "EEE 2013J",
+   "EEE 2014B",
+   "EEE 2014J",
+   "FFF 2013B",
+   "FFF 2013J",
+   "FFF 2014B",
+   "FFF 2014J"
+  ],
+  "first_missed_week": [
+   {
+    "denominator": "day14_registered",
+    "group": "all",
+    "n": 28061,
+    "with_missed_task": 12682,
+    "share_any": 0.4519,
+    "ci_low_any": 0.4461,
+    "ci_high_any": 0.4578,
+    "share_by_week4": 0.079,
+    "ci_low_week4": 0.0759,
+    "ci_high_week4": 0.0822,
+    "week_q1": 5.0,
+    "week_median": 13.0,
+    "week_q3": 22.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Pass",
+    "n": 12339,
+    "with_missed_task": 2757,
+    "share_any": 0.2234,
+    "ci_low_any": 0.2162,
+    "ci_high_any": 0.2309,
+    "share_by_week4": 0.0065,
+    "ci_low_week4": 0.0052,
+    "ci_high_week4": 0.0081,
+    "week_q1": 14.0,
+    "week_median": 24.0,
+    "week_q3": 29.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Distinction",
+    "n": 3022,
+    "with_missed_task": 393,
+    "share_any": 0.13,
+    "ci_low_any": 0.1185,
+    "ci_high_any": 0.1425,
+    "share_by_week4": 0.0013,
+    "ci_low_week4": 0.0005,
+    "ci_high_week4": 0.0034,
+    "week_q1": 5.0,
+    "week_median": 23.0,
+    "week_q3": 32.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Fail",
+    "n": 7027,
+    "with_missed_task": 5816,
+    "share_any": 0.8277,
+    "ci_low_any": 0.8187,
+    "ci_high_any": 0.8363,
+    "share_by_week4": 0.1503,
+    "ci_low_week4": 0.1421,
+    "ci_high_week4": 0.1588,
+    "week_q1": 6.0,
+    "week_median": 12.0,
+    "week_q3": 19.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Withdrawn",
+    "n": 5673,
+    "with_missed_task": 3716,
+    "share_any": 0.655,
+    "ci_low_any": 0.6426,
+    "ci_high_any": 0.6673,
+    "share_by_week4": 0.1898,
+    "ci_low_week4": 0.1799,
+    "ci_high_week4": 0.2003,
+    "week_q1": 4.0,
+    "week_median": 8.0,
+    "week_q3": 14.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Completed",
+    "n": 15361,
+    "with_missed_task": 3150,
+    "share_any": 0.2051,
+    "ci_low_any": 0.1988,
+    "ci_high_any": 0.2115,
+    "share_by_week4": 0.0055,
+    "ci_low_week4": 0.0044,
+    "ci_high_week4": 0.0068,
+    "week_q1": 14.0,
+    "week_median": 24.0,
+    "week_q3": 30.0
+   },
+   {
+    "denominator": "day14_registered",
+    "group": "Not completed",
+    "n": 12700,
+    "with_missed_task": 9532,
+    "share_any": 0.7506,
+    "ci_low_any": 0.743,
+    "ci_high_any": 0.758,
+    "share_by_week4": 0.168,
+    "ci_low_week4": 0.1616,
+    "ci_high_week4": 0.1746,
+    "week_q1": 5.0,
+    "week_median": 9.0,
+    "week_q3": 18.0
+   }
+  ],
+  "runs_no_task_due_by_d27": [
+   "EEE 2013J",
+   "EEE 2014B",
+   "EEE 2014J",
+   "GGG 2013J",
+   "GGG 2014B",
+   "GGG 2014J"
+  ],
+  "validation": {
+   "cells": 176,
+   "all_agree": true,
+   "first_missed_week_agree": "32593/32593"
+  }
+ },
+ "aq2": {
+  "population": {
+   "n": 27535,
+   "non_completers": 12156,
+   "non_completion": 0.4415,
+   "n_task_runs": 22545,
+   "task_runs": [
+    "AAA 2013J",
+    "AAA 2014J",
+    "BBB 2013B",
+    "BBB 2013J",
+    "BBB 2014B",
+    "BBB 2014J",
+    "CCC 2014B",
+    "CCC 2014J",
+    "DDD 2013B",
+    "DDD 2013J",
+    "DDD 2014B",
+    "DDD 2014J",
+    "FFF 2013B",
+    "FFF 2013J",
+    "FFF 2014B",
+    "FFF 2014J"
+   ],
+   "runs": [
+    "AAA 2013J",
+    "AAA 2014J",
+    "BBB 2013B",
+    "BBB 2013J",
+    "BBB 2014B",
+    "BBB 2014J",
+    "CCC 2014B",
+    "CCC 2014J",
+    "DDD 2013B",
+    "DDD 2013J",
+    "DDD 2014B",
+    "DDD 2014J",
+    "EEE 2013J",
+    "EEE 2014B",
+    "EEE 2014J",
+    "FFF 2013B",
+    "FFF 2013J",
+    "FFF 2014B",
+    "FFF 2014J",
+    "GGG 2013J",
+    "GGG 2014B",
+    "GGG 2014J"
+   ]
+  },
+  "model": {
+   "n_params": 54,
+   "converged": true,
+   "covariance": "HC1 robust, no clustering",
+   "pseudo_r2": 0.1382
+  },
+  "associations": [
+   {
+    "sign": "missed_task",
+    "n": 22545,
+    "n_with": 2653,
+    "rate_with": 0.8948,
+    "rate_without": 0.4,
+    "rd_unadj_pp": 49.49,
+    "rd_unadj_ci_low": 48.09,
+    "rd_unadj_ci_high": 50.79,
+    "rd_adj_single_pp": 48.5,
+    "rd_adj_mutual_pp": 39.75,
+    "rd_adj_mutual_ci_low": 37.68,
+    "rd_adj_mutual_ci_high": 41.81,
+    "or_adj_mutual": 7.185,
+    "or_adj_mutual_ci_low": 6.045,
+    "or_adj_mutual_ci_high": 8.54,
+    "modules_defined": 5,
+    "modules_same_direction": 5,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "late_tma",
+    "n": 22545,
+    "n_with": 1006,
+    "rate_with": 0.6183,
+    "rate_without": 0.4507,
+    "rd_unadj_pp": 16.76,
+    "rd_unadj_ci_low": 13.64,
+    "rd_unadj_ci_high": 19.78,
+    "rd_adj_single_pp": 19.73,
+    "rd_adj_mutual_pp": 20.56,
+    "rd_adj_mutual_ci_low": 17.58,
+    "rd_adj_mutual_ci_high": 23.54,
+    "or_adj_mutual": 2.451,
+    "or_adj_mutual_ci_low": 2.057,
+    "or_adj_mutual_ci_high": 2.921,
+    "modules_defined": 4,
+    "modules_same_direction": 4,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "inactive_last7",
+    "n": 27535,
+    "n_with": 5884,
+    "rate_with": 0.6458,
+    "rate_without": 0.3859,
+    "rd_unadj_pp": 25.99,
+    "rd_unadj_ci_low": 24.6,
+    "rd_unadj_ci_high": 27.36,
+    "rd_adj_single_pp": 32.13,
+    "rd_adj_mutual_pp": 14.66,
+    "rd_adj_mutual_ci_low": 12.77,
+    "rd_adj_mutual_ci_high": 16.55,
+    "or_adj_mutual": 2.005,
+    "or_adj_mutual_ci_low": 1.816,
+    "or_adj_mutual_ci_high": 2.213,
+    "modules_defined": 7,
+    "modules_same_direction": 7,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "low_relative_activity",
+    "n": 27535,
+    "n_with": 13722,
+    "rate_with": 0.5775,
+    "rate_without": 0.3064,
+    "rd_unadj_pp": 27.11,
+    "rd_unadj_ci_low": 25.98,
+    "rd_unadj_ci_high": 28.23,
+    "rd_adj_single_pp": 26.02,
+    "rd_adj_mutual_pp": 14.03,
+    "rd_adj_mutual_ci_low": 12.81,
+    "rd_adj_mutual_ci_high": 15.26,
+    "or_adj_mutual": 1.884,
+    "or_adj_mutual_ci_low": 1.743,
+    "or_adj_mutual_ci_high": 2.037,
+    "modules_defined": 7,
+    "modules_same_direction": 7,
+    "verdict": "consistent association"
+   },
+   {
+    "sign": "no_pre_start_activity",
+    "n": 27535,
+    "n_with": 5458,
+    "rate_with": 0.5964,
+    "rate_without": 0.4032,
+    "rd_unadj_pp": 19.32,
+    "rd_unadj_ci_low": 17.86,
+    "rd_unadj_ci_high": 20.77,
+    "rd_adj_single_pp": 23.32,
+    "rd_adj_mutual_pp": 9.44,
+    "rd_adj_mutual_ci_low": 7.73,
+    "rd_adj_mutual_ci_high": 11.16,
+    "or_adj_mutual": 1.629,
+    "or_adj_mutual_ci_low": 1.452,
+    "or_adj_mutual_ci_high": 1.828,
+    "modules_defined": 7,
+    "modules_same_direction": 7,
+    "verdict": "consistent association"
+   }
+  ],
+  "binned_residual_bins_outside_2se": [
+   {
+    "binned_by": "activity_level",
+    "bin": "1 no clicks days 0-27",
+    "residual_pp": 5.52
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "2 below half the run median",
+    "residual_pp": 2.67
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "3 half to the run median",
+    "residual_pp": -3.55
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "4 median to twice the median",
+    "residual_pp": 2.91
+   },
+   {
+    "binned_by": "activity_level",
+    "bin": "5 twice the run median or more",
+    "residual_pp": -4.13
+   },
+   {
+    "binned_by": "risk_decile",
+    "bin": "7",
+    "residual_pp": 2.06
+   },
+   {
+    "binned_by": "risk_decile",
+    "bin": "9",
+    "residual_pp": -2.42
+   }
+  ]
+ }
+}

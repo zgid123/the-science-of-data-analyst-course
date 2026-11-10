@@ -1,0 +1,21 @@
+PASS  milestone-5 format             Checked 112 files in reports/milestone-5/report: 0 errors, 6 warnings  (0 s)
+PASS  milestone-5 structure          EN: 56 files, 75 headings, 3 figures, 59 tables: 0 errors, 0 warnings; VI: 56 files, 75 headings, 3 figures, 59 tables:   (0 s)
+PASS  milestone-5 style              EN: 51 body files: 0 errors, 0 warnings; VI: 51 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 abbreviations      EN: 22 abbreviations, 0 violations; VI: 22 abbreviations, 0 violations  (0 s)
+PASS  milestone-5 citations          EN: 28 references, 28 cited, order first-citation: 0 errors, 0 warnings; VI: 28 references, 28 cited, order first-citati  (0 s)
+PASS  milestone-5 names              Checked 112 files for 5 names: 0 errors  (1 s)
+PASS  milestone-5 research_trail     Checked 35 sources, 377 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 research_layout    PASS layout: reports/milestone-5/research  (0 s)
+PASS  milestone-5 translation vi     56 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-5 parity vi          Checked 56 pairs (vi): 0 errors, 1 warnings  (2 s)
+PASS  milestone-5 figures            milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings  (2 s)
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (47 Word sections, 22 landscape, 4 images, 3 figure  (12 s)
+PASS  milestone-5 build vi           [vi] 56 sections → reports/milestone-5/build/N04_Milestone5_VI.docx  (59 Word sections, 28 landscape, 4 images, 3 figure  (13 s)
+PASS  milestone-5 docx en            EN reports/milestone-5/build/N04_Milestone5_EN.docx: 36 numbered headings, 3 figures, 59 tables, 4 images, 47 Word secti  (3 s)
+PASS  milestone-5 docx vi            VI reports/milestone-5/build/N04_Milestone5_VI.docx: 36 numbered headings, 3 figures, 59 tables, 4 images, 59 Word secti  (6 s)
+
+15/15 steps passed
+PASS  test build-report skill        162/162 checks passed  (86 s)
+PASS  test research-report skill     64/64 checks passed  (3 s)
+
+2/2 steps passed

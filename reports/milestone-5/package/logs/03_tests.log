@@ -1,4 +1,4 @@
-2026-11-09T15:07:01Z
+2026-11-10T17:57:42Z
 $ python -m unittest discover -s tests -v   (Python 3.12.7)
 test_activity_windows (test_features.FeatureFormulas.test_activity_windows) ... ok
 test_cma_mark_lag (test_features.FeatureFormulas.test_cma_mark_lag) ... ok
@@ -105,9 +105,12 @@ test_run_relative_activity (test_features.FeatureFormulas.test_run_relative_acti
 [8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows keptok
 test_status (test_features.FeatureFormulas.test_status) ... ok
 test_tasks_and_rule (test_features.FeatureFormulas.test_tasks_and_rule) ... ok
+test_module_without_the_sign_gets_no_term (test_scope.ModuleTerms.test_module_without_the_sign_gets_no_term) ... ok
+test_results_folder_follows_scope (test_scope.ScopeGuard.test_results_folder_follows_scope) ... ok
+test_scope_accepts_own_runs_and_rejects_others (test_scope.ScopeGuard.test_scope_accepts_own_runs_and_rejects_others) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.195s
+Ran 12 tests in 0.211s
 
 OK
 

@@ -10,11 +10,12 @@ Dữ liệu chỉ đáp ứng được một phần mục tiêu này. OULAD là 
 kết quả cuối cùng kèm ngày, các bài được chấm điểm kèm ngày và hoạt động hằng ngày trên nền tảng học tập của mọi lượt
 đăng ký học, nhưng không có hình thức học, năm theo học, điểm danh, số sinh viên cán bộ liên hệ được hay sổ theo dõi
 liên hệ (Mục 4 và 5). Phiên bản đã chuẩn bị của OULAD gắn mọi dấu hiệu với ngày tính đến hết thời điểm chốt dữ liệu và
-tách riêng các kỳ mở năm 2014 làm tập kiểm thử (Mục 7). Tỷ lệ theo nhóm trả lời AQ1: trên 9 kỳ mở năm 2013, 45,7% số
-lượt đăng ký học của sinh viên còn đăng ký học (chưa rút) tại ngày 14 không hoàn thành; tỷ lệ này chênh lệch lớn giữa các kỳ mở; phần lớn sinh viên
-không hoàn thành chỉ bắt đầu bỏ lỡ bài sau tuần 4 (Mục 11.2). Một mô hình đo mối liên hệ trả lời AQ2: cả năm dấu hiệu
-sớm đều gắn với việc cuối kỳ không hoàn thành; riêng sinh viên bỏ lỡ một bài có tỷ lệ không hoàn thành cao hơn 40,8
-điểm phần trăm so với sinh viên không bỏ lỡ; mọi dấu hiệu giữ cùng chiều ở các module (Mục 11.3). Với AQ3 và AQ4, có
+tách riêng các kỳ mở năm 2014 làm tập kiểm thử cho mô hình (Mục 7). Tỷ lệ theo nhóm trả lời AQ1: trên 22 kỳ mở năm
+2013 và năm 2014, 45,3% số lượt đăng ký học chưa rút tại ngày 14 về sau không hoàn thành; tỷ lệ
+này chênh lệch lớn giữa các kỳ mở; chênh lệch giữa hai năm phụ thuộc vào quy tắc về thời gian điều chỉnh đăng ký học phần; phần lớn sinh viên không hoàn thành chỉ bắt đầu bỏ lỡ bài sau tuần 4 (Mục 11.2). Một mô hình đo mối liên hệ trả
+lời AQ2: ở cả năm 2013 lẫn năm 2014, cả 5 dấu hiệu sớm đều gắn với việc cuối kỳ không hoàn thành; riêng sinh viên bỏ lỡ một bài có
+tỷ lệ không hoàn thành cao hơn sinh viên không bỏ lỡ 40,8 điểm phần trăm ở năm 2013 và 39,3 điểm phần trăm ở năm 2014; mọi dấu hiệu giữ cùng chiều ở
+các module (Mục 11.3). Với AQ3 và AQ4, có
 hai phương pháp phù hợp. Phương pháp thứ nhất là hồi quy logistic có điều chuẩn (penalised), được đánh giá một lần so
 với quy tắc dấu hiệu sớm. Phương pháp thứ hai là một danh sách có độ dài theo hạn mức liên hệ, được kiểm tra công bằng
 giữa các nhóm sinh viên. Đầu ra của hai câu hỏi này vẫn là kết quả dự kiến, chưa được đo (Mục 11.4).

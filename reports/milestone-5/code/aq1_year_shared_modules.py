@@ -1,9 +1,9 @@
 """AQ1 year comparison restricted to the six modules that ran in both years (module CCC ran only in 2014).
 
 Inputs: the run-level outcome counts Milestone 3 published (package metadata fig_outcome_by_run.csv; all enrolments,
-non-completion = Withdrawn + Fail). Uses no 2014 row of the prepared views. Writes results/aq1_year_shared_modules.csv:
+non-completion = Withdrawn + Fail). Uses no 2014 row of the prepared views. Writes results/compare/aq1_year_shared_modules_published.csv:
 the 2013 and 2014 non-completion rates over the shared modules, the difference in percentage points with a Wald 95%
-interval (as in aq1_year_difference.csv), and the 2014 rate of CCC alone.
+interval (as in aq1_year_difference_published.csv), and the 2014 rate of CCC alone.
 Usage: venv/bin/python reports/milestone-5/code/aq1_year_shared_modules.py
 """
 import csv
@@ -12,7 +12,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SRC = HERE.parents[1] / "milestone-3" / "package" / "data" / "metadata" / "fig_outcome_by_run.csv"
-OUT = HERE.parent / "results" / "aq1_year_shared_modules.csv"
+OUT = HERE.parent / "results" / "compare" / "aq1_year_shared_modules_published.csv"
 
 tot = {}
 for r in csv.DictReader(SRC.open()):
@@ -38,4 +38,4 @@ with OUT.open("w", newline="") as f:
     w.writerows(rows)
 for r in rows:
     print(r)
-assert n13 == 13529, n13  # all 2013 enrolments (results/aq1_year_comparison.csv)
+assert n13 == 13529, n13  # all 2013 enrolments (results/compare/aq1_year_comparison_published.csv)

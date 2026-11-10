@@ -1,4 +1,4 @@
-2026-11-09T15:07:02Z
+2026-11-10T17:57:44Z
 $ python src/prepare_data.py   (Python 3.12.7)
 [1 load] courses.csv (SHA-256 pinned, columns as documented): None -> 22 
 [1 load] assessments.csv (SHA-256 pinned, columns as documented): None -> 206 

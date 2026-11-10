@@ -1,0 +1,84 @@
+=== 2026-11-10T16:37:25Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2014)
+/Users/ptkhanh/Documents/master/milestone-da/venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+2014 rows loaded: enrolment 19064, features_d27 15724; presentations ['2014B', '2014J']
+AQ1 day14_registered: n=15985 non-completers=7185 rate=[0.4495, 0.4418, 0.4572]
+AQ1 all_enrolments: n=19064 non-completers=10249 rate=[0.5376, 0.5305, 0.5447]
+AQ1 day14_registered_excl_flagged: n=15894 non-completers=7095 rate=[0.4464, 0.4387, 0.4541]
+AQ1 validation: {'cells': 104, 'all_agree': True, 'first_missed_week_agree': '19064/19064'}
+AQ2 population: 15724 enrolments, 6911 non-completers
+AQ2 missed_task: unadj 48.77 pp; mutual 39.26 pp (36.45, 42.08); OR 7.098; 5/5 modules; consistent association
+AQ2 late_tma: unadj 14.36 pp; mutual 20.25 pp (15.64, 24.87); OR 2.195; 3/4 modules; consistent association
+AQ2 inactive_last7: unadj 26.53 pp; mutual 15.82 pp (13.3, 18.35); OR 2.086; 7/7 modules; consistent association
+AQ2 low_relative_activity: unadj 26.97 pp; mutual 14.6 pp (12.98, 16.22); OR 1.924; 7/7 modules; consistent association
+AQ2 no_pre_start_activity: unadj 17.92 pp; mutual 8.65 pp (6.44, 10.87); OR 1.562; 7/7 modules; consistent association
+Results written to results/2014
+exit status: 0
+
+=== 2026-11-10T16:49:02Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2014)
+/Users/ptkhanh/Documents/master/milestone-da/venv/lib/python3.12/site-packages/statsmodels/discrete/discrete_model.py:268: ConvergenceWarning: Maximum Likelihood optimization failed to converge. Check mle_retvals
+  mlefit = super().fit(
+2014 rows loaded: enrolment 19064, features_d27 15724; presentations ['2014B', '2014J']
+AQ1 day14_registered: n=15985 non-completers=7185 rate=[0.4495, 0.4418, 0.4572]
+AQ1 all_enrolments: n=19064 non-completers=10249 rate=[0.5376, 0.5305, 0.5447]
+AQ1 day14_registered_excl_flagged: n=15894 non-completers=7095 rate=[0.4464, 0.4387, 0.4541]
+AQ1 validation: {'cells': 104, 'all_agree': True, 'first_missed_week_agree': '19064/19064'}
+AQ2 population: 15724 enrolments, 6911 non-completers
+AQ2 missed_task: unadj 48.77 pp; mutual 39.26 pp (36.45, 42.08); OR 7.098; 5/5 modules; consistent association
+AQ2 late_tma: unadj 14.36 pp; mutual 20.25 pp (15.64, 24.87); OR 2.195; 3/4 modules; consistent association
+AQ2 inactive_last7: unadj 26.53 pp; mutual 15.82 pp (13.3, 18.35); OR 2.086; 7/7 modules; consistent association
+AQ2 low_relative_activity: unadj 26.97 pp; mutual 14.6 pp (12.98, 16.22); OR 1.924; 7/7 modules; consistent association
+AQ2 no_pre_start_activity: unadj 17.92 pp; mutual 8.65 pp (6.44, 10.87); OR 1.562; 7/7 modules; consistent association
+Results written to results/2014
+exit status: 0
+
+=== 2026-11-10T17:08:15Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2014)
+2014 rows loaded: enrolment 19064, features_d27 15724; presentations ['2014B', '2014J']
+AQ1 day14_registered: n=15985 non-completers=7185 rate=[0.4495, 0.4418, 0.4572]
+AQ1 all_enrolments: n=19064 non-completers=10249 rate=[0.5376, 0.5305, 0.5447]
+AQ1 day14_registered_excl_flagged: n=15894 non-completers=7095 rate=[0.4464, 0.4387, 0.4541]
+AQ1 validation: {'cells': 104, 'all_agree': True, 'first_missed_week_agree': '19064/19064'}
+AQ2 population: 15724 enrolments, 6911 non-completers
+AQ2 missed_task: unadj 48.77 pp; mutual 39.26 pp (36.45, 42.08); OR 7.098; 5/5 modules; consistent association
+AQ2 late_tma: unadj 14.36 pp; mutual 20.25 pp (15.64, 24.87); OR 2.195; 3/4 modules; consistent association
+AQ2 inactive_last7: unadj 26.53 pp; mutual 15.82 pp (13.3, 18.35); OR 2.086; 7/7 modules; consistent association
+AQ2 low_relative_activity: unadj 26.97 pp; mutual 14.6 pp (12.98, 16.22); OR 1.924; 7/7 modules; consistent association
+AQ2 no_pre_start_activity: unadj 17.92 pp; mutual 8.65 pp (6.44, 10.87); OR 1.562; 7/7 modules; consistent association
+Results written to results/2014
+exit status: 0
+
+=== 2026-11-10T17:08:31Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2014)
+2014 rows loaded: enrolment 19064, features_d27 15724; presentations ['2014B', '2014J']
+AQ1 day14_registered: n=15985 non-completers=7185 rate=[0.4495, 0.4418, 0.4572]
+AQ1 all_enrolments: n=19064 non-completers=10249 rate=[0.5376, 0.5305, 0.5447]
+AQ1 day14_registered_excl_flagged: n=15894 non-completers=7095 rate=[0.4464, 0.4387, 0.4541]
+AQ1 validation: {'cells': 104, 'all_agree': True, 'first_missed_week_agree': '19064/19064'}
+AQ2 population: 15724 enrolments, 6911 non-completers
+AQ2 missed_task: unadj 48.77 pp; mutual 39.26 pp (36.45, 42.08); OR 7.098; 5/5 modules; consistent association
+AQ2 late_tma: unadj 14.36 pp; mutual 20.25 pp (15.64, 24.87); OR 2.195; 3/4 modules; consistent association
+AQ2 inactive_last7: unadj 26.53 pp; mutual 15.82 pp (13.3, 18.35); OR 2.086; 7/7 modules; consistent association
+AQ2 low_relative_activity: unadj 26.97 pp; mutual 14.6 pp (12.98, 16.22); OR 1.924; 7/7 modules; consistent association
+AQ2 no_pre_start_activity: unadj 17.92 pp; mutual 8.65 pp (6.44, 10.87); OR 1.562; 7/7 modules; consistent association
+Results written to results/2014
+exit status: 0
+
+=== 2026-11-10T18:02:03Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2014)
+2014 rows loaded: enrolment 19064, features_d27 15724; presentations ['2014B', '2014J']
+AQ1 day14_registered: n=15985 non-completers=7185 rate=[0.4495, 0.4418, 0.4572]
+AQ1 all_enrolments: n=19064 non-completers=10249 rate=[0.5376, 0.5305, 0.5447]
+AQ1 day14_registered_excl_flagged: n=15894 non-completers=7095 rate=[0.4464, 0.4387, 0.4541]
+AQ1 validation: {'cells': 104, 'all_agree': True, 'first_missed_week_agree': '19064/19064'}
+AQ2 population: 15724 enrolments, 6911 non-completers
+AQ2 missed_task: unadj 48.77 pp; mutual 39.26 pp (36.45, 42.08); OR 7.098; 5/5 modules; consistent association
+AQ2 late_tma: unadj 14.36 pp; mutual 20.25 pp (15.64, 24.87); OR 2.195; 3/4 modules; consistent association
+AQ2 inactive_last7: unadj 26.53 pp; mutual 15.82 pp (13.3, 18.35); OR 2.086; 7/7 modules; consistent association
+AQ2 low_relative_activity: unadj 26.97 pp; mutual 14.6 pp (12.98, 16.22); OR 1.924; 7/7 modules; consistent association
+AQ2 no_pre_start_activity: unadj 17.92 pp; mutual 8.65 pp (6.44, 10.87); OR 1.562; 7/7 modules; consistent association
+Results written to results/2014
+exit status: 0
+

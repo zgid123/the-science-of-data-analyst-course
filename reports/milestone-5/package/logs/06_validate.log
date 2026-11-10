@@ -1,4 +1,4 @@
-2026-11-09T15:07:05Z
+2026-11-10T17:57:48Z
 $ python src/validate_prepared.py   (Python 3.12.7)
 V01a PASS enrolment rows and outcome mix equal raw studentInfo: expected 32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]; observed 32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]
 V01b PASS students: expected 28,785; observed 28,785

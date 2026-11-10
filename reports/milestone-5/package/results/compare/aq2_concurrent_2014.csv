@@ -1,0 +1,7 @@
+year,population,group,n,non_completers,rate,ci_low,ci_high,rd_pp,rd_ci_low,rd_ci_high
+2013,registered at day 27,"concurrent enrolment (another enrolment in the same presentation, registered at day 27)",12,7,,,,,,
+2014,registered at day 27,"concurrent enrolment (another enrolment in the same presentation, registered at day 27)",1288,694,,,,,,
+2014,all 2014 enrolments registered at day 27,missed tasks in several modules at once,28,27,0.9643,0.8229,0.9937,52.57,38.41,55.61
+2014,all 2014 enrolments registered at day 27,all others,15696,6884,0.4386,0.4308,0.4464,,,
+2014,2014 concurrent enrolments registered at day 27,missed tasks in several modules at once,28,27,0.9643,0.8229,0.9937,43.49,29.09,47.52
+2014,2014 concurrent enrolments registered at day 27,all others,1260,667,0.5294,0.5018,0.5568,,,

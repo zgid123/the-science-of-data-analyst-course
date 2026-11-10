@@ -1,0 +1,36 @@
+variant,origin,sign,n,n_non_completers,n_with,converged,rd_unadj_pp,rd_adj_mutual_pp,rd_adj_mutual_ci_low,rd_adj_mutual_ci_high,or_adj_mutual,or_adj_mutual_ci_low,or_adj_mutual_ci_high
+primary,plan,missed_task,12585,6911,1368,true,48.77,39.26,36.45,42.08,7.098,5.611,8.979
+primary,plan,late_tma,12585,6911,429,true,14.36,20.25,15.64,24.87,2.195,1.684,2.861
+primary,plan,inactive_last7,15724,6911,3440,true,26.53,15.82,13.3,18.35,2.086,1.826,2.383
+primary,plan,low_relative_activity,15724,6911,7833,true,26.97,14.6,12.98,16.22,1.924,1.731,2.139
+primary,plan,no_pre_start_activity,15724,6911,3161,true,17.92,8.65,6.44,10.87,1.562,1.333,1.83
+dedup_clicks,plan (card AQ2: de-duplicated clicks),missed_task,12585,6911,1368,true,48.77,39.26,36.45,42.07,7.09,5.604,8.97
+dedup_clicks,plan (card AQ2: de-duplicated clicks),late_tma,12585,6911,429,true,14.36,20.29,15.67,24.91,2.198,1.687,2.864
+dedup_clicks,plan (card AQ2: de-duplicated clicks),inactive_last7,15724,6911,3440,true,26.53,15.96,13.44,18.48,2.09,1.83,2.387
+dedup_clicks,plan (card AQ2: de-duplicated clicks),low_relative_activity,15724,6911,7831,true,26.87,14.48,12.87,16.1,1.928,1.735,2.143
+dedup_clicks,plan (card AQ2: de-duplicated clicks),no_pre_start_activity,15724,6911,3161,true,17.92,8.71,6.49,10.93,1.563,1.333,1.831
+late_tma_or_cma,plan (card AQ2: rule variant that also counts late CMAs),missed_task,12585,6911,1368,true,48.77,40.25,36.51,43.99,7.474,5.678,9.838
+late_tma_or_cma,plan (card AQ2: rule variant that also counts late CMAs),late_tma,12585,6911,3508,true,4.28,17.23,11.84,22.62,1.977,1.53,2.555
+late_tma_or_cma,plan (card AQ2: rule variant that also counts late CMAs),inactive_last7,15724,6911,3440,true,26.53,15.84,13.31,18.36,2.087,1.827,2.383
+late_tma_or_cma,plan (card AQ2: rule variant that also counts late CMAs),low_relative_activity,15724,6911,7833,true,26.97,14.62,13.0,16.24,1.925,1.731,2.14
+late_tma_or_cma,plan (card AQ2: rule variant that also counts late CMAs),no_pre_start_activity,15724,6911,3161,true,17.92,8.67,6.46,10.89,1.562,1.333,1.831
+excl_flagged,plan (card AQ2: without the flagged enrolments),missed_task,12499,6820,1301,true,48.38,38.91,36.03,41.78,6.905,5.456,8.738
+excl_flagged,plan (card AQ2: without the flagged enrolments),late_tma,12499,6820,428,true,14.64,20.32,15.67,24.97,2.19,1.68,2.855
+excl_flagged,plan (card AQ2: without the flagged enrolments),inactive_last7,15632,6820,3364,true,25.85,15.49,12.96,18.03,2.055,1.799,2.348
+excl_flagged,plan (card AQ2: without the flagged enrolments),low_relative_activity,15632,6820,7753,true,26.65,14.68,13.06,16.31,1.926,1.733,2.141
+excl_flagged,plan (card AQ2: without the flagged enrolments),no_pre_start_activity,15632,6820,3125,true,17.74,8.71,6.49,10.94,1.562,1.333,1.831
+drop_no_task_runs,plan (card AQ2: dropping runs with no task due),missed_task,12585,5735,1368,true,48.77,39.28,36.46,42.09,7.108,5.618,8.994
+drop_no_task_runs,plan (card AQ2: dropping runs with no task due),late_tma,12585,5735,429,true,14.36,20.27,15.65,24.88,2.196,1.685,2.863
+drop_no_task_runs,plan (card AQ2: dropping runs with no task due),inactive_last7,12585,5735,2384,true,28.86,15.33,12.36,18.29,2.027,1.71,2.403
+drop_no_task_runs,plan (card AQ2: dropping runs with no task due),low_relative_activity,12585,5735,6273,true,27.25,14.37,12.57,16.18,1.87,1.639,2.133
+drop_no_task_runs,plan (card AQ2: dropping runs with no task due),no_pre_start_activity,12585,5735,2142,true,18.84,6.89,4.31,9.48,1.401,1.134,1.73
+below_half_median,added (threshold of the relative-activity sign),missed_task,12585,6911,1368,true,48.77,39.55,36.72,42.39,7.198,5.69,9.106
+below_half_median,added (threshold of the relative-activity sign),late_tma,12585,6911,429,true,14.36,21.06,16.51,25.61,2.277,1.757,2.953
+below_half_median,added (threshold of the relative-activity sign),inactive_last7,15724,6911,3440,true,26.53,15.48,12.84,18.12,2.056,1.794,2.356
+below_half_median,added (threshold of the relative-activity sign),low_relative_activity,15724,6911,4099,true,30.24,14.83,12.77,16.88,1.907,1.694,2.146
+below_half_median,added (threshold of the relative-activity sign),no_pre_start_activity,15724,6911,3161,true,17.92,9.22,6.96,11.47,1.604,1.371,1.876
+no_interactions,added (common sign effect across modules),missed_task,12585,6911,1368,true,48.77,38.25,35.44,41.06,6.711,5.593,8.052
+no_interactions,added (common sign effect across modules),late_tma,12585,6911,429,true,14.36,19.87,15.67,24.07,2.61,2.113,3.224
+no_interactions,added (common sign effect across modules),inactive_last7,15724,6911,3440,true,26.53,14.52,12.37,16.68,1.962,1.778,2.164
+no_interactions,added (common sign effect across modules),low_relative_activity,15724,6911,7833,true,26.97,14.74,13.12,16.35,1.982,1.841,2.135
+no_interactions,added (common sign effect across modules),no_pre_start_activity,15724,6911,3161,true,17.92,8.29,6.26,10.32,1.481,1.347,1.629

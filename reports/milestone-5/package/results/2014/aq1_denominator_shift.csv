@@ -1,0 +1,139 @@
+level,group,measure,n_day14,rate_day14,ci_low_day14,ci_high_day14,n_all,rate_all,shift_pp,outside_day14_interval
+overall,all 13 runs of 2014,completion,15985,0.5505,0.5428,0.5582,19064,0.4624,-8.81,true
+overall,all 13 runs of 2014,non_completion,15985,0.4495,0.4418,0.4572,19064,0.5376,8.81,true
+overall,all 13 runs of 2014,Pass,15985,0.4287,0.4211,0.4364,19064,0.3602,-6.85,true
+overall,all 13 runs of 2014,Distinction,15985,0.1218,0.1168,0.127,19064,0.1022,-1.96,true
+overall,all 13 runs of 2014,Fail,15985,0.2375,0.231,0.2442,19064,0.1999,-3.76,true
+overall,all 13 runs of 2014,Withdrawn,15985,0.2119,0.2057,0.2184,19064,0.3378,12.59,true
+module,AAA,completion,350,0.7229,0.6737,0.7671,365,0.6932,-2.97,false
+module,AAA,non_completion,350,0.2771,0.2329,0.3263,365,0.3068,2.97,false
+module,AAA,Pass,350,0.6543,0.603,0.7022,365,0.6274,-2.69,false
+module,AAA,Distinction,350,0.0686,0.0465,0.1,365,0.0658,-0.28,false
+module,AAA,Fail,350,0.1314,0.1,0.1709,365,0.126,-0.54,false
+module,AAA,Withdrawn,350,0.1457,0.1126,0.1865,365,0.1808,3.51,false
+module,BBB,completion,3080,0.6065,0.5891,0.6236,3905,0.4812,-12.53,true
+module,BBB,non_completion,3080,0.3935,0.3764,0.4109,3905,0.5188,12.53,true
+module,BBB,Pass,3080,0.4945,0.4768,0.5121,3905,0.3926,-10.19,true
+module,BBB,Distinction,3080,0.112,0.1014,0.1236,3905,0.0886,-2.34,true
+module,BBB,Fail,3080,0.2532,0.2382,0.2689,3905,0.2015,-5.17,true
+module,BBB,Withdrawn,3080,0.1403,0.1284,0.153,3905,0.3173,17.7,true
+module,CCC,completion,3670,0.4567,0.4406,0.4728,4434,0.3784,-7.83,true
+module,CCC,non_completion,3670,0.5433,0.5272,0.5594,4434,0.6216,7.83,true
+module,CCC,Pass,3670,0.321,0.3061,0.3363,4434,0.2661,-5.49,true
+module,CCC,Distinction,3670,0.1357,0.125,0.1472,4434,0.1123,-2.34,true
+module,CCC,Fail,3670,0.2128,0.1999,0.2263,4434,0.1761,-3.67,true
+module,CCC,Withdrawn,3670,0.3305,0.3155,0.3459,4434,0.4454,11.49,true
+module,DDD,completion,2529,0.5022,0.4827,0.5216,3031,0.4193,-8.29,true
+module,DDD,non_completion,2529,0.4978,0.4784,0.5173,3031,0.5807,8.29,true
+module,DDD,Pass,2529,0.4108,0.3918,0.4301,3031,0.3431,-6.77,true
+module,DDD,Distinction,2529,0.0913,0.0807,0.1032,3031,0.0762,-1.51,true
+module,DDD,Fail,2529,0.2459,0.2296,0.2631,3031,0.2055,-4.04,true
+module,DDD,Withdrawn,2529,0.2519,0.2353,0.2692,3031,0.3751,12.32,true
+module,EEE,completion,1640,0.6348,0.6112,0.6577,1882,0.5531,-8.17,true
+module,EEE,non_completion,1640,0.3652,0.3423,0.3888,1882,0.4469,8.17,true
+module,EEE,Pass,1640,0.4951,0.471,0.5193,1882,0.4315,-6.36,true
+module,EEE,Distinction,1640,0.1396,0.1237,0.1573,1882,0.1217,-1.79,true
+module,EEE,Fail,1640,0.2195,0.2001,0.2402,1882,0.1923,-2.72,true
+module,EEE,Withdrawn,1640,0.1457,0.1295,0.1636,1882,0.2545,10.88,true
+module,FFF,completion,3195,0.554,0.5367,0.5712,3865,0.4582,-9.58,true
+module,FFF,non_completion,3195,0.446,0.4288,0.4633,3865,0.5418,9.58,true
+module,FFF,Pass,3195,0.4397,0.4226,0.457,3865,0.3638,-7.59,true
+module,FFF,Distinction,3195,0.1142,0.1037,0.1257,3865,0.0944,-1.98,true
+module,FFF,Fail,3195,0.2426,0.228,0.2577,3865,0.201,-4.16,true
+module,FFF,Withdrawn,3195,0.2034,0.1898,0.2178,3865,0.3408,13.74,true
+module,GGG,completion,1521,0.6062,0.5814,0.6304,1582,0.5828,-2.34,false
+module,GGG,non_completion,1521,0.3938,0.3696,0.4186,1582,0.4172,2.34,false
+module,GGG,Pass,1521,0.4385,0.4138,0.4636,1582,0.4216,-1.69,false
+module,GGG,Distinction,1521,0.1677,0.1497,0.1873,1582,0.1612,-0.65,false
+module,GGG,Fail,1521,0.2847,0.2626,0.3079,1582,0.2743,-1.04,false
+module,GGG,Withdrawn,1521,0.1091,0.0944,0.1258,1582,0.1429,3.38,true
+run,AAA 2014J,completion,350,0.7229,0.6737,0.7671,365,0.6932,-2.97,false
+run,AAA 2014J,non_completion,350,0.2771,0.2329,0.3263,365,0.3068,2.97,false
+run,AAA 2014J,Pass,350,0.6543,0.603,0.7022,365,0.6274,-2.69,false
+run,AAA 2014J,Distinction,350,0.0686,0.0465,0.1,365,0.0658,-0.28,false
+run,AAA 2014J,Fail,350,0.1314,0.1,0.1709,365,0.126,-0.54,false
+run,AAA 2014J,Withdrawn,350,0.1457,0.1126,0.1865,365,0.1808,3.51,false
+run,BBB 2014B,completion,1289,0.5625,0.5352,0.5893,1613,0.4507,-11.18,true
+run,BBB 2014B,non_completion,1289,0.4375,0.4107,0.4648,1613,0.5493,11.18,true
+run,BBB 2014B,Pass,1289,0.4344,0.4076,0.4617,1613,0.3478,-8.66,true
+run,BBB 2014B,Distinction,1289,0.128,0.1109,0.1474,1613,0.1029,-2.51,true
+run,BBB 2014B,Fail,1289,0.3057,0.2811,0.3314,1613,0.2455,-6.02,true
+run,BBB 2014B,Withdrawn,1289,0.1319,0.1145,0.1515,1613,0.3038,17.19,true
+run,BBB 2014J,completion,1791,0.6382,0.6157,0.6601,2292,0.5026,-13.56,true
+run,BBB 2014J,non_completion,1791,0.3618,0.3399,0.3843,2292,0.4974,13.56,true
+run,BBB 2014J,Pass,1791,0.5377,0.5145,0.5607,2292,0.4241,-11.36,true
+run,BBB 2014J,Distinction,1791,0.1005,0.0874,0.1153,2292,0.0785,-2.2,true
+run,BBB 2014J,Fail,1791,0.2155,0.1971,0.2352,2292,0.1706,-4.49,true
+run,BBB 2014J,Withdrawn,1791,0.1463,0.1307,0.1634,2292,0.3268,18.05,true
+run,CCC 2014B,completion,1591,0.4167,0.3927,0.4411,1936,0.3425,-7.42,true
+run,CCC 2014B,non_completion,1591,0.5833,0.5589,0.6073,1936,0.6575,7.42,true
+run,CCC 2014B,Pass,1591,0.296,0.2741,0.3189,1936,0.2433,-5.27,true
+run,CCC 2014B,Distinction,1591,0.1207,0.1056,0.1376,1936,0.0992,-2.15,true
+run,CCC 2014B,Fail,1591,0.2357,0.2155,0.2572,1936,0.1937,-4.2,true
+run,CCC 2014B,Withdrawn,1591,0.3476,0.3246,0.3713,1936,0.4638,11.62,true
+run,CCC 2014J,completion,2079,0.4873,0.4658,0.5087,2498,0.4063,-8.1,true
+run,CCC 2014J,non_completion,2079,0.5127,0.4913,0.5342,2498,0.5937,8.1,true
+run,CCC 2014J,Pass,2079,0.3401,0.32,0.3607,2498,0.2838,-5.63,true
+run,CCC 2014J,Distinction,2079,0.1472,0.1326,0.1631,2498,0.1225,-2.47,true
+run,CCC 2014J,Fail,2079,0.1953,0.1788,0.2129,2498,0.1625,-3.28,true
+run,CCC 2014J,Withdrawn,2079,0.3175,0.2978,0.3378,2498,0.4311,11.36,true
+run,DDD 2014B,completion,1050,0.4552,0.4253,0.4855,1228,0.3901,-6.51,true
+run,DDD 2014B,non_completion,1050,0.5448,0.5145,0.5747,1228,0.6099,6.51,true
+run,DDD 2014B,Pass,1050,0.3419,0.3138,0.3711,1228,0.2932,-4.87,true
+run,DDD 2014B,Distinction,1050,0.1133,0.0956,0.1339,1228,0.0969,-1.64,false
+run,DDD 2014B,Fail,1050,0.2457,0.2206,0.2726,1228,0.2109,-3.48,true
+run,DDD 2014B,Withdrawn,1050,0.299,0.2721,0.3274,1228,0.399,10.0,true
+run,DDD 2014J,completion,1479,0.5355,0.51,0.5608,1803,0.4393,-9.62,true
+run,DDD 2014J,non_completion,1479,0.4645,0.4392,0.49,1803,0.5607,9.62,true
+run,DDD 2014J,Pass,1479,0.4598,0.4345,0.4852,1803,0.3771,-8.27,true
+run,DDD 2014J,Distinction,1479,0.0757,0.0633,0.0903,1803,0.0621,-1.36,true
+run,DDD 2014J,Fail,1479,0.2461,0.2248,0.2687,1803,0.2019,-4.42,true
+run,DDD 2014J,Withdrawn,1479,0.2184,0.1981,0.2402,1803,0.3588,14.04,true
+run,EEE 2014B,completion,613,0.5824,0.5429,0.6208,694,0.5144,-6.8,true
+run,EEE 2014B,non_completion,613,0.4176,0.3792,0.4571,694,0.4856,6.8,true
+run,EEE 2014B,Pass,613,0.4649,0.4258,0.5045,694,0.4107,-5.42,true
+run,EEE 2014B,Distinction,613,0.1175,0.0943,0.1454,694,0.1037,-1.38,false
+run,EEE 2014B,Fail,613,0.2675,0.234,0.3039,694,0.2363,-3.12,false
+run,EEE 2014B,Withdrawn,613,0.1501,0.124,0.1805,694,0.2493,9.92,true
+run,EEE 2014J,completion,1027,0.666,0.6366,0.6942,1188,0.5758,-9.02,true
+run,EEE 2014J,non_completion,1027,0.334,0.3058,0.3634,1188,0.4242,9.02,true
+run,EEE 2014J,Pass,1027,0.5131,0.4826,0.5436,1188,0.4436,-6.95,true
+run,EEE 2014J,Distinction,1027,0.1529,0.1322,0.1762,1188,0.1322,-2.07,false
+run,EEE 2014J,Fail,1027,0.1908,0.168,0.216,1188,0.1667,-2.41,true
+run,EEE 2014J,Withdrawn,1027,0.1431,0.123,0.1659,1188,0.2576,11.45,true
+run,FFF 2014B,completion,1309,0.4989,0.4718,0.5259,1500,0.436,-6.29,true
+run,FFF 2014B,non_completion,1309,0.5011,0.4741,0.5282,1500,0.564,6.29,true
+run,FFF 2014B,Pass,1309,0.4171,0.3907,0.444,1500,0.3647,-5.24,true
+run,FFF 2014B,Distinction,1309,0.0817,0.0681,0.0978,1500,0.0713,-1.04,false
+run,FFF 2014B,Fail,1309,0.2926,0.2686,0.3178,1500,0.256,-3.66,true
+run,FFF 2014B,Withdrawn,1309,0.2086,0.1874,0.2314,1500,0.308,9.94,true
+run,FFF 2014J,completion,1886,0.5923,0.5699,0.6142,2365,0.4723,-12.0,true
+run,FFF 2014J,non_completion,1886,0.4077,0.3858,0.4301,2365,0.5277,12.0,true
+run,FFF 2014J,Pass,1886,0.4555,0.4331,0.478,2365,0.3632,-9.23,true
+run,FFF 2014J,Distinction,1886,0.1368,0.122,0.153,2365,0.1091,-2.77,true
+run,FFF 2014J,Fail,1886,0.2078,0.1901,0.2267,2365,0.1662,-4.16,true
+run,FFF 2014J,Withdrawn,1886,0.1999,0.1825,0.2185,2365,0.3615,16.16,true
+run,GGG 2014B,completion,802,0.596,0.5617,0.6294,833,0.5738,-2.22,false
+run,GGG 2014B,non_completion,802,0.404,0.3706,0.4383,833,0.4262,2.22,false
+run,GGG 2014B,Pass,802,0.4364,0.4025,0.471,833,0.4202,-1.62,false
+run,GGG 2014B,Distinction,802,0.1596,0.1359,0.1866,833,0.1537,-0.59,false
+run,GGG 2014B,Fail,802,0.318,0.2867,0.351,833,0.3061,-1.19,false
+run,GGG 2014B,Withdrawn,802,0.086,0.0685,0.1075,833,0.12,3.4,true
+run,GGG 2014J,completion,719,0.6175,0.5815,0.6523,749,0.5928,-2.47,false
+run,GGG 2014J,non_completion,719,0.3825,0.3477,0.4185,749,0.4072,2.47,false
+run,GGG 2014J,Pass,719,0.4409,0.405,0.4774,749,0.4232,-1.77,false
+run,GGG 2014J,Distinction,719,0.1766,0.1505,0.2062,749,0.1696,-0.7,false
+run,GGG 2014J,Fail,719,0.2476,0.2174,0.2804,749,0.239,-0.86,false
+run,GGG 2014J,Withdrawn,719,0.1349,0.1119,0.1618,749,0.1682,3.33,true
+start_month,B (February),completion,6654,0.5041,0.492,0.5161,7804,0.4303,-7.38,true
+start_month,B (February),non_completion,6654,0.4959,0.4839,0.508,7804,0.5697,7.38,true
+start_month,B (February),Pass,6654,0.3864,0.3748,0.3981,7804,0.3298,-5.66,true
+start_month,B (February),Distinction,6654,0.1177,0.1102,0.1256,7804,0.1005,-1.72,true
+start_month,B (February),Fail,6654,0.2749,0.2643,0.2857,7804,0.2349,-4.0,true
+start_month,B (February),Withdrawn,6654,0.2211,0.2113,0.2312,7804,0.3348,11.37,true
+start_month,J (October),completion,9331,0.5836,0.5736,0.5936,11260,0.4846,-9.9,true
+start_month,J (October),non_completion,9331,0.4164,0.4064,0.4264,11260,0.5154,9.9,true
+start_month,J (October),Pass,9331,0.4589,0.4488,0.469,11260,0.3813,-7.76,true
+start_month,J (October),Distinction,9331,0.1247,0.1182,0.1316,11260,0.1034,-2.13,true
+start_month,J (October),Fail,9331,0.2109,0.2028,0.2193,11260,0.1756,-3.53,true
+start_month,J (October),Withdrawn,9331,0.2054,0.1974,0.2138,11260,0.3398,13.44,true

@@ -1,16 +1,23 @@
-"""AQ1 (descriptive) and AQ2 (diagnostic) on the 9 module runs of 2013, following the Milestone 4 plan.
+"""AQ1 (descriptive) and AQ2 (diagnostic) on the module runs of one scope, following the Milestone 4 plan.
+
+Scopes (`--scope`): `2013` (default; the 9 runs of 2013, results/2013/), `2014` (the 13 runs of 2014, results/2014/) and
+`all` (all 22 runs, results/all_runs/). The 2013 scope is the analysis as first run; its text below applies to it.
+The 2014 and all-run scopes repeat every AQ1 and AQ2 step on their runs (AQ1 for 2014 and the 22-run baselines;
+AQ2 replicated on 2014 as Change Log C14 plans; Change Log C15), with the same assertion that no row outside the
+scope enters.
 
 Plan items (Milestone 4 report): Section 3.2 (methods), Section 4.1 Tables 4.1 and 4.2 (Evaluation Design Cards of
-AQ1 and AQ2), Section 4.3, Section 4.4 and Appendices II-IV. Change Log C14: AQ2 is estimated on the 2013 runs and
-replicated on 2014 only after the AQ3 test, so no 2014 row of any prepared view is read here. The only 2014
+AQ1 and AQ2), Section 4.3, Section 4.4 and Appendices II-IV. In the 2013 scope AQ2 is estimated on the 2013 runs
+(Change Log C14) and no 2014 row of any prepared view is read. The only 2014
 information used is the per-run outcome counts that Milestone 3 published in
 `data/metadata/fig_outcome_by_run.csv` (AQ1 year comparison, labelled "published in Milestone 3").
 
 Every view is scanned lazily with a 2013 filter pushed down to the Parquet/CSV reader, and `assert_2013` is called on
 every frame before any column is used, so no 2014 row enters any computation.
 
-Usage (from the package folder): python src/analysis/aq_analysis.py  (run_all.sh step 08)
-Writes results/aq1_*.csv, aq2_*.csv, aq_results.json and aq_summary.md.
+Usage (from the package folder): python src/analysis/aq_analysis.py [--scope 2013|2014|all]  (run_all.sh steps 08, 12, 13)
+Writes the results folder of the scope (results/2013/, results/2014/ or results/all_runs/): aq1_*.csv, aq2_*.csv,
+aq_results.json and aq_summary.md; the 2013 scope also writes results/compare/aq1_year_*_published.csv.
 """
 from __future__ import annotations
 
@@ -27,10 +34,27 @@ ROOT = HERE.parents[1]                               # the package folder
 DATA = ROOT / "data"                                 # prepared data built by the Milestone 3 pipeline (src/)
 PROC, META = DATA / "processed", DATA / "metadata"
 RAW = DATA / "raw"
-RES = ROOT / "results"
+RES = ROOT / "results" / "2013"                      # results of the selected scope (set_scope)
+COMPARE = ROOT / "results" / "compare"               # comparisons between the years
 
 Z = 1.959963984540054                                # 97.5% quantile of the standard normal
 RUNS_2013 = {"2013B", "2013J"}
+SCOPES = {
+    "2013": dict(name="2013", presentations={"2013B", "2013J"}, years={2013}, splits={"train"},
+                 label="all 9 runs of 2013", runs_text="runs of 2013", out="2013"),
+    "2014": dict(name="2014", presentations={"2014B", "2014J"}, years={2014}, splits={"test"},
+                 label="all 13 runs of 2014", runs_text="runs of 2014", out="2014"),
+    "all": dict(name="all", presentations={"2013B", "2013J", "2014B", "2014J"}, years={2013, 2014},
+                splits={"train", "test"}, label="all 22 runs", runs_text="runs of 2013 and 2014", out="all_runs"),
+}
+SC = SCOPES["2013"]
+
+
+def set_scope(name: str) -> None:
+    """Select the runs every loader keeps and the folder every result is written to."""
+    global SC, RES
+    SC = SCOPES[name]
+    RES = ROOT / "results" / SC["out"]
 OUTCOMES = ["Pass", "Distinction", "Fail", "Withdrawn"]
 MIN_EVENTS_SUBGROUP_MODEL = 100                      # Section 4.4: about 100 non-completers per group
 
@@ -49,18 +73,29 @@ def assert_2013(df: pl.DataFrame, label: str) -> pl.DataFrame:
     return df
 
 
+def assert_scope(df: pl.DataFrame, label: str) -> pl.DataFrame:
+    """Stop if any row of a frame lies outside the runs of the selected scope."""
+    pres = set(df["code_presentation"].unique().to_list())
+    assert pres <= SC["presentations"], f"{label}: presentations {pres - SC['presentations']} outside scope {SC['name']}"
+    if "year" in df.columns:
+        assert df["year"].is_in(list(SC["years"])).all(), f"{label}: year outside scope {SC['name']}"
+    if "split" in df.columns:
+        assert df["split"].is_in(list(SC["splits"])).all(), f"{label}: split outside scope {SC['name']}"
+    return df
+
+
 def load_view(name: str) -> pl.DataFrame:
-    """Scan a prepared view with the 2013 filter pushed down to the reader, then assert it."""
+    """Scan a prepared view with the scope filter pushed down to the reader, then assert it."""
     lf = pl.scan_parquet(PROC / f"{name}.parquet")
-    lf = lf.filter(pl.col("code_presentation").str.starts_with("2013"))
-    return assert_2013(lf.collect(), name)
+    lf = lf.filter(pl.col("code_presentation").is_in(sorted(SC["presentations"])))
+    return assert_scope(lf.collect(), name)
 
 
 def load_raw(name: str) -> pl.DataFrame:
-    """Scan a raw OULAD table with the 2013 filter pushed down to the CSV reader (second aggregation path)."""
+    """Scan a raw OULAD table with the scope filter pushed down to the CSV reader (second aggregation path)."""
     lf = pl.scan_csv(RAW / f"{name}.csv", null_values=["", "?"], infer_schema_length=0)
-    lf = lf.filter(pl.col("code_presentation").str.starts_with("2013"))
-    return assert_2013(lf.collect(), f"raw {name}")
+    lf = lf.filter(pl.col("code_presentation").is_in(sorted(SC["presentations"])))
+    return assert_scope(lf.collect(), f"raw {name}")
 
 
 # ---------------------------------------------------------------------------------------------------------------
@@ -117,7 +152,7 @@ def rate_rows(df: pl.DataFrame, level: str, keys: list[str], denominator: str) -
         *[(pl.col("final_result") == o).sum().alias(o) for o in OUTCOMES],
     )
     for g in groups.iter_rows(named=True):
-        label = " ".join(str(g[k]) for k in keys) if keys else "all 9 runs of 2013"
+        label = " ".join(str(g[k]) for k in keys) if keys else SC["label"]
         for m in ["completion", "non_completion", *OUTCOMES]:
             p, lo, hi = wilson(g[m], g["n"])
             rows.append(dict(level=level, group=label, denominator=denominator, measure=m, events=g[m],
@@ -163,54 +198,57 @@ def aq1(enr: pl.DataFrame, f27: pl.DataFrame, out: dict) -> None:
     shift = pl.DataFrame(shift)
     shift.write_csv(RES / "aq1_denominator_shift.csv")
 
-    # --- year comparison: 2013 computed against 2014 published in Milestone 3 (all enrolments only) ----------
-    pub = pl.read_csv(META / "fig_outcome_by_run.csv").with_columns(
-        pl.col("code_presentation").str.slice(0, 4).alias("year"),
-        pl.col("code_presentation").str.slice(4, 1).alias("start_month_code"),
-    )
-    pub = pub.with_columns(
-        pl.sum_horizontal(OUTCOMES).alias("n"),
-        (pl.col("Pass") + pl.col("Distinction")).alias("completion"),
-        (pl.col("Fail") + pl.col("Withdrawn")).alias("non_completion"),
-    )
-    yr = []
-    for lvl, keys in [("year", ["year"]), ("module_year", ["code_module", "year"]),
-                      ("start_month_year", ["start_month_code", "year"])]:
-        g = pub.group_by(keys).agg(pl.col(["n", "completion", "non_completion", *OUTCOMES]).sum()).sort(keys)
-        for x in g.iter_rows(named=True):
-            src = ("computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)"
-                   if x["year"] == "2013" else "published in Milestone 3 (fig_outcome_by_run.csv); not recomputed")
-            for m in ["completion", "non_completion", *OUTCOMES]:
-                p, lo, hi = wilson(x[m], x["n"])
-                yr.append(dict(level=lvl, group=" ".join(str(x[k]) for k in keys), year=x["year"],
-                               denominator="all_enrolments", measure=m, events=x[m], n=x["n"], rate=r(p),
-                               ci_low=r(lo), ci_high=r(hi), source=src))
-    year_tab = pl.DataFrame(yr)
-    # 2013 rows must equal the 2013 computation exactly
-    own = rates.filter((pl.col("denominator") == "all_enrolments") & (pl.col("level") == "overall"))
-    pub13 = year_tab.filter((pl.col("level") == "year") & (pl.col("year") == "2013"))
-    for m in ["completion", "non_completion", *OUTCOMES]:
-        a = own.filter(pl.col("measure") == m)["events"][0]
-        b = pub13.filter(pl.col("measure") == m)["events"][0]
-        assert a == b, f"2013 {m}: computed {a} != published {b}"
-    # difference 2014 - 2013 in non-completion (all enrolments), Newcombe interval
     ydiff = []
-    for lvl in ["year", "module_year", "start_month_year"]:
-        t = year_tab.filter((pl.col("level") == lvl) & (pl.col("measure") == "non_completion"))
-        t = t.with_columns(pl.col("group").str.replace(r" ?20\d\d$", "").alias("unit"))
-        for unit in t["unit"].unique().sort().to_list():
-            s = t.filter(pl.col("unit") == unit)
-            if s.height != 2:
-                continue  # module CCC: 2014 only
-            a = s.filter(pl.col("year") == "2013").row(0, named=True)
-            b = s.filter(pl.col("year") == "2014").row(0, named=True)
-            d, lo, hi = newcombe(b["events"], b["n"], a["events"], a["n"])
-            ydiff.append(dict(level=lvl, unit=unit or "all runs", measure="non_completion",
-                              rate_2013=a["rate"], n_2013=a["n"], rate_2014_published=b["rate"], n_2014=b["n"],
-                              diff_pp_2014_minus_2013=r(100 * d, 2), ci_low_pp=r(100 * lo, 2),
-                              ci_high_pp=r(100 * hi, 2)))
-    year_tab.write_csv(RES / "aq1_year_comparison.csv")
-    pl.DataFrame(ydiff).write_csv(RES / "aq1_year_difference.csv")
+    if SC["name"] == "2013":  # 2013 scope only; the computed comparison of both years is aq_year_compare.py
+        # --- year comparison: 2013 computed against 2014 published in Milestone 3 (all enrolments only) ----------
+        pub = pl.read_csv(META / "fig_outcome_by_run.csv").with_columns(
+            pl.col("code_presentation").str.slice(0, 4).alias("year"),
+            pl.col("code_presentation").str.slice(4, 1).alias("start_month_code"),
+        )
+        pub = pub.with_columns(
+            pl.sum_horizontal(OUTCOMES).alias("n"),
+            (pl.col("Pass") + pl.col("Distinction")).alias("completion"),
+            (pl.col("Fail") + pl.col("Withdrawn")).alias("non_completion"),
+        )
+        yr = []
+        for lvl, keys in [("year", ["year"]), ("module_year", ["code_module", "year"]),
+                          ("start_month_year", ["start_month_code", "year"])]:
+            g = pub.group_by(keys).agg(pl.col(["n", "completion", "non_completion", *OUTCOMES]).sum()).sort(keys)
+            for x in g.iter_rows(named=True):
+                src = ("computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)"
+                       if x["year"] == "2013" else "published in Milestone 3 (fig_outcome_by_run.csv); not recomputed")
+                for m in ["completion", "non_completion", *OUTCOMES]:
+                    p, lo, hi = wilson(x[m], x["n"])
+                    yr.append(dict(level=lvl, group=" ".join(str(x[k]) for k in keys), year=x["year"],
+                                   denominator="all_enrolments", measure=m, events=x[m], n=x["n"], rate=r(p),
+                                   ci_low=r(lo), ci_high=r(hi), source=src))
+        year_tab = pl.DataFrame(yr)
+        # 2013 rows must equal the 2013 computation exactly
+        own = rates.filter((pl.col("denominator") == "all_enrolments") & (pl.col("level") == "overall"))
+        pub13 = year_tab.filter((pl.col("level") == "year") & (pl.col("year") == "2013"))
+        for m in ["completion", "non_completion", *OUTCOMES]:
+            a = own.filter(pl.col("measure") == m)["events"][0]
+            b = pub13.filter(pl.col("measure") == m)["events"][0]
+            assert a == b, f"2013 {m}: computed {a} != published {b}"
+        # difference 2014 - 2013 in non-completion (all enrolments), Newcombe interval
+        ydiff = []
+        for lvl in ["year", "module_year", "start_month_year"]:
+            t = year_tab.filter((pl.col("level") == lvl) & (pl.col("measure") == "non_completion"))
+            t = t.with_columns(pl.col("group").str.replace(r" ?20\d\d$", "").alias("unit"))
+            for unit in t["unit"].unique().sort().to_list():
+                s = t.filter(pl.col("unit") == unit)
+                if s.height != 2:
+                    continue  # module CCC: 2014 only
+                a = s.filter(pl.col("year") == "2013").row(0, named=True)
+                b = s.filter(pl.col("year") == "2014").row(0, named=True)
+                d, lo, hi = newcombe(b["events"], b["n"], a["events"], a["n"])
+                ydiff.append(dict(level=lvl, unit=unit or "all runs", measure="non_completion",
+                                  rate_2013=a["rate"], n_2013=a["n"], rate_2014_published=b["rate"], n_2014=b["n"],
+                                  diff_pp_2014_minus_2013=r(100 * d, 2), ci_low_pp=r(100 * lo, 2),
+                                  ci_high_pp=r(100 * hi, 2)))
+        COMPARE.mkdir(parents=True, exist_ok=True)
+        year_tab.write_csv(COMPARE / "aq1_year_comparison_published.csv")
+        pl.DataFrame(ydiff).write_csv(COMPARE / "aq1_year_difference_published.csv")
 
     # --- secondary metric: cumulative share with a first missed task by week, by outcome ----------------------
     cum = []
@@ -329,7 +367,8 @@ def aq1(enr: pl.DataFrame, f27: pl.DataFrame, out: dict) -> None:
             module_low=mods.row(0, named=True), module_high=mods.row(-1, named=True),
             run_low=runs.row(0, named=True), run_high=runs.row(-1, named=True),
             shares={m: pick("overall", den, m).select("rate", "ci_low", "ci_high").row(0) for m in OUTCOMES})
-    o["year_difference"] = ydiff[[x["level"] for x in ydiff].index("year")]
+    if ydiff:
+        o["year_difference"] = ydiff[[x["level"] for x in ydiff].index("year")]
     o["runs_outside_interval_between_denominators"] = shift.filter(
         (pl.col("level") == "run") & (pl.col("measure") == "non_completion") & pl.col("outside_day14_interval")
     )["group"].to_list()
@@ -404,7 +443,10 @@ class Fit:
             sv = f[s].to_numpy().astype(float)
             cols.append(sv)
             names.append(s)
-            ms = sorted(set(mod[defined_mask(f, s)]))
+            dm = defined_mask(f, s)
+            # modules where the sign is defined and varies; a module where it never occurs (in 2014, no CCC
+            # enrolment has a late TMA by day 27) gets no module term, so its rows take the average-module effect
+            ms = sorted(m for m in set(mod[dm]) if len(set(sv[dm & (mod == m)])) > 1)
             self.mods[s] = ms
             if interactions and len(ms) > 1:
                 ref = ms[-1]
@@ -509,6 +551,7 @@ def aq2(f27raw: pl.DataFrame, out: dict) -> None:
     coef.write_csv(RES / "aq2_model_coefficients.csv")
 
     # --- primary table: unadjusted and adjusted side by side -------------------------------------------------
+    n_task_runs = f.filter(pl.col("task_run"))["run"].n_unique()
     rows = []
     for s in signs:
         mask = defined_mask(f, s)
@@ -527,7 +570,7 @@ def aq2(f27raw: pl.DataFrame, out: dict) -> None:
         p_main = float(main.res.pvalues[main.idx[s]])
         rows.append(dict(sign=s, definition=SIGNS[s],
                          population="enrolments registered at day 27 in "
-                         + ("the 7 runs of 2013 with a task due by day 27" if s in TASK_SIGNS else "all 9 runs of 2013"),
+                         + (f"the {n_task_runs} {SC['runs_text']} with a task due by day 27" if s in TASK_SIGNS else SC["label"]),
                          **c,
                          rd_adj_single_pp=r(100 * se_ame[0], 2), rd_adj_single_ci_low=r(100 * se_ame[1], 2),
                          rd_adj_single_ci_high=r(100 * se_ame[2], 2),
@@ -636,7 +679,11 @@ def aq2(f27raw: pl.DataFrame, out: dict) -> None:
             m = None
             if enough:
                 try:
-                    m = Fit(d, signs, interactions=False)
+                    import warnings
+                    from statsmodels.tools.sm_exceptions import ConvergenceWarning
+                    with warnings.catch_warnings():   # a non-converged refit is caught below and reported crude
+                        warnings.simplefilter("ignore", ConvergenceWarning)
+                        m = Fit(d, signs, interactions=False)
                     if not m.converged:
                         m = None
                 except Exception:  # noqa: BLE001 - separation in a small group: report crude only
@@ -694,8 +741,9 @@ def pct(rate, lo, hi) -> str:
 
 def summary() -> None:
     rates = pl.read_csv(RES / "aq1_rates.csv")
-    parts = ["# AQ1 and AQ2 results on the 9 module runs of 2013\n",
-             "Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differences of two rates "
+    parts = ["# AQ1 and AQ2 results on the 9 module runs of 2013\n" if SC["name"] == "2013"
+             else f"# AQ1 and AQ2 results on {SC['label']}\n",
+             f"Written by `src/analysis/aq_analysis.py --scope {SC['name']}`. Rates carry 95% Wilson score intervals; differences of two rates "
              "carry 95% Newcombe hybrid score intervals; model estimates carry 95% intervals from HC1 robust "
              "standard errors (delta method for risk differences). Methods and deviations: `results/README.md`.\n"]
 
@@ -713,8 +761,9 @@ def summary() -> None:
     for den, txt in [("day14_registered", "enrolments still registered at day 14 (KPI population)"),
                      ("all_enrolments", "all enrolments")]:
         for lvl in ["overall", "module", "run", "start_month"]:
-            parts.append(f"**{lvl}, {den}.** Non-completion and the four outcome shares by {lvl.replace('_', ' ')}, "
-                         f"denominator {txt} (`aq1_rates.csv`).\n")
+            words = {"overall": "All runs", "module": "By module", "run": "By run", "start_month": "By start month"}[lvl]
+            parts.append(f"**{words}, {txt}.** Non-completion and the four outcome shares"
+                         f"{'' if lvl == 'overall' else ' by ' + lvl.replace('_', ' ')} (`aq1_rates.csv`).\n")
             parts.append(md_table(rate_tab(lvl, den)) + "\n")
     t = rates.filter((pl.col("level") == "overall") & pl.col("measure").is_in(["completion", "non_completion"]))
     parts.append("**Denominator baselines.** Pooled completion and non-completion under the three denominators "
@@ -726,10 +775,11 @@ def summary() -> None:
                  "the all-enrolment rate falls outside the day-14 interval (`aq1_denominator_shift.csv`).\n")
     parts.append(md_table(sh.select("level", "group", "n_day14", "rate_day14", "ci_low_day14", "ci_high_day14",
                                     "n_all", "rate_all", "shift_pp", "outside_day14_interval")) + "\n")
-    yd = pl.read_csv(RES / "aq1_year_difference.csv")
-    parts.append("**Year comparison.** Non-completion over all enrolments in 2013 (computed) and 2014 (published in "
-                 "Milestone 3, not recomputed), with the 2014 − 2013 difference (`aq1_year_difference.csv`).\n")
-    parts.append(md_table(yd) + "\n")
+    if SC["name"] == "2013":
+        yd = pl.read_csv(COMPARE / "aq1_year_difference_published.csv")
+        parts.append("**Year comparison.** Non-completion over all enrolments in 2013 (computed) and 2014 (published in "
+                     "Milestone 3, not recomputed), with the 2014 − 2013 difference (`../compare/aq1_year_difference_published.csv`; the comparison computed from both years is in `../compare/`).\n")
+        parts.append(md_table(yd) + "\n")
     fm = pl.read_csv(RES / "aq1_first_missed_week_summary.csv")
     parts.append("**First missed task.** Share of enrolments with a missed assessed task, share by week 4 and the "
                  "quartiles of the week of the first missed task, by outcome (`aq1_first_missed_week_summary.csv`).\n")
@@ -788,13 +838,19 @@ def summary() -> None:
 
 
 def main() -> None:
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--scope", choices=sorted(SCOPES), default="2013")
+    set_scope(ap.parse_args().scope)
     RES.mkdir(parents=True, exist_ok=True)
     enr = load_view("enrolment")
     f27 = load_view("features_d27")
-    print(f"2013 rows loaded: enrolment {enr.height}, features_d27 {f27.height}; "
+    print(f"{SC['name']} rows loaded: enrolment {enr.height}, features_d27 {f27.height}; "
           f"presentations {sorted(enr['code_presentation'].unique().to_list())}")
     out: dict = {"scope": "9 module runs of 2013; no 2014 row of any prepared view read (filter pushed to the "
-                          "reader and asserted); 2014 rates only as published by Milestone 3"}
+                          "reader and asserted); 2014 rates only as published by Milestone 3"
+                 if SC["name"] == "2013" else f"{SC['label']}; no row outside these runs read (filter pushed to "
+                 f"the reader and asserted)"}
     aq1(enr, f27, out)
     aq2(f27, out)
     (RES / "aq_results.json").write_text(json.dumps(out, indent=1, ensure_ascii=False, default=str),

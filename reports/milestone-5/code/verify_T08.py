@@ -2,7 +2,7 @@
 
 Recomputes from the Milestone 3 prepared views, 2013 rows only: the AQ1 populations and non-completion counts, and
 the unadjusted AQ2 risk differences of a missed task (runs with a task due by day 27) and of inactivity in the last
-seven days, then compares them with results/aq_results.json values quoted in the T08 hand-back.
+seven days, then compares them with results/2013/aq_results.json values quoted in the T08 hand-back.
 Usage: venv/bin/python reports/milestone-5/code/verify_T08.py
 """
 from pathlib import Path

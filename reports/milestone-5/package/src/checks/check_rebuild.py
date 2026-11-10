@@ -2,14 +2,15 @@
 
 Usage (from the package folder):
     python src/checks/check_rebuild.py prepared   # run_all.sh step 07
-    python src/checks/check_rebuild.py results    # run_all.sh step 12
+    python src/checks/check_rebuild.py results    # run_all.sh step 18
     python src/checks/check_rebuild.py results --write   # record the reference checksums (package maintainers only)
 
 prepared: compares the SHA-256 and row count of every rebuilt view in data/processed/ with the published manifest of
 the prepared dataset OULAD-N04-prepared-1.0 (data/metadata/version_manifest_published.json); also reports the raw
 inputs and the pipeline scripts in src/ against the same manifest. Writes data/metadata/rebuild_check_prepared.csv.
 
-results: compares the SHA-256 of every rebuilt file in results/ with results/checksums.csv. Writes
+results: compares the SHA-256 of every result file in results/2013/, 2014/, all_runs/ and compare/
+with results/checksums.csv. Writes
 data/metadata/rebuild_check_results.csv.
 
 Prints one line per file and exits 1 if a rebuilt prepared view or result file differs from its reference.
@@ -25,7 +26,8 @@ from pathlib import Path
 PKG = Path(__file__).resolve().parents[2]
 META = PKG / "data" / "metadata"
 RESULTS = PKG / "results"
-RESULT_FILES = ["aq1_*.csv", "aq2_*.csv", "aq_results.json", "aq_summary.md"]
+RESULT_FILES = [f"{d}{pat}" for d in ("2013/", "2014/", "all_runs/")
+                for pat in ("aq1_*.csv", "aq2_*.csv", "aq_results.json", "aq_summary.md")] + ["compare/aq*.csv", "compare/aq_summary.md"]
 
 
 def sha256(path: Path) -> str:
@@ -81,6 +83,11 @@ def prepared() -> int:
     return 0 if ok == len(views) and raw_ok else 1
 
 
+def rel(p: Path) -> str:
+    """Path of a result file inside results/, with forward slashes (the key in checksums.csv)."""
+    return p.relative_to(RESULTS).as_posix()
+
+
 def result_files() -> list[Path]:
     return sorted({p for pat in RESULT_FILES for p in RESULTS.glob(pat)})
 
@@ -91,7 +98,7 @@ def results(write_reference: bool) -> int:
         with ref_path.open("w", newline="") as f:
             w = csv.writer(f)
             w.writerow(["file", "sha256"])
-            w.writerows([p.name, sha256(p)] for p in result_files())
+            w.writerows([rel(p), sha256(p)] for p in result_files())
         print(f"reference checksums of {len(result_files())} result files written to results/checksums.csv")
         return 0
     ref = {r["file"]: r["sha256"] for r in csv.DictReader(ref_path.open())}
@@ -101,7 +108,7 @@ def results(write_reference: bool) -> int:
         digest = sha256(p) if p.exists() else ""
         rows.append(dict(file=name, reference_sha256=ref_sha, rebuilt_sha256=digest,
                          status="MATCH" if digest == ref_sha else ("MISSING" if not p.exists() else "MISMATCH")))
-    extra = [p.name for p in result_files() if p.name not in ref]
+    extra = [rel(p) for p in result_files() if rel(p) not in ref]
     write(rows, "rebuild_check_results.csv")
     for r in rows:
         print(f"{r['status']:<8} {r['file']}")

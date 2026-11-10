@@ -20,8 +20,14 @@ reports/milestone-3/package/data/processed/
 # Run logs are the committed record of each step (AGENTS.md, "Keep, commit, submit")
 !reports/*/logs/**/*.log
 !.agents/skills/*/logs/*.log
+# Verification logs of the milestone brief copies (pdf2md verify.py)
+!milestones/logs/*.log
 # Source downloads are re-fetched by research-report fetch.py (URL in attempts.md); crawl.md is the committed copy
 reports/*/research/sources/*/raw.*
 !reports/*/package/logs/*.log
 # Table page renders are re-created by code/table_audit.py from the built .docx; the measurements are in logs/table_audit_*.log
 reports/*/results/table-audit/
+# Milestone 5 Final Project Package: raw is downloaded and checked, interim and processed are rebuilt by package/run_all.sh
+reports/milestone-5/package/data/raw/
+reports/milestone-5/package/data/interim/
+reports/milestone-5/package/data/processed/

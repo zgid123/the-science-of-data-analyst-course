@@ -2,7 +2,7 @@
 
 The modeling strategy maps each question to an analytics type, a technical task, a baseline, candidate methods and a
 primary proposal. We designed it in Milestone 4 at Level 1, the compulsory level, without training any model, and then
-ran AQ1 and AQ2 on the 2013 runs as specified, while AQ3 and AQ4 remain proposals with no model metric. Each
+ran AQ1 and AQ2 as specified on the 2013 runs and again on the 2014 runs, while AQ3 and AQ4 remain proposals with no model metric. Each
 question's purpose fixes how its result may be read: predictive modeling aims at predicting new observations, a
 regression used only to capture associations is descriptive [10], and explanatory power does not imply predictive
 power [10], so AQ2 is never read as cause and AQ3 and AQ4 must be judged on unseen runs. A ranking is needed because

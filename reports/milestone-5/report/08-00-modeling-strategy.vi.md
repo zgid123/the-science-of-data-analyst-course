@@ -1,9 +1,9 @@
 # 8. Chiến lược mô hình hóa và phân tích
 
-Trên bộ dữ liệu đã chuẩn bị đó, chiến lược mô hình hóa gắn mỗi câu hỏi với một loại phân tích, một bài toán kỹ thuật, một
+Chiến lược mô hình hóa gắn mỗi câu hỏi với một loại phân tích, một bài toán kỹ thuật, một
 phương pháp cơ sở (baseline), các phương pháp ứng viên và một phương pháp chính được đề xuất. Nhóm chúng em thiết kế
 chiến lược này ở Milestone 4 theo Level 1 (mức bắt buộc của đề bài) và chưa huấn luyện mô hình nào. Sau đó, chúng em
-chạy AQ1 và AQ2 trên các kỳ mở năm 2013 đúng như đặc tả, còn AQ3 và AQ4 vẫn là đề xuất, chưa có chỉ số nào của mô hình.
+chạy AQ1 và AQ2 đúng như đặc tả trên các kỳ mở năm 2013, rồi chạy lại trên các kỳ mở năm 2014. Trong khi đó, AQ3 và AQ4 vẫn là đề xuất và chưa có chỉ số nào của mô hình.
 Mục đích của mỗi câu hỏi quyết định cách đọc kết quả của câu hỏi đó. Mô hình hóa dự báo nhằm dự báo các quan sát mới;
 ngược lại, một mô hình hồi quy chỉ dùng để nắm bắt mối liên hệ thuộc loại mô tả [10]. Ngoài ra, khả năng giải thích tốt
 không kéo theo khả năng dự báo tốt [10]. Do đó, kết quả AQ2 không được đọc như quan hệ nhân quả, còn AQ3 và AQ4 phải được

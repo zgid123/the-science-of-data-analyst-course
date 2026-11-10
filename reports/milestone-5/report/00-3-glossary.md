@@ -15,7 +15,7 @@ first needs them.
 | Controlled Change Log | The numbered record C01–C17 of every change to the questions, data and methods, each with its reason and effect (Section 3.2) |
 | Data cut-off | The day up to which a list or feature may use data: day 13 for the week-3 list and day 27 for the week-5 list (Section 3) |
 | Decision option | A prescriptive statement drawn from observational data, offered as a hypothesis for the pilot rather than as a proven remedy (Section 11.5) |
-| Development runs | The 9 module runs of 2013, on which AQ1 and AQ2 are answered and AQ3 is developed (Section 6) |
+| Development runs | The 9 module runs of 2013, on which AQ3 is developed and AQ2 is first estimated (Section 6) |
 | Early-sign rule | By the data cut-off, a TMA or CMA due but not submitted, a TMA submitted late, or no platform activity in the previous seven days; the one rule of the project on OULAD and in the pilot (Section 2.1) |
 | Enrolment | One student in one module run, the unit of every question (Section 3) |
 | Fit rating | The rating of a question against its data: GREEN when the data are enough, YELLOW when the question must be narrowed, RED when a key concept, variable or intervention is missing (Section 5.1) |
@@ -39,6 +39,6 @@ first needs them.
 | Sensitivity run | A repeat of an estimate under a changed choice, to check that its conclusion holds (Section 11.3) |
 | Sign-flip permutation test | A test of how often per-run differences as favourable would appear if the sign of each run's difference were random (Section 9, Appendix IX) |
 | Status | The state of a final question: Answered, Partial, Deferred or Dropped (Section 3) |
-| Test runs | The 13 module runs of 2014, whose outcomes stay closed until the single AQ3 test (Section 6) |
+| Test runs | The 13 module runs of 2014, kept for the single test of the AQ3 model, whose design no 2014 outcome informs (Section 6) |
 | Traceability Matrix | The Final Project Traceability Matrix, which follows each final question in one row from the goal and KPI through data, preparation, method and evaluation to the decision, with GAP or N.A. where a link has no evidence (Section 11.1) |
 | Wilson interval | The 95% score interval of a rate, used for the AQ1 rates (Section 8.1) |

@@ -1,26 +1,35 @@
 ## 11.3. AQ2: Các dấu hiệu sớm có liên hệ với việc không hoàn thành
 
-Nhóm chúng em ước lượng AQ2 trên 11.811 lượt đăng ký học năm 2013 của sinh viên còn đăng ký học (chưa rút) tại ngày 27
-(tỷ lệ không hoàn thành 44,4%). Mô hình là hồi quy logistic có hiệu ứng cố định theo kỳ mở và các số hạng tương tác dấu
-hiệu × module; hai dấu hiệu về bài được chấm điểm chỉ xác định được ở 7 kỳ mở có bài đến hạn tính đến hết ngày 27 (9.960
-lượt đăng ký học). Mỗi ước lượng là một chênh lệch nguy cơ trung bình tính bằng điểm phần trăm; đó là một mối liên hệ,
-không phải tác động của dấu hiệu [10] (Phụ lục XIII).
+Nhóm chúng em ước lượng AQ2 trên sinh viên còn đăng ký học (chưa rút) tại ngày 27: trước hết trên 11.811 lượt đăng ký
+học năm 2013 (tỷ lệ không hoàn thành 44,4%), rồi lặp lại trên 15.724 lượt năm 2014 (44,0%), có cả module CCC.
+Mô hình là hồi quy logistic gồm hiệu ứng cố định theo kỳ mở, các biến đặc điểm cá nhân và các số hạng tương tác dấu
+hiệu × module; các dấu hiệu về bài được chấm điểm chỉ xác định được ở những kỳ mở có bài đến hạn tính đến hết ngày 27
+(9.960 lượt đăng ký học năm 2013 và 12.585 lượt năm 2014). Mỗi ước lượng là chênh lệch nguy cơ trung bình tính bằng
+điểm phần trăm; ước lượng này chỉ thể hiện mối liên hệ giữa dấu hiệu và việc không hoàn thành, không phải tác động của
+dấu hiệu [10] (Phụ lục XIII).
 
-Cả năm dấu hiệu đều đạt tiêu chí về mối liên hệ nhất quán (Bảng A.33). So với sinh viên không có dấu hiệu, tỷ lệ không
-hoàn thành cao hơn 40,8 điểm phần trăm (37,7–43,9) ở sinh viên bỏ lỡ một bài, 20,2 điểm ở sinh viên nộp trễ một bài
-TMA, 14,5 điểm ở sinh viên không có lượt nhấp nào trong bảy ngày gần nhất, 13,4 điểm ở sinh viên có mức hoạt động dưới
-trung vị của kỳ mở và 10,6 điểm ở sinh viên không có lượt nhấp nào trước ngày bắt đầu. Mỗi dấu hiệu giữ nguyên chiều ở
-mọi module (Bảng A.34) và qua sáu phép kiểm tra độ nhạy (Bảng A.35); riêng ở AAA và GGG, năm ước lượng của các dấu hiệu
-lượt nhấp có khoảng tin cậy chứa 0, tức là cùng chiều nhưng chưa rõ ràng. Hạn chế đã biết của mô hình nằm ở ba dấu hiệu lượt nhấp: ở dạng nhị
-phân (có hoặc không), chúng chưa phản ánh hết việc tỷ lệ không hoàn thành giảm dần khi mức hoạt động tăng (Bảng A.36).
-Khi hiệu chỉnh thêm theo số lượt nhấp dạng liên tục, các chênh lệch của ba dấu hiệu này (không có lượt nhấp trong bảy
-ngày gần nhất, hoạt động dưới trung vị, không có lượt nhấp trước ngày bắt đầu) giảm lần lượt còn 9,3, 5,8 và 8,9 điểm
-phần trăm nhưng vẫn đạt tiêu chí. Phụ lục XIII mô tả các dấu hiệu trong từng nhóm giới tính, tình trạng khuyết tật và
-mức khó khăn của khu vực; phân tích lặp lại trên năm 2014 và dấu hiệu học đồng thời nhiều module được hoãn đến sau lần
-kiểm tra AQ3 (thay đổi C12 và C14 trong Nhật ký thay đổi).
-Độ tin cậy ở mức Trung bình, vì dữ liệu chỉ có một năm, các dấu hiệu lượt nhấp dạng nhị phân chưa khớp hết với dữ liệu
-như vừa nêu và các mối liên hệ có thể do những lý do không có trong dữ liệu giải thích. Các dấu hiệu cho mỗi tên trong
-danh sách D1 một lý do cụ thể, còn việc liên hệ dựa trên các dấu hiệu này vẫn là một phương án cần thử nghiệm. Hình 11.2
-cho thấy năm dấu hiệu ở hai dạng: chưa hiệu chỉnh và đã hiệu chỉnh đồng thời theo các dấu hiệu còn lại.
+Cả 5 dấu hiệu đều đạt tiêu chí mối liên hệ nhất quán trong cả hai năm (Bảng A.33). Ở sinh viên bỏ lỡ một bài, tỷ lệ
+không hoàn thành cao hơn so với sinh viên không có dấu hiệu này 40,8 điểm phần trăm ở năm 2013 (37,7–43,9) và 39,3 điểm
+phần trăm ở năm 2014 (36,4–42,1). Với các dấu hiệu còn lại, mức chênh lệch của năm 2013 và năm 2014, tính bằng điểm
+phần trăm, lần lượt là 20,2 và 20,3 khi nộp trễ một bài TMA; 14,5 và 15,8 khi không có lượt nhấp nào trong bảy ngày gần
+nhất; 13,4 và 14,6 khi mức hoạt động thấp hơn trung vị của kỳ mở; 10,6 và 8,7 khi không có lượt nhấp nào trước ngày bắt
+đầu. Không dấu hiệu nào thay đổi quá hai điểm phần trăm giữa hai năm; khoảng tin cậy của mọi chênh lệch giữa hai năm
+đều chứa 0.
 
-![Hình 11.2. Chênh lệch nguy cơ cuối kỳ không hoàn thành giữa các lượt đăng ký học có và không có từng dấu hiệu sớm tại ngày 27, ở dạng chưa hiệu chỉnh và đã hiệu chỉnh đồng thời theo các dấu hiệu còn lại, kèm khoảng tin cậy 95%; dấu hiệu về bài được chấm điểm: 7 kỳ mở năm 2013, n = 9.960; dấu hiệu lượt nhấp: 9 kỳ mở năm 2013, n = 11.811](assets/figures/fig-11-2-aq2-associations.png){width=100%}
+Mỗi dấu hiệu giữ nguyên chiều liên hệ ở mọi module và qua sáu phép kiểm tra độ nhạy trong cả hai năm, trừ một
+trường hợp: dấu hiệu nộp trễ TMA ở kỳ mở AAA 2014 có chênh lệch −1,2 điểm phần trăm trên 348 lượt đăng ký học,
+với khoảng tin cậy (−14,4 đến 12,1) chứa 0. Ở module CCC, không sinh viên nào nộp trễ bài TMA tính đến hết ngày 27 (Bảng A.34 và A.35).
+Ở dạng nhị phân (có hoặc không), các dấu hiệu lượt nhấp chỉ phản ánh một phần xu hướng biến thiên theo mức hoạt động
+trong cả hai năm, nghĩa là tỷ lệ không hoàn thành giảm dần khi mức hoạt động tăng (Bảng A.36). Khi mô hình hiệu chỉnh
+thêm theo số lượt nhấp dạng liên tục, phần chưa khớp giữa mô hình và dữ liệu biến mất ở năm 2013 và thu hẹp ở năm 2014.
+Đồng thời, chênh lệch của dấu hiệu hoạt động dưới trung vị giảm còn 5,8 điểm phần trăm ở năm 2013 và 5,9 điểm phần trăm
+ở năm 2014; ở năm 2014, dấu hiệu này chỉ giữ nguyên chiều ở 4 trên 7 module nên không còn đạt tiêu chí, trong khi bốn
+dấu hiệu còn lại vẫn đạt.
+
+Độ tin cậy của câu trả lời ở mức trung bình: kết quả hai năm khớp nhau, nhưng các dấu hiệu lượt nhấp dựa trên một mô
+hình chưa khớp hết với dữ liệu (như vừa nêu) và trên những mối liên hệ mà các nguyên nhân không được ghi nhận trong dữ
+liệu cũng có thể giải thích. Các dấu hiệu cho mỗi tên trong danh sách liên hệ (D1) một lý do cụ thể, còn việc liên hệ
+dựa trên các dấu hiệu này vẫn là phương án cần thử nghiệm. Hình 11.2 trình bày mức liên hệ của năm dấu hiệu trong từng
+năm, mỗi dấu hiệu đã được hiệu chỉnh theo các dấu hiệu còn lại.
+
+![Hình 11.2. Chênh lệch nguy cơ không hoàn thành cuối kỳ giữa các lượt đăng ký học có và không có từng dấu hiệu sớm tại ngày 27, đã hiệu chỉnh đồng thời theo các dấu hiệu còn lại, năm 2013 và năm 2014, kèm khoảng tin cậy 95%; dấu hiệu về bài được chấm điểm: các kỳ mở có bài đến hạn tính đến hết ngày 27 (n = 9.960 và 12.585); dấu hiệu lượt nhấp: mọi kỳ mở (n = 11.811 và 15.724)](assets/figures/fig-11-2-aq2-associations.png){width=100%}

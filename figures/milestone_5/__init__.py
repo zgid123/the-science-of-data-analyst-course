@@ -2,9 +2,11 @@
 
 Figure 1.1 shows the project's logic chain from the stakeholder problem to decision support, with the milestone that
 produced each link and one concrete item per link (items from research/baseline/m5-baseline.md and results/).
-Figure 11.1 shows AQ1, the non-completion rate per 2013 module run with its 95% Wilson interval, students still
-registered at day 14 (results/aq1_rates.csv). Figure 11.2 shows AQ2, the unadjusted and the mutually adjusted risk
-difference of each early sign with 95% intervals (results/aq2_associations.csv). Both charts read their CSV.
+Figure 11.1 shows AQ1, the non-completion rate per module in 2013 and in 2014 with its 95% Wilson interval, students
+still registered at day 14, and the pooled rate of the 22 runs (results/2013/aq1_rates.csv, results/2014/aq1_rates.csv,
+results/all_runs/aq1_rates.csv). Figure 11.2 shows AQ2, the mutually adjusted risk difference of each early sign in
+2013 and in 2014 with 95% intervals (results/compare/aq2_year_comparison.csv, refitted to four decimals). Both charts
+read their CSV.
 Render: venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-5
 """
 from __future__ import annotations
@@ -49,8 +51,8 @@ T = {"vi": {
     "One Evaluation Design Card per AQ; develop on 2013, single test on 2014":
         "Một Evaluation Design Card cho mỗi AQ; phát triển trên 2013, kiểm tra một lần trên 2014",
     "Findings and limitations": "Kết quả và giới hạn",
-    "AQ1–AQ2 answered on the 2013 runs; AQ3–AQ4 proposed":
-        "AQ1–AQ2 được trả lời trên các kỳ mở 2013; AQ3–AQ4 ở mức đề xuất",
+    "AQ1–AQ2 answered on the 2013 and 2014 runs; AQ3–AQ4 proposed":
+        "AQ1–AQ2 được trả lời trên các kỳ mở năm 2013 và 2014; AQ3–AQ4 ở mức đề xuất",
     "Educational decision support": "Hỗ trợ quyết định giáo dục",
     "D1 whom to contact, D2 where to place support time, D3 whether to extend":
         "D1 liên hệ ai, D2 phân bổ thời gian hỗ trợ ở đâu, D3 có mở rộng không",
@@ -58,17 +60,21 @@ T = {"vi": {
     "Non-completion rate, students registered at day 14 (%)":
         "Tỷ lệ không hoàn thành, sinh viên còn đăng ký tại ngày 14 (%)",
     "Rate with 95% Wilson interval": "Tỷ lệ kèm khoảng Wilson 95%",
-    "Pooled 2013 rate": "Tỷ lệ gộp năm 2013",
+    "Pooled rate, 22 runs": "Tỷ lệ gộp 22 kỳ mở",
+    "2013 (9 runs)": "Năm 2013 (9 kỳ mở)",
+    "2014 (13 runs)": "Năm 2014 (13 kỳ mở)",
+    "All runs": "Tất cả kỳ mở",
+    "no 2013 run": "không mở năm 2013",
     # Figure 11.2
     "Risk difference in non-completion, with sign minus without (percentage points)":
         "Chênh lệch nguy cơ không hoàn thành, có dấu hiệu trừ không có (điểm phần trăm)",
-    "Unadjusted": "Chưa điều chỉnh",
-    "Mutually adjusted": "Điều chỉnh đồng thời",
+    "Mutually adjusted risk difference in non-completion, with sign minus without (percentage points)":
+        "Chênh lệch nguy cơ không hoàn thành đã điều chỉnh đồng thời, có dấu hiệu trừ không có (điểm phần trăm)",
     "Dot: estimate; line: 95% interval": "Chấm: ước lượng; đoạn: khoảng tin cậy 95%",
-    "missed_task": "Bài đến hạn trước ngày 27 chưa nộp",
-    "late_tma": "TMA nộp muộn đến ngày 27",
+    "missed_task": "Bài đến hạn tính đến hết ngày 27 chưa nộp",
+    "late_tma": "Nộp TMA trễ tính đến hết ngày 27",
     "inactive_last7": "Không có lượt nhấp ngày 21–27",
-    "low_relative_activity": "Lượt nhấp ngày 0–27 dưới trung vị kỳ mở",
+    "low_relative_activity": "Lượt nhấp ngày 0–27 thấp hơn trung vị kỳ mở",
     "no_pre_start_activity": "Không có lượt nhấp trước ngày 0",
     "runs": "kỳ mở",
 }}
@@ -106,7 +112,7 @@ CHAIN = [  # (milestone, link, concrete item, role)
              "Grouped rates; logistic regression within run; penalised logistic model; top-k ranking"),
             ("Evaluation design", "One Evaluation Design Card per AQ; develop on 2013, single test on 2014")],
      "ingest"),
-    ("M5", [("Findings and limitations", "AQ1–AQ2 answered on the 2013 runs; AQ3–AQ4 proposed"),
+    ("M5", [("Findings and limitations", "AQ1–AQ2 answered on the 2013 and 2014 runs; AQ3–AQ4 proposed"),
             ("Educational decision support",
              "D1 whom to contact, D2 where to place support time, D3 whether to extend")], "agent"),
 ]
@@ -146,65 +152,92 @@ def project_chain(out, lang="en"):
 
 
 # ----------------------------------------------------------------------------- Figure 11.1
+def _wilson(x, n, z=1.959963984540054):
+    """Proportion with its 95% Wilson score interval, from the counts (the CSV rates are rounded to 4 decimals)."""
+    p = x / n
+    c = (p + z * z / (2 * n)) / (1 + z * z / n)
+    h = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / (1 + z * z / n)
+    return p, c - h, c + h
+
+
+
+YEARS = [("2013 (9 runs)", "2013/", P.BLUE, -0.17), ("2014 (13 runs)", "2014/", P.ORANGE, 0.17)]
+
+
 def aq1_rates(out, lang="en"):
-    """Figure 11.1: non-completion per 2013 module run, students registered at day 14, 95% Wilson intervals."""
+    """Figure 11.1: non-completion per module and year, students registered at day 14, 95% Wilson intervals."""
     t = _t(lang)
-    rows = [r for r in _read("aq1_rates.csv")
-            if r["denominator"] == "day14_registered" and r["measure"] == "non_completion"]
-    pooled = next(r for r in rows if r["level"] == "overall")
-    runs = sorted((r for r in rows if r["level"] == "run"), key=lambda r: r["group"])
-    pr = float(pooled["rate"]) * 100
-    fig, ax = ch.figure(6.3, 3.4, lang=lang)
-    labels = [f"{r['group']}  (n = {ch.num(int(r['n']), 0)})" for r in runs]
-    for i, r in enumerate(runs):
-        v, lo, hi = (float(r[c]) * 100 for c in ("rate", "ci_low", "ci_high"))
-        ax.axhline(i, color=P.GRID, lw=0.6, zorder=1)
-        ax.plot([lo, hi], [i, i], color=P.BLUE, lw=ch.size("lw"), solid_capstyle="round", zorder=2)
-        ax.plot(v, i, "o", ms=ch.size("marker") * 1.3, color=P.BLUE, mec=P.SURFACE, mew=1.2, zorder=3)
-        ax.annotate(f"{ch.num(v, 1, True)} ({ch.num(lo, 1)}–{ch.num(hi, 1)})", (hi, i), xytext=(6, 0),
-                    textcoords="offset points", ha="left", va="center", fontsize=ch.size("value"),
-                    color=P.INK, bbox=ch.PLATE, zorder=4)
+
+    def rows(prefix):
+        return [r for r in _read(f"{prefix}aq1_rates.csv")
+                if r["denominator"] == "day14_registered" and r["measure"] == "non_completion"]
+
+    pooled = next(r for r in rows("all_runs/") if r["level"] == "overall")
+    pr = 100 * int(pooled["events"]) / int(pooled["n"])
+    groups = ["all 9 runs of 2013"] + ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG"]
+    fig, ax = ch.figure(6.3, 3.6, lang=lang)
+    labels = []
+    for i, g in enumerate(groups):
+        if i:
+            ax.axhline(i - 0.5, color=P.GRID, lw=0.6, zorder=1)
+        labels.append(t("All runs") if i == 0 else g)
+        for name, prefix, color, dy in YEARS:
+            level = "overall" if i == 0 else "module"
+            r = next((x for x in rows(prefix) if x["level"] == level and (i == 0 or x["group"] == g)), None)
+            if r is None:
+                ax.annotate(t("no 2013 run"), (17, i + dy), ha="left", va="center", fontsize=ch.size("value"),
+                            color=P.MUTED, zorder=4)
+                continue
+            v, lo, hi = (100 * x for x in _wilson(int(r["events"]), int(r["n"])))   # exact, not the stored rate
+            ax.plot([lo, hi], [i + dy, i + dy], color=color, lw=ch.size("lw"), solid_capstyle="round", zorder=2)
+            ax.plot(v, i + dy, "o", ms=ch.size("marker") * 1.2, color=color, mec=P.SURFACE, mew=1.1, zorder=3)
+            ax.annotate(f"{ch.num(v, 1, True)} (n = {ch.num(int(r['n']), 0)})", (hi, i + dy), xytext=(5, 0),
+                        textcoords="offset points", ha="left", va="center", fontsize=ch.size("value"),
+                        color=P.INK, bbox=ch.PLATE, zorder=4)
     ax.axvline(pr, color=P.MUTED, lw=1.0, ls=(0, (4, 3)), zorder=1)
-    ax.set_yticks(range(len(runs)), labels)
-    ax.set_ylim(len(runs) - 0.5, -0.5)
+    ax.set_yticks(range(len(groups)), labels)
+    ax.set_ylim(len(groups) - 0.5, -0.5)
     ax.set_xlim(15, 75)
-    ax.set_xlabel(t("Non-completion rate, students registered at day 14 (%)"), fontsize=ch.size("small"))
+    ax.set_xlabel(t("Non-completion rate, students registered at day 14 (%)") + "\n"
+                  + t("Dot: estimate; line: 95% interval"), fontsize=ch.size("small"))
     ch.ticks(ax.xaxis)
-    ch.legend(ax, [(t("Rate with 95% Wilson interval"), P.BLUE, "-"),
-                   (f"{t('Pooled 2013 rate')} {ch.num(pr, 1, True)}", P.MUTED, (0, (3, 2)))], kind="line")
+    ch.legend(ax, [(t(nm), c, "-") for nm, _, c, _ in YEARS]
+              + [(f"{t('Pooled rate, 22 runs')} {ch.num(pr, 1, True)}", P.MUTED, (0, (3, 2)))], kind="line")
     ch.save(fig, out)
 
 
 # ----------------------------------------------------------------------------- Figure 11.2
 def aq2_associations(out, lang="en"):
-    """Figure 11.2: unadjusted and mutually adjusted risk difference (pp) per early sign, 95% intervals."""
+    """Figure 11.2: mutually adjusted risk difference (pp) per early sign in 2013 and 2014, 95% intervals."""
     t = _t(lang)
-    rows = _read("aq2_associations.csv")
+    comp = {r["sign"]: r for r in _read("compare/aq2_year_comparison.csv")}   # four decimals, refitted
+    data = {name: {s: {"rd_adj_mutual_pp": comp[s][f"rd_{y}_pp"], "rd_adj_mutual_ci_low": comp[s][f"ci_low_{y}"],
+                       "rd_adj_mutual_ci_high": comp[s][f"ci_high_{y}"]} for s in comp}
+            for (name, _, _, _), y in zip(YEARS, ("2013", "2014"))}
+    signs = list(SIGN_EN)
     fig, ax = ch.figure(6.3, 3.3, lang=lang)
-    series = [("Unadjusted", "rd_unadj", P.BLUE, -0.17), ("Mutually adjusted", "rd_adj_mutual", P.ORANGE, 0.17)]
     labels = []
-    for i, r in enumerate(rows):
-        n_runs = "7" if "7 runs" in r["population"] else "9"
-        name = SIGN_EN[r["sign"]] if lang == "en" else t(r["sign"])
-        labels.append(f"{name}\n{n_runs} {t('runs')}, n = {ch.num(int(r['n']), 0)}")
+    for i, s in enumerate(signs):
+        labels.append(SIGN_EN[s] if lang == "en" else t(s))
         if i:
             ax.axhline(i - 0.5, color=P.GRID, lw=0.6, zorder=1)
-        for _, key, color, dy in series:
-            v, lo, hi = (float(r[f"{key}_{s}"]) for s in ("pp", "ci_low", "ci_high"))
+        for name, _, color, dy in YEARS:
+            r = data[name][s]
+            v, lo, hi = (float(r[f"rd_adj_mutual_{k}"]) for k in ("pp", "ci_low", "ci_high"))
             ax.plot([lo, hi], [i + dy, i + dy], color=color, lw=ch.size("lw"), solid_capstyle="round", zorder=2)
             ax.plot(v, i + dy, "o", ms=ch.size("marker") * 1.2, color=color, mec=P.SURFACE, mew=1.1, zorder=3)
             ax.annotate(f"{ch.num(v, 1)} ({ch.num(lo, 1)}–{ch.num(hi, 1)})", (hi, i + dy), xytext=(5, 0),
                         textcoords="offset points", ha="left", va="center", fontsize=ch.size("value"),
                         color=P.INK, zorder=4)
     ax.axvline(0, color=P.MUTED, lw=1.0, zorder=1)
-    ax.set_yticks(range(len(rows)), labels)
-    ax.set_ylim(len(rows) - 0.5, -0.5)
-    ax.set_xlim(-2, 70)
-    ax.set_xticks(range(0, 61, 10))
-    ax.set_xlabel(t("Risk difference in non-completion, with sign minus without (percentage points)") + "\n"
-                  + t("Dot: estimate; line: 95% interval"), fontsize=ch.size("small"))
+    ax.set_yticks(range(len(signs)), labels)
+    ax.set_ylim(len(signs) - 0.5, -0.5)
+    ax.set_xlim(-2, 60)
+    ax.set_xticks(range(0, 51, 10))
+    ax.set_xlabel(t("Mutually adjusted risk difference in non-completion, with sign minus without (percentage points)")
+                  + "\n" + t("Dot: estimate; line: 95% interval"), fontsize=ch.size("small"))
     ch.ticks(ax.xaxis)
-    ch.legend(ax, [(t(nm), c, "-") for nm, _, c, _ in series], kind="line")
+    ch.legend(ax, [(t(nm), c, "-") for nm, _, c, _ in YEARS], kind="line")
     ch.save(fig, out)
 
 

@@ -1,0 +1,42 @@
+=== 2026-11-10T18:02:01Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq2_sensitivity_continuous.py --scope 2013)
+2013 rows: 11811; presentations ['2013B', '2013J']
+main model: 37 parameters, pseudo-R2 0.1452
+with log1p_clicks_0_27: 38 parameters, pseudo-R2 0.1502; coef -0.2501 (robust SE 0.0287), OR per unit 0.779
+shape: (10, 11)
+┌────────────────────────┬───────────────────┬───────┬──────────────────┬───────────────────────┬───────────────────────┬───────────────────────┬─────────────────┬─────────────┬───────────┬──────────┐
+│ sign                   ┆ model             ┆ n     ┆ rd_adj_mutual_pp ┆ rd_adj_mutual_ci_low  ┆ rd_adj_mutual_ci_high ┆ modules_same_directio ┆ modules_defined ┆ verdict     ┆ pseudo_r2 ┆ n_params │
+│ ---                    ┆ ---               ┆ ---   ┆ ---              ┆ ---                   ┆ ---                   ┆ n                     ┆ ---             ┆ ---         ┆ ---       ┆ ---      │
+│ str                    ┆ str               ┆ i64   ┆ f64              ┆ f64                   ┆ f64                   ┆ ---                   ┆ i64             ┆ str         ┆ f64       ┆ i64      │
+│                        ┆                   ┆       ┆                  ┆                       ┆                       ┆ i64                   ┆                 ┆             ┆           ┆          │
+╞════════════════════════╪═══════════════════╪═══════╪══════════════════╪═══════════════════════╪═══════════════════════╪═══════════════════════╪═════════════════╪═════════════╪═══════════╪══════════╡
+│ missed_task            ┆ main model (as    ┆ 9960  ┆ 40.83            ┆ 37.73                 ┆ 43.93                 ┆ 4                     ┆ 4               ┆ consistent  ┆ 0.1452    ┆ 37       │
+│                        ┆ reported)         ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ missed_task            ┆ main model +      ┆ 9960  ┆ 37.32            ┆ 33.8                  ┆ 40.85                 ┆ 4                     ┆ 4               ┆ consistent  ┆ 0.1502    ┆ 38       │
+│                        ┆ log1p_clicks_0_27 ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ late_tma               ┆ main model (as    ┆ 9960  ┆ 20.2             ┆ 15.87                 ┆ 24.52                 ┆ 4                     ┆ 4               ┆ consistent  ┆ 0.1452    ┆ 37       │
+│                        ┆ reported)         ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ late_tma               ┆ main model +      ┆ 9960  ┆ 19.53            ┆ 15.2                  ┆ 23.86                 ┆ 4                     ┆ 4               ┆ consistent  ┆ 0.1502    ┆ 38       │
+│                        ┆ log1p_clicks_0_27 ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ inactive_last7         ┆ main model (as    ┆ 11811 ┆ 14.46            ┆ 11.3                  ┆ 17.62                 ┆ 6                     ┆ 6               ┆ consistent  ┆ 0.1452    ┆ 37       │
+│                        ┆ reported)         ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ inactive_last7         ┆ main model +      ┆ 11811 ┆ 9.29             ┆ 5.84                  ┆ 12.73                 ┆ 6                     ┆ 6               ┆ consistent  ┆ 0.1502    ┆ 38       │
+│                        ┆ log1p_clicks_0_27 ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ low_relative_activity  ┆ main model (as    ┆ 11811 ┆ 13.36            ┆ 11.48                 ┆ 15.23                 ┆ 6                     ┆ 6               ┆ consistent  ┆ 0.1452    ┆ 37       │
+│                        ┆ reported)         ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ low_relative_activity  ┆ main model +      ┆ 11811 ┆ 5.84             ┆ 3.38                  ┆ 8.3                   ┆ 5                     ┆ 6               ┆ consistent  ┆ 0.1502    ┆ 38       │
+│                        ┆ log1p_clicks_0_27 ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ no_pre_start_activity  ┆ main model (as    ┆ 11811 ┆ 10.56            ┆ 7.84                  ┆ 13.29                 ┆ 6                     ┆ 6               ┆ consistent  ┆ 0.1452    ┆ 37       │
+│                        ┆ reported)         ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+│ no_pre_start_activity  ┆ main model +      ┆ 11811 ┆ 8.87             ┆ 6.13                  ┆ 11.62                 ┆ 6                     ┆ 6               ┆ consistent  ┆ 0.1502    ┆ 38       │
+│                        ┆ log1p_clicks_0_27 ┆       ┆                  ┆                       ┆                       ┆                       ┆                 ┆ association ┆           ┆          │
+└────────────────────────┴───────────────────┴───────┴──────────────────┴───────────────────────┴───────────────────────┴───────────────────────┴─────────────────┴─────────────┴───────────┴──────────┘
+binned residuals of the refit by activity level (observed - predicted, pp; band +-2 SE):
+  1 no clicks days 0-27: n=607 residual -0.71 band 2.74 outside=False
+  2 below half the run median: n=2568 residual 1.00 band 1.73 outside=False
+  3 half to the run median: n=2714 residual -0.79 band 1.83 outside=False
+  4 median to twice the median: n=3447 residual 0.39 band 1.55 outside=False
+  5 twice the run median or more: n=2475 residual -0.54 band 1.76 outside=False
+written results/2013/aq2_sensitivity_continuous.csv
+exit status: 0
+

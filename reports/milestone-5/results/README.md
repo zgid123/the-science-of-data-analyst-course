@@ -6,6 +6,12 @@ plan and every planned item deferred, with the reason. The plan is the Milestone
 early-sign rule C10), Section 3.2 (AQ1 and AQ2 methods, C14), Section 4.1 Tables 4.1 and 4.2 (Evaluation Design Cards
 of AQ1 and AQ2), Sections 4.3 and 4.4, and Appendices II–IV.
 
+**Layout.** `results/` mirrors the Final Project Package (`package/results/`): `2013/` (the T08 files below, by bare
+name), `2014/`, `all_runs/` and `compare/`, which holds the year comparisons and the three cross-checks built on the
+2014 counts Milestone 3 published (`aq1_year_comparison_published.csv`, `aq1_year_difference_published.csv`,
+`aq1_year_shared_modules_published.csv`). `code/run_T26.sh` copies the four folders from the package after its run;
+`code/run_T08.sh` (the T08 scripts in `code/`) writes the same layout. `t19/` holds the T19 number sample.
+
 ## How to rebuild
 
 ```bash
@@ -40,7 +46,7 @@ Sources: `aq_results.json` (`aq1.*.n`, `aq2.population`), `aq1_rates.csv`, `aq2_
   than 2013 or a split other than `train` (function `load_view`, `load_raw`).
 - No outcome column is touched before that filter. `model_ready_*` views are not used.
 - The only 2014 information is the per-run outcome counts that Milestone 3 published in
-  `package/data/metadata/fig_outcome_by_run.csv`, used in `aq1_year_comparison.csv` and `aq1_year_difference.csv`,
+  `package/data/metadata/fig_outcome_by_run.csv`, used in `compare/aq1_year_comparison_published.csv` and `compare/aq1_year_difference_published.csv`,
   every 2014 row labelled "published in Milestone 3 (fig_outcome_by_run.csv); not recomputed".
 - `aq_checks.py` scans every other result file for "2014B"/"2014J" (none found) and checks the labels of the
   published 2014 rows.
@@ -51,8 +57,8 @@ Sources: `aq_results.json` (`aq1.*.n`, `aq2.population`), `aq1_rates.csv`, `aq2_
 | :---- | :---- | :---- |
 | `aq1_rates.csv` | AQ1 card primary metric (Table 4.1); Section 3.2 | Completion, non-completion, Pass, Distinction, Fail and Withdrawn shares overall, per module, run and start month, under three denominators (day-14, all enrolments, day-14 without flagged), each with events, denominator and 95% Wilson interval |
 | `aq1_denominator_shift.csv` | AQ1 card error analysis: "runs whose rate moves by more than its interval between the two denominators" | Each rate under both denominators; `outside_day14_interval` = the all-enrolment rate lies outside the day-14 interval |
-| `aq1_year_comparison.csv` | AQ1 card primary metric "by year"; AQ1 wording | Outcome shares by year, module × year, start month × year over all enrolments; 2013 computed (equal to the published counts), 2014 published in Milestone 3 |
-| `aq1_year_difference.csv` | as above | Non-completion 2014 − 2013 (pp) with Newcombe interval, overall, per module (CCC excluded: no 2013 run) and per start month |
+| `compare/aq1_year_comparison_published.csv` | AQ1 card primary metric "by year"; AQ1 wording | Outcome shares by year, module × year, start month × year over all enrolments; 2013 computed (equal to the published counts), 2014 published in Milestone 3 |
+| `compare/aq1_year_difference_published.csv` | as above | Non-completion 2014 − 2013 (pp) with Newcombe interval, overall, per module (CCC excluded: no 2013 run) and per start month |
 | `aq1_first_missed_week_cumulative.csv` | AQ1 card secondary metric; Section 3.2 "week in which each enrolment first misses an assessed task, compared by outcome" | Cumulative share with a first missed TMA/CMA by week 1–34, by final result and by completion, both denominators, Wilson intervals |
 | `aq1_first_missed_week_summary.csv` | as above | Share with any missed task, share by week 4, quartiles of the first missed week, by outcome |
 | `aq1_runs_task_due.csv` | AQ1 card error analysis: "runs with no task due by day 27" | Per run: tasks due by day 27, first due day, missed-task counts and timing |
@@ -151,13 +157,17 @@ click signs and the background terms.
 
 ## Deferred items (not computed) and why
 
-| Planned item | Reason |
+The first four items of the T08 list were computed in T26 (section "T26: 2014 and 22-run extension" below); the
+table keeps each T08 item with its state.
+
+| Planned item | State |
 | :---- | :---- |
-| AQ2 replication on the 13 runs of 2014, including module CCC (AQ2 card validation strategy; Appendix III step 8) | C14: the 2014 outcomes stay unopened until the single AQ3 test |
-| AQ1 for 2014 under the day-14 denominator, 2014 first missed week, 2014 subgroup rates | Needs 2014 rows; after the AQ3 test |
-| AQ1 pooled baselines over all 22 runs (28,061 day-14 enrolments; 54.7% completion published by Milestone 3) | Needs 2014 rows; the published 22-run figures are quoted in `logs/T08_checks.log`, not recomputed |
-| Concurrent runs as an AQ2 input (Milestone 3 readiness matrix, C12) | Defined for 2014 only |
-| Module CCC in any AQ1 or AQ2 comparison | No 2013 run |
+| AQ2 replication on the 13 runs of 2014, including module CCC (AQ2 card validation strategy; Appendix III step 8) | Done in T26 under C15: `results/2014/aq2_*.csv`, `results/compare/aq2_year_comparison.csv` |
+| AQ1 for 2014 under the day-14 denominator, 2014 first missed week, 2014 subgroup rates | Done in T26: `results/2014/aq1_*.csv`, `results/compare/aq1_*.csv` |
+| AQ1 pooled baselines over all 22 runs (28,061 day-14 enrolments; 54.7% completion published by Milestone 3) | Done in T26: `results/all_runs/`; the 22-run totals checked against Milestone 3 in `logs/T26_aq_checks_years.log` |
+| Several-modules sign (C12), described on 2014 | Done in T26, unadjusted: `results/compare/aq2_concurrent_2014.csv` (28 of 15,724; 27 non-completers) |
+| Concurrent runs as an input of the AQ2 model (Milestone 3 readiness matrix, C12) | Still not computed: C12 keeps the sign descriptive and out of the AQ3 predictors; 1,288 concurrent enrolments at day 27 in 2014, 12 in 2013 |
+| Module CCC in a year difference | Not computable: no 2013 run; CCC is a 2014 row of its own |
 
 ## Results in brief
 
@@ -179,3 +189,61 @@ click signs and the background terms.
   adjusted than unadjusted because it is negatively correlated with the missed-task sign (phi −0.079,
   `aq2_sign_correlation.csv`). Module intervals include 0 for inactivity in AAA and GGG, for low relative activity
   in AAA and for no pre-start activity in AAA and GGG (`aq2_module_effects.csv`).
+
+## T26: 2014 and 22-run extension
+
+T26 (user request 2026-11-10) completes AQ1 and AQ2 on the 13 runs of 2014 and on all 22 runs with the Final Project
+Package code, under the rewritten C15 (AQ1 and AQ2 on both years; the AQ3 test keeps the design Milestone 4 fixed on
+2013 alone). AQ3 and AQ4 stay Deferred. The package's own methods note, `package/results/README.md`, describes every
+file for the instructor; this section maps the task trail.
+
+### How to rebuild
+
+```bash
+bash reports/milestone-5/code/run_T26.sh   # package steps 03 and 08, 12-18 with the shared venv, then the cross-check
+```
+
+`run_T26.sh` runs, from `package/`: the unit tests, `src/analysis/aq_analysis.py --scope 2013 | 2014 | all`,
+`aq2_sensitivity_continuous.py --scope 2014 | all`, `aq_year_compare.py`, `aq_checks_years.py` and
+`src/checks/check_rebuild.py results`; it copies `package/results/{2014,all_runs,compare}` to `results/` here and
+then runs `code/t26_crosscheck_replication.py`. Each step appends to `logs/T26_<step>.log` with its UTC timestamp,
+command and exit status.
+
+### Files
+
+| File or folder | Written by | What it holds |
+| :---- | :---- | :---- |
+| `results/2014/` (18 files) | `aq_analysis.py --scope 2014`, `aq2_sensitivity_continuous.py --scope 2014` | The T08 file set on the 13 runs of 2014 (19,064 enrolments; 15,985 at day 14; 15,724 at day 27, 6,911 non-completers; task signs in 9 runs, 12,585) |
+| `results/all_runs/` (18 files) | `aq_analysis.py --scope all`, `aq2_sensitivity_continuous.py --scope all` | The same set on all 22 runs (32,593; 28,061; 27,535) |
+| `results/compare/` (5 files) | `aq_year_compare.py` | `aq1_year_comparison_computed.csv`, `aq1_first_missed_week_by_year.csv`, `aq1_left_before_day14.csv`, `aq2_year_comparison.csv` (four decimals), `aq2_concurrent_2014.csv` |
+| `results/2013/*` and `compare/*_published.csv` | `aq_analysis.py --scope 2013`, `aq1_year_shared_modules.py` | Unchanged in content: the 21 T08 files match their earlier checksums byte for byte, apart from the label wording of `aq_summary.md` (`logs/T26_check_results.log`); against the T08 files here 20 of 21 are byte-identical and `aq1_year_comparison.csv` differs only in the log named in its `source` column (`logs/11_aq_checks.log` instead of `logs/T08_checks.log`) |
+| `code/t26_exact_rows.py` | – | Recomputes the unrounded values behind the two-year rows of Tables A.29–A.34 and Sections 11.2–11.3, rounds once (half-up) and checks each row verbatim in the report: 55 of 56 rows match; the GGG row writes −0.04 instead of −0.0 on purpose |
+| `code/t26_exact_text.py FILE...` | – | Checks every "rate% (low–high)" in the given report files against the exact AQ1 Wilson rates; first-missed-week and registration shares are outside its set and print as "not found" |
+| `code/t26_table_rows.py` | – | Prints the Markdown rows of Tables A.33 and A.34 for 2013 and 2014 from the result files |
+| `code/t26_crosscheck_replication.py` | – | The 2014 AQ2 estimates of the package against the separately computed replication: 35 of 35 match to 0.01 pp (`logs/T26_crosscheck_replication.log`) |
+
+The CSV files store rates to 4 and points to 2 decimals, so a stored value ending in 5 can round either way; the
+`t26_exact_*` scripts settle each such case from the unrounded value (for example 2014 day-14 non-completion
+7,185/15,985 = 44.9%, stored as 0.4495; the 2014 AQ2 risk differences from `compare/aq2_year_comparison.csv`).
+
+### Checks
+
+| Check | Log | Outcome |
+| :---- | :---- | :---- |
+| Unit tests (9 formula, 3 scope and module-term) | `logs/T26_tests.log` | 12 of 12 OK |
+| 2014 counts and 22-run totals against Milestone 3, two paths, scope purity, model convergence, concurrent count | `logs/T26_aq_checks_years.log` | 52 PASS, 0 FAIL |
+| Result checksums (62 files) | `logs/T26_check_results.log` | 62 of 62 byte-identical |
+| Determinism of the new folders | two SHA-256 lists in `logs/T26_aq_year_compare.log` | 39 files identical in both runs; `compare/aq2_year_comparison.csv` differs and `compare/aq1_left_before_day14.csv` appears only in the second list, both written by a changed `aq_year_compare.py`; the clean-copy run reproduces all 62 files byte for byte |
+| Replication cross-check | `logs/T26_crosscheck_replication.log` | 35 of 35 within 0.01 pp |
+| Clean-copy run of the package (python3.12 venv, all 19 steps) | `package/logs/clean_copy_test.md` | exit 0 in 107 s; tests 12/12; AQ checks 97 PASS, 0 FAIL, 3 INFO; year checks 52/52; results 62/62 |
+
+### Results in brief
+
+Numbers and their files are listed in `package/results/README.md` ("Results in brief"). In short: AQ1 non-completion
+at day 14 is 45.7% (2013), 44.9% (2014) and 45.3% (44.7–45.8) over 22 runs; the year difference is +2.3 pp over all
+enrolments but −0.7 (−1.9 to 0.5) at day 14 and −3.5 (−4.8 to −2.3) over the six shared modules, because 16.2% of
+2014 against 10.7% of 2013 enrolments were not registered at day 14. All five AQ2 signs are consistent associations
+in both years (2014: missed task 39.3, late TMA 20.3, inactive 15.8, below median 14.6, no pre-start 8.7 pp), with
+late TMA in AAA 2014 at −1.2 (−14.4 to 12.1); with the continuous click adjustment the below-median sign in 2014 falls
+to 5.9 (3.7–8.1) in 4 of 7 modules ("weak or inconsistent"), and the refit's activity residuals stay outside ±2 SE in
+3 of 5 levels in 2014 and over 22 runs (`package/logs/14_aq2_sens_2014.log`, `15_aq2_sens_all.log`).

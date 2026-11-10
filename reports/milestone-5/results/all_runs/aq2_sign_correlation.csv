@@ -1,0 +1,9 @@
+variable,missed_task,late_tma,inactive_last7,low_relative_activity,no_pre_start_activity,log_clicks_0_27,active_days_0_27,log_activity_ratio
+missed_task,1.0,-0.064,0.278,0.261,0.169,-0.366,-0.289,-0.446
+late_tma,-0.064,1.0,-0.046,0.052,0.036,-0.014,-0.036,-0.02
+inactive_last7,0.278,-0.046,1.0,0.368,0.299,-0.606,-0.54,-0.552
+low_relative_activity,0.261,0.052,0.368,1.0,0.236,-0.603,-0.639,-0.682
+no_pre_start_activity,0.169,0.036,0.299,0.236,1.0,-0.421,-0.393,-0.363
+log_clicks_0_27,-0.366,-0.014,-0.606,-0.603,-0.421,1.0,0.788,0.894
+active_days_0_27,-0.289,-0.036,-0.54,-0.639,-0.393,0.788,1.0,0.701
+log_activity_ratio,-0.446,-0.02,-0.552,-0.682,-0.363,0.894,0.701,1.0

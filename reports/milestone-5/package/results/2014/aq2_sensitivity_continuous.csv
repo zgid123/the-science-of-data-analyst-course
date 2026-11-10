@@ -1,0 +1,11 @@
+sign,model,n,rd_adj_mutual_pp,rd_adj_mutual_ci_low,rd_adj_mutual_ci_high,modules_same_direction,modules_defined,verdict,pseudo_r2,n_params
+missed_task,main model (as reported),12585,39.26,36.45,42.08,5,5,consistent association,0.1348,45
+missed_task,main model + log1p_clicks_0_27,12585,35.6,32.42,38.78,5,5,consistent association,0.1414,46
+late_tma,main model (as reported),12585,20.25,15.64,24.87,3,4,consistent association,0.1348,45
+late_tma,main model + log1p_clicks_0_27,12585,19.49,14.85,24.12,3,4,consistent association,0.1414,46
+inactive_last7,main model (as reported),15724,15.82,13.3,18.35,7,7,consistent association,0.1348,45
+inactive_last7,main model + log1p_clicks_0_27,15724,10.69,8.04,13.35,7,7,consistent association,0.1414,46
+low_relative_activity,main model (as reported),15724,14.6,12.98,16.22,7,7,consistent association,0.1348,45
+low_relative_activity,main model + log1p_clicks_0_27,15724,5.88,3.7,8.05,4,7,weak or inconsistent,0.1414,46
+no_pre_start_activity,main model (as reported),15724,8.65,6.44,10.87,7,7,consistent association,0.1348,45
+no_pre_start_activity,main model + log1p_clicks_0_27,15724,6.52,4.27,8.76,6,7,consistent association,0.1414,46

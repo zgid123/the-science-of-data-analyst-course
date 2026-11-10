@@ -1,4 +1,4 @@
-2026-11-09T15:07:08Z
+2026-11-10T17:57:51Z
 $ python src/analysis/aq_analysis.py   (Python 3.12.7)
 2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
 AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
@@ -11,5 +11,5 @@ AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modul
 AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
 AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
 AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
-Results written to results
+Results written to results/2013
 exit 0

@@ -9,10 +9,10 @@ each tied to the decisions D1–D3 (Sections 3 and 11.1).
 The data could support part of this ambition. OULAD stands in for the university's records, with a dated final result,
 dated tasks and daily platform activity for every enrolment, but no delivery mode, year of study, attendance, staff
 capacity or contact record (Sections 4 and 5); its prepared version dates every sign on or before its cut-off and keeps
-the 2014 runs apart as a test set (Section 7). Grouped rates answer AQ1: on the 9 runs of 2013, 45.7% of the enrolments
-still registered at day 14 did not complete, rates varied strongly between runs, and most non-completers first missed a
-task after week 4 (Section 11.2). An association model answers AQ2: all five early signs go with later non-completion,
-a missed task by 40.8 points, in the same direction across modules (Section 11.3). For AQ3 and AQ4, a penalised logistic
+the 2014 runs apart as a test set for the model (Section 7). Grouped rates answer AQ1: on the 22 runs of 2013 and 2014,
+45.3% of the enrolments still registered at day 14 did not complete, rates varied strongly between runs, the year difference depended on the add-drop rule, and most non-completers first missed a task after week 4 (Section 11.2). An
+association model answers AQ2: all five early signs go with later non-completion in both years, a missed task by 40.8
+and 39.3 points, in the same direction across modules (Section 11.3). For AQ3 and AQ4, a penalised logistic
 model judged once against the early-sign rule and a capacity-limited list audited for fairness are the appropriate
 methods, and their outputs remain expected rather than measured (Section 11.4).
 

@@ -8,7 +8,7 @@ outside the scope (Appendix I). Our objective is to turn records the university 
 of students to contact at each review point, with an observed reason for each name, and into patterns that show the
 program where and when students are lost. No open dataset of Vietnamese courses exists, so the analysis uses the
 Open University Learning Analytics Dataset (OULAD) as a stand-in (Section 4.1), and every result must be re-checked on the
-university's records before it supports a decision. AQ1 and AQ2 are answered on the 9 module runs of 2013, while AQ3
+university's records before it supports a decision. AQ1 and AQ2 are answered on all 22 module runs of 2013 and 2014, while AQ3
 and AQ4 remain designs, because the Level 2 experiment was specified but not run (Section 10). Figure 1.1 shows the
 logic chain of the project in eleven links, from the stakeholder problem to the findings and the decisions they
 support, which Sections 2 to 11 follow in order.

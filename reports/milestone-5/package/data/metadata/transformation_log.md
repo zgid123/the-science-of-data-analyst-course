@@ -1,5 +1,5 @@
 # Transformation log
-Written by `src/prepare_data.py` at 2026-11-09T15:07:05Z. One row per operation, in the order run; every join is a checked left join (rows in = rows out).
+Written by `src/prepare_data.py` at 2026-11-10T17:57:48Z. One row per operation, in the order run; every join is a checked left join (rows in = rows out).
 
 | Step | Operation | Rows in | Rows out | Note |
 | :---- | :---- | :---- | :---- | :---- |

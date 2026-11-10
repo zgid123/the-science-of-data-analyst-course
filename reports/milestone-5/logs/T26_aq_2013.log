@@ -1,0 +1,80 @@
+=== 2026-11-10T16:37:23Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2013)
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to results
+exit status: 0
+
+=== 2026-11-10T16:48:59Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2013)
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to results
+exit status: 0
+
+=== 2026-11-10T17:08:13Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2013)
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to results
+exit status: 0
+
+=== 2026-11-10T17:08:29Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2013)
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to results
+exit status: 0
+
+=== 2026-11-10T18:01:59Z ===
+$ (cd reports/milestone-5/package && venv/bin/python src/analysis/aq_analysis.py --scope 2013)
+2013 rows loaded: enrolment 13529, features_d27 11811; presentations ['2013B', '2013J']
+AQ1 day14_registered: n=12076 non-completers=5515 rate=[0.4567, 0.4478, 0.4656]
+AQ1 all_enrolments: n=13529 non-completers=6959 rate=[0.5144, 0.506, 0.5228]
+AQ1 day14_registered_excl_flagged: n=12068 non-completers=5507 rate=[0.4563, 0.4475, 0.4652]
+AQ1 validation: {'cells': 72, 'all_agree': True, 'first_missed_week_agree': '13529/13529'}
+AQ2 population: 11811 enrolments, 5245 non-completers
+AQ2 missed_task: unadj 50.32 pp; mutual 40.83 pp (37.73, 43.93); OR 8.121; 4/4 modules; consistent association
+AQ2 late_tma: unadj 18.54 pp; mutual 20.2 pp (15.87, 24.52); OR 2.697; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.26 pp; mutual 14.46 pp (11.3, 17.62); OR 1.96; 6/6 modules; consistent association
+AQ2 low_relative_activity: unadj 27.29 pp; mutual 13.36 pp (11.48, 15.23); OR 1.852; 6/6 modules; consistent association
+AQ2 no_pre_start_activity: unadj 21.24 pp; mutual 10.56 pp (7.84, 13.29); OR 1.686; 6/6 modules; consistent association
+Results written to results/2013
+exit status: 0
+

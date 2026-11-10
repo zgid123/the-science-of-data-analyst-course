@@ -52,5 +52,5 @@ C06 and C10; proposed, for the team to confirm).
 - R14: C9-005, C9-006; PROGRESS.md T02, T04 decisions; `results/README.md` ("The 2013-only rule", "Deferred items").
 - R15: C3-018, C5-016, C8-001, C3-019; grep of S104/S106 crawls for "several modules", "concurrent": no match
   (run during T09).
-- R16: S104 crawl line 226; `results/README.md` deviations 1–2; `results/aq2_sensitivity.csv` (below_half_median
+- R16: S104 crawl line 226; `results/README.md` deviations 1–2; `results/2013/aq2_sensitivity.csv` (below_half_median
   14.7 vs primary 13.36); C10-008.

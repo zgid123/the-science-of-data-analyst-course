@@ -1,6 +1,6 @@
 # Dataset Understanding Map (Task 1)
 
-Generated 2026-11-09T15:06:54Z by `src/01_understand.py` from `data/raw/`. Every key and relationship below is a computed check; full results in `understanding.json`.
+Generated 2026-11-10T17:57:31Z by `src/01_understand.py` from `data/raw/`. Every key and relationship below is a computed check; full results in `understanding.json`.
 
 | File/Table | Rows | Unit of Analysis | Primary Key | Foreign Key | Main Variables | Time Field | Role in AQ |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |

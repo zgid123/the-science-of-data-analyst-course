@@ -1,0 +1,6 @@
+sign,n_2013,rd_2013_pp,ci_low_2013,ci_high_2013,modules_2013,verdict_2013,n_2014,rd_2014_pp,ci_low_2014,ci_high_2014,modules_2014,verdict_2014,diff_pp_2014_minus_2013,diff_ci_low,diff_ci_high,rd_unadj_2013_pp,rd_unadj_2014_pp
+missed_task,9960,40.8308,37.7305,43.9311,4/4,consistent association,12585,39.2638,36.4493,42.0783,5/5,consistent association,-1.567,-5.7542,2.6202,50.32,48.77
+late_tma,9960,20.1978,15.8725,24.5231,4/4,consistent association,12585,20.2543,15.6397,24.8689,3/4,consistent association,0.0566,-6.2682,6.3813,18.54,14.36
+inactive_last7,11811,14.4602,11.3025,17.6178,6/6,consistent association,15724,15.8245,13.2999,18.3491,7/7,consistent association,1.3643,-2.6785,5.4071,25.26,26.53
+low_relative_activity,11811,13.3567,11.4819,15.2316,6/6,consistent association,15724,14.5996,12.9798,16.2194,7/7,consistent association,1.2429,-1.2348,3.7205,27.29,26.97
+no_pre_start_activity,11811,10.5623,7.8395,13.2852,6/6,consistent association,15724,8.6542,6.4378,10.8706,7/7,consistent association,-1.9081,-5.419,1.6028,21.24,17.92

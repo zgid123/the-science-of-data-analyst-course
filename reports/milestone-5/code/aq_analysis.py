@@ -10,7 +10,8 @@ Every view is scanned lazily with a 2013 filter pushed down to the Parquet/CSV r
 every frame before any column is used, so no 2014 row enters any computation.
 
 Usage (from the repository root): venv/bin/python reports/milestone-5/code/aq_analysis.py
-Writes reports/milestone-5/results/aq1_*.csv, aq2_*.csv, aq_results.json and aq_summary.md.
+Writes reports/milestone-5/results/2013/ (aq1_*.csv, aq2_*.csv, aq_results.json, aq_summary.md) and the two
+year-comparison cross-checks reports/milestone-5/results/compare/aq1_year_*_published.csv.
 """
 from __future__ import annotations
 
@@ -28,7 +29,8 @@ ROOT = TASK.parents[1]                               # repository root
 M3 = ROOT / "reports" / "milestone-3" / "package" / "data"
 PROC, META = M3 / "processed", M3 / "metadata"
 RAW = ROOT / "datasets" / "oulad"
-RES = TASK / "results"
+RES = TASK / "results" / "2013"
+COMPARE = TASK / "results" / "compare"
 
 Z = 1.959963984540054                                # 97.5% quantile of the standard normal
 RUNS_2013 = {"2013B", "2013J"}
@@ -210,8 +212,9 @@ def aq1(enr: pl.DataFrame, f27: pl.DataFrame, out: dict) -> None:
                               rate_2013=a["rate"], n_2013=a["n"], rate_2014_published=b["rate"], n_2014=b["n"],
                               diff_pp_2014_minus_2013=r(100 * d, 2), ci_low_pp=r(100 * lo, 2),
                               ci_high_pp=r(100 * hi, 2)))
-    year_tab.write_csv(RES / "aq1_year_comparison.csv")
-    pl.DataFrame(ydiff).write_csv(RES / "aq1_year_difference.csv")
+    COMPARE.mkdir(parents=True, exist_ok=True)
+    year_tab.write_csv(COMPARE / "aq1_year_comparison_published.csv")
+    pl.DataFrame(ydiff).write_csv(COMPARE / "aq1_year_difference_published.csv")
 
     # --- secondary metric: cumulative share with a first missed task by week, by outcome ----------------------
     cum = []
@@ -727,9 +730,9 @@ def summary() -> None:
                  "the all-enrolment rate falls outside the day-14 interval (`aq1_denominator_shift.csv`).\n")
     parts.append(md_table(sh.select("level", "group", "n_day14", "rate_day14", "ci_low_day14", "ci_high_day14",
                                     "n_all", "rate_all", "shift_pp", "outside_day14_interval")) + "\n")
-    yd = pl.read_csv(RES / "aq1_year_difference.csv")
+    yd = pl.read_csv(COMPARE / "aq1_year_difference_published.csv")
     parts.append("**Year comparison.** Non-completion over all enrolments in 2013 (computed) and 2014 (published in "
-                 "Milestone 3, not recomputed), with the 2014 − 2013 difference (`aq1_year_difference.csv`).\n")
+                 "Milestone 3, not recomputed), with the 2014 − 2013 difference (`../compare/aq1_year_difference_published.csv`).\n")
     parts.append(md_table(yd) + "\n")
     fm = pl.read_csv(RES / "aq1_first_missed_week_summary.csv")
     parts.append("**First missed task.** Share of enrolments with a missed assessed task, share by week 4 and the "

@@ -10,15 +10,16 @@ chốt dữ liệu của đợt lập danh sách, nên không dấu hiệu nào 
 hỏi phân tích (AQ) ứng với bốn loại phân tích: tỷ lệ các kết quả học tập và thời điểm sinh viên không hoàn thành bắt đầu
 bỏ lỡ bài (AQ1, mô tả); các dấu hiệu sớm tính đến hết tuần 4 (AQ2, chẩn đoán); mức độ ước lượng được việc không hoàn
 thành, so với quy tắc dấu hiệu sớm (AQ3, dự báo); và danh sách xếp hạng trong giới hạn số sinh viên cán bộ liên hệ được
-(AQ4, chỉ định). Chúng em đã chạy AQ1 và AQ2 trên 9 kỳ mở năm 2013 (kỳ mở – một lần mở module trong một học kỳ, ví dụ
-2013B). AQ3 và AQ4 mới dừng ở thiết kế thuộc Level 1, tức mức bắt buộc của Milestone 4 gồm chiến lược mô hình hóa và
-thiết kế đánh giá; hai câu hỏi này chưa được chạy. Trong 12.076 lượt đăng ký học mà sinh viên còn đăng ký học (chưa rút) tại ngày 14,
-tính từ ngày bắt đầu kỳ mở, 45,7% (44,8–46,6) không hoàn thành học phần; tỷ lệ này dao động từ 24,9% đến 57,5% giữa các
-kỳ mở. Ngoài ra, tính đến hết tuần 4 chỉ 19,6% sinh viên không hoàn thành đã bỏ lỡ một bài, nghĩa là dấu hiệu về bài nộp
-thường xuất hiện muộn. Khi so sánh trong cùng module, cả năm dấu hiệu sớm đều gắn với tỷ lệ không hoàn thành cao hơn;
-mạnh nhất là dấu hiệu bỏ lỡ một bài, với tỷ lệ không hoàn thành ở nhóm có dấu hiệu cao hơn nhóm không có 40,8 điểm phần
-trăm (37,7–43,9). Nhờ đó, D1 có lý do cụ thể bên cạnh mỗi tên trong danh sách, D2 có giả thuyết về nơi cần ưu tiên thời
+(AQ4, chỉ định). Chúng em đã trả lời AQ1 và AQ2 trên toàn bộ 22 kỳ mở của năm 2013 và năm 2014 (kỳ mở – một lần mở
+module trong một học kỳ, ví dụ 2013B). AQ3 và AQ4 mới dừng ở thiết kế Level 1 (mức bắt buộc của Milestone 4, gồm chiến lược mô hình hóa và
+thiết kế đánh giá) và chưa được chạy. Trong 28.061 lượt đăng ký học chưa rút tại ngày 14
+(tính từ ngày bắt đầu kỳ mở), 45,3% (44,7–45,8) không hoàn thành học phần (45,7% ở năm 2013 và 44,9% ở năm 2014); tỷ lệ
+này dao động từ 24,9% đến 58,3% giữa các kỳ mở. Ngoài ra, tính đến hết tuần 4, chưa đến một phần năm số sinh viên không
+hoàn thành đã bỏ lỡ một bài. Khi so sánh trong cùng module, cả 5
+dấu hiệu sớm đều gắn với tỷ lệ không hoàn thành cao hơn ở cả năm 2013 lẫn năm 2014; mạnh nhất là dấu hiệu bỏ lỡ một bài, với tỷ lệ
+không hoàn thành ở nhóm có dấu hiệu cao hơn nhóm không có 40,8 điểm phần trăm (37,7–43,9) ở năm 2013 và 39,3 điểm phần
+trăm (36,4–42,1) ở năm 2014. Nhờ đó, D1 có lý do cụ thể bên cạnh mỗi tên trong danh sách, D2 có giả thuyết về nơi cần ưu tiên thời
 gian hỗ trợ, còn D3 có phương pháp đo lường, điều kiện mô hình phải đạt và quy trình kiểm tra công bằng. Các kết quả
-này là mối liên hệ, không phải quan hệ nhân quả; chúng chỉ dựa trên một năm dữ liệu của các module đào tạo từ xa ở Vương
+này là mối liên hệ, không phải quan hệ nhân quả, chỉ mô tả hai năm dữ liệu của các module đào tạo từ xa ở Vương
 quốc Anh và cần được kiểm chứng lại trên dữ liệu của trường. Chúng em sẽ kiểm tra mô hình và đo tác động của hoạt động
 liên hệ trong giai đoạn tiếp theo.

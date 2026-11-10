@@ -10,7 +10,7 @@ signs on the 7 runs with a task due by day 27). Rows are read with `aq_analysis.
 the reader, `assert_2013`) and asserted again here.
 
 Usage (from the repository root): venv/bin/python reports/milestone-5/code/aq2_sensitivity_continuous.py
-Writes reports/milestone-5/results/aq2_sensitivity_continuous.csv
+Writes reports/milestone-5/results/2013/aq2_sensitivity_continuous.csv
 """
 from __future__ import annotations
 
@@ -97,7 +97,7 @@ def main() -> None:
         band = 200 * math.sqrt(x["v"]) / x["n"]
         res = 100 * (x["obs"] - x["pred"])
         print(f"  {x['level']}: n={x['n']} residual {res:.2f} band {band:.2f} outside={abs(res) > band}")
-    print("written results/aq2_sensitivity_continuous.csv")
+    print("written results/2013/aq2_sensitivity_continuous.csv")
 
 
 if __name__ == "__main__":

@@ -9,9 +9,9 @@ phạm vi (Phụ lục I). Mục tiêu của nhóm chúng em là biến dữ li�
 gồm những sinh viên cần liên hệ ở mỗi đợt lập danh sách, kèm một lý do quan sát được cho mỗi tên, đồng thời rút ra các quy luật giúp chương trình đào tạo thấy sinh viên không hoàn thành học phần ở đâu và vào lúc nào. Vì chưa có bộ dữ liệu mở nào về
 các học phần ở Việt Nam, chúng em dùng Bộ dữ liệu phân tích học tập của Đại học Mở Anh (OULAD) làm bộ dữ liệu thay thế
 (Mục 4.1); mọi kết quả phải được kiểm chứng lại trên dữ liệu của trường trước khi được dùng làm căn cứ cho một quyết định. AQ1 và AQ2 đã
-được trả lời trên 9 kỳ mở module năm 2013 (kỳ mở – một lần mở module trong một học kỳ, ví dụ 2013B). AQ3 và AQ4 vẫn là
-thiết kế, vì thực nghiệm Level 2, tức mức tự chọn của Milestone 4 gồm việc chạy thực nghiệm nguyên mẫu cho AQ3 và AQ4, đã
-được đặc tả nhưng chưa chạy (Mục 10). Hình 1.1 trình bày chuỗi logic của dự án gồm mười một mắt xích, mỗi mắt xích được ghi tên trong hình, đi
+được trả lời trên toàn bộ 22 kỳ mở module của năm 2013 và năm 2014 (kỳ mở – một lần mở module trong một học kỳ, ví dụ 2013B). AQ3 và AQ4 vẫn là
+thiết kế, vì thực nghiệm Level 2 (mức tự chọn của Milestone 4: chạy nguyên mẫu cho AQ3 và AQ4) đã
+được đặc tả nhưng chưa được chạy (Mục 10). Hình 1.1 trình bày chuỗi logic gồm mười một mắt xích của dự án, đi
 từ vấn đề của các bên liên quan đến các phát hiện và những quyết định mà các phát hiện này hỗ trợ; Mục 2 đến Mục 11
 lần lượt đi theo chuỗi này.
 

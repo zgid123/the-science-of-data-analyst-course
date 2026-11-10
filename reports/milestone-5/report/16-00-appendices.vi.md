@@ -9,4 +9,5 @@ Brief và lập luận chọn phương pháp (Phụ lục VIII); thiết kế đ
 cách đọc các phát hiện cùng ma trận truy vết chi tiết (Phụ lục XI); kết quả AQ1 (Phụ lục XII); kết quả AQ2 (Phụ lục
 XIII); kết quả dự kiến, câu trả lời cuối cùng và hỗ trợ ra quyết định (Phụ lục XIV); hạn chế và hướng phát triển (Phụ lục
 XV); Nhật ký quyết định về AI (Phụ lục XVI). Các số đếm lấy từ OULAD và phiên bản đã chuẩn bị OULAD-N04-prepared-1.0; số
-đếm kết quả dùng các kỳ mở năm 2013, còn kết quả năm 2014 chỉ được dùng ở dạng số liệu mà Milestone 3 đã công bố.
+đếm kết quả bao gồm các kỳ mở năm 2013, các kỳ mở năm 2014 và 22 kỳ mở gộp chung; mỗi số đều ghi rõ
+phạm vi dữ liệu được dùng để tính.

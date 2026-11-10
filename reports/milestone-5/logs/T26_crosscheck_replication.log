@@ -1,0 +1,200 @@
+=== 2026-11-10T16:37:37Z ===
+$ (cd reports/milestone-5/package && venv/bin/python reports/milestone-5/code/t26_crosscheck_replication.py)
+MATCH missed_task            all  package   39.26 experiment   39.26
+MATCH missed_task            AAA  package   39.39 experiment   39.39
+MATCH missed_task            BBB  package   53.35 experiment   53.35
+MATCH missed_task            CCC  package   34.47 experiment   34.47
+MATCH missed_task            DDD  package   36.59 experiment   36.59
+MATCH missed_task            FFF  package   33.03 experiment   33.03
+MATCH late_tma               all  package   20.25 experiment   20.25
+MATCH late_tma               AAA  package   -1.16 experiment   -1.16
+MATCH late_tma               BBB  package   25.42 experiment   25.42
+MATCH late_tma               DDD  package   19.51 experiment   19.51
+MATCH late_tma               FFF  package   22.53 experiment   22.53
+MATCH inactive_last7         all  package   15.82 experiment   15.82
+MATCH inactive_last7         AAA  package   12.72 experiment   12.72
+MATCH inactive_last7         BBB  package   11.13 experiment   11.13
+MATCH inactive_last7         CCC  package   15.95 experiment   15.95
+MATCH inactive_last7         DDD  package   14.21 experiment   14.21
+MATCH inactive_last7         EEE  package   18.99 experiment   18.99
+MATCH inactive_last7         FFF  package   20.13 experiment   20.13
+MATCH inactive_last7         GGG  package   16.03 experiment   16.03
+MATCH low_relative_activity  all  package    14.6 experiment    14.6
+MATCH low_relative_activity  AAA  package    7.13 experiment    7.13
+MATCH low_relative_activity  BBB  package    9.16 experiment    9.16
+MATCH low_relative_activity  CCC  package   14.18 experiment   14.18
+MATCH low_relative_activity  DDD  package   17.73 experiment   17.73
+MATCH low_relative_activity  EEE  package   18.52 experiment   18.52
+MATCH low_relative_activity  FFF  package   17.91 experiment   17.91
+MATCH low_relative_activity  GGG  package   12.05 experiment   12.05
+MATCH no_pre_start_activity  all  package    8.65 experiment    8.65
+MATCH no_pre_start_activity  AAA  package    8.14 experiment    8.14
+MATCH no_pre_start_activity  BBB  package    1.23 experiment    1.23
+MATCH no_pre_start_activity  CCC  package   10.95 experiment   10.95
+MATCH no_pre_start_activity  DDD  package    5.56 experiment    5.56
+MATCH no_pre_start_activity  EEE  package    22.9 experiment    22.9
+MATCH no_pre_start_activity  FFF  package    8.94 experiment    8.94
+MATCH no_pre_start_activity  GGG  package    7.68 experiment    7.68
+SUMMARY: 35 of 35 estimates match to 0.01 pp
+exit status: 0
+
+=== 2026-11-10T16:49:14Z ===
+$ (cd /Users/ptkhanh/Documents/master/milestone-da && venv/bin/python reports/milestone-5/code/t26_crosscheck_replication.py)
+MATCH missed_task            all  package   39.26 experiment   39.26
+MATCH missed_task            AAA  package   39.39 experiment   39.39
+MATCH missed_task            BBB  package   53.35 experiment   53.35
+MATCH missed_task            CCC  package   34.47 experiment   34.47
+MATCH missed_task            DDD  package   36.59 experiment   36.59
+MATCH missed_task            FFF  package   33.03 experiment   33.03
+MATCH late_tma               all  package   20.25 experiment   20.25
+MATCH late_tma               AAA  package   -1.16 experiment   -1.16
+MATCH late_tma               BBB  package   25.42 experiment   25.42
+MATCH late_tma               DDD  package   19.51 experiment   19.51
+MATCH late_tma               FFF  package   22.53 experiment   22.53
+MATCH inactive_last7         all  package   15.82 experiment   15.82
+MATCH inactive_last7         AAA  package   12.72 experiment   12.72
+MATCH inactive_last7         BBB  package   11.13 experiment   11.13
+MATCH inactive_last7         CCC  package   15.95 experiment   15.95
+MATCH inactive_last7         DDD  package   14.21 experiment   14.21
+MATCH inactive_last7         EEE  package   18.99 experiment   18.99
+MATCH inactive_last7         FFF  package   20.13 experiment   20.13
+MATCH inactive_last7         GGG  package   16.03 experiment   16.03
+MATCH low_relative_activity  all  package    14.6 experiment    14.6
+MATCH low_relative_activity  AAA  package    7.13 experiment    7.13
+MATCH low_relative_activity  BBB  package    9.16 experiment    9.16
+MATCH low_relative_activity  CCC  package   14.18 experiment   14.18
+MATCH low_relative_activity  DDD  package   17.73 experiment   17.73
+MATCH low_relative_activity  EEE  package   18.52 experiment   18.52
+MATCH low_relative_activity  FFF  package   17.91 experiment   17.91
+MATCH low_relative_activity  GGG  package   12.05 experiment   12.05
+MATCH no_pre_start_activity  all  package    8.65 experiment    8.65
+MATCH no_pre_start_activity  AAA  package    8.14 experiment    8.14
+MATCH no_pre_start_activity  BBB  package    1.23 experiment    1.23
+MATCH no_pre_start_activity  CCC  package   10.95 experiment   10.95
+MATCH no_pre_start_activity  DDD  package    5.56 experiment    5.56
+MATCH no_pre_start_activity  EEE  package    22.9 experiment    22.9
+MATCH no_pre_start_activity  FFF  package    8.94 experiment    8.94
+MATCH no_pre_start_activity  GGG  package    7.68 experiment    7.68
+SUMMARY: 35 of 35 estimates match to 0.01 pp
+exit status: 0
+
+=== 2026-11-10T17:08:27Z ===
+$ (cd /Users/ptkhanh/Documents/master/milestone-da && venv/bin/python reports/milestone-5/code/t26_crosscheck_replication.py)
+MATCH missed_task            all  package   39.26 experiment   39.26
+MATCH missed_task            AAA  package   39.39 experiment   39.39
+MATCH missed_task            BBB  package   53.35 experiment   53.35
+MATCH missed_task            CCC  package   34.47 experiment   34.47
+MATCH missed_task            DDD  package   36.59 experiment   36.59
+MATCH missed_task            FFF  package   33.03 experiment   33.03
+MATCH late_tma               all  package   20.25 experiment   20.25
+MATCH late_tma               AAA  package   -1.16 experiment   -1.16
+MATCH late_tma               BBB  package   25.42 experiment   25.42
+MATCH late_tma               DDD  package   19.51 experiment   19.51
+MATCH late_tma               FFF  package   22.53 experiment   22.53
+MATCH inactive_last7         all  package   15.82 experiment   15.82
+MATCH inactive_last7         AAA  package   12.72 experiment   12.72
+MATCH inactive_last7         BBB  package   11.13 experiment   11.13
+MATCH inactive_last7         CCC  package   15.95 experiment   15.95
+MATCH inactive_last7         DDD  package   14.21 experiment   14.21
+MATCH inactive_last7         EEE  package   18.99 experiment   18.99
+MATCH inactive_last7         FFF  package   20.13 experiment   20.13
+MATCH inactive_last7         GGG  package   16.03 experiment   16.03
+MATCH low_relative_activity  all  package    14.6 experiment    14.6
+MATCH low_relative_activity  AAA  package    7.13 experiment    7.13
+MATCH low_relative_activity  BBB  package    9.16 experiment    9.16
+MATCH low_relative_activity  CCC  package   14.18 experiment   14.18
+MATCH low_relative_activity  DDD  package   17.73 experiment   17.73
+MATCH low_relative_activity  EEE  package   18.52 experiment   18.52
+MATCH low_relative_activity  FFF  package   17.91 experiment   17.91
+MATCH low_relative_activity  GGG  package   12.05 experiment   12.05
+MATCH no_pre_start_activity  all  package    8.65 experiment    8.65
+MATCH no_pre_start_activity  AAA  package    8.14 experiment    8.14
+MATCH no_pre_start_activity  BBB  package    1.23 experiment    1.23
+MATCH no_pre_start_activity  CCC  package   10.95 experiment   10.95
+MATCH no_pre_start_activity  DDD  package    5.56 experiment    5.56
+MATCH no_pre_start_activity  EEE  package    22.9 experiment    22.9
+MATCH no_pre_start_activity  FFF  package    8.94 experiment    8.94
+MATCH no_pre_start_activity  GGG  package    7.68 experiment    7.68
+SUMMARY: 35 of 35 estimates match to 0.01 pp
+exit status: 0
+
+=== 2026-11-10T17:08:43Z ===
+$ (cd /Users/ptkhanh/Documents/master/milestone-da && venv/bin/python reports/milestone-5/code/t26_crosscheck_replication.py)
+MATCH missed_task            all  package   39.26 experiment   39.26
+MATCH missed_task            AAA  package   39.39 experiment   39.39
+MATCH missed_task            BBB  package   53.35 experiment   53.35
+MATCH missed_task            CCC  package   34.47 experiment   34.47
+MATCH missed_task            DDD  package   36.59 experiment   36.59
+MATCH missed_task            FFF  package   33.03 experiment   33.03
+MATCH late_tma               all  package   20.25 experiment   20.25
+MATCH late_tma               AAA  package   -1.16 experiment   -1.16
+MATCH late_tma               BBB  package   25.42 experiment   25.42
+MATCH late_tma               DDD  package   19.51 experiment   19.51
+MATCH late_tma               FFF  package   22.53 experiment   22.53
+MATCH inactive_last7         all  package   15.82 experiment   15.82
+MATCH inactive_last7         AAA  package   12.72 experiment   12.72
+MATCH inactive_last7         BBB  package   11.13 experiment   11.13
+MATCH inactive_last7         CCC  package   15.95 experiment   15.95
+MATCH inactive_last7         DDD  package   14.21 experiment   14.21
+MATCH inactive_last7         EEE  package   18.99 experiment   18.99
+MATCH inactive_last7         FFF  package   20.13 experiment   20.13
+MATCH inactive_last7         GGG  package   16.03 experiment   16.03
+MATCH low_relative_activity  all  package    14.6 experiment    14.6
+MATCH low_relative_activity  AAA  package    7.13 experiment    7.13
+MATCH low_relative_activity  BBB  package    9.16 experiment    9.16
+MATCH low_relative_activity  CCC  package   14.18 experiment   14.18
+MATCH low_relative_activity  DDD  package   17.73 experiment   17.73
+MATCH low_relative_activity  EEE  package   18.52 experiment   18.52
+MATCH low_relative_activity  FFF  package   17.91 experiment   17.91
+MATCH low_relative_activity  GGG  package   12.05 experiment   12.05
+MATCH no_pre_start_activity  all  package    8.65 experiment    8.65
+MATCH no_pre_start_activity  AAA  package    8.14 experiment    8.14
+MATCH no_pre_start_activity  BBB  package    1.23 experiment    1.23
+MATCH no_pre_start_activity  CCC  package   10.95 experiment   10.95
+MATCH no_pre_start_activity  DDD  package    5.56 experiment    5.56
+MATCH no_pre_start_activity  EEE  package    22.9 experiment    22.9
+MATCH no_pre_start_activity  FFF  package    8.94 experiment    8.94
+MATCH no_pre_start_activity  GGG  package    7.68 experiment    7.68
+SUMMARY: 35 of 35 estimates match to 0.01 pp
+exit status: 0
+
+=== 2026-11-10T18:02:15Z ===
+$ (cd /Users/ptkhanh/Documents/master/milestone-da && venv/bin/python reports/milestone-5/code/t26_crosscheck_replication.py)
+MATCH missed_task            all  package   39.26 experiment   39.26
+MATCH missed_task            AAA  package   39.39 experiment   39.39
+MATCH missed_task            BBB  package   53.35 experiment   53.35
+MATCH missed_task            CCC  package   34.47 experiment   34.47
+MATCH missed_task            DDD  package   36.59 experiment   36.59
+MATCH missed_task            FFF  package   33.03 experiment   33.03
+MATCH late_tma               all  package   20.25 experiment   20.25
+MATCH late_tma               AAA  package   -1.16 experiment   -1.16
+MATCH late_tma               BBB  package   25.42 experiment   25.42
+MATCH late_tma               DDD  package   19.51 experiment   19.51
+MATCH late_tma               FFF  package   22.53 experiment   22.53
+MATCH inactive_last7         all  package   15.82 experiment   15.82
+MATCH inactive_last7         AAA  package   12.72 experiment   12.72
+MATCH inactive_last7         BBB  package   11.13 experiment   11.13
+MATCH inactive_last7         CCC  package   15.95 experiment   15.95
+MATCH inactive_last7         DDD  package   14.21 experiment   14.21
+MATCH inactive_last7         EEE  package   18.99 experiment   18.99
+MATCH inactive_last7         FFF  package   20.13 experiment   20.13
+MATCH inactive_last7         GGG  package   16.03 experiment   16.03
+MATCH low_relative_activity  all  package    14.6 experiment    14.6
+MATCH low_relative_activity  AAA  package    7.13 experiment    7.13
+MATCH low_relative_activity  BBB  package    9.16 experiment    9.16
+MATCH low_relative_activity  CCC  package   14.18 experiment   14.18
+MATCH low_relative_activity  DDD  package   17.73 experiment   17.73
+MATCH low_relative_activity  EEE  package   18.52 experiment   18.52
+MATCH low_relative_activity  FFF  package   17.91 experiment   17.91
+MATCH low_relative_activity  GGG  package   12.05 experiment   12.05
+MATCH no_pre_start_activity  all  package    8.65 experiment    8.65
+MATCH no_pre_start_activity  AAA  package    8.14 experiment    8.14
+MATCH no_pre_start_activity  BBB  package    1.23 experiment    1.23
+MATCH no_pre_start_activity  CCC  package   10.95 experiment   10.95
+MATCH no_pre_start_activity  DDD  package    5.56 experiment    5.56
+MATCH no_pre_start_activity  EEE  package    22.9 experiment    22.9
+MATCH no_pre_start_activity  FFF  package    8.94 experiment    8.94
+MATCH no_pre_start_activity  GGG  package    7.68 experiment    7.68
+SUMMARY: 35 of 35 estimates match to 0.01 pp
+exit status: 0
+

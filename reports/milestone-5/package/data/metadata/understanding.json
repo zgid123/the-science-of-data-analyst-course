@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T15:06:54Z",
+  "generated": "2026-11-10T17:57:31Z",
   "tables": {
     "courses": {
       "rows": 22,
@@ -350,22 +350,22 @@
       [
         "GGG",
         "2014B",
-        "TMA"
+        "CMA"
       ],
       [
         "GGG",
         "2014B",
-        "CMA"
-      ],
-      [
-        "GGG",
-        "2014J",
-        "CMA"
+        "TMA"
       ],
       [
         "GGG",
         "2014J",
         "TMA"
+      ],
+      [
+        "GGG",
+        "2014J",
+        "CMA"
       ]
     ],
     "runs_with_two_exams": [

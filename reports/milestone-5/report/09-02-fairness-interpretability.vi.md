@@ -1,7 +1,7 @@
 ## 9.2. Kiểm tra rò rỉ thông tin, tính công bằng và khả năng diễn giải
 
-Kết quả trên các fold chỉ dùng để chọn giữa các ứng viên, còn biến kết quả của các kỳ mở năm 2014 được giữ kín cho đến
-lần kiểm tra duy nhất. Khi kiểm tra công bằng, nhóm chúng em để các thuộc tính nhóm nằm ngoài các biến dự báo, vì muốn
+Kết quả trên các fold chỉ dùng để chọn giữa các ứng viên; lựa chọn này không dựa
+vào biến kết quả nào của năm 2014. Khi kiểm tra công bằng, nhóm chúng em để các thuộc tính nhóm nằm ngoài các biến dự báo, vì muốn
 kiểm tra công bằng thì phải biết sinh viên thuộc nhóm nào [6]. Phép kiểm tra chỉ dùng một tiêu chí là tỷ lệ phát hiện
 trong giới hạn danh sách ngang bằng giữa các nhóm. Theo quy tắc công bằng FR1, một nhóm bị đánh dấu để con người xem xét
 khi tỷ lệ phát hiện của nhóm thấp hơn của các sinh viên còn lại quá 10 điểm phần trăm và khoảng tin cậy một phía đã hiệu

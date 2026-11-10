@@ -1,4 +1,4 @@
-2026-11-09T15:06:54Z
+2026-11-10T17:57:31Z
 $ python src/01_understand.py   (Python 3.12.7)
 tables: 7; keys unique: 6 of 6 keyed tables
 population: 22 runs, 7 modules, 32,593 enrolments, 28,785 students (3,538 with several enrolments)

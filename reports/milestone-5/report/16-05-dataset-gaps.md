@@ -70,8 +70,8 @@ status of Section 3.
 
 | AQ | Supported by OULAD | Missing or weak | Handling | Action | Final status |
 | :---- | :---- | :---- | :---- | :---- | :---- |
-| AQ1 | Final result of all 32,593 enrolments in 22 runs; due days of 182 TMA and CMA tasks and their submissions; registration and unregistration days | Year of study and delivery mode (every run is distance learning); exam results in only 2 of 7 modules | First missed task derived over TMA and CMA; comparisons by module, run, start month and year; population rule at day 14 (C09); computed on 2013 with the published 2014 counts (C15) | Modify + Defer | Partial |
-| AQ2 | Daily click records; tasks due by day 27 in 16 of 22 runs; 1,382 enrolments in two runs at once, 1,370 of them in 2014 | Attendance; year of study and delivery mode; the several-modules sign in 2013 | Each sign derived with a formula and a time window; task signs only in runs with a task due; several-modules sign for 2014 only (C12); replication on 2014 after the AQ3 test (C14) | Modify + Defer | Partial |
+| AQ1 | Final result of all 32,593 enrolments in 22 runs; due days of 182 TMA and CMA tasks and their submissions; registration and unregistration days | Year of study and delivery mode (every run is distance learning); exam results in only 2 of 7 modules | First missed task derived over TMA and CMA; comparisons by module, run, start month and year; population rule at day 14 (C09); computed on 2013, 2014 and the 22 runs pooled (C15) | Modify | Answered |
+| AQ2 | Daily click records; tasks due by day 27 in 16 of 22 runs; 1,382 enrolments in two runs at once, 1,370 of them in 2014 | Attendance; year of study and delivery mode; the several-modules sign in 2013 | Each sign derived with a formula and a time window; task signs only in runs with a task due; several-modules sign for 2014 only (C12); estimated on 2013 and replicated on 2014 (C14, C15) | Modify | Answered |
 | AQ3 | Target for every enrolment; 28,069 enrolled at day 13 and 27,535 at day 27; 9 module and start-month pairs in both years | A task-only rule fires in 1 run at day 13 and 16 at day 27; no day on which a TMA mark was released; one earlier run per module and start month | Early-sign rule restated with an inactivity part (C10); CMA marks used only when known by the cut-off; train on 2013, test once on all 13 runs of 2014 (C16) | Modify | Deferred |
 | AQ4 | Ranking from the AQ3 scores; enrolment counts for capacity scenarios | Contacts, contact types, staff capacity and outcomes after contact | No compatible open dataset; rewritten to the ranking part (C11); judged by lift and normalised recall (C13); contact choice deferred to the pilot | Modify + Defer | Deferred |
 
@@ -100,8 +100,8 @@ view, a statistic or a finding.
 rules: AQ1 and AQ3 were ready, AQ2 was ready for association only, and AQ4 was ready as a ranking with its contact part
 deferred, so all the entry conditions for modeling held. The prepared data are split by year: the 9 runs of 2013 are
 for development and the 13 runs of 2014 for the single final test. At day 27 the development runs hold 11,811
-enrolments, of whom 5,245 (44.4%) did not complete, and the test runs hold 15,724 enrolments, whose outcomes remain
-unopened until the AQ3 test.
+enrolments, of whom 5,245 (44.4%) did not complete, and the test runs hold 15,724 enrolments, of whom 6,911 (44.0%)
+did not complete; AQ1 and AQ2 describe both years, and no 2014 outcome enters any AQ3 choice (C15).
 
 **Which questions the data cannot support.** Three parts of the proposal cannot be answered with OULAD and need the
 university's own records. The first is the contact part of AQ4: which contact, a message from a lecturer, a call from

@@ -15,7 +15,7 @@ these data should answer or which decisions analytics should support.
 
 **Regulation raises the stakes.** Online teaching is now a regular part of degree programs in Vietnam: under the
 undergraduate training regulation of 2021, a full-time or work-study program may deliver up to 30% of its volume in
-online classes, as reported in April 2021 [21]. Withdrawal is in addition a regulated measure of a university's
+online classes, as reported in April 2021 [18]. Withdrawal is in addition a regulated measure of a university's
 quality. Circular 01/2024 caps the annual withdrawal rate at 10% and the first-year rate at 15% [1], and a university
 whose first-year withdrawal exceeds 15% may not raise its enrolment quota [1]. Circular 83/2026, in force from
 15 November 2026, replaces Circular 01/2024 and keeps these thresholds, as reported in October 2026 [2], and it
@@ -26,21 +26,21 @@ are drifting away while they can still be helped.
 
 **What published studies report.** Non-completion in online higher education is a recognised and persistent concern.
 A 2024 systematic review of 110 articles published between 2013 and June 2023 treats dropout in online higher
-education as a significant concern [22] and finds that several contributors act at once: the quality of the course,
-academic preparation, satisfaction, motivation, attributes of the system and support services [22]. A review of 40
+education as a significant concern [19] and finds that several contributors act at once: the quality of the course,
+academic preparation, satisfaction, motivation, attributes of the system and support services [19]. A review of 40
 studies from 2010 to 2018 reports that retention in online learning is significantly lower than in face-to-face courses
-[23], with completion in online courses about 8 to 14 points below face-to-face courses [23]. In Vietnam, a 2024
-review puts dropout among university students at about 20–30% [24]. Disengagement also starts early. In
+[20], with completion in online courses about 8 to 14 points below face-to-face courses [20]. In Vietnam, a 2024
+review puts dropout among university students at about 20–30% [21]. Disengagement also starts early. In
 massive open online courses (MOOCs) about half of the enrolled students never show up and the first two weeks are critical for
-engagement [25], and in a blended first-year statistics course weeks 5–6 were the best point for an early warning,
+engagement [22], and in a blended first-year statistics course weeks 5–6 were the best point for an early warning,
 because they still left students time to change their study patterns while the prediction stayed reasonably accurate
-[26]. Taken together, these studies indicate that the useful moment for support lies in the first weeks of a course,
+[23]. Taken together, these studies indicate that the useful moment for support lies in the first weeks of a course,
 well before any final result.
 
 **The problem.** Building on this setting, the problem our project addresses is that students who stop taking part
 are noticed late, and only some of them are noticed at all. In the simulated stakeholder interviews of Milestone 1, in which AI personas answered for each group of staff (Section 1.1), each group described a different moment of notice: lecturers become sure that a student has gone quiet around week 5 or 6,
 the program manager sees pass and withdrawal counts only after the semester has closed, and the student support office
-meets most of these students only when they appear on the academic warning list at the end of a semester. In every case the moment of notice comes after the moment at which help would have been easiest. Published work places that moment early as well: in a blended first-year course weeks 5–6 were the best point for an early warning [26], and the window for effective support of a student at risk is short, between two and four weeks [3]. Section 1.1 sets out who is
+meets most of these students only when they appear on the academic warning list at the end of a semester. In every case the moment of notice comes after the moment at which help would have been easiest. Published work places that moment early as well: in a blended first-year course weeks 5–6 were the best point for an early warning [23], and the window for effective support of a student at risk is short, between two and four weeks [3]. Section 1.1 sets out who is
 affected by this delay and what each stakeholder needs, and Section 1.2 turns the problem into a bounded objective.
 
 **Who uses the results.** The course brief requires three stakeholders, the Academic Program Manager, the Course
@@ -88,14 +88,14 @@ three further points: completion means passing the course, the review points avo
 weeks, and the target is pursued over a full academic year rather than one semester.
 
 **Published practice points the same way.** Early-semester data help to identify and predict students at risk, and
-early intervention is the leading recommendation of a review of online retention [23], which also calls for a
-collective effort of several stakeholders [23]. The Open University, the institution that published the dataset we
+early intervention is the leading recommendation of a review of online retention [20], which also calls for a
+collective effort of several stakeholders [20]. The Open University, the institution that published the dataset we
 analyse, runs a predictive tool, OU Analyse, designed to inform teachers about students at risk of not submitting
 their next assignment so that the teachers act [3]. In a study of 59 teachers, nine courses and 1,325 students,
 teachers who engaged with these predictions were associated with better student performance [3], and the window
 for effective support of a student at risk is short, between two and four weeks [3]. At scale, the tool reached
-1,159 teachers and 23,180 students in 231 online courses [19], with a weekly traffic-light output that marks students
-at risk in red, those with a moderate probability of failing in amber and those likely to succeed in green [19].
+1,159 teachers and 23,180 students in 231 online courses [24], with a weekly traffic-light output that marks students
+at risk in red, those with a moderate probability of failing in amber and those likely to succeed in green [24].
 Building on this evidence, our project gives the people who already contact students a better-timed list, rather than
 a new office or an automated decision, and Section 1.2 sets the scope within which that list is built.
 

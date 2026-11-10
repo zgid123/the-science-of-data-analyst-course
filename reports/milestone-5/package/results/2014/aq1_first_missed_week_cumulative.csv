@@ -1,0 +1,421 @@
+denominator,group,week,events,n,cum_share,ci_low,ci_high
+day14_registered,Distinction,1,0,1947,0.0,0.0,0.002
+day14_registered,Distinction,2,0,1947,0.0,0.0,0.002
+day14_registered,Distinction,3,3,1947,0.0015,0.0005,0.0045
+day14_registered,Distinction,4,3,1947,0.0015,0.0005,0.0045
+day14_registered,Distinction,5,125,1947,0.0642,0.0541,0.076
+day14_registered,Distinction,6,126,1947,0.0647,0.0546,0.0765
+day14_registered,Distinction,7,128,1947,0.0657,0.0556,0.0776
+day14_registered,Distinction,8,128,1947,0.0657,0.0556,0.0776
+day14_registered,Distinction,9,130,1947,0.0668,0.0565,0.0787
+day14_registered,Distinction,10,132,1947,0.0678,0.0575,0.0798
+day14_registered,Distinction,11,132,1947,0.0678,0.0575,0.0798
+day14_registered,Distinction,12,136,1947,0.0699,0.0594,0.082
+day14_registered,Distinction,13,136,1947,0.0699,0.0594,0.082
+day14_registered,Distinction,14,136,1947,0.0699,0.0594,0.082
+day14_registered,Distinction,15,143,1947,0.0734,0.0627,0.0859
+day14_registered,Distinction,16,152,1947,0.0781,0.067,0.0908
+day14_registered,Distinction,17,161,1947,0.0827,0.0713,0.0958
+day14_registered,Distinction,18,161,1947,0.0827,0.0713,0.0958
+day14_registered,Distinction,19,161,1947,0.0827,0.0713,0.0958
+day14_registered,Distinction,20,161,1947,0.0827,0.0713,0.0958
+day14_registered,Distinction,21,161,1947,0.0827,0.0713,0.0958
+day14_registered,Distinction,22,166,1947,0.0853,0.0737,0.0985
+day14_registered,Distinction,23,176,1947,0.0904,0.0785,0.104
+day14_registered,Distinction,24,177,1947,0.0909,0.0789,0.1045
+day14_registered,Distinction,25,177,1947,0.0909,0.0789,0.1045
+day14_registered,Distinction,26,177,1947,0.0909,0.0789,0.1045
+day14_registered,Distinction,27,177,1947,0.0909,0.0789,0.1045
+day14_registered,Distinction,28,199,1947,0.1022,0.0895,0.1165
+day14_registered,Distinction,29,204,1947,0.1048,0.0919,0.1192
+day14_registered,Distinction,30,204,1947,0.1048,0.0919,0.1192
+day14_registered,Distinction,31,205,1947,0.1053,0.0924,0.1197
+day14_registered,Distinction,32,238,1947,0.1222,0.1084,0.1375
+day14_registered,Distinction,33,280,1947,0.1438,0.1289,0.1601
+day14_registered,Distinction,34,280,1947,0.1438,0.1289,0.1601
+day14_registered,Distinction,35,282,1947,0.1448,0.1299,0.1612
+day14_registered,Fail,1,0,3797,0.0,0.0,0.001
+day14_registered,Fail,2,80,3797,0.0211,0.017,0.0261
+day14_registered,Fail,3,351,3797,0.0924,0.0836,0.1021
+day14_registered,Fail,4,526,3797,0.1385,0.1279,0.1499
+day14_registered,Fail,5,828,3797,0.2181,0.2052,0.2315
+day14_registered,Fail,6,911,3797,0.2399,0.2266,0.2538
+day14_registered,Fail,7,945,3797,0.2489,0.2354,0.2629
+day14_registered,Fail,8,1223,3797,0.3221,0.3074,0.3371
+day14_registered,Fail,9,1402,3797,0.3692,0.354,0.3847
+day14_registered,Fail,10,1553,3797,0.409,0.3935,0.4247
+day14_registered,Fail,11,1581,3797,0.4164,0.4008,0.4321
+day14_registered,Fail,12,1655,3797,0.4359,0.4202,0.4517
+day14_registered,Fail,13,1736,3797,0.4572,0.4414,0.4731
+day14_registered,Fail,14,1819,3797,0.4791,0.4632,0.495
+day14_registered,Fail,15,1860,3797,0.4899,0.474,0.5058
+day14_registered,Fail,16,1978,3797,0.5209,0.505,0.5368
+day14_registered,Fail,17,2164,3797,0.5699,0.5541,0.5856
+day14_registered,Fail,18,2202,3797,0.5799,0.5642,0.5955
+day14_registered,Fail,19,2281,3797,0.6007,0.5851,0.6162
+day14_registered,Fail,20,2345,3797,0.6176,0.602,0.6329
+day14_registered,Fail,21,2414,3797,0.6358,0.6203,0.6509
+day14_registered,Fail,22,2545,3797,0.6703,0.6551,0.685
+day14_registered,Fail,23,2588,3797,0.6816,0.6666,0.6962
+day14_registered,Fail,24,2673,3797,0.704,0.6893,0.7183
+day14_registered,Fail,25,2741,3797,0.7219,0.7074,0.7359
+day14_registered,Fail,26,2741,3797,0.7219,0.7074,0.7359
+day14_registered,Fail,27,2741,3797,0.7219,0.7074,0.7359
+day14_registered,Fail,28,2804,3797,0.7385,0.7243,0.7522
+day14_registered,Fail,29,2940,3797,0.7743,0.7607,0.7873
+day14_registered,Fail,30,2970,3797,0.7822,0.7688,0.795
+day14_registered,Fail,31,2984,3797,0.7859,0.7726,0.7986
+day14_registered,Fail,32,3021,3797,0.7956,0.7825,0.8082
+day14_registered,Fail,33,3061,3797,0.8062,0.7933,0.8184
+day14_registered,Fail,34,3061,3797,0.8062,0.7933,0.8184
+day14_registered,Fail,35,3083,3797,0.812,0.7992,0.8241
+day14_registered,Pass,1,0,6853,0.0,0.0,0.0006
+day14_registered,Pass,2,3,6853,0.0004,0.0001,0.0013
+day14_registered,Pass,3,42,6853,0.0061,0.0045,0.0083
+day14_registered,Pass,4,51,6853,0.0074,0.0057,0.0098
+day14_registered,Pass,5,290,6853,0.0423,0.0378,0.0473
+day14_registered,Pass,6,294,6853,0.0429,0.0384,0.048
+day14_registered,Pass,7,313,6853,0.0457,0.041,0.0509
+day14_registered,Pass,8,324,6853,0.0473,0.0425,0.0526
+day14_registered,Pass,9,355,6853,0.0518,0.0468,0.0573
+day14_registered,Pass,10,393,6853,0.0573,0.0521,0.0631
+day14_registered,Pass,11,394,6853,0.0575,0.0522,0.0633
+day14_registered,Pass,12,434,6853,0.0633,0.0578,0.0693
+day14_registered,Pass,13,439,6853,0.0641,0.0585,0.0701
+day14_registered,Pass,14,442,6853,0.0645,0.0589,0.0706
+day14_registered,Pass,15,465,6853,0.0679,0.0621,0.0741
+day14_registered,Pass,16,501,6853,0.0731,0.0672,0.0795
+day14_registered,Pass,17,575,6853,0.0839,0.0776,0.0907
+day14_registered,Pass,18,575,6853,0.0839,0.0776,0.0907
+day14_registered,Pass,19,591,6853,0.0862,0.0798,0.0931
+day14_registered,Pass,20,617,6853,0.09,0.0835,0.097
+day14_registered,Pass,21,638,6853,0.0931,0.0864,0.1002
+day14_registered,Pass,22,730,6853,0.1065,0.0994,0.114
+day14_registered,Pass,23,785,6853,0.1145,0.1072,0.1223
+day14_registered,Pass,24,808,6853,0.1179,0.1105,0.1258
+day14_registered,Pass,25,842,6853,0.1229,0.1153,0.1309
+day14_registered,Pass,26,842,6853,0.1229,0.1153,0.1309
+day14_registered,Pass,27,842,6853,0.1229,0.1153,0.1309
+day14_registered,Pass,28,971,6853,0.1417,0.1336,0.1501
+day14_registered,Pass,29,1114,6853,0.1626,0.154,0.1715
+day14_registered,Pass,30,1165,6853,0.17,0.1613,0.1791
+day14_registered,Pass,31,1186,6853,0.1731,0.1643,0.1822
+day14_registered,Pass,32,1284,6853,0.1874,0.1783,0.1968
+day14_registered,Pass,33,1401,6853,0.2044,0.1951,0.2141
+day14_registered,Pass,34,1401,6853,0.2044,0.1951,0.2141
+day14_registered,Pass,35,1429,6853,0.2085,0.1991,0.2183
+day14_registered,Withdrawn,1,0,3388,0.0,0.0,0.0011
+day14_registered,Withdrawn,2,25,3388,0.0074,0.005,0.0109
+day14_registered,Withdrawn,3,366,3388,0.108,0.098,0.1189
+day14_registered,Withdrawn,4,527,3388,0.1555,0.1437,0.1681
+day14_registered,Withdrawn,5,874,3388,0.258,0.2435,0.273
+day14_registered,Withdrawn,6,951,3388,0.2807,0.2658,0.2961
+day14_registered,Withdrawn,7,956,3388,0.2822,0.2673,0.2976
+day14_registered,Withdrawn,8,1177,3388,0.3474,0.3316,0.3636
+day14_registered,Withdrawn,9,1260,3388,0.3719,0.3558,0.3883
+day14_registered,Withdrawn,10,1417,3388,0.4182,0.4017,0.4349
+day14_registered,Withdrawn,11,1456,3388,0.4298,0.4132,0.4465
+day14_registered,Withdrawn,12,1493,3388,0.4407,0.424,0.4574
+day14_registered,Withdrawn,13,1560,3388,0.4604,0.4437,0.4773
+day14_registered,Withdrawn,14,1614,3388,0.4764,0.4596,0.4932
+day14_registered,Withdrawn,15,1665,3388,0.4914,0.4746,0.5083
+day14_registered,Withdrawn,16,1781,3388,0.5257,0.5088,0.5425
+day14_registered,Withdrawn,17,1855,3388,0.5475,0.5307,0.5642
+day14_registered,Withdrawn,18,1864,3388,0.5502,0.5334,0.5669
+day14_registered,Withdrawn,19,1906,3388,0.5626,0.5458,0.5792
+day14_registered,Withdrawn,20,1933,3388,0.5705,0.5538,0.5871
+day14_registered,Withdrawn,21,1972,3388,0.5821,0.5654,0.5986
+day14_registered,Withdrawn,22,2016,3388,0.595,0.5784,0.6115
+day14_registered,Withdrawn,23,2061,3388,0.6083,0.5918,0.6246
+day14_registered,Withdrawn,24,2084,3388,0.6151,0.5986,0.6314
+day14_registered,Withdrawn,25,2096,3388,0.6187,0.6022,0.6349
+day14_registered,Withdrawn,26,2096,3388,0.6187,0.6022,0.6349
+day14_registered,Withdrawn,27,2096,3388,0.6187,0.6022,0.6349
+day14_registered,Withdrawn,28,2110,3388,0.6228,0.6063,0.639
+day14_registered,Withdrawn,29,2136,3388,0.6305,0.6141,0.6466
+day14_registered,Withdrawn,30,2141,3388,0.6319,0.6156,0.648
+day14_registered,Withdrawn,31,2142,3388,0.6322,0.6159,0.6483
+day14_registered,Withdrawn,32,2142,3388,0.6322,0.6159,0.6483
+day14_registered,Withdrawn,33,2142,3388,0.6322,0.6159,0.6483
+day14_registered,Withdrawn,34,2142,3388,0.6322,0.6159,0.6483
+day14_registered,Withdrawn,35,2142,3388,0.6322,0.6159,0.6483
+day14_registered,Completed,1,0,8800,0.0,0.0,0.0004
+day14_registered,Completed,2,3,8800,0.0003,0.0001,0.001
+day14_registered,Completed,3,45,8800,0.0051,0.0038,0.0068
+day14_registered,Completed,4,54,8800,0.0061,0.0047,0.008
+day14_registered,Completed,5,415,8800,0.0472,0.0429,0.0518
+day14_registered,Completed,6,420,8800,0.0477,0.0435,0.0524
+day14_registered,Completed,7,441,8800,0.0501,0.0457,0.0549
+day14_registered,Completed,8,452,8800,0.0514,0.0469,0.0562
+day14_registered,Completed,9,485,8800,0.0551,0.0505,0.0601
+day14_registered,Completed,10,525,8800,0.0597,0.0549,0.0648
+day14_registered,Completed,11,526,8800,0.0598,0.055,0.0649
+day14_registered,Completed,12,570,8800,0.0648,0.0598,0.0701
+day14_registered,Completed,13,575,8800,0.0653,0.0604,0.0707
+day14_registered,Completed,14,578,8800,0.0657,0.0607,0.071
+day14_registered,Completed,15,608,8800,0.0691,0.064,0.0746
+day14_registered,Completed,16,653,8800,0.0742,0.0689,0.0799
+day14_registered,Completed,17,736,8800,0.0836,0.078,0.0896
+day14_registered,Completed,18,736,8800,0.0836,0.078,0.0896
+day14_registered,Completed,19,752,8800,0.0855,0.0798,0.0915
+day14_registered,Completed,20,778,8800,0.0884,0.0827,0.0945
+day14_registered,Completed,21,799,8800,0.0908,0.085,0.097
+day14_registered,Completed,22,896,8800,0.1018,0.0957,0.1083
+day14_registered,Completed,23,961,8800,0.1092,0.1029,0.1159
+day14_registered,Completed,24,985,8800,0.1119,0.1055,0.1187
+day14_registered,Completed,25,1019,8800,0.1158,0.1093,0.1226
+day14_registered,Completed,26,1019,8800,0.1158,0.1093,0.1226
+day14_registered,Completed,27,1019,8800,0.1158,0.1093,0.1226
+day14_registered,Completed,28,1170,8800,0.133,0.126,0.1402
+day14_registered,Completed,29,1318,8800,0.1498,0.1425,0.1574
+day14_registered,Completed,30,1369,8800,0.1556,0.1481,0.1633
+day14_registered,Completed,31,1391,8800,0.1581,0.1506,0.1658
+day14_registered,Completed,32,1522,8800,0.173,0.1652,0.181
+day14_registered,Completed,33,1681,8800,0.191,0.1829,0.1994
+day14_registered,Completed,34,1681,8800,0.191,0.1829,0.1994
+day14_registered,Completed,35,1711,8800,0.1944,0.1863,0.2028
+day14_registered,Not completed,1,0,7185,0.0,0.0,0.0005
+day14_registered,Not completed,2,105,7185,0.0146,0.0121,0.0177
+day14_registered,Not completed,3,717,7185,0.0998,0.0931,0.1069
+day14_registered,Not completed,4,1053,7185,0.1466,0.1386,0.1549
+day14_registered,Not completed,5,1702,7185,0.2369,0.2272,0.2469
+day14_registered,Not completed,6,1862,7185,0.2592,0.2492,0.2694
+day14_registered,Not completed,7,1901,7185,0.2646,0.2545,0.2749
+day14_registered,Not completed,8,2400,7185,0.334,0.3232,0.345
+day14_registered,Not completed,9,2662,7185,0.3705,0.3594,0.3817
+day14_registered,Not completed,10,2970,7185,0.4134,0.402,0.4248
+day14_registered,Not completed,11,3037,7185,0.4227,0.4113,0.4341
+day14_registered,Not completed,12,3148,7185,0.4381,0.4267,0.4496
+day14_registered,Not completed,13,3296,7185,0.4587,0.4472,0.4703
+day14_registered,Not completed,14,3433,7185,0.4778,0.4663,0.4894
+day14_registered,Not completed,15,3525,7185,0.4906,0.4791,0.5022
+day14_registered,Not completed,16,3759,7185,0.5232,0.5116,0.5347
+day14_registered,Not completed,17,4019,7185,0.5594,0.5479,0.5708
+day14_registered,Not completed,18,4066,7185,0.5659,0.5544,0.5773
+day14_registered,Not completed,19,4187,7185,0.5827,0.5713,0.5941
+day14_registered,Not completed,20,4278,7185,0.5954,0.584,0.6067
+day14_registered,Not completed,21,4386,7185,0.6104,0.5991,0.6217
+day14_registered,Not completed,22,4561,7185,0.6348,0.6236,0.6459
+day14_registered,Not completed,23,4649,7185,0.647,0.6359,0.658
+day14_registered,Not completed,24,4757,7185,0.6621,0.6511,0.6729
+day14_registered,Not completed,25,4837,7185,0.6732,0.6623,0.684
+day14_registered,Not completed,26,4837,7185,0.6732,0.6623,0.684
+day14_registered,Not completed,27,4837,7185,0.6732,0.6623,0.684
+day14_registered,Not completed,28,4914,7185,0.6839,0.6731,0.6946
+day14_registered,Not completed,29,5076,7185,0.7065,0.6958,0.7169
+day14_registered,Not completed,30,5111,7185,0.7113,0.7008,0.7217
+day14_registered,Not completed,31,5126,7185,0.7134,0.7029,0.7238
+day14_registered,Not completed,32,5163,7185,0.7186,0.7081,0.7289
+day14_registered,Not completed,33,5203,7185,0.7241,0.7137,0.7344
+day14_registered,Not completed,34,5203,7185,0.7241,0.7137,0.7344
+day14_registered,Not completed,35,5225,7185,0.7272,0.7168,0.7374
+all_enrolments,Distinction,1,0,1948,0.0,0.0,0.002
+all_enrolments,Distinction,2,0,1948,0.0,0.0,0.002
+all_enrolments,Distinction,3,3,1948,0.0015,0.0005,0.0045
+all_enrolments,Distinction,4,3,1948,0.0015,0.0005,0.0045
+all_enrolments,Distinction,5,125,1948,0.0642,0.0541,0.0759
+all_enrolments,Distinction,6,126,1948,0.0647,0.0546,0.0765
+all_enrolments,Distinction,7,128,1948,0.0657,0.0555,0.0776
+all_enrolments,Distinction,8,128,1948,0.0657,0.0555,0.0776
+all_enrolments,Distinction,9,130,1948,0.0667,0.0565,0.0787
+all_enrolments,Distinction,10,132,1948,0.0678,0.0574,0.0798
+all_enrolments,Distinction,11,132,1948,0.0678,0.0574,0.0798
+all_enrolments,Distinction,12,136,1948,0.0698,0.0593,0.082
+all_enrolments,Distinction,13,136,1948,0.0698,0.0593,0.082
+all_enrolments,Distinction,14,136,1948,0.0698,0.0593,0.082
+all_enrolments,Distinction,15,143,1948,0.0734,0.0626,0.0858
+all_enrolments,Distinction,16,152,1948,0.078,0.0669,0.0908
+all_enrolments,Distinction,17,162,1948,0.0832,0.0717,0.0963
+all_enrolments,Distinction,18,162,1948,0.0832,0.0717,0.0963
+all_enrolments,Distinction,19,162,1948,0.0832,0.0717,0.0963
+all_enrolments,Distinction,20,162,1948,0.0832,0.0717,0.0963
+all_enrolments,Distinction,21,162,1948,0.0832,0.0717,0.0963
+all_enrolments,Distinction,22,167,1948,0.0857,0.0741,0.099
+all_enrolments,Distinction,23,177,1948,0.0909,0.0789,0.1044
+all_enrolments,Distinction,24,178,1948,0.0914,0.0794,0.105
+all_enrolments,Distinction,25,178,1948,0.0914,0.0794,0.105
+all_enrolments,Distinction,26,178,1948,0.0914,0.0794,0.105
+all_enrolments,Distinction,27,178,1948,0.0914,0.0794,0.105
+all_enrolments,Distinction,28,200,1948,0.1027,0.09,0.1169
+all_enrolments,Distinction,29,205,1948,0.1052,0.0924,0.1196
+all_enrolments,Distinction,30,205,1948,0.1052,0.0924,0.1196
+all_enrolments,Distinction,31,206,1948,0.1057,0.0929,0.1202
+all_enrolments,Distinction,32,239,1948,0.1227,0.1089,0.138
+all_enrolments,Distinction,33,281,1948,0.1443,0.1293,0.1606
+all_enrolments,Distinction,34,281,1948,0.1443,0.1293,0.1606
+all_enrolments,Distinction,35,283,1948,0.1453,0.1303,0.1616
+all_enrolments,Fail,1,0,3810,0.0,0.0,0.001
+all_enrolments,Fail,2,80,3810,0.021,0.0169,0.0261
+all_enrolments,Fail,3,352,3810,0.0924,0.0836,0.102
+all_enrolments,Fail,4,527,3810,0.1383,0.1277,0.1496
+all_enrolments,Fail,5,829,3810,0.2176,0.2048,0.231
+all_enrolments,Fail,6,912,3810,0.2394,0.2261,0.2532
+all_enrolments,Fail,7,946,3810,0.2483,0.2348,0.2623
+all_enrolments,Fail,8,1225,3810,0.3215,0.3069,0.3365
+all_enrolments,Fail,9,1404,3810,0.3685,0.3533,0.3839
+all_enrolments,Fail,10,1555,3810,0.4081,0.3926,0.4238
+all_enrolments,Fail,11,1583,3810,0.4155,0.3999,0.4312
+all_enrolments,Fail,12,1658,3810,0.4352,0.4195,0.451
+all_enrolments,Fail,13,1739,3810,0.4564,0.4407,0.4723
+all_enrolments,Fail,14,1822,3810,0.4782,0.4624,0.4941
+all_enrolments,Fail,15,1863,3810,0.489,0.4731,0.5049
+all_enrolments,Fail,16,1981,3810,0.5199,0.5041,0.5358
+all_enrolments,Fail,17,2169,3810,0.5693,0.5535,0.5849
+all_enrolments,Fail,18,2207,3810,0.5793,0.5635,0.5949
+all_enrolments,Fail,19,2287,3810,0.6003,0.5846,0.6157
+all_enrolments,Fail,20,2352,3810,0.6173,0.6018,0.6326
+all_enrolments,Fail,21,2421,3810,0.6354,0.62,0.6506
+all_enrolments,Fail,22,2554,3810,0.6703,0.6552,0.6851
+all_enrolments,Fail,23,2597,3810,0.6816,0.6667,0.6962
+all_enrolments,Fail,24,2682,3810,0.7039,0.6892,0.7182
+all_enrolments,Fail,25,2750,3810,0.7218,0.7073,0.7358
+all_enrolments,Fail,26,2750,3810,0.7218,0.7073,0.7358
+all_enrolments,Fail,27,2750,3810,0.7218,0.7073,0.7358
+all_enrolments,Fail,28,2813,3810,0.7383,0.7241,0.752
+all_enrolments,Fail,29,2949,3810,0.774,0.7605,0.787
+all_enrolments,Fail,30,2979,3810,0.7819,0.7685,0.7947
+all_enrolments,Fail,31,2993,3810,0.7856,0.7722,0.7983
+all_enrolments,Fail,32,3030,3810,0.7953,0.7822,0.8078
+all_enrolments,Fail,33,3070,3810,0.8058,0.7929,0.818
+all_enrolments,Fail,34,3070,3810,0.8058,0.7929,0.818
+all_enrolments,Fail,35,3092,3810,0.8115,0.7988,0.8237
+all_enrolments,Pass,1,0,6867,0.0,0.0,0.0006
+all_enrolments,Pass,2,3,6867,0.0004,0.0001,0.0013
+all_enrolments,Pass,3,42,6867,0.0061,0.0045,0.0083
+all_enrolments,Pass,4,51,6867,0.0074,0.0057,0.0098
+all_enrolments,Pass,5,291,6867,0.0424,0.0379,0.0474
+all_enrolments,Pass,6,295,6867,0.043,0.0384,0.048
+all_enrolments,Pass,7,314,6867,0.0457,0.041,0.0509
+all_enrolments,Pass,8,325,6867,0.0473,0.0426,0.0526
+all_enrolments,Pass,9,356,6867,0.0518,0.0468,0.0573
+all_enrolments,Pass,10,395,6867,0.0575,0.0523,0.0633
+all_enrolments,Pass,11,396,6867,0.0577,0.0524,0.0634
+all_enrolments,Pass,12,436,6867,0.0635,0.058,0.0695
+all_enrolments,Pass,13,441,6867,0.0642,0.0587,0.0703
+all_enrolments,Pass,14,444,6867,0.0647,0.0591,0.0707
+all_enrolments,Pass,15,467,6867,0.068,0.0623,0.0742
+all_enrolments,Pass,16,503,6867,0.0732,0.0673,0.0797
+all_enrolments,Pass,17,577,6867,0.084,0.0777,0.0908
+all_enrolments,Pass,18,577,6867,0.084,0.0777,0.0908
+all_enrolments,Pass,19,593,6867,0.0864,0.0799,0.0932
+all_enrolments,Pass,20,619,6867,0.0901,0.0836,0.0971
+all_enrolments,Pass,21,640,6867,0.0932,0.0865,0.1003
+all_enrolments,Pass,22,733,6867,0.1067,0.0997,0.1143
+all_enrolments,Pass,23,789,6867,0.1149,0.1076,0.1227
+all_enrolments,Pass,24,812,6867,0.1182,0.1108,0.1261
+all_enrolments,Pass,25,846,6867,0.1232,0.1156,0.1312
+all_enrolments,Pass,26,846,6867,0.1232,0.1156,0.1312
+all_enrolments,Pass,27,846,6867,0.1232,0.1156,0.1312
+all_enrolments,Pass,28,975,6867,0.142,0.1339,0.1504
+all_enrolments,Pass,29,1119,6867,0.163,0.1544,0.1719
+all_enrolments,Pass,30,1170,6867,0.1704,0.1617,0.1795
+all_enrolments,Pass,31,1191,6867,0.1734,0.1647,0.1826
+all_enrolments,Pass,32,1289,6867,0.1877,0.1786,0.1971
+all_enrolments,Pass,33,1406,6867,0.2047,0.1954,0.2145
+all_enrolments,Pass,34,1406,6867,0.2047,0.1954,0.2145
+all_enrolments,Pass,35,1434,6867,0.2088,0.1994,0.2186
+all_enrolments,Withdrawn,1,0,6439,0.0,0.0,0.0006
+all_enrolments,Withdrawn,2,29,6439,0.0045,0.0031,0.0065
+all_enrolments,Withdrawn,3,374,6439,0.0581,0.0526,0.0641
+all_enrolments,Withdrawn,4,536,6439,0.0832,0.0767,0.0902
+all_enrolments,Withdrawn,5,883,6439,0.1371,0.1289,0.1458
+all_enrolments,Withdrawn,6,960,6439,0.1491,0.1406,0.158
+all_enrolments,Withdrawn,7,965,6439,0.1499,0.1414,0.1588
+all_enrolments,Withdrawn,8,1186,6439,0.1842,0.1749,0.1938
+all_enrolments,Withdrawn,9,1270,6439,0.1972,0.1877,0.2071
+all_enrolments,Withdrawn,10,1429,6439,0.2219,0.2119,0.2322
+all_enrolments,Withdrawn,11,1468,6439,0.228,0.2179,0.2384
+all_enrolments,Withdrawn,12,1505,6439,0.2337,0.2236,0.2442
+all_enrolments,Withdrawn,13,1573,6439,0.2443,0.234,0.2549
+all_enrolments,Withdrawn,14,1627,6439,0.2527,0.2422,0.2634
+all_enrolments,Withdrawn,15,1678,6439,0.2606,0.25,0.2715
+all_enrolments,Withdrawn,16,1794,6439,0.2786,0.2678,0.2897
+all_enrolments,Withdrawn,17,1869,6439,0.2903,0.2793,0.3015
+all_enrolments,Withdrawn,18,1878,6439,0.2917,0.2807,0.3029
+all_enrolments,Withdrawn,19,1921,6439,0.2983,0.2873,0.3096
+all_enrolments,Withdrawn,20,1948,6439,0.3025,0.2914,0.3139
+all_enrolments,Withdrawn,21,1987,6439,0.3086,0.2974,0.32
+all_enrolments,Withdrawn,22,2031,6439,0.3154,0.3042,0.3269
+all_enrolments,Withdrawn,23,2077,6439,0.3226,0.3113,0.3341
+all_enrolments,Withdrawn,24,2100,6439,0.3261,0.3148,0.3377
+all_enrolments,Withdrawn,25,2112,6439,0.328,0.3166,0.3396
+all_enrolments,Withdrawn,26,2112,6439,0.328,0.3166,0.3396
+all_enrolments,Withdrawn,27,2112,6439,0.328,0.3166,0.3396
+all_enrolments,Withdrawn,28,2126,6439,0.3302,0.3188,0.3418
+all_enrolments,Withdrawn,29,2152,6439,0.3342,0.3228,0.3458
+all_enrolments,Withdrawn,30,2157,6439,0.335,0.3236,0.3466
+all_enrolments,Withdrawn,31,2158,6439,0.3351,0.3237,0.3468
+all_enrolments,Withdrawn,32,2158,6439,0.3351,0.3237,0.3468
+all_enrolments,Withdrawn,33,2158,6439,0.3351,0.3237,0.3468
+all_enrolments,Withdrawn,34,2158,6439,0.3351,0.3237,0.3468
+all_enrolments,Withdrawn,35,2158,6439,0.3351,0.3237,0.3468
+all_enrolments,Completed,1,0,8815,0.0,0.0,0.0004
+all_enrolments,Completed,2,3,8815,0.0003,0.0001,0.001
+all_enrolments,Completed,3,45,8815,0.0051,0.0038,0.0068
+all_enrolments,Completed,4,54,8815,0.0061,0.0047,0.008
+all_enrolments,Completed,5,416,8815,0.0472,0.043,0.0518
+all_enrolments,Completed,6,421,8815,0.0478,0.0435,0.0524
+all_enrolments,Completed,7,442,8815,0.0501,0.0458,0.0549
+all_enrolments,Completed,8,453,8815,0.0514,0.047,0.0562
+all_enrolments,Completed,9,486,8815,0.0551,0.0506,0.0601
+all_enrolments,Completed,10,527,8815,0.0598,0.055,0.0649
+all_enrolments,Completed,11,528,8815,0.0599,0.0551,0.065
+all_enrolments,Completed,12,572,8815,0.0649,0.0599,0.0702
+all_enrolments,Completed,13,577,8815,0.0655,0.0605,0.0708
+all_enrolments,Completed,14,580,8815,0.0658,0.0608,0.0712
+all_enrolments,Completed,15,610,8815,0.0692,0.0641,0.0747
+all_enrolments,Completed,16,655,8815,0.0743,0.069,0.08
+all_enrolments,Completed,17,739,8815,0.0838,0.0782,0.0898
+all_enrolments,Completed,18,739,8815,0.0838,0.0782,0.0898
+all_enrolments,Completed,19,755,8815,0.0856,0.08,0.0917
+all_enrolments,Completed,20,781,8815,0.0886,0.0828,0.0947
+all_enrolments,Completed,21,802,8815,0.091,0.0852,0.0972
+all_enrolments,Completed,22,900,8815,0.1021,0.096,0.1086
+all_enrolments,Completed,23,966,8815,0.1096,0.1032,0.1163
+all_enrolments,Completed,24,990,8815,0.1123,0.1059,0.1191
+all_enrolments,Completed,25,1024,8815,0.1162,0.1096,0.123
+all_enrolments,Completed,26,1024,8815,0.1162,0.1096,0.123
+all_enrolments,Completed,27,1024,8815,0.1162,0.1096,0.123
+all_enrolments,Completed,28,1175,8815,0.1333,0.1264,0.1406
+all_enrolments,Completed,29,1324,8815,0.1502,0.1429,0.1578
+all_enrolments,Completed,30,1375,8815,0.156,0.1486,0.1637
+all_enrolments,Completed,31,1397,8815,0.1585,0.151,0.1663
+all_enrolments,Completed,32,1528,8815,0.1733,0.1656,0.1814
+all_enrolments,Completed,33,1687,8815,0.1914,0.1833,0.1997
+all_enrolments,Completed,34,1687,8815,0.1914,0.1833,0.1997
+all_enrolments,Completed,35,1717,8815,0.1948,0.1866,0.2032
+all_enrolments,Not completed,1,0,10249,0.0,0.0,0.0004
+all_enrolments,Not completed,2,109,10249,0.0106,0.0088,0.0128
+all_enrolments,Not completed,3,726,10249,0.0708,0.066,0.076
+all_enrolments,Not completed,4,1063,10249,0.1037,0.098,0.1098
+all_enrolments,Not completed,5,1712,10249,0.167,0.1599,0.1744
+all_enrolments,Not completed,6,1872,10249,0.1827,0.1753,0.1903
+all_enrolments,Not completed,7,1911,10249,0.1865,0.179,0.1941
+all_enrolments,Not completed,8,2411,10249,0.2352,0.2271,0.2436
+all_enrolments,Not completed,9,2674,10249,0.2609,0.2525,0.2695
+all_enrolments,Not completed,10,2984,10249,0.2912,0.2824,0.3
+all_enrolments,Not completed,11,3051,10249,0.2977,0.2889,0.3066
+all_enrolments,Not completed,12,3163,10249,0.3086,0.2997,0.3176
+all_enrolments,Not completed,13,3312,10249,0.3232,0.3142,0.3323
+all_enrolments,Not completed,14,3449,10249,0.3365,0.3274,0.3457
+all_enrolments,Not completed,15,3541,10249,0.3455,0.3364,0.3548
+all_enrolments,Not completed,16,3775,10249,0.3683,0.359,0.3777
+all_enrolments,Not completed,17,4038,10249,0.394,0.3846,0.4035
+all_enrolments,Not completed,18,4085,10249,0.3986,0.3891,0.4081
+all_enrolments,Not completed,19,4208,10249,0.4106,0.4011,0.4201
+all_enrolments,Not completed,20,4300,10249,0.4196,0.41,0.4291
+all_enrolments,Not completed,21,4408,10249,0.4301,0.4205,0.4397
+all_enrolments,Not completed,22,4585,10249,0.4474,0.4378,0.457
+all_enrolments,Not completed,23,4674,10249,0.456,0.4464,0.4657
+all_enrolments,Not completed,24,4782,10249,0.4666,0.4569,0.4763
+all_enrolments,Not completed,25,4862,10249,0.4744,0.4647,0.4841
+all_enrolments,Not completed,26,4862,10249,0.4744,0.4647,0.4841
+all_enrolments,Not completed,27,4862,10249,0.4744,0.4647,0.4841
+all_enrolments,Not completed,28,4939,10249,0.4819,0.4722,0.4916
+all_enrolments,Not completed,29,5101,10249,0.4977,0.488,0.5074
+all_enrolments,Not completed,30,5136,10249,0.5011,0.4914,0.5108
+all_enrolments,Not completed,31,5151,10249,0.5026,0.4929,0.5123
+all_enrolments,Not completed,32,5188,10249,0.5062,0.4965,0.5159
+all_enrolments,Not completed,33,5228,10249,0.5101,0.5004,0.5198
+all_enrolments,Not completed,34,5228,10249,0.5101,0.5004,0.5198
+all_enrolments,Not completed,35,5250,10249,0.5122,0.5026,0.5219

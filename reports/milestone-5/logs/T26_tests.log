@@ -1,0 +1,770 @@
+=== 2026-11-10T16:37:22Z ===
+$ (cd reports/milestone-5/package && venv/bin/python -m unittest discover -s tests -v)
+test_activity_windows (test_features.FeatureFormulas.test_activity_windows) ... ok
+test_cma_mark_lag (test_features.FeatureFormulas.test_cma_mark_lag) ... ok
+test_extended_features (test_features.FeatureFormulas.test_extended_features) ... ok
+test_no_event_after_cutoff (test_features.FeatureFormulas.test_no_event_after_cutoff) ... ok
+test_population_at_cutoff (test_features.FeatureFormulas.test_population_at_cutoff) ... ok
+test_rule_components (test_features.FeatureFormulas.test_rule_components) ... ok
+test_run_relative_activity (test_features.FeatureFormulas.test_run_relative_activity) ... [8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows keptok
+test_status (test_features.FeatureFormulas.test_status) ... ok
+test_tasks_and_rule (test_features.FeatureFormulas.test_tasks_and_rule) ... ok
+test_module_without_the_sign_gets_no_term (test_scope.ModuleTerms.test_module_without_the_sign_gets_no_term) ... ok
+test_results_folder_follows_scope (test_scope.ScopeGuard.test_results_folder_follows_scope) ... ok
+test_scope_accepts_own_runs_and_rejects_others (test_scope.ScopeGuard.test_scope_accepts_own_runs_and_rejects_others) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.216s
+
+OK
+
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+exit status: 0
+
+=== 2026-11-10T16:48:58Z ===
+$ (cd reports/milestone-5/package && venv/bin/python -m unittest discover -s tests -v)
+test_activity_windows (test_features.FeatureFormulas.test_activity_windows) ... ok
+test_cma_mark_lag (test_features.FeatureFormulas.test_cma_mark_lag) ... ok
+test_extended_features (test_features.FeatureFormulas.test_extended_features) ... ok
+test_no_event_after_cutoff (test_features.FeatureFormulas.test_no_event_after_cutoff) ... ok
+test_population_at_cutoff (test_features.FeatureFormulas.test_population_at_cutoff) ... ok
+test_rule_components (test_features.FeatureFormulas.test_rule_components) ... ok
+test_run_relative_activity (test_features.FeatureFormulas.test_run_relative_activity) ... [8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows keptok
+test_status (test_features.FeatureFormulas.test_status) ... ok
+test_tasks_and_rule (test_features.FeatureFormulas.test_tasks_and_rule) ... ok
+test_module_without_the_sign_gets_no_term (test_scope.ModuleTerms.test_module_without_the_sign_gets_no_term) ... ok
+test_results_folder_follows_scope (test_scope.ScopeGuard.test_results_folder_follows_scope) ... ok
+test_scope_accepts_own_runs_and_rejects_others (test_scope.ScopeGuard.test_scope_accepts_own_runs_and_rejects_others) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.246s
+
+OK
+
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+exit status: 0
+
+=== 2026-11-10T17:08:11Z ===
+$ (cd reports/milestone-5/package && venv/bin/python -m unittest discover -s tests -v)
+test_activity_windows (test_features.FeatureFormulas.test_activity_windows) ... ok
+test_cma_mark_lag (test_features.FeatureFormulas.test_cma_mark_lag) ... ok
+test_extended_features (test_features.FeatureFormulas.test_extended_features) ... ok
+test_no_event_after_cutoff (test_features.FeatureFormulas.test_no_event_after_cutoff) ... ok
+test_population_at_cutoff (test_features.FeatureFormulas.test_population_at_cutoff) ... ok
+test_rule_components (test_features.FeatureFormulas.test_rule_components) ... ok
+test_run_relative_activity (test_features.FeatureFormulas.test_run_relative_activity) ... [8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows keptok
+test_status (test_features.FeatureFormulas.test_status) ... ok
+test_tasks_and_rule (test_features.FeatureFormulas.test_tasks_and_rule) ... ok
+test_module_without_the_sign_gets_no_term (test_scope.ModuleTerms.test_module_without_the_sign_gets_no_term) ... ok
+test_results_folder_follows_scope (test_scope.ScopeGuard.test_results_folder_follows_scope) ... ok
+test_scope_accepts_own_runs_and_rejects_others (test_scope.ScopeGuard.test_scope_accepts_own_runs_and_rejects_others) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.211s
+
+OK
+
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+exit status: 0
+
+=== 2026-11-10T17:08:28Z ===
+$ (cd reports/milestone-5/package && venv/bin/python -m unittest discover -s tests -v)
+test_activity_windows (test_features.FeatureFormulas.test_activity_windows) ... ok
+test_cma_mark_lag (test_features.FeatureFormulas.test_cma_mark_lag) ... ok
+test_extended_features (test_features.FeatureFormulas.test_extended_features) ... ok
+test_no_event_after_cutoff (test_features.FeatureFormulas.test_no_event_after_cutoff) ... ok
+test_population_at_cutoff (test_features.FeatureFormulas.test_population_at_cutoff) ... ok
+test_rule_components (test_features.FeatureFormulas.test_rule_components) ... ok
+test_run_relative_activity (test_features.FeatureFormulas.test_run_relative_activity) ... [8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows keptok
+test_status (test_features.FeatureFormulas.test_status) ... ok
+test_tasks_and_rule (test_features.FeatureFormulas.test_tasks_and_rule) ... ok
+test_module_without_the_sign_gets_no_term (test_scope.ModuleTerms.test_module_without_the_sign_gets_no_term) ... ok
+test_results_folder_follows_scope (test_scope.ScopeGuard.test_results_folder_follows_scope) ... ok
+test_scope_accepts_own_runs_and_rejects_others (test_scope.ScopeGuard.test_scope_accepts_own_runs_and_rejects_others) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.219s
+
+OK
+
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+exit status: 0
+
+=== 2026-11-10T18:01:57Z ===
+$ (cd reports/milestone-5/package && venv/bin/python -m unittest discover -s tests -v)
+test_activity_windows (test_features.FeatureFormulas.test_activity_windows) ... ok
+test_cma_mark_lag (test_features.FeatureFormulas.test_cma_mark_lag) ... ok
+test_extended_features (test_features.FeatureFormulas.test_extended_features) ... ok
+test_no_event_after_cutoff (test_features.FeatureFormulas.test_no_event_after_cutoff) ... ok
+test_population_at_cutoff (test_features.FeatureFormulas.test_population_at_cutoff) ... ok
+test_rule_components (test_features.FeatureFormulas.test_rule_components) ... ok
+test_run_relative_activity (test_features.FeatureFormulas.test_run_relative_activity) ... [8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows keptok
+test_status (test_features.FeatureFormulas.test_status) ... ok
+test_tasks_and_rule (test_features.FeatureFormulas.test_tasks_and_rule) ... ok
+test_module_without_the_sign_gets_no_term (test_scope.ModuleTerms.test_module_without_the_sign_gets_no_term) ... ok
+test_results_folder_follows_scope (test_scope.ScopeGuard.test_results_folder_follows_scope) ... ok
+test_scope_accepts_own_runs_and_rejects_others (test_scope.ScopeGuard.test_scope_accepts_own_runs_and_rejects_others) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.289s
+
+OK
+
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+[8 features d13] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 1
+[8 features d27] + activity up to the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + distinct resources: 2 -> 2 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 2 -> 2 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+exit status: 0
+

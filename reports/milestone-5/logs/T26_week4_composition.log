@@ -1,0 +1,5 @@
+2026-11-10T17:02:51Z
+$ venv/bin/python reports/milestone-5/code/t26_week4_composition.py
+2013: non-completers 5515; in EEE/GGG 659 (11.9%); missed a task by week 4 within the other runs 1080 of 4856 (22.2%)
+2014: non-completers 7185; in EEE/GGG 1198 (16.7%); missed a task by week 4 within the other runs 1053 of 5987 (17.6%)
+exit status: 0

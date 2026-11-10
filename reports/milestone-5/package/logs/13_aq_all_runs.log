@@ -1,0 +1,15 @@
+2026-11-10T17:57:59Z
+$ python src/analysis/aq_analysis.py --scope all   (Python 3.12.7)
+all rows loaded: enrolment 32593, features_d27 27535; presentations ['2013B', '2013J', '2014B', '2014J']
+AQ1 day14_registered: n=28061 non-completers=12700 rate=[0.4526, 0.4468, 0.4584]
+AQ1 all_enrolments: n=32593 non-completers=17208 rate=[0.528, 0.5225, 0.5334]
+AQ1 day14_registered_excl_flagged: n=27962 non-completers=12602 rate=[0.4507, 0.4449, 0.4565]
+AQ1 validation: {'cells': 176, 'all_agree': True, 'first_missed_week_agree': '32593/32593'}
+AQ2 population: 27535 enrolments, 12156 non-completers
+AQ2 missed_task: unadj 49.49 pp; mutual 39.75 pp (37.68, 41.81); OR 7.185; 5/5 modules; consistent association
+AQ2 late_tma: unadj 16.76 pp; mutual 20.56 pp (17.58, 23.54); OR 2.451; 4/4 modules; consistent association
+AQ2 inactive_last7: unadj 25.99 pp; mutual 14.66 pp (12.77, 16.55); OR 2.005; 7/7 modules; consistent association
+AQ2 low_relative_activity: unadj 27.11 pp; mutual 14.03 pp (12.81, 15.26); OR 1.884; 7/7 modules; consistent association
+AQ2 no_pre_start_activity: unadj 19.32 pp; mutual 9.44 pp (7.73, 11.16); OR 1.629; 7/7 modules; consistent association
+Results written to results/all_runs
+exit 0

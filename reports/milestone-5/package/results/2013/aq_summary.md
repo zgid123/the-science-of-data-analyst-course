@@ -1,16 +1,16 @@
 # AQ1 and AQ2 results on the 9 module runs of 2013
 
-Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differences of two rates carry 95% Newcombe hybrid score intervals; model estimates carry 95% intervals from HC1 robust standard errors (delta method for risk differences). Methods and deviations: `results/README.md`.
+Written by `src/analysis/aq_analysis.py --scope 2013`. Rates carry 95% Wilson score intervals; differences of two rates carry 95% Newcombe hybrid score intervals; model estimates carry 95% intervals from HC1 robust standard errors (delta method for risk differences). Methods and deviations: `results/README.md`.
 
 ## AQ1. Outcome shares
 
-**overall, day14_registered.** Non-completion and the four outcome shares by overall, denominator enrolments still registered at day 14 (KPI population) (`aq1_rates.csv`).
+**All runs, enrolments still registered at day 14 (KPI population).** Non-completion and the four outcome shares (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | all 9 runs of 2013 | 12076 | 5515 | 45.7% (44.8–46.6) | 45.4% (44.5–46.3) | 8.9% (8.4–9.4) | 26.8% (26.0–27.5) | 18.9% (18.2–19.6) |
 
-**module, day14_registered.** Non-completion and the four outcome shares by module, denominator enrolments still registered at day 14 (KPI population) (`aq1_rates.csv`).
+**By module, enrolments still registered at day 14 (KPI population).** Non-completion and the four outcome shares by module (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -21,7 +21,7 @@ Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differ
 | FFF | 3518 | 1642 | 46.7% (45.0–48.3) | 44.7% (43.0–46.3) | 8.7% (7.8–9.7) | 26.5% (25.0–28.0) | 20.2% (18.9–21.6) |
 | GGG | 926 | 334 | 36.1% (33.0–39.2) | 48.7% (45.5–51.9) | 15.2% (13.1–17.7) | 31.8% (28.8–34.8) | 4.3% (3.2–5.8) |
 
-**run, day14_registered.** Non-completion and the four outcome shares by run, denominator enrolments still registered at day 14 (KPI population) (`aq1_rates.csv`).
+**By run, enrolments still registered at day 14 (KPI population).** Non-completion and the four outcome shares by run (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -35,20 +35,20 @@ Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differ
 | FFF 2013J | 1998 | 903 | 45.2% (43.0–47.4) | 45.5% (43.3–47.6) | 9.4% (8.2–10.7) | 25.5% (23.7–27.5) | 19.7% (18.0–21.5) |
 | GGG 2013J | 926 | 334 | 36.1% (33.0–39.2) | 48.7% (45.5–51.9) | 15.2% (13.1–17.7) | 31.8% (28.8–34.8) | 4.3% (3.2–5.8) |
 
-**start_month, day14_registered.** Non-completion and the four outcome shares by start month, denominator enrolments still registered at day 14 (KPI population) (`aq1_rates.csv`).
+**By start month, enrolments still registered at day 14 (KPI population).** Non-completion and the four outcome shares by start month (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | B (February) | 4323 | 2231 | 51.6% (50.1–53.1) | 40.8% (39.4–42.3) | 7.6% (6.8–8.4) | 28.7% (27.3–30.0) | 22.9% (21.7–24.2) |
 | J (October) | 7753 | 3284 | 42.4% (41.3–43.5) | 48.0% (46.9–49.1) | 9.7% (9.0–10.3) | 25.7% (24.7–26.7) | 16.7% (15.9–17.5) |
 
-**overall, all_enrolments.** Non-completion and the four outcome shares by overall, denominator all enrolments (`aq1_rates.csv`).
+**All runs, all enrolments.** Non-completion and the four outcome shares (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | all 9 runs of 2013 | 13529 | 6959 | 51.4% (50.6–52.3) | 40.6% (39.8–41.4) | 8.0% (7.5–8.4) | 24.0% (23.2–24.7) | 27.5% (26.7–28.2) |
 
-**module, all_enrolments.** Non-completion and the four outcome shares by module, denominator all enrolments (`aq1_rates.csv`).
+**By module, all enrolments.** Non-completion and the four outcome shares by module (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -59,7 +59,7 @@ Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differ
 | FFF | 3897 | 2020 | 51.8% (50.3–53.4) | 40.3% (38.8–41.9) | 7.8% (7.0–8.7) | 24.0% (22.7–25.3) | 27.9% (26.5–29.3) |
 | GGG | 952 | 360 | 37.8% (34.8–40.9) | 47.4% (44.2–50.5) | 14.8% (12.7–17.2) | 30.9% (28.0–33.9) | 6.9% (5.5–8.7) |
 
-**run, all_enrolments.** Non-completion and the four outcome shares by run, denominator all enrolments (`aq1_rates.csv`).
+**By run, all enrolments.** Non-completion and the four outcome shares by run (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -73,7 +73,7 @@ Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differ
 | FFF 2013J | 2283 | 1188 | 52.0% (50.0–54.1) | 39.8% (37.8–41.8) | 8.2% (7.1–9.4) | 22.5% (20.8–24.2) | 29.6% (27.7–31.5) |
 | GGG 2013J | 952 | 360 | 37.8% (34.8–40.9) | 47.4% (44.2–50.5) | 14.8% (12.7–17.2) | 30.9% (28.0–33.9) | 6.9% (5.5–8.7) |
 
-**start_month, all_enrolments.** Non-completion and the four outcome shares by start month, denominator all enrolments (`aq1_rates.csv`).
+**By start month, all enrolments.** Non-completion and the four outcome shares by start month (`aq1_rates.csv`).
 
 | group | n | non_completers | non_completion | Pass | Distinction | Fail | Withdrawn |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -114,7 +114,7 @@ Written by `code/aq_analysis.py`. Rates carry 95% Wilson score intervals; differ
 | start_month | B (February) | 4323 | 0.5161 | 0.5012 | 0.531 | 4684 | 0.5527 | 3.66 | True |
 | start_month | J (October) | 7753 | 0.4236 | 0.4126 | 0.4346 | 8845 | 0.4941 | 7.05 | True |
 
-**Year comparison.** Non-completion over all enrolments in 2013 (computed) and 2014 (published in Milestone 3, not recomputed), with the 2014 − 2013 difference (`aq1_year_difference.csv`).
+**Year comparison.** Non-completion over all enrolments in 2013 (computed) and 2014 (published in Milestone 3, not recomputed), with the 2014 − 2013 difference (`../compare/aq1_year_difference_published.csv`; the comparison computed from both years is in `../compare/`).
 
 | level | unit | measure | rate_2013 | n_2013 | rate_2014_published | n_2014 | diff_pp_2014_minus_2013 | ci_low_pp | ci_high_pp |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |

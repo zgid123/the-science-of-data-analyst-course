@@ -169,12 +169,10 @@ def main() -> int:
 
     # ---- no 2014 row in any result ----------------------------------------------------------------------------------
     for p in sorted(A.RES.glob("aq*_*.csv")):
-        if p.name in ("aq1_year_comparison.csv", "aq1_year_difference.csv"):
-            continue
         txt = p.read_text()
         check(f"no 2014 run in {p.name}", False, "2014B" in txt or "2014J" in txt)
-    yc = pl.read_csv(A.RES / "aq1_year_comparison.csv")
-    check("2014 rows of aq1_year_comparison.csv all labelled as published in Milestone 3", True,
+    yc = pl.read_csv(A.COMPARE / "aq1_year_comparison_published.csv")
+    check("2014 rows of aq1_year_comparison_published.csv all labelled as published in Milestone 3", True,
           bool(yc.filter(pl.col("year") == 2014)["source"].str.starts_with("published in Milestone 3").all()))
 
     width = max(len(r[1]) for r in RESULTS)

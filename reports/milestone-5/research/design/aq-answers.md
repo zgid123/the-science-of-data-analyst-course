@@ -18,20 +18,20 @@ prescriptive on observational data = a decision option to test, not a proven int
 **Sources (Table 1)**
 
 - Final AQ wording: C3-008, C3-009, C3-010, C3-011.
-- AQ1 evidence: `results/README.md` (Populations), `results/aq_results.json` (`aq1.day14_registered`,
-  `aq1.all_enrolments`), `results/aq1_year_difference.csv` (n_2014 19,064). Method: C8-017, C9-005,
+- AQ1 evidence: `results/README.md` (Populations), `results/2013/aq_results.json` (`aq1.day14_registered`,
+  `aq1.all_enrolments`), `results/compare/aq1_year_difference_published.csv` (n_2014 19,064). Method: C8-017, C9-005,
   `results/README.md` ("Intervals"). Finding: 45.7% (44.8–46.6), Fail 26.8%, Withdrawn 18.9%, module, run and
-  start-month rates `results/aq1_rates.csv`; 51.4% (50.6–52.3) and 7 of 9 runs, 9.89 points BBB 2013J
-  `results/aq1_denominator_shift.csv`; 78.1% / 19.6% / week 9 and 21.9% / 0.5% / week 24
-  `results/aq1_first_missed_week_summary.csv` (rows Not completed, Completed, day14_registered); +2.32 (1.22–3.42)
-  `results/aq1_year_difference.csv`. Confidence: `results/aq_results.json` (`aq1.validation`: 72 cells, all_agree,
+  start-month rates `results/2013/aq1_rates.csv`; 51.4% (50.6–52.3) and 7 of 9 runs, 9.89 points BBB 2013J
+  `results/2013/aq1_denominator_shift.csv`; 78.1% / 19.6% / week 9 and 21.9% / 0.5% / week 24
+  `results/2013/aq1_first_missed_week_summary.csv` (rows Not completed, Completed, day14_registered); +2.32 (1.22–3.42)
+  `results/compare/aq1_year_difference_published.csv`. Confidence: `results/2013/aq_results.json` (`aq1.validation`: 72 cells, all_agree,
   13529/13529); limits C6-020, C12-003, C3-015, C15. Implication: C2-012, C12-007 (C01); week-4 shares
-  `results/aq1_first_missed_week_cumulative.csv`.
-- AQ2 evidence: `results/README.md` (Populations), C5-021 (5,245, 44.4%), `results/aq1_runs_task_due.csv`. Method:
-  C8-022, `results/README.md` ("AQ2 model", "Sensitivity runs"). Finding: `results/aq2_associations.csv` (rd_adj_mutual
+  `results/2013/aq1_first_missed_week_cumulative.csv`.
+- AQ2 evidence: `results/README.md` (Populations), C5-021 (5,245, 44.4%), `results/2013/aq1_runs_task_due.csv`. Method:
+  C8-022, `results/README.md` ("AQ2 model", "Sensitivity runs"). Finding: `results/2013/aq2_associations.csv` (rd_adj_mutual
   and intervals, rd_unadj 50.32, modules_same_direction, verdict); criterion C9-008; sensitivity
-  `results/aq2_sensitivity.csv`. Limits: `results/aq2_binned_residuals.csv` (activity_level rows, 5.63 points),
-  `results/aq2_module_effects.csv` (intervals including 0), C3-019 (C14), C3-018 (C12). Interpretation C11-006,
+  `results/2013/aq2_sensitivity.csv`. Limits: `results/2013/aq2_binned_residuals.csv` (activity_level rows, 5.63 points),
+  `results/2013/aq2_module_effects.csv` (intervals including 0), C3-019 (C14), C3-018 (C12). Interpretation C11-006,
   C3-005. Implication: C2-011, C2-012, C11-009, C11-010.
 - AQ3: C8-005, C9-015 (test runs), C8-011, C8-019, C9-016, C9-017, C9-018, C11-001, C11-003, C9-010, C9-011,
   C11-004, C10-001 (no model trained), C10-005, C10-010 (unfavourable results reported), C12-018, C9-019; decision

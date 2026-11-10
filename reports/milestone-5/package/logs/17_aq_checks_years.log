@@ -1,0 +1,57 @@
+2026-11-10T17:58:08Z
+$ python src/analysis/aq_checks_years.py   (Python 3.12.7)
+PASS  2014 outcome counts per run equal the Milestone 3 published counts (cells)  expected 52, observed 52
+PASS  22-run enrolments                                                           expected 32593, observed 32593
+PASS  22-run enrolments registered at day 14                                      expected 28061, observed 28061
+PASS  22-run completion among them (Milestone 3: 54.7%)                           expected 0.547, observed 0.547
+PASS  results/all_runs day-14 n                                                   expected 28061, observed 28061
+PASS  2014: prepared view and raw tables agree in every cell                      expected True, observed True
+PASS  2014: first missed week equals its recount                                  expected 19064/19064, observed 19064/19064
+PASS  2014: AQ2 model converged                                                   expected True, observed True
+PASS  all_runs: prepared view and raw tables agree in every cell                  expected True, observed True
+PASS  all_runs: first missed week equals its recount                              expected 32593/32593, observed 32593/32593
+PASS  all_runs: AQ2 model converged                                               expected True, observed True
+PASS  2014/aq1_denominator_shift.csv holds no 2013 run                            expected False, observed False
+PASS  2014/aq1_first_missed_week_cumulative.csv holds no 2013 run                 expected False, observed False
+PASS  2014/aq1_first_missed_week_summary.csv holds no 2013 run                    expected False, observed False
+PASS  2014/aq1_rates.csv holds no 2013 run                                        expected False, observed False
+PASS  2014/aq1_runs_task_due.csv holds no 2013 run                                expected False, observed False
+PASS  2014/aq1_subgroup_rates.csv holds no 2013 run                               expected False, observed False
+PASS  2014/aq1_validation_two_paths.csv holds no 2013 run                         expected False, observed False
+PASS  2014/aq2_associations.csv holds no 2013 run                                 expected False, observed False
+PASS  2014/aq2_binned_residuals.csv holds no 2013 run                             expected False, observed False
+PASS  2014/aq2_model_coefficients.csv holds no 2013 run                           expected False, observed False
+PASS  2014/aq2_module_effects.csv holds no 2013 run                               expected False, observed False
+PASS  2014/aq2_sensitivity.csv holds no 2013 run                                  expected False, observed False
+PASS  2014/aq2_sensitivity_continuous.csv holds no 2013 run                       expected False, observed False
+PASS  2014/aq2_sign_correlation.csv holds no 2013 run                             expected False, observed False
+PASS  2014/aq2_sign_rates_by_run.csv holds no 2013 run                            expected False, observed False
+PASS  2014/aq2_subgroups.csv holds no 2013 run                                    expected False, observed False
+PASS  2014/aq_results.json holds no 2013 run                                      expected False, observed False
+PASS  2014/aq_summary.md holds no 2013 run                                        expected False, observed False
+PASS  2013/aq1_denominator_shift.csv holds no 2014 run                            expected False, observed False
+PASS  2013/aq1_first_missed_week_cumulative.csv holds no 2014 run                 expected False, observed False
+PASS  2013/aq1_first_missed_week_summary.csv holds no 2014 run                    expected False, observed False
+PASS  2013/aq1_rates.csv holds no 2014 run                                        expected False, observed False
+PASS  2013/aq1_runs_task_due.csv holds no 2014 run                                expected False, observed False
+PASS  2013/aq1_subgroup_rates.csv holds no 2014 run                               expected False, observed False
+PASS  2013/aq1_validation_two_paths.csv holds no 2014 run                         expected False, observed False
+PASS  2013/aq2_associations.csv holds no 2014 run                                 expected False, observed False
+PASS  2013/aq2_binned_residuals.csv holds no 2014 run                             expected False, observed False
+PASS  2013/aq2_model_coefficients.csv holds no 2014 run                           expected False, observed False
+PASS  2013/aq2_module_effects.csv holds no 2014 run                               expected False, observed False
+PASS  2013/aq2_sensitivity.csv holds no 2014 run                                  expected False, observed False
+PASS  2013/aq2_sensitivity_continuous.csv holds no 2014 run                       expected False, observed False
+PASS  2013/aq2_sign_correlation.csv holds no 2014 run                             expected False, observed False
+PASS  2013/aq2_sign_rates_by_run.csv holds no 2014 run                            expected False, observed False
+PASS  2013/aq2_subgroups.csv holds no 2014 run                                    expected False, observed False
+PASS  2013/aq_results.json holds no 2014 run                                      expected False, observed False
+PASS  2013/aq_summary.md holds no 2014 run                                        expected False, observed False
+PASS  year comparison 2013 day14_registered equals aq1_rates                      expected (5515, 12076), observed (5515, 12076)
+PASS  year comparison 2013 all_enrolments equals aq1_rates                        expected (6959, 13529), observed (6959, 13529)
+PASS  year comparison 2014 day14_registered equals aq1_rates                      expected (7185, 15985), observed (7185, 15985)
+PASS  year comparison 2014 all_enrolments equals aq1_rates                        expected (10249, 19064), observed (10249, 19064)
+PASS  concurrent enrolments at day 14 (C12: 1,382)                                expected 1382, observed 1382
+PASS  of them in 2013 runs (C12: 12)                                              expected 12, observed 12
+SUMMARY: 53 PASS, 0 FAIL
+exit 0

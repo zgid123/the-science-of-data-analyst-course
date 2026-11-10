@@ -1,4 +1,4 @@
-2026-11-09T15:07:10Z
+2026-11-10T17:57:54Z
 $ python src/analysis/aq2_sensitivity_continuous.py   (Python 3.12.7)
 2013 rows: 11811; presentations ['2013B', '2013J']
 main model: 37 parameters, pseudo-R2 0.1452
@@ -37,5 +37,5 @@ binned residuals of the refit by activity level (observed - predicted, pp; band 
   3 half to the run median: n=2714 residual -0.79 band 1.83 outside=False
   4 median to twice the median: n=3447 residual 0.39 band 1.55 outside=False
   5 twice the run median or more: n=2475 residual -0.54 band 1.76 outside=False
-written results/aq2_sensitivity_continuous.csv
+written results/2013/aq2_sensitivity_continuous.csv
 exit 0

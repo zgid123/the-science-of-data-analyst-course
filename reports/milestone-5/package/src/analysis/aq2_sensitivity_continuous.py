@@ -9,8 +9,9 @@ Same population as the main model: the 11,811 enrolments of the 9 module runs of
 signs on the 7 runs with a task due by day 27). Rows are read with `aq_analysis.load_view` (2013 filter pushed down to
 the reader, `assert_2013`) and asserted again here.
 
-Usage (from the package folder): python src/analysis/aq2_sensitivity_continuous.py  (run_all.sh step 10)
-Writes results/aq2_sensitivity_continuous.csv
+Usage (from the package folder): python src/analysis/aq2_sensitivity_continuous.py [--scope 2013|2014|all]
+(run_all.sh steps 10, 14 and 15). Writes aq2_sensitivity_continuous.csv in the scope's results folder (results/,
+results/2014/, results/all_runs/; Change Log C15 for the 2014 and all-run scopes).
 """
 from __future__ import annotations
 
@@ -49,19 +50,28 @@ def module_same_direction(fit: A.Fit, f: pl.DataFrame, s: str, overall: float) -
     return same, len(mods)
 
 
+EXPECTED_ROWS = {"2013": 11811, "2014": 15724, "all": 27535}   # day-27 population of each scope
+
+
 def main() -> None:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--scope", choices=sorted(A.SCOPES), default="2013")
+    scope = ap.parse_args().scope
+    A.set_scope(scope)
     f27 = A.load_view("features_d27")
-    A.assert_2013(f27, "features_d27")
-    assert set(f27["code_presentation"].unique().to_list()) == {"2013B", "2013J"}
+    if scope == "2013":
+        A.assert_2013(f27, "features_d27")
+    assert set(f27["code_presentation"].unique().to_list()) == A.SC["presentations"]
     f = A.build_signs(f27).with_columns(pl.col("clicks_0c").cast(pl.Float64).log1p().alias(ADJ))
-    assert f.height == 11811, f.height
+    assert f.height == EXPECTED_ROWS[scope], f.height
     signs = list(A.SIGNS)
 
     main_fit = A.Fit(f, signs, interactions=True)
     adj_fit = FitAdj(f, signs, [ADJ], interactions=True)
     assert main_fit.converged and adj_fit.converged
     b, se = adj_fit.b[adj_fit.idx[ADJ]], math.sqrt(adj_fit.V[adj_fit.idx[ADJ], adj_fit.idx[ADJ]])
-    print(f"2013 rows: {f.height}; presentations {sorted(f['code_presentation'].unique().to_list())}")
+    print(f"{scope} rows: {f.height}; presentations {sorted(f['code_presentation'].unique().to_list())}")
     print(f"main model: {len(main_fit.b)} parameters, pseudo-R2 {main_fit.res.prsquared:.4f}")
     print(f"with {ADJ}: {len(adj_fit.b)} parameters, pseudo-R2 {adj_fit.res.prsquared:.4f}; "
           f"coef {b:.4f} (robust SE {se:.4f}), OR per unit {math.exp(b):.3f}")
@@ -97,7 +107,7 @@ def main() -> None:
         band = 200 * math.sqrt(x["v"]) / x["n"]
         res = 100 * (x["obs"] - x["pred"])
         print(f"  {x['level']}: n={x['n']} residual {res:.2f} band {band:.2f} outside={abs(res) > band}")
-    print("written results/aq2_sensitivity_continuous.csv")
+    print(f"written {(A.RES / 'aq2_sensitivity_continuous.csv').relative_to(A.ROOT)}")
 
 
 if __name__ == "__main__":

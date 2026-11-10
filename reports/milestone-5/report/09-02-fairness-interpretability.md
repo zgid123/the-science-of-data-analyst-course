@@ -1,6 +1,6 @@
 ## 9.2. Leakage, Fairness and Interpretability Checks
 
-Fold results serve only the choice between candidates and the 2014 outcomes stay closed until the single test. The
+Fold results serve only the choice between candidates, and no 2014 outcome enters that choice. The
 fairness audit keeps group attributes out of the predictors, since an audit needs group membership [6], and uses one
 criterion, equal recall at capacity: rule FR1 flags a group for human review when its recall is more than 10 points
 below the other students' and the Holm-adjusted one-sided interval of the gap lies below 0. The confirmatory groups are

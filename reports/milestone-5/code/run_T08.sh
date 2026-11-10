@@ -26,5 +26,5 @@ run_step() {  # $1 = log file, $2... = command
 
 run_step "$TASK/logs/T08_aq_analysis.log" "$PY" reports/milestone-5/code/aq_analysis.py || exit $?
 { echo "SHA-256 of results after this run (determinism: compare with the previous run):"
-  (cd "$TASK/results" && shasum -a 256 aq1_*.csv aq2_*.csv aq_results.json aq_summary.md); echo ""; } >> "$TASK/logs/T08_aq_analysis.log"
+  (cd "$TASK/results" && shasum -a 256 2013/aq1_*.csv 2013/aq2_*.csv 2013/aq_results.json 2013/aq_summary.md compare/aq1_year_*_published.csv); echo ""; } >> "$TASK/logs/T08_aq_analysis.log"
 run_step "$TASK/logs/T08_checks.log" "$PY" reports/milestone-5/code/aq_checks.py

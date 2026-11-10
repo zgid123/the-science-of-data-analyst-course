@@ -30,9 +30,9 @@ the question is abandoned. No AQ is Dropped.
 - Required data / unit: C4-001, C4-002, C4-006 and Milestone 2 Table 2.1 (baseline file, "Milestone 2: AQ–Data
   Requirement Matrix").
 - Actual dataset: provenance and licence C4-016, C7-031; prepared version C7-021, C7-038; views C7-030, C7-009.
-  AQ1 2013 populations: `results/README.md` (Populations table), `results/aq_results.json` (`aq1.*.n`);
+  AQ1 2013 populations: `results/README.md` (Populations table), `results/2013/aq_results.json` (`aq1.*.n`);
   2014 published counts only: `results/README.md` ("The 2013-only rule"), C15. AQ1 GAP: C3-015 (C04).
-  AQ2 populations: `results/README.md`, `results/aq1_runs_task_due.csv` (7 runs with a task due, EEE 2013J and
+  AQ2 populations: `results/README.md`, `results/2013/aq1_runs_task_due.csv` (7 runs with a task due, EEE 2013J and
   GGG 2013J without); AQ2 GAP: C3-017 (C05), C3-018 (C12), C14 (C3-019). AQ3: C8-011 (19 usable), C7-012 (20
   prepared), C7-023 (CMA score below 10% coverage), C5-021 and C8-005 (2013 counts), Milestone 4 Table A.6 (S104
   crawl, "Test enrolments (2014, 13 runs, 7 modules) | 15,989 | 15,724"); test set of 13 runs: C9-010, C7-015 (R3,
@@ -44,11 +44,11 @@ the question is abandoned. No AQ is Dropped.
 - Methods: AQ1 C8-017, C8-021; Wilson/Newcombe as implemented `results/README.md` ("Intervals"). AQ2 C8-018, C8-022,
   C8-023, C8-024; HC1 `results/README.md` (deviation 4). AQ3 C8-019, C8-025, C8-026, C8-027, C9-017. AQ4 C8-020,
   C8-028, C8-029, C8-030.
-- Evaluation / result: AQ1 criterion C9-006; validation `results/aq_results.json` (`aq1.validation`: 72 cells,
-  all_agree, 13529/13529), `results/aq1_validation_two_paths.csv`; 45.7% (44.8–46.6) of 12,076 and run range
-  `results/aq1_rates.csv`; first missed task `results/aq1_first_missed_week_summary.csv` (Not completed 0.781, median
-  9; Completed 0.2193, median 24); +2.3 (1.22–3.42) `results/aq1_year_difference.csv`. AQ2 criterion C9-008;
-  estimates and verdicts `results/aq2_associations.csv`; sensitivity `results/aq2_sensitivity.csv`. AQ3 C9-010,
+- Evaluation / result: AQ1 criterion C9-006; validation `results/2013/aq_results.json` (`aq1.validation`: 72 cells,
+  all_agree, 13529/13529), `results/2013/aq1_validation_two_paths.csv`; 45.7% (44.8–46.6) of 12,076 and run range
+  `results/2013/aq1_rates.csv`; first missed task `results/2013/aq1_first_missed_week_summary.csv` (Not completed 0.781, median
+  9; Completed 0.2193, median 24); +2.3 (1.22–3.42) `results/compare/aq1_year_difference_published.csv`. AQ2 criterion C9-008;
+  estimates and verdicts `results/2013/aq2_associations.csv`; sensitivity `results/2013/aq2_sensitivity.csv`. AQ3 C9-010,
   C9-011, C10-001 (no model trained). AQ4 C9-013, C9-023, C9-026, C11-005.
 - Decisions: C2-011, C2-012, C2-013; per AQ C3-008–C3-011; AQ4 contact deferred C12-009.
 - Status: see "Status justification" below.
@@ -62,8 +62,8 @@ the question is abandoned. No AQ is Dropped.
 | AQ3 | Deferred | The Level 1 design (baselines, primary model, single gate S1, frozen protocol) is complete, but no model has been trained and the 2014 test runs stay unopened, so no predictive result exists. |
 | AQ4 | Deferred | The ranking needs the frozen AQ3 scores, which do not yet exist, and its contact part has no data in OULAD and is deferred to the pilot (C11). |
 
-Sources: AQ1 `results/README.md` ("Deferred items"), `results/aq_results.json` (`aq1.validation`), C15; AQ2
-`results/aq2_associations.csv` (verdict column), `results/README.md` ("Deferred items"), C3-019, C3-018; AQ3
+Sources: AQ1 `results/README.md` ("Deferred items"), `results/2013/aq_results.json` (`aq1.validation`), C15; AQ2
+`results/2013/aq2_associations.csv` (verdict column), `results/README.md` ("Deferred items"), C3-019, C3-018; AQ3
 C10-001, C10-006, C8-005; AQ4 C3-024, C11-002, C10-001; brief rule "Phân biệt đề xuất với thực nghiệm" (brief 1.1, 4.2).
 
 ## Table 2. Compact matrix (main text)
@@ -77,5 +77,5 @@ The same chain with fewer words per cell, for the main text; the full matrix goe
 | AQ3 | Secondary KPI 1 | Non-completion estimated at weeks 2 and 4 vs the early-sign rule, 2013 → 2014 | Predictive | Enrolment at each cut-off; runs in time order | Feature views, 19 predictors; train 2013, test 13 runs of 2014 | Cut-off timing; refit per fold | Penalised logistic regression vs rule, background and random lists; reasons for tutors | Gate S1 planned; N.A. – not run | D1 | Deferred |
 | AQ4 | Secondary KPIs 1–2 (pilot only) | Top of a capacity-length list: gain over random, recall, by deprivation and disability | Prescriptive (ranking) | Student per review point; capacity; contact record | AQ3 scores, capacity view; GAP: contacts and outcomes | k = 3 or 5 per 20; audit fields only | Top-k per run with reasons; no benefit ranking without contact data | S1 + fairness FR1 planned; N.A. | D1; contact deferred | Deferred |
 
-**Sources (Table 2):** as Table 1; numbers `results/aq_results.json` (`aq1.validation`), `results/aq1_rates.csv`,
-`results/aq2_associations.csv`; 11,811 `results/README.md`.
+**Sources (Table 2):** as Table 1; numbers `results/2013/aq_results.json` (`aq1.validation`), `results/2013/aq1_rates.csv`,
+`results/2013/aq2_associations.csv`; 11,811 `results/README.md`.
