@@ -18,7 +18,7 @@ này dao động từ 24,9% đến 58,3% giữa các kỳ mở. Ngoài ra, tính
 hoàn thành đã bỏ lỡ một bài. Khi so sánh trong cùng module, cả 5
 dấu hiệu sớm đều gắn với tỷ lệ không hoàn thành cao hơn ở cả năm 2013 lẫn năm 2014; mạnh nhất là dấu hiệu bỏ lỡ một bài, với tỷ lệ
 không hoàn thành ở nhóm có dấu hiệu cao hơn nhóm không có 40,8 điểm phần trăm (37,7–43,9) ở năm 2013 và 39,3 điểm phần
-trăm (36,4–42,1) ở năm 2014. Nhờ đó, D1 có lý do cụ thể bên cạnh mỗi tên trong danh sách, D2 có giả thuyết về nơi cần ưu tiên thời
+trăm (36,4–42,1) ở năm 2014. Nhờ đó, D1 có một lý do cụ thể kèm mỗi tên trong danh sách, D2 có giả thuyết về nơi cần ưu tiên thời
 gian hỗ trợ, còn D3 có phương pháp đo lường, điều kiện mô hình phải đạt và quy trình kiểm tra công bằng. Các kết quả
 này là mối liên hệ, không phải quan hệ nhân quả, chỉ mô tả hai năm dữ liệu của các module đào tạo từ xa ở Vương
 quốc Anh và cần được kiểm chứng lại trên dữ liệu của trường. Chúng em sẽ kiểm tra mô hình và đo tác động của hoạt động

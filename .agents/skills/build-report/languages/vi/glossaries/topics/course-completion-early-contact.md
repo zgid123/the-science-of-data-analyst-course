@@ -80,6 +80,8 @@ The proposal vocabulary of team N04's MTH045 project on low course completion an
 | review point | đợt lập danh sách | "hai đợt lập danh sách, vào tuần 3 và tuần 5"; avoid: "mốc xem xét", "ngày lập danh sách" |  |
 | routing (of contacts) | phân luồng liên hệ | | |
 | simple rule (comparison for AQ3) | quy tắc đơn giản | "quy tắc đơn giản dùng làm mốc so sánh" |  |
+| inactive week / silent week (early-sign rule part) | tuần không hoạt động | on slides and in the report: no platform activity in the seven days before the cut-off; "tuần im lặng" only in spoken notes, explained once | |
+| students seen in 2013 (repeat students in the 2014 test runs) | sinh viên đã có mặt năm 2013 | the 1,586 test enrolments of students already present in a 2013 run, marked apart; not "sinh viên học lại", which means retaking a course | sinh viên học lại |
 
 ## Goals, KPIs and analytical questions
 

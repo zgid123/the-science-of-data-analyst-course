@@ -41,6 +41,7 @@ Wording that team N04's MTH045 reports share across milestones: the course brief
 | Level 2 specified, not run | Level 2 đã đặc tả, chưa chạy | "Level 1 đã hoàn thành; Level 2 đã đặc tả, chưa chạy" |  |
 | recount (of the baseline) | tính lại | "mức cơ sở được tính lại theo Thông tư 83/2026" |  |
 | re-check (on the university's records) | kiểm chứng lại | "mọi kết quả phải được kiểm chứng lại trên dữ liệu của trường" |  |
+| Still open / open question (a slide card head) | Câu hỏi mở | card and panel heads in decks; matches the common row "open question" | Vẫn còn mở; Còn mở |
 
 ## AI roles in the team's workflow
 
@@ -66,6 +67,8 @@ Wording that team N04's MTH045 reports share across milestones: the course brief
 | English | Vietnamese | Usage | Replaces |
 | --- | --- | --- | --- |
 | clause of a question | phần câu hỏi | | |
+| error bar / whisker (chart key) | thanh sai số | "thanh sai số = khoảng tin cậy 95%"; a bar crossing 0 shows no clear difference | râu |
+| a reason beside each name (contact list) | mỗi tên kèm một lý do cụ thể | avoid the calque "bên cạnh mỗi tên" | bên cạnh mỗi tên |
 | England (vs United Kingdom) | xứ Anh (England) | "Vương quốc Anh (UK)" for the whole country |  |
 | fact (from documentation) | thông tin làm căn cứ | avoid "dữ kiện" | |
 | five modules (count) | 5 module | write the numeral, so "năm module" is not read as "module of a year" | |

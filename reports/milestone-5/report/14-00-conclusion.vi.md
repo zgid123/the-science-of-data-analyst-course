@@ -21,7 +21,7 @@ với quy tắc dấu hiệu sớm. Phương pháp thứ hai là một danh sác
 giữa các nhóm sinh viên. Đầu ra của hai câu hỏi này vẫn là kết quả dự kiến, chưa được đo (Mục 11.4).
 
 Vì vậy, phạm vi kết luận phụ thuộc vào loại phân tích của từng câu trả lời. Trên OULAD, một danh sách sớm không thể chỉ
-dựa vào các bài bị bỏ lỡ; các dấu hiệu có thể đóng vai trò lý do để cán bộ kiểm tra bên cạnh mỗi tên. Nhóm chúng em chưa
+dựa vào các bài bị bỏ lỡ; các dấu hiệu có thể đi kèm mỗi tên làm lý do để cán bộ kiểm tra. Nhóm chúng em chưa
 thể kết luận ba điều: các dấu hiệu này gây ra việc không hoàn thành; một mô hình xếp hạng sinh viên tốt hơn quy tắc;
 việc liên hệ với một sinh viên trong danh sách làm tăng tỷ lệ hoàn thành. Lý do là một mô hình hồi quy nắm bắt mối liên
 hệ mang tính mô tả chứ không mang tính nhân quả [10], còn câu hỏi về hiệu quả cần đến thử nghiệm ngẫu nhiên có đối chứng
