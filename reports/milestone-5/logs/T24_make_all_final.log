@@ -1,0 +1,81 @@
+## 2026-11-09T16:54:21Z $ make all TASK=milestone-5
+PASS  milestone-5 format             Checked 112 files in reports/milestone-5/report: 0 errors, 6 warnings  (0 s)
+PASS  milestone-5 structure          EN: 56 files, 74 headings, 3 figures, 59 tables: 0 errors, 0 warnings; VI: 56 files, 74 headings, 3 figures, 59 tables:   (0 s)
+PASS  milestone-5 style              EN: 51 body files: 0 errors, 0 warnings; VI: 51 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 abbreviations      EN: 22 abbreviations, 0 violations; VI: 22 abbreviations, 0 violations  (0 s)
+PASS  milestone-5 citations          EN: 28 references, 28 cited, order first-citation: 0 errors, 0 warnings; VI: 28 references, 28 cited, order first-citati  (0 s)
+PASS  milestone-5 names              Checked 112 files for 5 names: 0 errors  (1 s)
+PASS  milestone-5 research_trail     Checked 35 sources, 377 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 research_layout    PASS layout: reports/milestone-5/research  (0 s)
+PASS  milestone-5 translation vi     56 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-5 parity vi          Checked 56 pairs (vi): 0 errors, 1 warnings  (2 s)
+PASS  milestone-5 figures            milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings  (2 s)
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (45 Word sections, 21 landscape, 4 images, 3 figure  (11 s)
+PASS  milestone-5 build vi           [vi] 56 sections → reports/milestone-5/build/N04_Milestone5_VI.docx  (55 Word sections, 26 landscape, 4 images, 3 figure  (12 s)
+PASS  milestone-5 docx en            EN reports/milestone-5/build/N04_Milestone5_EN.docx: 36 numbered headings, 3 figures, 59 tables, 4 images, 45 Word secti  (3 s)
+PASS  milestone-5 docx vi            VI reports/milestone-5/build/N04_Milestone5_VI.docx: 36 numbered headings, 3 figures, 59 tables, 4 images, 55 Word secti  (5 s)
+
+15/15 steps passed
+PASS  test build-report skill        162/162 checks passed  (86 s)
+PASS  test research-report skill     64/64 checks passed  (3 s)
+
+2/2 steps passed
+exit 0
+## 2026-11-09T16:56:27Z $ make pages TASK=milestone-5 BUDGET=25
+===== milestone-5: N04_Milestone5_EN.docx
+part                                          optimistic laid out   flow   gap tables
+Contents                                             2.1     2.00
+Abstract                                             0.4     1.00
+List of Abbreviations                                0.9     2.00
+List of Terms                                        1.5     3.00
+List of Figures                                      0.2     1.00
+List of Tables                                       1.9     2.00
+1. Introduction and Educational Context              1.7     2.54   1.98  0.56   0.00
+2. Business Understanding and Success Criteri        1.1     1.46   1.40  0.06   0.39
+3. Analytical Questions and Analytics Levels         1.7     2.56   2.43  0.13   1.28
+4. Data Requirements and Dataset Selection           1.0     1.44   1.34  0.10   0.55
+5. Dataset Description and Requirement–Data F        1.0     1.43   1.41  0.02   0.68
+6. Data Understanding and Data Quality               1.7     2.31   2.19  0.11   0.82
+7. Data Preparation and Analytic-ready Data          1.2     1.48   1.46  0.02   0.36
+8. Modeling and Analysis Strategy                    1.1     1.62   1.49  0.13   0.80
+9. Evaluation Design                                 1.3     1.72   1.71  0.01   0.57
+10. Experimental Implementation and Results          0.3     0.31   0.31  0.00   0.00
+11. Findings, Discussion and Decision Support        3.7     4.96   4.65  0.31   1.09
+12. Limitations and Future Work                      0.9     1.17   1.13  0.03   0.31
+13. Generative AI Use and Reflection                 0.8     1.00   0.97  0.03   0.00
+14. Conclusion                                       0.7     1.00   0.86  0.14   0.00
+References                                           2.3     3.00
+Appendices                                          65.3   112.74
+main content                                        18.2    25.00  23.36  1.64   6.87
+main content: optimistic 18.2 pages, pessimistic 25.0 pages (plan with this); text 16.5, tables 6.9, layout gaps 1.6
+last main-text page 86% full: a cut saves a page only if it removes more than 0.86 of a page
+budget 25 pages: +0.0 pages (pessimistic), -6.8 (optimistic)
+===== milestone-5: N04_Milestone5_VI.docx
+part                                          optimistic laid out   flow   gap tables
+Mục lục                                              2.1     2.00
+Tóm tắt                                              0.7     1.00
+Danh mục từ viết tắt                                 1.1     2.00
+Danh mục thuật ngữ                                   1.6     3.00
+Danh mục hình                                        0.2     1.00
+Danh mục bảng                                        2.0     2.00
+1. Giới thiệu và bối cảnh giáo dục                   2.0     2.62   2.36  0.26   0.00
+2. Hiểu bài toán nghiệp vụ và tiêu chí thành         1.3     1.78   1.68  0.11   0.46
+3. Các câu hỏi phân tích và loại phân tích           2.2     3.35   2.93  0.42   1.49
+4. Yêu cầu dữ liệu và lựa chọn bộ dữ liệu            1.3     1.69   1.68  0.01   0.68
+5. Mô tả bộ dữ liệu và mức phù hợp giữa yêu c        1.3     2.05   1.81  0.24   0.88
+6. Hiểu dữ liệu và chất lượng dữ liệu                2.2     2.85   2.82  0.03   0.97
+7. Chuẩn bị dữ liệu và dữ liệu sẵn sàng cho p        1.5     2.06   1.93  0.13   0.51
+8. Chiến lược mô hình hóa và phân tích               1.5     2.27   2.06  0.20   1.22
+9. Thiết kế đánh giá                                 2.0     2.70   2.54  0.16   0.95
+10. Triển khai thực nghiệm và kết quả                0.3     0.33   0.33 -0.00   0.00
+11. Phát hiện, thảo luận và hỗ trợ ra quyết đ        4.6     6.37   5.85  0.52   1.28
+12. Hạn chế và hướng phát triển                      1.2     1.49   1.47  0.02   0.39
+13. Sử dụng AI tạo sinh và bài học rút ra            0.9     1.18   1.17  0.01   0.00
+14. Kết luận                                         0.8     1.26   1.03  0.24   0.00
+Tài liệu tham khảo                                   2.3     3.00
+Phụ lục                                             73.5   132.92
+main content                                        23.1    32.00  29.65  2.35   8.81
+main content: optimistic 23.1 pages, pessimistic 32.0 pages (plan with this); text 20.8, tables 8.8, layout gaps 2.3
+last main-text page 78% full: a cut saves a page only if it removes more than 0.78 of a page
+budget 25 pages: +7.0 pages (pessimistic), -1.9 (optimistic)
+exit 0

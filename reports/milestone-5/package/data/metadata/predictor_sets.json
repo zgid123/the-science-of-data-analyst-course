@@ -1,0 +1,52 @@
+{
+  "rule": "the only columns a model may use; everything else in a feature view is id, split, evaluation, target, rule or audit (data_dictionary.md)",
+  "primary": [
+    "code_module",
+    "start_month",
+    "highest_education",
+    "num_of_prev_attempts",
+    "studied_credits",
+    "registration_lead",
+    "banked_results",
+    "clicks_pre",
+    "clicks_0c",
+    "active_days_0c",
+    "sites_0c",
+    "inactive_last7",
+    "activity_ratio_run",
+    "tasks_due_c",
+    "tasks_missed_c",
+    "tasks_late_c",
+    "tma_late_c",
+    "cma_late_c",
+    "cma_marked_c",
+    "cma_score_mean_c"
+  ],
+  "extended": [
+    "registration_missing",
+    "clicks_0c_dedup",
+    "clicks_pre14",
+    "days_since_last_click",
+    "trend_last_week",
+    "tasks_submitted_early_c",
+    "clicks_oucontent_0c",
+    "clicks_forumng_0c",
+    "clicks_quiz_0c",
+    "clicks_homepage_0c"
+  ],
+  "weekly_clicks": {
+    "d13": [
+      "clicks_w1",
+      "clicks_w2"
+    ],
+    "d27": [
+      "clicks_w1",
+      "clicks_w2",
+      "clicks_w3",
+      "clicks_w4"
+    ]
+  },
+  "not_used_in_milestone4": {
+    "cma_score_mean_c": "known for fewer than 10% of training rows at both cut-offs"
+  }
+}

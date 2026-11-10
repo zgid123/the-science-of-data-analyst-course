@@ -1,0 +1,7 @@
+2026-11-09T15:07:05Z
+$ python src/fit_transforms.py   (Python 3.12.7)
+d13: 28,069 rows, 39 model columns; parameters fitted on 12,080 training rows; V12 self-check identical parameters after altering 15,989 test rows: PASS
+   training means of standardised columns within 1e-9 of 0: True; test rows of an unseen module (code_module levels ['AAA', 'BBB', 'DDD', 'EEE', 'FFF', 'GGG'])
+d27: 27,535 rows, 41 model columns; parameters fitted on 11,811 training rows; V12 self-check identical parameters after altering 15,724 test rows: PASS
+   training means of standardised columns within 1e-9 of 0: True; test rows of an unseen module (code_module levels ['AAA', 'BBB', 'DDD', 'EEE', 'FFF', 'GGG'])
+exit 0

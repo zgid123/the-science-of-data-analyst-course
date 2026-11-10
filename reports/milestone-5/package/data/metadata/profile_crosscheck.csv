@@ -1,0 +1,14 @@
+measure,exploration,milestone3,equal
+studentVle exact duplicate rows,787170,787170,True
+clicks raw,39605099,39605099,True
+clicks after collapsing duplicates,38343063,38343063,True
+repeated student-site-day groups,1614505,1614505,True
+rows in repeated groups,3810465,3810465,True
+enrolments without activity,3365,3365,True
+enrolments without submission,6750,6750,True
+late submissions,49318,49318,True
+submissions after run end,85,85,True
+click rows after unregistration,29440,29440,True
+enrolments with clicks after unregistration,1279,1279,True
+submissions after unregistration (incl. 13 banked rows dated day -1),601,601,True
+click rows before day 0,688988,688988,True

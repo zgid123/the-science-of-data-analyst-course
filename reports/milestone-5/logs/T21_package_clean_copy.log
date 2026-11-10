@@ -1,0 +1,183 @@
+T21 Final Project Package: clean-copy test
+logged 2026-11-09T15:09:38Z; test ran 2026-11-09T15:07:43Z to 15:09:19Z
+command: bash $SCRATCHPAD/tools/clean_copy_test.sh  (script text below; $T = session scratchpad package-test/)
+--- script ---
+#!/usr/bin/env bash
+# Clean-copy test of the Milestone 5 Final Project Package: copy without data, new venv, run_all.sh, compare.
+set -u
+REPO=/Users/ptkhanh/Documents/master/milestone-da
+SRC=$REPO/reports/milestone-5/package
+T=/private/tmp/claude-501/-Users-ptkhanh-Documents-master-milestone-da/05a0cc9e-fe77-4f62-aada-6bec7b2bb695/scratchpad/package-test
+echo "== $(date -u +%Y-%m-%dT%H:%M:%SZ) clean-copy test start"
+rm -rf "$T"; mkdir -p "$T"
+echo "\$ rsync -a --exclude data/raw/ --exclude data/interim/ --exclude data/processed/ --exclude __pycache__/ package/ \$T/package/"
+rsync -a --exclude 'data/raw/' --exclude 'data/interim/' --exclude 'data/processed/' --exclude '__pycache__/' "$SRC/" "$T/package/"
+echo "files copied: $(find "$T/package" -type f | wc -l | tr -d ' '); size without data: $(du -sh "$T/package" | cut -f1) ($(du -sk "$T/package" | cut -f1) KiB)"
+ls "$T/package/data"
+cd "$T/package" || exit 1
+echo "\$ python3 -m venv .venv  ($(python3 --version))"
+python3 -m venv .venv || exit 1
+echo "\$ .venv/bin/python -m pip install -q -r requirements.txt"
+.venv/bin/python -m pip install -q --disable-pip-version-check -r requirements.txt; echo "pip exit $?"
+.venv/bin/python -m pip freeze --disable-pip-version-check
+echo "\$ PYTHON=.venv/bin/python bash run_all.sh"
+start=$(date +%s); PYTHON=.venv/bin/python bash run_all.sh; rc=$?; echo "run_all.sh exit $rc ($(( $(date +%s) - start )) s)"
+echo "== raw check (data/metadata/raw_check.csv)"; cat data/metadata/raw_check.csv | cut -d, -f1,2,6
+grep -h "anonymisedData\|downloading\|match the pinned" logs/00_collect_raw.log
+echo "== prepared views vs version_manifest_published.json (data/metadata/rebuild_check_prepared.csv)"; tail -n +2 logs/07_check_prepared.log
+echo "== validation"; grep -h "checks PASS" logs/06_validate.log
+echo "== tests"; tail -4 logs/03_tests.log
+echo "== aq checks"; grep -h "SUMMARY" logs/11_aq_checks.log
+echo "== results vs checksums.csv"; tail -n +2 logs/12_check_results.log
+echo "== results vs the Milestone 5 results folder (byte comparison, then value comparison where bytes differ)"
+same=0; diff=0
+for f in "$REPO"/reports/milestone-5/results/aq*; do b=$(basename "$f")
+  if cmp -s "$f" "results/$b"; then same=$((same+1)); else diff=$((diff+1)); echo "BYTES DIFFER: $b"; diff "$f" "results/$b" | head -6; fi
+done
+echo "byte-identical: $same; differing: $diff; files only in package results: $(cd results && for g in aq*; do [ -e "$REPO/reports/milestone-5/results/$g" ] || printf '%s ' "$g"; done)"
+.venv/bin/python - "$REPO/reports/milestone-5/results/aq1_year_comparison.csv" results/aq1_year_comparison.csv <<'PY'
+import sys, polars as pl
+a, b = pl.read_csv(sys.argv[1]), pl.read_csv(sys.argv[2])
+cols = [c for c in a.columns if c != "source"]
+print("aq1_year_comparison.csv: shape", a.shape, b.shape, "| all columns except 'source' equal:", a.select(cols).equals(b.select(cols)))
+d = a.join(b, on=["level", "group", "year", "measure"], suffix="_pkg").filter(pl.col("source") != pl.col("source_pkg"))
+print("rows whose 'source' differs:", d.height, "| distinct pairs:", d.select("source", "source_pkg").unique().rows())
+PY
+echo "== $(date -u +%Y-%m-%dT%H:%M:%SZ) clean-copy test end; run_all.sh exit $rc"
+exit $rc
+--- output ---
+== 2026-11-09T15:07:43Z clean-copy test start
+$ rsync -a --exclude data/raw/ --exclude data/interim/ --exclude data/processed/ --exclude __pycache__/ package/ $T/package/
+files copied: 85; size without data: 856K (856 KiB)
+metadata
+$ python3 -m venv .venv  (Python 3.12.7)
+$ .venv/bin/python -m pip install -q -r requirements.txt
+pip exit 0
+formulaic==1.2.2
+interface_meta==2.0.1
+narwhals==2.28.0
+numpy==2.5.4
+packaging==26.3
+pandas==3.1.1
+patsy==1.0.3
+polars==2.1.0
+polars-runtime-32==2.1.0
+python-dateutil==4.0.0
+scipy==1.18.1
+statsmodels==0.15.0
+typing_extensions==4.16.0
+tzdata==2026.6
+wrapt==2.5.2
+$ PYTHON=.venv/bin/python bash run_all.sh
+ok    00_collect_raw
+ok    01_understand
+ok    02_profile
+ok    03_tests
+ok    04_prepare
+ok    05_fit_transforms
+ok    06_validate
+ok    07_check_prepared
+ok    08_aq_analysis
+ok    09_aq1_year_shared
+ok    10_aq2_sensitivity
+ok    11_aq_checks
+ok    12_check_results
+finished: every step ok, every check passed
+run_all.sh exit 0 (81 s)
+== raw check (data/metadata/raw_check.csv)
+file,bytes,check
+courses.csv,526,MATCH
+assessments.csv,8200,MATCH
+vle.csv,260126,MATCH
+studentInfo.csv,3461652,MATCH
+studentRegistration.csv,1109984,MATCH
+studentAssessment.csv,5690310,MATCH
+studentVle.csv,453836331,MATCH
+downloading https://ndownloader.figshare.com/files/8606371
+7 of 7 raw tables match the pinned SHA-256 -> data/metadata/raw_check.csv
+== prepared views vs version_manifest_published.json (data/metadata/rebuild_check_prepared.csv)
+$ python src/checks/check_rebuild.py prepared   (Python 3.12.7)
+MATCH       prepared view   assessment_due.parquet  rows 286898 (published 286898)
+MATCH       prepared view   capacity_by_run.parquet  rows 44 (published 44)
+MATCH       prepared view   enrolment.parquet  rows 32593 (published 32593)
+MATCH       prepared view   features_d13.parquet  rows 28069 (published 28069)
+MATCH       prepared view   features_d27.parquet  rows 27535 (published 27535)
+MATCH       prepared view   model_ready_d13.parquet  rows 28069 (published 28069)
+MATCH       prepared view   model_ready_d27.parquet  rows 27535 (published 27535)
+MATCH       prepared view   student_week.parquet  rows 1052344 (published 1052344)
+MATCH       raw input       assessments.csv
+MATCH       raw input       courses.csv
+MATCH       raw input       studentAssessment.csv
+MATCH       raw input       studentInfo.csv
+MATCH       raw input       studentRegistration.csv
+MATCH       raw input       studentVle.csv
+MATCH       raw input       vle.csv
+MATCH       pipeline script 01_understand.py
+MATCH       pipeline script 02_profile.py
+NOT SHIPPED pipeline script build_notebooks.py
+MATCH       pipeline script common.py
+MATCH       pipeline script dictionary.py
+MATCH       pipeline script fit_transforms.py
+MATCH       pipeline script link_raw.py
+MATCH       pipeline script prepare_data.py
+MATCH       pipeline script validate_prepared.py
+8 of 8 prepared views identical to OULAD-N04-prepared-1.0 (SHA-256 and rows); raw inputs all match
+exit 0
+== validation
+22 of 22 checks PASS
+== tests
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 2 -> 2 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 2 -> 2 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 2 -> 2 early_sign_rule 2
+exit 0
+== aq checks
+SUMMARY: 97 PASS, 0 FAIL, 3 INFO
+== results vs checksums.csv
+$ python src/checks/check_rebuild.py results   (Python 3.12.7)
+MATCH    aq1_denominator_shift.csv
+MATCH    aq1_first_missed_week_cumulative.csv
+MATCH    aq1_first_missed_week_summary.csv
+MATCH    aq1_rates.csv
+MATCH    aq1_runs_task_due.csv
+MATCH    aq1_subgroup_rates.csv
+MATCH    aq1_validation_two_paths.csv
+MATCH    aq1_year_comparison.csv
+MATCH    aq1_year_difference.csv
+MATCH    aq1_year_shared_modules.csv
+MATCH    aq2_associations.csv
+MATCH    aq2_binned_residuals.csv
+MATCH    aq2_model_coefficients.csv
+MATCH    aq2_module_effects.csv
+MATCH    aq2_sensitivity.csv
+MATCH    aq2_sensitivity_continuous.csv
+MATCH    aq2_sign_correlation.csv
+MATCH    aq2_sign_rates_by_run.csv
+MATCH    aq2_subgroups.csv
+MATCH    aq_results.json
+MATCH    aq_summary.md
+21 of 21 result files byte-identical to results/checksums.csv
+exit 0
+== results vs the Milestone 5 results folder (byte comparison, then value comparison where bytes differ)
+BYTES DIFFER: aq1_year_comparison.csv
+2,7c2,7
+< year,2013,2013,all_enrolments,completion,6570,13529,0.4856,0.4772,0.494,computed from 2013 rows; equals the Milestone 3 published counts (logs/T08_checks.log)
+< year,2013,2013,all_enrolments,non_completion,6959,13529,0.5144,0.506,0.5228,computed from 2013 rows; equals the Milestone 3 published counts (logs/T08_checks.log)
+< year,2013,2013,all_enrolments,Pass,5494,13529,0.4061,0.3978,0.4144,computed from 2013 rows; equals the Milestone 3 published counts (logs/T08_checks.log)
+< year,2013,2013,all_enrolments,Distinction,1076,13529,0.0795,0.0751,0.0842,computed from 2013 rows; equals the Milestone 3 published counts (logs/T08_checks.log)
+< year,2013,2013,all_enrolments,Fail,3242,13529,0.2396,0.2325,0.2469,computed from 2013 rows; equals the Milestone 3 published counts (logs/T08_checks.log)
+byte-identical: 20; differing: 1; files only in package results: 
+aq1_year_comparison.csv: shape (114, 11) (114, 11) | all columns except 'source' equal: True
+rows whose 'source' differs: 54 | distinct pairs: [('computed from 2013 rows; equals the Milestone 3 published counts (logs/T08_checks.log)', 'computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)')]
+== 2026-11-09T15:09:19Z clean-copy test end; run_all.sh exit 0
+--- extra checks on the copy ---
+$ grep '^Ran\|^OK' logs/03_tests.log
+Ran 9 tests in 0.191s
+OK
+$ grep urllib logs/00_collect_raw.log
+urllib failed (SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')); retrying with curl
+$ du -sk data/raw data/processed data/interim .venv
+453500	data/raw
+7812	data/processed
+62440	data/interim
+471288	.venv
+exit status: 0

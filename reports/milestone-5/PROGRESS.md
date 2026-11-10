@@ -1,6 +1,6 @@
 # Progress: Final Integration and Project Report: Early Identification of Disengaging Students in Online Courses
 
-Current task: T15       Last checkpoint: none
+Current task: T25       Last checkpoint: none
 
 Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any failed item) → CLOSE → FREE (EXECUTION_PLAN.md Section 4). Resume with `progress.py --base reports/milestone-5 next`.
 
@@ -20,17 +20,17 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
 | T12 | Write full draft Parts 6–10 | done (2026-11-09) | Parts 6–10: 12 files, ~14,770 words (P6 3,634; P7 3,903; P8 3,056; P9 3,390; P10 785); Tables 6.1–6.3, 7.1–7.5, 8.1–8.2, 9.1–9.3, 10.1 | check_drafts --part 6…10: 0 errors; check_style --report: 0 errors | Applied conflict resolutions (19 of 20 predictors, 23 parameters; 1,962 vs 1,586 with populations; per-fold refit; C16 13 runs of 2014: 10,801 paired + 4,923 unpaired; C15). Fixed: D1 actors 'lecturer-advisors and the support office' in 06-00; S002 cited in 07-02. Open for T15/T20: Riley et al. minimum sample 1,731 attributed to Milestone 4 (no claim); zero-click 3,554 vs 3,365 left out; 'tutor' kept where Milestone 4 uses it (tutor group capacity, tutor decides). T21: rebuild package from a committed state. |
 | T13 | Write full draft Parts 11–14 | done (2026-11-09) | Parts 11–14: 10 files (P11 10,868; P12 2,509; P13 2,071; P14 689 words); Tables 11.1–11.14, 12.1–12.2, 13.1; Figures 11.1, 11.2; code/aq1_year_shared_modules.py → results/aq1_year_shared_modules.csv (logs/T13_year_shared_modules.log) | check_drafts --part 11…14: 0 errors; check_style 0 errors; shared-module year comparison computed (−0.22 pp, −1.39 to 0.95; CCC 62.2% of 4,434) and put into 11-02 | Full draft ≈ 44,500 words. AI Decision Log last row placeholder for T14. Spot-check (T19) the three interpretive sentences in 11-03 (GGG withdrawal vs fail; 'a student who stops clicking may already have decided to leave'; AQ3 uses continuous click measures). |
 | T14 | AI reviewers: consistency check and challenge of the reasoning on the full draft; decisions logged | done (2026-11-09) | research/reviews/01-02 (prompts, outputs, decisions; 51 + 15 critiques); code/aq2_sensitivity_continuous.py → results/aq2_sensitivity_continuous.csv; code/check_exam_modules.py; S913–S915 legal texts reused from Milestone 4; AI Decision Log M5 row filled | decision tallies 42 accepted, 14 in part, 0 rejected, 10 later; check_drafts parts 1–14, check_style, check_trail --all: 0 errors (logs/T14_checks.log); exam results only CCC, DDD (logs/T14_exam_modules.log) | Continuous activity adjustment: click-sign RDs 14.5→9.3, 13.4→5.8, 10.6→8.9; task signs 40.8→37.3, 20.2→19.5; planned estimates stay primary. Not applied (frozen plan): S1 minimum gain, reachable-recall co-gate, FR1 power, capacity outside 15–25%, run-clustered intervals, Fail/Withdrawn split, placebo sign – future refinements, not changes. *.vi.md out of sync (T23). |
-| T15 | Measure the full draft and move detail to appendices against the brief's structure | todo |  |  |  |
-| T16 | Front matter: title page, abstract, abbreviations, glossary | todo |  |  |  |
-| T17 | References: finalize_refs | todo |  |  |  |
-| T18 | Full gates: check_trail --all, make precheck | todo |  |  |  |
-| T19 | Fact spot-check | todo |  |  |  |
-| T20 | Style read-through | todo |  |  |  |
-| T21 | Final Project Package: README, provenance, access instructions, data dictionary, traceability, AI log, analysis code; clean-copy test | todo |  |  |  |
-| T22 | Build English and measure main-text pages | todo |  |  |  |
-| T23 | Vietnamese twin (build-report flow) | todo |  |  |  |
-| T24 | Build every language and post-check | todo |  |  |  |
-| T25 | Final review with the user | todo |  |  |  |
+| T15 | Measure the full draft and move detail to appendices against the brief's structure | done (2026-11-09) | Main text Sections 1–14 lean; appendices 16-00 + 16-01…16-16 (Appendices I–XVI, Tables A.1–A.41); code/t15_move_to_appendix.py, t15_measure.sh, t15_loss_check.py; research/revisions/01-appendix-decisions.md | measure 4: 25.0 pp pessimistic, 18.2 optimistic (logs/T15_move_appendix.log); loss check 990 sentences + 329 rows: 7 facts restored, 137 unmatched classified (logs/T15_loss_check.log); check_structure 0/0; check_drafts parts 1–14 + 16-* 0 errors; check_style 0; layout PASS; check_trail --all 0 errors (logs/T15_gates.log) | Per part (pessimistic): 1–3 5.85, 4–5 2.84, 6–7 3.76, 8–9 3.61, 10 0.31, 11–12 5.80, 13–14 2.82. Appendices 116.4 pages. C4-022–024 not yet linked to a report file; S001 has no claim (add when the brief is cited, e.g. in front matter/Section 1). |
+| T16 | Front matter: title page, abstract, abbreviations, glossary | done (2026-11-09) | 00-0 title page (brief cover table), 00-1 abstract (248 words), 00-2 abbreviations (22), 00-3 terms (37); claim C1-037 (S001) cited in 01-00; tasks.toml [milestone-5.abbreviations] (+ titles); code/t16_abbreviation_fixes.py (48 body phrases) | check_abbreviations 0, check_drafts part 1 0 errors, check_trail --all 0/0, check_names 0 (logs/T16_front_matter.log); abstract numbers traced (19.6% = 1,080/5,515 week 4, aq1_first_missed_week_cumulative.csv) | Vietnamese twins must follow the 48 abbreviation edits (none exist yet). |
+| T17 | References: finalize_refs | done (2026-11-09) | report/15-references.md (28 APA 7 entries); [Sxxx] → [n] in 51 files; reference map in sources.md; APA entries added for S001 (brief) and S002 (OULAD) | finalize_refs.py exit 0, then --renumber after the APA fix (logs/T17_finalize_refs.log); no '–' entries; no [Sxxx] left | Own milestone reports are not in the reference list (described in words). |
+| T18 | Full gates: check_trail --all, make precheck | done (2026-11-09) | logs/T18_precheck.log | make precheck: structure, style, abbreviations, citations, names, research_trail, research_layout PASS; format 0 errors after fixing six numbered list items in Appendix IV (4 bold-span warnings kept, render correctly); vi translation/parity pending T23 |  |
+| T19 | Fact spot-check | done (2026-11-09) | research/spot-check.md (10 cited + 25 own-result numbers); code/t19_number_sample.py, t19_trace_checks.py; results/t19/number_sample.md | cited 10/10 Match; numbers 24 Match + 1 Partly (several-modules sign 12 of 1,382 in 2013 → 'almost only in 2014', fixed in 5 places); interpretive sentences in 11.3 hedged or corrected (logs/T19_spot_check.log) |  |
+| T20 | Style read-through | done (2026-11-09) | research/style-review.md (31 findings: 28 applied, 2 kept with reason, 1 no change) | make precheck: 8/8 English steps PASS; main text 25.00 pp pessimistic; no repository paths or IDs in report text (logs/T20_gates.log) | AI log 13.1 now states 10 critiques handled in finishing steps. |
+| T21 | Final Project Package: README, provenance, access instructions, data dictionary, traceability, AI log, analysis code; clean-copy test | done (2026-11-09) | package/: README, run_all.sh, requirements, src/ (M3 pipeline, M5 analysis, checks), tests/, data/metadata (provenance, citation, dictionary, manifests, change log C01–C17), results/ (21 files + checksums), docs/ (traceability_matrix.md, ai_decision_log.md synced from the report) | clean copy: run_all.sh exit 0, raw 7/7 and prepared 8/8 hashes, validation 22/22, tests 9/9, AQ checks 97/0, results 21/21 (logs/T21_package_clean_copy.log); docs diffed against report Tables A.27/A.28/A.43 (logs/T21_docs_sync.log) | Check count stated without a number in report and package (95 in the first run, 97 in the package run). |
+| T22 | Build English and measure main-text pages | done (2026-11-09) | build/N04_Milestone5_EN.docx; Traceability Matrix split 11.1/11.2 (one row per AQ), answers table 11.3; appendix A.5/A.6 and A.38/A.39 splits, A.n renumbered; pointers kept | report.py build en PASS; postcheck en 0 errors (59 tables); page_budget 25.0 pessimistic / 18.1 optimistic; precheck English steps PASS (logs/T22_build_en.log) | Ledger/trail notes outside report/ keep old A numbers (historical). |
+| T23 | Vietnamese twin (build-report flow) | done (2026-11-09) | 56 Vietnamese twins (*.vi.md); glossary topic rows (34 stage-1 + review/rewrite rows); research/reviews/03 (8 native reviews), 04 (consistency), 05 (reader test), 06 (rewrite + scripts) | parity 56 pairs 0 errors (1 warning: English term on the terms page); glossary lint 0; reader test 103/103 passages resolved; check_style vi 0 | VI terms new vs M3/M4: 'chưa rút' for 'still registered' (M3/M4 used 'còn hiệu lực'); 'điều chuẩn (penalised)'. Language pack terms_page now '00-?-glossary*'. |
+| T24 | Build every language and post-check | done (2026-11-09) | build/N04_Milestone5_EN.docx, build/N04_Milestone5_VI.docx | make all TASK=milestone-5: 17/17 PASS incl. postcheck en/vi and skill self-tests (logs/T24_make_all_final.log); pages EN 25.0 pessimistic / 18.2 optimistic, VI 32.0 / 23.1 (user accepted longer VI) |  |
+| T25 | Final review with the user | in-progress |  |  |  |
 
 ## Decisions
 
@@ -58,3 +58,40 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
 - T09 (2026-11-08): final status AQ1 Partial, AQ2 Partial, AQ3 Deferred, AQ4 Deferred; Change Log adds C15 (AQ1 on
   2013 only), C16 (AQ3 test set moved from 9 matched pairs to all 13 runs of 2014 in Milestones 3–4, unrecorded until
   now), C17 (one rule).
+- T15 (2026-11-09, AskUserQuestion): the full draft is saved as commit a6a8d5a (author khanh only, no co-author line),
+  listed in research/revisions/snapshots.md, before detail moves to appendices.
+- T15 (2026-11-09): the first appendix-move agent stopped on a network error after its third measurement (25.0 pages pessimistic, 16 appendices); a continuation agent finishes the loss check, brief check, decisions record and gates.
+- T21 (2026-11-09): package built and clean-copy tested (run_all.sh exit 0, 81 s; raw 7/7 and prepared 8/8 hashes match; validation 22/22; tests 9/9; AQ checks 97 PASS; results 21/21, one differing only in a log-name label). Open: sync docs/traceability_matrix.md and docs/ai_decision_log.md (6 PLACEHOLDER cells) from the final report text after T20.
+- T23 (2026-11-09): stages 1–2 done (34 glossary rows; front-matter twins). Vietnamese title follows Milestone 1's
+  "học phần trực tuyến" (glossary: course → học phần). Language pack rule terms_page changed from "00-2-*" to
+  "00-?-glossary*" so the terms-page check finds the glossary in every milestone (self-tests 162/162 and 64/64).
+  Stage 3: eight translators in parallel (groups g1–g8, prompts filled from templates/prompts/report-translate.md).
+- T23 term decisions for the consistency pass: predictor → "biến dự báo" (bộ biến dự báo chính / mở rộng), as in
+  Milestone 4's reviewed twins, not "đặc trưng"; staff → "cán bộ"; capacity → "hạn mức liên hệ" (check against M4);
+  HC1 → "sai số chuẩn vững HC1"; development fold → "fold phát triển"; exit status → "mã thoát".
+  English to recheck: 16-09 "the fairness limit of the original proposal" (process-history tone) → "the fairness limit
+  set in Milestone 1"; 16-08 "Readiness at entry" sentence hard to parse.
+- T23 terms from group 7: prevalence → tỷ lệ xuất hiện; consistent association → mối liên hệ nhất quán; several-modules
+  sign → dấu hiệu học nhiều module; decile → nhóm thập phân vị; delta method → phương pháp delta. English 16-13 fixed
+  (concurrent-enrolment sentence; "a student having stopped taking part").
+- T23 terms from group 3: first-year withdrawal rate → tỷ lệ thôi học của sinh viên năm nhất; general dropout →
+  thôi học (MOOC dropout → bỏ học); student-support office glossed as đơn vị của khoa chuyên tư vấn và hỗ trợ sinh viên
+  (check against the glossary's support-office row); OULAD and UK first uses to be checked by check_abbreviations vi.
+- T23 group 1: English 06-00 "thirteen of its figures" → "thirteen figures of that profile" (twin unaffected in
+  meaning). 54.7% (KPI population, day 14) and 45.3% (day 13) checked against C6-015: both correct, different
+  populations. For the consistency pass: Level 1/Level 2 kept in English (glossary) vs "Mức 1, Mức 2" on the terms
+  page – align to the glossary; "AQ–Data Requirement Matrix" → "Ma trận AQ – yêu cầu dữ liệu", "AQ–Data Fit Matrix" →
+  "Ma trận mức phù hợp giữa AQ và dữ liệu"; several-modules sign has two renderings (g1 vs g7) – pick one; check_style
+  vi voice error at 16-04.vi.md:53 ("các tác giả" for the dataset's authors) – name the authors so the cited rule holds.
+- T23 group 8: English label "Not yet tested" is consistent in Appendix XV (definition and Table A.41); the stage-1
+  glossary row says "test not yet run" – align the glossary's English key to "not yet tested" (Vietnamese "chưa chạy
+  kiểm tra" unchanged). Glossary row for "no data to test" vs "chuyển chương trình" student-status row: check Replaces
+  in the consistency pass. Kind labels: Measurement → Đo lường; Generalisability → Khả năng khái quát hóa; Causal →
+  Nhân quả.
+- T23 group 4: English 16-03 'one criterion … can meet' → 'one part … can answer' (twin already reads 'phần duy nhất'). Terms: deviation coding → mã hóa theo độ lệch; unpaired run → kỳ mở không có cặp; AI reviewer → align to glossary row 'người đánh giá'. Note for the user: Milestone 3 04-01 states exam results in 5 of 7 modules; the raw tables show 2 (CCC, DDD) – Milestone 5 states 2.
+- T23 glossary: predictor (in running text) → biến dự báo; feature → đặc trưng (early-warning-evaluation.md row updated; no Replaces, so earlier milestones are unaffected).
+- T23 consistency items: day-14 population one form ("phạm vi dữ liệu ngày 14" vs "nhóm còn hiệu lực tại ngày 14" in 16-09); FR1 named 'quy tắc công bằng FR1' (glossary) everywhere; de-duplicated clicks one form; several-modules sign one form across 16-03/16-05/16-11/16-13.
+- T23 consistency items (g6): paired run → 'kỳ mở có kỳ tương ứng năm 2013' (glossary) instead of 'kỳ mở có cặp' (8×); 'Nhật ký thay đổi' capitalisation as in the glossary (proper name of the Controlled Change Log); main operating point → 'thiết lập chính'.
+- T23 consistency: Business Goal phrase 'students who stop taking part' → use the Milestone 4 twin's reviewed wording; D2 'allocate staff time' one form across 01-01, 02-01, 16-01, 16-02; follow up → theo dõi, liên hệ.
+- T23 (2026-11-09, AskUserQuestion): accept the longer Vietnamese main text (30.0 pessimistic / 21.5 optimistic) with one structure for both languages; English stays at 25.0.
+- T23 rewrite after the Vietnamese reader test (2026-11-09, `research/reviews/06-vi-rewrite.md`, `logs/T23_rewrite.log`): English fixes for the contradictions the reader found (duplicate clicks 7.39% of rows vs 3.19% of clicks; GAP cells vs "every link"; 22 checks under V01–V15; five criteria vs Partial status; same direction vs AAA/GGG intervals including 0; 2014 counts per run vs closed enrolment outcomes; 22-run scopes for 28,061, 27,535 and the day-13 task-only rule), copied to the twins; all 103 flags resolved (102 rewritten, #16 rejected for the glossary's Business Goal label). Terms: "còn hiệu lực" → "chưa rút"/"còn đăng ký học (chưa rút)" (Milestones 3–4 also wrote "còn hiệu lực"); "hiệu chỉnh phạt" → "điều chuẩn (penalised)"; "mức hỗ trợ" → "mức phù hợp của dữ liệu"; "mức vượt tỷ lệ nền" → "lift"; "kỳ mở" kept and defined. `make all` 15/15 PASS; pages EN 25.0 pessimistic, VI 32.0 pessimistic (23.1 optimistic).

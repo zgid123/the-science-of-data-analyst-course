@@ -1,0 +1,17 @@
+## 8.1. Phương pháp cơ sở, phương pháp ứng viên và phương pháp chính được đề xuất
+
+Mỗi phương pháp ứng viên được đánh giá theo tám tiêu chí của đề bài, từ mức phù hợp với câu hỏi và dữ liệu đến tính công
+bằng và khả năng chuyển thành hành động. Khi hai ứng viên ngang nhau, nhóm chúng em chọn phương pháp đơn giản và dễ diễn
+giải hơn, vì một quy tắc kinh nghiệm đơn giản thường đã mang lại phần lớn lợi ích, còn các quyết định liên quan đến con
+người đòi hỏi mô hình dễ diễn giải. Bảng 8.1 là Ma trận lựa chọn mô hình và phương pháp (Model and Method Selection
+Matrix), với lập luận cho từng phương pháp chính ở cột cuối; Phụ lục VIII phân tích từng lựa chọn theo các tiêu chí
+này, lần lượt cho từng câu hỏi.
+
+**Bảng 8.1. Ma trận lựa chọn mô hình và phương pháp**
+
+| AQ | Loại phân tích | Bài toán kỹ thuật | Phương pháp cơ sở | Phương pháp ứng viên | Phương pháp chính được đề xuất | Lập luận |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| AQ1 | Mô tả | Tổng hợp và so sánh tỷ lệ | Tỷ lệ gộp; tỷ lệ trên mọi lượt đăng ký học (mẫu số thứ hai); tỷ lệ khi loại các lượt đăng ký học mang cờ chất lượng dữ liệu | Tỷ lệ theo nhóm kèm khoảng tin cậy 95% | Tỷ lệ theo nhóm kèm khoảng tin cậy Wilson; với từng nhóm kết quả, tỷ lệ cộng dồn số sinh viên đã bỏ lỡ bài đầu tiên tính đến mỗi tuần; chênh lệch giữa hai năm kèm khoảng tin cậy Newcombe | Câu hỏi mô tả nên không cần mô hình; cách chọn mẫu số quyết định giá trị của tỷ lệ |
+| AQ2 | Chẩn đoán | Đo mối liên hệ trong cùng kỳ mở module | Chênh lệch tỷ lệ chưa hiệu chỉnh cho từng dấu hiệu | (1) Hồi quy logistic có hiệu ứng cố định theo kỳ mở và các số hạng tương tác dấu hiệu × module; (2) hồi quy logistic hiệu ứng hỗn hợp, kèm cây quyết định nông làm phân tích bổ trợ | Ứng viên 1, với sai số chuẩn vững; hiệu ứng trình bày dưới dạng chênh lệch nguy cơ trung bình, kèm tỉ số odds (odds ratio) | Dữ liệu có đủ mọi kỳ mở của các module được phân tích, không phải một mẫu rút từ nhiều kỳ mở hơn, nên hiệu ứng cố định là phù hợp; 6 module là quá ít để ước lượng hiệu ứng ngẫu nhiên; độ lớn hiệu ứng tính trong từng module; không khẳng định quan hệ nhân quả |
+| AQ3 | Dự báo | Phân loại nhị phân tại ngày 13 và ngày 27 | Quy tắc dấu hiệu sớm xếp hạng theo số dấu hiệu; mô hình logistic chỉ dùng đặc điểm cá nhân; danh sách ngẫu nhiên | (1) Hồi quy logistic có điều chuẩn (penalised), tức các hệ số được co về 0 để mô hình không bám quá sát dữ liệu huấn luyện; (2) cây tăng cường độ dốc (gradient-boosted trees), với mô hình sống sót thời gian rời rạc làm phần mở rộng | Ứng viên 1 trên 19 biến dự báo chính (23 tham số); ứng viên 2 hoặc bộ biến dự báo mở rộng (thêm 10 biến và số lượt nhấp theo tuần) chỉ được chọn khi tốt hơn ứng viên 1 một khoảng ấn định trước (Mục 9.1) | Cán bộ nhận được lý do dễ hiểu; dữ liệu dư đủ cho số tham số này, với khoảng 230 sinh viên không hoàn thành cho mỗi tham số; hai lớp nhãn có số mẫu gần nhau; áp dụng được cho kỳ mở diễn ra sau |
+| AQ4 | Chỉ định (xếp hạng theo hạn mức liên hệ) | Xếp hạng theo hạn mức liên hệ cố định | Danh sách ngẫu nhiên; danh sách xếp theo quy tắc dấu hiệu sớm có cùng độ dài | (1) Danh sách k sinh viên đầu của từng kỳ mở theo điểm rủi ro của AQ3; (2) các nhóm mức nguy cơ theo hạn mức liên hệ | Ứng viên 1, kèm các dấu hiệu làm căn cứ cho mỗi tên | Hạn mức liên hệ cố định; không có dữ liệu liên hệ nên không thể xếp hạng theo lợi ích can thiệp (uplift), tức mức cải thiện mà việc liên hệ mang lại cho từng sinh viên; cán bộ là người quyết định; danh sách là phương án quyết định, chưa được kiểm chứng |

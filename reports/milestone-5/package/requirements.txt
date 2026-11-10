@@ -1,0 +1,12 @@
+# Final Project Package (Python 3.12): install with  python -m pip install -r requirements.txt
+# Pinned to the versions that built the published prepared dataset and results; the Parquet files are
+# byte-identical only with this polars version.
+polars==2.1.0
+polars-runtime-32==2.1.0
+numpy==2.5.4
+statsmodels==0.15.0
+# statsmodels dependencies, pinned to the versions used
+scipy==1.18.1
+pandas==3.1.1
+patsy==1.0.3
+packaging==26.3

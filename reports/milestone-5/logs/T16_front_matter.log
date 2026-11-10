@@ -1,0 +1,129 @@
+# T16 front matter gate runs
+## 2026-11-09T15:15:50Z $ ./venv/bin/python reports/milestone-5/code/t16_abbreviation_fixes.py
+done already  01-01-motivation-stakeholders.md: 'generative AI took both sides'
+done already  01-02-scope-objective.md: 'analysis uses the Open\nUniversity Learning Analyti'
+done already  02-00-business-understanding.md: 'The SMART Goal (specific,\nmeasurable, achievable, '
+done already  03-00-analytical-questions.md: 'Four questions (AQ1–AQ4) supply'
+done already  04-01-dataset-selection.md: 'pinned SHA-256 checksums'
+done already  04-01-dataset-selection.md: 'Milestone 2 searched data repositories'
+done already  05-00-dataset-description.md: 'modules of the Open University, coded AAA'
+MISMATCH 0!=1  09-00-evaluation-design.md: 'following the\nTRIPOD+AI guideline, which'
+done already  11-05-decision-support.md: 'Final answers by Analytical Question'
+MISMATCH 0!=1  13-00-genai-reflection.md: 'This follows the UNESCO guidance on generative AI'
+done already  16-01-context-stakeholders.md: 'learning management system (LMS), the web platform'
+done already  16-01-context-stakeholders.md: 'so the analysis uses the Open University Learning '
+done already  16-01-context-stakeholders.md: 'Open University in the United Kingdom in'
+done already  16-01-context-stakeholders.md: 'narrowed how the analytical questions are measured'
+done already  16-01-context-stakeholders.md: 'online courses (MOOCs)'
+done already  16-02-goal-kpis-decisions.md: 'the full definition of each key performance indica'
+done already  16-02-goal-kpis-decisions.md: '(a\ntutor-marked or computer-marked assessment)'
+done already  16-02-goal-kpis-decisions.md: 'a tutor-marked assignment (TMA) late'
+done already  16-02-goal-kpis-decisions.md: 'Section 3 states the analytical questions that sup'
+done already  16-03-aq-quality-revision.md: 'a tutor-marked assignment (TMA) and a computer-mar'
+done already  16-03-aq-quality-revision.md: 'checked across IMD band and disability'
+done already  16-04-requirements-selection.md: 'interaction with a learning management system or v'
+done already  16-04-requirements-selection.md: 'and dropout from massive open online courses)'
+done already  16-04-requirements-selection.md: 'Milestone 2 searched the University of California,'
+done already  16-04-requirements-selection.md: 'A, the Open University Learning Analytics Dataset '
+done already  16-04-requirements-selection.md: 'the XuetangX MOOC dropout data'
+done already  16-04-requirements-selection.md: '(Vietnam time, UTC+7)'
+done already  16-06-profile-quality.md: 'the primary key performance indicator (KPI),'
+done already  16-06-profile-quality.md: 'computer-marked assessment (CMA) scores against 17'
+done already  16-06-profile-quality.md: 'seven Open University (OU) modules'
+done already  16-06-profile-quality.md: 'subset of OU students'
+done already  16-06-profile-quality.md: 'The deprivation band (IMD band) is blank'
+done already  16-07-preparation-leakage.md: 'the time in Coordinated Universal Time (UTC) and'
+done already  16-07-preparation-leakage.md: 'following the OU practice'
+done already  16-09-evaluation-detail.md: 'the areas under the ROC and precision-recall curve'
+done already  16-11-reading-traceability.md: 'one row per final Analytical Question'
+done already  16-11-reading-traceability.md: 'Final status of each Analytical Question and'
+done already  16-12-aq1-results.md: 'a tutor-marked assignment (TMA) or computer-marked'
+done already  16-13-aq2-results.md: '±2 SE band |'
+done already  16-13-aq2-results.md: '±2 SE bands'
+done already  16-14-aq3-aq4-answers.md: 'the final answers by Analytical Question with'
+done already  16-14-aq3-aq4-answers.md: 'the final answer to each Analytical Question,'
+done already  16-14-aq3-aq4-answers.md: 'Final answers by Analytical Question with'
+done already  16-14-aq3-aq4-answers.md: 'outside ±2 SE in all'
+done already  16-15-limitations-future.md: 'Residuals outside ±2 SE by'
+done already  16-05-dataset-gaps.md: 'distance learning in the United Kingdom'
+done already  16-16-ai-decision-log.md: 'the phases of CRISP-DM,'
+exit: 1
+
+## 2026-11-09T15:15:50Z $ ./venv/bin/python .agents/skills/build-report/scripts/check_abbreviations.py --report reports/milestone-5/report --lang en
+===== EN: 22 abbreviations, 0 violations
+exit: 0
+
+## 2026-11-09T15:15:50Z $ ./venv/bin/python .agents/skills/build-report/scripts/check_abbreviations.py --report reports/milestone-5/report --lang en --candidates
+===== EN: 92 abbreviation-like tokens, 0 not in the table, 0 table rows unused
+exit: 0
+
+## 2026-11-09T15:15:50Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 1
+WARN  01-02-scope-objective.md:3: paragraph without a citation: The project covers students enrolled in the program's online and blend…
+
+Checked 3 files (draft mode): 0 errors, 1 warnings
+exit: 0
+
+## 2026-11-09T15:15:50Z $ ./venv/bin/python .agents/skills/research-report/scripts/check_trail.py --base reports/milestone-5 --all
+
+Checked 35 sources, 377 claims: 0 errors, 0 warnings
+exit: 0
+
+## 2026-11-09T15:15:50Z $ ./venv/bin/python .agents/skills/build-report/scripts/check_names.py --task milestone-5
+Checked 56 files for 5 names: 0 errors
+exit: 0
+
+## 2026-11-09T15:15:51Z $ python3 -c import re;t=open('reports/milestone-5/report/00-1-abstract.md').read().split('
+',1)[1];print('abstract words:',len(re.findall(r'\S+',t)))
+abstract words: 248
+exit: 0
+
+## 2026-11-09T15:16:00Z $ ./venv/bin/python reports/milestone-5/code/t16_abbreviation_fixes.py  (rerun after recording the two rewrapped lines and the 3.1 caption; idempotence check)
+done already  01-01-motivation-stakeholders.md: 'generative AI took both sides'
+done already  01-02-scope-objective.md: 'analysis uses the Open\nUniversity Learning Analyti'
+done already  02-00-business-understanding.md: 'The SMART Goal (specific,\nmeasurable, achievable, '
+done already  03-00-analytical-questions.md: 'Four questions (AQ1–AQ4) supply'
+done already  04-01-dataset-selection.md: 'pinned SHA-256 checksums'
+done already  04-01-dataset-selection.md: 'Milestone 2 searched data repositories'
+done already  05-00-dataset-description.md: 'modules of the Open University, coded AAA'
+done already  09-00-evaluation-design.md: 'following the\nTRIPOD+AI guideline, which'
+done already  11-05-decision-support.md: 'Final answers by Analytical Question'
+done already  13-00-genai-reflection.md: 'This follows the UNESCO guidance on generative AI'
+done already  16-01-context-stakeholders.md: 'learning management system (LMS), the web platform'
+done already  16-01-context-stakeholders.md: 'so the analysis uses the Open University Learning '
+done already  16-01-context-stakeholders.md: 'Open University in the United Kingdom in'
+done already  16-01-context-stakeholders.md: 'narrowed how the analytical questions are measured'
+done already  16-01-context-stakeholders.md: 'In massive open\nonline courses (MOOCs)'
+done already  03-00-analytical-questions.md: '**Table 3.1. Final analytical questions**'
+done already  16-02-goal-kpis-decisions.md: 'the full definition of each key performance indica'
+done already  16-02-goal-kpis-decisions.md: '(a\ntutor-marked or computer-marked assessment)'
+done already  16-02-goal-kpis-decisions.md: 'a tutor-marked assignment (TMA) late'
+done already  16-02-goal-kpis-decisions.md: 'Section 3 states the analytical questions that sup'
+done already  16-03-aq-quality-revision.md: 'a tutor-marked assignment (TMA) and a computer-mar'
+done already  16-03-aq-quality-revision.md: 'checked across IMD band and disability'
+done already  16-04-requirements-selection.md: 'interaction with a learning management system or v'
+done already  16-04-requirements-selection.md: 'and dropout from massive open online courses)'
+done already  16-04-requirements-selection.md: 'Milestone 2 searched the University of California,'
+done already  16-04-requirements-selection.md: 'A, the Open University Learning Analytics Dataset '
+done already  16-04-requirements-selection.md: 'the XuetangX MOOC dropout data'
+done already  16-04-requirements-selection.md: '(Vietnam time, UTC+7)'
+done already  16-06-profile-quality.md: 'the primary key performance indicator (KPI),'
+done already  16-06-profile-quality.md: 'computer-marked assessment (CMA) scores against 17'
+done already  16-06-profile-quality.md: 'seven Open University (OU) modules'
+done already  16-06-profile-quality.md: 'subset of OU students'
+done already  16-06-profile-quality.md: 'The deprivation band (IMD band) is blank'
+done already  16-07-preparation-leakage.md: 'the time in Coordinated Universal Time (UTC) and'
+done already  16-07-preparation-leakage.md: 'following the OU practice'
+done already  16-09-evaluation-detail.md: 'the areas under the ROC and precision-recall curve'
+done already  16-11-reading-traceability.md: 'one row per final Analytical Question'
+done already  16-11-reading-traceability.md: 'Final status of each Analytical Question and'
+done already  16-12-aq1-results.md: 'a tutor-marked assignment (TMA) or computer-marked'
+done already  16-13-aq2-results.md: '±2 SE band |'
+done already  16-13-aq2-results.md: '±2 SE bands'
+done already  16-14-aq3-aq4-answers.md: 'the final answers by Analytical Question with'
+done already  16-14-aq3-aq4-answers.md: 'the final answer to each Analytical Question,'
+done already  16-14-aq3-aq4-answers.md: 'Final answers by Analytical Question with'
+done already  16-14-aq3-aq4-answers.md: 'outside ±2 SE in all'
+done already  16-15-limitations-future.md: 'Residuals outside ±2 SE by'
+done already  16-05-dataset-gaps.md: 'distance learning in the United Kingdom'
+done already  16-16-ai-decision-log.md: 'the phases of CRISP-DM,'
+exit: 0

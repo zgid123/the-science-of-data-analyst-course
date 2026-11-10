@@ -1,14 +1,13 @@
 # 9. Evaluation Design
 
-The methods of Section 8 say how each question is answered; the evaluation design says how we know whether an answer is good enough for the decision it supports. It was fixed in Milestone 4 before any code ran, which rules out choosing metrics or thresholds after the results are seen (Milestone 4, Section 4). For AQ1 and AQ2 the design has now been applied to the 2013 runs, and Section 11 reports whether their criteria were met; for AQ3 and AQ4 it is the evaluation that the proposed model and ranking would undergo, and no metric value exists yet.
-
-**One design, two kinds of question.** The purpose of each question decides what its evaluation measures. AQ1 describes completed runs, so its evaluation checks counts and denominators rather than accuracy. AQ2 measures association, which is judged by the size and consistency of each estimate and never read as cause. AQ3 and AQ4 are predictions, and a predictive claim needs its own out-of-sample evaluation, because a model that explains the data it was fitted on may still predict new cases poorly [S900]. For the predictive questions we follow the TRIPOD+AI reporting guideline for prediction models, which frames evaluation as discrimination, calibration and usefulness for the decision [S901]; each measure below is stated with its reason.
-
-**Capacity and the main operating point.** The decision D1 acts on a list whose length is set by staff capacity, not by a probability threshold. The capacity k of a run is 3 or 5 contacts per group of 20 students, a scenario value (Section 2.1), that is 15% or 25% of the enrolments registered at the cut-off. The main operating point is 5 per 20 at day 27, because it serves the list delivered in week 5 and is close to the share of students the early-sign rule flags at day 27: 28.8% of the 27,535 enrolments registered then across all 22 runs, a share computed without any outcome. At a fixed list length, the cells of the confusion matrix of listed and unlisted students against their outcome give recall, precision and lift, which replace the F1 score, because the list length is set by capacity rather than chosen to balance the two kinds of error.
-
-**Metric definitions.** For a run with n enrolments, its set of non-completers and a list of the k highest scores, recall at capacity is the share of the run's non-completers who are on the list. Attainable recall is the most a list of length k can reach, which is below 1 when the run has more non-completers than places on the list. Normalised recall divides recall by that ceiling, so that 1 means the best list possible. Precision is the share of the list who do not complete, and lift divides precision by the run's base rate of non-completion, so that 1 means no better than a random list. Normalised recall is needed because the ceiling varies widely: in the training runs, a list of 5 per 20 at day 27 can hold between 46% and 100% of a run's non-completers, so raw recall would compare runs on different scales.
-
-**The Evaluation Plan.** Table 9.1 summarises the Evaluation Plan for the four questions: the primary metric, the baseline it is compared with, the validation, and the success criterion fixed in advance. Section 9.1 gives the full validation design and criteria, and Section 9.2 the leakage, fairness and interpretability checks.
+The evaluation design, fixed in Milestone 4 before any code ran, says how we know whether an answer is good enough;
+for AQ1 and AQ2 it has been applied to 2013, and for AQ3 and AQ4 it is the evaluation they would undergo, following the
+TRIPOD+AI guideline (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis, updated for AI),
+which frames evaluation as discrimination, calibration and usefulness for the decision [11]. A
+list's length is set by capacity k, 3 or 5 contacts per 20 students, with 5 per 20 at day 27 as the main operating
+point. Recall at capacity is the share of a run's non-completers on the list; normalised recall divides it by the most a
+list of length k can reach, because that ceiling ranges from 46% to 100% between training runs; and lift divides the
+share of non-completers on the list by the run's base rate. Table 9.1 is the Evaluation Plan.
 
 **Table 9.1. Evaluation Plan**
 

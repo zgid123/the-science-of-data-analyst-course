@@ -1,0 +1,537 @@
+## 2026-11-08T22:41:42Z measure 0 (full draft, before moves)
+$ venv/bin/python .claude/skills/build-report/scripts/report.py build milestone-5 --lang en --force
+PASS  milestone-5 figures            milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings  (2 s)
+PASS  milestone-5 build en           [en] 40 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (3 Word sections, 0 landscape, 4 images, 3 figure a  (7 s)
+
+2/2 steps passed
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25 --blocks
+1. Introduction and Educational Context             1.72
+1.1. Motivation and Stakeholders                    0.44
+  [table] Table 1.1. Stakeholders, needs and de     0.57
+  (text after) Table 1.1. Stakeholders, needs and de  1.27
+1.2. Scope and Project Objective                    2.64
+2. Business Understanding and Success Criteri       1.03
+  [table] Table 2.1. SMART check of the goal        0.33
+  (text after) Table 2.1. SMART check of the goal   0.40
+2.1. Key Performance Indicators and Decisions       1.60
+  [table] Table 2.2. Final SMART Goal and KPIs      0.58
+  (text after) Table 2.2. Final SMART Goal and KPIs  0.42
+  [table] Table 2.3. Decisions supported and th     0.55
+  (text after) Table 2.3. Decisions supported and th  0.26
+3. Analytical Questions and Analytics Levels        0.88
+  [table] Table 3.1. Final analytical questions     0.84
+  (text after) Table 3.1. Final analytical questions  0.75
+3.1. Quality Check of the Final Questions           0.39
+  [table] Table 3.2. Quality check of the final     0.93
+  (text after) Table 3.2. Quality check of the final  0.49
+3.2. AQ Revision Log                                0.91
+  [table] Table 3.3. AQ Revision Log                4.00
+  (text after) Table 3.3. AQ Revision Log           0.14
+  [table] Table 3.4. Status scales of the miles     0.61
+  (text after) Table 3.4. Status scales of the miles  0.74
+4. Data Requirements and Dataset Selection          0.90
+  [table] Table 4.1. AQ–Data Requirement Matrix     0.99
+  (text after) Table 4.1. AQ–Data Requirement Matrix  0.76
+4.1. Dataset Selection, Provenance and Licenc       0.86
+  [table] Table 4.2. Dataset Selection Matrix       0.94
+  (text after) Table 4.2. Dataset Selection Matrix  1.06
+  [table] Table 4.3. Provenance, version and li     0.40
+  (text after) Table 4.3. Provenance, version and li  0.24
+5. Dataset Description and Requirement–Data F       0.57
+  [table] Table 5.1. Tables of OULAD                0.49
+  (text after) Table 5.1. Tables of OULAD           0.30
+  [table] Table 5.2. Key variables of OULAD         0.54
+  (text after) Table 5.2. Key variables of OULAD    0.63
+5.1. Requirement–Data Fit and Question Status       0.41
+  [table] Table 5.3. AQ–Data Fit Matrix             0.75
+  (text after) Table 5.3. AQ–Data Fit Matrix        0.18
+  [table] Table 5.4. Classes of gap in OULAD an     0.38
+  (text after) Table 5.4. Classes of gap in OULAD an  0.69
+6. Data Understanding and Data Quality              1.40
+  [table] Table 6.1. Populations of the 2013 de     0.49
+  (text after) Table 6.1. Populations of the 2013 de  0.09
+6.1. Quality Findings                               0.42
+  [table] Table 6.2. Data Quality Issue Log         1.62
+  (text after) Table 6.2. Data Quality Issue Log    1.80
+6.2. Temporal Coverage, Representativeness an       1.09
+  [table] Table 6.3. Sensitive attributes and t     0.38
+  (text after) Table 6.3. Sensitive attributes and t  0.76
+7. Data Preparation and Analytic-ready Data         0.61
+  [table] Table 7.1. Preparation Decision Matri     1.53
+  (text after) Table 7.1. Preparation Decision Matri  0.84
+7.1. Derived Variables, Encoding and Leakage        0.50
+  [table] Table 7.2. Main derived variables         0.74
+  (text after) Table 7.2. Main derived variables    1.12
+  [table] Table 7.3. Leakage risks and controls     0.56
+  (text after) Table 7.3. Leakage risks and controls  0.49
+7.2. Final Prepared Dataset and Reproducibili       0.27
+  [table] Table 7.4. Before-and-after checks of     0.68
+  (text after) Table 7.4. Before-and-after checks of  0.41
+  [table] Table 7.5. Prepared views of OULAD-N0     0.38
+  (text after) Table 7.5. Prepared views of OULAD-N0  0.72
+8. Modeling and Analysis Strategy                   1.64
+  [table] Table 8.1. Modeling Briefs of the fou     0.80
+  (text after) Table 8.1. Modeling Briefs of the fou  0.33
+8.1. Baselines, Candidate Methods and Primary       0.72
+  [table] Table 8.2. Model and Method Selection     0.84
+  (text after) Table 8.2. Model and Method Selection  2.39
+9. Evaluation Design                                1.22
+  [table] Table 9.1. Evaluation Plan                0.74
+9.1. Validation, Metrics and Success Criteria       1.81
+  [table] Table 9.2. Success criteria of the pr     0.52
+  (text after) Table 9.2. Success criteria of the pr  1.05
+9.2. Leakage, Fairness and Interpretability C       0.97
+  [table] Table 9.3. Fairness audit groups of t     0.31
+  (text after) Table 9.3. Fairness audit groups of t  1.15
+10. Experimental Implementation and Results         0.90
+  [table] Table 10.1. Configurations of the spe     0.40
+  (text after) Table 10.1. Configurations of the spe  0.70
+11. Findings, Discussion and Decision Support       1.07
+  [table] Table 11.1. How each answer is read,      0.47
+  (text after) Table 11.1. How each answer is read,   0.11
+11.1. Final Project Traceability Matrix             0.71
+  [table] Table 11.2. Final Project Traceabilit     2.07
+  (text after) Table 11.2. Final Project Traceabilit  0.29
+  [table] Table 11.3. Final status of each Anal     0.46
+  (text after) Table 11.3. Final status of each Anal  0.11
+11.2. AQ1: Completion and Timing of Non-compl       0.54
+11.2.1. Outcome shares and the success criter       0.23
+  [table] Table 11.4. Outcome shares in the 9 r     0.27
+  (text after) Table 11.4. Outcome shares in the 9 r  0.20
+11.2.2. Differences by module, start month an       0.10
+  [table] Table 11.5. Non-completion by module      0.57
+  (text after) Table 11.5. Non-completion by module   1.39
+11.2.3. Week of the first missed assessed tas       0.20
+  [table] Table 11.6. First missed assessed tas     0.43
+  (text after) Table 11.6. First missed assessed tas  0.45
+11.2.4. Comparison between 2013 and 2014            0.31
+  [table] Table 11.7. Non-completion over all e     0.49
+  (text after) Table 11.7. Non-completion over all e  0.31
+11.2.5. What AQ1 means for the project              0.59
+11.3. AQ2: Early Signs Associated with Non-co       0.32
+11.3.1. Population, signs and model                 0.81
+11.3.2. Associations of the five signs              0.12
+  [table] Table 11.8. Early signs at day 27 and     0.72
+  (text after) Table 11.8. Early signs at day 27 and  1.14
+11.3.3. Consistency across modules                  0.12
+  [table] Table 11.9. Mutually adjusted risk di     0.35
+  (text after) Table 11.9. Mutually adjusted risk di  0.44
+11.3.4. Sensitivity runs and model checks           0.14
+  [table] Table 11.10. Mutually adjusted risk d     0.65
+  (text after) Table 11.10. Mutually adjusted risk d  0.36
+  [table] Table 11.11. Binned residuals of the      0.31
+  (text after) Table 11.11. Binned residuals of the   0.65
+11.3.5. Groups of students and the 2014 repli       0.60
+11.3.6. What AQ2 means for the project              0.65
+11.4. AQ3 and AQ4: Expected Outputs                 0.29
+11.4.1. AQ3: estimating non-completion at the       1.25
+11.4.2. AQ4: a ranked list under assumed capa       0.81
+11.4.3. What the expected outputs can and can       0.10
+  [table] Table 11.12. Expected outputs of AQ3      0.36
+  (text after) Table 11.12. Expected outputs of AQ3   0.22
+11.5. Answers by Question and Decision Suppor       0.26
+11.5.1. Final answers by Analytical Question        0.95
+  [table] Table 11.13. Final answers by Analyti     8.86
+  (text after) Table 11.13. Final answers by Analyti  0.14
+11.5.2. Why recommendations remain options to       0.35
+11.5.3. Decision support for D1, D2 and D3          0.12
+  [table] Table 11.14. Decision support for D1–     0.97
+  (text after) Table 11.14. Decision support for D1–  0.69
+12. Limitations and Future Work                     2.50
+  [table] Table 12.1. Limitation log: kind of l     1.75
+  (text after) Table 12.1. Limitation log: kind of l  0.05
+12.1. Future Work and Data Needed                   0.21
+  [table] Table 12.2. Future work: what each st     0.88
+  (text after) Table 12.2. Future work: what each st  1.31
+13. Generative AI Use and Reflection                0.30
+13.1. AI Decision Log, Milestones 1–5               0.16
+  [table] Table 13.1. AI Decision Log, Mileston     3.21
+13.2. Reflection on AI as a reasoning and wri       1.47
+14. Conclusion                                      2.00
+main content: 115.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0
+## 2026-11-08T22:58:13Z measure 1 (main text rewritten as summaries, blocks moved to Appendices I–XVI)
+$ venv/bin/python .claude/skills/build-report/scripts/report.py build milestone-5 --lang en --force
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (41 Word sections, 19 landscape, 4 images, 3 figure  (10 s)
+
+2/2 steps passed
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25
+part                                          optimistic laid out   flow   gap tables
+Contents                                             2.1     2.00
+Abstract                                             0.0     1.00
+List of Abbreviations                                0.1     1.00
+List of Terms                                        0.1     1.00
+List of Figures                                      0.2     1.00
+List of Tables                                       1.9     2.00
+1. Introduction and Educational Context              3.3     4.59   4.07  0.52   0.00
+2. Business Understanding and Success Criteri        2.0     2.58   2.53  0.06   0.43
+3. Analytical Questions and Analytics Levels         3.4     4.87   4.50  0.38   1.89
+4. Data Requirements and Dataset Selection           2.1     2.95   2.83  0.12   0.78
+5. Dataset Description and Requirement–Data F        2.2     2.86   2.81  0.05   0.94
+6. Data Understanding and Data Quality               2.8     3.89   3.77  0.12   1.22
+7. Data Preparation and Analytic-ready Data          2.8     3.52   3.47  0.05   0.62
+8. Modeling and Analysis Strategy                    2.0     2.83   2.72  0.11   0.80
+9. Evaluation Design                                 2.9     3.76   3.70  0.06   0.57
+10. Experimental Implementation and Results          0.3     0.45   0.44  0.01   0.00
+11. Findings, Discussion and Decision Support        6.0     8.41   7.76  0.65   1.45
+12. Limitations and Future Work                      1.6     2.11   2.10  0.01   0.63
+13. Generative AI Use and Reflection                 1.0     1.27   1.23  0.04   0.00
+14. Conclusion                                       0.9     1.91   1.13  0.78   0.00
+References                                           0.1     1.00
+Appendices                                          59.1   111.43
+main content                                        33.5    46.00  43.04  2.96   9.33
+main content: optimistic 33.5 pages, pessimistic 46.0 pages (plan with this); text 33.7, tables 9.3, layout gaps 3.0
+last main-text page 25% full: a cut saves a page only if it removes more than 0.25 of a page
+budget 25 pages: +21.0 pages (pessimistic), +8.5 (optimistic)
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25 --blocks
+1. Introduction and Educational Context             1.11
+1.1. Motivation and Stakeholders                    1.20
+1.2. Scope and Project Objective                    2.28
+2. Business Understanding and Success Criteri       0.95
+2.1. Key Performance Indicators and Decisions       0.88
+  [table] Table 2.1. Final SMART Goal and KPIs      0.46
+  (text after) Table 2.1. Final SMART Goal and KPIs  0.28
+3. Analytical Questions and Analytics Levels        0.82
+  [table] Table 3.1. Final analytical questions     0.74
+  (text after) Table 3.1. Final analytical questions  0.40
+3.1. Quality Check of the Final Questions           0.28
+  [table] Table 3.2. Quality check of the final     0.41
+  (text after) Table 3.2. Quality check of the final  0.27
+3.2. AQ Revision Log                                0.52
+  [table] Table 3.3. AQ Revision Log                1.01
+  (text after) Table 3.3. AQ Revision Log           0.43
+4. Data Requirements and Dataset Selection          0.58
+  [table] Table 4.1. AQ–Data Requirement Matrix     0.65
+  (text after) Table 4.1. AQ–Data Requirement Matrix  0.37
+4.1. Dataset Selection, Provenance and Licenc       0.40
+  [table] Table 4.2. Dataset Selection Matrix       0.31
+  (text after) Table 4.2. Dataset Selection Matrix  0.64
+5. Dataset Description and Requirement–Data F       0.80
+  [table] Table 5.1. Key variables of OULAD         0.59
+  (text after) Table 5.1. Key variables of OULAD    0.31
+5.1. Requirement–Data Fit and Question Status       0.30
+  [table] Table 5.2. AQ–Data Fit Matrix             0.47
+  (text after) Table 5.2. AQ–Data Fit Matrix        0.39
+6. Data Understanding and Data Quality              0.77
+  [table] Table 6.1. Populations of the 2013 de     0.54
+  (text after) Table 6.1. Populations of the 2013 de  0.05
+6.1. Quality Findings                               0.30
+  [table] Table 6.2. Data Quality Issue Log         0.87
+  (text after) Table 6.2. Data Quality Issue Log    0.39
+6.2. Temporal Coverage, Representativeness an       0.97
+7. Data Preparation and Analytic-ready Data         0.42
+  [table] Table 7.1. Preparation Decision Matri     0.66
+  (text after) Table 7.1. Preparation Decision Matri  0.33
+7.1. Derived Variables, Encoding and Leakage        1.21
+7.2. Final Prepared Dataset and Reproducibili       0.89
+8. Modeling and Analysis Strategy                   1.07
+8.1. Baselines, Candidate Methods and Primary       0.38
+  [table] Table 8.1. Model and Method Selection     0.93
+  (text after) Table 8.1. Model and Method Selection  0.44
+9. Evaluation Design                                0.98
+  [table] Table 9.1. Evaluation Plan                0.61
+9.1. Validation, Metrics and Success Criteria       1.15
+9.2. Leakage, Fairness and Interpretability C       1.02
+10. Experimental Implementation and Results         0.45
+11. Findings, Discussion and Decision Support       0.75
+11.1. Final Project Traceability Matrix             0.38
+  [table] Table 11.1. Final Project Traceabilit     0.98
+  (text after) Table 11.1. Final Project Traceabilit  0.18
+11.2. AQ1: Completion and Timing of Non-compl       1.77
+11.3. AQ2: Early Signs Associated with Non-co       1.91
+11.4. AQ3 and AQ4: Expected Outputs                 0.78
+11.5. Answers by Question and Decision Suppor       0.24
+  [table] Table 11.2. Final answers by Analytic     0.90
+  (text after) Table 11.2. Final answers by Analytic  0.53
+12. Limitations and Future Work                     0.36
+  [table] Table 12.1. Limitation log                0.67
+  (text after) Table 12.1. Limitation log           0.33
+12.1. Future Work and Data Needed                   0.75
+13. Generative AI Use and Reflection                0.27
+13.1. AI Decision Log, Milestones 1–5               0.53
+13.2. Reflection on AI as a reasoning and wri       0.47
+14. Conclusion                                      1.91
+main content: 46.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0
+## 2026-11-08T23:03:05Z measure 2 (lean main text)
+$ venv/bin/python .claude/skills/build-report/scripts/report.py build milestone-5 --lang en --force
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (41 Word sections, 19 landscape, 4 images, 3 figure  (10 s)
+
+2/2 steps passed
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25
+part                                          optimistic laid out   flow   gap tables
+Contents                                             2.1     2.00
+Abstract                                             0.0     1.00
+List of Abbreviations                                0.1     1.00
+List of Terms                                        0.1     1.00
+List of Figures                                      0.2     1.00
+List of Tables                                       1.9     2.00
+1. Introduction and Educational Context              1.7     2.54   2.05  0.49   0.00
+2. Business Understanding and Success Criteri        1.1     1.46   1.38  0.08   0.39
+3. Analytical Questions and Analytics Levels         1.7     2.39   2.24  0.15   1.27
+4. Data Requirements and Dataset Selection           1.0     1.34   1.30  0.04   0.55
+5. Dataset Description and Requirement–Data F        1.0     1.44   1.37  0.07   0.68
+6. Data Understanding and Data Quality               1.5     2.03   2.00  0.03   0.82
+7. Data Preparation and Analytic-ready Data          1.2     1.45   1.44  0.01   0.36
+8. Modeling and Analysis Strategy                    1.1     1.61   1.47  0.14   0.80
+9. Evaluation Design                                 1.3     1.81   1.67  0.14   0.57
+10. Experimental Implementation and Results          0.3     0.31   0.31 -0.00   0.00
+11. Findings, Discussion and Decision Support        3.3     4.45   4.19  0.26   1.05
+12. Limitations and Future Work                      0.8     0.98   0.97  0.02   0.30
+13. Generative AI Use and Reflection                 0.5     0.66   0.63  0.02   0.00
+14. Conclusion                                       0.3     0.53   0.40  0.13   0.00
+References                                           0.1     1.00
+Appendices                                          65.4   115.43
+main content                                        16.8    23.00  21.42  1.58   6.81
+main content: optimistic 16.8 pages, pessimistic 23.0 pages (plan with this); text 14.6, tables 6.8, layout gaps 1.6
+last main-text page 87% full: a cut saves a page only if it removes more than 0.87 of a page
+budget 25 pages: -2.0 pages (pessimistic), -8.2 (optimistic)
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25 --blocks
+1. Introduction and Educational Context             0.52
+1.1. Motivation and Stakeholders                    0.53
+1.2. Scope and Project Objective                    1.49
+2. Business Understanding and Success Criteri       0.51
+2.1. Key Performance Indicators and Decisions       0.30
+  [table] Table 2.1. Final SMART Goal and KPIs      0.43
+  (text after) Table 2.1. Final SMART Goal and KPIs  0.22
+3. Analytical Questions and Analytics Levels        0.27
+  [table] Table 3.1. Final analytical questions     0.54
+  (text after) Table 3.1. Final analytical questions  0.19
+3.1. Quality Check of the Final Questions           0.21
+  [table] Table 3.2. Quality check of the final     0.30
+3.2. AQ Revision Log                                0.24
+  [table] Table 3.3. AQ Revision Log                0.64
+4. Data Requirements and Dataset Selection          0.33
+  [table] Table 4.1. AQ–Data Requirement Matrix     0.41
+4.1. Dataset Selection, Provenance and Licenc       0.34
+  [table] Table 4.2. Dataset Selection Matrix       0.26
+5. Dataset Description and Requirement–Data F       0.35
+  [table] Table 5.1. Key variables of OULAD         0.42
+5.1. Requirement–Data Fit and Question Status       0.28
+  [table] Table 5.2. AQ–Data Fit Matrix             0.39
+6. Data Understanding and Data Quality              0.38
+  [table] Table 6.1. Populations of the 2013 de     0.34
+6.1. Quality Findings                               0.32
+  [table] Table 6.2. Data Quality Issue Log         0.56
+6.2. Temporal Coverage, Representativeness an       0.44
+7. Data Preparation and Analytic-ready Data         0.29
+  [table] Table 7.1. Preparation Decision Matri     0.40
+7.1. Derived Variables, Encoding and Leakage        0.42
+7.2. Final Prepared Dataset and Reproducibili       0.34
+8. Modeling and Analysis Strategy                   0.42
+8.1. Baselines, Candidate Methods and Primary       0.21
+  [table] Table 8.1. Model and Method Selection     0.98
+9. Evaluation Design                                0.33
+  [table] Table 9.1. Evaluation Plan                0.73
+9.1. Validation, Metrics and Success Criteria       0.38
+9.2. Leakage, Fairness and Interpretability C       0.36
+10. Experimental Implementation and Results         0.31
+11. Findings, Discussion and Decision Support       0.40
+11.1. Final Project Traceability Matrix             0.22
+  [table] Table 11.1. Final Project Traceabilit     0.58
+11.2. AQ1: Completion and Timing of Non-compl       1.07
+11.3. AQ2: Early Signs Associated with Non-co       1.05
+11.4. AQ3 and AQ4: Expected Outputs                 0.30
+11.5. Answers by Question and Decision Suppor       0.11
+  [table] Table 11.2. Final answers by Analytic     0.54
+  (text after) Table 11.2. Final answers by Analytic  0.18
+12. Limitations and Future Work                     0.33
+  [table] Table 12.1. Limitation log                0.34
+12.1. Future Work and Data Needed                   0.32
+13. Generative AI Use and Reflection                0.19
+13.1. AI Decision Log, Milestones 1–5               0.26
+13.2. Reflection on AI as a reasoning and wri       0.21
+14. Conclusion                                      0.53
+main content: 23.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0
+## 2026-11-08T23:04:55Z measure 3 (Part 1-3 trimmed, quality check merged into Table 3.1; detail restored in Parts 6-14)
+$ venv/bin/python .claude/skills/build-report/scripts/report.py build milestone-5 --lang en --force
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (41 Word sections, 19 landscape, 4 images, 3 figure  (1011 s)
+
+2/2 steps passed
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25
+part                                          optimistic laid out   flow   gap tables
+Contents                                             2.1     2.00
+Abstract                                             0.0     1.00
+List of Abbreviations                                0.1     1.00
+List of Terms                                        0.1     1.00
+List of Figures                                      0.2     1.00
+List of Tables                                       1.9     2.00
+1. Introduction and Educational Context              1.6     2.00   1.92  0.08   0.00
+2. Business Understanding and Success Criteri        1.1     1.46   1.38  0.08   0.39
+3. Analytical Questions and Analytics Levels         1.7     2.39   2.33  0.06   1.27
+4. Data Requirements and Dataset Selection           1.0     1.40   1.30  0.11   0.55
+5. Dataset Description and Requirement–Data F        1.0     1.36   1.37 -0.01   0.68
+6. Data Understanding and Data Quality               1.7     2.24   2.19  0.05   0.82
+7. Data Preparation and Analytic-ready Data          1.2     1.48   1.44  0.05   0.36
+8. Modeling and Analysis Strategy                    1.4     1.92   1.88  0.04   0.80
+9. Evaluation Design                                 1.3     1.81   1.67  0.14   0.57
+10. Experimental Implementation and Results          0.3     0.31   0.31 -0.00   0.00
+11. Findings, Discussion and Decision Support        3.5     4.67   4.47  0.20   1.05
+12. Limitations and Future Work                      0.9     1.13   1.12  0.01   0.30
+13. Generative AI Use and Reflection                 0.9     1.13   1.12  0.00   0.00
+14. Conclusion                                       0.7     1.69   0.86  0.84   0.00
+References                                           0.1     1.00
+Appendices                                          65.4   115.43
+main content                                        18.2    25.00  23.36  1.64   6.81
+main content: optimistic 18.2 pages, pessimistic 25.0 pages (plan with this); text 16.6, tables 6.8, layout gaps 1.6
+last main-text page 18% full: a cut saves a page only if it removes more than 0.18 of a page
+budget 25 pages: +0.0 pages (pessimistic), -6.8 (optimistic)
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25 --blocks
+1. Introduction and Educational Context             0.48
+1.1. Motivation and Stakeholders                    0.41
+1.2. Scope and Project Objective                    1.11
+2. Business Understanding and Success Criteri       0.49
+2.1. Key Performance Indicators and Decisions       0.30
+  [table] Table 2.1. Final SMART Goal and KPIs      0.52
+  (text after) Table 2.1. Final SMART Goal and KPIs  0.16
+3. Analytical Questions and Analytics Levels        0.27
+  [table] Table 3.1. Final analytical questions     0.86
+  (text after) Table 3.1. Final analytical questions  0.14
+3.1. Quality Check of the Final Questions           0.34
+3.2. AQ Revision Log                                0.24
+  [table] Table 3.2. AQ Revision Log                0.54
+4. Data Requirements and Dataset Selection          0.35
+  [table] Table 4.1. AQ–Data Requirement Matrix     0.37
+4.1. Dataset Selection, Provenance and Licenc       0.43
+  [table] Table 4.2. Dataset Selection Matrix       0.26
+5. Dataset Description and Requirement–Data F       0.33
+  [table] Table 5.1. Key variables of OULAD         0.41
+5.1. Requirement–Data Fit and Question Status       0.28
+  [table] Table 5.2. AQ–Data Fit Matrix             0.34
+6. Data Understanding and Data Quality              0.46
+  [table] Table 6.1. Populations of the 2013 de     0.34
+6.1. Quality Findings                               0.43
+  [table] Table 6.2. Data Quality Issue Log         0.59
+6.2. Temporal Coverage, Representativeness an       0.43
+7. Data Preparation and Analytic-ready Data         0.30
+  [table] Table 7.1. Preparation Decision Matri     0.40
+7.1. Derived Variables, Encoding and Leakage        0.44
+7.2. Final Prepared Dataset and Reproducibili       0.34
+8. Modeling and Analysis Strategy                   0.42
+8.1. Baselines, Candidate Methods and Primary       0.24
+  [table] Table 8.1. Model and Method Selection     0.84
+  (text after) Table 8.1. Model and Method Selection  0.42
+9. Evaluation Design                                0.33
+  [table] Table 9.1. Evaluation Plan                0.73
+9.1. Validation, Metrics and Success Criteria       0.38
+9.2. Leakage, Fairness and Interpretability C       0.36
+10. Experimental Implementation and Results         0.31
+11. Findings, Discussion and Decision Support       0.40
+11.1. Final Project Traceability Matrix             0.22
+  [table] Table 11.1. Final Project Traceabilit     0.58
+11.2. AQ1: Completion and Timing of Non-compl       1.07
+11.3. AQ2: Early Signs Associated with Non-co       1.11
+11.4. AQ3 and AQ4: Expected Outputs                 0.29
+11.5. Answers by Question and Decision Suppor       0.11
+  [table] Table 11.2. Final answers by Analytic     0.54
+  (text after) Table 11.2. Final answers by Analytic  0.35
+12. Limitations and Future Work                     0.31
+  [table] Table 12.1. Limitation log                0.34
+12.1. Future Work and Data Needed                   0.48
+13. Generative AI Use and Reflection                0.18
+13.1. AI Decision Log, Milestones 1–5               0.51
+13.2. Reflection on AI as a reasoning and wri       0.43
+14. Conclusion                                      1.69
+main content: 25.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0
+## 2026-11-09T15:04:02Z measure 4 (loss-check restorations in Appendices I, IV, V, IX, X; table keys added to Section 5)
+$ venv/bin/python .claude/skills/build-report/scripts/report.py build milestone-5 --lang en --force
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (41 Word sections, 19 landscape, 4 images, 3 figure  (14 s)
+
+2/2 steps passed
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25
+part                                          optimistic laid out   flow   gap tables
+Contents                                             2.1     2.00
+Abstract                                             0.0     1.00
+List of Abbreviations                                0.1     1.00
+List of Terms                                        0.1     1.00
+List of Figures                                      0.2     1.00
+List of Tables                                       1.9     2.00
+1. Introduction and Educational Context              1.6     2.00   1.92  0.08   0.00
+2. Business Understanding and Success Criteri        1.1     1.46   1.38  0.08   0.39
+3. Analytical Questions and Analytics Levels         1.7     2.39   2.33  0.06   1.27
+4. Data Requirements and Dataset Selection           1.0     1.40   1.30  0.11   0.55
+5. Dataset Description and Requirement–Data F        1.0     1.44   1.41  0.03   0.68
+6. Data Understanding and Data Quality               1.7     2.30   2.19  0.11   0.82
+7. Data Preparation and Analytic-ready Data          1.2     1.46   1.44  0.02   0.36
+8. Modeling and Analysis Strategy                    1.4     1.89   1.88  0.01   0.80
+9. Evaluation Design                                 1.3     1.72   1.67  0.05   0.57
+10. Experimental Implementation and Results          0.3     0.31   0.31 -0.00   0.00
+11. Findings, Discussion and Decision Support        3.5     4.67   4.47  0.20   1.05
+12. Limitations and Future Work                      0.9     1.13   1.12  0.01   0.30
+13. Generative AI Use and Reflection                 0.9     1.13   1.12  0.00   0.00
+14. Conclusion                                       0.7     1.69   0.86  0.84   0.00
+References                                           0.1     1.00
+Appendices                                          65.9   116.43
+main content                                        18.2    25.00  23.40  1.60   6.81
+main content: optimistic 18.2 pages, pessimistic 25.0 pages (plan with this); text 16.6, tables 6.8, layout gaps 1.6
+last main-text page 18% full: a cut saves a page only if it removes more than 0.18 of a page
+budget 25 pages: +0.0 pages (pessimistic), -6.8 (optimistic)
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-5/build/N04_Milestone5_EN.docx --budget 25 --blocks
+1. Introduction and Educational Context             0.48
+1.1. Motivation and Stakeholders                    0.41
+1.2. Scope and Project Objective                    1.11
+2. Business Understanding and Success Criteri       0.49
+2.1. Key Performance Indicators and Decisions       0.30
+  [table] Table 2.1. Final SMART Goal and KPIs      0.52
+  (text after) Table 2.1. Final SMART Goal and KPIs  0.16
+3. Analytical Questions and Analytics Levels        0.27
+  [table] Table 3.1. Final analytical questions     0.86
+  (text after) Table 3.1. Final analytical questions  0.14
+3.1. Quality Check of the Final Questions           0.34
+3.2. AQ Revision Log                                0.24
+  [table] Table 3.2. AQ Revision Log                0.54
+4. Data Requirements and Dataset Selection          0.35
+  [table] Table 4.1. AQ–Data Requirement Matrix     0.37
+4.1. Dataset Selection, Provenance and Licenc       0.43
+  [table] Table 4.2. Dataset Selection Matrix       0.26
+5. Dataset Description and Requirement–Data F       0.38
+  [table] Table 5.1. Key variables of OULAD         0.45
+5.1. Requirement–Data Fit and Question Status       0.28
+  [table] Table 5.2. AQ–Data Fit Matrix             0.34
+6. Data Understanding and Data Quality              0.44
+  [table] Table 6.1. Populations of the 2013 de     0.34
+6.1. Quality Findings                               0.53
+  [table] Table 6.2. Data Quality Issue Log         0.56
+6.2. Temporal Coverage, Representativeness an       0.44
+7. Data Preparation and Analytic-ready Data         0.29
+  [table] Table 7.1. Preparation Decision Matri     0.40
+7.1. Derived Variables, Encoding and Leakage        0.42
+7.2. Final Prepared Dataset and Reproducibili       0.34
+8. Modeling and Analysis Strategy                   0.42
+8.1. Baselines, Candidate Methods and Primary       0.22
+  [table] Table 8.1. Model and Method Selection     0.84
+  (text after) Table 8.1. Model and Method Selection  0.41
+9. Evaluation Design                                0.33
+  [table] Table 9.1. Evaluation Plan                0.65
+9.1. Validation, Metrics and Success Criteria       0.38
+9.2. Leakage, Fairness and Interpretability C       0.36
+10. Experimental Implementation and Results         0.31
+11. Findings, Discussion and Decision Support       0.40
+11.1. Final Project Traceability Matrix             0.22
+  [table] Table 11.1. Final Project Traceabilit     0.58
+11.2. AQ1: Completion and Timing of Non-compl       1.07
+11.3. AQ2: Early Signs Associated with Non-co       1.11
+11.4. AQ3 and AQ4: Expected Outputs                 0.29
+11.5. Answers by Question and Decision Suppor       0.11
+  [table] Table 11.2. Final answers by Analytic     0.54
+  (text after) Table 11.2. Final answers by Analytic  0.35
+12. Limitations and Future Work                     0.31
+  [table] Table 12.1. Limitation log                0.34
+12.1. Future Work and Data Needed                   0.48
+13. Generative AI Use and Reflection                0.18
+13.1. AI Decision Log, Milestones 1–5               0.51
+13.2. Reflection on AI as a reasoning and wri       0.43
+14. Conclusion                                      1.69
+main content: 25.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0

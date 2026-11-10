@@ -1,0 +1,115 @@
+level,group,year,denominator,measure,events,n,rate,ci_low,ci_high,source
+year,2013,2013,all_enrolments,completion,6570,13529,0.4856,0.4772,0.494,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+year,2013,2013,all_enrolments,non_completion,6959,13529,0.5144,0.506,0.5228,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+year,2013,2013,all_enrolments,Pass,5494,13529,0.4061,0.3978,0.4144,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+year,2013,2013,all_enrolments,Distinction,1076,13529,0.0795,0.0751,0.0842,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+year,2013,2013,all_enrolments,Fail,3242,13529,0.2396,0.2325,0.2469,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+year,2013,2013,all_enrolments,Withdrawn,3717,13529,0.2747,0.2673,0.2823,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+year,2014,2014,all_enrolments,completion,8815,19064,0.4624,0.4553,0.4695,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+year,2014,2014,all_enrolments,non_completion,10249,19064,0.5376,0.5305,0.5447,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+year,2014,2014,all_enrolments,Pass,6867,19064,0.3602,0.3534,0.367,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+year,2014,2014,all_enrolments,Distinction,1948,19064,0.1022,0.098,0.1066,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+year,2014,2014,all_enrolments,Fail,3810,19064,0.1999,0.1942,0.2056,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+year,2014,2014,all_enrolments,Withdrawn,6439,19064,0.3378,0.3311,0.3445,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,AAA 2013,2013,all_enrolments,completion,278,383,0.7258,0.6791,0.7681,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,AAA 2013,2013,all_enrolments,non_completion,105,383,0.2742,0.2319,0.3209,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,AAA 2013,2013,all_enrolments,Pass,258,383,0.6736,0.6251,0.7187,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,AAA 2013,2013,all_enrolments,Distinction,20,383,0.0522,0.0341,0.0793,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,AAA 2013,2013,all_enrolments,Fail,45,383,0.1175,0.089,0.1536,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,AAA 2013,2013,all_enrolments,Withdrawn,60,383,0.1567,0.1237,0.1964,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,AAA 2014,2014,all_enrolments,completion,253,365,0.6932,0.644,0.7382,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,AAA 2014,2014,all_enrolments,non_completion,112,365,0.3068,0.2618,0.356,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,AAA 2014,2014,all_enrolments,Pass,229,365,0.6274,0.5767,0.6754,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,AAA 2014,2014,all_enrolments,Distinction,24,365,0.0658,0.0446,0.096,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,AAA 2014,2014,all_enrolments,Fail,46,365,0.126,0.0958,0.164,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,AAA 2014,2014,all_enrolments,Withdrawn,66,365,0.1808,0.1447,0.2236,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,BBB 2013,2013,all_enrolments,completion,1875,4004,0.4683,0.4529,0.4838,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,BBB 2013,2013,all_enrolments,non_completion,2129,4004,0.5317,0.5162,0.5471,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,BBB 2013,2013,all_enrolments,Pass,1544,4004,0.3856,0.3707,0.4008,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,BBB 2013,2013,all_enrolments,Distinction,331,4004,0.0827,0.0745,0.0916,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,BBB 2013,2013,all_enrolments,Fail,980,4004,0.2448,0.2317,0.2583,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,BBB 2013,2013,all_enrolments,Withdrawn,1149,4004,0.287,0.2732,0.3012,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,BBB 2014,2014,all_enrolments,completion,1879,3905,0.4812,0.4655,0.4969,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,BBB 2014,2014,all_enrolments,non_completion,2026,3905,0.5188,0.5031,0.5345,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,BBB 2014,2014,all_enrolments,Pass,1533,3905,0.3926,0.3774,0.408,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,BBB 2014,2014,all_enrolments,Distinction,346,3905,0.0886,0.0801,0.0979,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,BBB 2014,2014,all_enrolments,Fail,787,3905,0.2015,0.1893,0.2144,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,BBB 2014,2014,all_enrolments,Withdrawn,1239,3905,0.3173,0.3029,0.3321,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,CCC 2014,2014,all_enrolments,completion,1678,4434,0.3784,0.3643,0.3928,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,CCC 2014,2014,all_enrolments,non_completion,2756,4434,0.6216,0.6072,0.6357,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,CCC 2014,2014,all_enrolments,Pass,1180,4434,0.2661,0.2533,0.2793,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,CCC 2014,2014,all_enrolments,Distinction,498,4434,0.1123,0.1034,0.1219,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,CCC 2014,2014,all_enrolments,Fail,781,4434,0.1761,0.1652,0.1876,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,CCC 2014,2014,all_enrolments,Withdrawn,1975,4434,0.4454,0.4308,0.4601,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,DDD 2013,2013,all_enrolments,completion,1339,3241,0.4131,0.3963,0.4302,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,DDD 2013,2013,all_enrolments,non_completion,1902,3241,0.5869,0.5698,0.6037,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,DDD 2013,2013,all_enrolments,Pass,1187,3241,0.3662,0.3498,0.383,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,DDD 2013,2013,all_enrolments,Distinction,152,3241,0.0469,0.0401,0.0547,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,DDD 2013,2013,all_enrolments,Fail,789,3241,0.2434,0.229,0.2585,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,DDD 2013,2013,all_enrolments,Withdrawn,1113,3241,0.3434,0.3273,0.3599,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,DDD 2014,2014,all_enrolments,completion,1271,3031,0.4193,0.4019,0.437,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,DDD 2014,2014,all_enrolments,non_completion,1760,3031,0.5807,0.563,0.5981,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,DDD 2014,2014,all_enrolments,Pass,1040,3031,0.3431,0.3264,0.3602,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,DDD 2014,2014,all_enrolments,Distinction,231,3031,0.0762,0.0673,0.0862,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,DDD 2014,2014,all_enrolments,Fail,623,3031,0.2055,0.1915,0.2203,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,DDD 2014,2014,all_enrolments,Withdrawn,1137,3031,0.3751,0.3581,0.3925,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,EEE 2013,2013,all_enrolments,completion,609,1052,0.5789,0.5488,0.6084,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,EEE 2013,2013,all_enrolments,non_completion,443,1052,0.4211,0.3916,0.4512,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,EEE 2013,2013,all_enrolments,Pass,482,1052,0.4582,0.4283,0.4884,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,EEE 2013,2013,all_enrolments,Distinction,127,1052,0.1207,0.1024,0.1418,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,EEE 2013,2013,all_enrolments,Fail,200,1052,0.1901,0.1675,0.2149,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,EEE 2013,2013,all_enrolments,Withdrawn,243,1052,0.231,0.2065,0.2574,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,EEE 2014,2014,all_enrolments,completion,1041,1882,0.5531,0.5306,0.5755,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,EEE 2014,2014,all_enrolments,non_completion,841,1882,0.4469,0.4245,0.4694,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,EEE 2014,2014,all_enrolments,Pass,812,1882,0.4315,0.4092,0.4539,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,EEE 2014,2014,all_enrolments,Distinction,229,1882,0.1217,0.1077,0.1372,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,EEE 2014,2014,all_enrolments,Fail,362,1882,0.1923,0.1752,0.2108,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,EEE 2014,2014,all_enrolments,Withdrawn,479,1882,0.2545,0.2354,0.2747,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,FFF 2013,2013,all_enrolments,completion,1877,3897,0.4817,0.466,0.4974,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,FFF 2013,2013,all_enrolments,non_completion,2020,3897,0.5183,0.5026,0.534,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,FFF 2013,2013,all_enrolments,Pass,1572,3897,0.4034,0.3881,0.4189,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,FFF 2013,2013,all_enrolments,Distinction,305,3897,0.0783,0.0702,0.0871,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,FFF 2013,2013,all_enrolments,Fail,934,3897,0.2397,0.2265,0.2533,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,FFF 2013,2013,all_enrolments,Withdrawn,1086,3897,0.2787,0.2648,0.293,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,FFF 2014,2014,all_enrolments,completion,1771,3865,0.4582,0.4426,0.474,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,FFF 2014,2014,all_enrolments,non_completion,2094,3865,0.5418,0.526,0.5574,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,FFF 2014,2014,all_enrolments,Pass,1406,3865,0.3638,0.3488,0.3791,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,FFF 2014,2014,all_enrolments,Distinction,365,3865,0.0944,0.0856,0.1041,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,FFF 2014,2014,all_enrolments,Fail,777,3865,0.201,0.1887,0.214,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,FFF 2014,2014,all_enrolments,Withdrawn,1317,3865,0.3408,0.326,0.3558,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,GGG 2013,2013,all_enrolments,completion,592,952,0.6218,0.5906,0.6521,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,GGG 2013,2013,all_enrolments,non_completion,360,952,0.3782,0.3479,0.4094,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,GGG 2013,2013,all_enrolments,Pass,451,952,0.4737,0.4422,0.5055,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,GGG 2013,2013,all_enrolments,Distinction,141,952,0.1481,0.127,0.1721,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,GGG 2013,2013,all_enrolments,Fail,294,952,0.3088,0.2803,0.3389,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,GGG 2013,2013,all_enrolments,Withdrawn,66,952,0.0693,0.0549,0.0873,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+module_year,GGG 2014,2014,all_enrolments,completion,922,1582,0.5828,0.5583,0.6069,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,GGG 2014,2014,all_enrolments,non_completion,660,1582,0.4172,0.3931,0.4417,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,GGG 2014,2014,all_enrolments,Pass,667,1582,0.4216,0.3975,0.4461,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,GGG 2014,2014,all_enrolments,Distinction,255,1582,0.1612,0.1439,0.1801,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,GGG 2014,2014,all_enrolments,Fail,434,1582,0.2743,0.2529,0.2968,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+module_year,GGG 2014,2014,all_enrolments,Withdrawn,226,1582,0.1429,0.1265,0.161,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,B 2013,2013,all_enrolments,completion,2095,4684,0.4473,0.4331,0.4615,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,B 2013,2013,all_enrolments,non_completion,2589,4684,0.5527,0.5385,0.5669,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,B 2013,2013,all_enrolments,Pass,1768,4684,0.3775,0.3637,0.3914,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,B 2013,2013,all_enrolments,Distinction,327,4684,0.0698,0.0629,0.0775,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,B 2013,2013,all_enrolments,Fail,1241,4684,0.2649,0.2525,0.2778,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,B 2013,2013,all_enrolments,Withdrawn,1348,4684,0.2878,0.275,0.3009,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,B 2014,2014,all_enrolments,completion,3358,7804,0.4303,0.4193,0.4413,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,B 2014,2014,all_enrolments,non_completion,4446,7804,0.5697,0.5587,0.5807,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,B 2014,2014,all_enrolments,Pass,2574,7804,0.3298,0.3195,0.3403,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,B 2014,2014,all_enrolments,Distinction,784,7804,0.1005,0.094,0.1073,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,B 2014,2014,all_enrolments,Fail,1833,7804,0.2349,0.2256,0.2444,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,B 2014,2014,all_enrolments,Withdrawn,2613,7804,0.3348,0.3244,0.3454,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,J 2013,2013,all_enrolments,completion,4475,8845,0.5059,0.4955,0.5164,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,J 2013,2013,all_enrolments,non_completion,4370,8845,0.4941,0.4836,0.5045,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,J 2013,2013,all_enrolments,Pass,3726,8845,0.4213,0.411,0.4316,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,J 2013,2013,all_enrolments,Distinction,749,8845,0.0847,0.0791,0.0907,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,J 2013,2013,all_enrolments,Fail,2001,8845,0.2262,0.2176,0.2351,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,J 2013,2013,all_enrolments,Withdrawn,2369,8845,0.2678,0.2587,0.2772,computed from 2013 rows; equals the Milestone 3 published counts (logs/11_aq_checks.log)
+start_month_year,J 2014,2014,all_enrolments,completion,5457,11260,0.4846,0.4754,0.4939,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,J 2014,2014,all_enrolments,non_completion,5803,11260,0.5154,0.5061,0.5246,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,J 2014,2014,all_enrolments,Pass,4293,11260,0.3813,0.3723,0.3903,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,J 2014,2014,all_enrolments,Distinction,1164,11260,0.1034,0.0979,0.1091,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,J 2014,2014,all_enrolments,Fail,1977,11260,0.1756,0.1687,0.1827,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed
+start_month_year,J 2014,2014,all_enrolments,Withdrawn,3826,11260,0.3398,0.3311,0.3486,published in Milestone 3 (fig_outcome_by_run.csv); not recomputed

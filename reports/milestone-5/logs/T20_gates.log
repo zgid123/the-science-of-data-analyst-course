@@ -1,0 +1,97 @@
+## 2026-11-09T15:26:30Z $ make precheck TASK=milestone-5
+PASS  milestone-5 format             Checked 56 files in reports/milestone-5/report: 0 errors, 4 warnings  (0 s)
+PASS  milestone-5 structure          EN: 56 files, 74 headings, 3 figures, 56 tables: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 style              EN: 51 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 abbreviations      EN: 22 abbreviations, 0 violations  (0 s)
+PASS  milestone-5 citations          EN: 28 references, 28 cited, order first-citation: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 names              Checked 56 files for 5 names: 0 errors  (0 s)
+PASS  milestone-5 research_trail     Checked 35 sources, 377 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-5 research_layout    PASS layout: reports/milestone-5/research  (0 s)
+FAIL  milestone-5 translation vi     read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/buil  (0 s)
+      missing  11-00-findings-overview.md  ->  11-00-findings-overview.vi.md
+      missing  11-01-traceability-matrix.md  ->  11-01-traceability-matrix.vi.md
+      missing  11-02-aq1-findings.md  ->  11-02-aq1-findings.vi.md
+      missing  11-03-aq2-findings.md  ->  11-03-aq2-findings.vi.md
+      missing  11-04-aq3-aq4-expected.md  ->  11-04-aq3-aq4-expected.vi.md
+      missing  11-05-decision-support.md  ->  11-05-decision-support.vi.md
+      missing  12-00-limitations.md  ->  12-00-limitations.vi.md
+      missing  12-01-future-work.md  ->  12-01-future-work.vi.md
+      missing  13-00-genai-reflection.md  ->  13-00-genai-reflection.vi.md
+      missing  14-00-conclusion.md  ->  14-00-conclusion.vi.md
+      missing  15-references.md  ->  15-references.vi.md
+      missing  16-00-appendices.md  ->  16-00-appendices.vi.md
+      missing  16-01-context-stakeholders.md  ->  16-01-context-stakeholders.vi.md
+      missing  16-02-goal-kpis-decisions.md  ->  16-02-goal-kpis-decisions.vi.md
+      missing  16-03-aq-quality-revision.md  ->  16-03-aq-quality-revision.vi.md
+      missing  16-04-requirements-selection.md  ->  16-04-requirements-selection.vi.md
+      missing  16-05-dataset-gaps.md  ->  16-05-dataset-gaps.vi.md
+      missing  16-06-profile-quality.md  ->  16-06-profile-quality.vi.md
+      missing  16-07-preparation-leakage.md  ->  16-07-preparation-leakage.vi.md
+      missing  16-08-modeling-briefs.md  ->  16-08-modeling-briefs.vi.md
+      missing  16-09-evaluation-detail.md  ->  16-09-evaluation-detail.vi.md
+      missing  16-10-prototype-protocol.md  ->  16-10-prototype-protocol.vi.md
+      missing  16-11-reading-traceability.md  ->  16-11-reading-traceability.vi.md
+      missing  16-12-aq1-results.md  ->  16-12-aq1-results.vi.md
+      missing  16-13-aq2-results.md  ->  16-13-aq2-results.vi.md
+      missing  16-14-aq3-aq4-answers.md  ->  16-14-aq3-aq4-answers.vi.md
+      missing  16-15-limitations-future.md  ->  16-15-limitations-future.vi.md
+      missing  16-16-ai-decision-log.md  ->  16-16-ai-decision-log.vi.md
+      56 sections, 56 need translation into Tiếng Việt (vi), 0 orphaned files
+      read first: .agents/skills/build-report/languages/vi/guide.md; glossaries (common → domain → topic): .agents/skills/build-report/languages/vi/glossaries/common/ai-and-ml.md, .agents/skills/build-report/languages/vi/glossaries/common/data-and-databases.md, .agents/skills/build-report/languages/vi/glossaries/common/report-writing.md, .agents/skills/build-report/languages/vi/glossaries/common/research-and-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/common/security-and-privacy.md, .agents/skills/build-report/languages/vi/glossaries/common/software-and-systems.md, .agents/skills/build-report/languages/vi/glossaries/common/standards-and-regulation.md, .agents/skills/build-report/languages/vi/glossaries/domains/higher-education.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-early-contact.md, .agents/skills/build-report/languages/vi/glossaries/topics/oulad-data-preparation.md, .agents/skills/build-report/languages/vi/glossaries/topics/early-warning-evaluation.md, .agents/skills/build-report/languages/vi/glossaries/topics/course-completion-report-conventions.md
+FAIL  milestone-5 parity vi          Checked 56 pairs (vi): 56 errors, 0 warnings  (0 s)
+      ERROR 10-00-experimental-status.md: missing translation 10-00-experimental-status.vi.md
+      ERROR 11-00-findings-overview.md: missing translation 11-00-findings-overview.vi.md
+      ERROR 11-01-traceability-matrix.md: missing translation 11-01-traceability-matrix.vi.md
+      ERROR 11-02-aq1-findings.md: missing translation 11-02-aq1-findings.vi.md
+      ERROR 11-03-aq2-findings.md: missing translation 11-03-aq2-findings.vi.md
+      ERROR 11-04-aq3-aq4-expected.md: missing translation 11-04-aq3-aq4-expected.vi.md
+      ERROR 11-05-decision-support.md: missing translation 11-05-decision-support.vi.md
+      ERROR 12-00-limitations.md: missing translation 12-00-limitations.vi.md
+      ERROR 12-01-future-work.md: missing translation 12-01-future-work.vi.md
+      ERROR 13-00-genai-reflection.md: missing translation 13-00-genai-reflection.vi.md
+      ERROR 14-00-conclusion.md: missing translation 14-00-conclusion.vi.md
+      ERROR 15-references.md: missing translation 15-references.vi.md
+      ERROR 16-00-appendices.md: missing translation 16-00-appendices.vi.md
+      ERROR 16-01-context-stakeholders.md: missing translation 16-01-context-stakeholders.vi.md
+      ERROR 16-02-goal-kpis-decisions.md: missing translation 16-02-goal-kpis-decisions.vi.md
+      ERROR 16-03-aq-quality-revision.md: missing translation 16-03-aq-quality-revision.vi.md
+      ERROR 16-04-requirements-selection.md: missing translation 16-04-requirements-selection.vi.md
+      ERROR 16-05-dataset-gaps.md: missing translation 16-05-dataset-gaps.vi.md
+      ERROR 16-06-profile-quality.md: missing translation 16-06-profile-quality.vi.md
+      ERROR 16-07-preparation-leakage.md: missing translation 16-07-preparation-leakage.vi.md
+      ERROR 16-08-modeling-briefs.md: missing translation 16-08-modeling-briefs.vi.md
+      ERROR 16-09-evaluation-detail.md: missing translation 16-09-evaluation-detail.vi.md
+      ERROR 16-10-prototype-protocol.md: missing translation 16-10-prototype-protocol.vi.md
+      ERROR 16-11-reading-traceability.md: missing translation 16-11-reading-traceability.vi.md
+      ERROR 16-12-aq1-results.md: missing translation 16-12-aq1-results.vi.md
+      ERROR 16-13-aq2-results.md: missing translation 16-13-aq2-results.vi.md
+      ERROR 16-14-aq3-aq4-answers.md: missing translation 16-14-aq3-aq4-answers.vi.md
+      ERROR 16-15-limitations-future.md: missing translation 16-15-limitations-future.vi.md
+      ERROR 16-16-ai-decision-log.md: missing translation 16-16-ai-decision-log.vi.md
+      Checked 56 pairs (vi): 56 errors, 0 warnings
+
+8/10 steps passed; failed: milestone-5 translation vi, milestone-5 parity vi
+make: *** [precheck] Error 1
+exit 2
+## 2026-11-09T15:27:24Z $ grep -n -i 'earlier draft|revised|moved to|research/|logs/|code/|S[0-9]{3}|C[0-9]-[0-9]{3}|venv' reports/milestone-5/report/*.md (excluding 15-references)
+reports/milestone-5/report/16-09-evaluation-detail.md:55:The fairness rule FR1 flags a confirmatory group for review when its recall at capacity is more than 10
+reports/milestone-5/report/16-16-ai-decision-log.md:13:| M1 / M5 | Simulated stakeholders (five isolated personas answering an AI interviewer), sparring partner
+result: 2 hits, both 'moved' describing design changes in AQ revision content (16-09 l.55, 16-16 l.13); no repository path, source or claim ID
+## summary: precheck English steps 8/8 PASS (format 0 errors/4 pre-existing bold-wrap warnings, structure, style, abbreviations, citations 28/28 first-citation order, names, research_trail 35 sources/377 claims, research_layout); translation vi and parity vi FAIL as expected (no .vi.md twins yet). Citation order unchanged, finalize_refs --renumber not needed.
+## 2026-11-09T15:27:31Z $ make pages TASK=milestone-5 BUDGET=25
+6. Data Understanding and Data Quality               1.7     2.30   2.19  0.11   0.82
+7. Data Preparation and Analytic-ready Data          1.2     1.46   1.44  0.02   0.36
+8. Modeling and Analysis Strategy                    1.4     1.89   1.88  0.01   0.80
+9. Evaluation Design                                 1.3     1.72   1.67  0.05   0.57
+10. Experimental Implementation and Results          0.3     0.31   0.31 -0.00   0.00
+11. Findings, Discussion and Decision Support        3.5     4.67   4.47  0.20   1.05
+12. Limitations and Future Work                      0.9     1.13   1.12  0.01   0.30
+13. Generative AI Use and Reflection                 0.9     1.13   1.12  0.00   0.00
+14. Conclusion                                       0.7     1.69   0.86  0.84   0.00
+References                                           0.1     1.00
+Appendices                                          65.9   116.43
+main content                                        18.2    25.00  23.40  1.60   6.81
+main content: optimistic 18.2 pages, pessimistic 25.0 pages (plan with this); text 16.6, tables 6.8, layout gaps 1.6
+last main-text page 18% full: a cut saves a page only if it removes more than 0.18 of a page
+budget 25 pages: +0.0 pages (pessimistic), -6.8 (optimistic)
+exit 

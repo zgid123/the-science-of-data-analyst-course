@@ -1,0 +1,24 @@
+# Tóm tắt
+
+Sinh viên giảm dần mức tham gia học tập trong học phần trực tuyến thường chỉ được nhận ra khi đã muộn. Nhóm chúng em
+giải quyết vấn đề này cho một trường đại học Việt Nam, nơi giảng viên, giảng viên kiêm cố vấn học tập và phòng hỗ trợ
+sinh viên quyết định liên hệ với sinh viên nào ở mỗi đợt lập danh sách (D1), Trưởng chương trình đào tạo quyết định phân
+bổ thời gian hỗ trợ cho đâu (D2) và Ban Giám hiệu quyết định có mở rộng cách làm này hay không (D3). Vì chưa có bộ dữ
+liệu mở nào về các học phần ở Việt Nam, chúng em dùng Bộ dữ liệu phân tích học tập của Đại học Mở Anh (OULAD) làm bộ dữ
+liệu thay thế. Mỗi dấu hiệu sớm, tức dấu hiệu quan sát được trong bốn tuần đầu, chỉ dùng dữ liệu ghi nhận đến thời điểm
+chốt dữ liệu của đợt lập danh sách, nên không dấu hiệu nào dựa vào thông tin mà cán bộ chưa thể có vào lúc đó. Bốn câu
+hỏi phân tích (AQ) ứng với bốn loại phân tích: tỷ lệ các kết quả học tập và thời điểm sinh viên không hoàn thành bắt đầu
+bỏ lỡ bài (AQ1, mô tả); các dấu hiệu sớm tính đến hết tuần 4 (AQ2, chẩn đoán); mức độ ước lượng được việc không hoàn
+thành, so với quy tắc dấu hiệu sớm (AQ3, dự báo); và danh sách xếp hạng trong giới hạn số sinh viên cán bộ liên hệ được
+(AQ4, chỉ định). Chúng em đã chạy AQ1 và AQ2 trên 9 kỳ mở năm 2013 (kỳ mở – một lần mở module trong một học kỳ, ví dụ
+2013B). AQ3 và AQ4 mới dừng ở thiết kế thuộc Level 1, tức mức bắt buộc của Milestone 4 gồm chiến lược mô hình hóa và
+thiết kế đánh giá; hai câu hỏi này chưa được chạy. Trong 12.076 lượt đăng ký học mà sinh viên còn đăng ký học (chưa rút) tại ngày 14,
+tính từ ngày bắt đầu kỳ mở, 45,7% (44,8–46,6) không hoàn thành học phần; tỷ lệ này dao động từ 24,9% đến 57,5% giữa các
+kỳ mở. Ngoài ra, tính đến hết tuần 4 chỉ 19,6% sinh viên không hoàn thành đã bỏ lỡ một bài, nghĩa là dấu hiệu về bài nộp
+thường xuất hiện muộn. Khi so sánh trong cùng module, cả năm dấu hiệu sớm đều gắn với tỷ lệ không hoàn thành cao hơn;
+mạnh nhất là dấu hiệu bỏ lỡ một bài, với tỷ lệ không hoàn thành ở nhóm có dấu hiệu cao hơn nhóm không có 40,8 điểm phần
+trăm (37,7–43,9). Nhờ đó, D1 có lý do cụ thể bên cạnh mỗi tên trong danh sách, D2 có giả thuyết về nơi cần ưu tiên thời
+gian hỗ trợ, còn D3 có phương pháp đo lường, điều kiện mô hình phải đạt và quy trình kiểm tra công bằng. Các kết quả
+này là mối liên hệ, không phải quan hệ nhân quả; chúng chỉ dựa trên một năm dữ liệu của các module đào tạo từ xa ở Vương
+quốc Anh và cần được kiểm chứng lại trên dữ liệu của trường. Chúng em sẽ kiểm tra mô hình và đo tác động của hoạt động
+liên hệ trong giai đoạn tiếp theo.

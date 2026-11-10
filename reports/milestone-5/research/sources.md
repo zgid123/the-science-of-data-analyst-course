@@ -5,8 +5,8 @@ Seeds S001–S0nn come from the outline's reference list; new IDs are reserved p
 
 | ID | Folder slug | Source | URL | Outline item | Primary/secondary | Status | APA 7 entry |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| S001 | mth045-milestone5-brief-2026 | MTH045 – The Science of Data Analytics. (2026). Milestone P5: Final integration & project report [Course brief]. | milestones/05/milestone-5.md | 1 | primary | fetched | – |
-| S002 | kuzilek-2017-oulad-paper | Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learning Analytics dataset. Scientific Data, 4, 170171 | https://doi.org/10.1038/sdata.2017.171 | 2 | primary | fetched | – |
+| S001 | mth045-milestone5-brief-2026 | MTH045 – The Science of Data Analytics. (2026). Milestone P5: Final integration & project report [Course brief]. | milestones/05/milestone-5.md | 1 | primary | fetched | MTH045 – The Science of Data Analytics. (2026). *Milestone P5: Final integration & project report* [Course brief]. University of Science, VNU-HCM. |
+| S002 | kuzilek-2017-oulad-paper | Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learning Analytics dataset. Scientific Data, 4, 170171 | https://doi.org/10.1038/sdata.2017.171 | 2 | primary | fetched | Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University Learning Analytics dataset. *Scientific Data*, *4*, Article 170171. https://doi.org/10.1038/sdata.2017.171 |
 | S101 | n04-milestone1-report | N04 (2026). Milestone 1 report: business understanding and analytical questions (team's own submitted report) | reports/milestone-1/report/00-1-abbreviations.md | 1 | primary | fetched | – |
 | S102 | n04-milestone2-report | N04 (2026). Milestone 2 report: data requirements, dataset selection and acquisition (team's own submitted report) | reports/milestone-2/report/00-1-abbreviations.md | 1 | primary | fetched | – |
 | S103 | n04-milestone3-report | N04 (2026). Milestone 3 report: data understanding, quality and preparation (team's own submitted report) | reports/milestone-3/report/00-1-abbreviations.md | 1 | primary | fetched | – |
@@ -40,3 +40,38 @@ Seeds S001–S0nn come from the outline's reference list; new IDs are reserved p
 | S913 | luat-91-2025-qh15-cong-bao | Quốc hội (2025). Luật Bảo vệ dữ liệu cá nhân, Luật số 91/2025/QH15 (Công báo, official text) | https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45578/57730-1-2025971-97291-2025-qh15.pdf | new | primary | fetched | Quốc hội. (2025). *Luật Bảo vệ dữ liệu cá nhân, Luật số 91/2025/QH15* [Personal Data Protection Law, No. 91/2025/QH15]. Công báo. https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45578/57730-1-2025971-97291-2025-qh15.pdf |
 | S914 | luat-134-2025-qh15-tri-tue-nhan-tao | Quốc hội (2025). Luật Trí tuệ nhân tạo, Luật số 134/2025/QH15 (Law on Artificial Intelligence), full text | https://thuvienphapluat.vn/van-ban/Cong-nghe-thong-tin/Luat-Tri-tue-nhan-tao-2025-so-134-2025-QH15-679013.aspx | new | primary | fetched | Quốc hội. (2025). *Luật Trí tuệ nhân tạo, Luật số 134/2025/QH15* [Law on Artificial Intelligence, No. 134/2025/QH15]. https://static3.luatvietnam.vn/uploaded/others/2025/12/25/luat-134-2025-qh15_2512152052.docx |
 | S915 | moj-2026-qd-33-danh-muc-ai-rui-ro-cao | Bộ Tư pháp (2026). Ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao (Decision 33/2026/QĐ-TTg) [news notice, moj.gov.vn] | https://moj.gov.vn/portal/tin-tuc/chi-tiet/ban-hanh-danh-muc-he-thong-tri-tue-nhan-tao-co-rui-ro-cao-ti1fq907ea.html | new | primary | fetched | Bộ Tư pháp. (2026, July 2). *Ban hành Danh mục hệ thống trí tuệ nhân tạo có rủi ro cao* [Issuing the list of high-risk AI systems; Decision 33/2026/QĐ-TTg]. https://moj.gov.vn/portal/tin-tuc/chi-tiet/ban-hanh-danh-muc-he-thong-tri-tue-nhan-tao-co-rui-ro-cao-ti1fq907ea.html |
+
+## Reference map
+
+Numbered references of `report/15-references.md` and their source IDs (written by finalize_refs.py).
+
+| n | Source ID |
+| :---- | :---- |
+| 1 | S115 |
+| 2 | S116 |
+| 3 | S112 |
+| 4 | S001 |
+| 5 | S002 |
+| 6 | S906 |
+| 7 | S907 |
+| 8 | S913 |
+| 9 | S910 |
+| 10 | S900 |
+| 11 | S901 |
+| 12 | S903 |
+| 13 | S902 |
+| 14 | S904 |
+| 15 | S908 |
+| 16 | S905 |
+| 17 | S914 |
+| 18 | S915 |
+| 19 | S113 |
+| 20 | S909 |
+| 21 | S114 |
+| 22 | S110 |
+| 23 | S111 |
+| 24 | S117 |
+| 25 | S118 |
+| 26 | S119 |
+| 27 | S911 |
+| 28 | S912 |

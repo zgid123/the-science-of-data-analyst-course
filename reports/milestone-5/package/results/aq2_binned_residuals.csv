@@ -1,0 +1,25 @@
+binned_by,bin,n,observed,predicted,residual_pp,band_2se_pp,outside_band
+run,AAA 2013J,369,0.2466,0.2466,0.0,4.16,false
+run,BBB 2013B,1530,0.4758,0.4758,0.0,2.27,false
+run,BBB 2013J,1834,0.416,0.416,0.0,2.08,false
+run,DDD 2013B,1143,0.5547,0.5547,0.0,2.65,false
+run,DDD 2013J,1647,0.4973,0.4973,0.0,2.23,false
+run,EEE 2013J,927,0.343,0.343,0.0,2.84,false
+run,FFF 2013B,1454,0.4622,0.4622,0.0,2.39,false
+run,FFF 2013J,1983,0.4478,0.4478,0.0,2.04,false
+run,GGG 2013J,924,0.3593,0.3593,0.0,3.11,false
+activity_level,1 no clicks days 0-27,607,0.8105,0.7543,5.63,3.01,true
+activity_level,2 below half the run median,2568,0.6472,0.6216,2.56,1.74,true
+activity_level,3 half to the run median,2714,0.4668,0.5037,-3.68,1.82,true
+activity_level,4 median to twice the median,3447,0.3342,0.3151,1.91,1.53,true
+activity_level,5 twice the run median or more,2475,0.2715,0.2981,-2.65,1.8,true
+risk_decile,1,1181,0.1761,0.1972,-2.11,2.31,false
+risk_decile,2,1181,0.2498,0.2596,-0.98,2.55,false
+risk_decile,3,1181,0.2837,0.2836,0.01,2.62,false
+risk_decile,4,1181,0.3362,0.3125,2.36,2.7,false
+risk_decile,5,1181,0.3573,0.3535,0.38,2.78,false
+risk_decile,6,1181,0.4191,0.4182,0.09,2.87,false
+risk_decile,7,1181,0.4928,0.4654,2.74,2.9,false
+risk_decile,8,1181,0.5241,0.5371,-1.3,2.9,false
+risk_decile,9,1181,0.6892,0.6989,-0.96,2.64,false
+risk_decile,10,1182,0.912,0.9143,-0.23,1.61,false

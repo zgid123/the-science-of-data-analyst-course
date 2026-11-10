@@ -1,30 +1,21 @@
 # 7. Data Preparation and Analytic-ready Data
 
-The data understanding of Section 6 named the issues that could change a conclusion: duplicate click rows, the grain of the click table, missing deprivation bands, activity after withdrawal, the few tasks due by the cut-offs and the narrow population. Data preparation turns the seven raw tables into analytic-ready views in which each of those issues is handled by a decision with a reason, and in which no step leaks information from after the moment of prediction. Milestone 3 built this pipeline (Milestone 3, Sections 5–7), and the AQ1 and AQ2 analyses of Section 11 and the proposed AQ3 and AQ4 models all read its prepared views. The decisions and the pipeline follow; Section 7.1 covers the derived variables, encoding and leakage controls; and Section 7.2 the final prepared dataset, its validation and how it is reproduced.
-
-**Decisions before any change.** Before any record changed, every quality issue and preparation need received a decision with its rationale, its implementation and the validation check that would fail if the decision were not carried out. The Preparation Decision Matrix records these decisions; it covers the eight needs of the course template, from missing values to encoding and scaling, and four further needs of this project: the population of each table, activity after withdrawal, the sensitive attributes and the split into training and test runs. Table 7.1 gives the matrix, with the checks V01 to V15 of the validation script named in words.
+In Milestone 3 we built the pipeline that turns the seven raw tables into analytic-ready views, and every analysis
+reads them. Before any record changed, each issue received a decision with its reason and a validation check,
+V01 to V15, that fails if the decision is not carried out. Three decisions govern the result: nothing recorded is
+deleted or imputed in the views, every feature uses only events dated on or before its cut-off, and every learned
+parameter comes from the training runs alone. Table 7.1 is the Preparation Decision Matrix (Table A.17, Appendix VII,
+adds the reasons); the ten scripted steps of the pipeline and their counts are in Appendix VII.
 
 **Table 7.1. Preparation Decision Matrix**
 
-| Need | Decision | Reason | Validation check |
-| :---- | :---- | :---- | :---- |
-| Population (rule C09) | Keep all 32,593 enrolments in the enrolment view with flags for days 13, 14 and 27; feature views hold only the enrolments enrolled at their cut-off | The KPI counts students enrolled after the add-drop period; a list can only name students enrolled on the day it is drawn | Populations equal the profile (V01) |
-| Missing values (DQ04, DQ11–DQ14) | Deprivation band "Missing" as its own category; registration and withdrawal days left empty with an indicator; TMA score left empty; planned weeks not used | Missingness is informative (deprivation band), small or in an unused field; imputing would invent values the data do not hold | Missing counts after equal those before (V02); filling only from training rows (V12) |
-| Duplicates and keys (DQ01, DQ02) | Keep every click row; sum clicks by enrolment and day, and by week, before any join; de-duplicated twin of each click feature | The cause of exact duplicates cannot be decided; a row is a logging record, not one student-day | Keys unique in every view (V03); click totals reconcile (V04) |
-| Invalid category or type (DQ07, DQ12) | Band label corrected; ordered categories for bands; banked results separated and never timed | Labels must sort and match; day −1 is a placeholder for a carried-over result | Every category in its expected set (V05); no banked row in lateness or missed counts (V06) |
-| Outliers (DQ10, DQ16) | Keep every value | Heavy users, students on many modules and very late submissions are real; capping would change real totals | Ranges after equal those before (V07) |
-| Activity after withdrawal (DQ03) | Truncate engagement measures at the unregistration day | Activity after leaving is not engagement while enrolled and would blur AQ1 and AQ2 | No click or submission counted after the unregistration day (V08) |
-| Table integration (DQ02, DQ17) | Left joins from the enrolment table after summing each table to the target grain; zero counts for no activity | Inner joins would drop 3,365 enrolments; a direct join of submissions and clicks would return 89,347,197 rows | Rows equal the left table after every join (V09); enrolments without activity kept with zero (V10) |
-| Derived features (DQ08, DQ09, DQ18) | Task counts over TMA and CMA only, unweighted; lateness from due and submission days; CMA marks known by the cut-off; early-sign rule C10; activity relative to the run's median | No exam results in five modules; weights differ by module; TMA marks have no release day; the rule must fire in every run | Features recomputed from raw by separate code, with unit tests for every formula (V11) |
-| Temporal aggregation | Weeks of seven days from day 0; cut-offs at day 13 and day 27; activity before day 0 as its own window | The prediction points are fixed by decision D1; activity before the start is known at the cut-off | Recount without the date filter differs only where later clicks exist (V13) |
-| Encoding and scaling | Views keep original scales and labels; transforms learned from training rows only | A test run must never inform a parameter | Parameters unchanged when test rows are altered (V12) |
-| Sensitive attributes | Gender, age band, disability, deprivation band and region kept in every view as audit columns, outside every predictor set | The fairness audit needs them; their use as predictors is a policy choice | Every column has a role; no audit column among the predictors (V14) |
-| Split | Training on the 2013 runs, test on the 2014 runs; flags for paired runs and for test students seen in 2013 | The claim is prediction for a later run | No run in both partitions; flags recomputed (V15) |
-
-**Three governing decisions.** Three decisions shape the prepared data most. Nothing that was recorded is deleted or imputed in the prepared views, so every count can be traced back to the raw files, and only model fitting fills or scales values. Every feature is built only from events dated on or before its cut-off, so no information from after the moment of prediction reaches a model. And every parameter learned from the data, such as a median or a scale, comes from the training runs alone, so the test runs remain an independent check.
-
-**Population rule.** The population rule (C09) counts an enrolment as enrolled on a given day when the student registered by that day, or the registration day is unknown, and had not unregistered by it. The rule removes the 58 late registrants from the day-14 population and leaves 28,061 enrolments in the KPI population over the 22 runs; the same rule gives 28,069 enrolments at day 13 and 27,535 at day 27. Applied to the 9 runs of 2013, it gives the 12,076 enrolments of the AQ1 primary denominator and the 11,811 enrolments of the AQ2 population (Table 6.1).
-
-**Missing values and outliers.** Missing values stay missing in the views: the deprivation band keeps "Missing" as a category, the registration and withdrawal days carry indicators, and median filling of the registration lead happens only inside model fitting, with the median taken from training rows. Outliers stay as recorded, including the 6,977-click record, the 655-credit study load and submissions up to day 608, and counts are log-transformed only where a model is sensitive to scale.
-
-**Integration and steps.** Integration starts from the enrolment table, which holds one row for each of the 32,593 enrolments, and adds every other table through left joins after summing it to the enrolment, so that no enrolment is lost and no row is multiplied; all 25 joins kept their input rows. The preparation runs in ten scripted steps with no manual step. They check the raw tables against their checksums, select the populations, correct 3,516 deprivation band labels written in a second form, sum the 10,655,280 click rows into 1,808,119 enrolment-day records, flag the uncertain records, leave out the 98,745 clicks after withdrawal, integrate 286,898 enrolment-task rows, build the features at both cut-offs and write the prepared views with their documentation. Section 7.1 describes the variables these steps derive.
+| Need | Decision | Check |
+| :---- | :---- | :---- |
+| Population | Flags for days 13, 14 and 27 (C09); views hold those enrolled at the cut-off | V01 |
+| Missing values | "Missing" category or indicator; no imputation | V02, V12 |
+| Duplicates, keys, integration | Every row kept; clicks summed by day; left joins from the enrolments | V03, V04, V09, V10 |
+| Invalid values, outliers | Labels corrected; banked results untimed; every value kept | V05–V07 |
+| Activity after withdrawal | Truncated at the unregistration day | V08 |
+| Derived features | TMA and CMA tasks; early-sign rule (C10); activity against the run median | V11 |
+| Time, encoding | Cut-offs at days 13 and 27; transforms learned on training rows | V12, V13 |
+| Sensitive attributes, split | Audit columns outside the predictors; train 2013, test 2014 | V14, V15 |

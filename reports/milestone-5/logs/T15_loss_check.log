@@ -1,0 +1,239 @@
+## 2026-11-09T15:06:29Z T15 loss check after the restorations
+$ venv/bin/python reports/milestone-5/code/t15_loss_check.py
+current report files: 51 (01-00-introduction-context.md … 16-16-ai-decision-log.md)
+draft units checked: sentence 990, row 329, heading 47, label 63
+unmatched: 137 (label 4, row 22, sentence 111)
+
+### 01-00-introduction-context.md
+[1] sentence: Our project asks how a university can see this drift early enough to offer help within the same semester, using only records it already holds.
+[2] sentence: Section 1.1 explains why the problem matters and who would use the results, and Section 1.2 fixes the scope and the project objective.
+
+### 01-01-motivation-stakeholders.md
+[3] sentence: The late moment of notice described in Section 1 matters because support works only while a student can still catch up, and because the people who could give that support each see a different part of the picture.
+[4] sentence: The problem is therefore worth analysing for two reasons: the records that could show the drift early already exist, and several groups of staff would act on them if they had them in a usable form.
+
+### 01-02-scope-objective.md
+[5] sentence: The stakeholder needs of Section 1.1, a short and timely list for staff and a view of where students are lost for the program, set the boundaries of the project: what lies inside and outside them, the objective we pursue, the data that stand in for the university's records, and how far the project has gone.
+[6] sentence: Our objective is to turn records the university already holds into two things staff do not have today: a short, timely list of students to contact at each review point, with an observed reason for each name, and patterns by course and student group that show the program where and when students are lost.
+[7] sentence: The objective serves the Business Goal of Section 2, to improve successful course completion by identifying students who stop taking part early enough to support them within the semester.
+[8] label: **How far the project goes.**
+[9] sentence: The four analytical questions of Section 3 run from description to a ranking for action: AQ1 describes how enrolments end, AQ2 examines which early signs go with non-completion, AQ3 tests how well non-completion can be predicted early, and AQ4 ranks students on a list of fixed length.
+[10] sentence: Milestone 4 completed the mandatory Level 1 for all four questions, that is, the modeling strategy, candidate methods, rationale and evaluation design, and specified a Level 2 experiment as a protocol without running it, a choice of scope explained in Section 10.
+[11] sentence: On this basis we analysed AQ1 and AQ2 on the 9 module runs of 2013, the development years of the design, following the analysis plan that Milestone 4 fixed before any result was seen; the 13 runs of 2014 stay unopened, because they form the single test set of AQ3, and the only 2014 figures used are the outcome counts per run that Milestone 3 had already published.
+[12] sentence: AQ3 and AQ4 are therefore reported as proposals with their expected outputs, in the proposal tense, and no model metric is reported for them (Sections 8–11).
+[13] label: **The project as one chain.**
+[14] sentence: Figure 1.1 shows the logic chain of the project in eleven links, from the stakeholder problem and the measurable goal set in Milestone 1, through the required data and the selected dataset of Milestone 2, the data fit and the prepared data of Milestone 3, and the candidate methods and evaluation design of Milestone 4, to the findings and the educational decisions of Milestone 5.
+[15] sentence: Each link in Figure 1.1 hands its result to the next, and Sections 2 to 11 follow the same order.
+[16] sentence: Section 2 begins the chain with the Business Goal, the SMART Goal and the indicators that show whether the goal is being met.
+
+### 02-00-business-understanding.md
+[17] sentence: The objective of Section 1.2, a timely contact list and a view of where students are lost, is a means to an outcome for the university.
+[18] sentence: Section 2 states that outcome as a Business Goal, makes it measurable as a SMART Goal, and Section 2.1 adds the indicators that track it and the decisions it supports.
+[19] sentence: The SMART Goal (specific, measurable, achievable, relevant and time-bound) fixes what is measured, for whom and by when.
+[20] sentence: The scenario gives no real completion rate for the university, so the baseline is an assumption, marked as such and replaced by the real rate before any target is committed:
+
+### 02-01-kpis-decisions.md
+[21] sentence: The SMART Goal of Section 2 is read only at the end of each semester, which is too late to steer the support process that should produce it.
+[22] sentence: We therefore track the goal with one primary key performance indicator (KPI), which measures the goal itself, and two secondary KPIs, which show during the semester whether the contact process behind the goal works.
+[23] label: **The final SMART/KPI table.**
+[24] sentence: Table 2.2 brings the goal and its three indicators together in their final form, with the timing and source of each and its status on OULAD.
+[25] row: | SMART Goal | Completion of students enrolled after add-drop in the pilot courses rises from the recounted baseline (assumed 70%) by five points (assumed 75%) by the end of 2027–2028 | Pilot courses pooled over 2027–2028; baseline recounted for 2024–2025 and 2025–2026 | Not measurable on OULAD; the pilot measures it |
+     cells not found: completion of students enrolled after add-drop in the pilot courses rises from the recounted baseline (assumed 70%) by five points (assumed 75%) by the end of 2027–2028 || pilot courses pooled over 2027–2028; baseline recounted for 2024–2025 and 2025–2026 || not measurable on oulad; the pilot measures it
+[26] row: | Primary KPI: course completion rate | Enrolments ending in a pass over enrolments after add-drop; fail and withdrawal are non-completion; leave and transfer leave the denominator | End of each semester; academic management system | Proxy: completion (Pass or Distinction) of the enrolments registered at day 14; 28,061 over 22 runs, 12,076 in the 2013 runs |
+     cells not found: enrolments ending in a pass over enrolments after add-drop; fail and withdrawal are non-completion; leave and transfer leave the denominator || end of each semester; academic management system || proxy: completion (pass or distinction) of the enrolments registered at day 14; 28,061 over 22 runs, 12,076 in the 2013 runs
+[27] row: | Secondary KPI 1: early-sign contact rate | Students meeting the early-sign rule (C10) at the end of week 4 contacted by the end of week 5, over students meeting the rule; no target until the pilot | Week 6; LMS and academic records for the rule, contact record for the contact | Sign part computable (rule flags 28.8% of the 27,535 enrolments at day 27); contact part measured only in the pilot |
+     cells not found: students meeting the early-sign rule (c10) at the end of week 4 contacted by the end of week 5, over students meeting the rule; no target until the pilot || week 6; lms and academic records for the rule, contact record for the contact || sign part computable (rule flags 28.8% of the 27,535 enrolments at day 27); contact part measured only in the pilot
+[28] row: | Secondary KPI 2: follow-up rate | Students on a contact list contacted within seven days, over students on the list | One week after each review point; contact record | Measured only in the pilot |
+     cells not found: students on a contact list contacted within seven days, over students on the list || one week after each review point; contact record
+
+### 03-00-analytical-questions.md
+[29] sentence: The three decisions of Section 2.1 need evidence of four kinds: what happened, which signs go with it, whether it can be foreseen, and whom to list first.
+[30] sentence: Four analytical questions (AQ1–AQ4) supply that evidence, one at each analytics level, and they form one path from understanding the situation to supporting action, each question handing its result to the next.
+[31] sentence: Table 3.1 gives the four questions in their final wording, with their level, scope, the decision each supports and their final status.
+[32] sentence: The scope column uses the time frame of OULAD: a semester becomes a module run, week n spans days 7(n−1) to 7n−1 from the start of the run, and the data cut-offs of the week-3 and week-5 lists fall on day 13 and day 27.
+[33] sentence: The status column uses the scale of the course brief, explained after the table.
+[34] row: | AQ1 | Descriptive | What share of enrolments end in pass, fail or withdrawal, by module, run, start month and year, and in which week non-completers first miss an assessed task? | Enrolments registered at day 14; computed on the 9 runs of 2013; year comparison from the 2014 outcome counts published in Milestone 3 | D2, D3 | Partial |
+     cells not found: enrolments registered at day 14; computed on the 9 runs of 2013; year comparison from the 2014 outcome counts published in milestone 3
+[35] row: | AQ2 | Diagnostic (association only) | Which signs recorded by the end of week 4 (missed and late tasks, inactivity, activity against the run's median) go with later non-completion, compared within each module? | Enrolments registered at day 27; signs dated up to day 27; the 9 runs of 2013, with replication on the 13 runs of 2014 after the AQ3 test | D2; the reason shown with each name in D1 | Partial |
+     cells not found: enrolments registered at day 27; signs dated up to day 27; the 9 runs of 2013, with replication on the 13 runs of 2014 after the aq3 test || d2; the reason shown with each name in d1
+[36] row: | AQ4 | Prescriptive (ranking under capacity) | Which enrolments should rank first on a list of an assumed capacity, with what gain over a random list and what recall, overall and by deprivation band and disability? | Per run and cut-off on the 2014 test runs; lists of 3 or 5 per group of 20 students | D1; the choice of contact deferred to the pilot | Deferred |
+     cells not found: per run and cut-off on the 2014 test runs; lists of 3 or 5 per group of 20 students || d1; the choice of contact deferred to the pilot
+
+### 03-01-aq-quality-check.md
+[37] sentence: The final questions of Table 3.1 carry every decision of the project, so each must be precise enough to be settled by data.
+[38] sentence: The course brief requires every analytical question to be clear, specific, scoped, data-oriented and answerable, and we apply these criteria to the final wording with the following meanings.
+[39] sentence: A question is clear when it asks one thing that a reader of the question can restate; specific when it names its measure or target and the groups it compares; scoped when it fixes its population, courses and period; data-oriented when it names the data it needs; and answerable when those data can settle it.
+
+### 03-02-aq-revision-log.md
+[40] sentence: The final questions of Table 3.1 differ from the questions proposed in Milestone 1, because the proposal was written for the university's own records and the analysis runs on an open stand-in dataset.
+[41] sentence: Every difference is traced to a finding in the data and to an entry of the Controlled Change Log, the numbered list of every change to the proposal with its reason (entries C01–C17, given in full in the appendices).
+[42] sentence: The AQ Revision Log below records, for each question, its Milestone 1 wording, the finding from Milestones 2 and 3 that forced a change, the final wording, the action on the brief's scale (Keep, Modify, Defer or Drop), the reason and the effect on the method.
+
+### 04-00-data-requirements.md
+[43] sentence: The questions of Section 3 decide which data the project needs, and the data were chosen to fit those questions rather than the other way round.
+[44] sentence: We first stated the requirements as concepts, in the terms of the university's own records, and only then searched for an open dataset (Section 4.1).
+
+### 04-01-dataset-selection.md
+[45] sentence: The requirements and gates of Section 4 decided what the dataset search looked for.
+
+### 05-00-dataset-description.md
+[46] sentence: The dataset selected in Section 4.1 must now be described as it really is, because the questions can be answered only as far as its tables allow.
+[47] sentence: Section 5 describes the files, keys, sample, variables and coverage of OULAD, and Section 5.1 sets each question against these data.
+[48] sentence: Table 5.2 is a short data dictionary of the variables on which the questions rest; the full data dictionary of the prepared data accompanies the Final Project Package.
+[49] row: | final_result | studentInfo | The student's final result in the module run: Pass, Distinction, Fail or Withdrawn | Target of all four |
+     cells not found: the student's final result in the module run: pass, distinction, fail or withdrawn
+[50] row: | code_module, code_presentation | all student tables | Module code (AAA–GGG) and run code (year and start month) | All four |
+     cells not found: all student tables || module code (aaa–ggg) and run code (year and start month)
+[51] row: | date_registration, date_unregistration | studentRegistration | Days of registration and unregistration relative to day 0; unregistration empty for students who did not withdraw | Population at each day; withdrawal timing |
+     cells not found: days of registration and unregistration relative to day 0; unregistration empty for students who did not withdraw || population at each day; withdrawal timing
+[52] row: | assessment_type, date | assessments | Kind of task (TMA, CMA, exam) and its due day | AQ1–AQ3 |
+     cells not found: kind of task (tma, cma, exam) and its due day
+[53] row: | date_submitted, score | studentAssessment | Submission day and score from 0 to 100, below 40 read as a fail | AQ1–AQ3 |
+     cells not found: submission day and score from 0 to 100, below 40 read as a fail
+[54] row: | sum_click, date | studentVle | Number of clicks on one page in one day | AQ2, AQ3 |
+     cells not found: number of clicks on one page in one day
+[55] row: | num_of_prev_attempts, studied_credits | studentInfo | Earlier attempts at the same module; credits studied in the run | AQ2 adjustment; AQ3 predictors |
+     cells not found: earlier attempts at the same module; credits studied in the run || aq2 adjustment; aq3 predictors
+[56] row: | imd_band, disability | studentInfo | Deprivation band of the home area; declared disability | Group checks of AQ2–AQ4, never predictors |
+     cells not found: group checks of aq2–aq4, never predictors
+
+### 06-00-data-understanding.md
+[57] sentence: The requirement–data fit of Section 5 established that OULAD can carry the four final questions once each is measured on module runs and enrolments; before any question is answered, the data themselves must be understood well enough to know which of their features could change a conclusion.
+[58] sentence: Milestone 3 profiled every raw table for this purpose (Milestone 3, Sections 2–3), and its findings are restated here in the terms the analysis uses: the unit, the outcome, time, the balance of the outcome and the shape of the main measures.
+[59] sentence: Section 6.1 then turns the profile into quality findings, and Section 6.2 covers temporal coverage, representativeness and the sensitive fields.
+[60] sentence: The analyses of Milestone 5 and the proposed models use the 9 runs of 2013 as development data and keep the 13 runs of 2014 for a single test (Section 9.1).
+[61] sentence: Table 6.1 gives the populations that every later number refers to, with the outcome share where it is used.
+[62] row: | All 2013 enrolments | Every enrolment of the 9 runs of 2013 | 13,529 | 6,959 (51.4%) | AQ1, second denominator |
+     cells not found: every enrolment of the 9 runs of 2013
+[63] row: | 2013, registered at day 14 | KPI population rule applied to 2013 | 12,076 | 5,515 (45.7%) | AQ1, primary denominator |
+     cells not found: kpi population rule applied to 2013
+[64] row: | 2013, registered at day 13 | Population at the first cut-off | 12,080 | 5,519 | AQ3 development, day 13 |
+     cells not found: population at the first cut-off
+[65] row: | 2013, registered at day 27 | Population at the second cut-off | 11,811 | 5,245 (44.4%) | AQ2; AQ3 development, day 27 |
+     cells not found: population at the second cut-off
+[66] row: | 2013, day 27, runs with a task due | The 7 runs of 2013 with a task due by day 27 | 9,960 | – | AQ2 task-based signs |
+     cells not found: 2013, day 27, runs with a task due || the 7 runs of 2013 with a task due by day 27
+[67] row: | 2014 test, registered at day 13 | 13 runs of 2014 | 15,989 | not opened | AQ3 and AQ4 test, day 13 |
+     cells not found: 2014 test, registered at day 13 || aq3 and aq4 test, day 13
+[68] row: | 2014 test, registered at day 27 | 13 runs of 2014 | 15,724 | not opened | AQ3 and AQ4 test, day 27 |
+     cells not found: 2014 test, registered at day 27 || aq3 and aq4 test, day 27
+[69] sentence: The 2014 outcomes stay unopened in every row, because they form the independent test of the predictive question (Section 9.1).
+[70] sentence: Which data problems could change a conclusion drawn from these populations is the question Section 6.1 answers, issue by issue.
+
+### 06-02-representativeness-sensitive.md
+[71] sentence: The quality findings of Section 6.1 settle which records can be used as they stand; three further properties of the data decide how far any result can travel: when the data were recorded, whom they represent, and which fields describe protected groups.
+
+### 07-00-preparation-pipeline.md
+[72] sentence: The data understanding of Section 6 named the issues that could change a conclusion: duplicate click rows, the grain of the click table, missing deprivation bands, activity after withdrawal, the few tasks due by the cut-offs and the narrow population.
+[73] sentence: Data preparation turns the seven raw tables into analytic-ready views in which each of those issues is handled by a decision with a reason, and in which no step leaks information from after the moment of prediction.
+[74] sentence: Milestone 3 built this pipeline (Milestone 3, Sections 5–7), and the AQ1 and AQ2 analyses of Section 11 and the proposed AQ3 and AQ4 models all read its prepared views.
+[75] sentence: The decisions and the pipeline follow; Section 7.1 covers the derived variables, encoding and leakage controls; and Section 7.2 the final prepared dataset, its validation and how it is reproduced.
+
+### 07-01-features-leakage.md
+[76] sentence: The pipeline of Section 7 integrates the tables at the enrolment grain; the variables derived from them are what the four questions actually use, and each must be built from information that existed at its cut-off.
+[77] sentence: The timing rule, the derived variables, the predictor sets, the encoding and the controls against each form of leakage follow in turn.
+
+### 07-02-prepared-dataset.md
+[78] sentence: The decisions of Section 7 and the variables of Section 7.1 produce one versioned prepared dataset, which every analysis of this project reads; it must be shown to change nothing without a rule, to document every column, and to be rebuildable by anyone from the public download.
+
+### 08-00-modeling-strategy.md
+[79] sentence: The prepared dataset of Section 7 fixes what each question can use; the modeling strategy fixes how each question is answered, by mapping it to an analytics type, a technical task, a baseline, candidate methods and a primary proposal with its rationale.
+[80] sentence: Milestone 4 designed this strategy at Level 1, the compulsory level of the course: methods and their evaluation were specified, and no model was trained (Milestone 4, Sections 2–3).
+[81] sentence: In Milestone 5 we ran the descriptive and diagnostic analyses of AQ1 and AQ2 on the 9 runs of 2013 exactly as specified, and Section 11 reports their results; the predictive and ranking questions AQ3 and AQ4 remain proposals, written in the proposal tense, with no model metric.
+
+### 08-01-candidate-methods.md
+[82] sentence: The Modeling Briefs of Section 8 fix the technical task of each question; each task now receives the baseline that any method must beat, its candidate methods and a primary proposal with its reason, chosen by criteria rather than by the popularity of an algorithm.
+[83] sentence: Table 8.2 is the Model and Method Selection Matrix: for each question it runs from the analytics type through the technical task, the baseline and the candidate methods to the primary proposal and its rationale.
+
+### 09-00-evaluation-design.md
+[84] sentence: The methods of Section 8 say how each question is answered; the evaluation design says how we know whether an answer is good enough for the decision it supports.
+[85] sentence: It was fixed in Milestone 4 before any code ran, which rules out choosing metrics or thresholds after the results are seen (Milestone 4, Section 4).
+[86] sentence: For AQ1 and AQ2 the design has now been applied to the 2013 runs, and Section 11 reports whether their criteria were met; for AQ3 and AQ4 it is the evaluation that the proposed model and ranking would undergo, and no metric value exists yet.
+[87] sentence: Table 9.1 summarises the Evaluation Plan for the four questions: the primary metric, the baseline it is compared with, the validation, and the success criterion fixed in advance.
+[88] sentence: Section 9.1 gives the full validation design and criteria, and Section 9.2 the leakage, fairness and interpretability checks.
+
+### 09-01-validation-success.md
+[89] sentence: The Evaluation Plan of Section 9 names one primary metric and one success criterion per question; the validation behind each and the reasons for the thresholds follow, question by question.
+
+### 09-02-fairness-interpretability.md
+[90] sentence: The validation design of Section 9.1 decides whether the proposed model beats the rule; three further checks decide whether its result can be trusted and used: that no test information leaked into it, that its errors do not fall unfairly on a group of students, and that staff can see why a student is listed.
+
+### 10-00-experimental-status.md
+[91] sentence: The evaluation design of Section 9 is complete for all four questions, and its implementation status differs between them.
+[92] sentence: This project completed Level 1 of the modeling stage, the compulsory level: the modeling strategy of Section 8 and the evaluation design of Section 9.
+[93] sentence: The optional Level 2 prototype, a predictive experiment for AQ3 and AQ4, was specified in full in Milestone 4 as a protocol and has not been run (Milestone 4, Section 7).
+[94] sentence: No model has been trained, so no model performance, metric, chart or confusion matrix exists for AQ3 or AQ4; their expected outputs are described in Section 11.4.
+[95] sentence: Leaving the prototype unrun is our choice of scope, for two reasons.
+[96] sentence: The brief makes Level 2 optional, so Level 1 completes the modeling stage.
+[97] sentence: In addition, the 13 runs of 2014 are the project's only independent test and can be used once: we keep them for one complete run of the frozen protocol, from the baselines to the logged test, so that no 2014 result is seen before the model is frozen, and a partial early run would spend that test.
+[98] label: **What was computed instead.**
+[99] sentence: In Milestone 5 we ran the AQ1 and AQ2 analyses on the 9 runs of 2013, following the methods and criteria that Milestone 4 fixed before any result.
+[100] sentence: These are descriptive and diagnostic analyses, grouped rates with intervals and an association model, not the Level 2 modeling prototype: they train no predictive model, open no 2014 outcome and make no claim about how well non-completion can be predicted.
+[101] sentence: Their results are reported with the findings, in Section 11.2 for AQ1 and Section 11.3 for AQ2, and their methods are those of Section 8.1.
+[102] sentence: On the brief's scale the project therefore stands at Level 1: the AQ1 and AQ2 analyses are the analysis results of this report, not a Level 2 experiment.
+
+### 11-00-findings-overview.md
+[103] sentence: Section 10 states that no predictive prototype has been run, so the evaluation design of Section 9 stays a proposal for the two predictive and prescriptive questions.
+[104] sentence: In contrast, the descriptive question (AQ1) and the diagnostic question (AQ2) needed no model training and no access to the 2014 test runs, so we ran them on the 9 module runs of 2013 exactly as Milestone 4 had fixed them before any result existed (Sections 8.1 and 9.1).
+[105] sentence: The findings return to the four final Analytical Questions of Section 3 and answer each one at the level of evidence the project actually reached: AQ1 and AQ2 with real results on their stated populations, AQ3 and AQ4 with the outputs they are expected to produce and the success criteria that would decide them.
+[106] sentence: Building on these answers, Section 11.5 relates them to the decisions the results can support for the program manager, the lecturer-advisors and the support office (D1–D3, Section 2.1).
+[107] sentence: The confidence given to each answer uses three grades.
+[108] sentence: High means that the counts are verified by two independent computations on the stated population, so the answer is computationally verified for that population; it says nothing about validity for the university's courses.
+[109] sentence: Moderate means that the estimates keep their direction under every check run, while they rest on one year, on a model whose fit has a known weakness or on associations that unrecorded reasons could explain.
+[110] sentence: Not applicable means that no result exists yet.
+[111] sentence: The Final Project Traceability Matrix in Section 11.1 places these four answers on the full chain from goal to decision.
+[112] sentence: Sections 11.2 and 11.3 then report the AQ1 and AQ2 results, Section 11.4 the expected outputs of AQ3 and AQ4, and Section 11.5 the answers side by side with the decisions they support.
+
+### 11-01-traceability-matrix.md
+[113] sentence: Table 11.2 gives the compact matrix; the full matrix, with each cell written out, is placed in the appendices.
+[114] sentence: Final Project Traceability Matrix (compact)**
+[115] sentence: Taken together, the matrix shows a project whose descriptive and diagnostic questions are answered on real data for one year, and whose predictive and prescriptive questions are fully designed but wait for one logged test.
+[116] sentence: Sections 11.2 and 11.3 give the AQ1 and AQ2 results behind the first two rows.
+
+### 11-02-aq1-findings.md
+[117] sentence: Figure 11.1 shows non-completion in each of the 9 runs of 2013 for the day-14 population, with its 95% Wilson interval and the pooled 2013 rate of 45.7% (5,515 of 12,076) as a reference line.
+
+### 11-03-aq2-findings.md
+[118] sentence: Figure 11.2 sets the unadjusted and mutually adjusted risk differences side by side for each sign, with the population behind each estimate (task signs in 7 runs, n = 9,960; click signs in 9 runs, n = 11,811, registered at day 27).
+
+### 11-05-decision-support.md
+[119] sentence: Sections 11.2 to 11.4 answered each final question at the level of evidence it reached: AQ1 and AQ2 with real results on the 2013 runs, AQ3 and AQ4 with expected outputs and fixed criteria.
+[120] sentence: The four answers are set here side by side with the evidence, method, confidence and implication of each, and are then turned into support for the three decisions of Section 2.1: whom to contact at each review point (D1), where to place support time each semester (D2) and whether to extend the approach to all courses (D3).
+
+### 12-00-limitations.md
+[121] sentence: Building on this log, Section 12.1 sets out the work and the data that would turn the deferred and untested parts into answers.
+
+### 14-00-conclusion.md
+[122] sentence: From this goal came four final questions: how many enrolments end without completion and when non-completers first miss a task (AQ1, descriptive), which early signs go with non-completion (AQ2, diagnostic), how well non-completion can be estimated at the end of weeks 2 and 4 against a simple rule (AQ3, predictive), and whom a list of limited capacity should name first (AQ4, prescriptive ranking), each tied to the contact, support-time and extension decisions D1–D3 (Sections 3 and 11.1).
+[123] sentence: No open dataset of Vietnamese courses exists, so the Open University Learning Analytics Dataset stands in for the university's records, with a dated final result, dated tasks and daily platform activity for every enrolment (Sections 4 and 5).
+[124] sentence: It holds no delivery mode, year of study, attendance, staff capacity or contact record, so the comparisons by delivery mode and year of study, the attendance sign and the choice of contact have no data to test (Sections 5.1 and 12).
+[125] sentence: The prepared version of the data, with every sign dated on or before its cut-off and the 2014 runs kept apart as a test set, makes the remaining questions answerable without leakage (Section 7).
+[126] sentence: The appropriate analysis differs by question, and its weight differs accordingly.
+[127] sentence: For AQ1, grouped rates with intervals under a fixed denominator answer the question directly, and on the 9 runs of 2013 they show that 45.7% (44.8–46.6) of the 12,076 enrolments still registered at day 14 did not complete, with rates from 24.9% to 57.5% between runs and a rate that can move by up to 9.9 points with the denominator alone (Section 11.2).
+[128] sentence: For AQ2, a within-run logistic regression read as an association shows that all five early signs go with later non-completion, a missed task by 40.8 points (37.7–43.9) after adjustment for the others, in the same direction across modules and under every sensitivity run, including a continuous adjustment for activity that shrinks the click signs (Section 11.3).
+[129] sentence: For AQ3 and AQ4, a penalised logistic model judged once against the early-sign rule on the 2014 runs, and a capacity-limited list audited for fairness, are the appropriate methods, and their outputs remain expected rather than measured (Section 11.4).
+[130] sentence: Non-completion in the OULAD modules of 2013 was common, varied strongly between runs and start months, and showed in missed tasks mostly after week 4, so an early list cannot rest on missed tasks alone; the inactivity signs that the early-sign rule adds go with later non-completion beyond what missed tasks show (Section 11.3), and how many later non-completers the rule's list reaches is measured with the rule baseline of the AQ3 test.
+[131] sentence: The early signs identify students with clearly higher rates of non-completion within module runs and can serve as reasons that staff check beside each name.
+[132] sentence: What cannot be concluded is that these signs cause non-completion, that a model ranks students better than the rule, or that contacting a listed student raises completion: a regression capturing associations is descriptive rather than causal [S900], questions of effectiveness need a randomised experiment [S904], and even the Open University's own evaluation of predictive learning analytics warns against a causal reading [S112].
+[133] sentence: Every rate and association describes UK distance-learning modules of 2013–2014 and must be recounted on the university's own records before it guides a decision (Section 12).
+[134] sentence: The next step follows from this boundary.
+[135] sentence: The predictive test of AQ3 runs once on the 2014 runs under the protocol frozen in Milestone 4, followed by the AQ4 list with its fairness audit and the 2014 replication of AQ2 (Section 12.1).
+[136] sentence: At the university, the baseline completion rate is recounted under the add-drop rule, the list is classified under Vietnam's rules on high-risk AI use, and a randomised pilot with contacts and outcomes logged answers the question that no open dataset can: whether, and for whom, early contact improves completion (Sections 11.5 and 12.1).
+[137] sentence: The early-sign rule is defined and interpretable, its parts go with later non-completion in 2013, and its list performance is measured as a baseline of the AQ3 test before the pilot relies on it; the signs as reasons and the AQ1 measure of completion are ready to be checked on the university's records and used in the pilot.
+exit 0
+
+## 2026-11-09T15:20:00Z Review of the 137 unmatched units (by hand, item numbers as above)
+
+Before review the first pass (measure-4 state, before restorations) left 135 content units unmatched; five of them
+carried facts present nowhere in the current report and were restored in the appendices (class D). After that, 137
+units remain unmatched (113 content units, 4 run-in labels, 22 table rows split per row); every one is classed below.
+No fact, number or reason is missing.
+
+| Class | Items | Resolution, and where the fact now lives |
+| :---- | :---- | :---- |
+| A. Signposting or transition, no fact of its own | 1, 2, 3, 5, 15, 16, 17, 18, 29, 33, 37, 40, 42, 43, 45, 46, 47, 57, 59, 61, 70, 71, 72, 75, 76, 77, 78, 79, 82, 84, 88, 89, 90, 91, 103, 105, 106, 111, 112, 113, 116, 119, 120, 121, 126, 134; labels 8, 13, 23, 98; caption fragment 114 | Cut: they announce the next section or table; the main text keeps the order of Sections 1–14 and introduces each table in the sentence before it |
+| B. Reworded or merged in the main text | 4 (1.1 first sentence); 6, 7 (1.2 objective; Section 2 goal); 9 (Table 3.1); 10, 12, 92–96, 99–102 (Section 10); 11 (1.2, 11.2, 16-00 intro: 2014 outcomes only as Milestone 3 published them); 14 (1.2, Figure 1.1); 19, 20 (Section 2); 21, 22, 24 (2.1); 30, 31 (Section 3; week n = days 7(n−1) to 7n−1 in Appendix III); 38, 39 (3.1); 41 (3.2); 48 (5, Table 5.1 intro); 58, 60, 69 (Section 6); 73, 74 (Section 7); 80, 81 (Section 8); 83 (8.1); 86, 87 (Section 9); 104, 107–110 (Section 11 confidence grades); 115 (11.1); 117 (11.2 Figure 11.1 sentence and caption); 118 (11.3 Figure 11.2 sentence and caption); 122, 123, 125, 129, 131, 133, 135–137 (Section 14, rewritten from Sections 2–12) | Fine: the fact is stated in other words in the place named |
+| B. Table rows kept in compact form | 25–28 (Table 2.1; full KPI definitions, the recount years 2024–2025 and 2025–2026 and "fail and withdrawal are non-completion" in Appendix II and Section 6); 34–36 (Table 3.1; year comparison from the published 2014 counts in 11.2 and Appendix XII, replication after the AQ3 test in Table 9.1 and Appendix XIII, contact deferred in 3.1 and Appendix III); 49–52, 54 (Table 5.1 and Table A.11); 62–68 (Table 6.1, description column merged into the population label) | Fine: every number and condition is in the compact row or in the appendix named |
+| C. Deliberate duplicate cut | 127, 128, 130, 132 (Section 14 numbers 45.7% (44.8–46.6), 24.9–57.5%, 9.9 points, 40.8 (37.7–43.9) and the causal caution [S112] are kept in 11.2, 11.3 and Appendix XIV); 124 (missing fields per question in Table 12.1 and 5.1) | Fine: one statement of each fact kept |
+| D. Fact missing, restored | 53, 51, 55, 56 (score 0–100 with below 40 a fail; unregistration day empty when the student did not withdraw; source table of each key variable; attempts and credits as AQ2 adjustment and AQ3 predictors; deprivation and disability never predictors) → Appendix V "Key variables" paragraph after Table A.11; 85 (evaluation fixed before code, which rules out choosing metrics after results) → Appendix IX; 97 (2014 runs usable once; a partial early run would spend the test) → Appendix X; the search keywords and "these results support the judgement of the staff … rather than replace it" → Appendix IV and Appendix I, now matched verbatim | Restored through RESTORED in the move script, so the appendices rebuild with them; items 51, 53, 55, 56, 85, 97 stay listed because the restored text is reworded to fit its new paragraph |
+| Main-text gap found by the brief check | Section 5 named no keys | Added: "Its seven tables are keyed by module, run and student, with task and page identifiers for submissions and clicks, and every link between them holds" (Section 5) |

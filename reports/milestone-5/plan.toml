@@ -207,6 +207,70 @@ heading = "# References"
 name = "16-00-appendices.md"
 heading = "# Appendices"
 
+[[files]]
+name = "16-01-context-stakeholders.md"
+heading = "## Appendix I – Educational Context, Stakeholders and Scope"
+
+[[files]]
+name = "16-02-goal-kpis-decisions.md"
+heading = "## Appendix II – Goal, Indicators and Decisions"
+
+[[files]]
+name = "16-03-aq-quality-revision.md"
+heading = "## Appendix III – Analytical Questions: Quality Check, Revision Log and Change Log"
+
+[[files]]
+name = "16-04-requirements-selection.md"
+heading = "## Appendix IV – Data Requirements and Dataset Selection"
+
+[[files]]
+name = "16-05-dataset-gaps.md"
+heading = "## Appendix V – Dataset Tables, Coverage and Gaps"
+
+[[files]]
+name = "16-06-profile-quality.md"
+heading = "## Appendix VI – Data Profile and Data Quality Issue Log"
+
+[[files]]
+name = "16-07-preparation-leakage.md"
+heading = "## Appendix VII – Preparation, Derived Variables and Leakage Controls"
+
+[[files]]
+name = "16-08-modeling-briefs.md"
+heading = "## Appendix VIII – Modeling Briefs and Method Rationale"
+
+[[files]]
+name = "16-09-evaluation-detail.md"
+heading = "## Appendix IX – Evaluation Design in Detail"
+
+[[files]]
+name = "16-10-prototype-protocol.md"
+heading = "## Appendix X – Specification of the Level 2 Prototype"
+
+[[files]]
+name = "16-11-reading-traceability.md"
+heading = "## Appendix XI – Reading the Findings and Detailed Traceability"
+
+[[files]]
+name = "16-12-aq1-results.md"
+heading = "## Appendix XII – AQ1 Results in Detail"
+
+[[files]]
+name = "16-13-aq2-results.md"
+heading = "## Appendix XIII – AQ2 Results in Detail"
+
+[[files]]
+name = "16-14-aq3-aq4-answers.md"
+heading = "## Appendix XIV – Expected Outputs, Final Answers and Decision Support in Detail"
+
+[[files]]
+name = "16-15-limitations-future.md"
+heading = "## Appendix XV – Limitations and Future Work in Detail"
+
+[[files]]
+name = "16-16-ai-decision-log.md"
+heading = "## Appendix XVI – AI Decision Log and Reflection"
+
 [[tasks]]
 id = "T01"
 kind = "S"
@@ -352,5 +416,4 @@ type = "primary"
 [layout]
 notes = [
   { path = "design/", purpose = "Integration documents: Traceability Matrix, AQ Revision Log, AQ answers table, AI Decision Log M1–M5" },
-  { path = "ai-decision-log.md", purpose = "AI Decision Log of Milestone 5" },
 ]

@@ -1,0 +1,325 @@
+level,group,denominator,measure,events,n,rate,ci_low,ci_high
+overall,all 9 runs of 2013,day14_registered,completion,6561,12076,0.5433,0.5344,0.5522
+overall,all 9 runs of 2013,day14_registered,non_completion,5515,12076,0.4567,0.4478,0.4656
+overall,all 9 runs of 2013,day14_registered,Pass,5486,12076,0.4543,0.4454,0.4632
+overall,all 9 runs of 2013,day14_registered,Distinction,1075,12076,0.089,0.0841,0.0942
+overall,all 9 runs of 2013,day14_registered,Fail,3230,12076,0.2675,0.2597,0.2754
+overall,all 9 runs of 2013,day14_registered,Withdrawn,2285,12076,0.1892,0.1823,0.1963
+module,AAA,day14_registered,completion,278,370,0.7514,0.7049,0.7927
+module,AAA,day14_registered,non_completion,92,370,0.2486,0.2073,0.2951
+module,AAA,day14_registered,Pass,258,370,0.6973,0.6487,0.7419
+module,AAA,day14_registered,Distinction,20,370,0.0541,0.0353,0.082
+module,AAA,day14_registered,Fail,43,370,0.1162,0.0874,0.1529
+module,AAA,day14_registered,Withdrawn,49,370,0.1324,0.1016,0.1708
+module,BBB,day14_registered,completion,1872,3457,0.5415,0.5249,0.5581
+module,BBB,day14_registered,non_completion,1585,3457,0.4585,0.4419,0.4751
+module,BBB,day14_registered,Pass,1542,3457,0.4461,0.4296,0.4627
+module,BBB,day14_registered,Distinction,330,3457,0.0955,0.0861,0.1057
+module,BBB,day14_registered,Fail,977,3457,0.2826,0.2679,0.2979
+module,BBB,day14_registered,Withdrawn,608,3457,0.1759,0.1635,0.1889
+module,DDD,day14_registered,completion,1335,2872,0.4648,0.4467,0.4831
+module,DDD,day14_registered,non_completion,1537,2872,0.5352,0.5169,0.5533
+module,DDD,day14_registered,Pass,1183,2872,0.4119,0.394,0.43
+module,DDD,day14_registered,Distinction,152,2872,0.0529,0.0453,0.0617
+module,DDD,day14_registered,Fail,785,2872,0.2733,0.2573,0.2899
+module,DDD,day14_registered,Withdrawn,752,2872,0.2618,0.2461,0.2782
+module,EEE,day14_registered,completion,608,933,0.6517,0.6205,0.6816
+module,EEE,day14_registered,non_completion,325,933,0.3483,0.3184,0.3795
+module,EEE,day14_registered,Pass,481,933,0.5155,0.4835,0.5475
+module,EEE,day14_registered,Distinction,127,933,0.1361,0.1156,0.1596
+module,EEE,day14_registered,Fail,200,933,0.2144,0.1892,0.2418
+module,EEE,day14_registered,Withdrawn,125,933,0.134,0.1136,0.1573
+module,FFF,day14_registered,completion,1876,3518,0.5333,0.5167,0.5497
+module,FFF,day14_registered,non_completion,1642,3518,0.4667,0.4503,0.4833
+module,FFF,day14_registered,Pass,1571,3518,0.4466,0.4302,0.463
+module,FFF,day14_registered,Distinction,305,3518,0.0867,0.0778,0.0965
+module,FFF,day14_registered,Fail,931,3518,0.2646,0.2503,0.2795
+module,FFF,day14_registered,Withdrawn,711,3518,0.2021,0.1892,0.2157
+module,GGG,day14_registered,completion,592,926,0.6393,0.6079,0.6696
+module,GGG,day14_registered,non_completion,334,926,0.3607,0.3304,0.3921
+module,GGG,day14_registered,Pass,451,926,0.487,0.455,0.5192
+module,GGG,day14_registered,Distinction,141,926,0.1523,0.1306,0.1768
+module,GGG,day14_registered,Fail,294,926,0.3175,0.2883,0.3482
+module,GGG,day14_registered,Withdrawn,40,926,0.0432,0.0319,0.0583
+run,AAA 2013J,day14_registered,completion,278,370,0.7514,0.7049,0.7927
+run,AAA 2013J,day14_registered,non_completion,92,370,0.2486,0.2073,0.2951
+run,AAA 2013J,day14_registered,Pass,258,370,0.6973,0.6487,0.7419
+run,AAA 2013J,day14_registered,Distinction,20,370,0.0541,0.0353,0.082
+run,AAA 2013J,day14_registered,Fail,43,370,0.1162,0.0874,0.1529
+run,AAA 2013J,day14_registered,Withdrawn,49,370,0.1324,0.1016,0.1708
+run,BBB 2013B,day14_registered,completion,802,1606,0.4994,0.475,0.5238
+run,BBB 2013B,day14_registered,non_completion,804,1606,0.5006,0.4762,0.525
+run,BBB 2013B,day14_registered,Pass,647,1606,0.4029,0.3791,0.4271
+run,BBB 2013B,day14_registered,Distinction,155,1606,0.0965,0.083,0.1119
+run,BBB 2013B,day14_registered,Fail,458,1606,0.2852,0.2636,0.3078
+run,BBB 2013B,day14_registered,Withdrawn,346,1606,0.2154,0.196,0.2362
+run,BBB 2013J,day14_registered,completion,1070,1851,0.5781,0.5554,0.6004
+run,BBB 2013J,day14_registered,non_completion,781,1851,0.4219,0.3996,0.4446
+run,BBB 2013J,day14_registered,Pass,895,1851,0.4835,0.4608,0.5063
+run,BBB 2013J,day14_registered,Distinction,175,1851,0.0945,0.082,0.1087
+run,BBB 2013J,day14_registered,Fail,519,1851,0.2804,0.2604,0.3013
+run,BBB 2013J,day14_registered,Withdrawn,262,1851,0.1415,0.1264,0.1582
+run,DDD 2013B,day14_registered,completion,509,1197,0.4252,0.3975,0.4534
+run,DDD 2013B,day14_registered,non_completion,688,1197,0.5748,0.5466,0.6025
+run,DDD 2013B,day14_registered,Pass,455,1197,0.3801,0.353,0.408
+run,DDD 2013B,day14_registered,Distinction,54,1197,0.0451,0.0347,0.0584
+run,DDD 2013B,day14_registered,Fail,360,1197,0.3008,0.2754,0.3273
+run,DDD 2013B,day14_registered,Withdrawn,328,1197,0.274,0.2495,0.3
+run,DDD 2013J,day14_registered,completion,826,1675,0.4931,0.4692,0.5171
+run,DDD 2013J,day14_registered,non_completion,849,1675,0.5069,0.4829,0.5308
+run,DDD 2013J,day14_registered,Pass,728,1675,0.4346,0.4111,0.4585
+run,DDD 2013J,day14_registered,Distinction,98,1675,0.0585,0.0482,0.0708
+run,DDD 2013J,day14_registered,Fail,425,1675,0.2537,0.2335,0.2751
+run,DDD 2013J,day14_registered,Withdrawn,424,1675,0.2531,0.2329,0.2745
+run,EEE 2013J,day14_registered,completion,608,933,0.6517,0.6205,0.6816
+run,EEE 2013J,day14_registered,non_completion,325,933,0.3483,0.3184,0.3795
+run,EEE 2013J,day14_registered,Pass,481,933,0.5155,0.4835,0.5475
+run,EEE 2013J,day14_registered,Distinction,127,933,0.1361,0.1156,0.1596
+run,EEE 2013J,day14_registered,Fail,200,933,0.2144,0.1892,0.2418
+run,EEE 2013J,day14_registered,Withdrawn,125,933,0.134,0.1136,0.1573
+run,FFF 2013B,day14_registered,completion,781,1520,0.5138,0.4887,0.5389
+run,FFF 2013B,day14_registered,non_completion,739,1520,0.4862,0.4611,0.5113
+run,FFF 2013B,day14_registered,Pass,663,1520,0.4362,0.4114,0.4612
+run,FFF 2013B,day14_registered,Distinction,118,1520,0.0776,0.0652,0.0922
+run,FFF 2013B,day14_registered,Fail,421,1520,0.277,0.2551,0.3
+run,FFF 2013B,day14_registered,Withdrawn,318,1520,0.2092,0.1895,0.2304
+run,FFF 2013J,day14_registered,completion,1095,1998,0.548,0.5262,0.5698
+run,FFF 2013J,day14_registered,non_completion,903,1998,0.452,0.4302,0.4738
+run,FFF 2013J,day14_registered,Pass,908,1998,0.4545,0.4327,0.4764
+run,FFF 2013J,day14_registered,Distinction,187,1998,0.0936,0.0816,0.1072
+run,FFF 2013J,day14_registered,Fail,510,1998,0.2553,0.2366,0.2748
+run,FFF 2013J,day14_registered,Withdrawn,393,1998,0.1967,0.1799,0.2147
+run,GGG 2013J,day14_registered,completion,592,926,0.6393,0.6079,0.6696
+run,GGG 2013J,day14_registered,non_completion,334,926,0.3607,0.3304,0.3921
+run,GGG 2013J,day14_registered,Pass,451,926,0.487,0.455,0.5192
+run,GGG 2013J,day14_registered,Distinction,141,926,0.1523,0.1306,0.1768
+run,GGG 2013J,day14_registered,Fail,294,926,0.3175,0.2883,0.3482
+run,GGG 2013J,day14_registered,Withdrawn,40,926,0.0432,0.0319,0.0583
+start_month,B (February),day14_registered,completion,2092,4323,0.4839,0.469,0.4988
+start_month,B (February),day14_registered,non_completion,2231,4323,0.5161,0.5012,0.531
+start_month,B (February),day14_registered,Pass,1765,4323,0.4083,0.3937,0.423
+start_month,B (February),day14_registered,Distinction,327,4323,0.0756,0.0681,0.0839
+start_month,B (February),day14_registered,Fail,1239,4323,0.2866,0.2733,0.3003
+start_month,B (February),day14_registered,Withdrawn,992,4323,0.2295,0.2172,0.2422
+start_month,J (October),day14_registered,completion,4469,7753,0.5764,0.5654,0.5874
+start_month,J (October),day14_registered,non_completion,3284,7753,0.4236,0.4126,0.4346
+start_month,J (October),day14_registered,Pass,3721,7753,0.4799,0.4688,0.4911
+start_month,J (October),day14_registered,Distinction,748,7753,0.0965,0.0901,0.1033
+start_month,J (October),day14_registered,Fail,1991,7753,0.2568,0.2472,0.2666
+start_month,J (October),day14_registered,Withdrawn,1293,7753,0.1668,0.1586,0.1752
+overall,all 9 runs of 2013,all_enrolments,completion,6570,13529,0.4856,0.4772,0.494
+overall,all 9 runs of 2013,all_enrolments,non_completion,6959,13529,0.5144,0.506,0.5228
+overall,all 9 runs of 2013,all_enrolments,Pass,5494,13529,0.4061,0.3978,0.4144
+overall,all 9 runs of 2013,all_enrolments,Distinction,1076,13529,0.0795,0.0751,0.0842
+overall,all 9 runs of 2013,all_enrolments,Fail,3242,13529,0.2396,0.2325,0.2469
+overall,all 9 runs of 2013,all_enrolments,Withdrawn,3717,13529,0.2747,0.2673,0.2823
+module,AAA,all_enrolments,completion,278,383,0.7258,0.6791,0.7681
+module,AAA,all_enrolments,non_completion,105,383,0.2742,0.2319,0.3209
+module,AAA,all_enrolments,Pass,258,383,0.6736,0.6251,0.7187
+module,AAA,all_enrolments,Distinction,20,383,0.0522,0.0341,0.0793
+module,AAA,all_enrolments,Fail,45,383,0.1175,0.089,0.1536
+module,AAA,all_enrolments,Withdrawn,60,383,0.1567,0.1237,0.1964
+module,BBB,all_enrolments,completion,1875,4004,0.4683,0.4529,0.4838
+module,BBB,all_enrolments,non_completion,2129,4004,0.5317,0.5162,0.5471
+module,BBB,all_enrolments,Pass,1544,4004,0.3856,0.3707,0.4008
+module,BBB,all_enrolments,Distinction,331,4004,0.0827,0.0745,0.0916
+module,BBB,all_enrolments,Fail,980,4004,0.2448,0.2317,0.2583
+module,BBB,all_enrolments,Withdrawn,1149,4004,0.287,0.2732,0.3012
+module,DDD,all_enrolments,completion,1339,3241,0.4131,0.3963,0.4302
+module,DDD,all_enrolments,non_completion,1902,3241,0.5869,0.5698,0.6037
+module,DDD,all_enrolments,Pass,1187,3241,0.3662,0.3498,0.383
+module,DDD,all_enrolments,Distinction,152,3241,0.0469,0.0401,0.0547
+module,DDD,all_enrolments,Fail,789,3241,0.2434,0.229,0.2585
+module,DDD,all_enrolments,Withdrawn,1113,3241,0.3434,0.3273,0.3599
+module,EEE,all_enrolments,completion,609,1052,0.5789,0.5488,0.6084
+module,EEE,all_enrolments,non_completion,443,1052,0.4211,0.3916,0.4512
+module,EEE,all_enrolments,Pass,482,1052,0.4582,0.4283,0.4884
+module,EEE,all_enrolments,Distinction,127,1052,0.1207,0.1024,0.1418
+module,EEE,all_enrolments,Fail,200,1052,0.1901,0.1675,0.2149
+module,EEE,all_enrolments,Withdrawn,243,1052,0.231,0.2065,0.2574
+module,FFF,all_enrolments,completion,1877,3897,0.4817,0.466,0.4974
+module,FFF,all_enrolments,non_completion,2020,3897,0.5183,0.5026,0.534
+module,FFF,all_enrolments,Pass,1572,3897,0.4034,0.3881,0.4189
+module,FFF,all_enrolments,Distinction,305,3897,0.0783,0.0702,0.0871
+module,FFF,all_enrolments,Fail,934,3897,0.2397,0.2265,0.2533
+module,FFF,all_enrolments,Withdrawn,1086,3897,0.2787,0.2648,0.293
+module,GGG,all_enrolments,completion,592,952,0.6218,0.5906,0.6521
+module,GGG,all_enrolments,non_completion,360,952,0.3782,0.3479,0.4094
+module,GGG,all_enrolments,Pass,451,952,0.4737,0.4422,0.5055
+module,GGG,all_enrolments,Distinction,141,952,0.1481,0.127,0.1721
+module,GGG,all_enrolments,Fail,294,952,0.3088,0.2803,0.3389
+module,GGG,all_enrolments,Withdrawn,66,952,0.0693,0.0549,0.0873
+run,AAA 2013J,all_enrolments,completion,278,383,0.7258,0.6791,0.7681
+run,AAA 2013J,all_enrolments,non_completion,105,383,0.2742,0.2319,0.3209
+run,AAA 2013J,all_enrolments,Pass,258,383,0.6736,0.6251,0.7187
+run,AAA 2013J,all_enrolments,Distinction,20,383,0.0522,0.0341,0.0793
+run,AAA 2013J,all_enrolments,Fail,45,383,0.1175,0.089,0.1536
+run,AAA 2013J,all_enrolments,Withdrawn,60,383,0.1567,0.1237,0.1964
+run,BBB 2013B,all_enrolments,completion,803,1767,0.4544,0.4314,0.4777
+run,BBB 2013B,all_enrolments,non_completion,964,1767,0.5456,0.5223,0.5686
+run,BBB 2013B,all_enrolments,Pass,648,1767,0.3667,0.3446,0.3895
+run,BBB 2013B,all_enrolments,Distinction,155,1767,0.0877,0.0754,0.1018
+run,BBB 2013B,all_enrolments,Fail,459,1767,0.2598,0.2399,0.2807
+run,BBB 2013B,all_enrolments,Withdrawn,505,1767,0.2858,0.2652,0.3073
+run,BBB 2013J,all_enrolments,completion,1072,2237,0.4792,0.4586,0.4999
+run,BBB 2013J,all_enrolments,non_completion,1165,2237,0.5208,0.5001,0.5414
+run,BBB 2013J,all_enrolments,Pass,896,2237,0.4005,0.3804,0.421
+run,BBB 2013J,all_enrolments,Distinction,176,2237,0.0787,0.0682,0.0906
+run,BBB 2013J,all_enrolments,Fail,521,2237,0.2329,0.2159,0.2509
+run,BBB 2013J,all_enrolments,Withdrawn,644,2237,0.2879,0.2695,0.307
+run,DDD 2013B,all_enrolments,completion,510,1303,0.3914,0.3653,0.4182
+run,DDD 2013B,all_enrolments,non_completion,793,1303,0.6086,0.5818,0.6347
+run,DDD 2013B,all_enrolments,Pass,456,1303,0.35,0.3245,0.3763
+run,DDD 2013B,all_enrolments,Distinction,54,1303,0.0414,0.0319,0.0537
+run,DDD 2013B,all_enrolments,Fail,361,1303,0.2771,0.2534,0.302
+run,DDD 2013B,all_enrolments,Withdrawn,432,1303,0.3315,0.3065,0.3576
+run,DDD 2013J,all_enrolments,completion,829,1938,0.4278,0.4059,0.4499
+run,DDD 2013J,all_enrolments,non_completion,1109,1938,0.5722,0.5501,0.5941
+run,DDD 2013J,all_enrolments,Pass,731,1938,0.3772,0.3559,0.399
+run,DDD 2013J,all_enrolments,Distinction,98,1938,0.0506,0.0417,0.0612
+run,DDD 2013J,all_enrolments,Fail,428,1938,0.2208,0.2029,0.2399
+run,DDD 2013J,all_enrolments,Withdrawn,681,1938,0.3514,0.3305,0.3729
+run,EEE 2013J,all_enrolments,completion,609,1052,0.5789,0.5488,0.6084
+run,EEE 2013J,all_enrolments,non_completion,443,1052,0.4211,0.3916,0.4512
+run,EEE 2013J,all_enrolments,Pass,482,1052,0.4582,0.4283,0.4884
+run,EEE 2013J,all_enrolments,Distinction,127,1052,0.1207,0.1024,0.1418
+run,EEE 2013J,all_enrolments,Fail,200,1052,0.1901,0.1675,0.2149
+run,EEE 2013J,all_enrolments,Withdrawn,243,1052,0.231,0.2065,0.2574
+run,FFF 2013B,all_enrolments,completion,782,1614,0.4845,0.4602,0.5089
+run,FFF 2013B,all_enrolments,non_completion,832,1614,0.5155,0.4911,0.5398
+run,FFF 2013B,all_enrolments,Pass,664,1614,0.4114,0.3876,0.4356
+run,FFF 2013B,all_enrolments,Distinction,118,1614,0.0731,0.0614,0.0868
+run,FFF 2013B,all_enrolments,Fail,421,1614,0.2608,0.24,0.2828
+run,FFF 2013B,all_enrolments,Withdrawn,411,1614,0.2546,0.234,0.2765
+run,FFF 2013J,all_enrolments,completion,1095,2283,0.4796,0.4592,0.5001
+run,FFF 2013J,all_enrolments,non_completion,1188,2283,0.5204,0.4999,0.5408
+run,FFF 2013J,all_enrolments,Pass,908,2283,0.3977,0.3778,0.418
+run,FFF 2013J,all_enrolments,Distinction,187,2283,0.0819,0.0714,0.0939
+run,FFF 2013J,all_enrolments,Fail,513,2283,0.2247,0.2081,0.2423
+run,FFF 2013J,all_enrolments,Withdrawn,675,2283,0.2957,0.2773,0.3147
+run,GGG 2013J,all_enrolments,completion,592,952,0.6218,0.5906,0.6521
+run,GGG 2013J,all_enrolments,non_completion,360,952,0.3782,0.3479,0.4094
+run,GGG 2013J,all_enrolments,Pass,451,952,0.4737,0.4422,0.5055
+run,GGG 2013J,all_enrolments,Distinction,141,952,0.1481,0.127,0.1721
+run,GGG 2013J,all_enrolments,Fail,294,952,0.3088,0.2803,0.3389
+run,GGG 2013J,all_enrolments,Withdrawn,66,952,0.0693,0.0549,0.0873
+start_month,B (February),all_enrolments,completion,2095,4684,0.4473,0.4331,0.4615
+start_month,B (February),all_enrolments,non_completion,2589,4684,0.5527,0.5385,0.5669
+start_month,B (February),all_enrolments,Pass,1768,4684,0.3775,0.3637,0.3914
+start_month,B (February),all_enrolments,Distinction,327,4684,0.0698,0.0629,0.0775
+start_month,B (February),all_enrolments,Fail,1241,4684,0.2649,0.2525,0.2778
+start_month,B (February),all_enrolments,Withdrawn,1348,4684,0.2878,0.275,0.3009
+start_month,J (October),all_enrolments,completion,4475,8845,0.5059,0.4955,0.5164
+start_month,J (October),all_enrolments,non_completion,4370,8845,0.4941,0.4836,0.5045
+start_month,J (October),all_enrolments,Pass,3726,8845,0.4213,0.411,0.4316
+start_month,J (October),all_enrolments,Distinction,749,8845,0.0847,0.0791,0.0907
+start_month,J (October),all_enrolments,Fail,2001,8845,0.2262,0.2176,0.2351
+start_month,J (October),all_enrolments,Withdrawn,2369,8845,0.2678,0.2587,0.2772
+overall,all 9 runs of 2013,day14_registered_excl_flagged,completion,6561,12068,0.5437,0.5348,0.5525
+overall,all 9 runs of 2013,day14_registered_excl_flagged,non_completion,5507,12068,0.4563,0.4475,0.4652
+overall,all 9 runs of 2013,day14_registered_excl_flagged,Pass,5486,12068,0.4546,0.4457,0.4635
+overall,all 9 runs of 2013,day14_registered_excl_flagged,Distinction,1075,12068,0.0891,0.0841,0.0943
+overall,all 9 runs of 2013,day14_registered_excl_flagged,Fail,3226,12068,0.2673,0.2595,0.2753
+overall,all 9 runs of 2013,day14_registered_excl_flagged,Withdrawn,2281,12068,0.189,0.1821,0.1961
+module,AAA,day14_registered_excl_flagged,completion,278,370,0.7514,0.7049,0.7927
+module,AAA,day14_registered_excl_flagged,non_completion,92,370,0.2486,0.2073,0.2951
+module,AAA,day14_registered_excl_flagged,Pass,258,370,0.6973,0.6487,0.7419
+module,AAA,day14_registered_excl_flagged,Distinction,20,370,0.0541,0.0353,0.082
+module,AAA,day14_registered_excl_flagged,Fail,43,370,0.1162,0.0874,0.1529
+module,AAA,day14_registered_excl_flagged,Withdrawn,49,370,0.1324,0.1016,0.1708
+module,BBB,day14_registered_excl_flagged,completion,1872,3456,0.5417,0.525,0.5582
+module,BBB,day14_registered_excl_flagged,non_completion,1584,3456,0.4583,0.4418,0.475
+module,BBB,day14_registered_excl_flagged,Pass,1542,3456,0.4462,0.4297,0.4628
+module,BBB,day14_registered_excl_flagged,Distinction,330,3456,0.0955,0.0861,0.1057
+module,BBB,day14_registered_excl_flagged,Fail,976,3456,0.2824,0.2676,0.2977
+module,BBB,day14_registered_excl_flagged,Withdrawn,608,3456,0.1759,0.1636,0.189
+module,DDD,day14_registered_excl_flagged,completion,1335,2869,0.4653,0.4471,0.4836
+module,DDD,day14_registered_excl_flagged,non_completion,1534,2869,0.5347,0.5164,0.5529
+module,DDD,day14_registered_excl_flagged,Pass,1183,2869,0.4123,0.3945,0.4305
+module,DDD,day14_registered_excl_flagged,Distinction,152,2869,0.053,0.0454,0.0618
+module,DDD,day14_registered_excl_flagged,Fail,783,2869,0.2729,0.2569,0.2895
+module,DDD,day14_registered_excl_flagged,Withdrawn,751,2869,0.2618,0.246,0.2782
+module,EEE,day14_registered_excl_flagged,completion,608,932,0.6524,0.6212,0.6823
+module,EEE,day14_registered_excl_flagged,non_completion,324,932,0.3476,0.3177,0.3788
+module,EEE,day14_registered_excl_flagged,Pass,481,932,0.5161,0.484,0.548
+module,EEE,day14_registered_excl_flagged,Distinction,127,932,0.1363,0.1157,0.1598
+module,EEE,day14_registered_excl_flagged,Fail,200,932,0.2146,0.1894,0.2421
+module,EEE,day14_registered_excl_flagged,Withdrawn,124,932,0.133,0.1127,0.1564
+module,FFF,day14_registered_excl_flagged,completion,1876,3516,0.5336,0.517,0.55
+module,FFF,day14_registered_excl_flagged,non_completion,1640,3516,0.4664,0.45,0.483
+module,FFF,day14_registered_excl_flagged,Pass,1571,3516,0.4468,0.4304,0.4633
+module,FFF,day14_registered_excl_flagged,Distinction,305,3516,0.0867,0.0779,0.0965
+module,FFF,day14_registered_excl_flagged,Fail,930,3516,0.2645,0.2502,0.2793
+module,FFF,day14_registered_excl_flagged,Withdrawn,710,3516,0.2019,0.189,0.2155
+module,GGG,day14_registered_excl_flagged,completion,592,925,0.64,0.6085,0.6703
+module,GGG,day14_registered_excl_flagged,non_completion,333,925,0.36,0.3297,0.3915
+module,GGG,day14_registered_excl_flagged,Pass,451,925,0.4876,0.4555,0.5198
+module,GGG,day14_registered_excl_flagged,Distinction,141,925,0.1524,0.1307,0.177
+module,GGG,day14_registered_excl_flagged,Fail,294,925,0.3178,0.2886,0.3485
+module,GGG,day14_registered_excl_flagged,Withdrawn,39,925,0.0422,0.031,0.0571
+run,AAA 2013J,day14_registered_excl_flagged,completion,278,370,0.7514,0.7049,0.7927
+run,AAA 2013J,day14_registered_excl_flagged,non_completion,92,370,0.2486,0.2073,0.2951
+run,AAA 2013J,day14_registered_excl_flagged,Pass,258,370,0.6973,0.6487,0.7419
+run,AAA 2013J,day14_registered_excl_flagged,Distinction,20,370,0.0541,0.0353,0.082
+run,AAA 2013J,day14_registered_excl_flagged,Fail,43,370,0.1162,0.0874,0.1529
+run,AAA 2013J,day14_registered_excl_flagged,Withdrawn,49,370,0.1324,0.1016,0.1708
+run,BBB 2013B,day14_registered_excl_flagged,completion,802,1605,0.4997,0.4753,0.5241
+run,BBB 2013B,day14_registered_excl_flagged,non_completion,803,1605,0.5003,0.4759,0.5247
+run,BBB 2013B,day14_registered_excl_flagged,Pass,647,1605,0.4031,0.3794,0.4273
+run,BBB 2013B,day14_registered_excl_flagged,Distinction,155,1605,0.0966,0.0831,0.112
+run,BBB 2013B,day14_registered_excl_flagged,Fail,457,1605,0.2847,0.2632,0.3073
+run,BBB 2013B,day14_registered_excl_flagged,Withdrawn,346,1605,0.2156,0.1961,0.2364
+run,BBB 2013J,day14_registered_excl_flagged,completion,1070,1851,0.5781,0.5554,0.6004
+run,BBB 2013J,day14_registered_excl_flagged,non_completion,781,1851,0.4219,0.3996,0.4446
+run,BBB 2013J,day14_registered_excl_flagged,Pass,895,1851,0.4835,0.4608,0.5063
+run,BBB 2013J,day14_registered_excl_flagged,Distinction,175,1851,0.0945,0.082,0.1087
+run,BBB 2013J,day14_registered_excl_flagged,Fail,519,1851,0.2804,0.2604,0.3013
+run,BBB 2013J,day14_registered_excl_flagged,Withdrawn,262,1851,0.1415,0.1264,0.1582
+run,DDD 2013B,day14_registered_excl_flagged,completion,509,1194,0.4263,0.3985,0.4545
+run,DDD 2013B,day14_registered_excl_flagged,non_completion,685,1194,0.5737,0.5455,0.6015
+run,DDD 2013B,day14_registered_excl_flagged,Pass,455,1194,0.3811,0.3539,0.409
+run,DDD 2013B,day14_registered_excl_flagged,Distinction,54,1194,0.0452,0.0348,0.0585
+run,DDD 2013B,day14_registered_excl_flagged,Fail,358,1194,0.2998,0.2745,0.3264
+run,DDD 2013B,day14_registered_excl_flagged,Withdrawn,327,1194,0.2739,0.2493,0.2999
+run,DDD 2013J,day14_registered_excl_flagged,completion,826,1675,0.4931,0.4692,0.5171
+run,DDD 2013J,day14_registered_excl_flagged,non_completion,849,1675,0.5069,0.4829,0.5308
+run,DDD 2013J,day14_registered_excl_flagged,Pass,728,1675,0.4346,0.4111,0.4585
+run,DDD 2013J,day14_registered_excl_flagged,Distinction,98,1675,0.0585,0.0482,0.0708
+run,DDD 2013J,day14_registered_excl_flagged,Fail,425,1675,0.2537,0.2335,0.2751
+run,DDD 2013J,day14_registered_excl_flagged,Withdrawn,424,1675,0.2531,0.2329,0.2745
+run,EEE 2013J,day14_registered_excl_flagged,completion,608,932,0.6524,0.6212,0.6823
+run,EEE 2013J,day14_registered_excl_flagged,non_completion,324,932,0.3476,0.3177,0.3788
+run,EEE 2013J,day14_registered_excl_flagged,Pass,481,932,0.5161,0.484,0.548
+run,EEE 2013J,day14_registered_excl_flagged,Distinction,127,932,0.1363,0.1157,0.1598
+run,EEE 2013J,day14_registered_excl_flagged,Fail,200,932,0.2146,0.1894,0.2421
+run,EEE 2013J,day14_registered_excl_flagged,Withdrawn,124,932,0.133,0.1127,0.1564
+run,FFF 2013B,day14_registered_excl_flagged,completion,781,1519,0.5142,0.489,0.5392
+run,FFF 2013B,day14_registered_excl_flagged,non_completion,738,1519,0.4858,0.4608,0.511
+run,FFF 2013B,day14_registered_excl_flagged,Pass,663,1519,0.4365,0.4117,0.4615
+run,FFF 2013B,day14_registered_excl_flagged,Distinction,118,1519,0.0777,0.0653,0.0922
+run,FFF 2013B,day14_registered_excl_flagged,Fail,420,1519,0.2765,0.2546,0.2995
+run,FFF 2013B,day14_registered_excl_flagged,Withdrawn,318,1519,0.2093,0.1896,0.2305
+run,FFF 2013J,day14_registered_excl_flagged,completion,1095,1997,0.5483,0.5264,0.57
+run,FFF 2013J,day14_registered_excl_flagged,non_completion,902,1997,0.4517,0.43,0.4736
+run,FFF 2013J,day14_registered_excl_flagged,Pass,908,1997,0.4547,0.433,0.4766
+run,FFF 2013J,day14_registered_excl_flagged,Distinction,187,1997,0.0936,0.0816,0.1072
+run,FFF 2013J,day14_registered_excl_flagged,Fail,510,1997,0.2554,0.2367,0.275
+run,FFF 2013J,day14_registered_excl_flagged,Withdrawn,392,1997,0.1963,0.1795,0.2143
+run,GGG 2013J,day14_registered_excl_flagged,completion,592,925,0.64,0.6085,0.6703
+run,GGG 2013J,day14_registered_excl_flagged,non_completion,333,925,0.36,0.3297,0.3915
+run,GGG 2013J,day14_registered_excl_flagged,Pass,451,925,0.4876,0.4555,0.5198
+run,GGG 2013J,day14_registered_excl_flagged,Distinction,141,925,0.1524,0.1307,0.177
+run,GGG 2013J,day14_registered_excl_flagged,Fail,294,925,0.3178,0.2886,0.3485
+run,GGG 2013J,day14_registered_excl_flagged,Withdrawn,39,925,0.0422,0.031,0.0571
+start_month,B (February),day14_registered_excl_flagged,completion,2092,4318,0.4845,0.4696,0.4994
+start_month,B (February),day14_registered_excl_flagged,non_completion,2226,4318,0.5155,0.5006,0.5304
+start_month,B (February),day14_registered_excl_flagged,Pass,1765,4318,0.4088,0.3942,0.4235
+start_month,B (February),day14_registered_excl_flagged,Distinction,327,4318,0.0757,0.0682,0.084
+start_month,B (February),day14_registered_excl_flagged,Fail,1235,4318,0.286,0.2727,0.2997
+start_month,B (February),day14_registered_excl_flagged,Withdrawn,991,4318,0.2295,0.2172,0.2423
+start_month,J (October),day14_registered_excl_flagged,completion,4469,7750,0.5766,0.5656,0.5876
+start_month,J (October),day14_registered_excl_flagged,non_completion,3281,7750,0.4234,0.4124,0.4344
+start_month,J (October),day14_registered_excl_flagged,Pass,3721,7750,0.4801,0.469,0.4913
+start_month,J (October),day14_registered_excl_flagged,Distinction,748,7750,0.0965,0.0901,0.1033
+start_month,J (October),day14_registered_excl_flagged,Fail,1991,7750,0.2569,0.2473,0.2667
+start_month,J (October),day14_registered_excl_flagged,Withdrawn,1290,7750,0.1665,0.1583,0.1749

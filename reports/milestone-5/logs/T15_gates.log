@@ -1,0 +1,117 @@
+## 2026-11-09T15:04:51Z T15 gates
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 1
+WARN  01-02-scope-objective.md:3: paragraph without a citation: The project covers students enrolled in the program's online and blend…
+
+Checked 3 files (draft mode): 0 errors, 1 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 2
+WARN  02-01-kpis-decisions.md:3: paragraph without a citation: Table 2.1 gives the goal with one primary key performance indicator (K…
+WARN  02-01-kpis-decisions.md:20: paragraph without a citation: The goal serves three decisions (Table A.3, Appendix II). D1, whom to …
+
+Checked 2 files (draft mode): 0 errors, 5 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 3
+WARN  03-01-aq-quality-check.md: 144 words (expected 150-700)
+WARN  03-02-aq-revision-log.md:3: paragraph without a citation: Table 3.2 is the AQ Revision Log: every change from Milestone 1 traces…
+
+Checked 3 files (draft mode): 0 errors, 5 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 4
+WARN  04-00-data-requirements.md:3: paragraph without a citation: We stated the requirements in the terms of the university's records be…
+
+Checked 2 files (draft mode): 0 errors, 1 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 5
+WARN  05-00-dataset-description.md:3: paragraph without a citation: OULAD covers 22 runs of seven distance-learning modules of the Open Un…
+WARN  05-01-requirement-data-fit.md:3: paragraph without a citation: Milestone 3 rated each question against its data: GREEN when the data …
+
+Checked 2 files (draft mode): 0 errors, 2 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 6
+WARN  06-00-data-understanding.md:3: paragraph without a citation: Before any question is answered, the data must be understood well enou…
+WARN  06-01-quality-findings.md:3: paragraph without a citation: Milestone 3 turned the profile into a Data Quality Issue Log of ninete…
+
+Checked 3 files (draft mode): 0 errors, 2 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 7
+WARN  07-01-features-leakage.md:3: paragraph without a citation: Every feature uses only records dated on or before its cut-off, so act…
+WARN  07-02-prepared-dataset.md: 145 words (expected 150-700)
+
+Checked 3 files (draft mode): 0 errors, 3 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 8
+WARN  08-01-candidate-methods.md:3: paragraph without a citation: Each candidate is judged on the eight criteria of the course, from fit…
+WARN  08-01-candidate-methods.md:17: paragraph without a citation: **Rationale in brief.** AQ1 needs no model, because it is descriptive:…
+
+Checked 2 files (draft mode): 0 errors, 2 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 9
+
+Checked 3 files (draft mode): 0 errors, 0 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 10
+WARN  10-00-experimental-status.md:3: paragraph without a citation: The project completed Level 1, the compulsory level: the modeling stra…
+
+Checked 1 files (draft mode): 0 errors, 1 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 11
+WARN  11-05-decision-support.md:3: paragraph without a citation: Table 11.2 sets the four answers side by side, each read by its analyt…
+WARN  11-05-decision-support.md:15: paragraph without a citation: All four answers rest on observational data, and OULAD records no cont…
+
+Checked 6 files (draft mode): 0 errors, 8 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 12
+
+Checked 2 files (draft mode): 0 errors, 0 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 13
+WARN  13-00-genai-reflection.md:3: paragraph without a citation: We used generative AI as a simulated stakeholder, a research and code …
+WARN  13-00-genai-reflection.md:9: paragraph without a citation: Table A.41 (Appendix XVI) gives the AI Decision Log in the columns of …
+
+Checked 1 files (draft mode): 0 errors, 2 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --part 14
+WARN  14-00-conclusion.md:3: paragraph without a citation: The project set out to improve successful course completion in the pro…
+WARN  14-00-conclusion.md:9: paragraph without a citation: The data could support part of this ambition. OULAD stands in for the …
+
+Checked 1 files (draft mode): 0 errors, 2 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/research-report/scripts/check_drafts.py --base reports/milestone-5 --files <16-00 … 16-16>
+WARN  16-01-context-stakeholders.md: 2154 words (expected 150-700)
+WARN  16-02-goal-kpis-decisions.md: 1985 words (expected 150-700)
+WARN  16-03-aq-quality-revision.md: 5036 words (expected 150-700)
+WARN  16-04-requirements-selection.md: 2293 words (expected 150-700)
+WARN  16-05-dataset-gaps.md: 2128 words (expected 150-700)
+WARN  16-06-profile-quality.md: 3199 words (expected 150-700)
+WARN  16-07-preparation-leakage.md: 3537 words (expected 150-700)
+WARN  16-08-modeling-briefs.md: 2656 words (expected 150-700)
+WARN  16-09-evaluation-detail.md: 3122 words (expected 150-700)
+WARN  16-11-reading-traceability.md: 1664 words (expected 150-700)
+WARN  16-12-aq1-results.md: 2504 words (expected 150-700)
+WARN  16-13-aq2-results.md: 3323 words (expected 150-700)
+WARN  16-14-aq3-aq4-answers.md: 4301 words (expected 150-700)
+WARN  16-15-limitations-future.md: 2941 words (expected 150-700)
+WARN  16-16-ai-decision-log.md: 2239 words (expected 150-700)
+
+Checked 17 files (draft mode): 0 errors, 208 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/build-report/scripts/check_style.py --report reports/milestone-5/report
+===== EN: 51 body files: 0 errors, 0 warnings
+exit 0
+$ venv/bin/python .claude/skills/research-report/scripts/layout.py index --base reports/milestone-5 --write
+wrote index into reports/milestone-5/research/README.md
+exit 0
+$ venv/bin/python .claude/skills/research-report/scripts/layout.py check --base reports/milestone-5
+PASS layout: reports/milestone-5/research
+exit 0
+$ venv/bin/python .claude/skills/research-report/scripts/check_trail.py --base reports/milestone-5 --all
+WARN  C4-022: not yet linked to a report file
+WARN  C4-023: not yet linked to a report file
+WARN  C4-024: not yet linked to a report file
+WARN  S001: fetched but no claim uses it
+
+Checked 35 sources, 376 claims: 0 errors, 4 warnings
+exit 0
+$ ./venv/bin/python .agents/skills/build-report/scripts/check_structure.py --report reports/milestone-5/report --lang en
+===== EN: 56 files, 74 headings, 3 figures, 56 tables: 0 errors, 0 warnings
+exit 0

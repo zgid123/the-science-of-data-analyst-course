@@ -197,7 +197,7 @@ subject = "MTH045 – The Science of Data Analytics"
 
 [milestone-5.vi]
 out = "N04_Milestone5_VI.docx"
-title = "Báo cáo đồ án cuối kỳ: Nhận diện sớm sinh viên giảm tham gia trong các khóa học trực tuyến"
+title = "Báo cáo đồ án cuối kỳ: Nhận diện sớm sinh viên giảm tham gia trong các học phần trực tuyến"
 short_title = "N04 – Milestone 5"
 subject = "MTH045 – Khoa học phân tích dữ liệu"
 author = "Nhóm 4 (N04)"
@@ -218,3 +218,10 @@ checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.
 [milestone-5.citations]
 order = "first-citation"
 draft_ids = 'S\d{3}'
+
+[milestone-5.abbreviations]
+names = ["AQ1", "AQ2", "AQ3", "AQ4", "AQ-ID", "AQs", "KPIs", "CMAs", "TMAs", "ID", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "MTH045", "D1", "D2", "D3", "OULAD-N04-prepared-1", "AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "EEE-B", "GGG-B", "GREEN", "YELLOW", "RED", "GAP", "FR1", "HC1", "DQ01", "DQ02", "DQ03", "DQ04", "DQ05", "DQ06", "DQ07", "DQ08", "DQ09", "DQ10", "DQ11", "DQ12", "DQ13", "DQ14", "DQ15", "DQ16", "DQ17", "DQ18", "DQ19", "QH15", "CC", "BY", "CC-BY", "HTTP", "UTC+7", "OU", "HarvardX", "XuetangX", "Person-Course", "McFadden", "Cross-Industry"]
+
+[milestone-5.abbreviations.titles]
+en = ["Law on Artificial Intelligence", "Dataset title | Open University Learning Analytics Dataset"]
+vi = ["Luật Trí tuệ nhân tạo", "hệ thống trí tuệ nhân tạo có rủi ro cao"]

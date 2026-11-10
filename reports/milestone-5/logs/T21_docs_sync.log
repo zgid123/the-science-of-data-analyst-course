@@ -1,0 +1,75 @@
+# T21 docs sync: package docs against the final English report
+Package consistency check for docs: none exists (run_all.sh, src/ and tests/ do not read docs/); checks below are diffs and greps.
+
+[2026-11-09T15:43:10Z] $ ls package/src package/src/analysis package/tests; grep -rln 'docs/' package/src package/tests package/run_all.sh || echo 'no docs check in package'
+package/src:
+01_understand.py
+02_profile.py
+__pycache__
+analysis
+checks
+common.py
+dictionary.py
+fit_transforms.py
+link_raw.py
+prepare_data.py
+validate_prepared.py
+
+package/src/analysis:
+__pycache__
+aq1_year_shared_modules.py
+aq2_sensitivity_continuous.py
+aq_analysis.py
+aq_checks.py
+
+package/tests:
+__pycache__
+test_features.py
+no docs check in package
+exit status: 0
+
+[2026-11-09T15:43:10Z] $ diff <(grep -E '^\| AQ[1-4] ' report/16-11-reading-traceability.md | sed -n 5,8p) <(grep -E '^\| AQ[1-4] ' package/docs/traceability_matrix.md | sed -n 1,4p) && echo 'Table A.27 rows == package Table 1 rows'
+Table A.27 rows == package Table 1 rows
+exit status: 0
+
+[2026-11-09T15:43:10Z] $ diff <(grep -E '^\| AQ[1-4] \| (Partial|Deferred) \|' report/16-11-reading-traceability.md) <(grep -E '^\| AQ[1-4] \| (Partial|Deferred) \|' package/docs/traceability_matrix.md) && echo 'Table A.28 == package Table 2'
+Table A.28 == package Table 2
+exit status: 0
+
+[2026-11-09T15:43:10Z] $ diff <(sed -n '/^| Stage /,/^| M5: drafting/p' report/16-16-ai-decision-log.md) <(sed -n '/^| Stage /,/^| M5: drafting/p' package/docs/ai_decision_log.md); echo 'expected one difference: (Appendix XIII) -> (final report, Appendix XIII)'
+8c8
+< | M5: AQ1 and AQ2 analysis code | An AI agent wrote the analysis code for AQ1 and AQ2 on the 9 runs of 2013, following the Milestone 4 plan | Analysis and check scripts, the result tables and a methods note listing every deviation from the plan and every deferred item | 95 automated consistency checks against the numbers Milestones 3 and 4 published and against a standard statistics library (95 pass, 0 fail); a byte-identical rerun; an independent recomputation of the populations and two risk differences (6 of 6 agree) | Results adopted after the independent check; deviations from the plan reported with their sensitivity results (Appendix XIII); the 2014 outcomes left unopened |
+---
+> | M5: AQ1 and AQ2 analysis code | An AI agent wrote the analysis code for AQ1 and AQ2 on the 9 runs of 2013, following the Milestone 4 plan | Analysis and check scripts, the result tables and a methods note listing every deviation from the plan and every deferred item | 95 automated consistency checks against the numbers Milestones 3 and 4 published and against a standard statistics library (95 pass, 0 fail); a byte-identical rerun; an independent recomputation of the populations and two risk differences (6 of 6 agree) | Results adopted after the independent check; deviations from the plan reported with their sensitivity results (final report, Appendix XIII); the 2014 outcomes left unopened |
+expected one difference: (Appendix XIII) -> (final report, Appendix XIII)
+exit status: 0
+
+[2026-11-09T15:43:10Z] $ diff <(sed -n 143,159p report/16-03-aq-quality-revision.md) <(grep '^| C[01][0-9] ' package/data/metadata/change_log.md) && echo 'Table A.8 C01-C17 == change_log.md (after fixing C04 IMD band -> deprivation band)'
+Table A.8 C01-C17 == change_log.md (after fixing C04 IMD band -> deprivation band)
+exit status: 0
+
+[2026-11-09T15:43:10Z] $ grep -rn 'PLACEHOLDER' package --include='*.md' --include='*.csv' --include='*.json' --include='*.py' --include='*.sh' --include='*.txt' || echo 'PLACEHOLDER: 0 hits'
+PLACEHOLDER: 0 hits
+exit status: 0
+
+[2026-11-09T15:43:11Z] $ grep -rnE 'reports/|/Users/' package --include='*.md' --include='*.csv' --include='*.json' --include='*.py' --include='*.sh' --include='*.txt' --include='*.bib' || echo 'repository paths: 0 hits'
+repository paths: 0 hits
+exit status: 0
+
+[2026-11-09T15:43:19Z] $ grep -rnwE 'T[0-9]{1,2}' package --include='*.md' --include='*.csv' --include='*.json' --include='*.py' --include='*.sh' | grep -v 'logs/' || echo 'task IDs T0/T1/T2: 0 hits'
+task IDs T0/T1/T2: 0 hits
+exit status: 0
+
+[2026-11-09T15:43:20Z] $ grep -rnE 'S[0-9]{3}|C[0-9]+-[0-9]{2,3}' package --include='*.md' --include='*.csv' --include='*.json' --include='*.py' --include='*.sh' || echo 'source/claim IDs (S101, C1-012 style): 0 hits'
+source/claim IDs (S101, C1-012 style): 0 hits
+exit status: 0
+
+[2026-11-09T15:43:33Z] $ grep -rnwE 'T[0-9]{1,2}' package/logs package/docs package/README.md
+task IDs in logs/docs/README: 0 hits
+exit status: 0
+
+[2026-11-09T15:43:33Z] $ grep -c '^PASS' package/logs/11_aq_checks.log; grep -n '95 automated' report/13-00-genai-reflection.md report/16-16-ai-decision-log.md
+97
+103:SUMMARY: 97 PASS, 0 FAIL, 3 INFO
+NOTE: package log (run 2026-11-09T15:07:12Z) has 97 PASS, 0 FAIL; report Section 13.1 and Table A.43 state 95 checks (95 pass). Package AI log copies the report wording (95); report wording needs updating, outside this task's edit scope.
+exit status: 0

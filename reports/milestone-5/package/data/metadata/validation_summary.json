@@ -1,0 +1,198 @@
+{
+  "generated": "2026-11-09T15:07:07Z",
+  "checks": [
+    {
+      "ID": "V01a",
+      "Check": "enrolment rows and outcome mix equal raw studentInfo",
+      "Expected": "32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]",
+      "Observed": "32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V01b",
+      "Check": "students",
+      "Expected": "28,785",
+      "Observed": "28,785",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V01c",
+      "Check": "population sizes equal the profile (C09)",
+      "Expected": "{'d14': 28061, 'd13': 28069, 'd27': 27535}",
+      "Observed": "{'d14': 28061, 'd13': 28069, 'd27': 27535}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V01d",
+      "Check": "non-completion count per feature view equals the profile",
+      "Expected": "{'d13': 12708, 'd27': 12156}",
+      "Observed": "{'d13': 12708, 'd27': 12156}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V02",
+      "Check": "missing values after = before (no imputation in views)",
+      "Expected": "{'imd_band Missing': 1111, 'date_registration': 45, 'TMA/CMA score null (submitted)': 173}",
+      "Observed": "{'imd_band Missing': 1111, 'date_registration': 45, 'TMA/CMA score null (submitted)': 173}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V03",
+      "Check": "key unique in every view",
+      "Expected": "0 duplicates",
+      "Observed": "{'enrolment': 0, 'assessment_due': 0, 'student_week': 0, 'features_d13': 0, 'features_d27': 0, 'capacity_by_run': 0}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V04a",
+      "Check": "enrolment clicks + clicks after withdrawal = raw clicks",
+      "Expected": "39,605,099",
+      "Observed": "39,506,354 + 98,745 = 39,605,099",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V04b",
+      "Check": "student_week clicks = enrolment clicks",
+      "Expected": "39,506,354",
+      "Observed": "39,506,354",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V04c",
+      "Check": "de-duplicated total ≤ raw total",
+      "Expected": "dedup ≤ raw",
+      "Observed": "38,247,422 ≤ 39,506,354",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V05",
+      "Check": "every category in its expected set",
+      "Expected": "no other label",
+      "Observed": "{'imd_band': [], 'age_band': [], 'highest_education': [], 'final_result': [], 'start_month': [], 'split': []}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V06",
+      "Check": "banked results carry no lateness and no missed status",
+      "Expected": "0",
+      "Observed": "0",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V07",
+      "Check": "ranges after = before (no capping)",
+      "Expected": "score [0, 100]; credits [30, 655]",
+      "Observed": "{'score': [0.0, 100.0], 'studied_credits': [30, 655]}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V08",
+      "Check": "no student_week row after the withdrawal week",
+      "Expected": "0",
+      "Observed": "0",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V09",
+      "Check": "every logged join kept its rows",
+      "Expected": "25 joins, rows in = rows out",
+      "Observed": "25",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V10",
+      "Check": "enrolments without any click row kept with 0 clicks",
+      "Expected": "≥ 3,365",
+      "Observed": "3,554",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V11-d13",
+      "Check": "6 features recomputed from raw for all 28,069 rows (independent code)",
+      "Expected": "0 mismatches",
+      "Observed": "{'clicks_0c': 0, 'clicks_pre': 0, 'active_days_0c': 0, 'sites_0c': 0, 'tasks_missed_c': 0, 'tasks_late_c': 0}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V13-d13",
+      "Check": "pipeline clicks differ from an unfiltered recount exactly for students with later clicks; no target-derived or whole-run column in the view",
+      "Expected": "26,755 rows with later clicks; no forbidden column",
+      "Observed": "26,755 rows differ; forbidden []",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V11-d27",
+      "Check": "6 features recomputed from raw for all 27,535 rows (independent code)",
+      "Expected": "0 mismatches",
+      "Observed": "{'clicks_0c': 0, 'clicks_pre': 0, 'active_days_0c': 0, 'sites_0c': 0, 'tasks_missed_c': 0, 'tasks_late_c': 0}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V13-d27",
+      "Check": "pipeline clicks differ from an unfiltered recount exactly for students with later clicks; no target-derived or whole-run column in the view",
+      "Expected": "25,663 rows with later clicks; no forbidden column",
+      "Observed": "25,663 rows differ; forbidden []",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V12",
+      "Check": "transform parameters identical with and without test rows, equal to the stored ones",
+      "Expected": "identical",
+      "Observed": "d13: identical, d27: identical",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V14",
+      "Check": "every column documented; predictor lists hold no audit, target or descriptive column",
+      "Expected": "none",
+      "Observed": "{'undocumented': [], 'wrong role': []}",
+      "Status": "PASS"
+    },
+    {
+      "ID": "V15",
+      "Check": "no run in both partitions; 2013 = train; student flag recomputed",
+      "Expected": "9 train, 13 test runs; 0 flag mismatches",
+      "Observed": "{'train runs': 9, 'test runs': 13, 'test enrolments of students seen in 2013': 1962, 'flag mismatches': 0}",
+      "Status": "PASS"
+    }
+  ],
+  "extra": {
+    "cma_score_coverage_training_rows": {
+      "d13": 0.0138,
+      "d27": 0.0525
+    },
+    "kpi_sensitivity": {
+      "completion_day14": 0.5474,
+      "enrolled_day14": 28061,
+      "completion_without_138_flagged": 0.5493,
+      "enrolled_without_flagged": 27962
+    },
+    "rule_rate_overall": {
+      "d13": 0.2021,
+      "d27": 0.2881
+    },
+    "rule_rate_cma_variant": {
+      "d13": 0.2021,
+      "d27": 0.4123
+    },
+    "runs_where_rule_exceeds_list_of_5_per_20": {
+      "13": 7,
+      "27": 10
+    },
+    "runs_where_rule_exceeds_list_of_3_per_20": {
+      "13": 15,
+      "27": 22
+    },
+    "rule_rate_by_run_range": {
+      "13": [
+        0.0838,
+        0.4401
+      ],
+      "27": [
+        0.1791,
+        0.5476
+      ]
+    }
+  },
+  "all_pass": true
+}

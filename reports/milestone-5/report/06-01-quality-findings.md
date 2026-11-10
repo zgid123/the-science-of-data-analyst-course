@@ -1,41 +1,26 @@
 ## 6.1. Quality Findings
 
-The profile of Section 6 shows a large, well-keyed dataset whose outcome classes are close in size; its quality findings decide which of its records can be used as they stand and which would bias a rate, the target or a feature if they were ignored. Milestone 3 turned the profile into a Data Quality Issue Log of nineteen issues, DQ01 to DQ19, each with its evidence, its impact on the questions, a severity and a decision (Milestone 3, Section 3.5). The severity is judged against the questions: High marks an issue that would change a reported rate, the target or a feature at a cut-off if it were ignored; Medium one that would change a measure by a known amount; and Low one that touches few records or a field that no question uses. Table 6.2 gives the full log with the decision taken on each issue.
+In Milestone 3 we turned the profile into a Data Quality Issue Log of nineteen issues, rated against the questions: High
+when ignoring the issue would change a rate, the target or a feature, Medium when it would change a measure by a known
+amount, and Low otherwise. Table 6.2 gives the log with the decision on each issue; Table A.15 (Appendix VI) adds the
+evidence. The three High issues each change the method: exam results are missing in five modules, so tasks mean TMAs
+and CMAs only (DQ08); no 2013 run has a task due by day 13 and 7 of 9 have one by day 27, so the early-sign rule has an
+activity part (DQ18); and the narrow population limits every claim (DQ19). Two Medium issues
+could move a conclusion by a known amount: counting late CMAs would raise the share the early-sign rule flags at day 27
+from 28.8% to 41.2%, so the rule uses TMA lateness and late CMAs become a sensitivity run (DQ10), and the duplicate click rows, 7.39% of click rows, whose removal would drop 3.19% of all clicks, which a de-duplicated twin of each click feature tests (DQ01). These findings
+produced the Change Log entries C09 to C13 (Table A.8), none of which alters the Business Goal or the decisions.
 
 **Table 6.2. Data Quality Issue Log**
 
-| ID | Issue | Evidence | Questions affected | Severity | Decision |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| DQ01 | Exact duplicate click rows | 787,170 rows (7.39%); 3.19% of clicks | AQ2, AQ3 click measures | Medium | Keep every row; a de-duplicated twin of each click feature for sensitivity |
-| DQ02 | Grain of the click table | 1,614,505 student-resource-days with several rows | Counts and joins at row level | Medium | Sum clicks by enrolment and day before any join; count active days, not rows |
-| DQ03 | Activity after unregistration | 98,745 clicks and 588 submissions after unregistering | AQ1, AQ2 engagement | Medium | Truncate engagement at the unregistration day |
-| DQ04 | Final result and unregistration day disagree | 93 Withdrawn without a day; 9 Fail with one | Populations at each day | Low | Keep both as recorded; flag the 93 and the 9 |
-| DQ05 | Registration after day 14 | 58 registered on days 16–167 | KPI denominator; cut-off populations | Low | Enrolled at day d requires registration by day d (population rule C09) |
-| DQ06 | Departures before teaching | 3,097 unregistered by day 0; one on day 444 of a 268-day run | KPI denominator | Low | Not an error; outside the day-14 population; the day-444 record flagged |
-| DQ07 | Banked results | 1,909 dated −1 | Timing and missed-task measures | Medium | Never timed; counted as banked results, known at registration |
-| DQ08 | Exam results | 18 of 24 exams without a result row | AQ1 first missed task; task signs of AQ2, AQ3 | High | Tasks are TMA and CMA only; exam scores not used |
-| DQ09 | Assessment weights | Coursework weight 0 in GGG; two exams in CCC 2014 | Weighted score features | Medium | No weighted grade; tasks counted unweighted |
-| DQ10 | Late submissions | 32,991 of 69,956 CMA and 16,320 of 97,088 TMA late | Late-task signs; early-sign rule | Medium | Lateness kept by task type; the rule uses TMA lateness (C10) |
-| DQ11 | Missing scores | 173 TMA scores | Score features | Low | Left missing; only marks known at the cut-off used |
-| DQ12 | Deprivation band | 1,111 missing; 65.7% against 46.6% pass | AQ4 fairness audit; background features | Medium | Label corrected; "Missing" kept as its own group; no imputation |
-| DQ13 | Registration day | 45 missing, 39 of them Withdrawn | Registration-lead feature | Low | Kept missing with an indicator |
-| DQ14 | Planned weeks of resources | Missing for 82.4% of resources | None | Low | Not used |
-| DQ15 | Days without any click | Days 218–219 of all February 2014 runs | Daily series after week 30 | Low | Treated as missing, not zero |
-| DQ16 | Outliers in clicks and credits | 2,503 beyond the fence; 655 credits | Scale-sensitive methods | Low | Every value kept; logarithm in model inputs |
-| DQ17 | Enrolments without activity | 3,365 without clicks; 6,750 without submissions | Inner joins would drop them | Medium | Left joins from the enrolment table; zero counts |
-| DQ18 | Tasks due by the cut-offs | A task due by day 13 in 1 run, by day 27 in 16 | AQ3 comparison rule; secondary KPI 1 | High | Rule restated on the tasks actually due (C10) |
-| DQ19 | Representativeness | Seven UK modules of 2013–2014 | Every claim; group comparisons | High | Scope stated; comparisons within module; results checked on the university's data |
-
-**Duplicates and grain.** Of the click rows, 787,170 (7.39%) repeat another row exactly, yet they carry only 3.19% of all clicks. Equal click counts occur in 31.5% of pairs of rows for the same student, resource and day, against 24.0% expected by chance from each resource's own counts, so the repeats are more than chance would produce, yet the data cannot show whether they are double logging or repeated visits. As a result, every row is kept, raw clicks are the declared primary measure, and a de-duplicated twin of each click feature allows a sensitivity check (DQ01). The duplicate share is lower in the development year than in the test year, 6.82% of rows in the 2013 runs against 7.87% in 2014, so the twin also shows whether a click feature would shift between years for a reason unrelated to students. In addition, the click table holds several rows for 1,614,505 student-resource-days, so clicks are summed by enrolment and day before any use (DQ02). A direct join of submissions with click rows would return 89,347,197 rows, and an inner join would drop the 3,365 enrolments without any click, whose lack of activity is itself one of the signs under study; tables are therefore summed and left-joined from the enrolment table (DQ17).
-
-**Missing values.** The deprivation band (IMD band) is blank for 1,111 enrolments (3.41%), and these students pass in 65.7% of cases against 46.6% of the others. Because the blanks relate to the outcome, they are kept as their own "Missing" group rather than filled (DQ12), and the fairness audit of Section 9.2 reports that group on its own. In addition, 45 registration days and 173 TMA scores are missing (DQ13, DQ11), and 18 of the 24 exams have no result row at all, by design of the dataset (DQ08). No missing value is imputed in the prepared views; Section 7 describes the indicators and the filling that happens only inside model fitting.
-
-**Validity.** Six inconsistencies were found, and none was corrected by changing a recorded value: 93 Withdrawn enrolments without an unregistration day, 87 of them in October 2014 runs (DQ04); 58 registrations after day 14 (DQ05); 1,909 banked results dated −1 (DQ07); 98,745 clicks and 588 submissions after the student unregistered (DQ03); 32,991 of 69,956 CMA submissions and 16,320 of 97,088 TMA submissions recorded as late (DQ10); and one deprivation band label written in two forms. Activity after unregistration is cut at the unregistration day, so a withdrawn student is never credited with engagement after leaving, and banked results, carried over from an earlier attempt, are counted as known at registration but never timed.
-
-**Outliers.** Activity is strongly right-skewed, with 2,503 enrolments beyond the upper fence and a single record of one student on one resource on one day reaching 6,977 clicks, and study load reaches 655 credits. These are plausible records of very active or heavily loaded students, so no value is removed or capped, and models sensitive to scale use logarithms (DQ16).
-
-**Issues that could change a conclusion.** Three issues are rated High, and each would change a result if ignored. The missing exam results (DQ08) would count the exam as missed for every student of the five modules without exam results if exams were counted as tasks, so only TMAs and CMAs count as assessed tasks, and AQ1's first missed task means the first missed TMA or CMA. The few tasks due by the cut-offs (DQ18) would leave a task-only early-sign rule silent in most runs: a TMA or CMA falls due by day 13 in only 1 of the 22 runs and by day 27 in 16. In the 9 development runs of 2013 the first task falls due on day 19 at the earliest, so no 2013 run has a task due by day 13, and 7 of the 9 have one due by day 27; EEE 2013J and GGG 2013J have their first task on days 33 and 61. The early-sign rule (C10) was therefore restated with an activity part, and AQ2's task-based signs are estimated only in the 7 runs where a task falls due. The narrow population (DQ19) limits every claim, so the scope is stated with each result and comparisons are made within module (Section 6.2).
-
-Two Medium issues could also move a conclusion by a known amount, and the analysis keeps both visible. Counting late CMAs in the early-sign rule would raise the share of students it flags at day 27 from 28.8% to 41.2%, and the meaning of a late CMA in the 2013–2014 runs is not documented; the rule therefore uses TMA lateness only (DQ10), and counting late CMAs becomes a sensitivity run of the late-task sign of AQ2 (Section 11.3.4). The click duplicates (DQ01) carry 3.19% of all clicks, so they could inflate activity measures by about that share, which the de-duplicated twin tests.
-
-These findings produced the changes C09 to C13 of the Controlled Change Log, the list of every change to the proposal with its reason in the data: the population rule (C09), the restated early-sign rule (C10), the ranking form of AQ4 (C11), the several-modules sign limited to 2014 (C12) and the list metrics measured against the attainable maximum (C13). None of them alters the Business Goal or the decisions D1 to D3; they change how a question is measured, which Section 3.2 traces question by question. Section 6.2 turns to the remaining dimensions of data understanding: when the data were recorded, whom they represent and which fields need protection.
+| ID | Issue | Severity | Decision |
+| :---- | :---- | :---- | :---- |
+| DQ01, DQ02 | Duplicate click rows (7.39% of rows); several rows per day | Medium | Keep rows; sum by day; de-duplicated twin |
+| DQ03 | Activity after unregistration | Medium | Truncate at the unregistration day |
+| DQ04–DQ06 | Status disagreements; 58 late registrants; early leavers | Low | Flag; population rule (C09) |
+| DQ07 | Banked results dated −1 | Medium | Never timed |
+| DQ08 | 18 of 24 exams without result rows | High | Tasks are TMA and CMA only |
+| DQ09, DQ10 | Weights differ by module; late CMAs and TMAs | Medium | Unweighted tasks; TMA lateness in the rule |
+| DQ11–DQ14 | Missing scores, deprivation band, registration day, planned weeks | Low–Medium | "Missing" group or indicator; no imputation |
+| DQ15–DQ17 | Logging gap; outliers; enrolments without activity | Low–Medium | Missing, not zero; keep values; left joins |
+| DQ18 | Few tasks due by the cut-offs | High | Rule with an activity part (C10) |
+| DQ19 | Seven UK modules of 2013–2014 | High | Scope stated; comparisons within module |

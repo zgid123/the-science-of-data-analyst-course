@@ -1,29 +1,10 @@
 ## 9.2. Leakage, Fairness and Interpretability Checks
 
-The validation design of Section 9.1 decides whether the proposed model beats the rule; three further checks decide whether its result can be trusted and used: that no test information leaked into it, that its errors do not fall unfairly on a group of students, and that staff can see why a student is listed.
-
-**Leakage in the evaluation.** The data-side controls of Section 7.1 keep every feature dated up to its cut-off and every learned parameter on the training runs; the evaluation adds three controls of its own. The 2014 outcomes stay unopened until the single logged test, and the analyses that could otherwise look at them wait: the AQ2 replication on 2014 follows the AQ3 test (C14), and AQ1 is computed on 2013 with only the published 2014 outcome counts (C15). Every learned step, including filling, scaling and tuning, is refitted inside each development fold, so that no held-out run informs its own prediction. And fold results serve only the choice between candidates and are never reported as performance, because a score that guided a choice is optimistic about the chosen model. Each predictor must also be available at the moment of use, which the timing rule of Section 7.1 guarantees for every predictor of the primary and extended sets.
-
-**Fairness: what is audited and why.** Gender, disability, deprivation band and age band stay out of the predictors and serve only the audit, because leaving them out does not make a model blind to them: activity, previous attempts or credits can carry the same information. An audit is possible only because group membership is kept in the data [S906]. TRIPOD+AI asks for model performance with confidence intervals for key subgroups, including sociodemographic ones [S901], and the need is concrete on OULAD, where a fairness study of at-risk prediction reproduced a disparity of five to six percentage points in favour of male students [S907]. The frozen model would therefore be evaluated separately for each audit group, because aggregate metrics can hide differences between groups.
-
-**One primary criterion.** Fairness criteria cannot all hold at once when non-completion rates differ between groups, so the audit names one primary criterion, separation, measured as equal recall at capacity across groups. Separation matches the decision: the main harm of a contact list is missing a student who struggles, and equal recall means that a struggling student has the same chance of being listed whatever the group.
-
-**The audit groups.** The confirmatory check covers the three groups that AQ4 names and that hold at least 400 test enrolments at day 27. Table 9.3 gives the groups and how each is handled.
-
-**Table 9.3. Fairness audit groups of the proposed ranking**
-
-| Group | Test enrolments at day 27 | Handling |
-| :---- | :---- | :---- |
-| Declared disability | 1,488 | Confirmatory check, rule FR1 |
-| Most deprived band, 0–10% | 1,486 | Confirmatory check, rule FR1 |
-| Missing deprivation band | 610 | Confirmatory check, rule FR1; reported as its own group |
-| Aged 55 or over | 118 | Point gap only, marked "insufficient data, not cleared" |
-| Gender, other age and deprivation bands | – | Descriptive checks |
-
-The fairness rule FR1 flags a confirmatory group for review when its recall at capacity is more than 10 percentage points below that of the other students and the one-sided 95% bootstrap interval of the gap, Holm-adjusted over the three groups, lies below 0. The ten-point gap carries forward the fairness limit of the original proposal, which kept first-year recall within ten points of later-year recall; since OULAD records no year of study, the limit moved to the groups the data do record, deprivation band and disability (Section 3.2). A flag calls for human review of why the gap arises rather than rejecting the model, because the right response depends on the cause, which the metric alone cannot show. Students aged 55 or over, with 118 test enrolments, fall below the size at which the gap can be estimated reliably, so their gap is reported but not treated as cleared. For the same reason, a confirmatory group without a flag would show no evidence of a gap at the precision its size allows, not that the list is fair to it: recall is computed among the group's non-completers only, and the Holm adjustment raises the bar further.
-
-The descriptive checks complete the audit: selection rate, precision and calibration by group; a proxy check that compares scores and predictors across groups, to show which predictors carry group information; and the absolute between-ROC area (ABROCA), the area between a group's ROC curve and that of the other students, which stays descriptive because it measures differences across all thresholds rather than at the capacity where the decision is made.
-
-**Error analysis.** The errors of the proposed model would be examined by slice: missed non-completers and listed completers by run, module, activity level, previous attempts, late registration and kind of non-completion, Fail or Withdrawn. Recall would also be computed among active students only, and among reachable non-completers, those not withdrawn within seven days after the cut-off, because a list that catches only students who have already left helps no one. The stability of list membership near rank k would be measured under the bootstrap, and the CCC runs, from the module with no 2013 run, would be reported apart. For AQ4, the error analysis separates runs where the list fills its capacity with completers, and students with no activity at all, whom every list catches, from active students at risk.
-
-**Interpretability.** Interpretability is built into the choice of model rather than added afterwards. Each student's reasons on the list come from the same logistic model that ranks the student, so the reasons shown are the reasons used. No coefficient is read as a cause: a sign that raises a student's rank is a reason to look, not an explanation of why the student struggles. For AQ2, interpretation is limited in the same way: its risk differences describe how much more often students with a sign fail to complete within the same run, which supports where staff look but not what would change the outcome. The final model would be documented in a model card and its data in a datasheet [S910], so that its intended use, its population and its limits travel with it. Section 10 states what of this design has been implemented.
+Fold results serve only the choice between candidates and the 2014 outcomes stay closed until the single test. The
+fairness audit keeps group attributes out of the predictors, since an audit needs group membership [6], and uses one
+criterion, equal recall at capacity: rule FR1 flags a group for human review when its recall is more than 10 points
+below the other students' and the Holm-adjusted one-sided interval of the gap lies below 0. The confirmatory groups are
+declared disability (1,488 test enrolments at day 27), the most deprived band (1,486) and the missing band (610); a group
+without a flag shows no evidence of a gap at its precision, not that the list is fair (Table A.24, Appendix IX). Each
+listed student's reasons come from the same model that ranks the student, no coefficient is read as a cause, and the
+model would carry a model card and its data a datasheet [9].

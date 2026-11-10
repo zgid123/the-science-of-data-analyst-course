@@ -1,0 +1,61 @@
+2026-11-09T15:07:02Z
+$ python src/prepare_data.py   (Python 3.12.7)
+[1 load] courses.csv (SHA-256 pinned, columns as documented): None -> 22 
+[1 load] assessments.csv (SHA-256 pinned, columns as documented): None -> 206 
+[1 load] vle.csv (SHA-256 pinned, columns as documented): None -> 6364 
+[1 load] studentInfo.csv (SHA-256 pinned, columns as documented): None -> 32593 
+[1 load] studentRegistration.csv (SHA-256 pinned, columns as documented): None -> 32593 
+[1 load] studentAssessment.csv (SHA-256 pinned, columns as documented): None -> 173912 
+[1 load] studentVle.csv (SHA-256 pinned, columns as documented): None -> 10655280 
+[2 population] studentInfo + studentRegistration: 32593 -> 32593 left join, rows kept
+[2 population] + courses (run length): 32593 -> 32593 left join, rows kept
+[2 population] flag enrolled_d13: 32593 -> 28069 enrolled at the day (C09)
+[2 population] flag enrolled_d14: 32593 -> 28061 enrolled at the day (C09)
+[2 population] flag enrolled_d27: 32593 -> 27535 enrolled at the day (C09)
+[3 standardise] imd_band label '10-20' -> '10-20%': 3516 -> 0 
+[3 standardise] year, start_month, completed, non_completion, split derived: 32593 -> 32593 
+[3 standardise] tasks = TMA and CMA (exams excluded, DQ08): 206 -> 182 
+[4 keys] studentVle rows -> enrolment x day (records, clicks, clicks_dedup): 10655280 -> 1808119 clicks 39,605,099, de-duplicated 38,343,063
+[4 keys] studentVle rows -> distinct enrolment x site x day: 10655280 -> 8459320 
+[5 missing] imd_band missing -> category 'Missing' (no imputation): 1111 -> 1111 
+[5 missing] flag registration_missing: 32593 -> 45 
+[5 missing] flag withdrawal_day_missing: 32593 -> 93 
+[5 missing] flag unregistered_not_withdrawn: 32593 -> 9 
+[5 missing] flag unregistered_after_run_end: 32593 -> 1 
+[6 truncate] enrolment x day click records up to the unregistration day: 1808119 -> 1802593 clicks removed 98,745
+[6 truncate] enrolment x site x day records up to the unregistration day: 8459320 -> 8435429 
+[7 integrate] enrolment x task grid (TMA, CMA of the run): 32593 -> 286898 
+[7 integrate] + submission (if any): 286898 -> 286898 left join, rows kept
+[7 integrate] TMA/CMA submissions placed in the grid: 168953 -> 168953 
+[9 views] + banked results: 32593 -> 32593 left join, rows kept
+[9 views] + concurrent runs: 32593 -> 32593 left join, rows kept
+[9 views] + student seen in training runs: 32593 -> 32593 left join, rows kept
+[9 views] + paired run flag: 32593 -> 32593 left join, rows kept
+[9 views] + first missed task week: 32593 -> 32593 left join, rows kept
+[9 views] + tasks while enrolled: 32593 -> 32593 left join, rows kept
+[9 views] + whole-run activity (truncated at withdrawal): 32593 -> 32593 left join, rows kept
+[9 views] student_week grid + weekly clicks: 1052344 -> 1052344 left join, rows kept
+[9 views] + weekly distinct resources: 1052344 -> 1052344 left join, rows kept
+[9 views] + logging-gap flag (DQ15): 1052344 -> 1052344 left join, rows kept
+[9 views] student_week rows (weeks -3..run end, cut at withdrawal): None -> 1052344 clicks before week -3 not in this view: 0
+[8 features d13] + activity up to the cut-off: 28069 -> 28069 left join, rows kept
+[8 features d13] + distinct resources: 28069 -> 28069 left join, rows kept
+[8 features d13] + tasks due by the cut-off: 28069 -> 28069 left join, rows kept
+[8 features d13] + CMA marks known by the cut-off: 28069 -> 28069 left join, rows kept
+[8 features d13] + tasks submitted before their due day (due after the cut-off): 28069 -> 28069 left join, rows kept
+[8 features d13] + run median of clicks up to the cut-off (same run, no outcome): 28069 -> 28069 left join, rows kept
+[8 features d13] features built; max event day <= cut-off: 28069 -> 28069 early_sign_rule 5,673
+[8 features d27] + activity up to the cut-off: 27535 -> 27535 left join, rows kept
+[8 features d27] + distinct resources: 27535 -> 27535 left join, rows kept
+[8 features d27] + tasks due by the cut-off: 27535 -> 27535 left join, rows kept
+[8 features d27] + CMA marks known by the cut-off: 27535 -> 27535 left join, rows kept
+[8 features d27] + tasks submitted before their due day (due after the cut-off): 27535 -> 27535 left join, rows kept
+[8 features d27] + run median of clicks up to the cut-off (same run, no outcome): 27535 -> 27535 left join, rows kept
+[8 features d27] features built; max event day <= cut-off: 27535 -> 27535 early_sign_rule 7,933
+[10 persist] processed/enrolment.parquet: None -> 32593 39 columns
+[10 persist] processed/assessment_due.parquet: None -> 286898 14 columns
+[10 persist] processed/student_week.parquet: None -> 1052344 10 columns
+[10 persist] processed/features_d13.parquet: None -> 28069 50 columns
+[10 persist] processed/features_d27.parquet: None -> 27535 52 columns
+[10 persist] processed/capacity_by_run.parquet: None -> 44 9 columns
+exit 0

@@ -1,89 +1,18 @@
 ## 11.3. AQ2: Early Signs Associated with Non-completion
 
-Section 11.2 showed that nearly half of the enrolments still registered at day 14 did not complete, and that most non-completers had not yet missed a task by the end of week 4. The second question is diagnostic and asks which signs recorded by the end of week 4 (missed and late tasks, inactivity, activity against the run's median) go with later non-completion, compared within each module (AQ2, Section 3). Its answer supplies the reasons shown beside each name on a contact list and tests whether the parts of the early-sign rule (C10) carry information. As a diagnostic question on observational data, it is answered as an association: a regression used to capture how a sign and an outcome move together describes that association and does not test a cause [S900]. No estimate below is an effect of a sign on completion.
+We estimated AQ2 on the 11,811 enrolments of 2013 registered at day 27 (44.4% non-completion) with a logistic
+regression with run fixed effects and sign × module terms; the two task signs are defined in the 7 runs with a task due
+by day 27 (9,960 enrolments). Each estimate is an average risk difference in percentage points, an association and never
+an effect of the sign [10] (Appendix XIII).
 
-### 11.3.1. Population, signs and model
-
-We estimated AQ2 on the 9 runs of 2013, as Milestone 4 fixed, on the 11,811 enrolments still registered at day 27, of whom 5,245 (44.4%) did not complete. Five signs were measured at day 27, each from events dated on or before that day. The two task signs are a TMA or CMA due by day 27 with no submission by day 27 (missed task) and a TMA due by day 27 submitted late (late TMA); they are defined only in the 7 runs with a task due by day 27, which hold 9,960 enrolments, because EEE 2013J and GGG 2013J had no task due by then. The three click signs are defined in all 9 runs: no click on days 21–27 (inactive in the last seven days), clicks on days 0–27 below the median of the same run (low relative activity), and no click before day 0 (no activity before the start). The first three signs are the parts of the early-sign rule (C10); the fourth is the "activity against the run's median" that AQ2 names, cut at the run median because the plan fixes no other cut; the fifth comes from the inputs of the Milestone 4 AQ2 modelling brief.
-
-The model follows the Milestone 4 plan. It is a logistic regression of non-completion on the five signs, with a fixed effect for each run, previous attempts and credits studied as background terms, and sign × module terms coded as deviations from the average module, so that each sign is compared within module run. Standard errors are heteroskedasticity-robust (HC1) without clustering; the model has 37 parameters, converged on 11,811 enrolments and reaches a McFadden pseudo-R² of 0.145. Each sign's effect is reported as an average risk difference in percentage points: the mean, over the enrolments where the sign is defined, of the predicted risk with the sign present minus the predicted risk with it absent, with a 95% interval by the delta method. Odds ratios at the average module are reported beside it, and the unadjusted difference serves as the baseline. The Milestone 4 success criterion calls a sign a consistent association when its mutually adjusted risk difference is at least 5 points, its interval excludes 0, and its direction is the same in at least two-thirds of the modules where it is defined. Because a p-value does not measure the size or importance of an effect, and decisions should not rest on whether it passes a threshold [S903], p-values take no part in this verdict.
-
-### 11.3.2. Associations of the five signs
-
-Table 11.8 gives, for each sign, its prevalence, the non-completion rates with and without it, the unadjusted and mutually adjusted risk differences, the adjusted odds ratio and the verdict.
-
-**Table 11.8. Early signs at day 27 and later non-completion, 9 runs of 2013 (risk differences in percentage points, 95% intervals)**
-
-| Sign at day 27 | Population | With sign | Non-completion with / without | Unadjusted difference | Mutually adjusted difference | Adjusted odds ratio | Same direction in modules | Verdict |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Task due not submitted | 7 runs, n = 9,960 | 1,285 | 90.0% / 39.6% | 50.3 (48.3–52.2) | 40.8 (37.7–43.9) | 8.12 (6.06–10.88) | 4 of 4 | Consistent association |
-| TMA submitted late | 7 runs, n = 9,960 | 577 | 63.6% / 45.1% | 18.5 (14.4–22.5) | 20.2 (15.9–24.5) | 2.70 (2.10–3.46) | 4 of 4 | Consistent association |
-| No click on days 21–27 | 9 runs, n = 11,811 | 2,444 | 64.4% / 39.2% | 25.3 (23.1–27.4) | 14.5 (11.3–17.6) | 1.96 (1.64–2.34) | 6 of 6 | Consistent association |
-| Clicks on days 0–27 below run median | 9 runs, n = 11,811 | 5,889 | 58.1% / 30.8% | 27.3 (25.6–29.0) | 13.4 (11.5–15.2) | 1.85 (1.63–2.11) | 6 of 6 | Consistent association |
-| No click before day 0 | 9 runs, n = 11,811 | 2,297 | 61.5% / 40.3% | 21.2 (19.0–23.4) | 10.6 (7.8–13.3) | 1.69 (1.40–2.04) | 6 of 6 | Consistent association |
-
-Figure 11.2 sets the unadjusted and mutually adjusted risk differences side by side for each sign, with the population behind each estimate (task signs in 7 runs, n = 9,960; click signs in 9 runs, n = 11,811, registered at day 27).
+All five signs meet the criterion of a consistent association (Table A.33): a missed task goes with 40.8 more points of
+non-completion (37.7–43.9), a late TMA with 20.2, no click in the last seven days with 14.5, activity below the run
+median with 13.4 and no click before the start with 10.6. Each keeps its direction in every module, though five click-sign estimates in AAA and GGG include 0 (Table A.34),
+and under six sensitivity runs (Table A.35). The binary click signs miss part of a graded activity gradient (Table A.36);
+with clicks added as a continuous adjustment they shrink to 9.3, 5.8 and 8.9 points and still meet the criterion.
+Appendix XIII describes the signs within groups of gender, disability and deprivation band, and the replication on 2014
+and the several-modules sign wait until after the AQ3 test (Change Log C12, C14).
+Confidence is moderate: one year, a known misfit, and associations that unrecorded reasons could explain. The signs give
+each name on a D1 list a factual reason, while contact based on them stays an option to test. Figure 11.2 shows the five signs, unadjusted and mutually adjusted.
 
 ![Figure 11.2. Risk difference in later non-completion between enrolments with and without each early sign at day 27, unadjusted and mutually adjusted, with 95% intervals; task signs: 7 runs of 2013, n = 9,960; click signs: 9 runs of 2013, n = 11,811](assets/figures/fig-11-2-aq2-associations.png){width=100%}
-
-All five signs meet the consistent-association criterion. A missed task is by far the strongest sign: 90.0% of the 1,285 enrolments with a task due and not submitted by day 27 did not complete, against 39.6% of those without, and after adjustment for the other signs, the run and the background terms the difference is still 40.8 points (37.7–43.9), with an odds ratio of 8.12 (6.06–10.88). A late TMA goes with 20.2 more points of non-completion (15.9–24.5). Among the click signs, no activity in the last seven days goes with 14.5 more points (11.3–17.6), activity below the run median with 13.4 (11.5–15.2), and no activity before the start with 10.6 (7.8–13.3). How common the signs are differs widely between runs: no click on days 21–27 ranges from 7.6% of the enrolments of DDD 2013B to 54.8% of those of GGG 2013J, a missed task from 6.2% in AAA 2013J to 22.0% in DDD 2013B among the runs with a task due, and the early-sign rule as a whole flags from 18.4% (EEE 2013J) to 54.8% (GGG 2013J) of a run at day 27.
-
-The gap between the unadjusted and the adjusted columns shows how far the signs overlap. The three click signs lose about half of their unadjusted difference once the other signs enter, because they describe partly the same students: their pairwise correlations lie between 0.26 and 0.38, and each correlates between −0.38 and −0.68 with the continuous click measures. Adjusted one sign at a time, inactivity in the last seven days still goes with 33.3 points (31.2–35.3), so its smaller mutually adjusted value reflects shared information rather than a weak sign. The late-TMA sign behaves in the opposite way, reading slightly larger adjusted (20.2) than unadjusted (18.5), because a student who submitted a TMA late has by definition not missed it, and the two task signs are weakly negatively correlated (phi −0.079).
-
-### 11.3.3. Consistency across modules
-
-The criterion asks that each sign keep its direction within the modules, and Table 11.9 gives the mutually adjusted risk difference of each sign in each 2013 module.
-
-**Table 11.9. Mutually adjusted risk difference by module, 2013 (percentage points, 95% intervals; – = sign not defined, no task due by day 27)**
-
-| Sign | AAA | BBB | DDD | EEE | FFF | GGG |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Task due not submitted | 48.1 (28.7–67.6) | 45.3 (40.4–50.1) | 35.4 (30.5–40.2) | – | 40.2 (34.0–46.3) | – |
-| TMA submitted late | 20.5 (6.3–34.7) | 21.8 (16.0–27.5) | 15.7 (4.4–26.9) | – | 22.3 (16.0–28.7) | – |
-| No click on days 21–27 | 7.4 (−5.2–20.1) | 8.9 (4.7–13.1) | 22.0 (12.7–31.3) | 27.5 (18.3–36.8) | 13.9 (8.3–19.5) | 3.8 (−3.6–11.2) |
-| Clicks below run median | 8.3 (−0.8–17.3) | 10.8 (7.3–14.4) | 13.7 (10.1–17.4) | 15.8 (9.3–22.3) | 16.1 (12.6–19.6) | 10.9 (3.5–18.3) |
-| No click before day 0 | 9.4 (−8.6–27.5) | 7.6 (3.9–11.3) | 12.9 (6.5–19.3) | 17.6 (9.7–25.6) | 11.2 (5.2–17.2) | 5.0 (−1.6–11.6) |
-
-Every sign points in the same direction in every module where it is defined: 4 of 4 modules for the task signs and 6 of 6 for the click signs. The size of the association, however, varies between modules. The two task signs are large and precise in BBB, DDD and FFF, while the small module AAA (369 enrolments at day 27) gives wide intervals. The click signs vary more: inactivity in the last seven days goes with 27.5 points in EEE but 3.8 points in GGG, and five module estimates have intervals that include 0, namely inactivity in AAA and GGG, below-median activity in AAA, and no activity before the start in AAA and GGG. For these module–sign pairs the data show no clear association, which is a finding of no evidence on 369 or 924 enrolments rather than evidence that the sign carries no information there. Consistency in the criterion therefore means the same direction, not a similar size, and because the intervals treat the 9 runs as fixed, the spread of the module estimates, from 3.8 to 27.5 points for inactivity, is the better guide to how much a sign's association may vary in a later run. GGG also has the lowest withdrawal share of all modules (Section 11.2.2), so a sign of stopping to take part may matter less in a module where most non-completers stay and fail.
-
-### 11.3.4. Sensitivity runs and model checks
-
-Six sensitivity runs, the four planned in Milestone 4 and two added, test whether the estimates depend on choices made in the analysis, and Table 11.10 gives the mutually adjusted risk difference of each sign under each variant.
-
-**Table 11.10. Mutually adjusted risk difference under the sensitivity runs (percentage points, 95% intervals)**
-
-| Variant | Task due not submitted | TMA late | No click days 21–27 | Below run median | No click before day 0 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| Primary analysis | 40.8 (37.7–43.9) | 20.2 (15.9–24.5) | 14.5 (11.3–17.6) | 13.4 (11.5–15.2) | 10.6 (7.8–13.3) |
-| De-duplicated clicks | 40.9 (37.8–44.0) | 20.4 (16.1–24.7) | 14.7 (11.5–17.9) | 13.0 (11.1–14.9) | 10.6 (7.9–13.4) |
-| Late sign counts late CMAs too | 40.6 (37.5–43.8) | 15.2 (11.3–19.1) | 14.4 (11.2–17.5) | 13.5 (11.6–15.3) | 10.6 (7.8–13.3) |
-| Without flagged enrolments | 40.8 (37.7–43.9) | 20.2 (15.9–24.5) | 14.4 (11.3–17.6) | 13.4 (11.5–15.2) | 10.6 (7.8–13.3) |
-| Without the 2 runs with no task due | 40.8 (37.7–43.9) | 20.2 (15.9–24.5) | 14.2 (10.7–17.8) | 13.4 (11.3–15.4) | 10.4 (7.3–13.5) |
-| Below half the run median | 40.6 (37.5–43.7) | 21.6 (17.3–25.8) | 13.6 (10.2–16.9) | 14.7 (12.3–17.1) | 11.3 (8.5–14.0) |
-| One sign effect for all modules | 40.8 (38.0–43.7) | 21.0 (17.2–24.7) | 11.5 (8.9–14.1) | 13.4 (11.6–15.3) | 9.6 (7.2–12.0) |
-
-No variant changes the verdict: every sign stays above 5 points with an interval excluding 0 under every variant. The largest change concerns the late sign when late CMAs count as well, which lowers it from 20.2 to 15.2 points; in 2013 a late CMA by day 27 occurs only in DDD 2013B, where 85.65% of the enrolments have one, so the wider sign mixes a near-universal event into one run. The first four variants come from the Milestone 4 plan; the threshold at half the run median was added because the plan fixed no cut for the relative-activity sign, and the common sign effect across modules tests whether the sign × module terms change the average estimates.
-
-Two further checks look for patterns the model misses. Binned residuals by predicted-risk decile all lie within ±2 standard errors (the largest, 2.7 points in decile 7, against a band of 2.9), so the model's predicted rates match the observed rates across the range of risk. Binned residuals by activity level, in contrast, lie outside the band in all five levels, and Table 11.11 shows them.
-
-**Table 11.11. Binned residuals of the AQ2 model by activity level on days 0–27, 2013 (observed minus predicted non-completion, percentage points)**
-
-| Activity on days 0–27 | n | Observed | Predicted | Residual | ±2 SE band |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| No click | 607 | 81.1% | 75.4% | +5.6 | 3.0 |
-| Below half the run median | 2,568 | 64.7% | 62.2% | +2.6 | 1.7 |
-| Half the median to the median | 2,714 | 46.7% | 50.4% | −3.7 | 1.8 |
-| Median to twice the median | 3,447 | 33.4% | 31.5% | +1.9 | 1.5 |
-| Twice the median or more | 2,475 | 27.2% | 29.8% | −2.6 | 1.8 |
-
-The pattern of the residuals shows that yes/no activity signs miss part of the activity gradient. Enrolments with no click at all in the first four weeks did not complete 5.6 points more often than the model predicts, and those just below the median 3.7 points less often, because the below-median sign treats every enrolment under the median alike, although non-completion keeps falling as activity rises. The association between early activity and non-completion is therefore graded rather than a step at one threshold. Because the misfit concerns the click signs whose adjusted values serve as reasons on the D1 list, we added one sensitivity run after seeing it, which the Milestone 4 plan did not contain: the same model on the same 11,811 enrolments of 2013 with the logarithm of one plus the clicks on days 0–27 added as a continuous adjustment. The refit removes the misfit, with the residuals of all five activity levels inside their ±2 SE bands, and its McFadden pseudo-R² rises from 0.145 to 0.150. With this adjustment the three click signs shrink but each stays above 5 points with an interval excluding 0: no click on days 21–27 falls from 14.5 (11.3–17.6) to 9.3 points (5.8–12.7), activity below the run median from 13.4 (11.5–15.2) to 5.8 (3.4–8.3), and no activity before the start from 10.6 (7.8–13.3) to 8.9 (6.1–11.6). The task signs barely move: a missed task falls from 40.8 to 37.3 points (33.8–40.9) and a late TMA from 20.2 to 19.5 (15.2–23.9). Every sign keeps the consistent-association verdict, although the below-median sign now has the same direction in 5 of 6 modules rather than 6 of 6 and an interval whose lower end lies below 5 points. Much of what the binary relative-activity sign carried is therefore the activity gradient itself, which supports the design choice of Milestone 4 to give the AQ3 model continuous click measures (Section 8.1) rather than the binary signs alone. Because this run was chosen after the residuals were seen, it qualifies the verdict rather than replacing the planned estimates, which remain the primary result.
-
-### 11.3.5. Groups of students and the 2014 replication
-
-The Milestone 4 plan asks that the associations be described by gender, disability and deprivation band rather than adjusted away. Refitted within each of the 15 groups, the missed-task sign keeps a positive mutually adjusted difference with an interval excluding 0 in every group, from 18.8 points (0.05–37.6) among the 418 enrolments with a missing deprivation band to 49.9 points (43.2–56.5) in the 30–40% band. It goes with 44.9 points (41.0–48.8) for women and 37.1 points (33.0–41.3) for men, and with 40.6 points (37.4–43.8) for students without and 38.7 points (32.2–45.2) for students with a declared disability. The click signs are smaller and less certain in the small deprivation-band groups: their intervals include 0 for inactivity in three of the eleven bands and for no activity before the start in five, and the late-TMA interval includes 0 in the least deprived band. These are descriptions of where the association is weaker or less certain, not grounds for treating any group differently.
-
-Two parts of AQ2 remain open. The replication on the 13 runs of 2014, including module CCC, follows the AQ3 test, because estimating AQ2 on 2014 before the AQ3 model is frozen would let 2014 outcomes shape the choice of predictors (C14, replication after the AQ3 test); it would report the 2013 and 2014 estimates with intervals per sign and module. The several-modules sign (tasks missed in more than one module at once) cannot be described on 2013, where only 12 of the 1,382 enrolments taken at the same time as another fall, so it waits with the replication (C12, several-modules sign in 2014 only). Attendance at in-class sessions has no counterpart in OULAD at all (Section 5.1).
-
-### 11.3.6. What AQ2 means for the project
-
-AQ2 answers its diagnostic question for 2013 with moderate confidence: each of the five signs goes with higher later non-completion within module runs, in the same direction across modules and under every sensitivity run, including the added run with a continuous activity adjustment, and a missed task goes with the largest difference. The confidence is moderate rather than high because the estimates rest on one year, the binary click signs fit the activity gradient poorly, and the relative-activity sign falls close to the five-point threshold once activity enters as a continuous measure. In addition, part of what the missed-task sign marks may be students who are already leaving: the share of non-completers who are still reachable, those not withdrawn within seven days after the cut-off, belongs to the planned error analysis of the AQ3 list (Section 9.2) and is not estimated here, so the 40.8 points describe an association with later non-completion, not the share of students who can still be helped. For the lists of D1, the signs give each name a factual reason that staff can check against the student's record, and they confirm that each part of the early-sign rule (C10) carries information on its own. For D2, they suggest the hypothesis that support time early in the run is best placed in modules where the signs are common, to be checked on the university's records, since a common sign marks concentrated risk, not proven benefit. The estimates remain associations in one year of UK distance-learning modules: a student who stops clicking may already have decided to leave for reasons the data do not record, so the signs are not shown to cause non-completion, and contact triggered by them is an option to test rather than a proven remedy (Section 11.5). Section 11.4 turns to the two questions that build on these signs, AQ3 and AQ4, whose results wait for the predictive test.

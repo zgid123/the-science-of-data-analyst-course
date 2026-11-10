@@ -1,0 +1,27 @@
+2026-11-09T15:07:05Z
+$ python src/validate_prepared.py   (Python 3.12.7)
+V01a PASS enrolment rows and outcome mix equal raw studentInfo: expected 32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]; observed 32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]
+V01b PASS students: expected 28,785; observed 28,785
+V01c PASS population sizes equal the profile (C09): expected {'d14': 28061, 'd13': 28069, 'd27': 27535}; observed {'d14': 28061, 'd13': 28069, 'd27': 27535}
+V01d PASS non-completion count per feature view equals the profile: expected {'d13': 12708, 'd27': 12156}; observed {'d13': 12708, 'd27': 12156}
+V02 PASS missing values after = before (no imputation in views): expected {'imd_band Missing': 1111, 'date_registration': 45, 'TMA/CMA score null (submitted)': 173}; observed {'imd_band Missing': 1111, 'date_registration': 45, 'TMA/CMA score null (submitted)': 173}
+V03 PASS key unique in every view: expected 0 duplicates; observed {'enrolment': 0, 'assessment_due': 0, 'student_week': 0, 'features_d13': 0, 'features_d27': 0, 'capacity_by_run': 0}
+V04a PASS enrolment clicks + clicks after withdrawal = raw clicks: expected 39,605,099; observed 39,506,354 + 98,745 = 39,605,099
+V04b PASS student_week clicks = enrolment clicks: expected 39,506,354; observed 39,506,354
+V04c PASS de-duplicated total ≤ raw total: expected dedup ≤ raw; observed 38,247,422 ≤ 39,506,354
+V05 PASS every category in its expected set: expected no other label; observed {'imd_band': [], 'age_band': [], 'highest_education': [], 'final_result': [], 'start_month': [], 'split': []}
+V06 PASS banked results carry no lateness and no missed status: expected 0; observed 0
+V07 PASS ranges after = before (no capping): expected score [0, 100]; credits [30, 655]; observed {'score': [0.0, 100.0], 'studied_credits': [30, 655]}
+V08 PASS no student_week row after the withdrawal week: expected 0; observed 0
+V09 PASS every logged join kept its rows: expected 25 joins, rows in = rows out; observed 25
+V10 PASS enrolments without any click row kept with 0 clicks: expected ≥ 3,365; observed 3,554
+V11-d13 PASS 6 features recomputed from raw for all 28,069 rows (independent code): expected 0 mismatches; observed {'clicks_0c': 0, 'clicks_pre': 0, 'active_days_0c': 0, 'sites_0c': 0, 'tasks_missed_c': 0, 'tasks_late_c': 0}
+V13-d13 PASS pipeline clicks differ from an unfiltered recount exactly for students with later clicks; no target-derived or whole-run column in the view: expected 26,755 rows with later clicks; no forbidden column; observed 26,755 rows differ; forbidden []
+V11-d27 PASS 6 features recomputed from raw for all 27,535 rows (independent code): expected 0 mismatches; observed {'clicks_0c': 0, 'clicks_pre': 0, 'active_days_0c': 0, 'sites_0c': 0, 'tasks_missed_c': 0, 'tasks_late_c': 0}
+V13-d27 PASS pipeline clicks differ from an unfiltered recount exactly for students with later clicks; no target-derived or whole-run column in the view: expected 25,663 rows with later clicks; no forbidden column; observed 25,663 rows differ; forbidden []
+V12 PASS transform parameters identical with and without test rows, equal to the stored ones: expected identical; observed d13: identical, d27: identical
+V14 PASS every column documented; predictor lists hold no audit, target or descriptive column: expected none; observed {'undocumented': [], 'wrong role': []}
+V15 PASS no run in both partitions; 2013 = train; student flag recomputed: expected 9 train, 13 test runs; 0 flag mismatches; observed {'train runs': 9, 'test runs': 13, 'test enrolments of students seen in 2013': 1962, 'flag mismatches': 0}
+extra: {'cma_score_coverage_training_rows': {'d13': 0.0138, 'd27': 0.0525}, 'kpi_sensitivity': {'completion_day14': 0.5474, 'enrolled_day14': 28061, 'completion_without_138_flagged': 0.5493, 'enrolled_without_flagged': 27962}, 'rule_rate_overall': {'d13': 0.2021, 'd27': 0.2881}, 'rule_rate_cma_variant': {'d13': 0.2021, 'd27': 0.4123}, 'runs_where_rule_exceeds_list_of_5_per_20': {13: 7, 27: 10}, 'runs_where_rule_exceeds_list_of_3_per_20': {13: 15, 27: 22}, 'rule_rate_by_run_range': {13: [0.0838, 0.4401], 27: [0.1791, 0.5476]}}
+22 of 22 checks PASS
+exit 0

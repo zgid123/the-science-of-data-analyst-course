@@ -1,0 +1,9 @@
+## 2026-11-09T15:16:51Z $ venv/bin/python .claude/skills/research-report/scripts/finalize_refs.py --base reports/milestone-5
+28 cited sources numbered by first citation
+converted 51 body files; wrote 15-references.md and the reference map; backup in build/.cache/milestone-5_draft_backup
+exit 0
+## 2026-11-09T15:17:12Z APA entries added for S001, S002; $ venv/bin/python .claude/skills/research-report/scripts/finalize_refs.py --base reports/milestone-5 --renumber
+renumber: 26 files mapped back to source IDs
+28 cited sources numbered by first citation
+converted 51 body files; wrote 15-references.md and the reference map; backup in build/.cache/milestone-5_draft_backup
+exit 0

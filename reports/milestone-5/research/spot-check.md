@@ -1,3 +1,62 @@
 # Fact Spot-Check
 
 Each run of `spot_check.py --write` appends a seeded random sample of cited sentences, traced to verbatim evidence. The Result column records Match, Partial (with the correction made) or Mismatch (a stop for the human).
+
+## Spot-check run 2026-11-09 (seed 20261109, 10 of 79 cited sentences)
+
+| # | File | Line | Sentence | Citation → source | Claim and quote anchor | Result |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| 1 | 14-00-conclusion.md | 19 | What cannot be concluded is that these signs cause non-completion, that a model ranks students better than the rule, or that contacting a li | [10] → S900; [14] → S904 | no claim linked to this file | Match – S900 "Fitting a regression model can be descriptive if it is used for capturing the association … rather than for causal inference"; S904 "Ideally, questions about comparative effectiveness … would be answered using an appropriately designed and conducted randomized experiment" |
+| 2 | 06-02-representativeness-sensitive.md | 3 | Under Vietnam's Personal Data Protection Law, re-identifying de-identified data is prohibited [8], so OULAD is never linked to another sourc | [8] → S913 | C6-034 "Dữ liệu cá nhân sau khi khử nhận dạng không còn là dữ liệu" (found); C6-035 "Bảo vệ dữ liệu cá nhân đối với thông tin sức khỏe" (found) | Match – C6-034 anchor "Không được tái nhận dạng dữ liệu cá nhân sau khi đã được khử nhận dạng, trừ trường hợp pháp luật có quy định khác"; the legal exception does not apply to OULAD |
+| 3 | 16-14-aq3-aq4-answers.md | 51 | Even the Open University's own evaluation of its predictive learning analytics, which did involve teacher action, warns that any causal inte | [3] → S112 | no claim linked to this file | Match – S112 "any causal interpretation of the above findings should be treated with caution" (C11-011); the study evaluated teachers using OU Analyse |
+| 4 | 16-06-profile-quality.md | 74 | They are kept rather than removed because bias in a prediction can arise through proxies, other fields that carry the same information, even | [6] → S906 | no claim linked to this file | Match – S906 "Bias of this nature can also arise even when demographics are not explicitly encoded in models, for instance when a proxy …" and "If we do not collect data on group membership, we cannot analyze our data sets for algorithmic bias" (C9-038) |
+| 5 | 11-03-aq2-findings.md | 3 | Each estimate is an average risk difference in percentage points, an association and never an effect of the sign [10] (Appendix XIII). | [10] → S900 | no claim linked to this file | Match – S900 association-only reading (C11-006) |
+| 6 | 16-09-evaluation-detail.md | 61 | The final model would be documented in a model card and its data in a datasheet [9], so that its intended use, its population and its limits | [9] → S910 | no claim linked to this file | Match – S910 "we propose that every dataset be accompanied with a datasheet" (C13-021); model cards are named in S910 as follow-up work "that document machine learning models" |
+| 7 | 16-09-evaluation-detail.md | 5 | For the predictive questions we follow the TRIPOD+AI reporting guideline for prediction models, which frames evaluation as discrimination, c | [11] → S901 | no claim linked to this file | Match – S901 "model discrimination …, model calibration …, and clinical utility" (C9-034); "usefulness for the decision" renders clinical utility for education |
+| 8 | 16-16-ai-decision-log.md | 28 | The project also follows the phases of the Cross-Industry Standard Process for Data Mining (CRISP-DM), which remains the de-facto process mo | [28] → S912; [28] → S912 | no claim linked to this file | Match – S912 "CRISP-DM is the de-facto standard" and "the most studies do not foresee a deployment phase" (C13-022, C13-023) |
+| 9 | 01-00-introduction-context.md | 3 | The problem is that students who stop taking part are noticed late: in the simulated stakeholder interviews of Milestone 1, lecturers become | [3] → S112 | C1-026 "the time window of opportunity to effectively support studen" (found) | Match – S112 "ranging between 2 and 4 weeks" (C1-026); the uncited Milestone 1 facts match S101 ("around week 5 or 6" CL5, "only after the semester has closed" PM1, academic warning list AD1) |
+| 10 | 16-13-aq2-results.md | 5 | As a diagnostic question on observational data, it is answered as an association: a regression used to capture how a sign and an outcome mov | [10] → S900 | no claim linked to this file | Match – S900 (C11-006), same reading as row 5 |
+
+Verdict of the 2026-11-09 run: 10 of 10 Match; no report change needed for the cited sentences.
+
+## Numbers from our own results (T19)
+
+Sample drawn by `code/t19_number_sample.py` (seed 20261109, 25 of 121 sentences and table rows of 00-1 and 01-*…14-* whose digits remain after identifiers and bare years are removed); output saved in `results/t19/number_sample.md`, run in `logs/T19_spot_check.log`. Each number is traced to its file and row. Recount: the task-due runs by day 13 and day 27 were recomputed from `assessments.csv` by `code/t19_trace_checks.py` (`logs/T19_spot_check.log`).
+
+| # | File:line | Sentence or row (short) | Numbers | Traced to (file and row) | Verdict |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| 1 | 03-02:14 | Table 3.2 AQ2 row: weeks 1–4; several-modules sign only in 2014 (C12) | weeks 1–4; "only in 2014" | `research/design/aq-revision-log.md` AQ2 row (weeks 1–4); `research/baseline/m5-baseline.md` l. 361 and 370 ("1,382 enrolments in two runs at once, 1,370 of them in 2014"; "only 12 of the 1,382 … in the 2013 training runs") | Partly – 12 of 1,382 fall in 2013; fixed to "almost only in 2014" here, in 16-05 l. 112 and in 16-11 l. 42 |
+| 2 | 01-01:3 | Needs: list at weeks 3 and 5; 30–40 contacts a week; three to five per lecturer-advisor | 3, 5, 30–40, 3–5 | S101 crawl (Milestone 1: "about 30–40 students a week" AD3, VAD7; "three to five students a week" VAD6); baseline l. 61 and l. 516 | Match |
+| 3 | 07-00:20 | Table 7.1: cut-offs at days 13 and 27 | 13, 27 | baseline l. 516 (review points weeks 3 and 5, data to the cut-off); C8-005 (`part8-claims.md`) | Match |
+| 4 | 05-00:3 | 32,593 enrolments of 28,785 students; Pass 12,361, Withdrawn 10,156, Fail 7,052, Distinction 3,024 | six counts | C6-001, C6-004 (`part6-claims.md`); S103 crawl l. 185, 221, 654 | Match |
+| 5 | 09-00:3 | k = 3 or 5 per 20; 5 per 20 at day 27 main operating point | 3, 5, 20, 27 | baseline l. 599 and l. 647 (S1: "day 27, k = 5 per 20") | Match |
+| 6 | 03-00:3 | cut-offs of week-3 and week-5 lists on day 13 and day 27 | 13, 27 | baseline l. 516; C8-005 | Match |
+| 7 | 06-01:3 | exam results missing in five modules; no 2013 run with a task due by day 13; 7 of 9 by day 27 | 5, 0, 7 of 9 | `logs/T14_exam_modules.log` (results only for CCC, DDD); `results/README.md` l. 30 (7 runs, all except EEE 2013J and GGG 2013J); recount `t19_trace_checks.py` (day 13: BBB 2014B only; day 27: 16 runs, 7 of them in 2013) | Match |
+| 8 | 06-00:3 | 9 runs of 2013 for development, 13 runs of 2014 for the test | 9, 13 | C5-021 (`part5-claims.md`); `research/design/change-log-m5.md` C15, C16 | Match |
+| 9 | 14-00:9 | AQ2: five signs, missed task 40.8 points, same direction across modules | 5, 40.8 | `results/aq2_associations.csv` row missing_task (rd_adj_mutual_pp 40.83; modules 4 of 4) and rows of the click signs (6 of 6) | Match |
+| 10 | 00-1:3 | AQ1 and AQ2 on the 9 runs of 2013 | 9 | `results/aq1_rates.csv` (9 runs of 2013); `research/design/aq-answers.md` AQ1 row | Match |
+| 11 | 06-01:22 | DQ08: 18 of 24 exams without result rows | 18, 24 | baseline l. 444 | Match |
+| 12 | 02-01:3 | Early-sign rule: no activity in the previous seven days | 7 | C3-022 (`part3-claims.md`); `results/aq2_associations.csv` row inactive_last7 ("no click on days 21-27") | Match |
+| 13 | 04-00:16 | Table 4.1 AQ2: weeks 1–4; day grain | 1–4 | baseline l. 229 area (AQ–Data Requirement Matrix, Milestone 2) | Match |
+| 14 | 07-01:3 | clicks before and after day 0; inactivity in the last seven days | 0, 7 | S104 crawl (primary predictors: "clicks before the start and from the start to the cut-off … inactivity in the last seven days") | Match |
+| 15 | 04-00:17 | Table 4.1 AQ3: weeks 2 and 4; lists at weeks 3 and 5 | 2, 4, 3, 5 | baseline l. 229 (AQ3 row of the requirement matrix) | Match |
+| 16 | 11-05:12 | Table 11.2 AQ3: weeks 2 and 4 | 2, 4 | `research/design/aq-answers.md` AQ3 row | Match |
+| 17 | 03-00:16 | Table 3.1 AQ3: days 13 and 27; 13 runs of 2014 | 13, 27, 13 | C8-005; `research/design/change-log-m5.md` C16 | Match |
+| 18 | 05-01:14 | Table 5.2 AQ1: exam results in 2 of 7 modules | 2 of 7 | `logs/T14_exam_modules.log` (CCC, DDD); C3-014 | Match |
+| 19 | 09-00:18 | Table 9.1 AQ3: day 27, 5 per 20; 13 runs; sign-flip p below 0.05 | 27, 5/20, 13, 0.05 | baseline l. 647 (S1 gate) | Match |
+| 20 | 05-00:3 | 2013: 9 runs, six modules, 13,529; 2014: 13 runs, seven modules, 19,064; task due by day 27 in 16 of 22 | seven counts | `results/aq1_rates.csv` (all_enrolments n 13529); `results/aq1_year_difference.csv` (n_2014 19,064); C6-018 (16 of 22); recount `t19_trace_checks.py` | Match |
+| 21 | 11-03:3 | 11,811 at day 27 (44.4%); 7 runs, 9,960 | 11,811; 44.4%; 7; 9,960 | `results/aq2_associations.csv` n column (11811, 9960); C5-021 (5,245 of 11,811 = 44.4%) | Match |
+| 22 | 11-03:8 | Figure 11.2 caption: n = 9,960 (7 runs), n = 11,811 (9 runs) | 9,960; 11,811 | `results/aq2_associations.csv` n column | Match |
+| 23 | 11-05:13 | Table 11.2 AQ4: 3 or 5 per 20 | 3, 5, 20 | baseline l. 599 | Match |
+| 24 | 06-00:21 | Table 6.1: day 27, 11,811 and 5,245 (44.4%) | 11,811; 5,245; 44.4% | C5-021, C8-005 | Match |
+| 25 | 11-03:10 | 40.8 (37.7–43.9), 20.2, 14.5, 13.4, 10.6 | five estimates | `results/aq2_associations.csv` rd_adj_mutual_pp: missed_task 40.83 (37.73–43.93), late_tma 20.2, inactive_last7 14.46, low_relative_activity 13.36, no_pre_start_activity 10.56 | Match |
+
+Verdict: 24 Match, 1 Partly (row 1, fixed). Further numbers checked while reading the main text, outside the sample: 13.1 "66 critiques … 42 accepted, 14 in part and none rejected" left 10 critiques unaccounted for (`research/reviews/01-…-decisions.md` 51 rows, `02-…-decisions.md` 15 rows; 10 "accepted – later task"); fixed to "42 accepted, 14 in part, 10 handled in the finishing steps and none rejected", as Table A.41 states. Checked and matching: 11.2 78.1%, 21.9%, 19.6% (`results/aq1_first_missed_week_summary.csv`, rows Not completed and Completed); −0.2 (−1.4 to 0.9) (`results/aq1_year_shared_modules.csv`); 55.0/44.7 and 61.2/35.2 (`results/aq1_subgroup_rates.csv`, day14 non_completion); 9.3, 5.8, 8.9 (`results/aq2_sensitivity_continuous.csv`); 9.9 points (`results/aq1_denominator_shift.csv`, BBB 2013J 9.89).
+
+### Interpretive sentences checked (T19 step 3)
+
+| # | Sentence | Evidence | Outcome |
+| :-- | :-- | :-- | :-- |
+| a | 16-13 (Appendix XIII, module estimates): "GGG also has the lowest withdrawal share of all modules (Appendix XII), so a sign of stopping to take part may matter less in a module where most non-completers stay and fail." | `results/aq_summary.md` module rows: GGG Withdrawn 4.3% vs Fail 31.8% (lowest withdrawal of the six 2013 modules); GGG inactivity estimate 3.8 points with interval including 0. The second clause is an untested explanation. | Kept as interpretation, reworded: "…4.3% against 31.8% failing (Appendix XII); one possible reading, which these data do not test, is that a sign of stopping to take part matters less…". The main-text 11.2 sentence on GGG states the shares only. |
+| b | 16-15 (Appendix XV, causal limits): "A student who stops clicking may already have decided to leave…" | No data on students' decisions; this is a confounding scenario, not a finding | Kept as an explicit possibility: "One possibility the data cannot rule out is that a student who stops clicking has already decided to leave for reasons OULAD does not record; in that case, removing the sign would not change the outcome." |
+| c | 16-13 (Appendix XIII, model checks): the Milestone 4 design gives the AQ3 model continuous click measures | S104 crawl: primary predictors include "clicks before the start and from the start to the cut-off, active days, resources used"; S105 crawl: "counts log1p … all standardised" in the model-ready matrix | Supported; pointer corrected from Section 8.1 (which does not list the predictors) to "the click counts before the start and up to the cut-off (Section 7.1, Appendix VIII)". |

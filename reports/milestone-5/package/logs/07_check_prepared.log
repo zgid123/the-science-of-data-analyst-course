@@ -1,0 +1,28 @@
+2026-11-09T15:07:08Z
+$ python src/checks/check_rebuild.py prepared   (Python 3.12.7)
+MATCH       prepared view   assessment_due.parquet  rows 286898 (published 286898)
+MATCH       prepared view   capacity_by_run.parquet  rows 44 (published 44)
+MATCH       prepared view   enrolment.parquet  rows 32593 (published 32593)
+MATCH       prepared view   features_d13.parquet  rows 28069 (published 28069)
+MATCH       prepared view   features_d27.parquet  rows 27535 (published 27535)
+MATCH       prepared view   model_ready_d13.parquet  rows 28069 (published 28069)
+MATCH       prepared view   model_ready_d27.parquet  rows 27535 (published 27535)
+MATCH       prepared view   student_week.parquet  rows 1052344 (published 1052344)
+MATCH       raw input       assessments.csv
+MATCH       raw input       courses.csv
+MATCH       raw input       studentAssessment.csv
+MATCH       raw input       studentInfo.csv
+MATCH       raw input       studentRegistration.csv
+MATCH       raw input       studentVle.csv
+MATCH       raw input       vle.csv
+MATCH       pipeline script 01_understand.py
+MATCH       pipeline script 02_profile.py
+NOT SHIPPED pipeline script build_notebooks.py
+MATCH       pipeline script common.py
+MATCH       pipeline script dictionary.py
+MATCH       pipeline script fit_transforms.py
+MATCH       pipeline script link_raw.py
+MATCH       pipeline script prepare_data.py
+MATCH       pipeline script validate_prepared.py
+8 of 8 prepared views identical to OULAD-N04-prepared-1.0 (SHA-256 and rows); raw inputs all match
+exit 0
