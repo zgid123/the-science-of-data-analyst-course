@@ -1,0 +1,6 @@
+sign,enrolments_defined,with_sign,share_with_sign,rate_with_sign,rate_without_sign,unadjusted_rd,unadj_ci_low,unadj_ci_high,risk_ratio,adjusted_rd,adj_ci_low,adj_ci_high,adj_risk_with,adj_risk_without,at_least_5_points,interval_excludes_0,modules_defined,modules_same_direction,two_thirds_same_direction,verdict,label
+sign_task_missed,12585,1368,0.108701,0.890351,0.402692,0.487659,0.467785,0.505583,2.210995,0.396385,0.368070,0.424700,0.819604,0.423219,true,true,5,5,true,consistent association,Task due by day 27 not submitted
+sign_tma_late,12585,429,0.034088,0.594406,0.450806,0.143599,0.095672,0.189875,1.318539,0.162333,0.128610,0.196056,0.610379,0.448046,true,true,4,4,true,consistent association,TMA submitted late
+sign_inactive_last7,15724,3440,0.218774,0.646802,0.381472,0.265330,0.247041,0.283297,1.695544,0.154120,0.127692,0.180548,0.564768,0.410648,true,true,7,7,true,consistent association,No platform activity in the last 7 days
+sign_low_activity,15724,4099,0.260684,0.663089,0.360688,0.302400,0.285353,0.319139,1.838398,0.147535,0.127009,0.168060,0.553526,0.405991,true,true,7,7,true,consistent association,Clicks below half the run median
+sign_no_pre_activity,15724,3161,0.201030,0.582727,0.403486,0.179241,0.159935,0.198340,1.444229,0.091516,0.068952,0.114080,0.516092,0.424576,true,true,7,7,true,consistent association,No activity before the start

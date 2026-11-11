@@ -1,0 +1,9 @@
+ranking,group,confirmatory,test_enrolments,group_non_completers,group_base_rate,selection_rate_group,selection_rate_others,recall_group,recall_others,gap,boot_ci95_low,boot_ci95_high,p_one_sided,p_holm,holm_upper_bound,flagged,status
+model,Declared disability,true,1488,803,0.539651,0.324597,0.243889,0.463263,0.408972,0.054291,0.003772,0.098362,0.982600,1.000000,0.091038,false,not flagged
+model,Deprivation band 0–10%,true,1486,787,0.529610,0.295424,0.246945,0.425667,0.413945,0.011722,-0.049717,0.063331,0.642800,1.000000,0.063331,false,not flagged
+model,Deprivation band missing,true,610,181,0.296721,0.157377,0.255326,0.348066,0.417088,-0.069021,-0.168025,0.023757,0.066400,0.199200,0.034087,false,not flagged
+model,Age 55 or over,false,118,42,0.355932,0.118644,0.252531,0.261905,0.416218,-0.154313,-0.327844,0.092404,0.090800,,,,"insufficient data, not cleared (point gap only)"
+rule,Declared disability,true,1488,803,0.539651,0.292339,0.247260,0.413450,0.401768,0.011681,-0.043382,0.065566,0.674600,1.000000,0.056281,false,not flagged
+rule,Deprivation band 0–10%,true,1486,787,0.529610,0.288694,0.247647,0.411690,0.402025,0.009665,-0.045824,0.064975,0.638800,1.000000,0.064975,false,not flagged
+rule,Deprivation band missing,true,610,181,0.296721,0.172131,0.254731,0.337017,0.404903,-0.067887,-0.161158,0.021428,0.063400,0.190200,0.030015,false,not flagged
+rule,Age 55 or over,false,118,42,0.355932,0.152542,0.252275,0.238095,0.404135,-0.166039,-0.304460,0.090711,0.085400,,,,"insufficient data, not cleared (point gap only)"

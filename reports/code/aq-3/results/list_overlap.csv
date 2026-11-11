@@ -1,0 +1,5 @@
+membership,enrolments,non_completion_rate,share_withdrawn,share_fail,share_no_activity,share_flagged_by_rule,median_activity_ratio
+both lists,3053,0.762856,0.321978,0.440878,0.201441,0.925647,0.168317
+model list only,902,0.599778,0.269401,0.330377,0.000000,0.210643,0.666667
+neither list,10867,0.329806,0.153860,0.175946,0.000000,0.059170,1.360825
+rule list only,902,0.506652,0.230599,0.276053,0.009978,0.845898,0.435619

@@ -1,0 +1,44 @@
+{
+ "name": "M3",
+ "config": "M3",
+ "label": "Gradient-boosted trees, primary set",
+ "cutoff": 13,
+ "hyperparameters": {
+  "max_depth": 2,
+  "learning_rate": 0.05,
+  "trees": 200
+ },
+ "train_runs": [
+  "AAA-2013J",
+  "BBB-2013B",
+  "BBB-2013J",
+  "DDD-2013B",
+  "DDD-2013J",
+  "EEE-2013J",
+  "FFF-2013B",
+  "FFF-2013J",
+  "GGG-2013J"
+ ],
+ "train_rows": 12080,
+ "columns": [
+  "code_module",
+  "start_month",
+  "highest_education",
+  "num_of_prev_attempts",
+  "studied_credits",
+  "registration_lead",
+  "banked_results",
+  "clicks_pre",
+  "clicks_0c",
+  "active_days_0c",
+  "sites_0c",
+  "inactive_last7",
+  "activity_ratio_run",
+  "tasks_due_c",
+  "tasks_missed_c",
+  "tasks_late_c",
+  "tma_late_c",
+  "cma_late_c",
+  "cma_marked_c"
+ ]
+}

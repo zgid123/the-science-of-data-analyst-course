@@ -1,0 +1,13 @@
+quantity,this_prototype,earlier_run,difference
+"Rule-ranked list, pooled normalised recall",0.704425,0.704425,0.000000
+"Model M1, pooled normalised recall",0.725664,0.725917,-0.000253
+Difference model − rule,0.021239,0.021492,-0.000253
+"Bootstrap interval, lower bound",0.006542,0.009259,-0.002717
+"Bootstrap interval, upper bound",0.036364,0.033739,0.002625
+Sign-flip p-value,0.003174,0.000244,0.002930
+Runs won by the model (of 13),11.000000,12.000000,-1.000000
+"Calibration-in-the-large, M1, day 27",0.124046,0.057997,0.066049
+"Calibration slope, M1, day 27",0.872612,1.310605,-0.437993
+"Fairness gap in recall, Declared disability",0.054291,0.054127,0.000164
+"Fairness gap in recall, Deprivation band 0–10%",0.011722,0.017294,-0.005572
+"Fairness gap in recall, Deprivation band missing",-0.069021,-0.080517,0.011496

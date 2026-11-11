@@ -1,0 +1,6 @@
+sign,sign_task_missed,sign_tma_late,sign_inactive_last7,sign_low_activity,sign_no_pre_activity
+sign_task_missed,1.000000,-0.051699,0.249834,0.343553,0.150891
+sign_tma_late,-0.051699,1.000000,-0.033857,0.029493,0.032883
+sign_inactive_last7,0.249834,-0.033857,1.000000,0.443707,0.288058
+sign_low_activity,0.343553,0.029493,0.443707,1.000000,0.271453
+sign_no_pre_activity,0.150891,0.032883,0.288058,0.271453,1.000000

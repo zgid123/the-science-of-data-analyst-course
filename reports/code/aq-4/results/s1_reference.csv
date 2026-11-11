@@ -1,0 +1,2 @@
+runs,enrolments,list_places,tp_a,tp_b,max_attainable,pooled_nr_a,pooled_nr_b,difference,boot_ci_low,boot_ci_high,ci_a_low,ci_a_high,ci_b_low,ci_b_high,boot_share_diff_le_0,signflip_p,signflip_count,signflip_total,wins,ties,losses,mean_per_run_difference,pooled_nr_a_expected_ties,pooled_nr_b_expected_ties,passes,model,comparison,verdict
+13,15724,3955,2870,2786,3955,0.725664,0.704425,0.021239,0.006542,0.036364,0.666302,0.775164,0.640518,0.754743,0.001500,0.003174,26,8192,11,0,2,0.020679,0.725664,0.704509,true,M1,B2_rule,PASS

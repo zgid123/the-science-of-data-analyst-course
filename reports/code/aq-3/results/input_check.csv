@@ -1,0 +1,3 @@
+cutoff,train_rows,train_non_completers,train_runs,test_rows,test_runs,predictors_available,capacity_rule_matches_prepared_table,flagged_by_rule_share_all_runs
+13,12080,5519,9,15989,13,31,true,0.202109
+27,11811,5245,9,15724,13,33,true,0.288106

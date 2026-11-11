@@ -1,0 +1,13 @@
+name,config,cutoff,hyperparameters,train_runs,train_rows,columns,mean_fitted_risk_train,train_rate,file,sha256
+B3,B3,27,"{""C"": 0.01}",9,11811,10,0.444078,0.444078,frozen_B3_d27.joblib,3ac62f049fd5994221ff52f9fe3fe0fe41d5befdc438a96ff6638a8e661cb212
+M1,M1,27,"{""C"": 10.0}",9,11811,23,0.444078,0.444078,frozen_M1_d27.joblib,35b26eaa26a496077fbd1bb8aba1b381ce87a4370aa6eefbe691733955268c58
+M2,M2,27,"{""C"": 10.0}",9,11811,37,0.444078,0.444078,frozen_M2_d27.joblib,49a0409064bf256606c7fc8544a513c3ce21b9e12d1e0491fa24eafc3cde9407
+M3,M3,27,"{""max_depth"": 3, ""learning_rate"": 0.05, ""trees"": 100}",9,11811,19,0.444082,0.444078,frozen_M3_d27.joblib,2db97136b33b749330e05e0be1124b35da2b38fe1d67701014164fe4ea89e9e1
+M4,M4,27,"{""max_depth"": 2, ""learning_rate"": 0.05, ""trees"": 200}",9,11811,33,0.444082,0.444078,frozen_M4_d27.joblib,4f1c63190c5ea7a6e963438cc48202fbaa6535ebd451c833269675b0e1a47c2e
+M1_labels_available,M1,27,"{""C"": 0.003}",3,4127,19,0.492852,0.492852,frozen_M1_labels_available_d27.joblib,738958e7bfcd13cc76bccc4695d4e7b085702e57e902e02a565d7e3209959bcf
+B3,B3,13,"{""C"": 0.01}",9,12080,10,0.456871,0.456871,frozen_B3_d13.joblib,7fc0796d88307ec5d378708ce96aef46c54ef69f389cb46d788c0fbd466f4416
+M1,M1,13,"{""C"": 0.01}",9,12080,23,0.456871,0.456871,frozen_M1_d13.joblib,a6b5dd95920e174daf9c0183c06aa931a7102318068570063472046100d54692
+M2,M2,13,"{""C"": 0.01}",9,12080,35,0.456871,0.456871,frozen_M2_d13.joblib,4f7632161ff93a55cff52b5a71d4e1453303853748bf0d20c4876fe083723db8
+M3,M3,13,"{""max_depth"": 2, ""learning_rate"": 0.05, ""trees"": 200}",9,12080,19,0.456872,0.456871,frozen_M3_d13.joblib,3eaef2be18c67dd2c2e2403d6a416747d2742b58797bbd8eeb82af54cc6d469d
+M4,M4,13,"{""max_depth"": 2, ""learning_rate"": 0.05, ""trees"": 200}",9,12080,31,0.456875,0.456871,frozen_M4_d13.joblib,73b5140fa80a7c66b68aab805db3625f8c91015b3909ae75ee13abdb994502ad
+M1_labels_available,M1,13,"{""C"": 0.003}",3,4324,19,0.516189,0.516189,frozen_M1_labels_available_d13.joblib,493578946fffcbd9f9acfb40c6b484fbcc7125f3fbff66f39277e72e366dd6de

@@ -1,0 +1,5 @@
+ranking,final_result,in_test_runs,on_list,recall
+model,Fail,3805,1644,0.432063
+model,Withdrawn,3106,1226,0.394720
+rule,Fail,3805,1595,0.419185
+rule,Withdrawn,3106,1191,0.383451

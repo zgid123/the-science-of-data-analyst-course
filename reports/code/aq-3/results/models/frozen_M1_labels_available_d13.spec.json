@@ -1,0 +1,121 @@
+{
+ "name": "M1_labels_available",
+ "config": "M1",
+ "label": "Penalised logistic regression, primary set (primary approach)",
+ "cutoff": 13,
+ "hyperparameters": {
+  "C": 0.003
+ },
+ "train_runs": [
+  "BBB-2013B",
+  "DDD-2013B",
+  "FFF-2013B"
+ ],
+ "train_rows": 4324,
+ "columns": [
+  "code_module[BBB]",
+  "code_module[DDD]",
+  "highest_education",
+  "num_of_prev_attempts",
+  "studied_credits",
+  "registration_lead",
+  "banked_results",
+  "clicks_pre",
+  "clicks_0c",
+  "active_days_0c",
+  "sites_0c",
+  "inactive_last7",
+  "activity_ratio_run",
+  "tasks_due_c",
+  "tasks_missed_c",
+  "tasks_late_c",
+  "tma_late_c",
+  "cma_late_c",
+  "cma_marked_c"
+ ],
+ "intercept": 0.10145585392875583,
+ "coefficients": {
+  "code_module[BBB]": -0.20576996172302084,
+  "code_module[DDD]": 0.1304857053362006,
+  "highest_education": -0.27593041766254306,
+  "num_of_prev_attempts": 0.09103499266380002,
+  "studied_credits": 0.04861926339003779,
+  "registration_lead": -0.037384532312547986,
+  "banked_results": 0.0087667927910901,
+  "clicks_pre": -0.20094535055669055,
+  "clicks_0c": -0.1680138638881755,
+  "active_days_0c": -0.23780371458992725,
+  "sites_0c": -0.10181882009853616,
+  "inactive_last7": 0.1328288632779267,
+  "activity_ratio_run": -0.06426940503454809,
+  "tasks_due_c": 0.0,
+  "tasks_missed_c": 0.0,
+  "tasks_late_c": 0.0,
+  "tma_late_c": 0.0,
+  "cma_late_c": 0.0,
+  "cma_marked_c": -0.054693483012918875
+ },
+ "standardise_mean": {
+  "code_module[BBB]": 0.02012025901942646,
+  "code_module[DDD]": -0.07469935245143386,
+  "highest_education": 1.7132284921369103,
+  "num_of_prev_attempts": 0.15937631135638802,
+  "studied_credits": 4.396952222166983,
+  "registration_lead": 57.76133209990749,
+  "banked_results": 0.00818147741893828,
+  "clicks_pre": 3.1436306614673066,
+  "clicks_0c": 4.061351776806694,
+  "active_days_0c": 1.62856971894793,
+  "sites_0c": 2.513438171562609,
+  "inactive_last7": 0.19472710453283995,
+  "activity_ratio_run": 1.4930500259019472,
+  "tasks_due_c": 0.0,
+  "tasks_missed_c": 0.0,
+  "tasks_late_c": 0.0,
+  "tma_late_c": 0.0,
+  "cma_late_c": 0.0,
+  "cma_marked_c": 0.014566538497237597
+ },
+ "standardise_sd": {
+  "code_module[BBB]": 0.8501577283957663,
+  "code_module[DDD]": 0.7891599224786705,
+  "highest_education": 0.7379001337347743,
+  "num_of_prev_attempts": 0.32758333613436674,
+  "studied_credits": 0.3850870858953089,
+  "registration_lead": 41.927963681367075,
+  "banked_results": 0.10385008419673733,
+  "clicks_pre": 2.003973843996342,
+  "clicks_0c": 1.7945243941630264,
+  "active_days_0c": 0.7803100483961833,
+  "sites_0c": 1.101870697422632,
+  "inactive_last7": 0.3959904787909736,
+  "activity_ratio_run": 1.8700212461074956,
+  "tasks_due_c": 1.0,
+  "tasks_missed_c": 1.0,
+  "tasks_late_c": 1.0,
+  "tma_late_c": 1.0,
+  "cma_late_c": 1.0,
+  "cma_marked_c": 0.11023140460222043
+ },
+ "median_fill": {
+  "registration_lead": 49.0
+ },
+ "levels": {
+  "code_module": [
+   "BBB",
+   "DDD",
+   "FFF"
+  ],
+  "start_month": [
+   "B"
+  ]
+ },
+ "constant_columns": [
+  "tasks_due_c",
+  "tasks_missed_c",
+  "tasks_late_c",
+  "tma_late_c",
+  "cma_late_c"
+ ],
+ "parameters_excluding_intercept": 19
+}

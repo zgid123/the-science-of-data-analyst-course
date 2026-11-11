@@ -1,0 +1,36 @@
+variant,enrolments,sign,adjusted_rd,adj_ci_low,adj_ci_high
+main,15724,sign_task_missed,0.396385,0.368070,0.424700
+main,15724,sign_tma_late,0.162333,0.128610,0.196056
+main,15724,sign_inactive_last7,0.154120,0.127692,0.180548
+main,15724,sign_low_activity,0.147535,0.127009,0.168060
+main,15724,sign_no_pre_activity,0.091516,0.068952,0.114080
+clicks de-duplicated (low-activity sign from de-duplicated clicks),15724,sign_task_missed,0.397528,0.369331,0.425725
+clicks de-duplicated (low-activity sign from de-duplicated clicks),15724,sign_tma_late,0.162875,0.129182,0.196567
+clicks de-duplicated (low-activity sign from de-duplicated clicks),15724,sign_inactive_last7,0.154612,0.128200,0.181023
+clicks de-duplicated (low-activity sign from de-duplicated clicks),15724,sign_low_activity_dedup,0.145808,0.125396,0.166220
+clicks de-duplicated (low-activity sign from de-duplicated clicks),15724,sign_no_pre_activity,0.091422,0.068846,0.113997
+late CMAs also count as late,15724,sign_task_missed,0.408556,0.372055,0.445056
+late CMAs also count as late,15724,sign_any_task_late,0.183151,0.128082,0.238221
+late CMAs also count as late,15724,sign_inactive_last7,0.154147,0.127717,0.180577
+late CMAs also count as late,15724,sign_low_activity,0.148259,0.127690,0.168827
+late CMAs also count as late,15724,sign_no_pre_activity,0.091722,0.069167,0.114277
+without flagged enrolments,15632,sign_task_missed,0.392945,0.363989,0.421900
+without flagged enrolments,15632,sign_tma_late,0.163109,0.129126,0.197093
+without flagged enrolments,15632,sign_inactive_last7,0.151054,0.124477,0.177631
+without flagged enrolments,15632,sign_low_activity,0.148200,0.127571,0.168830
+without flagged enrolments,15632,sign_no_pre_activity,0.092347,0.069683,0.115011
+only runs with a task due by day 27,12585,sign_task_missed,0.396589,0.368255,0.424923
+only runs with a task due by day 27,12585,sign_tma_late,0.162366,0.128655,0.196077
+only runs with a task due by day 27,12585,sign_inactive_last7,0.156631,0.125623,0.187638
+only runs with a task due by day 27,12585,sign_low_activity,0.127368,0.104484,0.150252
+only runs with a task due by day 27,12585,sign_no_pre_activity,0.076024,0.049669,0.102379
+low activity = below a quarter of the run median,15724,sign_task_missed,0.403654,0.375098,0.432210
+low activity = below a quarter of the run median,15724,sign_tma_late,0.171136,0.138044,0.204228
+low activity = below a quarter of the run median,15724,sign_inactive_last7,0.170425,0.144373,0.196476
+low activity = below a quarter of the run median,15724,sign_low_activity_q25,0.152159,0.120494,0.183823
+low activity = below a quarter of the run median,15724,sign_no_pre_activity,0.098877,0.076331,0.121423
+low activity = below the run median,15724,sign_task_missed,0.393318,0.365214,0.421421
+low activity = below the run median,15724,sign_tma_late,0.157140,0.122921,0.191359
+low activity = below the run median,15724,sign_inactive_last7,0.157307,0.132051,0.182563
+low activity = below the run median,15724,sign_low_activity_median,0.145753,0.129551,0.161954
+low activity = below the run median,15724,sign_no_pre_activity,0.085750,0.063569,0.107930

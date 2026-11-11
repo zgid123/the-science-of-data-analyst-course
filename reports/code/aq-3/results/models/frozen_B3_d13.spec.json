@@ -1,0 +1,89 @@
+{
+ "name": "B3",
+ "config": "B3",
+ "label": "Background-only logistic model (baseline)",
+ "cutoff": 13,
+ "hyperparameters": {
+  "C": 0.01
+ },
+ "train_runs": [
+  "AAA-2013J",
+  "BBB-2013B",
+  "BBB-2013J",
+  "DDD-2013B",
+  "DDD-2013J",
+  "EEE-2013J",
+  "FFF-2013B",
+  "FFF-2013J",
+  "GGG-2013J"
+ ],
+ "train_rows": 12080,
+ "columns": [
+  "code_module[AAA]",
+  "code_module[BBB]",
+  "code_module[DDD]",
+  "code_module[EEE]",
+  "code_module[FFF]",
+  "start_month[B]",
+  "num_of_prev_attempts",
+  "studied_credits",
+  "highest_education",
+  "registration_lead"
+ ],
+ "intercept": -0.1818464393114139,
+ "coefficients": {
+  "code_module[AAA]": -0.14389923085268902,
+  "code_module[BBB]": 0.01314108143635957,
+  "code_module[DDD]": 0.2318316163290266,
+  "code_module[EEE]": -0.02023040726270781,
+  "code_module[FFF]": 0.05630519323361733,
+  "start_month[B]": 0.08635530427679315,
+  "num_of_prev_attempts": 0.1979878153796142,
+  "studied_credits": 0.1324391412563816,
+  "highest_education": -0.3336340360658796,
+  "registration_lead": -0.08010592067284589
+ },
+ "standardise_mean": {
+  "code_module[AAA]": -0.046109271523178806,
+  "code_module[BBB]": 0.2096026490066225,
+  "code_module[DDD]": 0.16100993377483444,
+  "code_module[EEE]": 0.0005794701986754967,
+  "code_module[FFF]": 0.2144867549668874,
+  "start_month[B]": -0.28410596026490065,
+  "num_of_prev_attempts": 0.10848955211136783,
+  "studied_credits": 4.294299452473749,
+  "highest_education": 1.7191225165562913,
+  "registration_lead": 67.64801324503311
+ },
+ "standardise_sd": {
+  "code_module[AAA]": 0.32440943998050886,
+  "code_module[BBB]": 0.5649302609420018,
+  "code_module[DDD]": 0.5371801896875029,
+  "code_module[EEE]": 0.39249962497434376,
+  "code_module[FFF]": 0.5674143178513295,
+  "start_month[B]": 0.9587928886584312,
+  "num_of_prev_attempts": 0.28238507455853296,
+  "studied_credits": 0.4387500839412779,
+  "highest_education": 0.7361290545751713,
+  "registration_lead": 46.20027069843953
+ },
+ "median_fill": {
+  "registration_lead": 53.0
+ },
+ "levels": {
+  "code_module": [
+   "AAA",
+   "BBB",
+   "DDD",
+   "EEE",
+   "FFF",
+   "GGG"
+  ],
+  "start_month": [
+   "B",
+   "J"
+  ]
+ },
+ "constant_columns": [],
+ "parameters_excluding_intercept": 10
+}
