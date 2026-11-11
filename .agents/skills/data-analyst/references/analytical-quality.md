@@ -1,6 +1,6 @@
 # Task-scaled analytical quality rubric
 
-Use at contract definition and before delivery for substantial work; apply only relevant criteria to focused calculations. Record evidence locations, score, rationale and corrective work for applicable criteria. The evaluator should inspect calculations, results, visuals and available traces, not accept the generating agent's self-assessment. In comparative evaluation, use an independent reviewer blind to variants where practical.
+Use at contract definition and before delivery for substantial work; apply only relevant criteria to focused calculations. This is a private review tool: use it to find and fix weaknesses, and record only the gaps and corrections in `NOTES.md`. Do not ship a self-scored rubric as a deliverable — a self-assigned score is not evidence, and it pulls effort away from the report. The evaluator should inspect calculations, results, visuals and available traces, not accept the generating agent's self-assessment. In comparative evaluation, use an independent reviewer blind to variants where practical.
 
 ## Scope and anchors
 
@@ -11,7 +11,7 @@ For a narrow calculation, adequacy can be a correct result with relevant populat
 ### 1. Technical correctness and functionality
 
 | Criterion | 0: Missing/misleading | 1: Superficial | 2: Adequate | 3: Strong |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Entities, grain and semantics | Materially wrong population, units, denominator or join | Lists fields without validating consequential meanings | Records/documentation support entities, keys, grain, relationships, units and time; valid populations/joins | Reconciles ambiguous or changing semantics and demonstrates their effect on conclusions |
 | Quality and preparation | Silent material changes or corrupted inputs | Null/count inventory without consequences | Relevant quality/selection checks; reproducible changes with affected populations and reconciliations | Tests whether consequential preparation alternatives change findings and resolves anomalies |
 | Numerical/statistical validity | Wrong calculations, leakage or invalid inference | Unchallenged calculations and nominal tests | Verified metrics; appropriate assumptions, baselines, uncertainty and study-design constraints | Independent recomputation and targeted robustness checks substantiate critical claims |
@@ -21,7 +21,7 @@ For a narrow calculation, adequacy can be a correct result with relevant populat
 ### 2. Analytical quality and completeness
 
 | Criterion | 0: Missing/misleading | 1: Superficial | 2: Adequate | 3: Strong |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Objective and audience alignment | Answers a different objective silently | Generic questions and inventory | Prioritized questions and acceptance criteria fit intended use; supplied/inferred requirements distinguished | Trade-offs and evolving scope explicitly preserve the intended purpose |
 | Questions and feasibility | Promises unsupported answers | Lists questions without mapping evidence | Answerable/conditional/unsupported questions mapped to required data; useful revisions disclosed | Prioritization considers materiality and resolving power; unsupported aims do not prevent supported work |
 | Method selection | Method cannot support claim | Default summaries/model without rationale | Simplest valid comparison/method answers each question with assumptions | Competing approaches/baselines evaluated where they can alter interpretation |
@@ -33,7 +33,7 @@ For a narrow calculation, adequacy can be a correct result with relevant populat
 ### 3. Communication and usability
 
 | Criterion | 0: Missing/misleading | 1: Superficial | 2: Adequate | 3: Strong |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Visual analytical value | Distorts evidence, masks populations or hides a changed interpretation | Template-driven charts or dense callouts obscure materially different comparisons | Purposeful charts/tables/prose expose needed comparisons, including consequential follow-up; units, population, denominators, period, sources, exclusions, filter scope and material uncertainty clear | Inspected reader tasks show readers can assess alternatives and sensitivity with aligned evidence and clear annotations |
 | Synthesis and accessibility | Essential findings absent or inaccessible in required format | Findings exist only in supporting downloads or reading paths are uninspected | Coverage map links priority questions/findings/comparisons to readable locations; reader-task walkthrough records answer, evidence, population/denominator/period, limitation and detail access | Clear prioritization and inspected reading paths support the full scoped investigation through progressive disclosure without padding |
 
@@ -53,4 +53,4 @@ A technically functioning but analytically shallow substantial output fails the 
 
 ## Minimal review record
 
-For each material criterion: scope/reason, score or NOT APPLICABLE, specific evidence location and observed result, consequence, and correction/remaining gap. Also record question coverage (answered, partial, unsupported), critical failures, dimension decisions, separate analysis and delivery status and any pending feedback/outcomes. Use a compact equivalent for simple requests; do not append an extensive rubric to a three-number answer.
+When an independent reviewer grades work, record for each material criterion: scope/reason, score or NOT APPLICABLE, specific evidence location and observed result, consequence, and correction/remaining gap. When you review your own work, record only failures found, corrections made and remaining gaps. Also record question coverage (answered, partial, unsupported), critical failures, dimension decisions, separate analysis and delivery status and any pending feedback/outcomes. Use a compact equivalent for simple requests; do not append an extensive rubric to a three-number answer.

@@ -20,7 +20,7 @@ Use the requested output location or default to `samples/<dataset>/`. Maintain r
 - `../.agents/skills/data-analyst/references/`: supporting analytical techniques and safeguards.
 - `../.agents/skills/data-analyst/references/investigation-and-synthesis.md`: question prioritization, follow-up, stopping and evidence-backed findings.
 - `../.agents/skills/data-analyst/references/analytical-quality.md`: anchored technical, analytical and communication review.
-- `../.agents/skills/data-analyst/evals/`: skill scenarios, synthetic fixtures and deterministic evaluator tests; these are not project research results.
+- `../.agents/skills/data-analyst/playbooks/`, `assets/` and `scripts/`: problem playbooks (early warning, diagnosing a change, surveys), report/dashboard templates and chart/statistics/profiling helpers. The skill's evaluation suite lives in its source repository, not in this project.
 - `samples/`: seven existing study folders, shared analysis/dashboard code, dependency manifest and saved verification evidence.
 - `evaluations/`: local skill reviews and executed validation evidence.
 - `../skills-lock.json` (repository root): installed skill provenance.
@@ -106,12 +106,13 @@ For documentation-only edits, check paths, consistency with the research brief, 
 
 ## Evaluating the installed skill
 
-From `final-project/`, run the bundled evaluator regression tests with:
+From `final-project/`, check the installed helper scripts with:
 
 ```bash
-python3 -m unittest discover -s ../.agents/skills/data-analyst/evals -v
+../venv/bin/python ../.agents/skills/data-analyst/scripts/stats_helpers.py --selftest
+../venv/bin/python ../.agents/skills/data-analyst/scripts/profile_data.py --help
 ```
 
-The bundled evaluation README refers to paths in the upstream source repository. Here, resolve `skills/data-analyst/` to `.agents/skills/data-analyst/` from the repository root (`../.agents/skills/data-analyst/` from `final-project/`); do not assume upstream `scripts/validate_skills.py` is installed. Evaluation fixture paths in `evals.json` are relative to the skill directory.
+The skill's scenario evaluations and regression tests live in its source repository (`zgid123/skills`, `evals/data-analyst/`) and are not installed here.
 
 Passing evaluator tests validates those checks, not model behavior or research quality. For behavioral comparisons, freeze skill/input versions, use fresh contexts with matched model/settings/tools/budgets, preserve outputs and traces separately from existing samples, and review all three rubric dimensions. Do not expose expected answers to the task runner. Keep held-out fixtures unopened during development. Record unavailable comparisons as NOT RUN and do not claim improvement without observed evidence.

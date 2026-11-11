@@ -61,7 +61,7 @@ cd samples/slidev && pnpm dev | pnpm build | pnpm export | pnpm ppt # reference 
 venv/bin/python scripts/fetch-datasets/fetch_datasets.py [--all | names]        # OULAD by default -> datasets/
 uv run .agents/skills/pdf2md/scripts/convert.py <file.pdf>                      # PDF -> Markdown
 uv run .agents/skills/pdf2md/scripts/verify.py <file.pdf> <file.md>             # must print RESULT: PASS
-python3 -m unittest discover -s .agents/skills/data-analyst/evals -v           # data-analyst evaluator tests
+venv/bin/python .agents/skills/data-analyst/scripts/stats_helpers.py --selftest  # data-analyst helper self-test
 venv/bin/python .claude/skills/research-report/scripts/progress.py --base reports/milestone-1 next  # report task: next card
 venv/bin/python .claude/skills/research-report/scripts/layout.py new-review --base reports/milestone-4 --kind vi-native-review --scope g1  # next review file
 make precheck TASK=milestone-1 | make build TASK=milestone-1 | make all TASK=milestone-1          # report checks and Word build

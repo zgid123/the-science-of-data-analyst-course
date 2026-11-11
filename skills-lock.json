@@ -43,6 +43,12 @@
       "skillPath": "data/skills/data-visualization/SKILL.md",
       "computedHash": "64055493de5ff4afed716cc871018cf6e020338b76d3e7ed5c2985707cb43cec"
     },
+    "documents": {
+      "source": "zgid123/skills",
+      "sourceType": "github",
+      "skillPath": "skills/documents/SKILL.md",
+      "computedHash": "6c5c99f1452db692228ff5401fcbbf55ffe5752ae2132fda193673a48328c0fd"
+    },
     "experimental-design": {
       "source": "K-Dense-AI/scientific-agent-skills",
       "sourceType": "github",
