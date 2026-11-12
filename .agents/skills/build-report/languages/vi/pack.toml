@@ -119,10 +119,10 @@ message = "line starts with 'là'; start with the noun it describes (guide secti
 pattern = '(?<![-\w])(?-i:datasets?|laptops?|test)(?![-\w)])'
 message = "English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation)"
 
-[[conventions.warn]]                       # voice (guide section 3.2): a bare "nhóm" as speaker or owner leaves open
-pattern = '(?:\b(?:[Tt]heo|của|do|mà)\s+nhóm|(?:^|[.;:!?]\s+|\)\s+)[Nn]hóm|\b[Nn]hóm\s+(?:sẽ|xin|đã|đang|bắt đầu|mở đầu|cho rằng|đề xuất|nhận thấy|rút ra|tính|dựng|đánh giá|không thể))\b(?!\s+(?:tác giả|chúng em|chúng tôi|nghiên cứu|thực hiện|\d))'
-message = "bare 'nhóm' as speaker: write 'nhóm chúng em' (the team writing or presenting) or 'nhóm tác giả' (the authors of a cited work) (guide sections 1 and 3.2)"
-only = "slides"                            # in a report "nhóm" also names categories and the writers themselves
+[[conventions.warn]]                       # voice in decks (guide 3.2); reports check it in [style.voice] below
+pattern = '\b(?:[Nn]hóm\s+)?[Cc]húng\s+em\b'
+message = "team voice: write 'nhóm' ('Nhóm' at the start of a sentence), not 'nhóm chúng em' or 'chúng em'; the authors of a cited work stay 'nhóm tác giả' (guide sections 1 and 3.2)"
+only = "slides"
 
 # Reader-focused style, checked in every Vietnamese section by check_style.py (quotations, code and references exempt)
 [style]
@@ -138,9 +138,9 @@ subject = '(?:^|[.;:!?]\s+)(?:Phần|Mục) \d'
 # `self` pattern in a sentence that has no `cited` marker: the writers name themselves in the first person, and
 # "nhóm tác giả" stays for the authors of a cited work.
 [style.voice]
-group = 'Báo cáo là bài làm của chính nhóm: nhóm tự xưng ở ngôi thứ nhất, "nhóm chúng em" ở lần nhắc đầu tiên trong mỗi mục, sau đó "chúng em" (tương ứng "we" trong bản tiếng Anh); "nhóm tác giả" và "các tác giả" chỉ dùng cho tác giả của công trình được trích dẫn.'
+group = 'Báo cáo là bài làm của chính nhóm: nhóm tự xưng là "nhóm" ("Nhóm" ở đầu câu), không dùng "nhóm chúng em" hay "chúng em" (tương ứng "we" trong bản tiếng Anh); "nhóm tác giả" và "các tác giả" chỉ dùng cho tác giả của công trình được trích dẫn.'
 solo = 'Báo cáo là bài làm của chính người viết: người viết tự xưng "em"; "nhóm tác giả" và "các tác giả" chỉ dùng cho tác giả của công trình được trích dẫn.'
-self = ['\b[Nn]hóm tác giả\b', '\b[Cc]ác tác giả\b', '\b[Nn]hóm thực hiện\b']
+self = ['\b[Nn]hóm tác giả\b', '\b[Cc]ác tác giả\b', '\b[Nn]hóm thực hiện\b', '\b(?:[Nn]hóm\s+)?[Cc]húng\s+em\b']
 cited = '\[\d|\bcộng sự\b|\bbài báo\b|\bnghiên cứu (?:này|đó|của)\b|\bet al\b|https?://|\bdoi:|tác giả (?:của )?(?:bộ dữ liệu )?[A-ZĐ]'
 
 # Word layout for this language. Vietnamese university reports often use Times New Roman 13 pt with 1.3–1.5
@@ -152,5 +152,5 @@ cited = '\[\d|\bcộng sự\b|\bbài báo\b|\bnghiên cứu (?:này|đó|của)\
 # Slide decks: who speaks in the presenter notes (guide section 3.2). slidekit.py prompt puts the matching line into
 # the translator's and the reviewer's prompt.
 [slides]
-voice_group = 'It is a group deck: the Vietnamese notes speak as "nhóm chúng em" (then "chúng em") and address "thầy cô và các bạn"; the authors of the reviewed work are "nhóm tác giả", the work itself "bài báo".'
+voice_group = 'It is a group deck: the Vietnamese notes speak as "nhóm" ("Nhóm" at the start of a sentence; never "nhóm chúng em" or "chúng em") and address "thầy cô và các bạn"; the authors of the reviewed work are "nhóm tác giả", the work itself "bài báo".'
 voice_solo = 'It is a solo deck: the Vietnamese notes speak as "em" and address "thầy cô và các bạn"; the authors of the reviewed work are "nhóm tác giả", the work itself "bài báo".'

@@ -56,7 +56,7 @@ The proposal vocabulary of team N04's MTH045 project on low course completion an
 | staff (who contact students) | cán bộ | name the actor where it matters: "giảng viên", "cán bộ hỗ trợ sinh viên", "giảng viên kiêm cố vấn học tập" | |
 | stakeholder / simulated stakeholder | bên liên quan / bên liên quan mô phỏng |  |  |
 | student affairs (office) | phòng công tác sinh viên |  |  |
-| support office (student support office) | phòng hỗ trợ sinh viên |  | văn phòng hỗ trợ |
+| support office (student support office) | Phòng Đào tạo | the unit that contacts students and meets them on the academic warning list; a proper name, capital P and Đ (team decision 2026-11-13) | phòng hỗ trợ sinh viên, văn phòng hỗ trợ |
 | support officer | cán bộ hỗ trợ sinh viên | the AD persona, an officer of the support office |  |
 | tutor (teaching assistant) | trợ giảng | | |
 | university leadership | Ban Giám hiệu | | |

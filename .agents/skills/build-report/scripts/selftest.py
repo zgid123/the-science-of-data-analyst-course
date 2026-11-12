@@ -121,7 +121,8 @@ def md_fault(check, label, file, mutate, needle, want="error"):
     path.write_text(original, encoding="utf-8")
     hit = needle in out
     ok = {"error": code == 1 and hit, "warn": hit, "none": code == base and not hit}[want]
-    expect(f"{check}: {label}", ok, needle if want != "none" else f"'{needle}' not reported")
+    expect(f"{check}: {label}", ok, needle if want != "none" else
+           (f"'{needle}' not reported" if ok else f"exit {code}, baseline {base}: {out.strip()[-220:]}"))
 
 
 def docx_fault(label, mutate, needle, want="error"):
@@ -357,6 +358,10 @@ def main():
                  lambda t: t + "\nThe team fixed the threshold before testing.\n", "voice 'The team'")
         md_fault("style", "Vietnamese self-reference as 'nhóm tác giả'", vi,
                  lambda t: t + "\nNhóm tác giả cố định ngưỡng trước khi kiểm thử.\n", "voice 'Nhóm tác giả'")
+        md_fault("style", "Vietnamese self-reference as 'chúng em' (the team is 'nhóm')", vi,
+                 lambda t: t + "\nTheo chúng em, ngưỡng được cố định trước khi kiểm thử.\n", "voice 'chúng em'")
+        md_fault("style", "Vietnamese self-reference as 'nhóm' passes", vi,
+                 lambda t: t + "\nNhóm cố định ngưỡng trước khi kiểm thử.\n", "Nhóm cố định ngưỡng", want="none")
         md_fault("style", "'nhóm tác giả' beside a citation names cited authors", vi,
                  lambda t: t + "\nNhóm tác giả cố định ngưỡng trước khi kiểm thử [12].\n", "trước khi kiểm thử [12]", want="none")
         md_fault("style", "first person passes", m, lambda t: t + "\nWe fixed the threshold before testing.\n",
@@ -841,17 +846,17 @@ if __name__ == "__main__":
            first.returncode == 0 and (fresh / "Makefile").exists() and "kept" in again.stdout
            and built.returncode == 0 and (fresh / "build" / "demo" / "Report_EN.docx").exists(),
            (first.stdout + built.stdout)[-300:])
-    voice = _Deck()                                        # who speaks: a slides-only warning
+    voice = _Deck()                                        # who speaks: the team is "nhóm", never "chúng em"
     vb = voice.slides.add_slide(voice.slide_layouts[6]).shapes.add_textbox(Inches(1), Inches(1), Inches(8), Inches(1))
     vb.text_frame.text = "Theo nhóm, đây là yếu tố quan trọng nhất."
     voice.slides[0].notes_slide.notes_text_frame.text = "Theo nhóm chúng em, nhóm tác giả đánh giá quá cao kết quả."
     voice_path = BASE / "voice.pptx"
     voice.save(str(voice_path))
     code, out = run("check_slides.py", voice_path.relative_to(ROOT), "--lang", "vi")
-    expect("slides: a bare 'nhóm' as speaker warns once; 'nhóm chúng em' and 'nhóm tác giả' pass",
-           out.count("bare 'nhóm'") == 1, out[-160:])
-    md_fault("parity", "a bare 'nhóm' in a report is left to the writers (slides-only warning)", circ,
-             lambda t: t + "\nTheo nhóm, đây là yếu tố quan trọng nhất.\n", "bare 'nhóm'", want="none")
+    expect("slides: 'nhóm chúng em' warns once (team voice); a bare 'nhóm' and 'nhóm tác giả' pass",
+           out.count("team voice") == 1, out[-160:])
+    md_fault("parity", "a bare 'nhóm' in a report is the team's own voice and passes", circ,
+             lambda t: t + "\nTheo nhóm, đây là yếu tố quan trọng nhất.\n", "team voice", want="none")
     names_dir = BASE / "names"                               # names: a near-miss of a listed name is an error
     names_dir.mkdir()
     names_cfg = BASE / "names.toml"
