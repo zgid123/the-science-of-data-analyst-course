@@ -1,6 +1,6 @@
 ## 9.1. Cách đánh giá, chỉ số và tiêu chí thành công
 
-Ngưỡng 5 điểm phần trăm của AQ2 là chênh lệch nhỏ nhất mà nhóm chúng em xem là đáng để cán bộ chú ý, theo quy ước đã
+Ngưỡng 5 điểm phần trăm của AQ2 là chênh lệch nhỏ nhất mà nhóm xem là đáng để cán bộ chú ý, theo quy ước đã
 chốt ở Milestone 4. Tỷ lệ nền, tức tỷ lệ không hoàn thành chung của các lượt đăng ký học, đã gần 44%, nên mức tăng 5
 điểm là nhỏ so với tỷ lệ đó và ngưỡng này khá dễ đạt; vì vậy, độ lớn của từng ước lượng mới là yếu tố phân biệt các dấu
 hiệu. Giá trị p không tham gia vào kết luận, vì giá trị p không đo độ lớn của hiệu ứng [12]. Với AQ3, tỷ lệ phát hiện,

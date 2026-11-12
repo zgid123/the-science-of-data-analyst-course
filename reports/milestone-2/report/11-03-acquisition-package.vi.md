@@ -1,6 +1,6 @@
 ## Phụ lục III – Kế hoạch thu thập dữ liệu và gói thu thập dữ liệu
 
-Gói thu thập dữ liệu tạo lại chính xác bản OULAD mà nhóm chúng em đã thu thập. Các tệp gốc do script thu thập tạo ra và được giữ nguyên, không chỉnh sửa. Cấu trúc của gói như sau:
+Gói thu thập dữ liệu tạo lại chính xác bản OULAD mà nhóm đã thu thập. Các tệp gốc do script thu thập tạo ra và được giữ nguyên, không chỉnh sửa. Cấu trúc của gói như sau:
 
 ```text
 package/
@@ -44,7 +44,7 @@ Bảng A.4 là manifest của các tệp gốc: với mỗi tệp đã thu thậ
 | studentAssessment.csv | 5.690.310 | fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e | 9ceb38acaeb26fbc15c98b563290c1db | 173.912 | Khớp |
 | studentVle.csv | 453.836.331 | 52668253d876c5becbcb72185977152700cecab2942aca807fecc3dd54b937f0 | b8aae6f4ffd1523319aeb56d66b17f72 | 10.655.280 | Khớp |
 
-OULAD được công bố ở ba nơi phát hành, nên chúng em phải quyết định thu thập và trích dẫn bản nào. Trang của nhà cung cấp dẫn đến một tệp nén trên máy chủ của chính Open University [2] và đề nghị người dùng đối chiếu tệp này với mã kiểm tra (checksum) MD5 [2]; tại thời điểm thu thập dữ liệu, liên kết này trả về lỗi HTTP 404, nghĩa là không tìm thấy tệp. Bài mô tả dữ liệu, tức là bài báo đã qua bình duyệt mô tả bộ dữ liệu, trích dẫn một bản lưu trên figshare [3] có DOI và số phiên bản; đây là bản chúng em đã thu thập. Kho dữ liệu UCI giữ bản thứ ba với DOI riêng [12]. Để bảo đảm các bản thống nhất với nhau, chúng em đã so sánh bản trên UCI với các tệp đã thu thập. Cả bảy bảng đều có cùng các dòng. Điểm khác biệt duy nhất xuất hiện ở năm bảng: UCI ghi giá trị thiếu là "?" còn figshare để trống ô (Bảng A.5). Do đó, khi phân tích, chúng em đọc ô trống là giá trị thiếu và trích dẫn bản lưu trên figshare cùng bài mô tả dữ liệu.
+OULAD được công bố ở ba nơi phát hành, nên nhóm phải quyết định thu thập và trích dẫn bản nào. Trang của nhà cung cấp dẫn đến một tệp nén trên máy chủ của chính Open University [2] và đề nghị người dùng đối chiếu tệp này với mã kiểm tra (checksum) MD5 [2]; tại thời điểm thu thập dữ liệu, liên kết này trả về lỗi HTTP 404, nghĩa là không tìm thấy tệp. Bài mô tả dữ liệu, tức là bài báo đã qua bình duyệt mô tả bộ dữ liệu, trích dẫn một bản lưu trên figshare [3] có DOI và số phiên bản; đây là bản nhóm đã thu thập. Kho dữ liệu UCI giữ bản thứ ba với DOI riêng [12]. Để bảo đảm các bản thống nhất với nhau, nhóm đã so sánh bản trên UCI với các tệp đã thu thập. Cả bảy bảng đều có cùng các dòng. Điểm khác biệt duy nhất xuất hiện ở năm bảng: UCI ghi giá trị thiếu là "?" còn figshare để trống ô (Bảng A.5). Do đó, khi phân tích, nhóm đọc ô trống là giá trị thiếu và trích dẫn bản lưu trên figshare cùng bài mô tả dữ liệu.
 
 Bảng A.5 so sánh bản OULAD trên UCI với các tệp đã thu thập từ figshare, theo từng bảng.
 

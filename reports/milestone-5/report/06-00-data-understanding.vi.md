@@ -1,7 +1,7 @@
 # 6. Hiểu dữ liệu và chất lượng dữ liệu
 
-Trước khi trả lời bất kỳ câu hỏi nào, nhóm chúng em cần hiểu dữ liệu đủ rõ để biết đặc điểm nào của dữ liệu có thể làm thay đổi một
-kết luận. Ở Milestone 3, chúng em đã khảo sát dữ liệu (profiling) trên toàn bộ 10,9 triệu dòng của bảy bảng gốc;
+Trước khi trả lời bất kỳ câu hỏi nào, nhóm cần hiểu dữ liệu đủ rõ để biết đặc điểm nào của dữ liệu có thể làm thay đổi một
+kết luận. Ở Milestone 3, nhóm đã khảo sát dữ liệu (profiling) trên toàn bộ 10,9 triệu dòng của bảy bảng gốc;
 mười ba con số trong kết quả khảo sát dữ liệu được một đoạn mã khác tính lại độc lập và cả mười ba đều khớp (Phụ lục VI). Biến không hoàn thành gộp hai kết quả Không đạt (Fail) và Rút khỏi module (Withdrawn), giống cách tính của KPI chính, còn AQ1 báo cáo riêng hai
 kết quả này. Trên cả 22 kỳ mở, có 28.061 lượt đăng ký học chưa rút tại ngày 14 (tính từ
 ngày bắt đầu kỳ mở); 54,7% số lượt này hoàn thành. Cũng trên 22 kỳ mở, tỷ lệ không hoàn thành là 45,3% trong số lượt

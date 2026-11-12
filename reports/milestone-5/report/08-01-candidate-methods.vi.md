@@ -1,7 +1,7 @@
 ## 8.1. Phương pháp cơ sở, phương pháp ứng viên và phương pháp chính được đề xuất
 
 Mỗi phương pháp ứng viên được đánh giá theo tám tiêu chí của đề bài, từ mức phù hợp với câu hỏi và dữ liệu đến tính công
-bằng và khả năng chuyển thành hành động. Khi hai ứng viên ngang nhau, nhóm chúng em chọn phương pháp đơn giản và dễ diễn
+bằng và khả năng chuyển thành hành động. Khi hai ứng viên ngang nhau, nhóm chọn phương pháp đơn giản và dễ diễn
 giải hơn, vì một quy tắc kinh nghiệm đơn giản thường đã mang lại phần lớn lợi ích, còn các quyết định liên quan đến con
 người đòi hỏi mô hình dễ diễn giải. Bảng 8.1 là Ma trận lựa chọn mô hình và phương pháp (Model and Method Selection
 Matrix), với lập luận cho từng phương pháp chính ở cột cuối; Phụ lục VIII phân tích từng lựa chọn theo các tiêu chí

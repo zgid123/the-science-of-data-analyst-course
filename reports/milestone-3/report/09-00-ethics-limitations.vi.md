@@ -13,14 +13,14 @@ vẫn được kiểm tra công bằng. Có nên đưa cả năm thuộc tính d
 
 **Kết quả của các nghiên cứu trước trên OULAD.** Một nghiên cứu về tính công bằng trên OULAD có bốn phát hiện: sinh viên tự khai có khuyết tật chiếm tỷ lệ rất thấp trong dữ liệu; chênh lệch tác động (disparate impact) từ 5 đến 6 điểm phần trăm,
 nghiêng về sinh viên nam, được hầu hết các mô hình tái tạo lại; bỏ các thuộc tính nhạy cảm ra khỏi mô hình hầu như không cải thiện
-tính công bằng; trong một số trường hợp, sinh viên khuyết tật bị dự báo trượt với xác suất cao hơn [15]. Nhóm chúng em thiết kế bước kiểm tra công bằng của dự án dựa trên những phát hiện này. Quy mô các nhóm cần kiểm tra công bằng đã biết trước:
-3.164 lượt đăng ký học có tình trạng khuyết tật do sinh viên tự khai và chỉ 216 lượt đăng ký học của sinh viên từ 55 tuổi trở lên. Nhờ biết trước quy mô này, chúng em xác định được nhóm nào quá nhỏ khi xét riêng từng kỳ mở; các nhóm nhỏ như vậy được kiểm tra gộp trên mọi kỳ mở thay vì theo từng kỳ mở. Nhóm có mức khó khăn "Missing" được báo
+tính công bằng; trong một số trường hợp, sinh viên khuyết tật bị dự báo trượt với xác suất cao hơn [15]. Nhóm thiết kế bước kiểm tra công bằng của dự án dựa trên những phát hiện này. Quy mô các nhóm cần kiểm tra công bằng đã biết trước:
+3.164 lượt đăng ký học có tình trạng khuyết tật do sinh viên tự khai và chỉ 216 lượt đăng ký học của sinh viên từ 55 tuổi trở lên. Nhờ biết trước quy mô này, nhóm xác định được nhóm nào quá nhỏ khi xét riêng từng kỳ mở; các nhóm nhỏ như vậy được kiểm tra gộp trên mọi kỳ mở thay vì theo từng kỳ mở. Nhóm có mức khó khăn "Missing" được báo
 cáo riêng, vì sinh viên trong nhóm này có tỷ lệ hoàn thành cao hơn (Mục 3.2); gộp nhóm này vào một mức khác sẽ làm sai
 lệch tỷ lệ của mức đó.
 
 **Quyền riêng tư.** Quy định về quyền riêng tư áp dụng ở hai cấp. OULAD đã được ẩn danh theo chuẩn k-ẩn danh
 (k-anonymity) với k = 5, nghĩa là mỗi tổ hợp thuộc tính có thể dùng để nhận diện một sinh viên đều xuất hiện ở ít nhất năm sinh viên [2]. Theo Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 của Việt Nam, dữ liệu đã khử định danh nằm ngoài định
-nghĩa dữ liệu cá nhân và hành vi tái định danh dữ liệu đó bị cấm [16]; vì vậy, chúng em không liên kết OULAD với bất kỳ nguồn dữ liệu nào khác. Đối với đợt thí điểm dùng hồ sơ của chính trường, các quy định chặt chẽ hơn: thông tin sức khỏe, như
+nghĩa dữ liệu cá nhân và hành vi tái định danh dữ liệu đó bị cấm [16]; vì vậy, nhóm không liên kết OULAD với bất kỳ nguồn dữ liệu nào khác. Đối với đợt thí điểm dùng hồ sơ của chính trường, các quy định chặt chẽ hơn: thông tin sức khỏe, như
 tình trạng khuyết tật do sinh viên tự khai, là một ví dụ về dữ liệu cá nhân nhạy cảm [17]; việc xử lý dữ liệu phải gắn với
 một mục đích cụ thể [17]; luật cũng không có ngoại lệ chung nào cho phép xử lý dữ liệu phục vụ nghiên cứu mà không cần
 sự đồng ý của chủ thể dữ liệu [16]. Do đó, đợt thí điểm cần có cơ sở pháp lý riêng trước khi chuẩn bị bất kỳ hồ sơ sinh viên nào.

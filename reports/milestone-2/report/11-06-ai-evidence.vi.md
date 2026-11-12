@@ -1,6 +1,6 @@
 ## Phụ lục VI – Bằng chứng sử dụng AI tạo sinh
 
-Một tác tử AI (AI agent) tìm các bộ dữ liệu ứng viên cho nhóm chúng em theo prompt dưới đây. Trong prompt này, mỗi tài liệu được gọi theo mục báo cáo chứa tài liệu đó; các bước xử lý tệp của tác tử được lược bỏ. Phụ lục I ghi mọi truy vấn mà tác tử đã chạy. Chúng em đã đối chiếu từng thông tin làm căn cứ do tác tử ghi lại với bản lưu của trang chính thức.
+Một tác tử AI (AI agent) tìm các bộ dữ liệu ứng viên cho nhóm theo prompt dưới đây. Trong prompt này, mỗi tài liệu được gọi theo mục báo cáo chứa tài liệu đó; các bước xử lý tệp của tác tử được lược bỏ. Phụ lục I ghi mọi truy vấn mà tác tử đã chạy. Nhóm đã đối chiếu từng thông tin làm căn cứ do tác tử ghi lại với bản lưu của trang chính thức.
 
 Prompt của AI hỗ trợ tìm kiếm và AI diễn giải metadata:
 
@@ -19,7 +19,7 @@ Return at most 6 lines: candidates documented, sources fetched/partial/blocked, 
 Follow-up message sent during the task: the must-have gates were revised (G1 also requires a dated withdrawal; G2 split into G2a dated assessed tasks and G2b dated activity; G3 at least three course runs ordered in time with a later run for testing; G5 adds a persistent pseudonymous identifier); write the gate notes against the revised gates and note early tasks and enrolment dates per candidate.
 ```
 
-Hai tác tử AI chạy trong hai phiên riêng phản biện công việc của chúng em tại hai thời điểm cố định: AI phản biện yêu cầu nhận xét trước khi chúng em chấm điểm bộ dữ liệu nào, còn AI phản biện lựa chọn nhận xét sau khi chúng em chấm điểm xong. Mỗi tác tử chỉ nhận đề bài và các tài liệu của chúng em có tên trong prompt của tác tử đó. Các prompt giữ nguyên tiếng Anh, trong đó mỗi tài liệu được gọi theo mục báo cáo chứa tài liệu đó. Bảng A.11 và Bảng A.12 tóm tắt từng nhận xét, kèm quyết định của chúng em và nội dung thay đổi.
+Hai tác tử AI chạy trong hai phiên riêng phản biện công việc của nhóm tại hai thời điểm cố định: AI phản biện yêu cầu nhận xét trước khi nhóm chấm điểm bộ dữ liệu nào, còn AI phản biện lựa chọn nhận xét sau khi nhóm chấm điểm xong. Mỗi tác tử chỉ nhận đề bài và các tài liệu của nhóm có tên trong prompt của tác tử đó. Các prompt giữ nguyên tiếng Anh, trong đó mỗi tài liệu được gọi theo mục báo cáo chứa tài liệu đó. Bảng A.11 và Bảng A.12 tóm tắt từng nhận xét, kèm quyết định của nhóm và nội dung thay đổi.
 
 Prompt của AI phản biện yêu cầu:
 
@@ -31,16 +31,16 @@ Critique the data requirements: for each AQ, is anything missing (timestamps, ta
 Write at most 12 numbered critiques, most important first, each with: the passage (quote a few words), the problem, why it matters.
 ```
 
-Bảng A.11 liệt kê mười hai nhận xét của AI phản biện yêu cầu và quyết định của chúng em đối với từng nhận xét.
+Bảng A.11 liệt kê mười hai nhận xét của AI phản biện yêu cầu và quyết định của nhóm đối với từng nhận xét.
 
-**Bảng A.11. AI phản biện yêu cầu: nhận xét của AI, quyết định của chúng em và nội dung thay đổi**
+**Bảng A.11. AI phản biện yêu cầu: nhận xét của AI, quyết định của nhóm và nội dung thay đổi**
 
 | # | Nhận xét (tóm tắt) | Quyết định | Thay đổi |
 | :---- | :---- | :---- | :---- |
 | Q1 | Ngày rút học phần chỉ là điều kiện nên có, dù AQ3 cần thông tin này | Chấp nhận | G1 yêu cầu có thông tin rút học phần kèm ngày |
 | Q2 | G2 chấp nhận dữ liệu chỉ có hoạt động kèm ngày, trong khi quy tắc của AQ3 và KPI phụ 1 cần bài được chấm điểm có ngày | Chấp nhận | Tách G2 thành hai: G2a là bài được chấm điểm và bài nộp có ngày, G2b là hoạt động trên nền tảng học tập có ngày. Có bài đến hạn trong tuần 1–4 là điều kiện nên có và được báo cáo theo từng kỳ mở module |
 | Q3 | Chưa yêu cầu dữ liệu để tính mẫu số của KPI (thời gian điều chỉnh đăng ký học phần, tạm ngừng học, chuyển chương trình đào tạo) | Chấp nhận | Ngày bắt đầu và ngày kết thúc đăng ký, tính so với ngày bắt đầu học phần, là biến tối thiểu. Thông tin phân biệt tạm ngừng học với chuyển chương trình đào tạo vẫn là tùy chọn; nếu thiếu thông tin này, điểm khác so với cách tính KPI được ghi nhận |
-| Q4 | Năm theo học và hình thức học chỉ là tùy chọn, dù các AQ có nêu | Chấp nhận một phần | Hai biến này vẫn là tùy chọn. Nếu đặt thành điều kiện bắt buộc thì không bộ dữ liệu mở nào đáp ứng được và chỉ còn dữ liệu giả lập, loại dữ liệu đề bài không cho phép. Chúng em nêu ngay trong yêu cầu dữ liệu những phần câu hỏi sẽ chỉ đạt mức Một phần nếu thiếu hai biến này |
+| Q4 | Năm theo học và hình thức học chỉ là tùy chọn, dù các AQ có nêu | Chấp nhận một phần | Hai biến này vẫn là tùy chọn. Nếu đặt thành điều kiện bắt buộc thì không bộ dữ liệu mở nào đáp ứng được và chỉ còn dữ liệu giả lập, loại dữ liệu đề bài không cho phép. Nhóm nêu ngay trong yêu cầu dữ liệu những phần câu hỏi sẽ chỉ đạt mức Một phần nếu thiếu hai biến này |
 | Q5 | G3 yêu cầu ba kỳ mở trong khi AQ1 cần bốn học kỳ; không yêu cầu thứ tự thời gian | Chấp nhận | G3 yêu cầu ít nhất ba kỳ mở học phần xếp theo thứ tự thời gian, trong đó có kỳ mở muộn hơn để đánh giá; AQ1 đạt mức Một phần khi có ít hơn bốn học kỳ |
 | Q6 | Thiếu các nguồn rò rỉ thông tin (điểm trung bình của học phần, ngày công bố điểm, khối lượng học tập, đặc điểm cá nhân được cập nhật, chuẩn hóa) | Chấp nhận | Bổ sung năm dòng vào bảng rò rỉ thông tin |
 | Q7 | Bài bị bỏ lỡ được đếm cả sau khi sinh viên rút học phần | Chấp nhận | Quy tắc: một bài chỉ tính là bị bỏ lỡ nếu đến hạn trước ngày sinh viên rút học phần |
@@ -60,9 +60,9 @@ Challenge the selection: scores not backed by a recorded fact, criteria applied 
 Write at most 10 numbered critiques, most important first, each with the passage, the problem and why it matters.
 ```
 
-Bảng A.12 liệt kê mười nhận xét của AI phản biện lựa chọn và quyết định của chúng em đối với từng nhận xét.
+Bảng A.12 liệt kê mười nhận xét của AI phản biện lựa chọn và quyết định của nhóm đối với từng nhận xét.
 
-**Bảng A.12. AI phản biện lựa chọn: nhận xét của AI, quyết định của chúng em và nội dung thay đổi**
+**Bảng A.12. AI phản biện lựa chọn: nhận xét của AI, quyết định của nhóm và nội dung thay đổi**
 
 | # | Nhận xét (tóm tắt) | Quyết định | Thay đổi |
 | :---- | :---- | :---- | :---- |

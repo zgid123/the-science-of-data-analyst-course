@@ -81,7 +81,7 @@ def s01(prs):
                 pt=PT["lead"])
     kit.room("title people", max(lec, team) + 0.2, 5.95)
     rich(s, 0.7, 5.95, 11.8, [T("MTH045 – The Science of Data Analytics"),
-                             T("University of Science, VNU-HCM · November 2026")], pt=PT["small"] + 2, color=GREY)
+                             T("University of Science · November 2026")], pt=PT["small"] + 2, color=GREY)
     s.notes_slide.notes_text_frame.text = notes(1)
     src(s, "Source: Milestone 5 report, title page.")
 

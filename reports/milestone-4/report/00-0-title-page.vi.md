@@ -1,4 +1,4 @@
-**TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN, ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH**
+**TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN**
 
 **KHOA CÔNG NGHỆ THÔNG TIN**
 

@@ -1,6 +1,6 @@
 # 2. Hiểu bài toán nghiệp vụ và tiêu chí thành công
 
-Từ vấn đề và phạm vi đã nêu, Business Goal (mục tiêu của tổ chức) của nhóm chúng em là **nâng tỷ lệ hoàn thành học phần trong các học phần trực
+Từ vấn đề và phạm vi đã nêu, Business Goal (mục tiêu của tổ chức) của nhóm là **nâng tỷ lệ hoàn thành học phần trong các học phần trực
 tuyến và học phần kết hợp của chương trình đào tạo bằng cách nhận ra những sinh viên ngừng tham gia học tập đủ sớm để
 hỗ trợ ngay trong học kỳ**. Đây là kết quả dành cho tổ chức, tức là có thêm sinh viên đạt học phần, chứ không phải một
 mô hình hay một bảng điều khiển (dashboard). SMART Goal (mục tiêu cụ thể, đo lường được, khả thi, phù hợp và có thời hạn) giúp đo được mục tiêu này. Vì kịch bản không cho biết tỷ lệ hoàn thành thực tế, các giá trị trong SMART Goal là

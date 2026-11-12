@@ -1,6 +1,6 @@
 ## Phụ lục VI – Quyết định về các nhận xét của AI và các prompt
 
-Nhật ký quyết định về AI ở Phần 6 (Bảng 6.1) ghi lại các đóng góp quan trọng của AI; phụ lục này trình bày quyết định của nhóm chúng em về từng nhận xét của hai AI rà soát. Bảng A.10 trình bày 12 nhận xét của AI phản biện lựa chọn mô hình và Bảng A.11 trình bày 12 nhận xét của AI rà soát thiết kế đánh giá, mỗi nhận xét kèm bằng chứng dùng để kiểm chứng và tác động của nhận xét đó đến bản đề xuất.
+Nhật ký quyết định về AI ở Phần 6 (Bảng 6.1) ghi lại các đóng góp quan trọng của AI; phụ lục này trình bày quyết định của nhóm về từng nhận xét của hai AI rà soát. Bảng A.10 trình bày 12 nhận xét của AI phản biện lựa chọn mô hình và Bảng A.11 trình bày 12 nhận xét của AI rà soát thiết kế đánh giá, mỗi nhận xét kèm bằng chứng dùng để kiểm chứng và tác động của nhận xét đó đến bản đề xuất.
 
 **Bảng A.10. Quyết định về các nhận xét của AI phản biện lựa chọn mô hình**
 
@@ -17,7 +17,7 @@ Nhật ký quyết định về AI ở Phần 6 (Bảng 6.1) ghi lại các đó
 | 9 | Chưa quyết định giảng viên hướng dẫn thấy thứ hạng hay xác suất | Chấp nhận | Thứ hạng và lý do; chỉ hiển thị xác suất nếu đạt S3; các nhóm mức nguy cơ được cố định theo hạn mức liên hệ |
 | 10 | Phép kiểm tra công bằng thiếu lực kiểm định; chỉ bỏ các thuộc tính nhạy cảm ra khỏi mô hình là chưa đủ | Chấp nhận | Gộp qua các kỳ mở cho các nhóm của kiểm định khẳng định; kiểm tra biến đại diện (proxy check); nêu rõ tiêu chí chính là tiêu chí ngang bằng tỷ lệ phát hiện |
 | 11 | Thứ tự nguy cơ được mặc nhiên coi là trùng với nhu cầu hỗ trợ; tỷ lệ phát hiện có mức trần | Chấp nhận | Nêu rõ giả định là chưa được kiểm chứng; tỷ lệ phát hiện chuẩn hóa; tách Fail và Withdrawn |
-| 12 | Ngày rút khỏi module không xác định và sinh viên học lại có thể gây rò rỉ | Chấp nhận một phần | Các phân tích độ nhạy ở Bảng A.5, bước 7; số lần học trước được ghi nhận khi đăng ký nên vẫn hợp lệ |
+| 12 | Ngày rút khỏi module không xác định và sinh viên đã có mặt năm 2013 có thể gây rò rỉ | Chấp nhận một phần | Các phân tích độ nhạy ở Bảng A.5, bước 7; số lần học trước được ghi nhận khi đăng ký nên vẫn hợp lệ |
 
 Bảng A.11 ghi lại quyết định về từng nhận xét trong 12 nhận xét của AI rà soát thiết kế đánh giá.
 
@@ -38,7 +38,7 @@ Bảng A.11 ghi lại quyết định về từng nhận xét trong 12 nhận x�
 | 11 | Phân tích lỗi còn khoảng trống | Chấp nhận | Sinh viên không hoàn thành còn liên hệ được, sinh viên có hoạt động, độ ổn định của danh sách, phân tích theo lịch sử học tập, CCC |
 | 12 | Thiếu rủi ro và có biện pháp kiểm soát không khớp với rủi ro | Chấp nhận | Mười sáu rủi ro ở Bảng A.9; biện pháp kiểm soát cho rủi ro hiểu nhầm hệ số là nguyên nhân (R9), khẳng định việc liên hệ có hiệu quả (R10) và thiên kiến tự động hóa (R13) được gắn đúng với rủi ro tương ứng |
 
-Mỗi AI rà soát là một phiên AI tạo sinh riêng biệt, chỉ được đọc đề bài và các phụ lục nêu trong prompt của phiên đó; chúng em đối chiếu từng nhận xét với các thông tin làm căn cứ của thiết kế trước khi quyết định. Các prompt được trình bày bằng tiếng Anh, ở dạng rút gọn; các tài liệu được gọi theo vị trí trong báo cáo này. AI phản biện lựa chọn mô hình nhận chỉ dẫn sau:
+Mỗi AI rà soát là một phiên AI tạo sinh riêng biệt, chỉ được đọc đề bài và các phụ lục nêu trong prompt của phiên đó; nhóm đối chiếu từng nhận xét với các thông tin làm căn cứ của thiết kế trước khi quyết định. Các prompt được trình bày bằng tiếng Anh, ở dạng rút gọn; các tài liệu được gọi theo vị trí trong báo cáo này. AI phản biện lựa chọn mô hình nhận chỉ dẫn sau:
 
 > You act as the "Model selection" reviewer role that the MTH045 Milestone 4 brief allows for generative AI (brief
 > section 11). Read only the brief, the AQ Modeling Briefs (Section 2.1), the candidate comparison (Appendix I) and the

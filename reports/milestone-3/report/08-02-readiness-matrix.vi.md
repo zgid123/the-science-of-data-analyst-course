@@ -21,8 +21,7 @@ ngày 27; với danh sách 3 sinh viên trên mỗi nhóm 20, con số này là 
 một thứ tự ưu tiên để biết nên liên hệ ai trước. AQ3 và AQ4 cung cấp thứ tự đó, còn riêng quy tắc dấu hiệu sớm thì không xếp được thứ tự này.
 
 **Những câu hỏi chưa khả thi.** Ba phần của đề xuất không trả lời được bằng OULAD và cần hồ sơ riêng của đợt thí điểm.
-Phần thứ nhất là cách liên hệ nào hiệu quả nhất với sinh viên nào (tin nhắn của giảng viên, cuộc gọi từ phòng hỗ trợ
-sinh viên hoặc giới thiệu sinh viên đến một đơn vị hỗ trợ khác), cùng tác động của cách liên hệ đó đến việc hoàn thành học phần
+Phần thứ nhất là cách liên hệ nào hiệu quả nhất với sinh viên nào (tin nhắn của giảng viên, cuộc gọi từ Phòng Đào tạo hoặc giới thiệu sinh viên đến một đơn vị hỗ trợ khác), cùng tác động của cách liên hệ đó đến việc hoàn thành học phần
 (AQ4, C08, C11). Phần thứ hai là các phép so sánh theo năm theo học, theo hình thức học và theo việc điểm danh (C04, C05). Phần thứ
 ba là tỷ lệ liên hệ kịp thời (KPI phụ 2) cùng phần liên hệ của KPI phụ 1, tức số sinh viên có dấu hiệu sớm đã được liên hệ (C08).
 

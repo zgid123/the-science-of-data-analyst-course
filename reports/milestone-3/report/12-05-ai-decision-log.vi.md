@@ -1,6 +1,6 @@
 ## Phụ lục V – Nhật ký quyết định về AI và các prompt
 
-Bảng A.15 là Nhật ký quyết định về AI (AI Decision Log) của sản phẩm bàn giao F; mỗi dòng ứng với một đề xuất quan trọng của AI, kèm quyết định của nhóm chúng em và bằng chứng dùng để kiểm chứng.
+Bảng A.15 là Nhật ký quyết định về AI (AI Decision Log) của sản phẩm bàn giao F; mỗi dòng ứng với một đề xuất quan trọng của AI, kèm quyết định của nhóm và bằng chứng dùng để kiểm chứng.
 
 **Bảng A.15. Nhật ký quyết định về AI**
 
@@ -70,7 +70,7 @@ AI kiểm tra rò rỉ thông tin (leakage auditor) nhận chỉ dẫn dưới �
 > or the query and its result, the risk, and a fix, with severity (high / medium / low). Do not report a finding you
 > could not support with code or a query result. At most 10 findings.
 
-Bảng A.17 ghi lại bằng chứng và tác động của từng phát hiện trong 8 phát hiện của AI kiểm tra rò rỉ thông tin; chúng em chấp nhận cả 8 phát hiện.
+Bảng A.17 ghi lại bằng chứng và tác động của từng phát hiện trong 8 phát hiện của AI kiểm tra rò rỉ thông tin; nhóm chấp nhận cả 8 phát hiện.
 
 **Bảng A.17. Quyết định về các phát hiện của AI kiểm tra rò rỉ thông tin**
 
@@ -87,10 +87,10 @@ Bảng A.17 ghi lại bằng chứng và tác động của từng phát hiện 
 
 **Các quyết định khác và phản tư.**
 
-Đề xuất của AI diễn giải từ điển dữ liệu về chính sách năm 2025 của OU cũng được chúng em chấp nhận một phần. Từ chính sách này, AI rút ra một quy tắc dùng được cho điểm CMA: điểm được công bố trong vòng bảy ngày. Tuy nhiên, quy tắc rằng CMA không được nộp trễ không khớp với dữ liệu, trong đó có 32.991 bài nộp CMA trễ hạn, nên chúng em không áp dụng quy tắc này.
+Đề xuất của AI diễn giải từ điển dữ liệu về chính sách năm 2025 của OU cũng được nhóm chấp nhận một phần. Từ chính sách này, AI rút ra một quy tắc dùng được cho điểm CMA: điểm được công bố trong vòng bảy ngày. Tuy nhiên, quy tắc rằng CMA không được nộp trễ không khớp với dữ liệu, trong đó có 32.991 bài nộp CMA trễ hạn, nên nhóm không áp dụng quy tắc này.
 
 **Phản tư.** Các lượt rà soát hữu ích nhất ở những chỗ AI phản biện phải lập luận từ dữ liệu thay vì từ lời khuyên
-chung: phép kiểm tra dòng trùng lặp, lập luận về tỷ lệ nền và phát hiện về lỗi ngày đăng ký đều làm thay đổi pipeline. Mỗi điểm này đều được xác nhận bằng một phép đếm trước khi chúng em chấp nhận.
+chung: phép kiểm tra dòng trùng lặp, lập luận về tỷ lệ nền và phát hiện về lỗi ngày đăng ký đều làm thay đổi pipeline. Mỗi điểm này đều được xác nhận bằng một phép đếm trước khi nhóm chấp nhận.
 
 **Vai trò của AI và cách kiểm chứng.** Bảng dưới đây nêu bảy vai trò, việc AI đã làm trong từng vai trò và cách kiểm
 chứng kết quả.
@@ -100,7 +100,7 @@ chứng kết quả.
 | AI diễn giải từ điển dữ liệu | Đọc bài mô tả dữ liệu, chính sách đánh giá của OU và tài liệu về IMD | Mỗi thông tin làm căn cứ chỉ được giữ khi có đoạn trích nguyên văn; quy định năm 2025 rằng CMA không được nộp trễ được kiểm tra trên dữ liệu và không được áp dụng |
 | AI hỗ trợ EDA và danh mục kiểm tra chất lượng | Đề xuất phép kiểm tra xem các dòng lượt nhấp trùng lặp có phải là bản sao hay không | Chạy phép kiểm tra trên dữ liệu: 31,5% nhóm có số lượt nhấp bằng nhau, so với 24,0% nếu chỉ do ngẫu nhiên |
 | Trợ lý viết mã | Soạn thảo mọi script của gói | 13 con số khớp với kết quả đếm lại độc lập; 9 kiểm thử đơn vị; 6 đặc trưng được tính lại cho từng dòng mà không có sai khác; một dòng được đếm lại thủ công |
-| AI phản biện quy trình chuẩn bị | Rà soát kế hoạch trong một phiên riêng (12 nhận xét) và kiểm tra rò rỉ thông tin (8 phát hiện) | Mỗi nhận xét được kiểm tra trên dữ liệu hoặc mã nguồn trước khi chúng em quyết định |
+| AI phản biện quy trình chuẩn bị | Rà soát kế hoạch trong một phiên riêng (12 nhận xét) và kiểm tra rò rỉ thông tin (8 phát hiện) | Mỗi nhận xét được kiểm tra trên dữ liệu hoặc mã nguồn trước khi nhóm quyết định |
 | AI gợi ý xây dựng đặc trưng | Đề xuất khoảng cách đến lần hoạt động gần nhất, xu hướng, khoảng thời gian trước ngày bắt đầu, lượt nhấp theo loại tài nguyên và bài nộp sớm | Mỗi đặc trưng đều tính được từ các trường thật trước thời điểm chốt dữ liệu; các đặc trưng này được thêm thành nhóm đặc trưng mở rộng |
 | Trợ lý viết tài liệu | Soạn thảo từ điển dữ liệu, bảng truy vết nguồn gốc dữ liệu, hướng dẫn sử dụng gói và nhật ký biến đổi dữ liệu | Được tạo từ mã nguồn; V14 báo lỗi (FAIL) nếu một cột không có mục mô tả |
 | Trợ lý tạo dữ liệu giả lập | Viết một vài bản ghi giả lập nhỏ có gắn nhãn | Chỉ dùng mức A trong chính sách của đề bài; không bao giờ đi vào bảng dữ liệu hoặc phát hiện nào |

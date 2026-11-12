@@ -1,6 +1,6 @@
 # 9. Thiết kế đánh giá
 
-Thiết kế đánh giá được chốt ở Milestone 4 trước khi chạy bất kỳ đoạn mã nào; thiết kế này cho biết cách nhóm chúng em
+Thiết kế đánh giá được chốt ở Milestone 4 trước khi chạy bất kỳ đoạn mã nào; thiết kế này cho biết cách nhóm
 xác định một câu trả lời đã đủ tốt hay chưa. Đối với AQ1 và AQ2, thiết kế này đã được áp dụng cho dữ liệu năm 2013 và năm 2014; đối
 với AQ3 và AQ4, đây là quy trình đánh giá mà hai câu hỏi sẽ phải trải qua.
 Thiết kế áp dụng Hướng dẫn báo cáo minh bạch mô hình dự báo đa biến cho tiên lượng hoặc chẩn đoán cá nhân, phiên bản cập nhật cho AI (TRIPOD+AI). Hướng dẫn này xem

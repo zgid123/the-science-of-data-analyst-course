@@ -1,8 +1,8 @@
 # 7. Chuẩn bị dữ liệu và dữ liệu sẵn sàng cho phân tích
 
-Trên cơ sở các vấn đề chất lượng dữ liệu đã nêu, trong Milestone 3, nhóm chúng em đã xây dựng quy trình chuẩn bị dữ liệu (pipeline) để chuyển bảy bảng dữ liệu gốc thành
+Trên cơ sở các vấn đề chất lượng dữ liệu đã nêu, trong Milestone 3, nhóm đã xây dựng quy trình chuẩn bị dữ liệu (pipeline) để chuyển bảy bảng dữ liệu gốc thành
 các bảng dữ liệu đã chuẩn bị, sẵn sàng cho phân tích; mọi phân tích trong báo cáo đều đọc dữ liệu từ các bảng này. Trước
-khi thay đổi bất kỳ bản ghi nào, chúng em ghi cho mỗi vấn đề một quyết định xử lý kèm lý do. Mỗi quyết định có một phép
+khi thay đổi bất kỳ bản ghi nào, nhóm ghi cho mỗi vấn đề một quyết định xử lý kèm lý do. Mỗi quyết định có một phép
 kiểm tra tự động, đánh mã từ V01 đến V15: phép kiểm tra chạy trên dữ liệu sau xử lý và báo lỗi khi quyết định chưa được
 thực hiện đúng. Ba quyết định chi phối kết quả: các bảng giữ nguyên mọi dữ
 liệu đã ghi nhận, không xóa dòng nào và không điền giá trị thiếu; mọi đặc trưng chỉ dùng các sự kiện có mốc thời gian tính đến hết thời điểm chốt dữ liệu

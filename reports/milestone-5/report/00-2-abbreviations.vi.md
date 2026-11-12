@@ -5,7 +5,7 @@ Các từ viết tắt dưới đây được xếp theo thứ tự bảng chữ
 | Từ viết tắt | Dạng đầy đủ | Vai trò trong báo cáo |
 | :---- | :---- | :---- |
 | ABROCA | Diện tích tuyệt đối giữa hai đường ROC – Absolute between-ROC area | Thước đo không phụ thuộc ngưỡng về chênh lệch khả năng phân biệt giữa một nhóm và phần còn lại (Phụ lục IX) |
-| AI | Trí tuệ nhân tạo – Artificial intelligence | Đóng vai bên liên quan mô phỏng trong các cuộc phỏng vấn (Mục 1.1) và làm trợ lý dưới sự kiểm tra của nhóm chúng em (Mục 13); đối tượng điều chỉnh của luật ở Mục 12.1 |
+| AI | Trí tuệ nhân tạo – Artificial intelligence | Đóng vai bên liên quan mô phỏng trong các cuộc phỏng vấn (Mục 1.1) và làm trợ lý dưới sự kiểm tra của nhóm (Mục 13); đối tượng điều chỉnh của luật ở Mục 12.1 |
 | AQ | Câu hỏi phân tích – Analytical question | AQ1–AQ4, bốn câu hỏi cuối cùng (Mục 3) |
 | CMA | Bài đánh giá chấm bằng máy – Computer-marked assessment | Loại bài được tính trong quy tắc dấu hiệu sớm (Mục 2.1) |
 | CRISP-DM | Quy trình chuẩn liên ngành cho khai phá dữ liệu – Cross-Industry Standard Process for Data Mining | Mô hình quy trình làm cơ sở cho các giai đoạn của dự án (Phụ lục XVI) |

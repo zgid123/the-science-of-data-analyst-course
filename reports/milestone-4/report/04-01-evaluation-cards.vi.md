@@ -4,7 +4,7 @@
 
 **Hạn mức liên hệ và thiết lập chính.** Hạn mức liên hệ k của một kỳ mở là số sinh viên giảng viên hướng dẫn liên hệ được: 3 hoặc 5 sinh viên trên mỗi nhóm hướng dẫn, với giả định mỗi nhóm có 20 sinh viên, tương đương 15% hoặc 25% số lượt đăng ký học còn hiệu lực tại thời điểm chốt dữ liệu. Thiết lập chính của báo cáo là danh sách 5 trên 20 tại ngày 27. Thiết lập này được chọn vì danh sách tương ứng được giao cho giảng viên hướng dẫn vào tuần 5, đồng thời tỷ lệ 25% của danh sách gần với tỷ lệ sinh viên bị quy tắc dấu hiệu sớm đánh dấu tại ngày 27. Cụ thể, quy tắc này đánh dấu 28,8% trong số 27.535 lượt đăng ký học còn hiệu lực vào ngày đó trên cả 22 kỳ mở; tỷ lệ này được tính mà không dùng đến biến kết quả. Với mỗi kỳ mở, báo cáo trình bày một ma trận nhầm lẫn đối chiếu sinh viên có và không có tên trong danh sách với kết quả cuối cùng của sinh viên đó (hoàn thành hoặc không hoàn thành). Khi độ dài danh sách cố định, các ô của ma trận này cho ra tỷ lệ phát hiện, độ chính xác của danh sách và mức vượt tỷ lệ nền. Báo cáo dùng ba chỉ số này thay vì điểm F1, vì độ dài danh sách do hạn mức liên hệ quyết định chứ không được chọn để cân bằng hai loại lỗi. Ngoài ra, điểm Brier nêu trong thẻ của AQ3 là trung bình bình phương chênh lệch giữa nguy cơ dự báo và kết quả thực tế.
 
-**AQ1.** Bảng 4.1 trình bày thẻ của câu hỏi mô tả; với câu hỏi này, nhóm chúng em kiểm tra số đếm và mẫu số thay vì đo chất lượng dự báo.
+**AQ1.** Bảng 4.1 trình bày thẻ của câu hỏi mô tả; với câu hỏi này, nhóm kiểm tra số đếm và mẫu số thay vì đo chất lượng dự báo.
 
 **Bảng 4.1. Evaluation Design Card của AQ1**
 
@@ -18,7 +18,7 @@
 | Kiểm tra công bằng / theo nhóm con | Tỷ lệ theo giới tính, tình trạng khuyết tật do sinh viên tự khai, mức khó khăn kinh tế – xã hội của khu vực cư trú và nhóm tuổi, chỉ báo cáo để mô tả |
 | Tiêu chí thành công | Hai cách tổng hợp cho kết quả trùng nhau đến từng lượt đăng ký học; mọi tỷ lệ đều kèm mẫu số và khoảng tin cậy; không so sánh tỷ lệ giữa các kỳ mở khi thiếu khoảng tin cậy |
 
-**AQ2.** Bảng 4.2 trình bày thẻ của câu hỏi chẩn đoán; với câu hỏi này, chúng em đánh giá độ lớn và tính nhất quán của từng mối liên hệ.
+**AQ2.** Bảng 4.2 trình bày thẻ của câu hỏi chẩn đoán; với câu hỏi này, nhóm đánh giá độ lớn và tính nhất quán của từng mối liên hệ.
 
 **Bảng 4.2. Evaluation Design Card của AQ2**
 
@@ -30,7 +30,7 @@
 | Phương pháp cơ sở | Chênh lệch tỷ lệ chưa hiệu chỉnh của từng dấu hiệu, đặt cạnh ước lượng đã hiệu chỉnh |
 | Phân tích lỗi | Tính phần dư trung bình theo khoảng giá trị dự báo (binned residuals) cho từng kỳ mở và từng mức hoạt động. Đo tương quan giữa các dấu hiệu được tính từ lượt nhấp. Phân tích độ nhạy theo bốn cách: dùng số lượt nhấp sau khi loại các bản ghi trùng lặp hoàn toàn; dùng phiên bản quy tắc dấu hiệu sớm có tính thêm CMA nộp trễ; bỏ 138 lượt đăng ký học bị đánh dấu thiếu ngày; và bỏ các kỳ mở không có bài đến hạn |
 | Kiểm tra công bằng / theo nhóm con | Mối liên hệ theo giới tính, tình trạng khuyết tật và mức khó khăn của khu vực, chỉ được mô tả. Mô hình không hiệu chỉnh theo các thuộc tính này, để khác biệt giữa các nhóm không bị che đi |
-| Tiêu chí thành công | Một dấu hiệu được coi là có mối liên hệ nhất quán khi thỏa hai điều kiện: (1) chênh lệch nguy cơ đã hiệu chỉnh đạt ít nhất 5 điểm phần trăm với khoảng tin cậy không chứa 0 (5 điểm phần trăm là chênh lệch nhỏ nhất mà chúng em coi là đáng để giảng viên hướng dẫn lưu ý, bằng mức cải thiện mục tiêu của SMART Goal); (2) dấu hiệu có cùng chiều ở ít nhất hai phần ba số module tính được dấu hiệu đó. Nếu không thỏa, mối liên hệ được xếp là yếu hoặc không nhất quán. Không mối liên hệ nào được trình bày như quan hệ nhân quả [1] |
+| Tiêu chí thành công | Một dấu hiệu được coi là có mối liên hệ nhất quán khi thỏa hai điều kiện: (1) chênh lệch nguy cơ đã hiệu chỉnh đạt ít nhất 5 điểm phần trăm với khoảng tin cậy không chứa 0 (5 điểm phần trăm là chênh lệch nhỏ nhất mà nhóm coi là đáng để giảng viên hướng dẫn lưu ý, bằng mức cải thiện mục tiêu của SMART Goal); (2) dấu hiệu có cùng chiều ở ít nhất hai phần ba số module tính được dấu hiệu đó. Nếu không thỏa, mối liên hệ được xếp là yếu hoặc không nhất quán. Không mối liên hệ nào được trình bày như quan hệ nhân quả [1] |
 
 **AQ3.** Bảng 4.3 trình bày thẻ của câu hỏi dự báo; đây là câu hỏi được đánh giá bằng một điều kiện đạt duy nhất.
 

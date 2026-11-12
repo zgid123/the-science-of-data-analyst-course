@@ -1,9 +1,9 @@
 # 4. Yêu cầu dữ liệu và lựa chọn bộ dữ liệu
 
-Trước khi tìm dữ liệu, nhóm chúng em viết các yêu cầu theo đúng những loại hồ sơ mà trường đang lưu. Nhờ vậy, dữ liệu
+Trước khi tìm dữ liệu, nhóm viết các yêu cầu theo đúng những loại hồ sơ mà trường đang lưu. Nhờ vậy, dữ liệu
 được chọn theo câu hỏi chứ không phải câu hỏi bị sửa theo dữ liệu sẵn có. Mọi câu hỏi đều dùng chung đơn vị phân tích là lượt đăng ký học phần của một sinh viên trong một học phần và một học kỳ, chung nhóm sinh viên được xét (còn theo học sau thời gian điều chỉnh đăng ký học phần) và chung biến kết quả (kết quả cuối cùng kèm ngày rút học phần). Mỗi danh sách chỉ được dùng dữ liệu ghi nhận tính đến hết thời điểm chốt dữ liệu, tức
 một tuần trước khi lập danh sách, nên mọi sự kiện đều cần mốc thời gian. Bảng 4.1 là Ma trận AQ – yêu cầu dữ liệu
-(AQ–Data Requirement Matrix); Bảng A.9 (Phụ lục IV) bổ sung các hệ thống nguồn. Từ ma trận này, chúng em rút ra sáu
+(AQ–Data Requirement Matrix); Bảng A.9 (Phụ lục IV) bổ sung các hệ thống nguồn. Từ ma trận này, nhóm rút ra sáu
 điều kiện bắt buộc mà bộ dữ liệu nào cũng phải đạt, ký hiệu G1–G5: kết quả học tập có mốc thời gian, gồm cả ngày rút học
 phần (G1); bài được chấm điểm có mốc thời gian (G2a); hoạt động học tập có mốc thời gian (G2b); ít nhất ba kỳ mở học
 phần nối tiếp nhau theo thời gian (G3); giấy phép mở kèm nguồn gốc dữ liệu rõ ràng (G4); và mã định danh ẩn danh không

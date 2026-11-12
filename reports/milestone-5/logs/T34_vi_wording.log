@@ -1,0 +1,145 @@
+# 2026-11-12T18:11:41Z venv/bin/python reports/milestone-5/code/t34_vi_wording.py --write
+reports/milestone-1/report/00-0-title-page.vi.md: header 1
+reports/milestone-1/report/00-2-glossary.vi.md: team 1, office 1
+reports/milestone-1/report/01-02-problem-statement-scope.vi.md: office 1
+reports/milestone-1/report/02-01-stakeholder-map.vi.md: team 3, office 3
+reports/milestone-1/report/02-02-interview-approach.vi.md: team 4
+reports/milestone-1/report/02-03-requirement-synthesis.vi.md: team 5, office 2
+reports/milestone-1/report/02-04-conflicts-validation.vi.md: team 9, office 2
+reports/milestone-1/report/03-01-business-goal.vi.md: office 3
+reports/milestone-1/report/03-02-smart-goal.vi.md: team 1, office 2
+reports/milestone-1/report/03-03-kpis.vi.md: office 1
+reports/milestone-1/report/04-01-four-level-questions.vi.md: office 3
+reports/milestone-1/report/04-02-quality-check-refinement.vi.md: team 1
+reports/milestone-1/report/05-00-analytic-approach.vi.md: office 1
+reports/milestone-1/report/07-00-decision-value.vi.md: office 3
+reports/milestone-1/report/08-00-genai-reflection.vi.md: team 16
+reports/milestone-1/report/11-00-appendices.vi.md: team 2
+reports/milestone-1/report/11-01-interview-questions.vi.md: team 1
+reports/milestone-1/report/11-02-interview-excerpts.vi.md: office 2
+reports/milestone-1/report/11-03-validation-round.vi.md: team 7, office 2
+reports/milestone-1/report/11-04-ai-critique-review.vi.md: team 2
+reports/milestone-1/report/11-06-synthesis-detail.vi.md: team 7, office 3
+reports/milestone-1/report/11-07-goal-kpi-detail.vi.md: office 2
+reports/milestone-1/report/11-08-question-specification.vi.md: team 1, office 2
+reports/milestone-1/report/11-09-approach-data-decision-detail.vi.md: team 2, office 2
+reports/milestone-2/report/00-0-title-page.vi.md: header 1
+reports/milestone-2/report/01-01-frozen-baseline.vi.md: team 3, office 2
+reports/milestone-2/report/01-02-scope-change-log.vi.md: team 2
+reports/milestone-2/report/02-01-aq-data-matrix.vi.md: team 1
+reports/milestone-2/report/03-00-search-strategy.vi.md: team 6
+reports/milestone-2/report/04-00-evaluation-selection.vi.md: team 1
+reports/milestone-2/report/04-01-criteria-gates.vi.md: team 2
+reports/milestone-2/report/04-02-selection-matrix.vi.md: team 3
+reports/milestone-2/report/05-00-acquisition-provenance.vi.md: team 6
+reports/milestone-2/report/06-00-structural-verification.vi.md: team 2
+reports/milestone-2/report/07-01-traceability.vi.md: team 1
+reports/milestone-2/report/07-02-gaps-revisions.vi.md: team 4
+reports/milestone-2/report/08-00-risks-ethics.vi.md: team 7
+reports/milestone-2/report/09-00-genai-reflection.vi.md: team 18
+reports/milestone-2/report/11-01-search-log.vi.md: team 2
+reports/milestone-2/report/11-02-scoring-details.vi.md: team 2
+reports/milestone-2/report/11-03-acquisition-package.vi.md: team 5
+reports/milestone-2/report/11-05-change-log.vi.md: team 2
+reports/milestone-2/report/11-06-ai-evidence.vi.md: team 12
+reports/milestone-3/report/00-0-title-page.vi.md: header 1
+reports/milestone-3/report/01-00-baseline-dataset.vi.md: team 1
+reports/milestone-3/report/01-01-baseline-aqs.vi.md: office 2
+reports/milestone-3/report/02-03-codes-sensitive.vi.md: team 2
+reports/milestone-3/report/03-00-profiling-quality.vi.md: team 2
+reports/milestone-3/report/03-02-missingness-validity.vi.md: team 2
+reports/milestone-3/report/04-02-gap-decisions.vi.md: team 1
+reports/milestone-3/report/05-00-preparation-plan.vi.md: team 1
+reports/milestone-3/report/06-03-split-leakage.vi.md: team 2
+reports/milestone-3/report/07-00-prepared-validation.vi.md: team 1
+reports/milestone-3/report/07-03-residual-risks.vi.md: team 1, office 1
+reports/milestone-3/report/08-00-readiness.vi.md: team 1
+reports/milestone-3/report/08-02-readiness-matrix.vi.md: office 1
+reports/milestone-3/report/09-00-ethics-limitations.vi.md: team 3
+reports/milestone-3/report/10-00-genai-reflection.vi.md: team 5
+reports/milestone-3/report/12-02-pipeline-package.vi.md: team 1
+reports/milestone-3/report/12-03-dictionary-lineage.vi.md: team 1
+reports/milestone-3/report/12-04-traceability-change-log.vi.md: team 1
+reports/milestone-3/report/12-05-ai-decision-log.vi.md: team 6
+reports/milestone-4/report/00-0-title-page.vi.md: header 1
+reports/milestone-4/report/01-00-context-continuity.vi.md: team 1
+reports/milestone-4/report/01-01-goal-decisions-aqs.vi.md: team 2, office 2
+reports/milestone-4/report/01-02-prepared-data-entry-gate.vi.md: team 1
+reports/milestone-4/report/02-02-technical-tasks.vi.md: team 1
+reports/milestone-4/report/03-01-criteria-matrix.vi.md: team 1
+reports/milestone-4/report/03-02-descriptive-diagnostic.vi.md: team 2
+reports/milestone-4/report/03-03-predictive.vi.md: team 3
+reports/milestone-4/report/04-00-evaluation-design.vi.md: team 1
+reports/milestone-4/report/04-01-evaluation-cards.vi.md: team 3
+reports/milestone-4/report/04-02-validation-strategy.vi.md: team 4
+reports/milestone-4/report/04-03-metrics-success.vi.md: team 2
+reports/milestone-4/report/04-04-error-fairness.vi.md: team 1
+reports/milestone-4/report/05-00-risk-ethics.vi.md: team 1
+reports/milestone-4/report/06-00-genai-usage.vi.md: team 9
+reports/milestone-4/report/10-00-appendices.vi.md: team 1
+reports/milestone-4/report/10-03-validation-protocol.vi.md: team 1
+reports/milestone-4/report/10-06-ai-critiques.vi.md: team 2
+reports/milestone-5/report/00-0-title-page.vi.md: header 1
+reports/milestone-5/report/00-1-abstract.vi.md: team 4, office 1
+reports/milestone-5/report/00-2-abbreviations.vi.md: team 1
+reports/milestone-5/report/01-00-introduction-context.vi.md: office 1
+reports/milestone-5/report/01-01-motivation-stakeholders.vi.md: team 1, office 2
+reports/milestone-5/report/01-02-scope-objective.vi.md: team 2
+reports/milestone-5/report/02-00-business-understanding.vi.md: team 1
+reports/milestone-5/report/04-00-data-requirements.vi.md: team 2
+reports/milestone-5/report/04-01-dataset-selection.vi.md: team 3
+reports/milestone-5/report/05-01-requirement-data-fit.vi.md: team 1
+reports/milestone-5/report/06-00-data-understanding.vi.md: team 2
+reports/milestone-5/report/06-01-quality-findings.vi.md: team 2
+reports/milestone-5/report/07-00-preparation-pipeline.vi.md: team 2
+reports/milestone-5/report/07-01-features-leakage.vi.md: team 1
+reports/milestone-5/report/08-00-modeling-strategy.vi.md: team 3
+reports/milestone-5/report/08-01-candidate-methods.vi.md: team 1
+reports/milestone-5/report/09-00-evaluation-design.vi.md: team 1
+reports/milestone-5/report/09-01-validation-success.vi.md: team 1
+reports/milestone-5/report/09-02-fairness-interpretability.vi.md: team 1
+reports/milestone-5/report/10-00-experimental-status.vi.md: team 2
+reports/milestone-5/report/11-00-findings-overview.vi.md: team 2
+reports/milestone-5/report/11-02-aq1-findings.vi.md: team 1
+reports/milestone-5/report/11-03-aq2-findings.vi.md: team 1
+reports/milestone-5/report/11-05-decision-support.vi.md: team 1
+reports/milestone-5/report/12-00-limitations.vi.md: team 1
+reports/milestone-5/report/13-00-genai-reflection.vi.md: team 8
+reports/milestone-5/report/14-00-conclusion.vi.md: team 1
+reports/milestone-5/report/16-01-context-stakeholders.vi.md: team 9, office 5
+reports/milestone-5/report/16-02-goal-kpis-decisions.vi.md: team 2, office 3
+reports/milestone-5/report/16-03-aq-quality-revision.vi.md: team 3, office 3
+reports/milestone-5/report/16-04-requirements-selection.vi.md: team 8
+reports/milestone-5/report/16-05-dataset-gaps.vi.md: office 1
+reports/milestone-5/report/16-06-profile-quality.vi.md: team 4, office 1
+reports/milestone-5/report/16-07-preparation-leakage.vi.md: team 2
+reports/milestone-5/report/16-08-modeling-briefs.vi.md: team 3
+reports/milestone-5/report/16-09-evaluation-detail.vi.md: team 3
+reports/milestone-5/report/16-11-reading-traceability.vi.md: team 1
+reports/milestone-5/report/16-12-aq1-results.vi.md: team 1
+reports/milestone-5/report/16-13-aq2-results.vi.md: team 7
+reports/milestone-5/report/16-14-aq3-aq4-answers.vi.md: team 6, office 3
+reports/milestone-5/report/16-15-limitations-future.vi.md: team 7, office 2
+reports/milestone-5/report/16-16-ai-decision-log.vi.md: team 22
+slides_milestone5_30_vi.py: team 58, office 5, deck line 2, deck fix 1
+reports/milestone-1/report/00-0-title-page.md: header 1
+reports/milestone-2/report/00-0-title-page.md: header 1
+reports/milestone-3/report/00-0-title-page.md: header 1
+reports/milestone-4/report/00-0-title-page.md: header 1
+reports/milestone-5/report/00-0-title-page.md: header 1
+build_slides_milestone5_30.py: deck line 1
+slides_milestone5_full/part1.py: deck line 1
+TOTAL {'header': 10, 'team': 390, 'office': 70, 'deck line': 4, 'deck fix': 1}
+new words after 'nhóm': [('đã', 39), ('không', 23), ('kiểm', 14), ('chỉ', 11), ('và', 10), ('có', 9), ('chấp', 9), ('chưa', 9), ('dùng', 9), ('chọn', 9), ('đối', 8), ('cũng', 7), ('sẽ', 7), ('sử', 6), ('ước', 6), ('rút', 5), ('đặt', 5), ('áp', 5), ('ghi', 5), ('thu', 5), ('chấm', 5), ('xác', 5), ('bổ', 4), ('phân', 4), ('giải', 4), ('vẫn', 4), ('đề', 4), ('là', 4), ('bắt', 4), ('đánh', 4), ('ở', 4), ('tính', 4), ('chạy', 4), ('xem', 3), ('cần', 3), ('coi', 3), ('viết', 3), ('bằng', 3), ('quyết', 3), ('về', 3)]
+written
+exit status: 0
+edited   reports/milestone-2/report/06-00-structural-verification.vi.md
+edited   reports/milestone-3/report/04-01-fit-ratings.vi.md
+edited   reports/milestone-3/report/06-03-split-leakage.vi.md
+edited   reports/milestone-3/report/12-02-pipeline-package.vi.md
+edited   reports/milestone-4/report/04-02-validation-strategy.vi.md
+edited   reports/milestone-4/report/06-00-genai-usage.vi.md
+edited   reports/milestone-4/report/10-03-validation-protocol.vi.md
+edited   reports/milestone-4/report/10-03-validation-protocol.vi.md
+edited   reports/milestone-4/report/10-05-risk-register.vi.md
+edited   reports/milestone-4/report/10-06-ai-critiques.vi.md
