@@ -1,0 +1,13 @@
+population,runs,year,group,enrolments,missed_by_week_4,share,ci_low,ci_high
+all runs,9,2013,Completers (Pass or Distinction),6561,30,0.004572,0.003205,0.006520
+all runs,9,2013,Non-completers (Fail or Withdrawn),5515,1080,0.195830,0.185569,0.206513
+all runs,13,2014,Completers (Pass or Distinction),8800,54,0.006136,0.004706,0.007997
+all runs,13,2014,Non-completers (Fail or Withdrawn),7185,1053,0.146555,0.138567,0.154922
+all runs,22,both years,Completers (Pass or Distinction),15361,84,0.005468,0.004419,0.006765
+all runs,22,both years,Non-completers (Fail or Withdrawn),12700,2133,0.167953,0.161552,0.174554
+runs with a task due by day 27,7,2013,Completers (Pass or Distinction),5361,30,0.005596,0.003923,0.007977
+runs with a task due by day 27,7,2013,Non-completers (Fail or Withdrawn),4856,1080,0.222405,0.210931,0.234319
+runs with a task due by day 27,9,2014,Completers (Pass or Distinction),6837,54,0.007898,0.006059,0.010290
+runs with a task due by day 27,9,2014,Non-completers (Fail or Withdrawn),5987,1053,0.175881,0.166446,0.185732
+runs with a task due by day 27,16,both years,Completers (Pass or Distinction),12198,84,0.006886,0.005566,0.008517
+runs with a task due by day 27,16,both years,Non-completers (Fail or Withdrawn),10843,2133,0.196717,0.189343,0.204306

@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:22:46Z |
-| Finished (UTC) | 2026-11-11T23:23:37Z |
-| Duration | 50.9 s |
+| Started (UTC) | 2026-11-12T15:59:48Z |
+| Finished (UTC) | 2026-11-12T16:00:22Z |
+| Duration | 34.1 s |
 | Command | `python aq-4/code/03_fairness.py` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output

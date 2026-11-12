@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:06:14Z |
-| Finished (UTC) | 2026-11-11T23:18:17Z |
-| Duration | 722.9 s |
+| Started (UTC) | 2026-11-12T15:50:57Z |
+| Finished (UTC) | 2026-11-12T15:58:51Z |
+| Duration | 473.7 s |
 | Command | `python aq-3/code/04_freeze.py` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output
@@ -60,5 +60,5 @@
 | banked_results | 0.005 |
 [saved] aq-3/results/frozen_M1_d27_coefficients.csv  (23 rows x 2 columns)
 
-**Frozen at 2026-11-11T23:18:16Z** – written to aq-3/results/freeze.json. No 2014 outcome has been read by any script of this prototype.
+**Frozen at 2026-11-12T15:58:51Z** – written to aq-3/results/freeze.json. No script of this rerun has read a 2014 outcome before this line. This freeze reproduces the first run's freeze of 2026-11-11T23:18:16Z, whose test results were known to the analyst when the rerun started; it is not a second blind test.
 

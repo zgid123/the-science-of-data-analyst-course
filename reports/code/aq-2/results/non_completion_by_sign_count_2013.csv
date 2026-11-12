@@ -1,6 +1,11 @@
-signs_present,enrolments,non_completion_rate
-0,6554,0.306225
-1,2477,0.507872
-2,1430,0.630769
-3,959,0.739312
-4,391,0.943734
+population,signs_present,enrolments,non_completion_rate
+all enrolments (task signs cannot occur in runs without a task due),0,6554,0.306225
+all enrolments (task signs cannot occur in runs without a task due),1,2477,0.507872
+all enrolments (task signs cannot occur in runs without a task due),2,1430,0.630769
+all enrolments (task signs cannot occur in runs without a task due),3,959,0.739312
+all enrolments (task signs cannot occur in runs without a task due),4,391,0.943734
+runs where all five signs are defined,0,5674,0.319528
+runs where all five signs are defined,1,2031,0.531265
+runs where all five signs are defined,2,1134,0.669312
+runs where all five signs are defined,3,730,0.787671
+runs where all five signs are defined,4,391,0.943734

@@ -1,0 +1,22 @@
+# Log: logs / determinism_before
+
+| Field | Value |
+| :---- | :---- |
+| Started (UTC) | 2026-11-12T16:00:36Z |
+| Finished (UTC) | 2026-11-12T16:00:36Z |
+| Duration | 0.2 s |
+| Command | `python common/hash_outputs.py before` (run from `reports/code`) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
+| Exit status | 0 |
+
+## Console output
+
+```
+8c4748762890354b219598ce2bd3da5c165e0d067fa14ec5f28402119219fead  aq-3/results/dev_folds.csv
+4ac92299517d99c560e762c315a9038d5e8dd014972d08473c5f729642cefc2c  aq-3/results/dev_tuning.csv
+4656eebfc0c9573d1f460ff8fcb7473d1d862bf42079161769e5e9b81ce82e4b  aq-3/results/dev_pooled.csv
+2bf4074ab0e82323a62bd645f49a51146bb4736906b8362488bb12a434773d9a  aq-3/extracted-datasets/aq3_dev_oof_scores_d27.csv
+2efe89a7bb76d795ecd88e1613021def2c1200d191cd1b3fee6b3e292bba8b9a  aq-3/extracted-datasets/aq3_dev_oof_scores_d13.csv
+```
+written to logs/determinism_before.sha256
+

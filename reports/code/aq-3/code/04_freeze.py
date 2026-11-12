@@ -7,6 +7,10 @@ From this moment the library allows 2014 outcomes to be read, and each read is a
 Also frozen here: the labels-available variant (chosen configuration trained only on the 2013 February runs).
 
 This script refuses to run when a freeze already exists: a model cannot be refrozen after the test was opened.
+
+Rerun (PROTOCOL.md P23): the present freeze reproduces the freeze of the first run of this folder, whose 2014 results
+were known when the rerun started. Nothing in the tuning or fitting below differs from the first run; only the record
+written to freeze.json says so and keeps the first run's freeze time as history.
 """
 
 import json
@@ -71,6 +75,12 @@ freeze = {"frozen_utc": lib.utc_now(), "chosen_config": chosen, "chosen_label": 
           "prepared_dataset": lib.PREPARED_VERSION, "seed": lib.SEED, "git_commit": commit,
           "python": platform.python_version(), "scikit_learn": sklearn.__version__, "numpy": np.__version__, "polars": pl.__version__,
           "models": {f"{r['name']}_d{r['cutoff']}": {"sha256": r["sha256"], "hyperparameters": json.loads(r["hyperparameters"])} for r in records},
-          "test_outcomes_read_before_freeze_by_this_prototype": False}
+          "run_kind": lib.RUN_KIND,
+          "test_outcomes_read_by_scripts_of_this_rerun_before_this_freeze": False,
+          "test_outcomes_known_to_the_analyst_before_this_freeze": True,
+          "first_run": {"git_commit": lib.FIRST_RUN_COMMIT, "frozen_utc": lib.FIRST_RUN_FREEZE_UTC,
+                        "first_test_access_utc": lib.FIRST_RUN_FIRST_TEST_ACCESS_UTC}}
 lib.FREEZE_FILE.write_text(json.dumps(freeze, indent=1))
-print(f"\n**Frozen at {freeze['frozen_utc']}** – written to aq-3/results/freeze.json. No 2014 outcome has been read by any script of this prototype.")
+print(f"\n**Frozen at {freeze['frozen_utc']}** – written to aq-3/results/freeze.json. No script of this rerun has read a 2014 outcome "
+      f"before this line. This freeze reproduces the first run's freeze of {lib.FIRST_RUN_FREEZE_UTC}, whose test results were "
+      f"known to the analyst when the rerun started; it is not a second blind test.")

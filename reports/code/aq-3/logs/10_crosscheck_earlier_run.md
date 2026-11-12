@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:25:44Z |
-| Finished (UTC) | 2026-11-11T23:25:47Z |
-| Duration | 2.6 s |
+| Started (UTC) | 2026-11-12T16:00:33Z |
+| Finished (UTC) | 2026-11-12T16:00:34Z |
+| Duration | 1.4 s |
 | Command | `python aq-3/code/10_crosscheck_earlier_run.py` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output

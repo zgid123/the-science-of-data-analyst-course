@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T22:58:40Z |
-| Finished (UTC) | 2026-11-11T22:58:41Z |
-| Duration | 0.7 s |
+| Started (UTC) | 2026-11-12T15:48:10Z |
+| Finished (UTC) | 2026-11-12T15:48:11Z |
+| Duration | 0.5 s |
 | Command | `python aq-1/code/02_analyse.py --scope 2013` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output
@@ -77,6 +77,20 @@
 | GGG-2013J | 926 | 334 | 0.361 | 0.330 | 0.392 |
 
 [saved] aq-1/results/rates_2013.csv  (21 rows x 7 columns)  – non-completion rate by level, KPI population
+**Module by start month (B = February, J = October)**
+
+| code_module | enrolments_J | enrolments_B | rate_J | rate_B | february_minus_october |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| AAA | 370 |  | 0.249 |  |  |
+| BBB | 1,851 | 1,606 | 0.422 | 0.501 | 0.079 |
+| DDD | 1,675 | 1,197 | 0.507 | 0.575 | 0.068 |
+| EEE | 933 |  | 0.348 |  |  |
+| FFF | 1,998 | 1,520 | 0.452 | 0.486 | 0.034 |
+| GGG | 926 |  | 0.361 |  |  |
+
+modules with both start months: 3; February rate higher in 3 of them (gap 0.034 to 0.079)
+
+[saved] aq-1/results/rates_module_by_start_month_2013.csv  (6 rows x 6 columns)
 
 ### Three denominators per run: KPI population, all enrolments, KPI without flagged enrolments
 
@@ -169,6 +183,20 @@ Runs with no task due by day 27: 2 of 9: EEE-2013J, GGG-2013J
 | Pass | 5,486 | 1,328 | 0.242 | 24.000 | 18.000 | 30.000 | 0.005 | 0.022 | 0.027 | 0.047 | 0.081 |
 | Withdrawn | 2,285 | 1,574 | 0.689 | 8.000 | 4.000 | 14.000 | 0.241 | 0.406 | 0.430 | 0.549 | 0.638 |
 [saved] aq-1/results/first_missed_task_by_outcome_2013.csv  (6 rows x 12 columns)
+
+**Share with a first missed task by the end of week 4 (day 27), Wilson 95% interval**
+
+| population | runs | year | group | enrolments | missed_by_week_4 | share | ci_low | ci_high |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| all runs | 9 | 2013 | Completers (Pass or Distinction) | 6,561 | 30 | 0.005 | 0.003 | 0.007 |
+| all runs | 9 | 2013 | Non-completers (Fail or Withdrawn) | 5,515 | 1,080 | 0.196 | 0.186 | 0.207 |
+| all runs | 9 | both years | Completers (Pass or Distinction) | 6,561 | 30 | 0.005 | 0.003 | 0.007 |
+| all runs | 9 | both years | Non-completers (Fail or Withdrawn) | 5,515 | 1,080 | 0.196 | 0.186 | 0.207 |
+| runs with a task due by day 27 | 7 | 2013 | Completers (Pass or Distinction) | 5,361 | 30 | 0.006 | 0.004 | 0.008 |
+| runs with a task due by day 27 | 7 | 2013 | Non-completers (Fail or Withdrawn) | 4,856 | 1,080 | 0.222 | 0.211 | 0.234 |
+| runs with a task due by day 27 | 7 | both years | Completers (Pass or Distinction) | 5,361 | 30 | 0.006 | 0.004 | 0.008 |
+| runs with a task due by day 27 | 7 | both years | Non-completers (Fail or Withdrawn) | 4,856 | 1,080 | 0.222 | 0.211 | 0.234 |
+[saved] aq-1/results/first_missed_by_week4_2013.csv  (8 rows x 9 columns)
 [saved] aq-1/results/first_missed_task_cumulative_2013.csv  (68 rows x 5 columns)
 
 **Non-completers: first missed task by module**

@@ -1,8 +1,9 @@
-"""AQ3 step 10 – cross-check against the team's earlier prototype run (PROTOCOL.md P20).
+"""AQ3 step 10 – comparison with the team's earlier prototype run (PROTOCOL.md P20).
 
-The earlier run lives in reports/milestone-4/package/results/. It was not read while this prototype was built and
-tested; this script is the first place where its numbers are opened. Two independent implementations of the same
-frozen Level 1 design should agree on the baseline exactly and on the model closely.
+The earlier run lives in reports/milestone-4/package/results/. Its code is independent of this folder's code, so
+agreement of the two shows that the result does not depend on one implementation. In this rerun the numbers of both
+were already known (the first run of this folder opened them on 2026-11-11), so the comparison is a consistency check
+of two implementations of the same frozen Level 1 design, not a blind replication.
 
 Writes results/crosscheck_earlier_run.csv and results/crosscheck_per_run.csv. Skips quietly if the earlier run is absent.
 """

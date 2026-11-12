@@ -7,6 +7,9 @@ C2  second aggregation path: rates per run recomputed from the raw OULAD tables 
 C3  first missed week stored in the prepared view equals the week re-derived from the task table
 C4  the pooled count equals the sum of the run counts; outcome shares sum to 1 in every run
 C5  every published rate carries its denominator and interval, and the interval contains the rate
+C6  (scope all) the counts behind the year comparison, recomputed from the raw tables by a second code path, equal
+    the counts of results/year_comparison_all.csv for the three overall scopes under both denominators
+C7  (scope all) every Newcombe interval of the year comparison equals the interval computed by statsmodels
 """
 
 import sys
@@ -76,6 +79,47 @@ check("C4", "pooled counts equal the sum over runs; the four outcome counts sum 
 # C5 ---------------------------------------------------------------------------------------------------
 ok5 = rates.filter((pl.col("enrolments") > 0) & (pl.col("ci_low") <= pl.col("rate")) & (pl.col("rate") <= pl.col("ci_high"))).height == rates.height
 check("C5", "every rate has a denominator and an interval that contains it", ok5, f"{rates.height} rates checked")
+
+# C6, C7 -----------------------------------------------------------------------------------------------
+if scope == "all":
+    yc = pl.read_csv(RESULTS / "year_comparison_all.csv")
+    # second code path: plain Python over the raw rows, no shared function
+    cnt: dict[tuple, list[int]] = {}
+    runs_by_year: dict[int, set] = {2013: set(), 2014: set()}
+    raw_rows = raw.select("code_module", "code_presentation", "enrolled_d14_raw", "nc_raw").rows()
+    for m, pres, _, _ in raw_rows:
+        runs_by_year[int(pres[:4])].add((m, pres[4]))
+    shared_mod = {m for m, _ in runs_by_year[2013]} & {m for m, _ in runs_by_year[2014]}
+    pairs = runs_by_year[2013] & runs_by_year[2014]
+    for m, pres, reg14, nc in raw_rows:
+        yr, sm = int(pres[:4]), pres[4]
+        for den in ("all enrolments", "registered at day 14 (KPI population)"):
+            if den.startswith("registered") and not reg14:
+                continue
+            for sc, inside in (("all", True), ("modules", m in shared_mod), ("pairs", (m, sm) in pairs)):
+                if inside:
+                    c = cnt.setdefault((den, sc, yr), [0, 0])
+                    c[0] += 1
+                    c[1] += int(nc)
+    ov = yc.filter((pl.col("level") == "overall") & pl.col("method").str.starts_with("pooled"))
+    bad6, n6 = [], 0
+    for r in ov.iter_rows(named=True):
+        sc = "all" if r["scope"].startswith("all runs") else ("modules" if "modules run in both years" in r["scope"] else "pairs")
+        for yr in (2013, 2014):
+            n6 += 1
+            if cnt[(r["denominator"], sc, yr)] != [r[f"n_{yr}"], r[f"events_{yr}"]]:
+                bad6.append((r["denominator"], r["scope"], yr, cnt[(r["denominator"], sc, yr)], [r[f"n_{yr}"], r[f"events_{yr}"]]))
+    check("C6", "year-comparison counts recomputed from the raw tables equal the result table (3 scopes x 2 denominators x 2 years)", not bad6,
+          f"{n6 - len(bad6)} of {n6} count pairs equal; {len(shared_mod)} shared modules, {len(pairs)} shared module x start-month pairs" + (f"; differences: {bad6}" if bad6 else ""))
+
+    from statsmodels.stats.proportion import confint_proportions_2indep
+    worst, n7 = 0.0, 0
+    for r in yc.filter(pl.col("method").str.starts_with("pooled")).iter_rows(named=True):
+        lo, hi = confint_proportions_2indep(r["events_2014"], r["n_2014"], r["events_2013"], r["n_2013"], method="newcomb", compare="diff")
+        worst = max(worst, abs(lo - r["ci_low"]), abs(hi - r["ci_high"]))
+        n7 += 1
+    check("C7", "Newcombe intervals of the year comparison equal the statsmodels implementation (tolerance 1e-5; stored with 6 decimals)", worst < 1e-5,
+          f"{n7} intervals compared; largest absolute difference of a bound {worst:.1e}")
 
 out = pl.DataFrame(checks)
 lib.banner(f"AQ1 check ledger, scope = {scope}")

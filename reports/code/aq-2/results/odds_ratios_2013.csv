@@ -1,6 +1,6 @@
-term,odds_ratio,or_ci_low,or_ci_high,p_value,adjusted_rd_no_interactions
-sign_task_missed,7.489911,6.139557,9.137266,0.000000,0.403266
-sign_tma_late,2.893720,2.397912,3.492045,0.000000,0.220324
-sign_inactive_last7,1.667002,1.467061,1.894193,0.000000,0.108266
-sign_low_activity,1.948912,1.750907,2.169309,0.000000,0.144376
-sign_no_pre_activity,1.617973,1.444066,1.812822,0.000000,0.101480
+term,n_support,odds_ratio,or_ci_low,or_ci_high,p_value,adjusted_rd_no_interactions
+sign_task_missed,9960,7.489911,6.139557,9.137266,0.000000,0.403266
+sign_tma_late,9960,2.893720,2.397912,3.492045,0.000000,0.220324
+sign_inactive_last7,11811,1.667002,1.467061,1.894193,0.000000,0.108266
+sign_low_activity,11811,1.948912,1.750907,2.169309,0.000000,0.144376
+sign_no_pre_activity,11811,1.617973,1.444066,1.812822,0.000000,0.101480

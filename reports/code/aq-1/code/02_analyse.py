@@ -4,12 +4,16 @@ Population (Level 1 report, Table 2.1): enrolments still registered at day 14 (t
 Baselines (Table 4.1): pooled rate; the same rate over all enrolments (second denominator); the rate without the
 enrolments flagged for a missing withdrawal or registration day.
 
+Scope all adds the year comparison of PROTOCOL.md P18: the 2014 - 2013 difference with a Newcombe interval on both
+denominators, overall, for the modules and the module x start-month pairs that ran in both years, per module and per
+start month, and the share of enrolments not registered at day 14 in each year.
+
 Writes results/*_<scope>.csv; prints every table to the Markdown log.
 """
 
 import polars as pl
 
-from aq1_common import EXTRACT, RESULTS, lib, rate_table, scope_args
+from aq1_common import EXTRACT, RESULTS, lib, paired_keys, rate_table, scope_args, year_comparison, year_difference
 
 scope, years = scope_args(__doc__)
 enr = pl.read_csv(EXTRACT / f"aq1_enrolments_{scope}.csv")
@@ -47,6 +51,43 @@ if "rate_B" in ms.columns and "rate_J" in ms.columns:
     print(f"\nmodules with both start months: {both.height}; February rate higher in {int((both['february_minus_october'] > 0).sum())} of them "
           f"(gap {float(both['february_minus_october'].min()):.3f} to {float(both['february_minus_october'].max()):.3f})\n")
     lib.save_csv(ms, RESULTS / f"rates_module_by_start_month_{scope}.csv")
+
+# ---- year comparison (scope all only; PROTOCOL.md P18) -------------------------------------------------
+if scope == "all":
+    lib.banner("Year comparison: 2014 minus 2013 non-completion, Newcombe 95% interval, two denominators")
+    yc = year_comparison(enr)
+    show = ["denominator", "level", "scope", "method", "n_2013", "rate_2013", "n_2014", "rate_2014", "difference_2014_minus_2013", "ci_low", "ci_high", "interval_excludes_0"]
+    print("**Overall scopes**\n\n" + lib.md_table(yc.filter(pl.col("level") == "overall").select(show), digits=4))
+    print("\n**By module (the six modules run in both years)**\n\n" + lib.md_table(yc.filter(pl.col("level") == "module").select(show), digits=4))
+    print("\n**By start month**\n\n" + lib.md_table(yc.filter(pl.col("level").str.starts_with("start month")).select(show), digits=4))
+    print("\n**By module x start-month pair run in both years**\n\n" + lib.md_table(yc.filter(pl.col("level") == "pair").select(show), digits=4))
+    lib.save_csv(yc, RESULTS / f"year_comparison_{scope}.csv")
+    ov = yc.filter((pl.col("level") == "overall") & pl.col("method").str.starts_with("pooled"))
+    flips = ov.pivot(on="denominator", index="scope", values="difference_2014_minus_2013")
+    print("\n**Sign of the year difference under each denominator**\n\n" + lib.md_table(flips, digits=4))
+    mods = yc.filter(pl.col("level") == "module")
+    for den in mods["denominator"].unique(maintain_order=True).to_list():
+        t = mods.filter(pl.col("denominator") == den)
+        print(f"- {den}: 2014 lower in {int((t['difference_2014_minus_2013'] < 0).sum())} of {t.height} shared modules; "
+              f"interval excludes 0 in {int(t['interval_excludes_0'].sum())} (lower: {int(((t['ci_high'] < 0)).sum())}, higher: {int((t['ci_low'] > 0).sum())})")
+
+    # share of enrolments not registered at day 14, and how those enrolments ended
+    shared = sorted(set(enr.filter(pl.col("year") == 2013)["code_module"]) & set(enr.filter(pl.col("year") == 2014)["code_module"]))
+    paired = enr.join(paired_keys(enr), on=["code_module", "start_month"], how="inner")
+    out_rows = []
+    for label, d in [("all runs", enr), (f"{len(shared)} modules run in both years", enr.filter(pl.col("code_module").is_in(shared))),
+                     (f"{paired_keys(enr).height} module x start-month pairs run in both years", paired)]:
+        d = d.with_columns((~pl.col("enrolled_d14")).alias("not_registered_d14"))
+        r = year_difference(d.filter(pl.col("year") == 2013), d.filter(pl.col("year") == 2014), "not_registered_d14")
+        nr = d.filter(pl.col("not_registered_d14"))
+        rn = year_difference(nr.filter(pl.col("year") == 2013), nr.filter(pl.col("year") == 2014), "non_completion")
+        out_rows.append({"scope": label, "enrolments_2013": r["n_2013"], "not_registered_2013": r["events_2013"], "share_not_registered_2013": r["rate_2013"],
+                         "enrolments_2014": r["n_2014"], "not_registered_2014": r["events_2014"], "share_not_registered_2014": r["rate_2014"],
+                         "difference_2014_minus_2013": r["difference_2014_minus_2013"], "ci_low": r["ci_low"], "ci_high": r["ci_high"],
+                         "non_completion_among_not_registered_2013": rn["rate_2013"], "non_completion_among_not_registered_2014": rn["rate_2014"]})
+    nreg = pl.DataFrame(out_rows)
+    print("\n**Share of enrolments not registered at day 14, by year (they are outside the KPI population and nearly all end in Fail or Withdrawn)**\n\n" + lib.md_table(nreg, digits=4))
+    lib.save_csv(nreg, RESULTS / f"not_registered_d14_by_year_{scope}.csv")
 
 # ---- the three denominators per run ------------------------------------------------------------------
 lib.banner("Three denominators per run: KPI population, all enrolments, KPI without flagged enrolments")
@@ -119,6 +160,29 @@ for grp_col in ["group", "final_result"]:
 fm = pl.DataFrame(rows).sort("group")
 print("\n**First missed task by outcome**\n\n" + lib.md_table(fm))
 lib.save_csv(fm, RESULTS / f"first_missed_task_by_outcome_{scope}.csv")
+
+# Missed by week 4, with the runs that have a task due by day 27 shown apart: a student with nothing due has an
+# undefined missed-task status, not "no missed task" (PROTOCOL.md P18).
+with_task = first_due.filter(pl.col("tasks_due_by_day27") > 0)["run"].to_list()
+w4 = []
+for pop, dpop in [("all runs", kpi2), ("runs with a task due by day 27", kpi2.filter(pl.col("run").is_in(with_task)))]:
+    for yr in ["both years"] + sorted(dpop["year"].unique().to_list()):
+        dy = dpop if yr == "both years" else dpop.filter(pl.col("year") == yr)
+        for (g,), d in dy.group_by(["group"]):
+            t = rate_table(d.with_columns((pl.col("first_missed_week") <= 4).fill_null(False).alias("ev")), [], "ev").row(0, named=True)
+            w4.append({"population": pop, "runs": dy["run"].n_unique(), "year": str(yr), "group": g, "enrolments": t["enrolments"], "missed_by_week_4": t["events"],
+                       "share": t["rate"], "ci_low": t["ci_low"], "ci_high": t["ci_high"]})
+w4 = pl.DataFrame(w4).sort("population", "year", "group")
+print("\n**Share with a first missed task by the end of week 4 (day 27), Wilson 95% interval**\n\n" + lib.md_table(w4))
+lib.save_csv(w4, RESULTS / f"first_missed_by_week4_{scope}.csv")
+if scope == "all":
+    nc2 = kpi2.filter(pl.col("non_completion")).with_columns((pl.col("first_missed_week") <= 4).fill_null(False).alias("missed_w4"))
+    yd = []
+    for pop, dpop in [("all runs", nc2), ("runs with a task due by day 27", nc2.filter(pl.col("run").is_in(with_task)))]:
+        yd.append({"population": pop, "group": "non-completers", **year_difference(dpop.filter(pl.col("year") == 2013), dpop.filter(pl.col("year") == 2014), "missed_w4")})
+    yd = pl.DataFrame(yd)
+    print("\n**Non-completers with a missed task by week 4: 2014 minus 2013**\n\n" + lib.md_table(yd, digits=4))
+    lib.save_csv(yd, RESULTS / f"first_missed_by_week4_year_difference_{scope}.csv")
 
 cum = []
 maxw = int(kpi2["first_missed_week"].max())

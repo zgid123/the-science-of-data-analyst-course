@@ -1,0 +1,21 @@
+model,activity_level5,enrolments,observed,predicted,residual,two_se,outside_2se
+main model (low activity = below half the run median),1 no click on days 0-27,624,0.822115,0.793292,0.028824,0.029403,false
+main model (low activity = below half the run median),2 below half the run median,3475,0.634532,0.639708,-0.005176,0.014918,false
+main model (low activity = below half the run median),3 half the median to the median,3734,0.478040,0.399392,0.078647,0.015180,true
+main model (low activity = below half the run median),4 median to twice the median,4660,0.348712,0.350938,-0.002226,0.013505,false
+main model (low activity = below half the run median),5 twice the median or more,3231,0.242340,0.330020,-0.087681,0.016178,true
+"main model, low activity = below the run median",1 no click on days 0-27,624,0.822115,0.771350,0.050766,0.030307,true
+"main model, low activity = below the run median",2 below half the run median,3475,0.634532,0.607078,0.027454,0.015146,true
+"main model, low activity = below the run median",3 half the median to the median,3734,0.478040,0.512073,-0.034034,0.015604,true
+"main model, low activity = below the run median",4 median to twice the median,4660,0.348712,0.312208,0.036504,0.013127,true
+"main model, low activity = below the run median",5 twice the median or more,3231,0.242340,0.294989,-0.052649,0.015714,true
+post hoc: main model + log(1 + clicks on days 0-27),1 no click on days 0-27,624,0.822115,0.867672,-0.045557,0.025045,true
+post hoc: main model + log(1 + clicks on days 0-27),2 below half the run median,3475,0.634532,0.626352,0.008181,0.014900,false
+post hoc: main model + log(1 + clicks on days 0-27),3 half the median to the median,3734,0.478040,0.445703,0.032337,0.015549,true
+post hoc: main model + log(1 + clicks on days 0-27),4 median to twice the median,4660,0.348712,0.351835,-0.003122,0.013566,false
+post hoc: main model + log(1 + clicks on days 0-27),5 twice the median or more,3231,0.242340,0.275208,-0.032868,0.015387,true
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",1 no click on days 0-27,624,0.822115,0.851443,-0.029328,0.026287,true
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",2 below half the run median,3475,0.634532,0.628076,0.006456,0.015039,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",3 half the median to the median,3734,0.478040,0.479147,-0.001107,0.015621,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",4 median to twice the median,4660,0.348712,0.329225,0.019488,0.013361,true
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",5 twice the median or more,3231,0.242340,0.270447,-0.028107,0.015331,true

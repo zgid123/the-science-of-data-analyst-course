@@ -2,17 +2,17 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:18:58Z |
-| Finished (UTC) | 2026-11-11T23:19:33Z |
-| Duration | 35.5 s |
+| Started (UTC) | 2026-11-12T15:58:51Z |
+| Finished (UTC) | 2026-11-12T15:59:16Z |
+| Duration | 25.1 s |
 | Command | `python aq-3/code/05_test.py` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output
 
 
-### AQ3 single test – frozen 2026-11-11T23:18:16Z, chosen configuration M1
+### AQ3 single test – frozen 2026-11-12T15:58:51Z, chosen configuration M1
 
 12 frozen model files match their SHA-256 at the freeze: PASS
 [saved] aq-3/extracted-datasets/aq3_test_scores_blind_d27.csv  (15,724 rows x 16 columns)  – scores written before any 2014 outcome is read

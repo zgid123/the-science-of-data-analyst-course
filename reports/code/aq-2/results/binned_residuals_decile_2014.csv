@@ -1,0 +1,41 @@
+model,risk_decile,enrolments,observed,predicted,residual,two_se,outside_2se
+main model (low activity = below half the run median),01,1573,0.198983,0.210143,-0.011160,0.020514,false
+main model (low activity = below half the run median),02,1572,0.242366,0.252110,-0.009743,0.021900,false
+main model (low activity = below half the run median),03,1573,0.299428,0.284698,0.014730,0.022742,false
+main model (low activity = below half the run median),04,1572,0.330789,0.333363,-0.002574,0.023775,false
+main model (low activity = below half the run median),05,1572,0.358779,0.365076,-0.006297,0.024282,false
+main model (low activity = below half the run median),06,1573,0.397966,0.399953,-0.001988,0.024689,false
+main model (low activity = below half the run median),07,1572,0.465013,0.451047,0.013966,0.025089,false
+main model (low activity = below half the run median),08,1573,0.558169,0.537127,0.021042,0.025089,false
+main model (low activity = below half the run median),09,1572,0.657125,0.666790,-0.009665,0.023618,false
+main model (low activity = below half the run median),10,1572,0.886768,0.895094,-0.008325,0.015188,false
+"main model, low activity = below the run median",01,1573,0.184361,0.193561,-0.009200,0.019877,false
+"main model, low activity = below the run median",02,1572,0.237913,0.232859,0.005055,0.021310,false
+"main model, low activity = below the run median",03,1573,0.284170,0.286370,-0.002199,0.022791,false
+"main model, low activity = below the run median",04,1572,0.317430,0.320789,-0.003359,0.023542,false
+"main model, low activity = below the run median",05,1572,0.353690,0.364041,-0.010351,0.024256,false
+"main model, low activity = below the run median",06,1573,0.434838,0.415722,0.019116,0.024834,false
+"main model, low activity = below the run median",07,1572,0.494911,0.480820,0.014091,0.025193,false
+"main model, low activity = below the run median",08,1573,0.554355,0.546548,0.007807,0.025076,false
+"main model, low activity = below the run median",09,1572,0.643130,0.666886,-0.023757,0.023631,true
+"main model, low activity = below the run median",10,1572,0.890585,0.887798,0.002787,0.015624,false
+post hoc: main model + log(1 + clicks on days 0-27),01,1573,0.176732,0.190854,-0.014121,0.019778,false
+post hoc: main model + log(1 + clicks on days 0-27),02,1572,0.223282,0.246835,-0.023553,0.021741,true
+post hoc: main model + log(1 + clicks on days 0-27),03,1573,0.282263,0.286956,-0.004693,0.022804,false
+post hoc: main model + log(1 + clicks on days 0-27),04,1572,0.319338,0.324760,-0.005422,0.023615,false
+post hoc: main model + log(1 + clicks on days 0-27),05,1572,0.373410,0.364238,0.009172,0.024267,false
+post hoc: main model + log(1 + clicks on days 0-27),06,1573,0.415130,0.405520,0.009610,0.024751,false
+post hoc: main model + log(1 + clicks on days 0-27),07,1572,0.489822,0.456836,0.032986,0.025112,true
+post hoc: main model + log(1 + clicks on days 0-27),08,1573,0.556898,0.537388,0.019510,0.025096,false
+post hoc: main model + log(1 + clicks on days 0-27),09,1572,0.673028,0.677388,-0.004360,0.023444,false
+post hoc: main model + log(1 + clicks on days 0-27),10,1572,0.885496,0.904632,-0.019136,0.014477,true
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",01,1573,0.163382,0.186459,-0.023077,0.019599,true
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",02,1572,0.246183,0.241062,0.005121,0.021569,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",03,1573,0.268277,0.281209,-0.012932,0.022664,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",04,1572,0.327608,0.318826,0.008782,0.023502,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",05,1572,0.351145,0.359582,-0.008437,0.024199,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",06,1573,0.438017,0.410532,0.027485,0.024790,true
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",07,1572,0.485369,0.473903,0.011466,0.025169,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",08,1573,0.558169,0.548367,0.009802,0.025062,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",09,1572,0.669211,0.676783,-0.007572,0.023472,false
+"post hoc: low activity = below the run median, + log(1 + clicks on days 0-27)",10,1572,0.888041,0.898679,-0.010639,0.014899,false

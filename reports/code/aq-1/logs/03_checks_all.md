@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:33:51Z |
-| Finished (UTC) | 2026-11-11T23:33:51Z |
-| Duration | 0.6 s |
+| Started (UTC) | 2026-11-12T16:00:30Z |
+| Finished (UTC) | 2026-11-12T16:00:31Z |
+| Duration | 1.1 s |
 | Command | `python aq-1/code/03_checks.py --scope all` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output
@@ -49,5 +49,7 @@
 | C3 | first missed week equals the value re-derived from the task table | PASS | 32,593 of 32,593 enrolments equal |
 | C4 | pooled counts equal the sum over runs; the four outcome counts sum to the enrolments of every run | PASS | sum of run enrolments 28,061 = pooled 28,061; runs whose outcome counts sum to n: 22 of 22 |
 | C5 | every rate has a denominator and an interval that contains it | PASS | 38 rates checked |
-[saved] aq-1/results/checks_all.csv  (5 rows x 4 columns)
+| C6 | year-comparison counts recomputed from the raw tables equal the result table (3 scopes x 2 denominators x 2 years) | PASS | 12 of 12 count pairs equal; 6 shared modules, 9 shared module x start-month pairs |
+| C7 | Newcombe intervals of the year comparison equal the statsmodels implementation (tolerance 1e-5; stored with 6 decimals) | PASS | 48 intervals compared; largest absolute difference of a bound 5.0e-07 |
+[saved] aq-1/results/checks_all.csv  (7 rows x 4 columns)
 

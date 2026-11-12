@@ -1,0 +1,14 @@
+code_module,run,enrolments,run_has_task_due,run_has_tma_due,run_has_cma_due,with_task_missed,with_tma_late,with_inactive_last7,with_low_activity,with_no_pre_activity,with_low_activity_q25,with_low_activity_median,with_low_activity_dedup,with_any_task_late
+AAA,AAA-2014J,348,true,true,false,28,53,71,91,21,46,174,94,53
+BBB,BBB-2014B,1280,true,true,false,108,123,427,425,412,266,637,426,123
+BBB,BBB-2014J,1786,true,true,false,112,68,510,491,489,273,889,491,68
+CCC,CCC-2014B,1500,true,false,true,210,0,335,353,234,162,749,360,1290
+CCC,CCC-2014J,2021,true,false,true,192,0,420,451,298,199,1008,462,1789
+DDD,DDD-2014B,1029,true,true,false,188,30,104,274,122,133,513,275,30
+DDD,DDD-2014J,1463,true,true,false,114,69,224,352,133,163,730,356,69
+EEE,EEE-2014B,605,false,false,false,0,0,109,124,117,79,299,128,0
+EEE,EEE-2014J,1020,false,false,false,0,0,189,223,210,125,510,226,0
+FFF,FFF-2014B,1299,true,true,false,183,41,131,338,229,185,648,335,41
+FFF,FFF-2014J,1859,true,true,false,233,45,162,480,204,244,925,483,45
+GGG,GGG-2014B,797,false,false,false,0,0,413,257,371,181,396,254,0
+GGG,GGG-2014J,717,false,false,false,0,0,345,240,321,175,355,239,0

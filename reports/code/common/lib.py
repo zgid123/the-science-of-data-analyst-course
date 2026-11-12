@@ -40,6 +40,14 @@ AUDIT_COLS = ["gender", "age_band", "disability", "imd_band", "region"]
 FREEZE_FILE = CODE_ROOT / "aq-3" / "results" / "freeze.json"
 TEST_ACCESS_LOG = CODE_ROOT / "aq-3" / "logs" / "test-access.md"
 
+# History of this folder (PROTOCOL.md, "Status of this protocol"). The first run (git commit 11f4aca) froze and tested
+# once; the present run is a rerun of the whole pipeline made after those results were seen.
+FIRST_RUN_COMMIT = "11f4aca"
+FIRST_RUN_FREEZE_UTC = "2026-11-11T23:18:16Z"
+FIRST_RUN_FIRST_TEST_ACCESS_UTC = "2026-11-11T23:19:02Z"
+RUN_KIND = ("rerun of the whole prototype after the first run's results (2014 outcomes included) and the Milestone 5 "
+            "report were seen; AQ3 and AQ4 reproduce an unchanged design")
+
 MAIN_CUTOFF = 27                     # main operating point of the Level 1 report (Section 4.1)
 MAIN_PER20 = 5
 B_BOOT = 2000                        # bootstrap replicates for the S1 gate
@@ -99,9 +107,12 @@ def open_test_outcomes(script: str, purpose: str) -> None:
     TEST_ACCESS_LOG.parent.mkdir(parents=True, exist_ok=True)
     if not TEST_ACCESS_LOG.exists():
         TEST_ACCESS_LOG.write_text(
-            "# Test-access record (2014 outcomes)\n\n"
-            "Every read of a 2014 outcome by a script of this prototype is appended here. "
-            "The first row is the first test access; the freeze it follows is `aq-3/results/freeze.json`.\n\n"
+            "# Test-access record (2014 outcomes), rerun\n\n"
+            "Every read of a 2014 outcome by a script of this rerun is appended here. "
+            "The first row is the first test access of the rerun; the freeze it follows is `aq-3/results/freeze.json`. "
+            f"This record shows the order in which the scripts ran. It does not show a blind test: the first run of this "
+            f"folder (commit `{FIRST_RUN_COMMIT}`) froze at {FIRST_RUN_FREEZE_UTC} and first read the 2014 outcomes at "
+            f"{FIRST_RUN_FIRST_TEST_ACCESS_UTC}, and those results were known when the rerun started.\n\n"
             "| UTC time | Script | Purpose | Freeze time (UTC) |\n| :---- | :---- | :---- | :---- |\n"
         )
     frozen = json.loads(FREEZE_FILE.read_text())["frozen_utc"]
@@ -305,6 +316,46 @@ def calibration(y: np.ndarray, prob: np.ndarray) -> dict:
         "mean_predicted": float(p.mean()),
         "observed_rate": float(y.mean()),
     }
+
+
+# --------------------------------------------------------------------------------------
+# differences between two groups of enrolments (AQ1 year comparison, AQ2 residual checks)
+# --------------------------------------------------------------------------------------
+def mh_risk_difference(strata: list[tuple[int, int, int, int]], z: float = 1.959963984540054) -> dict:
+    """Mantel-Haenszel-weighted difference of two proportions over strata.
+
+    strata: (k1, n1, k0, n0) per stratum = events and enrolments of group 1 and of group 0.
+    Each stratum's difference k1/n1 - k0/n0 gets the weight n1 n0 / (n1 + n0); the variance is the weighted sum of the
+    stratum binomial variances. With one stratum this is the plain difference with its Wald interval.
+    """
+    num = den = var = 0.0
+    for k1, n1, k0, n0 in strata:
+        w = n1 * n0 / (n1 + n0)
+        p1, p0 = k1 / n1, k0 / n0
+        num += w * (p1 - p0)
+        den += w
+        var += w * w * (p1 * (1 - p1) / n1 + p0 * (1 - p0) / n0)
+    est, se = num / den, math.sqrt(var) / den
+    return {"rd": est, "se": se, "ci_low": est - z * se, "ci_high": est + z * se, "strata": len(strata)}
+
+
+def binned_residuals(groups: dict[str, np.ndarray], y: np.ndarray, p: np.ndarray) -> pl.DataFrame:
+    """Observed minus predicted rate per group of rows, with a band of two standard errors.
+
+    groups: label -> boolean row mask. two_se = 2 x sqrt(sum of p(1 - p)) / n, the standard error of the observed rate
+    when every row's outcome has its own predicted probability.
+    """
+    y, p = np.asarray(y, float), np.asarray(p, float)
+    rows = []
+    for label, m in groups.items():
+        n = int(m.sum())
+        if n == 0:
+            continue
+        obs, pred = float(y[m].mean()), float(p[m].mean())
+        two_se = 2.0 * math.sqrt(float((p[m] * (1 - p[m])).sum())) / n
+        rows.append({"group": label, "enrolments": n, "observed": obs, "predicted": pred, "residual": obs - pred,
+                     "two_se": two_se, "outside_2se": bool(abs(obs - pred) > two_se)})
+    return pl.DataFrame(rows)
 
 
 # --------------------------------------------------------------------------------------

@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:25:14Z |
-| Finished (UTC) | 2026-11-11T23:25:17Z |
-| Duration | 2.4 s |
+| Started (UTC) | 2026-11-12T16:00:31Z |
+| Finished (UTC) | 2026-11-12T16:00:33Z |
+| Duration | 1.6 s |
 | Command | `python aq-3/code/09_verify.py` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output
@@ -22,7 +22,7 @@
 | V3 | AQ4 list counts and error-analysis counts equal the S1 counts | PASS | AQ4 2,870 / 2,786; error analysis 2,870 / 2,786 |
 | V4 | no audit or outcome column among the model inputs | PASS | 33 input columns checked |
 | V5 | every model input has the role predictor or predictor_extended in the Milestone 3 dictionary (code_module is the run's module) | PASS | columns with another role: none |
-| V6 | first test access is after the freeze | PASS | freeze 2026-11-11T23:18:16Z; first access 2026-11-11T23:19:02Z; 19 accesses recorded |
+| V6 | first test access is after the freeze | PASS | freeze 2026-11-12T15:58:51Z; first access 2026-11-12T15:58:53Z; 18 accesses recorded |
 | V7 | prepared files still match the Milestone 3 manifest | PASS | 5 files hash-checked |
 [saved] aq-3/results/verification.csv  (8 rows x 4 columns)
 

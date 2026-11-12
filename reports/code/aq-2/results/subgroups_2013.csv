@@ -1,4 +1,4 @@
-attribute,group,sign,enrolments,with_sign,unadjusted_rd,unadj_ci_low,unadj_ci_high,adjusted_rd,adj_ci_low,adj_ci_high
+attribute,group,sign,n,with_sign,unadjusted_rd,unadj_ci_low,unadj_ci_high,adjusted_rd,adj_ci_low,adj_ci_high
 gender,F,sign_task_missed,4852,604,0.523590,0.494200,0.548507,0.422879,0.388813,0.456945
 gender,F,sign_tma_late,4852,311,0.179927,0.122964,0.234023,0.215973,0.171607,0.260339
 gender,F,sign_inactive_last7,5697,1454,0.217015,0.187638,0.245836,0.110517,0.077562,0.143473

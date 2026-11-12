@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T23:02:27Z |
-| Finished (UTC) | 2026-11-11T23:05:34Z |
-| Duration | 186.8 s |
+| Started (UTC) | 2026-11-12T15:48:18Z |
+| Finished (UTC) | 2026-11-12T15:50:56Z |
+| Duration | 158.1 s |
 | Command | `python aq-3/code/02_dev_folds.py` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output
@@ -15,7 +15,7 @@
 ### AQ3 development folds (2013 runs only)
 
 90 fits = 5 configurations x 2 cut-offs x 9 validation runs, each with an inner 8-run tuning loop
-finished in 183 s
+finished in 155 s
 [saved] aq-3/extracted-datasets/aq3_dev_oof_scores_d27.csv  (11,811 rows x 13 columns)  – out-of-fold scores, 2013 runs
 [saved] aq-3/extracted-datasets/aq3_dev_oof_scores_d13.csv  (12,080 rows x 13 columns)  – out-of-fold scores, 2013 runs
 [saved] aq-3/results/dev_folds.csv  (216 rows x 17 columns)
@@ -42,40 +42,40 @@ finished in 183 s
 | cutoff | config | grid_point | folds |
 | :---- | :---- | :---- | :---- |
 | 27 | B3 | {"C": 0.01} | 3 |
-| 27 | B3 | {"C": 0.1} | 2 |
 | 27 | B3 | {"C": 0.003} | 2 |
-| 27 | B3 | {"C": 0.03} | 1 |
+| 27 | B3 | {"C": 0.1} | 2 |
 | 27 | B3 | {"C": 10.0} | 1 |
+| 27 | B3 | {"C": 0.03} | 1 |
 | 27 | M1 | {"C": 0.003} | 3 |
 | 27 | M1 | {"C": 0.1} | 2 |
 | 27 | M1 | {"C": 0.3} | 2 |
-| 27 | M1 | {"C": 0.01} | 1 |
 | 27 | M1 | {"C": 10.0} | 1 |
+| 27 | M1 | {"C": 0.01} | 1 |
 | 27 | M2 | {"C": 0.3} | 4 |
 | 27 | M2 | {"C": 0.003} | 2 |
+| 27 | M2 | {"C": 0.1} | 1 |
 | 27 | M2 | {"C": 0.01} | 1 |
 | 27 | M2 | {"C": 1.0} | 1 |
-| 27 | M2 | {"C": 0.1} | 1 |
 | 27 | M3 | {"max_depth": 2, "learning_rate": 0.05, "trees": 200} | 4 |
 | 27 | M3 | {"max_depth": 2, "learning_rate": 0.1, "trees": 100} | 2 |
+| 27 | M3 | {"max_depth": 3, "learning_rate": 0.1, "trees": 100} | 1 |
 | 27 | M3 | {"max_depth": 2, "learning_rate": 0.05, "trees": 100} | 1 |
 | 27 | M3 | {"max_depth": 3, "learning_rate": 0.05, "trees": 100} | 1 |
-| 27 | M3 | {"max_depth": 3, "learning_rate": 0.1, "trees": 100} | 1 |
 | 27 | M4 | {"max_depth": 2, "learning_rate": 0.05, "trees": 100} | 3 |
 | 27 | M4 | {"max_depth": 2, "learning_rate": 0.05, "trees": 400} | 2 |
-| 27 | M4 | {"max_depth": 4, "learning_rate": 0.05, "trees": 100} | 1 |
-| 27 | M4 | {"max_depth": 2, "learning_rate": 0.05, "trees": 200} | 1 |
 | 27 | M4 | {"max_depth": 3, "learning_rate": 0.05, "trees": 100} | 1 |
 | 27 | M4 | {"max_depth": 2, "learning_rate": 0.1, "trees": 200} | 1 |
-| 13 | B3 | {"C": 0.01} | 2 |
+| 27 | M4 | {"max_depth": 2, "learning_rate": 0.05, "trees": 200} | 1 |
+| 27 | M4 | {"max_depth": 4, "learning_rate": 0.05, "trees": 100} | 1 |
 | 13 | B3 | {"C": 0.003} | 2 |
+| 13 | B3 | {"C": 0.01} | 2 |
 | 13 | B3 | {"C": 0.03} | 2 |
-| 13 | B3 | {"C": 0.3} | 1 |
-| 13 | B3 | {"C": 10.0} | 1 |
 | 13 | B3 | {"C": 0.1} | 1 |
+| 13 | B3 | {"C": 10.0} | 1 |
+| 13 | B3 | {"C": 0.3} | 1 |
+| 13 | M1 | {"C": 0.01} | 3 |
 | 13 | M1 | {"C": 0.03} | 3 |
 | 13 | M1 | {"C": 0.003} | 3 |
-| 13 | M1 | {"C": 0.01} | 3 |
 | 13 | M2 | {"C": 0.1} | 3 |
 | 13 | M2 | {"C": 0.003} | 3 |
 | 13 | M2 | {"C": 0.01} | 2 |
@@ -83,8 +83,8 @@ finished in 183 s
 | 13 | M3 | {"max_depth": 2, "learning_rate": 0.05, "trees": 200} | 4 |
 | 13 | M3 | {"max_depth": 2, "learning_rate": 0.1, "trees": 100} | 4 |
 | 13 | M3 | {"max_depth": 2, "learning_rate": 0.05, "trees": 400} | 1 |
-| 13 | M4 | {"max_depth": 2, "learning_rate": 0.1, "trees": 100} | 3 |
 | 13 | M4 | {"max_depth": 2, "learning_rate": 0.1, "trees": 200} | 3 |
+| 13 | M4 | {"max_depth": 2, "learning_rate": 0.1, "trees": 100} | 3 |
 | 13 | M4 | {"max_depth": 2, "learning_rate": 0.05, "trees": 200} | 2 |
 | 13 | M4 | {"max_depth": 2, "learning_rate": 0.05, "trees": 400} | 1 |
 

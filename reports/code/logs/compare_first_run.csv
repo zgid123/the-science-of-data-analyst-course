@@ -1,0 +1,108 @@
+aq,file,status,detail
+aq-1,aq-1/results/check_two_paths_2013.csv,byte-identical,""
+aq-1,aq-1/results/check_two_paths_all.csv,byte-identical,""
+aq-1,aq-1/results/checks_2013.csv,byte-identical,""
+aq-1,aq-1/results/checks_all.csv,structure differs,first run 5 rows x 4 columns; rerun 7 x 4
+aq-1,aq-1/results/denominators_by_run_2013.csv,byte-identical,""
+aq-1,aq-1/results/denominators_by_run_all.csv,byte-identical,""
+aq-1,aq-1/results/denominators_pooled_2013.csv,byte-identical,""
+aq-1,aq-1/results/denominators_pooled_all.csv,byte-identical,""
+aq-1,aq-1/results/first_missed_by_week4_2013.csv,new in the rerun,""
+aq-1,aq-1/results/first_missed_by_week4_all.csv,new in the rerun,""
+aq-1,aq-1/results/first_missed_by_week4_year_difference_all.csv,new in the rerun,""
+aq-1,aq-1/results/first_missed_task_by_module_2013.csv,byte-identical,""
+aq-1,aq-1/results/first_missed_task_by_module_all.csv,byte-identical,""
+aq-1,aq-1/results/first_missed_task_by_outcome_2013.csv,byte-identical,""
+aq-1,aq-1/results/first_missed_task_by_outcome_all.csv,byte-identical,""
+aq-1,aq-1/results/first_missed_task_cumulative_2013.csv,byte-identical,""
+aq-1,aq-1/results/first_missed_task_cumulative_all.csv,byte-identical,""
+aq-1,aq-1/results/not_registered_d14_by_year_all.csv,new in the rerun,""
+aq-1,aq-1/results/outcome_shares_2013.csv,byte-identical,""
+aq-1,aq-1/results/outcome_shares_all.csv,byte-identical,""
+aq-1,aq-1/results/populations_2013.csv,byte-identical,""
+aq-1,aq-1/results/populations_all.csv,byte-identical,""
+aq-1,aq-1/results/rates_2013.csv,byte-identical,""
+aq-1,aq-1/results/rates_all.csv,byte-identical,""
+aq-1,aq-1/results/rates_by_audit_group_2013.csv,byte-identical,""
+aq-1,aq-1/results/rates_by_audit_group_all.csv,byte-identical,""
+aq-1,aq-1/results/rates_module_by_start_month_2013.csv,new in the rerun,""
+aq-1,aq-1/results/rates_module_by_start_month_all.csv,byte-identical,""
+aq-1,aq-1/results/task_calendar_by_run_2013.csv,byte-identical,""
+aq-1,aq-1/results/task_calendar_by_run_all.csv,byte-identical,""
+aq-1,aq-1/results/year_comparison_all.csv,new in the rerun,""
+aq-2,aq-2/results/associations_2013.csv,structure differs,first run 5 rows x 22 columns; rerun 5 x 29
+aq-2,aq-2/results/associations_2014.csv,structure differs,first run 5 rows x 22 columns; rerun 5 x 29
+aq-2,aq-2/results/associations_by_module_2013.csv,structure differs,first run 26 rows x 7 columns; rerun 26 x 8
+aq-2,aq-2/results/associations_by_module_2014.csv,structure differs,first run 30 rows x 7 columns; rerun 30 x 8
+aq-2,aq-2/results/binned_residuals_2013.csv,only in the first run,""
+aq-2,aq-2/results/binned_residuals_2014.csv,only in the first run,""
+aq-2,aq-2/results/binned_residuals_activity5_2013.csv,new in the rerun,""
+aq-2,aq-2/results/binned_residuals_activity5_2014.csv,new in the rerun,""
+aq-2,aq-2/results/binned_residuals_by_run_2013.csv,new in the rerun,""
+aq-2,aq-2/results/binned_residuals_by_run_2014.csv,new in the rerun,""
+aq-2,aq-2/results/binned_residuals_decile_2013.csv,new in the rerun,""
+aq-2,aq-2/results/binned_residuals_decile_2014.csv,new in the rerun,""
+aq-2,aq-2/results/late_tma_average_check.csv,new in the rerun,""
+aq-2,aq-2/results/model_coefficients_2013.csv,byte-identical,""
+aq-2,aq-2/results/model_coefficients_2014.csv,byte-identical,""
+aq-2,aq-2/results/non_completion_by_sign_count_2013.csv,structure differs,first run 5 rows x 3 columns; rerun 10 x 4
+aq-2,aq-2/results/non_completion_by_sign_count_2014.csv,structure differs,first run 5 rows x 3 columns; rerun 10 x 4
+aq-2,aq-2/results/odds_ratios_2013.csv,structure differs,first run 5 rows x 6 columns; rerun 5 x 7
+aq-2,aq-2/results/odds_ratios_2014.csv,structure differs,first run 5 rows x 6 columns; rerun 5 x 7
+aq-2,aq-2/results/replication.csv,structure differs,first run 5 rows x 23 columns; rerun 5 x 39
+aq-2,aq-2/results/replication_by_module.csv,structure differs,first run 30 rows x 14 columns; rerun 30 x 16
+aq-2,aq-2/results/replication_sensitivity.csv,new in the rerun,""
+aq-2,aq-2/results/sensitivity_2013.csv,structure differs,first run 35 rows x 6 columns; rerun 45 x 18
+aq-2,aq-2/results/sensitivity_2014.csv,structure differs,first run 35 rows x 6 columns; rerun 45 x 18
+aq-2,aq-2/results/sign_calendar_2013.csv,new in the rerun,""
+aq-2,aq-2/results/sign_calendar_2014.csv,new in the rerun,""
+aq-2,aq-2/results/sign_correlation_2013.csv,structure differs,first run 5 rows x 6 columns; rerun 10 x 5
+aq-2,aq-2/results/sign_correlation_2014.csv,structure differs,first run 5 rows x 6 columns; rerun 10 x 5
+aq-2,aq-2/results/sign_support_2013.csv,new in the rerun,""
+aq-2,aq-2/results/sign_support_2014.csv,new in the rerun,""
+aq-2,aq-2/results/small_cells_2014.csv,only in the first run,""
+aq-2,aq-2/results/subgroups_2013.csv,structure differs,first run 40 rows x 11 columns; rerun 40 x 11
+aq-2,aq-2/results/subgroups_2014.csv,structure differs,first run 40 rows x 11 columns; rerun 40 x 11
+aq-3,aq-3/results/calibration.csv,byte-identical,""
+aq-3,aq-3/results/calibration_bins.csv,byte-identical,""
+aq-3,aq-3/results/calibration_by_run.csv,byte-identical,""
+aq-3,aq-3/results/crosscheck_earlier_run.csv,byte-identical,""
+aq-3,aq-3/results/crosscheck_per_run.csv,byte-identical,""
+aq-3,aq-3/results/dev_fold_design.csv,same values (only time or hash columns differ),seconds: largest absolute difference 21.9
+aq-3,aq-3/results/dev_folds.csv,byte-identical,""
+aq-3,aq-3/results/dev_m1_vs_rule_by_fold.csv,byte-identical,""
+aq-3,aq-3/results/dev_pooled.csv,byte-identical,""
+aq-3,aq-3/results/dev_tuning.csv,byte-identical,""
+aq-3,aq-3/results/errors_by_run.csv,byte-identical,""
+aq-3,aq-3/results/errors_by_slice.csv,byte-identical,""
+aq-3,aq-3/results/freeze_tuning.csv,byte-identical,""
+aq-3,aq-3/results/frozen_M1_d27_coefficients.csv,byte-identical,""
+aq-3,aq-3/results/frozen_models.csv,byte-identical,""
+aq-3,aq-3/results/input_check.csv,byte-identical,""
+aq-3,aq-3/results/list_overlap.csv,byte-identical,""
+aq-3,aq-3/results/list_stability.csv,byte-identical,""
+aq-3,aq-3/results/model_choice.csv,byte-identical,""
+aq-3,aq-3/results/net_benefit.csv,byte-identical,""
+aq-3,aq-3/results/s1_bootstrap.csv,byte-identical,""
+aq-3,aq-3/results/s1_gate.csv,byte-identical,""
+aq-3,aq-3/results/s1_gate_per_run.csv,byte-identical,""
+aq-3,aq-3/results/secondary.csv,byte-identical,""
+aq-3,aq-3/results/sensitivity.csv,byte-identical,""
+aq-3,aq-3/results/sensitivity_per_run_labels_available.csv,byte-identical,""
+aq-3,aq-3/results/test_context_vs_rule.csv,byte-identical,""
+aq-3,aq-3/results/test_pooled.csv,byte-identical,""
+aq-3,aq-3/results/test_runs.csv,byte-identical,""
+aq-3,aq-3/results/verification.csv,same values (only time or hash columns differ),detail: 1 of 8 values differ only in a quoted run time
+aq-4,aq-4/results/active_vs_inactive.csv,byte-identical,""
+aq-4,aq-4/results/fairness_abroca.csv,byte-identical,""
+aq-4,aq-4/results/fairness_calibration.csv,byte-identical,""
+aq-4,aq-4/results/fairness_confirmatory.csv,byte-identical,""
+aq-4,aq-4/results/fairness_descriptive.csv,byte-identical,""
+aq-4,aq-4/results/fairness_proxy.csv,byte-identical,""
+aq-4,aq-4/results/list_quality_by_run.csv,byte-identical,""
+aq-4,aq-4/results/list_quality_pooled.csv,byte-identical,""
+aq-4,aq-4/results/outcome_kind_on_list.csv,byte-identical,""
+aq-4,aq-4/results/overlap_by_run.csv,byte-identical,""
+aq-4,aq-4/results/reason_frequency.csv,byte-identical,""
+aq-4,aq-4/results/s1_reference.csv,byte-identical,""
+aq-4,aq-4/results/tiers.csv,byte-identical,""

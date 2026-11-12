@@ -1,0 +1,3 @@
+population,group,n_2013,events_2013,rate_2013,n_2014,events_2014,rate_2014,difference_2014_minus_2013,ci_low,ci_high,interval_excludes_0
+all runs,non-completers,5515,1080,0.195830,7185,1053,0.146555,-0.049274,-0.062614,-0.036035,true
+runs with a task due by day 27,non-completers,4856,1080,0.222405,5987,1053,0.175881,-0.046524,-0.061721,-0.031401,true

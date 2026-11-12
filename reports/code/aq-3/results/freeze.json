@@ -1,10 +1,10 @@
 {
- "frozen_utc": "2026-11-11T23:18:16Z",
+ "frozen_utc": "2026-11-12T15:58:51Z",
  "chosen_config": "M1",
  "chosen_label": "Penalised logistic regression, primary set (primary approach)",
  "prepared_dataset": "OULAD-N04-prepared-1.0",
  "seed": 20261112,
- "git_commit": "5c1f96f750b444c149d11840ea5485b4e1c59206",
+ "git_commit": "11f4aca3e5452ab6d80ca0a8f4abe755f5bb0de7",
  "python": "3.14.5",
  "scikit_learn": "1.9.1",
  "numpy": "2.5.4",
@@ -91,5 +91,12 @@
    }
   }
  },
- "test_outcomes_read_before_freeze_by_this_prototype": false
+ "run_kind": "rerun of the whole prototype after the first run's results (2014 outcomes included) and the Milestone 5 report were seen; AQ3 and AQ4 reproduce an unchanged design",
+ "test_outcomes_read_by_scripts_of_this_rerun_before_this_freeze": false,
+ "test_outcomes_known_to_the_analyst_before_this_freeze": true,
+ "first_run": {
+  "git_commit": "11f4aca",
+  "frozen_utc": "2026-11-11T23:18:16Z",
+  "first_test_access_utc": "2026-11-11T23:19:02Z"
+ }
 }

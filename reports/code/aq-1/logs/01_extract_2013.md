@@ -2,11 +2,11 @@
 
 | Field | Value |
 | :---- | :---- |
-| Started (UTC) | 2026-11-11T22:58:39Z |
-| Finished (UTC) | 2026-11-11T22:58:40Z |
-| Duration | 1.0 s |
+| Started (UTC) | 2026-11-12T15:48:10Z |
+| Finished (UTC) | 2026-11-12T15:48:10Z |
+| Duration | 0.5 s |
 | Command | `python aq-1/code/01_extract.py --scope 2013` (run from `reports/code`) |
-| Git commit | `5c1f96f` (working tree may hold uncommitted files) |
+| Git commit | `11f4aca` (working tree may hold uncommitted files) |
 | Exit status | 0 |
 
 ## Console output

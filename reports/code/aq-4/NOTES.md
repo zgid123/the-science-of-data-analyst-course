@@ -2,18 +2,14 @@
 
 ## Brief
 
-- **Question (Level 1, Table 2.4).** Which enrolments should rank first on a list of an assumed capacity, with what
-  gain over a random list and what recall, overall and by deprivation band and disability?
-- **Level and task.** Prescriptive as decision support; ranking under capacity. The choice of contact and its effect
-  are deferred to the pilot (Change Log C11).
+- **Question (Level 1, Table 2.4).** Which enrolments should rank first on a list of an assumed capacity, with what gain over a random list and what recall, overall and by deprivation band and disability?
+- **Level and task.** Prescriptive as decision support; ranking under capacity. The choice of contact and its effect are deferred to the pilot (Change Log C11).
 - **Reader and decision.** Tutors: D1. They receive a ranked list with reasons and decide whom to contact.
 - **Population.** The 13 test runs of 2014; lists of 3 or 5 per tutor group of 20, one per run.
 - **Baselines.** Random list (expected recall k / n); rule-ranked list of the same length.
-- **Primary approach.** Top-k per run from the frozen AQ3 scores, with reasons; risk tiers from capacity as the
-  candidate form.
-- **Success criterion (Table 4.4).** Gate S1 met by the list; confirmatory fairness check FR1 passes or its flags are
-  reviewed; risk order = need order stated as untested; no statement about the effect of contact.
-  **Result: S1 met; 0 of 3 groups flagged; age 55 or over not cleared.**
+- **Primary approach.** Top-k per run from the frozen AQ3 scores, with reasons; risk tiers from capacity as the candidate form.
+- **Success criterion (Table 4.4).** Gate S1 met by the list; confirmatory fairness check FR1 passes or its flags are reviewed; risk order = need order stated as untested; no statement about the effect of contact. **Result: S1 met; 0 of 3 groups flagged; age 55 or over not cleared.**
+- **Status of the run.** Rerun of 12 November 2026: a reproduction of the first run of 11 November (commit `11f4aca`) with no AQ4 design choice changed (`../PROTOCOL.md` P03–P05, P14). The 2014 outcomes were known when the rerun started.
 
 ## Decisions taken while working
 
@@ -53,12 +49,11 @@
 | Reasons | Every listed student has at least one reason | PASS, 3,955 of 3,955 | `logs/01_lists.md` |
 | Group sizes | Disability 1,488, band 0–10% 1,486, band missing 610, age 55 or over 118 test enrolments = Level 1 Table A.7 | PASS | `logs/03_fairness.md` |
 | FR1 | Gap below −10 points and Holm-adjusted interval below 0 | No group meets both; 0 of 3 flagged | `results/fairness_confirmatory.csv` |
-| Cross-check | Earlier team run: gaps +5.4, +1.7, −8.1 points, none flagged; here +5.4, +1.2, −6.9, none flagged | Agree on the verdict | `../aq-3/results/crosscheck_earlier_run.csv` |
+| Reproduction | Every AQ4 result table equals the first run (commit `11f4aca`) | PASS: 13 of 13 byte-identical; 18 of 18 AQ4 headline numbers equal | `../logs/compare_first_run.md` |
+| Comparison with the earlier team run | Earlier team run: gaps +5.4, +1.7, −8.1 points, none flagged; here +5.4, +1.2, −6.9, none flagged | Agree on the verdict | `../aq-3/results/crosscheck_earlier_run.csv` |
 
 ## Open issues
 
-- **Prior education as a reason** for 14.5% of listed students: in the score by Level 1, but not actionable and
-  marked sensitive. Recommendation in the report, Section 3; a decision for the team.
-- **Gender gap in recall** of 4.7 points (descriptive; not a confirmatory group in Level 1). Recommendation: add
-  gender to the pilot's audit groups.
+- **Prior education as a reason** for 14.5% of listed students: in the score by Level 1, but not actionable and marked sensitive. Recommendation in the report, Section 3; a decision for the team.
+- **Gender gap in recall** of 4.7 points (descriptive; not a confirmatory group in Level 1). Recommendation: add gender to the pilot's audit groups.
 - **Missing deprivation band:** not flagged, but the interval reaches −16.8 points; 181 non-completers cannot clear it.

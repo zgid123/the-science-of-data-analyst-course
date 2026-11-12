@@ -1,0 +1,31 @@
+sign,code_module,rows_defined,with_sign,without_sign,handling
+sign_task_missed,AAA,369,23,346,own slope
+sign_task_missed,BBB,3364,421,2943,own slope
+sign_task_missed,DDD,2790,533,2257,own slope
+sign_task_missed,EEE,0,0,0,"sign not defined in this module's runs: no term, outside the support"
+sign_task_missed,FFF,3437,308,3129,own slope
+sign_task_missed,GGG,0,0,0,"sign not defined in this module's runs: no term, outside the support"
+sign_tma_late,AAA,369,52,317,own slope
+sign_tma_late,BBB,3364,254,3110,own slope
+sign_tma_late,DDD,2790,62,2728,own slope
+sign_tma_late,EEE,0,0,0,"sign not defined in this module's runs: no term, outside the support"
+sign_tma_late,FFF,3437,209,3228,own slope
+sign_tma_late,GGG,0,0,0,"sign not defined in this module's runs: no term, outside the support"
+sign_inactive_last7,AAA,369,65,304,own slope
+sign_inactive_last7,BBB,3364,968,2396,own slope
+sign_inactive_last7,DDD,2790,248,2542,own slope
+sign_inactive_last7,EEE,927,171,756,own slope
+sign_inactive_last7,FFF,3437,486,2951,own slope
+sign_inactive_last7,GGG,924,506,418,own slope
+sign_low_activity,AAA,369,79,290,own slope
+sign_low_activity,BBB,3364,1040,2324,own slope
+sign_low_activity,DDD,2790,735,2055,own slope
+sign_low_activity,EEE,927,170,757,own slope
+sign_low_activity,FFF,3437,842,2595,own slope
+sign_low_activity,GGG,924,309,615,own slope
+sign_no_pre_activity,AAA,369,25,344,own slope
+sign_no_pre_activity,BBB,3364,1033,2331,own slope
+sign_no_pre_activity,DDD,2790,306,2484,own slope
+sign_no_pre_activity,EEE,927,211,716,own slope
+sign_no_pre_activity,FFF,3437,364,3073,own slope
+sign_no_pre_activity,GGG,924,358,566,own slope
