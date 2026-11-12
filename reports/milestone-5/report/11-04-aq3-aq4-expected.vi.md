@@ -9,5 +9,5 @@ trước. Nếu mô hình không vượt được quy tắc, thứ tự theo quy
 đó tốt đến đâu. AQ4 sẽ cho một danh sách gồm 3 hoặc 5 trên 20 sinh viên ở mỗi kỳ mở, kèm các dấu hiệu đứng sau mỗi tên.
 AQ4 được xem là đã trả lời khi danh sách đạt S1, quy tắc công bằng FR1 cho kết quả đạt hoặc các nhóm bị quy tắc này đánh
 dấu đã được xem xét, đồng thời báo cáo nêu rõ rằng chưa ai kiểm chứng việc sinh viên có nguy cơ cao hơn cũng là sinh viên
-cần hỗ trợ hơn (Bảng A.37, Phụ lục XIV). Cả hai câu hỏi đều không cho biết ai nên liên hệ với sinh viên, cũng không cho
+cần hỗ trợ hơn (Bảng A.40, Phụ lục XIV). Cả hai câu hỏi đều không cho biết ai nên liên hệ với sinh viên, cũng không cho
 biết việc liên hệ có giúp ích hay không.

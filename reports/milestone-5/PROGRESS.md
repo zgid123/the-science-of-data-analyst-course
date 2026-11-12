@@ -32,6 +32,7 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
 | T24 | Build every language and post-check | done (2026-11-09) | build/N04_Milestone5_EN.docx, build/N04_Milestone5_VI.docx | make all TASK=milestone-5: 17/17 PASS incl. postcheck en/vi and skill self-tests (logs/T24_make_all_final.log); pages EN 25.0 pessimistic / 18.2 optimistic, VI 32.0 / 23.1 (user accepted longer VI) |  |
 | T25 | Final review with the user | in-progress |  |  |  |
 | T26 | Complete AQ1 and AQ2 on 2014 and all 22 runs (user request 2026-11-10); AQ3/AQ4 stay Deferred | done (2026-11-11) | package/src/analysis (scope option, aq_year_compare, aq_checks_years), tests/test_scope.py, run_all.sh steps 12–18; results/2014, all_runs, compare; code/run_T26.sh, t26_*.py; report EN+VI (Sections 1–14, Appendices III–XVI, Figures 1.1/11.1/11.2, references renumbered); package docs; research/revisions/02, 03; research/reviews/07 | 2013 results byte-identical; year checks 52/0; tests 12/12 + fault injection; determinism 41/41 (logs/T26_aq_year_compare.log); exact rows 55/56 (1 kept more precise); replication cross-check 35/35; package clean copy exit 0, results 62/62; make all 15/15 + skill tests (logs/T26_make_all.log); pages EN 25.0 / VI 32.0 pessimistic | Full-then-move redone on the user's question (revisions/02, 03). Open: glossary topic file 152 rows (> 150 budget). |
+| T27 | Appendix tables (signs count, first missed week by module, February minus October), comparison with a second implementation, shortened Appendices XII–XIII, fixed Section 11.2 sentence (owner's request 2026-11-13) | done (2026-11-13) | code/t27_appendix_tables.py, t27_compare_second_implementation.py, t27_renumber_tables.py, t27_loss_check.py, t27_prose_words.py; results/{2013,2014}/aq2_sign_count.csv, aq1_first_missed_week_by_module.csv, aq1_start_month_difference_by_module.csv; results/compare/t27_appendix_tables.md, aq2_second_implementation.csv; report 16-12, 16-13, 11-02, 11-03 EN+VI (Tables A.31, A.33, A.36 new; A.31+ renumbered in 24 files + package docs/ai_decision_log.md); research/reviews/08-vi-native-review-t27-appendix-tables.md; build EN/VI docx | logs/T27_appendix_tables.log (cross-checks PASS, deterministic); T27_compare_second_implementation.log (verdicts 10/10, post hoc 10/10); T27_loss_check.log (0 numbers, 0 claims lost); T27_precheck.log PASS; T27_make_all.log 17/17 PASS incl. skill tests 162/162, 64/64; pages EN 25.0/18.3, VI 32.0/23.2 (T27_pages_before.log equal) | 62 tables per language (59 before), 3 figures. Same cut: second implementation within 0.11 pp except late TMA 2014 (21.8 vs 20.3, CCC left out). Rerun T27 scripts after any run_T26.sh (it replaces results folders). T26 has no [[tasks]] row in plan.toml (pre-existing). Submission status of the second implementation: team decision. |
 
 ## Decisions
 
@@ -56,7 +57,23 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
   unchanged (20 of 21 files byte-identical, aq_summary.md labels only); checksums 63; package in place and clean copy
   exit 0 (tests 12/12, AQ checks 96/0/3, year checks 53/0, results 63/63); task folder mirrors the package; figures
   pixel-identical; make all 15/15. Every path reference updated in code, docs, trail notes, ledger and figures.
-- (none yet)
+- T27 (2026-11-13, owner's request relayed by the lead agent; decided under that request, not asked at a checkpoint):
+  (a) sign-count table: the two task signs are defined only in runs with a task due by day 27, so the count runs over
+  five signs there and over the three click signs in the EEE and GGG runs, two blocks kept apart; no enrolment has both
+  task signs, so the five-sign row (n = 0 in both years) is left out and the text says the count stops at four.
+  (b) First-missed-by-module table on the non-completers of the day-14 population, median week among those who missed
+  a task, Wilson intervals on the three shares. (c) February-minus-October table on the day-14 population with a pooled
+  row of the modules run in both start months. (d) Appendix tables renumbered: new A.31, A.33, A.36; old A.31→A.32,
+  A.32→A.34, A.33→A.35, A.34→A.37, A.35→A.38, A.36→A.39, A.37–A.43→A.40–A.46 (report EN+VI and package
+  docs/ai_decision_log.md). (e) Second implementation named in words only; four specification differences stated
+  (half-median cut, late-TMA average without CCC 2014, log-scale background, 20/20 slope rule); whether it becomes a
+  submitted deliverable is left to the team. (f) Page budget: the separate 11.3 sentence pushed the main text to 26.0
+  pessimistic pages, so the replication enters the confidence sentence of 11.3 and the task-sign counts of 11.3's first
+  paragraph rely on Figure 11.2's caption; main text back to 25.0. (g) New results files live in the task's
+  results/2013, 2014 and compare folders, which code/run_T26.sh replaces from the package: rerun
+  t27_appendix_tables.py and t27_compare_second_implementation.py after any run_T26.sh. (h) "implementation" gets no
+  glossary row (two files only); reviewer suggests a row "interval excludes/includes 0 → không chứa 0 / chứa 0" with
+  "loại trừ 0" under Replaces (not added: topic glossary already over its 150-row budget).
 
 ## Blocked
 

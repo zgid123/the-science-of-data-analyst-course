@@ -7,7 +7,7 @@ liệu hoặc với mã mà chúng em đã chạy.
 
 ## 13.1. Nhật ký quyết định về AI, Milestone 1–5
 
-Bảng A.43 (Phụ lục XVI) trình bày Nhật ký quyết định về AI (AI Decision Log) theo các cột của đề bài, với một hàng cho mỗi
+Bảng A.46 (Phụ lục XVI) trình bày Nhật ký quyết định về AI (AI Decision Log) theo các cột của đề bài, với một hàng cho mỗi
 milestone trước và bốn hàng cho bước tích hợp cuối cùng. Với Milestone 1 đến Milestone 4, nhật ký ghi lại cách AI đóng
 vai các bên liên quan mô phỏng, trợ lý tìm tài liệu, người phản biện và trợ lý viết mã, cách nhóm chúng em kiểm tra từng
 đầu ra cùng những ý kiến phản biện được chấp nhận hoặc bác bỏ. AI không tạo ra bất kỳ giá trị

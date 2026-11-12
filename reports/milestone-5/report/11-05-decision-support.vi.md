@@ -1,7 +1,7 @@
 ## 11.5. Câu trả lời theo từng câu hỏi và hỗ trợ ra quyết định
 
-Bảng 11.3 đặt bốn câu trả lời cạnh nhau; mỗi câu trả lời được đọc theo loại phân tích của câu hỏi; Bảng A.38 và
-Bảng A.39 (Phụ lục XIV) viết đầy đủ nội dung từng ô.
+Bảng 11.3 đặt bốn câu trả lời cạnh nhau; mỗi câu trả lời được đọc theo loại phân tích của câu hỏi; Bảng A.41 và
+Bảng A.42 (Phụ lục XIV) viết đầy đủ nội dung từng ô.
 
 **Bảng 11.3. Câu trả lời cuối cùng theo từng câu hỏi**
 
@@ -14,7 +14,7 @@ Bảng A.39 (Phụ lục XIV) viết đầy đủ nội dung từng ô.
 
 Cả bốn câu trả lời đều dựa trên dữ liệu quan sát, trong khi OULAD không ghi nhận lần liên hệ nào, nên mọi khẳng định mang
 tính chỉ định đều là một phương án quyết định (decision option), tức là khuyến nghị kèm giả thuyết cần kiểm chứng qua
-đợt thí điểm (Bảng A.40). Với D1, nhóm chúng em đề xuất lập danh sách theo quy tắc dấu hiệu sớm (C10), vì quy tắc này dễ
+đợt thí điểm (Bảng A.43). Với D1, nhóm chúng em đề xuất lập danh sách theo quy tắc dấu hiệu sớm (C10), vì quy tắc này dễ
 diễn giải, tính được từ dữ liệu mà trường đã có, đồng thời từng thành phần của quy tắc đều có liên hệ với việc sinh viên cuối kỳ
 không hoàn thành trong các kỳ mở năm 2013 và năm 2014. Chất lượng của danh sách này, điều kiện để thứ hạng của AQ3
 được dùng thay cho thứ tự của quy tắc, cùng cách đợt thí điểm chọn người liên hệ và hình thức hỗ trợ được trình bày ở

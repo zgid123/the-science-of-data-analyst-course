@@ -1,0 +1,30 @@
+=== 2026-11-12T17:10:46Z ===
+$ venv/bin/python reports/milestone-5/code/t27_renumber_tables.py --write
+report/11-02-aq1-findings.md: 2 (A.32->A.34, A.31->A.32)
+report/11-02-aq1-findings.vi.md: 2 (A.32->A.34, A.31->A.32)
+report/11-03-aq2-findings.md: 4 (A.33->A.35, A.34->A.37, A.35->A.38, A.36->A.39)
+report/11-03-aq2-findings.vi.md: 4 (A.33->A.35, A.34->A.37, A.35->A.38, A.36->A.39)
+report/11-04-aq3-aq4-expected.md: 1 (A.37->A.40)
+report/11-04-aq3-aq4-expected.vi.md: 1 (A.37->A.40)
+report/11-05-decision-support.md: 3 (A.38->A.41, A.39->A.42, A.40->A.43)
+report/11-05-decision-support.vi.md: 3 (A.38->A.41, A.39->A.42, A.40->A.43)
+report/12-00-limitations.md: 1 (A.41->A.44)
+report/12-00-limitations.vi.md: 1 (A.41->A.44)
+report/12-01-future-work.md: 1 (A.42->A.45)
+report/12-01-future-work.vi.md: 1 (A.42->A.45)
+report/13-00-genai-reflection.md: 1 (A.43->A.46)
+report/13-00-genai-reflection.vi.md: 1 (A.43->A.46)
+report/16-12-aq1-results.md: 5 (A.32->A.34, A.31->A.32, A.31->A.32, A.32->A.34, A.32->A.34)
+report/16-12-aq1-results.vi.md: 5 (A.32->A.34, A.31->A.32, A.31->A.32, A.32->A.34, A.32->A.34)
+report/16-13-aq2-results.md: 8 (A.33->A.35, A.33->A.35, A.34->A.37, A.34->A.37, A.35->A.38, A.35->A.38, A.36->A.39, A.36->A.39)
+report/16-13-aq2-results.vi.md: 8 (A.33->A.35, A.33->A.35, A.34->A.37, A.34->A.37, A.35->A.38, A.35->A.38, A.36->A.39, A.36->A.39)
+report/16-14-aq3-aq4-answers.md: 9 (A.37->A.40, A.37->A.40, A.38->A.41, A.39->A.42, A.38->A.41, A.39->A.42, A.39->A.42, A.40->A.43, A.40->A.43)
+report/16-14-aq3-aq4-answers.vi.md: 9 (A.37->A.40, A.37->A.40, A.38->A.41, A.39->A.42, A.38->A.41, A.39->A.42, A.39->A.42, A.40->A.43, A.40->A.43)
+report/16-15-limitations-future.md: 4 (A.41->A.44, A.41->A.44, A.42->A.45, A.42->A.45)
+report/16-15-limitations-future.vi.md: 4 (A.41->A.44, A.41->A.44, A.42->A.45, A.42->A.45)
+report/16-16-ai-decision-log.md: 2 (A.43->A.46, A.43->A.46)
+report/16-16-ai-decision-log.vi.md: 2 (A.43->A.46, A.43->A.46)
+package/docs/ai_decision_log.md: 1 (A.43->A.46)
+written: 83 references
+exit status: 0
+

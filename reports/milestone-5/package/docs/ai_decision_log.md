@@ -1,7 +1,7 @@
 # AI Decision Log, Milestones 1–5
 
 This document reproduces the AI Decision Log of the final report: Section 13 (Generative AI Use and Reflection) and
-its full table in Appendix XVI (Table A.43), in the columns of the course brief. Section and appendix numbers below
+its full table in Appendix XVI (Table A.46), in the columns of the course brief. Section and appendix numbers below
 refer to the final report; Change Log entries (C13, C15–C17) are in `data/metadata/change_log.md`.
 
 We used generative AI as a simulated stakeholder, a research and code assistant, a critic and a writing partner, and in

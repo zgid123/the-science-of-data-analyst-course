@@ -396,6 +396,11 @@ id = "T25"
 kind = "HC"
 title = "Final review with the user"
 
+[[tasks]]
+id = "T27"
+kind = "S"
+title = "Appendix tables (signs count, first missed week by module, February minus October), comparison with a second implementation, shortened Appendices XII–XIII, fixed Section 11.2 sentence (owner's request 2026-11-13)"
+
 [[seeds]]
 id = "S001"
 slug = "mth045-milestone5-brief-2026"

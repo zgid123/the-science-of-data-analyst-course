@@ -2,7 +2,7 @@
 
 Hai bước chạy được ngay trên OULAD hiện có. Bước thứ nhất là nguyên mẫu Level 2 của AQ3, giữ nguyên thiết kế mà
 Milestone 4 đã ấn định và đồng thời đo hiệu quả danh sách của quy tắc (phương pháp cơ sở B2); bước thứ hai là danh sách
-của AQ4 cùng phép kiểm tra công bằng (Bảng A.42, Phụ lục XV). Tại trường, mức cơ sở được tính lại theo quy
+của AQ4 cùng phép kiểm tra công bằng (Bảng A.45, Phụ lục XV). Tại trường, mức cơ sở được tính lại theo quy
 tắc về thời gian điều chỉnh đăng ký học phần; các giá trị giả định được thay bằng dữ liệu của trường. Ngoài ra, trước khi dùng danh sách, hệ thống lập danh sách
 cần được phân loại mức rủi ro như pháp luật Việt Nam yêu cầu đối với việc xếp hạng người học (Phụ lục XV). Sau đó,
 một đợt thí điểm có phân nhóm ngẫu nhiên sẽ kiểm tra việc liên hệ có giúp ích hay không. Đợt thí điểm này phân nhóm

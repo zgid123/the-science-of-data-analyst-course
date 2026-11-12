@@ -1,0 +1,44 @@
+=== 2026-11-12T17:10:33Z word counts before T27 (wc -w, git HEAD 7516b83)
+     396 report/11-02-aq1-findings.md
+     731 report/11-02-aq1-findings.vi.md
+     411 report/11-03-aq2-findings.md
+     787 report/11-03-aq2-findings.vi.md
+    3210 report/16-12-aq1-results.md
+    4596 report/16-12-aq1-results.vi.md
+    4316 report/16-13-aq2-results.md
+    6373 report/16-13-aq2-results.vi.md
+   20820 total
+=== 2026-11-12T17:15:07Z word counts after the English edits (wc -w)
+     399 reports/milestone-5/report/11-02-aq1-findings.md
+     424 reports/milestone-5/report/11-03-aq2-findings.md
+    3922 reports/milestone-5/report/16-12-aq1-results.md
+    4880 reports/milestone-5/report/16-13-aq2-results.md
+    9625 total
+=== 2026-11-12T17:15:16Z $ venv/bin/python reports/milestone-5/code/t27_prose_words.py --rev HEAD
+file                           prose HEAD  prose now  tables HEAD  tables now
+11-02-aq1-findings.md                 358        361            0           0
+11-03-aq2-findings.md                 353        366            0           0
+16-12-aq1-results.md                 2212       2352          954        1526
+16-13-aq2-results.md                 3149       3453         1117        1377
+exit status: 0
+=== 2026-11-12T17:29:36Z final $ venv/bin/python reports/milestone-5/code/t27_prose_words.py --rev HEAD (EN) and --vi
+file                           prose HEAD  prose now  tables HEAD  tables now
+11-02-aq1-findings.md                 358        358            0           0
+11-03-aq2-findings.md                 353        351            0           0
+16-12-aq1-results.md                 2212       2352          954        1526
+16-13-aq2-results.md                 3149       3453         1117        1377
+file                           prose HEAD  prose now  tables HEAD  tables now
+11-02-aq1-findings.vi.md              631        613            0           0
+11-03-aq2-findings.vi.md              652        654            0           0
+16-12-aq1-results.vi.md              3211       3505         1084        1711
+16-13-aq2-results.vi.md              4734       5258         1345        1654
+     396 reports/milestone-5/report/11-02-aq1-findings.md
+     714 reports/milestone-5/report/11-02-aq1-findings.vi.md
+     409 reports/milestone-5/report/11-03-aq2-findings.md
+     789 reports/milestone-5/report/11-03-aq2-findings.vi.md
+    3922 reports/milestone-5/report/16-12-aq1-results.md
+    5555 reports/milestone-5/report/16-12-aq1-results.vi.md
+    4880 reports/milestone-5/report/16-13-aq2-results.md
+    7262 reports/milestone-5/report/16-13-aq2-results.vi.md
+   23927 total
+exit status: 0

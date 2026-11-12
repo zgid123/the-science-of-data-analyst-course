@@ -3,7 +3,7 @@
 Để nêu đúng giới hạn của các phát hiện trên, nhóm chúng em phân biệt ba tình huống: "không tìm thấy bằng chứng" khi đã so sánh nhưng không thấy chênh lệch rõ ràng;
 "không có dữ liệu để kiểm tra" khi OULAD và mọi bộ dữ liệu đã sàng lọc đều thiếu dữ liệu cần thiết; "chưa chạy kiểm tra"
 khi dữ liệu đã có nhưng phân tích phải chờ lần kiểm tra duy nhất của AQ3. Bảng 12.1 là danh mục hạn chế, còn Bảng
-A.41 (Phụ lục XV) bổ sung ảnh hưởng của từng hạn chế. Các kết quả mô tả những module đào tạo từ xa ở UK
+A.44 (Phụ lục XV) bổ sung ảnh hưởng của từng hạn chế. Các kết quả mô tả những module đào tạo từ xa ở UK
 trong giai đoạn 2013–2014, trong khi những yếu tố dự báo được việc học thành công thay đổi theo điều kiện giảng dạy [15],
 nên các học phần của trường cần được tính lại riêng. Các yếu tố gây nhiễu khiến dữ liệu này không thể cho biết tác động của việc liên
 hệ [14]. Ngoài ra, một dấu cảnh báo không được biến thành nhãn gán cho sinh viên, vì phân tích dự báo tiềm ẩn nguy cơ gây

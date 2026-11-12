@@ -247,3 +247,7 @@ in both years (2014: missed task 39.3, late TMA 20.3, inactive 15.8, below media
 late TMA in AAA 2014 at −1.2 (−14.4 to 12.1); with the continuous click adjustment the below-median sign in 2014 falls
 to 5.9 (3.7–8.1) in 4 of 7 modules ("weak or inconsistent"), and the refit's activity residuals stay outside ±2 SE in
 3 of 5 levels in 2014 and over 22 runs (`package/logs/14_aq2_sens_2014.log`, `15_aq2_sens_all.log`).
+
+## T27 additions (task trail only, not in the package)
+
+`code/t27_appendix_tables.py` writes `2013/` and `2014/` `aq2_sign_count.csv` (Table A.36), `aq1_first_missed_week_by_module.csv` (Table A.33) and `aq1_start_month_difference_by_module.csv` (Table A.31), and `compare/t27_appendix_tables.md`; `code/t27_compare_second_implementation.py` writes `compare/aq2_second_implementation.csv`. These files are not in the package, so `code/run_T26.sh` (which replaces the four folders from the package) removes them: run both T27 scripts after it.

@@ -1,6 +1,6 @@
 ## 11.5. Answers by Question and Decision Support
 
-Table 11.3 sets the four answers side by side, each read by its analytics level; Tables A.38 and A.39 (Appendix XIV)
+Table 11.3 sets the four answers side by side, each read by its analytics level; Tables A.41 and A.42 (Appendix XIV)
 write out each cell.
 
 **Table 11.3. Final answers by question**
@@ -13,7 +13,7 @@ write out each cell.
 | AQ4 | Ranked list per group of 20 students | Proposed: AQ3 scores | Proposed: top-k; FR1 | Expected: 3 or 5 per 20 with signs | Not applicable; no contact data | D1 list, not a contact plan |
 
 All four answers rest on observational data, and OULAD records no contact, so every prescriptive statement is a
-decision option with a hypothesis for the pilot (Table A.40). For D1, the early-sign rule (C10) is the candidate list: it is interpretable,
+decision option with a hypothesis for the pilot (Table A.43). For D1, the early-sign rule (C10) is the candidate list: it is interpretable,
 computable from records the university already holds, and each of its parts goes with later non-completion within the
 runs of 2013 and of 2014, while its list quality, the gate for the AQ3 ranking and the pilot's choice of
 person and offer are set out in Appendix XIV; for D2, early support time goes first where non-completion and early signs
