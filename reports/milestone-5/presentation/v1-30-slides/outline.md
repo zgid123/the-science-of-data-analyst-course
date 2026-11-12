@@ -1,0 +1,31 @@
+# Outline – Milestone 5 final presentation (30 slides)
+- Slide 1 – Early Identification of Disengaging Students in Online Courses | 0.5
+- Slide 2 – Noticed Too Late
+- Slide 3 – Our Answer in Brief | 1
+- Slide 4 – Stakeholders, Needs and Decisions
+- Slide 5 – Business Goal and KPIs
+- Slide 6 – Four Analytical Questions
+- Slide 7 – Data Requirements
+- Slide 8 – Dataset Search and Selection
+- Slide 9 – OULAD and Its Fit
+- Slide 10 – Data Quality | 1
+- Slide 11 – Who Counts: the Add-drop Rule
+- Slide 12 – The Early-sign Rule
+- Slide 13 – Preparation and Leakage Control | 1
+- Slide 14 – Methods by Question
+- Slide 15 – Judging a Contact List
+- Slide 16 – Validation and Gate S1 | 1
+- Slide 17 – Fairness and Interpretability
+- Slide 18 – What We Ran
+- Slide 19 – AQ1: How Many Do Not Complete
+- Slide 20 – AQ1: The Denominator Matters
+- Slide 21 – AQ1: When Non-completers First Miss a Task | 1
+- Slide 22 – AQ2: Five Early Signs
+- Slide 23 – AQ2: How Far the Signs Hold
+- Slide 24 – Traceability Matrix
+- Slide 25 – AQ3 and AQ4: Expected Outputs
+- Slide 26 – Decision Support
+- Slide 27 – Generative AI Use
+- Slide 28 – Conclusions | 1
+- Slide 29 – Limitations, Open Problems and Take-home | 1
+- Slide 30 – Thank You | 0.5

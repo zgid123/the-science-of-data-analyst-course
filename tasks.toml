@@ -188,6 +188,7 @@ build = "reports/milestone-5/build"
 author = "Group 4 (N04)"
 voice = "group"                          # the team writes in the first person (build-report check_style.py)
 people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+people_files = ["slides_milestone5_30_vi.py"]
 
 [milestone-5.en]
 out = "N04_Milestone5_EN.docx"
@@ -214,6 +215,8 @@ package = "figures.milestone_5"
 
 [milestone-5.hooks]
 checks = { research_trail = ".agents/skills/research-report/scripts/check_trail.py --base reports/milestone-5 --all", research_layout = ".agents/skills/research-report/scripts/layout.py check --base reports/milestone-5" }
+extras = ["build_slides_milestone5_30.py", "build_slides_milestone5_full.py"]   # the 30-slide deck (EN, VI) and the full deck with its main / appendix split (EN)
+extra_checks = { slides_30_en = ".claude/skills/build-report/scripts/check_slides.py reports/milestone-5/build/N04_Milestone5_Slides-30_EN.pptx --lang en --task milestone-5", slides_30_vi = ".claude/skills/build-report/scripts/check_slides.py reports/milestone-5/build/N04_Milestone5_Slides-30_VI.pptx --lang vi --task milestone-5", slides_full_en = ".claude/skills/build-report/scripts/check_slides.py reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx --lang en --task milestone-5", slides_split_en = ".claude/skills/build-report/scripts/check_slides.py reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx --lang en --task milestone-5" }
 
 [milestone-5.citations]
 order = "first-citation"

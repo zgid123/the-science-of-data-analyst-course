@@ -1,0 +1,223 @@
+{
+  "wpm": 125,
+  "slot_minutes": 25.0,
+  "qa_minutes": 0.0,
+  "speaking_minutes": 25.0,
+  "buffer_minutes": 0.5,
+  "scripted_minutes": 24.5,
+  "unallocated_minutes": 0,
+  "total_words": 3057,
+  "qa_handoff": "25:00",
+  "slides": [
+    {
+      "n": 1,
+      "title": "Slide 1 \u2013 Early Identification of Disengaging Students in Online Courses",
+      "start": "0:00",
+      "minutes": 0.5,
+      "words": 62
+    },
+    {
+      "n": 2,
+      "title": "Slide 2 \u2013 Noticed Too Late",
+      "start": "0:30",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 3,
+      "title": "Slide 3 \u2013 Our Answer in Brief",
+      "start": "1:17",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 4,
+      "title": "Slide 4 \u2013 Stakeholders, Needs and Decisions",
+      "start": "2:17",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 5,
+      "title": "Slide 5 \u2013 Business Goal and KPIs",
+      "start": "3:04",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 6,
+      "title": "Slide 6 \u2013 Four Analytical Questions",
+      "start": "3:51",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 7,
+      "title": "Slide 7 \u2013 Data Requirements",
+      "start": "4:39",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 8,
+      "title": "Slide 8 \u2013 Dataset Search and Selection",
+      "start": "5:26",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 9,
+      "title": "Slide 9 \u2013 OULAD and Its Fit",
+      "start": "6:13",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 10,
+      "title": "Slide 10 \u2013 Data Quality",
+      "start": "7:00",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 11,
+      "title": "Slide 11 \u2013 Who Counts: the Add-drop Rule",
+      "start": "8:00",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 12,
+      "title": "Slide 12 \u2013 The Early-sign Rule",
+      "start": "8:47",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 13,
+      "title": "Slide 13 \u2013 Preparation and Leakage Control",
+      "start": "9:34",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 14,
+      "title": "Slide 14 \u2013 Methods by Question",
+      "start": "10:34",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 15,
+      "title": "Slide 15 \u2013 Judging a Contact List",
+      "start": "11:21",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 16,
+      "title": "Slide 16 \u2013 Validation and Gate S1",
+      "start": "12:09",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 17,
+      "title": "Slide 17 \u2013 Fairness and Interpretability",
+      "start": "13:09",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 18,
+      "title": "Slide 18 \u2013 What We Ran",
+      "start": "13:56",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 19,
+      "title": "Slide 19 \u2013 AQ1: How Many Do Not Complete",
+      "start": "14:43",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 20,
+      "title": "Slide 20 \u2013 AQ1: The Denominator Matters",
+      "start": "15:30",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 21,
+      "title": "Slide 21 \u2013 AQ1: When Non-completers First Miss a Task",
+      "start": "16:17",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 22,
+      "title": "Slide 22 \u2013 AQ2: Five Early Signs",
+      "start": "17:17",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 23,
+      "title": "Slide 23 \u2013 AQ2: How Far the Signs Hold",
+      "start": "18:04",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 24,
+      "title": "Slide 24 \u2013 Traceability Matrix",
+      "start": "18:51",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 25,
+      "title": "Slide 25 \u2013 AQ3 and AQ4: Expected Outputs",
+      "start": "19:39",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 26,
+      "title": "Slide 26 \u2013 Decision Support",
+      "start": "20:26",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 27,
+      "title": "Slide 27 \u2013 Generative AI Use",
+      "start": "21:13",
+      "minutes": 0.79,
+      "words": 98
+    },
+    {
+      "n": 28,
+      "title": "Slide 28 \u2013 Conclusions",
+      "start": "22:00",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 29,
+      "title": "Slide 29 \u2013 Limitations, Open Problems and Take-home",
+      "start": "23:00",
+      "minutes": 1.0,
+      "words": 125
+    },
+    {
+      "n": 30,
+      "title": "Slide 30 \u2013 Thank You",
+      "start": "24:00",
+      "minutes": 0.5,
+      "words": 62
+    }
+  ]
+}

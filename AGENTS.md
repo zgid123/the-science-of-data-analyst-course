@@ -21,10 +21,17 @@ edit `AGENTS.md`, and re-read it after each change so the updated rules apply in
   outline (`reference.md`), plan (`EXECUTION_PLAN.md`, `plan.toml`), ledger (`PROGRESS.md`), research trail, section
   files (`report/*.md` in English, `*.vi.md` Vietnamese twins), `logs/` and `build/`. `tasks.toml` and `Makefile` at the
   root register the tasks. `reports/milestone-1/` is the team's fresh Milestone 1 proposal.
+  A task with a talk keeps its speech scripts, storytelling drafts, plans and reviews in `presentation/` (index and
+  naming table in its `README.md`), one subfolder per deck generation named `v<n>-<scope>/`; every file of a generation
+  carries its scope: deck scripts in the project root, as the build-report slide kit requires
+  (`build_slides_<task>_<scope>.py`, `slides_<task>_<scope>_vi.py`, slide packages `slides_<task>_<scope>/`), decks in
+  the task's `build/` as `N04_<Task>_Slides-<Scope>_<LANG>.pptx`, briefs as `BRIEF.md` in the folder they govern.
   Working files beside the trail keep one layout (research-report `reference.md` section 2.1): review rounds as
   `research/reviews/NN-<kind>…` from `layout.py new-review`, revision records and `snapshots.md` (saved states as git
   commits) in `research/revisions/`, task notes declared in `plan.toml` `[layout]`; `layout.py check` runs in `make precheck`.
 - `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`).
+- `docs/` – project-wide guides: `data-analytics-skills-map.md` maps trusted agent skills (installed and suggested) to
+  the ten stages of the analytics lifecycle, with alternatives, comparison pairs, gaps and install commands.
 - `.agents/skills/` – all agent skills; GitHub provenance in `skills-lock.json` (update with `npx skills update`).
   Each skill has a relative symlink in `.claude/skills/` (`ln -s ../../.agents/skills/<name> .claude/skills/<name>`),
   so Claude Code and other agents read the same copy; `.claude/` is git-ignored, so recreate the links after a clone.

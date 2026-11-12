@@ -1,0 +1,46 @@
+<!-- 2026-11-11T02:04:24Z | budget: python3 .agents/skills/write-talk-script/scripts/word_budget.py --minutes 25 --outline reports/milestone-5/presentation/outline.md --wpm 125 --json > budget.json | timer: python3 .agents/skills/write-talk-script/scripts/script_timer.py <notes-only copy> --budget reports/milestone-5/presentation/budget.json (exit 0) | notes-only copy = each '## Slide' heading plus its Speaker notes lines, made by a scratch extractor -->
+
+# Script timing — notes-only copy of speech-script.md (speaker notes only) @ 125 wpm
+
+| # | Slide | words | budget | time | starts at | status |
+|---|-------|-------|--------|------|-----------|--------|
+| 1 | Slide 1 – Early Identification of Disengaging Students in Online Courses   [Introduction]   (~29 seconds) | 61 | 62 | 0:29 | 0:00 | OK |
+| 2 | Slide 2 – Noticed Too Late   [Introduction]   (~45 seconds) | 94 | 98 | 0:45 | 0:29 | OK |
+| 3 | Slide 3 – Our Answer in Brief   [Introduction]   (~59 seconds) | 122 | 125 | 0:59 | 1:14 | OK |
+| 4 | Slide 4 – Stakeholders, Needs and Decisions   [Part 1 · The Problem (Milestone 1)]   (~47 seconds) | 98 | 98 | 0:47 | 2:13 | OK |
+| 5 | Slide 5 – Business Goal and KPIs   [Part 1 · The Problem (Milestone 1)]   (~43 seconds) | 90 | 98 | 0:43 | 3:00 | OK |
+| 6 | Slide 6 – Four Analytical Questions   [Part 1 · The Problem (Milestone 1)]   (~48 seconds) | 100 | 98 | 0:48 | 3:43 | OK |
+| 7 | Slide 7 – Data Requirements   [Part 2 · The Data (Milestone 2)]   (~46 seconds) | 96 | 98 | 0:46 | 4:31 | OK |
+| 8 | Slide 8 – Dataset Search and Selection   [Part 2 · The Data (Milestone 2)]   (~47 seconds) | 97 | 98 | 0:47 | 5:17 | OK |
+| 9 | Slide 9 – OULAD and Its Fit   [Part 2 · The Data (Milestone 2)]   (~48 seconds) | 100 | 98 | 0:48 | 6:04 | OK |
+| 10 | Slide 10 – Data Quality   [Part 3 · Preparation (Milestone 3)]   (~61 seconds) | 127 | 125 | 1:01 | 6:52 | OK |
+| 11 | Slide 11 – Who Counts: the Add-drop Rule   [Part 3 · Preparation (Milestone 3)]   (~43 seconds) | 90 | 98 | 0:43 | 7:53 | OK |
+| 12 | Slide 12 – The Early-sign Rule   [Part 3 · Preparation (Milestone 3)]   (~48 seconds) | 99 | 98 | 0:48 | 8:36 | OK |
+| 13 | Slide 13 – Preparation and Leakage Control   [Part 3 · Preparation (Milestone 3)]   (~60 seconds) | 120 | 125 | 0:58 | 9:24 | OK |
+| 14 | Slide 14 – Methods by Question   [Part 4 · Method (Milestone 4)]   (~48 seconds) | 100 | 98 | 0:48 | 10:21 | OK |
+| 15 | Slide 15 – Judging a Contact List   [Part 4 · Method (Milestone 4)]   (~49 seconds) | 102 | 98 | 0:49 | 11:09 | OK |
+| 16 | Slide 16 – Validation and Gate S1   [Part 4 · Method (Milestone 4)]   (~63 seconds) | 132 | 125 | 1:03 | 11:58 | OK |
+| 17 | Slide 17 – Fairness and Interpretability   [Part 4 · Method (Milestone 4)]   (~48 seconds) | 100 | 98 | 0:48 | 13:01 | OK |
+| 18 | Slide 18 – What We Ran   [Part 5 · Evidence (Milestone 5)]   (~47 seconds) | 100 | 98 | 0:48 | 13:49 | OK |
+| 19 | Slide 19 – AQ1: How Many Do Not Complete   [Part 5 · Evidence (Milestone 5)]   (~47 seconds) | 97 | 98 | 0:47 | 14:37 | OK |
+| 20 | Slide 20 – AQ1: The Denominator Matters   [Part 5 · Evidence (Milestone 5)]   (~48 seconds) | 100 | 98 | 0:48 | 15:24 | OK |
+| 21 | Slide 21 – AQ1: When Non-completers First Miss a Task   [Part 5 · Evidence (Milestone 5)]   (~61 seconds) | 127 | 125 | 1:01 | 16:12 | OK |
+| 22 | Slide 22 – AQ2: Five Early Signs   [Part 5 · Evidence (Milestone 5)]   (~49 seconds) | 102 | 98 | 0:49 | 17:13 | OK |
+| 23 | Slide 23 – AQ2: How Far the Signs Hold   [Part 5 · Evidence (Milestone 5)]   (~49 seconds) | 102 | 98 | 0:49 | 18:02 | OK |
+| 24 | Slide 24 – Traceability Matrix   [Part 6 · Integration and Use (Milestone 5)]   (~43 seconds) | 89 | 98 | 0:43 | 18:51 | OK |
+| 25 | Slide 25 – AQ3 and AQ4: Expected Outputs   [Part 6 · Integration and Use (Milestone 5)]   (~48 seconds) | 100 | 98 | 0:48 | 19:34 | OK |
+| 26 | Slide 26 – Decision Support   [Part 6 · Integration and Use (Milestone 5)]   (~48 seconds) | 99 | 98 | 0:48 | 20:22 | OK |
+| 27 | Slide 27 – Generative AI Use   [Part 6 · Integration and Use (Milestone 5)]   (~46 seconds) | 96 | 98 | 0:46 | 21:09 | OK |
+| 28 | Slide 28 – Conclusions   [Conclusions]   (~59 seconds) | 123 | 125 | 0:59 | 21:55 | OK |
+| 29 | Slide 29 – Limitations, Open Problems and Take-home   [Conclusions]   (~61 seconds) | 127 | 125 | 1:01 | 22:54 | OK |
+| 30 | Slide 30 – Thank You   [Conclusions]   (~31 seconds) | 64 | 62 | 0:31 | 23:55 | OK |
+
+- Spoken total: 3054 words ≈ 24:26 at 125 wpm.
+- Speaking time available: 25:00 → margin 0:34.
+- Cut list (3 blocks, 10% of the talk):
+  - slide 10, 'quality-detail': 109 words, saves 0:52
+  - slide 13, 'pipeline-checks': 100 words, saves 0:48
+  - slide 16, 'development-folds': 98 words, saves 0:47
+- With ALL cuts applied: ≈ 21:59.
+
+VERDICT: WITHIN BUDGET
