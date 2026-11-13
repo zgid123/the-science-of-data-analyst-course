@@ -1,5 +1,5 @@
-2026-11-10T17:57:54Z
-$ python src/analysis/aq1_year_shared_modules.py   (Python 3.12.7)
+2026-11-13T10:57:12Z
+$ python src/analysis/aq1_year_shared_modules.py   (Python 3.14.5)
 ['shared modules (6)', 0.5144, 13529, 0.5122, 14630, -0.22, -1.39, 0.95]
 ['CCC (2014 only)', '', 0, 0.6216, 4434, '', '', '']
 exit 0

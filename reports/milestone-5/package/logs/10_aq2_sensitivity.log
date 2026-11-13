@@ -1,5 +1,5 @@
-2026-11-10T17:57:54Z
-$ python src/analysis/aq2_sensitivity_continuous.py   (Python 3.12.7)
+2026-11-13T10:57:12Z
+$ python src/analysis/aq2_sensitivity_continuous.py   (Python 3.14.5)
 2013 rows: 11811; presentations ['2013B', '2013J']
 main model: 37 parameters, pseudo-R2 0.1452
 with log1p_clicks_0_27: 38 parameters, pseudo-R2 0.1502; coef -0.2501 (robust SE 0.0287), OR per unit 0.779

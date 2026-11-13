@@ -1,5 +1,5 @@
-2026-11-10T17:57:48Z
-$ python src/validate_prepared.py   (Python 3.12.7)
+2026-11-13T10:57:07Z
+$ python src/validate_prepared.py   (Python 3.14.5)
 V01a PASS enrolment rows and outcome mix equal raw studentInfo: expected 32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]; observed 32,593; [('Distinction', 3024), ('Fail', 7052), ('Pass', 12361), ('Withdrawn', 10156)]
 V01b PASS students: expected 28,785; observed 28,785
 V01c PASS population sizes equal the profile (C09): expected {'d14': 28061, 'd13': 28069, 'd27': 27535}; observed {'d14': 28061, 'd13': 28069, 'd27': 27535}

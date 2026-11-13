@@ -1,5 +1,5 @@
-2026-11-10T17:57:51Z
-$ python src/checks/check_rebuild.py prepared   (Python 3.12.7)
+2026-11-13T10:57:09Z
+$ python src/checks/check_rebuild.py prepared   (Python 3.14.5)
 MATCH       prepared view   assessment_due.parquet  rows 286898 (published 286898)
 MATCH       prepared view   capacity_by_run.parquet  rows 44 (published 44)
 MATCH       prepared view   enrolment.parquet  rows 32593 (published 32593)

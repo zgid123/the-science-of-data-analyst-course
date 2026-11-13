@@ -1,5 +1,5 @@
-2026-11-10T17:57:55Z
-$ python src/analysis/aq_checks.py   (Python 3.12.7)
+2026-11-13T10:57:13Z
+$ python src/analysis/aq_checks.py   (Python 3.14.5)
 PASS  M3 fig_outcome_by_run AAA 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (258, 20, 45, 60), observed (258, 20, 45, 60)
 PASS  M3 fig_outcome_by_run BBB 2013B (Pass, Distinction, Fail, Withdrawn)                                                  expected (648, 155, 459, 505), observed (648, 155, 459, 505)
 PASS  M3 fig_outcome_by_run BBB 2013J (Pass, Distinction, Fail, Withdrawn)                                                  expected (896, 176, 521, 644), observed (896, 176, 521, 644)

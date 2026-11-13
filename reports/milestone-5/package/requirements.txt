@@ -10,3 +10,7 @@ scipy==1.18.1
 pandas==3.1.1
 patsy==1.0.3
 packaging==26.3
+# AQ3 and AQ4 (steps 19-23): models, metrics and parallel tuning
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.8.0

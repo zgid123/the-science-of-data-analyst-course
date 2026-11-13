@@ -4,6 +4,8 @@ Usage (from the package folder):
     python src/checks/check_rebuild.py prepared   # run_all.sh step 07
     python src/checks/check_rebuild.py results    # run_all.sh step 18
     python src/checks/check_rebuild.py results --write   # record the reference checksums (package maintainers only)
+    python src/checks/check_rebuild.py results_aq34          # run_all.sh step 23 (AQ3 and AQ4)
+    python src/checks/check_rebuild.py results_aq34 --write  # record the AQ3/AQ4 reference checksums (maintainers only)
 
 prepared: compares the SHA-256 and row count of every rebuilt view in data/processed/ with the published manifest of
 the prepared dataset OULAD-N04-prepared-1.0 (data/metadata/version_manifest_published.json); also reports the raw
@@ -12,6 +14,9 @@ inputs and the pipeline scripts in src/ against the same manifest. Writes data/m
 results: compares the SHA-256 of every result file in results/2013/, 2014/, all_runs/ and compare/
 with results/checksums.csv. Writes
 data/metadata/rebuild_check_results.csv.
+
+results_aq34: the same comparison for results/aq3/ and results/aq4/ against results/checksums_aq34.csv. Writes
+data/metadata/rebuild_check_results_aq34.csv.
 
 Prints one line per file and exits 1 if a rebuilt prepared view or result file differs from its reference.
 """
@@ -28,6 +33,7 @@ META = PKG / "data" / "metadata"
 RESULTS = PKG / "results"
 RESULT_FILES = [f"{d}{pat}" for d in ("2013/", "2014/", "all_runs/")
                 for pat in ("aq1_*.csv", "aq2_*.csv", "aq_results.json", "aq_summary.md")] + ["compare/aq*.csv", "compare/aq_summary.md"]
+RESULT_FILES_AQ34 = ["aq3/*.csv", "aq3/*.json", "aq3/*.md", "aq4/*.csv", "aq4/*.md"]
 
 
 def sha256(path: Path) -> str:
@@ -88,18 +94,19 @@ def rel(p: Path) -> str:
     return p.relative_to(RESULTS).as_posix()
 
 
-def result_files() -> list[Path]:
-    return sorted({p for pat in RESULT_FILES for p in RESULTS.glob(pat)})
+def result_files(patterns: list[str] = RESULT_FILES) -> list[Path]:
+    return sorted({p for pat in patterns for p in RESULTS.glob(pat)})
 
 
-def results(write_reference: bool) -> int:
-    ref_path = RESULTS / "checksums.csv"
+def results(write_reference: bool, patterns: list[str] = RESULT_FILES, reference: str = "checksums.csv",
+            out: str = "rebuild_check_results.csv") -> int:
+    ref_path = RESULTS / reference
     if write_reference:
         with ref_path.open("w", newline="") as f:
             w = csv.writer(f)
             w.writerow(["file", "sha256"])
-            w.writerows([rel(p), sha256(p)] for p in result_files())
-        print(f"reference checksums of {len(result_files())} result files written to results/checksums.csv")
+            w.writerows([rel(p), sha256(p)] for p in result_files(patterns))
+        print(f"reference checksums of {len(result_files(patterns))} result files written to results/{reference}")
         return 0
     ref = {r["file"]: r["sha256"] for r in csv.DictReader(ref_path.open())}
     rows = []
@@ -108,12 +115,12 @@ def results(write_reference: bool) -> int:
         digest = sha256(p) if p.exists() else ""
         rows.append(dict(file=name, reference_sha256=ref_sha, rebuilt_sha256=digest,
                          status="MATCH" if digest == ref_sha else ("MISSING" if not p.exists() else "MISMATCH")))
-    extra = [rel(p) for p in result_files() if rel(p) not in ref]
-    write(rows, "rebuild_check_results.csv")
+    extra = [rel(p) for p in result_files(patterns) if rel(p) not in ref]
+    write(rows, out)
     for r in rows:
         print(f"{r['status']:<8} {r['file']}")
     ok = sum(r["status"] == "MATCH" for r in rows)
-    print(f"{ok} of {len(rows)} result files byte-identical to results/checksums.csv"
+    print(f"{ok} of {len(rows)} result files byte-identical to results/{reference}"
           + (f"; files without a reference: {', '.join(extra)}" if extra else ""))
     return 0 if ok == len(rows) and not extra else 1
 
@@ -124,4 +131,7 @@ if __name__ == "__main__":
         sys.exit(prepared())
     if what == "results":
         sys.exit(results("--write" in sys.argv[2:]))
+    if what == "results_aq34":
+        sys.exit(results("--write" in sys.argv[2:], RESULT_FILES_AQ34, "checksums_aq34.csv",
+                         "rebuild_check_results_aq34.csv"))
     sys.exit(__doc__)

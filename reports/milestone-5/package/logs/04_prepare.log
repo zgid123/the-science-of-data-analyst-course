@@ -1,5 +1,5 @@
-2026-11-10T17:57:44Z
-$ python src/prepare_data.py   (Python 3.12.7)
+2026-11-13T10:57:02Z
+$ python src/prepare_data.py   (Python 3.14.5)
 [1 load] courses.csv (SHA-256 pinned, columns as documented): None -> 22 
 [1 load] assessments.csv (SHA-256 pinned, columns as documented): None -> 206 
 [1 load] vle.csv (SHA-256 pinned, columns as documented): None -> 6364 

@@ -1,5 +1,5 @@
-2026-11-10T17:57:59Z
-$ python src/analysis/aq_analysis.py --scope all   (Python 3.12.7)
+2026-11-13T10:57:17Z
+$ python src/analysis/aq_analysis.py --scope all   (Python 3.14.5)
 all rows loaded: enrolment 32593, features_d27 27535; presentations ['2013B', '2013J', '2014B', '2014J']
 AQ1 day14_registered: n=28061 non-completers=12700 rate=[0.4526, 0.4468, 0.4584]
 AQ1 all_enrolments: n=32593 non-completers=17208 rate=[0.528, 0.5225, 0.5334]

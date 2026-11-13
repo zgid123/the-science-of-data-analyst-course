@@ -1,0 +1,4 @@
+quantity,value,tolerance,source
+chosen configuration,M1,,Milestone 4 Level 2 draft package (reports/milestone-4/package/results/model_choice.csv)
+rule-ranked list: non-completers listed at day 27 and 5 per 20 (13 runs of 2014),2786,0,Milestone 4 draft package: s1_gate.csv pooled_nr_rule 0.704425 × 3955 list places
+M1 list: non-completers listed at day 27 and 5 per 20 (13 runs of 2014),2871,5,Milestone 4 draft package: s1_gate.csv pooled_nr_model 0.725917 × 3955; tolerance for preprocessing details (Change Log C18)

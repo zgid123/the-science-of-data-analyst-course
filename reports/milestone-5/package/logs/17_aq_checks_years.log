@@ -1,5 +1,5 @@
-2026-11-10T17:58:08Z
-$ python src/analysis/aq_checks_years.py   (Python 3.12.7)
+2026-11-13T10:57:26Z
+$ python src/analysis/aq_checks_years.py   (Python 3.14.5)
 PASS  2014 outcome counts per run equal the Milestone 3 published counts (cells)  expected 52, observed 52
 PASS  22-run enrolments                                                           expected 32593, observed 32593
 PASS  22-run enrolments registered at day 14                                      expected 28061, observed 28061

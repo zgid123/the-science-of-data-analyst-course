@@ -1,5 +1,5 @@
-2026-11-10T17:57:32Z
-$ python src/02_profile.py   (Python 3.12.7)
+2026-11-13T10:56:53Z
+$ python src/02_profile.py   (Python 3.14.5)
 shape match documentation: {'courses': True, 'assessments': True, 'vle': True, 'studentInfo': True, 'studentRegistration': True, 'studentAssessment': True, 'studentVle': True}
 studentVle grain: {'student_site_day_groups': 8459320, 'groups_with_several_rows': 1614505, 'rows_in_such_groups': 3810465, 'groups_with_several_rows_and_different_clicks': 1179074, 'max_rows_in_one_group': 10}
 --- duplicates

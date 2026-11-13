@@ -1,5 +1,5 @@
 # Prepared data dictionary
-Written by `src/validate_prepared.py` at 2026-11-10T17:57:50Z from the prepared files and `src/dictionary.py`. Roles: id, split, target, target_derived, predictor, predictor_extended, rule, audit, descriptive. Day fields are offsets from the start of the module run (day 0); week n = days 7(n−1) to 7n−1.
+Written by `src/validate_prepared.py` at 2026-11-13T10:57:09Z from the prepared files and `src/dictionary.py`. Roles: id, split, target, target_derived, predictor, predictor_extended, rule, audit, descriptive. Day fields are offsets from the start of the module run (day 0); week n = days 7(n−1) to 7n−1.
 
 ## enrolment.parquet
 one row per enrolment (all 32,593); descriptive and diagnostic base. Rows: 32,593; columns: 39.
