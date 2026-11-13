@@ -1,19 +1,19 @@
-# 2026-11-13T15:19Z make all TASK=self-assessment
-PASS  self-assessment format         Checked 12 files in reports/self-assessment/report: 0 errors, 0 warnings  (0 s)
-PASS  self-assessment structure      EN: 6 files, 13 headings, 0 figures, 10 tables: 0 errors, 0 warnings; VI: 6 files, 13 headings, 0 figures, 10 tables: 0   (0 s)
-PASS  self-assessment style          EN: 5 body files: 0 errors, 0 warnings; VI: 5 body files: 0 errors, 0 warnings  (0 s)
+# 2026-11-13T15:51Z make all TASK=self-assessment (Appendix IV reviewed)
+PASS  self-assessment format         Checked 14 files in reports/self-assessment/report: 0 errors, 0 warnings  (0 s)
+PASS  self-assessment structure      EN: 7 files, 14 headings, 0 figures, 11 tables: 0 errors, 0 warnings; VI: 7 files, 14 headings, 0 figures, 11 tables: 0   (0 s)
+PASS  self-assessment style          EN: 6 body files: 0 errors, 0 warnings; VI: 6 body files: 0 errors, 0 warnings  (0 s)
 PASS  self-assessment abbreviations  EN: 0 abbreviations, 0 violations; VI: 0 abbreviations, 0 violations  (0 s)
 PASS  self-assessment citations      EN: 0 references, 0 cited, order any: 0 errors, 0 warnings; VI: 0 references, 0 cited, order any: 0 errors, 0 warnings  (0 s)
-PASS  self-assessment names          Checked 12 files for 5 names: 0 errors  (0 s)
-PASS  self-assessment translation vi 6 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
-PASS  self-assessment parity vi      Checked 6 pairs (vi): 0 errors, 1 warnings  (0 s)
-PASS  self-assessment build en       [en] 6 sections → reports/self-assessment/build/N04_SelfAssessment_EN.docx  (8 Word sections, 3 landscape, 1 images, 0 f  (3 s)
-PASS  self-assessment build vi       [vi] 6 sections → reports/self-assessment/build/N04_SelfAssessment_VI.docx  (10 Word sections, 4 landscape, 1 images, 0   (3 s)
-PASS  self-assessment docx en        EN reports/self-assessment/build/N04_SelfAssessment_EN.docx: 4 numbered headings, 0 figures, 10 tables, 1 images, 8 Word  (1 s)
-PASS  self-assessment docx vi        VI reports/self-assessment/build/N04_SelfAssessment_VI.docx: 4 numbered headings, 0 figures, 10 tables, 1 images, 10 Wor  (1 s)
+PASS  self-assessment names          Checked 14 files for 5 names: 0 errors  (0 s)
+PASS  self-assessment translation vi 7 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  self-assessment parity vi      Checked 7 pairs (vi): 0 errors, 1 warnings  (0 s)
+PASS  self-assessment build en       [en] 7 sections → reports/self-assessment/build/N04_SelfAssessment_EN.docx  (10 Word sections, 4 landscape, 1 images, 0   (3 s)
+PASS  self-assessment build vi       [vi] 7 sections → reports/self-assessment/build/N04_SelfAssessment_VI.docx  (12 Word sections, 5 landscape, 1 images, 0   (3 s)
+PASS  self-assessment docx en        EN reports/self-assessment/build/N04_SelfAssessment_EN.docx: 4 numbered headings, 0 figures, 11 tables, 1 images, 10 Wor  (1 s)
+PASS  self-assessment docx vi        VI reports/self-assessment/build/N04_SelfAssessment_VI.docx: 4 numbered headings, 0 figures, 11 tables, 1 images, 12 Wor  (1 s)
 
 12/12 steps passed
-PASS  test build-report skill        164/164 checks passed  (84 s)
+PASS  test build-report skill        164/164 checks passed  (85 s)
 PASS  test research-report skill     64/64 checks passed  (3 s)
 
 2/2 steps passed
