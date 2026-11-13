@@ -10,8 +10,8 @@ What it does, in order:
    instead of downloaded again.
 2. Verifies the archive's size and SHA-256 against the pins below, then extracts the seven CSV tables into
    package/data/raw/ without changing them, and verifies each table's SHA-256.
-3. Writes package/metadata/raw_manifest.csv (file, bytes, SHA-256, MD5, data rows) and logs every step with a UTC
-   timestamp to package/metadata/collection_log.txt.
+3. Writes package/data/metadata/raw_manifest.csv (file, bytes, SHA-256, MD5, data rows) and logs every step with a UTC
+   timestamp to package/data/metadata/collection_log.txt.
 4. With --compare-mirror, also downloads the archive linked from the provider's page (OU Analyse) and records
    whether its SHA-256 equals the figshare archive's.
 
@@ -33,7 +33,7 @@ from pathlib import Path
 PKG = Path(__file__).resolve().parents[1]
 ROOT = PKG.parents[2]
 RAW = PKG / "data" / "raw"
-META = PKG / "metadata"
+META = PKG / "data" / "metadata"
 ARCHIVE = "anonymisedData.zip"
 FIGSHARE_URL = "https://ndownloader.figshare.com/files/8606371"
 MIRROR_URL = "http://schools.stem.open.ac.uk/cdn/files/anonymisedData.zip"

@@ -4,11 +4,11 @@ Usage (from the package folder, after src/collect.py):
     python src/verify_structure.py
 
 Reads every table in data/raw/ as text (no type coercion, nothing changed) and records, per table: rows, columns,
-headers against metadata/data_dictionary.md, key uniqueness, inferred types, missing values, and the value ranges of
+headers against data/metadata/data_dictionary.md, key uniqueness, inferred types, missing values, and the value ranges of
 the target and time fields. It then checks the conditions the dataset selection depends on (G1 result values, G3 runs
 per module, G5 identifier persistence, assessed tasks due in weeks 1–4, unregistration on or before day 0,
 registration after day 14). This is a structural check, not an exploratory analysis: no row is dropped, cleaned,
-imputed or transformed. Writes metadata/structure_report.md and metadata/structure_results.json.
+imputed or transformed. Writes data/metadata/structure_report.md and metadata/structure_results.json.
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ import polars as pl
 
 PKG = Path(__file__).resolve().parents[1]
 RAW = PKG / "data" / "raw"
-META = PKG / "metadata"
+META = PKG / "data" / "metadata"
 TABLES = ["courses", "assessments", "vle", "studentInfo", "studentRegistration", "studentAssessment", "studentVle"]
 KEYS = {
     "courses": ["code_module", "code_presentation"],

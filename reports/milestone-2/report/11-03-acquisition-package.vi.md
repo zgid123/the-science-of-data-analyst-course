@@ -5,8 +5,9 @@ Gói thu thập dữ liệu tạo lại chính xác bản OULAD mà nhóm đã t
 ```text
 package/
   README.md
-  data/raw/        published files, unchanged
-  metadata/        source.md, citation.bib, data_dictionary.md, raw_manifest.csv,
+  data/
+    raw/           published files, unchanged
+    metadata/      source.md, citation.bib, data_dictionary.md, raw_manifest.csv,
                    collection_log.txt, structure_report.md, structure_results.json
   src/             collect.py (download, verify, extract), verify_structure.py (Section 6)
 ```
@@ -22,11 +23,11 @@ Bảng A.3 ghi nguồn và giấy phép của bộ dữ liệu trong gói.
 | Trang chính thức | Trang của nhà cung cấp: https://research.stem.open.ac.uk/ouanalyse/dataset/ ; bài mô tả dữ liệu: https://doi.org/10.1038/sdata.2017.171 |
 | Bản đã thu thập | Bản lưu trên figshare mà bài mô tả dữ liệu trích dẫn, DOI https://doi.org/10.6084/m9.figshare.5081998.v1 (phiên bản 1), tệp https://ndownloader.figshare.com/files/8606371 |
 | Nơi phát hành khác | Kho dữ liệu học máy UCI, DOI https://doi.org/10.24432/C5KK69 (cùng dữ liệu; giá trị thiếu được ghi là "?" thay vì để trống); đường dẫn trên trang của nhà cung cấp http://schools.stem.open.ac.uk/cdn/files/anonymisedData.zip trả về lỗi HTTP 404 vào ngày 05/11/2026 |
-| Ngày truy cập | 06/11/2026 (UTC+7; `metadata/collection_log.txt` ghi 2026-11-05 18:24 UTC) |
+| Ngày truy cập | 06/11/2026 (UTC+7; `data/metadata/collection_log.txt` ghi 2026-11-05 18:24 UTC) |
 | Phiên bản | Phiên bản 1 trên figshare (trang của nhà cung cấp ghi "phiên bản mới nhất" nhưng không nêu số phiên bản) |
 | Giấy phép | Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/ |
 | Phương thức thu thập | Tải trực tiếp một tệp nén zip, đối chiếu với các giá trị SHA-256 tham chiếu ghi sẵn, rồi giải nén và giữ nguyên nội dung (`src/collect.py`) |
-| Kiểm tra tính toàn vẹn | `metadata/raw_manifest.csv` (số byte, SHA-256, MD5 và số dòng dữ liệu của từng tệp); `metadata/collection_log.txt` |
+| Kiểm tra tính toàn vẹn | `data/metadata/raw_manifest.csv` (số byte, SHA-256, MD5 và số dòng dữ liệu của từng tệp); `data/metadata/collection_log.txt` |
 | Trích dẫn | Kuzilek, Hlosta và Zdrahal (2017), *Scientific Data*, 4, Article 170171, https://doi.org/10.1038/sdata.2017.171 (thông tin đầy đủ trong citation.bib) |
 
 Bảng A.4 là manifest của các tệp gốc: với mỗi tệp đã thu thập, bảng ghi dung lượng, mã kiểm tra (checksum) và số dòng dữ liệu. Mỗi bảng dữ liệu đều khớp với giá trị SHA-256 tham chiếu ghi sẵn.

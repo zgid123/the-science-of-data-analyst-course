@@ -2,7 +2,7 @@
 their sources.
 
 Usage: venv/bin/python reports/milestone-2/code/build_appendices.py
-Reads research/search/search-log-brief.md, research/selection/selection.md, package/metadata/{source.md,
+Reads research/search/search-log-brief.md, research/selection/selection.md, package/data/metadata/{source.md,
 raw_manifest.csv,structure_results.json}, logs/T10_mirrors.log, research/coverage/coverage.md,
 research/baseline/m1-baseline.md and research/reviews/NN-ai-*; writes report/11-01 … 11-06.
 """
@@ -65,14 +65,14 @@ def scoring():
 
 
 def acquisition():
-    src = table_after((PKG / "metadata" / "source.md").read_text(), "| Item |")
-    man = list(csv.reader(open(PKG / "metadata" / "raw_manifest.csv")))
+    src = table_after((PKG / "data" / "metadata" / "source.md").read_text(), "| Item |")
+    man = list(csv.reader(open(PKG / "data" / "metadata" / "raw_manifest.csv")))
     mirror = [l for l in (ROOT / "logs" / "T10_mirrors.log").read_text().split("\n") if l.startswith("|")]
     mirror = [mirror[0].replace("| Same parsed rows |", "| Same rows |"), mirror[1]] + mirror[2:]
     t = ["## Appendix III – Acquisition Plan and Data Collection Package\n",
-         "The Data Collection Package re-creates the team's copy of OULAD exactly. Its layout is shown below; the raw "
+         "The Data Collection Package re-creates our copy of OULAD exactly. Its layout is shown below; the raw "
          "files are produced by the collection script and are not edited.\n",
-         "```text\npackage/\n  README.md\n  data/raw/        published files, unchanged\n  metadata/        source.md, "
+         "```text\npackage/\n  README.md\n  data/\n    raw/           published files, unchanged\n    metadata/      source.md, "
          "citation.bib, data_dictionary.md, raw_manifest.csv,\n                   collection_log.txt, structure_report.md, "
          "structure_results.json\n  src/             collect.py (download, verify, extract), verify_structure.py (Section 6)\n```\n",
          "Table A.3 is the source and license sheet of the package.\n",
@@ -89,7 +89,7 @@ def acquisition():
 
 
 def structure():
-    d = json.loads((PKG / "metadata" / "structure_results.json").read_text())
+    d = json.loads((PKG / "data" / "metadata" / "structure_results.json").read_text())
     c = d["checks"]
     t = ["## Appendix IV – Structural Verification Details\n",
          "Table A.6 gives, for each table, the headers found, the types inferred from the text values and the "

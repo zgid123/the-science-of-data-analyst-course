@@ -25,8 +25,8 @@ OUT = HERE.parent / "research" / "baseline" / "m3-baseline.md"
 M2_FILES = ["report/01-01-frozen-baseline.md", "report/02-03-prediction-point-leakage.md",
             "report/07-01-traceability.md", "report/07-02-gaps-revisions.md", "report/11-05-change-log.md",
             "research/baseline/m1-baseline.md", "research/requirements/data-requirements.md",
-            "package/metadata/source.md", "package/metadata/data_dictionary.md",
-            "package/metadata/raw_manifest.csv", "package/metadata/structure_report.md"]
+            "package/data/metadata/source.md", "package/data/metadata/data_dictionary.md",
+            "package/data/metadata/raw_manifest.csv", "package/data/metadata/structure_report.md"]
 
 # The six inputs of brief section 3 and the Milestone 2 file that provides each.
 INPUTS = [
@@ -34,11 +34,11 @@ INPUTS = [
      "Business Goal, SMART Goal, KPIs, AQ1–AQ4, analytics types, decisions (frozen with SHA-256)"),
     ("Updated Traceability Matrix", "report/11-05-change-log.md",
      "Table A.10: KPI → AQ → requirement → file → actual variables → coverage → decision"),
-    ("Raw Data Package", "package/metadata/raw_manifest.csv",
+    ("Raw Data Package", "package/data/metadata/raw_manifest.csv",
      "archive and seven CSVs, SHA-256 pinned; re-created by package/src/collect.py"),
-    ("Metadata / Data Dictionary", "package/metadata/data_dictionary.md",
+    ("Metadata / Data Dictionary", "package/data/metadata/data_dictionary.md",
      "column definitions from the data descriptor; source.md holds license and citation"),
-    ("Collection Evidence", "package/metadata/source.md",
+    ("Collection Evidence", "package/data/metadata/source.md",
      "DOI 10.6084/m9.figshare.5081998.v1, access date, version, checksums, collection log"),
     ("Controlled Change Log", "report/11-05-change-log.md", "C01–C08 with old and new content and data evidence"),
 ]

@@ -3,7 +3,7 @@
 Column definitions copied from the data descriptor: Kuzilek, J., Hlosta, M., & Zdrahal, Z. (2017). Open University
 Learning Analytics dataset. Scientific Data, 4, 170171, section "Data Records". Every day value is counted from the
 start of the module presentation (day 0). `src/verify_structure.py` compares this list with the headers of the files
-in `data/raw/` and reports every difference in `metadata/structure_report.md`.
+in `data/raw/` and reports every difference in `data/metadata/structure_report.md`.
 
 | Table | Column (documented) | Definition (descriptor) |
 | :---- | :---- | :---- |
