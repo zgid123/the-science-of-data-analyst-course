@@ -1,0 +1,11 @@
+File: datasets/oulad/studentRegistration.csv
+Total rows                                            32,593
+date_unregistration <= 0                               3,097
+date_unregistration in 1..14                           1,377
+date_unregistration empty or > 14                     28,119
+  of which date_registration > 14                         58
+  of which date_registration missing                       7
+All rows with date_registration > 14                      58
+All rows with date_registration missing                   45
+  missing registration, unregistered <= 0                 35
+  missing registration, unregistered in 1..14              3

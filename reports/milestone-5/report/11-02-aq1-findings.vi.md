@@ -10,18 +10,20 @@ Trong 28.061 lượt đăng ký học chưa rút tại ngày 14, 45,3% (44,7–4
 trên 12.076 lượt ở năm 2013 và 44,9% (44,2–45,7) trên 15.985 lượt ở năm 2014; khoảng một phần tư không đạt và một phần
 năm rút khỏi module (Bảng A.29). Tỷ lệ không hoàn thành dao động từ 26,3% ở module AAA đến 54,3% ở module CCC (chỉ mở
 năm 2014); ở cả hai năm, các kỳ mở tháng 2 đều có tỷ lệ cao hơn các kỳ mở tháng 10 (Bảng A.30). Phụ lục XII trình bày
-thêm cách sinh viên rời khỏi module và tỷ lệ theo từng nhóm sinh viên.
+thêm cách sinh viên rời khỏi module, cùng tỷ lệ theo tình trạng khuyết tật và theo mức khó khăn kinh tế – xã hội của
+khu vực cư trú.
 
 Tỷ lệ của từng kỳ mở nằm trong khoảng từ 24,9% (AAA 2013J) đến 58,3% (CCC 2014B). Chỉ riêng cách chọn mẫu số đã làm
-tỷ lệ của một kỳ mở thay đổi tới 13,6 điểm phần trăm (BBB 2014J), nên định nghĩa KPI phải nêu rõ quy tắc về thời gian
-điều chỉnh đăng ký học phần. Phép so sánh giữa hai năm cho thấy rõ điều này: tính trên mọi lượt đăng ký học, tỷ lệ không hoàn thành năm 2014 cao hơn năm 2013 là 2,3 điểm phần trăm (1,2 đến 3,4). Ngược lại, trong số sinh
+tỷ lệ của một kỳ mở thay đổi tới 13,6 điểm phần trăm (BBB 2014J), nên định nghĩa KPI quy định rõ chỉ tính sinh viên còn
+theo học sau thời gian điều chỉnh đăng ký học phần. Phép so sánh giữa hai năm cho thấy lý do. Tính trên mọi lượt đăng
+ký học, tỷ lệ không hoàn thành năm 2014 cao hơn năm 2013 là 2,3 điểm phần trăm (1,2 đến 3,4). Ngược lại, trong số sinh
 viên chưa rút tại ngày 14, tỷ lệ năm 2014 lại thấp hơn 0,7 điểm phần trăm (−1,9 đến 0,5); riêng ở sáu module mở trong
 cả hai năm, tỷ lệ năm 2014 thấp hơn 3,5 điểm phần trăm (−4,8 đến −2,3). Nguyên nhân là 16,2% số lượt đăng ký học năm
-2014 đã rút hoặc chưa đăng ký tại ngày 14, so với 10,7% ở năm 2013 (Bảng A.34).
+2014 không còn đăng ký học tại ngày 14, so với 10,7% ở năm 2013 (Bảng A.32).
 
 Trong số sinh viên không hoàn thành, 78,1% (năm 2013) và 72,7% (năm 2014) đã bỏ lỡ một bài TMA hoặc CMA trong kỳ mở,
 trong khi ở nhóm hoàn thành chỉ khoảng một phần năm bỏ lỡ bài. Tuy vậy, chỉ 19,6% và 14,7% sinh viên không hoàn thành
-đã bỏ lỡ bài tính đến hết tuần 4 (Bảng A.32). Do đó, với phần lớn sinh viên không hoàn thành, một quy tắc chỉ dựa vào
+đã bỏ lỡ bài tính đến hết tuần 4 (Bảng A.31). Do đó, với phần lớn sinh viên không hoàn thành, một quy tắc chỉ dựa vào
 các bài được chấm điểm sẽ phát hiện quá muộn; đây là lý do quy tắc dấu hiệu sớm tính cả tình trạng không có hoạt động.
 
 Câu trả lời có độ tin cậy cao đối với OULAD năm 2013–2014, vì hai cách tính độc lập cho cùng kết quả ở từng năm; còn kết

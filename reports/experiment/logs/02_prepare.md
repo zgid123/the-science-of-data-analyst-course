@@ -1,0 +1,35 @@
+# Log: 02_prepare
+
+| Field | Value |
+| :---- | :---- |
+| Started (UTC) | 2026-11-13T10:33:31Z |
+| Finished (UTC) | 2026-11-13T10:33:32Z |
+| Duration | 1.2 s |
+| Command | `../../venv/bin/python code/02_prepare.py` |
+| Exit status | 0 |
+
+## Console output
+
+```text
+wrote results/prep_reconciliation.csv (19 rows)
+                                                      quantity  value expected status
+                                          enrolments, all runs  32593    32593   PASS
+                                         enrolment keys unique      1        1   PASS
+                                                          runs     22       22   PASS
+                                                     runs 2013      9        9   PASS
+                                                     runs 2014     13       13   PASS
+                         registered at day 14 (KPI population)  28061    28061   PASS
+                   registered at day 13 = rows of features_d13  28069    28069   PASS
+                   registered at day 27 = rows of features_d27  27535    27535   PASS
+                                      features_d27 keys unique      1        1   PASS
+                    features_d27 keys all registered at day 27      1        1   PASS
+                             training enrolments day 13 (2013)  12080    12080   PASS
+                             training enrolments day 27 (2013)  11811    11811   PASS
+                         training non-completers day 27 (2013)   5245     5245   PASS
+                                 test enrolments day 13 (2014)  15989    15989   PASS
+                                 test enrolments day 27 (2014)  15724    15724   PASS
+             test enrolments of students seen in 2013 (day 27)   1586     1586   PASS
+                                runs with a task due by day 27     16       16   PASS
+                                rule flags at day 27, all runs   7933                
+enrolments with nothing due by day 27 in a run with a task due     10                
+```

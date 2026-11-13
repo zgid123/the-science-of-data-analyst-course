@@ -15,8 +15,10 @@ Pin these down in the brief. Each one changes the answer.
 | Prediction time (cutoff) | When would the warning be issued? Use 2–3 cutoffs justified by the calendar (e.g., after the first assessment) | Using information from after the cutoff |
 | Eligibility at cutoff | Who is still "at risk" at the cutoff? Remove those whose outcome already happened | Counting already-withdrawn students as correct predictions |
 | Outcome window | How long after the cutoff do we observe? Is follow-up complete for everyone? | Censored entities treated as negatives |
-| Action and capacity | Who acts, how many cases can they review (10%? 20%?), how much lead time do they need? | Reporting AUC with no workload translation |
+| Action and capacity | Who acts, how many cases can they review (10%? 20%?), how much lead time do they need? Use the capacities the brief or project design names before any default | Reporting AUC with no workload translation; evaluating at shares nobody asked for |
 | Baselines | What would a reader use without a model? Base rate, a single simple rule, prior-performance only | Comparing only against "no model" |
+
+**A snapshot with no dates** (one row per entity, attributes and a final outcome, no event times) cannot support an early-warning claim: nothing says the attributes were recorded before the outcome. Say so, then do the two things the data does support and label them for what they are: (1) describe which attributes go with the outcome, like for like; (2) a _hindsight ranking_: a score fitted on part of the entities and tested once on a random holdout of the rest, compared with a random list and the best one-line rule at the same list size. Report it as how well these attributes separate the two groups in this file, not as how early or how well a warning would work.
 
 If the data lacks a timed outcome, a cutoff-able behaviour record, or entity linkage, the early-warning question is unsupported. Say exactly which piece is missing, then pivot (see SKILL.md) to the best related analysis — for example, describing which early behaviours differ between later outcome groups in a dataset that has outcomes but no usable timing.
 
@@ -26,7 +28,7 @@ If the data lacks a timed outcome, a cutoff-able behaviour record, or entity lin
 - Separate **behaviour** (submissions, lateness, attendance, activity recency) from **performance** (scores) and **context** (course, demographics). This lets you answer "does behaviour add anything beyond scores?"
 - Use opportunity-based denominators: "missed 1 of 2 assignments due by day 30", not "missed 1 assignment". An entity with nothing due has an _undefined_ rate, not zero.
 - Distinguish not-yet-due, missed, no record, and unavailable score.
-- Demographics are for fairness audit, not prediction, unless the user explicitly wants otherwise and the ethics are discussed.
+- Describing outcome rates by demographic group is a finding and belongs in the report; using the group as an input of the score is the part to avoid. Demographics are for fairness audit, not prediction, unless the user explicitly wants otherwise and the ethics are discussed.
 
 ## Analysis sequence (stage 7)
 
@@ -36,10 +38,12 @@ Run these in order; each is a finding candidate.
 2. **Simple rule**: how well does the single best rule do (e.g., "any missed assignment")? Readers can adopt a rule without a model.
 3. **Models**: baseline-first. Context-only → behaviour → performance → combined, all logistic or similar, all evaluated on the **same** entities. Train on earlier cohorts, test on a later cohort (temporal holdout) whenever more than one cohort exists. Call the Skill tool with `scikit-learn` to build each model as a pipeline fitted on the training cohorts only.
 4. **Timing**: how does quality change across cutoffs, and how much lead time remains before the outcome for flagged entities? For time until the outcome (such as days until withdrawal, with students still enrolled treated as censored), call the Skill tool with `scikit-survival`.
-5. **Workload**: at review capacities of 10/20/30%, how many are flagged, what share of flags are true (precision), what share of at-risk entities are caught (recall), how many are missed? Use `stats_helpers.capacity_table`.
+5. **Workload**: at the review capacities the brief or design names (otherwise 10/20/30%), how many are flagged, what share of flags are true (precision), what share of at-risk entities are caught (recall), how many are missed? Use `stats_helpers.capacity_table`.
 6. **Who is missed**: precision, recall and flag rates by segment (course, cohort, demographic audit fields). Small groups are descriptive.
 7. **Calibration**: if probabilities will be shown to people, do predicted risks match observed rates? Use `stats_helpers.calibration_table`.
-8. **Stress tests**: assumed release delays, alternative outcome definitions, the later-cohort shift. Report what changed.
+8. **Order the work around the holdout**: choose features and model on the development part only; freeze; score the holdout once; only then describe the whole population, because a description of everyone reads holdout outcomes and would otherwise steer the model.
+9. **Freeze, then test once**: before the first read of the later cohort's outcomes, record the chosen model, features, tuning values, capacities and success criteria (a timestamped freeze file or commit). Score the later cohort once and save the scores. Every later rerun, extra capacity, lead-time view or report fix reads the saved scores; it does not refit. A choice changed after the outcomes were seen is post hoc: report it beside the frozen result, never instead of it. If several people or implementations scored the same cohort, say how many looks it has had.
+10. **Stress tests**: assumed release delays, alternative outcome definitions, the later-cohort shift. Report what changed.
 
 ## Metrics, in reader terms
 
@@ -71,7 +75,8 @@ Summary: how early, how well at what workload, and the main gap ("At day 60, rev
 - Outcome already occurred at the cutoff (leakage through eligibility).
 - Features computed over the whole period, or scaled using test data.
 - Random split across cohorts when a temporal split is possible.
-- Threshold tuned on the test set.
+- Threshold tuned on the test set, or a model swapped for one that did better on it.
+- The test cohort rescored on every rerun instead of read from the frozen scores.
 - Same entity in train and test (repeat enrollments).
 - Reporting only accuracy on imbalanced outcomes.
 - Treating missing activity as a confirmed outcome.

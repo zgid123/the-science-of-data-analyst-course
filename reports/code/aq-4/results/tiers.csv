@@ -1,7 +1,0 @@
-ranking,tier,enrolments,non_completers,non_completion_rate,withdrawn,fail
-model,tier 2 (next 2 per 20),1582,948,0.599241,414,534
-model,tier 1 (top 3 per 20),2373,1922,0.809945,812,1110
-model,not listed,11769,4041,0.343360,1880,2161
-rule,tier 2 (next 2 per 20),1582,940,0.594185,444,496
-rule,tier 1 (top 3 per 20),2373,1846,0.777918,747,1099
-rule,not listed,11769,4125,0.350497,1915,2210

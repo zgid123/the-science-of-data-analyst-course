@@ -1,0 +1,56 @@
+{
+  "chosen_configuration": "M1",
+  "final_hyperparameters": {
+    "B3_d27": {
+      "C": 0.01
+    },
+    "M1_d27": {
+      "C": 10
+    },
+    "M2_d27": {
+      "C": 10
+    },
+    "M3_d27": {
+      "learning_rate": 0.05,
+      "max_depth": 3,
+      "max_iter": 100
+    },
+    "M4_d27": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "max_iter": 200
+    },
+    "B3_d13": {
+      "C": 0.01
+    },
+    "M1_d13": {
+      "C": 0.01
+    },
+    "M2_d13": {
+      "C": 0.01
+    },
+    "M3_d13": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "max_iter": 200
+    },
+    "M4_d13": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "max_iter": 200
+    }
+  },
+  "operating_point": {
+    "cutoff_day": 27,
+    "contacts_per_20": 5
+  },
+  "sensitivity": {
+    "cutoff_day": 13,
+    "contacts_per_20": 3
+  },
+  "gate_S1": "pooled normalised recall of chosen model > rule-ranked list; paired two-level bootstrap 95% interval of the difference > 0 (2,000 replicates, seed 20261112); exact one-sided sign-flip p < 0.05 on the 13 per-run differences",
+  "condition_S3": "calibration-in-the-large in [-0.2, 0.2] and slope in [0.8, 1.2], pooled, no recalibration",
+  "fairness_FR1": "groups disability=Y, imd 0-10%, imd Missing; flag if recall gap < -10 points and Holm-adjusted one-sided bootstrap p < 0.05 (5,000 replicates)",
+  "tie_breaker": "uniform draw per enrolment, seed 20261112, key order",
+  "seed": 20261112
+}

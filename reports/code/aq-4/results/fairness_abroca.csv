@@ -1,5 +1,0 @@
-group,abroca,auc_group_minus_others,shuffled_mean,shuffled_p95,above_chance_reference
-Declared disability,0.043415,-0.006495,0.051761,0.061685,false
-Deprivation band 0–10%,0.052298,-0.014161,0.052001,0.061957,false
-Deprivation band missing,0.065940,-0.047997,0.060686,0.075828,false
-Female (against male),0.063055,0.002324,0.043158,0.054129,true

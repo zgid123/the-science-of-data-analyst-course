@@ -20,9 +20,9 @@ AQ4 would be answered when four conditions hold together: the list meets gate S1
 
 ### What the expected outputs can and cannot support
 
-Table A.40 sums up, for both questions, the expected output, the result that would answer the question and the limits fixed in advance.
+Table A.37 sums up, for both questions, the expected output, the result that would answer the question and the limits fixed in advance.
 
-**Table A.40. Expected outputs of AQ3 and AQ4 and the criteria that would decide them**
+**Table A.37. Expected outputs of AQ3 and AQ4 and the criteria that would decide them**
 
 | Question | Expected output | Result that would answer the question | If the criterion is not met | Limits fixed in advance |
 | :---- | :---- | :---- | :---- | :---- |
@@ -33,9 +33,9 @@ These outputs would let the course lecturers, the lecturer-advisors and the supp
 
 ### Final answers by Analytical Question
 
-Tables A.41 and A.42 give the final answer to each question, read by the rule of its analytics level: descriptive answers state what happened, the diagnostic answer states associations, the predictive and prescriptive answers state expected outputs, and every implication for a decision is an option, not a proven remedy.
+Tables A.38 and A.39 give the final answer to each question, read by the rule of its analytics level: descriptive answers state what happened, the diagnostic answer states associations, the predictive and prescriptive answers state expected outputs, and every implication for a decision is an option, not a proven remedy.
 
-**Table A.41. Final answers by question: evidence and method**
+**Table A.38. Final answers by question: evidence and method**
 
 | AQ-ID | Final AQ | Evidence / data used | Method / analysis |
 | :---- | :---- | :---- | :---- |
@@ -44,9 +44,9 @@ Tables A.41 and A.42 give the final answer to each question, read by the rule of
 | AQ3 | How well can non-completion be estimated from the data up to the end of week 2 and of week 4, compared with the early-sign rule, when a model built on the 2013 runs is applied to the 2014 runs? | Proposed: feature views at day 13 and day 27; development on the 9 runs of 2013 (11,811 enrolments at day 27), a single logged test on all 13 runs of 2014 (15,724 at day 27), not yet run. | Proposed: penalised logistic regression on 19 primary predictors, one model per cut-off, against three baselines (early-sign rule ranked by signs, background-only logistic model, random list); gradient-boosted trees as challenger by a fixed margin; leave-one-run-out folds in 2013; two freezes, one test. |
 | AQ4 | Which enrolments should rank first on a list of an assumed capacity, with what gain over a random list and what recall, overall and by deprivation band and disability? | Proposed: the frozen AQ3 scores on the 2014 test runs; list lengths from the capacity view (3 or 5 per 20 students); deprivation band and disability for the audit only. No contact data exist. | Proposed: top-k list per run from the AQ3 scores with the signs behind each name, against a random list and a rule-ranked list of the same length; fairness audit by separation (recall at capacity) with rule FR1. |
 
-Table A.42 continues the answers for the same four questions with the main finding or expected output, its confidence and limitations, and the implication for each decision.
+Table A.39 continues the answers for the same four questions with the main finding or expected output, its confidence and limitations, and the implication for each decision.
 
-**Table A.42. Final answers by question: findings and implications**
+**Table A.39. Final answers by question: findings and implications**
 
 | AQ-ID | Main finding or expected output | Confidence / limitation | Implication for decision |
 | :---- | :---- | :---- | :---- |
@@ -63,9 +63,9 @@ All four answers rest on observational data, and none of them can show what cont
 
 ### Decision support for D1, D2 and D3
 
-Table A.43 relates each decision to the evidence that supports it now, the decision option that follows, and the hypothesis or check still needed.
+Table A.40 relates each decision to the evidence that supports it now, the decision option that follows, and the hypothesis or check still needed.
 
-**Table A.43. Decision support for D1–D3: evidence now, decision options and what remains to be tested**
+**Table A.40. Decision support for D1–D3: evidence now, decision options and what remains to be tested**
 
 | Decision (owner) | Evidence available now | Decision option | Hypothesis or check before adoption |
 | :---- | :---- | :---- | :---- |

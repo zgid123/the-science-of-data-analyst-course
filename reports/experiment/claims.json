@@ -1,0 +1,835 @@
+[
+ {
+  "text": "puts {value} of all later non-completers",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "m1_recall"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "and {value} of the listed students do not complete",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "m1_precision"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "the model lists {value} more non-completers",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "extra_listed_noncompleters",
+  "format": ".0f"
+ },
+ {
+  "text": "on {value} list places",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "list_places",
+  "format": ",.0f"
+ },
+ {
+  "text": "about one per {value} tutor groups",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "groups_per_extra_hit"
+  },
+  "column": "value",
+  "format": ".1f"
+ },
+ {
+  "text": "(gain +{value} in normalised recall",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "difference",
+  "format": ".3f"
+ },
+ {
+  "text": "95% interval +{value} to +0.036; 11 of 13 runs",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "low",
+  "format": ".3f"
+ },
+ {
+  "text": "to +{value}; 11 of 13 runs",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "high",
+  "format": ".3f"
+ },
+ {
+  "text": "{value} of 13 runs)",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "wins",
+  "format": ".0f"
+ },
+ {
+  "text": "{value} of non-completers are still enrolled after day 27",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_reachable_after_d27"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "{value} have already left before day 14",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_gone_before_d14"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "{value} of 2014 non-completers look normally active",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_nc_normal_activity"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "the model reaches only {value} of them",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "recall_normal_model"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "finds a non-completer {value} of the time, the fifth",
+  "csv": "results/aq4_contact_yield.csv",
+  "where": {
+   "contact": "1",
+   "method": "model"
+  },
+  "column": "precision",
+  "format": ".1%"
+ },
+ {
+  "text": "the fifth {value}, the seventh",
+  "csv": "results/aq4_contact_yield.csv",
+  "where": {
+   "contact": "5",
+   "method": "model"
+  },
+  "column": "precision",
+  "format": ".1%"
+ },
+ {
+  "text": "the seventh {value}, against",
+  "csv": "results/aq4_contact_yield.csv",
+  "where": {
+   "contact": "7",
+   "method": "model"
+  },
+  "column": "precision",
+  "format": ".1%"
+ },
+ {
+  "text": "against a base rate of {value}",
+  "csv": "results/aq4_contact_yield.csv",
+  "where": {
+   "contact": "1",
+   "method": "model"
+  },
+  "column": "base_rate",
+  "format": ".1%"
+ },
+ {
+  "text": "| {value} of the 28,061 enrolments registered at day 14 do not complete",
+  "csv": "results/aq1_rates_kpi.csv",
+  "where": {
+   "level": "All runs"
+  },
+  "column": "rate",
+  "format": ".1%"
+ },
+ {
+  "text": "({value} to 58.3% by run)",
+  "csv": "results/aq1_rates_by_run_kpi.csv",
+  "where": {
+   "group": "AAA-2013J"
+  },
+  "column": "rate",
+  "format": ".1%"
+ },
+ {
+  "text": "to {value} by run)",
+  "csv": "results/aq1_rates_by_run_kpi.csv",
+  "where": {
+   "group": "CCC-2014B"
+  },
+  "column": "rate",
+  "format": ".1%"
+ },
+ {
+  "text": "(+{value} and +39.6 points)",
+  "csv": "results/aq2_replication.csv",
+  "where": {
+   "sign": "missed_task"
+  },
+  "column": "rd_2013",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "and +{value} points)",
+  "csv": "results/aq2_replication.csv",
+  "where": {
+   "sign": "missed_task"
+  },
+  "column": "rd_2014",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "({value} against 0.704 normalised recall)",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "norm_recall_a",
+  "format": ".3f"
+ },
+ {
+  "text": "against {value} normalised recall)",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "norm_recall_b",
+  "format": ".3f"
+ },
+ {
+  "text": "{value} of the students on lists of 5 per 20 do not complete",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "m1_precision"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "day 14, the population of the course KPI, {value} (45.3%)",
+  "csv": "results/aq1_rates_kpi.csv",
+  "where": {
+   "level": "All runs"
+  },
+  "column": "non_completers",
+  "format": ",.0f"
+ },
+ {
+  "text": "by {value} to 8 points in 5 of the 6 modules",
+  "csv": "results/aq1_start_month_gap.csv",
+  "where": {
+   "module": "FFF"
+  },
+  "column": "difference",
+  "format": ".0f",
+  "scale": 100
+ },
+ {
+  "text": "to {value} points in 5 of the 6 modules",
+  "csv": "results/aq1_start_month_gap.csv",
+  "where": {
+   "module": "BBB"
+  },
+  "column": "difference",
+  "format": ".0f",
+  "scale": 100
+ },
+ {
+  "text": "counts all {value} non-completers",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "nc_all"
+  },
+  "column": "value",
+  "format": ",.0f"
+ },
+ {
+  "text": "A quarter ({value}) withdrew",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_gone_before_d14"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "a further {value} in days 14–27",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_gone_d14_27"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "and {value} were still enrolled after day 27",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_reachable_after_d27"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "{value} failed at the end of the run",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_fail_of_nc"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "By week 4 only {value} of non-completers",
+  "csv": "results/aq1_first_missed_summary.csv",
+  "where": {
+   "runs": "All 22 runs",
+   "group": "Non-completers"
+  },
+  "column": "missed_by_week_4",
+  "format": ".1%"
+ },
+ {
+  "text": "({value} in the 16 runs",
+  "csv": "results/aq1_first_missed_summary.csv",
+  "where": {
+   "runs": "16 runs with a task due by day 27",
+   "group": "Non-completers"
+  },
+  "column": "missed_by_week_4",
+  "format": ".1%"
+ },
+ {
+  "text": "against {value} of completers",
+  "csv": "results/aq1_first_missed_summary.csv",
+  "where": {
+   "runs": "All 22 runs",
+   "group": "Completers"
+  },
+  "column": "missed_by_week_4",
+  "format": ".1%"
+ },
+ {
+  "text": "and {value} miss one eventually",
+  "csv": "results/aq1_first_missed_summary.csv",
+  "where": {
+   "runs": "All 22 runs",
+   "group": "Non-completers"
+  },
+  "column": "missed_ever",
+  "format": ".1%"
+ },
+ {
+  "text": "the day-14 rate was {value} points lower in 2014",
+  "csv": "results/aq1_year_comparison.csv",
+  "where": {
+   "denominator": "Registered at day 14",
+   "runs": "6 modules run in both years",
+   "method": "pooled"
+  },
+  "column": "difference",
+  "format": ".1f",
+  "scale": 100,
+  "abs": true
+ },
+ {
+  "text": "(95% interval {value} to −2.3)",
+  "csv": "results/aq1_year_comparison.csv",
+  "where": {
+   "denominator": "Registered at day 14",
+   "runs": "6 modules run in both years",
+   "method": "pooled"
+  },
+  "column": "low",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "to {value}), yet",
+  "csv": "results/aq1_year_comparison.csv",
+  "where": {
+   "denominator": "Registered at day 14",
+   "runs": "6 modules run in both years",
+   "method": "pooled"
+  },
+  "column": "high",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "the difference was {value} points (",
+  "csv": "results/aq1_year_comparison.csv",
+  "where": {
+   "denominator": "All enrolments",
+   "runs": "6 modules run in both years",
+   "method": "pooled"
+  },
+  "column": "difference",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "({value} to +0.9)",
+  "csv": "results/aq1_year_comparison.csv",
+  "where": {
+   "denominator": "All enrolments",
+   "runs": "6 modules run in both years",
+   "method": "pooled"
+  },
+  "column": "low",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "to +{value}):",
+  "csv": "results/aq1_year_comparison.csv",
+  "where": {
+   "denominator": "All enrolments",
+   "runs": "6 modules run in both years",
+   "method": "pooled"
+  },
+  "column": "high",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "{value} of 2014 enrolments against",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "not_reg_d14_2014"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "against {value} of 2013 enrolments",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "not_reg_d14_2013"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "from {value} with no sign",
+  "csv": "results/aq2_sign_count_2014.csv",
+  "where": {
+   "n_signs": "0"
+  },
+  "column": "rate",
+  "format": ".1%"
+ },
+ {
+  "text": "to {value} with 4.",
+  "csv": "results/aq2_sign_count_2014.csv",
+  "where": {
+   "n_signs": "4"
+  },
+  "column": "rate",
+  "format": ".1%"
+ },
+ {
+  "text": "(correlation {value} in 2014)",
+  "csv": "results/aq2_sign_correlation_2014.csv",
+  "where": {
+   "sign": "inactive_7d"
+  },
+  "column": "low_activity",
+  "format": ".2f"
+ },
+ {
+  "text": "falls to +{value} points in 2013",
+  "csv": "results/aq2_sensitivity_2013.csv",
+  "where": {
+   "variant": "+ log clicks (continuous)",
+   "sign": "low_activity"
+  },
+  "column": "adj_rd",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "and +{value} in 2014 and no longer",
+  "csv": "results/aq2_sensitivity_2014.csv",
+  "where": {
+   "variant": "+ log clicks (continuous)",
+   "sign": "low_activity"
+  },
+  "column": "adj_rd",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "sign-flip p = {value})",
+  "csv": "results/aq3_s1.csv",
+  "where": {
+   "a": "M1",
+   "b": "RULE"
+  },
+  "column": "signflip_p",
+  "format": ".4f"
+ },
+ {
+  "text": "delivers {value} of the model's hits",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "rule_share_of_model_hits"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "recall at 5 per 20 is {value} against 41.5%",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "m1_recall_d13"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "each holds {value} students",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "swap_size"
+  },
+  "column": "value",
+  "format": ".0f"
+ },
+ {
+  "text": "({value} have one)",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "model_only_with_sign"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "module ({value}, against 6.4%",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "model_only_prev_attempt"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "against {value} of the rule's own picks); 59.7%",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "rule_only_prev_attempt"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "; {value} of them do not complete",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "rate_model_only"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "against {value} of the rule's own picks",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "rate_rule_only"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "{value} of the 2014 non-completers (60.7%)",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "nc_normal_activity"
+  },
+  "column": "value",
+  "format": ",.0f"
+ },
+ {
+  "text": "The model lists {value} of them and the rule",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "recall_normal_model"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "the rule {value}, while",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "recall_normal_rule"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "the model lists {value} of those with no click",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "recall_none_model"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "calibration-in-the-large {value}",
+  "csv": "results/aq3_discrimination_calibration.csv",
+  "where": {
+   "cutoff": "27",
+   "method": "M1"
+  },
+  "column": "citl",
+  "format": ".3f"
+ },
+ {
+  "text": "slope {value})",
+  "csv": "results/aq3_discrimination_calibration.csv",
+  "where": {
+   "cutoff": "27",
+   "method": "M1"
+  },
+  "column": "slope",
+  "format": ".3f"
+ },
+ {
+  "text": "only {value} of the 13 test runs",
+  "csv": "results/aq3_discrimination_calibration.csv",
+  "where": {
+   "cutoff": "27",
+   "method": "M1"
+  },
+  "column": "runs_within_s3_bounds",
+  "format": ".0f"
+ },
+ {
+  "text": "the sixth {value}; from",
+  "csv": "results/aq4_contact_yield.csv",
+  "where": {
+   "contact": "6",
+   "method": "model"
+  },
+  "column": "precision",
+  "format": ".1%"
+ },
+ {
+  "text": "sharper ({value} of its names",
+  "csv": "results/aq4_list_summary.csv",
+  "where": {
+   "per20": "3",
+   "method": "model"
+  },
+  "column": "precision",
+  "format": ".1%"
+ },
+ {
+  "text": "For {value} of listed students the main reason",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_list_reason_behaviour"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "For {value} it is prior education",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_list_reason_education"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "slightly better (+{value} points)",
+  "csv": "results/aq4_fairness_confirmatory.csv",
+  "where": {
+   "group": "Declared disability"
+  },
+  "column": "gap",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "about equally (+{value})",
+  "csv": "results/aq4_fairness_confirmatory.csv",
+  "where": {
+   "group": "Most deprived band (0–10%)"
+  },
+  "column": "gap",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "less well ({value} points",
+  "csv": "results/aq4_fairness_confirmatory.csv",
+  "where": {
+   "group": "Deprivation band missing"
+  },
+  "column": "gap",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "interval {value} to +2.3)",
+  "csv": "results/aq4_fairness_confirmatory.csv",
+  "where": {
+   "group": "Deprivation band missing"
+  },
+  "column": "low",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "to +{value}), within",
+  "csv": "results/aq4_fairness_confirmatory.csv",
+  "where": {
+   "group": "Deprivation band missing"
+  },
+  "column": "high",
+  "format": ".1f",
+  "scale": 100
+ },
+ {
+  "text": "men's ({value} against",
+  "csv": "results/aq4_fairness_descriptive.csv",
+  "where": {
+   "attribute": "gender",
+   "group": "F"
+  },
+  "column": "recall",
+  "format": ".1%"
+ },
+ {
+  "text": "against {value}), and the",
+  "csv": "results/aq4_fairness_descriptive.csv",
+  "where": {
+   "attribute": "gender",
+   "group": "M"
+  },
+  "column": "recall",
+  "format": ".1%"
+ },
+ {
+  "text": "and the {value} students aged 55",
+  "csv": "results/aq4_fairness_descriptive.csv",
+  "where": {
+   "attribute": "age_band",
+   "group": "55<="
+  },
+  "column": "enrolments",
+  "format": ".0f"
+ },
+ {
+  "text": "Of the {value} listed non-completers",
+  "csv": "results/aq4_reach.csv",
+  "where": {},
+  "column": "listed_non_completers",
+  "format": ",.0f"
+ },
+ {
+  "text": "non-completers, {value} withdraw in the week",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "listed_withdrew_28_34"
+  },
+  "column": "value",
+  "format": ".0f"
+ },
+ {
+  "text": "and {value} of them stay to the end and fail",
+  "csv": "results/headlines.csv",
+  "where": {
+   "name": "share_listed_nc_fail"
+  },
+  "column": "value",
+  "format": ".1%"
+ },
+ {
+  "text": "at a median of week {value}, and 32.4% never",
+  "csv": "results/aq1_blind_spot_timing.csv",
+  "where": {},
+  "column": "median_first_missed_week",
+  "format": ".0f"
+ },
+ {
+  "text": "and {value} never miss one.",
+  "csv": "results/aq1_blind_spot_timing.csv",
+  "where": {},
+  "column": "share_never_missed",
+  "format": ".1%"
+ },
+ {
+  "text": "and {value} of them never do",
+  "csv": "results/aq1_blind_spot_timing.csv",
+  "where": {},
+  "column": "share_never_missed",
+  "format": ".1%"
+ },
+ {
+  "text": "{value} before the run starts",
+  "csv": "results/aq1_exit_timing.csv",
+  "where": {
+   "band": "Withdrew before the start (day < 0)"
+  },
+  "column": "share",
+  "format": ".1%"
+ },
+ {
+  "text": "and {value} in its first two weeks",
+  "csv": "results/aq1_exit_timing.csv",
+  "where": {
+   "band": "Withdrew days 0–13 (before the week-3 list)"
+  },
+  "column": "share",
+  "format": ".1%"
+ },
+ {
+  "text": "falls at a median of week {value}, and 75.1%",
+  "csv": "results/aq1_first_missed_summary.csv",
+  "where": {
+   "runs": "All 22 runs",
+   "group": "Non-completers"
+  },
+  "column": "median_first_missed_week",
+  "format": ".0f"
+ }
+]

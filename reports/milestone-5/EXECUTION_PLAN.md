@@ -222,18 +222,3 @@ the figure notes of T10.
   before them, captioned `**Table N.M. Caption**`; figures `![Figure N.M. Caption](assets/figures/<name>.png){width=100%}`.
 - **Gate.** After each file: `check_drafts.py --base reports/milestone-5 --files <file>` (0 errors), and
   `.claude/skills/build-report/scripts/check_style.py` for the report (no voice errors).
-
-**T27 (S; owner's request 2026-11-13):** improve Appendices XII–XIII after the comparison with the second implementation
-of the Milestone 4 design. (1) `code/t27_appendix_tables.py` computes, with the definitions of `aq_analysis.py` (day-14
-KPI population for AQ1, day-27 population and the run-median low-activity cut for AQ2, Wilson and Newcombe intervals),
-2013 and 2014 apart: non-completion by the number of early signs at day 27 (Table A.36), the first missed task of the
-non-completers by module (Table A.33) and February minus October within module (Table A.31); results in
-`results/{2013,2014}/aq2_sign_count.csv`, `aq1_first_missed_week_by_module.csv`,
-`aq1_start_month_difference_by_module.csv`, cross-checks in `logs/T27_appendix_tables.log`. (2)
-`code/t27_compare_second_implementation.py` → `results/compare/aq2_second_implementation.csv`; one paragraph in Appendix
-XIII and one clause in Section 11.3, the second implementation described in words only. (3) Shorten the paragraphs of
-Appendices XII–XIII that restate table cells; fix the Section 11.2 sentence; `code/t27_loss_check.py` proves no number
-or claim lost; `code/t27_renumber_tables.py` renumbers Tables A.31 onward. (4) Vietnamese twins updated, native review
-in `research/reviews/08-…`, parity, `--mark`. (5) `make precheck`, `make all`, `make pages` before and after.
-- **Checklist:** cross-checks PASS; loss check 0 numbers lost; main text ≤ 25.0 pages pessimistic; parity 0 errors;
-  precheck and make all PASS.

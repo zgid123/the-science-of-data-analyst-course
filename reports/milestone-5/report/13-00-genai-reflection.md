@@ -6,7 +6,7 @@ offered was checked against a saved source, the data files or code that we ran.
 
 ## 13.1. AI Decision Log, Milestones 1–5
 
-Table A.46 (Appendix XVI) gives the AI Decision Log in the columns of the brief, one row for each earlier milestone and
+Table A.43 (Appendix XVI) gives the AI Decision Log in the columns of the brief, one row for each earlier milestone and
 four rows for the final integration; for Milestones 1 to 4 it records how AI served as simulated stakeholders, research
 assistant, critics and code assistant, how we checked each output and which critiques we accepted or rejected. No AI produced a metric value, threshold or result.
 

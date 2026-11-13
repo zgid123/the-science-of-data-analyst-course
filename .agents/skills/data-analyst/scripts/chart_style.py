@@ -40,6 +40,8 @@ CATEGORICAL = ["#1f6f8b", "#d9822b", "#2a9d8f", "#c44569", "#6c5b7b", "#8d99ae",
 
 def apply() -> None:
     """Set global matplotlib defaults for the house style."""
+    if "text.parse_math" in plt.rcParams:                           # a label such as "$3 to $6.5" is text, not a formula
+        plt.rcParams["text.parse_math"] = False
     plt.rcParams.update(
         {
             "figure.dpi": 110,
@@ -159,6 +161,10 @@ def lines(ax, x: Sequence, series: dict[str, Sequence[float]], highlight: str | 
         locator = mdates.AutoDateLocator(minticks=3, maxticks=6)
         ax.xaxis.set_major_locator(locator)
         ax.xaxis.set_major_formatter(mdates.ConciseDateFormatter(locator))
+    if any(isinstance(value, str) for value in x):                  # text categories: plot at positions, label the ticks
+        labels_x, x = [str(value) for value in x], list(range(len(x)))
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels_x)
     ends = []
     for i, (name, ys) in enumerate(series.items()):
         if len(ys) != len(x):

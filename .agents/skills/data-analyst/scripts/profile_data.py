@@ -8,6 +8,9 @@ Usage:
 A profile shows fitness for use; it is not an analysis. Use it to decide what to inspect next:
 column meanings still need the data dictionary and real records. With --nrows, counts describe
 the first N rows only, which may not be representative of the full file.
+
+The separator (comma, semicolon, tab or pipe) is read from the header line. Without pandas, delimited text files are profiled with the standard library (types are inferred from the text);
+Parquet needs pandas with pyarrow, or pandas with polars; Excel needs pandas with openpyxl (`python setup_env.py`).
 """
 
 from __future__ import annotations
@@ -16,18 +19,35 @@ import argparse
 import sys
 from pathlib import Path
 
-import pandas as pd
+try:
+    import pandas as pd
+except ImportError:
+    pd = None
+
+
+def delimiter(path: Path) -> str:
+    """Separator of a delimited text file, read from its header line: comma, semicolon, tab or pipe."""
+    with open(path, newline="", encoding="utf-8-sig") as fh:
+        head = fh.readline()
+    return max(",;\t|", key=head.count) if any(c in head for c in ",;\t|") else ","
 
 
 def read_table(path: Path, nrows: int | None) -> pd.DataFrame:
     suffix = path.suffix.lower()
     if suffix == ".parquet":
-        df = pd.read_parquet(path)
+        try:
+            df = pd.read_parquet(path)
+        except ImportError:                                         # no pyarrow or fastparquet: read with polars if present
+            try:
+                import polars as pl
+            except ImportError:
+                raise ImportError("reading Parquet needs pyarrow or polars: run `python setup_env.py`") from None
+            frame = pl.read_parquet(path, n_rows=nrows)
+            return pd.DataFrame(frame.to_dict(as_series=False))   # column by column: needs no pyarrow
         return df.head(nrows) if nrows else df
     if suffix in {".xlsx", ".xls"}:
         return pd.read_excel(path, nrows=nrows)
-    sep = "\t" if suffix in {".tsv", ".tab"} else ","
-    return pd.read_csv(path, sep=sep, nrows=nrows, low_memory=False)
+    return pd.read_csv(path, sep=delimiter(path), nrows=nrows, low_memory=False)
 
 
 def _fmt(value) -> str:
@@ -36,6 +56,8 @@ def _fmt(value) -> str:
 
 
 def column_summary(s: pd.Series) -> dict:
+    if s.dtype == object:                                           # a cell holding only spaces is a missing value
+        s = s.where(~s.astype(str).str.fullmatch(r"\s*"), other=None)
     n = len(s)
     nulls = int(s.isna().sum())
     non_null = s.dropna()
@@ -82,7 +104,62 @@ def candidate_keys(df: pd.DataFrame, limit: int = 5) -> list[str]:
     return []
 
 
+def profile_stdlib(path: Path, nrows: int | None, max_cols: int) -> str:
+    """The same profile for CSV/TSV with the standard library only."""
+    import csv
+    import statistics
+    from collections import Counter
+    from itertools import islice
+
+    if path.suffix.lower() not in {".csv", ".tsv", ".tab", ".txt"}:
+        raise RuntimeError("this file type needs pandas (run setup_env.py)")
+    with open(path, newline="", encoding="utf-8-sig") as fh:
+        reader = csv.reader(fh, delimiter=delimiter(path))
+        header = next(reader)
+        rows = list(islice(reader, nrows)) if nrows else list(reader)
+    n = len(rows)
+    width = len(header)
+    cols = [[r[i] if i < len(r) else "" for r in rows] for i in range(width)]
+    missing = {"", "na", "n/a", "nan", "null", "none", "?"}
+
+    def numeric(values):
+        out = []
+        for v in values:
+            try:
+                out.append(float(v))
+            except ValueError:
+                return None
+        return out
+
+    dup = n - len({tuple(r) for r in rows})
+    keys = [f"`{header[i]}`" for i in range(width) if all(v.strip().lower() not in missing for v in cols[i]) and len(set(cols[i])) == n][:5]
+    scope = f"first {n:,} rows (sampled with --nrows)" if nrows and n >= nrows else f"{n:,} rows"
+    lines = [f"## {path.name}", "", f"- Rows read: {scope}; columns: {width} (profiled without pandas)",
+             f"- Exact duplicate rows: {dup:,}" + (" — check whether these are true duplicates or legitimate repeats" if dup else ""),
+             f"- Candidate keys (unique, non-null here): {', '.join(keys) if keys else 'none found among single columns'}", "",
+             "| Column | Type | Null % | Distinct | Values |", "| --- | --- | --- | --- | --- |"]
+    for name, values in list(zip(header, cols))[:max_cols]:
+        present = [v for v in values if v.strip().lower() not in missing]
+        nums = numeric(present) if present else None
+        if not present:
+            kind, summary = "empty", "all null"
+        elif nums is not None:
+            kind = "integer" if all(x == int(x) for x in nums) else "float"
+            zeros = sum(1 for x in nums if x == 0) / len(nums)
+            summary = f"min {min(nums):,.4g} · median {statistics.median(nums):,.4g} · max {max(nums):,.4g}" + (f" · zeros {zeros:.0%}" if zeros >= 0.05 else "")
+        else:
+            kind = "text"
+            summary = ", ".join(f"{_fmt(k)} ({v / len(present):.0%})" for k, v in Counter(present).most_common(3))
+        lines.append(f"| `{_fmt(name)}` | {kind} | {(n - len(present)) / n:.1%} | {len(set(present)):,} | {summary} |" if n else f"| `{_fmt(name)}` | {kind} | — | 0 | |")
+    if width > max_cols:
+        lines.append(f"\n_{width - max_cols} more columns not shown (raise --max-cols)._")
+    lines.append("")
+    return "\n".join(lines)
+
+
 def profile(path: Path, nrows: int | None, max_cols: int) -> str:
+    if pd is None:
+        return profile_stdlib(path, nrows, max_cols)
     df = read_table(path, nrows)
     lines = [f"## {path.name}", ""]
     scope = f"first {len(df):,} rows (sampled with --nrows)" if nrows and len(df) >= nrows else f"{len(df):,} rows"

@@ -1,0 +1,2 @@
+pooled_nr_model,pooled_nr_rule,difference,boot_ci_low,boot_ci_high,signflip_p,wins,ties,losses,mean_per_run_difference,verdict
+0.725917,0.704425,0.021492,0.009259,0.033739,0.000244,12,0,1,0.021762,S1 met

@@ -1,0 +1,10 @@
+# Analysis code of this folder (the run tools in tools/ need only the standard library).
+pandas
+numpy
+scipy
+matplotlib
+polars
+pyarrow
+scikit-learn
+joblib
+statsmodels

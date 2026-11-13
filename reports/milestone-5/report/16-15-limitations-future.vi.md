@@ -14,9 +14,9 @@ Mục 11 đã trả lời AQ1 và AQ2 trên các kỳ mở năm 2013 và năm 20
 
 **Giới hạn về đạo đức.** Dấu cảnh báo rủi ro có thể gây định kiến về sinh viên; phân tích dự báo trong phân tích học tập tiềm ẩn nguy cơ thiên lệch và định kiến [16]. Bản sắc của sinh viên mang tính nhất thời và gắn với bối cảnh [16], nên một dấu cảnh báo không được trở thành nhãn cố định; vì lý do này, trong cách dùng được đề xuất, dấu cảnh báo dẫn đến hỗ trợ và hết hiệu lực khi kỳ mở kết thúc; nhờ đó, sinh viên bị đánh dấu có thể chứng minh dự báo sai. Phân tích học tập cũng là một hoạt động mang tính đạo đức, trong đó sinh viên là chủ thể tham gia [16]; do đó, trước khi thí điểm cần xác nhận sinh viên chấp nhận việc liên hệ dựa trên hoạt động (Mục 12.1). Danh mục rủi ro của Milestone 4 gồm mười sáu rủi ro, mỗi rủi ro kèm biện pháp kiểm soát, cách kiểm tra và rủi ro còn lại.
 
-Bảng A.44 tập hợp các giới hạn trên thành danh mục hạn chế, ghi rõ mỗi hạn chế là không tìm thấy bằng chứng, không có dữ liệu để kiểm tra hay chưa chạy kiểm tra, cùng cách dự án xử lý hạn chế đó.
+Bảng A.41 tập hợp các giới hạn trên thành danh mục hạn chế, ghi rõ mỗi hạn chế là không tìm thấy bằng chứng, không có dữ liệu để kiểm tra hay chưa chạy kiểm tra, cùng cách dự án xử lý hạn chế đó.
 
-**Bảng A.44. Danh mục hạn chế: loại hạn chế, ảnh hưởng đến kết luận và cách xử lý**
+**Bảng A.41. Danh mục hạn chế: loại hạn chế, ảnh hưởng đến kết luận và cách xử lý**
 
 | Hạn chế | Loại | Ảnh hưởng đến kết luận | Cách xử lý |
 | :---- | :---- | :---- | :---- |
@@ -35,9 +35,9 @@ Bảng A.44 tập hợp các giới hạn trên thành danh mục hạn chế, g
 | Chỉ số đại diện của KPI, mẫu số | Đo lường | Tỷ lệ chênh tới 13,6 điểm phần trăm tùy mẫu số | Dùng một quy tắc về thời gian điều chỉnh đăng ký học phần cho mọi phạm vi dữ liệu |
 | Thiết kế quan sát | Nhân quả | Chỉ có mối liên hệ; không có tác động của dấu hiệu hay của việc liên hệ | Các phương án được nêu như giả thuyết để kiểm chứng trong đợt thí điểm |
 
-Danh mục hạn chế của Mục 12 phân biệt điều dữ liệu không cho thấy bằng chứng, điều OULAD không có dữ liệu để kiểm tra và điều được chủ động để chưa kiểm tra. Hướng phát triển đi theo đúng cách phân chia này: các phần chưa kiểm tra cần lần kiểm tra dự báo trên dữ liệu đã có, còn các phần chưa có dữ liệu cần những bản ghi mà chỉ trường và đợt thí điểm của trường tạo ra được. Bảng A.45 liệt kê từng bước phát triển với câu hỏi bước đó trả lời, dữ liệu cần dùng và bước đi trước.
+Danh mục hạn chế của Mục 12 phân biệt điều dữ liệu không cho thấy bằng chứng, điều OULAD không có dữ liệu để kiểm tra và điều được chủ động để chưa kiểm tra. Hướng phát triển đi theo đúng cách phân chia này: các phần chưa kiểm tra cần lần kiểm tra dự báo trên dữ liệu đã có, còn các phần chưa có dữ liệu cần những bản ghi mà chỉ trường và đợt thí điểm của trường tạo ra được. Bảng A.42 liệt kê từng bước phát triển với câu hỏi bước đó trả lời, dữ liệu cần dùng và bước đi trước.
 
-**Bảng A.45. Hướng phát triển: câu hỏi mỗi bước trả lời, dữ liệu cần dùng và thứ tự thực hiện**
+**Bảng A.42. Hướng phát triển: câu hỏi mỗi bước trả lời, dữ liệu cần dùng và thứ tự thực hiện**
 
 | Bước | Câu hỏi được trả lời | Dữ liệu cần dùng | Phụ thuộc vào |
 | :---- | :---- | :---- | :---- |

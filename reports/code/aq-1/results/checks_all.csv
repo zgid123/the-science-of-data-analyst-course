@@ -1,8 +1,0 @@
-check,what,result,detail
-C1,"control totals 32,593 enrolments / 28,061 KPI",PASS,"found 32,593 / 28,061"
-C2,two aggregation paths agree to the enrolment in every run,PASS,"22 of 22 runs agree; raw rows 32,593 = prepared rows 32,593: True"
-C3,first missed week equals the value re-derived from the task table,PASS,"32,593 of 32,593 enrolments equal"
-C4,pooled counts equal the sum over runs; the four outcome counts sum to the enrolments of every run,PASS,"sum of run enrolments 28,061 = pooled 28,061; runs whose outcome counts sum to n: 22 of 22"
-C5,every rate has a denominator and an interval that contains it,PASS,38 rates checked
-C6,year-comparison counts recomputed from the raw tables equal the result table (3 scopes x 2 denominators x 2 years),PASS,"12 of 12 count pairs equal; 6 shared modules, 9 shared module x start-month pairs"
-C7,Newcombe intervals of the year comparison equal the statsmodels implementation (tolerance 1e-5; stored with 6 decimals),PASS,48 intervals compared; largest absolute difference of a bound 5.0e-07

@@ -1,5 +1,0 @@
-ranking,activity,enrolments,non_completers,listed,share_of_all_list_places,recall,precision
-model,no activity since the start,624,513,615,0.155499,0.984405,0.821138
-model,some activity,15100,6398,3340,0.844501,0.369647,0.708084
-rule,no activity since the start,624,513,624,0.157775,1.000000,0.822115
-rule,some activity,15100,6398,3331,0.842225,0.355267,0.682378

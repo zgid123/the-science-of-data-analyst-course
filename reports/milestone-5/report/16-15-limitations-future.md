@@ -14,9 +14,9 @@ Section 11 answered AQ1 and AQ2 on the 2013 and 2014 runs of OULAD and set out t
 
 **Ethical limits.** A risk flag can stereotype students, and predictive analysis in learning analytics carries a potential for bias and stereotyping [16]. Student identity is transient and bound to its context [16], so a flag must not become a fixed label; for this reason a flag in the proposed use leads to support and expires with the run, and the students it names can prove the prediction wrong. Learning analytics is also a moral practice in which students are participatory agents [16], which is why their acceptance of activity-based contact has to be confirmed before the pilot (Section 12.1). The Milestone 4 risk register holds sixteen risks, each with its control, check and residual risk.
 
-Table A.44 brings these limits together as a limitation log, marking for each one whether it reflects no evidence found, no data to test or a test not yet run, and how the project handles it.
+Table A.41 brings these limits together as a limitation log, marking for each one whether it reflects no evidence found, no data to test or a test not yet run, and how the project handles it.
 
-**Table A.44. Limitation log: kind of limit, effect on the conclusions and handling**
+**Table A.41. Limitation log: kind of limit, effect on the conclusions and handling**
 
 | Limitation | Kind | Effect on the conclusions | Handling |
 | :---- | :---- | :---- | :---- |
@@ -35,9 +35,9 @@ Table A.44 brings these limits together as a limitation log, marking for each on
 | KPI proxy, denominator | Measurement | Rates move by up to 13.6 points with the denominator | One add-drop rule for every population |
 | Observational design | Causal | Associations only; no effect of signs or contact | Options stated as hypotheses for the pilot |
 
-The limitation log of Section 12 separates what the data showed no evidence for, what OULAD holds no data to test and what stays untested by design. Future work follows the same split: the untested parts need the predictive test on data that already exist, while the parts without data need records that only the university and its pilot can create. Table A.45 lists each item of future work with the question it answers, the data it needs and the step it depends on.
+The limitation log of Section 12 separates what the data showed no evidence for, what OULAD holds no data to test and what stays untested by design. Future work follows the same split: the untested parts need the predictive test on data that already exist, while the parts without data need records that only the university and its pilot can create. Table A.42 lists each item of future work with the question it answers, the data it needs and the step it depends on.
 
-**Table A.45. Future work: what each step answers, the data it needs and its order**
+**Table A.42. Future work: what each step answers, the data it needs and its order**
 
 | Step | What it answers | Data needed | Depends on |
 | :---- | :---- | :---- | :---- |

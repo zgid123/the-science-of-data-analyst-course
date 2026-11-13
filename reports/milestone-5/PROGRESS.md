@@ -63,23 +63,6 @@ Protocol: LOAD → DO → WRITE → VERIFY → DECIDE (stop and ask on any faile
   unchanged (20 of 21 files byte-identical, aq_summary.md labels only); checksums 63; package in place and clean copy
   exit 0 (tests 12/12, AQ checks 96/0/3, year checks 53/0, results 63/63); task folder mirrors the package; figures
   pixel-identical; make all 15/15. Every path reference updated in code, docs, trail notes, ledger and figures.
-- T27 (2026-11-13, owner's request relayed by the lead agent; decided under that request, not asked at a checkpoint):
-  (a) sign-count table: the two task signs are defined only in runs with a task due by day 27, so the count runs over
-  five signs there and over the three click signs in the EEE and GGG runs, two blocks kept apart; no enrolment has both
-  task signs, so the five-sign row (n = 0 in both years) is left out and the text says the count stops at four.
-  (b) First-missed-by-module table on the non-completers of the day-14 population, median week among those who missed
-  a task, Wilson intervals on the three shares. (c) February-minus-October table on the day-14 population with a pooled
-  row of the modules run in both start months. (d) Appendix tables renumbered: new A.31, A.33, A.36; old A.31→A.32,
-  A.32→A.34, A.33→A.35, A.34→A.37, A.35→A.38, A.36→A.39, A.37–A.43→A.40–A.46 (report EN+VI and package
-  docs/ai_decision_log.md). (e) Second implementation named in words only; four specification differences stated
-  (half-median cut, late-TMA average without CCC 2014, log-scale background, 20/20 slope rule); whether it becomes a
-  submitted deliverable is left to the team. (f) Page budget: the separate 11.3 sentence pushed the main text to 26.0
-  pessimistic pages, so the replication enters the confidence sentence of 11.3 and the task-sign counts of 11.3's first
-  paragraph rely on Figure 11.2's caption; main text back to 25.0. (g) New results files live in the task's
-  results/2013, 2014 and compare folders, which code/run_T26.sh replaces from the package: rerun
-  t27_appendix_tables.py and t27_compare_second_implementation.py after any run_T26.sh. (h) "implementation" gets no
-  glossary row (two files only); reviewer suggests a row "interval excludes/includes 0 → không chứa 0 / chứa 0" with
-  "loại trừ 0" under Replaces (not added: topic glossary already over its 150-row budget).
 
 ## Blocked
 

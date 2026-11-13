@@ -1,7 +1,0 @@
-band,enrolments,mean_share_of_resamples_on_list,min,max
-more than 10% inside,2389,1.000000,1.000000,1.000000
-5–10% inside,785,0.999918,0.980000,1.000000
-0–5% inside (last places),781,0.903178,0.476000,1.000000
-0–5% outside (first not listed),791,0.098177,0.000000,0.522000
-5–10% outside,785,0.000125,0.000000,0.016000
-more than 10% outside,10193,0.000000,0.000000,0.000000

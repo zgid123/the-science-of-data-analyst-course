@@ -1,0 +1,10 @@
+# Packages for the statistics, chart and profiling scripts and for analysis code.
+# The run tools (run_step, data_manifest, holdout_guard, report_tables, check_report, compare_results) need none of them.
+pandas
+numpy
+scipy
+matplotlib
+openpyxl
+pyarrow
+scikit-learn
+statsmodels

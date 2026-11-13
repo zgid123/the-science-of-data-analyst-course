@@ -2,7 +2,7 @@
 
 Import what you need:
 
-    from stats_helpers import wilson_ci, diff_proportions_ci, bootstrap_ci, capacity_table, calibration_table
+    from stats_helpers import wilson_ci, diff_proportions_ci, standardized_rates, bootstrap_ci, capacity_table, calibration_table
 
 Every function documents its population and assumptions. These cover common analyst needs;
 for complex designs (survey replicate weights, mixed models) follow the data's documentation.
@@ -16,8 +16,15 @@ import math
 from numbers import Integral, Real
 from typing import Callable, Sequence
 
-import numpy as np
-import pandas as pd
+try:
+    import numpy as np
+    import pandas as pd
+except ImportError:  # wilson_ci and diff_proportions_ci need neither; the other helpers say what is missing
+    class _Missing:
+        def __getattr__(self, name):
+            raise ImportError("this helper needs numpy and pandas: run `python tools/setup_env.py` (or scripts/setup_env.py)")
+
+    np = pd = _Missing()
 
 Z95 = 1.959963984540054
 
@@ -69,6 +76,34 @@ def diff_proportions_ci(k1: int, n1: int, k2: int, n2: int, z: float = Z95) -> t
     low = d - math.sqrt((p1 - l1) ** 2 + (u2 - p2) ** 2)
     high = d + math.sqrt((u1 - p1) ** 2 + (p2 - l2) ** 2)
     return (d, low, high)
+
+
+def standardized_rates(records, group: str, strata: Sequence[str], outcome: str) -> list[dict]:
+    """Outcome rate per group, crude and like for like (direct standardisation over the strata).
+
+    `records` is a list of dicts or a DataFrame; `outcome` is 0/1. The standardised rate of a group weights its
+    stratum rates by the share of all compared records in each stratum, over the strata where every group has
+    at least one record (common support). Rows outside the common support are counted in `n_outside_support`
+    and left out of the standardised rate, never out of the crude one. Standard library only.
+    """
+    rows = records.to_dict("records") if hasattr(records, "to_dict") else list(records)
+    groups = sorted({r[group] for r in rows}, key=str)
+    cells: dict = {}
+    for r in rows:
+        key = tuple(r[c] for c in strata)
+        n, k = cells.setdefault(key, {}).get(r[group], (0, 0))
+        cells[key][r[group]] = (n + 1, k + int(r[outcome]))
+    common = {key: by for key, by in cells.items() if all(g in by for g in groups)}
+    total = sum(n for by in common.values() for n, _ in by.values())
+    out = []
+    for g in groups:
+        n_all = sum(by[g][0] for by in cells.values() if g in by)
+        k_all = sum(by[g][1] for by in cells.values() if g in by)
+        n_in = sum(by[g][0] for by in common.values())
+        std = sum(sum(n for n, _ in by.values()) / total * by[g][1] / by[g][0] for by in common.values()) if total else float("nan")
+        out.append({"group": g, "n": n_all, "events": k_all, "crude_rate": k_all / n_all if n_all else float("nan"),
+                    "standardized_rate": std, "strata_compared": len(common), "n_outside_support": n_all - n_in})
+    return out
 
 
 def bootstrap_ci(
@@ -311,6 +346,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--selftest", action="store_true", help="run built-in checks")
     if parser.parse_args().selftest:
-        _selftest()
+        try:
+            _selftest()
+        except ImportError as exc:
+            raise SystemExit(f"wilson_ci and diff_proportions_ci work; {exc}")
     else:
         parser.print_help()

@@ -1,0 +1,5 @@
+config,cutoff,citl,slope,s3_verdict
+M1,13,0.071001,0.881808,descriptive: met
+B3,13,-0.005679,3.092609,descriptive: not met
+M1,27,0.057997,1.310605,S3: not met
+B3,27,0.003011,3.286486,descriptive: not met

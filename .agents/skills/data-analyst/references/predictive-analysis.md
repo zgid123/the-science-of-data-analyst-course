@@ -28,7 +28,7 @@ Every predictive inquiry must be translated into a structured formulation:
 - **Partition Roles**:
   - _Training Set_: Used to estimate model parameters (coefficients, decision boundaries).
   - _Validation Set_: Used to evaluate competing model specifications, tune decision thresholds, and compare features.
-  - _Test / Holdout Set_: Kept sealed until final model selection to provide an unbiased estimate of generalization error.
+  - _Test / Holdout Set_: Kept sealed until final model selection to provide an unbiased estimate of generalization error. Record the frozen choices before unsealing it, score it once, save the scores and reuse them on reruns; a choice revised after unsealing is post hoc and its test figures are no longer unbiased.
 
 ### Data Leakage (The Cardinal Sin of Predictive Analysis)
 

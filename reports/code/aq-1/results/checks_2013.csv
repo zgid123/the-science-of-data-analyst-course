@@ -1,6 +1,0 @@
-check,what,result,detail
-C1,"2013 runs: 9 runs, every enrolment of year 2013",PASS,"13,529 enrolments, 12,076 in the KPI population, 9 runs"
-C2,two aggregation paths agree to the enrolment in every run,PASS,"9 of 9 runs agree; raw rows 13,529 = prepared rows 13,529: True"
-C3,first missed week equals the value re-derived from the task table,PASS,"13,529 of 13,529 enrolments equal"
-C4,pooled counts equal the sum over runs; the four outcome counts sum to the enrolments of every run,PASS,"sum of run enrolments 12,076 = pooled 12,076; runs whose outcome counts sum to n: 9 of 9"
-C5,every rate has a denominator and an interval that contains it,PASS,21 rates checked

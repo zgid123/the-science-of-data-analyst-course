@@ -1,6 +1,0 @@
-config,label,pooled_normalised_recall,gain_vs_M1,extra_non_completers_listed_vs_M1,folds_with_gain_vs_M1,meets_margin_0.03,meets_7_of_9_folds,chosen,reason
-B3,Background-only logistic model (baseline),0.568212,-0.182124,-542,0,false,false,false,"no challenger gains 0.03 pooled normalised recall and 7 of 9 folds, so the primary approach of Level 1 stays"
-M1,"Penalised logistic regression, primary set (primary approach)",0.750336,0.000000,0,0,false,false,true,"no challenger gains 0.03 pooled normalised recall and 7 of 9 folds, so the primary approach of Level 1 stays"
-M2,"Penalised logistic regression, extended set",0.749328,-0.001008,-3,3,false,false,false,"no challenger gains 0.03 pooled normalised recall and 7 of 9 folds, so the primary approach of Level 1 stays"
-M3,"Gradient-boosted trees, primary set",0.748656,-0.001680,-5,5,false,false,false,"no challenger gains 0.03 pooled normalised recall and 7 of 9 folds, so the primary approach of Level 1 stays"
-M4,"Gradient-boosted trees, extended set",0.747984,-0.002352,-7,3,false,false,false,"no challenger gains 0.03 pooled normalised recall and 7 of 9 folds, so the primary approach of Level 1 stays"

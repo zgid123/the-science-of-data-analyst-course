@@ -4,9 +4,9 @@ Phụ lục này bổ sung cho Mục 13. Phụ lục trình bày Nhật ký quy�
 
 Mục 12 đã nêu các giới hạn của bằng chứng; quá trình tạo ra bằng chứng đó còn bao gồm việc sử dụng AI tạo sinh ở mọi milestone. Nhóm chúng em dùng AI tạo sinh trong vai bên liên quan mô phỏng, trợ lý nghiên cứu và trợ lý viết mã, AI phản biện và người cùng viết. Trong mọi vai trò, chúng em áp dụng cùng một nguyên tắc: AI không bao giờ là nguồn dữ liệu, số liệu thống kê, thông tin giấy phép hay kết quả; mọi thông tin AI đưa ra đều được đối chiếu với một nguồn đã lưu, với tệp dữ liệu hoặc với mã do chúng em chạy. Với mỗi milestone, chúng em ghi lại AI được dùng vào việc gì, AI đề xuất gì, chúng em kiểm chứng hoặc chỉnh sửa đầu ra của AI ra sao và cuối cùng quyết định gì; đồng thời, chúng em phản tư xem AI đã hỗ trợ lập luận của chúng em hay có nguy cơ thay thế bằng chứng.
 
-Bảng A.46 là Nhật ký quyết định về AI. Các hàng từ "M1 / M5" đến "M4 / M5" tóm tắt việc sử dụng AI ở từng milestone trước và cách kết quả của milestone đó được đưa vào báo cáo cuối kỳ này; các hàng của Milestone 5 ghi lại việc sử dụng AI trong chính bước tích hợp cuối cùng. Hàng cuối cùng ghi lại việc soạn thảo và rà soát toàn bộ báo cáo.
+Bảng A.43 là Nhật ký quyết định về AI. Các hàng từ "M1 / M5" đến "M4 / M5" tóm tắt việc sử dụng AI ở từng milestone trước và cách kết quả của milestone đó được đưa vào báo cáo cuối kỳ này; các hàng của Milestone 5 ghi lại việc sử dụng AI trong chính bước tích hợp cuối cùng. Hàng cuối cùng ghi lại việc soạn thảo và rà soát toàn bộ báo cáo.
 
-**Bảng A.46. Nhật ký quyết định về AI, Milestone 1–5**
+**Bảng A.43. Nhật ký quyết định về AI, Milestone 1–5**
 
 | Giai đoạn | Mục đích sử dụng AI | Đề xuất / đầu ra của AI | Kiểm chứng / chỉnh sửa của sinh viên | Quyết định cuối cùng của con người |
 | :---- | :---- | :---- | :---- | :---- |

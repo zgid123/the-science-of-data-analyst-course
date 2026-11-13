@@ -20,9 +20,9 @@ AQ4 sẽ được trả lời khi bốn điều kiện cùng được đáp ứn
 
 ### Những gì kết quả dự kiến có thể và chưa thể hỗ trợ
 
-Với cả hai câu hỏi, Bảng A.40 tóm tắt kết quả dự kiến, kết quả sẽ trả lời câu hỏi và các giới hạn đã ấn định trước.
+Với cả hai câu hỏi, Bảng A.37 tóm tắt kết quả dự kiến, kết quả sẽ trả lời câu hỏi và các giới hạn đã ấn định trước.
 
-**Bảng A.40. Kết quả dự kiến của AQ3 và AQ4 và các tiêu chí quyết định câu trả lời**
+**Bảng A.37. Kết quả dự kiến của AQ3 và AQ4 và các tiêu chí quyết định câu trả lời**
 
 | Câu hỏi | Kết quả dự kiến | Kết quả sẽ trả lời câu hỏi | Nếu không đạt tiêu chí | Giới hạn đã ấn định trước |
 | :---- | :---- | :---- | :---- | :---- |
@@ -33,9 +33,9 @@ Các kết quả dự kiến này sẽ giúp giảng viên phụ trách học ph
 
 ### Câu trả lời cuối cùng theo từng câu hỏi phân tích
 
-Bảng A.41 và A.42 nêu câu trả lời cuối cùng cho từng câu hỏi, đọc theo quy tắc của loại phân tích tương ứng: câu trả lời mô tả nêu điều đã xảy ra, câu trả lời chẩn đoán nêu các mối liên hệ, câu trả lời dự báo và chỉ định nêu kết quả dự kiến, còn mọi ý nghĩa đối với quyết định đều là phương án quyết định, không phải biện pháp đã được chứng minh.
+Bảng A.38 và A.39 nêu câu trả lời cuối cùng cho từng câu hỏi, đọc theo quy tắc của loại phân tích tương ứng: câu trả lời mô tả nêu điều đã xảy ra, câu trả lời chẩn đoán nêu các mối liên hệ, câu trả lời dự báo và chỉ định nêu kết quả dự kiến, còn mọi ý nghĩa đối với quyết định đều là phương án quyết định, không phải biện pháp đã được chứng minh.
 
-**Bảng A.41. Câu trả lời cuối cùng theo từng câu hỏi: bằng chứng và phương pháp**
+**Bảng A.38. Câu trả lời cuối cùng theo từng câu hỏi: bằng chứng và phương pháp**
 
 | AQ-ID | AQ cuối cùng | Bằng chứng / dữ liệu sử dụng | Phương pháp / phân tích |
 | :---- | :---- | :---- | :---- |
@@ -44,9 +44,9 @@ Bảng A.41 và A.42 nêu câu trả lời cuối cùng cho từng câu hỏi, �
 | AQ3 | Khi áp dụng một mô hình xây dựng trên các kỳ mở năm 2013 cho các kỳ mở năm 2014, dữ liệu tính đến hết tuần 2 và tuần 4 ước lượng khả năng không hoàn thành tốt đến mức nào so với quy tắc dấu hiệu sớm? | Đề xuất: bảng đặc trưng tại ngày 13 và ngày 27; phát triển trên 9 kỳ mở năm 2013 (11.811 lượt đăng ký học tại ngày 27), kiểm tra một lần duy nhất có ghi nhật ký trên cả 13 kỳ mở năm 2014 (15.724 lượt tại ngày 27), hiện chưa chạy. | Đề xuất: hồi quy logistic có điều chuẩn trên 19 biến dự báo chính, mỗi thời điểm chốt một mô hình, so với ba phương pháp cơ sở (quy tắc dấu hiệu sớm xếp theo số dấu hiệu, mô hình logistic chỉ dùng đặc điểm cá nhân, danh sách ngẫu nhiên); cây tăng cường độ dốc làm mô hình đối sánh (challenger), chỉ được chọn khi vượt một mức chênh lệch ấn định trước; các fold loại trừ từng kỳ mở trong năm 2013; chốt hai lần, kiểm tra một lần. |
 | AQ4 | Những lượt đăng ký học nào nên đứng đầu danh sách có hạn mức liên hệ giả định, với mức vượt so với danh sách ngẫu nhiên và tỷ lệ phát hiện bao nhiêu, xét chung và theo mức khó khăn của khu vực và tình trạng khuyết tật? | Đề xuất: điểm rủi ro đã chốt của AQ3 trên các kỳ mở năm 2014 của tập kiểm thử; độ dài danh sách lấy từ bảng hạn mức liên hệ (3 hoặc 5 trên 20 sinh viên); mức khó khăn của khu vực và tình trạng khuyết tật chỉ dùng để kiểm tra công bằng. Không có dữ liệu liên hệ. | Đề xuất: danh sách k sinh viên đầu cho mỗi kỳ mở, lập từ điểm rủi ro của AQ3 kèm các dấu hiệu đứng sau mỗi tên, so với danh sách ngẫu nhiên và danh sách xếp theo quy tắc cùng độ dài; kiểm tra công bằng theo tiêu chí ngang bằng tỷ lệ phát hiện (tỷ lệ phát hiện trong giới hạn danh sách) với quy tắc FR1. |
 
-Bảng A.42 tiếp tục câu trả lời cho cùng bốn câu hỏi, với phát hiện chính hoặc kết quả dự kiến, độ tin cậy và hạn chế, cùng ý nghĩa đối với từng quyết định.
+Bảng A.39 tiếp tục câu trả lời cho cùng bốn câu hỏi, với phát hiện chính hoặc kết quả dự kiến, độ tin cậy và hạn chế, cùng ý nghĩa đối với từng quyết định.
 
-**Bảng A.42. Câu trả lời cuối cùng theo từng câu hỏi: phát hiện và ý nghĩa**
+**Bảng A.39. Câu trả lời cuối cùng theo từng câu hỏi: phát hiện và ý nghĩa**
 
 | AQ-ID | Phát hiện chính hoặc kết quả dự kiến | Độ tin cậy / hạn chế | Ý nghĩa đối với quyết định |
 | :---- | :---- | :---- | :---- |
@@ -63,9 +63,9 @@ Cả bốn câu trả lời đều dựa trên dữ liệu quan sát; không câ
 
 ### Hỗ trợ ra quyết định cho D1, D2 và D3
 
-Bảng A.43 gắn mỗi quyết định với bằng chứng hiện có, phương án quyết định rút ra từ bằng chứng đó và giả thuyết hoặc phép kiểm tra còn cần thực hiện.
+Bảng A.40 gắn mỗi quyết định với bằng chứng hiện có, phương án quyết định rút ra từ bằng chứng đó và giả thuyết hoặc phép kiểm tra còn cần thực hiện.
 
-**Bảng A.43. Hỗ trợ ra quyết định cho D1–D3: bằng chứng hiện có, phương án quyết định và những điều còn phải kiểm chứng**
+**Bảng A.40. Hỗ trợ ra quyết định cho D1–D3: bằng chứng hiện có, phương án quyết định và những điều còn phải kiểm chứng**
 
 | Quyết định (người chịu trách nhiệm) | Bằng chứng hiện có | Phương án quyết định | Giả thuyết hoặc phép kiểm tra trước khi áp dụng |
 | :---- | :---- | :---- | :---- |

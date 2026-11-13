@@ -1,0 +1,7 @@
+ranking,group,confirmatory,test_enrolments,group_non_completers,group_base_rate,selection_rate_group,selection_rate_others,recall_group,recall_others,gap,boot_ci95_low,boot_ci95_high,p_one_sided,p_holm,holm_upper_bound,flagged,status
+model,Declared disability,True,1488,803,0.539651,0.324597,0.243889,0.463263,0.408972,0.054291,0.003772,0.098362,0.9826,1.0,0.091038,False,not flagged
+model,Deprivation band 0–10%,True,1486,787,0.52961,0.295424,0.246945,0.425667,0.413945,0.011722,-0.049717,0.063331,0.6428,1.0,0.063331,False,not flagged
+model,Deprivation band missing,True,610,181,0.296721,0.157377,0.255326,0.348066,0.417088,-0.069021,-0.168025,0.023757,0.0664,0.1992,0.034087,False,not flagged
+rule,Declared disability,True,1488,803,0.539651,0.292339,0.24726,0.41345,0.401768,0.011681,-0.043382,0.065566,0.6746,1.0,0.056281,False,not flagged
+rule,Deprivation band 0–10%,True,1486,787,0.52961,0.288694,0.247647,0.41169,0.402025,0.009665,-0.045824,0.064975,0.6388,1.0,0.064975,False,not flagged
+rule,Deprivation band missing,True,610,181,0.296721,0.172131,0.254731,0.337017,0.404903,-0.067887,-0.161158,0.021428,0.0634,0.1902,0.030015,False,not flagged

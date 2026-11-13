@@ -1,0 +1,8 @@
+band,non_completers,share
+Withdrew before the start (day < 0),2676,0.15550906555090654
+Withdrew days 0–13 (before the week-3 list),1781,0.10349837284983729
+Withdrew days 14–27 (before the week-5 list),575,0.033414690841469086
+Withdrew days 28–90,1991,0.1157019990701999
+Withdrew after day 90,3040,0.17666201766620176
+"Withdrawn, day not recorded",93,0.005404463040446304
+Failed at the end of the run,7052,0.4098093909809391

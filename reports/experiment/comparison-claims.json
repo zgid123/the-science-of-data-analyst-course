@@ -1,0 +1,166 @@
+[
+ {
+  "text": "lists {value} non-completers in the Milestone 4",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "Non-completers listed by the model, day 27, 5 per 20"
+  },
+  "column": "milestone_4",
+  "format": ",.0f"
+ },
+ {
+  "text": "experiment and {value} here",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "Non-completers listed by the model, day 27, 5 per 20"
+  },
+  "column": "new",
+  "format": ",.0f"
+ },
+ {
+  "text": "strong penalty (C = {value})",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "M1 penalty C at day 27"
+  },
+  "column": "milestone_4",
+  "format": ".3f"
+ },
+ {
+  "text": "almost none (C = {value})",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "M1 penalty C at day 27"
+  },
+  "column": "new",
+  "format": ".0f"
+ },
+ {
+  "text": "calibration slope is {value} and S3 fails",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "S3 calibration slope"
+  },
+  "column": "milestone_4",
+  "format": ".3f"
+ },
+ {
+  "text": "here the slope is {value} and S3",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "S3 calibration slope"
+  },
+  "column": "new",
+  "format": ".3f"
+ },
+ {
+  "text": "but only in {value} of 13 runs",
+  "csv": "results/aq3_discrimination_calibration.csv",
+  "where": {
+   "cutoff": "27",
+   "method": "M1"
+  },
+  "column": "runs_within_s3_bounds",
+  "format": ".0f"
+ },
+ {
+  "text": "model wins {value} of 13 runs in the Milestone 4",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "S1 runs won (of 13)"
+  },
+  "column": "milestone_4",
+  "format": ".0f"
+ },
+ {
+  "text": "(sign-flip p = {value})",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "S1 sign-flip p"
+  },
+  "column": "milestone_4",
+  "format": ".4f"
+ },
+ {
+  "text": "and {value} of 13 here",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "S1 runs won (of 13)"
+  },
+  "column": "new",
+  "format": ".0f"
+ },
+ {
+  "text": "here (p = {value})",
+  "csv": "results/compare_m4.csv",
+  "where": {
+   "item": "S1 sign-flip p"
+  },
+  "column": "new",
+  "format": ".4f"
+ },
+ {
+  "text": "agree within {value} points; the ranking",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "AQ2"
+  },
+  "column": "max_abs_difference",
+  "format": ".1f"
+ },
+ {
+  "text": "agrees within {value} normalised recall for every",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "AQ3 development"
+  },
+  "column": "max_abs_difference",
+  "format": ".3f"
+ },
+ {
+  "text": "every S1 quantity agrees within {value} except",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "AQ3 test, S1 quantities other than p and runs won"
+  },
+  "column": "max_abs_difference",
+  "format": ".3f"
+ },
+ {
+  "text": "same winner in {value} of 13 runs",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "Runs with the same winner (of 13)"
+  },
+  "column": "max_abs_difference",
+  "format": ".0f"
+ },
+ {
+  "text": "move by at most {value} and keep",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "AQ3 sensitivity"
+  },
+  "column": "max_abs_difference",
+  "format": ".3f"
+ },
+ {
+  "text": "gaps agree within {value} points",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "AQ4"
+  },
+  "column": "max_abs_difference",
+  "format": ".1f"
+ },
+ {
+  "text": "the same to {value} points",
+  "csv": "results/compare_m4_summary.csv",
+  "where": {
+   "aq": "AQ4 descriptive"
+  },
+  "column": "max_abs_difference",
+  "format": ".1f",
+  "scale": 100
+ }
+]

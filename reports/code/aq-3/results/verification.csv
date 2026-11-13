@@ -1,9 +1,0 @@
-check,what,result,detail
-V1,refitted model reproduces the saved test scores (stored with 6 decimals),PASS,largest absolute score difference over both cut-offs: 5.00e-07
-V1b,lists from unrounded scores hold the same number of non-completers as lists from the stored scores,PASS,"day 27, 5 per 20: 2,870 from unrounded scores, 2,870 from stored scores"
-V2,S1 counts recomputed by a second code path,PASS,"model 2,870 / rule 2,786 / ceiling 3,955 against saved 2,870 / 2,786 / 3,955; normalised recall 0.7257 and 0.7044"
-V3,AQ4 list counts and error-analysis counts equal the S1 counts,PASS,"AQ4 2,870 / 2,786; error analysis 2,870 / 2,786"
-V4,no audit or outcome column among the model inputs,PASS,33 input columns checked
-V5,every model input has the role predictor or predictor_extended in the Milestone 3 dictionary (code_module is the run's module),PASS,columns with another role: none
-V6,first test access is after the freeze,PASS,freeze 2026-11-12T15:58:51Z; first access 2026-11-12T15:58:53Z; 18 accesses recorded
-V7,prepared files still match the Milestone 3 manifest,PASS,5 files hash-checked

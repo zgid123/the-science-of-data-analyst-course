@@ -1,0 +1,107 @@
+{
+ "config": "M1",
+ "model": "logistic",
+ "predictor_set": "primary",
+ "cutoff_day": 27,
+ "columns": [
+  "code_module",
+  "start_month",
+  "highest_education",
+  "num_of_prev_attempts",
+  "studied_credits",
+  "registration_lead",
+  "banked_results",
+  "clicks_pre",
+  "clicks_0c",
+  "active_days_0c",
+  "sites_0c",
+  "inactive_last7",
+  "activity_ratio_run",
+  "tasks_due_c",
+  "tasks_missed_c",
+  "tasks_late_c",
+  "tma_late_c",
+  "cma_late_c",
+  "cma_marked_c"
+ ],
+ "params": {
+  "C": 0.001
+ },
+ "seed": 20131,
+ "training": {
+  "runs": [
+   "AAA_2013J",
+   "BBB_2013B",
+   "BBB_2013J",
+   "DDD_2013B",
+   "DDD_2013J",
+   "EEE_2013J",
+   "FFF_2013B",
+   "FFF_2013J",
+   "GGG_2013J"
+  ],
+  "rows": 11811,
+  "noncompleters": 5245,
+  "year": 2013
+ },
+ "tuning": {
+  "method": "leave-one-run-out over the 9 runs of 2013, overlapping students removed from each inner training set",
+  "criterion": "pooled normalised recall, k = 5 per 20",
+  "grid": [
+   {
+    "C": 1e-05
+   },
+   {
+    "C": 0.0001
+   },
+   {
+    "C": 0.001
+   },
+   {
+    "C": 0.01
+   },
+   {
+    "C": 0.1
+   },
+   {
+    "C": 1.0
+   },
+   {
+    "C": 10.0
+   },
+   {
+    "C": 100.0
+   }
+  ]
+ },
+ "data_version": "OULAD-N04-prepared-1.0",
+ "sklearn": "1.9.1",
+ "model_file": "models/frozen_M1_d27.joblib",
+ "model_sha256": "49f462fbeb6d1631ecf233cc46a370da0947365f4be48a18c125aa10a86b9a96",
+ "coefficients": {
+  "code_module=AAA": -0.03252942041070884,
+  "code_module=BBB": -0.09049380809361203,
+  "code_module=DDD": 0.14567298885562352,
+  "code_module=EEE": 0.04391223640557613,
+  "code_module=FFF": 0.15146252763981077,
+  "start_month=B": 0.06517908921400409,
+  "highest_education": -0.21954983419637006,
+  "inactive_last7": 0.09456283398065903,
+  "registration_lead": -0.01719292172476073,
+  "activity_ratio_run": -0.07444425128625812,
+  "num_of_prev_attempts": 0.10113364862479786,
+  "studied_credits": 0.1037141152981831,
+  "banked_results": 0.015858667768404715,
+  "clicks_pre": -0.15100605878138093,
+  "clicks_0c": -0.12205354581207639,
+  "active_days_0c": -0.2167062330739874,
+  "sites_0c": -0.05608037808525676,
+  "tasks_due_c": 0.06684826071635228,
+  "tasks_missed_c": 0.3485469707245597,
+  "tasks_late_c": 0.055558489216762395,
+  "tma_late_c": 0.10550432874923431,
+  "cma_late_c": -0.010822549654788231,
+  "cma_marked_c": -0.051737875315147196
+ },
+ "intercept": -0.212891172919924
+}

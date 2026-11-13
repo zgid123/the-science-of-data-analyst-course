@@ -1,0 +1,43 @@
+aq,item,milestone_4,new,difference,unit,same_conclusion
+AQ2,"Missed a task due, 2013",40.83,40.67,-0.1599999999999966,points,yes
+AQ2,"Missed a task due, 2014",39.26,39.64,0.38000000000000256,points,yes
+AQ2,"Submitted a TMA late, 2013",20.2,21.66,1.4600000000000009,points,yes
+AQ2,"Submitted a TMA late, 2014",20.25,22.54,2.289999999999999,points,yes
+AQ2,"No activity in the last 7 days, 2013",14.46,13.48,-0.9800000000000004,points,yes
+AQ2,"No activity in the last 7 days, 2014",15.82,15.41,-0.41000000000000014,points,yes
+AQ2,"Clicks below half the run median, 2013",13.36,14.66,1.3000000000000007,points,yes
+AQ2,"Clicks below half the run median, 2014",14.6,14.75,0.15000000000000036,points,yes
+AQ2,"No activity before the start, 2013",10.56,11.26,0.6999999999999993,points,yes
+AQ2,"No activity before the start, 2014",8.65,9.15,0.5,points,yes
+AQ3 development,"Development, M1",0.752688,0.7503360215053764,-0.002351978494623652,normalised recall,yes
+AQ3 development,"Development, rule",0.727487,0.7271505376344086,-0.0003364623655913723,normalised recall,yes
+AQ3 development,"Development, B3",0.570901,0.5678763440860215,-0.003024655913978491,normalised recall,yes
+AQ3 development,"Development, M2",0.746976,0.748991935483871,0.002015935483871023,normalised recall,yes
+AQ3 development,"Development, M3",0.75,0.7486559139784946,-0.0013440860215053752,normalised recall,yes
+AQ3 development,"Development, M4",0.748992,0.7479838709677419,-0.0010081290322581093,normalised recall,yes
+AQ3 setup,Chosen configuration,M1,M1,,,yes
+AQ3 setup,M1 penalty C at day 27,0.001,10,,,no: tuning criterion differs
+AQ3 test,"S1 normalised recall, model",0.725917,0.7251580278128951,-0.0007589721871049671,normalised recall,yes
+AQ3 test,"S1 normalised recall, rule",0.704425,0.7044247787610619,-2.2123893805847672e-07,normalised recall,yes
+AQ3 test,S1 difference,0.021492,0.020733249051833158,-0.0007587509481668427,normalised recall,yes
+AQ3 test,"S1 interval, low",0.009259,0.0063361013816432285,-0.0029228986183567713,normalised recall,yes
+AQ3 test,"S1 interval, high",0.033739,0.03613937776601532,0.0024003777660153228,normalised recall,yes
+AQ3 test,S1 sign-flip p,0.000244,0.0035400390625,0.0032960390625,p,yes
+AQ3 test,S1 runs won (of 13),12.0,11.0,-1.0,runs,yes
+AQ3 test,"Non-completers listed by the model, day 27, 5 per 20",2871,2868,-3,students,yes
+AQ3 test,Runs where the rule's list is identical (of 13),13,13,0,runs,yes
+AQ3 test,S3 calibration-in-the-large,0.057997,0.11678301850556858,0.058786018505568575,,yes
+AQ3 test,S3 calibration slope,1.310605,0.8856895725478765,-0.4249154274521235,,"no: S3 fails in M4, passes pooled here"
+AQ3 sensitivity,"Day 13, 5 per 20",0.02134,0.02084367245657559,-0.0004963275434244109,normalised recall,yes
+AQ3 sensitivity,"Day 27, 3 per 20",0.027813,0.03118415507796035,0.0033711550779603507,normalised recall,yes
+AQ3 sensitivity,9 runs also run in 2013,0.025414,0.024309392265193353,-0.0011046077348066466,normalised recall,yes
+AQ3 sensitivity,4 runs not run in 2013,0.012903,0.012903225806451646,2.2580645164631263e-07,normalised recall,yes
+AQ3 sensitivity,Without module CCC,0.022801,0.021498371335504807,-0.0013026286644951916,normalised recall,yes
+AQ3 sensitivity,Module CCC only,0.016949,0.01807909604519775,0.0011300960451977524,normalised recall,yes
+AQ3 sensitivity,Without students seen in 2013,0.022721,0.020476858345021,-0.002244141654979003,normalised recall,yes
+AQ3 sensitivity,Without Withdrawn lacking a withdrawal day,0.022392,0.020101781170483557,-0.0022902188295164418,normalised recall,yes
+AQ4,Recall gap: Declared disability,5.41,5.46,0.04999999999999982,points,yes (not flagged in both)
+AQ4,Recall gap: Most deprived band (0–10%),1.73,1.35,-0.3799999999999999,points,yes (not flagged in both)
+AQ4,Recall gap: Deprivation band missing,-8.05,-7.44,0.6100000000000003,points,yes (not flagged in both)
+AQ4 descriptive,"Recall, women",0.388,0.3869090909090909,-0.0010909090909090868,share,yes
+AQ4 descriptive,"Recall, men",0.43355,0.433549627493391,-3.725066090032314e-07,share,yes

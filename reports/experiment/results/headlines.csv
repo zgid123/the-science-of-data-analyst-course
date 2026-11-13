@@ -1,0 +1,30 @@
+name,value,formula
+nc_all,17208.0,"non-completers among all 32,593 enrolments"
+share_gone_before_d14,0.25900743840074386,withdrew before day 14 / all non-completers
+share_gone_d14_27,0.033414690841469086,withdrew days 14–27 / all non-completers
+share_reachable_after_d27,0.7021734077173408,(withdrew after day 27 + failed) / all non-completers
+share_fail_of_nc,0.4098093909809391,failed / all non-completers
+not_reg_d14_2013,0.10739892083672112,share of 2013 enrolments (6 shared modules) not registered at day 14
+not_reg_d14_2014,0.1582365003417635,share of 2014 enrolments (6 shared modules) not registered at day 14
+nc_normal_activity,4193.0,2014 non-completers at day 27 with clicks >= half the run median
+share_nc_normal_activity,0.6067139343076255,normal-activity non-completers / all non-completers at day 27 (2014)
+recall_normal_model,0.19127116622943,model recall among normal-activity non-completers
+recall_normal_rule,0.15645122823753876,rule recall among normal-activity non-completers
+recall_none_model,0.9844054580896686,model recall among non-completers with no click by day 27
+swap_size,903.0,students on the model list only (= rule list only)
+rate_model_only,0.5968992248062015,non-completion of students on the model list only
+rate_rule_only,0.5060908084163898,non-completion of students on the rule list only
+model_only_with_sign,0.21262458471760798,share of model-only students with any rule sign
+model_only_prev_attempt,0.3067552602436323,share of model-only students with a previous attempt
+rule_only_prev_attempt,0.06423034330011074,share of rule-only students with a previous attempt
+tutor_groups,791.0,list places / 5 = tutor groups of 20 across the 13 test runs
+groups_per_extra_hit,9.646341463414634,tutor groups per extra non-completer listed by the model
+rule_share_of_model_hits,0.9714086471408647,"rule hits / model hits at day 27, 5 per 20"
+listed_withdrew_28_34,111.0,listed non-completers who withdrew in days 28–34
+share_listed_nc_fail,0.5739191073919108,listed non-completers who failed / listed non-completers
+share_list_reason_education,0.1420986093552465,share of the list whose main reason is prior education
+share_list_reason_behaviour,0.8070796460176991,"share of the list whose main reason is low activity, a missed task or a late submission"
+m1_recall,0.41499059470409494,"share of all 2014 non-completers on the model lists, day 27, 5 per 20"
+m1_precision,0.7251580278128951,share of listed students who did not complete
+m1_missed,4043.0,non-completers not on the model lists
+m1_recall_d13,0.38558909444985395,"model recall at day 13, 5 per 20"

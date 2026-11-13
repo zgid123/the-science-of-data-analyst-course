@@ -1,4 +1,0 @@
-scope,enrolments_2013,not_registered_2013,share_not_registered_2013,enrolments_2014,not_registered_2014,share_not_registered_2014,difference_2014_minus_2013,ci_low,ci_high,non_completion_among_not_registered_2013,non_completion_among_not_registered_2014
-all runs,13529,1453,0.107399,19064,3079,0.161509,0.054110,0.046695,0.061464,0.993806,0.995128
-6 modules run in both years,13529,1453,0.107399,14630,2315,0.158237,0.050838,0.042943,0.058719,0.993806,0.994384
-9 module x start-month pairs run in both years,13529,1453,0.107399,13103,2203,0.168129,0.060731,0.052474,0.068997,0.993806,0.994099

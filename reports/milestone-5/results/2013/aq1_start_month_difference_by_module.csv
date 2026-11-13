@@ -1,5 +1,0 @@
-year,module,n_february,nc_february,rate_february,february_ci_low,february_ci_high,n_october,nc_october,rate_october,october_ci_low,october_ci_high,difference_pp,difference_ci_low,difference_ci_high
-2013,BBB,1606,804,0.5006,0.4762,0.525,1851,781,0.4219,0.3996,0.4446,7.8689,4.5386,11.177
-2013,DDD,1197,688,0.5748,0.5466,0.6025,1675,849,0.5069,0.4829,0.5308,6.7905,3.0938,10.4528
-2013,FFF,1520,739,0.4862,0.4611,0.5113,1998,903,0.452,0.4302,0.4738,3.4232,0.0955,6.7441
-2013,"Modules run in both start months, pooled",4323,2231,0.5161,0.5012,0.531,5524,2533,0.4585,0.4454,0.4717,5.7532,3.7646,7.7359

@@ -4,9 +4,9 @@ This appendix supports Section 13. It gives the AI Decision Log of Milestones 1�
 
 Section 12 stated the limits of the evidence; the way that evidence was produced also includes the use of generative AI in every milestone. We used generative AI as a simulated stakeholder, a research and code assistant, a critic and a writing partner, and in every role under one rule: AI was never a source of data, statistics, licence information or results, and every fact it offered was checked against a saved source, the data files or code that we ran. For each milestone we record what AI was used for, what it suggested, how we verified or changed its output and what we decided, and we reflect on whether AI supported our reasoning or risked replacing evidence.
 
-Table A.46 gives the AI Decision Log. The rows "M1 / M5" to "M4 / M5" summarise the AI use of each earlier milestone and how its result is carried into this final report; the rows for Milestone 5 record the AI use in the integration itself. The last row covers the drafting and review of the full report.
+Table A.43 gives the AI Decision Log. The rows "M1 / M5" to "M4 / M5" summarise the AI use of each earlier milestone and how its result is carried into this final report; the rows for Milestone 5 record the AI use in the integration itself. The last row covers the drafting and review of the full report.
 
-**Table A.46. AI Decision Log, Milestones 1–5**
+**Table A.43. AI Decision Log, Milestones 1–5**
 
 | Stage | AI used for | AI suggestion / output | Student verification / modification | Final human decision |
 | :---- | :---- | :---- | :---- | :---- |

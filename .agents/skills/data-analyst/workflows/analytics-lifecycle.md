@@ -37,7 +37,7 @@ John Rollins' data science methodology (CRISP-DM based) answers ten questions in
 
 The stages are an order of reasoning, not a report outline. Real work loops back: profiling reveals a problem, a finding raises a new question, feedback changes the population. When that happens, return to the stage that owns the decision, fix it, and note the change in `NOTES.md`. Modeling and evaluation in particular run as a loop.
 
-Scale each stage. For a focused question several stages take one sentence of thought. For a substantial project each stage leaves a short record in `NOTES.md` (a few lines or a small table, not boilerplate). Mark a stage **NOT APPLICABLE** only when the task genuinely does not need it; missing data or unrun checks stay visible as limitations.
+Scale each stage. For a focused question several stages take one sentence of thought. For a substantial project all ten stages are mandatory: create the working folder with `scripts/new_project.py` during stage 1, and fill one row of the lifecycle record in its `NOTES.md` as each stage ends (what was done, the evidence, the gate). Stages 4 to 9 each have a **Run** line: the command that produces that stage's evidence. Mark a stage **NOT APPLICABLE** only when the task genuinely does not need it; missing data or unrun checks stay visible as limitations.
 
 The most common failure is rushing into data collection and analysis before framing the problem. Spend real thought on stages 1–3.
 
@@ -54,9 +54,11 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 - **SMART goal, when a target is needed.** For a decision or intervention with a meaningful target and timeframe, restate it as Specific, Measurable, Achievable, Relevant and Time-bound. Do not invent a target for exploratory work.
 - **KPIs, when evaluating a decision or intervention.** Pick a primary KPI that shows whether the goal is met and secondary measures that capture relevant effects or guardrails. Define each by population, numerator/denominator, unit and window. For exploratory work, define the analytical measures needed to answer the questions instead of forcing intervention KPIs.
 - **Requirements from stakeholders.** When a stakeholder is available, ask: What are your business goals? How do you define success, and what metric shows it? What are your biggest challenges? What decisions will you make from this analysis? What risks do you see, and what would stop you using it? Synthesize input: organize → identify themes → prioritize → refine questions → validate themes. When the user is available and a consequential answer is missing, grill them one question at a time with [grilling](../references/grilling.md) before finalizing the brief. When no stakeholder is available, write these answers as _proposed_ assumptions.
+- **No documentation.** When a dataset comes with no dictionary, say so, state each field meaning you rely on as a _proposed_ assumption checked against actual records, and do not present it as fact. If you recognise a well-known public dataset, say that too: what you remember about it is background, not documentation, and a holdout drawn from data you may have seen before is not an unseen test.
 - **Domain knowledge.** Use it to ask relevant questions, read numbers in context, choose methods suited to the domain and sanity-check results. Read the dataset documentation and domain sources before deciding what a field means.
 - **Business questions → analytical questions.** Turn each vague business question into a set of analytical questions that are **Clear** (no ambiguity, assumptions explicit), **Specific** (one aspect each), **Scoped** (population, period), **Data-oriented** (names the data needed) and **Answerable** (you know what the answer looks like, its unit and a plausible range). Example: "How successful was my campaign?" → "What was the overall positive response rate for the Q3 campaign?", "How did it differ by channel?", "…by demographic group?"
 - **Classify the decision.** Strategic, tactical or operational; programmed (recurring) or non-programmed (one-off); one-way door (hard to reverse) or two-way door (reversible). Irreversible, strategic decisions justify more rigor; reversible operational ones need a fast, good-enough answer.
+- **Existing project record.** If the work continues a project, read its design, definitions, change log, earlier deliverables and any existing implementation before framing anything. Adopt what they fix; where they are ambiguous, follow the existing implementation. List each departure as a proposed change with its reason and the result both ways, using the project's own numbering.
 - **Deliverable.** Agree or propose the format: inline answer, report, dashboard, or the user's own required structure. Check the [playbooks](../SKILL.md#playbooks) for a matching problem type.
 
 **Produce**: a proportionate brief in `NOTES.md` — purpose, reader, prioritized analytical questions, scope and deliverable; include business/SMART goals and primary/secondary KPIs when a decision or intervention needs them, otherwise mark them not applicable. Label proposed assumptions.
@@ -119,7 +121,9 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 - Record source, version or download date (only if known — never invent one), filters, row counts and coverage. Keep raw inputs untouched.
 - When documentation, codebooks or briefs arrive as PDF, call the Skill tool with `pdf2md` and read the verified Markdown copy, so field definitions can be quoted exactly.
 
-**Produce**: a source inventory in `NOTES.md` (source, owner, format, coverage, access, sensitivity); extraction code in `code/`.
+**Run**: `python tools/data_manifest.py write <input files> -o data-manifest.json` once, when the inputs are fixed. `run_all.sh` verifies the manifest as its first step, and scripts read inputs through `data_manifest.checked(path, manifest)`.
+
+**Produce**: a source inventory in `NOTES.md` (source, owner, format, coverage, access, sensitivity); `data-manifest.json`; extraction code in `code/`.
 
 **Gate**: inputs trace to their source; missing coverage is resolved or disclosed before claims depend on it; sensitive data is handled appropriately.
 
@@ -138,6 +142,8 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 - Look for the usual mess: bad formats, trailing spaces, duplicates, empty rows, synonyms and abbreviations, scale differences, skew and outliers, missing values (also coded as "?", 0, N/A or blank).
 - **Representativeness**: does the population, period and coverage match the problem? Check selection effects, missingness patterns across groups and periods, and join fanout.
 - Note preliminary insights, and whether more data is needed. If the data cannot support the approach, go back to stage 2 or 3.
+
+**Run**: `python tools/run_step.py 01_profile -- python tools/profile_data.py <files> -o results/profile.md`; the profile is in `results/profile.md`.
 
 **Produce**: data dictionary notes and a data quality summary in `NOTES.md` (dimension → criterion → finding → consequence).
 
@@ -160,6 +166,8 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 - **Feature engineering**: build variables that answer the questions — and for predictive work, only from information available at the prediction time.
 - **Sampling** (when data is too large or for surveys): set the margin of error and confidence level, record the sampling frame, seed and size.
 - Reconcile row counts at each step, key uniqueness, control totals and denominators. Validate consequential transformations with stakeholders or documentation. A good plan today beats a perfect plan tomorrow: prepare what the questions need, not everything possible.
+
+**Run**: each preparation script as a step of `run_all.sh` (`step 02_prepare code/02_prepare.py`). The script prints its row counts before and after and asserts the reconciliation, so a broken join stops the run.
 
 **Produce**: reproducible prepared tables (or queries) plus a preparation log in `NOTES.md` (step → rows/entities affected → reason).
 
@@ -186,6 +194,8 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 - Draft each finding in the report voice: claim, number, comparison, meaning, main limit. Draft its chart with `scripts/chart_style.py`. When `chart_style.py` has no helper for the chart type, call the Skill tool with `matplotlib` and keep the house palette; when the reader needs hover or zoom, call it with `create-viz` for an interactive chart. Then call the Skill tool with `scientific-visualization` to audit the chart for truthful scales, uncertainty display and accessibility.
 - Stop when the stage 2 stopping rule is met. Do not slice indiscriminately, hunt significance or add models for appearance.
 
+**Run**: each analysis script as a step of `run_all.sh`; it saves its result tables under `results/`. For predictive work, `python tools/holdout_guard.py freeze --record results/freeze.json --choices code/choices.json <model files>` before any holdout outcome is read, and `holdout_guard.open_holdout(...)` at the top of every script that reads one.
+
 **Produce**: result tables in `results/`, charts in `figures/`, draft findings.
 
 **Gate**: every finding traces to code and numbers, has a comparison, and has survived its most plausible alternative or carries that limit. Profiling alone cannot pass this gate for a substantial investigation.
@@ -200,11 +210,15 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 
 - **Answer check**: re-read the brief. Does each analytical question have an answer, a partial answer with a stated blocker, or an explicit unsupported status? Does the result meet the SMART goal's success criteria?
 - **Diagnostic check — does it work as intended?** Independently recompute decision-critical numbers (different code path or query); check leakage, wrong denominators, residuals and errors; for models, evaluate on held-out data (temporal holdout or cross-validation) against baselines with metrics suited to the decision.
+- **Independent review, for substantial work.** Hand the report, the result tables and the raw inputs to a fresh reviewer who has not seen your code or expected values (a subagent or a colleague). They recompute the headline numbers from the raw inputs and read every claim, table cell and check against the evidence: numbers in prose against their tables, undefined values shown as zero, checks that cover less than they claim. Fix each demonstrated defect and log it; do not reopen choices the reviewer merely would have made differently. Fill in [the reviewer brief](../assets/reviewer-brief.md) for the hand-off. If no independent reviewer is available, record the status as self-checked.
+- **Reconcile with other implementations.** When a teammate's or an earlier implementation answers the same question, compare result by result and explain every difference (definition, population or error).
 - **Statistical check — is it real?** Check significance and uncertainty where inference is claimed (intervals, effect sizes; account for multiple comparisons). Avoid unsupported causal language.
 - To see what drives a model's predictions, call the Skill tool with `shap`. Attributions describe the model, not causes in the world.
 - For an independent QA pass on methodology, calculations and bias, call the Skill tool with `validate-data`.
 - Fill the [verification ledger](#verification-ledger).
 - Review against [the quality rubric](../references/analytical-quality.md) privately. Fix what fails, iterating with Modeling; do not write self-assigned scores into a deliverable.
+
+**Run**: a second code path for the headline numbers as its own step (it exits 1 on a difference); `python tools/compare_results.py <mine>.csv <theirs>.csv --keys … --cols … --tol …` when another implementation exists; `python tools/holdout_guard.py status --record … --access …` for the order of freeze and reads.
 
 **Produce**: ledger in `NOTES.md`; status: complete analysis, partial analysis, feasibility assessment or unverified work.
 
@@ -224,9 +238,12 @@ Some steps hand the mechanics to a companion skill ("call the Skill tool with `p
 - When the required deliverable is a web presentation (Slidev), call the Skill tool with `slidev`; start from the project's reference deck when it has one.
 - When a dashboard needs a control `assets/dashboard-template.html` lacks (such as a date-range filter or a sortable detail table), call the Skill tool with `build-dashboard` for that pattern only; keep verified data from `results/` and never use its sample-data fallback.
 - Address every relevant stakeholder — direct, indirect, upstream, downstream — at the right level of detail.
+- For a Markdown report, "rendered and inspected" means: the tables were written by `report_tables.py`, `check_report.py` passes, and you have read the final file from top to bottom as the reader will; say so, and say if no viewer was available to see the figures in place.
 - Open the rendered artifact. Check that numbers match `results/`, charts render, filters work, and that the main findings are readable in the artifact itself (not only in linked CSV or Markdown).
 - **Plan the rollout** when the result will be used operationally: start with a limited group or test setting, state how it will be monitored and maintained, and what would trigger a change. Give users time and guidance to adopt it.
 - Give the reader the path or link and how to rerun.
+
+**Run**: `python tools/report_tables.py fill report.md`, then `python tools/check_report.py report.md --claims claims.json`, as the last two steps of `run_all.sh`. Write `claims.json` while drafting: one entry per number quoted in the prose. A report check without claims reports the prose numbers as NOT VERIFIED.
 
 **Produce**: report and/or dashboard, with `code/` and `results/` alongside; a rollout and monitoring plan when relevant.
 
@@ -261,7 +278,7 @@ Keep a compact ledger in `NOTES.md` for every non-trivial deliverable. Include o
 Rules that keep it honest:
 
 - State the condition before assigning a status. PASS means the condition was evaluated and met.
-- Log the quantity the code actually checked (unique users are not response rows).
+- Log the quantity the code actually checked (unique users are not response rows) and its coverage: which tables and how many values. A check worded "all" that read one table is NOT VERIFIED for the rest.
 - Status is PASS, FAIL, NOT VERIFIED or NOT APPLICABLE (scope reason only, never "no evidence"). PENDING is for future outcomes, not checks.
 - A FAIL sends the work back to the stage that caused it, or removes or limits the affected claim. A caveat cannot rescue an invalid number.
 - Prefer executable checks. Add a reusable script only after the same check recurs across analyses.

@@ -1,0 +1,4 @@
+ranking,group,recall_group,recall_others
+model,Declared disability,0.46326276463262767,0.4086444007858546
+model,Deprivation band 0–10%,0.4269377382465057,0.41345525800130634
+model,Deprivation band missing,0.3425414364640884,0.4169390787518574

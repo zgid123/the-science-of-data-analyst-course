@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-11-13T09:07:59Z",
+  "files": {
+    "../milestone-3/package/data/metadata/predictor_sets.json": {
+      "sha256": "0ad6ee292b134a7faa2bbc21ea4383352f42963b6e36765fad9f7cc89f7c1df3",
+      "bytes": 1165
+    },
+    "../milestone-3/package/data/processed/assessment_due.parquet": {
+      "sha256": "f67d7916dd95c2ab2321140b277a554145163b59e8d99f68b13d2d6c415cb498",
+      "bytes": 904360
+    },
+    "../milestone-3/package/data/processed/capacity_by_run.parquet": {
+      "sha256": "38f6868c2b74fcc7998c4c589b5d1a9420b6c11fd1bf2964e7abd86311f99e08",
+      "bytes": 4161
+    },
+    "../milestone-3/package/data/processed/enrolment.parquet": {
+      "sha256": "1d1e397ac67ce774fec8be5d23bbf988ab70eb11f1bda5efc3d2f05510900a78",
+      "bytes": 465484
+    },
+    "../milestone-3/package/data/processed/features_d13.parquet": {
+      "sha256": "c58a44150e8c367cd702303998bb028aed3c9b763e89e5b171d229b075b32bd6",
+      "bytes": 612768
+    },
+    "../milestone-3/package/data/processed/features_d27.parquet": {
+      "sha256": "4bf8a482b9ec7fa42c28ee96579c738faea8219124b74110ae53f54efcff6347",
+      "bytes": 720485
+    },
+    "../milestone-3/package/data/raw/assessments.csv": {
+      "sha256": "8cc738fb88ad760571d6f2a23059bfee0ffcae3bcd830514c9cbd5c6d5a046f1",
+      "bytes": 8200,
+      "data_rows": 206
+    },
+    "../milestone-3/package/data/raw/courses.csv": {
+      "sha256": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+      "bytes": 526,
+      "data_rows": 22
+    },
+    "../milestone-3/package/data/raw/studentAssessment.csv": {
+      "sha256": "fd5320786328d05af841ee7dd4b5871b9dada3b9fe9d6a3642b2f42635510a6e",
+      "bytes": 5690310,
+      "data_rows": 173912
+    },
+    "../milestone-3/package/data/raw/studentInfo.csv": {
+      "sha256": "7e6f3e474a5eee00639d2a414a6c7e928745823c2d2c2563ca1780145f99b0d6",
+      "bytes": 3461652,
+      "data_rows": 32593
+    },
+    "../milestone-3/package/data/raw/studentRegistration.csv": {
+      "sha256": "0d32676285372aaf2e7a80304e5b274b4fba24313e2ca4c04317225e1ec90170",
+      "bytes": 1109984,
+      "data_rows": 32593
+    }
+  }
+}

@@ -1,0 +1,6 @@
+comparison,rows_compared,columns,tolerance,cells_compared,differences,detail
+aq1_rate_by_run,22,"n_kpi,rate_kpi",1e-06,44,0,
+aq2_adjusted_rd,5,"n_support,n_support_2014,adjusted_rd,adjusted_rd_2014",0.0005,20,0,
+aq3_test_listed,24,"list_length,non_completers_on_list",0.0,48,7,"B3|13|5 non_completers_on_list: mine 2327.0, earlier 2328; M1|13|5 non_completers_on_list: mine 2772.0, earlier 2771; M1|27|3 non_completers_on_list: mine 1920.0, earlier 1922; M1|27|5 non_completers_on_list: mine 2868.0, earlier 2870; M2|13|5 non_completers_on_list: mine 2773.0, earlier 2771; M2|27|3 non_completers_on_list: mine 1926.0, earlier 1925; M2|27|5 non_completers_on_list: mine 2869.0, earlier 2872"
+aq3_dev_choice,6,pooled_normalised_recall,0.0005,6,0,
+aq4_fairness,3,"recall_group,recall_others",0.0005,9,5,"model|Deprivation band 0–10% recall_group: mine 0.4269377382465057, earlier 0.425667; model|Deprivation band missing recall_group: mine 0.3425414364640884, earlier 0.348066; rule|Declared disability : mine absent, earlier present; rule|Deprivation band 0–10% : mine absent, earlier present; rule|Deprivation band missing : mine absent, earlier present"
