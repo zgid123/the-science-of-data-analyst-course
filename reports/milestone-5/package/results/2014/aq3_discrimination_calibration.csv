@@ -1,0 +1,13 @@
+scores,cutoff,method,name,roc_auc_within_run,pr_auc_within_run,base_rate_mean,citl,slope,mean_pred,observed,brier,runs_within_s3_bounds,runs,s3_met_pooled
+"test (2014 runs, frozen 2013 model)",27,RULE,Early-sign rule (ranked),0.710536,0.660295,0.425113,,,,,,,,
+"test (2014 runs, frozen 2013 model)",27,B3,Background-only model,0.602948,0.520422,0.425113,0.074992,0.779977,0.422083,0.439519,0.238919,5.0,13.0,False
+"test (2014 runs, frozen 2013 model)",27,M1,"Logistic, primary predictors",0.729984,0.686008,0.425113,0.116783,0.88569,0.416376,0.439519,0.207355,5.0,13.0,True
+"test (2014 runs, frozen 2013 model)",27,M2,"Logistic, extended predictors",0.734296,0.687716,0.425113,0.067388,0.930183,0.426254,0.439519,0.20202,5.0,13.0,True
+"test (2014 runs, frozen 2013 model)",27,M3,"Boosted trees, primary",0.730144,0.686987,0.425113,0.001666,1.177923,0.43917,0.439519,0.201283,5.0,13.0,True
+"test (2014 runs, frozen 2013 model)",27,M4,"Boosted trees, extended",0.732157,0.688038,0.425113,-0.006352,1.140855,0.440832,0.439519,0.199546,6.0,13.0,True
+"test (2014 runs, frozen 2013 model)",13,RULE,Early-sign rule (ranked),0.678784,0.605529,0.433125,,,,,,,,
+"test (2014 runs, frozen 2013 model)",13,B3,Background-only model,0.602776,0.528769,0.433125,0.068116,0.762156,0.43373,0.449622,0.24008,5.0,13.0,False
+"test (2014 runs, frozen 2013 model)",13,M1,"Logistic, primary predictors",0.700756,0.637771,0.433125,0.064886,0.914878,0.435958,0.449622,0.215893,4.0,13.0,True
+"test (2014 runs, frozen 2013 model)",13,M2,"Logistic, extended predictors",0.701853,0.639179,0.433125,0.035096,0.926744,0.442257,0.449622,0.214212,8.0,13.0,True
+"test (2014 runs, frozen 2013 model)",13,M3,"Boosted trees, primary",0.705765,0.640586,0.433125,-0.001407,1.008603,0.449921,0.449622,0.212729,4.0,13.0,True
+"test (2014 runs, frozen 2013 model)",13,M4,"Boosted trees, extended",0.704508,0.63952,0.433125,-0.033388,1.024335,0.456764,0.449622,0.212483,4.0,13.0,True

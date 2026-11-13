@@ -1,0 +1,5 @@
+scores,group,enrolments,non_completers,rate,fail,withdrawn,share_with_rule_sign,share_no_click,median_activity_ratio,share_previous_attempt
+"development estimate (2013 runs, out-of-fold)",On both lists,2422,1889,0.779934,1173,716,0.95706,0.249794,0.159872,0.236994
+"development estimate (2013 runs, out-of-fold)",Model list only,558,344,0.616487,209,135,0.295699,0.0,0.637158,0.349462
+"development estimate (2013 runs, out-of-fold)",Rule list only,558,275,0.492832,186,89,0.858423,0.003584,0.403425,0.069892
+"development estimate (2013 runs, out-of-fold)",On neither list,8273,2737,0.330835,1664,1073,0.06636,0.0,1.357143,0.096821

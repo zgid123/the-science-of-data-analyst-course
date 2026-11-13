@@ -1,20 +1,21 @@
-"""AQ4 (prescriptive ranking, decision support): who tops a list of fixed capacity, with what gain, which reasons
-and how fairly (Milestone 4 report, Table 4.4 card, Section 4.4 and rule FR1 of Table 4.5).
+"""AQ4 (prescriptive ranking, decision support): the parts that exist only for the test on the 13 runs of 2014
+(Milestone 4 report, Table 4.4 card, Section 4.4 and rule FR1 of Table 4.5).
 
-Reads the day-27 test scores that aq3_test.py saved and the frozen chosen model (for the reasons); fits nothing.
-Lists hold k = 5 × ceil(n / 20) students per 2014 run (3 × for the sensitivity view).
+Reads the day-27 test scores that aq3_test.py saved and the frozen chosen model; fits nothing. Lists hold
+k = 5 × ceil(n / 20) students per 2014 run.
 
-- yield of the n-th contact per tutor group of 20, model and rule;
-- list summary at 3 and 5 per 20 against the rule and a random list; listed non-completers by when they leave;
 - the reason shown beside each name: the predictor group with the largest positive contribution
   (coefficient × standardised value) of the logistic model; module and start month are course context, not reasons;
+- the coefficients of the chosen model, fitted on the 2013 runs;
 - FR1: recall of each confirmatory group (declared disability, deprivation band 0-10%, band missing) against the
   other students, two-level bootstrap with 5,000 replicates, one-sided p with Holm adjustment, flag when the gap is
-  below −10 points and the Holm p below 0.05; descriptive rates by gender, age band, disability and deprivation band.
+  below −10 points and the Holm p below 0.05.
+
+The yield of each contact, the list summary, reach and the descriptive fairness rates are written for every scope
+by aq34_scopes.py.
 
 Usage (from the package folder): python src/analysis/aq4_lists.py   (run_all.sh step 21)
-Writes results/aq4/contact_yield.csv, list_summary.csv, reach.csv, reasons.csv, coefficients.csv,
-fairness_confirmatory.csv, fairness_descriptive.csv, aq4_summary.md.
+Writes results/2014/aq4_reasons.csv, aq4_fairness_confirmatory.csv; results/2013/aq3_coefficients.csv.
 """
 from __future__ import annotations
 
@@ -60,37 +61,6 @@ d["rank_rule"] = c.rank_in_run(d, "rule")
 d["k5"] = d.groupby("run")["run"].transform(lambda x: c.list_size(len(x), 5))
 d["on_list"] = d["rank"] <= d["k5"]
 
-# ---------------------------------------------------------------- yield of each extra contact per tutor group
-yld = []
-for j in range(1, 11):
-    for name, col in [("model", "rank"), ("rule", "rank_rule")]:
-        band = d[(d[col] > (j - 1) * d["G"]) & (d[col] <= j * d["G"])]
-        p, lo, hi = wilson(int(band["y"].sum()), len(band))
-        yld.append({"contact": j, "method": name, "students": len(band), "non_completers": int(band["y"].sum()),
-                    "precision": p, "low": lo, "high": hi, "base_rate": d["y"].mean()})
-c.write(pd.DataFrame(yld), c.RES4, "contact_yield.csv")
-
-# ---------------------------------------------------------------- list summary at 3 and 5 per 20
-summ = []
-for per20 in (3, 5):
-    for meth in [CHOSEN, "rule"]:
-        summ.append({"per20": per20, "method": "model" if meth == CHOSEN else "rule", **c.pooled(c.list_metrics(d, meth, per20))})
-    r = c.list_metrics(d, "rule", per20)
-    tp = (r["k"] * r["positives"] / r["n"]).sum()
-    summ.append({"per20": per20, "method": "random (expected)", "n": int(r["n"].sum()), "k": int(r["k"].sum()),
-                 "positives": int(r["positives"].sum()), "tp": tp, "attainable": int(r["attainable"].sum()),
-                 "norm_recall": tp / r["attainable"].sum(), "recall": tp / r["positives"].sum(),
-                 "precision": tp / r["k"].sum(), "lift": 1.0})
-c.write(pd.DataFrame(summ), c.RES4, "list_summary.csv")
-
-listed = d[d["on_list"]]
-reach = {"listed": len(listed), "listed_non_completers": int(listed["y"].sum()),
-         "withdrew_days_28_34": int((listed["final_result"].eq("Withdrawn") & listed["date_unregistration"].between(28, 34)).sum()),
-         "listed_fail": int(listed["final_result"].eq("Fail").sum()),
-         "listed_withdrawn": int(listed["final_result"].eq("Withdrawn").sum())}
-reach["reachable_non_completers"] = reach["listed_non_completers"] - reach["withdrew_days_28_34"]
-c.write(pd.DataFrame([reach]), c.RES4, "reach.csv")
-
 # ---------------------------------------------------------------- reasons shown beside each name
 REASON = {"tasks_missed_c": "Missed a task", "tasks_late_c": "Late submission", "tma_late_c": "Late submission",
           "cma_late_c": "Late submission", "cma_marked_c": "Few marked quizzes", "clicks_0c": "Low activity",
@@ -115,10 +85,10 @@ if model.kind == "logistic":
         p, lo, hi = wilson(int(g["y"].sum()), len(g))
         rs.append({"top_reason": reason, "listed": len(g), "share_of_list": len(g) / d["on_list"].sum(),
                    "non_completers": int(g["y"].sum()), "rate": p, "low": lo, "high": hi})
-    c.write(pd.DataFrame(rs).sort_values("listed", ascending=False), c.RES4, "reasons.csv")
+    c.write(pd.DataFrame(rs).sort_values("listed", ascending=False), c.R2014, "aq4_reasons.csv")
     coef = pd.DataFrame({"predictor": model.prep.names(), "coefficient_per_sd": model.est.coef_[0]})
     coef["reason"] = [REASON.get(n.replace("_missing", ""), "Course context") for n in coef["predictor"]]
-    c.write(coef.sort_values("coefficient_per_sd", key=abs, ascending=False), c.RES4, "coefficients.csv")
+    c.write(coef.sort_values("coefficient_per_sd", key=abs, ascending=False), c.R2013, "aq3_coefficients.csv")
 
 # ---------------------------------------------------------------- fairness rule FR1 and descriptive rates
 d["grp_disability"] = d["disability"] == "Y"
@@ -166,26 +136,6 @@ for j, (col, label) in enumerate(CONF.items()):
                "high": np.quantile(reps[:, j], 0.975), "p_one_sided": p_one[j], "p_holm": holm[j],
                "flagged": bool(rg[j] - ro[j] < -0.10 and holm[j] < 0.05)})
 fr = pd.DataFrame(fr)
-c.write(fr, c.RES4, "fairness_confirmatory.csv")
+c.write(fr, c.R2014, "aq4_fairness_confirmatory.csv")
 
-desc = []
-for col in ["gender", "age_band", "disability", "imd_band"]:
-    for lev, g in d.groupby(col):
-        pos = g[g["y"] == 1]
-        r, rlo, rhi = wilson(int(pos["on_list"].sum()), len(pos))
-        lg = g[g["on_list"]]
-        desc.append({"attribute": col, "group": lev, "enrolments": len(g), "base_rate": g["y"].mean(),
-                     "selection_rate": g["on_list"].mean(), "recall": r, "recall_low": rlo, "recall_high": rhi,
-                     "precision": lg["y"].mean() if len(lg) else np.nan,
-                     "note": "insufficient data, not cleared" if len(g) < 400 else ""})
-c.write(pd.DataFrame(desc), c.RES4, "fairness_descriptive.csv")
-
-y5 = pd.DataFrame(yld).query("method == 'model'").set_index("contact")
-lines = ["# AQ4: ranked contact lists, 13 runs of 2014, day 27", "",
-         f"- Yield of the n-th contact per tutor group of 20 (model): 1st {y5.loc[1, 'precision']:.1%}, "
-         f"5th {y5.loc[5, 'precision']:.1%}, 7th {y5.loc[7, 'precision']:.1%}; base rate {y5.loc[1, 'base_rate']:.1%}.",
-         f"- Listed non-completers at 5 per 20: {reach['listed_non_completers']:,} of {reach['listed']:,} listed; "
-         f"{reach['withdrew_days_28_34']} withdraw in days 28–34; {reach['listed_fail']:,} fail at the end.",
-         f"- Rule FR1: {int(fr['flagged'].sum())} of {len(fr)} confirmatory groups flagged."]
-(c.RES4 / "aq4_summary.md").write_text("\n".join(lines) + "\n")
-print("\n".join(lines))
+print(fr.round(3).to_string(index=False))

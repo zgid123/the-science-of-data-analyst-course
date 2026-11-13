@@ -1,0 +1,28 @@
+2026-11-13T11:45:45Z
+$ python src/analysis/aq34_scopes.py --scope 2014   (Python 3.14.5)
+wrote 2014/aq3_by_run.csv (91 rows)
+wrote 2014/aq3_pooled.csv (28 rows)
+wrote 2014/aq3_discrimination_calibration.csv (12 rows)
+wrote 2014/aq3_capacity_curve.csv (40 rows)
+wrote 2014/aq3_model_vs_rule.csv (4 rows)
+wrote 2014/aq3_errors_by_slice.csv (13 rows)
+wrote 2014/aq4_contact_yield.csv (20 rows)
+wrote 2014/aq4_list_summary.csv (6 rows)
+wrote 2014/aq4_reach.csv (1 rows)
+wrote 2014/aq4_fairness_descriptive.csv (18 rows)
+# AQ3, scope 2014: test (2014 runs, frozen 2013 model)
+
+The single test on the 13 runs of 2014 with the models frozen on 2013; gate S1 and the sensitivity views are in aq3_s1_gate.csv and aq3_sensitivity.csv.
+
+- Lists of 5 per 20 at day 27, chosen model M1: 2,868 of 6,911 non-completers listed (recall 41.5%, precision 72.5%, normalised recall 0.725); rule 2,786 (normalised recall 0.704); random list 1737.9.
+- Calibration of M1: in the large 0.117, slope 0.886; 5 of 13 runs within the S3 bounds.
+- Non-completers with normal activity at day 27: 4,193; the model lists hold 19.1% of them.
+
+# AQ4, scope 2014: test (2014 runs, frozen 2013 model)
+
+The single test on the 13 runs of 2014 with the models frozen on 2013; gate S1 and the sensitivity views are in aq3_s1_gate.csv and aq3_sensitivity.csv.
+
+- Yield of the n-th contact per tutor group of 20 (model): 1st 92.4%, 5th 57.6%, 7th 47.3%; base rate 44.0%.
+- Lists of 5 per 20: 2,868 non-completers among 3,955 listed; 111 withdraw in days 28–34; 1,646 fail at the end.
+- Rule FR1 (confirmatory, test only): aq4_fairness_confirmatory.csv; reasons per name: aq4_reasons.csv.
+exit 0

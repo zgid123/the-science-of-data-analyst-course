@@ -1,0 +1,4 @@
+group,enrolments,non_completers,recall_group,recall_others,gap,low,high,p_one_sided,p_holm,flagged
+Declared disability,1488,803,0.463263,0.408644,0.054618,0.004418,0.097256,0.9838,1.0,False
+Most deprived band (0–10%),1486,787,0.426938,0.413455,0.013482,-0.050201,0.064604,0.6618,1.0,False
+Deprivation band missing,610,181,0.342541,0.416939,-0.074398,-0.168137,0.022777,0.0628,0.1884,False

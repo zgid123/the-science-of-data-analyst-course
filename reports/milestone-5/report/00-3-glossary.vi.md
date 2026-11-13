@@ -12,7 +12,7 @@ nghĩa hoặc cần đến thuật ngữ lần đầu.
 | Baseline – Phương pháp cơ sở | Phương pháp hoặc danh sách đơn giản mà một phương pháp ứng viên phải vượt qua thì mới xứng với độ phức tạp tăng thêm, ví dụ danh sách xếp theo quy tắc dấu hiệu sớm (phương pháp cơ sở B2) của AQ3 (Mục 8.1 và 11.5) |
 | Calibration – Hiệu chuẩn | Mức khớp giữa nguy cơ dự báo và tỷ lệ quan sát được; AQ3 chỉ hiển thị xác suất khi điều kiện này được đáp ứng (Mục 9.1) |
 | Capacity – Hạn mức liên hệ | Số sinh viên cán bộ liên hệ được ở một đợt lập danh sách: 3 hoặc 5 trên 20 sinh viên, tức là 15% hoặc 25% số lượt đăng ký học của một kỳ mở (Mục 9) |
-| Controlled Change Log – Nhật ký thay đổi có kiểm soát | Bản ghi đánh số C01–C17 về mọi thay đổi đối với câu hỏi, dữ liệu và phương pháp, mỗi thay đổi kèm lý do và tác động (Mục 3.2) |
+| Controlled Change Log – Nhật ký thay đổi có kiểm soát | Bản ghi đánh số C01–C18 về mọi thay đổi đối với câu hỏi, dữ liệu và phương pháp, mỗi thay đổi kèm lý do và tác động (Mục 3.2) |
 | Data cut-off – Thời điểm chốt dữ liệu | Ngày cuối cùng mà một danh sách hoặc một đặc trưng được phép dùng dữ liệu: ngày 13 với danh sách tuần 3 và ngày 27 với danh sách tuần 5 (Mục 3) |
 | Decision option – Phương án quyết định | Khuyến nghị thuộc loại phân tích chỉ định, rút ra từ dữ liệu quan sát và được đưa ra như một giả thuyết để kiểm chứng trong đợt thí điểm, không phải biện pháp đã được chứng minh (Mục 11.5) |
 | Development runs – Các kỳ mở phát triển | 9 kỳ mở module năm 2013, dùng để phát triển mô hình cho AQ3 và ước lượng AQ2 lần đầu (Mục 6) |

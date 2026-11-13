@@ -1,10 +1,11 @@
 ## 3.2. AQ Revision Log
 
 Table 3.2 is the AQ Revision Log: every change from Milestone 1 traces to a finding in the data and to an entry of the
-Controlled Change Log, C01–C17 (Table A.8, Appendix III), and the ratings YELLOW (narrow the question) and RED (a key
+Controlled Change Log, C01–C18 (Table A.8, Appendix III), and the ratings YELLOW (narrow the question) and RED (a key
 concept or intervention missing) are those of Section 5.1. Tables A.5 and A.6 give every cell in full. The final integration
-added three entries: AQ1 and AQ2 are answered on both years while the AQ3 design stays as Milestone 4 fixed it (C15),
-the AQ3 test covers all 13 runs of 2014 (C16), and one early-sign rule serves OULAD and the pilot (C17).
+added four entries: AQ1 and AQ2 are answered on both years while the AQ3 design stays as Milestone 4 fixed it (C15),
+the AQ3 test covers all 13 runs of 2014 (C16), one early-sign rule serves OULAD and the pilot (C17), and the AQ3
+penalty is tuned by log loss (C18).
 
 **Table 3.2. AQ Revision Log**
 

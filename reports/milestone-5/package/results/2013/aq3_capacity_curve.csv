@@ -1,0 +1,41 @@
+scores,per20,method,name,n,k,positives,tp,attainable,norm_recall,recall,precision,lift
+"development estimate (2013 runs, out-of-fold)",1,RULE,Early-sign rule (ranked),11811,596,5245,546.0,596,0.916107,0.104099,0.916107,2.062945
+"development estimate (2013 runs, out-of-fold)",1,B3,Background-only model,11811,596,5245,404.0,596,0.677852,0.077026,0.677852,1.526428
+"development estimate (2013 runs, out-of-fold)",1,M1,"Logistic, primary predictors",11811,596,5245,550.0,596,0.922819,0.104862,0.922819,2.078058
+"development estimate (2013 runs, out-of-fold)",1,RANDOM,Random list (expected),11811,596,5245,264.572768,596,0.443914,0.050443,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",2,RULE,Early-sign rule (ranked),11811,1192,5245,1017.0,1192,0.853188,0.193899,0.853188,1.921259
+"development estimate (2013 runs, out-of-fold)",2,B3,Background-only model,11811,1192,5245,740.0,1192,0.620805,0.141087,0.620805,1.397966
+"development estimate (2013 runs, out-of-fold)",2,M1,"Logistic, primary predictors",11811,1192,5245,1049.0,1192,0.880034,0.2,0.880034,1.981711
+"development estimate (2013 runs, out-of-fold)",2,RANDOM,Random list (expected),11811,1192,5245,529.145536,1192,0.443914,0.100886,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",3,RULE,Early-sign rule (ranked),11811,1788,5245,1425.0,1788,0.79698,0.271687,0.79698,1.794686
+"development estimate (2013 runs, out-of-fold)",3,B3,Background-only model,11811,1788,5245,1072.0,1788,0.599553,0.204385,0.599553,1.350108
+"development estimate (2013 runs, out-of-fold)",3,M1,"Logistic, primary predictors",11811,1788,5245,1475.0,1788,0.824944,0.28122,0.824944,1.857658
+"development estimate (2013 runs, out-of-fold)",3,RANDOM,Random list (expected),11811,1788,5245,793.718303,1788,0.443914,0.151329,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",4,RULE,Early-sign rule (ranked),11811,2384,5245,1809.0,2384,0.758809,0.3449,0.758809,1.70873
+"development estimate (2013 runs, out-of-fold)",4,B3,Background-only model,11811,2384,5245,1395.0,2384,0.585151,0.265968,0.585151,1.317678
+"development estimate (2013 runs, out-of-fold)",4,M1,"Logistic, primary predictors",11811,2384,5245,1864.0,2384,0.781879,0.355386,0.781879,1.760682
+"development estimate (2013 runs, out-of-fold)",4,RANDOM,Random list (expected),11811,2384,5245,1058.291071,2384,0.443914,0.201771,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",5,RULE,Early-sign rule (ranked),11811,2980,5245,2164.0,2976,0.727151,0.412583,0.726174,1.635243
+"development estimate (2013 runs, out-of-fold)",5,B3,Background-only model,11811,2980,5245,1690.0,2976,0.567876,0.322212,0.567114,1.277061
+"development estimate (2013 runs, out-of-fold)",5,M1,"Logistic, primary predictors",11811,2980,5245,2233.0,2976,0.750336,0.425739,0.749329,1.687383
+"development estimate (2013 runs, out-of-fold)",5,RANDOM,Random list (expected),11811,2980,5245,1322.863839,2976,0.444511,0.252214,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",6,RULE,Early-sign rule (ranked),11811,3576,5245,2479.0,3553,0.69772,0.472641,0.693233,1.561062
+"development estimate (2013 runs, out-of-fold)",6,B3,Background-only model,11811,3576,5245,2007.0,3553,0.564875,0.38265,0.561242,1.263837
+"development estimate (2013 runs, out-of-fold)",6,M1,"Logistic, primary predictors",11811,3576,5245,2571.0,3553,0.723614,0.490181,0.71896,1.618996
+"development estimate (2013 runs, out-of-fold)",6,RANDOM,Random list (expected),11811,3576,5245,1587.436607,3553,0.446788,0.302657,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",7,RULE,Early-sign rule (ranked),11811,4172,5245,2777.0,4119,0.674193,0.529457,0.665628,1.4989
+"development estimate (2013 runs, out-of-fold)",7,B3,Background-only model,11811,4172,5245,2317.0,4119,0.562515,0.441754,0.555369,1.250613
+"development estimate (2013 runs, out-of-fold)",7,M1,"Logistic, primary predictors",11811,4172,5245,2867.0,4119,0.696043,0.546616,0.6872,1.547478
+"development estimate (2013 runs, out-of-fold)",7,RANDOM,Random list (expected),11811,4172,5245,1852.009374,4119,0.449626,0.3531,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",8,RULE,Early-sign rule (ranked),11811,4768,5245,3057.0,4605,0.663844,0.582841,0.641149,1.443778
+"development estimate (2013 runs, out-of-fold)",8,B3,Background-only model,11811,4768,5245,2630.0,4605,0.571118,0.50143,0.551594,1.242112
+"development estimate (2013 runs, out-of-fold)",8,M1,"Logistic, primary predictors",11811,4768,5245,3145.0,4605,0.682953,0.599619,0.659606,1.485339
+"development estimate (2013 runs, out-of-fold)",8,RANDOM,Random list (expected),11811,4768,5245,2116.582142,4605,0.459627,0.403543,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",9,RULE,Early-sign rule (ranked),11811,5364,5245,3302.0,5011,0.65895,0.629552,0.615585,1.386211
+"development estimate (2013 runs, out-of-fold)",9,B3,Background-only model,11811,5364,5245,2903.0,5011,0.579325,0.55348,0.541201,1.218707
+"development estimate (2013 runs, out-of-fold)",9,M1,"Logistic, primary predictors",11811,5364,5245,3403.0,5011,0.679106,0.648808,0.634415,1.428612
+"development estimate (2013 runs, out-of-fold)",9,RANDOM,Random list (expected),11811,5364,5245,2381.15491,5011,0.475186,0.453986,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",10,RULE,Early-sign rule (ranked),11811,5960,5245,3561.0,5191,0.685995,0.678932,0.597483,1.345448
+"development estimate (2013 runs, out-of-fold)",10,B3,Background-only model,11811,5960,5245,3169.0,5191,0.61048,0.604194,0.531711,1.197339
+"development estimate (2013 runs, out-of-fold)",10,M1,"Logistic, primary predictors",11811,5960,5245,3657.0,5191,0.704489,0.697235,0.613591,1.381719
+"development estimate (2013 runs, out-of-fold)",10,RANDOM,Random list (expected),11811,5960,5245,2645.727678,5191,0.509676,0.504429,0.443914,0.999632

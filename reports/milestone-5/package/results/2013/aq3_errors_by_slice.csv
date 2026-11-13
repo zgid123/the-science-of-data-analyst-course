@@ -1,0 +1,14 @@
+scores,slice,level,enrolments,non_completers,recall_model,recall_rule,listed_model,listed_completers_model
+"development estimate (2013 runs, out-of-fold)",activity,low,2568,1662,0.687726,0.719013,1505,362
+"development estimate (2013 runs, out-of-fold)",activity,none,607,492,0.995935,1.0,605,115
+"development estimate (2013 runs, out-of-fold)",activity,normal,8636,3091,0.194112,0.154319,870,270
+"development estimate (2013 runs, out-of-fold)",history,first attempt,10202,4263,0.383533,0.391977,2211,576
+"development estimate (2013 runs, out-of-fold)",history,previous attempt,1609,982,0.608961,0.502037,769,171
+"development estimate (2013 runs, out-of-fold)",registration,registered after the start,54,29,0.724138,0.482759,33,12
+"development estimate (2013 runs, out-of-fold)",registration,registered by the start,11757,5216,0.42408,0.412193,2947,735
+"development estimate (2013 runs, out-of-fold)",kind,Distinction,1075,0,,,59,59
+"development estimate (2013 runs, out-of-fold)",kind,Fail,3232,3232,0.427599,0.420483,1382,0
+"development estimate (2013 runs, out-of-fold)",kind,Pass,5491,0,,,688,688
+"development estimate (2013 runs, out-of-fold)",kind,Withdrawn,2013,2013,0.422752,0.399901,851,0
+"development estimate (2013 runs, out-of-fold)",reach,still reachable,11713,5147,0.420245,0.406062,2910,747
+"development estimate (2013 runs, out-of-fold)",reach,withdrew within 7 days,98,98,0.714286,0.755102,70,0

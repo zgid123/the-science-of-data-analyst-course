@@ -20,6 +20,6 @@ information at face value [17]. Verification was matched to what could go wrong:
 literature against saved copies with verbatim quotations, code against fixtures and independent recounts, and critics
 confined to the brief and the data. The reviews helped most where the critic had to argue from the data, as when the
 Milestone 3 auditor found tasks due before registration counted as missed and a leakage check that could not fail. The
-decisions stayed ours: to keep the 2014 runs out of every AQ3 choice, to keep one early-sign rule, to report AQ3 and AQ4 as designs and
+decisions stayed ours: to keep the 2014 runs out of every AQ3 choice, to keep one early-sign rule, to run AQ3 and AQ4 once under the frozen design and
 to state every association as an association. AI therefore supported our reasoning by challenging it and by speeding
 up routine work, while the evidence came from the data, the sources and the code we ran.

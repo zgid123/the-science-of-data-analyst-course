@@ -1,0 +1,41 @@
+scores,per20,method,name,n,k,positives,tp,attainable,norm_recall,recall,precision,lift
+"all 22 runs: 2013 out-of-fold, 2014 test",1,RULE,Early-sign rule (ranked),27535,1387,12156,1279.0,1387,0.922134,0.105216,0.922134,2.08876
+"all 22 runs: 2013 out-of-fold, 2014 test",1,B3,Background-only model,27535,1387,12156,901.0,1387,0.649603,0.07412,0.649603,1.471441
+"all 22 runs: 2013 out-of-fold, 2014 test",1,M1,"Logistic, primary predictors",27535,1387,12156,1281.0,1387,0.923576,0.10538,0.923576,2.092026
+"all 22 runs: 2013 out-of-fold, 2014 test",1,RANDOM,Random list (expected),27535,1387,12156,612.162057,1387,0.441357,0.050359,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",2,RULE,Early-sign rule (ranked),27535,2774,12156,2349.0,2774,0.846792,0.193238,0.846792,1.918099
+"all 22 runs: 2013 out-of-fold, 2014 test",2,B3,Background-only model,27535,2774,12156,1720.0,2774,0.620043,0.141494,0.620043,1.404483
+"all 22 runs: 2013 out-of-fold, 2014 test",2,M1,"Logistic, primary predictors",27535,2774,12156,2416.0,2774,0.870944,0.19875,0.870944,1.972808
+"all 22 runs: 2013 out-of-fold, 2014 test",2,RANDOM,Random list (expected),27535,2774,12156,1224.324114,2774,0.441357,0.100718,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",3,RULE,Early-sign rule (ranked),27535,4161,12156,3271.0,4161,0.786109,0.269085,0.786109,1.780644
+"all 22 runs: 2013 out-of-fold, 2014 test",3,B3,Background-only model,27535,4161,12156,2493.0,4161,0.599135,0.205084,0.599135,1.357122
+"all 22 runs: 2013 out-of-fold, 2014 test",3,M1,"Logistic, primary predictors",27535,4161,12156,3395.0,4161,0.81591,0.279286,0.81591,1.848147
+"all 22 runs: 2013 out-of-fold, 2014 test",3,RANDOM,Random list (expected),27535,4161,12156,1836.486171,4161,0.441357,0.151077,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",4,RULE,Early-sign rule (ranked),27535,5548,12156,4138.0,5548,0.745854,0.340408,0.745854,1.689462
+"all 22 runs: 2013 out-of-fold, 2014 test",4,B3,Background-only model,27535,5548,12156,3222.0,5548,0.58075,0.265054,0.58075,1.315478
+"all 22 runs: 2013 out-of-fold, 2014 test",4,M1,"Logistic, primary predictors",27535,5548,12156,4276.0,5548,0.770728,0.35176,0.770728,1.745805
+"all 22 runs: 2013 out-of-fold, 2014 test",4,RANDOM,Random list (expected),27535,5548,12156,2448.648228,5548,0.441357,0.201435,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",5,RULE,Early-sign rule (ranked),27535,6935,12156,4950.0,6931,0.714183,0.407206,0.713771,1.616788
+"all 22 runs: 2013 out-of-fold, 2014 test",5,B3,Background-only model,27535,6935,12156,3934.0,6931,0.567595,0.323626,0.567267,1.284938
+"all 22 runs: 2013 out-of-fold, 2014 test",5,M1,"Logistic, primary predictors",27535,6935,12156,5101.0,6931,0.735969,0.419628,0.735544,1.666108
+"all 22 runs: 2013 out-of-fold, 2014 test",5,RANDOM,Random list (expected),27535,6935,12156,3060.810285,6931,0.441612,0.251794,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",6,RULE,Early-sign rule (ranked),27535,8322,12156,5702.0,8286,0.688149,0.469069,0.685172,1.552008
+"all 22 runs: 2013 out-of-fold, 2014 test",6,B3,Background-only model,27535,8322,12156,4633.0,8286,0.559136,0.381129,0.556717,1.26104
+"all 22 runs: 2013 out-of-fold, 2014 test",6,M1,"Logistic, primary predictors",27535,8322,12156,5876.0,8286,0.709148,0.483383,0.70608,1.599368
+"all 22 runs: 2013 out-of-fold, 2014 test",6,RANDOM,Random list (expected),27535,8322,12156,3672.972342,8286,0.443274,0.302153,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",7,RULE,Early-sign rule (ranked),27535,9709,12156,6385.0,9604,0.664827,0.525255,0.657637,1.489638
+"all 22 runs: 2013 out-of-fold, 2014 test",7,B3,Background-only model,27535,9709,12156,5316.0,9604,0.553519,0.437315,0.547533,1.240238
+"all 22 runs: 2013 out-of-fold, 2014 test",7,M1,"Logistic, primary predictors",27535,9709,12156,6546.0,9604,0.681591,0.5385,0.67422,1.5272
+"all 22 runs: 2013 out-of-fold, 2014 test",7,RANDOM,Random list (expected),27535,9709,12156,4285.134399,9604,0.446182,0.352512,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",8,RULE,Early-sign rule (ranked),27535,11096,12156,7031.0,10709,0.656551,0.578397,0.633652,1.435308
+"all 22 runs: 2013 out-of-fold, 2014 test",8,B3,Background-only model,27535,11096,12156,5973.0,10709,0.557755,0.491362,0.538302,1.219328
+"all 22 runs: 2013 out-of-fold, 2014 test",8,M1,"Logistic, primary predictors",27535,11096,12156,7198.0,10709,0.672145,0.592136,0.648702,1.469399
+"all 22 runs: 2013 out-of-fold, 2014 test",8,RANDOM,Random list (expected),27535,11096,12156,4897.296456,10709,0.457307,0.402871,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",9,RULE,Early-sign rule (ranked),27535,12483,12156,7612.0,11524,0.660535,0.626193,0.609789,1.381256
+"all 22 runs: 2013 out-of-fold, 2014 test",9,B3,Background-only model,27535,12483,12156,6620.0,11524,0.574453,0.544587,0.530321,1.20125
+"all 22 runs: 2013 out-of-fold, 2014 test",9,M1,"Logistic, primary predictors",27535,12483,12156,7821.0,11524,0.678671,0.643386,0.626532,1.419181
+"all 22 runs: 2013 out-of-fold, 2014 test",9,RANDOM,Random list (expected),27535,12483,12156,5509.458513,11524,0.478086,0.45323,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",10,RULE,Early-sign rule (ranked),27535,13870,12156,8162.0,11984,0.681075,0.671438,0.588464,1.332952
+"all 22 runs: 2013 out-of-fold, 2014 test",10,B3,Background-only model,27535,13870,12156,7245.0,11984,0.604556,0.596002,0.52235,1.183195
+"all 22 runs: 2013 out-of-fold, 2014 test",10,M1,"Logistic, primary predictors",27535,13870,12156,8404.0,11984,0.701268,0.691346,0.605912,1.372474
+"all 22 runs: 2013 out-of-fold, 2014 test",10,RANDOM,Random list (expected),27535,13870,12156,6121.62057,11984,0.510816,0.503588,0.441357,0.999734

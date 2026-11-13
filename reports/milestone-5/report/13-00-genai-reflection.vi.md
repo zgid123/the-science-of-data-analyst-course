@@ -23,7 +23,7 @@ hội thoại; tài liệu được đối chiếu với bản sao đã lưu kè
 cố định (fixture) và các lần đếm lại độc lập; AI đóng vai trò phản biện chỉ được dựa vào đề bài và dữ liệu. Các lần rà soát hữu ích
 nhất là khi AI đóng vai trò phản biện phải lập luận từ dữ liệu. Ví dụ, ở Milestone 3, AI kiểm tra rò rỉ thông tin đã phát hiện các
 bài đến hạn trước ngày đăng ký bị tính là bỏ lỡ, cùng một phép kiểm tra rò rỉ thông tin không thể báo lỗi (luôn cho kết quả PASS). Các
-quyết định vẫn thuộc về chúng em: không dùng các kỳ mở năm 2014 cho bất kỳ lựa chọn nào của AQ3, giữ một quy tắc dấu hiệu sớm duy nhất, trình bày AQ3 và
-AQ4 dưới dạng thiết kế và nêu mọi mối liên hệ đúng là mối liên hệ. Như vậy, AI hỗ trợ quá trình lập luận của chúng em
+quyết định vẫn thuộc về chúng em: không dùng các kỳ mở năm 2014 cho bất kỳ lựa chọn nào của AQ3, giữ một quy tắc dấu hiệu sớm duy nhất, chạy AQ3 và
+AQ4 một lần theo thiết kế đã chốt và nêu mọi mối liên hệ đúng là mối liên hệ. Như vậy, AI hỗ trợ quá trình lập luận của chúng em
 bằng cách phản biện và đẩy nhanh các công việc thường lệ, còn bằng chứng đến từ dữ liệu, các nguồn tài liệu và mã mà
 chúng em đã chạy.

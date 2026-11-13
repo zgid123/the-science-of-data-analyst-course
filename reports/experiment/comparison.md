@@ -4,7 +4,7 @@
 
 ## Summary
 
-**The two experiments reach the same answer to every analytical question.** All five AQ2 signs pass in both years in both experiments, M1 is chosen in both, gate S1 is met in both, the rule's lists are identical in all 13 test runs, and no fairness group is flagged in either. The model lists 2,871 non-completers in the Milestone 4 experiment and 2,868 here.
+**The two experiments reach the same answer to every analytical question.** All five AQ2 signs pass in both years in both experiments, M1 is chosen in both, gate S1 is met in both, the rule's lists are identical in all 13 test runs at the main operating point (day 27, 5 per 20; at day 13 and at 3 per 20 they differ by 2 to 5 students through the handling of ties), and no fairness group is flagged in either. The model lists 2,871 non-completers in the Milestone 4 experiment and 2,868 here.
 
 Two results differ, and both trace to a choice the Milestone 4 design leaves open:
 

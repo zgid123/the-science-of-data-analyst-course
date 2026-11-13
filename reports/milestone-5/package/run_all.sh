@@ -2,8 +2,9 @@
 # Rebuild the Final Project Package from the published OULAD files: download and verify the raw tables, prepare the
 # analytic-ready views, validate them, compare them with the published prepared dataset, run the AQ1/AQ2 analysis on
 # the 2013 runs, the 2014 runs and all 22 runs, compare the two years, run the checks, and compare the results with
-# the shipped ones. Steps 19-23 add AQ3 and AQ4: development on 2013 and freeze, the single test on 2014, the ranked
-# lists, their checks and the comparison with the shipped AQ3/AQ4 results.
+# the shipped ones. Steps 19-27 add AQ3 and AQ4: development on 2013 and freeze, the single test on 2014, the ranked
+# lists, the views of the 2013, 2014 and 22-run scopes and their comparison, the checks, and the comparison with the
+# shipped AQ3/AQ4 results.
 # Each step writes logs/<step>.log: UTC timestamp, command, console output and exit status.
 # Usage (from anywhere): bash run_all.sh      (Python 3.12 with requirements.txt installed; set PYTHON to choose one)
 set -uo pipefail
@@ -50,12 +51,15 @@ step  15_aq2_sens_all    "$PY" src/analysis/aq2_sensitivity_continuous.py --scop
 step  16_aq_year_compare "$PY" src/analysis/aq_year_compare.py  # 2013 against 2014 -> results/compare/
 check 17_aq_checks_years "$PY" src/analysis/aq_checks_years.py  # 2014 and 22-run results against Milestone 3
 check 18_check_results   "$PY" src/checks/check_rebuild.py results     # rebuilt results vs results/checksums.csv
-step  19_aq3_develop      "$PY" src/analysis/aq3_develop.py     # AQ3 development on 2013, model choice, freeze -> results/aq3/
-step  20_aq3_test         "$PY" src/analysis/aq3_test.py        # single test on the 13 runs of 2014 -> results/aq3/
-step  21_aq4_lists        "$PY" src/analysis/aq4_lists.py       # ranked lists, contact yield, reasons, fairness -> results/aq4/
-check 22_aq34_checks      "$PY" src/analysis/aq34_checks.py     # populations, order, second count, Milestone 4 draft
-check 23_check_results_aq34 "$PY" src/checks/check_rebuild.py results_aq34   # vs results/checksums_aq34.csv
-
+step  19_aq3_develop      "$PY" src/analysis/aq3_develop.py     # AQ3 development on 2013, model choice, freeze -> results/2013/aq3_*
+step  20_aq3_test         "$PY" src/analysis/aq3_test.py        # single test on the 13 runs of 2014: gate S1, sensitivity -> results/2014/aq3_*
+step  21_aq4_lists        "$PY" src/analysis/aq4_lists.py       # reasons per name, fairness rule FR1 -> results/2014/aq4_*
+step  22_aq34_2013        "$PY" src/analysis/aq34_scopes.py --scope 2013   # AQ3/AQ4 views, development estimates -> results/2013/
+step  23_aq34_2014        "$PY" src/analysis/aq34_scopes.py --scope 2014   # AQ3/AQ4 views, the test -> results/2014/
+step  24_aq34_all_runs    "$PY" src/analysis/aq34_scopes.py --scope all    # AQ3/AQ4 views, 22 runs -> results/all_runs/
+step  25_aq34_compare     "$PY" src/analysis/aq34_compare.py    # 2013 development against 2014 test -> results/compare/
+check 26_aq34_checks      "$PY" src/analysis/aq34_checks.py     # populations, order, second count, Milestone 4 draft
+check 27_check_results_aq34 "$PY" src/checks/check_rebuild.py results_aq34   # vs results/checksums_aq34.csv
 if [ ${#FAILED_CHECKS[@]} -gt 0 ]; then
   echo "finished with differences in: ${FAILED_CHECKS[*]}"; exit 2
 fi

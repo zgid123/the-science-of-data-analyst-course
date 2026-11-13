@@ -1,0 +1,5 @@
+scores,group,enrolments,non_completers,rate,fail,withdrawn,share_with_rule_sign,share_no_click,median_activity_ratio,share_previous_attempt
+"test (2014 runs, frozen 2013 model)",On both lists,3052,2329,0.763106,1347,982,0.92595,0.201507,0.168831,0.232962
+"test (2014 runs, frozen 2013 model)",Model list only,903,539,0.596899,299,240,0.212625,0.0,0.669323,0.306755
+"test (2014 runs, frozen 2013 model)",Rule list only,903,457,0.506091,248,209,0.844961,0.009967,0.426471,0.06423
+"test (2014 runs, frozen 2013 model)",On neither list,10866,3586,0.33002,1911,1675,0.058991,0.0,1.360825,0.074821

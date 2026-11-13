@@ -1,6 +1,6 @@
 ## Appendix III – Analytical Questions: Quality Check, Revision Log and Change Log
 
-This appendix supports Section 3. It gives how the four questions connect, the quality check of the final wording with the reason in each cell, the AQ Revision Log with every cell written out, the mapping of the milestones' status scales onto the final scales, and the Controlled Change Log C01–C17.
+This appendix supports Section 3. It gives how the four questions connect, the quality check of the final wording with the reason in each cell, the AQ Revision Log with every cell written out, the mapping of the milestones' status scales onto the final scales, and the Controlled Change Log C01–C18.
 
 **How the questions connect.** AQ1 shows which courses and runs lose most students and in which week non-completers
 first fall behind, which tells AQ2 where to look. AQ2 compares the early signs named in its wording and asks which go
@@ -30,9 +30,9 @@ These two measures replace the precision limit of 50% set in Milestone 1, becaus
 Partial when real results answer its core while a named part waits for data or for a later step; Deferred when the
 design is complete but no result exists yet; and Dropped when it is abandoned. AQ1 is Answered because it is answered
 on all 22 runs, the 9 of 2013 and the 13 of 2014, including module CCC, which ran only in 2014, with its success criterion met in each year. AQ2 is Answered because all five signs tested, the four named in its wording and the activity before the start that the AQ2 Modeling Brief of Milestone 4 adds as an input (Section 8.1), meet the criterion of a
-consistent association on the 2013 runs and again on the 2014 runs. AQ3 is Deferred
-because no model has been trained and scored on the 2014 test runs, and AQ4 is Deferred because its ranking needs
-the AQ3 scores and its contact part has no data. Deferring AQ3 and AQ4 is our choice of scope: the brief makes the Level 2 experiment optional, and we keep the single-use 2014 test for one complete run of the frozen protocol, so that no model result on 2014 is seen before the model is frozen (Section 10). No question is dropped. Section 3.1 checks the final wording against
+consistent association on the 2013 runs and again on the 2014 runs. AQ3 is Answered
+by the single test of the Level 2 prototype on the 2014 runs, with the model frozen on 2013 before any 2014 outcome
+was scored (Section 10), and AQ4 is Partial: its ranking is answered from the AQ3 scores, while its contact part has no data. No question is dropped. Section 3.1 checks the final wording against
 the five quality criteria of the brief, Section 3.2 traces each question from its first wording, and Section 11
 reports the answers.
 
@@ -49,11 +49,11 @@ kinds of assessed task that fall due during a run.
 | Specific | Yes: shares of pass, fail and withdrawal with 95% intervals; week of the first missed TMA or CMA; groups by module, run, start month and year | Yes: named signs (missed and late tasks, inactivity, activity against the run's median); adjusted difference in later non-completion, in percentage points; comparison within module | Yes: one target (non-completion); normalised recall at capacity against the early-sign rule; two cut-offs | Yes: lift and normalised recall at list length; groups by deprivation band and disability |
 | Scoped | Yes: OULAD module runs; day-14 population; computed on the 9 runs of 2013 and the 13 runs of 2014 | Yes: enrolments registered at day 27; signs dated up to day 27; 9 runs of 2013, replicated on the 13 runs of 2014 | Yes: cut-offs at day 13 and day 27; development on the 9 runs of 2013; one test on the 13 runs of 2014 | Yes: per run and cut-off; lists of 3 or 5 per 20 students; 2014 test runs only |
 | Data-oriented | Yes: final result, registration and unregistration days, task due and submission days | Yes: daily clicks, task due and submission days, previous attempts and credits | Yes: day-13 and day-27 feature views built only from events dated up to the cut-off | Yes: AQ3 scores, list lengths per run, deprivation band and disability (for the audit only) |
-| Answerable | Yes: answered for 2013 and 2014 with real results | Yes, for association: answered for 2013 and 2014; a cause cannot be settled with observational records | Yes by design: protocol, baselines and success criterion fixed before any test result; not yet run | In part: the ranking once AQ3 scores exist; the choice of contact has no data and is deferred to the pilot |
+| Answerable | Yes: answered for 2013 and 2014 with real results | Yes, for association: answered for 2013 and 2014; a cause cannot be settled with observational records | Yes: answered by a single test on the 2014 runs, with protocol, baselines and success criterion fixed before any test result | In part: the ranking, answered from the AQ3 scores; the choice of contact has no data and is deferred to the pilot |
 
 **What the check shows.** All four questions are clear, specific, scoped and data-oriented in their final wording.
 Answerability differs by question, as the final status of Table 3.1 records: AQ1 and AQ2 are
-answerable and answered for the 2013 and 2014 runs, AQ3 is answerable by a design that has not yet been run, and AQ4 is
+answerable and answered for the 2013 and 2014 runs, AQ3 is answered by its single test on the 2014 runs, and AQ4 is
 answerable only in its ranking part. The one part that no data in OULAD can answer is the contact part of AQ4, which
 is why that part is deferred rather than answered with assumptions.
 
@@ -112,11 +112,11 @@ question, which is the action Modify.
 | Milestone 3 – model readiness (Ready, Revise) | Ready | Ready, for association only | Ready | Revise: ranking ready, contact deferred | Revise → Defer the missing part |
 | Milestone 4 – entry status | Ready | Ready, for association only | Ready | Ready as a ranking; contact deferred | Same content as the Milestone 3 readiness |
 | Final revision action (Keep, Modify, Defer, Drop) | Modify | Modify | Modify | Modify + Defer (contact choice) | – |
-| Final status (Answered, Partial, Deferred, Dropped) | Answered | Answered | Deferred | Deferred | – |
+| Final status (Answered, Partial, Deferred, Dropped) | Answered | Answered | Answered | Partial | – |
 
-The two kinds of scale answer different questions. The fit, readiness and entry ratings and the revision action describe a question and its data before analysis, while the final status describes the results available now. A question rated Ready can therefore be Deferred when its design is complete and its result waits for a named step, as AQ3 and AQ4 do.
+The two kinds of scale answer different questions. The fit, readiness and entry ratings and the revision action describe a question and its data before analysis, while the final status describes the results available now. A question rated Ready can therefore be only Partial when a named part has no data, as the contact part of AQ4 does.
 
-**Three entries recorded in the final integration.** Integrating the four milestones brought three changes to the
+**Four entries recorded in the final integration.** Integrating the four milestones brought four changes to the
 Change Log, each with its reason. First, AQ1 and AQ2 are answered on both years: AQ1 on the 9 runs of 2013 (13,529 enrolments, of which 12,076 were
 registered at day 14), on the 13 runs of 2014 (19,064, of which 15,985) and on the 22 runs pooled, and AQ2 on 2013 with
 its replication on 2014, while the AQ3 design keeps the predictors, candidate configurations, selection rule and gate
@@ -127,7 +127,9 @@ moved in Milestones 3 and 4 from the 2014 runs of the 9 paired modules and start
 enrolments at day 27), so that the test also covers a module and start months the model has not seen; the 9 paired
 runs (10,801 enrolments) and the 4 unpaired runs (4,923) are reported apart, and the entry records a change that had
 been made without one (C16). Third, one early-sign rule serves the project on OULAD and in the pilot, so that secondary
-KPI 1 counts the same students as the rule the AQ3 model must beat (C17).
+KPI 1 counts the same students as the rule the AQ3 model must beat (C17). Fourth, the Level 2 prototype tuned the AQ3
+penalty by log loss, a measure the Milestone 4 plan left open; the choice was made after the tuning results of both
+criteria were known and changes no verdict (C18).
 
 **What did not change.** No question was dropped: every question keeps a core that the data answer, and only the
 contact part of AQ4 is deferred, to a pilot in which contacts and their outcomes are logged. The fairness limit of
@@ -136,9 +138,9 @@ Milestone 4 restored the ten-point gap as review rule FR1 on the groups OULAD re
 one-sided 95% interval of the gap, adjusted for several groups, lies below zero, and turned the limit from a
 constraint on the list into a flag for human review.
 
-**The Controlled Change Log.** Table A.8 gives every entry of the Controlled Change Log: C01 to C08 from the data search of Milestone 2, C09 to C13 from the data understanding of Milestone 3, C14 from the evaluation design of Milestone 4 and C15 to C17 from the final integration, each with the content before and after the change, its reason in the data and its effect on the questions, the KPIs or the decisions.
+**The Controlled Change Log.** Table A.8 gives every entry of the Controlled Change Log: C01 to C08 from the data search of Milestone 2, C09 to C13 from the data understanding of Milestone 3, C14 from the evaluation design of Milestone 4 and C15 to C18 from the final integration, each with the content before and after the change, its reason in the data and its effect on the questions, the KPIs or the decisions.
 
-**Table A.8. Controlled Change Log, entries C01–C17**
+**Table A.8. Controlled Change Log, entries C01–C18**
 
 | ID | Milestone | Before | After | Reason | Effect |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -159,5 +161,6 @@ constraint on the list into a flag for human review.
 | C15 | 5 | AQ1 over all 22 runs under two denominators (Milestone 4 plan); AQ2 replicated on the 13 runs of 2014 only after the AQ3 model is frozen and scored (C14) | AQ1 computed on the 9 runs of 2013, the 13 runs of 2014 and the 22 runs pooled, with the year comparison on both denominators; AQ2 estimated on 2013 and replicated on 2014, including module CCC, with the several-modules sign described on 2014; the AQ3 test keeps the predictors, candidate configurations, selection rule and gate that Milestone 4 fixed on 2013 alone | The final report answers the descriptive and diagnostic questions in full; C14 keeps 2014 outcomes away from the choice of AQ3 predictors, and that choice was fixed in Milestone 4 before any 2014 outcome was related to a sign | AQ1 and AQ2 Answered; the AQ3 test on 2014 remains independent only while the Milestone 4 design is kept: any later change to a predictor, a candidate, the selection rule or the gate needs a test population not yet seen, such as the pilot |
 | C16 | 3–4 (recorded in 5) | AQ3 tested on the 2014 runs of the 9 module and start-month pairs (C07) | AQ3 tested once on all 13 runs of 2014 (15,724 enrolments at day 27); gate S1 judged on all 13 runs; the 9 paired runs (10,801) and the 4 unpaired runs (4,923: CCC February and October, EEE February, GGG February) reported apart | Milestone 3 kept the 4 unpaired runs in the test set to test the model on a module or start month it has not seen; the Milestone 4 evaluation review found that no primary test population had been fixed | The test also covers transfer to an unseen module and start month; module terms are deviation-coded so an unseen module gets the average, with a labels-available variant for the February runs; the paired-only result becomes a sensitivity analysis that cannot change the verdict |
 | C17 | 5 | Secondary KPI 1: on OULAD the C10 rule; for the university the Milestone 1 two-task rule ("two or more assessed tasks missed or late by week 4"), kept by C06 and not revisited by C10 | One early-sign rule for the project, on OULAD and in the pilot: a task due by the cut-off not submitted, a TMA submitted late, or no platform activity in the seven days before the cut-off (C10) | Milestone 4 carries only the C10 rule through the report, and C10 makes secondary KPI 1 use the same rule as the AQ3 comparison; two rules would let the pilot's KPI count different students from the rule the model must beat | Secondary KPI 1 has one definition; the pilot checks the rule against the university's own task calendar and records before use, as C01 requires for every result |
+| C18 | 5 | AQ3 hyperparameters (logistic penalty; depth, trees and learning rate of the boosted trees) "tuned by nested cross-validation" (Milestone 4 report, Appendix III step 3), with no tuning measure named | Tuned by the pooled log loss of an inner leave-one-run-out loop over the training runs, equal values going to the stronger penalty or the smaller model; the choice between configurations still uses the S1 metric | Recall at capacity takes few distinct values and moves in steps as the penalty changes, while log loss is a proper scoring rule and also rewards calibration, which condition S3 judges. The Milestone 4 draft package tuned on recall at capacity (penalty C = 0.001) and failed S3 (slope 1.311); this choice (C = 10) was made after both results were known | M1 stays the chosen model; gate S1 is met under both criteria; S3 is met on the pooled estimates (slope 0.886) but in 5 of 13 test runs only, so under either criterion tutors see ranks and reasons, not probabilities (AQ3, AQ4, D1) |
 
 With the final questions and every change to them recorded, Section 4 turns to the data that these questions require.

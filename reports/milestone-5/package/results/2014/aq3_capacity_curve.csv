@@ -1,0 +1,41 @@
+scores,per20,method,name,n,k,positives,tp,attainable,norm_recall,recall,precision,lift
+"test (2014 runs, frozen 2013 model)",1,RULE,Early-sign rule (ranked),15724,791,6911,733.0,791,0.926675,0.106063,0.926675,2.108384
+"test (2014 runs, frozen 2013 model)",1,B3,Background-only model,15724,791,6911,497.0,791,0.628319,0.071914,0.628319,1.429559
+"test (2014 runs, frozen 2013 model)",1,M1,"Logistic, primary predictors",15724,791,6911,731.0,791,0.924147,0.105773,0.924147,2.102631
+"test (2014 runs, frozen 2013 model)",1,RANDOM,Random list (expected),15724,791,6911,347.589289,791,0.43943,0.050295,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",2,RULE,Early-sign rule (ranked),15724,1582,6911,1332.0,1582,0.841972,0.192736,0.841972,1.915666
+"test (2014 runs, frozen 2013 model)",2,B3,Background-only model,15724,1582,6911,980.0,1582,0.619469,0.141803,0.619469,1.409424
+"test (2014 runs, frozen 2013 model)",2,M1,"Logistic, primary predictors",15724,1582,6911,1367.0,1582,0.864096,0.197801,0.864096,1.966003
+"test (2014 runs, frozen 2013 model)",2,RANDOM,Random list (expected),15724,1582,6911,695.178578,1582,0.43943,0.10059,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",3,RULE,Early-sign rule (ranked),15724,2373,6911,1846.0,2373,0.777918,0.26711,0.777918,1.76993
+"test (2014 runs, frozen 2013 model)",3,B3,Background-only model,15724,2373,6911,1421.0,2373,0.59882,0.205614,0.59882,1.362443
+"test (2014 runs, frozen 2013 model)",3,M1,"Logistic, primary predictors",15724,2373,6911,1920.0,2373,0.809102,0.277818,0.809102,1.840881
+"test (2014 runs, frozen 2013 model)",3,RANDOM,Random list (expected),15724,2373,6911,1042.767868,2373,0.43943,0.150885,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",4,RULE,Early-sign rule (ranked),15724,3164,6911,2329.0,3164,0.736094,0.336999,0.736094,1.67477
+"test (2014 runs, frozen 2013 model)",4,B3,Background-only model,15724,3164,6911,1827.0,3164,0.577434,0.264361,0.577434,1.313785
+"test (2014 runs, frozen 2013 model)",4,M1,"Logistic, primary predictors",15724,3164,6911,2412.0,3164,0.762326,0.349009,0.762326,1.734455
+"test (2014 runs, frozen 2013 model)",4,RANDOM,Random list (expected),15724,3164,6911,1390.357157,3164,0.43943,0.20118,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",5,RULE,Early-sign rule (ranked),15724,3955,6911,2786.0,3955,0.704425,0.403125,0.704425,1.602717
+"test (2014 runs, frozen 2013 model)",5,B3,Background-only model,15724,3955,6911,2244.0,3955,0.567383,0.3247,0.567383,1.290918
+"test (2014 runs, frozen 2013 model)",5,M1,"Logistic, primary predictors",15724,3955,6911,2868.0,3955,0.725158,0.414991,0.725158,1.649889
+"test (2014 runs, frozen 2013 model)",5,RANDOM,Random list (expected),15724,3955,6911,1737.946446,3955,0.43943,0.251475,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",6,RULE,Early-sign rule (ranked),15724,4746,6911,3223.0,4733,0.680963,0.466358,0.679098,1.545093
+"test (2014 runs, frozen 2013 model)",6,B3,Background-only model,15724,4746,6911,2626.0,4733,0.554828,0.379974,0.553308,1.258894
+"test (2014 runs, frozen 2013 model)",6,M1,"Logistic, primary predictors",15724,4746,6911,3305.0,4733,0.698289,0.478223,0.696376,1.584404
+"test (2014 runs, frozen 2013 model)",6,RANDOM,Random list (expected),15724,4746,6911,2085.535735,4733,0.440637,0.30177,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",7,RULE,Early-sign rule (ranked),15724,5537,6911,3608.0,5485,0.657794,0.522066,0.651616,1.482566
+"test (2014 runs, frozen 2013 model)",7,B3,Background-only model,15724,5537,6911,2999.0,5485,0.546764,0.433946,0.541629,1.232322
+"test (2014 runs, frozen 2013 model)",7,M1,"Logistic, primary predictors",15724,5537,6911,3679.0,5485,0.670738,0.53234,0.664439,1.511741
+"test (2014 runs, frozen 2013 model)",7,RANDOM,Random list (expected),15724,5537,6911,2433.125025,5485,0.443596,0.352066,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",8,RULE,Early-sign rule (ranked),15724,6328,6911,3974.0,6104,0.651048,0.575025,0.628003,1.42884
+"test (2014 runs, frozen 2013 model)",8,B3,Background-only model,15724,6328,6911,3343.0,6104,0.547674,0.483722,0.528287,1.201966
+"test (2014 runs, frozen 2013 model)",8,M1,"Logistic, primary predictors",15724,6328,6911,4053.0,6104,0.663991,0.586456,0.640487,1.457244
+"test (2014 runs, frozen 2013 model)",8,RANDOM,Random list (expected),15724,6328,6911,2780.714314,6104,0.455556,0.402361,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",9,RULE,Early-sign rule (ranked),15724,7119,6911,4310.0,6513,0.661753,0.623643,0.605422,1.377465
+"test (2014 runs, frozen 2013 model)",9,B3,Background-only model,15724,7119,6911,3717.0,6513,0.570705,0.537838,0.522124,1.187943
+"test (2014 runs, frozen 2013 model)",9,M1,"Logistic, primary predictors",15724,7119,6911,4418.0,6513,0.678336,0.639271,0.620593,1.411981
+"test (2014 runs, frozen 2013 model)",9,RANDOM,Random list (expected),15724,7119,6911,3128.303603,6513,0.480317,0.452656,0.43943,0.999797
+"test (2014 runs, frozen 2013 model)",10,RULE,Early-sign rule (ranked),15724,7910,6911,4601.0,6793,0.677315,0.66575,0.581669,1.323421
+"test (2014 runs, frozen 2013 model)",10,B3,Background-only model,15724,7910,6911,4076.0,6793,0.600029,0.589784,0.515297,1.172411
+"test (2014 runs, frozen 2013 model)",10,M1,"Logistic, primary predictors",15724,7910,6911,4747.0,6793,0.698808,0.686876,0.600126,1.365416
+"test (2014 runs, frozen 2013 model)",10,RANDOM,Random list (expected),15724,7910,6911,3475.892892,6793,0.511687,0.502951,0.43943,0.999797

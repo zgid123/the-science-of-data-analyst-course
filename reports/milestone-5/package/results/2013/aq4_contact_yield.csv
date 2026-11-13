@@ -1,0 +1,21 @@
+scores,contact,method,students,non_completers,precision,low,high,base_rate
+"development estimate (2013 runs, out-of-fold)",1,model,596,550,0.922819,0.898583,0.941639,0.444078
+"development estimate (2013 runs, out-of-fold)",1,rule,596,546,0.916107,0.891098,0.935787,0.444078
+"development estimate (2013 runs, out-of-fold)",2,model,596,499,0.837248,0.805469,0.864708,0.444078
+"development estimate (2013 runs, out-of-fold)",2,rule,596,471,0.790268,0.755777,0.821042,0.444078
+"development estimate (2013 runs, out-of-fold)",3,model,596,426,0.714765,0.67723,0.74955,0.444078
+"development estimate (2013 runs, out-of-fold)",3,rule,596,408,0.684564,0.646176,0.720588,0.444078
+"development estimate (2013 runs, out-of-fold)",4,model,596,389,0.652685,0.613593,0.689821,0.444078
+"development estimate (2013 runs, out-of-fold)",4,rule,596,384,0.644295,0.60505,0.681693,0.444078
+"development estimate (2013 runs, out-of-fold)",5,model,596,369,0.619128,0.579497,0.657233,0.444078
+"development estimate (2013 runs, out-of-fold)",5,rule,596,355,0.595638,0.555746,0.634304,0.444078
+"development estimate (2013 runs, out-of-fold)",6,model,596,338,0.567114,0.527031,0.606337,0.444078
+"development estimate (2013 runs, out-of-fold)",6,rule,596,315,0.528523,0.488393,0.568289,0.444078
+"development estimate (2013 runs, out-of-fold)",7,model,596,296,0.496644,0.456654,0.536678,0.444078
+"development estimate (2013 runs, out-of-fold)",7,rule,596,298,0.5,0.459987,0.540013,0.444078
+"development estimate (2013 runs, out-of-fold)",8,model,596,278,0.466443,0.426735,0.506581,0.444078
+"development estimate (2013 runs, out-of-fold)",8,rule,596,280,0.469799,0.430052,0.509932,0.444078
+"development estimate (2013 runs, out-of-fold)",9,model,596,258,0.432886,0.393663,0.472969,0.444078
+"development estimate (2013 runs, out-of-fold)",9,rule,596,245,0.411074,0.372264,0.451022,0.444078
+"development estimate (2013 runs, out-of-fold)",10,model,596,254,0.426174,0.38707,0.466224,0.444078
+"development estimate (2013 runs, out-of-fold)",10,rule,596,259,0.434564,0.395312,0.474654,0.444078

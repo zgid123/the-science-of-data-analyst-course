@@ -11,15 +11,14 @@ hỏi phân tích (AQ) ứng với bốn loại phân tích: tỷ lệ các kế
 bỏ lỡ bài (AQ1, mô tả); các dấu hiệu sớm tính đến hết tuần 4 (AQ2, chẩn đoán); mức độ ước lượng được việc không hoàn
 thành, so với quy tắc dấu hiệu sớm (AQ3, dự báo); và danh sách xếp hạng trong giới hạn số sinh viên cán bộ liên hệ được
 (AQ4, chỉ định). Chúng em đã trả lời AQ1 và AQ2 trên toàn bộ 22 kỳ mở của năm 2013 và năm 2014 (kỳ mở – một lần mở
-module trong một học kỳ, ví dụ 2013B). AQ3 và AQ4 mới dừng ở thiết kế Level 1 (mức bắt buộc của Milestone 4, gồm chiến lược mô hình hóa và
-thiết kế đánh giá) và chưa được chạy. Trong 28.061 lượt đăng ký học chưa rút tại ngày 14
+module trong một học kỳ, ví dụ 2013B), còn AQ3 và AQ4 được trả lời bằng một lần kiểm tra duy nhất trên dữ liệu năm 2014. Trong 28.061 lượt đăng ký học chưa rút tại ngày 14
 (tính từ ngày bắt đầu kỳ mở), 45,3% (44,7–45,8) không hoàn thành học phần (45,7% ở năm 2013 và 44,9% ở năm 2014); tỷ lệ
 này dao động từ 24,9% đến 58,3% giữa các kỳ mở. Ngoài ra, tính đến hết tuần 4, chưa đến một phần năm số sinh viên không
 hoàn thành đã bỏ lỡ một bài. Khi so sánh trong cùng module, cả 5
 dấu hiệu sớm đều gắn với tỷ lệ không hoàn thành cao hơn ở cả năm 2013 lẫn năm 2014; mạnh nhất là dấu hiệu bỏ lỡ một bài, với tỷ lệ
 không hoàn thành ở nhóm có dấu hiệu cao hơn nhóm không có 40,8 điểm phần trăm (37,7–43,9) ở năm 2013 và 39,3 điểm phần
-trăm (36,4–42,1) ở năm 2014. Nhờ đó, D1 có một lý do cụ thể kèm mỗi tên trong danh sách, D2 có giả thuyết về nơi cần ưu tiên thời
+trăm (36,4–42,1) ở năm 2014. Mô hình xây dựng trên dữ liệu năm 2013 đưa được 41,5% số sinh viên về sau không hoàn thành vào danh sách 5 trên 20 sinh viên, cao hơn một chút so với quy tắc dấu hiệu sớm. Nhờ đó, D1 có một danh sách xếp hạng với lý do cụ thể kèm mỗi tên, D2 có giả thuyết về nơi cần ưu tiên thời
 gian hỗ trợ, còn D3 có phương pháp đo lường, điều kiện mô hình phải đạt và quy trình kiểm tra công bằng. Các kết quả
 này là mối liên hệ, không phải quan hệ nhân quả, chỉ mô tả hai năm dữ liệu của các module đào tạo từ xa ở Vương
-quốc Anh và cần được kiểm chứng lại trên dữ liệu của trường. Chúng em sẽ kiểm tra mô hình và đo tác động của hoạt động
-liên hệ trong giai đoạn tiếp theo.
+quốc Anh và cần được kiểm chứng lại trên dữ liệu của trường. Tác động của hoạt động liên hệ sẽ được đo trong một đợt
+thí điểm.

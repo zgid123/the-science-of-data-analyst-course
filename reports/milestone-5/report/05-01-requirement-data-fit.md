@@ -13,5 +13,5 @@ delivery mode or attendance, and the contact parts of the secondary KPIs; no que
 | :---- | :---- | :---- | :---- | :---- | :---- |
 | AQ1 | YELLOW | Year of study, delivery mode; exam results in 2 of 7 modules | TMA and CMA only; day-14 rule; both years (C15) | Modify | Answered |
 | AQ2 | YELLOW | Attendance; several-modules sign in 2013 | Signs up to day 27; several-modules sign on 2014 only (C12, C15) | Modify | Answered |
-| AQ3 | YELLOW | A task-only rule fires in 1 of 22 runs at day 13 | Rule with inactivity (C10); test on 2014 | Modify | Deferred |
-| AQ4 | RED | Contacts, capacity, outcomes after contact | Ranking part only (C11); contact to the pilot | Modify + Defer | Deferred |
+| AQ3 | YELLOW | A task-only rule fires in 1 of 22 runs at day 13 | Rule with inactivity (C10); test on 2014 | Modify | Answered |
+| AQ4 | RED | Contacts, capacity, outcomes after contact | Ranking part only (C11); contact to the pilot | Modify + Defer | Partial |

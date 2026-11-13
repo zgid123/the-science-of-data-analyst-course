@@ -1,0 +1,10 @@
+check,status,detail
+populations at day 27,PASS,2013: 11811 (plan 11811); 2014: 15724 (plan 15724)
+populations at day 13,PASS,2013: 12080 (plan 12080); 2014: 15989 (plan 15989)
+freeze before the 2014 scores,PASS,"frozen 2026-11-13 11:45:07+00:00, scores written 2026-11-13 11:45:09+00:00"
+"listed non-completers recounted, M1",PASS,"recount 2868, results 2868"
+"listed non-completers recounted, RULE",PASS,"recount 2786, results 2786"
+same chosen configuration as Milestone 4,PASS,M1
+RULE list against Milestone 4,PASS,2786 against 2786 (tolerance 0)
+M1 list against Milestone 4,PASS,2868 against 2871 (tolerance 5)
+no student identifier in the AQ3/AQ4 result files,PASS,none in 42 files

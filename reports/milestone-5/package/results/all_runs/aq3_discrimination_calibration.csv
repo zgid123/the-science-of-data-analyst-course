@@ -1,0 +1,13 @@
+scores,cutoff,method,name,roc_auc_within_run,pr_auc_within_run,base_rate_mean,citl,slope,mean_pred,observed,brier,runs_within_s3_bounds,runs,s3_met_pooled
+"all 22 runs: 2013 out-of-fold, 2014 test",27,RULE,Early-sign rule (ranked),0.710171,0.661237,0.424055,,,,,,,,
+"all 22 runs: 2013 out-of-fold, 2014 test",27,B3,Background-only model,0.605103,0.521459,0.424055,0.054887,0.873628,0.428664,0.441474,0.23701,9.0,22.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",27,M1,"Logistic, primary predictors",0.732445,0.686604,0.424055,0.048025,0.88617,0.431986,0.441474,0.205811,6.0,22.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",27,M2,"Logistic, extended predictors",0.735591,0.687176,0.424055,0.020987,0.91472,0.437349,0.441474,0.202621,7.0,22.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",27,M3,"Boosted trees, primary",0.732221,0.68594,0.424055,-0.050955,1.1033,0.452025,0.441474,0.201385,9.0,22.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",27,M4,"Boosted trees, extended",0.734002,0.686589,0.424055,-0.06373,1.078358,0.454619,0.441474,0.201625,9.0,22.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",13,RULE,Early-sign rule (ranked),0.678784,0.605529,0.433125,,,,,,,,
+"all 22 runs: 2013 out-of-fold, 2014 test",13,B3,Background-only model,0.602776,0.528769,0.433125,0.068116,0.762156,0.43373,0.449622,0.24008,5.0,13.0,False
+"all 22 runs: 2013 out-of-fold, 2014 test",13,M1,"Logistic, primary predictors",0.700756,0.637771,0.433125,0.064886,0.914878,0.435958,0.449622,0.215893,4.0,13.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",13,M2,"Logistic, extended predictors",0.701853,0.639179,0.433125,0.035096,0.926744,0.442257,0.449622,0.214212,8.0,13.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",13,M3,"Boosted trees, primary",0.705765,0.640586,0.433125,-0.001407,1.008603,0.449921,0.449622,0.212729,4.0,13.0,True
+"all 22 runs: 2013 out-of-fold, 2014 test",13,M4,"Boosted trees, extended",0.704508,0.63952,0.433125,-0.033388,1.024335,0.456764,0.449622,0.212483,4.0,13.0,True

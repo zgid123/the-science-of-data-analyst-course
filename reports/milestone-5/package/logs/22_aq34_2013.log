@@ -1,0 +1,27 @@
+2026-11-13T11:45:42Z
+$ python src/analysis/aq34_scopes.py --scope 2013   (Python 3.14.5)
+wrote 2013/aq3_by_run.csv (63 rows)
+wrote 2013/aq3_pooled.csv (14 rows)
+wrote 2013/aq3_discrimination_calibration.csv (6 rows)
+wrote 2013/aq3_capacity_curve.csv (40 rows)
+wrote 2013/aq3_model_vs_rule.csv (4 rows)
+wrote 2013/aq3_errors_by_slice.csv (13 rows)
+wrote 2013/aq4_contact_yield.csv (20 rows)
+wrote 2013/aq4_list_summary.csv (6 rows)
+wrote 2013/aq4_reach.csv (1 rows)
+wrote 2013/aq4_fairness_descriptive.csv (18 rows)
+# AQ3, scope 2013: development estimate (2013 runs, out-of-fold)
+
+Development estimates on the 9 runs of 2013 (each run scored by the leave-one-run-out model that left it out); the plan uses them to choose the model, not to state its performance.
+
+- Lists of 5 per 20 at day 27, chosen model M1: 2,233 of 5,245 non-completers listed (recall 42.6%, precision 74.9%, normalised recall 0.750); rule 2,164 (normalised recall 0.727); random list 1322.9.
+- Calibration of M1: in the large -0.044, slope 0.902; 1 of 9 runs within the S3 bounds.
+- Non-completers with normal activity at day 27: 3,091; the model lists hold 19.4% of them.
+
+# AQ4, scope 2013: development estimate (2013 runs, out-of-fold)
+
+Development estimates on the 9 runs of 2013 (each run scored by the leave-one-run-out model that left it out); the plan uses them to choose the model, not to state its performance.
+
+- Yield of the n-th contact per tutor group of 20 (model): 1st 92.3%, 5th 61.9%, 7th 49.7%; base rate 44.4%.
+- Lists of 5 per 20: 2,233 non-completers among 2,980 listed; 70 withdraw in days 28–34; 1,382 fail at the end.
+exit 0

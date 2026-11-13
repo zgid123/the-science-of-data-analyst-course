@@ -12,7 +12,7 @@ first needs them.
 | Baseline | The simple method or list that a candidate must beat to be worth its complexity, such as the rule-ranked list (baseline B2) for AQ3 (Sections 8.1 and 11.5) |
 | Calibration | Agreement between predicted risks and observed rates; AQ3 would show probabilities only if it holds (Section 9.1) |
 | Capacity | The number of students staff can contact at a review point: 3 or 5 per 20 students, that is 15% or 25% of a run's enrolments (Section 9) |
-| Controlled Change Log | The numbered record C01–C17 of every change to the questions, data and methods, each with its reason and effect (Section 3.2) |
+| Controlled Change Log | The numbered record C01–C18 of every change to the questions, data and methods, each with its reason and effect (Section 3.2) |
 | Data cut-off | The day up to which a list or feature may use data: day 13 for the week-3 list and day 27 for the week-5 list (Section 3) |
 | Decision option | A prescriptive statement drawn from observational data, offered as a hypothesis for the pilot rather than as a proven remedy (Section 11.5) |
 | Development runs | The 9 module runs of 2013, on which AQ3 is developed and AQ2 is first estimated (Section 6) |

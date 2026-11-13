@@ -13,14 +13,13 @@ the 2014 runs apart as a test set for the model (Section 7). Grouped rates answe
 45.3% of the enrolments still registered at day 14 did not complete, rates varied strongly between runs, the year difference depended on the add-drop rule, and most non-completers first missed a task after week 4 (Section 11.2). An
 association model answers AQ2: all five early signs go with later non-completion in both years, a missed task by 40.8
 and 39.3 points, in the same direction across modules (Section 11.3). For AQ3 and AQ4, a penalised logistic
-model judged once against the early-sign rule and a capacity-limited list audited for fairness are the appropriate
-methods, and their outputs remain expected rather than measured (Section 11.4).
+model built on 2013 ranks the 2014 students slightly better than the early-sign rule and passes its single gate, and
+lists of 5 per 20 hold 41.5% of later non-completers with no fairness group flagged (Sections 10 and 11.4).
 
 What can be concluded is therefore bounded by the level of each answer. On OULAD, an early list cannot rest on missed tasks alone,
 and the signs can serve as reasons that staff check beside each name. What cannot be concluded is that these signs cause
-non-completion, that a model ranks students better than the rule, or that contacting a listed student raises
+non-completion, that a model's risk is a reliable probability for each run, or that contacting a listed student raises
 completion: a regression capturing associations is descriptive rather than causal [10], and questions of
-effectiveness need a randomised experiment [14]. The next step is the single AQ3 test under the frozen protocol, then
-a recount on the university's own records, a risk classification of the list and a randomised pilot with contacts and
+effectiveness need a randomised experiment [14]. The next step is a recount on the university's own records, a risk classification of the list and a randomised pilot with contacts and
 outcomes logged, which answers what no open dataset can: whether, and for whom, early contact improves completion
 (Section 12.1).

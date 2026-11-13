@@ -1,0 +1,15 @@
+scores,cutoff,per20,method,name,n,k,positives,tp,attainable,norm_recall,recall,precision,lift
+"development estimate (2013 runs, out-of-fold)",27,5,RULE,Early-sign rule (ranked),11811,2980,5245,2164.0,2976,0.727151,0.412583,0.726174,1.635243
+"development estimate (2013 runs, out-of-fold)",27,5,B3,Background-only model,11811,2980,5245,1690.0,2976,0.567876,0.322212,0.567114,1.277061
+"development estimate (2013 runs, out-of-fold)",27,5,M1,"Logistic, primary predictors",11811,2980,5245,2233.0,2976,0.750336,0.425739,0.749329,1.687383
+"development estimate (2013 runs, out-of-fold)",27,5,M2,"Logistic, extended predictors",11811,2980,5245,2229.0,2976,0.748992,0.424976,0.747987,1.68436
+"development estimate (2013 runs, out-of-fold)",27,5,M3,"Boosted trees, primary",11811,2980,5245,2228.0,2976,0.748656,0.424786,0.747651,1.683605
+"development estimate (2013 runs, out-of-fold)",27,5,M4,"Boosted trees, extended",11811,2980,5245,2226.0,2976,0.747984,0.424404,0.74698,1.682093
+"development estimate (2013 runs, out-of-fold)",27,5,RANDOM,Random list (expected),11811,2980,5245,1322.863839,2976,0.444511,0.252214,0.443914,0.999632
+"development estimate (2013 runs, out-of-fold)",27,3,RULE,Early-sign rule (ranked),11811,1788,5245,1425.0,1788,0.79698,0.271687,0.79698,1.794686
+"development estimate (2013 runs, out-of-fold)",27,3,B3,Background-only model,11811,1788,5245,1072.0,1788,0.599553,0.204385,0.599553,1.350108
+"development estimate (2013 runs, out-of-fold)",27,3,M1,"Logistic, primary predictors",11811,1788,5245,1475.0,1788,0.824944,0.28122,0.824944,1.857658
+"development estimate (2013 runs, out-of-fold)",27,3,M2,"Logistic, extended predictors",11811,1788,5245,1475.0,1788,0.824944,0.28122,0.824944,1.857658
+"development estimate (2013 runs, out-of-fold)",27,3,M3,"Boosted trees, primary",11811,1788,5245,1468.0,1788,0.821029,0.279886,0.821029,1.848842
+"development estimate (2013 runs, out-of-fold)",27,3,M4,"Boosted trees, extended",11811,1788,5245,1469.0,1788,0.821588,0.280076,0.821588,1.850101
+"development estimate (2013 runs, out-of-fold)",27,3,RANDOM,Random list (expected),11811,1788,5245,793.718303,1788,0.443914,0.151329,0.443914,0.999632

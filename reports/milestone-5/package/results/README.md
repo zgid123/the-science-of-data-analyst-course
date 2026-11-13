@@ -1,4 +1,4 @@
-# Results: AQ1 and AQ2 on the runs of 2013, of 2014 and on all 22 runs
+# Results: AQ1 and AQ2 on the runs of 2013, of 2014 and on all 22 runs; AQ3 and AQ4 trained on 2013, tested on 2014
 
 This note maps every result file to the item of the Milestone 4 analysis plan it answers, states the populations of
 each scope, how the code keeps each scope to its own runs, and lists every deviation from the plan and every planned
@@ -6,7 +6,8 @@ item not computed, with the reason. The plan is the Milestone 4 report: Section 
 Section 3.2 (AQ1 and AQ2 methods, C14), Section 4.1 Tables 4.1 and 4.2 (Evaluation Design Cards of AQ1 and AQ2),
 Sections 4.3 and 4.4, and Appendices II–IV. Change Log entries (C10, C12, C14, C15, …) are in
 `data/metadata/change_log.md`. Under C15, AQ1 and AQ2 are computed on both years of OULAD, while the AQ3 test keeps the
-design Milestone 4 fixed on the 2013 runs alone.
+design Milestone 4 fixed on the 2013 runs alone. The AQ3 and AQ4 results (files `aq3_*` and `aq4_*` in the same four folders) are
+described in their own section below ("AQ3 and AQ4").
 
 ## How to rebuild
 
@@ -221,13 +222,80 @@ Every model converged (`aq_results.json` `aq2.model`).
     unadjusted, as a share of non-completers with and without the sign (`compare/aq2_concurrent_2014.csv`), and is
     not a term of the AQ2 model, because it marks 28 enrolments.
 
+## AQ3 and AQ4
+
+**Plan items.** Milestone 4 report: Section 3.3 (candidates), Section 4.1 Tables 4.3 and 4.4 (Evaluation Design Cards of
+AQ3 and AQ4), Section 4.3 Table 4.5 (S1, S2, S3, FR1), Section 4.4 (fairness groups) and Appendix III (validation and
+test protocol). Implementation details the plan leaves open follow the team's Level 2 prototype; the one choice made
+after 2014 results existed is the tuning criterion (Change Log C18).
+
+**Populations.** Development: the 9 runs of 2013, 11,811 enrolments registered at day 27 (5,245 non-completers) and
+12,080 at day 13. Test: the 13 runs of 2014, 15,724 enrolments at day 27 (6,911 non-completers) and 15,989 at day 13.
+
+**How the year split is enforced.** `aq3_develop.py` (step 19) reads each feature view with a 2013 filter pushed to the
+reader and asserts it; it ends by writing `data/interim/aq3/freeze.json` with the choices and the SHA-256 of all 10
+fitted models (5 configurations × 2 cut-offs). `aq3_test.py` (step 20) and `aq4_lists.py` (step 21) stop if the
+freeze record is missing or a model changed; the 2014 runs are scored once (`data/interim/aq3/scores_d*.csv`, not
+shipped) and every view is computed from those scores, without refitting or recalibration. Step 26 checks that the
+freeze precedes the scores.
+
+**Scopes.** AQ3 and AQ4 use the same four folders as AQ1 and AQ2, with one difference in what each folder means,
+because the two years play different roles in a predictive test:
+
+| Folder | AQ3/AQ4 scores | How to read |
+| :---- | :---- | :---- |
+| `2013/` | Each of the 9 runs of 2013 scored by the leave-one-run-out model that left it out (`data/interim/aq3/scores_dev_d27.csv`); also the model choice | Development estimates: the plan uses these folds to choose the model, not to state its performance |
+| `2014/` | The 13 runs of 2014 scored once by the models frozen on 2013 | The test: gate S1 and every AQ3/AQ4 number of the report |
+| `all_runs/` | The 22 runs pooled, each scored by a model that did not see it (2013 out-of-fold, 2014 test) | Description of all runs; no model is fitted on all 22 runs |
+| `compare/` | 2013 development estimates against the 2014 test | How much the model keeps on a later year; cannot change S1 |
+
+Every AQ3/AQ4 table has a column `scores` naming its basis. Day 13 exists for `2014/` only (the development folds were
+run at the main operating point, day 27).
+
+**Output map.** Files with the same name hold the same view in `2013/`, `2014/` and `all_runs/`.
+
+| File | Plan item |
+| :---- | :---- |
+| `2013/aq3_dev_folds.csv`, `2013/aq3_dev_choice.csv`, `2013/aq3_final_tuning.csv`, `2013/aq3_choice.json`, `2013/aq3_coefficients.csv` | Appendix III steps 2–5: leave-one-run-out folds, choice rule (margin 0.03 and 7 of 9 folds), tuning, frozen hyperparameters; coefficients of the chosen model |
+| `aq3_by_run.csv`, `aq3_pooled.csv` | Table 4.3: lists of every configuration, the rule-ranked list (B2), the background-only model (B3) and a random list, per run and pooled, 3 and 5 per 20 (day 13 in `2014/` only) |
+| `aq3_discrimination_calibration.csv` | Table 4.3 secondary metrics; S3 pooled and per run |
+| `aq3_capacity_curve.csv`, `aq3_model_vs_rule.csv`, `aq3_errors_by_slice.csv` | Table 4.3 error analysis: list length, list overlap, recall by activity, history, registration, kind and reach |
+| `aq4_list_summary.csv`, `aq4_contact_yield.csv`, `aq4_reach.csv`, `aq4_fairness_descriptive.csv` | Table 4.4: lists at 3 and 5 per 20, lift over random and rule, yield of each contact, kind of non-completion on the list, descriptive rates by gender, age, disability, deprivation band |
+| `2014/aq3_s1_gate.csv`, `2014/aq3_sensitivity.csv`, `2014/aq3_calibration_bins.csv`, `2014/aq3_lead_time.csv` | Table 4.5 S1 (first row) and context; Appendix III step 7 sensitivity views; calibration bins; timing of listed non-completers |
+| `2014/aq4_reasons.csv`, `2014/aq4_fairness_confirmatory.csv` | Table 4.4 "signs behind each name"; Section 4.4 and FR1 |
+| `compare/aq3_dev_vs_test.csv`, `compare/aq4_dev_vs_test.csv` | 2013 development estimates against the 2014 test |
+| `aq3_summary.md`, `aq4_summary.md` (each folder) | Plain-text summaries |
+
+**Methods as implemented.** Capacity k = 5 (or 3) × ⌈n/20⌉ per run; exact ties broken by one fixed random number per
+enrolment (seed 20261112, key order). Rule-ranked list: number of rule signs, then lower activity relative to the run
+median. Candidates: penalised (L2) logistic regression on the background variables (B3), on the 19 primary predictors
+(M1) and with the extended predictors and weekly clicks (M2); gradient-boosted trees on the primary (M3) and extended
+(M4) sets. Logistic preprocessing refitted in every fold: deviation coding of module and start month, ordinal
+education, log(1 + x) for counts, training-median fill with a missing indicator, standardisation. Grids: C ∈ {0.001,
+0.003, 0.01, 0.03, 0.1, 0.3, 1, 10}; depth ∈ {2, 3, 4} × trees ∈ {100, 200, 400} × learning rate ∈ {0.05, 0.1}. S1:
+paired two-level bootstrap (runs, then enrolments; 2,000 replicates) and exact one-sided sign-flip test on the 13 run
+differences. FR1: the same bootstrap with 5,000 replicates, Holm adjustment over three groups. Reasons: the predictor
+group with the largest positive contribution (coefficient × standardised value); module and start month count as course
+context, not as a reason.
+
+**Deviations and specification choices.** (1) Tuning criterion: pooled log loss of an inner leave-one-run-out loop
+(C18); under the recall-based tuning of the Milestone 4 draft package S3 is not met, under log loss it is met on the
+pooled estimates but in 5 of 13 runs only, so in both cases the lists show ranks and reasons, not probabilities.
+(2) Against the Milestone 4 draft package the rule-ranked list is identical at the main operating point (2,786
+non-completers listed at day 27, 5 per 20); at day 13 and at 3 per 20 the two implementations differ by 2 to 5 listed
+students through the handling of ties, and the model lists differ by up to 4 (2,868 against 2,871 at the main point).
+
+**Items not computed.** The labels-available variant (2013 February runs → 2014 February runs), net benefit, the
+area between ROC curves (ABROCA), the proxy check of the fairness groups and the stability of list membership under
+the bootstrap: descriptive extras of the plan that cannot change S1 or FR1.
+
 ## Items not computed and why
 
 | Planned item | Reason |
 | :---- | :---- |
 | Concurrent runs (another enrolment of the same student in the same presentation) as an input of the AQ2 model (Milestone 3 readiness matrix, C12) | 1,288 concurrent enrolments at day 27 in 2014 and 12 in 2013 (`compare/aq2_concurrent_2014.csv`); C12 keeps the sign descriptive and out of the AQ3 predictors |
 | Module CCC in a year difference | No 2013 run; CCC appears as a 2014 row of its own |
-| Any AQ3 or AQ4 result | No model has been trained or scored; the AQ3 and AQ4 designs are in Section 9 of the final report |
+| AQ3 and AQ4 descriptive extras (labels-available variant, net benefit, ABROCA, proxy check, list stability) | Cannot change S1 or FR1; see "AQ3 and AQ4" above |
 
 ## Results in brief
 
@@ -290,3 +358,16 @@ Every model converged (`aq_results.json` `aq2.model`).
   inactivity in AAA and GGG, for low relative activity in AAA and for no pre-start activity in AAA and GGG; in 2014
   for late TMA, inactivity, low relative activity and no pre-start activity in AAA and for no pre-start activity in
   BBB and DDD (`aq2_module_effects.csv` of each folder).
+- **AQ3, 2013 → 2014.** Development chose M1: no challenger gained the 0.03 margin (pooled normalised recall M1 0.750,
+  M2 0.749, M3 0.749, M4 0.748, rule 0.727; `2013/aq3_dev_choice.csv`). On the 13 runs of 2014, at day 27 and 5 per 20, the
+  M1 lists hold 2,868 of the 6,911 non-completers (recall 41.5%, precision 72.5%) against 2,786 for the rule-ranked
+  list and 1,737.9 expected from a random list: pooled normalised recall 0.725 against 0.704, difference +0.021
+  (+0.006 to +0.036), sign-flip p = 0.0035, 11 of 13 runs won, so gate S1 is met (`2014/aq3_s1_gate.csv`). Calibration:
+  in the large 0.117 and slope 0.886 pooled (S3 met), 5 of 13 runs within the bounds
+  (`2014/aq3_discrimination_calibration.csv`). Of the 6,911 non-completers, 4,193 had normal activity at day 27 (at least
+  half the run median); the lists hold 19.1% of them (model) and 15.6% (rule) (`2014/aq3_errors_by_slice.csv`).
+- **AQ4, 2014.** The n-th contact per tutor group of 20 finds a non-completer with probability 92.4% (1st), 57.6%
+  (5th), 55.2% (6th) and 47.3% (7th) against a base rate of 44.0% (`2014/aq4_contact_yield.csv`). Rule FR1 flags 0 of 3
+  confirmatory groups: declared disability +5.5 points, deprivation band 0–10% +1.3, band missing −7.4 (−16.8 to
+  +2.3) (`2014/aq4_fairness_confirmatory.csv`). For 80.7% of listed students the main reason is behavioural (low activity,
+  a missed task or a late submission); for 14.2% it is prior education (`2014/aq4_reasons.csv`).

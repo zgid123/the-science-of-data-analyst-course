@@ -4,7 +4,7 @@ Usage (from the package folder):
     python src/checks/check_rebuild.py prepared   # run_all.sh step 07
     python src/checks/check_rebuild.py results    # run_all.sh step 18
     python src/checks/check_rebuild.py results --write   # record the reference checksums (package maintainers only)
-    python src/checks/check_rebuild.py results_aq34          # run_all.sh step 23 (AQ3 and AQ4)
+    python src/checks/check_rebuild.py results_aq34          # run_all.sh step 27 (AQ3 and AQ4)
     python src/checks/check_rebuild.py results_aq34 --write  # record the AQ3/AQ4 reference checksums (maintainers only)
 
 prepared: compares the SHA-256 and row count of every rebuilt view in data/processed/ with the published manifest of
@@ -15,7 +15,8 @@ results: compares the SHA-256 of every result file in results/2013/, 2014/, all_
 with results/checksums.csv. Writes
 data/metadata/rebuild_check_results.csv.
 
-results_aq34: the same comparison for results/aq3/ and results/aq4/ against results/checksums_aq34.csv. Writes
+results_aq34: the same comparison for the AQ3/AQ4 files (aq3_* and aq4_* in results/2013/, 2014/, all_runs/ and
+compare/) against results/checksums_aq34.csv. Writes
 data/metadata/rebuild_check_results_aq34.csv.
 
 Prints one line per file and exits 1 if a rebuilt prepared view or result file differs from its reference.
@@ -32,8 +33,8 @@ PKG = Path(__file__).resolve().parents[2]
 META = PKG / "data" / "metadata"
 RESULTS = PKG / "results"
 RESULT_FILES = [f"{d}{pat}" for d in ("2013/", "2014/", "all_runs/")
-                for pat in ("aq1_*.csv", "aq2_*.csv", "aq_results.json", "aq_summary.md")] + ["compare/aq*.csv", "compare/aq_summary.md"]
-RESULT_FILES_AQ34 = ["aq3/*.csv", "aq3/*.json", "aq3/*.md", "aq4/*.csv", "aq4/*.md"]
+                for pat in ("aq1_*.csv", "aq2_*.csv", "aq_results.json", "aq_summary.md")] + ["compare/aq1_*.csv", "compare/aq2_*.csv", "compare/aq_summary.md"]
+RESULT_FILES_AQ34 = [f"{d}/{p}" for d in ("2013", "2014", "all_runs", "compare") for p in ("aq3_*", "aq4_*")]
 
 
 def sha256(path: Path) -> str:

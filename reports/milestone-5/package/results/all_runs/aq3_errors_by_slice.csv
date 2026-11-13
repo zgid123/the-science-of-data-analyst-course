@@ -1,0 +1,14 @@
+scores,slice,level,enrolments,non_completers,recall_model,recall_rule,listed_model,listed_completers_model
+"all 22 runs: 2013 out-of-fold, 2014 test",activity,low,6043,3867,0.69925,0.727179,3614,910
+"all 22 runs: 2013 out-of-fold, 2014 test",activity,none,1231,1005,0.99005,1.0,1220,225
+"all 22 runs: 2013 out-of-fold, 2014 test",activity,normal,20261,7284,0.192477,0.155546,2101,699
+"all 22 runs: 2013 out-of-fold, 2014 test",history,first attempt,24067,10064,0.375894,0.38444,5178,1395
+"all 22 runs: 2013 out-of-fold, 2014 test",history,previous attempt,3468,2092,0.630019,0.51673,1757,439
+"all 22 runs: 2013 out-of-fold, 2014 test",registration,registered after the start,206,94,0.734043,0.521277,107,38
+"all 22 runs: 2013 out-of-fold, 2014 test",registration,registered by the start,27329,12062,0.417178,0.406317,6828,1796
+"all 22 runs: 2013 out-of-fold, 2014 test",kind,Distinction,3023,0,,,165,165
+"all 22 runs: 2013 out-of-fold, 2014 test",kind,Fail,7037,7037,0.430297,0.419781,3028,0
+"all 22 runs: 2013 out-of-fold, 2014 test",kind,Pass,12356,0,,,1669,1669
+"all 22 runs: 2013 out-of-fold, 2014 test",kind,Withdrawn,5119,5119,0.404962,0.38992,2073,0
+"all 22 runs: 2013 out-of-fold, 2014 test",reach,still reachable,27232,11853,0.415085,0.402177,6754,1834
+"all 22 runs: 2013 out-of-fold, 2014 test",reach,withdrew within 7 days,303,303,0.59736,0.60396,181,0

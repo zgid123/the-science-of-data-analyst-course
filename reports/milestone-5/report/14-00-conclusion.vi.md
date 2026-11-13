@@ -15,17 +15,17 @@ tách riêng các kỳ mở năm 2014 làm tập kiểm thử cho mô hình (M�
 này chênh lệch lớn giữa các kỳ mở; chênh lệch giữa hai năm phụ thuộc vào quy tắc về thời gian điều chỉnh đăng ký học phần; phần lớn sinh viên không hoàn thành chỉ bắt đầu bỏ lỡ bài sau tuần 4 (Mục 11.2). Một mô hình đo mối liên hệ trả
 lời AQ2: ở cả năm 2013 lẫn năm 2014, cả 5 dấu hiệu sớm đều gắn với việc cuối kỳ không hoàn thành; riêng sinh viên bỏ lỡ một bài có
 tỷ lệ không hoàn thành cao hơn sinh viên không bỏ lỡ 40,8 điểm phần trăm ở năm 2013 và 39,3 điểm phần trăm ở năm 2014; mọi dấu hiệu giữ cùng chiều ở
-các module (Mục 11.3). Với AQ3 và AQ4, có
-hai phương pháp phù hợp. Phương pháp thứ nhất là hồi quy logistic có điều chuẩn (penalised), được đánh giá một lần so
-với quy tắc dấu hiệu sớm. Phương pháp thứ hai là một danh sách có độ dài theo hạn mức liên hệ, được kiểm tra công bằng
-giữa các nhóm sinh viên. Đầu ra của hai câu hỏi này vẫn là kết quả dự kiến, chưa được đo (Mục 11.4).
+các module (Mục 11.3). Với AQ3 và AQ4, mô hình
+hồi quy logistic có điều chuẩn (penalised) xây dựng trên dữ liệu năm 2013 xếp hạng sinh viên năm 2014 tốt hơn một chút
+so với quy tắc dấu hiệu sớm và đáp ứng điều kiện đạt duy nhất. Danh sách 5 trên 20 sinh viên chứa 41,5% số sinh viên về
+sau không hoàn thành mà không nhóm nào bị đánh dấu trong kiểm tra công bằng (Mục 10 và 11.4).
 
 Vì vậy, phạm vi kết luận phụ thuộc vào loại phân tích của từng câu trả lời. Trên OULAD, một danh sách sớm không thể chỉ
 dựa vào các bài bị bỏ lỡ; các dấu hiệu có thể đi kèm mỗi tên làm lý do để cán bộ kiểm tra. Nhóm chúng em chưa
-thể kết luận ba điều: các dấu hiệu này gây ra việc không hoàn thành; một mô hình xếp hạng sinh viên tốt hơn quy tắc;
+thể kết luận ba điều: các dấu hiệu này gây ra việc không hoàn thành; nguy cơ do mô hình ước lượng là xác suất đáng tin cậy cho từng kỳ mở;
 việc liên hệ với một sinh viên trong danh sách làm tăng tỷ lệ hoàn thành. Lý do là một mô hình hồi quy nắm bắt mối liên
 hệ mang tính mô tả chứ không mang tính nhân quả [10], còn câu hỏi về hiệu quả cần đến thử nghiệm ngẫu nhiên có đối chứng
-[14]. Bước tiếp theo là lần kiểm tra duy nhất của AQ3 theo giao thức đánh giá đã chốt, sau đó là tính lại trên dữ liệu
+[14]. Bước tiếp theo là tính lại trên dữ liệu
 của chính trường, phân loại mức độ rủi ro của danh sách và một đợt thí điểm có phân nhóm ngẫu nhiên, ghi lại các lần
 liên hệ cùng kết quả. Đợt thí điểm này trả lời câu hỏi mà không bộ dữ liệu mở nào trả lời được: liên hệ sớm có cải
 thiện tỷ lệ hoàn thành hay không, nếu có thì cho những sinh viên nào (Mục 12.1).

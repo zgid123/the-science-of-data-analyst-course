@@ -1,2 +1,14 @@
-2026-11-13T10:57:26Z
+2026-11-13T11:42:04Z
 $ python src/analysis/aq3_develop.py   (Python 3.14.5)
+wrote 2013/aq3_dev_folds.csv (54 rows)
+wrote 2013/aq3_dev_choice.csv (6 rows)
+config  norm_recall  gain_over_M1  folds_better_than_M1  chosen
+    B3       0.5679       -0.1825                     0   False
+    M1       0.7503        0.0000                     0    True
+    M2       0.7490       -0.0013                     4   False
+    M3       0.7487       -0.0017                     5   False
+    M4       0.7480       -0.0024                     3   False
+  RULE       0.7272       -0.0232                     2   False
+wrote 2013/aq3_final_tuning.csv (120 rows)
+frozen 10 models at 2026-11-13T11:45:07Z; chosen configuration M1
+exit 0

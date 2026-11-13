@@ -1,12 +1,12 @@
 ## 3.2. Nhật ký điều chỉnh AQ
 
 Bảng 3.2 là Nhật ký điều chỉnh AQ (AQ Revision Log): mỗi thay đổi so với Milestone 1 đều truy được về một phát hiện
-trong dữ liệu và một thay đổi trong Nhật ký thay đổi có kiểm soát, từ C01 đến C17 (Bảng A.8, Phụ lục III). Cột phát
+trong dữ liệu và một thay đổi trong Nhật ký thay đổi có kiểm soát, từ C01 đến C18 (Bảng A.8, Phụ lục III). Cột phát
 hiện ghi mức phù hợp của dữ liệu với từng câu hỏi theo thang ở Mục 5.1: YELLOW (dữ liệu hỗ trợ một phần, cần thu hẹp
 câu hỏi) và RED (dữ liệu không hỗ trợ vì thiếu một khái niệm hoặc một biện pháp can thiệp then chốt). Bảng A.5 và Bảng
-A.6 trình bày đầy đủ nội dung từng ô. Ở Milestone 5, bước tích hợp kết quả của các milestone bổ sung ba mục vào Nhật ký thay đổi có kiểm soát: AQ1 và AQ2
+A.6 trình bày đầy đủ nội dung từng ô. Ở Milestone 5, bước tích hợp kết quả của các milestone bổ sung bốn mục vào Nhật ký thay đổi có kiểm soát: AQ1 và AQ2
 được trả lời trên cả hai năm, còn thiết kế AQ3 giữ nguyên như Milestone 4 đã cố định (C15); lần kiểm tra AQ3
-bao gồm cả 13 kỳ mở năm 2014 (C16); một quy tắc dấu hiệu sớm duy nhất được dùng cho cả OULAD lẫn đợt thí điểm (C17).
+bao gồm cả 13 kỳ mở năm 2014 (C16); một quy tắc dấu hiệu sớm duy nhất được dùng cho cả OULAD lẫn đợt thí điểm (C17); mức điều chuẩn của AQ3 được tinh chỉnh theo log loss (C18).
 
 **Bảng 3.2. Nhật ký điều chỉnh AQ**
 

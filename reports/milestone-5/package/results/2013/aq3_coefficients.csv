@@ -1,0 +1,24 @@
+predictor,coefficient_per_sd,reason
+tasks_missed_c,0.569711,Missed a task
+active_days_0c,-0.489047,Low activity
+highest_education,-0.326204,Prior education
+code_module=DDD,0.279394,Course context
+code_module=FFF,0.275268,Course context
+code_module=BBB,-0.194258,Course context
+clicks_pre,-0.192365,No activity before start
+tma_late_c,0.171862,Late submission
+studied_credits,0.142292,Study load
+code_module=AAA,-0.140346,Course context
+num_of_prev_attempts,0.115528,Previous attempt
+code_module=EEE,0.113994,Course context
+start_month=B,0.11097,Course context
+tasks_due_c,0.098516,Course context
+cma_marked_c,-0.094205,Few marked quizzes
+sites_0c,-0.073071,Low activity
+inactive_last7,0.065731,Inactive last 7 days
+cma_late_c,-0.051283,Late submission
+tasks_late_c,0.030507,Late submission
+registration_lead,-0.029112,Late registration
+activity_ratio_run,0.017093,Low activity
+clicks_0c,-0.015286,Low activity
+banked_results,0.005477,Previous attempt

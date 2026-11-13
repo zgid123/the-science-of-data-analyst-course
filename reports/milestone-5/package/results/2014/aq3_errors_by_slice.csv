@@ -1,0 +1,14 @@
+scores,slice,level,enrolments,non_completers,recall_model,recall_rule,listed_model,listed_completers_model
+"test (2014 runs, frozen 2013 model)",activity,low,3475,2205,0.707937,0.733333,2109,548
+"test (2014 runs, frozen 2013 model)",activity,none,624,513,0.984405,1.0,615,110
+"test (2014 runs, frozen 2013 model)",activity,normal,11625,4193,0.191271,0.156451,1231,429
+"test (2014 runs, frozen 2013 model)",history,first attempt,13865,5801,0.370281,0.3789,2967,819
+"test (2014 runs, frozen 2013 model)",history,previous attempt,1859,1110,0.648649,0.52973,988,268
+"test (2014 runs, frozen 2013 model)",registration,registered after the start,152,65,0.738462,0.538462,74,26
+"test (2014 runs, frozen 2013 model)",registration,registered by the start,15572,6846,0.411919,0.40184,3881,1061
+"test (2014 runs, frozen 2013 model)",kind,Distinction,1948,0,,,106,106
+"test (2014 runs, frozen 2013 model)",kind,Fail,3805,3805,0.432589,0.419185,1646,0
+"test (2014 runs, frozen 2013 model)",kind,Pass,6865,0,,,981,981
+"test (2014 runs, frozen 2013 model)",kind,Withdrawn,3106,3106,0.393432,0.383451,1222,0
+"test (2014 runs, frozen 2013 model)",reach,still reachable,15519,6706,0.411124,0.399195,3844,1087
+"test (2014 runs, frozen 2013 model)",reach,withdrew within 7 days,205,205,0.541463,0.531707,111,0

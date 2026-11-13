@@ -1,0 +1,29 @@
+scores,cutoff,per20,method,name,n,k,positives,tp,attainable,norm_recall,recall,precision,lift
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,RULE,Early-sign rule (ranked),27535,6935,12156,4950.0,6931,0.714183,0.407206,0.713771,1.616788
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,B3,Background-only model,27535,6935,12156,3934.0,6931,0.567595,0.323626,0.567267,1.284938
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,M1,"Logistic, primary predictors",27535,6935,12156,5101.0,6931,0.735969,0.419628,0.735544,1.666108
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,M2,"Logistic, extended predictors",27535,6935,12156,5098.0,6931,0.735536,0.419381,0.735112,1.665129
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,M3,"Boosted trees, primary",27535,6935,12156,5088.0,6931,0.734093,0.418559,0.73367,1.661862
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,M4,"Boosted trees, extended",27535,6935,12156,5106.0,6931,0.73669,0.420039,0.736265,1.667741
+"all 22 runs: 2013 out-of-fold, 2014 test",27,5,RANDOM,Random list (expected),27535,6935,12156,3060.810285,6931,0.441612,0.251794,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,RULE,Early-sign rule (ranked),27535,4161,12156,3271.0,4161,0.786109,0.269085,0.786109,1.780644
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,B3,Background-only model,27535,4161,12156,2493.0,4161,0.599135,0.205084,0.599135,1.357122
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,M1,"Logistic, primary predictors",27535,4161,12156,3395.0,4161,0.81591,0.279286,0.81591,1.848147
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,M2,"Logistic, extended predictors",27535,4161,12156,3401.0,4161,0.817352,0.27978,0.817352,1.851413
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,M3,"Boosted trees, primary",27535,4161,12156,3397.0,4161,0.81639,0.27945,0.81639,1.849235
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,M4,"Boosted trees, extended",27535,4161,12156,3395.0,4161,0.81591,0.279286,0.81591,1.848147
+"all 22 runs: 2013 out-of-fold, 2014 test",27,3,RANDOM,Random list (expected),27535,4161,12156,1836.486171,4161,0.441357,0.151077,0.441357,0.999734
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,RULE,Early-sign rule (ranked),15989,4030,7189,2688.0,4030,0.666998,0.373905,0.666998,1.483464
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,B3,Background-only model,15989,4030,7189,2327.0,4030,0.577419,0.323689,0.577419,1.284234
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,M1,"Logistic, primary predictors",15989,4030,7189,2772.0,4030,0.687841,0.385589,0.687841,1.529822
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,M2,"Logistic, extended predictors",15989,4030,7189,2773.0,4030,0.688089,0.385728,0.688089,1.530374
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,M3,"Boosted trees, primary",15989,4030,7189,2768.0,4030,0.686849,0.385033,0.686849,1.527615
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,M4,"Boosted trees, extended",15989,4030,7189,2779.0,4030,0.689578,0.386563,0.689578,1.533686
+"all 22 runs: 2013 out-of-fold, 2014 test",13,5,RANDOM,Random list (expected),15989,4030,7189,1811.243043,4030,0.44944,0.251946,0.44944,0.999596
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,RULE,Early-sign rule (ranked),15989,2418,7189,1710.0,2418,0.707196,0.237863,0.707196,1.572869
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,B3,Background-only model,15989,2418,7189,1473.0,2418,0.609181,0.204896,0.609181,1.354875
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,M1,"Logistic, primary predictors",15989,2418,7189,1795.0,2418,0.742349,0.249687,0.742349,1.651053
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,M2,"Logistic, extended predictors",15989,2418,7189,1810.0,2418,0.748553,0.251774,0.748553,1.66485
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,M3,"Boosted trees, primary",15989,2418,7189,1809.0,2418,0.748139,0.251634,0.748139,1.66393
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,M4,"Boosted trees, extended",15989,2418,7189,1802.0,2418,0.745244,0.250661,0.745244,1.657491
+"all 22 runs: 2013 out-of-fold, 2014 test",13,3,RANDOM,Random list (expected),15989,2418,7189,1086.745826,2418,0.44944,0.151168,0.44944,0.999596

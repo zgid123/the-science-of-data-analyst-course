@@ -5,8 +5,8 @@ Bảng 11.1 và Bảng 11.2 hợp thành ma trận truy vết của đồ án (F
 bằng chứng được ghi GAP (thiếu dữ liệu) hoặc N.A. (không áp dụng). Mọi hàng cùng chung Business Goal (mục tiêu của tổ chức) và SMART Goal ở Mục 2; Bảng A.27 (Phụ lục XI) viết đầy đủ nội dung từng ô, còn Bảng A.28 nêu căn cứ của từng trạng
 thái. Với AQ1 và AQ2, mọi mắt xích đều có bằng chứng và cả hai câu hỏi đều đạt tiêu chí thành công; các ô GAP của hai câu
 hỏi này chỉ ghi những biến mà OULAD không có (hình thức học, năm theo học, điểm danh), nên việc thiếu các biến này chỉ thu hẹp phép so sánh chứ
-không làm đứt chuỗi truy vết. Với AQ3 và AQ4, chuỗi truy vết dừng ở thiết kế đánh giá vì nguyên mẫu chưa được chạy (Mục
-10).
+không làm đứt chuỗi truy vết. AQ3 đáp ứng điều kiện đạt S1 trên các kỳ mở năm 2014, còn AQ4 ở trạng thái Trả lời một phần (Partial)
+vì phần liên hệ của câu hỏi không có dữ liệu (Mục 10).
 
 **Bảng 11.1. Ma trận truy vết của đồ án (từ mục tiêu đến dữ liệu)**
 
@@ -26,5 +26,5 @@ và trạng thái cuối cùng.
 | :---- | :---- | :---- | :---- | :---- | :---- |
 | AQ1 | Quy tắc ngày 14; TMA, CMA | Tỷ lệ theo nhóm; không cần mô hình | Hai cách tính khớp nhau; 45,3% | D2, D3 | Đã trả lời |
 | AQ2 | Dữ liệu có mốc thời gian tính đến hết ngày 27 | Hồi quy logistic, hiệu ứng cố định theo kỳ mở | Cả 5 dấu hiệu đều nhất quán ở cả hai năm | D2; D1 | Đã trả lời |
-| AQ3 | Ước lượng lại trong từng fold | Hồi quy logistic có điều chuẩn (penalised); có lý do cho từng sinh viên | S1 đã lên kế hoạch; N.A. | D1 | Hoãn |
-| AQ4 | 3 hoặc 5 trên 20 | k sinh viên đầu danh sách kèm dấu hiệu | S1, FR1; N.A. | D1 | Hoãn |
+| AQ3 | Ước lượng lại trong từng fold | Hồi quy logistic có điều chuẩn (penalised); có lý do cho từng sinh viên | Đạt S1: 0,725 so với 0,704 | D1 | Đã trả lời |
+| AQ4 | 3 hoặc 5 trên 20 | k sinh viên đầu danh sách kèm lý do | FR1: 0 trên 3 nhóm bị đánh dấu | D1 | Trả lời một phần |

@@ -6,13 +6,15 @@
 3. Choice rule: M1 stays unless a challenger gains >= 0.03 pooled normalised recall at day 27, 5 per 20, and gains
    in >= 7 of 9 folds; several qualifiers -> largest gain, ties -> the simpler configuration.
 4. Final models: every configuration tuned on all 9 runs and refitted on all 2013 rows, at day 13 and day 27.
+   Each 2013 run is also scored by the model of the fold that left it out (data/interim/aq3/scores_dev_d27.csv);
+   these development estimates feed results/2013 and results/all_runs and are labelled as such.
 5. Freeze: data/interim/aq3/freeze.json records the choices and the SHA-256 of every fitted model before any 2014
    outcome is read; aq3_test.py refuses to run without it or when a model file changed.
 
 Only 2013 rows are read (filter pushed to the reader, then asserted in aq34_common.features).
 
 Usage (from the package folder): python src/analysis/aq3_develop.py   (run_all.sh step 19)
-Writes results/aq3/dev_folds.csv, dev_choice.csv, final_tuning.csv, choice.json; data/interim/aq3/*.pkl, freeze.json.
+Writes results/2013/aq3_dev_folds.csv, aq3_dev_choice.csv, aq3_final_tuning.csv, aq3_choice.json; data/interim/aq3/*.pkl, freeze.json.
 """
 from __future__ import annotations
 
@@ -61,7 +63,8 @@ def outer_fold(config: str, f: pd.DataFrame, held: str) -> dict:
     params, _ = tune(config, 27, tr)
     va["score"] = c.Model(config, 27, SETS, params).fit(tr, tr["y"].to_numpy()).predict(va)
     met = c.list_metrics(va, "score", 5).iloc[0].to_dict()
-    return {"config": config, "fold": held, "params": json.dumps(params, sort_keys=True), "n_train": len(tr), **met}
+    scores = va[c.KEY].assign(config=config, score=va["score"].to_numpy())
+    return {"config": config, "fold": held, "params": json.dumps(params, sort_keys=True), "n_train": len(tr), **met}, scores
 
 
 def final(config: str, cutoff: int, f: pd.DataFrame) -> dict:
@@ -79,11 +82,18 @@ if __name__ == "__main__":
     runs = sorted(f27["run"].unique())
     assert len(runs) == 9 and len(f27) == 11811 and len(f13) == 12080, "2013 training populations differ from the plan"
 
-    folds = pd.DataFrame(Parallel(n_jobs=JOBS)(delayed(outer_fold)(cfg, f27, r) for cfg in c.CONFIGS for r in runs))
+    out = Parallel(n_jobs=JOBS)(delayed(outer_fold)(cfg, f27, r) for cfg in c.CONFIGS for r in runs)
+    folds = pd.DataFrame([o[0] for o in out])
+    # out-of-fold scores: each 2013 run scored by the model of the fold that left it out (development estimate)
+    oof = pd.concat([o[1] for o in out]).pivot_table(index=c.KEY, columns="config", values="score").reset_index()
+    oof = f27[c.KEY + ["run", "y", "tiebreak_u"]].merge(oof, on=c.KEY, how="left", validate="1:1")
+    oof["rule"] = c.rule_score(f27)
+    assert oof[list(c.CONFIGS)].notna().all().all() and len(oof) == len(f27)
+    oof.to_csv(c.WORK / "scores_dev_d27.csv", index=False)
     f27["rule"] = c.rule_score(f27)
     rule = c.list_metrics(f27, "rule", 5).assign(config="RULE", fold=lambda d: d["run"], params="", n_train=0)
     folds = pd.concat([folds, rule[folds.columns]], ignore_index=True)
-    c.write(folds, c.RES3, "dev_folds.csv")
+    c.write(folds, c.R2013, "aq3_dev_folds.csv")
 
     m1 = folds[folds["config"] == "M1"].set_index("fold")["norm_recall"]
     m1_pooled = c.pooled(folds[folds["config"] == "M1"])["norm_recall"]
@@ -97,19 +107,19 @@ if __name__ == "__main__":
                   & (choice["folds_better_than_M1"] >= 7)]
     chosen = "M1" if qual.empty else qual.sort_values(["gain_over_M1", "config"], ascending=[False, True]).iloc[0]["config"]
     choice["chosen"] = choice["config"] == chosen
-    c.write(choice, c.RES3, "dev_choice.csv")
+    c.write(choice, c.R2013, "aq3_dev_choice.csv")
     print(choice[["config", "norm_recall", "gain_over_M1", "folds_better_than_M1", "chosen"]].round(4).to_string(index=False))
 
     jobs = [(cfg, 27, f27) for cfg in c.CONFIGS] + [(cfg, 13, f13) for cfg in c.CONFIGS]
     finals = Parallel(n_jobs=JOBS)(delayed(final)(cfg, cut, f) for cfg, cut, f in jobs)
     c.write(pd.DataFrame([{"config": r["config"], "cutoff": r["cutoff"], **loss} for r in finals for loss in r["losses"]]),
-            c.RES3, "final_tuning.csv")
+            c.R2013, "aq3_final_tuning.csv")
 
     choices = {"chosen_configuration": chosen,
                "final_hyperparameters": {f"{r['config']}_d{r['cutoff']}": r["params"] for r in finals},
                "tuning_criterion": "pooled log loss of an inner leave-one-run-out loop (Change Log C18)",
                "operating_point": {"cutoff_day": 27, "contacts_per_20": 5}, "seed": c.SEED}
-    (c.RES3 / "choice.json").write_text(json.dumps(choices, indent=2, sort_keys=True) + "\n")
+    (c.R2013 / "aq3_choice.json").write_text(json.dumps(choices, indent=2, sort_keys=True) + "\n")
     hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(c.WORK.glob("*.pkl"))}
     freeze = {"frozen_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "choices": choices,
               "models": hashes}

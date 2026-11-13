@@ -1,0 +1,10 @@
+2026-11-13T11:45:08Z
+$ python src/analysis/aq3_test.py   (Python 3.14.5)
+freeze of 2026-11-13T11:45:07Z verified (10 models); chosen M1
+scored 15724 enrolments at day 27 and 15989 at day 13 in 13 runs of 2014
+wrote 2014/aq3_s1_gate.csv (5 rows)
+wrote 2014/aq3_sensitivity.csv (9 rows)
+wrote 2014/aq3_calibration_bins.csv (10 rows)
+wrote 2014/aq3_lead_time.csv (5 rows)
+gate S1: 0.725 against 0.704, difference +0.021 (+0.006 to +0.036), sign-flip p = 0.0035: met
+exit 0

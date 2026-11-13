@@ -1,0 +1,7 @@
+scores,per20,method,n,k,positives,tp,attainable,norm_recall,recall,precision,lift
+"development estimate (2013 runs, out-of-fold)",3,model,11811,1788,5245,1475.0,1788,0.824944,0.28122,0.824944,1.857658
+"development estimate (2013 runs, out-of-fold)",3,rule,11811,1788,5245,1425.0,1788,0.79698,0.271687,0.79698,1.794686
+"development estimate (2013 runs, out-of-fold)",3,random (expected),11811,1788,5245,793.718303,1788,0.443914,0.151329,0.443914,1.0
+"development estimate (2013 runs, out-of-fold)",5,model,11811,2980,5245,2233.0,2976,0.750336,0.425739,0.749329,1.687383
+"development estimate (2013 runs, out-of-fold)",5,rule,11811,2980,5245,2164.0,2976,0.727151,0.412583,0.726174,1.635243
+"development estimate (2013 runs, out-of-fold)",5,random (expected),11811,2980,5245,1322.863839,2976,0.444511,0.252214,0.443914,1.0

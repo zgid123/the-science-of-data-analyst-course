@@ -13,5 +13,5 @@ theo hình thức học hoặc theo việc điểm danh; phần liên hệ của
 | :---- | :---- | :---- | :---- | :---- | :---- |
 | AQ1 | YELLOW | Năm theo học, hình thức học; chỉ 2 trong 7 module có kết quả bài thi | Chỉ dùng TMA và CMA; quy tắc ngày 14; cả hai năm (C15) | Điều chỉnh (Modify) | Đã trả lời (Answered) |
 | AQ2 | YELLOW | Điểm danh; dấu hiệu học đồng thời nhiều module ở năm 2013 | Các dấu hiệu tính đến hết ngày 27; dấu hiệu học đồng thời nhiều module chỉ xét ở năm 2014 (C12, C15) | Điều chỉnh | Đã trả lời |
-| AQ3 | YELLOW | Tại ngày 13, quy tắc chỉ dựa trên bài được chấm điểm đánh dấu được sinh viên ở 1 trong 22 kỳ mở | Quy tắc có thêm điều kiện không hoạt động (C10); kiểm tra trên năm 2014 | Điều chỉnh | Hoãn (Deferred) |
-| AQ4 | RED | Dữ liệu liên hệ, hạn mức liên hệ, kết quả sau khi liên hệ | Chỉ phần xếp hạng (C11); phần liên hệ chuyển sang đợt thí điểm | Điều chỉnh + Hoãn (Modify + Defer) | Hoãn |
+| AQ3 | YELLOW | Tại ngày 13, quy tắc chỉ dựa trên bài được chấm điểm đánh dấu được sinh viên ở 1 trong 22 kỳ mở | Quy tắc có thêm điều kiện không hoạt động (C10); kiểm tra trên năm 2014 | Điều chỉnh | Đã trả lời |
+| AQ4 | RED | Dữ liệu liên hệ, hạn mức liên hệ, kết quả sau khi liên hệ | Chỉ phần xếp hạng (C11); phần liên hệ chuyển sang đợt thí điểm | Điều chỉnh + Hoãn (Modify + Defer) | Trả lời một phần (Partial) |

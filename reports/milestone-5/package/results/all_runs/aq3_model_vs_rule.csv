@@ -1,0 +1,5 @@
+scores,group,enrolments,non_completers,rate,fail,withdrawn,share_with_rule_sign,share_no_click,median_activity_ratio,share_previous_attempt
+"all 22 runs: 2013 out-of-fold, 2014 test",On both lists,5474,4218,0.770552,2520,1698,0.939715,0.222872,0.165414,0.234746
+"all 22 runs: 2013 out-of-fold, 2014 test",Model list only,1461,883,0.604381,508,375,0.244353,0.0,0.65894,0.323066
+"all 22 runs: 2013 out-of-fold, 2014 test",Rule list only,1461,732,0.501027,434,298,0.850103,0.007529,0.410891,0.066393
+"all 22 runs: 2013 out-of-fold, 2014 test",On neither list,19139,6323,0.330373,3575,2748,0.062177,0.0,1.358396,0.08433

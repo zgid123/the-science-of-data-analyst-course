@@ -20,8 +20,8 @@
 |  | 25C12031 – Dương Tấn Huỳnh Phong |
 | Tên đồ án | Báo cáo đồ án cuối kỳ: Nhận diện sớm sinh viên giảm tham gia trong các học phần trực tuyến |
 | Bộ dữ liệu / phiên bản cuối cùng | OULAD, figshare phiên bản 1, cố định bằng SHA-256; phiên bản đã chuẩn bị OULAD-N04-prepared-1.0 |
-| Trạng thái Milestone 4 | Level 1 đã hoàn thành; Level 2 đã đặc tả, chưa chạy |
-| Nhật ký thay đổi | C01–C17 |
+| Trạng thái Milestone 4 | Level 1 đã hoàn thành; Level 2 đã chạy cho AQ3 và AQ4 |
+| Nhật ký thay đổi | C01–C18 |
 | Ngày nộp | 14/11/2026 |
 
 Thành phố Hồ Chí Minh, tháng 11 năm 2026

@@ -1,14 +1,14 @@
-"""Checks of the AQ3 and AQ4 results (run_all.sh step 22; exit 1 on any failed check).
+"""Checks of the AQ3 and AQ4 results (run_all.sh step 26; exit 1 on any failed check).
 
 1. Populations: 2013 training rows (11,811 at day 27; 12,080 at day 13) and 2014 test rows (15,724; 15,989).
 2. Order of work: the freeze record exists and was written before the 2014 scores.
 3. Second code path: the non-completers on the lists of the chosen model and of the rule, recounted from the saved
-   scores with a separate ranking routine (pandas sort), equal results/aq3/test_pooled.csv.
+   scores with a separate ranking routine (pandas sort), equal results/2014/aq3_pooled.csv.
 4. Agreement with the Milestone 4 draft package (data/metadata/aq34_reference_m4.csv): same chosen configuration,
    identical rule-ranked list at day 27 and 5 per 20, model list within the stated tolerance.
-5. No result file of results/aq3/ or results/aq4/ holds a student identifier.
+5. No AQ3/AQ4 result file (aq3_* and aq4_* in results/2013/, 2014/, all_runs/, compare/) holds a student identifier.
 
-Usage (from the package folder): python src/analysis/aq34_checks.py
+Usage (from the package folder): python src/analysis/aq34_checks.py   (run_all.sh step 26)
 Writes data/metadata/aq34_checks.csv.
 """
 from __future__ import annotations
@@ -32,7 +32,7 @@ def check(name: str, ok: bool, detail: str) -> None:
 
 freeze = json.loads((c.WORK / "freeze.json").read_text())
 chosen = freeze["choices"]["chosen_configuration"]
-pooled = pd.read_csv(c.RES3 / "test_pooled.csv")
+pooled = pd.read_csv(c.R2014 / "aq3_pooled.csv")
 
 # 1. populations
 for cut, n13, n14 in [(27, 11811, 15724), (13, 12080, 15989)]:
@@ -66,9 +66,9 @@ for key, method in [("rule-ranked list: non-completers listed at day 27 and 5 pe
     check(f"{method} list against Milestone 4", abs(mine - want) <= tol, f"{mine:.0f} against {want:.0f} (tolerance {tol:.0f})")
 
 # 5. no student identifier in the shipped results
-leaks = [str(p.relative_to(c.ROOT)) for d in (c.RES3, c.RES4) for p in d.glob("*.csv")
-         if "id_student" in Path(p).read_text().splitlines()[0]]
-check("no student identifier in results/aq3 and results/aq4", not leaks, ", ".join(leaks) or "none")
+files = [p for d in (c.R2013, c.R2014, c.RALL, c.RCMP) for pre in ("aq3_", "aq4_") for p in sorted(d.glob(pre + "*.csv"))]
+leaks = [str(p.relative_to(c.ROOT)) for p in files if "id_student" in Path(p).read_text().splitlines()[0]]
+check("no student identifier in the AQ3/AQ4 result files", not leaks and len(files) > 0, ", ".join(leaks) or f"none in {len(files)} files")
 
 out = pd.DataFrame(rows)
 out.to_csv(c.META / "aq34_checks.csv", index=False, lineterminator="\n")

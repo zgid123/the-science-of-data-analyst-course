@@ -1,0 +1,13 @@
+2026-11-13T11:45:53Z
+$ python src/analysis/aq34_compare.py   (Python 3.14.5)
+wrote compare/aq3_dev_vs_test.csv (7 rows)
+wrote compare/aq4_dev_vs_test.csv (10 rows)
+# AQ3 and AQ4: 2013 development estimates against the 2014 test
+
+2013: each run scored by the leave-one-run-out model that left it out (development estimate). 2014: the single test of the model frozen on 2013. Gate S1 is judged on 2014 alone.
+
+- Logistic, primary predictors: normalised recall 0.750 (2013) against 0.725 (2014), -0.025.
+- Early-sign rule (ranked): normalised recall 0.727 (2013) against 0.704 (2014), -0.023.
+- Background-only model: normalised recall 0.568 (2013) against 0.567 (2014), -0.000.
+- Yield of the 1st, 5th and 7th contact per 20 (model): 92.3%, 61.9%, 49.7% in 2013; 92.4%, 57.6%, 47.3% in 2014.
+exit 0
