@@ -20,6 +20,7 @@ Wording that team N04's MTH045 reports share across milestones: the course brief
 | grading criterion (brief rubric) | tiêu chí chấm điểm | the rows of each brief's "Tiêu chí đánh giá" / "Thang đánh giá" / "Rubric" table; the criterion cells copy the brief verbatim |  |
 | main text (pages counted against the brief) | phần nội dung chính | the brief's "trang nội dung chính, không tính phụ lục"; "phần chính" alone after first use | |
 | self-assessment (of the team's results) | tự đánh giá | the team's preliminary self-assessment form: "Bảng đánh giá sơ bộ kết quả của nhóm trên nhiệm vụ được giao" | |
+| coherence (of the project across milestones) | tính kết dính | the self-assessment's Table 1.2 and the team's reference form: "Đánh giá tính kết dính của câu chuyện" | |
 | Met / Mostly met / Partly met / Not applicable (self-assessment rating) | Đạt / Đạt phần lớn / Đạt một phần / Không áp dụng | the self-assessment scale; "mức đánh giá" for the column; not "điểm đánh giá", which is a score |  |
 
 ## Final integration and the final report

@@ -44,6 +44,7 @@ subject = "Course or field"              # optional: core property (default: emp
 # [taskN.layout]                         # optional: page layout
 # compact = true                         # a short document (a proposal): no page breaks before parts, no contents
                                          #   or lists of figures and tables, front pages flow into the body
+# landscape_tables = true                # with compact: wide and text-heavy tables still take landscape pages
 # part_breaks = false                     # contents and lists kept, but the numbered parts run on without page
 # landscape_appendices = true             # with part_breaks = false: wide tables in the appendices may still rotate
                                          #   breaks (references, appendices on a new page); all pages portrait

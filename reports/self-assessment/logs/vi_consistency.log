@@ -1,0 +1,13 @@
+# 2026-11-13T14:14Z glossary coverage + lint
+WARN  term drift: 'enrolment / admission' occurs 4× in the English, its form 'lượt đăng ký học phần / tuyển sinh' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+WARN  term drift: 'feature (predictor)' occurs 4× in the English, its form 'đặc trưng' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'fact (from documentation)' occurs 3× in the English, its form 'thông tin làm căn cứ' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'PASS / FAIL (result of a check)' occurs 6× in the English, its form 'PASS / FAIL' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'Before / After (Change Log columns)' occurs 18× in the English, its form 'Nội dung cũ / Nội dung mới' 0× in the translation (0%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'main text (pages counted against the brief)' occurs 18× in the English, its form 'phần nội dung chính' 3× in the translation (17%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'Validation (traceability column)' occurs 7× in the English, its form 'Cách đánh giá' 2× in the translation (29%); the concept likely travels under other names – align them with the glossary (topics/early-warning-evaluation.md)
+WARN  term drift: 'analytics level' occurs 3× in the English, its form 'loại phân tích' 1× in the translation (33%); the concept likely travels under other names – align them with the glossary (topics/course-completion-report-conventions.md)
+WARN  term drift: 'contact list' occurs 5× in the English, its form 'danh sách liên hệ' 2× in the translation (40%); the concept likely travels under other names – align them with the glossary (topics/course-completion-early-contact.md)
+Checked 441 task terms: 9 drifting
+WARN  topics/early-warning-evaluation.md holds 152 rows, above the budget of 150: group its 8 sections into balanced files with `glossary.py --lang vi split topics/early-warning-evaluation.md`
+Checked 30 glossary files, 1919 terms: 0 errors

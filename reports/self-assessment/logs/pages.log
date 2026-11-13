@@ -1,0 +1,14 @@
+# 2026-11-13T15:20Z make pages TASK=self-assessment
+===== self-assessment: N04_SelfAssessment_EN.docx
+part                                          optimistic laid out   flow   gap tables
+1. Team comments by milestone                        2.7     6.64   3.68  2.96   2.10
+Appendices                                           8.1    16.07
+main content                                         2.7     6.64   3.68  2.96   2.10
+main content: optimistic 2.7 pages, pessimistic 6.6 pages (plan with this); text 1.6, tables 2.1, layout gaps 3.0
+===== self-assessment: N04_SelfAssessment_VI.docx
+part                                          optimistic laid out   flow   gap tables
+1. Nhận xét của nhóm theo từng milestone             3.0     6.66   3.92  2.74   2.26
+Phụ lục                                              8.3    18.14
+main content                                         3.0     6.66   3.92  2.74   2.26
+main content: optimistic 3.0 pages, pessimistic 6.7 pages (plan with this); text 1.7, tables 2.3, layout gaps 2.7
+# exit_status: 0

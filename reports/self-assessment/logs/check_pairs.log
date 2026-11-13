@@ -1,0 +1,11 @@
+PASS  00-0-title-page.md <-> 00-0-title-page.vi.md: 9 headings/captions/rows, 9 table rows compared
+      note table row 9: numbers EN ['14', '2026'] vs VI ['11', '14', '2026'] (expected: date written 14/11/2026 in Vietnamese (guide section 7))
+      note paragraph numbers differ: EN only [], VI only ['11'] (expected: place line 'tháng 11 năm 2026' (guide section 7))
+PASS  01-00-team-comments.md <-> 01-00-team-comments.vi.md: 17 headings/captions/rows, 12 table rows compared
+      note table row 9: numbers EN ['13', '2013', '2014', '2014', '3', '3', '4', '5', '5', '9'] vs VI ['13', '2013', '2013', '2014', '2014', '3', '3', '4', '5', '5', '9'] (expected: '2013' repeated in the Vietnamese wording of paired and unpaired runs)
+PASS  02-00-appendices.md <-> 02-00-appendices.vi.md: 1 headings/captions/rows, 0 table rows compared
+PASS  02-01-results-by-milestone.md <-> 02-01-results-by-milestone.vi.md: 17 headings/captions/rows, 16 table rows compared
+PASS  02-02-basis-overview.md <-> 02-02-basis-overview.vi.md: 6 headings/captions/rows, 5 table rows compared
+PASS  02-03-assessment-by-criterion.md <-> 02-03-assessment-by-criterion.vi.md: 56 headings/captions/rows, 50 table rows compared
+      note table row 14: numbers EN ['3', '3.1'] vs VI ['3', '3', '3.1'] (expected: criterion cell quotes the brief's '≥3' verbatim; English writes 'at least three')
+pairs with differences: 0

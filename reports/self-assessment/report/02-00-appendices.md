@@ -1,0 +1,3 @@
+# Appendices
+
+The appendices hold the detail behind our comments in Section 1: the results of each milestone, its contribution to the project, the answers to the four analytical questions and the coherence of the five reports (Appendix I); the basis of the assessment and its rating scale (Appendix II); and the rating of every grading criterion, milestone by milestone, with its evidence in the submitted report and its limitation (Appendix III). The section, table and appendix numbers in the evidence and limitation columns of Appendix III refer to the submitted report of the milestone being assessed.

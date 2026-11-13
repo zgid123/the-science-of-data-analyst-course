@@ -1,0 +1,93 @@
+## Phụ lục III – Tự đánh giá theo các tiêu chí chấm điểm
+
+Mỗi mục dưới đây đánh giá báo cáo đã nộp của một milestone theo mọi tiêu chí chấm điểm trong đề bài của milestone đó, với các mức của Bảng A.4 (đạt, đạt phần lớn, đạt một phần, không áp dụng). Cột bằng chứng ghi vị trí của phần việc trong báo cáo của milestone đó; cột cuối nêu hạn chế khiến tiêu chí chưa được xếp ở mức cao nhất. Số mục, số bảng và số phụ lục trong cả hai cột đều là số trong báo cáo của milestone đó, không phải của tài liệu này.
+
+### 1. Milestone 1: phân tích yêu cầu và đề xuất dự án
+
+Đề bài Milestone 1 chấm bản đề xuất theo tám tiêu chí, từ thu thập yêu cầu của bên liên quan đến việc sử dụng AI tạo sinh có trách nhiệm. Bảng A.5 đánh giá từng tiêu chí; phần nội dung chính của báo cáo dài khoảng 19 trang ở bản tiếng Anh và 21 trang ở bản tiếng Việt, so với mức khuyến nghị 6–10 trang.
+
+**Bảng A.5. Tự đánh giá Milestone 1 theo các tiêu chí chấm điểm**
+
+| Tiêu chí | Mức đánh giá | Bằng chứng trong báo cáo Milestone 1 | Hạn chế |
+| :---- | :---- | :---- | :---- |
+| Stakeholder requirement gathering | Đạt phần lớn | Năm bên liên quan (đề bài yêu cầu tối thiểu ba); mỗi bên được phỏng vấn bằng bảy hoặc tám câu hỏi mở kèm câu hỏi đào sâu (Mục 2.1, Bảng 2.1; Mục 2.2; Phụ lục I và II). | AI tạo sinh đóng cả vai bên liên quan lẫn người phỏng vấn; đề bài cho phép dùng bên liên quan mô phỏng; nhóm không phỏng vấn người thật nào, nên các yêu cầu vẫn cần được cán bộ thực tế của trường xác nhận lại. |
+| Synthesis & prioritization | Đạt | Sáu chủ đề yêu cầu được xếp thứ tự ưu tiên; ba xung đột và một ràng buộc được giải quyết; một vòng xác nhận, trong đó cả năm bên liên quan xác nhận, chỉnh sửa và bổ sung yêu cầu (Mục 2.3 và 2.4, Bảng 2.2; Phụ lục III). | – |
+| Business Goal + SMART Goal + KPI | Đạt | Business Goal nêu kết quả cần đạt chứ không nêu công việc phải làm; SMART Goal đặt mục tiêu nâng tỷ lệ hoàn thành học phần từ 70% lên 75% vào cuối năm học 2027–2028, trong đó mức cơ sở 70% được ghi rõ là số giả định cho trường đại học trong tình huống mà đề bài đặt ra, chưa đo thực tế; một KPI chính và hai KPI phụ, mỗi KPI kèm lập luận (Mục 3.1–3.3). | – |
+| Analytical Question Ladder | Đạt | Bốn câu hỏi phân tích, mỗi câu ở một mức, từ mô tả đến chỉ định (gợi ý nên hành động thế nào); mỗi câu được kiểm tra theo năm yêu cầu chất lượng: rõ ràng, cụ thể, có phạm vi, hướng tới dữ liệu và trả lời được; kèm hai ví dụ so sánh câu hỏi trước và sau khi chỉnh sửa (Mục 4.1 và 4.2, Bảng 4.1 và 4.2). | – |
+| Analytics Type & Candidate Technique Family | Đạt | Loại phân tích, nhóm kỹ thuật dự kiến, đầu ra mong đợi và người sử dụng kết quả của từng câu hỏi; báo cáo không nêu thuật toán cụ thể trước khi biết dữ liệu (Mục 5, Bảng 5.1). | – |
+| Data Requirements, feasibility, privacy/ethics | Đạt | Bốn nguồn dữ liệu, kèm mức chi tiết, thời điểm có dữ liệu và khả năng tiếp cận cho từng câu hỏi; năm rủi ro chất lượng dữ liệu; các quy định có liên quan của Việt Nam về bảo vệ dữ liệu cá nhân (Mục 6.1 và 6.2, Bảng 6.1). | – |
+| Decision supported & expected value | Đạt | Ba quyết định; với mỗi quyết định, báo cáo nêu người ra quyết định, cấp quyết định (từ điều hành hằng ngày đến chiến lược) và quyết định đó có thể đảo ngược hay không (Mục 7, Bảng 7.1). | – |
+| Responsible GenAI use & proposal quality | Đạt phần lớn | Bốn vai trò giao cho AI tạo sinh và mười hai góp ý phản biện, trong đó chín góp ý được chấp nhận, hai được chấp nhận một phần và một bị bác bỏ kèm lý do (Mục 8, Bảng 8.1; Phụ lục IV); ma trận truy vết liên kết mục tiêu, câu hỏi và quyết định (Mục 9, Bảng 9.1). | Phần chính dài khoảng gấp đôi mức khuyến nghị. |
+
+### 2. Milestone 2: yêu cầu dữ liệu, tìm kiếm và thu thập bộ dữ liệu
+
+Đề bài Milestone 2 chấm chín tiêu chí, từ liên kết với Milestone 1 đến việc sử dụng AI tạo sinh có kiểm chứng. Ngoài báo cáo, đề bài còn yêu cầu nộp kèm gói thu thập dữ liệu. Bảng A.6 đánh giá từng tiêu chí; phần chính dài khoảng 19 trang ở bản tiếng Anh và 21 trang ở bản tiếng Việt, so với mức khuyến nghị 6–10 trang.
+
+**Bảng A.6. Tự đánh giá Milestone 2 theo các tiêu chí chấm điểm**
+
+| Tiêu chí | Mức đánh giá | Bằng chứng trong báo cáo Milestone 2 | Hạn chế |
+| :---- | :---- | :---- | :---- |
+| Liên kết Milestone 1 và tính nhất quán của scope / Change Log | Đạt | Nội dung đã chốt ở Milestone 1 được nhắc lại, cùng tám thay đổi được ghi nhận, mỗi thay đổi có bằng chứng từ dữ liệu; mục tiêu, SMART Goal và các quyết định giữ nguyên (Mục 1.1 và 1.2, Bảng 1.1; Phụ lục V). | – |
+| Data Requirement Specification từ từng AQ | Đạt | Đơn vị phân tích, biến kết quả, các biến, khoảng thời gian và thời điểm ra quyết định của từng câu hỏi, cùng các điều kiện bắt buộc mà bộ dữ liệu phải đáp ứng (Mục 2.1, Bảng 2.1). | – |
+| Phân biệt yêu cầu dữ liệu cho Descriptive/Diagnostic/Predictive/Prescriptive | Đạt phần lớn | Khoảng trống dữ liệu của câu hỏi chỉ định được nêu trước khi tìm kiếm. Nhóm dự kiến lập danh sách sinh viên cần liên hệ vào ngày 13 và ngày 27 của học phần; với mỗi danh sách, báo cáo nêu thời điểm dự báo và cách kiểm tra rò rỉ thông tin (dữ liệu phát sinh sau thời điểm dự báo lọt vào mô hình) (Mục 2.2 và 2.3). | Đề bài chấm bảng phân biệt yêu cầu dữ liệu theo từng loại phân tích, nhưng bảng này nằm ở Phụ lục VII và phần chính chỉ tóm tắt bảng. |
+| Search strategy + ≥3 candidate datasets + Search Log | Đạt | Nhật ký tìm kiếm có mười sáu dòng: mười một dòng ghi các lượt tìm kiếm và năm dòng ghi các nguồn tìm thêm được từ những lượt đó, trong đó có cả các nguồn bị loại. Các lượt tìm kiếm cho ra bảy bộ dữ liệu ứng viên (Mục 3, Bảng 3.1; Phụ lục I). | – |
+| Dataset evaluation & selection rationale | Đạt | Mười tiêu chí đánh giá bộ dữ liệu được chấm từ 0 đến 2, trong đó các điều kiện bắt buộc được xét trước điểm số. Nhóm chọn bộ dữ liệu OULAD (Open University Learning Analytics Dataset) với điều kiện các tệp dữ liệu xác nhận được ba nội dung: cột kết quả phân biệt được sinh viên đạt với sinh viên không đạt; mỗi module có đủ kỳ mở để kiểm thử; mã sinh viên giữ nguyên giữa các kỳ mở. Bước kiểm tra cấu trúc sau đó đã kiểm chứng ba điểm này (Mục 4.1 và 4.2, Bảng 4.1; Phụ lục II). | – |
+| Data acquisition, provenance, license/citation và reproducibility | Đạt | Phiên bản đã công bố kèm DOI, giấy phép CC BY 4.0, mã kiểm tra (checksum) của từng tệp và cách tải lại toàn bộ dữ liệu bằng hai lệnh trong gói thu thập dữ liệu (Mục 5, Bảng 5.1; Phụ lục III). | – |
+| Initial structural verification + updated traceability + data gaps | Đạt | Bảy bảng được kiểm tra, ba điểm khác biệt giữa tài liệu mô tả và tệp dữ liệu được ghi nhận, mức đáp ứng của dữ liệu cho từng câu hỏi được đánh giá; riêng hành động liên hệ sinh viên trong câu hỏi chỉ định được ghi là không đáp ứng, vì bộ dữ liệu không ghi nhận việc liên hệ (Mục 6, 7.1 và 7.2, Bảng 6.1 và 7.1). | – |
+| Ethics, representativeness, privacy và limitations | Đạt | Mỗi số liệu công bố phải tính trên ít nhất năm sinh viên, các thuộc tính nhạy cảm chỉ dùng để kiểm tra tính công bằng, phạm vi dữ liệu là Vương quốc Anh giai đoạn 2013–2014, cùng các kết luận mà dữ liệu không hỗ trợ (Mục 8). | – |
+| Generative AI usage có kiểm chứng và phản biện | Đạt | Bốn vai trò của AI và hai vòng phản biện: nhóm chấp nhận mười trên mười hai góp ý ở vòng thứ nhất (hai góp ý còn lại được chấp nhận một phần) và cả mười góp ý ở vòng thứ hai; mỗi góp ý được đối chiếu với nguồn chính thức của bộ dữ liệu (Mục 9, Bảng 9.1; Phụ lục VI). | – |
+
+### 3. Milestone 3: tìm hiểu và chuẩn bị dữ liệu
+
+Đề bài Milestone 3 chấm mười tiêu chí, từ liên kết với các milestone trước đến Nhật ký quyết định về AI (AI Decision Log). Đề bài còn yêu cầu một quy trình chuẩn bị dữ liệu tái lập được. Bảng A.7 đánh giá từng tiêu chí; phần chính dài khoảng 27 trang ở bản tiếng Anh và 33 trang ở bản tiếng Việt, so với mức khuyến nghị 8–12 trang.
+
+**Bảng A.7. Tự đánh giá Milestone 3 theo các tiêu chí chấm điểm**
+
+| Tiêu chí | Mức đánh giá | Bằng chứng trong báo cáo Milestone 3 | Hạn chế |
+| :---- | :---- | :---- | :---- |
+| Liên kết Milestone 1–2 và consistency của scope / Change Log | Đạt phần lớn | Bước kiểm tra đầu vào xác nhận cả sáu điều kiện kế thừa từ Milestone 1–2 đều được đáp ứng và năm thay đổi mới được ghi nhận (Mục 1.1 và 1.2, Bảng 1.1; Phụ lục IV). | Tập kiểm thử giữ cả 13 kỳ mở năm 2014 thay vì 9 kỳ mở có cùng module và cùng tháng bắt đầu với một kỳ mở năm 2013 như kế hoạch đã nêu; thay đổi này không được ghi vào Nhật ký thay đổi cho đến Milestone 5. |
+| Dataset Understanding: population, unit, keys, target, time, semantics | Đạt | Đơn vị phân tích là lượt đăng ký học, các khóa được kiểm tra giữa các bảng, cột kết quả cuối kỳ (final_result) của bộ dữ liệu được chọn làm biến kết quả, thời gian tính từ ngày bắt đầu học phần và sáu thuộc tính nhạy cảm được nêu tên (Mục 2.1–2.3, Bảng 2.1). | – |
+| Data Profiling & Data Quality Assessment có evidence | Đạt | Toàn bộ 10,9 triệu dòng được khảo sát theo mười khía cạnh của đề bài; mười chín vấn đề chất lượng được ghi nhận, trong đó ba vấn đề ở mức nghiêm trọng cao (Mục 3.1–3.5, Bảng 3.1; Phụ lục I). | – |
+| AQ–Data Fit + quyết định xử lý data gaps / synthetic data hợp lý | Đạt | Ba câu hỏi được xếp mức YELLOW (hỗ trợ một phần) và một câu ở mức RED (không được hỗ trợ), mỗi câu có quyết định xử lý; dữ liệu giả lập chỉ dùng cho kiểm thử đơn vị (Mục 4.1 và 4.2, Bảng 4.1 và 4.2). | – |
+| Data Preparation Decision Matrix và rationale | Đạt | Mười hai nhu cầu chuẩn bị dữ liệu, mỗi nhu cầu có quyết định, lập luận và phép kiểm tra dùng để kiểm chứng quyết định đó (Mục 5, Bảng 5.1). | – |
+| Reproducible Preparation Pipeline + data lineage | Đạt | Quy trình chuẩn bị dữ liệu (pipeline) gồm tám bước, chạy bằng một lệnh; lần chạy lại cho kết quả trùng khớp từng byte; từ điển 88 biến có truy vết nguồn gốc dữ liệu (lineage) cho từng biến (Mục 6.1, 6.2 và 7.2, Bảng 7.2; Phụ lục II và III). | – |
+| Leakage control / split strategy / predictive readiness | Đạt | Mô hình được huấn luyện trên chín kỳ mở module năm 2013 (mỗi kỳ mở là một lần module được tổ chức giảng dạy) và kiểm thử trên mười ba kỳ mở năm 2014. Khi kiểm định chéo, mỗi lượt (fold) có một kỳ mở được tách ra để đánh giá. Sinh viên đăng ký ở cả hai năm được đánh dấu (Mục 6.3, Bảng 6.1). | – |
+| Prepared Data Validation + analytics/model readiness | Đạt | Hai mươi hai phép kiểm tra đều không báo lỗi; sáu đặc trưng dẫn xuất được tính lại độc lập trên toàn bộ 55.604 dòng của bảng đặc trưng (mỗi dòng ứng với một lượt đăng ký học và một ngày lập danh sách) mà không phát hiện sai khác nào; ma trận mức sẵn sàng được lập cho bốn loại phân tích (Mục 7.1, 7.3 và 8, Bảng 7.1 và 8.1). | – |
+| Ethics, representativeness, sensitive attributes và limitations | Đạt | Thuộc tính nhạy cảm chỉ được giữ lại để kiểm tra tính công bằng; các giới hạn được so sánh với một nghiên cứu đã công bố về tính công bằng trên cùng bộ dữ liệu và được đối chiếu với luật bảo vệ dữ liệu cá nhân năm 2025 của Việt Nam (Mục 9). | – |
+| Generative AI usage có kiểm chứng, phản biện và AI Decision Log | Đạt | Nhật ký quyết định về AI có mười ba dòng. AI phản biện kế hoạch chuẩn bị dữ liệu đưa ra mười hai góp ý (chín được chấp nhận, ba được chấp nhận một phần); AI kiểm tra rò rỉ thông tin đưa ra tám phát hiện, tất cả đều được tái hiện và sửa (Mục 10, Bảng 10.1; Phụ lục V). | – |
+
+### 4. Milestone 4: đề xuất mô hình hóa và đánh giá
+
+Đề bài Milestone 4 chấm Level 1 (đề xuất phương pháp và cách đánh giá) theo bảy tiêu chí; Level 2 (nguyên mẫu có kết quả) không bắt buộc và không phải điều kiện để đạt đủ 100 điểm. Bảng A.8 đánh giá bảy tiêu chí này. Đề bài không quy định số trang; phần chính dài khoảng 22 trang ở bản tiếng Anh và 28 trang ở bản tiếng Việt.
+
+**Bảng A.8. Tự đánh giá Milestone 4 theo các tiêu chí chấm điểm**
+
+| Tiêu chí | Mức đánh giá | Bằng chứng trong báo cáo Milestone 4 | Hạn chế |
+| :---- | :---- | :---- | :---- |
+| Traceability từ AQ đến technical task | Đạt | Bước kiểm tra đầu vào với năm điều kiện kế thừa từ Milestone 3; mỗi câu hỏi phân tích (AQ) có một bản mô tả yêu cầu mô hình hóa (AQ Modeling Brief); và ma trận truy vết từ mục tiêu đến quyết định (Mục 1.1, 1.2, 2 và 8, Bảng 1.1, 1.2, 2.1 và 8.1). | – |
+| Candidate solution families & baseline | Đạt | Mỗi câu hỏi có một phương pháp cơ sở (baseline), mỗi câu hỏi cần mô hình hóa có hai nhóm kỹ thuật dự kiến và báo cáo không dùng học máy khi thống kê mô tả đã trả lời được câu hỏi (Mục 3.1–3.4, Bảng 3.1). | – |
+| Selection rationale | Đạt | Tám tiêu chí, trong đó có các tiêu chí về câu hỏi, dữ liệu, giả định, khả năng diễn giải, độ phức tạp và khả năng hành động, cùng phép kiểm tra cỡ mẫu cho mô hình dự báo (Mục 3.1; Phụ lục I). | – |
+| Evaluation design | Đạt | Chỉ số chính là tỷ lệ phát hiện (recall) trong giới hạn danh sách, tức phần trăm sinh viên về sau không hoàn thành học phần được danh sách gọi tên, khi độ dài danh sách bằng số sinh viên Phòng Đào tạo liên hệ được. Các ngưỡng thành công được cố định trước mọi lần kiểm thử; mỗi lượt kiểm định chéo có một kỳ mở được tách ra để đánh giá; kết quả được báo cáo kèm khoảng tin cậy bootstrap và một kiểm định ghép cặp (Mục 4.1–4.4, Bảng 4.1 và 4.2; Phụ lục II–IV). | – |
+| Leakage / risk / ethics / fairness | Đạt | Một chỉ số công bằng được kiểm định thống kê trên ba nhóm sinh viên xác định từ trước; mười sáu rủi ro cùng biện pháp kiểm soát và các quy định của Việt Nam về hệ thống AI có rủi ro cao (Mục 5, Bảng 5.1; Phụ lục V). | – |
+| GenAI transparency & critical use | Đạt | Hai mươi bốn góp ý phản biện của AI, mỗi góp ý có quyết định của nhóm và bằng chứng (Mục 6, Bảng 6.1; Phụ lục VI). | – |
+| Presentation & consistency | Đạt phần lớn | Thuật ngữ, mã định danh và phiên bản thống nhất giữa các bảng và các mục. | Phần chính dài khoảng 22 trang ở bản tiếng Anh; đề bài không quy định số trang, nhưng độ dài này vượt mức 6–10 hoặc 8–12 trang mà đề bài Milestone 1–3 khuyến nghị. |
+
+### 5. Milestone 5: tích hợp cuối kỳ và báo cáo đồ án
+
+Đề bài Milestone 5 chấm báo cáo đồ án cuối kỳ theo mười một tiêu chí, từ tính nhất quán giữa vấn đề, mục tiêu và câu hỏi đến hình thức trình bày và tài liệu tham khảo. Đề bài khuyến nghị phần chính dài 15–25 trang. Bảng A.9 đánh giá từng tiêu chí; phần chính dài khoảng 25 trang ở bản tiếng Anh và 32 trang ở bản tiếng Việt.
+
+**Bảng A.9. Tự đánh giá Milestone 5 theo các tiêu chí chấm điểm**
+
+| Tiêu chí | Mức đánh giá | Bằng chứng trong báo cáo Milestone 5 | Hạn chế |
+| :---- | :---- | :---- | :---- |
+| Problem–Goal–AQ coherence | Đạt | Bối cảnh nghiệp vụ, SMART Goal, các chỉ số và bốn câu hỏi cuối cùng, với mọi thay đổi kể từ Milestone 1 được ghi lại trong Nhật ký điều chỉnh AQ (AQ Revision Log) và không câu hỏi nào bị loại bỏ (Mục 1–3, Bảng 2.1, 3.1 và 3.2). | – |
+| Requirement–Data traceability | Đạt | Yêu cầu dữ liệu, quá trình chọn giữa bảy bộ dữ liệu ứng viên, phiên bản bộ dữ liệu, mức phù hợp của dữ liệu và trạng thái của từng câu hỏi (Mục 4 và 5, Bảng 4.1, 4.2, 5.1 và 5.2). | – |
+| Data understanding & preparation evidence | Đạt | Mười chín vấn đề chất lượng kèm quyết định xử lý, hai mươi hai phép kiểm tra đều không báo lỗi và từ điển 88 biến (Mục 6 và 7, Bảng 6.1, 6.2 và 7.1). | – |
+| Modeling/analysis strategy – Level 1 | Đạt | Bài toán, phương pháp cơ sở, hai phương pháp ứng viên và lập luận cho từng câu hỏi (Mục 8, Bảng 8.1; Phụ lục VIII). | – |
+| Evaluation design | Đạt | Chỉ số đánh giá, ngưỡng thành công, mỗi lượt kiểm định chéo có một kỳ mở được tách ra để đánh giá và một lần kiểm thử cuối cùng duy nhất (Mục 9, Bảng 9.1). | – |
+| Experimental evidence – nếu có | Đạt phần lớn | Nguyên mẫu (prototype) Level 2 được chạy cho câu hỏi dự báo và câu hỏi chỉ định: mô hình được xây dựng trên 9 kỳ mở năm 2013 với các fold loại trừ từng kỳ mở, được chốt bằng mã băm của từng mô hình và kiểm tra một lần trên 13 kỳ mở năm 2014. Điều kiện đạt S1 được đáp ứng: khi cứ 20 sinh viên thì chọn 5 sinh viên vào danh sách, danh sách của mô hình chứa 41,5% số sinh viên về sau không hoàn thành học phần, so với 40,3% của quy tắc dấu hiệu sớm. Báo cáo còn trình bày phần phân tích hiệu chuẩn và phân tích lỗi, kết luận so với Level 1 và các bước trong Gói nộp cuối kỳ (Final Project Package); các bước này chạy lại được mọi kết quả và đã được đối chiếu từng byte (Mục 10, Bảng 10.1; Phụ lục XIV, Bảng A.37). | Kế hoạch của Milestone 4 không nêu thước đo dùng để tinh chỉnh siêu tham số; gói bản nháp của Milestone 4, một phiên bản mã trước đó của cùng phép kiểm tra, tinh chỉnh theo tỷ lệ phát hiện trong giới hạn danh sách, còn nhóm chọn log loss sau khi đã biết kết quả kiểm tra năm 2014 của bản nháp đó. Báo cáo nêu rõ thời điểm lựa chọn và trình bày kết quả của bản nháp bên cạnh. Điều kiện đạt S1 được đáp ứng với cả hai thước đo, nên lựa chọn này chỉ ảnh hưởng đến kết quả hiệu chuẩn. |
+| Findings & educational decision support | Đạt | Trong 28.061 lượt đăng ký học chưa rút tại ngày 14 kể từ khi học phần bắt đầu, 45,3% không hoàn thành học phần (khoảng tin cậy 95%: 44,7–45,8%); năm dấu hiệu sớm được xác nhận trên dữ liệu của cả hai năm, trong đó sinh viên bỏ lỡ một bài có tỷ lệ không hoàn thành cao hơn khoảng 40 điểm phần trăm so với sinh viên không bỏ lỡ bài nào; danh sách xếp hạng từ phép kiểm tra một lần duy nhất trên dữ liệu năm 2014, mỗi sinh viên kèm một lý do; cùng các quyết định mà từng kết quả hỗ trợ, mỗi câu trả lời được nêu đúng ở mức bằng chứng mà câu trả lời đạt được (Mục 11, Bảng 11.3; Phụ lục XII–XIV, Hình A.2 và A.3). Ngày 14 là mốc xác định tập sinh viên dùng để tính chỉ số hoàn thành học phần; ngày 13 và ngày 27 là ngày lập danh sách liên hệ. | – |
+| Limitations & research integrity | Đạt | Các giới hạn về dữ liệu, mô hình, khả năng khái quát hóa và quan hệ nhân quả được nêu rõ, có phân biệt hai trường hợp: đã kiểm tra nhưng không thấy khác biệt rõ ràng; dữ liệu không cho phép kiểm tra (Mục 12, Bảng 12.1). | – |
+| Traceability Matrix & report integration | Đạt phần lớn | Ma trận truy vết đầy đủ, có đánh dấu các khoảng trống; phần trình bày được viết mới thành một mạch thống nhất thay vì ghép từ các báo cáo trước (Mục 11.1, Bảng 11.1 và 11.2; Phụ lục XI). | Đề bài trình bày ma trận thành một bảng mười một cột; báo cáo chia ma trận thành hai bảng cho dễ đọc, nên khác với hình thức đề bài đưa ra. |
+| Generative AI transparency & human ownership | Đạt | Vai trò của AI, quy tắc kiểm chứng và phần bài học rút ra nằm trong phần chính; Nhật ký quyết định về AI đầy đủ nằm ở phụ lục, đúng như đề bài cho phép (Mục 13; Phụ lục XVI). | – |
+| Presentation & references | Đạt phần lớn | Bảng và hình được đánh số, có khoảng tin cậy, danh mục tài liệu tham khảo theo chuẩn APA, cùng bản tiếng Anh và bản tiếng Việt có cấu trúc giống nhau. | Phần chính của bản tiếng Việt dài khoảng 32 trang, vượt bảy trang so với mức tối đa khuyến nghị là 25 trang. |

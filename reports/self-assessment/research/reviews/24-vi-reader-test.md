@@ -1,0 +1,22 @@
+# Reader check of the final fixes
+
+Reader: Vietnamese-native lecturer, Vietnamese files only (`report/*.vi.md`), first reading. Clarity: 1 = could not work out the meaning; 2 = understood after rereading; 3 = understood but sounds translated.
+
+| # | Passage | Verdict | Note |
+| :---- | :---- | :---- | :---- |
+| 1 | 01-00, opening paragraph, last sentence ("cuối cùng là …") | clear | Reads as the last step of the story; the passive "những quyết định được các câu trả lời đó hỗ trợ" is slightly heavy but not an obstacle. |
+| 2a | 01-00, Table 1.1, data-quality row, status cell | 2 | "nên dòng trùng không ảnh hưởng đến kết quả này" – "kết quả này" has no antecedent until the next sentence defines Cliff's delta and what it compares; I had to read on and come back. Putting the definition first (or naming the result in the clause) removes the hitch. |
+| 2b | 01-00, Table 1.1, documentation-mismatch row, solution cell | 3 | "phân tích chính chỉ tính bài tập do giảng viên chấm nộp trễ" – first parse is "giảng viên chấm nộp trễ"; "các bài tập do giảng viên chấm bị nộp trễ" reads at once. The quiz sensitivity clause is clear. |
+| 2c | 01-00, Table 1.1, preparation-code errors row, solution cell | clear | Meaning (estimates from training data only, so test data do not shape the features) is clear; "ước lượng các giá trị …, ví dụ để quyết định biến nào …" pairs a value with a decision, a minor wobble only. |
+| 2d | 01-00, Table 1.1, unrecorded test-set row, what happened | clear | 9 matched 2014 presentations planned, all 13 used from Milestone 3, no Change Log line: understood at once. |
+| 2e | 01-00, Table 1.1, Level 2 test row, what happened and solution | 2 | The two code versions and why they matter are clear. In the solution, "điều kiện đạt S1 được đáp ứng với cả hai thước đo" comes one sentence before S1 is explained ("điều kiện đạt S1 (ngưỡng thành công …)"), so I met the label before its meaning; define S1 at its first mention. "gói này đã tự chạy một lần kiểm tra" – "tự" is odd (3), "đã chạy" suffices. S3 is glossed on the spot and is clear. |
+| 3a | 02-01, Table A.1, Milestone 4 row, cross-validation wording | clear | "kiểm định chéo theo các fold, mỗi lượt có một kỳ mở được tách ra để đánh giá" understood; its inner comma sits in a comma-separated list but the item boundary is still readable. |
+| 3b | 02-01, Table A.2, rows AQ2 and AQ4 | clear | Five signals and the 40-point gap are clear; the 20-student tutor group is explained in the parenthesis and the 92.4% reads correctly. |
+| 3c | 02-01, Table A.3, row "Điều chỉnh so với kế hoạch" | 2 | "của mô hình tinh chỉnh theo thước đo còn lại (tỷ lệ phát hiện trong giới hạn danh sách)" – "thước đo còn lại" presumes two named metrics, but the chosen one (log loss) is not named in this cell; I had to infer it. Naming log loss ("thước đo log loss được chọn sau khi đã biết kết quả … của bản nháp tinh chỉnh theo tỷ lệ phát hiện …") fixes it. |
+| 4 | 02-02, last paragraph (page lengths and ratings) | 2 | "Đề bài Milestone 2 và 3 không có tiêu chí như vậy" follows the Milestone 4 page-count sentence, so "như vậy" first reads as "không quy định số trang", which clashes with the next sentence ("bốn đề bài có khuyến nghị độ dài" includes Milestones 2 and 3). It means "tiêu chí chấm hình thức trình bày"; naming it, or placing this sentence straight after "cụ thể là ở Milestone 1, 4 và 5", removes the reread. |
+| 5 | 02-03, Table A.5, "Stakeholder requirement gathering", limitation | clear | Understood at once; the middle clause "đề bài cho phép dùng bên liên quan mô phỏng" would read more smoothly as a concession ("dù đề bài cho phép …"), not an obstacle. |
+| 6 | Whole document, Section 1 to Appendix III | clear | Reads as one whole: Section 1 summary and the appendix intro announce the same three appendices; 37/45 met and 8 mostly met agree in Section 1, A.1, the A.3 closing paragraph and Appendix II; the Level 2 tuning-metric and test-set issues read the same in Table 1.1, A.1, A.3; A.3 closes by pointing back to Section 1. |
+
+## Decisions on this check
+
+All flagged passages fixed: Cliff's delta defined before the conclusion and the conclusion names the comparison (2a); "các bài tập do giảng viên chấm bị nộp trễ" (2b); S1 defined at its first mention in the Level 2 row and "đã chạy" (2e, EN+VI); log loss named in Table A.3 (3c, EN+VI); in Appendix II the Milestone 2–3 sentence follows the rating rule and names the missing criterion (4, EN+VI). Passages 1, 2c and 5 were judged clear; no flag remains open.

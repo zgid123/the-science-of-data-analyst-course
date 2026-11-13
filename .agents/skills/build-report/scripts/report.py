@@ -158,6 +158,8 @@ def build(name, task, langs, figures=True):
         layout = task.get("layout", {})
         if layout.get("compact"):                           # a short document: no part page breaks, no contents
             args.append("--compact")
+            if layout.get("landscape_tables"):              # wide or text-heavy tables still get landscape pages
+                args.append("--landscape-tables")
         elif layout.get("part_breaks") is False:            # contents kept; parts run on, all pages portrait
             args.append("--run-on-parts")
             if layout.get("landscape_appendices"):          # appendices sit outside the page budget and start a new page

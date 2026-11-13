@@ -228,3 +228,35 @@ names = ["AQ1", "AQ2", "AQ3", "AQ4", "AQ-ID", "AQs", "KPIs", "CMAs", "TMAs", "ID
 [milestone-5.abbreviations.titles]
 en = ["Law on Artificial Intelligence", "Dataset title | Open University Learning Analytics Dataset"]
 vi = ["Luật Trí tuệ nhân tạo", "hệ thống trí tuệ nhân tạo có rủi ro cao"]
+
+# ---------------------------------------------------------------------------------------------------- self-assessment
+[self-assessment]
+name = "Preliminary self-assessment of Milestones 1–5 against the briefs' grading criteria, with team comments (team N04)"
+report = "reports/self-assessment/report"
+build = "reports/self-assessment/build"
+author = "Group 4 (N04)"
+voice = "group"                          # the team writes in the first person (build-report check_style.py)
+people = ["Nguyễn Trần Minh Thư", "Phạm Minh Tú", "Lê Ngọc Trúc Huỳnh", "Phan Trần Khanh", "Dương Tấn Huỳnh Phong"]
+
+[self-assessment.en]
+out = "N04_SelfAssessment_EN.docx"
+title = "Preliminary Self-Assessment of Group Results on the Assigned Tasks"
+short_title = "N04 – Self-assessment"
+subject = "MTH045 – The Science of Data Analytics"
+
+[self-assessment.vi]
+out = "N04_SelfAssessment_VI.docx"
+title = "Bảng đánh giá sơ bộ kết quả của nhóm trên nhiệm vụ được giao"
+short_title = "N04 – Tự đánh giá"
+subject = "MTH045 – Khoa học phân tích dữ liệu"
+author = "Nhóm 4 (N04)"
+glossaries = ["higher-education", "course-completion-early-contact", "oulad-data-preparation", "early-warning-evaluation", "course-completion-report-conventions"]
+
+[self-assessment.structure]                # the evidence columns point into the five milestone reports, not into this document
+ignore_refs = ["Appendix I", "Appendix II", "Appendix III", "Appendix IV", "Appendix V", "Appendix VI", "Appendix VII", "Appendix VIII", "Appendix XI", "Appendix XII", "Appendix XIV", "Appendix XVI", "Bảng 1.2", "Bảng 10.1", "Bảng 11.3", "Bảng 2.1", "Bảng 3.1", "Bảng 3.2", "Bảng 4.1", "Bảng 4.2", "Bảng 5.1", "Bảng 5.2", "Bảng 6.1", "Bảng 6.2", "Bảng 7.1", "Bảng 8.1", "Bảng 9.1", "Bảng A.37", "Figure A.2", "Figure A.3", "Hình A.2", "Hình A.3", "Mục 1.1", "Mục 1.2", "Mục 10", "Mục 11", "Mục 11.1", "Mục 12", "Mục 13", "Mục 2.1", "Mục 2.2", "Mục 2.3", "Mục 2.4", "Mục 3.1", "Mục 3.3", "Mục 3.4", "Mục 3.5", "Mục 4", "Mục 4.1", "Mục 4.2", "Mục 4.4", "Mục 5", "Mục 6", "Mục 6.1", "Mục 6.2", "Mục 6.3", "Mục 7", "Mục 7.1", "Mục 7.2", "Mục 7.3", "Mục 8", "Mục 9", "Phụ lục I", "Phụ lục II", "Phụ lục III", "Phụ lục IV", "Phụ lục V", "Phụ lục VI", "Phụ lục VII", "Phụ lục VIII", "Phụ lục XI", "Phụ lục XII", "Phụ lục XIV", "Phụ lục XVI", "Section 1.1", "Section 1.2", "Section 10", "Section 11", "Section 11.1", "Section 12", "Section 13", "Section 2.1", "Section 2.2", "Section 2.3", "Section 2.4", "Section 3.1", "Section 3.3", "Section 3.4", "Section 3.5", "Section 4", "Section 4.1", "Section 4.2", "Section 4.4", "Section 5", "Section 6", "Section 6.1", "Section 6.2", "Section 6.3", "Section 7", "Section 7.1", "Section 7.2", "Section 7.3", "Section 8", "Section 9", "Table 1.2", "Table 10.1", "Table 11.3", "Table 2.1", "Table 3.1", "Table 3.2", "Table 4.1", "Table 4.2", "Table 5.1", "Table 5.2", "Table 6.1", "Table 6.2", "Table 7.1", "Table 8.1", "Table 9.1", "Table A.37"]
+
+[self-assessment.layout]
+compact = true                           # a short form: no contents page, page 1 after the title page
+landscape_tables = true                  # a short form, but its text-heavy tables take landscape pages
+line_spacing = 1.15
+body_size = 11.5

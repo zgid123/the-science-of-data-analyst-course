@@ -66,6 +66,8 @@ figure_lang = "en"                       # optional: figures from <name>.<code>.
 compact = true                           # optional: a short document (a proposal): no page breaks before parts,
                                          # no contents or lists of figures and tables, arabic numbering from the
                                          # page after the title page; front pages (00-*) flow into the body
+landscape_tables = true                  # optional, with compact: wide and text-heavy tables still take landscape
+                                         # pages (a short form whose tables carry most of its text)
 part_breaks = false                      # optional, without compact: contents, lists and roman pages kept, but the
                                          # numbered parts run on without page breaks (references and appendices
                                          # still start a new page); every page portrait. For a main text with a

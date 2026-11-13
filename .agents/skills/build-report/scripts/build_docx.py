@@ -13,7 +13,9 @@ observed to stop the document from saving (tasks.toml: google_docs = true builds
 --compact builds a short document such as a proposal (tasks.toml: [taskN.layout] compact = true): parts and front
 pages follow one another without page breaks, there is no contents page and no list of figures or tables, and the
 page after the title page is numbered 1 in arabic numerals. Every page stays portrait, as with --portrait, so no page
-breaks surround rotated tables or figures. The title page, captions, tables and headers stay as usual.
+breaks surround rotated tables or figures, unless --landscape-tables (tasks.toml: landscape_tables = true) lets wide
+and text-heavy tables take landscape pages, for a short form whose tables carry most of its text. The title page,
+captions, tables and headers stay as usual.
 
 --run-on-parts (tasks.toml: [taskN.layout] part_breaks = false) keeps the full front matter, contents, lists and
 roman numbering, but lets the numbered parts follow one another with heading space instead of a page break, for a
@@ -1052,6 +1054,8 @@ def main():
                     help="figures with an SVG twin go in as SVG with their PNG as fallback (sharp at any zoom)")
     ap.add_argument("--compact", action="store_true",
                     help="short document: no page breaks before parts, no contents or lists, arabic numbering from 1")
+    ap.add_argument("--landscape-tables", action="store_true",
+                    help="with --compact, wide and text-heavy tables still take landscape pages")
     ap.add_argument("--landscape-appendices", action="store_true",
                     help="in a run-on build, rotate wide tables in the appendices, which start on their own page anyway")
     ap.add_argument("--run-on-parts", action="store_true",
@@ -1061,7 +1065,7 @@ def main():
     COMPACT = args.compact
     RUN_ON = args.run_on_parts and not args.compact
     # a short document stays portrait: no breaks around rotated pages
-    LANDSCAPE_PAGES = not (args.portrait or args.compact or RUN_ON)
+    LANDSCAPE_PAGES = not (args.portrait or RUN_ON or (args.compact and not args.landscape_tables))
     APPENDIX_LANDSCAPE = args.landscape_appendices and RUN_ON and not args.portrait
     meta = dict(title=args.title, short_title=args.short_title, author=args.author, subject=args.subject,
                 vector=args.vector and not args.portrait,
