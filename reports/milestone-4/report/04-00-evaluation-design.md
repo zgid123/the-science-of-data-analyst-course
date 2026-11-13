@@ -13,5 +13,6 @@ area under the precision–recall curve (PR-AUC); calibration, whether its predi
 usefulness for the decision the model supports. In addition, data leakage has affected at least 294 published studies
 across 17 fields [22], so the design also fixes who may see which data, and when.
 
-Section 4.1 gives the Evaluation Design Card of each question and defines the metrics, Section 4.2 the validation
+Section 4.1 gives the Evaluation Plan, which summarises the Evaluation Design Card of each question, and defines the
+metrics, Section 4.2 the validation
 strategy, Section 4.3 the metrics and success criteria, and Section 4.4 the error, subgroup and fairness analysis.

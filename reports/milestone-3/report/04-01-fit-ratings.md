@@ -14,23 +14,11 @@ of the decision procedure that settles the gap and the change it leads to.
 | AQ4 | RED | Ranking from AQ3; enrolment counts for capacity scenarios | Contacts, contact types, staff capacity and outcomes after contact | No compatible open dataset (3); rewrite to the ranking part (4); defer the contact choice (5) | C11, C13 |
 
 Five changes follow from these ratings, and each narrows how a question is measured without changing what it asks.
-The population rule (C09) counts an enrolment as enrolled on a given day when the student registered by that day, or
-the registration day is unknown, and did not unregister by it; it removes the 58 late registrants from the Milestone 2
-count of 28,119, which took every enrolment still registered on day 14, and leaves 28,061 enrolments in the KPI population.
-
-The sign "tasks missed in several modules at once" is described for the 2014 runs only, because only 12 of the 1,382 concurrent enrolments fall in the 2013 training
-runs (C12).
-
-The early-sign rule counts one missed or late task on OULAD (C06), but no task falls due by day 27 in 6 runs or
-by day 13 in 21, so in those runs it can flag no one; it therefore becomes "a task due by the cut-off not submitted, or a TMA submitted late, or no platform
-activity in the seven days before the cut-off" (C10), whose inactivity part can flag students in every run.
-
-AQ4 is rated RED because its contact part has no data
-at all; it is rewritten to its ranking part, which rests on AQ3, and the choice of contact
-is deferred to the pilot, because no dataset records contacts (C11).
-
-Finally, the Milestone 1 limit of 50% precision,
-the share of listed students who later fail or withdraw, says little when 44–45% of students do not complete, since a random list already reaches about 45%, so a
-list is judged by its lift, its precision divided by the run's rate of non-completion, and by its recall, the share of
-later non-completers it reaches, against the most a list of its length can reach (C13). Appendix IV explains each
-rating in full and gives the Controlled Change Log.
+An enrolment counts as enrolled on a given day when the student registered by that day, or the registration day is
+unknown, and did not unregister by it (C09), which leaves 28,061 enrolments in the KPI population. The sign "tasks
+missed in several modules at once" is described for the 2014 runs only (C12). The early-sign rule becomes "a task due
+by the cut-off not submitted, or a TMA submitted late, or no platform activity in the seven days before the cut-off"
+(C10), so that it can flag students in every run. AQ4 is rewritten to its ranking part, and the choice of contact is
+deferred to the pilot (C11). A list is judged by its lift, its precision (the share of listed students who later fail
+or withdraw) divided by the run's rate of non-completion, and by its recall, the share of later non-completers it
+reaches (C13). Appendix IV gives the reason for each change and the Controlled Change Log.

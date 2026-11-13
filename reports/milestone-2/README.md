@@ -22,4 +22,7 @@ venv/bin/python reports/milestone-2/package/src/verify_structure.py      # Task 
 venv/bin/python reports/milestone-2/code/compare_mirrors.py UCI_ZIP       # compare the UCI copy with the collected files
 venv/bin/python reports/milestone-2/code/build_appendices.py             # Appendices I–VI from research and package files
 make all TASK=milestone-2                                                 # checks, EN and VI Word build, post-checks
+bash reports/milestone-2/code/measure_move.sh STEP [--blocks]             # rebuild EN and VI, log pessimistic pages (logs/R22_*)
+bash reports/milestone-2/code/check_pair.sh STEP FILE.md ...              # parity, sync record and pre-checks of edited pairs
+venv/bin/python reports/milestone-2/code/putback_test.py MOVE             # put-back test of one appendix move (m1, m4, m7–m11; as run 2026-11-13)
 ```

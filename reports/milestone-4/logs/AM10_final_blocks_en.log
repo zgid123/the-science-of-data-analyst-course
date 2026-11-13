@@ -1,0 +1,43 @@
+2026-11-12T20:23:09Z
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-4/build/N04_Milestone4_EN.docx --blocks
+1. Project Context and Continuity                   0.47
+1.1. Goal, Decisions and Analytical Questions       0.95
+  [table] Table 1.1. AQs entering Milestone 4       0.77
+  (text after) Table 1.1. AQs entering Milestone 4  0.22
+1.2. Prepared Data and Entry Gate                   0.64
+  [table] Table 1.2. Entry gate                     0.33
+  (text after) Table 1.2. Entry gate                0.16
+2. AQ-to-Technical-Task Mapping                     0.25
+2.1. AQ Modeling Briefs                             0.38
+  [table] Table 2.1. AQ Modeling Briefs in summ     0.72
+  (text after) Table 2.1. AQ Modeling Briefs in summ  0.19
+2.2. Technical Task Definitions                     0.93
+3. Candidate Modeling Approaches                    0.29
+3.1. Selection Criteria and Candidate Solutio       0.71
+  [table] Table 3.1. Candidate Solution Matrix      0.64
+3.2. Descriptive and Diagnostic Questions           1.16
+3.3. Predictive Question                            1.38
+3.4. Ranking under Capacity                         0.70
+4. Evaluation Design                                0.56
+4.1. Evaluation Design Cards                        0.63
+  [table] Table 4.1. Evaluation Plan in summary     0.75
+  (text after) Table 4.1. Evaluation Plan in summary  0.25
+4.2. Validation Strategy                            1.32
+4.3. Metrics and Success Criteria                   0.91
+  [table] Table 4.2. Success criteria fixed bef     0.56
+  (text after) Table 4.2. Success criteria fixed bef  0.27
+4.4. Error, Subgroup and Fairness Analysis          1.04
+5. Risk, Ethics and Limitations                     0.34
+  [table] Table 5.1. Risk and Ethics Notes          0.61
+  (text after) Table 5.1. Risk and Ethics Notes     0.14
+5.1. Leakage, Overfitting and Interpretabilit       0.41
+5.2. Causal Limits, Fairness and High-Stakes        0.58
+6. Generative AI Usage                              0.45
+  [table] Table 6.1. AI Decision Log                0.51
+  (text after) Table 6.1. AI Decision Log           0.36
+7. Prototype Protocol                               0.25
+8. Updated Traceability Matrix                      0.27
+  [table] Table 8.1. Updated Traceability Matri     0.60
+  (text after) Table 8.1. Updated Traceability Matri  0.31
+main content: 22.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0

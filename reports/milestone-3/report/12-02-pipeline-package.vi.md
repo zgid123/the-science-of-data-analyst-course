@@ -122,6 +122,8 @@ Các tệp đã chuẩn bị được định danh bằng phiên bản OULAD-N04
 | model_ready_d27.parquet | 27.535 | 3560a51594d4ad97 |
 | student_week.parquet | 1.052.344 | 7526872e26e95da7 |
 
+**Chi tiết về các tệp gốc và mã kiểm tra.** Mã kiểm tra là dấu vân tay của đúng nội dung một tệp: SHA-256 cho ra một giá trị khác ngay khi chỉ một byte thay đổi. Mỗi bảng gốc đều khớp với giá trị SHA-256 tham chiếu ghi sẵn ở Milestone 2. Tương tự, tám tệp của bản đề xuất Milestone 1 cũng giữ nguyên nội dung; phiên bản cơ sở được sao chép từ chính tám tệp này. Trong gói dữ liệu đã chuẩn bị, các bảng gốc là liên kết cứng (hard link) tới chính các tệp đã thu thập, được đặt ở chế độ chỉ đọc và được đối chiếu với mã kiểm tra ở mỗi lần chạy, nên không thể thay đổi mà không bị phát hiện. Cách làm này đáp ứng quy định của đề bài: dữ liệu gốc phải bất biến và mọi thay đổi đều tạo ra một tệp mới [1].
+
 **Các bản ghi được gắn cờ và các bài nộp được xếp vào lưới.** Ở bước 5 của pipeline, bốn nhóm bản ghi được gắn cờ gồm: 45 lượt đăng ký học không có ngày đăng ký; 93 lượt đăng ký học Withdrawn không có ngày rút; 9 lượt đăng ký học Fail lại có ngày này; và một lượt hủy đăng ký vào ngày 444 của một kỳ mở dài 268 ngày. Bước 7 xếp toàn bộ 168.953 bài nộp TMA và CMA vào các dòng lượt đăng ký học – bài, trong đó 1.909 kết quả bảo lưu mang trạng thái "banked"; nhờ đó, các kết quả này được đếm nhưng không bao giờ được dùng để tính thời điểm nộp. Trong tổng số 173.912 dòng bài nộp, 4.959 dòng còn lại là kết quả bài thi, vốn không được tính là bài (TMA, CMA).
 
 **Chi tiết về các biện pháp kiểm soát khi chia dữ liệu.** Các đoạn dưới đây giải thích các biện pháp kiểm soát được tóm tắt ở cuối Mục 6.3.

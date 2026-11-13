@@ -15,9 +15,8 @@ is the task's due day, which the OU calls its cut-off date [2], and the submissi
 submitted. A field may only feed a prediction once it is known, and Appendix I (Table A.2) gives the meaning, unit
 and moment of knowledge of every key field.
 
-**Measures.** Three issues need care before the fields become measures: all 1,909 banked results, carried over from an
-earlier run, carry the placeholder submission day −1 and cannot time a submission; a TMA mark is returned by the
-tutor, usually within ten working days, and a CMA score within 7 days under the OU's policy of 2025 [3], which is assumed
-to hold for 2013–2014, but OULAD holds no day on which a mark was released; and weights and studied credits depart from a simple reading, since coursework weighs zero in the GGG runs
-and credits count every module taken at once [2], 60 a year being part-time and 120 full-time study [4]. Appendix I
-explains these measures in full.
+**Measures.** Three issues need care before the fields become measures (Appendix I): the 1,909 banked results, carried
+over from an earlier run, carry the placeholder submission day −1 and cannot time a submission; OULAD holds no day on
+which a mark was released, while a TMA mark usually returns within ten working days and a CMA score within 7 days
+under the OU's policy of 2025 [3]; and coursework weighs zero in the GGG runs, while studied credits count every
+module taken at once [2], 60 a year being part-time and 120 full-time study [4].

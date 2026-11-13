@@ -26,15 +26,9 @@ students most likely not to complete? The list must fit weekly capacity (three t
 about 30–40 for the support office), reach a precision of at least 50%, and keep first-year recall within ten points
 of later-year recall.
 
-**How the questions connect.** AQ1 shows which courses and groups lose most students and in which weeks
-non-completers begin to fall behind, which tells AQ2 where to look. AQ2 compares the signs named in its wording, each
-taken from the interviews, and asks which differ most rather than which cause non-completion, because records of what
-students did cannot show why they did it. AQ3 tests whether those signs identify students in time. Its unit is one
-student's enrolment in one course, because a student may struggle in one course and not in another, and it may use
-only data up to the data cut-offs at the end of weeks 2 and 4. Recall is the share of students who later fail or
-withdraw who appear on the list, and precision is the share of listed students who later fail or withdraw; an estimate
-that does no better than counting missed tasks adds complexity without value. AQ4 turns the AQ3 ordering into a list
-for each review point. Its precision limit keeps staff from spending most of their time on students who are fine
-(CL8), and its fairness limit keeps the list from missing first-year students (VPM4); both limits are assumptions, to
-be reviewed once the data audit of Milestone 2 shows what is achievable. Each level prepares the next without proving
-a cause, and the audit may show that only part of this path can be answered with the university's data.
+**How the questions connect.** AQ1 shows where and when students are lost, which tells AQ2 where to look; AQ2 asks
+which signs differ most, not which cause non-completion; AQ3 tests whether those signs identify students in time, with
+one student's enrolment in one course as its unit; and AQ4 turns the AQ3 ordering into a list for each review point.
+Recall is the share of students who later fail or withdraw who appear on the list, and precision is the share of
+listed students who later fail or withdraw. Both limits of AQ4 are assumptions, to be reviewed after the data audit of
+Milestone 2, and each level prepares the next without proving a cause. Appendix VIII explains each link in full.

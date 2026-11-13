@@ -4,10 +4,10 @@
 made, and may use only information known before it [1]. The baseline assumes about one week of delay before data reach
 staff, so the data cut-offs fall at the end of week 2 and the end of week 4, and the lists reach staff in weeks 3
 and 5. Leakage is the use of information that is not yet known at the prediction point; it makes a method look more
-accurate on past data than it can be in practice. Table 2.3 sets out, for each list, the target, the features it may
+accurate on past data than it can be in practice. Table 2.2 sets out, for each list, the target, the features it may
 use and the fields that would leak information from after the cut-off.
 
-**Table 2.3. Prediction points, allowed features and leakage risks**
+**Table 2.2. Prediction points, allowed features and leakage risks**
 
 | AQ predictive | Prediction point | Target | Features allowed before the point | Fields unavailable / leakage risk |
 | :---- | :---- | :---- | :---- | :---- |

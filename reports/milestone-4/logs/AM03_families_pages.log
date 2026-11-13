@@ -1,0 +1,45 @@
+2026-11-12T20:11:00Z
+$ make pages TASK=milestone-4 BUDGET=12
+===== milestone-4: N04_Milestone4_EN.docx
+part                                          optimistic laid out   flow   gap tables
+Contents                                             1.1     2.00
+List of Abbreviations                                0.8     1.00
+List of Terms                                        1.3     2.00
+List of Figures                                      0.1     1.00
+List of Tables                                       0.9     1.00
+1. Project Context and Continuity                    2.6     3.54   3.32  0.22   0.89
+2. AQ-to-Technical-Task Mapping                      1.8     2.46   2.35  0.12   0.68
+3. Candidate Modeling Approaches                     3.7     4.88   4.73  0.15   0.60
+4. Evaluation Design                                 6.4     8.37   8.14  0.23   2.36
+5. Risk, Ethics and Limitations                      2.2     2.97   2.85  0.11   0.51
+6. Generative AI Usage                               1.4     2.15   1.97  0.18   1.17
+7. Prototype Protocol                                0.7     0.86   0.83  0.03   0.36
+8. Updated Traceability Matrix                       0.9     1.78   1.25  0.53   0.56
+References                                           4.3     6.00
+Appendices                                          14.0    26.28
+main content                                        19.7    27.00  25.44  1.56   7.14
+main content: optimistic 19.7 pages, pessimistic 27.0 pages (plan with this); text 18.3, tables 7.1, layout gaps 1.6
+last main-text page 56% full: a cut saves a page only if it removes more than 0.56 of a page
+budget 12 pages: +15.0 pages (pessimistic), +7.7 (optimistic)
+===== milestone-4: N04_Milestone4_VI.docx
+part                                          optimistic laid out   flow   gap tables
+Mục lục                                              1.1     2.00
+Danh mục từ viết tắt                                 0.9     2.00
+Danh mục thuật ngữ                                   1.4     2.00
+Danh mục hình                                        0.1     1.00
+Danh mục bảng                                        0.9     1.00
+1. Bối cảnh và tính liên tục của dự án               3.3     4.48   4.23  0.24   1.34
+2. Ánh xạ từ AQ sang bài toán kỹ thuật               2.1     2.74   2.70  0.05   0.79
+3. Các phương pháp mô hình hóa ứng viên              4.8     6.38   6.16  0.22   0.98
+4. Thiết kế đánh giá                                 8.0    10.29  10.00  0.29   2.75
+5. Rủi ro, đạo đức và hạn chế                        3.0     3.88   3.78  0.10   0.74
+6. Sử dụng AI tạo sinh                               1.9     3.23   2.68  0.56   1.73
+7. Giao thức chạy nguyên mẫu                         0.8     1.00   0.97  0.03   0.46
+8. Ma trận truy vết đã cập nhật                      1.1     2.00   1.55  0.45   0.77
+Tài liệu tham khảo                                   4.3     6.00
+Phụ lục                                             15.9    40.30
+main content                                        24.9    34.00  32.06  1.94   9.56
+main content: optimistic 24.9 pages, pessimistic 34.0 pages (plan with this); text 22.5, tables 9.6, layout gaps 1.9
+last main-text page 68% full: a cut saves a page only if it removes more than 0.68 of a page
+budget 12 pages: +22.0 pages (pessimistic), +12.9 (optimistic)
+exit 0

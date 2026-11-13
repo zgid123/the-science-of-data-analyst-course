@@ -1,0 +1,43 @@
+UTC: 2026-11-12T18:58:11Z
+CMD: venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-1/build/N04_Milestone1_VI.docx --blocks
+1. Bối cảnh dự án và phát biểu vấn đề               0.14
+1.1. Bối cảnh                                       1.19
+1.2. Phát biểu vấn đề, phạm vi và nhu cầu phâ       1.40
+2. Phân tích các bên liên quan và kết quả xác       0.39
+2.1. Bản đồ các bên liên quan                       0.50
+  [table] Bảng 2.1. Các bên liên quan, mục tiêu     0.62
+  (text after) Bảng 2.1. Các bên liên quan, mục tiêu  0.20
+2.2. Phương pháp phỏng vấn                          0.62
+2.3. Tổng hợp chủ đề và thứ tự ưu tiên              0.26
+  [table] Bảng 2.2. Các chủ đề chung giữa các b     0.85
+  (text after) Bảng 2.2. Các chủ đề chung giữa các b  0.47
+2.4. Xung đột, ràng buộc và xác nhận                1.37
+3. Business Goal, SMART Goal và KPI                 0.18
+3.1. Business Goal                                  0.71
+3.2. SMART Goal                                     1.36
+3.3. Chỉ số đo lường hiệu quả chính                 1.26
+4. Thang câu hỏi phân tích                          0.14
+4.1. Câu hỏi ở bốn cấp độ                           1.59
+4.2. Kiểm tra chất lượng và cải thiện câu hỏi       0.32
+  [table] Bảng 4.1. Kiểm tra AQ1 đến AQ4 theo n     0.82
+  (text after) Bảng 4.1. Kiểm tra AQ1 đến AQ4 theo n  0.05
+  [table] Bảng 4.2. Các ví dụ Before → After        0.34
+5. Cách tiếp cận phân tích đề xuất                  0.23
+  [table] Bảng 5.1. Loại phân tích, nhóm kỹ thu     0.66
+  (text after) Bảng 5.1. Loại phân tích, nhóm kỹ thu  0.34
+6. Yêu cầu dữ liệu sơ bộ và tính khả thi            0.14
+6.1. Yêu cầu dữ liệu theo từng câu hỏi              0.40
+  [table] Bảng 6.1. Yêu cầu dữ liệu sơ bộ           0.80
+  (text after) Bảng 6.1. Yêu cầu dữ liệu sơ bộ      0.26
+6.2. Tính khả thi, rủi ro về chất lượng và qu       1.16
+7. Quyết định được hỗ trợ và giá trị kỳ vọng        0.46
+  [table] Bảng 7.1. Các quyết định được hỗ trợ      0.55
+  (text after) Bảng 7.1. Các quyết định được hỗ trợ   0.69
+8. Sử dụng AI tạo sinh và phản tư của nhóm          0.21
+  [table] Bảng 8.1. Các vai trò của AI tạo sinh     0.47
+  (text after) Bảng 8.1. Các vai trò của AI tạo sinh  0.87
+9. Ma trận truy vết                                 0.23
+  [table] Bảng 9.1. Truy vết từ Business Goal đ     1.05
+  (text after) Bảng 9.1. Truy vết từ Business Goal đ  0.72
+main content: 24.0 pages (pessimistic layout; --optimistic for the continuous flow)
+EXIT: 0

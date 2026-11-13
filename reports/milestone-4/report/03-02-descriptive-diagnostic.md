@@ -24,14 +24,13 @@ mixed-effects model, which treats modules as a sample from a larger population, 
 training runs are too few to estimate the variance between them. The effect is reported as the average risk
 difference in percentage points, with odds ratios beside it. Odds ratios read larger than risk ratios when an outcome
 is common, and 44–46% of students do not complete; a p-value, in turn, does not measure the size or importance of an
-effect [13]. The signs are correlated with each other, so their mutually adjusted estimates are partial effects: each shows the gap linked to one sign when the other signs
-are held equal, which is smaller than the gap the sign shows on its own and is not the share of non-completion that the
-sign explains. Both are therefore shown side by side. On the remaining criteria,
+effect [13]. The signs are correlated with each other, so the mutually adjusted estimates are shown beside the unadjusted
+gaps, and Appendix I explains how the two differ. On the remaining criteria,
 the model assumes that signs add up on the log-odds scale within a module, which the sign × module terms relax; it fits
 the data, since even the smallest training run holds 369 enrolments with 91 non-completers; it is deterministic, giving the same result on
 every rerun, and is checked with robust standard errors and sensitivity runs; and it uses no sensitive attribute as a sign.
 
 **AQ2: the data it uses.** AQ2 is estimated on the 9 runs of 2013 and replicated on the 13 runs of 2014 only after the
-AQ3 test (C14), so that no test outcome is seen while the predictive model is chosen. Appendix I (Table A.1) compares the AQ2
+AQ3 test (C14), so that no test outcome is seen while the predictive model is chosen. Appendix I (Table A.5) compares the AQ2
 candidates cell by cell against the eight criteria.
 

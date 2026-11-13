@@ -17,7 +17,7 @@ family, the expected output and the person who uses it.
 Three choices shape the approach. AQ2 reports differences, not causes, because the records are observational and the
 brief warns against causal language without a causal design [1]. AQ3 is
 judged against a simple rule that counts missed tasks, because continuous-assessment results were the strongest early
-predictor in the blended course described in Section 1.1 [8]; a classification method earns its place only if it
+predictor in the blended first-year course described in Appendix V [8]; a classification method earns its place only if it
 reaches more later non-completers than the rule on a list of the same length, tested on a later semester than the one
 it learned from. Courses with no earlier semesters can use methods that learn from the current course's own submitted
 assessments [20]. AQ4 shows each reason as an observed fact, such as two quizzes missed since week 2, because staff said

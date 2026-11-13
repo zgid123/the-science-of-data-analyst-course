@@ -23,10 +23,9 @@ often (Section 3.2), and merging it into a band would distort that band's rate.
 **Privacy.** Privacy rules apply at two levels. OULAD was anonymised with k-anonymity, k = 5, meaning that every
 combination of the attributes that could identify a student is shared by at least five students [2]. Under Vietnam's Personal Data
 Protection Law No. 91/2025/QH15, de-identified data fall outside the definition of personal data, and re-identifying
-them is prohibited [16], so OULAD is never linked to any other source. For the pilot on the university's own records,
-the rules are stricter: health information, such as a declared disability, is an example of sensitive personal data
-[17], processing must keep to a specific purpose [17], and the law names no general exemption from consent for
-research [16], so the pilot needs its own legal basis before any student record is prepared.
+them is prohibited [16], so OULAD is never linked to any other source. The pilot on the university's own records falls under stricter rules for sensitive
+personal data, such as a declared disability [17], and needs its own legal basis before any student record is
+prepared (Appendix I).
 
 **Limits of the claims.** Four limits follow from the data. Results describe UK distance-learning modules of 2013–2014
 and must be checked on the university's records before they inform a decision. The associations of AQ2 are not

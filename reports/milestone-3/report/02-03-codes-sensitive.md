@@ -12,9 +12,6 @@ every nation of the UK.
 socioeconomic status and location, which describe protected or vulnerable groups [1]. OULAD holds six of them:
 gender, age band, declared disability, deprivation band, region and highest education. We set 20 students as
 the lower limit for reporting a group rate run by run, and smaller groups are audited across runs; Appendix I (Table
-A.3) gives each attribute with its codes, its smallest group and its groups below 20.
-
-The smallest groups are students aged 55 or over (216 enrolments) and postgraduates (313), and 18 age groups and 29
-education groups within single runs hold fewer than 20 students. All six stay in every prepared view: five as audit
-attributes outside both predictor sets, and highest education as a predictor whose groups are audited as
-well; Section 9 explains why.
+A.3) gives each attribute with its codes, its smallest group and its groups below 20. All six stay in every prepared
+view: five as audit attributes outside both predictor sets, and highest education as a predictor whose groups are
+audited as well; Section 9 explains why.

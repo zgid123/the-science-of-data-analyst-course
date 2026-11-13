@@ -1,8 +1,16 @@
 ## Phụ lục VII – Truy vết đầy đủ và Nhật ký thay đổi
 
-Bảng A.12 mở rộng ma trận truy vết của Milestone 3 sang các lựa chọn về mô hình hóa và đánh giá. Mỗi dòng bắt đầu từ Business Goal và KPI của mục tiêu này, đi qua AQ tương ứng, loại phân tích và bài toán kỹ thuật của AQ đó, rồi đến dữ liệu đã chuẩn bị, phương pháp cơ sở, phương pháp chính, chỉ số chính, cách đánh giá và quyết định được hỗ trợ. Business Goal là nâng tỷ lệ hoàn thành học phần bằng cách sớm nhận ra những sinh viên ngừng tham gia học tập, để kịp hỗ trợ ngay trong học kỳ; KPI chính là tỷ lệ hoàn thành học phần của sinh viên còn theo học sau thời gian điều chỉnh đăng ký học phần.
+### 1. Các KPI phụ và các thay đổi trước đó
 
-**Bảng A.12. Truy vết đầy đủ từ mục tiêu đến quyết định**
+SMART Goal ở Mục 1.1 có một KPI chính là tỷ lệ hoàn thành học phần của sinh viên còn theo học sau thời gian điều chỉnh đăng ký học phần. Bên cạnh đó, hai KPI phụ theo dõi hoạt động liên hệ. KPI phụ thứ nhất xét các sinh viên có dấu hiệu sớm của việc giảm tham gia học tập và đo tỷ lệ sinh viên trong nhóm này được liên hệ tính đến hết tuần 5. KPI phụ thứ hai xét các sinh viên có tên trong danh sách liên hệ và đo tỷ lệ sinh viên được liên hệ trong vòng bảy ngày. Bảng A.22 gọi hai chỉ số này là KPI phụ 1 và KPI phụ 2.
+
+Trong Milestone 2 và 3, nhóm đã ghi mười ba thay đổi, từ C01 đến C13, vào Nhật ký thay đổi có kiểm soát. Các thay đổi này giới hạn phạm vi dữ liệu ở các kỳ mở module của OULAD và tính thời gian theo số ngày kể từ ngày bắt đầu mỗi kỳ mở, với hai thời điểm chốt dữ liệu là ngày 13 và ngày 27. Ngoài ra, các thay đổi này bỏ phép so sánh theo hình thức học (vốn không khác nhau trong OULAD vì mọi kỳ mở đều là đào tạo từ xa) và theo năm theo học của sinh viên, thay bằng phép so sánh theo module và theo kỳ mở. Đồng thời, các thay đổi này xác định lại cách đo của hai câu hỏi, AQ3 (C10) và AQ4 (C13), như Mục 1.1 định nghĩa.
+
+### 2. Truy vết đầy đủ
+
+Bảng A.22 mở rộng ma trận truy vết của Milestone 3 sang các lựa chọn về mô hình hóa và đánh giá. Mỗi dòng bắt đầu từ Business Goal và KPI của mục tiêu này, đi qua AQ tương ứng, loại phân tích và bài toán kỹ thuật của AQ đó, rồi đến dữ liệu đã chuẩn bị, phương pháp cơ sở, phương pháp chính, chỉ số chính, cách đánh giá và quyết định được hỗ trợ. Business Goal là nâng tỷ lệ hoàn thành học phần bằng cách sớm nhận ra những sinh viên ngừng tham gia học tập, để kịp hỗ trợ ngay trong học kỳ; KPI chính là tỷ lệ hoàn thành học phần của sinh viên còn theo học sau thời gian điều chỉnh đăng ký học phần.
+
+**Bảng A.22. Truy vết đầy đủ từ mục tiêu đến quyết định**
 
 | AQ | KPI | Loại phân tích | Bài toán kỹ thuật | Dữ liệu đã chuẩn bị | Phương pháp cơ sở | Phương pháp chính | Chỉ số chính | Cách đánh giá | Quyết định |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -11,10 +19,12 @@ Bảng A.12 mở rộng ma trận truy vết của Milestone 3 sang các lựa c
 | AQ3 | KPI phụ 1 | Dự báo | Phân loại nhị phân tại ngày 13 và ngày 27 | Hai bảng đặc trưng (features_d13, features_d27) và ma trận sẵn sàng cho mô hình (model_ready); 19 biến dự báo chính | Danh sách xếp theo quy tắc dấu hiệu sớm; mô hình chỉ dùng đặc điểm cá nhân; danh sách ngẫu nhiên | Hồi quy logistic có hiệu chỉnh phạt; cây tăng cường độ dốc chỉ được chọn khi vượt ngưỡng chênh lệch đặt trước | Tỷ lệ phát hiện chuẩn hóa trong giới hạn danh sách (ngày 27, 5 trên 20) | Loại trừ từng kỳ mở trong năm 2013; kiểm tra một lần duy nhất trên năm 2014 | D1 |
 | AQ4 | KPI phụ 1 và 2 | Chỉ định (xếp hạng) | Xếp hạng theo hạn mức liên hệ | Điểm rủi ro của AQ3; bảng độ dài danh sách theo hạn mức liên hệ của từng kỳ mở (capacity_by_run) | Danh sách ngẫu nhiên; danh sách xếp theo quy tắc dấu hiệu sớm | Chọn k sinh viên đầu của mỗi kỳ mở theo điểm rủi ro của AQ3, kèm lý do | Tỷ lệ phát hiện chuẩn hóa trong giới hạn danh sách | Như AQ3; kiểm tra công bằng theo mức khó khăn của khu vực và tình trạng khuyết tật | D1; việc chọn hình thức liên hệ được hoãn |
 
-Bảng A.13 ghi lại thay đổi duy nhất về cách đo một câu hỏi do thiết kế đánh giá đưa ra; thay đổi này tiếp nối Nhật ký thay
+### 3. Thay đổi C14 trong Nhật ký thay đổi
+
+Bảng A.23 ghi lại thay đổi duy nhất về cách đo một câu hỏi do thiết kế đánh giá đưa ra; thay đổi này tiếp nối Nhật ký thay
 đổi có kiểm soát C01–C13 của Milestone 2 và 3.
 
-**Bảng A.13. Thay đổi C14 trong Nhật ký thay đổi có kiểm soát**
+**Bảng A.23. Thay đổi C14 trong Nhật ký thay đổi có kiểm soát**
 
 | Mã | Milestone | Nội dung cũ | Nội dung mới | Lý do | Tác động |
 | :---- | :---- | :---- | :---- | :---- | :---- |

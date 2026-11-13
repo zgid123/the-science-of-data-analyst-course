@@ -1,0 +1,45 @@
+UTC: 2026-11-12T19:08:58Z
+CMD: make pages TASK=milestone-1 BUDGET=10
+===== milestone-1: N04_Milestone1_EN.docx
+part                                          optimistic laid out   flow   gap tables
+Contents                                             1.5     2.00
+List of Abbreviations                                0.3     1.00
+List of Terms                                        0.7     1.00
+List of Tables                                       0.9     1.00
+1. Project Context and Problem Statement             1.7     2.14   2.12  0.02   0.00
+2. Stakeholder Analysis and Requirement Findi        3.0     3.94   3.87  0.06   1.02
+3. Business Goal, SMART Goal and KPIs                2.1     2.58   2.56  0.02   0.00
+4. Analytical Question Ladder                        2.0     2.72   2.54  0.18   0.93
+5. Proposed Analytic Approach                        0.8     1.10   1.06  0.04   0.49
+6. Preliminary Data Requirements and Feasibil        1.8     2.32   2.25  0.07   0.49
+7. Decision Supported and Expected Value             1.0     1.45   1.42  0.03   0.47
+8. Generative AI Usage and Team Reflection           0.8     1.08   1.05  0.03   0.36
+9. Traceability Matrix                               0.7     1.68   1.07  0.60   0.79
+References                                           2.0     3.00
+Appendices                                          21.5    28.99
+main content                                        14.0    19.00  17.95  1.05   4.55
+main content: optimistic 14.0 pages, pessimistic 19.0 pages (plan with this); text 13.4, tables 4.5, layout gaps 1.1
+last main-text page 51% full: a cut saves a page only if it removes more than 0.51 of a page
+budget 10 pages: +9.0 pages (pessimistic), +4.0 (optimistic)
+===== milestone-1: N04_Milestone1_VI.docx
+part                                          optimistic laid out   flow   gap tables
+Mục lục                                              1.5     2.00
+Danh mục từ viết tắt                                 0.4     1.00
+Danh mục thuật ngữ                                   0.8     1.00
+Danh mục bảng                                        0.9     1.00
+1. Bối cảnh dự án và phát biểu vấn đề                1.9     2.40   2.38  0.02   0.00
+2. Phân tích các bên liên quan và kết quả xác        3.4     4.60   4.35  0.25   1.21
+3. Business Goal, SMART Goal và KPI                  2.3     3.00   2.90  0.10   0.00
+4. Thang câu hỏi phân tích                           2.2     3.18   2.90  0.28   1.03
+5. Cách tiếp cận phân tích đề xuất                   0.9     1.38   1.19  0.19   0.60
+6. Yêu cầu dữ liệu sơ bộ và tính khả thi             2.1     2.74   2.70  0.04   0.70
+7. Quyết định được hỗ trợ và giá trị kỳ vọng         1.2     1.78   1.51  0.27   0.51
+8. Sử dụng AI tạo sinh và phản tư của nhóm           0.9     1.22   1.20  0.02   0.40
+9. Ma trận truy vết                                  0.8     1.71   1.10  0.61   0.83
+Tài liệu tham khảo                                   2.0     3.00
+Phụ lục                                             24.0    31.75
+main content                                        15.7    22.00  20.21  1.79   5.29
+main content: optimistic 15.7 pages, pessimistic 22.0 pages (plan with this); text 14.9, tables 5.3, layout gaps 1.8
+last main-text page 58% full: a cut saves a page only if it removes more than 0.58 of a page
+budget 10 pages: +12.0 pages (pessimistic), +5.7 (optimistic)
+EXIT: 0

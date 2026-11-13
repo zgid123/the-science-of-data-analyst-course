@@ -1,6 +1,6 @@
 ## 4.3. Chỉ số và tiêu chí thành công
 
-**Chỉ số chính.** Theo giao thức ở Mục 4.2, chỉ số chính là tỷ lệ phát hiện chuẩn hóa của danh sách dài k theo hạn mức liên hệ. Chỉ số này lấy số sinh viên không hoàn thành có trong danh sách của một kỳ mở chia cho số tối đa mà một danh sách cùng độ dài có thể chứa, rồi gộp qua các kỳ mở (Bảng A.4). Như vậy, chỉ số chính so sánh chất lượng danh sách với mức trần do hạn mức liên hệ đặt ra; mức trần này dao động rất rộng: trong các kỳ mở huấn luyện, danh sách 5 trên 20 tại ngày 27 có thể chứa từ 46% đến 100% số sinh viên không hoàn thành của kỳ mở (thay đổi C13 trong Nhật ký thay đổi). Khi độ dài danh sách cố định, tỷ lệ phát hiện, độ chính xác của danh sách và mức vượt tỷ lệ nền chỉ là các cách biểu diễn khác của cùng một số đếm sinh viên không hoàn thành trong danh sách; vì vậy, ba chỉ số này chỉ dùng để quan sát bổ sung chứ không phải tiêu chí riêng.
+**Chỉ số chính.** Theo giao thức ở Mục 4.2, chỉ số chính là tỷ lệ phát hiện chuẩn hóa của danh sách dài k theo hạn mức liên hệ. Chỉ số này lấy số sinh viên không hoàn thành có trong danh sách của một kỳ mở chia cho số tối đa mà một danh sách cùng độ dài có thể chứa, rồi gộp qua các kỳ mở (Bảng A.12). Như vậy, chỉ số chính so sánh chất lượng danh sách với mức trần do hạn mức liên hệ đặt ra; mức trần này dao động rất rộng: trong các kỳ mở huấn luyện, danh sách 5 trên 20 tại ngày 27 có thể chứa từ 46% đến 100% số sinh viên không hoàn thành của kỳ mở (thay đổi C13 trong Nhật ký thay đổi). Khi độ dài danh sách cố định, tỷ lệ phát hiện, độ chính xác của danh sách và mức vượt tỷ lệ nền chỉ là các cách biểu diễn khác của cùng một số đếm sinh viên không hoàn thành trong danh sách; vì vậy, ba chỉ số này chỉ dùng để quan sát bổ sung chứ không phải tiêu chí riêng.
 
 **Chỉ số phụ.** Độ chính xác của danh sách và PR-AUC phải được đọc so với tỷ lệ nền, vì tỷ lệ nền là mức mà hai chỉ số này đạt được khi chọn ngẫu nhiên [24]. Đường cong ROC biểu diễn tỷ lệ dương tính thật theo tỷ lệ dương tính giả tại mọi ngưỡng; diện tích dưới đường cong này (ROC-AUC) là xác suất một sinh viên không hoàn thành có điểm rủi ro cao hơn một sinh viên hoàn thành. ROC-AUC được tính trong từng kỳ mở, nhờ đó mô hình không thể đạt ROC-AUC cao chỉ vì phân biệt được kỳ mở có tỷ lệ không hoàn thành cao với kỳ mở có tỷ lệ thấp.
 
@@ -8,9 +8,9 @@
 
 **Lợi ích ròng.** Lợi ích ròng so sánh mô hình với ba phương án: liên hệ mọi sinh viên, không liên hệ sinh viên nào và liên hệ các sinh viên bị quy tắc đánh dấu, tại nhiều mức xác suất ngưỡng khác nhau [25]. Chỉ số này mô tả chính sách liên hệ mọi sinh viên có nguy cơ vượt ngưỡng, trong khi AQ4 hoạt động theo hạn mức liên hệ cố định; do đó, lợi ích ròng chỉ dùng để tham khảo chứ không phải tiêu chí.
 
-**Tiêu chí thành công được chốt trước khi kiểm tra.** Một chênh lệch nhỏ hơn mức dao động giữa các mẫu ít có ý nghĩa thực tiễn [31]. Ngoài ra, nếu mô hình được đánh giá theo nhiều điều kiện đạt hoặc trên nhiều phạm vi dữ liệu, một trong số đó có thể đạt chỉ do ngẫu nhiên. Vì vậy, thiết kế chỉ đặt một điều kiện đạt duy nhất trên một phạm vi dữ liệu duy nhất. Bảng 4.5 chốt các tiêu chí thành công trước khi có bất kỳ kết quả nào.
+**Tiêu chí thành công được chốt trước khi kiểm tra.** Một chênh lệch nhỏ hơn mức dao động giữa các mẫu ít có ý nghĩa thực tiễn [31]. Ngoài ra, nếu mô hình được đánh giá theo nhiều điều kiện đạt hoặc trên nhiều phạm vi dữ liệu, một trong số đó có thể đạt chỉ do ngẫu nhiên. Vì vậy, thiết kế chỉ đặt một điều kiện đạt duy nhất trên một phạm vi dữ liệu duy nhất. Bảng 4.2 chốt các tiêu chí thành công trước khi có bất kỳ kết quả nào.
 
-**Bảng 4.5. Các tiêu chí thành công được chốt trước khi kiểm tra**
+**Bảng 4.2. Các tiêu chí thành công được chốt trước khi kiểm tra**
 
 | Mã | Tiêu chí | Phạm vi dữ liệu và thiết lập chính | Vai trò |
 | :---- | :---- | :---- | :---- |

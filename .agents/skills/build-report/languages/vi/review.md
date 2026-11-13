@@ -30,7 +30,7 @@ Each item names what a natural, complete Vietnamese text does. A sentence that d
 - [ ] **Vietnamese order.** Head noun before its modifiers; topic and claim before conditions and sources; English pre-modifier chains reordered the Vietnamese way.
 - [ ] **Relational pairs complete.** "nếu … thì", "vì … nên", "tuy … nhưng", "không chỉ … mà còn" appear as pairs, and "thì", "là", "mà" are used only where Vietnamese needs them.
 - [ ] **Light function words.** At most one "việc" or "sự" (as a nominaliser) per clause; no chain of three "của"; no "các những"; "một" only where the count matters.
-- [ ] **Who speaks.** The writers name themselves as the task's voice sets (a group report: "nhóm chúng em" at a section's first mention, then "chúng em"; a solo report: "em"), matching "we" or "I" in the English; "nhóm tác giả" and "các tác giả" name only the authors of a cited work.
+- [ ] **Who speaks.** The writers name themselves as the task's voice sets (a group report: "nhóm" throughout, written "Nhóm" at the start of a sentence, lessons S1c; a solo report: "em"), matching "we" or "I" in the English; "nhóm tác giả" and "các tác giả" are reserved for the authors of a cited work.
 - [ ] **Voice with intent.** Active clauses with a named actor wherever the actor is known; "được" for neutral or welcome outcomes, "bị" for adverse ones; at most two stacked passives per sentence.
 - [ ] **Collocations.** Established verb–noun pairs ("đóng vai trò", "đáp ứng yêu cầu", "gây ra sự cố", "tiến hành kiểm thử") in place of word-for-word calques ("đóng một vai trò", "thực hiện việc …").
 - [ ] **Formal openers.** No sentence in report prose opens with "Và", "Nhưng", "Mà", "Còn".

@@ -108,6 +108,13 @@ The chance test of duplicate click rows compares, in the 1,311,841 student-resou
 | questionnaire | 14,694 | 6.0% |
 | oucollaborate | 11,921 | 59.6% |
 
+**Entry gate in full.** The brief warns that a team should not continue to cleaning and modelling when the dataset
+supports only a very small part of the proposal [1]. OULAD supports AQ1 to AQ3 in part and the ranking part of AQ4,
+with a real outcome for every enrolment, assessment dates and daily activity records; only the contact part of AQ4
+lacks data, and it is deferred to the pilot (Section 4.1). Every question thus keeps a core that the data answer,
+which is far from the very small part the brief warns about, so the entry gate holds, and preparation is
+justified.
+
 **Profiling findings in full.** The paragraphs below give the full evidence and reasoning behind the summaries of
 Sections 3.1 to 3.4, aspect by aspect, with the issue identifiers of the Data Quality Issue Log (Table 3.1).
 
@@ -149,7 +156,9 @@ blank for 1,111 enrolments (3.41%), and the blanks concentrate in two regions: 4
 and 22.5% of those of Ireland lack a band. These students also succeed more often, in 65.7% of cases against 46.6% for
 students with a band, so the blanks are related to the outcome rather than random, and filling them with a typical
 value would hide a group that behaves differently (DQ12). The registration day is missing for 45 enrolments, 39 of
-them Withdrawn (DQ13), and 173 TMA scores are missing although the submission exists (DQ11).
+them Withdrawn (DQ13), and 173 TMA scores are missing although the submission exists (DQ11). Over time, the share of blank
+bands ranges from 0.13% to 5.89% between runs; whether gaps co-occur in the same record was not examined, because
+the three gaps are few and sit in different tables.
 
 **Structural gaps.** Three further gaps are structural: they follow from how the data are recorded rather than from
 lost values. An empty unregistration day marks a student who did not withdraw [2]; a missing submission row marks a
@@ -234,3 +243,8 @@ at a cut-off. Third, weights depart from the documented rule [2] in two places: 
 coursework at zero, and the two CCC runs of 2014 hold two exams. Studied credits count every module the student takes
 at the same time [2], with 60 credits a year being part-time and 120 full-time study [4], so they measure study load
 rather than effort in one module.
+
+**Privacy rules for the pilot.** For the pilot on the university's own records,
+the rules are stricter: health information, such as a declared disability, is an example of sensitive personal data
+[17], processing must keep to a specific purpose [17], and the law names no general exemption from consent for
+research [16], so the pilot needs its own legal basis before any student record is prepared.

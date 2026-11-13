@@ -1,8 +1,8 @@
 ## Phụ lục V – Nhật ký quyết định về AI và các prompt
 
-Bảng A.15 là Nhật ký quyết định về AI (AI Decision Log) của sản phẩm bàn giao F; mỗi dòng ứng với một đề xuất quan trọng của AI, kèm quyết định của nhóm và bằng chứng dùng để kiểm chứng.
+Bảng A.16 là Nhật ký quyết định về AI (AI Decision Log) của sản phẩm bàn giao F; mỗi dòng ứng với một đề xuất quan trọng của AI, kèm quyết định của nhóm và bằng chứng dùng để kiểm chứng.
 
-**Bảng A.15. Nhật ký quyết định về AI**
+**Bảng A.16. Nhật ký quyết định về AI**
 
 | # | Vai trò (đề bài, mục 14) | Đề xuất của AI | Quyết định của nhóm | Chấp nhận / từ chối | Bằng chứng kiểm chứng | Tác động đến pipeline |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -35,9 +35,9 @@ AI phản biện quy trình chuẩn bị nhận chỉ dẫn dưới đây và ch
 > every number you use, and say "not verifiable from these files" otherwise. Return at most 12 numbered critiques,
 > each with: the issue, why it matters (which AQ), a concrete recommendation, and severity (high / medium / low).
 
-Bảng A.16 ghi lại quyết định về từng nhận xét trong 12 nhận xét của AI phản biện này.
+Bảng A.17 ghi lại quyết định về từng nhận xét trong 12 nhận xét của AI phản biện này.
 
-**Bảng A.16. Quyết định về các nhận xét của AI phản biện quy trình chuẩn bị**
+**Bảng A.17. Quyết định về các nhận xét của AI phản biện quy trình chuẩn bị**
 
 | # | Nhận xét (tóm tắt) | Quyết định | Bằng chứng dùng để kiểm chứng | Tác động đến pipeline |
 | :---- | :---- | :---- | :---- | :---- |
@@ -70,9 +70,9 @@ AI kiểm tra rò rỉ thông tin (leakage auditor) nhận chỉ dẫn dưới �
 > or the query and its result, the risk, and a fix, with severity (high / medium / low). Do not report a finding you
 > could not support with code or a query result. At most 10 findings.
 
-Bảng A.17 ghi lại bằng chứng và tác động của từng phát hiện trong 8 phát hiện của AI kiểm tra rò rỉ thông tin; nhóm chấp nhận cả 8 phát hiện.
+Bảng A.18 ghi lại bằng chứng và tác động của từng phát hiện trong 8 phát hiện của AI kiểm tra rò rỉ thông tin; nhóm chấp nhận cả 8 phát hiện.
 
-**Bảng A.17. Quyết định về các phát hiện của AI kiểm tra rò rỉ thông tin**
+**Bảng A.18. Quyết định về các phát hiện của AI kiểm tra rò rỉ thông tin**
 
 | # | Phát hiện (mức độ nghiêm trọng) | Bằng chứng dùng để kiểm chứng | Tác động đến pipeline |
 | :---- | :---- | :---- | :---- |
@@ -84,6 +84,14 @@ Bảng A.17 ghi lại bằng chứng và tác động của từng phát hiện 
 | F6 | Sinh viên không có lượt nhấp bị gán trung vị huấn luyện (1 ngày) cho days_since_last_click (thấp) | Trung vị 1,0 trong `transform_params.json` | Gán giá trị c + 1 trong bảng cho sinh viên không có lượt nhấp trong các ngày 0…c |
 | F7 | V13 không bao giờ có thể báo lỗi (FAIL), vì dữ liệu đã được lọc trước khi kiểm tra (thấp) | Đọc mã nguồn | V13 đếm lại lượt nhấp mà không áp dụng thời điểm chốt nào và yêu cầu kết quả của pipeline chỉ khác số đếm lại ở đúng những dòng có lượt nhấp về sau (26.755 và 25.663 dòng) |
 | F8 | Phép kiểm tra V14 đối với các đặc trưng mở rộng bị vô hiệu hóa do một chú thích đặt sai chỗ (thấp) | Dòng 170 của `validate_prepared.py` | Tách dòng; V14 kiểm tra cả hai danh sách đặc trưng |
+
+**Các quy tắc hình thành từ các lượt rà soát.** Các lượt rà soát định hình bốn quy tắc mà pipeline áp dụng. Thứ nhất, danh sách của AQ4 được đánh giá theo mức vượt so với một danh sách chọn ngẫu nhiên (lift), vì giới hạn 50% cho độ chính xác của danh sách nằm sát tỷ lệ nền (C13). Thứ hai, việc nộp trễ CMA, gặp ở 47,2% số bài nộp CMA so với 16,8% số bài nộp TMA, không được đưa vào
+quy tắc dấu hiệu sớm (C10). Thứ ba, một bài chỉ bị tính là bỏ lỡ khi đến hạn vào hoặc sau ngày đăng ký của sinh viên; AI
+kiểm tra rò rỉ thông tin đã chỉ ra sáu bài tại ngày 27 có ngày đến hạn trước ngày sinh viên đăng ký. Thứ tư, phép kiểm tra
+rò rỉ thông tin được xây dựng sao cho có thể báo lỗi (FAIL), đúng như AI kiểm tra rò rỉ thông tin yêu cầu.
+
+Trong 12 nhận xét của AI phản biện quy trình chuẩn bị, nhận xét thứ tư (Phụ lục V) chỉ được chấp nhận một phần, vì nhóm luôn giữ nguyên tắc không xem kết quả của tập kiểm thử trong lúc chuẩn bị dữ liệu. Nhận xét này đề nghị báo cáo tỷ lệ kết quả của các lượt đăng ký học trong
+tập kiểm thử thuộc sinh viên đã có mặt năm 2013 trước khi lập mô hình. Nhóm báo cáo số lượng các lượt này (1.962) nhưng không báo cáo kết quả, vì nếu xem kết quả, tập kiểm thử sẽ tham gia vào bước chuẩn bị, điều mà đề bài không cho phép [1].
 
 **Các quyết định khác và phản tư.**
 

@@ -1,8 +1,22 @@
-## Phụ lục VI – Quyết định về các nhận xét của AI và các prompt
+## Phụ lục VI – Chi tiết nhật ký quyết định về AI, các nhận xét và các prompt
 
-Nhật ký quyết định về AI ở Phần 6 (Bảng 6.1) ghi lại các đóng góp quan trọng của AI; phụ lục này trình bày quyết định của nhóm về từng nhận xét của hai AI rà soát. Bảng A.10 trình bày 12 nhận xét của AI phản biện lựa chọn mô hình và Bảng A.11 trình bày 12 nhận xét của AI rà soát thiết kế đánh giá, mỗi nhận xét kèm bằng chứng dùng để kiểm chứng và tác động của nhận xét đó đến bản đề xuất.
+### 1. Các lượt tìm tài liệu
 
-**Bảng A.10. Quyết định về các nhận xét của AI phản biện lựa chọn mô hình**
+Bảng A.19 ghi ba lượt tìm tài liệu theo năm cột của Nhật ký quyết định về AI; Bảng 6.1 ghi hai lượt rà soát.
+
+**Bảng A.19. Nhật ký quyết định về AI của trợ lý tìm tài liệu**
+
+| Prompt / mục đích | Đề xuất của AI | Quyết định của nhóm | Bằng chứng / cách kiểm chứng | Tác động đến bản đề xuất |
+| :---- | :---- | :---- | :---- | :---- |
+| Tìm các nguồn uy tín về cách chọn phương pháp cho từng AQ (trợ lý tìm tài liệu) | Phân biệt giải thích với dự báo; ưu tiên quy tắc và phương pháp cơ sở đơn giản trước; dùng mô hình diễn giải được khi sử dụng trong bối cảnh hệ trọng; tiêu chí cỡ mẫu; cách đặt bài toán theo phân tích sống sót và theo xếp hạng | Chấp nhận sau khi đọc từng nguồn | Mọi phát biểu được đối chiếu với bản lưu của nguồn, kèm trích dẫn nguyên văn | Phần 2–3; Phụ lục I–II |
+| Tìm nguồn về thiết kế đánh giá (trợ lý tìm tài liệu) | TRIPOD+AI và Công cụ đánh giá nguy cơ sai lệch của mô hình dự báo, phiên bản cho AI (PROBAST+AI); hiệu chuẩn; fold theo nhóm; tinh chỉnh lồng nhau; các loại rò rỉ thông tin; đăng ký trước kế hoạch phân tích; bootstrap hai tầng (hierarchical bootstrap); phân tích theo từng nhóm con | Chấp nhận; riêng lập luận rằng dữ liệu mất cân bằng nên cần ưu tiên đường cong độ chính xác – tỷ lệ phát hiện (precision–recall) thì không được dùng, vì tỷ lệ không hoàn thành là 44–46%, tức dữ liệu không mất cân bằng | Kiểm chứng như dòng trên | Phần 4; Phụ lục III–V |
+| Tìm nguồn về rủi ro, quan hệ nhân quả, công bằng và quy định pháp lý (trợ lý tìm tài liệu) | Thử nghiệm mục tiêu (target trial, tức thực nghiệm ngẫu nhiên hóa mà dữ liệu quan sát cố gắng mô phỏng) và xếp hạng theo lợi ích can thiệp đều cần dữ liệu về can thiệp; các tiêu chí công bằng mâu thuẫn nhau; Đạo luật AI của EU, Luật Trí tuệ nhân tạo của Việt Nam và danh mục hệ thống trí tuệ nhân tạo có rủi ro cao; dự báo tự tác động | Chấp nhận; Đạo luật của EU được dùng làm chuẩn tham chiếu, luật Việt Nam được coi là có hiệu lực ràng buộc đối với đợt thí điểm tại Việt Nam | Văn bản pháp luật được đọc từ bản chính thức khi có; văn bản của EU được đọc từ một bản thứ cấp | Phần 5; Phụ lục V |
+
+### 2. Quyết định về các nhận xét
+
+Nhật ký quyết định về AI ở Phần 6 (Bảng 6.1) ghi lại các đóng góp quan trọng của AI; mục này trình bày quyết định của nhóm về từng nhận xét của hai AI rà soát. Bảng A.20 trình bày 12 nhận xét của AI phản biện lựa chọn mô hình và Bảng A.21 trình bày 12 nhận xét của AI rà soát thiết kế đánh giá, mỗi nhận xét kèm bằng chứng dùng để kiểm chứng và tác động của nhận xét đó đến bản đề xuất.
+
+**Bảng A.20. Quyết định về các nhận xét của AI phản biện lựa chọn mô hình**
 
 | # | Nhận xét (tóm tắt) | Quyết định | Nơi xử lý |
 | :---- | :---- | :---- | :---- |
@@ -11,17 +25,17 @@ Nhật ký quyết định về AI ở Phần 6 (Bảng 6.1) ghi lại các đó
 | 3 | Một tập kiểm thử phải phân xử nhiều phép so sánh | Chấp nhận | Một phép so sánh chính (S1); mọi biến thể là phân tích độ nhạy |
 | 4 | AQ2 cho mối liên hệ gộp, không theo từng module; các số đếm đã dùng không lấy từ 9 kỳ mở huấn luyện | Chấp nhận | Số hạng tương tác dấu hiệu × module; nêu mức phù hợp với dữ liệu theo đúng 9 kỳ mở và 6 module; dấu hiệu về bài được chấm điểm chỉ xét khi có bài đến hạn |
 | 5 | Lý do lấy từ AQ2 có thể mâu thuẫn với điểm rủi ro của AQ3; ước lượng đã hiệu chỉnh chỉ là hiệu ứng riêng phần | Chấp nhận | Lý do lấy từ mô hình tính điểm rủi ro; ước lượng chưa hiệu chỉnh và đã hiệu chỉnh đặt cạnh nhau; kiểm tra tương quan |
-| 6 | Lựa chọn dựa nhiều vào tài liệu; chưa có quy tắc chuyển mô hình | Chấp nhận một phần | Quy tắc chuyển mô hình ở Bảng A.5, bước 4; lập luận xuất phát từ các ràng buộc của dự án (Mục 3.3) |
+| 6 | Lựa chọn dựa nhiều vào tài liệu; chưa có quy tắc chuyển mô hình | Chấp nhận một phần | Quy tắc chuyển mô hình ở Bảng A.13, bước 4; lập luận xuất phát từ các ràng buộc của dự án (Mục 3.3) |
 | 7 | Phương án phân tích sống sót bị loại dựa trên một giả định phát biểu sai | Chấp nhận | Fail không phải kết quả dạng thời gian đến sự kiện. Kiểm duyệt không mang thông tin (non-informative censoring) được nêu rõ là một giả định: khi một sinh viên bị kiểm duyệt (censored), tức thời điểm rút khỏi module không được quan sát vì việc theo dõi đã dừng, lý do dừng theo dõi được giả định không liên quan đến nguy cơ rút khỏi module |
 | 8 | Cỡ mẫu không cho biết gì về khả năng áp dụng cho kỳ mở mới; chưa nêu nguồn của R² dự kiến | Chấp nhận | Khả năng áp dụng được kiểm tra bằng cách chia theo kỳ mở; trích dẫn giá trị mặc định của Riley; cỡ mẫu tối thiểu cho từng thời điểm chốt dữ liệu |
 | 9 | Chưa quyết định giảng viên hướng dẫn thấy thứ hạng hay xác suất | Chấp nhận | Thứ hạng và lý do; chỉ hiển thị xác suất nếu đạt S3; các nhóm mức nguy cơ được cố định theo hạn mức liên hệ |
 | 10 | Phép kiểm tra công bằng thiếu lực kiểm định; chỉ bỏ các thuộc tính nhạy cảm ra khỏi mô hình là chưa đủ | Chấp nhận | Gộp qua các kỳ mở cho các nhóm của kiểm định khẳng định; kiểm tra biến đại diện (proxy check); nêu rõ tiêu chí chính là tiêu chí ngang bằng tỷ lệ phát hiện |
 | 11 | Thứ tự nguy cơ được mặc nhiên coi là trùng với nhu cầu hỗ trợ; tỷ lệ phát hiện có mức trần | Chấp nhận | Nêu rõ giả định là chưa được kiểm chứng; tỷ lệ phát hiện chuẩn hóa; tách Fail và Withdrawn |
-| 12 | Ngày rút khỏi module không xác định và sinh viên đã có mặt năm 2013 có thể gây rò rỉ | Chấp nhận một phần | Các phân tích độ nhạy ở Bảng A.5, bước 7; số lần học trước được ghi nhận khi đăng ký nên vẫn hợp lệ |
+| 12 | Ngày rút khỏi module không xác định và sinh viên đã có mặt năm 2013 có thể gây rò rỉ | Chấp nhận một phần | Các phân tích độ nhạy ở Bảng A.13, bước 7; số lần học trước được ghi nhận khi đăng ký nên vẫn hợp lệ |
 
-Bảng A.11 ghi lại quyết định về từng nhận xét trong 12 nhận xét của AI rà soát thiết kế đánh giá.
+Bảng A.21 ghi lại quyết định về từng nhận xét trong 12 nhận xét của AI rà soát thiết kế đánh giá.
 
-**Bảng A.11. Quyết định về các nhận xét của AI rà soát thiết kế đánh giá**
+**Bảng A.21. Quyết định về các nhận xét của AI rà soát thiết kế đánh giá**
 
 | # | Nhận xét (tóm tắt) | Quyết định | Nơi xử lý |
 | :---- | :---- | :---- | :---- |
@@ -36,7 +50,9 @@ Bảng A.11 ghi lại quyết định về từng nhận xét trong 12 nhận x�
 | 9 | ABROCA thiếu giá trị tham chiếu | Chấp nhận | Tính trong từng kỳ mở, giá trị tham chiếu bằng hoán vị, báo cáo dấu, chỉ để mô tả |
 | 10 | Ở tỷ lệ nền này, tỉ số odds phóng đại độ lớn của hiệu ứng; ngưỡng quá dễ đạt; AQ2 và AQ3 phụ thuộc nhau | Chấp nhận | Dùng chênh lệch nguy cơ, với hiệu ứng nhỏ nhất có ý nghĩa là 5 điểm phần trăm; quy tắc được chốt trước; kết quả AQ2 năm 2014 không thể thay đổi AQ3 |
 | 11 | Phân tích lỗi còn khoảng trống | Chấp nhận | Sinh viên không hoàn thành còn liên hệ được, sinh viên có hoạt động, độ ổn định của danh sách, phân tích theo lịch sử học tập, CCC |
-| 12 | Thiếu rủi ro và có biện pháp kiểm soát không khớp với rủi ro | Chấp nhận | Mười sáu rủi ro ở Bảng A.9; biện pháp kiểm soát cho rủi ro hiểu nhầm hệ số là nguyên nhân (R9), khẳng định việc liên hệ có hiệu quả (R10) và thiên kiến tự động hóa (R13) được gắn đúng với rủi ro tương ứng |
+| 12 | Thiếu rủi ro và có biện pháp kiểm soát không khớp với rủi ro | Chấp nhận | Mười sáu rủi ro ở Bảng A.18; biện pháp kiểm soát cho rủi ro hiểu nhầm hệ số là nguyên nhân (R9), khẳng định việc liên hệ có hiệu quả (R10) và thiên kiến tự động hóa (R13) được gắn đúng với rủi ro tương ứng |
+
+### 3. Prompt của các AI rà soát
 
 Mỗi AI rà soát là một phiên AI tạo sinh riêng biệt, chỉ được đọc đề bài và các phụ lục nêu trong prompt của phiên đó; nhóm đối chiếu từng nhận xét với các thông tin làm căn cứ của thiết kế trước khi quyết định. Các prompt được trình bày bằng tiếng Anh, ở dạng rút gọn; các tài liệu được gọi theo vị trí trong báo cáo này. AI phản biện lựa chọn mô hình nhận chỉ dẫn sau:
 

@@ -7,21 +7,19 @@ as the log below shows. Three roles were used: a literature assistant that found
 critic that challenged the briefs and the candidate comparison, and an evaluation reviewer that challenged the cards,
 the protocol, the fairness analysis and the risks.
 
-**AI Decision Log.** Table 6.1 is the AI Decision Log in the brief's five columns, one row per significant AI
-contribution: the prompt or goal, the AI's suggestion, our decision, the evidence used to verify it and its
-effect on the proposal.
+**AI Decision Log.** Table 6.1 is the AI Decision Log in the brief's five columns for the two reviews that shaped the
+proposal most: the prompt or goal, the AI's suggestion, our decision, the evidence used to verify it and its effect on
+the proposal. The three literature searches, whose suggestions we accepted after reading each source, are logged in
+the same columns in Appendix VI (Table A.19).
 
 **Table 6.1. AI Decision Log**
 
 | Prompt / goal | AI suggestion | Team decision | Evidence / verification | Effect on the proposal |
 | :---- | :---- | :---- | :---- | :---- |
-| Find well-known sources on method choice for each AQ (literature assistant) | Explain-versus-predict distinction; rule and simple baselines first; interpretable models for high-stakes use; sample size criteria; survival and ranking framings | Accepted after reading each source | Every statement checked against a saved copy of its source, with a verbatim quotation | Parts 2–3; Appendices I–II |
-| Find sources on evaluation design (literature assistant) | TRIPOD+AI and the Prediction model Risk Of Bias ASsessment Tool for AI (PROBAST+AI); calibration; grouped folds; nested tuning; leakage types; pre-registration; hierarchical bootstrap; slicing analysis | Accepted; the imbalance argument for precision–recall curves not used, since non-completion is 44–46% and the classes are therefore not imbalanced | Same verification | Part 4; Appendices III–V |
-| Find sources on risk, causality, fairness and regulation (literature assistant) | Target trials and uplift need treatment data; fairness criteria conflict; EU AI Act and Vietnam's AI law and high-risk list; performative prediction | Accepted; the EU Act used as a reference standard, Vietnamese law as binding on a Vietnamese pilot | Legal texts read in official copies where available; the EU text in a secondary copy | Part 5; Appendix V |
-| Review the model selection as a sceptical analyst (critic) | 12 critiques: within-run evaluation, run-grouped folds, one primary test comparison, AQ2 per-module output, reasons from the scoring model, rule for switching to the challenger, survival assumption, sample size versus transfer, ranks versus probabilities, fairness power, risk versus need, repeat students | 10 accepted, 2 accepted in part (Table A.10) | Each critique checked against the design facts and the run lengths | Appendices I–II and IV–VI |
-| Review the evaluation design as a methodologist (reviewer) | 12 critiques: unseen module, per-run versus tutor capacity, S1 inference, S2 basis, primary population, calibration definition, model-choice aggregation, fairness gate, ABROCA reference, AQ2 effect measure, error-analysis gaps, missing risks | 12 accepted (Table A.11) | Arithmetic of each critique recomputed | Appendices III–VI; S2 (precision at capacity) reported, not a gate |
+| Review the model selection as a sceptical analyst (critic) | 12 critiques: within-run evaluation, run-grouped folds, one primary test comparison, AQ2 per-module output, reasons from the scoring model, rule for switching to the challenger, survival assumption, sample size versus transfer, ranks versus probabilities, fairness power, risk versus need, repeat students | 10 accepted, 2 accepted in part (Table A.20) | Each critique checked against the design facts and the run lengths | Appendices I–II and IV–VI |
+| Review the evaluation design as a methodologist (reviewer) | 12 critiques: unseen module, per-run versus tutor capacity, S1 inference, S2 basis, primary population, calibration definition, model-choice aggregation, fairness gate, ABROCA reference, AQ2 effect measure, error-analysis gaps, missing risks | 12 accepted (Table A.21) | Arithmetic of each critique recomputed | Appendices III–VI; S2 (precision at capacity) reported, not a gate |
 
-**Decisions on the critiques.** Appendix VI (Tables A.10 and A.11) gives our decision on each of the 24
+**Decisions on the critiques.** Appendix VI (Tables A.20 and A.21) gives our decision on each of the 24
 critiques of the model-selection critic and of the evaluation reviewer, with the evidence used to check it, and the
 reviewers' prompts.
 

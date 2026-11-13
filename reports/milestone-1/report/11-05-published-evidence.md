@@ -1,8 +1,18 @@
-## Appendix V – Published Evidence on Non-completion
+## Appendix V – Regulation and Published Evidence on Non-completion
 
-This appendix sets out in detail the published findings that Section 1.1 summarises: how common non-completion is,
-when it starts, why students leave and how institutions respond. The figures come from studies of real institutions,
-not from the scenario university.
+This appendix sets out in detail the regulation and the published findings that Section 1.1 summarises: the
+Vietnamese rules on online learning and withdrawal, how common non-completion is, when it starts, why students leave
+and how institutions respond. The figures come from regulations and studies of real institutions, not from the
+scenario university.
+
+**Online learning and withdrawal in Vietnamese regulation.** Online teaching is now part of regular degree programs
+in Vietnam: since 2021, a full-time program may deliver up to 30% of its content online [2]. Withdrawal of students
+is also a regulated measure of a university's quality. Circular 01/2024 of the Ministry of Education and Training
+limits the share of students who withdraw to 10% a year overall and 15% in the first year of study, and a university
+whose first-year withdrawal exceeds 15% may not raise its enrolment quota [3]. Circular 83/2026, in force from
+15 November 2026, keeps both limits, and in addition no longer counts approved leave or transfers to another program
+as withdrawal [4]. As a result, a university now needs exact records of each student's status, and it has a direct
+interest in finding students who are drifting away while they can still be helped.
 
 **How common non-completion is.** Published studies show that non-completion is common and that it starts early.
 A systematic review of online learning found that retention, the share of students who stay and finish, is

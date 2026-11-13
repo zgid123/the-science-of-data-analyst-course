@@ -1,0 +1,49 @@
+2026-11-12T19:55:07Z
+$ make pages TASK=milestone-3 BUDGET=12
+===== milestone-3: N04_Milestone3_EN.docx
+part                                          optimistic laid out   flow   gap tables
+Contents                                             1.2     2.00
+List of Abbreviations                                0.6     1.00
+List of Terms                                        1.1     2.00
+List of Figures                                      0.2     1.00
+List of Tables                                       0.9     1.00
+1. Project Baseline and Dataset                      2.2     2.83   2.82  0.02   0.44
+2. Data Understanding                                2.4     3.32   3.20  0.12   0.68
+3. Data Profiling and Quality                        3.6     4.89   4.62  0.27   1.54
+4. AQ–Data Fit and Data Gap Decisions                2.0     2.82   2.72  0.11   0.97
+5. Data Preparation Plan                             1.6     2.51   2.33  0.17   1.67
+6. Data Preparation Pipeline                         2.4     2.99   2.97  0.03   0.52
+7. Prepared Data Validation                          2.3     3.29   3.03  0.27   1.44
+8. Analytics and Model Readiness                     1.7     2.33   2.14  0.19   0.56
+9. Ethics, Bias and Limitations                      0.8     1.09   1.08  0.01   0.00
+10. Generative AI Usage and Reflection               0.9     1.91   1.30  0.60   0.58
+References                                           1.3     2.00
+Appendices                                          26.0    47.39
+main content                                        20.1    28.00  26.21  1.79   8.41
+main content: optimistic 20.1 pages, pessimistic 28.0 pages (plan with this); text 17.8, tables 8.4, layout gaps 1.8
+last main-text page 51% full: a cut saves a page only if it removes more than 0.51 of a page
+budget 12 pages: +16.0 pages (pessimistic), +8.1 (optimistic)
+===== milestone-3: N04_Milestone3_VI.docx
+part                                          optimistic laid out   flow   gap tables
+Mục lục                                              1.2     2.00
+Danh mục từ viết tắt                                 0.7     1.00
+Danh mục thuật ngữ                                   1.3     2.00
+Danh mục hình                                        0.2     1.00
+Danh mục bảng                                        1.0     1.00
+1. Phiên bản cơ sở của dự án và bộ dữ liệu           2.5     3.31   3.18  0.13   0.49
+2. Hiểu dữ liệu                                      2.7     3.69   3.58  0.12   0.74
+3. Khảo sát dữ liệu và chất lượng dữ liệu            4.0     5.42   5.13  0.29   1.57
+4. Mức phù hợp giữa AQ và dữ liệu cùng các qu        2.5     3.38   3.29  0.09   1.15
+5. Kế hoạch chuẩn bị dữ liệu                         2.2     3.36   3.04  0.32   2.24
+6. Quy trình chuẩn bị dữ liệu                        3.0     3.89   3.76  0.13   0.76
+7. Kiểm tra dữ liệu đã chuẩn bị                      2.8     4.00   3.69  0.31   1.74
+8. Mức sẵn sàng cho phân tích và mô hình             2.2     3.02   2.93  0.09   1.00
+9. Đạo đức, thiên lệch và hạn chế                    1.1     1.33   1.31  0.01   0.00
+10. Sử dụng AI tạo sinh và phản tư của nhóm          1.3     2.60   1.65  0.95   0.73
+Tài liệu tham khảo                                   1.3     2.00
+Phụ lục                                             29.8    55.45
+main content                                        24.2    34.00  31.55  2.45  10.44
+main content: optimistic 24.2 pages, pessimistic 34.0 pages (plan with this); text 21.1, tables 10.4, layout gaps 2.5
+last main-text page 12% full: a cut saves a page only if it removes more than 0.12 of a page
+budget 12 pages: +22.0 pages (pessimistic), +12.2 (optimistic)
+exit 0

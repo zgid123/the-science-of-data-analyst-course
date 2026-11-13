@@ -1,6 +1,6 @@
 """Figures of the Milestone 5 report (reports/milestone-5), drawn with the build-report visual kit.
 
-Figure 1.1 shows the project's logic chain from the stakeholder problem to decision support, with the milestone that
+Figure A.1 (Appendix I) shows the project's logic chain from the stakeholder problem to decision support, with the milestone that
 produced each link and one concrete item per link (items from research/baseline/m5-baseline.md and results/).
 Figure 11.1 shows AQ1, the non-completion rate per module in 2013 and in 2014 with its 95% Wilson interval, students
 still registered at day 14, and the pooled rate of the 22 runs (results/2013/aq1_rates.csv, results/2014/aq1_rates.csv,
@@ -21,7 +21,7 @@ from c4kit import Canvas
 RESULTS = Path(__file__).resolve().parents[2] / "reports" / "milestone-5" / "results"
 
 T = {"vi": {
-    # Figure 1.1
+    # Figure A.1
     "M1": "M1", "M2": "M2", "M3": "M3", "M4": "M4", "M5": "M5",
     "Stakeholder problem": "Vấn đề của các bên liên quan",
     "Students who stop taking part are found too late for support within the semester":
@@ -97,7 +97,7 @@ def _read(name):
         return list(csv.DictReader(f))
 
 
-# ----------------------------------------------------------------------------- Figure 1.1
+# ----------------------------------------------------------------------------- Figure A.1
 CHAIN = [  # (milestone, link, concrete item, role)
     ("M1", [("Stakeholder problem", "Students who stop taking part are found too late for support within the semester"),
             ("Measurable goal", "Completion after add-drop from an assumed 70% to 75% by 2027–2028"),
@@ -119,7 +119,7 @@ CHAIN = [  # (milestone, link, concrete item, role)
 
 
 def project_chain(out, lang="en"):
-    """Figure 1.1: the logic chain of the project, one band per milestone, links numbered in order."""
+    """Figure A.1: the logic chain of the project, one band per milestone, links numbered in order."""
     t = _t(lang)
     W, label_w, x0, gap_x, gap_y = 6.3, 0.42, 0.05, 0.28, 0.3
     inner = W - x0 - label_w - 0.1 - 0.05

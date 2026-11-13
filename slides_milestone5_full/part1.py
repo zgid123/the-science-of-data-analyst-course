@@ -232,7 +232,7 @@ def s05(prs):
     ky = bottom_key(s, keyl)
     cy = ky + 0.05
     gap = 0.14
-    rh = (cy - 0.25 - y - 5 * gap) / 6               # one lane per part, as the lanes of the report's Figure 1.1
+    rh = (cy - 0.25 - y - 5 * gap) / 6               # one lane per part, as the lanes of the report's Figure A.1
     lw, chw, cg = 3.0, 1.4, 0.1
     cx0 = X0 + lw + 0.2
     tx = cx0 + 3 * chw + 2 * cg + 0.25
@@ -253,7 +253,7 @@ def s05(prs):
                  bold=True)
         bh = rich_h([body], tw_, pt)
         rich(s, tx, ly + (rh - bh) / 2 + 0.03, tw_, [body], pt=pt)
-    src(s, "Source: Milestone 5 report, Section 1.2 and Figure 1.1.")
+    src(s, "Source: Milestone 5 report, Section 1.2 and Figure A.1 (Appendix I).")
 
 
 # ----------------------------------------------------------------------------- 6 educational context

@@ -1,0 +1,39 @@
+UTC: 2026-11-12T19:33:08Z
+CMD: venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-2/build/N04_Milestone2_EN.docx --blocks
+1. Milestone 1 Baseline and Scope                   0.16
+1.1. Frozen Baseline                                0.99
+  [table] Table 1.1. The frozen questions AQ1–A     0.50
+  (text after) Table 1.1. The frozen questions AQ1–A  0.14
+1.2. Scope of Milestone 2 and Change Log Summ       0.62
+2. Data Requirement Specification                   0.21
+2.1. AQ–Data Requirement Matrix                     0.46
+  [table] Table 2.1. AQ–Data Requirement Matrix     0.91
+  (text after) Table 2.1. AQ–Data Requirement Matrix  0.67
+2.2. Requirements by Analytics Level                0.66
+2.3. Prediction Point and Leakage Risk              0.28
+  [table] Table 2.2. Prediction points, allowed     0.67
+  (text after) Table 2.2. Prediction points, allowed  0.14
+3. Open Dataset Search Strategy                     0.68
+  [table] Table 3.1. Candidate open datasets        0.72
+4. Dataset Evaluation and Selection                 0.21
+4.1. Criteria and Must-Have Gates                   0.74
+4.2. Selection Matrix and Rationale                 0.26
+  [table] Table 4.1. Dataset Selection Matrix       0.77
+  (text after) Table 4.1. Dataset Selection Matrix  0.86
+5. Data Acquisition and Provenance                  0.37
+  [table] Table 5.1. Data acquisition plan for      0.53
+  (text after) Table 5.1. Data acquisition plan for   0.36
+6. Initial Structural Verification                  0.49
+  [table] Table 6.1. Structure of the collected     0.74
+  (text after) Table 6.1. Structure of the collected  0.88
+7. Requirement Coverage and Data Gaps               0.16
+7.1. Updated Traceability Matrix                    0.29
+  [table] Table 7.1. Updated traceability from      1.15
+  (text after) Table 7.1. Updated traceability from   0.27
+7.2. Data Gaps and Controlled Revisions             0.79
+8. Risks, Ethics and Limitations                    0.96
+9. Generative AI Usage and Reflection               0.21
+  [table] Table 9.1. Roles of generative AI and     0.41
+  (text after) Table 9.1. Roles of generative AI and  0.76
+main content: 19.0 pages (pessimistic layout; --optimistic for the continuous flow)
+EXIT: 0

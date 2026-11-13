@@ -1,0 +1,43 @@
+UTC: 2026-11-12T18:58:10Z
+CMD: venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-1/build/N04_Milestone1_EN.docx --blocks
+1. Project Context and Problem Statement            0.14
+1.1. Situation and Background                       1.06
+1.2. Problem Statement, Scope and the Need fo       1.22
+2. Stakeholder Analysis and Requirement Findi       0.34
+2.1. Stakeholder Map                                0.47
+  [table] Table 2.1. Stakeholders, initial assu     0.52
+  (text after) Table 2.1. Stakeholders, initial assu  0.25
+2.2. Interview Approach                             0.54
+2.3. Synthesised Themes and Priorities              0.24
+  [table] Table 2.2. Themes across the stakehol     0.67
+  (text after) Table 2.2. Themes across the stakehol  0.43
+2.4. Conflicts, Constraints and Validation          1.21
+3. Business Goal, SMART Goal and KPIs               0.16
+3.1. Business Goal                                  0.62
+3.2. SMART Goal                                     1.12
+3.3. Key Performance Indicators                     1.18
+4. Analytical Question Ladder                       0.14
+4.1. Questions at Four Levels                       1.27
+4.2. Quality Check and Refinement                   0.41
+  [table] Table 4.1. Five-criteria check of AQ1     0.64
+  (text after) Table 4.1. Five-criteria check of AQ1  0.05
+  [table] Table 4.2. Before → After examples        0.50
+5. Proposed Analytic Approach                       0.21
+  [table] Table 5.1. Analytics type, candidate      0.55
+  (text after) Table 5.1. Analytics type, candidate   0.32
+6. Preliminary Data Requirements and Feasibil       0.12
+6.1. Data Requirements per Question                 0.38
+  [table] Table 6.1. Preliminary data requireme     0.62
+  (text after) Table 6.1. Preliminary data requireme  0.24
+6.2. Feasibility, Quality Risks and Privacy         1.00
+7. Decision Supported and Expected Value            0.43
+  [table] Table 7.1. Decisions supported and th     0.50
+  (text after) Table 7.1. Decisions supported and th  0.67
+8. Generative AI Usage and Team Reflection          0.18
+  [table] Table 8.1. Roles of generative AI and     0.40
+  (text after) Table 8.1. Roles of generative AI and  0.78
+9. Traceability Matrix                              0.42
+  [table] Table 9.1. Traceability from Business     0.83
+  (text after) Table 9.1. Traceability from Business  0.17
+main content: 21.0 pages (pessimistic layout; --optimistic for the continuous flow)
+EXIT: 0

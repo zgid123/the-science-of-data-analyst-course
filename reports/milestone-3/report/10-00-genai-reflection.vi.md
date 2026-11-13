@@ -27,13 +27,7 @@ nêu các mục chính của Nhật ký quyết định về AI (AI Decision Log
 
 **Các đề xuất được chấp nhận và bị từ chối.** AI phản biện quy trình chuẩn bị nêu 12 nhận xét; nhóm chấp nhận 9 nhận xét
 và chấp nhận một phần 3 nhận xét, không nhận xét nào bị từ chối. Bên cạnh đó, AI kiểm tra rò rỉ thông tin (leakage auditor) nêu 8 phát hiện, đều được chấp nhận. Tác tử này là một phần của vai trò AI phản biện quy trình chuẩn bị và
-không tìm thấy trường hợp nào dùng dữ liệu có ngày sau thời điểm chốt dữ liệu. Các lượt rà soát định hình bốn quy tắc mà pipeline áp dụng. Thứ nhất, danh sách của AQ4 được đánh giá theo mức vượt so với một danh sách chọn ngẫu nhiên (lift), vì giới hạn 50% cho độ chính xác của danh sách nằm sát tỷ lệ nền (C13). Thứ hai, việc nộp trễ CMA, gặp ở 47,2% số bài nộp CMA so với 16,8% số bài nộp TMA, không được đưa vào
-quy tắc dấu hiệu sớm (C10). Thứ ba, một bài chỉ bị tính là bỏ lỡ khi đến hạn vào hoặc sau ngày đăng ký của sinh viên; AI
-kiểm tra rò rỉ thông tin đã chỉ ra sáu bài tại ngày 27 có ngày đến hạn trước ngày sinh viên đăng ký. Thứ tư, phép kiểm tra
-rò rỉ thông tin được xây dựng sao cho có thể báo lỗi (FAIL), đúng như AI kiểm tra rò rỉ thông tin yêu cầu.
-
-Trong 12 nhận xét của AI phản biện quy trình chuẩn bị, nhận xét thứ tư (Phụ lục V) chỉ được chấp nhận một phần, vì nhóm luôn giữ nguyên tắc không xem kết quả của tập kiểm thử trong lúc chuẩn bị dữ liệu. Nhận xét này đề nghị báo cáo tỷ lệ kết quả của các lượt đăng ký học trong
-tập kiểm thử thuộc sinh viên đã có mặt năm 2013 trước khi lập mô hình. Nhóm báo cáo số lượng các lượt này (1.962) nhưng không báo cáo kết quả, vì nếu xem kết quả, tập kiểm thử sẽ tham gia vào bước chuẩn bị, điều mà đề bài không cho phép [1].
+không tìm thấy trường hợp nào dùng dữ liệu có ngày sau thời điểm chốt dữ liệu. Các lượt rà soát định hình bốn quy tắc mà pipeline áp dụng, mỗi quy tắc ứng với một dòng của Bảng 10.1. Ngoài ra, một nhận xét chỉ được chấp nhận một phần, vì nếu xem kết quả của tập kiểm thử trong lúc chuẩn bị dữ liệu thì tập kiểm thử sẽ tham gia vào bước chuẩn bị, điều mà đề bài không cho phép [1].
 
 Phụ lục V trình bày Nhật ký quyết định về AI với đủ mười ba mục, các prompt, mọi quyết định về các nhận xét và phát hiện,
 và phần tự đánh giá những điểm mà các lượt rà soát giúp ích nhiều nhất.

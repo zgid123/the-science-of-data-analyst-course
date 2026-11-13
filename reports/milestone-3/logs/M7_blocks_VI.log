@@ -1,0 +1,56 @@
+2026-11-12T19:51:58Z
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-3/build/N04_Milestone3_VI.docx --blocks
+1. Phiên bản cơ sở của dự án và bộ dữ liệu          0.40
+1.1. Phiên bản cơ sở và các câu hỏi phân tích       0.89
+  [table] Bảng 1.1. Các câu hỏi AQ1–AQ4 ở trạng     0.53
+  (text after) Bảng 1.1. Các câu hỏi AQ1–AQ4 ở trạng  0.18
+1.2. Bộ dữ liệu, phiên bản và điều kiện đầu v       0.55
+2. Hiểu dữ liệu                                     0.54
+2.1. Tổng thể, đơn vị phân tích và khóa             0.68
+  [table] Bảng 2.1. Bảng mô tả cấu trúc bộ dữ l     0.88
+  (text after) Bảng 2.1. Bảng mô tả cấu trúc bộ dữ l  0.16
+2.2. Ngữ nghĩa của biến kết quả, thời gian và       0.82
+2.3. Mã phân loại và thuộc tính nhạy cảm            0.64
+3. Khảo sát dữ liệu và chất lượng dữ liệu           0.51
+3.1. Kích thước bảng, khóa, dòng trùng lặp và       0.53
+3.2. Giá trị thiếu và tính hợp lệ                   0.55
+3.3. Phân phối, giá trị ngoại lai và mức cân        0.96
+3.4. Phạm vi thời gian và tính đại diện             0.51
+3.5. Nhật ký vấn đề chất lượng dữ liệu              0.32
+  [table] Bảng 3.1. Nhật ký vấn đề chất lượng d     1.74
+  (text after) Bảng 3.1. Nhật ký vấn đề chất lượng d  0.18
+4. Mức phù hợp giữa AQ và dữ liệu cùng các qu       0.71
+4.1. Đánh giá mức phù hợp giữa AQ và dữ liệu        0.17
+  [table] Bảng 4.1. Nhật ký quyết định về mức p     0.70
+  (text after) Bảng 4.1. Nhật ký quyết định về mức p  0.39
+4.2. Quyết định xử lý khoảng trống dữ liệu và       0.46
+  [table] Bảng 4.2. Giá trị thiếu, trường hợp k     0.66
+  (text after) Bảng 4.2. Giá trị thiếu, trường hợp k  0.41
+5. Kế hoạch chuẩn bị dữ liệu                        0.49
+  [table] Bảng 5.1. Ma trận quyết định chuẩn bị     2.73
+  (text after) Bảng 5.1. Ma trận quyết định chuẩn bị  0.26
+6. Quy trình chuẩn bị dữ liệu                       0.29
+6.1. Các bước của pipeline và cấu trúc gói dữ       0.70
+6.2. Tích hợp bảng và xây dựng đặc trưng            1.05
+6.3. Chiến lược chia dữ liệu và kiểm soát rò        0.40
+  [table] Bảng 6.1. Các rủi ro rò rỉ thông tin      0.80
+  (text after) Bảng 6.1. Các rủi ro rò rỉ thông tin   0.73
+7. Kiểm tra dữ liệu đã chuẩn bị                     0.47
+7.1. Kiểm tra trước và sau chuẩn bị                 0.15
+  [table] Bảng 7.1. Các phép kiểm tra trước và      1.22
+  (text after) Bảng 7.1. Các phép kiểm tra trước và   0.20
+7.2. Truy vết nguồn gốc dữ liệu, từ điển dữ l       0.48
+  [table] Bảng 7.2. Truy vết nguồn gốc dữ liệu      0.71
+  (text after) Bảng 7.2. Truy vết nguồn gốc dữ liệu   0.24
+7.3. Rủi ro còn lại                                 0.47
+8. Mức sẵn sàng cho phân tích và mô hình            0.53
+8.1. Các bảng dữ liệu đã chuẩn bị theo mức ph       0.75
+8.2. Ma trận mức sẵn sàng cho mô hình               0.25
+  [table] Bảng 8.1. Ma trận mức sẵn sàng cho mô     1.33
+  (text after) Bảng 8.1. Ma trận mức sẵn sàng cho mô  0.43
+9. Đạo đức, thiên lệch và hạn chế                   1.42
+10. Sử dụng AI tạo sinh và phản tư của nhóm         0.57
+  [table] Bảng 10.1. Nhật ký quyết định về AI,      0.88
+  (text after) Bảng 10.1. Nhật ký quyết định về AI,   1.38
+main content: 34.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0

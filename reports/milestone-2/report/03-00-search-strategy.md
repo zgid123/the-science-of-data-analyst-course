@@ -10,17 +10,15 @@ massive open online course (MOOC) dropout.
 **Where we searched.** The search covered the sources the brief suggests [1]; the
 University of California, Irvine (UCI) Machine Learning Repository; data repositories that assign a digital object identifier (DOI), a permanent
 reference to a dataset, such as figshare, Harvard Dataverse and Zenodo; the pages of the research groups that publish
-datasets; and general web search.
-
-**Three rules for every hit.** Three rules applied to every dataset found, as the brief asks [1]. First, we read
-the documentation and the license before judging the data. Second, a dataset found on Kaggle, a blog or another
-copy was traced back to the provider that published it. Third, re-uploads without a known origin were rejected.
+datasets; and general web search. Every dataset found was checked against the brief's rules on documentation, license
+and provenance before it was judged [1] (Appendix VII, item 3).
 
 **What the search found.** The search log in Appendix I records 16 entries, from 11 searches and the further hits they
 produced, including the rejected ones: copies of a data descriptor already held, superseded web addresses, third-party re-uploads of the KDD
 Cup 2015 data and secondary descriptions of datasets. Seven candidates remained, more than the three the brief
 requires, each documented from its official page or descriptor. Table 3.1 summarises them: who provides each, which
-population it describes, its unit of analysis, its outcome and how it records time within a course.
+population it describes, its unit of analysis, its outcome and how it records time within a course;
+Appendix VII (item 3) states what this comparison already shows.
 
 **Table 3.1. Candidate open datasets**
 
@@ -33,8 +31,3 @@ population it describes, its unit of analysis, its outcome and how it records ti
 | E. XuetangX MOOC dropout data | Tsinghua University, MOOCData [8], [9] | Users of a Chinese MOOC platform, 2015–2017 [8] | User–course [8] | Dropout, yes or no [8] | Timestamped actions [8] |
 | F. HarvardX Person-Course 2013 | HarvardX, Harvard Dataverse [10] | HarvardX learners, 2012–2013 [10] | Person–course summary [10] | Certification | Only the first and last activity [10] |
 | G. xAPI-Edu-Data | Data from the Kalboard 360 platform; the authors' Kaggle listing [11] | Students of several countries [11] | Student [11] | Grade band [11] | None documented |
-
-The table already shows the main difference between the candidates. Only OULAD and the XuetangX data record when
-students did things within a course, which AQ2 and AQ3 need, and only OULAD combines that timing with an outcome that
-includes withdrawal and with dated assessments. Section 4 tests this impression against the gates and the brief's
-criteria.

@@ -20,16 +20,12 @@ Table 7.1 applies the three classifications to the three decisions and states th
 | D2. Where to place the time of the support office and the lecturer-advisors each semester | The program manager, using AQ1, AQ2 and the KPIs | Management control (tactical) | Semi-programmed: repeated each semester, but with judgement about courses and staff | Two-way: staff can be moved again next semester | A pattern repeated over several semesters, correct records and agreement with staff (PM7) |
 | D3. Whether to extend the approach to all courses and link data routinely | University leadership, legal staff and the data office | Strategic planning (strategic) | Non-programmed: taken once, with no earlier case to follow | Close to one-way: it changes the university's data practice and students' trust | Pilot results, legal approval, and AQ1 and the KPIs for pilot and comparison courses (VAD4, VPM9) |
 
-**How the level of a decision sets the evidence needed.** D1 is frequent and reversible, so it can start with the simple
-missed-task rule checked by staff, and the AQ3 ordering replaces the rule only if it reaches more later non-completers
-on a list of the same length; if a contact does not help, the next review point corrects it. D2 moves
-scarce staff time between courses, and the program manager will move staff only for a pattern that repeats rather
-than one bad semester or one difficult lecturer (PM7), so it needs results from several semesters. D3 commits the
-university's data practice and the trust of its students, and it would be hard to reverse once records are linked
-routinely and staff rely on the lists. It therefore needs the strongest evidence: AQ1 and the KPIs measured for pilot
-and comparison courses before and after the pilot, legal approval, and an honest account of what the pilot did not
-show. Whether contact itself caused any change in completion needs a design that compares contacted and similar
-uncontacted students, which the evaluation plan of Milestone 4 sets out.
+**How the level of a decision sets the evidence needed.** The more frequent and reversible a decision, the less
+evidence it needs before it is taken. D1 can start with the simple missed-task rule checked by staff, and the next
+review point corrects a contact that does not help; D2 needs a pattern repeated over several semesters (PM7); and D3,
+close to one-way, needs the strongest evidence: pilot and comparison courses, legal approval and, for the effect of
+contact itself, the comparison design of the evaluation plan in Milestone 4. Appendix X explains the evidence each
+decision needs.
 
 **Expected value.** Each group of people involved stands to gain something specific. Students who fall behind are
 contacted while catching up is still possible, by someone they know and with a practical offer such as an extension

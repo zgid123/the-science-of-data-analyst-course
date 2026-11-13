@@ -1,0 +1,7 @@
+2026-11-12T20:07:51Z
+$ bash reports/milestone-4/code/check_pairs.sh
+WARN  10-06-ai-critiques.vi.md: line 68: looks untranslated: '> critiques, most important first, each with the passage, the problem,'
+
+Checked 19 pairs (vi): 0 errors, 23 warnings
+recorded 19 file(s) in reports/milestone-4/report/.vi-sync.json
+exit 0

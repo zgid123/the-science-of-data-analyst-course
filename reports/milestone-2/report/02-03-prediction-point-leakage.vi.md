@@ -1,8 +1,8 @@
 ## 2.3. Thời điểm dự báo và rủi ro rò rỉ thông tin
 
-**Thời điểm dự báo.** Một câu hỏi dự báo phải nêu rõ thời điểm dự báo (lúc đưa ra dự báo) và chỉ được dùng thông tin đã biết trước thời điểm đó [1]. Phiên bản cơ sở giả định dữ liệu đến tay cán bộ chậm khoảng một tuần. Do đó, thời điểm chốt dữ liệu là hết tuần 2 và hết tuần 4, còn cán bộ nhận danh sách vào tuần 3 và tuần 5. Rò rỉ thông tin là việc dùng thông tin chưa biết tại thời điểm dự báo; lỗi này khiến một phương pháp trông chính xác hơn trên dữ liệu quá khứ so với khi áp dụng thực tế. Với mỗi danh sách, Bảng 2.3 nêu biến cần dự đoán, các đặc trưng được phép dùng và những trường sẽ làm rò rỉ thông tin phát sinh sau thời điểm chốt dữ liệu.
+**Thời điểm dự báo.** Một câu hỏi dự báo phải nêu rõ thời điểm dự báo (lúc đưa ra dự báo) và chỉ được dùng thông tin đã biết trước thời điểm đó [1]. Phiên bản cơ sở giả định dữ liệu đến tay cán bộ chậm khoảng một tuần. Do đó, thời điểm chốt dữ liệu là hết tuần 2 và hết tuần 4, còn cán bộ nhận danh sách vào tuần 3 và tuần 5. Rò rỉ thông tin là việc dùng thông tin chưa biết tại thời điểm dự báo; lỗi này khiến một phương pháp trông chính xác hơn trên dữ liệu quá khứ so với khi áp dụng thực tế. Với mỗi danh sách, Bảng 2.2 nêu biến cần dự đoán, các đặc trưng được phép dùng và những trường sẽ làm rò rỉ thông tin phát sinh sau thời điểm chốt dữ liệu.
 
-**Bảng 2.3. Thời điểm dự báo, đặc trưng được phép dùng và rủi ro rò rỉ thông tin**
+**Bảng 2.2. Thời điểm dự báo, đặc trưng được phép dùng và rủi ro rò rỉ thông tin**
 
 | AQ dự báo | Thời điểm dự báo | Biến cần dự đoán | Đặc trưng được phép dùng (có trước thời điểm dự báo) | Trường dữ liệu chưa có / rủi ro rò rỉ thông tin |
 | :---- | :---- | :---- | :---- | :---- |

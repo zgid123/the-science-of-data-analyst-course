@@ -6,6 +6,12 @@ between stakeholders, and the full results of the validation round.
 
 ### 1. Interview Method
 
+The interviews followed the procedure of the brief: questions prepared in advance, asked one at a time in a separate
+conversation for each stakeholder, with follow-up questions where an answer was general or contradictory, and with
+the key statements labelled afterwards [1]. Generative AI took both sides of each conversation. An isolated AI persona,
+a conversation that knew only its role and the scenario, answered as the stakeholder; an AI interviewer acting for the
+Data Analytics Team asked our questions and follow-ups. We verified every transcript.
+
 The interviews were prepared and carried out in four steps.
 
 **Step 1: personas grounded in published accounts.** A persona is the role description that the AI follows when it
@@ -109,7 +115,16 @@ adopted.
 
 ### 6. Validation Results
 
-Table A.17 gives the full results of the validation round of Section 2.4 under the four headings of the brief.
+**Validation.** In the validation round, the AI interviewer returned to each stakeholder with a written summary of
+our understanding and the draft goal, and asked what we had right, what we should correct and what was
+missing (Appendix III). The stakeholders confirmed the core of the proposal: a short list in order of urgency with a
+factual reason for each name, contact by someone who knows the student, and use for support only, with a person taking
+the final decision. They corrected the timing of the review points, which now come in weeks 3 and 5 and avoid registration and examination
+weeks (VCL2, VAD2), the definition of completion, which must mean passing (VPM6), and the horizon of the target, which
+the program manager would accept over a full academic year rather than one semester (VPM5, VPM7). They added six
+requirements, among them a program-level view of courses and groups (VPM3), a shared record of each contact (VCL4) and
+a small pilot with comparison courses (VDO4, VPM9). Table A.17 gives the full results under the
+brief's four headings, and the paragraph after it gives the reason for each suggestion not adopted.
 
 **Table A.17. Validation results under the brief's four headings**
 
@@ -118,4 +133,14 @@ Table A.17 gives the full results of the validation round of Section 2.4 under t
 | Points the stakeholders confirmed | A short list in order of urgency, with a factual reason for each name (all five stakeholders); contact by someone who knows the student, in supportive words that never say "at risk"; use for support only, with a person taking the final decision; missed quizzes and assignments as a better early sign than LMS activity (VDO1); the revised SMART Goal (VPM7) |
 | Points the stakeholders asked to adjust | Detection is late and patchy rather than absent, because lecturers do sometimes alert the support office (VCL1, VAD1); two review points, in week 3 and week 5, kept away from registration and examination weeks (VCL2, VAD2); completion means passing the course, not merely staying enrolled (VPM6); the target is assessed over the 2027–2028 academic year rather than one semester, against a baseline recounted under Circular 83/2026 (VPM5, VPM8); consent for each purpose, and legal approval before any linking of records (VDO2); the student's family and employer are never told (VST2) |
 | Points the stakeholders added | A program-level view of the courses and groups that lose students (VPM3); first-year students as a group of their own (VPM4); a shared record of each contact (VCL4); students who drift in several courses at once as a separate, more urgent case (VAD3); a simple "I'm fine, thanks" reply that closes the contact (VST3); a small pilot with comparison courses, so that a good result cannot come from choosing easy courses (VDO4, VPM9) |
-| Points we did not adopt, with the reason | The advisor's suggestion to drop the completion target (VAD4); the lecturer's definition of completion as having done all the work (CL2); a general email instead of personal contact (VST5). Section 2.4 gives the reason for each |
+| Points we did not adopt, with the reason | The advisor's suggestion to drop the completion target (VAD4); the lecturer's definition of completion as having done all the work (CL2); a general email instead of personal contact (VST5). The paragraph after this table gives the reason for each |
+
+We did not adopt three suggestions, and each decision has a reason. First, the support officer suggested measuring the
+project without a completion target, because students who answer the support office may have finished anyway (VAD4).
+We keep the target, because the brief asks for an organisational outcome as the goal, and report any rise in
+completion as progress rather than as the effect of contact. Second, the lecturer suggested defining completion as
+having done all the work (CL2). We keep passing, the outcome the program reports, and describe the trail of
+submitted work in the descriptive question AQ1 instead. Third, the student persona reported that some classmates
+would rather receive a general email than a personal message (VST5). We keep personal contact as the default,
+because the support officer reports that generic emails are mostly ignored (AD8), and add a general notice of the support
+available, sent to every student at the start of the course.

@@ -26,4 +26,8 @@ venv/bin/python reports/milestone-3/code/build_appendices.py    # Appendices Iâ€
 venv/bin/python .claude/skills/build-report/scripts/render_figures.py milestone-3   # figures
 venv/bin/python reports/milestone-3/code/measure_pages.py reports/milestone-3/build/N04_Milestone3_EN.docx  # main-text pages
 make all TASK=milestone-3                                        # checks, EN and VI Word build, post-checks
+bash reports/milestone-3/code/move_cycle.sh TAG                  # appendix move: regenerate appendices, build EN+VI, pessimistic pages (logs/TAG_*)
+bash reports/milestone-3/code/parity_mark.sh TAG SECTION ...     # parity check and sync record of edited EN/VI pairs
+venv/bin/python reports/milestone-3/code/renumber_appendix_tables.py --start 13 --by 1 [--write]  # shift Table A.n numbers
+venv/bin/python reports/milestone-3/code/putback.py snapshot DIR | apply M1|M6|M7 | restore DIR  # put-back test of one move
 ```

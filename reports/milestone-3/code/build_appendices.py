@@ -257,13 +257,13 @@ def main():
     # IV. Traceability and change log
     (OUT / "12-04-traceability-change-log.md").write_text(
         "## Appendix IV – Updated Traceability and Controlled Change Log\n\n"
-        "Table A.13 is the updated traceability of deliverable B: each row runs from the goal and KPI through the "
+        "Table A.14 is the updated traceability of deliverable B: each row runs from the goal and KPI through the "
         "question and its analytics type to the raw variables, the preparation, the prepared variables and the "
-        "decision supported.\n\n**Table A.13. Updated traceability**\n\n" + map_cells(table_after((META / "traceability.md").read_text()),
+        "decision supported.\n\n**Table A.14. Updated traceability**\n\n" + map_cells(table_after((META / "traceability.md").read_text()),
                    lambda c: {"AQ4 (rewritten, C11)": "AQ4", "Prescriptive (ranking requirement)":
                               "Prescriptive (ranking; AQ4 rewritten, C11)"}.get(c, c)) +
-        "\n\nTable A.14 is the Controlled Change Log of deliverable E: C01–C08 from Milestone 2 and C09–C13 from the "
-        "data understanding of Milestone 3 (column M), each with its evidence and effect.\n\n**Table A.14. Controlled Change Log**\n\n"
+        "\n\nTable A.15 is the Controlled Change Log of deliverable E: C01–C08 from Milestone 2 and C09–C13 from the "
+        "data understanding of Milestone 3 (column M), each with its evidence and effect.\n\n**Table A.15. Controlled Change Log**\n\n"
         + rename_cols(table_after((META / "change_log.md").read_text()), {"Milestone": "M"}) + "\n")
 
     # V. AI decision log and prompts
@@ -271,18 +271,18 @@ def main():
     aud = drop_cols(table_after((REV / "02-ai-leakage-auditor-decisions.md").read_text()), {"Decision"})
     (OUT / "12-05-ai-decision-log.md").write_text(
         "## Appendix V – AI Decision Log and Prompts\n\n"
-        "Table A.15 is the AI Decision Log of deliverable F, one row per significant AI suggestion with the team's "
-        "decision and the evidence used to verify it.\n\n**Table A.15. AI Decision Log**\n\n"
+        "Table A.16 is the AI Decision Log of deliverable F, one row per significant AI suggestion with our "
+        "decision and the evidence used to verify it.\n\n**Table A.16. AI Decision Log**\n\n"
         + cite(map_cells(table_after((META / "ai_decision_log.md").read_text()), short_keys)) +
         "\n\nThe preparation critic received the following instruction and read only the issue log, the matrix, "
         "the specifications, the fit log and the profile. In both instructions, files are named by their place in "
         "the Prepared Data Package.\n\n" + quote_block(REV / "01-ai-preparation-critic-prompt.md") +
-        "\n\nTable A.16 records the decision on each of its 12 critiques.\n\n"
-        "**Table A.16. Decisions on the preparation critic's critiques**\n\n" + crit +
+        "\n\nTable A.17 records the decision on each of its 12 critiques.\n\n"
+        "**Table A.17. Decisions on the preparation critic's critiques**\n\n" + crit +
         "\n\nThe leakage auditor received the following instruction and could query the prepared and raw files "
         "without changing them.\n\n" + quote_block(REV / "02-ai-leakage-auditor-prompt.md") +
-        "\n\nTable A.17 records the evidence and the effect of each of its 8 findings, all of which were accepted.\n\n"
-        "**Table A.17. Decisions on the leakage auditor's findings**\n\n" + aud + "\n")
+        "\n\nTable A.18 records the evidence and the effect of each of its 8 findings, all of which were accepted.\n\n"
+        "**Table A.18. Decisions on the leakage auditor's findings**\n\n" + aud + "\n")
 
     # VI. Validation ledger
     rng = lambda t: re.sub(r"\[(-?[\d.,]+), (-?[\d.,]+)\]", r"\1–\2", t).translate(str.maketrans("", "", "{}'"))
@@ -297,8 +297,8 @@ def main():
     ex = val["extra"]
     (OUT / "12-06-validation-ledger.md").write_text(
         "## Appendix VI – Validation Ledger\n\n"
-        f"Table A.18 lists the {len(rows)} checks of `src/validate_prepared.py` with their expected and observed "
-        "values, from `data/metadata/validation_summary.json`.\n\n**Table A.18. Validation ledger**\n\n"
+        f"Table A.19 lists the {len(rows)} checks of `src/validate_prepared.py` with their expected and observed "
+        "values, from `data/metadata/validation_summary.json`.\n\n**Table A.19. Validation ledger**\n\n"
         + md(rows, list(rows[0])) +
         "\n\nThe validation also reports, without using any test outcome, the figures that the Milestone 4 plan "
         f"relies on: the early-sign rule flags {ex['rule_rate_overall']['d13']:.1%} of enrolled students at day 13 "

@@ -13,20 +13,11 @@ these data should answer, or which decisions analytics should support [1]. This 
 the course brief, so every figure about it in this proposal is an assumption, marked as such. The figures in the
 rest of this section come from published sources about real institutions.
 
-**Online learning and withdrawal in Vietnamese regulation.** Online teaching is now part of regular degree programs
-in Vietnam: since 2021, a full-time program may deliver up to 30% of its content online [2]. Withdrawal of students
-is also a regulated measure of a university's quality. Circular 01/2024 of the Ministry of Education and Training
-limits the share of students who withdraw to 10% a year overall and 15% in the first year of study, and a university
-whose first-year withdrawal exceeds 15% may not raise its enrolment quota [3]. Circular 83/2026, in force from
-15 November 2026, keeps both limits, and in addition no longer counts approved leave or transfers to another program
-as withdrawal [4]. As a result, a university now needs exact records of each student's status, and it has a direct
-interest in finding students who are drifting away while they can still be helped.
-
-**What published studies report.** Published studies show that non-completion is common, that it starts early and
-that institutions respond by contacting students early. Retention is lower in online courses than in face-to-face
-ones [5], and a Vietnamese review puts university dropout at about 20–30%, highest in the first year [6]. In massive
-open online courses, participation falls most sharply in the first two weeks [7], and in one blended first-year course
-the best moment for an early warning was weeks 5–6, while warnings based on midterm grades came too late [8]. Students
-who leave online courses most often name health, finances, technology, isolation and workload [9]. The response most
-often recommended is early, proactive contact based on data from the first weeks of the semester [5], [10]. Appendix V
-sets out these findings in detail.
+**Regulation and published evidence.** Vietnamese rules allow a full-time program to deliver up to 30% of its
+content online [2], and they cap the share of students who withdraw at 10% a year overall and 15% in the first year,
+with a university above 15% barred from raising its enrolment quota [3]; Circular 83/2026, in force from 15 November
+2026, keeps both limits and no longer counts approved leave or transfers as withdrawal [4]. Published studies show
+that non-completion is common, especially online and in the first year [5], [6], that it starts in the first weeks of
+a semester [7], [8], that students who leave name health, finances, technology, isolation and workload [9], and that
+the response most often recommended is early, proactive contact based on data from those weeks [5], [10]. Appendix V
+sets out the regulation and these findings in detail.

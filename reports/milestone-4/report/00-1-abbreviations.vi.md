@@ -7,7 +7,7 @@ Các từ viết tắt dưới đây được xếp theo thứ tự bảng chữ
 | ABROCA | Diện tích tuyệt đối giữa hai đường ROC – Absolute between-ROC area | Thước đo không phụ thuộc ngưỡng về chênh lệch khả năng phân biệt giữa một nhóm và phần còn lại (Mục 4.4) |
 | AI | Trí tuệ nhân tạo – Artificial intelligence | Công cụ hỗ trợ mô hình hóa theo quy định của đề bài (Phần 6); đối tượng điều chỉnh của quy định pháp lý ở Phần 5 |
 | AQ | Câu hỏi phân tích – Analytical question | Bốn câu hỏi từ AQ1 đến AQ4 của dự án (Bảng 1.1) |
-| CMA | Bài đánh giá chấm bằng máy – Computer-marked assessment | Loại bài đánh giá có điểm trung bình không được dùng làm biến dự báo (Mục 2.1) |
+| CMA | Bài đánh giá chấm bằng máy – Computer-marked assessment | Loại bài đánh giá có điểm trung bình không được dùng làm biến dự báo (Bảng A.3) |
 | EU | Liên minh châu Âu – European Union | Nơi ban hành Đạo luật AI, được dùng làm chuẩn tham chiếu (Mục 5.2) |
 | KPI | Chỉ số đo lường hiệu quả chính – Key performance indicator | Tỷ lệ hoàn thành học phần và hai tỷ lệ liên hệ (Mục 1.1) |
 | NIST | Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ – National Institute of Standards and Technology | Cơ quan ban hành Khung quản lý rủi ro AI (Phần 5) |

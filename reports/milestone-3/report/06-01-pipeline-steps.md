@@ -12,8 +12,6 @@ from linking and checking the raw files to the validation of Section 7 and the t
 (Appendix II, Table A.8). Each stage writes its console output, its command, its time in
 Coordinated Universal Time (UTC) and its exit status to a log file, and the run stops at the first failed stage. The
 whole run takes about 20 seconds, as the time stamps of its logs show. Run twice from the raw files, it wrote byte-identical outputs in all eight data files,
-and every join kept exactly its input rows.
-
-**Package structure.** The package follows the folder layout that the brief recommends, with immutable raw files,
-intermediate and processed data, metadata, notebooks and scripts kept apart [1]; Appendix II describes the layout,
-the stages, the transformation log and every prepared file.
+and every join kept exactly its input rows. The package follows the folder layout that the brief
+recommends, with immutable raw files, intermediate and processed data, metadata, notebooks and scripts kept apart
+[1]; Appendix II describes the layout, the stages, the transformation log and every prepared file.

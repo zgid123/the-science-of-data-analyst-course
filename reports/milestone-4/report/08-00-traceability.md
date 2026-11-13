@@ -15,14 +15,10 @@ matrices for AQ3 and AQ4.
 | AQ3 | Predictive | Binary classification at day 13 and day 27 | Rule-ranked list; background-only model; random list | Penalised logistic regression on the primary predictors, unless gradient-boosted trees or the extended set win by the fixed margin | Normalised recall at capacity | Leave-one-run-out on 2013; single test on 2014 | D1 |
 | AQ4 | Prescriptive (ranking) | Ranking under capacity | Random and rule-ranked lists | Top-k per run with reasons | Normalised recall at capacity | As AQ3; confirmatory fairness check | D1; choice of contact deferred |
 
-**The full chain.** Appendix VII (Table A.12) extends the traceability of Milestone 3 to the modeling and evaluation choices, so that
-each row runs from the Business Goal and its KPI, through the question, its level and task, to the prepared data, the
-baseline and primary approach, the primary metric, the validation and the decision supported. The Business Goal is to
-improve successful course completion by identifying students who stop taking part early enough to support them within
-the semester, and the primary KPI is the completion rate of students enrolled after the add-drop period.
-
-**The change of this milestone.** Appendix VII (Table A.13) gives Change Log entry C14 in the format of the Controlled
-Change Log: AQ2 is replicated on the 2014 runs only after the AQ3 test, because estimating AQ2 on all 22 runs would open the test outcomes before the predictive model is frozen.
+**The full chain.** Every row serves the Business Goal of improving successful course completion by identifying
+students who stop taking part early enough to support them within the semester, measured by the primary KPI, the
+completion rate of students enrolled after the add-drop period. Appendix VII gives the full chain from that goal and its
+KPIs to the decision supported (Table A.22) and Change Log entry C14 (Table A.23).
 
 Every question keeps its link to the Business Goal and to the prepared views of Milestone 3, and the only change to how
 a question is measured, C14, protects the independence of the AQ3 test.

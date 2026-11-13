@@ -1,0 +1,20 @@
+2026-11-12T19:53:32Z
+$ bash -c venv/bin/python .claude/skills/build-report/scripts/check_parity.py --report reports/milestone-3/report --lang vi reports/milestone-3/report/10-00-genai-reflection.md reports/milestone-3/report/12-05-ai-decision-log.md && venv/bin/python .claude/skills/build-report/scripts/translation_status.py --report reports/milestone-3/report --lang vi --mark reports/milestone-3/report/10-00-genai-reflection.md reports/milestone-3/report/12-05-ai-decision-log.md
+WARN  12-05-ai-decision-log.vi.md: line 25: looks untranslated: '> You are a critical reviewer of a data preparation plan for an educat'
+WARN  12-05-ai-decision-log.vi.md: line 29: source-language reference 'Section 4' (use Hình/Bảng/Mục/Phụ lục/Phần)
+WARN  12-05-ai-decision-log.vi.md: line 31: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  12-05-ai-decision-log.vi.md: line 31: looks untranslated: '> choices; (2) any feature that could leak information from after its '
+WARN  12-05-ai-decision-log.vi.md: line 32: looks untranslated: '> and the handling of students seen in both years; (4) the population '
+WARN  12-05-ai-decision-log.vi.md: line 34: looks untranslated: '> computable from the real fields at the cut-off. Do not invent facts '
+WARN  12-05-ai-decision-log.vi.md: line 36: looks untranslated: '> each with: the issue, why it matters (which AQ), a concrete recommen'
+WARN  12-05-ai-decision-log.vi.md: line 59: looks untranslated: '> You are an independent auditor of data leakage in a preparation pipe'
+WARN  12-05-ai-decision-log.vi.md: line 60: looks untranslated: '> non-completion on OULAD (prediction points: end of day 13 and end of'
+WARN  12-05-ai-decision-log.vi.md: line 61: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  12-05-ai-decision-log.vi.md: line 67: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  12-05-ai-decision-log.vi.md: line 67: English loanword; write 'tập dữ liệu', 'máy tính xách tay', 'kiểm thử' (glossary common/research-and-evaluation): 'test'
+WARN  12-05-ai-decision-log.vi.md: line 68: looks untranslated: '>  .py; (5) identifiers or columns that could act as a proxy for the t'
+WARN  12-05-ai-decision-log.vi.md: line 70: looks untranslated: '> or the query and its result, the risk, and a fix, with severity (hig'
+
+Checked 2 pairs (vi): 0 errors, 14 warnings
+recorded 2 file(s) in reports/milestone-3/report/.vi-sync.json
+exit 0

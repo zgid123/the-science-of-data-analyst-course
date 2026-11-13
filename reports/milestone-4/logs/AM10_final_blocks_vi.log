@@ -1,0 +1,43 @@
+2026-11-12T20:23:09Z
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-4/build/N04_Milestone4_VI.docx --blocks
+1. Bối cảnh và tính liên tục của dự án              0.51
+1.1. Mục tiêu, quyết định và các câu hỏi phân       1.11
+  [table] Bảng 1.1. Các AQ đưa vào Milestone 4      1.17
+  (text after) Bảng 1.1. Các AQ đưa vào Milestone 4  0.33
+1.2. Dữ liệu đã chuẩn bị và điều kiện đầu vào       0.71
+  [table] Bảng 1.2. Điều kiện đầu vào               0.47
+  (text after) Bảng 1.2. Điều kiện đầu vào          0.18
+2. Ánh xạ từ AQ sang bài toán kỹ thuật              0.27
+2.1. Các AQ Modeling Brief                          0.40
+  [table] Bảng 2.1. Tóm tắt các AQ Modeling Bri     0.83
+  (text after) Bảng 2.1. Tóm tắt các AQ Modeling Bri  0.25
+2.2. Định nghĩa bài toán kỹ thuật                   1.00
+3. Các phương pháp mô hình hóa ứng viên             0.33
+3.1. Tiêu chí lựa chọn và Candidate Solution        0.80
+  [table] Bảng 3.1. Candidate Solution Matrix       1.14
+3.2. Các câu hỏi mô tả và chẩn đoán                 1.31
+3.3. Câu hỏi dự báo                                 1.85
+3.4. Xếp hạng theo hạn mức liên hệ                  0.94
+4. Thiết kế đánh giá                                0.67
+4.1. Các Evaluation Design Card                     0.73
+  [table] Bảng 4.1. Tóm tắt kế hoạch đánh giá       0.97
+  (text after) Bảng 4.1. Tóm tắt kế hoạch đánh giá  0.36
+4.2. Chiến lược kiểm định                           1.67
+4.3. Chỉ số và tiêu chí thành công                  1.09
+  [table] Bảng 4.2. Các tiêu chí thành công đượ     0.57
+  (text after) Bảng 4.2. Các tiêu chí thành công đượ  0.34
+4.4. Phân tích lỗi, phân tích theo nhóm con v       1.33
+5. Rủi ro, đạo đức và hạn chế                       0.40
+  [table] Bảng 5.1. Risk & Ethics Notes             0.82
+  (text after) Bảng 5.1. Risk & Ethics Notes        0.17
+5.1. Rò rỉ thông tin, quá khớp và khả năng di       0.51
+5.2. Giới hạn nhân quả, tính công bằng và sử        0.78
+6. Sử dụng AI tạo sinh                              0.51
+  [table] Bảng 6.1. Nhật ký quyết định về AI        0.95
+  (text after) Bảng 6.1. Nhật ký quyết định về AI   0.54
+7. Giao thức chạy nguyên mẫu                        0.27
+8. Ma trận truy vết đã cập nhật                     0.29
+  [table] Bảng 8.1. Ma trận truy vết đã cập nhậ     0.91
+  (text after) Bảng 8.1. Ma trận truy vết đã cập nhậ  0.53
+main content: 28.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0

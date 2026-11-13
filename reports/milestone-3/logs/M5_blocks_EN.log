@@ -1,0 +1,56 @@
+2026-11-12T19:50:04Z
+$ venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-3/build/N04_Milestone3_EN.docx --blocks
+1. Project Baseline and Dataset                     0.36
+1.1. Baseline and Current Analytical Question       0.78
+  [table] Table 1.1. AQ1–AQ4 as they stand          0.48
+  (text after) Table 1.1. AQ1–AQ4 as they stand     0.11
+1.2. Dataset, Version and Entry Gate                0.51
+2. Data Understanding                               0.47
+2.1. Population, Unit of Analysis and Keys          0.62
+  [table] Table 2.1. Dataset Understanding Map      0.82
+  (text after) Table 2.1. Dataset Understanding Map  0.14
+2.2. Outcome, Time and Measurement Semantics        0.75
+2.3. Categorical Codes and Sensitive Attribut       0.54
+3. Data Profiling and Quality                       0.46
+3.1. Shape, Keys, Duplicates and Joins              0.41
+3.2. Missingness and Validity                       0.54
+3.3. Distributions, Outliers and Outcome Bala       0.86
+3.4. Temporal Coverage and Representativeness       0.45
+3.5. Data Quality Issue Log                         0.28
+  [table] Table 3.1. Data Quality Issue Log         1.78
+  (text after) Table 3.1. Data Quality Issue Log    0.16
+4. AQ–Data Fit and Data Gap Decisions               0.60
+4.1. AQ–Data Fit Ratings                            0.17
+  [table] Table 4.1. AQ–Data Fit Decision Log       0.48
+  (text after) Table 4.1. AQ–Data Fit Decision Log  0.34
+4.2. Data Gap Decisions and Synthetic Data          0.28
+  [table] Table 4.2. Missing values, recorded a     0.56
+  (text after) Table 4.2. Missing values, recorded a  0.32
+5. Data Preparation Plan                            0.40
+  [table] Table 5.1. Preparation Decision Matri     1.90
+  (text after) Table 5.1. Preparation Decision Matri  0.22
+6. Data Preparation Pipeline                        0.28
+6.1. Pipeline Steps and Package Structure           0.54
+6.2. Integration and Feature Construction           0.90
+6.3. Split Strategy and Leakage Control             0.19
+  [table] Table 6.1. Leakage risks and controls     0.62
+  (text after) Table 6.1. Leakage risks and controls  0.50
+7. Prepared Data Validation                         0.34
+7.1. Before-and-After Checks                        0.13
+  [table] Table 7.1. Before-and-after checks        1.09
+  (text after) Table 7.1. Before-and-after checks   0.16
+7.2. Lineage, Dictionary and Version                0.45
+  [table] Table 7.2. Data lineage of the main p     0.54
+  (text after) Table 7.2. Data lineage of the main p  0.16
+7.3. Residual Risks                                 0.88
+8. Analytics and Model Readiness                    0.41
+8.1. Prepared Views by Analytics Level              0.61
+8.2. Model Readiness Matrix                         0.17
+  [table] Table 8.1. Model Readiness Matrix         0.70
+  (text after) Table 8.1. Model Readiness Matrix    0.57
+9. Ethics, Bias and Limitations                     1.13
+10. Generative AI Usage and Reflection              0.44
+  [table] Table 10.1. AI Decision Log, main ent     0.72
+  (text after) Table 10.1. AI Decision Log, main ent  0.66
+main content: 28.0 pages (pessimistic layout; --optimistic for the continuous flow)
+exit 0

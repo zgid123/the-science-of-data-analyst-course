@@ -13,25 +13,12 @@ because it is known before teaching starts. Features that need a mark use only C
 least seven days before the cut-off, since a CMA score is expected within seven days [3], a rule of 2025 assumed to hold for 2013–2014, while a TMA mark has no
 release day in the data.
 
-**Derived variables.** Table 6.1 defines the main derived variables with their formula, source fields and timing rule;
-c stands for the cut-off day, 13 or 27.
-
-**Table 6.1. Main derived variables**
-
-| Variable | Formula | Source fields | Window / timing rule |
-| :---- | :---- | :---- | :---- |
-| non_completion (target) | final_result is Fail or Withdrawn | studentInfo | Observed at the run end; never a feature |
-| enrolled_d13, enrolled_d14, enrolled_d27 | Registered by day d, or registration day unknown, and not unregistered by day d | studentRegistration | Day d (C09) |
-| clicks_pre | Clicks before day 0 | studentVle | Before the start |
-| clicks_0c, active_days_0c | Clicks, and days with at least one click, from day 0 to c | studentVle | Days 0 to c |
-| activity_ratio_run | (clicks_0c + 1) ÷ (median clicks_0c of the run's enrolled students + 1) | studentVle | Same run, days 0 to c; no outcome used |
-| inactive_last7 | No click on days c − 6 to c | studentVle | Seven days ending at c |
-| tasks_missed_c | TMA or CMA due by c, due on or after the registration day, not submitted by c | assessments, studentAssessment | Submissions up to c; banked results excluded |
-| tma_late_c, cma_late_c | Tasks due by c submitted after the due day but by c, by type | assessments, studentAssessment | Submissions up to c |
-| cma_score_mean_c | Mean score of CMAs submitted by c − 7; empty if none | studentAssessment | Marks known by c; prepared, not a predictor (Section 7.3) |
-| early_sign_rule | A task missed, or a TMA late, or inactive in the last seven days | derived | At c (C10) |
-| early_sign_rule_cma | early_sign_rule, or a CMA late | derived | At c; sensitivity variant |
-| first_missed_week | Week of the earliest task not submitted that fell due while the student was enrolled | assessment_due view | Whole run (AQ1 only) |
+**Derived variables.** The derived variables cover the target, non_completion, a final result of Fail or Withdrawn
+observed at the run end and never used as a feature; the populations enrolled at days 13, 14 and 27; the clicks before
+day 0 and from day 0 to the cut-off c (13 or 27), the active days, the inactivity in the seven days ending at c and the
+activity ratio against the run's median; the missed and late tasks by type; the mean score of CMAs submitted by c − 7;
+the early-sign rule of C10 with a variant that adds CMA lateness; and the week of the first missed task for AQ1.
+Appendix III (Table A.13) gives each with its formula, source fields and timing rule.
 
 A task counts as missed only if it fell due on or after the student's registration day, and the activity ratio
 compares a student with the median of the same run up to the same day, without any outcome. The feature views hold 20

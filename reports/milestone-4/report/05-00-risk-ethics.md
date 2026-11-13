@@ -21,7 +21,7 @@ this project, the control the proposal builds in and the section that treats it.
 | High-stakes use | Automation bias; labelling; legal duties at the university | Tutor decides and can override; flags expire with the run; risk classification under Vietnamese AI law before a pilot | 5.2 |
 | Data constraints | 9 training runs; module CCC unseen; distance learning in the United Kingdom (UK) of 2013–2014 | Run-level split; module CCC reported separately; local validation before use | 5.1 |
 
-**Risk register.** Appendix V (Table A.9) gives the full register of sixteen risks. Each row names where a risk arises in this
+**Risk register.** Appendix V (Table A.18) gives the full register of sixteen risks. Each row names where a risk arises in this
 project, the control that the proposal builds in, the check that shows whether the control works, and the risk that
 remains after the control.
 

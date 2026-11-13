@@ -106,6 +106,25 @@ Từ điển dữ liệu (`data/metadata/data_dictionary.md`) liệt kê mọi c
 | clicks_w3 | studentVle | tổng theo tuần | tuần 3 (ngày 14–20) | quỹ đạo theo tuần của AQ3 |
 | clicks_w4 | studentVle | tổng theo tuần | tuần 4 (ngày 21–27) | quỹ đạo theo tuần của AQ3 |
 
+**Các biến dẫn xuất chính.** Bảng A.13 định nghĩa các biến dẫn xuất chính của Mục 6.2 cùng công thức, trường nguồn và quy tắc thời điểm của từng biến; c là ngày chốt dữ liệu, bằng 13 hoặc 27.
+
+**Bảng A.13. Các biến dẫn xuất chính**
+
+| Biến | Công thức | Trường nguồn | Quy tắc về khoảng thời gian / thời điểm |
+| :---- | :---- | :---- | :---- |
+| non_completion (biến mục tiêu) | final_result là Fail hoặc Withdrawn | studentInfo | Quan sát vào cuối kỳ mở; không bao giờ dùng làm đặc trưng |
+| enrolled_d13, enrolled_d14, enrolled_d27 | Đã đăng ký đến ngày d (hoặc không rõ ngày đăng ký) và chưa hủy đăng ký đến ngày d | studentRegistration | Ngày d (C09) |
+| clicks_pre | Số lượt nhấp trước ngày 0 | studentVle | Trước ngày bắt đầu |
+| clicks_0c, active_days_0c | Số lượt nhấp và số ngày có ít nhất một lượt nhấp, từ ngày 0 đến ngày c | studentVle | Từ ngày 0 đến ngày c |
+| activity_ratio_run | (clicks_0c + 1) ÷ (trung vị clicks_0c của các sinh viên đang đăng ký học trong kỳ mở + 1) | studentVle | Cùng kỳ mở, từ ngày 0 đến ngày c; không dùng biến kết quả |
+| inactive_last7 | Không có lượt nhấp nào từ ngày c − 6 đến ngày c | studentVle | Bảy ngày kết thúc tại c |
+| tasks_missed_c | TMA hoặc CMA đến hạn tính đến hết ngày c, có ngày đến hạn không sớm hơn ngày đăng ký, nhưng chưa được nộp tính đến hết ngày c | assessments, studentAssessment | Bài nộp tính đến hết ngày c; loại kết quả bảo lưu |
+| tma_late_c, cma_late_c | Số bài đến hạn tính đến hết ngày c được nộp sau ngày đến hạn nhưng không muộn hơn ngày c, theo từng loại | assessments, studentAssessment | Bài nộp tính đến hết ngày c |
+| cma_score_mean_c | Điểm trung bình của các CMA nộp tính đến hết ngày c − 7; để trống nếu không có | studentAssessment | Điểm đã biết tại c; được chuẩn bị nhưng không dùng làm đặc trưng (Mục 7.3) |
+| early_sign_rule | Bỏ lỡ một bài, nộp trễ một TMA hoặc không hoạt động trong bảy ngày gần nhất | dẫn xuất | Tại c (C10) |
+| early_sign_rule_cma | early_sign_rule hoặc nộp trễ một CMA | dẫn xuất | Tại c; phương án kiểm tra độ nhạy |
+| first_missed_week | Tuần của bài đến hạn sớm nhất mà sinh viên chưa nộp; chỉ xét các bài đến hạn trong thời gian sinh viên còn đăng ký học | Bảng dữ liệu đã chuẩn bị assessment_due | Toàn bộ kỳ mở (chỉ dùng cho AQ1) |
+
 **Các lựa chọn khi xây dựng đặc trưng và các bộ đặc trưng.**
 
 Hai định nghĩa trong bảng trên phản ánh lựa chọn của nhóm. Thứ nhất, một bài chỉ được tính là bỏ lỡ nếu bài đó đến hạn vào hoặc sau ngày đăng ký của sinh viên, vì sinh viên đăng ký muộn không thể bỏ lỡ một bài đã đến hạn trước khi sinh viên đó bắt đầu theo học. Thứ hai, tỷ lệ hoạt động so sánh một sinh viên với trung vị của chính kỳ mở đó tính đến cùng ngày; trung vị này đại diện cho "mức trung bình của kỳ mở" nêu trong dấu hiệu của AQ2. Công thức cộng thêm 1 vào cả tử số và mẫu số để tỷ lệ vẫn có giá trị xác định khi kỳ mở hoặc sinh viên không có lượt nhấp nào; đồng thời, tỷ lệ này không dùng biến kết quả, nên cán bộ có thể tính ngay vào ngày chốt dữ liệu.

@@ -1,12 +1,14 @@
-## Phụ lục III – Giao thức kiểm định và kiểm tra
+## Phụ lục III – Giao thức kiểm định, kiểm tra và chạy nguyên mẫu
+
+### 1. Giao thức kiểm định và kiểm tra
 
 Hình A.2 trình bày giao thức kiểm định và kiểm tra của Mục 4.2, từ lần chốt thứ nhất đến phép kiểm tra một lần duy nhất trên các kỳ mở năm 2014.
 
 ![Hình A.2. Giao thức kiểm định và kiểm tra, từ lần chốt thứ nhất đến phép kiểm tra một lần duy nhất trên các kỳ mở năm 2014](assets/figures/fig-4-1-validation.png){width=100%}
 
-Giao thức này tách giai đoạn phát triển khỏi giai đoạn đánh giá, để không thông tin nào từ các kỳ mở dùng cho đánh giá ảnh hưởng đến lựa chọn về mô hình; nhờ đó, thiết kế phòng tránh rò rỉ thông tin ngay từ đầu [40], [22]. Giao thức áp dụng cơ chế chốt hai lần được đề xuất cho mô hình hóa dự báo. Lần chốt thứ nhất, trước khi huấn luyện, cố định câu hỏi, cách chia dữ liệu, chỉ số và phương pháp cơ sở. Lần chốt thứ hai, trước khi chạy trên tập kiểm thử, cố định mô hình cuối cùng và ghi lại thời điểm truy cập tập kiểm thử [26]. Bảng A.5 liệt kê các bước theo thứ tự.
+Giao thức này tách giai đoạn phát triển khỏi giai đoạn đánh giá, để không thông tin nào từ các kỳ mở dùng cho đánh giá ảnh hưởng đến lựa chọn về mô hình; nhờ đó, thiết kế phòng tránh rò rỉ thông tin ngay từ đầu [40], [22]. Giao thức áp dụng cơ chế chốt hai lần được đề xuất cho mô hình hóa dự báo. Lần chốt thứ nhất, trước khi huấn luyện, cố định câu hỏi, cách chia dữ liệu, chỉ số và phương pháp cơ sở. Lần chốt thứ hai, trước khi chạy trên tập kiểm thử, cố định mô hình cuối cùng và ghi lại thời điểm truy cập tập kiểm thử [26]. Bảng A.13 liệt kê các bước theo thứ tự.
 
-**Bảng A.5. Giao thức kiểm định và kiểm tra**
+**Bảng A.13. Giao thức kiểm định và kiểm tra**
 
 | Bước | Dữ liệu | Nội dung | Lý do |
 | :---- | :---- | :---- | :---- |
@@ -21,11 +23,11 @@ Giao thức này tách giai đoạn phát triển khỏi giai đoạn đánh gi�
 
 Cấu trúc kỳ mở có hai đặc điểm cần quy tắc riêng. Thứ nhất, module CCC không có kỳ mở nào năm 2013, còn các module AAA, EEE và GGG mỗi module chỉ có một kỳ mở năm 2013. Do đó, một fold hoặc một kỳ mở của tập kiểm thử có thể chứa module mà dữ liệu huấn luyện không có. Để xử lý trường hợp này, các số hạng module được mã hóa thành độ lệch so với module trung bình; module không có trong dữ liệu huấn luyện nhận giá trị của module trung bình. Quy tắc này áp dụng ở cả các fold phát triển lẫn tập kiểm thử. Thứ hai, các kỳ mở mã B bắt đầu vào tháng 2 và các kỳ mở mã J bắt đầu vào tháng 10 [2]. Các kỳ mở J năm 2013 kéo dài 261 đến 268 ngày, nên chưa kết thúc khi các kỳ mở B năm 2014 đến thời điểm chốt dữ liệu. Phép kiểm tra chính dùng cách chia theo năm của Milestone 3. Bên cạnh đó, phương án huấn luyện chỉ trên các kỳ mở tháng 2 năm 2013 tính điểm rủi ro cho các kỳ mở B năm 2014 bằng một mô hình chỉ học từ các kỳ mở B năm 2013; đây là những kỳ mở duy nhất mà trường đại học đã biết kết quả vào thời điểm đó.
 
-Độ bất định của S1 được ước lượng bằng bootstrap hai tầng. Ở tầng thứ nhất, các kỳ mở được lấy mẫu lại; ở tầng thứ hai, các lượt đăng ký học được lấy mẫu lại trong từng kỳ mở vừa chọn. Trong mỗi mẫu lấy lại, danh sách của từng kỳ mở được lập lại, gồm 25% số lượt đăng ký học có điểm rủi ro cao nhất; chênh lệch giữa mô hình và quy tắc được tính trên cùng mẫu lấy lại đó. Cách lấy mẫu hai tầng là cần thiết, vì coi các quan sát lồng nhau là độc lập sẽ làm tăng dương tính giả [32]. Do chỉ có 13 kỳ mở của tập kiểm thử, mỗi kỳ mở từ 348 đến 2.021 lượt đăng ký học, các khoảng tin cậy này có thể quá hẹp. Vì vậy, S1 còn yêu cầu kiểm định hoán vị đổi dấu một phía trên 13 chênh lệch theo kỳ mở; ngoài ra, báo cáo nêu số kỳ mở thắng, hòa và thua cùng trung bình không trọng số của các chênh lệch theo kỳ mở.
+Độ bất định của S1 được ước lượng bằng bootstrap hai tầng. Ở tầng thứ nhất, các kỳ mở được lấy mẫu lại; ở tầng thứ hai, các lượt đăng ký học được lấy mẫu lại trong từng kỳ mở vừa chọn. Trong mỗi mẫu lấy lại, danh sách của từng kỳ mở được lập lại, gồm 25% số lượt đăng ký học có điểm rủi ro cao nhất; chênh lệch giữa mô hình và quy tắc được tính trên cùng mẫu lấy lại đó. Cách lấy mẫu hai tầng là cần thiết, vì coi các quan sát lồng nhau là độc lập sẽ làm tăng dương tính giả [32]. Do chỉ có 13 kỳ mở của tập kiểm thử, mỗi kỳ mở từ 348 đến 2.021 lượt đăng ký học, các khoảng tin cậy này có thể quá hẹp. Vì vậy, S1 còn yêu cầu kiểm định hoán vị đổi dấu một phía trên 13 chênh lệch theo kỳ mở. Kiểm định này giả sử dấu của chênh lệch ở từng kỳ mở chỉ là ngẫu nhiên. Với giả sử đó, kiểm định ước lượng tần suất thu được một tập chênh lệch có lợi cho mô hình không kém tập chênh lệch quan sát được. Ngoài ra, báo cáo nêu số kỳ mở thắng, hòa và thua cùng trung bình không trọng số của các chênh lệch theo kỳ mở.
 
-Bảng A.6 trình bày cỡ mẫu làm căn cứ cho các lựa chọn trên. Các số liệu này được tính từ các bảng dữ liệu đã chuẩn bị mà không cần ước lượng mô hình nào; số liệu về kết quả chỉ lấy từ các kỳ mở năm 2013, nhờ đó kết quả năm 2014 vẫn được giữ kín cho đến bước 6.
+Bảng A.14 trình bày cỡ mẫu làm căn cứ cho các lựa chọn trên. Các số liệu này được tính từ các bảng dữ liệu đã chuẩn bị mà không cần ước lượng mô hình nào; số liệu về kết quả chỉ lấy từ các kỳ mở năm 2013, nhờ đó kết quả năm 2014 vẫn được giữ kín cho đến bước 6.
 
-**Bảng A.6. Cỡ mẫu cho giai đoạn phát triển và đánh giá**
+**Bảng A.14. Cỡ mẫu cho giai đoạn phát triển và đánh giá**
 
 | Đại lượng | Ngày 13 | Ngày 27 |
 | :---- | :---- | :---- |
@@ -43,4 +45,27 @@ Bảng A.6 trình bày cỡ mẫu làm căn cứ cho các lựa chọn trên. C�
 | Lượt đăng ký học trong tập kiểm thử Withdrawn không có ngày rút khỏi module | 89 | 90 |
 | Quy mô kỳ mở của tập kiểm thử, nhỏ nhất / lớn nhất | 350 / 2.079 | 348 / 2.021 |
 
-Cỡ mẫu phát triển tối thiểu được xác định theo ba tiêu chí của Riley và cộng sự: mức co hệ số kỳ vọng ít nhất 0,9; mức lạc quan của R² Nagelkerke không quá 0,05; nguy cơ chung được ước lượng với sai số trong phạm vi 0,05 [14]. Phép tính dùng giả định mặc định của các tác giả này, là R² Nagelkerke dự kiến bằng 0,15 khi chưa có ước lượng trước [14]. Các kỳ mở huấn luyện có số lượt đăng ký học gấp khoảng bảy lần mức cần thiết cho bộ biến dự báo chính, nên số lượt đăng ký học không giới hạn việc chọn mô hình. Khả năng áp dụng mô hình cho một kỳ mở mới là vấn đề khác, vì bằng chứng cho khả năng này chỉ đến từ 9 kỳ mở huấn luyện. Do chỉ có 9 kỳ mở, nhóm kiểm tra khả năng áp dụng trực tiếp bằng cách chia dữ liệu theo kỳ mở thay vì suy ra từ cỡ mẫu. Cũng vì số kỳ mở ít, mô hình riêng cho từng module không phải lựa chọn tốt: dữ liệu của từng module nhỏ, mà phép co hệ số không khắc phục được mẫu nhỏ [17].
+Cỡ mẫu phát triển tối thiểu được xác định theo ba tiêu chí của Riley và cộng sự [14]. Tiêu chí thứ nhất là mức co hệ số kỳ vọng (expected shrinkage) đạt ít nhất 0,9, nghĩa là các hệ số ước lượng chỉ cần thu nhỏ không quá 10% khi áp dụng trên dữ liệu mới. Tiêu chí thứ hai là mức lạc quan của R² Nagelkerke không quá 0,05. Mức lạc quan là phần R² trên dữ liệu phát triển cao hơn R² trên dữ liệu mới, còn R² Nagelkerke đo mức biến thiên của biến kết quả mà mô hình giải thích được. Tiêu chí thứ ba là nguy cơ chung, tức tỷ lệ không hoàn thành tính trên toàn bộ dữ liệu phát triển, được ước lượng với sai số không quá 0,05. Phép tính dùng giả định mặc định của các tác giả này, là R² Nagelkerke dự kiến bằng 0,15 khi chưa có ước lượng trước [14]. Các kỳ mở huấn luyện có số lượt đăng ký học gấp khoảng bảy lần mức cần thiết cho bộ biến dự báo chính, nên số lượt đăng ký học không giới hạn việc chọn mô hình. Khả năng áp dụng mô hình cho một kỳ mở mới là vấn đề khác, vì bằng chứng cho khả năng này chỉ đến từ 9 kỳ mở huấn luyện. Do chỉ có 9 kỳ mở, nhóm kiểm tra khả năng áp dụng trực tiếp bằng cách chia dữ liệu theo kỳ mở thay vì suy ra từ cỡ mẫu. Cũng vì số kỳ mở ít, mô hình riêng cho từng module không phải lựa chọn tốt: dữ liệu của từng module nhỏ, mà phép co hệ số không khắc phục được mẫu nhỏ [17].
+
+### 2. Giao thức chạy nguyên mẫu
+
+Phần 7 nêu rõ nguyên mẫu của Level 2 chưa được chạy; mục này trình bày giao thức mà nguyên mẫu sẽ tuân theo.
+
+**Mục đích.** Nguyên mẫu không bắt buộc của Level 2 kiểm tra xem các lựa chọn ở Level 1 có khả thi hay không và cho thấy ưu điểm và hạn chế của từng lựa chọn; nguyên mẫu không nhằm cạnh tranh để đạt điểm số cao nhất và không đòi hỏi tinh chỉnh siêu tham số trên quy mô lớn [1]. Báo cáo này không chạy nguyên mẫu nên không nêu hiệu năng của bất kỳ mô hình nào. Thay vào đó, báo cáo đặc tả cách chạy nguyên mẫu để bất kỳ ai chạy nguyên mẫu cũng tuân theo thiết kế đánh giá đã chốt ở Phần 4.
+
+**Các bước.** Bảng A.15 trình bày từng bước mà đề bài quy định và cách nguyên mẫu thực hiện bước đó. Do bản đề xuất được chốt trước, nguyên mẫu có thể xác nhận hoặc bác bỏ các lựa chọn ở Level 1 nhưng không thể điều chỉnh các lựa chọn này sau khi đã thấy kết quả.
+
+**Bảng A.15. Giao thức chạy nguyên mẫu**
+
+| Bước của đề bài | Đặc tả |
+| :---- | :---- |
+| 1. Tái lập dữ liệu đầu vào | Nạp OULAD-N04-prepared-1.0, kiểm tra mã băm của các tệp, không thay đổi dữ liệu gốc |
+| 2. Cài đặt phương pháp cơ sở | Danh sách xếp theo quy tắc dấu hiệu sớm, mô hình chỉ dùng đặc điểm cá nhân và danh sách ngẫu nhiên, cài đặt trước mọi phương pháp ứng viên |
+| 3. Cài đặt phương pháp ứng viên | Hồi quy logistic có hiệu chỉnh phạt làm phương pháp chính và cây tăng cường độ dốc làm mô hình đối sánh, như ở Bảng 3.1 |
+| 4. Chia dữ liệu và ước lượng đúng cách | Giao thức ở Mục 4.2 và Bảng A.13 |
+| 5. Đánh giá | Các chỉ số trong kế hoạch đánh giá (Bảng 4.1) và các tiêu chí ở Bảng 4.2, kể cả các kết quả không thuận lợi |
+| 6. Phân tích lỗi và phân tích theo nhóm con | Phân tích lỗi theo từng nhóm con và kiểm định khẳng định về tính công bằng ở Mục 4.4 |
+| 7. So sánh với kỳ vọng ở Level 1 | Điều kiện đạt S1 có được đáp ứng hay không; mô hình đối sánh có vượt mức chênh lệch đã ấn định hay không; mọi thay đổi được ghi lại kèm lập luận |
+| 8. Khả năng tái lập | Nhật ký thực nghiệm lưu script, giá trị khởi tạo ngẫu nhiên (seed), phiên bản gói phần mềm và dữ liệu, các fold và bản ghi các lần truy cập tập kiểm thử |
+
+**Phương pháp cơ sở có thể được chọn.** Nếu phương pháp cơ sở đạt kết quả ngang bằng phương pháp ứng viên, kết quả đó vẫn được chấp nhận. Đề bài lưu ý rằng một phương pháp cơ sở đơn giản có thể là lựa chọn tốt hơn khi mô hình phức tạp chỉ cải thiện ít mà lại khó diễn giải hơn [1]. Khi đó, quy tắc dấu hiệu sớm hoặc mô hình chỉ dùng đặc điểm cá nhân được giữ lại cho giai đoạn sau kèm lập luận; thay đổi này được ghi vào nhật ký thực nghiệm.

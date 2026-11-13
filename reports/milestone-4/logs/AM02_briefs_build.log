@@ -1,0 +1,7 @@
+2026-11-12T20:07:57Z
+$ venv/bin/python .claude/skills/build-report/scripts/report.py build milestone-4 --no-figures
+PASS  milestone-4 build en           [en] 34 sections → reports/milestone-4/build/N04_Milestone4_EN.docx  (15 Word sections, 6 landscape, 3 images, 2 figure   (6 s)
+PASS  milestone-4 build vi           [vi] 34 sections → reports/milestone-4/build/N04_Milestone4_VI.docx  (27 Word sections, 12 landscape, 3 images, 2 figure  (7 s)
+
+2/2 steps passed
+exit 0

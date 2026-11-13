@@ -1,7 +1,7 @@
 ## 4.3. Metrics and Success Criteria
 
 **Primary metric.** Under the protocol of Section 4.2, the primary metric is normalised recall at capacity: the
-non-completers on a run's list divided by the most a list of that length can hold, pooled over runs (Table A.4). It
+non-completers on a run's list divided by the most a list of that length can hold, pooled over runs (Table A.12). It
 reads the quality of a list against the ceiling that capacity sets, and that ceiling varies widely: in the training
 runs, a list of 5 per 20 at day 27 can hold between 46% and 100% of a run's non-completers (C13). At a fixed list
 length, recall, precision and lift are re-expressions of the same count of non-completers on the list, so they serve
@@ -25,10 +25,10 @@ whereas AQ4 acts on a fixed capacity, so it serves as context rather than as a c
 
 **Success criteria fixed before testing.** A difference smaller than the variation between samples has little
 practical meaning [31], and judging a model on several gates or populations would let one of them pass by chance, so
-the design names a single gate and a single population. Table 4.5 fixes the success
+the design names a single gate and a single population. Table 4.2 fixes the success
 criteria before any result exists.
 
-**Table 4.5. Success criteria fixed before testing**
+**Table 4.2. Success criteria fixed before testing**
 
 | ID | Criterion | Population and operating point | Role |
 | :---- | :---- | :---- | :---- |

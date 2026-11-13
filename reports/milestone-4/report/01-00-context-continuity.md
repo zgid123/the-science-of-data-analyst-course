@@ -7,7 +7,7 @@ baseline and candidate families of methods, the primary approach with its reason
 Level 2, a prototype experiment, is optional, and a team that completes Level 1 well completes the milestone; a
 prototype can show that a choice is feasible but cannot make up for a weak strategy [1].
 
-This report covers Level 1 in full. Part 7 specifies how the optional prototype will run, as a protocol, and no model
+This report covers Level 1 in full. Part 7 points to the protocol that specifies how the optional prototype will run, and no model
 performance is stated anywhere in the report, because no model has been trained: every number in it is a count from
 the prepared data or a value we fixed in advance with its reason. Section 1.1 restates the goal, the decisions
 and the questions as they stand after Milestone 3, and Section 1.2 the prepared data and the entry gate that admits

@@ -16,6 +16,6 @@ Thiết kế đánh giá ở Phần 4 đo mức độ hiệu quả của các ph
 | Sử dụng trong bối cảnh hệ trọng | Thiên kiến tự động hóa (automation bias), tức là người dùng làm theo danh sách mà không tự đánh giá; gắn nhãn sinh viên; nghĩa vụ pháp lý của trường đại học | Giảng viên hướng dẫn quyết định và có thể bác bỏ bất kỳ tên nào; dấu cảnh báo hết hiệu lực khi kỳ mở kết thúc; phân loại rủi ro theo luật trí tuệ nhân tạo của Việt Nam trước khi thí điểm | Mục 5.2 |
 | Ràng buộc dữ liệu | Chỉ có 9 kỳ mở huấn luyện; module CCC không có trong dữ liệu huấn luyện; dữ liệu đào tạo từ xa tại Vương quốc Anh (UK) giai đoạn 2013–2014 | Chia dữ liệu theo kỳ mở; báo cáo riêng module CCC; đánh giá lại trên dữ liệu của trường trước khi sử dụng | Mục 5.1 |
 
-**Danh mục rủi ro.** Phụ lục V (Bảng A.9) trình bày đầy đủ danh mục gồm mười sáu rủi ro. Mỗi dòng của danh mục nêu nơi rủi ro phát sinh trong dự án này, biện pháp kiểm soát mà bản đề xuất đã xây dựng sẵn, phép kiểm tra cho biết biện pháp đó có hiệu quả hay không và rủi ro còn lại sau khi áp dụng biện pháp.
+**Danh mục rủi ro.** Phụ lục V (Bảng A.18) trình bày đầy đủ danh mục gồm mười sáu rủi ro. Mỗi dòng của danh mục nêu nơi rủi ro phát sinh trong dự án này, biện pháp kiểm soát mà bản đề xuất đã xây dựng sẵn, phép kiểm tra cho biết biện pháp đó có hiệu quả hay không và rủi ro còn lại sau khi áp dụng biện pháp.
 
 Mục 5.1 trình bày các rủi ro đối với tính hợp lệ của kết quả đánh giá; Mục 5.2 trình bày các rủi ro khi dùng danh sách cho sinh viên thật.

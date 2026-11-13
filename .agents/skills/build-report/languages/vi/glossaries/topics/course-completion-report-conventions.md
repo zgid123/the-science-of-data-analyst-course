@@ -17,6 +17,10 @@ Wording that team N04's MTH045 reports share across milestones: the course brief
 | level of claim (brief: "mức claim") | mức độ khẳng định | avoid "mức kết luận" | mức kết luận |
 | Risk and Ethics Notes (brief) | Risk & Ethics Notes | brief's own term; first use "Risk & Ethics Notes (ghi chú về rủi ro và đạo đức)" |  |
 | traceability matrix | ma trận truy vết |  |  |
+| grading criterion (brief rubric) | tiêu chí chấm điểm | the rows of each brief's "Tiêu chí đánh giá" / "Thang đánh giá" / "Rubric" table; the criterion cells copy the brief verbatim |  |
+| main text (pages counted against the brief) | phần nội dung chính | the brief's "trang nội dung chính, không tính phụ lục"; "phần chính" alone after first use | |
+| self-assessment (of the team's results) | tự đánh giá | the team's preliminary self-assessment form: "Bảng đánh giá sơ bộ kết quả của nhóm trên nhiệm vụ được giao" | |
+| Met / Mostly met / Partly met / Not applicable (self-assessment rating) | Đạt / Đạt phần lớn / Đạt một phần / Không áp dụng | the self-assessment scale; "mức đánh giá" for the column; not "điểm đánh giá", which is a score |  |
 
 ## Final integration and the final report
 

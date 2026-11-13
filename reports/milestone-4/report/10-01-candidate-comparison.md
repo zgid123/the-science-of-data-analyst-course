@@ -1,9 +1,101 @@
-## Appendix I – Candidate Comparison by Criterion
+## Appendix I – Modeling Briefs and Candidate Comparison
+
+### 1. AQ Modeling Briefs
+
+Each Modeling Brief records, for one question, the eight attributes that the brief requires before any algorithm is
+named; Section 2.1 (Table 2.1) gives the four briefs side by side in short form.
+
+**AQ1.** Table A.1 gives the brief of the descriptive question, which needs counts and rates, not a model.
+
+**Table A.1. Modeling Brief of AQ1**
+
+| Attribute | Content |
+| :---- | :---- |
+| AQ ID and wording | AQ1: What share of enrolments end in pass, fail or withdrawal, by module, run, start month and year, and in which week non-completers first miss an assessed task? |
+| Analytics level | Descriptive |
+| Decision supported | D2 (where advisors' time goes) and D3 (whether to extend after the pilot): programme leaders see which modules and runs lose most students and how early the first missed task appears |
+| Unit of analysis | Enrolment, restricted to enrolments still registered at day 14 (the KPI population); assessment task for the first missed task |
+| Outcome / target | N/A (no supervised task); measures: completion and non-completion rates, outcome shares, week of the first task due and not submitted |
+| Input information | Enrolment view (outcome, module, run, start month, year); assessment-due view (task, due day, submission); whole run, because the question describes completed runs |
+| Expected output | Rate tables with 95% confidence intervals by module, run, start month and year; distribution of the week of the first missed task by outcome |
+| Main constraint | Correct denominator (enrolled at day 14) and per-run task schedules, which differ by module; exam results missing in five modules, so the first missed task counts tutor-marked assessments and CMAs only |
+
+**AQ2.** Table A.2 gives the brief of the diagnostic question, which measures how strongly each sign goes with
+non-completion and does not claim that a sign causes it.
+
+**Table A.2. Modeling Brief of AQ2**
+
+| Attribute | Content |
+| :---- | :---- |
+| AQ ID and wording | AQ2: Which signs recorded by the end of week 4 (missed and late tasks, inactivity, activity against the run's median) go with later non-completion, compared within each module? |
+| Analytics level | Diagnostic (association; no causal claim) |
+| Decision supported | D2 and the reasons attached to each name on the D1 list: which signs tutors should look at |
+| Unit of analysis | Enrolment registered at day 27 |
+| Outcome / target | non_completion at the end of the run, used as the outcome of an association model, not as a prediction target |
+| Input information | Signs up to day 27: a task missed, a TMA submitted late, no platform activity in the last seven days, activity relative to the run median, activity before the start; adjustment for module run, previous attempts and credits studied |
+| Expected output | Risk differences in percentage points with 95% intervals, unadjusted and within module run, odds ratios beside them; direction of each association per module |
+| Main constraint | Association only; tasks due by day 27 exist in 16 of 22 runs; correlated signs; estimation on the 9 training runs of 2013 (6 modules) so that the 2014 test outcomes stay unseen |
+
+**AQ3.** Table A.3 gives the brief of the predictive question, whose output is a risk score per enrolment at each
+cut-off.
+
+**Table A.3. Modeling Brief of AQ3**
+
+| Attribute | Content |
+| :---- | :---- |
+| AQ ID and wording | AQ3: How well can non-completion be estimated from the data up to the end of week 2 (day 13) and of week 4 (day 27), compared with the early-sign rule, when a model built on the 2013 runs is applied to the 2014 runs? |
+| Analytics level | Predictive |
+| Decision supported | D1 (who is listed for contact) |
+| Unit of analysis | Enrolment registered at the cut-off |
+| Outcome / target | non_completion (Fail or Withdrawn) at the end of the run, known only after the run |
+| Input information | The 19 usable primary predictors of the prepared views (the mean CMA score is left out because fewer than 10% of training rows carry it) all dated on or before the cut-off; an extended set of 10 further predictors plus the weekly click counts (2 at day 13, 4 at day 27) as an alternative |
+| Expected output | A risk score per enrolment at each cut-off, used as a rank within the run; shown as a probability only if calibration holds |
+| Main constraint | Leakage and transfer to a later run; interpretability for tutors; calibration; train on 2013 runs, test once on 2014 runs |
+
+**AQ4.** Table A.4 gives the brief of the ranking question, which turns the AQ3 scores into a list of the length that
+staff can follow up.
+
+**Table A.4. Modeling Brief of AQ4**
+
+| Attribute | Content |
+| :---- | :---- |
+| AQ ID and wording | AQ4: Which enrolments should rank first on a list of an assumed capacity, with what gain over a random list and what recall, overall and by deprivation band and disability? |
+| Analytics level | Prescriptive (ranking), as decision support; the choice of contact is deferred |
+| Decision supported | D1: tutors receive a ranked list and decide whom to contact |
+| Unit of analysis | Enrolment within a module run |
+| Outcome / target | Uses the AQ3 target to judge the list; no outcome of contact exists in the data |
+| Input information | AQ3 scores and the reasons behind them; list size per run for 3 or 5 contacts per assumed tutor group of 20 students |
+| Expected output | A ranked list per run of the size the capacity allows, with the signs behind each name |
+| Main constraint | Fixed capacity; risk is not benefit; human decision; fairness across deprivation band and disability; no claim that contact works |
+
+### 2. Predictors and Transforms of AQ3
+
+Section 3.3 chooses a penalised logistic regression on the primary predictors for AQ3, with the extended set as an
+alternative.
+The primary predictors fall into four groups, all dated on or before the cut-off: background (module, start month,
+highest education, previous attempts, credits studied, registration lead, banked results, which are assessment results carried over from an earlier run of the module); activity (clicks before
+the start and from the start to the cut-off, active days, resources used, inactivity in the last seven days, activity
+relative to the run); assessment tasks (tasks due, missed and late, with late TMAs and late CMAs counted apart); and
+the number of CMA marks known by the cut-off. The extended set adds 10 further predictors (a missing-registration
+indicator, clicks counted with exactly repeated records taken once, clicks in the 14 days before the start, days since the last click, the trend over the
+last week, tasks submitted early and clicks on four kinds of resource) and the weekly click counts, 2 at day 13 and 4 at
+day 27; it is tried as an alternative (Table A.3). A logistic model assumes that each predictor shifts the log-odds of
+non-completion by a fixed amount per unit, while activity is strongly skewed: per enrolment the median is 602 clicks over
+the whole run, and 2,503 enrolments lie beyond the upper interquartile-range fence. The predictors are therefore
+transformed before the model reads them: counts enter as the logarithm of one plus the count, missing values are
+filled with the training median and marked by a missing-value indicator, and every predictor is standardised with the
+training mean and standard deviation, so that the penalty shrinks all coefficients on the same scale. Milestone 3
+fitted these transforms on the 2013 runs alone and showed that no test row changes them; here they are refitted inside
+each fold (Section 4.2), while gradient-boosted trees read the predictors untransformed.
+
+### 3. From AQ to Technical Task
 
 Figure A.1 maps each question to its technical task, its output and the decision it serves, as Section 2.2 sets
 them out.
 
 ![Figure A.1. From AQ to technical task, output and decision](assets/figures/fig-2-1-aq-map.png){width=85%}
+
+### 4. Candidate Comparison by Criterion
 
 The brief asks that each choice be argued against eight criteria: fit to the question, fit to the data, assumptions,
 interpretability, complexity against the baseline, robustness and reproducibility, ethics and fairness, and
@@ -11,10 +103,10 @@ actionability [1]. AQ1 is a descriptive question answered by grouped rates with 
 model, so the comparison applies to AQ2, AQ3 and AQ4. Facts about the data come from the 9 training runs of 2013, which
 cover 6 of the 7 modules: 11,811 enrolments with 5,245 non-completers at day 27 and 12,080 with 5,519 at day 13.
 
-Table A.1 compares the candidates for AQ2, whose purpose is association within module rather than prediction, so its
+Table A.5 compares the candidates for AQ2, whose purpose is association within module rather than prediction, so its
 yardstick is the size and precision of each association, not accuracy on new data [3].
 
-**Table A.1. AQ2 candidates against the eight criteria**
+**Table A.5. AQ2 candidates against the eight criteria**
 
 | Criterion | Baseline: unadjusted rate difference per sign | Candidate 1: logistic regression with run fixed effects and sign × module terms (primary) | Candidate 2: mixed-effects logistic regression | Supplement: shallow classification tree |
 | :---- | :---- | :---- | :---- | :---- |
@@ -27,10 +119,14 @@ yardstick is the size and precision of each association, not accuracy on new dat
 | Ethics and fairness | No sensitive attribute used | Sensitive attributes not used as signs | Same | Same |
 | Actionability | Gives tutors the size of each sign's gap | Tells D2 which signs to look at; shown beside the unadjusted gap, because mutually adjusted estimates are partial effects | No extra action | Gives readable rules for tutors |
 
-Table A.2 compares the candidates for AQ3, a predictive question judged by performance on a later run [5],
+Section 3.2 shows the mutually adjusted estimates of AQ2 beside the unadjusted gaps. The signs are correlated with each other, so their mutually adjusted estimates are partial effects: each shows the gap linked to one sign when the other signs
+are held equal, which is smaller than the gap the sign shows on its own and is not the share of non-completion that the
+sign explains. Both are therefore shown side by side.
+
+Table A.6 compares the candidates for AQ3, a predictive question judged by performance on a later run [5],
 [6].
 
-**Table A.2. AQ3 candidates against the eight criteria**
+**Table A.6. AQ3 candidates against the eight criteria**
 
 | Criterion | Baseline 1: early-sign rule | Baseline 2: background-only logistic model | Candidate 1: penalised logistic regression (primary) | Candidate 2: gradient-boosted trees | Extension: discrete-time survival model |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -48,13 +144,13 @@ and a transparent model gives each student's reasons from the same equation that
 leave about 230 events each, so the training data are large enough for a stable logistic model [14]; and the risk to be
 tested is transfer to a later run, which favours a simple, stable model [6]. The literature supports this choice:
 a systematic review of 71 clinical prediction comparisons found, as its authors report, no difference in discrimination between logistic regression and machine learning among comparisons at low risk of bias [18].
-Gradient-boosted trees stay as the challenger, since a benchmark that removed datasets where logistic regression came within 5% of the best models cannot show that trees beat it [19]; they replace logistic regression only if they beat it by the margin fixed in Appendix III (Table A.5, step 4). Compared with the primary model, the background-only model, which uses no activity, shows how much of the ranking comes from engagement
+Gradient-boosted trees stay as the challenger, since a benchmark that removed datasets where logistic regression came within 5% of the best models cannot show that trees beat it [19]; they replace logistic regression only if they beat it by the margin fixed in Appendix III (Table A.13, step 4). Compared with the primary model, the background-only model, which uses no activity, shows how much of the ranking comes from engagement
 rather than from module and history. The survival model fits withdrawal timing, whereas the target joins Fail and Withdrawn at the
 end of the run, so it stays a later extension.
 
-Table A.3 compares the candidates for AQ4, where the output is a list of fixed length per run.
+Table A.7 compares the candidates for AQ4, where the output is a list of fixed length per run.
 
-**Table A.3. AQ4 candidates against the eight criteria**
+**Table A.7. AQ4 candidates against the eight criteria**
 
 | Criterion | Baseline 1: random list | Baseline 2: rule-ranked list | Candidate 1: top-k by AQ3 score (primary) | Candidate 2: risk tiers | Rejected: benefit (uplift) ranking |
 | :---- | :---- | :---- | :---- | :---- | :---- |

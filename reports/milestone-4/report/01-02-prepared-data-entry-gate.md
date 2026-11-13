@@ -28,4 +28,4 @@ prepared data is traced [1]. Table 1.2 gives the evidence for each condition.
 All five conditions hold, so the questions can be modelled as they stand, with the contact part of AQ4 left deferred.
 One further change to how a question is measured follows from the evaluation design of this milestone: AQ2 is
 estimated on the 2013 runs and replicated on the 2014 runs only after the AQ3 test, so that no test outcome is seen
-while the predictive model is chosen. It is recorded as Change Log entry C14 (Section 4.2).
+while the predictive model is chosen. It is recorded as Change Log entry C14 (Appendix VII).

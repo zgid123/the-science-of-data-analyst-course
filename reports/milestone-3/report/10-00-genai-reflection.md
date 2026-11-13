@@ -24,16 +24,9 @@ effect on the pipeline [1].
 
 **Accepted and rejected suggestions.** The preparation critic raised 12 critiques, of which we accepted 9 and
 3 in part, and the leakage auditor raised 8 findings, all accepted; the auditor found no use of data dated after a
-cut-off. The reviews shaped four rules that the pipeline applies. The AQ4 list is judged by its gain over chance,
-because a precision limit of 50% sits close to the base rate (C13). CMA lateness, seen in 47.2% of CMA submissions
-against 16.8% of TMA submissions, stays out of the early-sign rule (C10). A task counts as missed only if it falls
-due on or after the student's registration day, the auditor having pointed to six tasks at day 27 that fell due before
-the student registered. And the leakage check is built so that it can fail, as the auditor required.
-
-The fourth of the critic's twelve critiques was accepted only in part, because of a rule we keep. The critic asked for the outcome rate of the test enrolments of
-students seen in 2013 to be reported before modelling. We report their number, 1,962, but not their outcomes, because looking
-at test outcomes while preparing the data would make the test set part of the preparation, which the brief rules out
-[1].
+cut-off. The reviews shaped four rules that the pipeline applies, each a row of Table 10.1, and one critique was
+accepted only in part, because looking at test outcomes while preparing the data would make the test set part of the
+preparation, which the brief rules out [1].
 
 Appendix V gives the AI Decision Log with all thirteen entries, the prompts, every decision on the critiques and
 findings, and a reflection on where the reviews helped most.

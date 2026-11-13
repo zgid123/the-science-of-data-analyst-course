@@ -1,5 +1,9 @@
 ## 2.2. Phương pháp phỏng vấn
 
-Các cuộc phỏng vấn theo đúng quy trình của đề bài: câu hỏi được chuẩn bị trước và được hỏi lần lượt từng câu trong một cuộc hội thoại riêng cho mỗi bên liên quan; câu hỏi đào sâu được đặt thêm khi câu trả lời còn chung chung hoặc mâu thuẫn; các phát biểu chính được gán nhãn sau khi phỏng vấn [1]. AI tạo sinh đóng cả hai vai trong mỗi cuộc hội thoại. Ở phía bên liên quan, một persona (vai bên liên quan do AI đóng) chạy độc lập, tức một cuộc hội thoại chỉ biết vai được giao và kịch bản, trả lời với tư cách bên liên quan đó. Ở phía phỏng vấn, AI đóng vai người phỏng vấn thay mặt nhóm phân tích dữ liệu, đặt các câu hỏi của nhóm và các câu hỏi đào sâu. Nhóm đã kiểm tra toàn bộ bản ghi hội thoại.
-
-Mỗi đặc điểm của persona đều lấy từ một nguồn đã công bố về những người giữ vai trò đó: các nghiên cứu và báo cáo về sinh viên [12], [13], [14], về trợ giảng [15] và về cố vấn học tập [16], [17], cùng các quy định của Việt Nam về thôi học [3] và về dữ liệu cá nhân [18]. Các con số do persona đưa ra, như ba cán bộ cho khoảng 4.000 sinh viên, là ước tính của chính persona chứ không phải số liệu đã công bố. Nhóm soạn bảy hoặc tám câu hỏi mở cho mỗi bên liên quan, bao quát năm nhóm thông tin của đề bài; không câu hỏi nào nêu sẵn một nguyên nhân, một nguồn dữ liệu hoặc một công cụ (Phụ lục I). Sau đó, nhóm rút ra 51 phát biểu chính từ các cuộc phỏng vấn và gán cho mỗi phát biểu một nhãn: ý kiến (quan điểm của chính bên liên quan), giả định (một con số hoặc sự việc được đưa ra dưới dạng ước tính) hoặc thông tin trong kịch bản (một sự việc có trong đề bài) (Phụ lục II). Phụ lục VI mô tả từng bước của phương pháp này.
+AI tạo sinh đóng cả hai vai trong mỗi cuộc phỏng vấn, theo đúng quy trình của đề bài [1]. Ở phía bên liên quan, một
+persona (vai bên liên quan do AI đóng) chạy độc lập, tức một cuộc hội thoại chỉ biết vai được giao và kịch bản, trả
+lời với tư cách bên liên quan đó; các đặc điểm của persona lấy từ lời kể đã công bố về sinh viên, trợ giảng và cố vấn
+học tập, cùng các quy định của Việt Nam về thôi học và dữ liệu cá nhân [3], [12–18]. Ở phía phỏng vấn, AI thay mặt
+nhóm đặt lần lượt bảy hoặc tám câu hỏi mở đã chuẩn bị trước, kèm câu hỏi đào sâu, trong một cuộc hội thoại riêng cho
+mỗi bên liên quan. Sau đó, nhóm gán nhãn 51 phát biểu chính và kiểm tra toàn bộ bản ghi hội thoại. Phụ lục VI mô tả
+từng bước của phương pháp; Phụ lục I và Phụ lục II trình bày các câu hỏi và các phát biểu.

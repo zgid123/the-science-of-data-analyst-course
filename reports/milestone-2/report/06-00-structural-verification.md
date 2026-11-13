@@ -10,13 +10,8 @@ every table (Table A.6).
 **How OULAD is organised.** OULAD describes seven modules, the Open University's equivalent of courses, coded AAA to
 GGG. Each module is offered in several runs, which the dataset calls presentations. A run is named by its year and its
 starting month: B for February and J for October, so that 2013J is the run that started in October 2013 [3]. Time is
-counted in days from the start of each run, day 0, so a negative day falls before the run begins. The seven tables
-divide the data as follows: courses lists the module runs; assessments lists their assessed tasks with due days; vle
-lists the pages of the VLE; studentInfo holds one row per enrolment of a student in a module
-run, with background attributes and the final result; studentRegistration holds the days on which each enrolment was
-registered and, where it happened, unregistered; studentAssessment holds each submitted task with its day and score;
-and studentVle holds each student's daily number of clicks on each page. Table 6.1 summarises the structure found in
-the files.
+counted in days from the start of each run, day 0, so a negative day falls before the run begins. Table 6.1 summarises the structure found in the seven
+files, and Appendix VII (item 5) states what each table holds.
 
 **Table 6.1. Structure of the collected OULAD files**
 
@@ -30,12 +25,9 @@ the files.
 | studentAssessment | 173,912 | 5 | assessment, student; unique | score 0–100 | submission day −11 to 608 | score missing for 173 |
 | studentVle | 10,655,280 | 6 | none documented | – | interaction day −25 to 269 | 787,170 rows are exact duplicates |
 
-Several column names appear in this table and in Section 7. In studentInfo, final_result is the outcome, in which
-Distinction is a pass with honours, so completion means Pass or Distinction; imd_band is the deprivation band of the
-student's home area; num_of_prev_attempts counts earlier attempts at the same module; and studied_credits is the
-credits the student was taking in that run. In studentVle, sum_click is the number of clicks on one page in one day,
-and id_site and activity_type identify the page and its kind. code_module and code_presentation name the module and
-the run, and assessment_type separates tutor-marked, computer-marked and exam tasks.
+**Outcome column.** In studentInfo, final_result is the outcome, in which Distinction is a pass with honours, so
+completion means Pass or Distinction; Appendix VII (item 5) explains the other column names that appear in Table 6.1
+and Section 7.
 
 **Links between tables.** All links between tables hold: every submission, assessment, click record and page has its
 parent row, so the tables can be joined for the same student, module run and task without losing records.
@@ -51,9 +43,8 @@ from repeated visits on the same day.
 **The three conditions of the selection.** The check settled the conditions on which OULAD was selected (Section
 4.2). First, the result values separate pass and distinction from fail and withdrawal, and 10,063 of the 10,156
 withdrawals are dated, so the outcome gate G1 holds. Second, the student identifier persists across runs, so the
-linkage gate G5 holds. OULAD holds 32,593 enrolments of 28,785 students; 3,538 students appear in more than one module run, and in all 1,309 cases in which a
-student repeats the same module, the recorded count of previous attempts rises. That count can only rise if the same
-identifier marks the same student in each run. Third, the history gate G3 holds only in part. Modules BBB, DDD and FFF
+linkage gate G5 holds (Appendix VII,
+item 5). Third, the history gate G3 holds only in part. Modules BBB, DDD and FFF
 have four runs, EEE and GGG three, and AAA and CCC two. With February and October runs kept apart, as the authors
 advise, each module has at most one earlier and one later run of the same start month.
 

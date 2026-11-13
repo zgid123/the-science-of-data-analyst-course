@@ -1,0 +1,12 @@
+2026-11-12T20:17:23Z
+$ venv/bin/python reports/milestone-4/code/renumber_tables.py --map A.18=A.19,A.19=A.20,A.20=A.21,A.21=A.22 --write
+06-00-genai-usage.md: 4 reference(s)
+06-00-genai-usage.vi.md: 4 reference(s)
+08-00-traceability.md: 2 reference(s)
+08-00-traceability.vi.md: 2 reference(s)
+10-06-ai-critiques.md: 5 reference(s)
+10-06-ai-critiques.vi.md: 5 reference(s)
+10-07-traceability-full.md: 5 reference(s)
+10-07-traceability-full.vi.md: 5 reference(s)
+32 reference(s) renumbered
+exit 0

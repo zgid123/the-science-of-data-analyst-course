@@ -20,16 +20,7 @@ Bảng 7.1 áp dụng ba cách phân loại cho ba quyết định và nêu bằ
 | D2. Mỗi học kỳ, dành thời gian của Phòng Đào tạo và giảng viên kiêm cố vấn học tập cho đâu | Trưởng chương trình đào tạo, dựa trên AQ1, AQ2 và các KPI | Kiểm soát quản lý (chiến thuật) | Theo quy trình có sẵn một phần: lặp lại mỗi học kỳ nhưng cần cân nhắc về học phần và cán bộ | Đảo ngược được: học kỳ sau có thể phân công lại cán bộ | Vấn đề lặp lại qua nhiều học kỳ, hồ sơ chính xác và sự đồng thuận của cán bộ (PM7) |
 | D3. Có mở rộng cách tiếp cận ra mọi học phần và liên kết dữ liệu định kỳ hay không | Ban Giám hiệu, bộ phận pháp chế và bộ phận dữ liệu | Hoạch định chiến lược (chiến lược) | Không theo quy trình có sẵn (non-programmed): chỉ quyết định một lần, chưa có trường hợp trước để làm theo | Gần với loại khó đảo ngược: thay đổi cách nhà trường sử dụng dữ liệu và niềm tin của sinh viên | Kết quả thí điểm, phê duyệt của bộ phận pháp chế, cùng AQ1 và các KPI của học phần thí điểm và học phần đối chứng (VAD4, VPM9) |
 
-**Cấp quyết định quy định bằng chứng cần có.** D1 diễn ra thường xuyên và đảo ngược được, nên có thể bắt đầu bằng quy tắc đơn giản
-đếm số bài bỏ lỡ, có cán bộ kiểm tra; thứ tự xếp hạng của AQ3 chỉ thay thế quy tắc này khi phát hiện được nhiều sinh viên về sau không hoàn thành hơn
-trên danh sách cùng độ dài. Nếu một lần liên hệ không hiệu quả, đợt lập danh sách tiếp theo sẽ điều chỉnh. D2 chuyển
-thời gian vốn ít ỏi của cán bộ giữa các học phần. Trưởng chương trình đào tạo chỉ phân công lại cán bộ khi vấn đề lặp lại, chứ không vì một
-học kỳ kém hoặc một giảng viên khó tính (PM7), nên D2 cần kết quả của nhiều học kỳ. D3 ràng buộc cách nhà trường sử dụng dữ liệu
-và niềm tin của sinh viên, đồng thời khó đảo ngược khi hồ sơ đã được liên kết định kỳ và cán bộ đã quen dựa vào danh sách.
-Vì vậy, D3 cần bằng chứng mạnh nhất: AQ1 và các KPI đo cho học phần thí điểm và học phần đối chứng trước và sau đợt thí điểm, phê duyệt
-của bộ phận pháp chế và một đánh giá trung thực về những gì đợt thí điểm chưa chứng minh được. Để biết chính hoạt động liên hệ có làm
-thay đổi tỷ lệ hoàn thành hay không, cần một thiết kế so sánh sinh viên được liên hệ với những sinh viên tương tự không được liên hệ;
-kế hoạch đánh giá ở Milestone 4 trình bày thiết kế này.
+**Cấp quyết định quy định bằng chứng cần có.** Quyết định càng thường xuyên và càng dễ đảo ngược thì càng cần ít bằng chứng trước khi được đưa ra. D1 có thể bắt đầu bằng quy tắc đơn giản đếm số bài bỏ lỡ, có cán bộ kiểm tra; nếu một lần liên hệ không hiệu quả, đợt lập danh sách tiếp theo sẽ điều chỉnh. D2 cần một xu hướng lặp lại qua nhiều học kỳ (PM7). D3 gần như không thể đảo ngược nên cần bằng chứng mạnh nhất: kết quả của học phần thí điểm và học phần đối chứng, phê duyệt của bộ phận pháp chế và, để đo tác động của chính hoạt động liên hệ, thiết kế so sánh trong kế hoạch đánh giá ở Milestone 4. Phụ lục X giải thích bằng chứng mà từng quyết định cần có.
 
 **Giá trị kỳ vọng.** Mỗi nhóm người liên quan đều nhận được một lợi ích cụ thể. Sinh viên bị tụt lại được liên hệ khi vẫn còn kịp
 theo lại học phần, bởi người sinh viên quen biết và với cách hỗ trợ thiết thực như gia hạn nộp bài hoặc tạm nghỉ ngắn (ST5, ST6). Giảng viên

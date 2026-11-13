@@ -6,18 +6,11 @@ collection evidence and the Controlled Change Log [1]. All six inputs are comple
 content and status of each.
 
 The raw data are the seven comma-separated values (CSV) tables of OULAD, figshare version 1, with the
-digital object identifier (DOI) 10.6084/m9.figshare.5081998.v1. A checksum is a fingerprint of a file's exact content:
-the Secure Hash Algorithm 256 (SHA-256) gives a different value if a single byte changes. Each raw table matches the SHA-256 value
-pinned in Milestone 2, and the eight files of the Milestone 1 proposal from which the baseline was copied are also
-unchanged. In the Prepared Data Package, the raw tables are hard links to those collected files, set to read-only and
-checked against their checksums at every run, so they cannot change unnoticed; this meets the brief's rule that raw
-data stay immutable and every change produces a new file [1].
+digital object identifier (DOI) 10.6084/m9.figshare.5081998.v1. Each raw table matches the
+Secure Hash Algorithm 256 (SHA-256) checksum pinned in Milestone 2, and the Prepared Data Package keeps the raw tables read-only and checks them
+at every run, as the brief's rule of immutable raw data requires [1]; Appendix II explains these controls.
 
 The dataset holds 22 module runs of seven Open University (OU) modules from 2013 and 2014, with 32,593 student
 records [2]; each record is an enrolment, one student in one run, and the enrolments belong to 28,785 distinct
-students (Section 2.1). The brief warns that a team should not continue to cleaning and modelling when the dataset
-supports only a very small part of the proposal [1]. OULAD supports AQ1 to AQ3 in part and the ranking part of AQ4,
-with a real outcome for every enrolment, assessment dates and daily activity records; only the contact part of AQ4
-lacks data, and it is deferred to the pilot (Section 4.1). Every question thus keeps a core that the data answer,
-which is far from the very small part the brief warns about, so the entry gate holds, and preparation is
-justified.
+students (Section 2.1). OULAD supports AQ1 to AQ3 in part and the ranking part of AQ4, and only the contact part of AQ4 lacks data, which
+is deferred to the pilot (Section 4.1); the entry gate therefore holds and preparation is justified (Appendix I).

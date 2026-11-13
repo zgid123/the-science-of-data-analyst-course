@@ -4,7 +4,8 @@ The brief sets requirements for each level of AQ: a descriptive question needs a
 population, a period and segments; a diagnostic question must name the factors it compares; a predictive question
 needs a target, a unit, a horizon and the data available at the time of prediction; and a prescriptive question must
 state the decision, the alternatives, the objective and the constraints [1]. This appendix shows how each question of
-Section 4.1 meets the requirements of its level and where each element comes from.
+Section 4.1 meets the requirements of its level and where each element comes from, then how the four questions
+connect.
 
 ### 1. AQ1 – Descriptive
 
@@ -53,3 +54,18 @@ the students on a list must be students who later fail or withdraw, a precision 
 spend most of their time on students who are fine (CL8). First-year recall must stay within ten points of later-year
 recall, so that the list does not miss the group the program manager most wants to protect (VPM4). The last two limits
 are assumptions, to be reviewed with staff once the data audit of Milestone 2 shows what is achievable.
+
+### 5. How the Questions Connect
+
+**How the questions connect.** AQ1 shows which courses and groups lose most students and in which weeks
+non-completers begin to fall behind, which tells AQ2 where to look. AQ2 compares the signs named in its wording, each
+taken from the interviews, and asks which differ most rather than which cause non-completion, because records of what
+students did cannot show why they did it. AQ3 tests whether those signs identify students in time. Its unit is one
+student's enrolment in one course, because a student may struggle in one course and not in another, and it may use
+only data up to the data cut-offs at the end of weeks 2 and 4. Recall is the share of students who later fail or
+withdraw who appear on the list, and precision is the share of listed students who later fail or withdraw; an estimate
+that does no better than counting missed tasks adds complexity without value. AQ4 turns the AQ3 ordering into a list
+for each review point. Its precision limit keeps staff from spending most of their time on students who are fine
+(CL8), and its fairness limit keeps the list from missing first-year students (VPM4); both limits are assumptions, to
+be reviewed once the data audit of Milestone 2 shows what is achievable. Each level prepares the next without proving
+a cause, and the audit may show that only part of this path can be answered with the university's data.

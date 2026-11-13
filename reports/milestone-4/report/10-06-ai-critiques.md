@@ -1,11 +1,26 @@
-## Appendix VI – Decisions on the AI Critiques and Prompts
+## Appendix VI – AI Decision Log Detail, Critiques and Prompts
 
-The AI Decision Log of Section 6 (Table 6.1) records the significant AI contributions; this appendix gives
-our decision on each critique of the two reviewers. Table A.10 covers the 12 critiques of the model-selection critic
-and Table A.11 the 12 critiques of the evaluation reviewer, each with the evidence used to check it and its effect on
+### 1. Literature Searches
+
+Table A.19 logs the three literature searches in the five columns of the AI Decision Log; Table 6.1 logs the two
+reviews.
+
+**Table A.19. AI Decision Log of the literature assistant**
+
+| Prompt / goal | AI suggestion | Team decision | Evidence / verification | Effect on the proposal |
+| :---- | :---- | :---- | :---- | :---- |
+| Find well-known sources on method choice for each AQ (literature assistant) | Explain-versus-predict distinction; rule and simple baselines first; interpretable models for high-stakes use; sample size criteria; survival and ranking framings | Accepted after reading each source | Every statement checked against a saved copy of its source, with a verbatim quotation | Parts 2–3; Appendices I–II |
+| Find sources on evaluation design (literature assistant) | TRIPOD+AI and the Prediction model Risk Of Bias ASsessment Tool for AI (PROBAST+AI); calibration; grouped folds; nested tuning; leakage types; pre-registration; hierarchical bootstrap; slicing analysis | Accepted; the imbalance argument for precision–recall curves not used, since non-completion is 44–46% and the classes are therefore not imbalanced | Same verification | Part 4; Appendices III–V |
+| Find sources on risk, causality, fairness and regulation (literature assistant) | Target trials and uplift need treatment data; fairness criteria conflict; EU AI Act and Vietnam's AI law and high-risk list; performative prediction | Accepted; the EU Act used as a reference standard, Vietnamese law as binding on a Vietnamese pilot | Legal texts read in official copies where available; the EU text in a secondary copy | Part 5; Appendix V |
+
+### 2. Decisions on the Critiques
+
+The AI Decision Log of Section 6 (Table 6.1) records the significant AI contributions; this section gives
+our decision on each critique of the two reviewers. Table A.20 covers the 12 critiques of the model-selection critic
+and Table A.21 the 12 critiques of the evaluation reviewer, each with the evidence used to check it and its effect on
 the proposal.
 
-**Table A.10. Decisions on the model-selection critic's critiques**
+**Table A.20. Decisions on the model-selection critic's critiques**
 
 | # | Critique (short) | Decision | Where it is addressed |
 | :---- | :---- | :---- | :---- |
@@ -14,17 +29,17 @@ the proposal.
 | 3 | One test set judges many comparisons | Accepted | One primary comparison (S1); all variants are sensitivity analyses |
 | 4 | AQ2 gives pooled, not per-module, associations; counts were not those of the 9 training runs | Accepted | Sign × module terms; fit stated for 9 runs and 6 modules; task signs only where a task is due |
 | 5 | Reasons from AQ2 would contradict the AQ3 score; adjusted estimates are partial effects | Accepted | Reasons from the scoring model; unadjusted and adjusted estimates side by side; correlation check |
-| 6 | Choice leans on literature; no switching rule | Accepted in part | Switching rule in Table A.5, step 4; rationale led by the project's constraints (Section 3.3) |
+| 6 | Choice leans on literature; no switching rule | Accepted in part | Switching rule in Table A.13, step 4; rationale led by the project's constraints (Section 3.3) |
 | 7 | Survival candidate rejected on a misstated assumption | Accepted | Fail is not a time-to-event outcome; non-informative censoring (follow-up stopping for reasons unrelated to the risk of withdrawal) stated as an assumption |
 | 8 | Sample size says nothing about transfer; source of the anticipated R² | Accepted | Transfer tested by the run split; Riley default cited; minimums per cut-off |
 | 9 | Ranks or probabilities for tutors not decided | Accepted | Ranks and reasons; probabilities only if S3 holds; tiers fixed from capacity |
 | 10 | Fairness audit underpowered; dropping attributes is not enough | Accepted | Pooled confirmatory groups; proxy check; separation named |
 | 11 | Risk order assumed to match need; recall has a ceiling | Accepted | Assumption stated as untested; normalised recall; Fail and Withdrawn split |
-| 12 | Unknown withdrawal days and repeat students may leak | Accepted in part | Sensitivity analyses of Table A.5, step 7; previous attempts are recorded at registration and stay legitimate |
+| 12 | Unknown withdrawal days and repeat students may leak | Accepted in part | Sensitivity analyses of Table A.13, step 7; previous attempts are recorded at registration and stay legitimate |
 
-Table A.11 records the decision on each of the evaluation reviewer's 12 critiques.
+Table A.21 records the decision on each of the evaluation reviewer's 12 critiques.
 
-**Table A.11. Decisions on the evaluation reviewer's critiques**
+**Table A.21. Decisions on the evaluation reviewer's critiques**
 
 | # | Critique (short) | Decision | Where it is addressed |
 | :---- | :---- | :---- | :---- |
@@ -39,7 +54,9 @@ Table A.11 records the decision on each of the evaluation reviewer's 12 critique
 | 9 | ABROCA without reference | Accepted | Within run, permutation reference, sign reported, descriptive only |
 | 10 | Odds ratios overstate effects at this base rate; the threshold is too easy; AQ2 and AQ3 are coupled | Accepted | Risk difference with a 5-point smallest effect; rule frozen; 2014 AQ2 cannot change AQ3 |
 | 11 | Error-analysis gaps | Accepted | Reachable non-completers, active students, list stability, history slices, CCC |
-| 12 | Missing risks and mismatched controls | Accepted | Sixteen risks in Table A.9; controls of misreading coefficients as causes (R9), claiming that contact works (R10) and automation bias (R13) matched to their risks |
+| 12 | Missing risks and mismatched controls | Accepted | Sixteen risks in Table A.18; controls of misreading coefficients as causes (R9), claiming that contact works (R10) and automation bias (R13) matched to their risks |
+
+### 3. Reviewers' Prompts
 
 Each reviewer was a separate generative AI session that could read only the brief and the appendices named in its prompt, and we checked every critique against the design facts before deciding. The prompts are given in English in abridged form, with documents named by their place in this report. The model-selection critic received this instruction:
 

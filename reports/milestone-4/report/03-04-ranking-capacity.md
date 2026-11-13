@@ -18,5 +18,5 @@ hold [11].
 estimating how the effect of an intervention varies between people needs randomised or otherwise unconfounded data on
 treatment [9], and in field experiments on customer retention, the customers at the highest predicted risk were not the best targets of an
 intervention [20]. The assumption that the order of risk matches the order of need therefore stays untested until a
-randomised pilot (Section 5.2). Appendix I (Table A.3) compares the AQ4 baselines and candidates cell by cell against the eight criteria.
+randomised pilot (Section 5.2). Appendix I (Table A.7) compares the AQ4 baselines and candidates cell by cell against the eight criteria.
 

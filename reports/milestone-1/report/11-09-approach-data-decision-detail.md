@@ -1,6 +1,6 @@
-## Appendix IX – Technique Families, Data Sources and Decision Classification in Detail
+## Appendix IX – Technique Families, Data Sources, Privacy Rules and Decision Classification in Detail
 
-This appendix explains the choice of each candidate technique family of Section 5, describes the data sources and the quality risks of
+This appendix explains the choice of each candidate technique family of Section 5, describes the data sources, the quality risks and the privacy and ethics rules of
 Section 6, and gives the full definitions of the three decision classifications used in Section 7.
 
 ### 1. Choice of the Technique Families
@@ -12,7 +12,7 @@ still differs once other signs are taken into account, for example whether misse
 activity. AQ2 reports differences, not causes, because the records are observational: they show what students did,
 not why they did it, and the brief warns against causal language without a causal design [1].
 
-The predictive question is judged against a simple rule. In the blended course described in Section 1.1,
+The predictive question is judged against a simple rule. In the blended first-year course described in Appendix V,
 continuous-assessment results such as quizzes and assignments were the strongest early predictor [8], so a rule that
 simply counts missed tasks is a demanding standard. A classification method earns its place only if it reaches more
 of the students who later fail or withdraw than the rule does on a list of the same length. Validation is
@@ -37,6 +37,15 @@ Attendance lists of in-class sessions exist only for blended courses and are kep
 weekly capacity of lecturer-advisors and the support office. According to the data officer, these sources share a
 student identifier, but nothing links them automatically, so records are matched by hand (DO1).
 
+**Quality risks.** Five risks could make the data mislead the analysis, and the project handles each one. Student
+status may mix approved leave and transfers with real withdrawal (DO3, VPM2), so the baseline years are recounted under
+the definitions of Circular 83/2026 [4], as the program manager asked (VPM8). The same LMS measure means different things in courses built
+differently (DO2), so activity is compared within each course and quiz and assignment records are the main source
+(VDO1). Activity is not learning, because a student can keep logging in while falling behind (CL3, VST1) [22], so
+missed and late tasks are the main signs and a member of staff checks each name. Records are matched by hand with
+about one week of delay (DO1, DO4), which the data cut-offs absorb. Small groups give unstable rates and can identify
+individual students, so group results are reported only above an agreed minimum size.
+
 Table A.20 sets out the five data quality and feasibility risks of Section 6.2, where each was raised and how the
 project handles it.
 
@@ -50,7 +59,25 @@ project handles it.
 | Records are matched by hand, with about one week of delay | Data officer (DO1, DO4) | Data of weeks 2 and 4 feed the lists of weeks 3 and 5 (VDO3) |
 | Small groups give unstable rates and can identify individual students | Group comparisons in AQ2 and AQ3 | Report group results only above an agreed minimum group size |
 
-### 3. Decision Classifications
+### 3. Privacy and Ethics Rules
+
+The privacy and ethics rules of Section 6.2, with the source of each, are as follows.
+
+**Privacy and ethics.** Privacy and ethics set firm limits on the project. Vietnam's Personal Data Protection Law, in
+force since 1 January 2026, ties consent to a stated purpose and does not treat silence as consent [18]. The Ministry
+of Education and Training requires universities to secure their education databases and to report data breaches
+within 72 hours [23]. Codes of practice for learning analytics add rules that the project adopts. The purpose, the
+data, who has access and how results are used are explained to staff and students [11]. Students are told at the start
+of the course and consulted on how their data are used [22]. Consent is sought before any personal intervention [11].
+Access is limited to staff with a legitimate need [11]. The data have an agreed lifespan [22]. Results are never used for grading, for profiling students or for judging lecturers [11].
+
+Two further rules come from the interviews and from published work. Once a university knows that a student is
+struggling, it has an obligation to act [22], and the data officer warned that flagging students whom nobody has time
+to follow up is worse than not knowing (DO10); a list therefore never exceeds the capacity to follow it up. The
+student's family and employer are never told about a contact, as the student asked (VST2). Finally, no real student
+data are entered into public AI tools, as the brief requires [1].
+
+### 4. Decision Classifications
 
 The brief asks for three classifications [1], each from an established
 framework. The first is the level of the decision. Gorry and Scott Morton [24] draw on Anthony's three levels of

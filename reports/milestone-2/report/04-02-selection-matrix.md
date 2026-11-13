@@ -24,13 +24,8 @@ of unregistration [3]; dated assessments and the day of each submission; and the
 student on each page of the learning platform [3]. It is published under the Creative Commons Attribution 4.0 license
 (CC BY 4.0), which allows academic use with attribution [2].
 
-**Why not the others.** Every other candidate fails at least the outcome gate (G1) and the dated-task gate (G2a). UCI
-697 labels students by their degree after three or four years, not by course, and holds only semester totals, so it
-cannot show when within a course a student stopped [4], [5]. UCI 320 and UCI 856 describe secondary-school pupils or a
-single questionnaire, with grades but no withdrawal and no dated tasks or activity [6], [7]. The XuetangX data record dated activity,
-but their outcome is a yes-or-no dropout label without pass or fail, and they state no license [8]. HarvardX records
-only the first and last activity of each learner and is not openly licensed [10], and xAPI-Edu-Data has no dated
-records and is known only from a Kaggle listing [11].
+**Why not the others.** Every other candidate fails at least the outcome gate (G1) and the dated-task gate (G2a), as
+the last column of Table 4.1 shows; Appendix VII (item 4) gives the reasons candidate by candidate.
 
 **A modest total, made conditional.** OULAD's total of 12 out of 20 is modest because its documentation leaves several
 facts open, and the scores count only what is documented. Documentation scores 1, for example, because the provider

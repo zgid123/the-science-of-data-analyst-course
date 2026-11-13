@@ -13,23 +13,12 @@ the support office takes the harder cases. The project produces both course patt
 for staff. No step is automated, and the data audit of Milestone 2 checks data quality first. Appendix VI (Table A.16)
 sets out each conflict and the constraint with the statements behind them.
 
-**Validation.** In the validation round, the AI interviewer returned to each stakeholder with a written summary of
-our understanding and the draft goal, and asked what we had right, what we should correct and what was
-missing (Appendix III). The stakeholders confirmed the core of the proposal: a short list in order of urgency with a
-factual reason for each name, contact by someone who knows the student, and use for support only, with a person taking
-the final decision. They corrected the timing of the review points, which now come in weeks 3 and 5 and avoid registration and examination
-weeks (VCL2, VAD2), the definition of completion, which must mean passing (VPM6), and the horizon of the target, which
-the program manager would accept over a full academic year rather than one semester (VPM5, VPM7). They added six
-requirements, among them a program-level view of courses and groups (VPM3), a shared record of each contact (VCL4) and
-a small pilot with comparison courses (VDO4, VPM9). Appendix VI (Table A.17) gives the full results under the
-brief's four headings.
-
-We did not adopt three suggestions, and each decision has a reason. First, the support officer suggested measuring the
-project without a completion target, because students who answer the support office may have finished anyway (VAD4).
-We keep the target, because the brief asks for an organisational outcome as the goal, and report any rise in
-completion as progress rather than as the effect of contact. Second, the lecturer suggested defining completion as
-having done all the work (CL2). We keep passing, the outcome the program reports, and describe the trail of
-submitted work in the descriptive question AQ1 instead. Third, the student persona reported that some classmates
-would rather receive a general email than a personal message (VST5). We keep personal contact as the default,
-because the support officer reports that generic emails are mostly ignored (AD8), and add a general notice of the support
-available, sent to every student at the start of the course.
+**Validation.** In a validation round, each stakeholder reviewed a written summary of our understanding and the
+draft goal. The stakeholders confirmed the core of the proposal: a short list in order of urgency with a factual
+reason for each name, contact by someone who knows the student, and use for support only, with a person taking the
+final decision. They corrected the timing of the review points (VCL2, VAD2), the definition of completion as passing
+(VPM6) and the horizon of the target, a full academic year (VPM5, VPM7), and added six requirements, among them a
+shared contact record (VCL4) and a small pilot with comparison courses (VDO4, VPM9). We did not adopt three
+suggestions: dropping the completion target (VAD4), defining completion as having done all the work (CL2) and a
+general email instead of personal contact (VST5). Appendix VI (Table A.17) gives the full results and the reason for
+each decision, and Appendix III quotes every validation statement.

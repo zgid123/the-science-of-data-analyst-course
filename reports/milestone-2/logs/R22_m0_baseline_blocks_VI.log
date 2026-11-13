@@ -1,0 +1,42 @@
+UTC: 2026-11-12T19:16:52Z
+CMD: venv/bin/python .claude/skills/build-report/scripts/page_budget.py reports/milestone-2/build/N04_Milestone2_VI.docx --blocks
+1. Phiên bản cơ sở của Milestone 1 và phạm vi       0.16
+1.1. Phiên bản cơ sở đã chốt                        1.17
+  [table] Bảng 1.1. Các câu hỏi AQ1–AQ4 đã chốt     0.45
+  (text after) Bảng 1.1. Các câu hỏi AQ1–AQ4 đã chốt  0.21
+1.2. Phạm vi của Milestone 2 và tóm tắt nhật        1.00
+2. Đặc tả yêu cầu dữ liệu                           0.23
+2.1. Ma trận AQ – yêu cầu dữ liệu                   0.77
+  [table] Bảng 2.1. Ma trận AQ – yêu cầu dữ liệ     0.93
+  (text after) Bảng 2.1. Ma trận AQ – yêu cầu dữ liệ  0.71
+2.2. Yêu cầu theo cấp độ phân tích                  0.15
+  [table] Bảng 2.2. Yêu cầu dữ liệu theo cấp độ     0.52
+  (text after) Bảng 2.2. Yêu cầu dữ liệu theo cấp độ  0.44
+2.3. Thời điểm dự báo và rủi ro rò rỉ thông t       0.30
+  [table] Bảng 2.3. Thời điểm dự báo, đặc trưng     0.62
+  (text after) Bảng 2.3. Thời điểm dự báo, đặc trưng  0.16
+3. Chiến lược tìm kiếm bộ dữ liệu mở                0.78
+  [table] Bảng 3.1. Các bộ dữ liệu mở ứng viên      0.87
+  (text after) Bảng 3.1. Các bộ dữ liệu mở ứng viên  0.16
+4. Đánh giá và lựa chọn bộ dữ liệu                  0.18
+4.1. Tiêu chí và điều kiện bắt buộc                 0.83
+4.2. Ma trận lựa chọn và lý do lựa chọn             0.36
+  [table] Bảng 4.1. Ma trận lựa chọn bộ dữ liệu     0.59
+  (text after) Bảng 4.1. Ma trận lựa chọn bộ dữ liệu  1.16
+5. Thu thập dữ liệu và nguồn gốc dữ liệu            0.36
+  [table] Bảng 5.1. Kế hoạch thu thập dữ liệu O     0.56
+  (text after) Bảng 5.1. Kế hoạch thu thập dữ liệu O  0.40
+6. Kiểm tra cấu trúc ban đầu                        0.62
+  [table] Bảng 6.1. Cấu trúc các tệp OULAD đã t     0.81
+  (text after) Bảng 6.1. Cấu trúc các tệp OULAD đã t  1.18
+7. Mức đáp ứng yêu cầu và khoảng trống dữ liệ       0.16
+7.1. Ma trận truy vết đã cập nhật                   0.34
+  [table] Bảng 7.1. Ma trận truy vết đã cập nhậ     1.47
+  (text after) Bảng 7.1. Ma trận truy vết đã cập nhậ  0.34
+7.2. Khoảng trống dữ liệu và điều chỉnh có ki       1.14
+8. Rủi ro, đạo đức và hạn chế                       1.11
+9. Sử dụng AI tạo sinh và phản tư                   0.23
+  [table] Bảng 9.1. Các vai trò của AI tạo sinh     0.38
+  (text after) Bảng 9.1. Các vai trò của AI tạo sinh  1.14
+main content: 23.0 pages (pessimistic layout; --optimistic for the continuous flow)
+EXIT: 0

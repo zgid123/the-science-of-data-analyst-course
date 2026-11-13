@@ -1,8 +1,8 @@
 ## Phụ lục IV – Ma trận truy vết đã cập nhật và nhật ký thay đổi có kiểm soát
 
-Bảng A.13 là ma trận truy vết đã cập nhật của sản phẩm bàn giao B: mỗi dòng đi từ mục tiêu và KPI, qua AQ và loại phân tích tương ứng, đến các biến gốc, bước chuẩn bị, các biến đã chuẩn bị và quyết định được hỗ trợ.
+Bảng A.14 là ma trận truy vết đã cập nhật của sản phẩm bàn giao B: mỗi dòng đi từ mục tiêu và KPI, qua AQ và loại phân tích tương ứng, đến các biến gốc, bước chuẩn bị, các biến đã chuẩn bị và quyết định được hỗ trợ.
 
-**Bảng A.13. Ma trận truy vết đã cập nhật**
+**Bảng A.14. Ma trận truy vết đã cập nhật**
 
 | Business Goal / SMART / KPI | AQ | Loại phân tích | Biến gốc | Chuẩn bị | Biến đã chuẩn bị / bảng | Quyết định được hỗ trợ |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -11,9 +11,9 @@ Bảng A.13 là ma trận truy vết đã cập nhật của sản phẩm bàn g
 | KPI phụ 1, phần dấu hiệu | AQ3 | Dự báo | như AQ2 + num_of_prev_attempts, studied_credits, highest_education, date_registration, is_banked, score (CMA) | Các lượt đăng ký học còn hiệu lực tại ngày 13 và 27; chỉ dùng sự kiện ≤ thời điểm chốt dữ liệu; điểm CMA biết được tại c − 7; chia dữ liệu theo thời gian; phép biến đổi có tham số ước lượng (fit) trên các kỳ mở năm 2013 | `features_d13`, `features_d27` (20 đặc trưng chính, 10 đặc trưng mở rộng, lượt nhấp theo tuần), `early_sign_rule`, `split`, `paired_run`, `student_in_training_runs`; `model_ready_d13/d27` | D1 ai có tên trong danh sách ở tuần 3 và tuần 5 |
 | KPI phụ 2 (tỷ lệ liên hệ kịp thời) và KPI phụ 1, phần liên hệ: chỉ trong thí điểm (C08) | AQ4 | Chỉ định (xếp hạng; AQ4 viết lại, C11) | Các đầu vào của AQ3; gender, age_band, disability, imd_band, region làm cột kiểm tra công bằng | Các kịch bản năng lực liên hệ mỗi tuần (số sinh viên cán bộ liên hệ được trong một tuần), giả định từ nhóm hướng dẫn khoảng 20 sinh viên; chất lượng danh sách đo bằng lift và tỷ lệ phát hiện (recall) so với mức tối đa có thể đạt (C13); kiểm tra công bằng theo imd_band (tách riêng "Missing") và disability | `capacity_by_run`: enrolled, list_tutor_3, list_tutor_5, list_office_30, list_office_40; các cột kiểm tra công bằng trong các bảng đặc trưng | D1 danh sách có thứ tự trong giới hạn số sinh viên cán bộ liên hệ được; lựa chọn cách liên hệ được hoãn |
 
-Bảng A.14 là nhật ký thay đổi có kiểm soát của sản phẩm bàn giao E: C01–C08 từ Milestone 2 và C09–C13 từ bước hiểu dữ liệu ở Milestone 3 (cột M), mỗi thay đổi kèm bằng chứng và tác động.
+Bảng A.15 là nhật ký thay đổi có kiểm soát của sản phẩm bàn giao E: C01–C08 từ Milestone 2 và C09–C13 từ bước hiểu dữ liệu ở Milestone 3 (cột M), mỗi thay đổi kèm bằng chứng và tác động.
 
-**Bảng A.14. Nhật ký thay đổi có kiểm soát**
+**Bảng A.15. Nhật ký thay đổi có kiểm soát**
 
 | Mã | M | Nội dung cũ | Nội dung mới | Lý do (bằng chứng dữ liệu) | Tác động (AQ / KPI / quyết định) |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -69,6 +69,24 @@ của Milestone 1 ít có ý nghĩa khi 44–45% sinh viên không hoàn thành,
 đó, chất lượng danh sách được đo bằng hai chỉ số, với danh sách ngẫu nhiên và quy tắc dấu hiệu sớm làm mốc so sánh
 (C13). Chỉ số thứ nhất là lift, bằng độ chính xác của danh sách chia cho tỷ lệ không hoàn thành của
 kỳ mở; chỉ số thứ hai là tỷ lệ phát hiện so với mức tối đa mà một danh sách cùng độ dài có thể đạt.
+
+**Chi tiết về các thay đổi từ C09 đến C13.** Các mức hỗ trợ này dẫn tới năm thay đổi; mỗi thay đổi chỉ thu hẹp cách đo một AQ, còn nội dung câu hỏi giữ nguyên. Quy tắc xác định lượt đăng ký học còn hiệu lực (C09) coi một lượt đăng ký học là còn hiệu lực vào một ngày khi sinh viên đã đăng ký tính đến ngày đó (hoặc không rõ ngày đăng ký) và chưa hủy đăng ký tính đến ngày đó. Con số 28.119 của Milestone 2 tính mọi lượt đăng ký học chưa hủy đăng ký vào ngày 14, kể cả 58 sinh viên đăng ký muộn. Quy tắc C09 loại 58 sinh viên này, nên nhóm tính KPI còn 28.061 lượt đăng ký học.
+
+Dấu hiệu "bỏ lỡ bài ở nhiều module cùng lúc" chỉ được mô tả trên các kỳ mở năm 2014. Lý do là trong 1.382 lượt đăng ký học đồng thời, chỉ 12 lượt thuộc các kỳ mở năm 2013, tức các kỳ mở huấn luyện (C12).
+
+Trên OULAD, quy tắc dấu hiệu sớm đánh dấu sinh viên khi có một bài bỏ lỡ hoặc nộp trễ (C06). Tuy nhiên, số kỳ mở chưa có bài nào đến hạn là 6 tính đến hết ngày 27 và 21 tính đến hết ngày 13; ở những kỳ mở đó, quy tắc không có bài nào để đếm nên không đánh dấu được sinh viên nào. Do đó, quy tắc được phát biểu lại thành "có một bài đến hạn tính đến hết thời điểm chốt dữ liệu mà chưa nộp, có một TMA nộp trễ hoặc không có hoạt động trên nền tảng học tập trong bảy ngày trước thời điểm chốt dữ liệu" (C10). Nhờ thành phần không hoạt động, quy tắc mới có thể đánh dấu sinh viên ở mọi kỳ mở, kể cả khi chưa có bài nào đến hạn.
+
+AQ4 được xếp RED vì phần liên hệ của câu hỏi hoàn toàn không có dữ liệu. AQ4 vì thế được viết lại, chỉ giữ phần xếp hạng, là phần dựa trên kết quả của AQ3; lựa chọn hình thức liên hệ được hoãn đến đợt thí điểm, vì không bộ dữ liệu nào ghi lại các lượt liên hệ (C11).
+
+Cuối cùng, Milestone 1 đặt ngưỡng 50% cho độ chính xác của danh sách, là tỷ lệ sinh viên trong danh sách về sau trượt hoặc rút khỏi module. Khi 44–45% sinh viên không hoàn thành, ngưỡng này ít có ý nghĩa, vì một danh sách chọn ngẫu nhiên cũng đã có độ chính xác của danh sách khoảng 45%. Vì vậy, một danh sách được đánh giá qua hai chỉ số (C13). Chỉ số thứ nhất là lift, tính bằng độ chính xác của danh sách chia cho tỷ lệ không hoàn thành của kỳ mở. Chỉ số thứ hai là tỷ lệ phát hiện, tức tỷ lệ sinh viên về sau không hoàn thành có tên trong danh sách. Tỷ lệ phát hiện này được so với mức tối đa mà một danh sách cùng độ dài có thể đạt.
+
+**Chi tiết về phiên bản cơ sở.** Các đoạn dưới đây trình bày đầy đủ mục tiêu, các chỉ số và các quyết định của phiên bản cơ sở mà Mục 1.1 tóm tắt.
+
+**Mục tiêu và các chỉ số.** Business Goal (mục tiêu của tổ chức) là nâng tỷ lệ hoàn thành học phần trong các học phần trực tuyến và học phần kết hợp (blended, vừa học trực tuyến vừa học trên lớp) của một chương trình đào tạo, bằng cách sớm nhận ra những sinh viên ngừng tham gia học tập để kịp hỗ trợ ngay trong học kỳ. SMART Goal đặt ra chỉ tiêu cụ thể cho mục tiêu này. Chỉ tiêu tính trên sinh viên còn theo học sau thời gian điều chỉnh đăng ký học phần, tức những tuần đầu học kỳ, khi sinh viên vẫn được đăng ký thêm hoặc rút học phần. Tại các học phần thí điểm, tỷ lệ hoàn thành học phần của nhóm sinh viên này phải tăng thêm năm điểm phần trăm, lên 75% vào cuối năm học 2027–2028. Mức cơ sở hiện được giả định là 70%; đợt thí điểm sẽ tính lại mức này từ hồ sơ của trường. Hoàn thành học phần nghĩa là đạt học phần; sinh viên không đạt hoặc rút học phần được tính là không hoàn thành.
+
+Ba KPI theo dõi mục tiêu này. KPI chính là bản thân tỷ lệ hoàn thành học phần. KPI phụ 1 là tỷ lệ liên hệ sinh viên có dấu hiệu sớm: trong số sinh viên có dấu hiệu sớm của việc giảm tham gia học tập, bao nhiêu phần trăm được liên hệ tính đến hết tuần 5. Các dấu hiệu sớm này được xác định bằng quy tắc dấu hiệu sớm; ở Milestone 1, quy tắc này là "bỏ lỡ hoặc nộp trễ từ hai bài được chấm điểm trở lên tính đến hết tuần 4". KPI phụ 2 là tỷ lệ liên hệ kịp thời: trong số sinh viên có tên trong danh sách liên hệ, bao nhiêu phần trăm được liên hệ trong vòng bảy ngày kể từ khi danh sách đến tay cán bộ. Cả hai KPI phụ đều dựa vào sổ theo dõi liên hệ, là sổ ghi chung ai đã liên hệ sinh viên nào, khi nào và kết quả ra sao; trường hiện chưa có sổ này.
+
+**Các quyết định.** Bản đề xuất hỗ trợ ba quyết định. D1 là quyết định chọn những sinh viên mà giảng viên kiêm cố vấn học tập và Phòng Đào tạo sẽ liên hệ tại mỗi đợt lập danh sách. Đợt lập danh sách là thời điểm vào tuần 3 và tuần 5 của học kỳ, khi danh sách liên hệ đến tay cán bộ. Mỗi danh sách dùng dữ liệu tính đến thời điểm chốt dữ liệu của danh sách đó: hết tuần 2 cho danh sách tuần 3 và hết tuần 4 cho danh sách tuần 5, vì khâu xuất dữ liệu mất khoảng một tuần. D2 là quyết định của Trưởng chương trình đào tạo về cách phân bổ thời gian của Phòng Đào tạo và của giảng viên kiêm cố vấn học tập trong mỗi học kỳ; D3 là quyết định có mở rộng cách làm này ra mọi học phần sau đợt thí điểm hay không.
 
 **Chi tiết về các thay đổi từ Milestone 2.** Milestone 2 đã chọn OULAD làm bộ dữ liệu mở thay thế cho hồ sơ của
 chính trường, vốn chưa thể sử dụng. Milestone 2 cũng ghi tám thay đổi, từ C01 đến C08, vào nhật ký thay đổi có kiểm soát;

@@ -1,3 +1,10 @@
+**Raw files and checksums in full.** A checksum is a fingerprint of a file's exact content:
+SHA-256 gives a different value if a single byte changes. Each raw table matches the SHA-256 value
+pinned in Milestone 2, and the eight files of the Milestone 1 proposal from which the baseline was copied are also
+unchanged. In the Prepared Data Package, the raw tables are hard links to those collected files, set to read-only and
+checked against their checksums at every run, so they cannot change unnoticed; this meets the brief's rule that raw
+data stay immutable and every change produces a new file [1].
+
 **Flagged records and placed submissions.** In step 5 of the pipeline, the four groups of flagged records are the 45
 enrolments without a registration day, the 93 Withdrawn enrolments without a withdrawal day, the 9 Fail enrolments
 with one, and the one unregistration on day 444 of a 268-day run. Step 7 places all 168,953 TMA and CMA submissions on

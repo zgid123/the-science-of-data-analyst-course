@@ -14,22 +14,12 @@ nhiên, trường chưa xác định các dữ liệu này cần trả lời nh�
 này đều là giả định và được ghi rõ như vậy. Các số liệu ở phần còn lại của mục này lấy từ nguồn đã công bố về các cơ
 sở giáo dục có thật.
 
-**Học trực tuyến và thôi học trong quy định của Việt Nam.** Dạy học trực tuyến hiện là một phần của các
-chương trình đào tạo chính quy ở Việt Nam: từ năm 2021, một chương trình đào tạo hệ chính quy được dạy trực tuyến tối
-đa 30% nội dung [2]. Bên cạnh đó, tỷ lệ sinh viên thôi học là một chỉ số chất lượng của trường đại học do nhà nước quy định.
-Thông tư 01/2024 của Bộ Giáo dục và Đào tạo (Bộ GDĐT) giới hạn tỷ lệ sinh viên thôi học ở mức 10% mỗi năm tính chung
-và 15% đối với năm thứ nhất; trường có tỷ lệ thôi học năm thứ nhất trên 15% thì không được tăng chỉ tiêu tuyển sinh
-[3]. Thông tư 83/2026, có hiệu lực từ ngày 15/11/2026, giữ nguyên cả hai giới hạn này, đồng thời không còn tính sinh
-viên tạm ngừng học có phép hoặc chuyển sang chương trình đào tạo khác là thôi học [4]. Do đó, các trường hiện cần ghi
-nhận chính xác tình trạng học tập của từng sinh viên và có lợi ích trực tiếp trong việc phát hiện những sinh viên đang
-dần rời xa việc học khi vẫn còn hỗ trợ được.
-
-**Kết quả của các nghiên cứu đã công bố.** Các nghiên cứu đã công bố cho thấy tình trạng không hoàn thành học phần khá
-phổ biến, bắt đầu từ sớm và các cơ sở giáo dục ứng phó bằng cách liên hệ sớm với sinh viên. Tỷ lệ sinh viên tiếp tục
-theo học ở các học phần trực tuyến thấp hơn so với học phần học trực tiếp [5]; một tổng quan tại Việt Nam ước tính tỷ
-lệ thôi học ở bậc đại học khoảng 20–30%, cao nhất ở năm thứ nhất [6]. Trong các khóa học trực tuyến mở đại trà, mức
-tham gia giảm mạnh nhất trong hai tuần đầu [7]. Ở một học phần kết hợp dành cho sinh viên năm nhất, tuần 5–6 là thời
-điểm tốt nhất để cảnh báo sớm, còn cảnh báo dựa trên điểm giữa kỳ thì đến quá muộn [8]. Những sinh viên rời bỏ học
-phần trực tuyến thường nêu các lý do sức khỏe, tài chính, công nghệ, cảm giác bị cô lập và khối lượng học tập [9].
-Cách ứng phó được khuyến nghị nhiều nhất là chủ động liên hệ sớm với sinh viên, dựa trên dữ liệu của những tuần đầu học
-kỳ [5], [10]. Phụ lục V trình bày chi tiết các kết quả này.
+**Quy định và bằng chứng đã công bố.** Theo quy định của Việt Nam, một chương trình đào tạo hệ chính quy được dạy
+trực tuyến tối đa 30% nội dung [2]. Tỷ lệ sinh viên thôi học bị giới hạn ở mức 10% mỗi năm tính chung và 15% đối với
+năm thứ nhất; trường vượt mức 15% thì không được tăng chỉ tiêu tuyển sinh [3]. Thông tư 83/2026, có hiệu lực từ ngày
+15/11/2026, giữ nguyên cả hai giới hạn này và không còn tính sinh viên tạm ngừng học có phép hoặc chuyển
+chương trình đào tạo là thôi học [4]. Các nghiên cứu đã công bố cho thấy tình trạng không hoàn thành học phần khá phổ biến, nhất là
+ở học phần trực tuyến và ở năm thứ nhất [5], [6]; tình trạng này bắt đầu từ những tuần đầu học kỳ [7], [8]. Sinh viên
+bỏ dở thường nêu lý do sức khỏe, tài chính, công nghệ, cảm giác bị cô lập và khối lượng học tập [9]; cách ứng phó được
+khuyến nghị nhiều nhất là chủ động liên hệ sớm dựa trên dữ liệu của chính những tuần đầu này [5], [10]. Phụ lục V
+trình bày chi tiết các quy định và kết quả nghiên cứu này.

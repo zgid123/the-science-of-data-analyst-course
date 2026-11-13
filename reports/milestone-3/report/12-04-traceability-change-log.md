@@ -1,8 +1,8 @@
 ## Appendix IV – Updated Traceability and Controlled Change Log
 
-Table A.13 is the updated traceability of deliverable B: each row runs from the goal and KPI through the question and its analytics type to the raw variables, the preparation, the prepared variables and the decision supported.
+Table A.14 is the updated traceability of deliverable B: each row runs from the goal and KPI through the question and its analytics type to the raw variables, the preparation, the prepared variables and the decision supported.
 
-**Table A.13. Updated traceability**
+**Table A.14. Updated traceability**
 
 | Business Goal / SMART / KPI | AQ | Analytics type | Raw variables | Preparation | Prepared variables / view | Decision supported |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -11,9 +11,9 @@ Table A.13 is the updated traceability of deliverable B: each row runs from the 
 | Secondary KPI 1, sign part | AQ3 | Predictive | as AQ2 + num_of_prev_attempts, studied_credits, highest_education, date_registration, is_banked, score (CMA) | Populations at days 13 and 27; events ≤ cut-off only; CMA marks known at c − 7; time split; transforms fitted on 2013 runs | `features_d13`, `features_d27` (20 primary, 10 extended predictors, weekly clicks), `early_sign_rule`, `split`, `paired_run`, `student_in_training_runs`; `model_ready_d13/d27` | D1 who is listed in weeks 3 and 5 |
 | Secondary KPI 2 (follow-up rate) and secondary KPI 1, contact part: pilot only (C08) | AQ4 | Prescriptive (ranking; AQ4 rewritten, C11) | AQ3 inputs; gender, age_band, disability, imd_band, region as audit columns | Capacity scenarios from tutor groups of about 20; list quality as lift and attainable recall (C13); fairness by imd_band ("Missing" apart) and disability | `capacity_by_run`: enrolled, list_tutor_3, list_tutor_5, list_office_30, list_office_40; audit columns in the feature views | D1 ordered list within capacity; contact choice deferred |
 
-Table A.14 is the Controlled Change Log of deliverable E: C01–C08 from Milestone 2 and C09–C13 from the data understanding of Milestone 3 (column M), each with its evidence and effect.
+Table A.15 is the Controlled Change Log of deliverable E: C01–C08 from Milestone 2 and C09–C13 from the data understanding of Milestone 3 (column M), each with its evidence and effect.
 
-**Table A.14. Controlled Change Log**
+**Table A.15. Controlled Change Log**
 
 | ID | M | Old content | New content | Reason (data evidence) | Effect on AQ / KPI / decision |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -73,6 +73,52 @@ precision says little when 44–45% of students do not
 complete, since a random list already reaches about 45%. List quality is therefore measured as lift, the precision of
 the list divided by the run's rate of non-completion, and as recall against the most that a list of the same length
 can reach, with a random list and the early-sign rule as baselines (C13).
+
+**Changes C09 to C13 in full.** Five changes follow from these ratings, and each narrows how a question is measured without changing what it asks.
+The population rule (C09) counts an enrolment as enrolled on a given day when the student registered by that day, or
+the registration day is unknown, and did not unregister by it; it removes the 58 late registrants from the Milestone 2
+count of 28,119, which took every enrolment still registered on day 14, and leaves 28,061 enrolments in the KPI population.
+
+The sign "tasks missed in several modules at once" is described for the 2014 runs only, because only 12 of the 1,382 concurrent enrolments fall in the 2013 training
+runs (C12).
+
+The early-sign rule counts one missed or late task on OULAD (C06), but no task falls due by day 27 in 6 runs or
+by day 13 in 21, so in those runs it can flag no one; it therefore becomes "a task due by the cut-off not submitted, or a TMA submitted late, or no platform
+activity in the seven days before the cut-off" (C10), whose inactivity part can flag students in every run.
+
+AQ4 is rated RED because its contact part has no data
+at all; it is rewritten to its ranking part, which rests on AQ3, and the choice of contact
+is deferred to the pilot, because no dataset records contacts (C11).
+
+Finally, the Milestone 1 limit of 50% precision,
+the share of listed students who later fail or withdraw, says little when 44–45% of students do not complete, since a random list already reaches about 45%, so a
+list is judged by its lift, its precision divided by the run's rate of non-completion, and by its recall, the share of
+later non-completers it reaches, against the most a list of its length can reach (C13).
+
+**Baseline in full.** The paragraphs below give the goal, the measures and the decisions of the baseline that
+Section 1.1 summarises.
+
+**Goal and measures.** The Business Goal is to improve successful course completion in a university program's online
+and blended courses by identifying students who stop taking part early enough to support them within the semester.
+The SMART Goal turns this into a target: the completion
+rate of students enrolled after the add-drop period, the first weeks in which students may still register for or
+drop a course, rises in the pilot courses from a baseline that the pilot will recount from the university's records,
+assumed for now to be 70%, by five percentage points to 75% by the end of the 2027–2028 academic year. Completion means passing the course; a fail or a withdrawal counts as
+non-completion.
+
+Three KPIs track the goal. The primary KPI is the course completion rate itself. The
+first secondary KPI, the early-sign contact rate, is the share of students showing early signs of disengagement who
+are contacted by the end of week 5; the early signs are defined by the early-sign rule, which in Milestone 1 reads
+"two or more assessed tasks missed or submitted late by the end of week 4". The second secondary KPI, the follow-up
+rate, is the share of students on a contact list who are contacted within seven days of the list reaching staff.
+Both secondary KPIs rely on a contact record, a shared log of who contacted which student, when and with what result,
+which the university does not keep yet.
+
+**Decisions.** The proposal supports three decisions. D1 is whom the lecturer-advisors and the support office contact
+at each review point, a moment in weeks 3 and 5 of the semester when a contact list reaches staff; each list uses the
+data up to its data cut-off, the end of week 2 for the week-3 list and the end of week 4 for the week-5 list,
+because data exports take about a week. D2 is where the program manager places the time of the support office and
+the lecturer-advisors each semester, and D3 is whether to extend the approach to all courses after the pilot.
 
 **Changes from Milestone 2 in full.** Milestone 2 selected OULAD as an open
 stand-in for the university's own records, which cannot be used yet, and recorded eight changes, C01 to C08, in the

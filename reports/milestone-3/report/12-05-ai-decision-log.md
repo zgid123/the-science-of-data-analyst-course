@@ -1,8 +1,8 @@
 ## Appendix V – AI Decision Log and Prompts
 
-Table A.15 is the AI Decision Log of deliverable F, one row per significant AI suggestion with our decision and the evidence used to verify it.
+Table A.16 is the AI Decision Log of deliverable F, one row per significant AI suggestion with our decision and the evidence used to verify it.
 
-**Table A.15. AI Decision Log**
+**Table A.16. AI Decision Log**
 
 | # | Role (brief 14) | AI suggestion | Team decision | Accepted / Rejected | Evidence used to verify | Effect on pipeline |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -35,9 +35,9 @@ The preparation critic received the following instruction and read only the issu
 > every number you use, and say "not verifiable from these files" otherwise. Return at most 12 numbered critiques,
 > each with: the issue, why it matters (which AQ), a concrete recommendation, and severity (high / medium / low).
 
-Table A.16 records the decision on each of its 12 critiques.
+Table A.17 records the decision on each of its 12 critiques.
 
-**Table A.16. Decisions on the preparation critic's critiques**
+**Table A.17. Decisions on the preparation critic's critiques**
 
 | # | Critique (short) | Decision | Evidence used to verify | Effect on the pipeline |
 | :---- | :---- | :---- | :---- | :---- |
@@ -70,9 +70,9 @@ The leakage auditor received the following instruction and could query the prepa
 > or the query and its result, the risk, and a fix, with severity (high / medium / low). Do not report a finding you
 > could not support with code or a query result. At most 10 findings.
 
-Table A.17 records the evidence and the effect of each of its 8 findings, all of which were accepted.
+Table A.18 records the evidence and the effect of each of its 8 findings, all of which were accepted.
 
-**Table A.17. Decisions on the leakage auditor's findings**
+**Table A.18. Decisions on the leakage auditor's findings**
 
 | # | Finding (severity) | Evidence used to verify | Effect on the pipeline |
 | :---- | :---- | :---- | :---- |
@@ -84,6 +84,17 @@ Table A.17 records the evidence and the effect of each of its 8 findings, all of
 | F6 | No-click students received the training median (1 day) for days_since_last_click (low) | Median 1.0 in `transform_params.json` | Value c + 1 for students with no click in days 0…c, set in the view |
 | F7 | V13 could never fail, because the data were filtered before the check (low) | Code reading | V13 recounts clicks without any cut-off and requires the pipeline to differ exactly where later clicks exist (26,755 and 25,663 rows) |
 | F8 | V14 check of extended predictors was commented out by a misplaced comment (low) | `validate_prepared.py` line 170 | Line split; V14 checks both predictor lists |
+
+**Rules shaped by the reviews.** The reviews shaped four rules that the pipeline applies. The AQ4 list is judged by its gain over chance,
+because a precision limit of 50% sits close to the base rate (C13). CMA lateness, seen in 47.2% of CMA submissions
+against 16.8% of TMA submissions, stays out of the early-sign rule (C10). A task counts as missed only if it falls
+due on or after the student's registration day, the auditor having pointed to six tasks at day 27 that fell due before
+the student registered. And the leakage check is built so that it can fail, as the auditor required.
+
+The fourth of the critic's twelve critiques was accepted only in part, because of a rule we keep. The critic asked for the outcome rate of the test enrolments of
+students seen in 2013 to be reported before modelling. We report their number, 1,962, but not their outcomes, because looking
+at test outcomes while preparing the data would make the test set part of the preparation, which the brief rules out
+[1].
 
 **Further decisions and reflection.**
 

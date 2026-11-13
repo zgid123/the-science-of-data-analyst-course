@@ -6,9 +6,8 @@ semester. The specific, measurable, achievable, relevant and time-bound (SMART) 
 completion rate of students enrolled after the add-drop period, the first weeks in which students may still register
 for or drop a course, rises in the pilot courses from a baseline that the pilot will recount from the university's
 records, assumed for now to be 70%, by five percentage points to 75% by the end of the 2027–2028 academic year.
-That completion rate is the primary key performance indicator (KPI). Two secondary KPIs follow the contacts: the share
-of students with early signs of disengagement who are contacted by the end of week 5, and the share of students on a
-contact list who are contacted within seven days.
+That completion rate is the primary key performance indicator (KPI); two secondary KPIs, which follow the contacts,
+are defined in Appendix VII.
 
 **Decisions.** The proposal supports three decisions. D1 is whom the lecturer-advisors and the support office contact
 at each review point, a moment in weeks 3 and 5 when a contact list reaches staff; each list uses the data up to its
@@ -19,12 +18,10 @@ extend the approach to all courses after the pilot.
 **Data and changes.** The data are the Open University Learning Analytics Dataset (OULAD), an open stand-in for the
 university's own records: 22 runs of seven Open University (OU) modules from 2013 and 2014 [2]. A module is an OU course; its modules carry
 anonymised codes, AAA to GGG, and each offering of a module, a module run, is named by its year and its start month, B
-for February and J for October [2]. Milestone 3 prepared the data as enrolments, each one student in one module run. Milestones 2 and 3 recorded thirteen changes, C01 to C13, in the
-Controlled Change Log, the list of every change to the proposal with its reason in the data. They set the population
-to the OULAD module runs and time to days from the start of each run, with the two cut-offs at day 13 and day 27; they
-replace comparisons by delivery mode, which OULAD does not vary because every run is distance learning, and year of study
-with comparisons by module and run; and they restate how two
-questions are measured, AQ3 (C10) and AQ4 (C13), as described below. The Business Goal, the SMART Goal and the three decisions are unchanged.
+for February and J for October [2]. Milestone 3 prepared the data as enrolments, each one student in one module run. Milestones 2 and 3 recorded thirteen
+changes, C01 to C13, in the Controlled Change Log, the list of every change to the proposal with its reason in the
+data; two of them restate how AQ3 (C10) and AQ4 (C13) are measured, as described below, and Appendix VII gives what
+the others change. The Business Goal, the SMART Goal and the three decisions are unchanged.
 
 **The questions as they stand.** The brief allows only the analytical questions (AQ) that remain valid after the AQ–Data Fit of Milestone 3, the step
 that rated each question against the real data, to be modelled, and a part that was deferred may not return without a recorded change [1].

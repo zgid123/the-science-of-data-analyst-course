@@ -1,0 +1,22 @@
+UTC: 2026-11-12T19:25:17Z
+CMD: check_parity.py --report reports/milestone-2/report --lang vi 09-00-genai-reflection.md 11-07-main-text-detail.md
+
+Checked 2 pairs (vi): 0 errors, 0 warnings
+EXIT: 0
+CMD: translation_status.py --report reports/milestone-2/report --lang vi --mark 09-00-genai-reflection.md 11-07-main-text-detail.md
+recorded 2 file(s) in reports/milestone-2/report/.vi-sync.json
+EXIT: 0
+CMD: make precheck TASK=milestone-2
+PASS  milestone-2 format             Checked 60 files in reports/milestone-2/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 structure          EN: 30 files, 36 headings, 0 figures, 22 tables: 0 errors, 0 warnings; VI: 30 files, 36 headings, 0 figures, 22 tables:   (0 s)
+PASS  milestone-2 style              EN: 26 body files: 0 errors, 0 warnings; VI: 26 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 abbreviations      EN: 13 abbreviations, 0 violations; VI: 13 abbreviations, 0 violations  (0 s)
+PASS  milestone-2 citations          EN: 12 references, 12 cited, order first-citation: 0 errors, 0 warnings; VI: 12 references, 12 cited, order first-citati  (0 s)
+PASS  milestone-2 names              Checked 60 files for 5 names: 0 errors  (0 s)
+PASS  milestone-2 research_trail     Checked 13 sources, 95 claims: 0 errors, 0 warnings  (0 s)
+PASS  milestone-2 research_layout    PASS layout: reports/milestone-2/research  (0 s)
+PASS  milestone-2 translation vi     30 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-2 parity vi          Checked 30 pairs (vi): 0 errors, 3 warnings  (0 s)
+
+10/10 steps passed
+EXIT: 0

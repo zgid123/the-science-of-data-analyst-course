@@ -14,20 +14,11 @@ và mức sẵn sàng cho Milestone 4 [1]. Một AQ được xếp Sẵn sàng k
 | AQ3 | Dự báo | features_d13, features_d27, model_ready | non_completion tại cuối kỳ mở | 20 đặc trưng chính, 10 đặc trưng mở rộng và số lượt nhấp theo tuần; quy tắc dấu hiệu sớm làm mốc so sánh | Huấn luyện trên năm 2013, đánh giá trên tập kiểm thử (các kỳ mở năm 2014); tinh chỉnh siêu tham số bằng các fold (phần chia trong kiểm định chéo) loại trừ từng kỳ mở (leave-one-run-out) trong năm 2013 | Sẵn sàng; danh sách tại ngày 13 chỉ dựa trên hoạt động, vì tính đến hết ngày 13 chỉ 1 trong 22 kỳ mở có bài đến hạn |
 | AQ4 | Chỉ định (xếp hạng) | capacity_by_run kèm điểm rủi ro từ AQ3 | Lift so với tỷ lệ không hoàn thành của kỳ mở; tỷ lệ phát hiện (recall) so với mức tối đa mà danh sách cùng độ dài có thể đạt | Danh sách gồm 3 hoặc 5 sinh viên cho mỗi nhóm hướng dẫn 20 sinh viên hoặc gồm 30 hoặc 40 sinh viên cho mỗi kỳ mở; kiểm tra công bằng theo mức khó khăn của khu vực và tình trạng khuyết tật | Theo từng kỳ mở và thời điểm chốt dữ liệu, chỉ trên các kỳ mở của tập kiểm thử | Cần điều chỉnh: phần xếp hạng đã sẵn sàng; lựa chọn cách liên hệ được hoãn |
 
-**Lý do cần xếp hạng.** Quy tắc dấu hiệu sớm đánh dấu 20,2% số sinh viên đang đăng ký học vào ngày 13 và 28,8% vào ngày
-27, trong khi danh sách 3 hoặc 5 sinh viên trên mỗi nhóm 20 sinh viên chỉ chứa được 15% hoặc 25% số sinh viên của nhóm. Với
-danh sách 5 sinh viên trên mỗi nhóm 20, quy tắc đánh dấu nhiều sinh viên hơn độ dài danh sách ở 7 trong 22 kỳ mở tại ngày 13 và ở 10 kỳ mở tại
-ngày 27; với danh sách 3 sinh viên trên mỗi nhóm 20, con số này là 15 kỳ mở tại ngày 13 và cả 22 kỳ mở tại ngày 27. Vì vậy, cán bộ cần
-một thứ tự ưu tiên để biết nên liên hệ ai trước. AQ3 và AQ4 cung cấp thứ tự đó, còn riêng quy tắc dấu hiệu sớm thì không xếp được thứ tự này.
+**Lý do cần xếp hạng.** Quy tắc dấu hiệu sớm đánh dấu 20,2% số sinh viên đang đăng ký học vào ngày 13 và 28,8% vào ngày 27; tại ngày 27, số sinh viên được đánh dấu vượt quá độ dài danh sách 3 sinh viên trên mỗi nhóm 20 sinh viên ở mọi kỳ mở. Vì vậy, cán bộ cần một thứ tự ưu tiên để biết nên liên hệ ai trước; AQ3 cùng AQ4 cung cấp thứ tự đó (Phụ lục VI).
 
 **Những câu hỏi chưa khả thi.** Ba phần của đề xuất không trả lời được bằng OULAD và cần hồ sơ riêng của đợt thí điểm.
 Phần thứ nhất là cách liên hệ nào hiệu quả nhất với sinh viên nào (tin nhắn của giảng viên, cuộc gọi từ Phòng Đào tạo hoặc giới thiệu sinh viên đến một đơn vị hỗ trợ khác), cùng tác động của cách liên hệ đó đến việc hoàn thành học phần
 (AQ4, C08, C11). Phần thứ hai là các phép so sánh theo năm theo học, theo hình thức học và theo việc điểm danh (C04, C05). Phần thứ
 ba là tỷ lệ liên hệ kịp thời (KPI phụ 2) cùng phần liên hệ của KPI phụ 1, tức số sinh viên có dấu hiệu sớm đã được liên hệ (C08).
 
-**Điều kiện để bước vào Milestone 4.** Đề bài đặt ra sáu điều kiện để bắt đầu lập mô hình [1]: các câu hỏi cốt lõi có
-bảng dữ liệu đã chuẩn bị và truy vết rõ ràng; biến mục tiêu, đặc trưng và các chiều phân tích đã ổn định; rò rỉ thông tin
-và cách chia dữ liệu đã được xác định cho các bài toán dự báo; các vấn đề chất lượng quan trọng đã được xử lý hoặc được
-giữ lại có chủ đích; không dùng dữ liệu giả lập làm bằng chứng; dữ liệu đã chuẩn bị tạo lại được từ các tệp gốc. Cả sáu
-điều kiện đều được đáp ứng với AQ1 đến AQ3, nên Milestone 4 có thể bắt đầu với ba AQ này. AQ4 bước vào Milestone 4 dưới
-dạng câu hỏi xếp hạng, còn phần liên hệ chờ đợt thí điểm. Phụ lục VI (Bảng A.19) nêu tình trạng của từng điều kiện.
+**Điều kiện để bước vào Milestone 4.** Cả sáu điều kiện mà đề bài đặt ra để bắt đầu lập mô hình đều được đáp ứng với AQ1 đến AQ3, nên Milestone 4 có thể bắt đầu với ba AQ này [1]. AQ4 bước vào Milestone 4 dưới dạng câu hỏi xếp hạng, còn phần liên hệ chờ đợt thí điểm. Phụ lục VI (Bảng A.20) nêu tình trạng của từng điều kiện.

@@ -1,4 +1,6 @@
-## Appendix III – Validation and Test Protocol
+## Appendix III – Validation, Test and Prototype Protocol
+
+### 1. Validation and Test Protocol
 
 Figure A.2 draws the validation and test protocol of Section 4.2, from the first freeze to the single test on the
 2014 runs.
@@ -8,9 +10,9 @@ Figure A.2 draws the validation and test protocol of Section 4.2, from the first
 The protocol separates development from evaluation so that no information from the evaluation runs reaches any choice
 about the model, which is how leakage is avoided by design [40], [22]. It follows the two-step freeze proposed for
 predictive modeling: the question, splits, metrics and baselines are fixed before training, and the final model is
-fixed and test access recorded before testing [26]. Table A.5 lists the steps in order.
+fixed and test access recorded before testing [26]. Table A.13 lists the steps in order.
 
-**Table A.5. Validation and test protocol**
+**Table A.13. Validation and test protocol**
 
 | Step | Data | What happens | Why |
 | :---- | :---- | :---- | :---- |
@@ -35,13 +37,14 @@ Uncertainty for S1 comes from a paired two-level bootstrap: runs are resampled, 
 run, each run's list is re-formed as the top 25% of its resampled enrolments, and the model–rule difference is computed
 on the same resample, because treating nested observations as independent inflates false positives [32]. With only
 13 test runs of 348 to 2,021 enrolments, such intervals can be too narrow, so S1 also requires a one-sided sign-flip
-permutation test on the 13 per-run differences, and wins, ties and losses are reported with the unweighted mean of the
+permutation test on the 13 per-run differences, which asks how often differences as favourable would appear if the
+sign of each run's difference were random, and wins, ties and losses are reported with the unweighted mean of the
 per-run differences.
 
-Table A.6 gives the sample sizes behind these choices, computed from the prepared views without fitting a model;
+Table A.14 gives the sample sizes behind these choices, computed from the prepared views without fitting a model;
 outcome counts come from the 2013 runs only, so the 2014 outcomes stay unseen until step 6.
 
-**Table A.6. Sample sizes for development and evaluation**
+**Table A.14. Sample sizes for development and evaluation**
 
 | Quantity | Day 13 | Day 27 |
 | :---- | :---- | :---- |
@@ -59,10 +62,43 @@ outcome counts come from the 2013 runs only, so the 2014 outcomes stay unseen un
 | Test enrolments Withdrawn without a withdrawal day | 89 | 90 |
 | Test run size, smallest / largest | 350 / 2,079 | 348 / 2,021 |
 
-The minimum development size follows the three criteria of Riley et al.: expected shrinkage of at least 0.9, optimism
-in Nagelkerke R² of at most 0.05 and the overall risk estimated within 0.05 [14], under their default of an
+The minimum development size follows the three criteria of Riley et al. [14]: expected shrinkage of at least 0.9,
+meaning that the fitted effects need to be pulled back by no more than 10% on new data; optimism of at most 0.05 in
+Nagelkerke R², a measure of how much of the variation in the outcome the model explains, between the development data
+and new data; and the overall risk, the non-completion rate in the development data, estimated within 0.05, under their default of an
 anticipated Nagelkerke R² of 0.15 when no prior estimate exists [14]. The training runs hold about seven times the
 required size for the primary set, so the number of enrolments does not limit the choice of model. Transfer to a new
 run is a different matter: it rests on only 9 training runs, which is why it is tested by the run-level split rather
 than inferred from the sample size, and why per-module models remain unattractive, since each module's data are small
 and shrinkage does not rescue small samples [17].
+
+### 2. Prototype Protocol
+
+Section 7 states that the prototype of Level 2 was not run; this section gives the protocol it will follow.
+
+**Purpose.** The optional prototype of Level 2 tests whether the Level 1 choices are feasible and shows their
+trade-offs; it does not compete for the best score, and it requires no large-scale tuning [1]. This report does not
+run the prototype, so it states no model performance; it specifies how the prototype will run, so that whoever runs it
+follows the evaluation fixed in Part 4.
+
+**Steps.** Table A.15 gives each step of the brief with how the prototype carries it out. Because the proposal is
+frozen first, the prototype can confirm or refute the choices of Level 1, but it cannot reshape them after its results
+are seen.
+
+**Table A.15. Prototype protocol**
+
+| Brief step | Specification |
+| :---- | :---- |
+| 1. Reproduce data input | Load OULAD-N04-prepared-1.0, check its file hashes, change no raw data |
+| 2. Implement baseline | Rule-ranked list, background-only model and random list, before any candidate |
+| 3. Implement candidate | Penalised logistic regression (primary) and gradient-boosted trees (challenger), as in Table 3.1 |
+| 4. Split and fit correctly | Protocol of Section 4.2 and Table A.13 |
+| 5. Evaluate | Metrics of the Evaluation Plan (Table 4.1) and criteria of Table 4.2, including unfavourable results |
+| 6. Error and subgroup analysis | Error slices and confirmatory fairness check of Section 4.4 |
+| 7. Compare to Level 1 expectation | Whether S1 holds and the challenger's margin was met; any change recorded with its reason |
+| 8. Reproducibility | Scripts, seeds, package and data versions, folds and test-access record in an experiment log |
+
+**A baseline may win.** A baseline that matches the candidate is an acceptable outcome. The brief notes that a simple
+baseline can be the better choice when the improvement of a complex model is small and its interpretability is lower
+[1]; in that case the rule or the background-only model is carried forward with its reasons, and the change is recorded
+in the experiment log.

@@ -1,8 +1,8 @@
 ## 6.3. Chiến lược chia dữ liệu và kiểm soát rò rỉ thông tin
 
-**Rò rỉ thông tin.** Rò rỉ thông tin là việc dùng thông tin về biến mục tiêu mà tại thời điểm dự báo chưa thể có; hiện tượng này khiến mô hình đạt kết quả đánh giá tốt hơn mức có thể đạt khi đưa vào sử dụng [10], [11]. Đề bài nêu năm dạng rò rỉ thông tin trong dữ liệu giáo dục và yêu cầu một quy tắc phòng ngừa cho từng dạng [1]. Bảng 6.2 gắn mỗi dạng với trường hợp tương ứng trong OULAD, biện pháp kiểm soát mà pipeline áp dụng và phép kiểm tra sẽ báo lỗi (FAIL) nếu biện pháp đó bị vi phạm.
+**Rò rỉ thông tin.** Rò rỉ thông tin là việc dùng thông tin về biến mục tiêu mà tại thời điểm dự báo chưa thể có; hiện tượng này khiến mô hình đạt kết quả đánh giá tốt hơn mức có thể đạt khi đưa vào sử dụng [10], [11]. Đề bài nêu năm dạng rò rỉ thông tin trong dữ liệu giáo dục và yêu cầu một quy tắc phòng ngừa cho từng dạng [1]. Bảng 6.1 gắn mỗi dạng với trường hợp tương ứng trong OULAD, biện pháp kiểm soát mà pipeline áp dụng và phép kiểm tra sẽ báo lỗi (FAIL) nếu biện pháp đó bị vi phạm.
 
-**Bảng 6.2. Các rủi ro rò rỉ thông tin và biện pháp kiểm soát**
+**Bảng 6.1. Các rủi ro rò rỉ thông tin và biện pháp kiểm soát**
 
 | Rủi ro (đề bài) | Trường hợp trong OULAD | Biện pháp kiểm soát | Kiểm tra |
 | :---- | :---- | :---- | :---- |

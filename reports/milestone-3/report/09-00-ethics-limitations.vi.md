@@ -20,10 +20,7 @@ lệch tỷ lệ của mức đó.
 
 **Quyền riêng tư.** Quy định về quyền riêng tư áp dụng ở hai cấp. OULAD đã được ẩn danh theo chuẩn k-ẩn danh
 (k-anonymity) với k = 5, nghĩa là mỗi tổ hợp thuộc tính có thể dùng để nhận diện một sinh viên đều xuất hiện ở ít nhất năm sinh viên [2]. Theo Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 của Việt Nam, dữ liệu đã khử định danh nằm ngoài định
-nghĩa dữ liệu cá nhân và hành vi tái định danh dữ liệu đó bị cấm [16]; vì vậy, nhóm không liên kết OULAD với bất kỳ nguồn dữ liệu nào khác. Đối với đợt thí điểm dùng hồ sơ của chính trường, các quy định chặt chẽ hơn: thông tin sức khỏe, như
-tình trạng khuyết tật do sinh viên tự khai, là một ví dụ về dữ liệu cá nhân nhạy cảm [17]; việc xử lý dữ liệu phải gắn với
-một mục đích cụ thể [17]; luật cũng không có ngoại lệ chung nào cho phép xử lý dữ liệu phục vụ nghiên cứu mà không cần
-sự đồng ý của chủ thể dữ liệu [16]. Do đó, đợt thí điểm cần có cơ sở pháp lý riêng trước khi chuẩn bị bất kỳ hồ sơ sinh viên nào.
+nghĩa dữ liệu cá nhân và hành vi tái định danh dữ liệu đó bị cấm [16]; vì vậy, nhóm không liên kết OULAD với bất kỳ nguồn dữ liệu nào khác. Đợt thí điểm dùng hồ sơ của chính trường phải tuân theo các quy định chặt chẽ hơn về dữ liệu cá nhân nhạy cảm, như tình trạng khuyết tật do sinh viên tự khai [17] và cần có cơ sở pháp lý riêng trước khi chuẩn bị bất kỳ hồ sơ sinh viên nào (Phụ lục I).
 
 **Giới hạn của các nhận định.** Dữ liệu đặt ra bốn giới hạn cho các nhận định. Thứ nhất, các kết quả mô tả các module đào tạo từ xa tại UK trong giai đoạn 2013–2014 và phải được kiểm tra lại trên hồ sơ của trường trước khi dùng làm căn cứ cho một quyết định.
 Thứ hai, các mối liên hệ trong AQ2 không phải quan hệ nhân quả: một dấu hiệu đi kèm việc không hoàn thành có thể là biểu

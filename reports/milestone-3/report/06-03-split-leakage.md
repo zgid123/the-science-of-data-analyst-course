@@ -2,10 +2,10 @@
 
 **Leakage.** Leakage is the use of information about the target that would not be available at the moment of
 prediction, and it makes a model look better in evaluation than it can be in use [10], [11]. The brief names five
-forms of it for education data and asks for a rule against each [1]. Table 6.2 matches each form to its case in
+forms of it for education data and asks for a rule against each [1]. Table 6.1 matches each form to its case in
 OULAD, the control the pipeline applies and the check that would fail if the control broke.
 
-**Table 6.2. Leakage risks and controls**
+**Table 6.1. Leakage risks and controls**
 
 | Risk (brief) | Case in OULAD | Control | Check |
 | :---- | :---- | :---- | :---- |
