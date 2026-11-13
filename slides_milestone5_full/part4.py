@@ -150,8 +150,8 @@ def s71(prs):
         [(T("These are associations, not causes."), AGENT_INK, True)]]
     kit.room("aq2 text", y + rich_h(paras, rw), END)
     rich(s, rx, y, rw, paras, pt=fit_pt(paras, rw, END - y))
-    src(s, "Source: Milestone 5 report, Sections 9 and 11.3, Table 9.1, Figure 11.2 and Appendices VIII and XIII, "
-           "Table A.33.")
+    src(s, "Source: Milestone 5 report, Sections 9 and 11.3, Table 9.1 and Appendices VIII and XIII, "
+           "Figure A.3 and Table A.33.")
 
 
 # ----------------------------------------------------------------------------- 72 AQ2 by module

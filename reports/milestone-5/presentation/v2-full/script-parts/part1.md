@@ -29,9 +29,9 @@
 ## Slide 5 – How the Talk Is Built   [Abstract]   [Line: main]
 **Lead:** The talk follows the project's chain of eleven links, from the stakeholder problem to the decisions, in six parts and the conclusions.
 **On the slide:** Six lanes linked by arrows, one per part, each with its milestone, its links of the project chain and one sentence: Part 1 The Problem (Milestone 1; links 1 stakeholder problem, 2 measurable goal, 3 analytical questions); Part 2 The Data (Milestones 2–3; 4 required data, 5 selected open dataset, 6 actual data fit and gaps); Part 3 Preparation (Milestone 3; 7 prepared data); Part 4 Method (Milestone 4; 8 candidate methods, 9 evaluation design); Part 5 Evidence (Milestone 5; 10 findings and limitations); Part 6 Integration and Use (Milestone 5; 11 educational decision support). Key: numbered boxes, D1–D3, AQ1–AQ4, KPI.
-**Visual:** sequence of six parts carrying the eleven links of the report's Figure 1.1, so each later slide can be placed on the map.
+**Visual:** sequence of six parts carrying the eleven links of the report's Figure A.1 (Appendix I), so each later slide can be placed on the map.
 **Speaker notes:** The talk follows the chain our project followed, eleven links across five milestones, in six parts. Part one, the problem: the context, the goal, three decisions we call D1 to D3, and four analytical questions, AQ1 to AQ4. Part two, the data: what the questions require, the dataset we chose, how well it fits and its quality. Part three, preparation: who counts, the early-sign rule, and how we keep future information out. Part four, the method: how each question is answered and judged, all fixed before any result. Part five, the evidence: AQ1 and AQ2 answered on 2013 and 2014, and what AQ3 and AQ4 would produce. Part six, use: what each decision can rely on now, the limits, the next steps and how we used AI. Then the conclusions. We begin part one with the educational context.
-**Sources:** [M5 §1.2 Figure 1.1]
+**Sources:** [M5 §1.2, App I Figure A.1]
 
 ## Slide 6 – Educational Context   [1 Introduction]   [Line: main]
 **Lead:** The university already holds the records that could show students drifting away, but has not decided which questions they should answer.

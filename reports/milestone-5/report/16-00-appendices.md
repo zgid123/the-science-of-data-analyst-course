@@ -1,7 +1,7 @@
 # Appendices
 
-The appendices hold the detail behind the main text, in the order of the sections they support: the context and
-stakeholders (Appendix I), the goal, indicators and decisions (Appendix II), the quality check, AQ Revision Log and
+The appendices hold the detail behind the main text, in the order of the sections they support: the context,
+stakeholders and logic chain of the project (Appendix I), the goal, indicators and decisions (Appendix II), the quality check, AQ Revision Log and
 Controlled Change Log (Appendix III), the data requirements and dataset selection (Appendix IV), the dataset tables
 and gaps (Appendix V), the data profile and quality issue log (Appendix VI), the preparation and leakage controls
 (Appendix VII), the Modeling Briefs and method rationale (Appendix VIII), the evaluation design (Appendix IX), the

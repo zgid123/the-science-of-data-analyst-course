@@ -1,6 +1,6 @@
 # 12. Hạn chế và hướng phát triển
 
-Để nêu đúng giới hạn của các phát hiện trên, nhóm chúng em phân biệt hai tình huống: "không tìm thấy bằng chứng" khi đã so sánh nhưng không thấy chênh lệch rõ ràng
+Để nêu đúng giới hạn của các phát hiện trên, nhóm phân biệt hai tình huống: "không tìm thấy bằng chứng" khi đã so sánh nhưng không thấy chênh lệch rõ ràng
 và "không có dữ liệu để kiểm tra" khi OULAD và mọi bộ dữ liệu đã sàng lọc đều thiếu dữ liệu cần thiết. Bảng 12.1 là danh mục hạn chế, còn Bảng
 A.41 (Phụ lục XV) bổ sung ảnh hưởng của từng hạn chế. Các kết quả mô tả những module đào tạo từ xa ở UK
 trong giai đoạn 2013–2014, trong khi những yếu tố dự báo được việc học thành công thay đổi theo điều kiện giảng dạy [15],

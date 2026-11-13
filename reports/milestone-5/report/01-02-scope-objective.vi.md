@@ -5,12 +5,10 @@ phần kết hợp của chương trình đào tạo, xét theo từng học k�
 kỳ. Hoàn thành học phần nghĩa là đạt học phần, còn thôi học được xác định theo Thông tư 83/2026, không tính các trường
 hợp tạm ngừng học có phép và chuyển chương trình đào tạo. Quy định về kiểm tra, đánh giá học phần, tuyển sinh và hỗ trợ
 tài chính, hoàn cảnh của sinh viên ngoài học phần, việc đánh giá giảng viên và mọi quyết định tự động đều nằm ngoài
-phạm vi (Phụ lục I). Mục tiêu của nhóm chúng em là biến dữ liệu sẵn có của trường thành một danh sách ngắn và kịp thời
+phạm vi (Phụ lục I). Mục tiêu của nhóm là biến dữ liệu sẵn có của trường thành một danh sách ngắn và kịp thời
 gồm những sinh viên cần liên hệ ở mỗi đợt lập danh sách, kèm một lý do quan sát được cho mỗi tên, đồng thời rút ra các quy luật giúp chương trình đào tạo thấy sinh viên không hoàn thành học phần ở đâu và vào lúc nào. Vì chưa có bộ dữ liệu mở nào về
-các học phần ở Việt Nam, chúng em dùng Bộ dữ liệu phân tích học tập của Đại học Mở Anh (OULAD) làm bộ dữ liệu thay thế
+các học phần ở Việt Nam, nhóm dùng Bộ dữ liệu phân tích học tập của Đại học Mở Anh (OULAD) làm bộ dữ liệu thay thế
 (Mục 4.1); mọi kết quả phải được kiểm chứng lại trên dữ liệu của trường trước khi được dùng làm căn cứ cho một quyết định. AQ1 và AQ2 đã
-được trả lời trên toàn bộ 22 kỳ mở module của năm 2013 và năm 2014 (kỳ mở – một lần mở module trong một học kỳ, ví dụ 2013B), còn AQ3 và AQ4 được trả lời bằng thực nghiệm Level 2 (mức tự chọn của Milestone 4: chạy nguyên mẫu cho AQ3 và AQ4), trong đó mô hình được xây dựng trên dữ liệu năm 2013 và kiểm tra một lần trên dữ liệu năm 2014 (Mục 10). Hình 1.1 trình bày chuỗi logic gồm mười một mắt xích của dự án, đi
+được trả lời trên toàn bộ 22 kỳ mở module của năm 2013 và năm 2014 (kỳ mở – một lần mở module trong một học kỳ, ví dụ 2013B), còn AQ3 và AQ4 được trả lời bằng thực nghiệm Level 2 (mức tự chọn của Milestone 4: chạy nguyên mẫu cho AQ3 và AQ4), trong đó mô hình được xây dựng trên dữ liệu năm 2013 và kiểm tra một lần trên dữ liệu năm 2014 (Mục 10). Dự án đi theo một chuỗi logic gồm mười một mắt xích, đi
 từ vấn đề của các bên liên quan đến các phát hiện và những quyết định mà các phát hiện này hỗ trợ; Mục 2 đến Mục 11
-lần lượt đi theo chuỗi này.
-
-![Hình 1.1. Chuỗi logic của dự án gồm mười một mắt xích qua Milestone 1–5](assets/figures/fig-1-1-project-chain.png){width=85%}
+lần lượt đi theo chuỗi này (Hình A.1, Phụ lục I).

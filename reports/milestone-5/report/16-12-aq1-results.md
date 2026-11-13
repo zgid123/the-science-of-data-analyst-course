@@ -2,6 +2,10 @@
 
 This appendix supports Section 11.2. It gives the definitions behind the AQ1 results, the outcome shares under both denominators in each year, the rates by module and start month, the effect of the denominator by run, the rates by group of students, the week of the first missed task by outcome and the comparison between 2013 and 2014.
 
+Figure A.2 shows the non-completion rate of each module in each year.
+
+![Figure A.2. Non-completion per module in 2013 and 2014, students registered at day 14, with 95% Wilson intervals; dashed line: pooled rate of the 22 runs, 45.3% (12,700 of 28,061)](assets/figures/fig-11-1-aq1-rates.png){width=100%}
+
 The first question is descriptive and asks what share of enrolments end in pass, fail or withdrawal, by module, run, start month and year, and in which week non-completers first miss an assessed task (AQ1, Section 3). Its answer sets the size of the problem that the early-sign rule, the model and the contact lists of the later questions address. We computed it on all 22 module runs, following the Milestone 4 plan in every step: on the 9 runs of 2013 (6 modules, 13,529 enrolments) and the 13 runs of 2014 (all 7 modules, 19,064 enrolments) apart, and on the 22 runs pooled (32,593 enrolments). Module CCC ran only in 2014, so it enters the 2014 and pooled figures and no 2013 figure. Using the 2014 runs for description leaves the AQ3 design as Milestone 4 fixed it (Change Log C15, Table A.8).
 
 Three definitions carry every number below. Non-completion is a final result of Fail or Withdrawn, and completion is Pass or Distinction. The primary denominator is the KPI population, the enrolments still registered at day 14 (registered by day 14, or with an unknown registration day, and not unregistered by it), which mirrors the add-drop rule of the primary KPI (Section 2.1); the second denominator is all enrolments. Week n covers days 7(n−1) to 7n−1 of the run, so the end of week 4 is day 27. Every rate carries a 95% Wilson score interval, and every difference between two rates a 95% Newcombe hybrid score interval.

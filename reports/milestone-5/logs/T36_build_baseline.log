@@ -1,0 +1,9 @@
+# 2026-11-13T14:23Z make build TASK=milestone-5 (after rebase, wording pass)
+PASS  milestone-5 figures            milestone-5: 3 figures → reports/milestone-5/report/assets/figures, 0 layout findings  (2 s)
+PASS  milestone-5 build en           [en] 56 sections → reports/milestone-5/build/N04_Milestone5_EN.docx  (47 Word sections, 22 landscape, 4 images, 3 figure  (12 s)
+PASS  milestone-5 build vi           [vi] 56 sections → reports/milestone-5/build/N04_Milestone5_VI.docx  (59 Word sections, 28 landscape, 4 images, 3 figure  (13 s)
+PASS  milestone-5 build_slides_milestone5_30 [vi] 30 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-30_VI.pptx  (12 s)
+PASS  milestone-5 build_slides_milestone5_full [en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.p  (40 s)
+
+5/5 steps passed
+# exit_status: 0

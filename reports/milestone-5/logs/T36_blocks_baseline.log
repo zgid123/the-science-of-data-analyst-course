@@ -1,0 +1,61 @@
+1. Introduction and Educational Context             0.54
+1.1. Motivation and Stakeholders                    0.46
+1.2. Scope and Project Objective                    1.54
+2. Business Understanding and Success Criteri       0.51
+2.1. Key Performance Indicators and Decisions       0.32
+  [table] Table 2.1. Final SMART Goal and KPIs      0.43
+  (text after) Table 2.1. Final SMART Goal and KPIs  0.20
+3. Analytical Questions and Analytics Levels        0.29
+  [table] Table 3.1. Final questions AQ1–AQ4        0.94
+  (text after) Table 3.1. Final questions AQ1–AQ4   0.16
+3.1. Quality Check of the Final Questions           0.34
+3.2. AQ Revision Log                                0.28
+  [table] Table 3.2. AQ Revision Log                0.58
+4. Data Requirements and Dataset Selection          0.42
+  [table] Table 4.1. AQ–Data Requirement Matrix     0.37
+4.1. Dataset Selection, Provenance and Licenc       0.38
+  [table] Table 4.2. Dataset Selection Matrix       0.25
+5. Dataset Description and Requirement–Data F       0.38
+  [table] Table 5.1. Key variables of OULAD         0.42
+5.1. Requirement–Data Fit and Question Status       0.29
+  [table] Table 5.2. AQ–Data Fit Matrix             0.37
+6. Data Understanding and Data Quality              0.54
+  [table] Table 6.1. Populations of the 2013 de     0.36
+6.1. Quality Findings                               0.43
+  [table] Table 6.2. Data Quality Issue Log         0.64
+6.2. Temporal Coverage, Representativeness an       0.43
+7. Data Preparation and Analytic-ready Data         0.30
+  [table] Table 7.1. Preparation Decision Matri     0.40
+7.1. Derived Variables, Encoding and Leakage        0.44
+7.2. Final Prepared Dataset and Reproducibili       0.36
+8. Modeling and Analysis Strategy                   0.44
+8.1. Baselines, Candidate Methods and Primary       0.25
+  [table] Table 8.1. Model and Method Selection     0.84
+  (text after) Table 8.1. Model and Method Selection  0.11
+9. Evaluation Design                                0.38
+  [table] Table 9.1. Evaluation Plan                0.60
+  (text after) Table 9.1. Evaluation Plan           0.03
+9.1. Validation, Metrics and Success Criteria       0.38
+9.2. Leakage, Fairness and Interpretability C       0.34
+10. Experimental Implementation and Results         0.48
+  [table] Table 10.1. Lists of 5 per 20 student     0.26
+  (text after) Table 10.1. Lists of 5 per 20 student  0.61
+11. Findings, Discussion and Decision Support       0.40
+11.1. Final Project Traceability Matrix             0.26
+  [table] Table 11.1. Final Project Traceabilit     0.46
+  (text after) Table 11.1. Final Project Traceabilit  0.07
+  [table] Table 11.2. Final Project Traceabilit     0.29
+11.2. AQ1: Completion and Timing of Non-compl       1.25
+11.3. AQ2: Early Signs Associated with Non-co       1.21
+11.4. AQ3 and AQ4: Early Warning and Ranked L       0.63
+11.5. Answers by Question and Decision Suppor       0.13
+  [table] Table 11.3. Final answers by question     0.63
+  (text after) Table 11.3. Final answers by question  0.24
+12. Limitations and Future Work                     0.37
+  [table] Table 12.1. Limitation log                0.49
+12.1. Future Work and Data Needed                   0.34
+13. Generative AI Use and Reflection                0.22
+13.1. AI Decision Log, Milestones 1–5               0.19
+13.2. Reflection on AI as a reasoning and wri       0.45
+14. Conclusion                                      1.31
+main content: 27.0 pages (pessimistic layout; --optimistic for the continuous flow)

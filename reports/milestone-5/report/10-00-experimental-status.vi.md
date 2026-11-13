@@ -1,12 +1,11 @@
 # 10. Triển khai thực nghiệm và kết quả
 
-Dự án đã hoàn thành Level 1 (mức bắt buộc), gồm chiến lược mô hình hóa ở Mục 8 và thiết kế đánh giá ở Mục 9. Nhóm chúng
-em cũng đã chạy nguyên mẫu (prototype) Level 2 tự chọn cho AQ3 và AQ4, tức là giao thức đã chốt ở Milestone 4 (Phụ lục
+Dự án đã hoàn thành Level 1 (mức bắt buộc), gồm chiến lược mô hình hóa ở Mục 8 và thiết kế đánh giá ở Mục 9. Nhóm cũng đã chạy nguyên mẫu (prototype) Level 2 tự chọn cho AQ3 và AQ4, tức là giao thức đã chốt ở Milestone 4 (Phụ lục
 X), được cài đặt bằng Python với polars, scikit-learn và statsmodels thành các bước 19 đến 23 của gói nộp cuối kỳ. Các
 mô hình được phát triển trên 9 kỳ mở năm 2013 với các fold loại trừ từng kỳ mở (leave-one-run-out), được chốt bằng mã
 băm của từng mô hình đã ước lượng, rồi được kiểm tra một lần duy nhất trên 13 kỳ mở năm 2014 (15.724 lượt đăng ký học
 chưa rút tại ngày 27, trong đó 6.911 lượt không hoàn thành học phần). Kế hoạch không quy định thước đo để tinh chỉnh mức
-điều chuẩn, nên trong các fold bên trong, chúng em chọn mức điều chuẩn cho log loss nhỏ nhất; lựa chọn này được đưa ra sau khi đã biết kết quả tinh chỉnh theo cả hai thước đo (C18). Các phân tích AQ1 và
+điều chuẩn, nên trong các fold bên trong, nhóm chọn mức điều chuẩn cho log loss nhỏ nhất; lựa chọn này được đưa ra sau khi đã biết kết quả tinh chỉnh theo cả hai thước đo (C18). Các phân tích AQ1 và
 AQ2 ở Mục 11 là phân tích mô tả và chẩn đoán, không phải nguyên mẫu này: hai phân tích đó không huấn luyện mô hình dự
 báo nào.
 
@@ -42,8 +41,8 @@ không đánh dấu nhóm nào (Mục 11.4).
 **So với kỳ vọng của Level 1.** Nguyên mẫu ủng hộ mọi lựa chọn của Level 1: mô hình chính, các phương pháp cơ sở và điều
 kiện đạt duy nhất. Kèm theo đó là hai lưu ý: xác suất vẫn không được hiển thị và mức tăng so với quy tắc đủ nhỏ để quy
 tắc là phương án thay thế đáng tin cậy. Một bản cài đặt độc lập của cùng giao thức, là bản nháp ở Milestone 4
-của chúng em, cho cùng các kết luận, với số sinh viên không hoàn thành có trong danh sách chênh nhau không quá 4. Các kỳ mở năm 2014 đã được mô tả cho AQ1
+của nhóm, cho cùng các kết luận, với số sinh viên không hoàn thành có trong danh sách chênh nhau không quá 4. Các kỳ mở năm 2014 đã được mô tả cho AQ1
 và AQ2 trước lần kiểm tra này (C15). Tuy vậy, các biến dự báo, cấu hình ứng viên, quy tắc chọn cấu hình và điều kiện đạt
 vẫn giữ nguyên như Milestone 4 đã cố định trên dữ liệu năm 2013, nên lần kiểm tra này vẫn xác nhận một thiết kế
-đã cố định từ trước, dù không phải là lần đầu tiên chúng em xem dữ liệu năm 2014. Gói nộp cuối kỳ chạy lại mọi bước từ
+đã cố định từ trước, dù không phải là lần đầu tiên nhóm xem dữ liệu năm 2014. Gói nộp cuối kỳ chạy lại mọi bước từ
 dữ liệu đã công bố với một giá trị khởi tạo ngẫu nhiên (seed) duy nhất; các tệp kết quả được đối chiếu đến từng byte.

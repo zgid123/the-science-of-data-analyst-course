@@ -21,7 +21,7 @@ so với quy tắc dấu hiệu sớm và đáp ứng điều kiện đạt duy 
 sau không hoàn thành mà không nhóm nào bị đánh dấu trong kiểm tra công bằng (Mục 10 và 11.4).
 
 Vì vậy, phạm vi kết luận phụ thuộc vào loại phân tích của từng câu trả lời. Trên OULAD, một danh sách sớm không thể chỉ
-dựa vào các bài bị bỏ lỡ; các dấu hiệu có thể đi kèm mỗi tên làm lý do để cán bộ kiểm tra. Nhóm chúng em chưa
+dựa vào các bài bị bỏ lỡ; các dấu hiệu có thể đi kèm mỗi tên làm lý do để cán bộ kiểm tra. Nhóm chưa
 thể kết luận ba điều: các dấu hiệu này gây ra việc không hoàn thành; nguy cơ do mô hình ước lượng là xác suất đáng tin cậy cho từng kỳ mở;
 việc liên hệ với một sinh viên trong danh sách làm tăng tỷ lệ hoàn thành. Lý do là một mô hình hồi quy nắm bắt mối liên
 hệ mang tính mô tả chứ không mang tính nhân quả [10], còn câu hỏi về hiệu quả cần đến thử nghiệm ngẫu nhiên có đối chứng

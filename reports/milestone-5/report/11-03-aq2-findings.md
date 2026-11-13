@@ -22,7 +22,5 @@ other four signs still do.
 
 Confidence is moderate: two years agree, but the click signs rest on
 a known misfit and associations that unrecorded reasons could explain. The signs give each name on a D1 list a factual
-reason, while contact based on them stays an option to test. Figure 11.2 shows the five signs, mutually adjusted, in
+reason, while contact based on them stays an option to test. Figure A.3 (Appendix XIII) shows the five signs, mutually adjusted, in
 each year.
-
-![Figure 11.2. Mutually adjusted risk difference in later non-completion between enrolments with and without each early sign at day 27, 2013 and 2014, with 95% intervals; task signs: runs with a task due by day 27 (n = 9,960 and 12,585); click signs: all runs (n = 11,811 and 15,724)](assets/figures/fig-11-2-aq2-associations.png){width=100%}

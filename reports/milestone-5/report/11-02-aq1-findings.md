@@ -22,6 +22,4 @@ non-completers, which is why the early-sign rule counts inactivity.
 
 The answer has high confidence for OULAD 2013–2014: two independent computations agree in each year, while validity for
 the university's courses remains open. It gives D2 a hypothesis on where support time would go first, to be checked on
-the university's records. Figure 11.1 shows the rate of each module in each year.
-
-![Figure 11.1. Non-completion per module in 2013 and 2014, students registered at day 14, with 95% Wilson intervals; dashed line: pooled rate of the 22 runs, 45.3% (12,700 of 28,061)](assets/figures/fig-11-1-aq1-rates.png){width=100%}
+the university's records. Figure A.2 (Appendix XII) shows the rate of each module in each year.

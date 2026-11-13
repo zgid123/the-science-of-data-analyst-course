@@ -1,6 +1,13 @@
 ## Appendix I – Educational Context, Stakeholders and Scope
 
-This appendix supports Section 1. It gives the regulatory and published background of the problem, the stakeholders with their needs and decisions, how those needs were established and settled, and the areas that lie outside the scope of the project.
+This appendix supports Section 1. It gives the regulatory and published background of the problem, the stakeholders with their needs and decisions, how those needs were established and settled, the areas that lie outside the scope of the project, and the logic chain that the report follows.
+
+**The logic chain of the project.** The project follows one analytics chain from the stakeholder problem to the
+decisions that its findings support, and each milestone produced some of its links. Figure A.1 shows this chain in
+eleven links, with the milestone that produced each link and one concrete item per link; Sections 2 to 11 follow it in
+order.
+
+![Figure A.1. Logic chain of the project in eleven links across Milestones 1–5](assets/figures/fig-1-1-project-chain.png){width=85%}
 
 **The educational setting.** The project is set in a Vietnamese university that is expanding online and blended
 learning. An online course runs entirely on the university's LMS, the web platform on

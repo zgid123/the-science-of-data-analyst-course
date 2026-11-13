@@ -2,6 +2,10 @@
 
 This appendix supports Section 11.3. It gives the population, signs and model of AQ2, the association of each sign in 2013 and in 2014 with its prevalence and odds ratio, the estimates by module, the sensitivity runs and model checks, the estimates by group of students, the comparison of the two years, the several-modules sign and what the results mean for the project.
 
+Figure A.3 shows the five early signs, each adjusted for the others, in each year.
+
+![Figure A.3. Mutually adjusted risk difference in later non-completion between enrolments with and without each early sign at day 27, 2013 and 2014, with 95% intervals; task signs: runs with a task due by day 27 (n = 9,960 and 12,585); click signs: all runs (n = 11,811 and 15,724)](assets/figures/fig-11-2-aq2-associations.png){width=100%}
+
 Section 11.2 showed that nearly half of the enrolments still registered at day 14 did not complete, and that most non-completers had not yet missed a task by the end of week 4. The second question is diagnostic and asks which signs recorded by the end of week 4 (missed and late tasks, inactivity, activity against the run's median) go with later non-completion, compared within each module (AQ2, Section 3). Its answer supplies the reasons shown beside each name on a contact list and tests whether the parts of the early-sign rule (C10) carry information. As a diagnostic question on observational data, it is answered as an association: a regression used to capture how a sign and an outcome move together describes that association and does not test a cause [10]. No estimate below is an effect of a sign on completion.
 
 ### Population, signs and model

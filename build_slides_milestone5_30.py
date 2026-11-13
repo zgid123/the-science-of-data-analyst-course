@@ -1287,7 +1287,7 @@ def s_status(prs):
     src(s, "Source: Milestone 5 report, Sections 3, 10 and 11, Table 3.1.")
 
 
-# AQ1 non-completion per module, students registered at day 14 (Section 11.2, Figure 11.1, Table A.30): rate and
+# AQ1 non-completion per module, students registered at day 14 (Section 11.2; Appendix XII, Figure A.2, Table A.30): rate and
 # 95% Wilson interval in %.
 AQ1_2013 = {"AAA": (24.9, 20.7, 29.5), "BBB": (45.8, 44.2, 47.5), "DDD": (53.5, 51.7, 55.3), "EEE": (34.8, 31.8, 37.9),
             "FFF": (46.7, 45.0, 48.3), "GGG": (36.1, 33.0, 39.2)}
@@ -1347,7 +1347,7 @@ def s_aq1_size(prs):
         tb("February above October: ", "51.6% against 42.4% in 2013, 49.6% against 41.6% in 2014."),
         tb("Check: ", "prepared views and raw tables agree in all 176 outcome cells.")]
     rich(s, rx, y + 1.9, rw, facts, pt=fit_pt(facts, rw, END - y - 1.9))
-    src(s, "Source: Milestone 5 report, Section 11.2, Figure 11.1 and Appendix XII, Tables A.30 and A.32.")
+    src(s, "Source: Milestone 5 report, Section 11.2 and Appendix XII, Figure A.2 and Tables A.30 and A.32.")
 
 
 YEAR_DIFF = [("All enrolments, all runs", 2.3, 1.2, 3.4, False),
@@ -1430,7 +1430,7 @@ def s_aq1_missed(prs):
     src(s, "Source: Milestone 5 report, Section 11.2, Appendix I and Appendix XII, Table A.31.")
 
 
-# AQ2 mutually adjusted risk differences at day 27, percentage points, 95% intervals (Section 11.3, Figure 11.2,
+# AQ2 mutually adjusted risk differences at day 27, percentage points, 95% intervals (Section 11.3; Appendix XIII, Figure A.3;
 # Table A.33): (label, 2013 estimate, low, high, 2014 estimate, low, high), sorted by the 2013 estimate.
 AQ2 = [("Missed task", 40.8308, 37.7305, 43.9311, 39.2638, 36.4493, 42.0783),
        ("Late TMA", 20.1978, 15.8725, 24.5231, 20.2543, 15.6397, 24.8689),
@@ -1490,8 +1490,8 @@ def s_aq2_signs(prs):
         [(T("These are associations, not causes."), AGENT_INK, True)]]
     kit.room("aq2 text", y + rich_h(paras, rw), END)
     rich(s, rx, y, rw, paras, pt=fit_pt(paras, rw, END - y))
-    src(s, "Source: Milestone 5 report, Sections 9 and 11.3, Table 9.1, Figure 11.2 and Appendices VIII and XIII, "
-           "Table A.33.")
+    src(s, "Source: Milestone 5 report, Sections 9 and 11.3, Table 9.1 and Appendices VIII and XIII, "
+           "Figure A.3 and Table A.33.")
 
 
 def s_aq2_robust(prs):

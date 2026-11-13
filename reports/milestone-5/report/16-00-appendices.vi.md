@@ -1,7 +1,7 @@
 # Phụ lục
 
-Các phụ lục trình bày chi tiết làm cơ sở cho phần nội dung chính, theo thứ tự của các mục mà từng phụ lục hỗ trợ: bối cảnh
-và các bên liên quan (Phụ lục I); mục tiêu, các chỉ số và các quyết định (Phụ lục II); kiểm tra chất lượng AQ, Nhật ký
+Các phụ lục trình bày chi tiết làm cơ sở cho phần nội dung chính, theo thứ tự của các mục mà từng phụ lục hỗ trợ: bối cảnh,
+các bên liên quan và chuỗi logic của dự án (Phụ lục I); mục tiêu, các chỉ số và các quyết định (Phụ lục II); kiểm tra chất lượng AQ, Nhật ký
 điều chỉnh AQ (AQ Revision Log) và Nhật ký thay đổi có kiểm soát (Phụ lục III); yêu cầu dữ liệu và lựa chọn bộ dữ liệu (Phụ
 lục IV); các bảng của bộ dữ liệu và khoảng trống dữ liệu (Phụ lục V); kết quả khảo sát dữ liệu và Nhật ký vấn đề chất
 lượng dữ liệu (Phụ lục VI); khâu chuẩn bị dữ liệu và các biện pháp kiểm soát rò rỉ thông tin (Phụ lục VII); các Modeling

@@ -904,7 +904,7 @@ def s65(prs):
     pt = fit_pt(facts, rw, ky2 - 0.15 - y)
     kit.room("aq1 module facts", rich_h(facts, rw, pt), ky2 - 0.15 - y)
     rich(s, rx, y, rw, facts, pt=pt)
-    src(s, "Source: Milestone 5 report, Section 11.2, Figure 11.1, and Appendix XII, Table A.30.")
+    src(s, "Source: Milestone 5 report, Section 11.2 and Appendix XII, Figure A.2 and Table A.30.")
 
 
 # Table A.29: (label, failed, withdrawn, total non-completion, n)

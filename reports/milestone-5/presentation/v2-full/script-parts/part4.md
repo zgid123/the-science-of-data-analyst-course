@@ -23,16 +23,16 @@ and criterion cards (structure: which sign is defined where).
 
 ## Slide 71 – AQ2: Five Early Signs   [11 Findings]   [Line: main]
 **Lead:** All five early signs, inactivity included, go with later non-completion within module run, by similar amounts in 2013 and 2014.
-**On the slide:** Chart (Figure 11.2): mutually adjusted risk difference, 2013 / 2014, points with 95% intervals:
+**On the slide:** Chart (Figure A.3): mutually adjusted risk difference, 2013 / 2014, points with 95% intervals:
 missed task 40.8 (37.7–43.9) / 39.3 (36.4–42.1); late TMA 20.2 / 20.3; no click in the last 7 days 14.5 / 15.8;
 activity below the run median 13.4 / 14.6; no click before the start 10.6 / 8.7. The five signs defined; risk
 difference defined; population: registered at day 27, 11,811 enrolments in 2013 (44.4% non-completion) and 15,724 in
 2014 (44.0%), task signs on 9,960 and 12,585; criterion: at least 5 points, interval excluding 0, same direction in
 two-thirds of modules. These are associations, not causes.
-**Visual:** the report's Figure 11.2 as a dot plot with 95% intervals, grey dots for 2013 and orange for 2014, dashed
+**Visual:** the report's Figure A.3 as a dot plot with 95% intervals, grey dots for 2013 and orange for 2014, dashed
 line at the 5-point criterion (comparison with uncertainty).
 **Speaker notes:** With the method fixed, here are the results. Each dot is a risk difference: how many more percentage points of later non-completion students with the sign show, against students without it in the same run. A missed task by day 27 goes with 40.8 more points in 2013 and 39.3 in 2014; in raw terms, 90.0 percent of the 2013 students with a missed task did not complete, against 39.6 percent without one. A late TMA goes with 20.2 and 20.3 points. No click in the last seven days, 14.5 and 15.8. Activity below the run median, 13.4 and 14.6. No click before the start, 10.6 and 8.7. All five clear the criterion in both years, and no sign moves by more than two points between them. These are associations, not causes. Do they hold module by module?
-**Sources:** [M5 §11.3 Figure 11.2], [M5 App XIII Table A.33], [M5 §9 Table 9.1]
+**Sources:** [M5 §11.3], [M5 App XIII Figure A.3, Table A.33], [M5 §9 Table 9.1]
 
 ## Slide 72 – AQ2: Consistent Across Modules   [11 Findings]   [Line: detail]
 **Lead:** Each sign points the same way in every module in 2013 and in 29 of 30 module estimates in 2014, but its size varies between modules.

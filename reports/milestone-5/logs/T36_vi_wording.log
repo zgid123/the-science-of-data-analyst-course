@@ -1,0 +1,24 @@
+# 2026-11-13T14:22Z venv/bin/python reports/milestone-5/code/t34_vi_wording.py --write (after rebase onto origin/main e5c8d95)
+reports/milestone-5/report/00-0-title-page.vi.md: header 1
+reports/milestone-5/report/00-1-abstract.vi.md: team 3, office 1
+reports/milestone-5/report/01-02-scope-objective.vi.md: team 2
+reports/milestone-5/report/05-01-requirement-data-fit.vi.md: team 1
+reports/milestone-5/report/08-00-modeling-strategy.vi.md: team 3
+reports/milestone-5/report/10-00-experimental-status.vi.md: team 4
+reports/milestone-5/report/11-00-findings-overview.vi.md: team 2
+reports/milestone-5/report/11-02-aq1-findings.vi.md: team 1
+reports/milestone-5/report/11-03-aq2-findings.vi.md: team 1
+reports/milestone-5/report/12-00-limitations.vi.md: team 1
+reports/milestone-5/report/13-00-genai-reflection.vi.md: team 8
+reports/milestone-5/report/14-00-conclusion.vi.md: team 1
+reports/milestone-5/report/16-03-aq-quality-revision.vi.md: office 3
+reports/milestone-5/report/16-12-aq1-results.vi.md: team 1
+reports/milestone-5/report/16-13-aq2-results.vi.md: team 3
+reports/milestone-5/report/16-14-aq3-aq4-answers.vi.md: team 1, office 3
+reports/milestone-5/report/16-15-limitations-future.vi.md: team 6, office 2
+reports/milestone-5/report/16-16-ai-decision-log.vi.md: team 25
+reports/milestone-5/report/00-0-title-page.md: header 1
+TOTAL {'header': 2, 'team': 63, 'office': 9}
+new words after 'nhóm': [('đã', 6), ('kiểm', 5), ('dùng', 3), ('chạy', 3), ('chọn', 3), ('xếp', 2), ('cũng', 2), ('tính', 2), ('ước', 2), ('phân', 2), ('áp', 2), ('bằng', 2), ('quyết', 2), ('giải', 1), ('có', 1), ('không', 1), ('là', 1), ('thiết', 1), ('xác', 1), ('xem', 1), ('sử', 1), ('chưa', 1), ('lặp', 1), ('từ', 1), ('trình', 1), ('nêu', 1), ('đề', 1), ('ghi', 1), ('phản', 1), ('hay', 1), ('như', 1), ('chấp', 1), ('thực', 1), ('mới', 1)]
+written
+# exit_status: 0

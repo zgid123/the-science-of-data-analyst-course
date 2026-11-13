@@ -820,8 +820,8 @@ VI = {
         'Kiểm tra: ',
     'prepared views and raw tables agree in all 176 outcome cells.':
         'bảng dữ liệu đã chuẩn bị và bảng gốc khớp nhau ở cả 176 ô kết quả.',
-    'Source: Milestone 5 report, Section 11.2, Figure 11.1 and Appendix XII, Tables A.30 and A.32.':
-        'Nguồn: Báo cáo Milestone 5, Mục 11.2, Hình 11.1 và Phụ lục XII, Bảng A.30 và A.32.',
+    'Source: Milestone 5 report, Section 11.2 and Appendix XII, Figure A.2 and Tables A.30 and A.32.':
+        'Nguồn: Báo cáo Milestone 5, Mục 11.2 và Phụ lục XII, Hình A.2, Bảng A.30 và A.32.',
     'AQ1: The Denominator Matters':
         'AQ1: Mẫu số quyết định kết quả',
     "(~48 seconds) Runs differ, from twenty-four point nine percent in AAA 2013J to fifty-eight point three in CCC 2014B, and the denominator alone moves one run's rate by up to thirteen point six points. Now the years. Count every enrolment, and 2014 looks worse by two point three points. Count only those registered at day fourteen, and 2014 is slightly better, with an interval including zero. In the six modules run in both years, it's three point five points better. Same data, opposite stories, because more 2014 enrolments left before day fourteen: sixteen point two percent against ten point seven. Now, timing. [click]":
@@ -920,8 +920,8 @@ VI = {
         'ít nhất 5 điểm, khoảng tin cậy không chứa 0 và cùng chiều ở hai phần ba số module.',
     'These are associations, not causes.':
         'Đây là mối liên hệ, không phải nguyên nhân.',
-    'Source: Milestone 5 report, Sections 9 and 11.3, Table 9.1, Figure 11.2 and Appendices VIII and XIII, Table A.33.':
-        'Nguồn: Báo cáo Milestone 5, Mục 9 và 11.3, Bảng 9.1, Hình 11.2 và Phụ lục VIII và XIII, Bảng A.33.',
+    'Source: Milestone 5 report, Sections 9 and 11.3, Table 9.1 and Appendices VIII and XIII, Figure A.3 and Table A.33.':
+        'Nguồn: Báo cáo Milestone 5, Mục 9 và 11.3, Bảng 9.1 và Phụ lục VIII và XIII, Hình A.3 và Bảng A.33.',
     'AQ2: How Far the Signs Hold':
         'AQ2: Các dấu hiệu vững đến đâu',
     '(~49 seconds) We tried to break this result. Between the years, no sign moves by more than two points, and each keeps its direction in every module and under six sensitivity runs. One small exception: a late assignment in AAA in 2014, on three hundred forty-eight students, with an interval including zero. One real weakness: our click signs are yes or no. With clicks added as a continuous measure, below-median activity shrinks to five point eight points in 2013, and in 2014 it no longer meets our criterion. The other four signs still do. So confidence is moderate, and these are associations, not causes. [click]':

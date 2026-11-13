@@ -1,6 +1,6 @@
 ## 11.3. AQ2: Các dấu hiệu sớm có liên hệ với việc không hoàn thành
 
-Nhóm chúng em ước lượng AQ2 trên sinh viên còn đăng ký học (chưa rút) tại ngày 27: trước hết trên 11.811 lượt đăng ký
+Nhóm ước lượng AQ2 trên sinh viên còn đăng ký học (chưa rút) tại ngày 27: trước hết trên 11.811 lượt đăng ký
 học năm 2013 (tỷ lệ không hoàn thành 44,4%), rồi lặp lại trên 15.724 lượt năm 2014 (44,0%), có cả module CCC.
 Mô hình là hồi quy logistic gồm hiệu ứng cố định theo kỳ mở, các biến đặc điểm cá nhân và các số hạng tương tác dấu
 hiệu × module; các dấu hiệu về bài được chấm điểm chỉ xác định được ở những kỳ mở có bài đến hạn tính đến hết ngày 27
@@ -29,7 +29,5 @@ dấu hiệu còn lại vẫn đạt.
 Độ tin cậy của câu trả lời ở mức trung bình: kết quả hai năm khớp nhau, nhưng các dấu hiệu lượt nhấp dựa trên một mô
 hình chưa khớp hết với dữ liệu (như vừa nêu) và trên những mối liên hệ mà các nguyên nhân không được ghi nhận trong dữ
 liệu cũng có thể giải thích. Các dấu hiệu cho mỗi tên trong danh sách liên hệ (D1) một lý do cụ thể, còn việc liên hệ
-dựa trên các dấu hiệu này vẫn là phương án cần thử nghiệm. Hình 11.2 trình bày mức liên hệ của năm dấu hiệu trong từng
+dựa trên các dấu hiệu này vẫn là phương án cần thử nghiệm. Hình A.3 (Phụ lục XIII) trình bày mức liên hệ của năm dấu hiệu trong từng
 năm, mỗi dấu hiệu đã được hiệu chỉnh theo các dấu hiệu còn lại.
-
-![Hình 11.2. Chênh lệch nguy cơ không hoàn thành cuối kỳ giữa các lượt đăng ký học có và không có từng dấu hiệu sớm tại ngày 27, đã hiệu chỉnh đồng thời theo các dấu hiệu còn lại, năm 2013 và năm 2014, kèm khoảng tin cậy 95%; dấu hiệu về bài được chấm điểm: các kỳ mở có bài đến hạn tính đến hết ngày 27 (n = 9.960 và 12.585); dấu hiệu lượt nhấp: mọi kỳ mở (n = 11.811 và 15.724)](assets/figures/fig-11-2-aq2-associations.png){width=100%}

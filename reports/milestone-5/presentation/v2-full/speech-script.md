@@ -93,9 +93,9 @@ to the next) and Sources (report sections behind every number).
 ## Slide 5 – How the Talk Is Built   [Abstract]   [Line: main]
 **Lead:** The talk follows the project's chain of eleven links, from the stakeholder problem to the decisions, in six parts and the conclusions.
 **On the slide:** Six lanes linked by arrows, one per part, each with its milestone, its links of the project chain and one sentence: Part 1 The Problem (Milestone 1; links 1 stakeholder problem, 2 measurable goal, 3 analytical questions); Part 2 The Data (Milestones 2–3; 4 required data, 5 selected open dataset, 6 actual data fit and gaps); Part 3 Preparation (Milestone 3; 7 prepared data); Part 4 Method (Milestone 4; 8 candidate methods, 9 evaluation design); Part 5 Evidence (Milestone 5; 10 findings and limitations); Part 6 Integration and Use (Milestone 5; 11 educational decision support). Key: numbered boxes, D1–D3, AQ1–AQ4, KPI.
-**Visual:** sequence of six parts carrying the eleven links of the report's Figure 1.1, so each later slide can be placed on the map.
+**Visual:** sequence of six parts carrying the eleven links of the report's Figure A.1 (Appendix I), so each later slide can be placed on the map.
 **Speaker notes:** The talk follows the chain our project followed, eleven links across five milestones, in six parts. Part one, the problem: the context, the goal, three decisions we call D1 to D3, and four analytical questions, AQ1 to AQ4. Part two, the data: what the questions require, the dataset we chose, how well it fits and its quality. Part three, preparation: who counts, the early-sign rule, and how we keep future information out. Part four, the method: how each question is answered and judged, all fixed before any result. Part five, the evidence: AQ1 and AQ2 answered on 2013 and 2014, and what AQ3 and AQ4 would produce. Part six, use: what each decision can rely on now, the limits, the next steps and how we used AI. Then the conclusions. We begin part one with the educational context.
-**Sources:** [M5 §1.2 Figure 1.1]
+**Sources:** [M5 §1.2, App I Figure A.1]
 
 ## Slide 6 – Educational Context   [1 Introduction]   [Line: main]
 **Lead:** The university already holds the records that could show students drifting away, but has not decided which questions they should answer.
@@ -515,7 +515,7 @@ to the next) and Sources (report sections behind every number).
 **On the slide:** Chart: non-completion per module, 2013 and 2014, registered at day 14, with 95% Wilson intervals and the pooled line at 45.3%. Facts: modules over both years, lowest AAA 26.3% of 720, highest CCC 54.3% (2014 only); runs over all 22, from 24.9% (AAA 2013J) to 58.3% (CCC 2014B); start month, February 51.6% against October 42.4% in 2013, 49.6% against 41.6% in 2014; how students leave, GGG 2013 4.3% withdrew and 31.7% failed, CCC 33.1% withdrew and 21.3% failed. So: a hypothesis for decision D2 on where support time would go first, to be checked on the university's records. Key: run = module offering named by year and start month (B = February, J = October); AAA–GGG = anonymised module codes.
 **Visual:** grouped bars with 95% intervals per module and year, dashed pooled line (comparison).
 **Speaker notes:** That 45.3 percent is an average over very different courses. The chart shows each module in each year, with its interval and the pooled line. Over both years, module AAA has the lowest rate, 26.3 percent, and CCC, which ran only in 2014, the highest, 54.3. Across all 22 runs, run rates span from 24.9 percent in AAA's October 2013 run to 58.3 percent in CCC's February 2014 run. February runs lose more students than October runs in both years: 51.6 against 42.4 percent in 2013, 49.6 against 41.6 in 2014. And students leave differently: in GGG in 2013 only 4.3 percent withdrew while 31.7 failed; in CCC, 33.1 percent withdrew. For the program manager that is a hypothesis about where support time would go first. But there is a trap in these rates.
-**Sources:** [M5 §11.2 Figure 11.1], [M5 App XII Table A.30]
+**Sources:** [M5 §11.2], [M5 App XII Figure A.2, Table A.30]
 
 ## Slide 66 – AQ1: The Denominator Matters   [11 Findings]   [Line: main]
 **Lead:** Counting all enrolments instead of those registered at day 14 lifts non-completion above half, almost entirely through early withdrawals.
@@ -563,16 +563,16 @@ and criterion cards (structure: which sign is defined where).
 
 ## Slide 71 – AQ2: Five Early Signs   [11 Findings]   [Line: main]
 **Lead:** All five early signs, inactivity included, go with later non-completion within module run, by similar amounts in 2013 and 2014.
-**On the slide:** Chart (Figure 11.2): mutually adjusted risk difference, 2013 / 2014, points with 95% intervals:
+**On the slide:** Chart (Figure A.3): mutually adjusted risk difference, 2013 / 2014, points with 95% intervals:
 missed task 40.8 (37.7–43.9) / 39.3 (36.4–42.1); late TMA 20.2 / 20.3; no click in the last 7 days 14.5 / 15.8;
 activity below the run median 13.4 / 14.6; no click before the start 10.6 / 8.7. The five signs defined; risk
 difference defined; population: registered at day 27, 11,811 enrolments in 2013 (44.4% non-completion) and 15,724 in
 2014 (44.0%), task signs on 9,960 and 12,585; criterion: at least 5 points, interval excluding 0, same direction in
 two-thirds of modules. These are associations, not causes.
-**Visual:** the report's Figure 11.2 as a dot plot with 95% intervals, grey dots for 2013 and orange for 2014, dashed
+**Visual:** the report's Figure A.3 as a dot plot with 95% intervals, grey dots for 2013 and orange for 2014, dashed
 line at the 5-point criterion (comparison with uncertainty).
 **Speaker notes:** With the method fixed, here are the results. Each dot is a risk difference: how many more percentage points of later non-completion students with the sign show, against students without it in the same run. A missed task by day 27 goes with 40.8 more points in 2013 and 39.3 in 2014; in raw terms, 90.0 percent of the 2013 students with a missed task did not complete, against 39.6 percent without one. A late TMA goes with 20.2 and 20.3 points. No click in the last seven days, 14.5 and 15.8. Activity below the run median, 13.4 and 14.6. No click before the start, 10.6 and 8.7. All five clear the criterion in both years, and no sign moves by more than two points between them. These are associations, not causes. Do they hold module by module?
-**Sources:** [M5 §11.3 Figure 11.2], [M5 App XIII Table A.33], [M5 §9 Table 9.1]
+**Sources:** [M5 §11.3], [M5 App XIII Figure A.3, Table A.33], [M5 §9 Table 9.1]
 
 ## Slide 72 – AQ2: Consistent Across Modules   [11 Findings]   [Line: detail]
 **Lead:** Each sign points the same way in every module in 2013 and in 29 of 30 module estimates in 2014, but its size varies between modules.

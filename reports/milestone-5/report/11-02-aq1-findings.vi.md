@@ -1,6 +1,6 @@
 ## 11.2. AQ1: Mức hoàn thành và thời điểm không hoàn thành
 
-Nhóm chúng em tính AQ1 trên toàn bộ 22 kỳ mở, riêng cho từng năm 2013, 2014 và gộp cả hai năm. Mẫu số chính là sinh
+Nhóm tính AQ1 trên toàn bộ 22 kỳ mở, riêng cho từng năm 2013, 2014 và gộp cả hai năm. Mẫu số chính là sinh
 viên còn đăng ký học (chưa rút) tại ngày 14, tính từ ngày bắt đầu kỳ mở; mẫu số thứ hai là mọi lượt đăng ký học; mỗi tỷ
 lệ kèm khoảng tin cậy Wilson (C15). Tiêu chí thành công đạt ở cả hai năm: các bảng dữ liệu đã chuẩn bị và các bảng gốc
 khớp nhau ở cả 176 ô kết quả và cho cùng tuần đầu tiên sinh viên bỏ lỡ bài ở cả 32.593 lượt đăng ký học; số đếm năm 2014
@@ -29,6 +29,4 @@ các bài được chấm điểm sẽ phát hiện quá muộn; đây là lý d
 Câu trả lời có độ tin cậy cao đối với OULAD năm 2013–2014, vì hai cách tính độc lập cho cùng kết quả ở từng năm; còn kết
 quả có áp dụng được cho các học phần của trường hay không thì vẫn là câu hỏi mở. Câu trả lời này cung cấp cho quyết định phân bổ
 thời gian hỗ trợ (D2) một giả thuyết về nơi cần ưu tiên hỗ trợ trước; giả thuyết này cần được kiểm chứng lại
-trên dữ liệu của trường. Hình 11.1 cho thấy tỷ lệ của từng module trong từng năm.
-
-![Hình 11.1. Tỷ lệ không hoàn thành của từng module năm 2013 và năm 2014, tính trên sinh viên còn đăng ký học (chưa rút) tại ngày 14, kèm khoảng tin cậy Wilson 95%; đường nét đứt: tỷ lệ gộp của 22 kỳ mở là 45,3% (12.700 trên 28.061)](assets/figures/fig-11-1-aq1-rates.png){width=100%}
+trên dữ liệu của trường. Hình A.2 (Phụ lục XII) cho thấy tỷ lệ của từng module trong từng năm.

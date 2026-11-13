@@ -1,6 +1,6 @@
 ## 5.1. Mức phù hợp giữa yêu cầu với dữ liệu và trạng thái các câu hỏi
 
-Ở Milestone 3, nhóm chúng em xếp mức phù hợp của dữ liệu cho từng câu hỏi theo ba mức, giữ nguyên tên tiếng Anh như trong đề bài: GREEN (dữ liệu hỗ trợ đầy đủ) khi dữ liệu đủ để trả lời; YELLOW (hỗ trợ một phần) khi câu hỏi phải được thu hẹp hoặc mức độ khẳng định phải giảm; RED (không hỗ trợ) khi thiếu một khái niệm, biến hoặc biện pháp can thiệp then chốt.
+Ở Milestone 3, nhóm xếp mức phù hợp của dữ liệu cho từng câu hỏi theo ba mức, giữ nguyên tên tiếng Anh như trong đề bài: GREEN (dữ liệu hỗ trợ đầy đủ) khi dữ liệu đủ để trả lời; YELLOW (hỗ trợ một phần) khi câu hỏi phải được thu hẹp hoặc mức độ khẳng định phải giảm; RED (không hỗ trợ) khi thiếu một khái niệm, biến hoặc biện pháp can thiệp then chốt.
 Bảng 5.2 là Ma trận mức phù hợp giữa AQ và dữ liệu (AQ–Data Fit Matrix), kèm hành động và trạng thái cuối cùng; Bảng A.13
 (Phụ lục V) trình bày chi tiết từng ô. Giá trị thiếu được giữ thành một nhóm riêng hoặc được đánh dấu bằng một biến chỉ báo, không được điền bằng giá trị ước
 tính; biến mà OULAD không thu thập cũng không được thay bằng dữ liệu giả lập (Bảng A.14). Ba phần trong bản đề xuất của

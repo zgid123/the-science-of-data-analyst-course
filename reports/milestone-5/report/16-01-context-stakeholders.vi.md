@@ -1,6 +1,13 @@
 ## Phụ lục I – Bối cảnh giáo dục, bên liên quan và phạm vi
 
-Phụ lục này bổ sung cho Mục 1. Phụ lục trình bày bối cảnh quy định và các nghiên cứu đã công bố về vấn đề; các bên liên quan cùng nhu cầu và quyết định của từng bên; cách xác định và thống nhất các nhu cầu đó; và những nội dung nằm ngoài phạm vi dự án.
+Phụ lục này bổ sung cho Mục 1. Phụ lục trình bày bối cảnh quy định và các nghiên cứu đã công bố về vấn đề; các bên liên quan cùng nhu cầu và quyết định của từng bên; cách xác định và thống nhất các nhu cầu đó; những nội dung nằm ngoài phạm vi dự án; và chuỗi logic mà báo cáo đi theo.
+
+**Chuỗi logic của dự án.** Dự án đi theo một chuỗi phân tích, từ vấn đề của các bên liên quan đến những quyết định mà
+các phát hiện hỗ trợ; mỗi milestone tạo ra một số mắt xích của chuỗi này. Hình A.1 trình bày chuỗi gồm mười một mắt
+xích, kèm milestone tạo ra từng mắt xích và một nội dung cụ thể cho mỗi mắt xích; Mục 2 đến Mục 11 lần lượt đi theo
+chuỗi này.
+
+![Hình A.1. Chuỗi logic của dự án gồm mười một mắt xích qua Milestone 1–5](assets/figures/fig-1-1-project-chain.png){width=85%}
 
 **Bối cảnh giáo dục.** Dự án đặt trong bối cảnh một trường đại học Việt Nam đang mở rộng hình thức học trực tuyến và học kết hợp. Học phần trực tuyến diễn ra hoàn toàn trên LMS của trường, tức là nền tảng web nơi giảng viên đăng tài liệu, bài kiểm tra ngắn và bài tập, còn sinh viên nộp bài; học phần kết hợp (blended, vừa học trực tuyến vừa học trên lớp) bổ sung các buổi học trên lớp bên cạnh LMS. Nhóm làm việc với một chương trình đào tạo đại học có khoảng 1.200 sinh viên, thuộc một khoa có khoảng 4.000 sinh viên. Cả hai con số đều là giả định của kịch bản, vì trường đại học này là kịch bản do đề bài đặt ra; mọi số liệu về trường trong báo cáo đều được ghi rõ như vậy. Ở một số học phần trực tuyến và học phần kết hợp của chương trình đào tạo, trường nhận thấy sinh viên giảm dần mức tham gia học tập khi học kỳ tiến triển và một số sinh viên không hoàn thành học phần. Trường có sẵn dữ liệu để mô tả hiện tượng này, gồm hoạt động trên LMS, hồ sơ đăng ký học phần và kết quả học tập trong hệ thống quản lý đào tạo, kết quả bài tập và bài kiểm tra ngắn, điểm số và khảo sát sinh viên. Tuy nhiên, trường chưa xác định dữ liệu này cần trả lời những câu hỏi nào và phân tích dữ liệu cần hỗ trợ những quyết định nào.
 
