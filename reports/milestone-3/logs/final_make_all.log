@@ -1,0 +1,23 @@
+# 2026-11-13T16:07Z make all TASK=milestone-3 (before submission ZIP)
+PASS  milestone-3 format             Checked 82 files in reports/milestone-3/report: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 structure          EN: 41 files, 40 headings, 4 figures, 31 tables: 0 errors, 0 warnings; VI: 41 files, 40 headings, 4 figures, 31 tables:   (0 s)
+PASS  milestone-3 style              EN: 37 body files: 0 errors, 0 warnings; VI: 37 body files: 0 errors, 0 warnings  (0 s)
+PASS  milestone-3 abbreviations      EN: 15 abbreviations, 0 violations; VI: 15 abbreviations, 0 violations  (0 s)
+PASS  milestone-3 citations          EN: 17 references, 17 cited, order first-citation: 0 errors, 0 warnings; VI: 17 references, 17 cited, order first-citati  (0 s)
+PASS  milestone-3 names              Checked 82 files for 5 names: 0 errors  (1 s)
+PASS  milestone-3 research_trail     Checked 24 sources, 105 claims: 0 errors, 1 warnings  (0 s)
+PASS  milestone-3 research_layout    PASS layout: reports/milestone-3/research  (0 s)
+PASS  milestone-3 translation vi     41 sections, 0 need translation into Tiếng Việt (vi), 0 orphaned files  (0 s)
+PASS  milestone-3 parity vi          Checked 41 pairs (vi): 0 errors, 14 warnings  (1 s)
+PASS  milestone-3 figures            milestone-3: 4 figures → reports/milestone-3/report/assets/figures, 0 layout findings  (2 s)
+PASS  milestone-3 build en           [en] 41 sections → reports/milestone-3/build/N04_Milestone3_EN.docx  (15 Word sections, 6 landscape, 5 images, 4 figure   (10 s)
+PASS  milestone-3 build vi           [vi] 41 sections → reports/milestone-3/build/N04_Milestone3_VI.docx  (17 Word sections, 7 landscape, 5 images, 4 figure   (11 s)
+PASS  milestone-3 docx en            EN reports/milestone-3/build/N04_Milestone3_EN.docx: 30 numbered headings, 4 figures, 31 tables, 5 images, 15 Word secti  (2 s)
+PASS  milestone-3 docx vi            VI reports/milestone-3/build/N04_Milestone3_VI.docx: 30 numbered headings, 4 figures, 31 tables, 5 images, 17 Word secti  (4 s)
+
+15/15 steps passed
+PASS  test build-report skill        164/164 checks passed  (87 s)
+PASS  test research-report skill     64/64 checks passed  (3 s)
+
+2/2 steps passed
+# exit_status: 0
