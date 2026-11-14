@@ -7,7 +7,7 @@ built deck (build_slides_milestone5_30.py) where it already holds them.
 
 from slides_milestone5_full.common import *   # noqa: F401,F403
 
-DESIGNED = pal_rgb(pal.tint(pal.BLUE))            # light blue: designed, not run
+DESIGNED = pal_rgb(pal.tint(pal.BLUE))            # light blue: a design element (method slides)
 LINKED = pal_rgb("#E6E8EC")                       # light grey: a link that holds evidence
 
 
@@ -114,8 +114,8 @@ def s47(prs):
     key47 = T("Key: AQ1–AQ4 = the four analytical questions; the level under each names its analytics type. "
               "Capacity = 3 or 5 contacts per 20 students. Reading rules after Shmueli (2010): explanatory power "
               "does not imply predictive power.")
-    msg = T("Designed at Level 1 (the compulsory level: method and evaluation design) in Milestone 4, without "
-            "training any model; AQ1 and AQ2 then ran as specified on 2013 and 2014.")
+    msg = T("Designed at Level 1 (the compulsory level: method and evaluation design) in Milestone 4; AQ1 and AQ2 "
+            "then ran on 2013 and 2014, and AQ3 and AQ4 ran once as the Level 2 prototype.")
     mh = lh(msg, CWI - 0.6, PT["lead"], True) + 0.3
     ky = END - mh - 0.2 - lh(key47, CWI, PT["small"])
     closing_box(s, END - mh, msg, h=mh)
@@ -198,7 +198,7 @@ def s48(prs):
 
 def s49(prs):
     s = kit.base(prs, kicker(49), T("Method Selection: AQ3 and AQ4"), notes(49))
-    cols_ = [(T("AQ3 – Predictive (proposal, no model trained)"),
+    cols_ = [(T("AQ3 – Predictive (proposal, run in Level 2)"),
               [T("Predictive: binary classification at day 13 and day 27."),
                T("Early-sign rule ranked by its number of signs; background-only logistic model; random list."),
                T("Penalised logistic regression; gradient-boosted trees; discrete-time survival as an extension."),
@@ -206,7 +206,7 @@ def s49(prs):
                  "by a margin fixed in advance."),
                T("Interpretable reasons for staff; about 230 non-completers per parameter; classes close in size; "
                  "transfer to a later run.")]),
-             (T("AQ4 – Prescriptive (proposal, no list produced)"),
+             (T("AQ4 – Prescriptive (proposal, run in Level 2)"),
               [T("Prescriptive: ranking under a fixed capacity."),
                T("Random list; rule-ranked list of the same length."),
                T("Top-k per run from the AQ3 scores; risk tiers from capacity."),
@@ -324,7 +324,6 @@ def s52(prs):
     sz, gx, gy = 0.5, 0.95, 0.6
     lines = [tb("Recall ", "= 4 of 9 non-completers."),
              tb("Normalised recall ", "= 4 of 5, the most a list of 5 can reach."),
-             tb("Lift ", "= (4 of 5) ÷ (9 of 20) = 1.8."),
              [(T("Key: orange figure = later non-completer; navy box = on the list. Illustration, not data."), KEY,
                False)]]
     gy0 = y + 0.58
@@ -347,15 +346,14 @@ def s52(prs):
         tb("Capacity k: ", "3 or 5 contacts per 20 students, that is 15% or 25% of a run; the main operating point is "
                            "5 per 20 at day 27."),
         tb("Recall at capacity: ", "the share of a run's non-completers who are on its list."),
-        tb("Normalised recall: ", "recall divided by the most a list of length k can reach. A list of k holds at most "
-                                  "k non-completers; in the training runs that ceiling is 46% to 100% of a run's "
-                                  "non-completers."),
-        tb("Lift: ", "the share of non-completers on the list divided by the run's base rate (the share of the run "
-                     "who do not complete); 1 = chance."),
-        tb("Why not \"precision of at least 50%\" (Milestone 1): ", "with non-completion near 45%, a random list "
-                                                                     "already reaches about 45% precision."),
-        tb("Framework: ", "the TRIPOD+AI reporting guideline for prediction models: discrimination, calibration and "
-                          "usefulness for the decision.")]
+        tb("Normalised recall: ", "recall divided by the most a list of length k can reach, k non-completers "
+                                  "(5 in the example, hence 4 of 5); across the training runs this ceiling is 46% "
+                                  "to 100% of a run's non-completers."),
+        tb("Why not \"precision of at least 50%\" (Milestone 1): ", "precision is the share of the list who do not "
+                                                                     "complete; with non-completion near 45%, a random "
+                                                                     "list already reaches about 45%."),
+        tb("What else is judged: ", "whether later non-completers are ranked first, whether predicted risks match "
+                                    "the observed rates (calibration), and whether the list helps the decision.")]
     pt15 = fit_pt(defs, rw, END - y)
     kit.room("list metrics", y + rich_h(defs, rw, pt15), END)
     spread(s, rx, y, rw, defs, pt15, END)
@@ -629,52 +627,52 @@ def s58(prs):
 
 # ----------------------------------------------------------------------------- 10 Experimental status
 def s59(prs):
-    s = kit.base(prs, kicker(59), T("What We Ran: Level 2 Not Run"), notes(59))
-    y = lead(s, T("We answered AQ1 and AQ2 on both years; AQ3 and AQ4 remain complete designs with no model "
-                  "trained."))
+    s = kit.base(prs, kicker(59), T("What We Ran: Level 2 for AQ3 and AQ4"), notes(59))
+    y = lead(s, T("Every question now has real results: AQ1 and AQ2 on both years, and AQ3 and AQ4 by one test of a "
+                  "model frozen on 2013 and scored once on the 13 runs of 2014."))
     xs, cw = cols(4)
     labels = [("AQ1", T("Answered"), T("descriptive"), True), ("AQ2", T("Answered"), T("diagnostic"), True),
-              ("AQ3", T("Deferred"), T("predictive"), False), ("AQ4", T("Deferred"), T("prescriptive"), False)]
-    for x, (q, st, lvl, done) in zip(xs, labels):
-        rect(s, I(x), I(y), I(cw), I(1.55), fill=WARM if done else WHITE, line=WARM if done else GREY, radius=True,
-             line_w=2.0)
-        text(s, I(x), I(y + 0.12), I(cw), I(0.5), q, size=PT["title"] + 6, color=WHITE if done else GREY, bold=True,
-             align=PP_ALIGN.CENTER, spacing=1.0)
-        text(s, I(x), I(y + 0.72), I(cw), I(0.35), st, size=PT["head"], color=WHITE if done else GREY, bold=True,
-             align=PP_ALIGN.CENTER, spacing=1.0)
-        text(s, I(x), I(y + 1.1), I(cw), I(0.3), lvl, size=PT["small"] + 2, color=WHITE if done else GREY,
-             align=PP_ALIGN.CENTER, spacing=1.0)
-    y += 1.65
-    y = key(s, y, T("Key: filled orange = Answered, the results answer all of the question; grey outline = Deferred, "
-                    "the design is complete and no result exists yet. No question is dropped.")) + 0.2
-    why = [[(T("Why AQ3 and AQ4 are deferred: "), AGENT_INK, True),
-            (T("Level 1, the compulsory level of the course (method and evaluation design), is complete. Level 2, "
-               "the optional prototype, was specified in full in Milestone 4 and not run, because the 13 runs of 2014 "
-               "are the only independent test and are kept for one complete run of the frozen protocol; a partial "
-               "early run would spend it."), INK, False)]]
-    y = card(s, X0, y, CWI, None, why, fill=ACC_FILL, line=WARM, pt=PT["body"], line_w=1.5) + 0.3
-    xs, cw = cols(2)
-    items = [(T("AQ1 and AQ2"), [T("Run as fixed in Milestone 4, on the 9 runs of 2013 and again on the 13 runs of "
-                                   "2014. They train no predictive model and change nothing in the AQ3 design.")]),
-             (T("AQ3 and AQ4"), [T("Designed in full. No model is trained, so no model metric, chart or confusion "
-                                   "matrix exists, and none is shown.")])]
-    pt = PT["lead"] if max(card_h(a, b, cw, pt=PT["lead"]) for a, b in items) <= END - y else PT["body"]
-    h = max(card_h(a, b, cw, pt=pt) for a, b in items)
-    kit.room("status cards", y + h, END)
-    for x, (a, b) in zip(xs, items):
-        card(s, x, y, cw, a, b, h=END - y, pt=pt)
-    src(s, "Source: Milestone 5 report, Sections 3, 10 and 11, Table 3.1, and Appendix X.")
+              ("AQ3", T("Answered"), T("predictive"), True), ("AQ4", T("Partial"), T("prescriptive"), False)]
+    for x, (q, st, lvl, done) in zip(xs, labels):       # two lines per tile: question and level, then the status
+        rect(s, I(x), I(y), I(cw), I(0.78), fill=WARM if done else ACC_FILL, line=WARM, radius=True, line_w=2.0)
+        ink = WHITE if done else AGENT_INK
+        text(s, I(x + 0.15), I(y + 0.05), I(cw - 0.3), I(0.3), q + " · " + lvl, size=PT["small"] + 2, color=ink,
+             spacing=1.0)
+        text(s, I(x + 0.15), I(y + 0.34), I(cw - 0.3), I(0.4), st, size=PT["head"], color=ink, bold=True,
+             spacing=1.0)
+    y += 0.86
+    y = key(s, y, T("Key: filled orange = Answered; light orange = Partial, the ranking is answered while the contact "
+                    "part has no data. Level 2 = the brief's optional level: running "
+                    "the model test fixed in Milestone 4. Penalised logistic model = a regression that shrinks weak "
+                    "signs.")) + 0.15
+    gate = [[(T("Gate S1 (model replaces rule) met: "), AGENT_INK, True),
+             (T("normalised recall 72.5% (= last column: each list is shorter than its run's non-completers) vs "
+                "70.4% for the rule, ahead in 11 of 13 runs; the model ranks, the rule is the fallback."), INK, False)]]
+    gh = rich_h(gate, CWI - 0.36, PT["body"]) + 0.2
+    gy = END - gh
+    rect(s, MX, I(gy), CW, I(gh), fill=ACC_FILL, line=WARM, radius=True, line_w=1.5)
+    rich(s, X0 + 0.18, gy + 0.1, CWI - 0.36, gate, pt=PT["body"])
+    y = head(s, X0, y, CWI, T("Lists of 5 per 20 students, day 27, 13 test runs of 2014"))
+    rows = [[T("List"), T("Non-completers listed"), T("Share of all non-completers"), T("Share of list not completing")],
+            [T("Penalised logistic model (primary)"), num("2,868"), num("41.5%"), num("72.5%")],
+            [T("Early-sign rule, ranked by number of signs"), num("2,786"), num("40.3%"), num("70.4%")],
+            [T("Model using background only"), num("2,244"), num("32.5%"), num("56.7%")],
+            [T("Random list (expected)"), num("1,738"), num("25.1%"), num("43.9%")]]
+    shape = fitted_table(s, y + 0.08, rows, [0.4, 0.2, 0.2, 0.2], gy - 0.2, sizes=(PT["body"], BODY, PT["small"]))
+    for j in range(4):
+        fill_cell(shape.table.cell(1, j), ACC_FILL, AGENT_INK, True)
+    src(s, "Source: Milestone 5 report, Sections 3 and 10, Tables 3.1 and 10.1.")
 
 
 def s60(prs):
-    s = kit.base(prs, kicker(60), T("What the Frozen Protocol Fixes"), notes(60))
-    y = lead(s, T("The protocol leaves no modeling choice open: three baselines and four configurations are fixed, and "
-                  "the 2014 outcomes are opened once."))
+    s = kit.base(prs, kicker(60), T("What the Frozen Protocol Fixed, and How It Ran"), notes(60))
+    y = lead(s, T("The protocol left no modeling choice open: three baselines and four configurations were fixed on "
+                  "2013, and the 2014 outcomes were opened once."))
     lw = 8.0
     ky = bottom_key(s, T("Key: B = baseline; M = model configuration. Primary set = the 19 primary predictors; extended "
                          "set = the primary set plus 10 further predictors. Early-sign rule = flags a missed task, a late "
                          "tutor-marked assignment or no click in the 7 days before the cut-off. Orange row = B2, the "
-                         "benchmark the contact decision needs whichever model wins. Ties go to the simpler one."),
+                         "benchmark the contact decision needs; bold M1 = the model chosen. Ties go to the simpler one."),
                     X0, lw)
     rows = [[T("ID"), T("Role"), T("Method"), T("Predictors")],
             ["B1", T("Baseline"), T("Random list"), "–"],
@@ -686,16 +684,17 @@ def s60(prs):
             ["M2", T("Challenger"), T("Penalised logistic regression"), T("Extended set")],
             ["M3", T("Challenger"), T("Gradient-boosted trees"), T("Primary set")],
             ["M4", T("Challenger"), T("Gradient-boosted trees"), T("Extended set")]]
-    shape = fitted_table(s, y, rows, [0.08, 0.17, 0.37, 0.38], ky - 0.15, w=lw)
+    shape = fitted_table(s, y, rows, [0.08, 0.17, 0.37, 0.38] if kit.LANG == "en" else [0.07, 0.22, 0.31, 0.40], ky - 0.15, w=lw, sizes=(PT["body"], BODY, PT["small"]))
     for j in range(4):
         fill_cell(shape.table.cell(2, j), ACC_FILL)
+        fill_cell(shape.table.cell(4, j), WHITE, AGENT_INK, True)
     rx = X0 + lw + 0.35
     rw = XR - rx
     steps = [T("Reproduce the input; check hashes"), T("Fit the baselines"), T("Fit the candidates"),
              T("Apply the split and folds"), T("Evaluate all; report unfavourable results"),
              T("Error and subgroup analysis"), T("Compare with the Level 1 proposal"), T("Record the experiment log")]
     y1 = head(s, rx, y, rw, T("Eight steps"))
-    msg = T("One logged test: 2014 outcomes opened once, after the second freeze.")
+    msg = T("One logged test: 2014 outcomes opened once, after the models were frozen with a hash.")
     mh = lh(msg, rw - 0.4, PT["body"], True) + 0.3
     yb = END - mh
     rect(s, I(rx), I(yb), I(rw), I(mh), fill=NAVY, radius=True)
@@ -723,7 +722,7 @@ def s61(prs):
                           "university's courses."), WARM),
             (T("Moderate"), T("estimates keep their direction under the checks but rest on observational data or a "
                               "model with a known weakness."), NAVY),
-            (T("Not applicable"), T("no result exists yet; the design waits for its single test."), GREY)]
+            (T("Not applicable"), T("the contact part of AQ4 has no data to test; it waits for a randomised pilot."), GREY)]
     xs, cw = cols(3, 0.2)
     paras = [[[(T("Confidence ") + a.lower() + ": ", AGENT_INK if c == WARM else c, True), (b, INK, False)]]
              for a, b, c in conf]
@@ -739,10 +738,11 @@ def s61(prs):
             [T("AQ2 – Diagnostic"), T("Results on 2013, replicated on 2014"),
              T("Which signs go with later non-completion within module runs, by how many points"),
              T("That a sign causes non-completion, or that removing it would raise completion")],
-            [T("AQ3 – Predictive"), T("Design only; no model trained"), T("The expected output and its gate"),
-             T("Any recall, precision, calibration or other model metric")],
-            [T("AQ4 – Prescriptive"), T("Design only; depends on AQ3"),
-             T("The expected list and the conditions for its use"),
+            [T("AQ3 – Predictive"), T("Single test, 13 runs of 2014"),
+             T("How well the model ranks students against the rule"),
+             T("A reliable probability for each run")],
+            [T("AQ4 – Prescriptive"), T("Ranking from the AQ3 scores"),
+             T("Who ranks first on a list, with a reason per name"),
              T("Whom contact helps, or which contact works")]]
     k61 = T("Key: AQ1–AQ4 = the four analytical questions; every finding is an effect size with its 95% interval "
             "and population; orange column = what the answer does not state.")
@@ -797,14 +797,13 @@ def s62(prs):
 
 def s63(prs):
     s = kit.base(prs, kicker(63), T("Traceability Matrix: From Method to Decision"), notes(63))
-    y = lead(s, T("For AQ1 and AQ2 every link holds evidence and both meet their criteria; for AQ3 and AQ4 the chain "
-                  "ends at the evaluation design."))
-    k1 = T("Key: AQ1–AQ4 = the four analytical questions. Grey = the link holds evidence; blue = designed, not run; "
-           "N.A. (red) = no result exists. "
+    y = lead(s, T("Every link from method to decision now holds evidence: AQ1–AQ3 are answered, AQ4 for its "
+                  "ranking."))
+    k1 = T("Key: AQ1–AQ4 = the four analytical questions. Grey = the link holds evidence. "
            "TMA, CMA = tutor- and computer-marked tasks. S1 = the gate a model must pass to replace the rule; FR1 = the "
            "fairness review rule. Decisions: D1 whom to contact, D2 where to place support time, D3 whether to "
-           "extend. Status: Answered = real results answer all of the question; Deferred = design complete, no result "
-           "yet; no question is dropped.")
+           "extend. Status: Answered = real results answer all of the question; Partial = the core is answered while "
+           "a named part waits for data; no question is dropped.")
     ky = bottom_key(s, k1)
     rows = [[T("Question"), T("Preparation"), T("Method and rationale"), T("Evaluation / result"), T("Decision"),
              T("Status")],
@@ -812,20 +811,16 @@ def s63(prs):
              "D2, D3", T("Answered")],
             ["AQ2", T("Dated by day 27"), T("Logistic, run effects"), T("5 of 5 signs, both years"), "D2; D1",
              T("Answered")],
-            ["AQ3", T("Refit per fold"), T("Penalised logistic; reasons"), T("S1 planned; N.A."), "D1",
-             T("Deferred")],
-            ["AQ4", T("3 or 5 per 20"), T("Top-k with signs"), T("S1, FR1; N.A."), "D1", T("Deferred")]]
+            ["AQ3", T("Refit per fold"), T("Penalised logistic; reasons"), T("S1 met: 0.725 vs 0.704"), "D1",
+             T("Answered")],
+            ["AQ4", T("3 or 5 per 20"), T("Top-k with reasons"), T("FR1: 0 of 3 flagged"), "D1", T("Partial")]]
     shape = fitted_table(s, y, rows, [0.11, 0.19, 0.23, 0.2, 0.12, 0.15], ky - 0.15,
                          sizes=(PT["lead"], PT["body"], BODY))
     tbl = shape.table
     for i in range(1, 5):
         for j in range(1, 5):
-            if "N.A." in rows[i][j]:
-                fill_cell(tbl.cell(i, j), DESIGNED)
-                red_from(tbl.cell(i, j), "N.A.")
-            else:
-                fill_cell(tbl.cell(i, j), DESIGNED if i >= 3 else LINKED)
-        fill_cell(tbl.cell(i, 5), WARM if i < 3 else ACC_FILL, color=WHITE if i < 3 else AGENT_INK, bold=True)
+            fill_cell(tbl.cell(i, j), LINKED)
+        fill_cell(tbl.cell(i, 5), WARM if i < 4 else ACC_FILL, color=WHITE if i < 4 else AGENT_INK, bold=True)
     src(s, "Source: Milestone 5 report, Section 11.1, Table 11.2, and Appendix XI, Tables A.27 and A.28.")
 
 
@@ -848,7 +843,7 @@ def outcome_shares(fig):
             ax.text(acc + v / 2, i, f"{charts.num(v, 1)}%", ha="center", va="center", fontsize=charts.size("value"),
                     color="white" if c in (C_ACC, f"#{AGENT_INK}") else C_INK, zorder=4)
             acc += v
-    ax.set_yticks(range(n), [f"{T(a)}\n(n = {b})" for a, b, _ in OUT_SHARES])
+    ax.set_yticks(range(n), [f"{T(a)}\n(n = {num(b)})" for a, b, _ in OUT_SHARES])
     ax.set_xticks([])
     ax.spines["bottom"].set_visible(False)
     ax.legend(handles=[Patch(fc=c, label=nm) for nm, c in zip(names, cols_)], loc="lower left",
@@ -863,15 +858,15 @@ def s64(prs):
     lw, rw, rx = kit.split(0.4)
     bh = 1.85
     rect(s, I(X0), I(y), I(lw), I(bh), fill=SOFT, line=LINE, radius=True)
-    bignum(s, X0, y + 0.1, lw, T("45.3%"), T("(44.7–45.8) of 28,061 enrolments over 22 runs did not complete: 12,700."),
+    bignum(s, X0, y + 0.1, lw, T("45.3%"), T("(44.7–45.8) of the 28,061 enrolments still registered at day 14, over 22 runs, did not complete: 12,700."),
            color=WARM)
     facts = [tb("2013: ", "45.7% (44.8–46.6) of 12,076."),
              tb("2014: ", "44.9% (44.2–45.7) of 15,985."),
-             tb("Success criterion met: ", "prepared views and raw tables agree in all 176 outcome cells, and the first "
-                                           "missed week agrees for all 32,593 enrolments."),
+             tb("Success criterion met: ", "two independent counts, from the prepared and the raw "
+                                           "data, agree exactly."),
              tb("Confidence: ", "high for OULAD 2013–2014; validity for the university's courses remains open.")]
     ky = bottom_key(s, T("Key: AQ1 = descriptive question (outcome shares and timing). Day 14 = end of the add-drop "
-                         "period. Non-completion = Fail or Withdrawn. Intervals = 95% Wilson intervals. OULAD = Open "
+                         "period. Non-completion = Fail or Withdrawn. Intervals = 95% confidence intervals. OULAD = Open "
                          "University Learning Analytics Dataset."), X0, lw)
     room = ky - 0.15 - (y + bh + 0.2)
     pt = fit_pt(facts, lw, room)
@@ -926,7 +921,7 @@ def denom_bars(fig):
                 color="white", zorder=4)
         ax.annotate(f"{charts.num(tot, 1)}%", (x, tot), xytext=(0, 3), textcoords="offset points", ha="center",
                     va="bottom", fontsize=charts.size("value"), color=C_INK, fontweight="bold")
-    ax.set_xticks(xs, [f"{T(a.split(chr(10))[0])}\n{T(a.split(chr(10))[1])}\n(n = {d[4]})"
+    ax.set_xticks(xs, [f"{T(a.split(chr(10))[0])}\n{T(a.split(chr(10))[1])}\n(n = {num(d[4])})"
                        for a, d in zip([d[0] for d in DENOM], DENOM)])
     ax.set_yticks([])
     ax.spines["bottom"].set_color(f"#{kit.C_GRID}")
@@ -965,7 +960,7 @@ def s67(prs):
                          "rule). KPI = key performance indicator (completion after add-drop)."), X0, lw)
     chart(s, "m5-full-p3-year-diff", X0, y1 + 0.1, lw, ky - y1 - 0.2, year_diff)
     side = [(T("The rise comes from CCC"), T("Over all enrolments the +2.3 points come from module CCC, which ran only "
-                                             "in 2014 (62.2% of its enrolments); the six shared modules show −0.2."),
+                                             "in 2014 (non-completion 62.2% of its enrolments); the six shared modules show −0.2."),
              NAVY),
             (T("Why the years flip"), T("16.2% of 2014 enrolments against 10.7% of 2013 were not registered at day 14, "
                                         "so more 2014 non-completers left before the KPI counts them."), NAVY),

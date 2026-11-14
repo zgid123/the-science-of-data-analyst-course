@@ -71,7 +71,7 @@ script; the Vietnamese lives in `slides_taskN_vi.py`, a dict `VI` keyed by the E
 - **Speaker notes** start with the spoken time, `(~50 seconds)` / `(~50 giây)`, and carry what the presenter adds:
   the walk through the visual, the reasoning between the points, examples and the hand-over. Presenter
   names appear only on the title slide, as authors; the kicker line, the outline and the notes stay free of them, and
-  hand-overs point to the next part ("The next part weighs the evidence") rather than to a person. The Vietnamese notes of a solo deck speak as "em", of a group deck as "nhóm chúng em"; the authors of the reviewed
+  hand-overs point to the next part ("The next part weighs the evidence") rather than to a person. The Vietnamese notes of a solo deck speak as "em"; a group deck speaks as "nhóm", written "Nhóm" at the start of a sentence (lessons S1c); the authors of the reviewed
   work are always "nhóm tác giả" (guide section 3.2), so every sentence makes clear who acts.
 - **Honesty.** An illustration built by the authors of the deck is labelled as such on the slide (a footnote), and
   every number on a chart or card has its source in a footnote (`foot()`).

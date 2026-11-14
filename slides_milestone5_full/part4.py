@@ -1,4 +1,4 @@
-"""Plan slides 70–94 of the full Milestone 5 deck: AQ2 findings, AQ3/AQ4 expected outputs, answers by question,
+"""Plan slides 70–94 of the full Milestone 5 deck: AQ2 findings, AQ3/AQ4 results of the Level 2 test, answers by question,
 decision support D1–D3, limitations and future work, the pilot, generative AI, conclusions, take-home and thank you.
 
 Numbers come from the Milestone 5 report: Sections 11.3–14 and Appendices XII–XVI (Tables A.30, A.33–A.43).
@@ -145,8 +145,8 @@ def s71(prs):
                                 "against those without, within module run, adjusted for the other signs."),
         tb("Population: ", "registered at day 27; 11,811 enrolments in 2013 (44.4% non-completion) and 15,724 in "
                            "2014 (44.0%); task signs on 9,960 and 12,585."),
-        tb("Criterion: ", "at least 5 points, an interval excluding 0, and the same direction in two-thirds of "
-                          "modules."),
+        tb("Criterion: ", "at least 5 points, an interval excluding 0, and the same direction (more non-completion "
+                          "with the sign) in two-thirds of modules."),
         [(T("These are associations, not causes."), AGENT_INK, True)]]
     kit.room("aq2 text", y + rich_h(paras, rw), END)
     rich(s, rx, y, rw, paras, pt=fit_pt(paras, rw, END - y))
@@ -357,12 +357,12 @@ def s74(prs):
     key(s, yb - 0.2 - kh, k74, X0, lw)
     y3 = head_line(s, rx, y, rw, T("Risk difference, planned → with clicks as a continuous adjustment, points"))
     rows = [[T("Sign"), "2013", "2014"],
-            [T("Missed task"), "40.8 → 37.3", "39.3 → 35.6"],
-            [T("Late TMA"), "20.2 → 19.5", "20.3 → 19.5"],
-            [T("No click in the last 7 days"), "14.5 → 9.3", "15.8 → 10.7"],
-            [T("Activity below the run median"), "13.4 → 5.8", T("14.6 → 5.9: same direction in 4 of 7 modules, "
+            [T("Missed task"), num("40.8 → 37.3"), num("39.3 → 35.6")],
+            [T("Late TMA"), num("20.2 → 19.5"), num("20.3 → 19.5")],
+            [T("No click in the last 7 days"), num("14.5 → 9.3"), num("15.8 → 10.7")],
+            [T("Activity below the run median"), num("13.4 → 5.8"), T("14.6 → 5.9: same direction in 4 of 7 modules, "
                                                                  "criterion not met")],
-            [T("No click before the start"), "10.6 → 8.9", "8.7 → 6.5"]]
+            [T("No click before the start"), num("10.6 → 8.9"), num("8.7 → 6.5")]]
     widths = [I(rw * f) for f in (0.4, 0.22)]
     widths.append(I(rw) - sum(widths))
     k74b = T("Key: continuous adjustment = log(1 + clicks on days 0–27) added to the model; TMA = tutor-marked "
@@ -433,63 +433,50 @@ def s75(prs):
            "A.33 and the sections on groups of students and on what AQ2 means for the project.")
 
 
-# ----------------------------------------------------------------------------- 76 AQ3 and AQ4 (built deck, slide 25)
+# ----------------------------------------------------------------------------- 76 AQ3 and AQ4: the ranked list
 def s76(prs):
-    s = kit.base(prs, kicker(76), T("AQ3 and AQ4: Expected Outputs"), notes(76))
-    y = lead(s, T("AQ3 and AQ4 would give a ranked, capacity-limited list with reasons, and the simple rule stays if "
-                  "the model does not beat it."))
-    lw = 5.3
-    key25 = T("Key: tag = the sign behind the name; TMA = tutor-marked assignment. The card shows the form of the "
-              "output only: no names and no numbers.")
-    ch = END - 0.08 - lh(key25, lw, PT["small"]) - y
-    kit.room("expected card", 3.85, ch)
-    step25 = (ch - 0.65 - 0.45 - 0.2) / 4
-    dashed(rect(s, I(X0), I(y), I(lw), I(ch), fill=WHITE, line=GREY, radius=True, line_w=1.5))
-    text(s, I(X0 + 0.2), I(y + 0.15), I(lw - 0.4), I(0.3), T("Expected output – not a result"), size=HEAD,
-         color=GREY, bold=True, spacing=1.0)
-    tags = [[T("Missed task")], [T("No click in the last 7 days")], [T("Late TMA"), T("Missed task")],
-            [T("Missed task"), T("Late TMA")], [T("No click in the last 7 days")]]
-    ry = y + 0.65
-    for row in tags:
-        chip(s, X0 + 0.2, ry, 0.45, 0.45, "", fill=SOFT, line_color=LINE)
-        rect(s, I(X0 + 0.8), I(ry + 0.14), I(0.9), I(0.17), fill=LINE, radius=True)
-        tx = X0 + 1.85
-        for t in row:
-            tw = 0.3 + text_w(t, PT["small"])
-            chip(s, tx, ry + 0.04, tw, 0.37, t, fill=ACC_FILL, line_color=WARM, color=AGENT_INK)
-            tx += tw + 0.1
-        ry += step25
-    key(s, y + ch + 0.08, key25, X0, lw)
-    rx, rw = X0 + lw + 0.4, CWI - lw - 0.4
-    out25 = [
-        tb("AQ3 would give: ", "a risk rank per enrolment at days 13 and 27, and a probability only if calibration "
-                               "holds; gate S1 answers it on the 13 runs of 2014."),
-        tb("If the model does not beat the rule: ", "the rule's order stays, and its list is measured as a "
-                                                     "baseline."),
-        tb("AQ4 would give: ", "a list of 3 or 5 per 20 students per run, with the signs behind each name. It is "
-                               "answered when it meets S1 (the gate to replace the rule), rule FR1 "
-                               "(the fairness review) passes or its flags are reviewed, and the "
-                               "assumption that the order of risk matches the order of need is stated as untested."),
-        tb("Status: ", "Deferred; expected outputs, no model metric. AQ3 = the predictive question; AQ4 = the "
-                       "prescriptive ranking question.")]
-    neither = [[(T("Neither says "), AGENT_INK, True),
-                (T("who should make contact or whether contact helps."), INK, False)]]
-    nh = rich_h(neither, rw - 0.36, PT["lead"]) + 0.3
+    s = kit.base(prs, kicker(76), T("AQ3 and AQ4: The Ranked List"), notes(76))
+    y = lead(s, T("A model built on 2013 ranks the 2014 students slightly better than the early-sign rule, and its "
+                  "list gives a reason beside each name; it is a rank, not a probability."))
+    neither = [[(T("Neither answer says "), AGENT_INK, True),
+                (T("who should make contact or whether contact helps, and the order of risk is not shown to match "
+                   "the need for help."), INK, False)]]
+    nh = rich_h(neither, CWI - 0.36, PT["body"]) + 0.25
     ny = END - nh
-    rect(s, I(rx), I(ny), I(rw), I(nh), fill=ACC_FILL, line=WARM, radius=True, line_w=2.0)
-    rich(s, rx + 0.18, ny + 0.15, rw - 0.36, neither, pt=PT["lead"])
-    pt = fit_pt(out25, rw, ny - 0.2 - y)
-    kit.room("expected text", rich_h(out25, rw, pt), ny - 0.2 - y)
-    rich(s, rx, y, rw, out25, pt=pt)
-    src(s, "Source: Milestone 5 report, Sections 11.1 and 11.4, and Appendix XIV, Table A.37.")
+    rect(s, MX, I(ny), CW, I(nh), fill=ACC_FILL, line=WARM, radius=True, line_w=2.0)
+    rich(s, X0 + 0.18, ny + 0.12, CWI - 0.36, neither, pt=PT["body"])
+    items = [(T("AQ3 – Predictive: Answered"),
+              [tb("Both cut-offs: ", "lists of 5 per 20 hold 38.6% of later non-completers at day 13 and 41.5% at "
+                                     "day 27, so waiting two more weeks adds little."),
+               tb("Model and rule: ", "they share most names; each list holds 903 students the other does not, and "
+                                      "of the students only the model picks, 59.7% do not complete; of those only the rule picks, 50.6%."),
+               tb("Probability: ", "the predicted risks match the observed rates (calibration) in only 5 of the 13 "
+                                  "runs, so staff see ranks and reasons.")]),
+             (T("AQ4 – Prescriptive: Partial"),
+              [tb("Order: ", "per 20 students (the size of one tutor group), the top-ranked student is a later non-completer 92.4% of the "
+                             "time, the fifth 57.6%, the sixth 55.2%; from the seventh on, 47.3% or less, close to the base rate of "
+                             "44.0% (2014 non-completion at day 27)."),
+               tb("Reasons: ", "for 80.7% of listed students the main reason is behaviour (low activity, a missed "
+                               "task or a late submission)."),
+               tb("Fairness: ", "the fairness check (a group reached over 10 points less well than other students) found none "
+                                "of the three groups fixed in advance disadvantaged (students with a declared "
+                                "disability; in the most deprived band; with no deprivation band recorded).")])]
+    xs, cw = cols(2, 0.3)
+    room = ny - 0.2 - y
+    pt = min(fit_pt(b, cw - 0.36, room - lh(a, cw - 0.36, HEAD, True) - 0.45) for a, b in items)
+    kit.room("aq34 cards", max(card_h(a, b, cw, pt=pt) for a, b in items), room)
+    for k, (x, (a, b)) in enumerate(zip(xs, items)):
+        card(s, x, y, cw, a, b, h=room, pt=pt, fill=ACC_FILL if k == 0 else SOFT, line=WARM if k == 0 else LINE,
+             line_w=1.5 if k == 0 else 1.0)
+    src(s, "Source: Milestone 5 report, Sections 10 and 11.4, and Appendix XIV, Table A.37.")
 
 
 # ----------------------------------------------------------------------------- 77 answers by question
 def s77(prs):
     s = kit.base(prs, kicker(77), T("Answers by Question"), notes(77))
-    y = lead(s, T("We can describe the size and timing of non-completion and name its early signs; we cannot yet rank "
-                  "better than the rule or say whether contact helps."))
-    rows = [[T("Question"), T("Evidence and method"), T("Main finding or expected output"), T("Confidence"),
+    y = lead(s, T("We can describe the size and timing of non-completion, name its early signs and rank students "
+                  "slightly better than the rule; we cannot say whether contact helps."))
+    rows = [[T("Question"), T("Evidence and method"), T("Main finding"), T("Confidence"),
              T("Implication for decision")],
             [T("AQ1, descriptive"), T("22 runs, day 14: 28,061 enrolments; rates under two denominators"),
              T("45.3% did not complete; runs 24.9–58.3%; under 20% of non-completers missed a task by week 4"),
@@ -497,22 +484,24 @@ def s77(prs):
             [T("AQ2, diagnostic"), T("Day 27: 11,811 and 15,724; logistic, run fixed effects"),
              T("Five signs consistent in both years; missed task 40.8 and 39.3 points"),
              T("Moderate; association"), T("D1 reasons; contact to test")],
-            [T("AQ3, predictive"), T("Proposed: 2013 → 2014; penalised logistic"),
-             T("Expected: risk rank; gate S1"), T("Not applicable"), T("D1 order only if S1 is met")],
-            [T("AQ4, prescriptive ranking"), T("Proposed: AQ3 scores; top-ranked list; FR1"),
-             T("Expected: 3 or 5 per 20 with signs"), T("Not applicable; no contact data"),
-             T("D1 list, not a contact plan")]]
+            [T("AQ3, predictive"), T("Train 2013: 11,811; test 2014: 15,724; penalised logistic, gate S1"),
+             T("S1 met: 0.725 vs 0.704; 41.5% of non-completers on lists of 5 per 20"),
+             T("Moderate; ranks only, calibration fails in 8 of 13 runs"), T("D1 order; the rule as fallback")],
+            [T("AQ4, prescriptive ranking"), T("AQ3 scores, 2014: 15,724; top-k per run; FR1"),
+             T("1st contact 92.4%, 7th 47.3% non-completers; FR1: none flagged"), T("Moderate; no contact data"),
+             T("D1 list of up to about 6 per 20, not a contact plan")]]
     fr = (0.15, 0.21, 0.27, 0.16)
     widths = [int(CW * f) for f in fr]
     widths.append(CW - sum(widths))
-    k77 = T("Key: orange = answered on data; blue = deferred, expected output only. D1 = whom to contact; D2 = where "
+    k77 = T("Key: orange = answered on data; blue = answered for the ranking, contact part without data. D1 = whom "
+            "to contact; D2 = where "
             "support time goes; S1 = the gate a model must pass to replace the early-sign rule; FR1 = the fairness "
             "review rule; KPI = key performance indicator; OULAD = Open University Learning Analytics Dataset.")
     kh = lh(k77, CWI, PT["small"])
     room = END - kh - 0.1 - y
     size = PT["body"] if table_h(rows, widths, PT["body"]) <= room else BODY
     shape = table(s, MX, I(y), CW, rows, widths, size=size)
-    colour_cells(shape, rows, 0, [WARM, WARM, kit.BLUE, kit.BLUE])
+    colour_cells(shape, rows, 0, [WARM, WARM, WARM, kit.BLUE])
     th = stretch_table(shape, room)
     key(s, y + th + 0.1, k77)
     src(s, "Source: Milestone 5 report, Section 11.5, Table 11.3, and Appendix XIV, Tables A.38 and A.39.")
@@ -521,14 +510,14 @@ def s77(prs):
 # ----------------------------------------------------------------------------- 78–80 decision support
 def s78(prs):
     s = kit.base(prs, kicker(78), T("Decision D1: Whom to Contact"), notes(78))
-    y = lead(s, T("For whom to contact, the early-sign rule is the candidate list, with its signs shown as reasons, "
-                  "once its own list performance has been measured."))
+    y = lead(s, T("For whom to contact, the AQ3 model ranks the list with the signs shown as reasons, and the "
+                  "early-sign rule, which holds 97% of the model's hits, is its fallback."))
     y = owner(s, y, T("course lecturers, lecturer-advisors and the support office, at each review point"),
               T("a reversible decision"))
     k78 = T("Key: early-sign rule = a task due but not submitted, a late TMA (tutor-marked assignment) or no click in "
             "the last 7 days; S1 = the gate the AQ3 model (predictive question) must pass to replace the rule's "
-            "order; B2 = the rule's own list, measured in the same test; AQ1, AQ2 = the descriptive and diagnostic "
-            "questions.")
+            "order, met on the 2014 test; FR1 = the fairness review rule; AQ2–AQ4 = the diagnostic, predictive and "
+            "ranking questions.")
     note78 = [tb("Why ranking matters: ", "the rule flags 28.8% of the 27,535 enrolments registered at day 27 across "
                                           "the 22 runs, more than a list of 5 per 20 students (25%) can hold, so the "
                                           "list is ordered by the number of signs.")]
@@ -537,16 +526,16 @@ def s78(prs):
     items = [(T("Evidence now"),
               [tb("AQ2: ", "a missed task goes with 40.8 more points of non-completion (37.7–43.9) in 2013, and each "
                            "part of the rule carries information on its own."),
-               tb("AQ1: ", "by week 4 only 19.6% of non-completers had missed a task; 2 of the 9 runs of 2013 had no "
-                           "task due by day 27.")]),
+               tb("AQ3, AQ4: ", "model lists of 5 per 20 hold 41.5% of later non-completers (rule 40.3%, random "
+                                "25.1%); gate S1 met; FR1 flags no group.")]),
              (T("Decision option"),
-              [T("Build the pilot's week-3 and week-5 lists from the early-sign rule, including its activity part, "
-                 "ordered by the number of signs, with the signs beside each name."),
-               T("A member of staff checks every name. The AQ3 ranking replaces the order only if gate S1 is met.")],
+              [T("Build the pilot's week-3 and week-5 lists from the AQ3 ranking, at most about 6 per 20 students, "
+                 "shown as ranks with behavioural reasons."),
+               T("A member of staff checks every name; the early-sign rule, ordered by its number of signs, is the "
+                 "fallback.")],
               AGENT_INK, ACC_FILL, WARM),
              (T("Check before adoption"),
-              [T("The rule's list of 3 or 5 per 20 reaches more later non-completers than a random list of the same "
-                 "length (baseline B2)."),
+              [T("The model's order still holds on the university's own records, recounted before the pilot."),
                T("Contact raises completion against usual support: a randomised pilot, with the contact person and "
                  "the offer left open.")])]
     xs3, cw3 = cols(3, 0.5)
@@ -644,7 +633,7 @@ def s80(prs):
     bottom = ky - 0.15
     xs, cw = cols(3, 0.5)
     ev = [T("The denominator alone can move a completion rate by up to 13.6 points."),
-          T("AQ3 and AQ4 (the predictive and ranking questions) have no result yet."),
+          T("AQ3 meets its gate and AQ4 its fairness rule on OULAD, which is not the university."),
           T("No evidence on the effect of contact exists.")]
     pt = next((p for p in (PT["lead"], PT["body"]) if card_h(T("Evidence now"), ev, cw, p, max(HEAD, p))
                <= bottom - y), BODY)
@@ -673,12 +662,12 @@ def s80(prs):
 
 
 # ----------------------------------------------------------------------------- 81–83 limitations
-KIND_COL = {"No evidence found": MINUS, "No data to test": kit.BLUE, "Not yet tested": WARM,
-            "Measurement": kit.VIOLET, "Scope and causal": kit.TEAL}
+KIND_COL = {"No evidence found": MINUS, "No data to test": kit.BLUE, "Measurement": kit.VIOLET,
+            "Scope": kit.TEAL, "Scope and causal": kit.TEAL}
 
 
 def s81(prs):
-    s = kit.base(prs, kicker(81), T("Three Kinds of Limit"), notes(81))
+    s = kit.base(prs, kicker(81), T("Kinds of Limit"), notes(81))
     y = lead(s, T("We keep three kinds of limit apart, because each calls for a different next step."))
     kinds = [(T("No evidence found"), T("A comparison was made and showed no clear difference: for example, the year "
                                         "difference over all enrolments in the six shared modules, −0.2 points (−1.4 "
@@ -686,9 +675,9 @@ def s81(prs):
              (T("No data to test"), T("OULAD and every screened dataset lack the data: contacts and their outcomes, "
                                       "delivery mode, year of study, attendance, staff capacity."),
               T("collect in the randomised pilot"), kit.BLUE),
-             (T("Not yet tested"), T("The data exist, but the analysis waits for the single AQ3 test (the predictive "
-                                     "question): AQ3 and AQ4 results."), T("the single test, design unchanged"),
-              WARM)]
+             (T("Measurement"), T("The AQ3 risks hold as ranks, not probabilities (calibration fails in 8 of 13 "
+                                  "runs)."),
+              T("ranks and reasons only; a later review point"), kit.VIOLET)]
     conds = [(T("Scope"), T("UK distance-learning modules of 2013–2014; instructional conditions change what predicts "
                             "success.")),
              (T("Confounding"), T("The effect of contact cannot be known from these data.")),
@@ -731,7 +720,9 @@ def s82(prs):
             T("Randomised pilot")),
            (T("Several-modules sign before 2014; approved leave and transfer"), "No data to test",
             T("Described on 2014; university recount")),
-           (T("AQ3 and AQ4 results"), "Not yet tested", T("Single AQ3 test, design unchanged")),
+           (T("AQ3 probabilities (calibration fails in 8 of 13 runs); active non-completers rarely listed"),
+            "Measurement", T("Ranks and reasons only; a later review point")),
+           (T("2014 runs described before the AQ3 test"), "Scope", T("Design fixed on 2013; tuning recorded")),
            (T("Binary click signs; below-median sign weak in 2014 once adjusted; KPI proxy and denominator"),
             "Measurement", T("Continuous click measures in AQ3; one add-drop rule")),
            (T("UK distance learning of 2013–2014; observational design"), "Scope and causal",
@@ -740,8 +731,8 @@ def s82(prs):
     fr = (0.5, 0.17)
     widths = [int(CW * f) for f in fr]
     widths.append(CW - sum(widths))
-    k82 = T("Key: kind colours: red = no evidence found; blue = no data to test; orange = not "
-            "yet tested; violet = measurement; teal = scope and causal. Several-modules sign = tasks missed in more "
+    k82 = T("Key: kind colours: red = no evidence found; blue = no data to test; violet = measurement; teal = scope, "
+            "or scope and causal. Several-modules sign = tasks missed in more "
             "than one module at once; KPI = key performance indicator; add-drop rule = only students still registered at "
             "day 14 count; AQ3, AQ4 = the predictive and ranking questions.")
     kh = lh(k82, CWI, PT["small"])
@@ -775,7 +766,7 @@ def s83(prs):
             [T("Run length"), T("A module run lasts 234 to 269 days, longer than a semester."),
              T("The meaning of “week 4” at the university")],
             [T("No minimum gain"), T("Gate S1 sets no minimum size of gain."),
-             T("A pass is read with the number of extra non-completers listed")],
+             T("The pass: 82 more non-completers on 3,955 list places")],
             [T("Fairness trade-off"), T("Fairness criteria cannot all hold when base rates differ."),
              T("One criterion: equal recall at capacity")]]
     fr = (0.17, 0.48)
@@ -796,14 +787,15 @@ def s83(prs):
 # ----------------------------------------------------------------------------- 84–87 future work and the pilot
 def s84(prs):
     s = kit.base(prs, kicker(84), T("Future Work in Order"), notes(84))
-    y = lead(s, T("Two steps can run on OULAD as it stands; three need the university, and the last, a randomised "
+    y = lead(s, T("One step can run on OULAD as it stands; four need the university, and the last, a randomised "
                   "pilot, alone can show whether contact helps."))
-    steps = [(T("1. The AQ3 test"),
-              T("Does a model at day 27 list more non-completers than the early-sign rule (gate S1)? The rule's own "
-                "list; calibration."), T("OULAD as prepared"), T("The frozen protocol of Milestone 4"), "white"),
-             (T("2. AQ4 list and fairness audit"),
-              T("Recall at 3 and 5 per 20, gain over a random list, FR1 by disability and deprivation band."),
-              T("The frozen AQ3 scores on 2014"), T("Step 1"), "white"),
+    steps = [(T("1. Later review point"),
+              T("Does a list after the second assessed task reach the non-completers who still look active at week "
+                "4?"), T("OULAD views extended to the later cut-off, design fixed first"), T("The AQ3 protocol"),
+              "white"),
+             (T("2. Model check at the university"),
+              T("Do the ranking, its small gain over the rule and its fairness hold for the university's courses? "
+                "Calibration per course."), T("The university's records of step 3"), T("Step 3"), "ref"),
              (T("3. Transfer to the university"),
               T("Baseline completion under the add-drop rule; the rule on the university's task calendar; AQ1 and AQ2 "
                 "re-checked."), T("Two years of the university's records"), T("Data access approved"), "ref"),
@@ -813,9 +805,9 @@ def s84(prs):
              (T("5. Randomised pilot"),
               T("Does contact raise completion? Which contact and offer work? KPI 1 contact part and KPI 2."),
               T("Contact record: time, person, offer, outcome"), T("Steps 3 and 4"), "agent")]
-    k84 = T("Key: AQ1–AQ4 = the descriptive, diagnostic, predictive and ranking questions; AQ3 test = its Level 2 "
-            "prototype; add-drop rule = only students still registered at day 14 count; OULAD = Open University Learning "
-            "Analytics Dataset; S1 = the gate a model must pass to replace the rule; FR1 = the fairness review rule; KPI 1 = early-sign contact rate; KPI 2 = follow-up rate.")
+    k84 = T("Key: AQ1–AQ4 = the descriptive, diagnostic, predictive and ranking questions; AQ3 protocol = the "
+            "frozen protocol of the Level 2 prototype; add-drop rule = only students still registered at day 14 count; OULAD = Open University Learning "
+            "Analytics Dataset; KPI 1 = early-sign contact rate; KPI 2 = follow-up rate.")
     kh = lh(k84, CWI, PT["small"])
     xs, sw = cols(5, 0.28)
     by = y + 0.45
@@ -839,7 +831,7 @@ def s84(prs):
         if k < 4:
             ay = by + (4 - k) * top_rise + 0.35
             arrow(s, xs[k] + sw + 0.03, ay, xs[k + 1] + 0.0 - 0.03, ay - top_rise)
-    for x1, x2, lab, c in [(xs[0], xs[1] + sw, T("On OULAD now"), NAVY), (xs[2], xs[4] + sw, T("At the university"),
+    for x1, x2, lab, c in [(xs[0], xs[0] + sw, T("On OULAD now"), NAVY), (xs[1], xs[4] + sw, T("At the university"),
                                                                        kit.BLUE)]:
         rect(s, I(x1), I(y + 0.12), I(x2 - x1), I(0.03), fill=c)
         rect(s, I(x1), I(y + 0.04), I(0.03), I(0.1), fill=c)
@@ -1094,7 +1086,7 @@ def s90(prs):
                                         "independent test.")], MINUS, BAD_FILL, MINUS),
              (T("Decisions that stayed ours"), [T("Keep the 2014 runs out of every AQ3 choice."),
                                                 T("One early-sign rule for OULAD and the pilot."),
-                                                T("Report AQ3 and AQ4 as designs."),
+                                                T("Run the AQ3 model once on 2014, as frozen on 2013."),
                                                 T("State every association as an association."),
                                                 T("Every result in the report comes from code we reran and "
                                                   "checked.")])]
@@ -1121,13 +1113,13 @@ def s91(prs):
              (T("2. Moderate confidence"), WARM, ACC_FILL,
               T("All five early signs go with later non-completion in both years, a missed task by 40.8 and 39.3 "
                 "points, in the same direction across modules, with one wide exception. These are associations.")),
-             (T("3. Design only"), GREY, SOFT,
-              T("A penalised logistic model judged once against the early-sign rule, and a capacity-limited list "
-                "audited for fairness; outputs are expected, not measured."))]
+             (T("3. Moderate confidence, ranks only"), NAVY, SOFT,
+              T("A penalised logistic model built on 2013 ranks the 2014 students slightly better than the rule and "
+                "passes gate S1; lists of 5 per 20 hold 41.5% of later non-completers, no fairness group flagged."))]
     lab_w = 3.3
     key91 = T("Key: tiers run from the firmest finding at the top; the label of each tier is its confidence level. "
               "OULAD = Open University Learning Analytics Dataset; add-drop rule = only students still registered at "
-              "day 14 count.")
+              "day 14 count; S1 = the gate a model must pass to replace the early-sign rule.")
     kh = lh(key91, CWI, PT["small"])
     bottom = END - kh - 0.15
 
@@ -1159,8 +1151,9 @@ def s92(prs):
     rows = [[T("We cannot conclude that…"), T("Because"), T("Open problem and planned answer")],
             [T("the signs cause non-completion"), T("A regression capturing associations is descriptive, not causal."),
              T("Treat the signs as reasons to check, never as causes.")],
-            [T("a model ranks students better than the early-sign rule"), T("No model has been trained or tested."),
-             T("The single AQ3 test under the frozen protocol.")],
+            [T("a model's risk is a reliable probability for each run"),
+             T("Calibration fails in 8 of the 13 test runs, so the model holds as a rank, not a probability."),
+             T("Show ranks and reasons; check calibration per course on the university's records.")],
             [T("contacting a listed student raises completion"),
              T("No data record contact, and questions of effectiveness need a randomised experiment."),
              T("A randomised pilot with contacts and outcomes logged.")]]
@@ -1170,8 +1163,8 @@ def s92(prs):
               (T("every result describes UK distance-learning modules of 2013–2014 and is recounted on the "
                  "university's records, after a risk classification of the list."), WHITE, False)]]
     mh = rich_h(scope, CWI - 0.6, PT["lead"]) + 0.25
-    k92 = T("Key: orange column = the planned answer; AQ3 = the predictive question (a model against the early-sign "
-            "rule).")
+    k92 = T("Key: orange column = the planned answer; calibration = whether predicted risks match the observed "
+            "rates.")
     kh = lh(k92, CWI, PT["small"])
     yb = END - mh
     room = yb - 0.2 - kh - 0.1 - y
@@ -1192,16 +1185,16 @@ def s92(prs):
 
 def s93(prs):
     s = kit.base(prs, kicker(93), T("Take-home"), notes(93))
-    y = lead(s, T("Start early with an interpretable list that counts inactivity, test a model against it once, and let "
-                  "a randomised pilot decide whether contact helps."))
-    lines = [(T("Don't wait for missed tasks."), T("Under one in five non-completers had missed one by week 4 (19.6% in "
-                                                  "2013, 14.7% in 2014)."), WARM, ACC_FILL),
-             (T("Start simple, test once."), T("The early-sign rule, with its signs as reasons beside each name, is the "
-                                              "list to beat; a model replaces it only by passing one gate fixed in "
-                                              "advance."), NAVY, SOFT),
-             (T("Prove it before scaling."), T("Only a randomised pilot can show whether, and for whom, early contact "
-                                              "improves completion."), NAVY, SOFT)]
-    take = T("Take-home: a missed task comes too late; count silence too, and test contact before trusting it.")
+    y = lead(s, T("Three things to take home: what to watch, how long a list should be, and what to prove first."))
+    lines = [(T("Watch for inactivity, not only missed tasks."),
+              T("Fewer than one in five future non-completers had missed a task by week 4; inactivity shows "
+                "earlier."), WARM, ACC_FILL),
+             (T("Size the list to the people who will call."),
+              T("5 to 6 names per 20 students, each with the reason it is there."), NAVY, SOFT),
+             (T("Read scores as ranks; pilot before scaling."),
+              T("Risks are not reliable probabilities; only a randomised pilot shows whether contact helps."),
+              NAVY, SOFT)]
+    take = T("Take-home: watch for inactivity, size the list to capacity, and prove that contact works before scaling.")
     mh = lh(take, CWI - 0.6, PT["lead"], True) + 0.35
     yb = END - mh
     hp = 26
@@ -1225,7 +1218,7 @@ def s93(prs):
              I(lh(b, CWI - num_w - 0.5, PT["lead"])), b, size=PT["lead"], color=INK, spacing=1.0)
         y += h + gap
     closing_box(s, yb, take, h=mh)
-    src(s, "Source: Milestone 5 report, Sections 11.2, 11.5 and 14, and Appendix XII, Table A.31.")
+    src(s, "Source: Milestone 5 report, Sections 11.2, 11.4, 11.5 and 14, and Appendix XII, Table A.31.")
 
 
 def s94(prs):
@@ -1236,7 +1229,7 @@ def s94(prs):
     text(s, I(1.0), I(2.75), W - I(2.0), I(0.45), T("Early Identification of Disengaging Students in Online Courses – "
                                                     "team N04"), size=PT["lead"], color=WHITE,
          align=PP_ALIGN.CENTER, spacing=1.0)
-    msg = T("Take-home: a missed task comes too late; count silence too, and test contact before trusting it.")
+    msg = T("Take-home: watch for inactivity, size the list to capacity, and prove that contact works before scaling.")
     mh = lh(msg, 10.5, PT["lead"] + 4, True) + 0.4
     rect(s, I(1.3), I(3.65), W - I(2.6), I(mh), fill=pal_rgb(pal.shade(pal.NAVY, 0.25)), radius=True)
     text(s, I(1.6), I(3.65), W - I(3.2), I(mh), msg, size=PT["lead"] + 4, color=WHITE, bold=True,

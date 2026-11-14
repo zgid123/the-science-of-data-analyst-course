@@ -1,0 +1,38 @@
+# T47 – presentation naming audit and deterministic rebuild of every deck
+UTC: 2026-11-14T02:23:30Z
+
+Rename: presentation/v1-30-slides/ -> presentation/v1-30/ (scope '30' as in every other v1 file); references updated in build_slides_milestone5_30.py, PROGRESS.md, presentation/README.md
+
+$ SLIDES_OUT_DIR=<scratch>/r1 venv/bin/python build_slides_milestone5_30.py
+exit: 0
+$ SLIDES_OUT_DIR=<scratch>/r1 venv/bin/python build_slides_milestone5_full.py
+exit: 0
+$ SLIDES_OUT_DIR=<scratch>/r1 venv/bin/python build_slides_milestone5_15.py
+exit: 0
+$ SLIDES_OUT_DIR=<scratch>/r2 venv/bin/python build_slides_milestone5_30.py
+exit: 0
+$ SLIDES_OUT_DIR=<scratch>/r2 venv/bin/python build_slides_milestone5_full.py
+exit: 0
+$ SLIDES_OUT_DIR=<scratch>/r2 venv/bin/python build_slides_milestone5_15.py
+exit: 0
+$ slidekit.py diff run1/N04_Milestone5_Slides-30_EN.pptx run2/N04_Milestone5_Slides-30_EN.pptx ; and run1 vs reports/milestone-5/build/N04_Milestone5_Slides-30_EN.pptx
+175 parts, 0 differ
+175 parts, 0 differ
+$ slidekit.py diff run1/N04_Milestone5_Slides-30_VI.pptx run2/N04_Milestone5_Slides-30_VI.pptx ; and run1 vs reports/milestone-5/build/N04_Milestone5_Slides-30_VI.pptx
+175 parts, 0 differ
+175 parts, 0 differ
+$ slidekit.py diff run1/N04_Milestone5_Slides-Full_EN.pptx run2/N04_Milestone5_Slides-Full_EN.pptx ; and run1 vs reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+454 parts, 0 differ
+454 parts, 0 differ
+$ slidekit.py diff run1/N04_Milestone5_Slides-Split_EN.pptx run2/N04_Milestone5_Slides-Split_EN.pptx ; and run1 vs reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+458 parts, 0 differ
+458 parts, 0 differ
+$ slidekit.py diff run1/N04_Milestone5_Slides-15_EN.pptx run2/N04_Milestone5_Slides-15_EN.pptx ; and run1 vs reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+466 parts, 0 differ
+466 parts, 0 differ
+$ slidekit.py diff run1/N04_Milestone5_Slides-15_VI.pptx run2/N04_Milestone5_Slides-15_VI.pptx ; and run1 vs reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+466 parts, 0 differ
+466 parts, 0 differ
+
+$ cmp submission/N04_Project/N04_Project.pptx reports/milestone-5/build/N04_Milestone5_Slides-30_VI.pptx
+identical

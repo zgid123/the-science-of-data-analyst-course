@@ -1,0 +1,12 @@
+# 2026-11-13T19:32Z final build --lang all
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[vi] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+main slides: 15; appendix slides: 79
+# exit_status: 0
+# check_slides en
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 00 s
+# check_slides vi
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 00 s

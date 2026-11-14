@@ -1,0 +1,57 @@
+# T43 reader re-test fixes (round 2) — 2026-11-13T20:09:52Z
+$ venv/bin/python build_slides_milestone5_15.py --lang all
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[vi] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+main slides: 15; appendix slides: 79
+exit 0
+$ venv/bin/python build_slides_milestone5_full.py --layout both
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang en --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 58 s
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang vi --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+WARN  slide 14 (layout): shape off the slide: 'Chú giải: AQ = câu hỏi phân tích; S1 = ngưỡng mô h'
+
+Checked 97 slides: 0 errors, 1 warnings; spoken time ≈ 108 min 58 s
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang en --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 38 s
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang en --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 38 s
+exit 0
+
+# Vietnamese fit fixes after the first pass (slide 8 card, key, control cell; slide 10 gate; slide 14 key), 2026-11-13T20:13:28Z
+$ venv/bin/python build_slides_milestone5_15.py --lang vi  -> no '! vi' room lines; no missing strings
+$ check_slides.py --lang vi --task milestone-5 …Slides-15_VI.pptx -> Checked 97 slides: 0 errors, 0 warnings
+# Prune: slidekit.py strings --all build_slides_milestone5_15.py -> 2104 strings; VI 2149 -> 2128 (kept: listed keys + Vietnamese identity keys); 21 unused English keys dropped; 0 untranslated
+$ venv/bin/python build_slides_milestone5_15.py --lang vi (after prune) -> exit 0, no room lines
+$ check_slides.py --lang vi --task milestone-5 …Slides-15_VI.pptx (after prune) -> 0 errors, 0 warnings
+
+# Closing notes: 'silence' -> 'inactivity' (EN + VI), 2026-11-13T20:16:02Z
+$ slidekit.py sync build_slides_milestone5_15.py -> 2104 English strings, 2128 keys; 0 missing; 24 unused (all Vietnamese identity keys, kept)
+$ venv/bin/python build_slides_milestone5_15.py --lang all
+[en] 97 slides → reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[vi] 97 slides → reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+main slides: 15; appendix slides: 79
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang en --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 58 s
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang vi --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 58 s
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang en --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 38 s
+exit 0
+$ venv/bin/python .claude/skills/build-report/scripts/check_slides.py --lang en --task milestone-5 reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 38 s
+exit 0
+# Refreshed reader inputs: slidekit.py text (slides 1–17) and preview_slides.py --slides 1-16 of the Vietnamese 15-slide deck

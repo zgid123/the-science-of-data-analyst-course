@@ -59,7 +59,7 @@ def s01(prs):
     """Title slide: project title, subtitle, purpose line, lecturers and team members, course line, logo."""
     s = prs.slides.add_slide(prs.slide_layouts[6])
     title = T("Early Identification of Disengaging Students in Online Courses")
-    sub = T("Final project report: from the problem to the integrated answer")
+    sub = T("Final project report: from the problem to the answers and the decisions they support")
     purpose = T("A final report on finding students who drift away from online courses early enough to help them.")
     tw = 10.0
     if LOGO.exists():
@@ -106,7 +106,7 @@ def s02(prs):
              "period. Non-completion = a fail or a withdrawal. Task = an assessed assignment or quiz, never the exam.")
     ky = bottom_key(s, keyl)
     xs, cw = cols(2, 0.3)
-    items = [(T("How many do not complete"), "45.3%",
+    items = [(T("How many do not complete"), num("45.3%"),
               [T("of the 28,061 enrolments still registered at day 14 did not complete (95% interval 44.7–45.8%), "
                  "over all 22 module runs.")], False),
              (T("How many show it by week 4"), T("19.6% and 14.7%"),
@@ -143,7 +143,7 @@ def s03(prs):
                            "al., 2019); the moments staff notice come from simulated stakeholder interviews.")) + 0.25
     xs, cw = cols(3)
     items = [(T("Setting"), [T("A Vietnamese university expands online and blended learning on its learning management "
-                               "system (LMS); one program has about 1,200 students (a scenario assumption).")]),
+                               "system (LMS); one program has about 1,200 students (assumed: the university is a case scenario).")]),
              (T("Disengagement"), [T("A student misses a task, opens the course less often and falls silent before a "
                                      "fail or a withdrawal is recorded."),
                                    T("The records show these traces weeks before any final result.")]),
@@ -161,8 +161,8 @@ def s03(prs):
 # ----------------------------------------------------------------------------- 4 our answer in brief (deck slide 3)
 def s04(prs):
     s = kit.base(prs, kicker(4), T("Our Answer in Brief"), notes(4))
-    y = lead(s, T("Early records give staff a factual reason beside each name now; whether a model ranks better, and "
-                  "whether contact helps, still needs one held-out test on the 2014 runs and a randomised pilot."))
+    y = lead(s, T("Early records give staff a ranked list with a factual reason beside each name; a model built on "
+                  "2013 ranks the 2014 students slightly better than the rule, and whether contact helps needs a pilot."))
     terms = [tb("Non-completion: ", "a fail or a withdrawal."),
              tb("Early sign: ", "a record dated by the data cut-off, such as a task missed or a week without any "
                                 "platform activity."),
@@ -180,13 +180,14 @@ def s04(prs):
     y += kh_ + 0.25
     xs, cw = cols(3)
     items = [(T("Size"), T("45.3%"), T("of the 28,061 enrolments still registered at day 14 did not complete.")),
-             (T("Timing"), T("Under 1 in 5"), T("non-completers had missed a task by week 4 (day 27).")),
+             (T("List"), T("41.5%"), T("of later non-completers on model lists of 5 per 20 students, against 40.3% "
+                                       "for the early-sign rule (13 runs of 2014).")),
              (T("Signs"), T("5 of 5"), T("early signs, from tasks and from activity, go with later non-completion in "
                                          "both years; a missed task adds 40.8 (2013) and 39.3 (2014) percentage "
                                          "points."))]
     vh = kit.num_h(PT["title"] + 6)
     open_line = [[(T("Still open: "), GREY, True),
-                  (T("the prediction model and the ranked list are designed, not run; the effect of contact is "
+                  (T("risks are reliable as ranks, not as probabilities, in 8 of 13 runs; the effect of contact is "
                      "untested."), INK, False)]]
     oh = rich_h(open_line, CWI - 0.36) + 0.1
     h = max(0.14 + lh(a, cw - 0.36, HEAD, True) + 0.04 + vh + 0.04 + rich_h([c], cw - 0.36) + 0.06
@@ -204,7 +205,7 @@ def s04(prs):
     y = END - oh                                 # the open strip sits on the bottom edge
     rect(s, MX, I(y), CW, I(oh), fill=GREY_FILL, radius=True)
     rich(s, X0 + 0.18, y + 0.07, CWI - 0.36, open_line)
-    src(s, "Source: Milestone 5 report, Abstract and Sections 2.1, 3, 10, 11.2 and 11.3.")
+    src(s, "Source: Milestone 5 report, Abstract and Sections 2.1, 3, 10, 11.2, 11.3 and 11.4.")
 
 
 # ----------------------------------------------------------------------------- 5 how the talk is built
@@ -223,7 +224,7 @@ def s05(prs):
              (T("Part 4 · Method"), T("Milestone 4"), [T("8 Candidate methods"), T("9 Evaluation design")],
               T("How each question is answered and judged, fixed before any result.")),
              (T("Part 5 · Evidence"), T("Milestone 5"), [T("10 Findings and limitations")],
-              T("AQ1 and AQ2 answered on 2013 and 2014; what AQ3 and AQ4 would give.")),
+              T("AQ1 and AQ2 answered on 2013 and 2014; AQ3 and AQ4 by one test on 2014.")),
              (T("Part 6 · Integration and Use"), T("Milestone 5"), [T("11 Educational decision support")],
               T("What each decision can use now, limits, next steps and the use of AI."))]
     keyl = T("Key: numbered boxes = the eleven links of the project chain, in the order the talk follows them. "
@@ -530,7 +531,8 @@ def s12(prs):
     pilot = bullets([tb("Pilot courses: ", "about four courses with about 600 enrolments (assumptions), fixed in "
                                            "advance and compared with similar courses outside the pilot.", INK),
                      tb("Baseline: ", "completion of the same courses in 2024–2025 and 2025–2026, recounted under "
-                                      "Circular 83/2026 so that approved leave and transfers do not count.", INK)])
+                                      "Circular 83/2026, the new national rule for counting withdrawals, so that "
+                                      "approved leave and transfers do not count.", INK)])
     ly = y2 + 0.25
     h = END - ly
     kit.room("goal lower", ly + card_h(T("Pilot design"), pilot, tw), END)
@@ -696,34 +698,36 @@ def s16(prs):
     s = kit.base(prs, kicker(16), T("Four Questions, Four Analytics Levels"), notes(16))
     y = lead(s, T("Four questions climb the analytics levels, and each answer may claim only what its level allows."))
     y = rich(s, X0, y, CWI, [tb("Unit of analysis: ", "one student's enrolment in one module run (one offering of a "
-                                                       "module). AQ: analytical question.")])
+                                                       "module). AQ: analytical question. Decisions: D1 whom to contact, "
+                                                       "D2 where to place support time, D3 whether to extend.")])
     rungs = [(T("AQ1 – Descriptive"), T("What share pass, fail or withdraw, and in which week do non-completers first "
                                         "miss a task?"), T("Serves D2 and D3."), T("Reads as: what happened.")),
              (T("AQ2 – Diagnostic"), T("Which signs by week 4 go with later non-completion, within module run?"),
               T("Serves D2, and gives the reasons for D1."), T("Reads as: an association.")),
-             (T("AQ3 – Predictive"), T("How well do data up to days 13 and 27 estimate non-completion, against the "
-                                       "early-sign rule (built on 2013, applied to 2014)?"), T("Serves D1."),
+             (T("AQ3 – Predictive"), T("How well do data up to day 13 or 27 (end of week 2 or 4) estimate non-completion, against the "
+                                       "early-sign rule?"), T("Serves D1."),
               T("Reads as: a forecast, valid only on data the model never saw.")),
-             (T("AQ4 – Prescriptive"), T("Who ranks first on a list of fixed capacity, overall and by group?"),
+             (T("AQ4 – Prescriptive"), T("Who ranks first on a list as long as staff can contact, overall and by student group (for the fairness "
+                                         "check)?"),
               T("Serves D1."), T("Reads as: an option to test, because it comes from observational data."))]
     xs, cw = cols(4, 0.2)
     step = 0.25
     tag_h = 0.4
     need = max(card_h(a, [b, c, [(d, AGENT_INK, True)]], cw) for a, b, c, d in rungs) + tag_h
-    ladder_key = T("Key: orange rungs were run on the data, white "
-                   "rungs are designs. Data cut-offs: day 13 (end of week 2) for the week-3 list; day 27 (end "
-                   "of week 4) for the week-5 list. Decisions: D1 whom to contact, D2 where to place "
-                   "support time, D3 whether to extend. Early-sign rule: a missed or late task, or a week "
-                   "with no activity.")
+    ladder_key = T("Key: every rung was run on the data; AQ4 is answered for its ranking, while its contact part has "
+                   "no data. Data cut-offs: day 13 (end of week 2) for the week-3 list; day 27 (end "
+                   "of week 4) for the week-5 list. Early-sign rule: a missed or late task, or a week with no "
+                   "activity.")
     bottom = END - lh(ladder_key, CWI, PT["small"]) - 0.12
     kit.room("question ladder", need + 3 * step, bottom - (y + 0.25))
     top0 = y + 0.25
     for k, (x, (a, b, c, d)) in enumerate(zip(xs, rungs)):
         top = top0 + (3 - k) * step
-        run = k < 2
+        run = True
         card(s, x, top, cw, a, [b, c, [(d, AGENT_INK, True)]], h=bottom - top,
              fill=ACC_FILL if run else WHITE, line=WARM if run else GREY, line_w=2.0 if run else 1.0)
-        chip(s, x + 0.18, bottom - tag_h + 0.02, cw - 0.36, 0.3, T("Run on the data") if run else T("Design only"),
+        chip(s, x + 0.18, bottom - tag_h + 0.02, cw - 0.36, 0.3,
+             T("Ranking answered") if k == 3 else T("Run on the data"),
              fill=WARM if run else WHITE, line_color=WARM if run else GREY, color=WHITE if run else GREY, bold=True)
     key(s, bottom + 0.12, ladder_key)
     src(s, "Source: Milestone 5 report, Section 3 and Table 3.1.")
@@ -735,7 +739,7 @@ def s17(prs):
     y = lead(s, T("The analytics level of a question fixes what its answer may claim: a diagnostic answer is an "
                   "association, and a prescriptive answer on observational data is an option to test."))
     keyl = T("Key: AQ = analytical question. Observational data = records of what students did, with no assigned "
-             "treatment. Orange = real results; grey = designs only.")
+             "treatment. Orange = real results.")
     ky = bottom_key(s, keyl)
     msg = T("Every finding in this talk is held to this table: an association is never read as a cause.")
     mh = lh(msg, CWI - 0.6, PT["lead"], True) + 0.3
@@ -749,11 +753,11 @@ def s17(prs):
             [T("AQ2 – Diagnostic: early signs by week 4"), T("Real results, 2013, replicated on 2014"),
              T("Which signs go with later non-completion within module runs, by how many points."),
              T("That a sign causes non-completion, or that removing a sign would raise completion.")],
-            [T("AQ3 – Predictive: estimate at weeks 2 and 4"), T("Design only; no model trained"),
-             T("The expected output and the gate that would decide it."),
-             T("Any recall, precision, calibration or other model metric.")],
-            [T("AQ4 – Prescriptive: ranking under capacity"), T("Design only; depends on AQ3"),
-             T("The expected list and the conditions under which it would be used."),
+            [T("AQ3 – Predictive: estimate at weeks 2 and 4"), T("Single test, 13 runs of 2014"),
+             T("How well a model ranks students against the rule."),
+             T("A reliable probability for each run.")],
+            [T("AQ4 – Prescriptive: ranking under capacity"), T("Ranking, from the AQ3 scores"),
+             T("Who ranks first on a list, with a reason per name."),
              T("Whom contact helps, or which contact works: options for a randomised pilot.")]]
     widths = [int(CW * f) for f in (0.22, 0.17, 0.3)]
     widths.append(CW - sum(widths))
@@ -761,10 +765,8 @@ def s17(prs):
     size = PT["body"] if table_h(rows, widths, PT["body"]) <= room_ else BODY
     shape = table(s, MX, I(y), CW, rows, widths, size=size)
     tbl = shape.table
-    for i in (1, 2):
+    for i in (1, 2, 3, 4):
         colour_cell(tbl, i, 1, ACC_FILL, AGENT_INK, True)
-    for i in (3, 4):
-        colour_cell(tbl, i, 1, GREY_FILL, GREY, True)
     kit.room("reading table", shape.height / EMU, room_)
     stretch_table(shape, room_)
     src(s, "Source: Milestone 5 report, Section 3 and Appendix XI, Table A.26.")
@@ -776,12 +778,11 @@ def s18(prs):
     y = lead(s, T("All four questions are clear, specific, scoped and data-oriented; they differ only in how far the "
                   "data can answer them."))
     keyl = T("Key: AQ = analytical question; AQ1 descriptive, AQ2 diagnostic, AQ3 predictive, AQ4 prescriptive "
-             "(ranking under staff capacity). Cell colours: green = met or answered; orange = answerable in part; "
-             "grey = answerable only by a design not yet run.")
+             "(ranking under staff capacity). Cell colours: green = met or answered; orange = answerable in part.")
     ky = bottom_key(s, keyl)
     status = [tb("Final status: ", "Answered when results answer all of a question; Partial when they answer its core "
                                    "while a named part waits; Deferred when the design is complete but no result "
-                                   "exists; Dropped when abandoned. AQ1 and AQ2 are Answered, AQ3 and AQ4 Deferred, and "
+                                   "exists; Dropped when abandoned. AQ1, AQ2 and AQ3 are Answered, AQ4 is Partial, and "
                                    "no question is dropped.")]
     sh = strip_h(status)
     sy = ky - 0.2 - sh
@@ -793,7 +794,7 @@ def s18(prs):
             [T("Scoped"), T("Fixes its population and period"), met, met, met, met],
             [T("Data-oriented"), T("Names its data"), met, met, met, met],
             [T("Answerable"), T("Those data can settle it"), T("Answered for 2013 and 2014"),
-             T("Answered, as an association"), T("By a design not yet run"),
+             T("Answered, as an association"), T("Answered by a single test on 2014"),
              T("Ranking part only; contact has no data")]]
     widths = [int(CW * f) for f in (0.14, 0.26, 0.15, 0.15, 0.15)]
     widths.append(CW - sum(widths))
@@ -806,7 +807,7 @@ def s18(prs):
             colour_cell(tbl, i, j, OUT_FILL, OUT_INK, True)
     colour_cell(tbl, 5, 2, OUT_FILL, OUT_INK, True)
     colour_cell(tbl, 5, 3, OUT_FILL, OUT_INK, True)
-    colour_cell(tbl, 5, 4, GREY_FILL, GREY, True)
+    colour_cell(tbl, 5, 4, OUT_FILL, OUT_INK, True)
     colour_cell(tbl, 5, 5, ACC_FILL, AGENT_INK, True)
     for i in range(1, 6):
         for j in range(2, 6):
@@ -906,8 +907,8 @@ def s21(prs):
     s = kit.base(prs, kicker(21), T("Questions Mapped to Decisions"), notes(21))
     y = lead(s, T("Each decision draws on different questions: D1 on the list and its reasons, D2 on patterns, D3 on "
                   "a measure."))
-    keyl = T("Key: orange boxes and lines = questions answered on the 2013 and 2014 runs; white boxes and grey lines = "
-             "designed, not yet run. KPI = key performance indicator. Early-sign rule: a missed or late task, or a week "
+    keyl = T("Key: orange boxes and lines = questions answered on the 2013 and 2014 runs (AQ4 for its ranking); white "
+             "boxes and grey lines = KPIs measured only in the pilot. KPI = key performance indicator. Early-sign rule: a missed or late task, or a week "
              "with no platform activity.")
     ky = bottom_key(s, keyl)
     bot = ky - 0.25
@@ -916,12 +917,12 @@ def s21(prs):
     rx = XR - rw
     left = [("AQ1", T("Descriptive: outcome shares and timing"), True),
             ("AQ2", T("Diagnostic: early signs by week 4"), True),
-            ("AQ3", T("Predictive: a model against the early-sign rule"), False),
-            ("AQ4", T("Prescriptive: a ranked list within capacity"), False),
+            ("AQ3", T("Predictive: a model against the early-sign rule"), True),
+            ("AQ4", T("Prescriptive: a ranked list within capacity"), True),
             (T("KPIs"), T("Completion rate and the two contact rates"), False)]
     right = [(T("D1 – Whom to contact at each review point"),
               [tb("Uses: ", "the list and its order (AQ3, AQ4); the reason beside each name (AQ2)."),
-               tb("Now: ", "the reasons; the ranked list waits.", AGENT_INK)]),
+               tb("Now: ", "a ranked list with reasons; the rule as fallback.", AGENT_INK)]),
              (T("D2 – Where to place support time"),
               [tb("Uses: ", "the patterns of AQ1 and AQ2 and the primary KPI."),
                tb("Now: ", "a hypothesis on where support time goes first.", AGENT_INK)]),
@@ -946,7 +947,7 @@ def s21(prs):
                  rh_)
         card(s, rx, ry, rw, a, b, h=rh_, pt=card_pt([(a, b_) for a, b_ in right], rw, rh_))
     # edges: (left index, right index, answered?)
-    edges = [(0, 1, True), (0, 2, True), (1, 0, True), (1, 1, True), (2, 0, False), (3, 0, False), (4, 1, False),
+    edges = [(0, 1, True), (0, 2, True), (1, 0, True), (1, 1, True), (2, 0, True), (3, 0, True), (4, 1, False),
              (4, 2, False)]
     ins = {}
     for _, r, _ in edges:

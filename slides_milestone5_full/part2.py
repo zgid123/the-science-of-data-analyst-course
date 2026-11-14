@@ -149,18 +149,19 @@ def s23(prs):
 def s24(prs):
     s = kit.base(prs, kicker(24), T("Seven Candidates Screened"), notes(24))
     y = lead(s, T("Of seven public candidates, only OULAD passes every gate, so we chose it for fit, not for ease."))
-    y = rich(s, X0, y, CWI, [T("Each candidate is scored 0–2 on the brief's ten criteria (20 at most); the must-have "
-                               "gates decide first. UCI: the University of California, Irvine, Machine Learning "
-                               "Repository. XuetangX and HarvardX: data from massive open online courses.")])
+    y = rich(s, X0, y, CWI, [tb("Six must-have gates decide first: ", "a dated outcome, dated tasks, dated activity, "
+                                "at least three runs in time order, an open licence and an anonymised ID; ten "
+                                "criteria then score 0–2 each (20 at most). UCI: the University of California, Irvine, "
+                                "repository; XuetangX, HarvardX: massive open online courses.")])
     rows = [[T("Candidate"), T("Score (of 20)"), T("Gates failed"), T("Decision")],
             ["OULAD", "12", T("none"), T("Selected, on condition")],
-            ["UCI 697", "10", T("dated outcome, tasks, activity"), T("Rejected")],
-            ["UCI 320", "6", T("dated outcome, tasks, activity, runs"), T("Rejected")],
-            ["UCI 856", "7", T("dated outcome, tasks, activity, runs"), T("Rejected")],
+            [T("UCI 697 (dropout)"), "10", T("dated outcome, tasks, activity"), T("Rejected")],
+            [T("UCI 320 (school pupils)"), "6", T("dated outcome, tasks, activity, runs"), T("Rejected")],
+            [T("UCI 856 (one survey)"), "7", T("dated outcome, tasks, activity, runs"), T("Rejected")],
             ["XuetangX", "8", T("dated outcome, tasks, licence"), T("Rejected")],
             ["HarvardX", "8", T("dated outcome, tasks, activity, runs, licence"), T("Rejected")],
             ["xAPI-Edu-Data", "4", T("dated outcome, tasks, activity, runs"), T("Rejected")]]
-    col = widths((0.2, 0.14, 0.44, 0.22))
+    col = widths((0.27, 0.12, 0.4, 0.21))
     shape = table(s, MX, I(y), CW, rows, col, size=BODY, row_h=I(0.31))
     tbl = shape.table
     for j in range(4):                                   # the selected row in the accent colour
@@ -171,9 +172,9 @@ def s24(prs):
     sel_key = T("Key: orange row = selected; red cell = a gate failed.")
     notes24 = [tb("OULAD, the Open University Learning Analytics Dataset: ",
                   "the only candidate that records a dated withdrawal, dated submissions and daily clicks."),
-               tb("Why only 12 of 20: ", "the scores count only what each documentation states. Five candidates "
-                                         "score higher on quality feasibility, yet none can show when a student "
-                                         "stopped taking part (the conditions of the choice: ") +
+               tb("Why 12 of 20, and the condition: ", "scores count only what the documentation states, so OULAD gets 12. "
+                                         "Chosen on three conditions its files confirmed: pass and fail told "
+                                         "apart, enough runs per module, one ID per student (") +
                [(ref(25) + ").", INK, False)]]
     lower = 0.08 + lh(sel_key, CWI, PT["small"]) + 0.2 + rich_h(notes24, CWI)
     y += stretch_table(shape, END - lower - y)
@@ -307,11 +308,11 @@ def s28(prs):
     rows = [[T("Table (plain meaning)"), T("Rows"), T("One row is")],
             [T("courses (runs)"), "22", T("a module run, with its length in days")],
             [T("assessments (tasks)"), "206", T("a task with its type (TMA, CMA or exam) and due day")],
-            [T("vle (platform pages)"), "6,364", T("a page of the learning platform")],
-            [T("studentInfo (enrolments)"), "32,593", T("an enrolment, with background attributes and final result")],
-            [T("studentRegistration (dates)"), "32,593", T("an enrolment's registration and unregistration day")],
-            [T("studentAssessment (submissions)"), "173,912", T("a submitted task, with its day and score")],
-            [T("studentVle (clicks)"), "10,655,280", T("one student's clicks on one page in one day; no key")]]
+            [T("vle (platform pages)"), num("6,364"), T("a page of the learning platform")],
+            [T("studentInfo (enrolments)"), num("32,593"), T("an enrolment, with background attributes and final result")],
+            [T("studentRegistration (dates)"), num("32,593"), T("an enrolment's registration and unregistration day")],
+            [T("studentAssessment (submissions)"), num("173,912"), T("a submitted task, with its day and score")],
+            [T("studentVle (clicks)"), num("10,655,280"), T("one student's clicks on one page in one day; no key")]]
     key28 = T("Key: vle = virtual learning environment, the learning platform; TMA = tutor-marked assignment; CMA = "
               "computer-marked assessment (a quiz). Orange rows = the enrolment tables at the centre of every join; "
               "every submission, task, click record and page has its parent row.")
@@ -427,9 +428,9 @@ def s31(prs):
             [T("AQ2 Diagnostic"), T("YELLOW"), T("Attendance; the several-modules sign in 2013"),
              T("Signs up to day 27; several-modules sign on 2014 only"), T("Modify"), T("Answered")],
             [T("AQ3 Predictive"), T("YELLOW"), T("A task-only rule fires in 1 of 22 runs at day 13"),
-             T("Early-sign rule with an inactivity part; test on 2014"), T("Modify"), T("Deferred")],
+             T("Early-sign rule with an inactivity part; test on 2014"), T("Modify"), T("Answered")],
             [T("AQ4 Prescriptive"), T("RED"), T("Contacts, staff capacity, outcomes after contact"),
-             T("Ranking part only; contact to the pilot"), T("Modify + Defer"), T("Deferred")]]
+             T("Ranking part only; contact to the pilot"), T("Modify + Defer"), T("Partial")]]
     msg = T("Missing values keep a category and are never imputed; missing variables are never simulated; no "
             "question is dropped.")
     mh = lh(msg, CWI - 0.6, PT["lead"], True) + 0.3
@@ -437,7 +438,7 @@ def s31(prs):
     closing_box(s, my, msg, h=mh)
     key31 = T("Key: GREEN = the data are enough (none); YELLOW = the question is narrowed or its claim changed; RED = a "
               "key concept, variable or intervention is missing. TMA = tutor-marked assignment; CMA = computer-marked "
-              "assessment. Deferred = designed, not yet run.")
+              "assessment. Partial = the ranking is answered; the contact part has no data.")
     kh = lh(key31, CWI, PT["small"])
     kt = my - 0.15 - kh
     key(s, kt, key31)
@@ -560,12 +561,12 @@ def s34(prs):
     y = lead(s, T("Every later number refers to one of seven populations, set by year and by the day a student is "
                   "counted as enrolled."))
     rows = [[T("Population"), T("Enrolments"), T("Non-completers"), T("Used by")],
-            [T("All 2013 enrolments (9 runs)"), "13,529", T("6,959 (51.4%)"), T("AQ1, second denominator")],
-            [T("2013, registered at day 14"), "12,076", T("5,515 (45.7%)"), T("AQ1, primary denominator")],
-            [T("2013, registered at day 13"), "12,080", "5,519", T("AQ3 development, day 13")],
-            [T("2013, registered at day 27"), "11,811", T("5,245 (44.4%)"), T("AQ2; AQ3 development, day 27")],
-            [T("2013, day 27, 7 runs with a task due"), "9,960", "–", T("AQ2 task-based signs")],
-            [T("2014, registered at day 14"), "15,985", T("7,185 (44.9%)"), T("AQ1, primary denominator")],
+            [T("All 2013 enrolments (9 runs)"), num("13,529"), T("6,959 (51.4%)"), T("AQ1, second denominator")],
+            [T("2013, registered at day 14"), num("12,076"), T("5,515 (45.7%)"), T("AQ1, primary denominator")],
+            [T("2013, registered at day 13"), num("12,080"), num("5,519"), T("AQ3 development, day 13")],
+            [T("2013, registered at day 27"), num("11,811"), T("5,245 (44.4%)"), T("AQ2; AQ3 development, day 27")],
+            [T("2013, day 27, 7 runs with a task due"), num("9,960"), "–", T("AQ2 task-based signs")],
+            [T("2014, registered at day 14"), num("15,985"), T("7,185 (44.9%)"), T("AQ1, primary denominator")],
             [T("2014 test (13 runs), day 13 and day 27"), T("15,989 and 15,724"), T("day 27: 6,911 (44.0%)"),
              T("AQ2 replication; AQ3 and AQ4 test")]]
     key34 = T("Key: registered at day d = registered by day d and not unregistered by it; day 14 = end of the "
@@ -588,8 +589,8 @@ def s35(prs):
     s = kit.base(prs, kicker(35), T("Three Quality Issues That Change the Method"), notes(35))
     y = lead(s, T("Of nineteen logged quality issues, three are serious enough to change the method."))
     y = rich(s, X0, y, CWI, [
-        tb("Issue log: ", "19 issues, each rated against the questions: High = ignoring it would change a rate, the "
-                          "target or a feature; Medium = it changes a measure by a known amount; Low = otherwise.")],
+        tb("Issue log: ", "19 issues, each rated against the four analytical questions: High = ignoring it would change a rate, the "
+                          "target (the outcome predicted) or a feature (an input computed per enrolment); Medium = it shifts a number by an amount we can measure; Low = otherwise.")],
         pt=PT["body"]) + 0.1
     lw = 5.4
     rx = X0 + 0.25 + lw + 0.7
@@ -601,12 +602,12 @@ def s35(prs):
                "miss one."),
              T("A task means a TMA or a CMA only (TMA: tutor-marked assignment; CMA: computer-marked assessment, a "
                "quiz).")),
-            (T("Few tasks fall due by the cut-offs: no 2013 run has a task due by day 13, and 7 of 9 have one by day "
-               "27."), T("The early-sign rule needs an activity part: a week with no click.")),
+            (T("Few tasks fall due by the cut-offs: no 2013 run has a task due by day 13, and 7 of 9 have one due by "
+               "day 27."), T("The early-sign rule needs an activity part: a week with no click.")),
             (T("The data are seven UK modules of 2013–2014."),
              T("The scope is stated with every result, and students are compared within module."))]
-    other = [tb("Medium and Low issues: ", "duplicate click rows, activity after unregistration, missing values and "
-                                           "outliers are handled by flags, truncation or a \"Missing\" group; "
+    other = [tb("Medium and Low issues: ", "duplicate click rows are kept and tested, activity after unregistration "
+                                           "is cut, missing values are grouped as \"Missing\", outliers are kept; "
                                            "nothing is deleted or imputed (") + [(ref(36) + ").", INK, False)]]
     oh = card_h(None, other, CWI, pt=PT["body"])
     q_key = T("Key: the orange row marks the issue that reshapes the early-sign rule (") + ref(40) + ")."
@@ -819,8 +820,6 @@ def s40(prs):
              "computer-marked quiz. Cut-off: day 13 for the week-3 list, day 27 for the week-5 list.")
     more = [T("One rule serves OULAD and the pilot. AQ2, the diagnostic question, tests these three parts and two more "
               "activity signs: activity below the run median and no click before the start."),
-            tb("Late quizzes stay out: ", "the meaning of a late CMA in 2013–2014 is not documented, and counting them "
-                                          "would raise the share flagged at day 27 from 28.8% to 41.2%."),
             tb("Reach: ", "the rule flags 20.2% of 28,069 enrolments at day 13 and 28.8% of 27,535 at day 27.")]
     my = END - rich_h(more, rw)
     ph = my - 0.15 - lh(key_, rw, PT["small"]) - 0.08 - (y + 0.45)
@@ -980,13 +979,13 @@ def s44(prs):
 
 def s45(prs):
     s = kit.base(prs, kicker(45), T("Leakage Control"), notes(45))
-    y = lead(s, T("Leakage, using information that would not exist at the moment of prediction, is blocked in four "
-                  "ways, and the date-filter check is built so that it can fail."))
+    y = lead(s, T("Leakage, using information that would not yet exist when the list is made, is blocked in four ways, "
+                  "and a test shows the date check catches it."))
     xa, xb, xc = 0.8, 12.6, 7.1
     ya = y + 0.82
     rect(s, I(xa), I(ya - 0.02), I(xb - xa), I(0.04), fill=GREY)
-    text(s, I(xa - 0.4), I(ya + 0.08), I(1.2), I(0.25), T("Day 0"), size=PT["small"], color=KEY,
-         align=PP_ALIGN.CENTER, spacing=1.0)
+    text(s, I(xa - 0.1), I(ya + 0.08), I(2.4), I(0.25), T("Day 0: module start"), size=PT["small"], color=KEY,
+         align=PP_ALIGN.LEFT, spacing=1.0)
     cut = rect(s, I(xc - 0.015), I(ya - 0.8), I(0.03), I(1.05), fill=NAVY)
     cut.line.fill.background()
     text(s, I(xc - 2.5), I(ya + 0.28), I(5.0), I(0.28), T("Data cut-off: day 27 (the same rule holds at day 13)"),
@@ -1002,24 +1001,23 @@ def s45(prs):
         icon(s, "cross", x + 0.08, ya - 0.58, 0.3, color=MINUS, bg=BAD_FILL)
         text(s, I(x + 0.4), I(ya - 0.66), I(rw - 0.45), I(0.46), lab, size=PT["small"] + 2, color=MINUS,
              align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.MIDDLE, spacing=1.0)
-    y = key(s, ya + 0.6, T("Key: grey = events left of the cut-off that may feed a feature; red cross = events right "
-                           "of it that never enter. TMA = tutor-marked assignment.")) + 0.15
-    check = [tb("The check can fail: ", "recounting the click features without the date filter changes them only for "
-                                        "the enrolments that clicked after the cut-off, 26,755 at day 13 and 25,663 "
-                                        "at day 27, and for no other.")]
+    y = key(s, ya + 0.6, T("Key: grey = events before the cut-off that may feed a feature (an input per enrolment); red "
+                           "cross = events after it, which never enter. TMA = tutor-marked assignment.")) + 0.15
+    check = [tb("Proof the check works: ", "with the date filter off, exactly the enrolments with later clicks change, "
+                                          "no others (26,755 of 28,069 at day 13; 25,663 of 27,535 at day 27).")]
     chh = card_h(None, check, CWI)
     cy = END - chh
     card(s, X0, cy, CWI, None, check, h=chh, fill=OUT_FILL, line=PLUS)
     rows = [[T("Form of leakage"), T("Case in OULAD"), T("Control")],
             [T("Target leakage"), T("Final result, withdrawal day, later activity, TMA marks"),
              T("Features only from events dated up to the cut-off")],
-            [T("Train–test contamination"), T("Medians, scales and levels computed on all runs"),
-             T("Learned on 2013 only, refitted inside each fold")],
+            [T("Train–test contamination"), T("2014 test-year medians and scales shape inputs"),
+             T("Learned on the 2013 training runs only")],
             [T("Student leakage"), T("1,586 test enrolments at day 27 of students seen in 2013"),
-             T("Kept in the test; removed in a strict check")],
+             T("Kept, as in real use; without them the gain holds")],
             [T("Temporal leakage"), T("A random split that mixes the two years"),
              T("Train on 9 runs of 2013, test on 13 of 2014")]]
-    grid_table(s, "leakage table", y, rows, (0.22, 0.4, 0.38), cy - 0.15, sizes=(BODY,), row_h=0.3)
+    grid_table(s, "leakage table", y, rows, (0.22, 0.4, 0.38) if kit.LANG == "en" else (0.2, 0.38, 0.42), cy - 0.15, sizes=(BODY,), row_h=0.3)
     src(s, "Source: Milestone 5 report, Section 7.1 and Appendix VII, Tables A.19 and A.20.")
 
 

@@ -1,0 +1,298 @@
+# 2026-11-13T18:39Z venv/bin/python build_slides_milestone5_15.py --lang all
+  ! vi hook chart: needs 6.58 in, has 6.45 in
+  ! vi answer strip: needs 7.22 in, has 7.20 in
+  ! vi week rows: needs 1.06 in, has 0.83 in
+  ! vi smart table: needs 4.15 in, has 4.13 in
+  ! vi kpi table: needs 3.60 in, has 3.20 in
+  ! vi decision cards: needs 6.88 in, has 6.60 in
+  ! vi reading table: needs 4.30 in, has 3.60 in
+  ! vi check table: needs 3.92 in, has 3.17 in
+  ! vi revision table: needs 3.99 in, has 3.44 in
+  ! vi change cards: needs 2.70 in, has 2.30 in
+  ! vi decision box: needs 1.94 in, has 1.37 in
+  ! vi decision box: needs 1.44 in, has 1.37 in
+  ! vi p2 requirement matrix: needs 7.81 in, has 6.68 in
+  ! vi table: needs 7.81 in, has 7.12 in
+  ! vi p2 gate grid: needs 2.05 in, has 1.42 in
+  ! vi p2 three facts: needs 4.67 in, has 4.32 in
+  ! vi p2 key variables: needs 6.99 in, has 6.68 in
+  ! vi p2 fit matrix: needs 5.88 in, has 5.45 in
+  ! vi p2 gap classes: needs 5.11 in, has 4.20 in
+  ! vi p2 balance chart: needs 1.70 in, has 1.48 in
+  ! vi p2 activity tiles: needs 3.10 in, has 2.44 in
+  ! vi p2 populations: needs 6.36 in, has 5.67 in
+  ! vi p2 other issues: needs 7.14 in, has 6.68 in
+  ! vi table: needs 7.14 in, has 7.12 in
+  ! vi p2 sensitive attributes: needs 6.83 in, has 6.50 in
+  ! vi p2 decision matrix: needs 7.38 in, has 7.20 in
+  ! vi table: needs 7.38 in, has 7.12 in
+  ! vi p2 pipeline nodes: needs 4.01 in, has 3.28 in
+  ! vi p2 derived variables: needs 7.22 in, has 6.50 in
+  ! vi table: needs 7.22 in, has 7.12 in
+  ! vi p2 derived side: needs 5.08 in, has 4.75 in
+  ! vi task rows: needs 3.14 in, has 3.05 in
+  ! vi table: needs 6.90 in, has 6.25 in
+  ! vi table: needs 6.67 in, has 6.25 in
+  ! vi criteria tiles: needs 1.57 in, has 1.10 in
+  ! vi card text: needs 3.15 in, has 2.98 in
+  ! vi table: needs 6.97 in, has 6.45 in
+  ! vi validation cards: needs 2.84 in, has 2.60 in
+  ! vi fairness column: needs 6.60 in, has 6.40 in
+  ! vi table: needs 7.69 in, has 6.05 in
+  ! vi table: needs 7.69 in, has 7.12 in
+  ! vi protocol steps: needs 0.53 in, has 0.33 in
+  ! vi table: needs 5.88 in, has 5.00 in
+  ! vi table: needs 6.88 in, has 6.45 in
+  ! vi stack: needs 4.76 in, has 4.30 in
+  ! vi stack: needs 5.46 in, has 4.79 in
+  ! vi d1 number box: needs 1.05 in, has 0.37 in
+  ! vi d3 nodes: needs 1.13 in, has 0.75 in
+  ! vi d3 nodes: needs 1.13 in, has 0.66 in
+  ! vi limit kinds: needs 1.72 in, has 1.41 in
+  ! vi table: needs 7.61 in, has 7.12 in
+  ! vi future step: needs 6.63 in, has 6.48 in
+  ! vi stack: needs 4.70 in, has 4.27 in
+  ! vi assumed values: needs 2.98 in, has 2.81 in
+  ! vi pilot cards: needs 1.82 in, has 1.55 in
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[vi] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+[vi] 25 strings without a Vietnamese form:
+    Slide
+    một trường đại học Việt Nam.
+    các kỳ mở module của OULAD làm bộ dữ liệu thay thế; đợt thí điểm dùng dữ liệu của trường.
+    chưa có dữ liệu mở về học phần ở Việt Nam.
+    một học kỳ, tuần 1–5.
+    một kỳ mở module tính theo ngày; chốt dữ liệu ở ngày 13 (danh sách tuần 3) và ngày 27 (danh sách tuần 5).
+    OULAD ghi ngày của sự kiện tính từ ngày bắt đầu kỳ mở.
+    sinh viên còn theo học sau thời gian điều chỉnh đăng ký học phần.
+    lượt đăng ký học chưa rút tại ngày 14; loại 58 lượt đăng ký muộn.
+    thời hạn đăng ký kết thúc hai tuần sau ngày bắt đầu kỳ mở (Phụ lục A33).
+    theo hình thức học và năm theo học.
+    theo module và kỳ mở; kiểm tra công bằng theo mức khó khăn của khu vực và tình trạng khuyết tật.
+    OULAD không ghi nhận hai trường này.
+    từ hai bài trở lên bị bỏ lỡ hoặc nộp trễ.
+    bỏ lỡ bài, nộp trễ bài hoặc không có hoạt động trên nền tảng trong bảy ngày gần nhất.
+    chỉ 1 trong 22 kỳ mở có hai bài đến hạn tính đến hết ngày 27 (Slide 7).
+    độ chính xác của danh sách ít nhất 50%.
+    lift so với tỷ lệ nền của kỳ mở và tỷ lệ phát hiện chuẩn hóa.
+    khoảng 45% không hoàn thành, nên danh sách ngẫu nhiên đã đạt độ chính xác khoảng 45%.
+    Mọi số đếm đều truy ngược được về tệp gốc; chỉ bước ước lượng mô hình mới điền hoặc chuẩn hóa giá trị.
+    Số giá trị thiếu và miền giá trị sau khi chuẩn bị giống hệt trước khi chuẩn bị.
+    Không thông tin nào phát sinh sau thời điểm lập danh sách đến được mô hình.
+    Khi đếm lại mà bỏ bộ lọc theo ngày, kết quả chỉ khác ở những lượt có lượt nhấp về sau.
+    Các kỳ mở năm 2014 vẫn là một phép kiểm tra độc lập.
+    Tham số giữ nguyên khi các dòng của tập kiểm thử bị thay đổi.
+main slides: 15; appendix slides: 79
+# exit_status: 0
+# check_slides EN
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 00 s
+# check_slides VI
+ERROR slide 19 (slide): decimal point '45.3' (use a decimal comma)
+ERROR slide 22 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 22 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 27 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 27 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 29 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 34 (notes): chain of three 'của'; use a compound noun or a clause (guide section 2.4): 'của trường, còn dữ liệu của trường vẫn là đối tượng của'
+WARN  slide 34 (notes): 'trở thành một'; say what it is ('là tín hiệu …') (guide section 2.7): 'trở thành một'
+ERROR slide 37 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 38 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 39 (notes): affiliation as a clause; write the institution in parentheses (guide section 2.7): 'thuộc Viện'
+WARN  slide 40 (slide): chain of three 'của'; use a compound noun or a clause (guide section 2.4): 'của Đại học Mở Anh, gồm 22 kỳ mở của bảy module đào tạo từ xa của'
+ERROR slide 44 (notes): glossary 'phần liên hệ được hoãn' -> 'việc chọn hình thức liên hệ được hoãn'
+ERROR slide 45 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 48 (notes): 'trở thành một'; say what it is ('là tín hiệu …') (guide section 2.7): 'trở thành một'
+WARN  slide 49 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Còn '
+ERROR slide 50 (slide): glossary 'kiểm tra thiên lệch' -> 'kiểm tra công bằng'
+ERROR slide 50 (notes): glossary 'kiểm tra thiên lệch' -> 'kiểm tra công bằng'
+WARN  slide 60 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Nhưng '
+WARN  slide 66 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Còn '
+WARN  slide 76 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Nhưng '
+ERROR slide 80 (table): decimal point '40.8' (use a decimal comma)
+ERROR slide 80 (table): decimal point '37.3' (use a decimal comma)
+ERROR slide 80 (table): decimal point '39.3' (use a decimal comma)
+ERROR slide 80 (table): decimal point '35.6' (use a decimal comma)
+ERROR slide 80 (table): decimal point '20.2' (use a decimal comma)
+ERROR slide 80 (table): decimal point '19.5' (use a decimal comma)
+ERROR slide 80 (table): decimal point '20.3' (use a decimal comma)
+ERROR slide 80 (table): decimal point '19.5' (use a decimal comma)
+ERROR slide 80 (table): decimal point '14.5' (use a decimal comma)
+ERROR slide 80 (table): decimal point '9.3' (use a decimal comma)
+ERROR slide 80 (table): decimal point '15.8' (use a decimal comma)
+ERROR slide 80 (table): decimal point '10.7' (use a decimal comma)
+ERROR slide 80 (table): decimal point '13.4' (use a decimal comma)
+ERROR slide 80 (table): decimal point '5.8' (use a decimal comma)
+ERROR slide 80 (table): decimal point '10.6' (use a decimal comma)
+ERROR slide 80 (table): decimal point '8.9' (use a decimal comma)
+ERROR slide 80 (table): decimal point '8.7' (use a decimal comma)
+ERROR slide 80 (table): decimal point '6.5' (use a decimal comma)
+ERROR slide 87 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 87 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 88 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 88 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 21 (layout): text taller than its box (43 pt in 33 pt): '1 Vấn đề của các bên liên quan'
+WARN  slide 21 (layout): text taller than its box (43 pt in 33 pt): '6 Mức phù hợp và khoảng trống dữ liệu'
+WARN  slide 21 (layout): text taller than its box (57 pt in 43 pt): 'Phần 6 · Tích hợp và sử dụng
+Milestone 5'
+WARN  slide 22 (layout): text taller than its box (43 pt in 22 pt): 'Điều trường quan sát được'
+WARN  slide 36 (layout): shape off the slide: 'Table 15'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G1 · Kết quả có mốc thời gian
+Kết quả cuối cùng tá'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G2b · Hoạt động có mốc thời gian
+Hoạt động trên nề'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G3 · Lịch sử
+Ít nhất ba kỳ mở của cùng các học phầ'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G4 · Quyền truy cập
+Giấy phép mở cho mục đích học '
+WARN  slide 55 (layout): shape off the slide: ''
+WARN  slide 65 (layout): text taller than its box (92 pt in 69 pt): 'Đạt: dùng thứ tự của mô hình
+báo cáo kèm số sinh v'
+WARN  slide 68 (layout): shape off the slide: 'Table 7'
+WARN  slide 78 (layout): shape off the slide: ''
+WARN  slide 78 (layout): shape off the slide: 'Không có lượt nhấp trong 7 ngày gần nhất đi kèm 27'
+WARN  slide 81 (layout): text taller than its box (96 pt in 47 pt): '6 trong 22 kỳ mở'
+WARN  slide 82 (layout): shape off the slide: 'Chú giải: cam = đã trả lời trên dữ liệu; xanh dươn'
+WARN  slide 83 (layout): text taller than its box (58 pt in 24 pt): '28,8%'
+WARN  slide 87 (layout): shape off the slide: 'Chú giải: màu theo loại: đỏ = không tìm thấy bằng '
+WARN  slide 88 (layout): shape off the slide: 'Table 6'
+WARN  slide 88 (layout): shape off the slide: 'Chú giải: KPI = chỉ số đo lường hiệu quả chính; D1'
+
+Checked 97 slides: 38 errors, 29 warnings; spoken time ≈ 108 min 00 s
+# 2026-11-13T18:41Z build --lang all after number and identity fixes
+  ! vi hook chart: needs 6.58 in, has 6.45 in
+  ! vi answer strip: needs 7.22 in, has 7.20 in
+  ! vi week rows: needs 1.06 in, has 0.83 in
+  ! vi smart table: needs 4.15 in, has 4.13 in
+  ! vi kpi table: needs 3.60 in, has 3.20 in
+  ! vi decision cards: needs 6.88 in, has 6.60 in
+  ! vi reading table: needs 4.30 in, has 3.60 in
+  ! vi check table: needs 3.92 in, has 3.17 in
+  ! vi revision table: needs 3.99 in, has 3.44 in
+  ! vi change cards: needs 2.70 in, has 2.30 in
+  ! vi decision box: needs 1.94 in, has 1.37 in
+  ! vi decision box: needs 1.44 in, has 1.37 in
+  ! vi p2 requirement matrix: needs 7.81 in, has 6.68 in
+  ! vi table: needs 7.81 in, has 7.12 in
+  ! vi p2 gate grid: needs 2.05 in, has 1.42 in
+  ! vi p2 three facts: needs 4.67 in, has 4.32 in
+  ! vi p2 key variables: needs 6.99 in, has 6.68 in
+  ! vi p2 fit matrix: needs 5.88 in, has 5.45 in
+  ! vi p2 gap classes: needs 5.11 in, has 4.20 in
+  ! vi p2 balance chart: needs 1.70 in, has 1.48 in
+  ! vi p2 activity tiles: needs 3.10 in, has 2.44 in
+  ! vi p2 populations: needs 6.36 in, has 5.67 in
+  ! vi p2 other issues: needs 7.14 in, has 6.68 in
+  ! vi table: needs 7.14 in, has 7.12 in
+  ! vi p2 sensitive attributes: needs 6.83 in, has 6.50 in
+  ! vi p2 decision matrix: needs 7.38 in, has 7.20 in
+  ! vi table: needs 7.38 in, has 7.12 in
+  ! vi p2 pipeline nodes: needs 4.01 in, has 3.28 in
+  ! vi p2 derived variables: needs 7.22 in, has 6.50 in
+  ! vi table: needs 7.22 in, has 7.12 in
+  ! vi p2 derived side: needs 5.08 in, has 4.75 in
+  ! vi task rows: needs 3.14 in, has 3.05 in
+  ! vi table: needs 6.90 in, has 6.25 in
+  ! vi table: needs 6.67 in, has 6.25 in
+  ! vi criteria tiles: needs 1.57 in, has 1.10 in
+  ! vi card text: needs 3.15 in, has 2.98 in
+  ! vi table: needs 6.97 in, has 6.45 in
+  ! vi validation cards: needs 2.84 in, has 2.60 in
+  ! vi fairness column: needs 6.60 in, has 6.40 in
+  ! vi table: needs 7.69 in, has 6.05 in
+  ! vi table: needs 7.69 in, has 7.12 in
+  ! vi protocol steps: needs 0.53 in, has 0.33 in
+  ! vi table: needs 5.88 in, has 5.00 in
+  ! vi table: needs 6.88 in, has 6.45 in
+  ! vi stack: needs 4.76 in, has 4.30 in
+  ! vi stack: needs 5.46 in, has 4.79 in
+  ! vi d1 number box: needs 1.05 in, has 0.37 in
+  ! vi d3 nodes: needs 1.13 in, has 0.75 in
+  ! vi d3 nodes: needs 1.13 in, has 0.66 in
+  ! vi limit kinds: needs 1.72 in, has 1.41 in
+  ! vi table: needs 7.61 in, has 7.12 in
+  ! vi future step: needs 6.63 in, has 6.48 in
+  ! vi stack: needs 4.70 in, has 4.27 in
+  ! vi assumed values: needs 2.98 in, has 2.81 in
+  ! vi pilot cards: needs 1.82 in, has 1.55 in
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[vi] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+main slides: 15; appendix slides: 79
+# exit_status: 0
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 00 s
+ERROR slide 22 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 22 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 23 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 27 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 27 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 29 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 34 (notes): chain of three 'của'; use a compound noun or a clause (guide section 2.4): 'của trường, còn dữ liệu của trường vẫn là đối tượng của'
+WARN  slide 34 (notes): 'trở thành một'; say what it is ('là tín hiệu …') (guide section 2.7): 'trở thành một'
+ERROR slide 37 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 38 (slide): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 39 (notes): affiliation as a clause; write the institution in parentheses (guide section 2.7): 'thuộc Viện'
+WARN  slide 40 (slide): chain of three 'của'; use a compound noun or a clause (guide section 2.4): 'của Đại học Mở Anh, gồm 22 kỳ mở của bảy module đào tạo từ xa của'
+ERROR slide 44 (notes): glossary 'phần liên hệ được hoãn' -> 'việc chọn hình thức liên hệ được hoãn'
+ERROR slide 45 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 48 (notes): 'trở thành một'; say what it is ('là tín hiệu …') (guide section 2.7): 'trở thành một'
+WARN  slide 49 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Còn '
+ERROR slide 50 (slide): glossary 'kiểm tra thiên lệch' -> 'kiểm tra công bằng'
+ERROR slide 50 (notes): glossary 'kiểm tra thiên lệch' -> 'kiểm tra công bằng'
+WARN  slide 60 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Nhưng '
+WARN  slide 66 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Còn '
+WARN  slide 76 (notes): spoken sentence opener; start with the subject or 'Ngoài ra', 'Tuy nhiên', 'Do đó' (guide section 2.4): '. Nhưng '
+ERROR slide 87 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 87 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 88 (table): glossary 'chương trình' -> 'chương trình đào tạo'
+ERROR slide 88 (notes): glossary 'chương trình' -> 'chương trình đào tạo'
+WARN  slide 21 (layout): text taller than its box (43 pt in 33 pt): '1 Vấn đề của các bên liên quan'
+WARN  slide 21 (layout): text taller than its box (43 pt in 33 pt): '6 Mức phù hợp và khoảng trống dữ liệu'
+WARN  slide 21 (layout): text taller than its box (57 pt in 43 pt): 'Phần 6 · Tích hợp và sử dụng
+Milestone 5'
+WARN  slide 22 (layout): text taller than its box (43 pt in 22 pt): 'Điều trường quan sát được'
+WARN  slide 36 (layout): shape off the slide: 'Table 15'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G1 · Kết quả có mốc thời gian
+Kết quả cuối cùng tá'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G2b · Hoạt động có mốc thời gian
+Hoạt động trên nề'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G3 · Lịch sử
+Ít nhất ba kỳ mở của cùng các học phầ'
+WARN  slide 37 (layout): text taller than its box (73 pt in 58 pt): 'G4 · Quyền truy cập
+Giấy phép mở cho mục đích học '
+WARN  slide 55 (layout): shape off the slide: ''
+WARN  slide 65 (layout): text taller than its box (92 pt in 69 pt): 'Đạt: dùng thứ tự của mô hình
+báo cáo kèm số sinh v'
+WARN  slide 68 (layout): shape off the slide: 'Table 7'
+WARN  slide 78 (layout): shape off the slide: ''
+WARN  slide 78 (layout): shape off the slide: 'Không có lượt nhấp trong 7 ngày gần nhất đi kèm 27'
+WARN  slide 81 (layout): text taller than its box (96 pt in 47 pt): '6 trong 22 kỳ mở'
+WARN  slide 82 (layout): shape off the slide: 'Chú giải: cam = đã trả lời trên dữ liệu; xanh dươn'
+WARN  slide 83 (layout): text taller than its box (58 pt in 24 pt): '28,8%'
+WARN  slide 87 (layout): shape off the slide: 'Chú giải: màu theo loại: đỏ = không tìm thấy bằng '
+WARN  slide 88 (layout): shape off the slide: 'Table 6'
+WARN  slide 88 (layout): shape off the slide: 'Chú giải: KPI = chỉ số đo lường hiệu quả chính; D1'
+
+Checked 97 slides: 19 errors, 29 warnings; spoken time ≈ 108 min 00 s
+# 2026-11-13T19:23Z build --lang all after merged review and English definitions
+  ! vi p2 quality rows: needs 2.89 in, has 2.62 in
+  ! vi p2 leakage table: needs 6.38 in, has 6.26 in
+  ! vi table: needs 6.39 in, has 6.25 in
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[vi] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_VI.pptx
+main slides: 15; appendix slides: 79
+# exit_status: 0
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 00 s
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 00 s

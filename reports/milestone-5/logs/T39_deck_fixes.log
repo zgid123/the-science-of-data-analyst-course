@@ -1,0 +1,29 @@
+# 2026-11-13T17:51Z build 15 and full decks after slide 10 / take-home fixes
+  ! en take-home lines: needs 4.64 in, has 3.95 in
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+  ! en take-home lines: needs 4.64 in, has 3.95 in
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 23 s
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 37 s
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 37 s
+# exit_status: 0
+# 2026-11-13T17:52Z rebuild after shortening the take-home lines
+  ! en take-home lines: needs 4.21 in, has 3.95 in
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+  ! en take-home lines: needs 4.21 in, has 3.95 in
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 23 s
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 37 s
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 37 s
+# 2026-11-13T17:54Z rebuild after one-line take-home lead
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 23 s
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 37 s
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 37 s

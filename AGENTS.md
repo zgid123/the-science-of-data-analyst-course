@@ -29,7 +29,8 @@ edit `AGENTS.md`, and re-read it after each change so the updated rules apply in
   Working files beside the trail keep one layout (research-report `reference.md` section 2.1): review rounds as
   `research/reviews/NN-<kind>…` from `layout.py new-review`, revision records and `snapshots.md` (saved states as git
   commits) in `research/revisions/`, task notes declared in `plan.toml` `[layout]`; `layout.py check` runs in `make precheck`.
-- `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`).
+- `scripts/` – repository tooling: `fetch-datasets/` (dataset fetcher, sources in `datasets.toml`), `build-submission/`
+  (builds `submission/N04_Project/` and its ZIP as the submission instructions ask: five reports, one deck, source code).
 - `docs/` – project-wide guides: `data-analytics-skills-map.md` maps trusted agent skills (installed and suggested) to
   the ten stages of the analytics lifecycle, with alternatives, comparison pairs, gaps and install commands.
 - `.agents/skills/` – all agent skills; GitHub provenance in `skills-lock.json` (update with `npx skills update`).
@@ -73,6 +74,7 @@ venv/bin/python .claude/skills/research-report/scripts/progress.py --base report
 venv/bin/python .claude/skills/research-report/scripts/layout.py new-review --base reports/milestone-4 --kind vi-native-review --scope g1  # next review file
 make precheck TASK=milestone-1 | make build TASK=milestone-1 | make all TASK=milestone-1          # report checks and Word build
 make pages TASK=milestone-1 BUDGET=10                                       # page budget: optimistic and pessimistic layout per part
+venv/bin/python scripts/build-submission/build_submission.py               # submission/N04_Project/ and N04_Project.zip
 ```
 
 ## Working out loud

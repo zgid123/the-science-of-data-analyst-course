@@ -5,7 +5,7 @@ Usage: venv/bin/python build_slides_milestone5_30.py [--lang en|vi|all]
 Output: reports/milestone-5/build/N04_Milestone5_Slides-30_EN.pptx and N04_Milestone5_Slides-30_VI.pptx (SLIDES_OUT_DIR
 overrides the folder for draft builds); chart images are cached in build/.cache/slides/milestone-5.
 
-Content source: reports/milestone-5/presentation/v1-30-slides/speech-script.md (slide text = its "Lead" and "On the slide" fields,
+Content source: reports/milestone-5/presentation/v1-30/speech-script.md (slide text = its "Lead" and "On the slide" fields,
 speaker notes = its "Speaker notes" field without the timing marks and cut markers). Chart numbers come from the
 Milestone 5 report and its result tables (reports/milestone-5/results/2013, 2014 and compare). The Vietnamese strings
 live in slides_milestone5_30_vi.py (a dict VI keyed by the English text).

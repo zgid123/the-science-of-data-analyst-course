@@ -1,0 +1,19 @@
+# 2026-11-13T17:21Z venv/bin/python build_slides_milestone5_15.py
+  ! en table: needs 7.76 in, has 7.12 in
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+# exit_status: 0
+# 2026-11-13T17:22Z check_slides N04_Milestone5_Slides-15_EN.pptx --lang en --task milestone-5
+WARN  slide 14 (layout): shape off the slide: 'Table 6'
+WARN  slide 14 (layout): shape off the slide: 'Key: AQ = analytical question; gate S1 = the thres'
+
+Checked 97 slides: 0 errors, 2 warnings; spoken time ≈ 108 min 05 s
+# exit_status: 0
+# 2026-11-13T17:22Z venv/bin/python build_slides_milestone5_15.py (slide 14 shortened)
+[en] 97 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-15_EN.pptx
+main slides: 15; appendix slides: 79
+# exit_status: 0
+# 2026-11-13T17:22Z check_slides N04_Milestone5_Slides-15_EN.pptx --lang en --task milestone-5
+
+Checked 97 slides: 0 errors, 0 warnings; spoken time ≈ 108 min 05 s
+# exit_status: 0

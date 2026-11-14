@@ -73,13 +73,24 @@ def _notes():
 NOTES_FULL = _notes()
 
 
+def spoken_mark(words):
+    """The spoken-time mark check_slides adds up, in the language being built: (~N seconds) or (~N giây)."""
+    unit = "giây" if kit.LANG == "vi" else "seconds"
+    return f"(~{round(words / 125 * 60)} {unit}) "
+
+
+def num(s):
+    """A number written in English form ("2,868", "41.5%") in the form of the language being built."""
+    return s if kit.LANG == "en" else s.replace(",", "\0").replace(".", ",").replace("\0", ".")
+
+
 def notes(n):
     """Speaker notes of plan slide n (English; the Vietnamese deck is built after the slide count is fixed), opened by
     the spoken-time mark that check_slides adds up: (~N seconds) at 125 words a minute."""
     text_ = NOTES_FULL.get(n, "")
     if not text_:
         return ""
-    return f"(~{round(len(text_.split()) / 125 * 60)} seconds) " + T(text_)
+    return spoken_mark(len(text_.split())) + T(text_)
 
 
 # ----------------------------------------------------------------------------- layout state
@@ -96,7 +107,7 @@ _base_kit_base = kit.base
 
 def _base_with_label(prs, kick, title, notes_, presenter=None):
     label = STATE["labels"].get(STATE["current"], "")
-    if label.startswith("Appendix"):
+    if label.startswith(("Appendix", T("Appendix"))):
         kick = f"{T('Appendix')} {label.split()[-1]}: {kick}"
     return _base_kit_base(prs, kick, title, notes_, presenter)
 

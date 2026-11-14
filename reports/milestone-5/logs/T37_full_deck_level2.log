@@ -1,0 +1,62 @@
+# 2026-11-13T17:16Z venv/bin/python build_slides_milestone5_full.py --layout both
+  ! en reading table: needs 3.99 in, has 3.70 in
+  ! en decision box: needs 1.68 in, has 1.47 in
+  ! en table: needs 6.40 in, has 5.90 in
+  ! en table: needs 6.19 in, has 6.05 in
+  ! en limit kinds: needs 1.72 in, has 1.58 in
+  ! en table: needs 6.40 in, has 5.90 in
+  ! en limit kinds: needs 1.72 in, has 1.58 in
+  ! en reading table: needs 3.99 in, has 3.70 in
+  ! en decision box: needs 1.68 in, has 1.47 in
+  ! en table: needs 6.19 in, has 6.05 in
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+# exit_status: 0
+# 2026-11-13T17:17Z check_slides.py N04_Milestone5_Slides-Full_EN.pptx --lang en
+WARN  slide 59 (layout): text taller than its box (36 pt in 30 pt): 'AQ1'
+WARN  slide 59 (layout): text taller than its box (36 pt in 30 pt): 'AQ2'
+WARN  slide 59 (layout): text taller than its box (36 pt in 30 pt): 'AQ3'
+WARN  slide 59 (layout): text taller than its box (36 pt in 30 pt): 'AQ4'
+WARN  slide 82 (layout): shape off the slide: 'Key: kind colours: red = no evidence found; blue ='
+
+Checked 94 slides: 0 errors, 5 warnings; spoken time ≈ 104 min 31 s
+# exit_status: 0
+# 2026-11-13T17:17Z check_slides.py N04_Milestone5_Slides-Split_EN.pptx --lang en
+WARN  slide 30 (layout): text taller than its box (36 pt in 30 pt): 'AQ1'
+WARN  slide 30 (layout): text taller than its box (36 pt in 30 pt): 'AQ2'
+WARN  slide 30 (layout): text taller than its box (36 pt in 30 pt): 'AQ3'
+WARN  slide 30 (layout): text taller than its box (36 pt in 30 pt): 'AQ4'
+WARN  slide 90 (layout): shape off the slide: 'Key: kind colours: red = no evidence found; blue ='
+
+Checked 95 slides: 0 errors, 5 warnings; spoken time ≈ 104 min 31 s
+# exit_status: 0
+# 2026-11-13T17:18Z venv/bin/python build_slides_milestone5_full.py --layout both (overflow fixes)
+  ! en reading table: needs 3.76 in, has 3.70 in
+  ! en table: needs 6.19 in, has 6.05 in
+  ! en limit kinds: needs 1.72 in, has 1.58 in
+  ! en limit kinds: needs 1.72 in, has 1.58 in
+  ! en reading table: needs 3.76 in, has 3.70 in
+  ! en table: needs 6.19 in, has 6.05 in
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+# exit_status: 0
+# 2026-11-13T17:19Z check_slides.py N04_Milestone5_Slides-Full_EN.pptx --lang en
+
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 31 s
+# exit_status: 0
+# 2026-11-13T17:19Z check_slides.py N04_Milestone5_Slides-Split_EN.pptx --lang en
+
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 31 s
+# exit_status: 0
+# 2026-11-13T17:20Z venv/bin/python build_slides_milestone5_full.py --layout both (final)
+[en] 94 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Full_EN.pptx
+[en] 95 slides → /Users/ptkhanh/Documents/master/milestone-da/reports/milestone-5/build/N04_Milestone5_Slides-Split_EN.pptx
+# exit_status: 0
+# 2026-11-13T17:21Z check_slides.py N04_Milestone5_Slides-Full_EN.pptx --lang en
+
+Checked 94 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 31 s
+# exit_status: 0
+# 2026-11-13T17:21Z check_slides.py N04_Milestone5_Slides-Split_EN.pptx --lang en
+
+Checked 95 slides: 0 errors, 0 warnings; spoken time ≈ 104 min 31 s
+# exit_status: 0
